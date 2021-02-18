@@ -1,81 +1,111 @@
 # IFluidStack
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.fluid.IFluidStack
+import crafttweaker.api.fluid.IFluidStack;
 ```
 
+
 ## 已实现的接口
-IFluidStack 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+IFluidStack implements the following interfaces. That means all methods defined in these interfaces are also available in IFluidStack
+
+- [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Casters
+
+| 结果类型                                  | 是否隐藏 |
+| ------------------------------------- | ---- |
+| [MCFluid](/vanilla/api/fluid/MCFluid) | true |
 
 ## 方法
-### copy #复制
 
-复制堆栈。 只有当涉及可变堆栈时才需要。
+### containsOther
 
- 返回： `一个新的堆栈，包含与这个堆栈相同的信息`
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
-返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: boolean
 
 ```zenscript
+IFluidStack.containsOther(other as IFluidStack) as boolean
+```
+
+| 参数    | 类型                                            | 描述                                   |
+| ----- | --------------------------------------------- | ------------------------------------ |
+| other | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
+### copy #复制
+
+Copies the stack. Only needed when mutable stacks are involved.
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
 
 ### 可变的
 
-使这个堆栈变为可变的
+Makes this stack mutable
 
- 返回： `一个新的堆栈，是可变的。`
-
-返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
+IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
 
 ### setAmount
 
-设置流体量单位为百万桶(MB)
+Sets the fluid amount in MilliBuckets (mB)
 
- 返回： `一个新的堆栈或这个堆栈，取决于这个堆栈是否可变`
-
-返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(含量)；
-myIFluidStack.setAmount(1000)；
+IFluidStack.setAmount(amount as int) as IFluidStack
+myIFluidStack.setAmount(1000);
 ```
 
-| 参数     | 类型  | 描述         |
-| ------ | --- | ---------- |
-| amount | int | 要乘积这个堆栈的金额 |
+| 参数     | 类型  | 描述                                |
+| ------ | --- | --------------------------------- |
+| amount | int | The amount to multiply this stack |
+
+
+
+## 运算符
+
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+```zenscript
+other as IFluidStack in myIFluidStack
+```
+
+
+
+### MUL
+
+Sets the fluid amount in MilliBuckets (MB)
+
+```zenscript
+myIFluidStack * amount as int
+myIFluidStack * 1000
+```
+
 
 
 
 ## 参数
 
-| 名称            | 类型                                                           | 可获得  | 可设置   |
-| ------------- | ------------------------------------------------------------ | ---- | ----- |
-| commandString | String                                                       | true | false |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
-
-## 运算符
-### MUL
-
-设置流体量单位为百万桶(MB)
-
- 返回： `一个新的堆栈或这个堆栈，取决于这个堆栈是否可变`
-
-```zenscript
-myIFluidStack * 金额为 int
-myIFluidStack * 1000
-```
-
-| 参数     | 类型  | 描述         |
-| ------ | --- | ---------- |
-| amount | int | 要乘积这个堆栈的金额 |
+| 名称            | 类型                                                         | 可获得  | 可设置   |
+| ------------- | ---------------------------------------------------------- | ---- | ----- |
+| amount        | int                                                        | true | false |
+| commandString | string                                                     | true | false |
+| empty         | boolean                                                    | true | false |
+| fluid         | [MCFluid](/vanilla/api/fluid/MCFluid)                      | true | false |
+| registryName  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 
