@@ -39,7 +39,7 @@ new ItemBuilder().build("my_awesome_block");
 
 Allows you to set the item group that this item will appear in. By default, items will land in `misc`
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
@@ -57,7 +57,7 @@ new ItemBuilder().withItemGroup(<itemgroup:misc>);
 
 Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
@@ -75,7 +75,7 @@ new ItemBuilder().withMaxDamage(250);
 
 Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
@@ -103,7 +103,7 @@ new ItemBuilder().withNoRepair();
 
 Allows you to set the item's rarity
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
@@ -114,21 +114,21 @@ new ItemBuilder().withRarity("EPIC");
 
 | Parameter | Type   | Description |
 | --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| rarity    | String | La rarità   |
 
 
 ### withType
 
-Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method. Returns: `A builder with the given item.`
+Sets the specific type of this item. Dopo aver chiamato questo metodo il contesto del builder passerà al builder del tipo più fornito. Questo significa che i metodi di questo builder non saranno più disponibili, quindi ogni proprietà che desideri impostare dovrà essere impostata prima di chiamare questo metodo. Returns: `A builder with the given item.`
 
-Return type: T
+Tipo di restituzione: T
 
 ```zenscript
 new ItemBuilder().withType<T>();
 new ItemBuilder().withType<mods.contenttweaker.item.tool.ItemBuilderTool>();
 ```
 
-| ParameterName | Bounds                                                                                    |
+| ParameterName | Limiti                                                                                    |
 | ------------- | ----------------------------------------------------------------------------------------- |
 | T             | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
 
