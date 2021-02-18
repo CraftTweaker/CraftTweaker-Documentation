@@ -2,42 +2,44 @@
 
 [PLACEHOLDER] ItemStack with a przypadek, zwykle used for recipe outputs. <p> Ostrożnie, jeśli stos użyty do utworzenia Wagi Stack był zmienny, to ustawnik rozmiaru zmusza również oryginalny stos!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.MCWażony ItemStack
+import crafttweaker.api.item.MCWeightedItemStack;
 ```
+
 
 ## Implemented Interfaces
-MCWeweightedItemStack implementuje następujące interfejsy. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructors
-Ręcznie tworzy ważony ItemStack. Zazwyczaj możesz użyć operatora lub `.weight (waga)` metody IItemStack, choć
+
+Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
-nowy crafttweaker.api.item.MCWeweightedItemStack(itemStack jako crafttweaker.api.item.IItemStack, waga jako podwójny);
-nowy crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
+new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
+new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-| Parameter        | Type                                                              | Description                     |
-| ---------------- | ----------------------------------------------------------------- | ------------------------------- |
-| stos przedmiotów | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Stos                            |
-| weight           | double                                                            | Szansa między 0 (0%) a 1 (100%) |
+
+| Parameter        | Type                                        | Description                     |
+| ---------------- | ------------------------------------------- | ------------------------------- |
+| stos przedmiotów | [IItemStack](/vanilla/api/items/IItemStack) | Stos                            |
+| weight           | double                                      | Szansa między 0 (0%) a 1 (100%) |
 
 
 
 ## Methods
+
 ### weight
 
-Tworzy nowy ważony stos o podanej wadze
+Creates a new Weighted Stack with the given weight
 
- Zwroty: `Nowy Ważony ItemStack`
-
-Typ zwrotu: [crafttweaker.api.item.MCWeweightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-<item:minecraft:bedrock>.weight(0.5D).weight(nowa masa jako podwójna);
+MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 
@@ -47,41 +49,35 @@ Typ zwrotu: [crafttweaker.api.item.MCWeweightedItemStack](/vanilla/api/items/MCW
 
 
 
-## Properties
-
-| Name          | Type                                                              | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                            | true       | false      |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
-| weight        | double                                                            | true       | false      |
-
 ## Operators
-### MUL
 
-Ustawia ilość itemStack. <p> Jeśli oryginalny Stack był zmienny, również mutuje rozmiar oryginalnego stacka.
-
- Zwroty: `Nowy Ważony ItemStack`
-
-```zenscript
-<item:minecraft:bedrock>.weight (0, 5D) * nowa kwota jako int
-<item:minecraft:bedrock>.weight (0, 5D) * 5
-```
-
-| Parameter  | Type | Description          |
-| ---------- | ---- | -------------------- |
-| nowa kwota | int  | Rozmiar nowego stosu |
 ### MOD
 
-Tworzy nowy ważony stos z podaną wartością procentową
-
- Zwroty: `Nowy Ważony ItemStack`
+Creates a new Weighted Stack with the given percentage
 
 ```zenscript
-<item:minecraft:bedrock>.weight (0, 5D) % nowej wagi jako int
-<item:minecraft:bedrock>.weight (0, 5D) % 75
+myMCWeightedItemStack % newWeight as int
+<item:minecraft:bedrock>.weight(0.5D) % 75
 ```
 
-| Parameter        | Type | Description |
-| ---------------- | ---- | ----------- |
-| młoda masa ciała | int  | Procent     |
+
+
+### MUL
+
+Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
+
+```zenscript
+myMCWeightedItemStack * newAmount as int
+<item:minecraft:bedrock>.weight(0.5D) * 5
+```
+
+
+
+
+## Properties
+
+| Name   | Type                                        | Has Getter | Has Setter |
+| ------ | ------------------------------------------- | ---------- | ---------- |
+| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| weight | double                                      | true       | false      |
 
