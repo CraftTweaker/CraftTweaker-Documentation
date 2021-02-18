@@ -1,118 +1,127 @@
 # MCSuggouts
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggouts
+import crafttweaker.api.commands.custom.MCSuggestions;
 ```
+
 
 ## Methods
+
 ### crear
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.create(command as String, suggestions as Collection<crafttweaker.api.commands.custom.MCSuggestion>);
+MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 
-| Parameter   | Type                                                                                                                    | Description             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| command     | String                                                                                                                  | No description provided |
-| sugerencias | Colección&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No description provided |
+| Parameter   | Type                                                                                    | Description             |
+| ----------- | --------------------------------------------------------------------------------------- | ----------------------- |
+| command     | string                                                                                  | No Description Provided |
+| sugerencias | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 
 
 ### empty
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.empty();
+MCSuggestions.empty() as MCSuggestions
+MCSuggestions.empty();
 ```
+
+### merge
+
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MCSuggestions
+```
+
+| Parameter | Type                                                                                      | Description             |
+| --------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| command   | string                                                                                    | No Description Provided |
+| input     | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
+
+## Methods
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestions.equals(o como objeto);
+MCSuggestions.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### getList
 
-Return type: List&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
+Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
+MCSuggestions.getList() as stdlib.List<MCSuggestion>
 myMCSuggestions.getList();
 ```
 
 ### getRange
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestions.getRange() as MCStringRange
 myMCSuggestions.getRange();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestions.hashCode() as int
 myMCSuggestions.hashCode();
 ```
 
 ### isEmpty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCSuggestions.isEmpty() as boolean
 myMCSuggestions.isEmpty();
 ```
 
-### merge
-
-Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/commands/custom/MCSuggestions)
-
-```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.merge(comando como String, entrada como Colección<crafttweaker.api.commands.custom.MCSuggestions>);
-```
-
-| Parameter | Type                                                                                                                     | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| command   | String                                                                                                                   | No description provided |
-| input     | Colección&lt;[crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
-
-
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestions.toString() as string
 myMCSuggestions.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCSuggeries, == o como objeto
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 
