@@ -1,118 +1,127 @@
 # MCSuggestions
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions
+import crafttweaker.api.commands.custom.MCSuggestions;
 ```
+
 
 ## Methods
+
 ### crea
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.create(comando come stringa, suggerimenti come raccolta<crafttweaker.api.commands.custom.MCSuggestion>);
+MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 
-| Parameter    | Type                                                                                                                     | Description                 |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------ | --------------------------- |
-| command      | String                                                                                                                   | Nessuna descrizione fornita |
-| suggerimenti | Collezione&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | Nessuna descrizione fornita |
+| Parameter    | Type                                                                                    | Description             |
+| ------------ | --------------------------------------------------------------------------------------- | ----------------------- |
+| command      | string                                                                                  | No Description Provided |
+| suggerimenti | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 
 
 ### empty
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.empty();
+MCSuggestions.empty() as MCSuggestions
+MCSuggestions.empty();
 ```
+
+### merge
+
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MCSuggestions
+```
+
+| Parameter | Type                                                                                      | Description             |
+| --------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| command   | string                                                                                    | No Description Provided |
+| input     | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
+
+## Caster
+
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| string         | true      |
+
+## Methods
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestions.equals(o come oggetto);
+MCSuggestions.equals(o as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
 
 
 ### getList
 
-Return type: List&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
+Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
+MCSuggestions.getList() as stdlib.List<MCSuggestion>
 myMCSuggestions.getList();
 ```
 
 ### getRange
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestions.getRange() as MCStringRange
 myMCSuggestions.getRange();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestions.hashCode() as int
 myMCSuggestions.hashCode();
 ```
 
 ### isEmpty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCSuggestions.isEmpty() as boolean
 myMCSuggestions.isEmpty();
 ```
 
-### merge
-
-Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
-
-```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.merge(comando come stringa, input come raccolta<crafttweaker.api.commands.custom.MCSuggestions>);
-```
-
-| Parameter | Type                                                                                                                       | Description                 |
-| --------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| command   | String                                                                                                                     | Nessuna descrizione fornita |
-| input     | Collezione&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | Nessuna descrizione fornita |
-
-
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestions.toString() as string
 myMCSuggestions.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestions == o come oggetto
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
 
-## Caster
 
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| String         | true      |
 
