@@ -1,6 +1,6 @@
-# IEntityMod
+# IEntityMob
 
-A Mod.
+A Mob.
 
 ## Импорт пакета
 
