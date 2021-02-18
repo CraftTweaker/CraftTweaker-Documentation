@@ -1,259 +1,256 @@
 # BracketHandlers
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+This class contains the "simple" Bracket handlers from CraftTweaker. However, some Bracket handlers, like for recipeTypes, tags, tagManagers, won't be shown here as they use a different internal structure.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.BracketHandlers
+import crafttweaker.api.BracketHandlers;
 ```
 
+
 ## Methods
-### getBlockMaterial
 
-Obtient le [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) fourni. Lance une exception si elle est introuvable.
+### getBlock
 
- Renvoie : `Le [crafttweaker.api.block.material.MCMaterial]trouvé (/vanilla/api/block/material/MCMaterial)`
+Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
 
-Type de retour : [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial)
+Returns: The found [MCBlock](/vanilla/api/blocks/MCBlock) Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 
 ```zenscript
-<blockmaterial:earth>
+<block:minecraft:dirt>
 
-crafttweaker.api.BracketHandlers.getBlockMaterial(tokens as String);
-crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
+BracketHandlers.getBlock(tokens as string) as MCBlock
+BracketHandlers.getBlock("minecraft:dirt");
 ```
 
 | Parameter | Type   | Description                            |
 | --------- | ------ | -------------------------------------- |
-| tokens    | String | Ce que vous écririez dans l'appel BEP. |
+| tokens    | string | Ce que vous écririez dans l'appel BEP. |
+
+
+### getBlockMaterial
+
+Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
+
+Returns: The found [MCMaterial](/vanilla/api/block/material/MCMaterial) Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
+
+```zenscript
+<blockmaterial:earth>
+
+BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
+BracketHandlers.getBlockMaterial("earth");
+```
+
+| Parameter | Type   | Description                            |
+| --------- | ------ | -------------------------------------- |
+| tokens    | string | Ce que vous écririez dans l'appel BEP. |
 
 
 ### getBlockState
 
-Crée un Blockstate basé sur les entrées données. Retourne `null` s'il ne peut pas trouver le bloc, des variantes invalides ignorées
+Creates a Blockstate based on the given inputs. Returns `null` if it cannot find the block, ignored invalid variants
 
- Renvoie : `Le BlockState trouvé`
-
-Type de retour : [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns: The found BlockState Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 <blockstate:minecraft:acacia_planks>
 <blockstate:minecraft:furnace:facing=north,lit=false>
 
-crafttweaker.api.BracketHandlers.getBlockState(tokens as String);
-crafttweaker.api.BracketHandlers.getBlockState("minecraft:acacia_planks");
+BracketHandlers.getBlockState(tokens as string) as MCBlockState
+BracketHandlers.getBlockState("minecraft:acacia_planks");
+BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
 
-| Parameter | Type   | Description                                           |
-| --------- | ------ | ----------------------------------------------------- |
-| tokens    | String | L'emplacement des ressources et les variantes du bloc |
+| Parameter | Type   | Description                                |
+| --------- | ------ | ------------------------------------------ |
+| tokens    | string | The block's resource location and variants |
 
 
 ### getDirectionAxis
 
-Obtient la direction Axis basée sur le nom. Lance une erreur s'il ne peut pas trouver l'axe de direction.
+Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
 
- Renvoie : `L'axe de direction trouvé`
-
-Type de retour : [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis)
+Returns: The found direction Axis Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 
 ```zenscript
 <directionaxis:x>
 
-crafttweaker.api.BracketHandlers.getDirectionAxis(tokens as String);
-crafttweaker.api.BracketHandlers.getDirectionAxis("x");
-```
-
-| Parameter | Type   | Description                                           |
-| --------- | ------ | ----------------------------------------------------- |
-| tokens    | String | La direction de l'emplacement des ressources de l'axe |
-
-
-### Obtenir Effet
-
-Obtient l'effet basé sur le nom du registre. Lance une erreur si elle ne peut pas trouver l'effet.
-
- Renvoie : `L'effet trouvé`
-
-Type de retour : [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
-
-```zenscript
-<effect:minecraft:haste>
-
-crafttweaker.api.BracketHandlers.getEffect(tokens as String);
-crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
-```
-
-| Parameter | Type   | Description                              |
-| --------- | ------ | ---------------------------------------- |
-| tokens    | String | L'emplacement de la ressource de l'effet |
-
-
-### format@@0 getEntityClassification
-
-Obtient la classification des entités en fonction du nom du registre. Enregistre une erreur et renvoie `null` s'il ne peut pas trouver l'entityClassification.
-
- Renvoie : `La Classification de l'entité trouvée`
-
-Type de retour : [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
-
-```zenscript
-<entityclassification:monster>
-
-crafttweaker.api.BracketHandlers.getEntityClassification(tokens as String);
-crafttweaker.api.BracketHandlers.getEntityClassification("monster");
+BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
+BracketHandlers.getDirectionAxis("x");
 ```
 
 | Parameter | Type   | Description                            |
 | --------- | ------ | -------------------------------------- |
-| tokens    | String | Emplacement des ressources de l'entité |
+| tokens    | string | The direction Axis's resource location |
+
+
+### getEffect
+
+Gets the effect based on registry name. Throws an error if it can't find the effect.
+
+Returns: The found effect Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
+
+```zenscript
+<effect:minecraft:haste>
+
+BracketHandlers.getEffect(tokens as string) as MCPotionEffect
+BracketHandlers.getEffect("minecraft:haste");
+```
+
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| tokens    | string | The effect's resource location |
+
+
+### getEntityClassification
+
+Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
+
+Returns: The found entityClassification Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification)
+
+```zenscript
+<entityclassification:monster>
+
+BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
+BracketHandlers.getEntityClassification("monster");
+```
+
+| Parameter | Type   | Description                                  |
+| --------- | ------ | -------------------------------------------- |
+| tokens    | string | The entityClassification's resource location |
 
 
 ### getEntityType
 
-Récupère l'entityType basé sur le nom du registre. Enregistre une erreur et retourne `null` s'il ne peut pas trouver l'entityType.
+Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
 
- Renvoie : `Le type d'entité trouvé`
-
-Type de retour : [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)
+Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
 <entitytype:minecraft:pig>
 
-crafttweaker.api.BracketHandlers.getEntityType(tokens as String);
-crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig");
+BracketHandlers.getEntityType(tokens as string) as MCEntityType
+BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| Parameter | Type   | Description                               |
-| --------- | ------ | ----------------------------------------- |
-| tokens    | String | L'emplacement de la ressource de l'entité |
+| Parameter | Type   | Description                        |
+| --------- | ------ | ---------------------------------- |
+| tokens    | string | The entityType's resource location |
 
 
 ### getFluidStack
 
-Obtient la pile de fluide basée sur le nom du registre. Lance une erreur s'il ne peut pas trouver le fluide.
+Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
 
- Renvoie : `Une pile du liquide avec une quantité == 1mb`
-
-Type de retour : [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Returns: A stack of the liquid with amount == 1mb Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 <fluid:minecraft:water>
 
-crafttweaker.api.BracketHandlers.getFluidStack(tokens as String);
-crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
-```
-
-| Parameter | Type   | Description                           |
-| --------- | ------ | ------------------------------------- |
-| tokens    | String | L'emplacement des ressources du Fluid |
-
-
-### getItem
-
-Récupère l'élément en fonction du nom du registre. Lance une erreur s'il ne peut pas trouver l'objet.
-
- Renvoie : `L'élément trouvé`
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
-
-```zenscript
-<item:minecraft:dirt>
-
-crafttweaker.api.BracketHandlers.getItem(tokens as String);
-crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
-```
-
-| Parameter | Type   | Description                              |
-| --------- | ------ | ---------------------------------------- |
-| tokens    | String | Emplacement de la ressource de l'élément |
-
-
-### format@@0 getPotion
-
-Type de retour : [crafttweaker.api.potion.MCPotion](/vanilla/api/potions/MCPotion)
-
-```zenscript
-<potion:tokens>
-crafttweaker.api.BracketHandlers.getPotion(tokens comme String);
-```
-
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tokens    | String | No description provided |
-
-
-### Obtenir un gestionnaire de recettes
-
-Obtient le recipeManager basé sur le nom du registre. Lance une erreur s'il ne peut pas trouver le Gestionnaire de recettes. Lance une expulsion si le type de recette indiqué est introuvable. <p> Cela retournera toujours IRecipeManager.<br> Il y a aussi un BEP pour cela mais cela fonctionne différemment donc il ne peut pas être ajouté automatiquement à la documentation ici. Mais le BEP ressemble aux autres : `<recipetype:minecraft:crafting>`
-
- Renvoie : `Le gestionnaire de recettes trouvé`
-
-Type de retour : [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
-
-```zenscript
-crafttweaker.api.BracketHandlers.getRecipeManager(tokens as String);
-crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:crafting");
-```
-
-| Parameter | Type   | Description                                              |
-| --------- | ------ | -------------------------------------------------------- |
-| tokens    | String | L'emplacement des ressources du Gestionnaire de recettes |
-
-
-### Obtenir la localisation des ressources
-
-Crée un emplacement de ressource basé sur les jetons. Lance une erreur si les jetons ne sont pas un emplacement valide.
-
- Renvoie : `L'emplacement`
-
-Type de retour : [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)
-
-```zenscript
-<resource:minecraft:dirt>
-
-crafttweaker.api.BracketHandlers.getResourceLocation(tokens as String);
-crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
+BracketHandlers.getFluidStack(tokens as string) as IFluidStack
+BracketHandlers.getFluidStack("minecraft:water");
 ```
 
 | Parameter | Type   | Description                   |
 | --------- | ------ | ----------------------------- |
-| tokens    | String | L'emplacement de la ressource |
+| tokens    | string | The Fluid's resource location |
 
 
-### format@@0 getTag
+### getItem
 
-Obtient la balise basée sur le nom du registre. Créera une balise vide si aucune balise n'est trouvée.<br> Cependant, dans un tel cas, vous devez enregistrer le tag comme type approprié
+Gets the item based on registry name. Throws an error if it can't find the item.
 
- Renvoie : `La balise trouvée, ou une balise nouvellement créée`
-
-Type de retour : [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Returns: The found item Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<tag:tag:minecraft:wool>
+<item:minecraft:dirt>
 
-crafttweaker.api.BracketHandlers.getTag(tokens as String);
-crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
+BracketHandlers.getItem(tokens as string) as IItemStack
+BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| tokens    | String | Emplacement des ressources du tag |
+| Parameter | Type   | Description                  |
+| --------- | ------ | ---------------------------- |
+| tokens    | string | The item's resource location |
 
 
-### Formatage de texte
+### getPotion
 
-Return type: [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting)
+Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
 
 ```zenscript
-<formatting:tokens>
-crafttweaker.api.BracketHandlers.getTextFormatting(tokens as String);
+BracketHandlers.getPotion(tokens as string) as MCPotion
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| tokens    | String | No description provided |
+| tokens    | string | No Description Provided |
 
+
+### getProfession
+
+Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
+
+Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
+
+```zenscript
+<profession:minecraft:armorer>
+
+BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
+BracketHandlers.getProfession("minecraft:armorer");
+```
+
+| Parameter | Type   | Description                        |
+| --------- | ------ | ---------------------------------- |
+| tokens    | string | The profession's resource location |
+
+
+### getRecipeManager
+
+Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. Throws an expcetion if the given recipeType is not found. <p> This will always return IRecipeManager.<br> There is also a BEP for that but that works differently so it can't be automatically added to the docs here. But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
+
+Returns: The found recipeManager Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
+
+```zenscript
+BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
+BracketHandlers.getRecipeManager("minecraft:crafting");
+```
+
+| Parameter | Type   | Description                           |
+| --------- | ------ | ------------------------------------- |
+| tokens    | string | The recipeManager's resource location |
+
+
+### getResourceLocation
+
+Creates a Resource location based on the tokens. Throws an error if the tokens are not a valid location.
+
+Returns: The location Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+
+```zenscript
+<resource:minecraft:dirt>
+
+BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
+BracketHandlers.getResourceLocation("minecraft:dirt");
+```
+
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| tokens    | string | The resource location |
+
+
+### getTextFormatting
+
+Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
+
+```zenscript
+BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | string | No Description Provided |
 
 
