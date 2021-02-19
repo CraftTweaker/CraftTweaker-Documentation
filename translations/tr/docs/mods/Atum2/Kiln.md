@@ -19,7 +19,7 @@ Removes the recipe(s) with the specified item/block from the recipes the Kiln wi
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
