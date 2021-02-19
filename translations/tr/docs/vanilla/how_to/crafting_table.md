@@ -21,21 +21,21 @@ _Bir tarif eklerken, tarif adının özgün olmasından emin olun!_
 - `malzemeler` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 - `tarifFonksiyonu` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-Bu fonksiyon, çalışma masasına [şekilsiz](#recipe-types) bir tarif ekler. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
+Bu fonksiyon, çalışma masasına [şekilsiz](#recipe-types) bir tarif ekler. [Şekilsiz](#recipe-types) tarifler çalışma masasına koyacağınız eşyaların pozisyonlarını göz ardı eder. Bu yüzden şekilsiz tarif oluşturduğunuzda eşyaların sırası önemli değildir.
 
-[Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
+[Şekilsiz](#recipe-types) tariflerde en fazla 9 eşya olabilir. 4 eşya veya daha az giriş eşyasını da envanterdeki 2x2 boyutundaki tabloda hazırlayabilirsiniz.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. Bunu [IItemStack çarpma operatörünü](/vanilla/api/items/IItemStack/#mul) kullanarak yapabilirsiniz.
 
 ```zenscript
-craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
+craftingTable.addShapeless("sekilsiz_ornek_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
-// A shapeless recipe can have up to 9 inputs
-// This also demonstrates that more than one output can be used. In this example, 8 grass will be outputted.
-craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
+// Şekilsiz bir tarif en fazla 9 girişe sahip olabilir.
+// Bu birden fazla çıktının kullanılabileceğini gösterir. Bu örnekte çıkış ürünü 8 adet çimenli toprak olacaktır. 
+craftingTable.addShapeless("sekilsiz_ornek_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tarif Fonksiyonlarının Kullanımı](#using-recipe-functions)'na bakınız. _
 
 ### Adding Shaped and Shaped Mirrored Recipes
 
@@ -54,7 +54,7 @@ Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for m
 
 Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. Bunu [IItemStack çarpma operatörünü](/vanilla/api/items/IItemStack/#mul) kullanarak yapabilirsiniz.
 
 ```zenscript
 // Adding a shaped recipe
@@ -78,7 +78,7 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 ]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tarif Fonksiyonlarının Kullanımı](#using-recipe-functions)'na bakınız. _
 
 ## Using Recipe Functions
 
