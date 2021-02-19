@@ -10,18 +10,18 @@
 
 ## Tarif Ekleme
 
-_When adding a recipe, ensure that your recipe names are unique!_
+_Bir tarif eklerken, tarif adının özgün olmasından emin olun!_
 
-### Adding Shapeless Recipes
+### Şekilsiz Tarif Ekleme
 
-`craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShapeless(tarifAdi, cikis, malzemeler, tarifFonksiyonu);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
-- `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+- `tarifAdi` &lt;string>
+- `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `malzemeler` <[IIngredient](/vanilla/api/items/IIngredient)[]>
+- `tarifFonksiyonu` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
+Bu fonksiyon, çalışma masasına [şekilsiz](#recipe-types) bir tarif ekler. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
 [Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
@@ -43,8 +43,8 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `tarifAdi` &lt;string>
+- `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
 - `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
@@ -233,7 +233,7 @@ craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>
 
 `craftingTable.removeByName(recipeName);`
 
-- `recipeName` &lt;string>
+- `tarifAdi` &lt;string>
 
 Removes the recipe that matches the name provided.
 
@@ -245,7 +245,7 @@ craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 
 `craftingTable.removeRecipe(output);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
