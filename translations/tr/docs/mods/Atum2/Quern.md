@@ -3,7 +3,7 @@
 ## Package
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.Quern.addRecipe(input, output, rotations);`
 
