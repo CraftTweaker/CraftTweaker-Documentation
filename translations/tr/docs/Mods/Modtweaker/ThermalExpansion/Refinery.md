@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Refinery`
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
