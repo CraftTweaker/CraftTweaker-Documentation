@@ -1,11 +1,11 @@
-# Split your scripts into multiple files
+# Divide tu código en más de un archivo
 
-It is a good idea to split your script into multiple files
+Se considera una buena idea separar lo que hagas en más de un archivo
 
 ## El problema 
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- Cuando escribes archivos para un modpack grande o medianamente grande, tu archivo podría hacerse bastante largo y confuso.
+- Intentar encontrar un error en un archivo con muchas líneas puede tardar mucho, especialmente si el error no es de compilador, sino de ejecución (como por ejemplo el de un evento), que no apunta a una línea específica.
 
 ## What we know/need to know
 
