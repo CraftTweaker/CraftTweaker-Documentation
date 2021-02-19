@@ -3,7 +3,7 @@
 ## Package
 `mods.atum.SpinningWheel;`
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
 
