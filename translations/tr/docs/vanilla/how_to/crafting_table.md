@@ -19,7 +19,7 @@ _Bir tarif eklerken, tarif adının özgün olmasından emin olun!_
 - `tarifAdi` &lt;string>
 - `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `malzemeler` <[IIngredient](/vanilla/api/items/IIngredient)[]>
-- `tarifFonksiyonu` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+- `tarifFonksiyonu` (İsteğe Bağlı) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
 Bu fonksiyon, çalışma masasına [şekilsiz](#recipe-types) bir tarif ekler. [Şekilsiz](#recipe-types) tarifler çalışma masasına koyacağınız eşyaların pozisyonlarını göz ardı eder. Bu yüzden şekilsiz tarif oluşturduğunuzda eşyaların sırası önemli değildir.
 
@@ -32,25 +32,25 @@ craftingTable.addShapeless("sekilsiz_ornek_1", <item:minecraft:grass>, [<item:mi
 
 // Şekilsiz bir tarif en fazla 9 girişe sahip olabilir.
 // Bu birden fazla çıktının kullanılabileceğini gösterir. Bu örnekte çıkış ürünü 8 adet çimenli toprak olacaktır. 
-craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
+craftingTable.addShapeless("sekilsiz_ornek_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tarif Fonksiyonlarının Kullanımı](#using-recipe-functions)'na bakınız. _
 
-### Adding Shaped and Shaped Mirrored Recipes
+### Şekilli ve Yansımalı Tarifler Ekleme
 
-`craftingTable.addShaped(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShaped(tarifAdi, cikis, malzemeler, tarifFonksiyonu);`
 
-`craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShapedMirrored(tarifAdi, cikis, malzemeler, tarifFonksiyonu);`
 
 - `tarifAdi` &lt;string>
 - `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
-- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+- `malzemeler` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
+- `tarifFonksiyonu` (İsteğe Bağlı) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
+Bu fonksiyon, çalışma masasına şekilli (veya yansımalı) bir tarif ekler. Bir tarif oluştururken eşyaların çalışma masasındaki pozisyonlarının tek tek belirtilmesi gerekmektedir.
 
-Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
+[Yansımalı](#recipe-types) bir tarif oluşturmak, eşyaları çalışma masasına dizerken oyuncuya daha fazla esneklik sağlar.
 
 Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
@@ -78,7 +78,7 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 ]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tarif Fonksiyonlarının Kullanımı](#using-recipe-functions)'na bakınız. _
 
 ## Using Recipe Functions
 
