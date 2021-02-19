@@ -8,7 +8,7 @@ Class path: `mods.buildcraft.AssemblyTable`
 
 To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
