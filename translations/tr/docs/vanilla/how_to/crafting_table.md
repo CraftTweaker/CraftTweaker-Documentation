@@ -48,30 +48,30 @@ _Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tari
 - `malzemeler` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
 - `tarifFonksiyonu` (İsteğe Bağlı) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
+Bu fonksiyon, çalışma masasına şekilli (veya yansımalı) bir tarif ekler. Bir tarif oluştururken eşyaların çalışma masasındaki pozisyonlarının tek tek belirtilmesi gerekmektedir.
 
-Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
+[Yansımalı](#recipe-types) bir tarif oluşturmak, eşyaları çalışma masasına dizerken oyuncuya daha fazla esneklik sağlar.
 
-Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
+Hem [şekilli](#recipe-types) hem de [yansımalı](#recipe-types) tarifler 2x2'lik tabloda(envanter) ve çalışma masasında yapılabilir.
 
 Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. Bunu [IItemStack çarpma operatörünü](/vanilla/api/items/IItemStack/#mul) kullanarak yapabilirsiniz.
 
 ```zenscript
-// Adding a shaped recipe
-craftingTable.addShaped("shaped_example_1", <item:minecraft:arrow>, [
+// Şekilli bir tarif ekleme
+craftingTable.addShaped("sekilli_ornek_1", <item:minecraft:arrow>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 
-// Adding a shaped 2x2 recipe (this can also be done as mirrored)
-craftingTable.addShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
+// 2x2 boyutunda şekilli bir tarif ekleme (yansımalı olarakda yapılabilir)
+craftingTable.addShaped("sekilli_ornek_2", <item:minecraft:diamond_axe>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:diamond>, <item:minecraft:stick>]
 ]);
 
-// Adding a shaped mirrored recipe
-craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
+// Yansımalı bir tarif ekleme
+craftingTable.addShapedMirrored("yansimali_ornek_1", <item:minecraft:arrow> * 2, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
@@ -80,7 +80,7 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 
 _Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tarif Fonksiyonlarının Kullanımı](#using-recipe-functions)'na bakınız. _
 
-## Using Recipe Functions
+## Tarif Fonksiyonunun Kullanımı
 
 A recipe function allows for a programatically determined output. This can be especially useful when you need some of the input item's information, like the item's damage or other NBT data.
 
