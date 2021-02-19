@@ -36,6 +36,6 @@ for item in Array{
 ## Desventajas:
 
 - Sólo funciona cuando cambia un parámetro o dos.
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- Podría ser que todo dejara de funcionar por, yo que sé, darle un tipo que no toca a tu Array.
+- Cualquier error en el Array hará que todo el Array falle y ninguna acción será ejecutada.
+- Sería posible que recibieras mensajes de error debido a que el Array no fue creado de la forma correcta.
