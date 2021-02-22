@@ -152,6 +152,15 @@ IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
+### isFood
+
+Return Type: boolean
+
+```zenscript
+IItemStack.isFood() as boolean
+<item:minecraft:dirt>.isFood();
+```
+
 ### matches
 
 Does the given stack match the ingredient?
