@@ -46,7 +46,7 @@ The follow script will remove all recipes from the Squeezer that output HOP Grap
 <recipetype:immersiveengineering:squeezer>.removeRecipe(<item:immersiveengineering:dust_hop_graphite>);
 ```
 
-#### Remove FluidStack Recipes
+#### FluidStack-Rezepte entfernen
 
 The follow script will remove all recipes from the Squeezer that output exactly 60Mb of Plant Oil.
 
