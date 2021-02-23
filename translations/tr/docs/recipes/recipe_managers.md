@@ -1,4 +1,4 @@
-# Recipe managers
+# Tarif Yöneticileri
 
 
 All recipe related globals extend from this class, and have all of these methods.
