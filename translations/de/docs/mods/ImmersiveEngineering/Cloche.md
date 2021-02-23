@@ -44,7 +44,7 @@ Das folgende Skript fügt einen Dünger mit einem Wachstumsmodifikator von 6.0 h
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Cloche that outputs Melon.
+Das folgende Skript wird alle Rezepte aus der Garden Cloche entfernen, die Melon ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:cloche>.removeRecipe(IItemStack output)
@@ -52,9 +52,9 @@ The follow script will remove all recipes from the Cloche that outputs Melon.
 <recipetype:immersiveengineering:cloche>.removeRecipe(<item:minecraft:melon>);
 ```
 
-#### Remove Fertilizer
+#### Dünger entfernen
 
-The follow script will remove Bone Meal as a Fertilizer.
+Das folgende Skript entfernt Knochenmehl als Düngemittel.
 
 ```zenscript
 // <recipetype:immersiveengineering:fertilizer>.removeFertilizer(fertilizer as IItemStack)
