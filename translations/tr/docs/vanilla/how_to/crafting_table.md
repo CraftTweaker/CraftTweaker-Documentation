@@ -93,7 +93,7 @@ _Şekilli ve yansımalı tarifler birbirlerine benzediği için örneklerde sade
 `(olaganCikis as IItemStack, girisler as IItemStack[]) => {};`
 
 - `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
+- `girisler` <[IItemStack](/vanilla/api/items/IItemStack)[]> Orijinal tarifde tanımlandığı gibi sıralanmış giriş dizisi
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
