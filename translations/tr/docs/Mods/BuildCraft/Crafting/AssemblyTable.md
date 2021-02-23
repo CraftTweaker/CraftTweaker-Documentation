@@ -23,7 +23,7 @@ import mods.buildcraft.AssemblyTable;
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 `AssemblyTable.removeByName(name);`
 
