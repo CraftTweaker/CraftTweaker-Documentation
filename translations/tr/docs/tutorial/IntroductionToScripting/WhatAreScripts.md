@@ -6,13 +6,13 @@ Bir script `.zs` dosya uzantısına sahiptir. Bir dosyayı script dosyası olara
 
 Windows bilinen dosya tiplerinin uzantılarını gizler. Bu da `text.txt` dosyasının bilgisayarınızda `text` olarak görünebileceği anlamına gelir.
 
-This also means that `script.zs.txt` will also show up as `script.zs` on your machine.
+Ayrıca bu `script.zs.txt` dosyasının bilgisayarınızda `script.zs` olarak da görünebileceği anlamına gelir.
 
-If you are unsure if file extensions are shown or not, take a look in your game directory and find the file called `options.txt`, if you see a file called `options` and not `options.txt`, that means that your file extensions are hidden and you may have trouble when making script files.
+Eğer dosya uzantılarının göründüğünden emin değilseniz oyununuzun bulunduğu klasöre giderek `options.txt` dosyasına bir göz atın. Eğer dosya adını `options.txt` olarak değil de sadece `options` olarak görüyorsanız bu dosya uzantılarının gizli olduğu anlamına gelmektedir ve script dosyası oluştururken bir takım sorunlarla karşılaşabilirsiniz.
 
-You can find out how to fix this [here](https://www.howtohaven.com/system/show-file-extensions-in-windows-explorer.shtml).
+Bunun nasıl çözüleceğini öğrenmek için [ buraya](https://helpx.adobe.com/tr/x-productkb/global/show-hidden-files-folders-extensions.html) tıklayabilirsiniz.
 
-# Where do scripts go
+# Script dosyaları nereye gidiyor
 
 Generally scripts go in the `scripts` folder of the install, it is on the same level as `mods`, `config` and `logs`.
 
