@@ -42,7 +42,7 @@ Das folgende Skript fügt Rezepte hinzu, die Wasser (Flüssigkeit) ausgeben, wen
 <recipetype:create:compacting>.addRecipe("compacting_test_4", "superheated", <fluid:minecraft:water>, [<item:minecraft:paper>, <item:minecraft:stick>], [<fluid:minecraft:lava>], 500);
 ```
 
-#### Remove Recipes for Items
+#### Rezepte für Items entfernen
 
 Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokoladentafel ausgeben.
 
@@ -53,9 +53,9 @@ Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokolade
 ```
 
 
-#### Remove Recipes for Fluids
+#### Rezepte für Flüssigkeiten entfernen
 
-The follow script will remove all Compacting recipes that output Water (Fluid)
+Das folgende Skript wird alle Verdichtungsrezepte entfernen, die Wasser ausgeben (Fluid)
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IFluidStack output)
