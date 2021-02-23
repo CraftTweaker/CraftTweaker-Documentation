@@ -14,11 +14,11 @@ Bunun nasıl çözüleceğini öğrenmek için [ buraya](https://helpx.adobe.com
 
 # Script dosyaları nereye gidiyor
 
-Generally scripts go in the `scripts` folder of the install, it is on the same level as `mods`, `config` and `logs`.
+Genellikle script dosyaları `scripts` klasörünün içerisinde olur. Bu klasör `mods`, `config` ve `logs` klasörlerinin de bulunduğu konumda bulunuyor.
 
-If you're having trouble finding it, you can run the `/ct scripts` command in game, and it should open the scripts folder.
+Eğer bu klasörü bulmakta sorun yaşıyorsanız oyundayken `/ct scripts` komutunu çalıştırarak scripts klasörünü açabilirsiniz.
 
-A tree view of how it should look is like so:
+Nasıl göründüğü ile ilgili aşağıda bir dizin ağacı bulunmaktadır.
 
 ```plaintext
 ├── config
@@ -29,9 +29,9 @@ A tree view of how it should look is like so:
 └── scripts
 ```
 
-## Sub-Folders
+## Alt Klasörler
 
-Scripts inside the `scripts` folder can be in any number of sub folders, an example of this is putting scripts into folders based on the mod, here is a tree view of that:
+Scripts klasörünün içerisinde birden fazla alt klasör bulunabilir. Örneğin, modlara göre klasör oluşturup scripts klasörünün içerisine koyabiliriz. Bunun dizin ağacı aşağıdaki gibi olacaktır.
 
 ```plaintext
 scripts/
@@ -44,5 +44,5 @@ scripts/
         └── tags.zs
 ```
 
-That is perfectly valid and is a great way to manage script files in a large modpack!
+Böyle yapmak, büyük bir mod paketindeki script dosyalarını yönetmenin mükemmel ve geçerli bir yoludur.
 
