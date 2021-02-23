@@ -1,17 +1,17 @@
-# Soils
+# Tierra
 
-Class path: `mods.botanypots.Soil`
+Ruta de la clase: `mods.botanypots.Soil`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
+Para usar, importa la clase con `import mods.botanypots.Soil;` al inicio de tu script.
 
-## Creating New Soils
+## Creando nuevas tierras
 
 `Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `id` &lt;string> El ID de la nueva tierra. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> El ingrediente usado para determinar que elementos/bloques son usados para colocar la tierra en una maceta.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 - `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
 - `categories` &lt;string[]> An array of categories associated with the new soil.
@@ -52,7 +52,7 @@ Soil.setGrowthModifier("botanypots:soil/grass", 0.15);
 `Soil.setIngredient(id, ingredient);`
 
 - `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> El ingrediente usado para determinar que elementos/bloques son usados para colocar la tierra en una maceta.
 
 Changes the items used to put the soil into the botany pot.
 
