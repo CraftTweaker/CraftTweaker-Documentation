@@ -82,17 +82,17 @@ _Tarif fonksiyonlarının kullanımını örnekler üzerinde görmek için [Tari
 
 ## Tarif Fonksiyonunun Kullanımı
 
-A recipe function allows for a programatically determined output. This can be especially useful when you need some of the input item's information, like the item's damage or other NBT data.
+Bir tarif fonksiyonu ile programlanabilir biçimde bir çıktı oluşturabilirsiniz. Bu özellikle, giriş eşyalarının hasar bilgisi veya NBT verisi gibi bilgilere ihtiyaç duyduğunuzda kullanışlı olabilir.
 
-_As Shaped and Shaped Mirrored Recipes are similar, examples will only include Shaped Recipes. You may treat any example using `addShaped` as the same as using `addShapedMirrored`._
+_Şekilli ve yansımalı tarifler birbirlerine benzediği için örneklerde sadece şekilli tarifler olacaktır. `addShaped` fonksiyonu kullanılan örnekleri `addShapedMirrored` olarak da düşünebilirsiniz._
 
-### Using RecipeFunctionArray in a Shapeless Recipe
+### Şekilsiz Tariflerde RecipeFunctionArray Kullanımı
 
-`recipeFunction` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+`tarifFonksiyonu` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-`(usualOut as IItemStack, inputs as IItemStack[]) => {};`
+`(olaganCikis as IItemStack, girisler as IItemStack[]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
 
 ```zenscript
@@ -116,7 +116,7 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 
 `(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
