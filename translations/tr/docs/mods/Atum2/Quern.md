@@ -17,7 +17,7 @@ Adds a recipe with the specified input & output, that takes the specified rotati
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 ### Remove Recipes by Output
 
