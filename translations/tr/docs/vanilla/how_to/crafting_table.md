@@ -90,10 +90,10 @@ _Şekilli ve yansımalı tarifler birbirlerine benzediği için örneklerde sade
 
 `tarifFonksiyonu` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-`(usualOut as IItemStack, inputs as IItemStack[]) => {};`
+`(olaganCikis as IItemStack, girisler as IItemStack[]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
+- `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `girisler` <[IItemStack](/vanilla/api/items/IItemStack)[]> Orijinal tarifde tanımlandığı gibi sıralanmış giriş dizisi
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -116,7 +116,7 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 
 `(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
