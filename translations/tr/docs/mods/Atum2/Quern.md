@@ -19,13 +19,13 @@ mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile
 
 ## Bir Tarifi Kaldırma
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
