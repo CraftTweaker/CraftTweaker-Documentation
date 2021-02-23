@@ -20,9 +20,9 @@ Dieses Rezept erfordert, dass ein Sägeblatt im Sägewerk vorhanden ist, um zu f
 
 #### Sawing- und Stripping-Rezept hinzufügen
 
-The following script will add a recipe to the Sawmill that will, if a Sawblade is present, output Grass, two Sticks and Sawdust, but if a Sawblade is not present, will only output Grass and a Dead Bush. The input for this recipe is any Item from the Saplings Tag and 1200 IF.
+Das folgende Skript fügt dem Sägewerk ein Rezept hinzu, das wenn eine Sägeblatte vorhanden ist, einen Grasblock, zwei Stöcke und Sägestaub ausgegeben, aber wenn eine Sägeblatte nicht vorhanden ist, nur ein Grasblock und einen Toten Busch ausgegeben wird. Die Eingabe für dieses Rezept ist jedes Item aus dem Setzlingtag und benötigt 1200 IF.
 
-This recipe does not need a Sawblade to be present in the Sawmill.
+Dieses Rezept braucht kein Sägeblatt, um im Sägewerk präsent zu sein.
 
 ```zenscript
 //<recipetype:immersiveengineering:sawmill>.addRecipe(string recipePath, IIngredient input, int energy, IItemStack strippedOutput, IItemStack[] strippedOutputSecondaries, IItemStack output, IItemStack[] outputSecondaries)
@@ -32,7 +32,7 @@ This recipe does not need a Sawblade to be present in the Sawmill.
 
 #### Remove Recipes
 
-The follow script will remove all recipes (Sawing or Stripping) from the Sawmill that output Oak Planks as either the primary or secondary result.
+Das folgende Skript entfernt alle Rezepte (Sägen oder Strippen), die Eichenbretter als primäre oder sekundäre Ausgabe haben.
 
 ```zenscript
 // <recipetype:immersiveengineering:sawmill>.removeRecipe(output as IItemStack)
