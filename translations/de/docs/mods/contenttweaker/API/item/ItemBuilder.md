@@ -15,7 +15,7 @@ ItemBuilder implements the following interfaces. That means any method available
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructors
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) for that.
+Creates a new ItemBuilder. Merke, dass hier  _kein_ neues Item dem Spiel hinzugefügt wird, du musst [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) dafür ausführen.
 ```zenscript
 neue mods.contenttweaker.item.ItemBuilder();
 ```
