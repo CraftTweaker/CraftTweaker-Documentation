@@ -186,135 +186,135 @@ craftingTable.addShapeless("sekilsiz_degiskenfonksiyon_ornek_2", <item:minecraft
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
-    var counter = 0;
-    // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-    for row in inputs {
-        for recipeItem in row {
-            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                counter++;
+var ornekSekilliTarifFonksiyonDegiskeni as function(olaganCikis as IItemStack, girisler as IItemStack[][]) as IItemStack = (olaganCikis as IItemStack, girisler as IItemStack[][]) => {
+    var sayac = 0;
+    //Bütün <item:minecraft:clay_ball> eşyalarının isimlerinin "Elmas" olması ile ilgili kontrolü yap
+    for satir in girisler {
+        for tarifEsyasi in satir{
+            if (<item:minecraft:clay_ball>.matches(tarifEsyasi) && tarifEsyasi.displayName == "Elmas") {
+                //Eğer tarif eşyası <item:minecraft:clay_ball> ise ve adı "Elmas" ise sayac değişkeninin değerini arttır
+                sayac++;
             }
         }
     }
 
-    // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
-    if (counter == 8) {
-        if (inputs[1][1].displayName == "Special Diamond") {
-            // If <item:minecraft:diamond> has a display name of "Special Diamond"
-            // Return 2 <item:minecraft:diamond_block>
-            return usualOut * 2;
+    // Eğer "Elmas" ismiyle 8 tane <item:minecraft:clay_ball> eşyasına sahipsek
+    if (sayac == 8) {
+        if (girisler[1][1].displayName == "Özel Elmas") {
+            // Eğer <item:minecraft:diamond> eşyasının adı "Özel Elmas" ise
+            // 2 tane <item:minecraft:diamond_block> eşyasını döndür
+            return olaganCikis* 2;
         } else {
-            // Returns <item:minecraft:diamond_block>
-            return usualOut;
+            // <item:minecraft:diamond_block> eşyasını döndür
+            return olaganCikis;
         }
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
+    // Diğer türlü, "Elmas Blok ismiyle" <item:minecraft:clay> eşyasını döndür
     return <item:minecraft:clay>.setDisplayName("Diamond Block");
 };
 
-craftingTable.addShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("sekilli_fonksiyon_ornek_3", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], ornekSekilliTarifFonksiyonDegiskeni);
 
-craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("sekilli_fonksiyon_ornek_4", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], ornekSekilliTarifFonksiyonDegiskeni);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
-### Remove a Recipe by Name
+### İsme Göre Tarif Kaldırma
 
-`craftingTable.removeByName(recipeName);`
+`craftingTable.removeByName(tarifAdi);`
 
 - `tarifAdi` &lt;string>
 
-Removes the recipe that matches the name provided.
+Girilen adla eşleşen tarifi kaldırır.
 
 ```zenscript
 craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 ```
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
-`craftingTable.removeRecipe(output);`
+`craftingTable.removeRecipe(cikis);`
 
 - `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Remove Recipes by Mod ID
+### Mod ID Değerine Göre Tarif Kaldırma
 
 `craftingTable.removeByModid(modId);`
 
 - `modId` &lt;string>
 
-Removes all recipes added by the provided mod.
+Girilen modun sağladığı bütün eşyaların tariflerini kaldırır.
 
 ```zenscript
 craftingTable.removeByModid("minecraft");
 ```
 
-#### Exclude Recipes From Mod ID Removal
+#### Mod ID'ye Göre Kaldırılan Tariflerin Dahil Edilmemesi
 
-`craftingTable.removeByModid(modId, exclusionFilter);`
+`craftingTable.removeByModid(modId, dislamaFiltresi);`
 
 - `modId` &lt;string>
-- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
+- `dislamaFiltresi` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
+  - `isim` &lt;string>Şu anda kontrol edilen tarifin adı. Mod ID değeri dahil edilmeyecek.
 
-Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
+Girilen modun sağladığı bütün eşyaların tariflerini kaldırır. Belirlenen tarif adı için dislamaFiltresi true değerini döndürürse tarifler çıkarılır.
 
 ```zenscript
-craftingTable.removeByModid("minecraft", (name) => {
-    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
-    return name == "red_bed_from_white_bed";
+craftingTable.removeByModid("minecraft", (isim) => {
+    // isim değişkeninin değerinin "minecraft:red_bed_from_white_bed" olup olmaması ile ilgili kontrolü yap
+    return isim == "red_bed_from_white_bed";
 });
 ```
 
-Multiple recipes can also be excluded. One way this can be done is as follows:
+Birden fazla tarif de çıkarılabilir. Bunun yapmanın bir yolu aşağıdaki gibi olacaktır.
 
 ```zenscript
-// An array of recipe names as strings
-var minecraftExclusions as string[] = [
+// String olarak tarif adlarını tutan bir dizi
+var minecraftCikarilacaklar as string[] = [
     "acacia_slab",
     "red_bed_from_white_bed",
     "sugar_from_sugar_cane"
 ];
 
-craftingTable.removeByModid("minecraft", (name) => {
-    return name in minecraftExclusions;
+craftingTable.removeByModid("minecraft", (isim) => {
+    return isim in minecraftCikarilacaklar;
 });
 ```
 
-### Remove Recipes by Regex
+### Düzenli İfadelere(Regex) Göre Tarif Kaldırma
 
 `craftingTable.removeByRegex(regex);`
 
 - `regex` &lt;string>
 
-Removes all recipes that's name matches the regex string.
+İsmi regex kuralına uyan bütün tarifleri kaldırır.
 
 ```zenscript
-// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
+// "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet" gibi olan bütün tarifleri kaldırma
 craftingTable.removeByRegex("minecraft:.*_carpet");
 ```
 
-### Remove All Recipes
+### Bütün Tarifleri Kaldırma
 
 `craftingTable.removeAll();`
 
-Removes all crafting table recipes.
+Çalışma masasındaki bütün tarifleri kaldırma.
 
 ```zenscript
 craftingTable.removeAll();
