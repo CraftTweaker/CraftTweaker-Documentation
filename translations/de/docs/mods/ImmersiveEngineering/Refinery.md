@@ -26,7 +26,7 @@ The follow script will remove all recipes from the Refinery that output exactly 
 <recipetype:immersiveengineering:refinery>.removeRecipe(<fluid:immersiveengineering:biodiesel> * 16);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
 The follow script will remove all recipes from the Refinery that output any amount of Biodesiel.
 
