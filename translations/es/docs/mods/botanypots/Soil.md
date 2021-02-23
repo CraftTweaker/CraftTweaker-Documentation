@@ -1,16 +1,16 @@
-# Soils
+# Tierra
 
-Class path: `mods.botanypots.Soil`
+Ruta de la clase: `mods.botanypots.Soil`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
+Para usar, importa la clase con `import mods.botanypots.Soil;` al inicio de tu script.
 
-## Creating New Soils
+## Creando nuevas tierras
 
 `Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> El ID de la nueva tierra. This is a namespaced id an must be in the valid `namespace:path` format.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 - `tickRate` &lt;int> The tick rate for the soil.
