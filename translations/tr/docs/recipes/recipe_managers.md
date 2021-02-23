@@ -1,7 +1,7 @@
-# Recipe managers
+# Tarif Yöneticileri
 
 
-All recipe related globals extend from this class, and have all of these methods.
+Tariflerle ilgili bütün globaller bu sınıftan türemiştir ve aşağıdaki fonksiyonlara sahiptir.
 
 ```zenscript
 removeRecipe(IItemStack output);
