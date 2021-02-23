@@ -17,7 +17,7 @@ Girilen input ve output değerlerine göre bir tarif oluşturur. Verilen rotatio
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 ### Remove Recipes by Output
 
