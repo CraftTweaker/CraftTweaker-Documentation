@@ -1,10 +1,10 @@
-# What Are Scripts
+# Script Nedir
 
-A script is simply a file with a `.zs` file extension, that is all that is needed to classify a file as a script file.
+Bir script `.zs` dosya uzantısına sahiptir. Bir dosyayı script dosyası olarak sınıflandırabilmek için gereken tek şey budur.
 
 #### Note
 
-Windows hides the file extensions of "known" file types, this means that `text.txt` may show up as just `text` on your machine.
+Windows bilinen dosya tiplerinin uzantılarını gizler. Bu da `text.txt` dosyasının bilgisayarınızda `text` olarak görünebileceği anlamına gelir.
 
 This also means that `script.zs.txt` will also show up as `script.zs` on your machine.
 
