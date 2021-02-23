@@ -34,7 +34,7 @@ Adds a recipe with the specified input, output, experience & cook time
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
 
