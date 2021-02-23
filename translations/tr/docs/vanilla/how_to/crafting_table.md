@@ -166,22 +166,22 @@ Tarif fonksiyonlarını birden çok tarifde kullanabilmek için bir değişkene 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
-        return usualOut;
+var ornekSekilsizTarifFonksiyonDegiskeni as function(olaganCikis as IItemStack, girisler as IItemStack[]) as IItemStack = (olaganCikis, girisler) => {
+    if(girisler[0].displayName == "gerçek bir elmas blok" ){
+        return olaganCikis;
     }
 
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    return <item:minecraft:clay>.setDisplayName("Elmas");
 };
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
+// ornekSekilsizTarifFonksiyonDegiskeni'ndeki girisler[0] <item:minecraft:dirt> olacak
+craftingTable.addShapeless("sekilsiz_degiskenfonksiyon_ornek_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], ornekSekilsizTarifFonksiyonDegiskeni);
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
+// ornekSekilsizTarifFonksiyonDegiskeni'ndeki girisler[0] <item:minecraft:cobblestone> olacak
+craftingTable.addShapeless("sekilsiz_degiskenfonksiyon_ornek_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], ornekSekilsizTarifFonksiyonDegiskeni);
 ```
 
-Shaped/Mirrored:
+Şekilli/Yansımalı:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
