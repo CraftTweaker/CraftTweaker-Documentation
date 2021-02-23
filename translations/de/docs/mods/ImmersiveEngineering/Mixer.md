@@ -26,7 +26,7 @@ The follow script will remove all recipes from the Mixer that output exactly 500
 <recipetype:immersiveengineering:mixer>.removeRecipe(<fluid:immersiveengineering:concrete> * 500);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
 The follow script will remove all recipes from the Mixer that output any amount of Concrete (Fluid).
 
