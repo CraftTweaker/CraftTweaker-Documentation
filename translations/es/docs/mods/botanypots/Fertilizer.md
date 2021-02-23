@@ -1,4 +1,4 @@
-# Fertilizers
+# Fertilizantes
 
 Class path: `mods.botanypots.Fertilizer`
 
