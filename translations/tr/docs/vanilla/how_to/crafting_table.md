@@ -86,7 +86,7 @@ Bir tarif fonksiyonu ile programlanabilir biçimde bir çıktı oluşturabilirsi
 
 _Şekilli ve yansımalı tarifler birbirlerine benzediği için örneklerde sadece şekilli tarifler olacaktır. `addShaped` fonksiyonu kullanılan örnekleri `addShapedMirrored` olarak da düşünebilirsiniz._
 
-### Şekilsiz Tariflerde RecipeFunctionArray Kullanımı
+### Şekilsiz Bir Tarifde RecipeFunctionArray Kullanımı
 
 `tarifFonksiyonu` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
@@ -98,26 +98,26 @@ _Şekilli ve yansımalı tarifler birbirlerine benzediği için örneklerde sade
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
-    // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if (inputs[0].displayName == "totally real diamond block") {
-        // Returns <item:minecraft:diamond> * 9
-        return usualOut;
+craftingTable.addShapeless(sekilsiz_fonksiyon_ornek_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (olaganCikis as IItemStack, girisler as IItemStack[]) => {
+    // <item:minecraft:dirt> eşyasının görünen adının "gerçek bir elmas blok" olması ile ilgili kontrolü yap
+    if (girisler[0].displayName == "gerçek bir elmas blok") {
+        // <item:minecraft:diamond> * 9 döndürür
+        return olaganCikis;
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    // Diğer türlü, "Elmas" ismiyle <item:minecraft:clay> eşyasını döndür
+    return <item:minecraft:clay>.setDisplayName("Elmas");
 });
 ```
 
-### Using RecipeFunctionMatrix in a Shaped/Mirrored Recipe
+### Şekilli/Yansımalı Bir Tarifde RecipeFunctionMatrix Kullanımı
 
-`recipeFunction` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+`tarifFonksiyonu` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-`(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
+`(olaganCikis as IItemStack, girisler as IItemStack[][]) => {};`
 
 - `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Orijinal tarifde tanımlandığı gibi sıralanmış giriş dizisi. Bir giriş, satır ve sütun değeri girilerek de elde edilebilir (1. satır 2. sütundaki giriş elemanını almak için `inputs[0][1]` kullanılabilir).
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
