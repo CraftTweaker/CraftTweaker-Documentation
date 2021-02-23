@@ -36,7 +36,7 @@ The following script will add a recipe that will output 2500Mb of Creosote (Flui
 <recipetype:immersiveengineering:squeezer>.addRecipe("pressure_creates_diamonds", <item:minecraft:coal_block> * 8, 6000, <fluid:immersiveengineering:creosote> * 2500, <item:minecraft:diamond>);
 ```
 
-#### Remove Item Recipes
+#### Item Rezepte entfernen
 
 The follow script will remove all recipes from the Squeezer that output HOP Graphite Dust.
 
@@ -56,7 +56,7 @@ The follow script will remove all recipes from the Squeezer that output exactly 
 <recipetype:immersiveengineering:squeezer>.removeRecipe(<fluid:immersiveengineering:plantoil> * 60);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
 The follow script will remove all recipes from the Squeezer that output any amount of Plant Oil.
 
