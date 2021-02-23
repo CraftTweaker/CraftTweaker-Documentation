@@ -39,7 +39,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 `Refinery.removeRecipe(input);`
 
