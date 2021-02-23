@@ -166,72 +166,72 @@ Tarif fonksiyonlarını birden çok tarifde kullanabilmek için bir değişkene 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
-        return usualOut;
+var ornekSekilsizTarifFonksiyonDegiskeni as function(olaganCikis as IItemStack, girisler as IItemStack[]) as IItemStack = (olaganCikis, girisler) => {
+    if(girisler[0].displayName == "gerçek bir elmas blok" ){
+        return olaganCikis;
     }
 
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    return <item:minecraft:clay>.setDisplayName("Elmas");
 };
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
+// ornekSekilsizTarifFonksiyonDegiskeni'ndeki girisler[0] <item:minecraft:dirt> olacak
+craftingTable.addShapeless("sekilsiz_degiskenfonksiyon_ornek_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], ornekSekilsizTarifFonksiyonDegiskeni);
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
+// ornekSekilsizTarifFonksiyonDegiskeni'ndeki girisler[0] <item:minecraft:cobblestone> olacak
+craftingTable.addShapeless("sekilsiz_degiskenfonksiyon_ornek_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], ornekSekilsizTarifFonksiyonDegiskeni);
 ```
 
-Shaped/Mirrored:
+Şekilli/Yansımalı:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
-    var counter = 0;
-    // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-    for row in inputs {
-        for recipeItem in row {
-            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                counter++;
+var ornekSekilliTarifFonksiyonDegiskeni as function(olaganCikis as IItemStack, girisler as IItemStack[][]) as IItemStack = (olaganCikis as IItemStack, girisler as IItemStack[][]) => {
+    var sayac = 0;
+    //Bütün <item:minecraft:clay_ball> eşyalarının isimlerinin "Elmas" olması ile ilgili kontrolü yap
+    for satir in girisler {
+        for tarifEsyasi in satir{
+            if (<item:minecraft:clay_ball>.matches(tarifEsyasi) && tarifEsyasi.displayName == "Elmas") {
+                //Eğer tarif eşyası <item:minecraft:clay_ball> ise ve adı "Elmas" ise sayac değişkeninin değerini arttır
+                sayac++;
             }
         }
     }
 
-    // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
-    if (counter == 8) {
-        if (inputs[1][1].displayName == "Special Diamond") {
-            // If <item:minecraft:diamond> has a display name of "Special Diamond"
-            // Return 2 <item:minecraft:diamond_block>
-            return usualOut * 2;
+    // Eğer "Elmas" ismiyle 8 tane <item:minecraft:clay_ball> eşyasına sahipsek
+    if (sayac == 8) {
+        if (girisler[1][1].displayName == "Özel Elmas") {
+            // Eğer <item:minecraft:diamond> eşyasının adı "Özel Elmas" ise
+            // 2 tane <item:minecraft:diamond_block> eşyasını döndür
+            return olaganCikis* 2;
         } else {
-            // Returns <item:minecraft:diamond_block>
-            return usualOut;
+            // <item:minecraft:diamond_block> eşyasını döndür
+            return olaganCikis;
         }
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
+    // Diğer türlü, "Elmas Blok ismiyle" <item:minecraft:clay> eşyasını döndür
     return <item:minecraft:clay>.setDisplayName("Diamond Block");
 };
 
-craftingTable.addShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("sekilli_fonksiyon_ornek_3", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], ornekSekilliTarifFonksiyonDegiskeni);
 
-craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("sekilli_fonksiyon_ornek_4", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], ornekSekilliTarifFonksiyonDegiskeni);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
-### Remove a Recipe by Name
+### İsme Göre Tarifi Kaldırma
 
-`craftingTable.removeByName(recipeName);`
+`craftingTable.removeByName(tarifAdi);`
 
 - `tarifAdi` &lt;string>
 
