@@ -117,51 +117,51 @@ craftingTable.addShapeless(sekilsiz_fonksiyon_ornek_1", <item:minecraft:diamond>
 `(olaganCikis as IItemStack, girisler as IItemStack[][]) => {};`
 
 - `olaganCikis` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Orijinal tarifde tanımlandığı gibi sıralanmış giriş dizisi. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Orijinal tarifde tanımlandığı gibi sıralanmış giriş dizisi. Bir giriş, satır ve sütun değeri girilerek de elde edilebilir (1. satır 2. sütundaki giriş elemanını almak için `inputs[0][1]` kullanılabilir).
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("sekilli_fonksiyon_ornek_1", <item:minecraft:diamond_block>, [
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-    ], (usualOut as IItemStack, inputs as IItemStack[][]) => {
-        var counter = 0;
-        // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-        for row in inputs {
-            for recipeItem in row {
-                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                    counter++;
+    ], (olaganCikis as IItemStack, girisler as IItemStack[][]) => {
+        var sayac = 0;
+        // Bütün <item:minecraft:clay_ball> eşyalarının isimlerinin "Elmas" olması ile ilgili kontrolleri yap
+        for satir in girisler{
+            for tarifEsyasi in satir{
+                if (<item:minecraft:clay_ball>.matches(tarifEsyasi ) && tarifEsyasi.displayName == "Elmas") {
+                    // Eğer tarif eşyası <item:minecraft:clay_ball> ise ve adı "Elmas" ise sayac değişkeninin değerini arttır
+                    sayac++;
                 }
             }
         }
 
-        // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
-        if (counter == 8) {
-            if (inputs[1][1].displayName == "Special Diamond") {
-                // If <item:minecraft:diamond> has a display name of "Special Diamond"
-                // Return 2 <item:minecraft:diamond_block>
-                return usualOut * 2;
+        // Eğer "Elmas" adıyla 8 tane <item:minecraft:clay_ball> eşyasına sahipsek
+        if (sayac == 8) {
+            if (girisler[1][1].displayName == "Özel Elmas") {
+                // Eğer <item:minecraft:diamond> eşyasının adı "Özel Elmas" ise
+                // 2 tane <item:minecraft:diamond_block> döndür
+                return olaganCikis * 2;
             } else {
-                // Returns <item:minecraft:diamond_block>
-                return usualOut;
+                // <item:minecraft:diamond_block> eşyasını döndür
+                return olaganCikis;
             }
         }
 
-        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-        return <item:minecraft:clay>.setDisplayName("Diamond Block");
+        // Diğer türlü, "Elmas Blok" ismiyle <item:minecraft:clay> eşyasını döndür
+        return <item:minecraft:clay>.setDisplayName("Elmas Blok");
     });
 ```
 
-### Advanced Usage
+### İleri Düzey Kullanım
 
-#### Functions as a Variable
+#### Değişken Olarak Kullanılabilen Fonksiyonlar
 
-Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
+Tarif fonksiyonlarını birden çok tarifde kullanabilmek için bir değişkene atayabilirsiniz.
 
-Shapeless:
+Şekilsiz:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
