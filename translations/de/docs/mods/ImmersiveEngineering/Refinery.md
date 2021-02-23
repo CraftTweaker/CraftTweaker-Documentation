@@ -8,7 +8,7 @@ Die Refinery ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) 
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the Refinery that will output 10Mb of Herbicide (Fluid) out of 10Mb of Water (Fluid) and 1Mb of Ethanol and 1000 IF.
+Das folgende Skript fügt der Refinery ein Rezept hinzu, das 10mb Herbicid (Fluid) ausgibt, wenn 10mb Wasser (Fluid) und 1mb Ethanol mit 1000 IF hinzugefügt wird.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.addRecipe(string recipePath, MCTagWithAmount<MCFluid> fluidInput1, MCTagWithAmount<MCFluid> fluidInput2, int energy, IFluidStack output)
@@ -18,7 +18,7 @@ The following script will add a recipe to the Refinery that will output 10Mb of 
 
 #### FluidStack-Rezepte entfernen
 
-The follow script will remove all recipes from the Refinery that output exactly 16Mb of Biodesiel.
+Das folgende Skript wird alle Rezepte aus der Refinery entfernen, die exakt 16mb Biodiesel ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(IFluidStack output)
@@ -28,7 +28,7 @@ The follow script will remove all recipes from the Refinery that output exactly 
 
 #### Flüssigkeitsrezepte entfernen
 
-The follow script will remove all recipes from the Refinery that output any amount of Biodesiel.
+Das folgende Skript wird alle Rezepte aus der Refinery entfernen, die eine beliebige Menge Biodiesel ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(MCFluid output)
