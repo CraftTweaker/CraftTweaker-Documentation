@@ -19,13 +19,13 @@ mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3
 
 ## Bir Tarifi Kaldırma
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
 `mods.atum.SpinningWheel.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
