@@ -60,46 +60,46 @@ Cambia los objetos utilizados para colocar el suelo en la maceta botánica.
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## Changing Soil Display
+## Cambiando la Visualización del Suelo
 
 `Soil.setDisplayState(id, displayState);`
 
 - `id` &lt;string> El ID del suelo. This is a namespaced id an must be in the valid `namespace:path` format.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> El estado del bloque a mostrar para el suelo en la maceta.
 
-Changes the block displayed for the soil.
+Cambia el bloque mostrado para el suelo.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## Changing Soil Categories
+## Cambiando las Categorías del Suelo
 
-Changes the categories associated with the soil. These are used to match crops to valid soils.
+Cambia las categorías asociadas con el suelo. Estos se utilizan para combinar cultivos con suelos válidos.
 
-### Add a Category to a Soil
+### Añadir una Categoría a un Suelo
 
 `Soil.addCategory(id, categoriesToAdd);`
 
 - `id` &lt;string> El ID del suelo. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
+- `categoriesToAdd` &lt;string[]> Una colección de categorías para asociar con el suelo.
 
 ```zenscript
 Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### Remove a Category From a Soil
+### Quitar una Categoría de un Suelo.
 
 `Soil.removeCategory(id, categoriesToRemove);`
 
 - `id` &lt;string> El ID del suelo. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
+- `categoriesToRemove` &lt;string[]> Una colección de categorías para desasociar con el suelo.
 
 ```zenscript
 Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### Clear All Categories From a Soil
+### Borrar Todas las Categorías de un Suelo
 
 `Soil.clearCategories(id);`
 
@@ -113,9 +113,9 @@ Soil.clearCategories("botanypots:soil/farmland");
 
 `Soil.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
+- Devuelve: &lt;string[]> Una colección de todos los IDs de suelo conocidos en el momento que esto es ejecutado.
 
-This will give you an array of all the known soil ids at the time.
+Esto te dará una colección de todos los IDs de suelo conocidos en ese momento.
 
 ```zenscript
 // Log all ids to the crafttweaker.log file
@@ -124,9 +124,9 @@ for soilId in Soil.getAllIds() {
 }
 ```
 
-## Removing All Soil
+## Eliminar Todos los Suelos
 
-This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Esto eliminará completamente todos los suelos actualmente registrados. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Soil.removeAll();
