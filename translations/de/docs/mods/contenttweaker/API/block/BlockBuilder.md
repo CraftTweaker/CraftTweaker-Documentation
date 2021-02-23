@@ -15,7 +15,7 @@ BlockBuilder implements the following interfaces. That means any method availabl
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructors
-Creates a new BlockBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) for that.
+Creates a new BlockBuilder. Merke, dass hier  _kein_ neuer Block dem Spiel hinzugefügt wird, du musst [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) dafür ausführen.
 ```zenscript
 new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.material.MCMaterial);
 new mods.contenttweaker.blockBuilder();
