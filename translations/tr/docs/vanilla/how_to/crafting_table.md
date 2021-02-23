@@ -235,7 +235,7 @@ craftingTable.addShaped("sekilli_fonksiyon_ornek_4", <item:minecraft:diamond_blo
 
 - `tarifAdi` &lt;string>
 
-Verilen adla eşleşen tarifi kaldırır.
+Girilen adla eşleşen tarifi kaldırır.
 
 ```zenscript
 craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
@@ -247,74 +247,74 @@ craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 
 - `cikis` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Remove Recipes by Mod ID
+### Mod ID Değerine Göre Tarif Kaldırma
 
 `craftingTable.removeByModid(modId);`
 
 - `modId` &lt;string>
 
-Removes all recipes added by the provided mod.
+Girilen modun sağladığı bütün eşyaların tariflerini kaldırır.
 
 ```zenscript
 craftingTable.removeByModid("minecraft");
 ```
 
-#### Exclude Recipes From Mod ID Removal
+#### Mod ID'ye Göre Kaldırılan Tariflerin Dahil Edilmemesi
 
-`craftingTable.removeByModid(modId, exclusionFilter);`
+`craftingTable.removeByModid(modId, dislamaFiltresi);`
 
 - `modId` &lt;string>
-- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
+- `dislamaFiltresi` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
+  - `isim` &lt;string>Şu anda kontrol edilen tarifin adı. Mod ID değeri dahil edilmeyecek.
 
-Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
+Girilen modun sağladığı bütün eşyaların tariflerini kaldırır. Belirlenen tarif adı için dislamaFiltresi true değerini döndürürse tarifler çıkarılır.
 
 ```zenscript
-craftingTable.removeByModid("minecraft", (name) => {
-    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
-    return name == "red_bed_from_white_bed";
+craftingTable.removeByModid("minecraft", (isim) => {
+    // isim değişkeninin değerinin "minecraft:red_bed_from_white_bed" olup olmaması ile ilgili kontrolü yap
+    return isim == "red_bed_from_white_bed";
 });
 ```
 
-Multiple recipes can also be excluded. One way this can be done is as follows:
+Birden fazla tarif de çıkarılabilir. Bunun yapmanın bir yolu aşağıdaki gibi olacaktır.
 
 ```zenscript
-// An array of recipe names as strings
-var minecraftExclusions as string[] = [
+// String olarak tarif adlarını tutan bir dizi
+var minecraftCikarilacaklar as string[] = [
     "acacia_slab",
     "red_bed_from_white_bed",
     "sugar_from_sugar_cane"
 ];
 
-craftingTable.removeByModid("minecraft", (name) => {
-    return name in minecraftExclusions;
+craftingTable.removeByModid("minecraft", (isim) => {
+    return isim in minecraftCikarilacaklar;
 });
 ```
 
-### Remove Recipes by Regex
+### Düzenli İfadelere(Regex) Göre Tarif Kaldırma
 
 `craftingTable.removeByRegex(regex);`
 
 - `regex` &lt;string>
 
-Removes all recipes that's name matches the regex string.
+İsmi regex kuralına uyan bütün tarifleri kaldırır.
 
 ```zenscript
-// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
+// "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet" gibi olan bütün tarifleri kaldırma
 craftingTable.removeByRegex("minecraft:.*_carpet");
 ```
 
-### Remove All Recipes
+### Bütün Tarifleri Kaldırma
 
 `craftingTable.removeAll();`
 
-Removes all crafting table recipes.
+Çalışma masasındaki bütün tarifleri kaldırma.
 
 ```zenscript
 craftingTable.removeAll();
