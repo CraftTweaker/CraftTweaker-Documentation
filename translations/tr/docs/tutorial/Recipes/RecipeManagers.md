@@ -1,4 +1,4 @@
-# Recipe Managers
+# Tarif Yöneticileri
 
 Recipe Managers are crafting systems (like the Crafting Table, Furnace or Camp Fire) that use the Vanilla Data Pack JSON system.  
 Most Recipe Managers have the same **removal** methods but different methods to add recipes.
