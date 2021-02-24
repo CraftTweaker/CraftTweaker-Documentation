@@ -1,4 +1,4 @@
-# Writing Your First Script
+# İlk Script Dosyanızı Yazın
 
 To get started writing your first script, you're going to want to navigate to the scripts folder.  
 If you're unsure where that is, take a look at the [What Are Scripts](/tutorial/IntroductionToScripting/WhatAreScripts) page.
@@ -8,7 +8,7 @@ Now that we're in the scripts folder, lets make a new file called `script.zs`.
 Open `script.zs` in your favourite text editor and put the following piece of code:
 
 ```zenscript
-println("Hello World!");
+println("Merhaba Dünya!");
 ```
 
 Now load up Minecraft, or use the `/reload` command and take a look at the `crafttweaker.log` file (If you're unsure of where this is, take a look at [The CraftTweaker Log File](/tutorial/IntroductionToScripting/TheCraftTweakerLogFile) page).
