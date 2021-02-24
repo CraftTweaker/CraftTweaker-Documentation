@@ -33,4 +33,4 @@ LoaderStage, script dosyasının oyunun yaşam döngüsüne *ne zaman* yüklendi
 
 Side ise script dosyasının hangi tarafta(`SERVER` veya `CLIENT`) çalıştığını söyler.
 
-the Type tells us the type of message, it makes navigating logs a breeze and tells you the severity of the message (Simply searching `ERROR` ins a log file can show you were all the errors are without having to sift through all the `INFO` or `DEBUG` outputs).
+Type ise bize mesajın tipini söyler. Bu logların okunmasını çocuk oyuncağı haline getirir. Ayrıca mesajın ciddiyetini de belirtir (örneğin tüm loglara bakmak yerine sadece `ERROR` loglarını ararsanız bu size sadece hatalarla ilgili logları getirecektir. Böylelikle `INFO` ve `DEBUG` loglarına bakmak zorunda kalmazsınız).
