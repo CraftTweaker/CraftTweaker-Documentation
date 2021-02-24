@@ -1,31 +1,31 @@
-# The CraftTweaker Log File
+# CraftTweaker Log Dosyası
 
-CraftTweaker uses it's own log file, this is mainly done to make debugging easier.
+CraftTweaker kendi log dosyasını kullanır. Bunun böyle olması hata ayıklamayı daha kolay bir hale getirmiştir.
 
-### Location
+### Konum
 
-Much like the `latest.log`, the `crafttweaker.log` can be found in the `logs` directory.
+`latest.log` dosyası gibi `crafttweaker.log` dosyası da `logs` klasörünün içerisinde bulunabilir.
 
-You can also use `/ct log` to open the log file in your system's default text editor.
+Ayrıa `/ct log` komutunu kullanarak log dosyasını varsayılan metin editörünüzle de açabilirsiniz.
 
 
 ### Format
-The `crafttweaker.log` file uses a specific format in it's output, that format is:
+`crafttweaker.log` dosyası çıktılarda kendi özel formatını kullanır. Bu format şu şekildedir:
 
 ```plaintext
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-An example of how this may look would be:
+Bunun nasıl görünebileceği ile ilgili bir örnek:
 
 ```plaintext
 [14:58:06.697][DONE][SERVER][INFO] Merhaba Dünya!
 ```
 
-The format is used for debugging purposes and the only time the format is not used is when printing command dumps, where it just prints the message so it is easier to copy and paste it.
+Bur format hata ayıklama amacıyla kullanılır. Bu formatın kullanılmadığı tek zaman komut dökümlerinin ekrana bastırıldığı zamandır. Ekrana mesaj bastırılacağı için mesajın kopyalanıp yapıştırılması daha kolay olacaktır.
 
 
-To explain it a bit more:
+Bunu biraz daha açıklamak gerekirse:
 
 The Time (`HH:MM:SS.ms`) is included mainly as a way to ensure that logs are fresh, but it also gives some insight on how long each task is taking.
 
