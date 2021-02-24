@@ -72,7 +72,7 @@ wheat.setDisplay(<blockstate:minecraft:gold_block>);
 wheat.setDisplay([<blockstate:minecraft:iron_block>, <blockstate:minecraft:iron_ore>]);
 ```
 
-## Tierra
+## Suelo
 Soils can be modified using the soil manager. To do this you will need to import the following into your script.
 
 ```zenscript
