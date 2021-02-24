@@ -65,7 +65,7 @@ Comentario de una línea alternativo: ` #Yo también `
 
 Comentario de más de una línea
 ```
-<code> /*  Soy </br> un comentario </br> multilinear!
+<code> /*  Soy <br/> un comentario <br/> multilinear!
  */
 ```
 
