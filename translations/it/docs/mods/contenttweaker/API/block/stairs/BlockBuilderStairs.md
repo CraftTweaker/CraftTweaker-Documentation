@@ -1,6 +1,6 @@
 # BlockBuilderStairs
 
-Un Costruttore del Blocco speciale che ti consente di creare delle scale. <p> Le scale non avranno una ma ben tre texture che dovrai fornire: Una per l'apice, una per il fondo ed una per i lati. By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`. Come la maggior parte delle cose qui, le immagini di esempio sono generate per voi però per impostazione predefinita.
+Un Costruttore del Blocco speciale che ti consente di creare delle scale. <p> Le scale non avranno una ma ben tre texture che dovrai fornire: Una per l'apice, una per il fondo ed una per i lati. Di default queste texture useranno il tuo nome del blocco come nome, con suffisso `_top`, `_bottom` o `_sides`. Come la maggior parte delle cose qui, le immagini di esempio sono generate per voi però per impostazione predefinita.
 
 This class was added by a mod with mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,7 +11,7 @@ mods.contenttweaker.block.stairs.BlockBuilderStairs
 ```
 
 ## Interfacce Implementate
-BlockBuilderStairs implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+BlockBuilderStairs implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
@@ -32,9 +32,9 @@ new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
 
 ### withBottomTexture
 
-Allows you to override the path of the texture that the bottom side should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
+Ti consente di sovrascrivere il percorso della texture che il lato in basso dovrebbe usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
@@ -42,15 +42,15 @@ Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/content
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter     | Type                                                                             | Description                                |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| Parameter     | Type                                                                             | Description                              |
+| ------------- | -------------------------------------------------------------------------------- | ---------------------------------------- |
+| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La texture da usare per il lato in basso |
 
 
 
-Allows you to override the path of the texture that the bottom side should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
+Ti consente di sovrascrivere il percorso della texture che il lato in basso dovrebbe usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
@@ -66,9 +66,9 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName a
 
 ### withSidesTexture
 
-Allows you to override the path of the texture that the sides should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
+Ti consente di sovrascrivere il percorso della texture che i lati dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
@@ -76,15 +76,15 @@ Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/content
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter    | Type                                                                             | Description                          |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| Parameter    | Type                                                                             | Description                    |
+| ------------ | -------------------------------------------------------------------------------- | ------------------------------ |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La texture da usare per i lati |
 
 
 
-Allows you to override the path of the texture that the sides should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
+Ti consente di sovrascrivere il percorso della texture che i lati dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
@@ -100,9 +100,9 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as
 
 ### withTopTexture
 
-Allows you to override the path of the texture that the top side should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
+Ti consente di sovrascrivere il percorso della texture che il lato superiore dovrebbe usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
@@ -111,15 +111,15 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as c
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parameter  | Type                                                                             | Description                             |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| Parameter  | Type                                                                             | Description                               |
+| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La texture da usare per il lato superiore |
 
 
 
-Allows you to override the path of the texture that the top side should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
+Ti consente di sovrascrivere il percorso della texture che il lato superiore dovrebbe usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
