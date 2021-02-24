@@ -1,6 +1,6 @@
 # IRayTraceResult
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
+When a player is looking or clicking at something, they fire a ray that goes until it hits what it needs to hit, or misses.  
 The result of such a hit is an IRayTraceResult object.
 
 ## Diese Klasse importieren
@@ -16,8 +16,15 @@ Be careful though, since all getters that do not return a bool can return `null`
 | name     | type                                   |
 | -------- | -------------------------------------- |
 | isMiss   | bool                                   |
-| isEntity | bool                                   |
 | isBlock  | bool                                   |
-| entity   | [IEntity](/Vanilla/Entities/IEntity/)  |
 | blockPos | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | sideHit  | [IFacing](/Vanilla/World/IFacing/)     |
+
+### Deprecated ZenGetters
+
+These getters won't actually return anything useful because there isn't a reliable way to raytrace blocks *and* entities.
+
+| name     | type                                  | return value   |
+| -------- | ------------------------------------- | -------------- |
+| isEntity | bool                                  | always `false` |
+| entity   | [IEntity](/Vanilla/Entities/IEntity/) | always `null`  |
