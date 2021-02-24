@@ -27,10 +27,10 @@ Bur format hata ayıklama amacıyla kullanılır. Bu formatın kullanılmadığ�
 
 Bunu biraz daha açıklamak gerekirse:
 
-The Time (`HH:MM:SS.ms`) is included mainly as a way to ensure that logs are fresh, but it also gives some insight on how long each task is taking.
+Zaman (`HH:MM:SS.ms`) logların ne kadar yeni olup olmadığını görmek için bulunmaktadır. Ayrıca her bir işlemin ne kadar sürdüğünü de gösterir.
 
-The LoaderStage tells us *when* the script is loaded in the game life cycle (while the game is still starting up, or when joining a world for example).
+LoaderStage, script dosyasının oyunun yaşam döngüsüne *ne zaman* yüklendiğini söyler (örneğin oyun başlarken veya bir dünyaya giriş yaparken).
 
-The Side (`SERVER` or `CLIENT`) tells us which logical thread the script is running on.
+Side ise script dosyasının hangi tarafta(`SERVER` veya `CLIENT`) çalıştığını söyler.
 
 the Type tells us the type of message, it makes navigating logs a breeze and tells you the severity of the message (Simply searching `ERROR` ins a log file can show you were all the errors are without having to sift through all the `INFO` or `DEBUG` outputs).
