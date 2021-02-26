@@ -110,7 +110,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isSilent                    |                     | boolean                                      |
 | isSneaking                  |                     | boolean                                      |
 | isSprinting                 |                     | boolean                                      |
-| position                    | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/)        |
+| position                    | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/)       |
 | rotationYaw                 |                     | float                                        |
 | rotationPitch               |                     | float                                        |
 | motionX                     |                     | double                                       |
@@ -119,7 +119,8 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                        |                     | double                                       |
 | posY                        |                     | double                                       |
 | posZ                        |                     | double                                       |
-| nbt                         | setNBT()            | [IData](/Vanilla/Data/IData/)                  |
+| nbt                         | setNBT(data)        | [IData](/Vanilla/Data/IData/)                |
+| team                        | setTeam(team)       | [ITeam](/Vanilla/Game/ITeam/)                |
 
 
 ## More ZenMethods
