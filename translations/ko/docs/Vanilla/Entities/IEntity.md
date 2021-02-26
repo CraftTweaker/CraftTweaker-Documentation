@@ -117,7 +117,8 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                |                     | double                                 |
 | posY                |                     | double                                 |
 | posZ                |                     | double                                 |
-| nbt                 | setNBT()            | [IData](/Vanilla/Data/IData/)          |
+| nbt                 | setNBT(data)        | [IData](/Vanilla/Data/IData/)          |
+| team                | setTeam(team)       | [ITeam](/Vanilla/Game/ITeam/)          |
 
 ## More ZenMethods
 
