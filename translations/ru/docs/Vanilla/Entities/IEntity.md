@@ -117,7 +117,8 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | posX                |                     | double                                 |
 | posY                |                     | double                                 |
 | posZ                |                     | double                                 |
-| nbt                 | setNBT()            | [IData](/Vanilla/Data/IData/)          |
+| nbt                 | setNBT(data)        | [IData](/Vanilla/Data/IData/)          |
+| team                | setTeam(team)       | [ITeam](/Vanilla/Game/ITeam/)          |
 
 ## Другие методы
 
