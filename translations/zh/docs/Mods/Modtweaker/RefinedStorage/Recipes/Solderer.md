@@ -1,14 +1,16 @@
-# Solderer
+# Solderer (DEPRECATED)
 
-Solderer包用于添加/删除精致存储的配方
+NOTE: Solderer is deprecated and is removed in RefinedStorage 1.6. The class does not do anything in ModTweaker and exists purely as backwards compatibility.
+
+The Solderer package is used for adding or removing recipes to/from the Refined Storage Solderer.
 
 ## 导入
 
-你可以通过`mods.refinedstorage.Solderer`调用这个包
+You can call the Solderer package using `mods.refinedstorage.Solderer`
 
 ## 添加配方
 
-数组长度**必须**为3！ 使用 `null`来表示空物品
+The Rows array **must** have a length of three! Use `null` if you need empty stacks.
 
 ```zenscript
 //mods.refinedstorage.Solderer.addRecipe(IItemStack output, int time, IItemStack[] rows);
