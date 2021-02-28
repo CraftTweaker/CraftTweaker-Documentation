@@ -32,13 +32,13 @@ mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
 
 ## Mod verstecken
 
-Das folgende Skript versteckt alle Elemente, die von "minecraft" hinzugefügt wurden, außer Stein aus der Itemliste. Es werden noch einige Gegenstände übrig bleiben, diese sind hart codiert und können nicht entfernt.
+The following script will hide all the Items added by "minecraft", except for Stone from the item list.
 
 ```zenscript
 // mods.jei.JEI.hideItem(string modid, crafttweaker.api.recipeFilter exclude)
 
 mods.jei.JEI.hideMod("minecraft", (name as string) => {
-    return name != "stone";
+    return name == "stone";
 });
 ```
 
