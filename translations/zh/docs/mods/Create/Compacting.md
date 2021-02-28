@@ -27,7 +27,7 @@ The following script will add recipes that will:
 ```zenscript
 // <recipetype:create:compacting>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
-<recipetype:create:compacting>.addRecipe("compacting_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>]. [], 200);
+<recipetype:create:compacting>.addRecipe("compacting_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>], [], 200);
 <recipetype:create:compacting>.addRecipe("compacting_test_2", "heated", <item:minecraft:brick>, [<item:minecraft:diamond>, <item:minecraft:dirt>], [<fluid:minecraft:lava>], 1000);
 <recipetype:create:compacting>.addRecipe("compacting_test_3", "superheated", <item:minecraft:paper>, [<item:minecraft:glass>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
 ```
