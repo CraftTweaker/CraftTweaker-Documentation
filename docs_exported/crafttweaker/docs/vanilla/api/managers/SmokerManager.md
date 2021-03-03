@@ -42,7 +42,7 @@ Return Type: void
 
 ```zenscript
 SmokerManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
+smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
 | Parameter | Type | Description |
