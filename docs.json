@@ -29,6 +29,10 @@
       }
     },
     "Mods": {
+      "Applied Energistics 2": {
+        "Grinder": "mods/AppliedEnergistics2/Grinder.md",
+        "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
+      },
       "Aquaculture 2": {
         "Fish Data": "mods/Aquaculture2/FishData.md"
       },
