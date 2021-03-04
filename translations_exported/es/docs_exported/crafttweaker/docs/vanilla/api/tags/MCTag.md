@@ -55,6 +55,20 @@ MCTag.add(items as T[]) as void
 | items     | T[]  | The items to add. Can be one or more items. |
 
 
+Adds the given tag to this tag. Creates the tag if it does not exist.
+
+Return Type: void
+
+```zenscript
+MCTag.add(tag as MCTag<T>) as void
+<tag:items:forge:gems>.add(<tag:items:forge:rods>);
+```
+
+| Parameter | Type                                                  | Description     |
+| --------- | ----------------------------------------------------- | --------------- |
+| tag       | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | The tag to add. |
+
+
 ### asTagWithAmount
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
@@ -135,6 +149,17 @@ MCTag.remove(items as T[]) as void
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | items     | T[]  | No Description Provided |
+
+
+Return Type: void
+
+```zenscript
+MCTag.remove(tag as MCTag<T>) as void
+```
+
+| Parameter | Type                                                  | Description             |
+| --------- | ----------------------------------------------------- | ----------------------- |
+| tag       | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | No Description Provided |
 
 
 ### withAmount
