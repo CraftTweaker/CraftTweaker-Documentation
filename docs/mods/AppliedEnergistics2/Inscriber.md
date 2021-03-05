@@ -44,7 +44,7 @@ The following script will add four recipes to the Inscriber that will do the fol
 
 #### Remove Recipes
 
-The follow script will remove all Inscriber recipes that output a Logic Processor.
+The following script will remove all Inscriber recipes that output a Logic Processor.
 
 ```zenscript
 // <recipetype:appliedenergistics2:inscriber>.removeRecipe(IItemStack output)

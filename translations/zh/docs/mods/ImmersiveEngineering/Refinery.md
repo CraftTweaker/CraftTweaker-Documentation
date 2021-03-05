@@ -18,7 +18,7 @@ The following script will add a recipe to the Refinery that will output 10Mb of 
 
 #### Remove FluidStack Recipes
 
-The follow script will remove all recipes from the Refinery that output exactly 16Mb of Biodesiel.
+The following script will remove all recipes from the Refinery that output exactly 16Mb of Biodesiel.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(IFluidStack output)
@@ -28,7 +28,7 @@ The follow script will remove all recipes from the Refinery that output exactly 
 
 #### Remove Fluid Recipes
 
-The follow script will remove all recipes from the Refinery that output any amount of Biodesiel.
+The following script will remove all recipes from the Refinery that output any amount of Biodesiel.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(MCFluid output)

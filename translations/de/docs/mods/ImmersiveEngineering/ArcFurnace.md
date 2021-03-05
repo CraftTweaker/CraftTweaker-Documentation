@@ -20,7 +20,7 @@ The following script will add a recipe that will output Bedrock and a Gold Nugge
 
 Removes any recipes where at least one of the output matches the output provided.
 
-The follow script will remove two recipes from the Arc Furnace.
+The following script will remove two recipes from the Arc Furnace.
 
 The first recipe that is removed is the recipe for Slag, since `checkSlag` is `true`, it will remove all recipes that output Slag. The second recipe that is removed is the recipe for three Iron Ingots.
 

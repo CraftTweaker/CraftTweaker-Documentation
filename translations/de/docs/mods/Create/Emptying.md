@@ -28,7 +28,7 @@ Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
 
 #### Remove Recipes for Fluids
 
-The follow script will remove all Compacting recipes that output Honey (Fluid)
+The following script will remove all Compacting recipes that output Honey (Fluid)
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IFluidStack output)

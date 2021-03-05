@@ -22,7 +22,7 @@ The following script will add two recipes to the Grinder that will do the follow
 
 #### Remove Recipes
 
-The follow script will remove all Grinder recipes that output Flint.
+The following script will remove all Grinder recipes that output Flint.
 
 ```zenscript
 // <recipetype:appliedenergistics2:grinder>.removeRecipe(IItemStack output)

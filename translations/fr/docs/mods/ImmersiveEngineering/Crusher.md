@@ -18,7 +18,7 @@ The following script will add a recipe to the Crusher that will take TNT, 500 IF
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Crusher where either of the outputs (primary or secondary) is Iron Dust.
+The following script will remove all recipes from the Crusher where either of the outputs (primary or secondary) is Iron Dust.
 
 ```zenscript
 // <recipetype:immersiveengineering:crusher>.removeRecipe(IIngredient output)

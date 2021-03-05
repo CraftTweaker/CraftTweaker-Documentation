@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and an Apple 4
 
 #### Remove Recipes
 
-The follow script will remove all Milling recipes that output Limesand.
+The following script will remove all Milling recipes that output Limesand.
 
 ```zenscript
 // <recipetype:create:milling>.removeRecipe(IItemStack output)

@@ -6,7 +6,7 @@ The Runic Altar is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManag
 
 #### 添加配方
 
-The follow script will add a recipe to the Runic Altar that will use 200 mana and give a Diamond when a piece of Dirt and an Apple are put in the Runic Altar (You will still need to complete the recipe by giving the Altar a piece of Living Rock).
+The following script will add a recipe to the Runic Altar that will use 200 mana and give a Diamond when a piece of Dirt and an Apple are put in the Runic Altar (You will still need to complete the recipe by giving the Altar a piece of Living Rock).
 
 ```zenscript
 // <recipetype:botania:runic_altar>.addRecipe(String name, IItemStack output, int mana, IIngredient... inputs)
@@ -16,7 +16,7 @@ The follow script will add a recipe to the Runic Altar that will use 200 mana an
 
 #### Remove Recipes
 
-The follow script will remove all Runic Altar recipes that output a Rune of Wrath
+The following script will remove all Runic Altar recipes that output a Rune of Wrath
 
 ```zenscript
 // <recipetype:botania:runic_altar>.removeRecipe(IItemStack output);

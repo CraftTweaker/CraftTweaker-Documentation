@@ -36,7 +36,7 @@ The following script will add recipes that will:
 
 #### Remove Recipes for Items
 
-The follow script will remove all Mixing recipes that output Andesite Alloy.
+The following script will remove all Mixing recipes that output Andesite Alloy.
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IItemStack output)
@@ -46,7 +46,7 @@ The follow script will remove all Mixing recipes that output Andesite Alloy.
 
 #### Remove Recipes for Fluids
 
-The follow script will remove all Compacting recipes that output Builders Tea (Fluid)
+The following script will remove all Compacting recipes that output Builders Tea (Fluid)
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IFluidStack output)

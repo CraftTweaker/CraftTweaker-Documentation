@@ -55,7 +55,7 @@ Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokolade
 
 #### Remove Recipes for Fluids
 
-The follow script will remove all Compacting recipes that output Water (Fluid)
+The following script will remove all Compacting recipes that output Water (Fluid)
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IFluidStack output)

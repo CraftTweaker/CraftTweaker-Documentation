@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The follow script will remove all Cutting recipes that output a Stripped Jungle Wood.
+The following script will remove all Cutting recipes that output a Stripped Jungle Wood.
 
 ```zenscript
 // <recipetype:create:cutting>.removeRecipe(IItemStack output)

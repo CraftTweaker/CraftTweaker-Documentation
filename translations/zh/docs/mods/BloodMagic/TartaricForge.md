@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Tartaric Forge / Hell Forge that output a Soul Axe
+The following script will remove all recipes from the Tartaric Forge / Hell Forge that output a Soul Axe
 
 ```zenscript
 // <recipetype:bloodmagic:soulforge>.removeRecipe(IItemStack output);

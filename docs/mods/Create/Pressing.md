@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and an Apple 4
 
 #### Remove Recipes
 
-The follow script will remove all Pressing recipes that output Paper.
+The following script will remove all Pressing recipes that output Paper.
 
 ```zenscript
 // <recipetype:create:pressing>.removeRecipe(IItemStack output)

@@ -18,7 +18,7 @@ The following script will add a recipe to the Bottling Machine that will use a S
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Bottling Machine that output a Wet Sponge.
+The following script will remove all recipes from the Bottling Machine that output a Wet Sponge.
 
 ```zenscript
 // <recipetype:immersiveengineering:bottling_machine>.removeRecipe(IItemStack output)

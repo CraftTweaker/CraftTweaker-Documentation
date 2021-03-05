@@ -18,7 +18,7 @@ The following script will add a mix that will output White Wool 50% of the time,
 
 #### Remove Recipes
 
-The follow script will remove a Mix with the name `"immersiveengineering:mineral/ancient_debris"`.
+The following script will remove a Mix with the name `"immersiveengineering:mineral/ancient_debris"`.
 
 ```zenscript
 // <recipetype:immersiveengineering:mineral_mix>.removeByName(string name)

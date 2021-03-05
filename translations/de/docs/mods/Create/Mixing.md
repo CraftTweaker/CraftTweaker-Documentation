@@ -46,7 +46,7 @@ Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen
 
 #### Remove Recipes for Fluids
 
-The follow script will remove all Compacting recipes that output Builders Tea (Fluid)
+The following script will remove all Compacting recipes that output Builders Tea (Fluid)
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IFluidStack output)

@@ -42,7 +42,7 @@ The default values that Blood Magic themselves use are as follows, but you can u
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alchemy Array that output a Divination Sigil.
+The following script will remove all recipes from the Alchemy Array that output a Divination Sigil.
 
 ```zenscript
 // <recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
