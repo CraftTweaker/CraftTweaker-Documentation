@@ -21,8 +21,8 @@ ArcaneWorld.createArenaRitual(String name, String displayName, String entityID, 
 // Creates a ritual that changes the weather - can be "clear", "rain", or "thunder"
 ArcaneWorld.createRitualWeather(String name, String displayName, String weatherType, IIngredient... inputs);
 
-// Creates a ritual that changes the time
-ArcaneWorld.createRitualTime(String name, String displayName, int timeToSet, IIngredient... inputs);
+// Creates a ritual that changes the time - can be negative to rewind time
+ArcaneWorld.createRitualTime(String name, String displayName, int timeChange, IIngredient... inputs);
 
 // Creates a ritual that outputs an item, similar to a crafting recipe
 ArcaneWorld.createRitualCreateItem(String name, String displayName, IItemStack result, IIngredient... inputs);
