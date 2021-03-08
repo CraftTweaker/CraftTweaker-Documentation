@@ -25,7 +25,7 @@ Bu fonksiyon, çalışma masasına [şekilsiz](#recipe-types) bir tarif ekler. [
 
 [Şekilsiz](#recipe-types) tariflerde en fazla 9 eşya olabilir. 4 eşya veya daha az giriş eşyasını da envanterdeki 2x2 boyutundaki tabloda hazırlayabilirsiniz.
 
-Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. Bunu [IItemStack çarpma operatörünü](/vanilla/api/items/IItemStack/#mul) kullanarak yapabilirsiniz.
+Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 craftingTable.addShapeless("sekilsiz_ornek_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
@@ -54,7 +54,7 @@ Bu fonksiyon, çalışma masasına şekilli (veya yansımalı) bir tarif ekler. 
 
 Hem [şekilli](#recipe-types) hem de [yansımalı](#recipe-types) tarifler 2x2'lik tabloda(envanter) ve çalışma masasında yapılabilir.
 
-Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. Bunu [IItemStack çarpma operatörünü](/vanilla/api/items/IItemStack/#mul) kullanarak yapabilirsiniz.
+Çalışma masası tariflerinde çıkış ürünü birden fazla olabilir. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 // Şekilli bir tarif ekleme
