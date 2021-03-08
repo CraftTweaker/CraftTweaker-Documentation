@@ -16,6 +16,9 @@
         "Brackets": {
           "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
         },
+        "Brewing": {
+          "Brewing": "vanilla/api/brewing/Brewing.md"
+        },
         "Commands": {
           "Custom": {
             "CustomCommands": "vanilla/api/commands/custom/CustomCommands.md",
