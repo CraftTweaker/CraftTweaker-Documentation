@@ -43,3 +43,24 @@ For a more immersive "follow along" type tutorial, you can use the following syn
 
 When rendered on the actual site, this turns into:
 ![questions](.github/question.png)
+
+### Groups
+
+To group a section of a page together, allowing for it to be collapsed, you can use the following syntax:
+
+```
+:::group{name=groupName}
+Content
+:::
+```
+or
+```
+:::group{name="Group Name"}
+Content
+:::
+```
+
+`name` is the name of the group.
+
+When rendered on the actual site, this turns into:
+![groups](.github/group.png)
