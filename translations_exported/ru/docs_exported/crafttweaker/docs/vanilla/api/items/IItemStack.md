@@ -287,7 +287,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.withTag(tag as IData) as IItemStack
-<item:minecraft:dirt>.withTag({Display: {lore: ["{ \"text\": \"Hello\" }"]}});
+<item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
 | Параметр | Тип                              | Description     |
