@@ -104,6 +104,24 @@ BracketHandlers.getEffect("minecraft:haste");
 | tokens   | string | The effect's resource location |
 
 
+### getEnchantment
+
+Gets the enchantment based on registry name. Throws an error if it can't find the enchantment.
+
+Returns: The found enchantment Return Type: [MCEnchantment](/vanilla/api/enchantment/MCEnchantment)
+
+```zenscript
+<enchantment:minecraft:riptide>
+
+BracketHandlers.getEnchantment(tokens as string) as MCEnchantment
+BracketHandlers.getEnchantment("minecraft:riptide");
+```
+
+| Параметр | Тип    | Description                     |
+| -------- | ------ | ------------------------------- |
+| tokens   | string | The enchantment's registry name |
+
+
 ### getEntityClassification
 
 Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
@@ -126,12 +144,12 @@ BracketHandlers.getEntityClassification("monster");
 
 Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
 
-Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
+Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)?
 
 ```zenscript
 <entitytype:minecraft:pig>
 
-BracketHandlers.getEntityType(tokens as string) as MCEntityType
+BracketHandlers.getEntityType(tokens as string) as MCEntityType?
 BracketHandlers.getEntityType("minecraft:pig");
 ```
 
@@ -193,12 +211,12 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 
 Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
 
-Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
+Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)?
 
 ```zenscript
 <profession:minecraft:armorer>
 
-BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
+BracketHandlers.getProfession(tokens as string) as MCVillagerProfession?
 BracketHandlers.getProfession("minecraft:armorer");
 ```
 
