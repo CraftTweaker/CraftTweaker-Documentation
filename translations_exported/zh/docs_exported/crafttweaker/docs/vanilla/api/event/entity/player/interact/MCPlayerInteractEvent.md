@@ -31,10 +31,10 @@ myMCPlayerInteractEvent.getBlockPos();
 
 The face involved in this interaction. For all non-block interactions, this will return null
 
-Return Type: [Direction](/vanilla/api/util/Direction)
+Return Type: [Direction](/vanilla/api/util/Direction)?
 
 ```zenscript
-MCPlayerInteractEvent.getFace() as Direction
+MCPlayerInteractEvent.getFace() as Direction?
 myMCPlayerInteractEvent.getFace();
 ```
 
@@ -55,6 +55,6 @@ myMCPlayerInteractEvent.getItemStack();
 | 名称       | 类型                                          | 可获得  | 可设置   |
 | -------- | ------------------------------------------- | ---- | ----- |
 | blockPos | [BlockPos](/vanilla/api/util/BlockPos)      | true | false |
-| face     | [Direction](/vanilla/api/util/Direction)    | true | false |
+| face     | [Direction](/vanilla/api/util/Direction)?   | true | false |
 | 物品应用     | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 
