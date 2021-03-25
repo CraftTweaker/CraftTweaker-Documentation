@@ -20,7 +20,7 @@ StatePropertiesPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanill
 
 ## Methods
 
-### withExactProperty
+:::group{name=withExactProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a boolean value that should be matched exactly.
 
@@ -38,6 +38,10 @@ StatePropertiesPredicate.withExactProperty(name as string, value as boolean) as 
 | value    | boolean | The boolean value the property must have. |
 
 
+:::
+
+:::group{name=withExactProperty}
+
 Adds the property <code>name</code> to the list of properties that should be matched, along with an integer value that should be matched exactly.
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing a string with an integer is allowed).
@@ -53,6 +57,10 @@ StatePropertiesPredicate.withExactProperty(name as string, value as int) as Stat
 | name     | string | The name of the property to check.        |
 | value    | int    | The integer value the property must have. |
 
+
+:::
+
+:::group{name=withExactProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a string value that should be matched exactly.
 
@@ -70,7 +78,9 @@ StatePropertiesPredicate.withExactProperty(name as string, value as string) as S
 | value    | string | The string value the property must have. |
 
 
-### withLowerBoundedProperty
+:::
+
+:::group{name=withLowerBoundedProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a lower limit on the integer values the property can assume, set to <code>min</code>.
 
@@ -88,7 +98,9 @@ StatePropertiesPredicate.withLowerBoundedProperty(name as string, min as int) as
 | min      | int    | The minimum integer value the property must have. |
 
 
-### withRangedProperty
+:::
+
+:::group{name=withRangedProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a range that goes from <code>min</code> to <code>max</code> in which the integer value should be.
 
@@ -106,6 +118,10 @@ StatePropertiesPredicate.withRangedProperty(name as string, min as int, max as i
 | min      | int    | The minimum integer value the property must have. |
 | max      | int    | The maximum integer value the property must have. |
 
+
+:::
+
+:::group{name=withRangedProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a range that goes from <code>min</code> to <code>max</code> in which the string value should be.
 
@@ -128,7 +144,9 @@ StatePropertiesPredicate.withRangedProperty(name as string, min as string?, max 
 | max      | string? | The maximum string value the property must have, or null to indicate no maximum value. |
 
 
-### withUpperBoundedProperty
+:::
+
+:::group{name=withUpperBoundedProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with an upper limit on the integer values the property can assume, set to <code>max</code>.
 
@@ -145,5 +163,7 @@ StatePropertiesPredicate.withUpperBoundedProperty(name as string, max as int) as
 | name     | string | The name of the property to check.                |
 | max      | int    | The maximum integer value the property must have. |
 
+
+:::
 
 
