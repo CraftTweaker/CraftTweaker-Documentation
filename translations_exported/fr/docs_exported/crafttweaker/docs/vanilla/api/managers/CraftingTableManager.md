@@ -17,7 +17,7 @@ CraftingTableManager implements the following interfaces. That means all methods
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addShaped
+:::
+
+:::group{name=addShaped}
 
 Adds a shaped recipe to the crafting table
 
@@ -52,7 +54,9 @@ craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[][]                | array of an array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                          | false    |              |
 | recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) for more advanced conditions | true     |              |
 
-### addShapedMirrored
+:::
+
+:::group{name=addShapedMirrored}
 
 Adds a mirrored shaped recipe to the crafting table
 
@@ -70,7 +74,9 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:mi
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[][]                | array of an array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                          | false    |              |
 | recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) for more advanced conditions | true     |              |
 
-### addShapeless
+:::
+
+:::group{name=addShapeless}
 
 Adds a shapeless recipe to the crafting table
 
@@ -88,7 +94,9 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[]                | array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                                    | false    |              |
 | recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | optional [RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) for more advanced conditions | true     |              |
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -97,7 +105,9 @@ CraftingTableManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 craftingTable.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -110,7 +120,9 @@ CraftingTableManager.getRecipeByName(name as string) as WrapperRecipe
 | name      | string | No Description Provided |
 
 
-### Obtenir des recettes par sortie
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -123,7 +135,9 @@ CraftingTableManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wr
 | output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Supprimer toutes les recettes de ce registre.
 
@@ -134,7 +148,9 @@ CraftingTableManager.removeAll() as void
 craftingTable.removeAll();
 ```
 
-### Retirer par Modid
+:::
+
+:::group{name=removeByModid}
 
 Supprimer la recette basée sur la modification du nom du Registre.
 
@@ -149,6 +165,10 @@ craftingTable.removeByModid("minecraft");
 | --------- | ------ | --------------------------------- |
 | modid     | string | modifier les recettes à supprimer |
 
+
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -165,7 +185,9 @@ craftingTable.removeByModid("minecraft", (name as string) => {return name == "or
 | exclure   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | des recettes pour ne plus être enlevées. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Supprimer la recette basée sur le nom du Registre.
 
@@ -181,7 +203,9 @@ craftingTable.removeByName("minecraft:furnace");
 | name      | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Supprimer la recette basée sur la regex.
 
@@ -197,7 +221,9 @@ craftingTable.removeByRegex("\\d_\\d");
 | regex     | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -212,5 +238,7 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 | --------- | ------------------------------------------- | -------------------- |
 | output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
+
+:::
 
 
