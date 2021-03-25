@@ -21,7 +21,7 @@ Inverted implements the following interfaces. That means all methods defined in 
 
 ## Methods
 
-### withCondition
+:::group{name=withCondition}
 
 Sets the inverted condition to the one created with the given [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
@@ -40,6 +40,10 @@ Inverted.withCondition(builder as LootConditionBuilder) as Inverted
 | ビルダー:     | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | The builder to create a single [ILootCondition](/vanilla/api/loot/conditions/ILootCondition). |
 
 
+:::
+
+:::group{name=withCondition}
+
 Sets the loot condition to invert.
 
  This parameter is <strong>required</strong>.
@@ -55,6 +59,10 @@ Inverted.withCondition(condition as ILootCondition) as Inverted
 | condition | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) | The condition to invert. |
 
 
+:::
+
+:::group{name=withCondition}
+
 Creates and builds the sub-condition that will then be inverted.
 
 Return Type: [Inverted](/vanilla/api/loot/conditions/vanilla/Inverted)
@@ -68,5 +76,7 @@ Inverted.withCondition<T : ILootConditionTypeBuilder>(lender as Consumer<T>) as 
 | lender    | Consumer&lt;T&gt;                                                       | A consumer that allows configuration of the created condition. |
 | T         | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself.                        |
 
+
+:::
 
 
