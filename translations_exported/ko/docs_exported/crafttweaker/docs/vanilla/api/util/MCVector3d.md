@@ -31,7 +31,7 @@ new MCVector3d(x as double, y as double, z as double) as MCVector3d
 
 ## Methods
 
-### cross
+:::group{name=cross}
 
 Performs the cross product between this vector and <code>other</code>.
 
@@ -46,7 +46,9 @@ MCVector3d.cross(other as MCVector3d) as MCVector3d
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
 
-### distanceTo
+:::
+
+:::group{name=distanceTo}
 
 Computes the Euclidean distance between this vector and the other vector.
 
@@ -61,7 +63,9 @@ MCVector3d.distanceTo(other as MCVector3d) as double
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
 
-### dot
+:::
+
+:::group{name=dot}
 
 Performs a dot product between this vector and <code>other</code>.
 
@@ -76,7 +80,9 @@ MCVector3d.dot(other as MCVector3d) as double
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
 
-### getCoordinate
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this vector that corresponds to the given Direction.Axis.
 
@@ -90,6 +96,10 @@ MCVector3d.getCoordinate(axis as DirectionAxis) as double
 | --------- | ------------------------------------------------ | ----------- |
 | axis      | [DirectionAxis](/vanilla/api/util/DirectionAxis) | The axis.   |
 
+
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this vector identified by the specified index.
 
@@ -106,7 +116,9 @@ MCVector3d.getCoordinate(index as int) as double
 | index     | int  | The coordinate index. |
 
 
-### minus
+:::
+
+:::group{name=minus}
 
 Subtracts <code>other</code> from this vector.
 
@@ -120,6 +132,10 @@ MCVector3d.minus(other as MCVector3d) as MCVector3d
 | --------- | ------------------------------------------ | ----------------- |
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=minus}
 
 Subtracts the vector <code>(x, y, z)</code> from this vector.
 
@@ -136,7 +152,9 @@ MCVector3d.minus(x as double, y as double, z as double) as MCVector3d
 | z         | double | The z component of the other vector. |
 
 
-### normalize
+:::
+
+:::group{name=normalize}
 
 Normalizes the current vector, making it of unit length.
 
@@ -147,7 +165,9 @@ MCVector3d.normalize() as MCVector3d
 myMCVector3d.normalize();
 ```
 
-### plus
+:::
+
+:::group{name=plus}
 
 Adds this vector to the <code>other</code> vector, computing their sum member by member.
 
@@ -161,6 +181,10 @@ MCVector3d.plus(other as MCVector3d) as MCVector3d
 | --------- | ------------------------------------------ | ----------------- |
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=plus}
 
 Adds this vector to the vector <code>(x, y, z)</code>, computing their sum member by member.
 
@@ -177,7 +201,9 @@ MCVector3d.plus(x as double, y as double, z as double) as MCVector3d
 | z         | double | The z component of the other vector. |
 
 
-### scale
+:::
+
+:::group{name=scale}
 
 Scales the current vector by the given <code>factor</code>.
 
@@ -192,7 +218,9 @@ MCVector3d.scale(factor as double) as MCVector3d
 | factor    | double | The factor. |
 
 
-### squareDistanceTo
+:::
+
+:::group{name=squareDistanceTo}
 
 Computes the squared Euclidean distance between this vector and the other vector.
 
@@ -209,7 +237,9 @@ MCVector3d.squareDistanceTo(other as MCVector3d) as double
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
 
-### subtractReverse
+:::
+
+:::group{name=subtractReverse}
 
 Subtracts this vector from the <code>other</code> vector and returns the result.
 
@@ -224,7 +254,9 @@ MCVector3d.subtractReverse(other as MCVector3d) as MCVector3d
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The vector from which this vector should be subtracted from. |
 
 
-### times
+:::
+
+:::group{name=times}
 
 Multiplies the two vectors member by member, computing what is known as the Hadamard product.
 
@@ -238,6 +270,10 @@ MCVector3d.times(other as MCVector3d) as MCVector3d
 | --------- | ------------------------------------------ | ----------------- |
 | other     | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=times}
 
 Multiplies this vector with the vector <code>(x, y, z)</code>, computing what is known as the Hadamard product.
 
@@ -253,6 +289,8 @@ MCVector3d.times(x as double, y as double, z as double) as MCVector3d
 | y         | double | The y component of the other vector. |
 | z         | double | The z component of the other vector. |
 
+
+:::
 
 
 ## Properties
