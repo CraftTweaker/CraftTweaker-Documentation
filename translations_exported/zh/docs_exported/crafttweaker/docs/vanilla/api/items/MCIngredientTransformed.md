@@ -22,6 +22,32 @@ MCIngredientTransformed implements the following interfaces. That means all meth
 
 ## 方法
 
+### addShiftTooltip
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
+```
+
+| 参数          | 类型                                                 | 描述                      | 可选    | DefaultValue |
+| ----------- | -------------------------------------------------- | ----------------------- | ----- | ------------ |
+| 内容          | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |              |
+| showMessage | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true  |              |
+
+### addTooltip
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
+```
+
+| 参数 | 类型                                                 | 描述                      |
+| -- | -------------------------------------------------- | ----------------------- |
+| 内容 | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
 ### anyDamage
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -30,6 +56,31 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
 myMCIngredientTransformed.anyDamage();
 ```
+
+### clearTooltip
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.clearTooltip() as void
+myMCIngredientTransformed.clearTooltip();
+```
+
+### contains #容器
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| 参数         | 类型                                                | 描述                      |
+| ---------- | ------------------------------------------------- | ----------------------- |
+| ingredient | [材料（IIngredient）](/vanilla/api/items/IIngredient) | The ingredient to check |
+
 
 ### matches
 
@@ -59,6 +110,34 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | 忽略伤害  | boolean                                     | No Description Provided |
 
 
+### modifyTooltip
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.modifyTooltip(function as ITooltipFunction) as void
+```
+
+| 参数       | 类型                                                      | 描述                      |
+| -------- | ------------------------------------------------------- | ----------------------- |
+| function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
+
+### only
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| 参数        | 类型                                                                                                                               | 描述                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
 ### onlyDamaged
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -81,8 +160,32 @@ MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>)
 | uid      | string                                                                   | No Description Provided | false |              |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
 
+### removeTooltip
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.removeTooltip(regex as string) as void
+```
+
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| regex | string | No Description Provided |
+
+
 
 ## 运算符
+
+### CONTAINS
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myMCIngredientTransformed
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myMCIngredientTransformed
+```
+
+
 
 ### OR
 
@@ -95,9 +198,10 @@ myMCIngredientTransformed | other as IIngredient
 
 ## 参数
 
-| 名称    | 类型                                                                                       | 可获得  | 可设置   |
-| ----- | ---------------------------------------------------------------------------------------- | ---- | ----- |
-| 基本属性  | T                                                                                        | true | false |
-| items | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true | false |
-| 变压器   | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false |
+| 名称       | 类型                                                                                       | 可获得   | 可设置   |
+| -------- | ---------------------------------------------------------------------------------------- | ----- | ----- |
+| 基本属性     | T                                                                                        | true  | false |
+| burnTime | void                                                                                     | false | true  |
+| items    | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true  | false |
+| 变压器      | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true  | false |
 
