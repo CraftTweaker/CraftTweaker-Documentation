@@ -12,7 +12,7 @@ import crafttweaker.util.NameUtils;
 
 ## Methods
 
-### fixing
+:::group{name=fixing}
 
 Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
@@ -26,6 +26,10 @@ NameUtils.fixing(input as string) as string
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------ |
 | input     | string | The string that should be fixed to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation)-compatible format. |
 
+
+:::
+
+:::group{name=fixing}
 
 Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
@@ -42,7 +46,9 @@ NameUtils.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.Lis
  element is the fixed string, and the second is a list of strings containing explanations for all the identified mistakes. |
 
 
-### fromFixedName
+:::
+
+:::group{name=fromFixedName}
 
 Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that may be present in the string.
 
@@ -56,6 +62,10 @@ NameUtils.fromFixedName(input as string) as MCResourceLocation
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------- |
 | input     | string | The string that should be fixed and converted to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation). |
 
+
+:::
+
+:::group{name=fromFixedName}
 
 Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that may be present in the string.
 
@@ -71,4 +81,6 @@ NameUtils.fromFixedName(input as string, mistakeHandler as BiConsumer<string,std
 | mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first                    |
  element is the fixed string, and the second is a list of strings containing explanations for all the identified mistakes. |
 
+
+:::
 
