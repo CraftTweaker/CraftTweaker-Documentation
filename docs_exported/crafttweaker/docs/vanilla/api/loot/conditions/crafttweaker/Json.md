@@ -48,6 +48,10 @@ Json.create(type as MCResourceLocation, json as IData) as ILootCondition
 | json | [IData](/vanilla/api/data/IData) | The JSON data, according to the given constraints. |
 
 
+:::
+
+:::group{name=create}
+
 Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
 
  The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this

@@ -38,6 +38,10 @@ MCTextComponent.createTranslationTextComponent(translationKey as string) as MCTe
 | translationKey | string | No Description Provided |
 
 
+:::
+
+:::group{name=createTranslationTextComponent}
+
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
