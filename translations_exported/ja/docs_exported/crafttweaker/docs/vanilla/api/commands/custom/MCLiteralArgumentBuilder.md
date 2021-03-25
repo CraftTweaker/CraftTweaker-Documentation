@@ -20,7 +20,7 @@ MCLiteralArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custo
 
 ## Methods
 
-### build
+:::group{name=build}
 
 Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
@@ -29,7 +29,9 @@ MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
 myMCLiteralArgumentBuilder.build();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +44,9 @@ MCLiteralArgumentBuilder.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### executes
+:::
+
+:::group{name=executes}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -55,7 +59,9 @@ MCLiteralArgumentBuilder.executes(command as MCCommand) as MCLiteralArgumentBuil
 | command   | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
-### fork
+:::
+
+:::group{name=fork}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -69,7 +75,9 @@ MCLiteralArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectMod
 | modifier  | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 
 
-### 前方へ
+:::
+
+:::group{name=forward}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -84,7 +92,9 @@ MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirect
 | fork      | boolean型                                                              | No Description Provided |
 
 
-### getArguments
+:::
+
+:::group{name=getArguments}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -93,7 +103,9 @@ MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
 myMCLiteralArgumentBuilder.getArguments();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
@@ -102,7 +114,9 @@ MCLiteralArgumentBuilder.getCommand() as MCCommand
 myMCLiteralArgumentBuilder.getCommand();
 ```
 
-### getLiteral
+:::
+
+:::group{name=getLiteral}
 
 Return Type: string
 
@@ -111,7 +125,9 @@ MCLiteralArgumentBuilder.getLiteral() as string
 myMCLiteralArgumentBuilder.getLiteral();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -120,7 +136,9 @@ MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
 myMCLiteralArgumentBuilder.getRedirect();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
@@ -129,7 +147,9 @@ MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
 myMCLiteralArgumentBuilder.getRedirectModifier();
 ```
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -138,7 +158,9 @@ MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
 myMCLiteralArgumentBuilder.getRequirement();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -147,7 +169,9 @@ MCLiteralArgumentBuilder.hashCode() as int
 myMCLiteralArgumentBuilder.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
@@ -156,7 +180,9 @@ MCLiteralArgumentBuilder.isFork() as boolean
 myMCLiteralArgumentBuilder.isFork();
 ```
 
-### リダイレクト
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -168,6 +194,10 @@ MCLiteralArgumentBuilder.redirect(target as MCCommandNode) as MCLiteralArgumentB
 | --------- | ----------------------------------------------------------- | ----------------------- |
 | target    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
+
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -181,7 +211,9 @@ MCLiteralArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleR
 | modifier  | [MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
 
 
-### 必須
+:::
+
+:::group{name=requires}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -194,7 +226,9 @@ MCLiteralArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as 
 | 要件        | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
-### そしたら...
+:::
+
+:::group{name=then}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -207,6 +241,10 @@ MCLiteralArgumentBuilder.then(argument as MCArgumentBuilder) as MCLiteralArgumen
 | 引数        | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
 
+:::
+
+:::group{name=then}
+
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
@@ -218,7 +256,9 @@ MCLiteralArgumentBuilder.then(argument as MCCommandNode) as MCLiteralArgumentBui
 | 引数        | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -227,15 +267,17 @@ MCLiteralArgumentBuilder.toString() as string
 myMCLiteralArgumentBuilder.toString();
 ```
 
+:::
+
 
 ## 演算子
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCLiteralArgumentBuilder == o as Object
 ```
 
-
+:::
 
 
