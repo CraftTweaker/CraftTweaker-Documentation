@@ -2,6 +2,10 @@
 
 This event is the superclass of all other PlayerInteract events. Generally, you want to use the subtypes of this event.
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
