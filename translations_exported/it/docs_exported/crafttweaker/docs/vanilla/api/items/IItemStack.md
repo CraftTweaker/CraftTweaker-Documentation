@@ -105,6 +105,22 @@ IItemStack.clearTooltip() as void
 <item:minecraft:dirt>.clearTooltip();
 ```
 
+### contains
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IItemStack.contains(ingredient as IIngredient) as boolean
+<item:minecraft:dirt>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Parameter  | Type                                          | Description             |
+| ---------- | --------------------------------------------- | ----------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
 ### copy
 
 Creates a copy
@@ -198,6 +214,21 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.mutable() as IItemStack
 <item:minecraft:dirt>.mutable();
 ```
+
+### only
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IItemStack.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type                                                                                                                             | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
 
 ### onlyDamaged
 
@@ -297,6 +328,17 @@ IItemStack.withTag(tag as IData) as IItemStack
 
 
 ## Operators
+
+### CONTAINS
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIItemStack
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <item:minecraft:dirt>
+```
+
+
 
 ### MOD
 
