@@ -10,7 +10,7 @@ import crafttweaker.api.util.Random;
 
 ## Methods
 
-### getRandomUUID
+:::group{name=getRandomUUID}
 
 Return Type: string
 
@@ -19,7 +19,9 @@ Random.getRandomUUID() as string
 myRandom.getRandomUUID();
 ```
 
-### nextBoolean
+:::
+
+:::group{name=nextBoolean}
 
 Return Type: boolean
 
@@ -28,7 +30,9 @@ Random.nextBoolean() as boolean
 myRandom.nextBoolean();
 ```
 
-### nextDouble
+:::
+
+:::group{name=nextDouble}
 
 Returns the next pseudorandom, uniformly distributed double value between 0.0 and 1.0 from this random number generator's sequence.
 
@@ -38,6 +42,10 @@ Return Type: double
 Random.nextDouble() as double
 myRandom.nextDouble();
 ```
+
+:::
+
+:::group{name=nextDouble}
 
 Returns the next pseudorandom double. Its range is [min, max]
 
@@ -53,7 +61,9 @@ Random.nextDouble(min as double, max as double) as double
 | max       | double | No Description Provided |
 
 
-### nextFloat
+:::
+
+:::group{name=nextFloat}
 
 Returns the next pseudorandom, uniformly distributed float value between 0.0f and 1.0f from this random number generator's sequence.
 
@@ -63,6 +73,10 @@ Return Type: float
 Random.nextFloat() as float
 myRandom.nextFloat();
 ```
+
+:::
+
+:::group{name=nextFloat}
 
 Returns the next pseudorandom float. Its range is [min, max]
 
@@ -78,7 +92,9 @@ Random.nextFloat(min as float, max as float) as float
 | max       | float | No Description Provided |
 
 
-### nextInt
+:::
+
+:::group{name=nextInt}
 
 Returns the next pseudorandom, uniformly distributed int value from this random number generator's sequence.
 
@@ -88,6 +104,10 @@ Return Type: int
 Random.nextInt() as int
 myRandom.nextInt();
 ```
+
+:::
+
+:::group{name=nextInt}
 
 Returns the next pseudorandom, uniformly distributed int value between zero (inclusive) and bound (exclusive) from this random number generator's sequence
 
@@ -102,6 +122,10 @@ Random.nextInt(bound as int) as int
 | bound     | int  | the upper bound (exclusive). Must be positive. |
 
 
+:::
+
+:::group{name=nextInt}
+
 Returns the next pseudorandom int. Its range is [min, max]
 
 Return Type: int
@@ -115,5 +139,7 @@ Random.nextInt(min as int, max as int) as int
 | min       | int  | No Description Provided |
 | max       | int  | No Description Provided |
 
+
+:::
 
 
