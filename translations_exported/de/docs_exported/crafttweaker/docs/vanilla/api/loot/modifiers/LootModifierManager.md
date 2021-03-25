@@ -18,7 +18,7 @@ import crafttweaker.api.loot.modifiers.LootModifierManager;
 
 ## Methoden
 
-### getAll
+:::group{name=getAll}
 
 Gets a list containing all currently registered loot modifiers.
 
@@ -29,7 +29,9 @@ LootModifierManager.getAll() as stdlib.List<ILootModifier>
 myLootModifierManager.getAll();
 ```
 
-### getAllNames
+:::
+
+:::group{name=getAllNames}
 
 Gets a list of all the names of the currently registered loot modifiers.
 
@@ -40,7 +42,9 @@ LootModifierManager.getAllNames() as stdlib.List<string>
 myLootModifierManager.getAllNames();
 ```
 
-### getByName
+:::
+
+:::group{name=getByName}
 
 Gets the loot modifier with the given name, if it exists.
 
@@ -57,7 +61,9 @@ LootModifierManager.getByName(name as string) as ILootModifier
 | name      | string | The name of the loot modifier. |
 
 
-### registrieren
+:::
+
+:::group{name=register}
 
 Registers a new global loot modifier with the given name.
 
@@ -81,6 +87,10 @@ LootModifierManager.register(name as string, builder as LootConditionBuilder, mo
 [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | A [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) representing a list of conditions that should be merged together via 'AND'. | | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
+:::
+
+:::group{name=register}
+
 Registers a new global loot modifier with the given name.
 
  The loot modifier will be run only when all conditions pass, effectively as if they were merged with an 'AND' condition. An empty condition array (or a <code>null</code> one) indicates a lack of conditions, meaning that the loot modifier will be run on every loot table.
@@ -101,7 +111,9 @@ LootModifierManager.register(name as string, conditions as ILootCondition?[], mo
 [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)?[] | A set of conditions that restrict the context in which the loot modifier applies. It can be empty or <code>null</code>, which indicates a lack of conditions. The conditions are all merged together with an 'AND' connector. | | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
-### registerUnconditional
+:::
+
+:::group{name=registerUnconditional}
 
 Registers a new global loot modifier with the given name without providing any conditions.
 
@@ -121,7 +133,9 @@ LootModifierManager.registerUnconditional(name as string, modifier as ILootModif
 [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Removes all loot modifiers that have been registered up to this point.
 
@@ -132,7 +146,9 @@ LootModifierManager.removeAll() as void
 myLootModifierManager.removeAll();
 ```
 
-### removeByModId
+:::
+
+:::group{name=removeByModId}
 
 Removes all loot modifiers that have been registered by the mod with the given ID.
 
@@ -147,7 +163,9 @@ LootModifierManager.removeByModId(modId as string) as void
 | modId     | string | The mod ID.  |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Removes the loot modifier with the given name.
 
@@ -164,7 +182,9 @@ LootModifierManager.removeByName(name as string) as void
 | name      | string | The name of the loot modifier to remove. |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Removes all loot modifiers whose name matches the given regular expression.
 
@@ -180,5 +200,7 @@ LootModifierManager.removeByRegex(regex as string) as void
 | --------- | ------ | -------------------------------- |
 | regex     | string | The regular expression to match. |
 
+
+:::
 
 
