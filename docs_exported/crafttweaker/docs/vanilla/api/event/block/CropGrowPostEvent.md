@@ -1,4 +1,4 @@
-# CropGrowPostEvent
+# MCCropGrowPostEvent
 
 
 
@@ -10,7 +10,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.event.block.CropGrowPostEvent;
+import crafttweaker.api.event.block.MCCropGrowPostEvent;
 ```
 
 
@@ -21,8 +21,8 @@ import crafttweaker.api.event.block.CropGrowPostEvent;
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-CropGrowPostEvent.getOriginState() as MCBlockState
-myCropGrowPostEvent.getOriginState();
+MCCropGrowPostEvent.getOriginState() as MCBlockState
+myMCCropGrowPostEvent.getOriginState();
 ```
 
 :::
