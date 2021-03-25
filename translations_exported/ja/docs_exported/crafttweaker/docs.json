@@ -77,19 +77,54 @@
         "Entity": {
           "MCEntity": "vanilla/api/entity/MCEntity.md",
           "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
+          "MCItemEntity": "vanilla/api/entity/MCItemEntity.md",
           "MCLivingEntity": "vanilla/api/entity/MCLivingEntity.md",
           "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
+          "MCAnvilUpdateEvent": "vanilla/api/event/MCAnvilUpdateEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
+          "Block": {
+            "CropGrowPostEvent": "vanilla/api/event/block/CropGrowPostEvent.md",
+            "CropGrowPreEvent": "vanilla/api/event/block/CropGrowPreEvent.md",
+            "MCBlockBreakEvent": "vanilla/api/event/block/MCBlockBreakEvent.md",
+            "MCBlockEvent": "vanilla/api/event/block/MCBlockEvent.md",
+            "MCBlockNeighborNotifyEvent": "vanilla/api/event/block/MCBlockNeighborNotifyEvent.md",
+            "MCBlockPlaceEvent": "vanilla/api/event/block/MCBlockPlaceEvent.md",
+            "MCBlockToolInteractEvent": "vanilla/api/event/block/MCBlockToolInteractEvent.md",
+            "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
+            "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
+          },
           "Entity": {
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
+            "MCEntityJoinWorldEvent": "vanilla/api/event/entity/MCEntityJoinWorldEvent.md",
+            "MCEntityStruckByLightningEvent": "vanilla/api/event/entity/MCEntityStruckByLightningEvent.md",
+            "MCEntityTravelToDimensionEvent": "vanilla/api/event/entity/MCEntityTravelToDimensionEvent.md",
+            "MCItemEvent": "vanilla/api/event/entity/MCItemEvent.md",
             "MCLivingEvent": "vanilla/api/event/entity/MCLivingEvent.md",
+            "Item": {
+              "MCItemExpireEvent": "vanilla/api/event/entity/item/MCItemExpireEvent.md",
+              "MCItemTossEvent": "vanilla/api/event/entity/item/MCItemTossEvent.md"
+            },
             "Living": {
+              "MCEnderTeleportEvent": "vanilla/api/event/entity/living/MCEnderTeleportEvent.md",
+              "MCLivingAttackEvent": "vanilla/api/event/entity/living/MCLivingAttackEvent.md",
+              "LivingConversionPostEvent": "vanilla/api/event/entity/living/MCLivingConversionPostEvent.md",
+              "MCLivingConversionPreEvent": "vanilla/api/event/entity/living/MCLivingConversionPreEvent.md",
               "MCLivingDeathEvent": "vanilla/api/event/entity/living/MCLivingDeathEvent.md",
+              "MCLivingEntityUseItemEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemEvent.md",
+              "MCLivingEntityUseItemFinishEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemFinishEvent.md",
+              "MCLivingEntityUseItemStartEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemStartEvent.md",
+              "MCLivingEntityUseItemStopEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemStopEvent.md",
+              "MCLivingEntityUseItemTickEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemTickEvent.md",
+              "MCLivingEquipmentChangeEvent": "vanilla/api/event/entity/living/MCLivingEquipmentChangeEvent.md",
+              "MCLivingExperienceDropEvent": "vanilla/api/event/entity/living/MCLivingExperienceDropEvent.md",
+              "MCLivingFallEvent": "vanilla/api/event/entity/living/MCLivingFallEvent.md",
               "MCLivingHealEvent": "vanilla/api/event/entity/living/MCLivingHealEvent.md",
-              "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md"
+              "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md",
+              "MCLivingKnockBackEvent": "vanilla/api/event/entity/living/MCLivingKnockBackEvent.md",
+              "MCLivingSpawnEvent": "vanilla/api/event/entity/living/MCLivingSpawnEvent.md"
             },
             "Player": {
               "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
@@ -115,9 +150,15 @@
               }
             }
           },
+          "Living": {
+            "MCLivingDamageEvent": "vanilla/api/event/living/MCLivingDamageEvent.md",
+            "LivingDestroyBlockEvent": "vanilla/api/event/living/MCLivingDestroyBlockEvent.md",
+            "MCLivingDropsEvent": "vanilla/api/event/living/MCLivingDropsEvent.md"
+          },
           "Tick": {
             "MCPlayerTickEvent": "vanilla/api/event/tick/MCPlayerTickEvent.md",
-            "MCTickEvent": "vanilla/api/event/tick/MCTickEvent.md"
+            "MCTickEvent": "vanilla/api/event/tick/MCTickEvent.md",
+            "MCWorldTickEvent": "vanilla/api/event/tick/MCWorldTickEvent.md"
           }
         },
         "Fluid": {
@@ -128,7 +169,8 @@
           "MCFood": "vanilla/api/food/MCFood.md"
         },
         "Game": {
-          "MCGame": "vanilla/api/game/MCGame.md"
+          "MCGame": "vanilla/api/game/MCGame.md",
+          "MCServer": "vanilla/api/game/MCServer.md"
         },
         "Item": {
           "Ingredient": "vanilla/api/item/Ingredient.md",
@@ -143,6 +185,7 @@
           "IIngredientWithAmount": "vanilla/api/items/IIngredientWithAmount.md",
           "IItemStack": "vanilla/api/items/IItemStack.md",
           "ITooltipFunction": "vanilla/api/items/ITooltipFunction.md",
+          "IngredientAny": "vanilla/api/items/IngredientAny.md",
           "IngredientList": "vanilla/api/items/IngredientList.md",
           "MCIngredientConditioned": "vanilla/api/items/MCIngredientConditioned.md",
           "MCIngredientTransformed": "vanilla/api/items/MCIngredientTransformed.md",
@@ -273,11 +316,15 @@
         "Util": {
           "BlockPos": "vanilla/api/util/BlockPos.md",
           "DamageSource": "vanilla/api/util/DamageSource.md",
+          "DamageSourceHelper": "vanilla/api/util/DamageSourceHelper.md",
           "Direction": "vanilla/api/util/Direction.md",
           "DirectionAxis": "vanilla/api/util/DirectionAxis.md",
+          "MCEquipmentSlotType": "vanilla/api/util/MCEquipmentSlotType.md",
+          "MCHand": "vanilla/api/util/MCHand.md",
           "MCResourceLocation": "vanilla/api/util/MCResourceLocation.md",
           "MCVector3d": "vanilla/api/util/MCVector3d.md",
           "NameUtils": "vanilla/api/util/NameUtils.md",
+          "Random": "vanilla/api/util/Random.md",
           "Text": {
             "MCStyle": "vanilla/api/util/text/MCStyle.md",
             "MCTextComponent": "vanilla/api/util/text/MCTextComponent.md",
