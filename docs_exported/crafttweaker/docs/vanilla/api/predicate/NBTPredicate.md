@@ -22,7 +22,7 @@ NBTPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/predic
 
 ## Methods
 
-### withData
+:::group{name=withData}
 
 Sets the NBT data that should be matched by this predicate.
 
@@ -41,5 +41,7 @@ NBTPredicate.withData(data as IData) as NBTPredicate
 |-----------|------|-------------|
 | data | [IData](/vanilla/api/data/IData) | A [MapData](/vanilla/api/data/MapData) representing the NBT to match. |
 
+
+:::
 
 

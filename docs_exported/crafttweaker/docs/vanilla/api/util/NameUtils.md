@@ -12,7 +12,7 @@ import crafttweaker.util.NameUtils;
 
 ## Methods
 
-### fixing
+:::group{name=fixing}
 
 Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a
  well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
@@ -47,7 +47,9 @@ NameUtils.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.Lis
                        for all the identified mistakes. |
 
 
-### fromFixedName
+:::
+
+:::group{name=fromFixedName}
 
 Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that
  may be present in the string.
@@ -81,4 +83,6 @@ NameUtils.fromFixedName(input as string, mistakeHandler as BiConsumer<string,std
                        element is the fixed string, and the second is a list of strings containing explanations
                        for all the identified mistakes. |
 
+
+:::
 

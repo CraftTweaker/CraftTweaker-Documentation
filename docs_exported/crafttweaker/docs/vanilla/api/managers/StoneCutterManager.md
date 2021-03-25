@@ -17,7 +17,7 @@ StoneCutterManager implements the following interfaces. That means all methods d
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe to the stone cutter
 
@@ -52,7 +54,9 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraf
 | input | [IIngredient](/vanilla/api/items/IIngredient) | input [IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -61,7 +65,9 @@ StoneCutterManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 stoneCutter.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -74,7 +80,9 @@ StoneCutterManager.getRecipeByName(name as string) as WrapperRecipe
 | name | string | No Description Provided |
 
 
-### getRecipesByOutput
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -87,7 +95,9 @@ StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wrap
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
@@ -98,7 +108,9 @@ StoneCutterManager.removeAll() as void
 stoneCutter.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
@@ -129,7 +141,9 @@ stoneCutter.removeByModid("minecraft", (name as string) => {return name == "oran
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
@@ -145,7 +159,9 @@ stoneCutter.removeByName("minecraft:furnace");
 | name | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
@@ -161,7 +177,9 @@ stoneCutter.removeByRegex("\\d_\\d");
 | regex | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -176,5 +194,7 @@ stoneCutter.removeRecipe(<item:minecraft:glass>);
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
+
+:::
 
 

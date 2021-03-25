@@ -24,7 +24,7 @@ MCFarmlandTrampleEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEv
 
 ## Methods
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
@@ -33,7 +33,9 @@ MCFarmlandTrampleEvent.getEntity() as MCEntity
 myMCFarmlandTrampleEvent.getEntity();
 ```
 
-### getFallDistance
+:::
+
+:::group{name=getFallDistance}
 
 Return Type: float
 
@@ -41,6 +43,8 @@ Return Type: float
 MCFarmlandTrampleEvent.getFallDistance() as float
 myMCFarmlandTrampleEvent.getFallDistance();
 ```
+
+:::
 
 
 ## Properties

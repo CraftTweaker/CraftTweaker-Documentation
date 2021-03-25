@@ -15,7 +15,7 @@ import crafttweaker.api.loot.modifiers.CommonLootModifiers;
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds the given [IItemStack](/vanilla/api/items/IItemStack) to the drops.
 
@@ -31,7 +31,9 @@ CommonLootModifiers.add(stack as IItemStack) as ILootModifier
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add |
 
 
-### addAll
+:::
+
+:::group{name=addAll}
 
 Adds all the given [IItemStack](/vanilla/api/items/IItemStack) to the drops.
 
@@ -47,7 +49,9 @@ CommonLootModifiers.addAll(stacks as IItemStack[]) as ILootModifier
 | stacks | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add |
 
 
-### clearLoot
+:::
+
+:::group{name=clearLoot}
 
 Clears the entire drop list.
 
@@ -59,7 +63,9 @@ CommonLootModifiers.clearLoot() as ILootModifier
 CommonLootModifiers.clearLoot();
 ```
 
-### remove
+:::
+
+:::group{name=remove}
 
 Removes every instance of the targeted [IIngredient](/vanilla/api/items/IIngredient) from the drops.
 
@@ -75,7 +81,9 @@ CommonLootModifiers.remove(target as IIngredient) as ILootModifier
 | target | [IIngredient](/vanilla/api/items/IIngredient) | The [IIngredient](/vanilla/api/items/IIngredient) to remove. |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Removes every instance of all the targeted [IIngredient](/vanilla/api/items/IIngredient)s from the drops.
 
@@ -91,7 +99,9 @@ CommonLootModifiers.removeAll(targets as IIngredient[]) as ILootModifier
 | targets | [IIngredient](/vanilla/api/items/IIngredient)[] | The [IIngredient](/vanilla/api/items/IIngredient)s to remove. |
 
 
-### replaceAllWith
+:::
+
+:::group{name=replaceAllWith}
 
 Replaces every instance of the targeted [IIngredient](/vanilla/api/items/IIngredient)s with their corresponding replacement
  [IItemStack](/vanilla/api/items/IItemStack).
@@ -108,7 +118,9 @@ CommonLootModifiers.replaceAllWith(replacementMap as IItemStack[IIngredient]) as
 | replacementMap | [IItemStack](/vanilla/api/items/IItemStack)[[IIngredient](/vanilla/api/items/IIngredient)] | A map of key-value pairs dictating the target to replace along with their replacement. |
 
 
-### replaceWith
+:::
+
+:::group{name=replaceWith}
 
 Replaces every instance of the targeted [IIngredient](/vanilla/api/items/IIngredient) with the replacement [IItemStack](/vanilla/api/items/IItemStack).
 
@@ -124,4 +136,6 @@ CommonLootModifiers.replaceWith(target as IIngredient, replacement as IItemStack
 | target | [IIngredient](/vanilla/api/items/IIngredient) | The target to replace. |
 | replacement | [IItemStack](/vanilla/api/items/IItemStack) | The replacement to use. |
 
+
+:::
 

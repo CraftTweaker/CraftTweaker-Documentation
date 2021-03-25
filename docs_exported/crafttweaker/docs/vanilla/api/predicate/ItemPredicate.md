@@ -24,7 +24,7 @@ ItemPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/predi
 
 ## Methods
 
-### matching
+:::group{name=matching}
 
 Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStack) as closely as possible.
 
@@ -92,7 +92,9 @@ ItemPredicate.matching(stack as IItemStack, matchDamage as boolean, matchCount a
 | matchNbt | boolean | Whether to consider the NBT data or not when matching the stack. |
 
 
-### withDataPredicate
+:::
+
+:::group{name=withDataPredicate}
 
 Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that will be matched against the item's NBT data.
 
@@ -110,7 +112,9 @@ ItemPredicate.withDataPredicate(builder as Consumer<NBTPredicate>) as ItemPredic
 | builder | Consumer&lt;[NBTPredicate](/vanilla/api/predicate/NBTPredicate)&gt; | A consumer that will be used to configure the [NBTPredicate](/vanilla/api/predicate/NBTPredicate). |
 
 
-### withEnchantmentPredicate
+:::
+
+:::group{name=withEnchantmentPredicate}
 
 Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) to the list of predicates to match against the item's
  enchantments.
@@ -151,7 +155,9 @@ ItemPredicate.withEnchantmentPredicate(enchantment as MCEnchantment, builder as 
 | builder | Consumer&lt;[EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)&gt; | A consumer that will be used to configure the [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate). |
 
 
-### withExactAmount
+:::
+
+:::group{name=withExactAmount}
 
 Sets the amount to exactly match the given <code>value</code>.
 
@@ -168,7 +174,9 @@ ItemPredicate.withExactAmount(value as int) as ItemPredicate
 | value | int | The exact value the amount should be. |
 
 
-### withExactDamage
+:::
+
+:::group{name=withExactDamage}
 
 Sets the damage to exactly match the given <code>value</code>.
 
@@ -185,7 +193,9 @@ ItemPredicate.withExactDamage(value as int) as ItemPredicate
 | value | int | The exact value the damage should be. |
 
 
-### withItem
+:::
+
+:::group{name=withItem}
 
 Sets the [MCItemDefinition](/vanilla/api/item/MCItemDefinition) that this predicate should match.
 
@@ -217,7 +227,9 @@ ItemPredicate.withItem(itemStack as IItemStack) as ItemPredicate
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | The stack containing the item that the predicate should match. |
 
 
-### withMaximumAmount
+:::
+
+:::group{name=withMaximumAmount}
 
 Sets the maximum amount of items to <code>max</code>.
 
@@ -238,7 +250,9 @@ ItemPredicate.withMaximumAmount(max as int) as ItemPredicate
 | max | int | The maximum value the amount should be. |
 
 
-### withMaximumDamage
+:::
+
+:::group{name=withMaximumDamage}
 
 Sets the maximum damage of the item to <code>max</code>.
 
@@ -259,7 +273,9 @@ ItemPredicate.withMaximumDamage(max as int) as ItemPredicate
 | max | int | The maximum value the damage should be. |
 
 
-### withMinimumAmount
+:::
+
+:::group{name=withMinimumAmount}
 
 Sets the minimum amount of items to <code>min</code>.
 
@@ -280,7 +296,9 @@ ItemPredicate.withMinimumAmount(min as int) as ItemPredicate
 | min | int | The minimum value the amount should be. |
 
 
-### withMinimumDamage
+:::
+
+:::group{name=withMinimumDamage}
 
 Sets the minimum damage of the item to <code>min</code>.
 
@@ -301,7 +319,9 @@ ItemPredicate.withMinimumDamage(min as int) as ItemPredicate
 | min | int | The minimum value the damage should be. |
 
 
-### withPotion
+:::
+
+:::group{name=withPotion}
 
 Sets the potion effect that should be present on the target item.
 
@@ -316,7 +336,9 @@ ItemPredicate.withPotion(potion as MCPotion) as ItemPredicate
 | potion | [MCPotion](/vanilla/api/potions/MCPotion) | The potion effect. |
 
 
-### withRangedAmount
+:::
+
+:::group{name=withRangedAmount}
 
 Sets both the minimum and maximum amount of items to <code>min</code> and <code>max</code> respectively.
 
@@ -337,7 +359,9 @@ ItemPredicate.withRangedAmount(min as int, max as int) as ItemPredicate
 | max | int | The maximum value the amount should be. |
 
 
-### withRangedDamage
+:::
+
+:::group{name=withRangedDamage}
 
 Sets both the minimum and maximum damage of the item to <code>min</code> and <code>max</code> respectively.
 
@@ -358,7 +382,9 @@ ItemPredicate.withRangedDamage(min as int, max as int) as ItemPredicate
 | max | int | The maximum value the damage should be. |
 
 
-### withStoredEnchantmentPredicate
+:::
+
+:::group{name=withStoredEnchantmentPredicate}
 
 Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) to the list of predicates to match against the item's
  stored enchantments.
@@ -399,7 +425,9 @@ ItemPredicate.withStoredEnchantmentPredicate(enchantment as MCEnchantment, build
 | builder | Consumer&lt;[EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)&gt; | A consumer that will be used to configure the [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate). |
 
 
-### withTag
+:::
+
+:::group{name=withTag}
 
 Sets the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; that this predicate should use for matching.
 
@@ -417,5 +445,7 @@ ItemPredicate.withTag(tag as MCTag<MCItemDefinition>) as ItemPredicate
 |-----------|------|-------------|
 | tag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt; | The tag the predicate should use for matching. |
 
+
+:::
 
 

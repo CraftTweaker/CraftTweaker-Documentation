@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCCommandDispatcher;
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,7 +29,9 @@ MCCommandDispatcher.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### execute
+:::
+
+:::group{name=execute}
 
 Return Type: int
 
@@ -54,7 +56,9 @@ MCCommandDispatcher.execute(input as string, source as MCCommandSource) as int
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### findAmbiguities
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -67,7 +71,9 @@ MCCommandDispatcher.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | consumer | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### findNode
+:::
+
+:::group{name=findNode}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -80,7 +86,9 @@ MCCommandDispatcher.findNode(path as Collection<string>) as MCCommandNode
 | path | Collection&lt;string&gt; | No Description Provided |
 
 
-### getAllUsage
+:::
+
+:::group{name=getAllUsage}
 
 Return Type: string[]
 
@@ -95,7 +103,9 @@ MCCommandDispatcher.getAllUsage(node as MCCommandNode, source as MCCommandSource
 | restricted | boolean | No Description Provided |
 
 
-### getCompletionSuggestions
+:::
+
+:::group{name=getCompletionSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -120,7 +130,9 @@ MCCommandDispatcher.getCompletionSuggestions(parse as MCParseResults, cursor as 
 | cursor | int | No Description Provided |
 
 
-### getPath
+:::
+
+:::group{name=getPath}
 
 Return Type: Collection&lt;string&gt;
 
@@ -133,7 +145,9 @@ MCCommandDispatcher.getPath(target as MCCommandNode) as Collection<string>
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### getRoot
+:::
+
+:::group{name=getRoot}
 
 Return Type: [MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
 
@@ -142,7 +156,9 @@ MCCommandDispatcher.getRoot() as MCRootCommandNode
 myMCCommandDispatcher.getRoot();
 ```
 
-### getSmartUsage
+:::
+
+:::group{name=getSmartUsage}
 
 Return Type: string[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
@@ -156,7 +172,9 @@ MCCommandDispatcher.getSmartUsage(node as MCCommandNode, source as MCCommandSour
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -165,7 +183,9 @@ MCCommandDispatcher.hashCode() as int
 myMCCommandDispatcher.hashCode();
 ```
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: [MCParseResults](/vanilla/api/commands/custom/MCParseResults)
 
@@ -179,7 +199,9 @@ MCCommandDispatcher.parse(command as string, source as MCCommandSource) as MCPar
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### register
+:::
+
+:::group{name=register}
 
 Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
@@ -192,7 +214,9 @@ MCCommandDispatcher.register(command as MCLiteralArgumentBuilder) as MCLiteralCo
 | command | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
 
 
-### setConsumer
+:::
+
+:::group{name=setConsumer}
 
 Return Type: void
 
@@ -205,7 +229,9 @@ MCCommandDispatcher.setConsumer(consumer as MCResultConsumer) as void
 | consumer | [MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -214,15 +240,17 @@ MCCommandDispatcher.toString() as string
 myMCCommandDispatcher.toString();
 ```
 
+:::
+
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCCommandDispatcher == o as Object
 ```
 
-
+:::
 
 

@@ -22,7 +22,7 @@ FluidPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pred
 
 ## Methods
 
-### withFluid
+:::group{name=withFluid}
 
 Sets the fluid that this predicate should match.
 
@@ -39,7 +39,9 @@ FluidPredicate.withFluid(fluid as MCFluid) as FluidPredicate
 | fluid | [MCFluid](/vanilla/api/fluid/MCFluid) | The fluid the predicate should match. |
 
 
-### withFluidTag
+:::
+
+:::group{name=withFluidTag}
 
 Sets the tag that this predicate should use for matching.
 
@@ -58,7 +60,9 @@ FluidPredicate.withFluidTag(fluidTag as MCTag<MCFluid>) as FluidPredicate
 | fluidTag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | The tag the predicate should use for matching. |
 
 
-### withStatePropertiesPredicate
+:::
+
+:::group{name=withStatePropertiesPredicate}
 
 Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) that will be matched against the fluid state's properties.
 
@@ -75,5 +79,7 @@ FluidPredicate.withStatePropertiesPredicate(builder as Consumer<StatePropertiesP
 |-----------|------|-------------|
 | builder | Consumer&lt;[StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)&gt; | A consumer that will be used to configure the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate). |
 
+
+:::
 
 

@@ -26,7 +26,7 @@ MCLivingHealEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Methods
 
-### getAmount
+:::group{name=getAmount}
 
 Gets the amount of healing.
 
@@ -37,7 +37,9 @@ MCLivingHealEvent.getAmount() as float
 event.getAmount();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the amount of healing.
 
@@ -52,6 +54,8 @@ event.setAmount(0.5);
 |-----------|------|-------------|
 | amount | float | The amount of damage to heal. |
 
+
+:::
 
 
 ## Properties

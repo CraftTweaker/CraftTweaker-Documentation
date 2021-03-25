@@ -24,7 +24,7 @@ new MCFood(healing as int, saturation as float) as MCFood
 
 ## Methods
 
-### addEffect
+:::group{name=addEffect}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -38,7 +38,9 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 | probability | float | No Description Provided |
 
 
-### clearEffects
+:::
+
+:::group{name=clearEffects}
 
 Return Type: void
 
@@ -47,7 +49,9 @@ MCFood.clearEffects() as void
 myMCFood.clearEffects();
 ```
 
-### removeEffect
+:::
+
+:::group{name=removeEffect}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -60,7 +64,9 @@ MCFood.removeEffect(effect as MCPotionEffectInstance) as MCFood
 | effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 
 
-### setCanEatWhenFull
+:::
+
+:::group{name=setCanEatWhenFull}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -73,7 +79,9 @@ MCFood.setCanEatWhenFull(canEatWhenFull as boolean) as MCFood
 | canEatWhenFull | boolean | No Description Provided |
 
 
-### setFastEating
+:::
+
+:::group{name=setFastEating}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -86,7 +94,9 @@ MCFood.setFastEating(fastEating as boolean) as MCFood
 | fastEating | boolean | No Description Provided |
 
 
-### setHealing
+:::
+
+:::group{name=setHealing}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -99,7 +109,9 @@ MCFood.setHealing(healing as int) as MCFood
 | healing | int | No Description Provided |
 
 
-### setMeat
+:::
+
+:::group{name=setMeat}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -112,7 +124,9 @@ MCFood.setMeat(meat as boolean) as MCFood
 | meat | boolean | No Description Provided |
 
 
-### setSaturation
+:::
+
+:::group{name=setSaturation}
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
 
@@ -124,6 +138,8 @@ MCFood.setSaturation(saturation as float) as MCFood
 |-----------|------|-------------|
 | saturation | float | No Description Provided |
 
+
+:::
 
 
 ## Properties

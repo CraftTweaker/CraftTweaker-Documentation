@@ -21,7 +21,7 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 ## Methods
 
-### containsOther
+:::group{name=containsOther}
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
@@ -36,7 +36,9 @@ IFluidStack.containsOther(other as IFluidStack) as boolean
 | other | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
 
-### copy
+:::
+
+:::group{name=copy}
 
 Copies the stack. Only needed when mutable stacks are involved.
 
@@ -47,7 +49,9 @@ IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
 
-### mutable
+:::
+
+:::group{name=mutable}
 
 Makes this stack mutable
 
@@ -58,7 +62,9 @@ IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the fluid amount in MilliBuckets (mB)
 
@@ -74,10 +80,12 @@ myIFluidStack.setAmount(1000);
 | amount | int | The amount to multiply this stack |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
@@ -85,9 +93,9 @@ Checks if this IFluidStack, contains the given IFluidStack by checking if the fl
 other as IFluidStack in myIFluidStack
 ```
 
+:::
 
-
-### MUL
+:::group{name=MUL}
 
 Sets the fluid amount in MilliBuckets (MB)
 
@@ -96,7 +104,7 @@ myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-
+:::
 
 
 ## Properties

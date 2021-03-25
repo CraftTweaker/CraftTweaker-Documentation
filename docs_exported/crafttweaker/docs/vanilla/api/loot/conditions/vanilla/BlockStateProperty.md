@@ -26,7 +26,7 @@ BlockStateProperty implements the following interfaces. That means all methods d
 
 ## Methods
 
-### withBlock
+:::group{name=withBlock}
 
 Sets the block that should be matched by the loot condition.
 
@@ -43,7 +43,9 @@ BlockStateProperty.withBlock(block as MCBlock) as BlockStateProperty
 | block | [MCBlock](/vanilla/api/blocks/MCBlock) | The block to be matched. |
 
 
-### withStatePropertiesPredicate
+:::
+
+:::group{name=withStatePropertiesPredicate}
 
 Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) that will be matched against the state's properties.
 
@@ -62,5 +64,7 @@ BlockStateProperty.withStatePropertiesPredicate(builder as Consumer<StatePropert
 |-----------|------|-------------|
 | builder | Consumer&lt;[StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)&gt; | A consumer that will be used to configure the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate). |
 
+
+:::
 
 

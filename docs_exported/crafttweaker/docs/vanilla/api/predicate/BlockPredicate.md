@@ -23,7 +23,7 @@ BlockPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pred
 
 ## Methods
 
-### withBlock
+:::group{name=withBlock}
 
 Sets the block that this predicate should match.
 
@@ -40,7 +40,9 @@ BlockPredicate.withBlock(block as MCBlock) as BlockPredicate
 | block | [MCBlock](/vanilla/api/blocks/MCBlock) | The block the predicate should match. |
 
 
-### withBlockTag
+:::
+
+:::group{name=withBlockTag}
 
 Sets the tag that this predicate should use for matching.
 
@@ -59,7 +61,9 @@ BlockPredicate.withBlockTag(blockTag as MCTag<MCBlock>) as BlockPredicate
 | blockTag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | The tag the predicate should use for matching. |
 
 
-### withDataPredicate
+:::
+
+:::group{name=withDataPredicate}
 
 Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that will be matched against the block entity's data.
 
@@ -77,7 +81,9 @@ BlockPredicate.withDataPredicate(builder as Consumer<NBTPredicate>) as BlockPred
 | builder | Consumer&lt;[NBTPredicate](/vanilla/api/predicate/NBTPredicate)&gt; | A consumer that will be used to configure the [NBTPredicate](/vanilla/api/predicate/NBTPredicate). |
 
 
-### withStatePropertiesPredicate
+:::
+
+:::group{name=withStatePropertiesPredicate}
 
 Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) that will be matched against the block state's properties.
 
@@ -94,5 +100,7 @@ BlockPredicate.withStatePropertiesPredicate(builder as Consumer<StatePropertiesP
 |-----------|------|-------------|
 | builder | Consumer&lt;[StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)&gt; | A consumer that will be used to configure the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate). |
 
+
+:::
 
 

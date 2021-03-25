@@ -22,7 +22,7 @@ BlockState implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### withState
+:::group{name=withState}
 
 Sets the state that the condition must check.
 
@@ -40,5 +40,7 @@ BlockState.withState(state as MCBlockState) as BlockState
 |-----------|------|-------------|
 | state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The state to check. |
 
+
+:::
 
 

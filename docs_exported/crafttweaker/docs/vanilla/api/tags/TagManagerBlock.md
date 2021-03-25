@@ -15,7 +15,7 @@ TagManagerBlock implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### exists
+:::group{name=exists}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -43,7 +43,9 @@ TagManagerBlock.exists(name as string) as boolean
 | name | string | The resource location to check for |
 
 
-### getAllTags
+:::
+
+:::group{name=getAllTags}
 
 Retrieves a list of all tags currently registered.
 
@@ -54,7 +56,9 @@ TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
 myTagManagerBlock.getAllTags();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
@@ -90,10 +94,12 @@ TagManagerBlock.getTag(name as string) as MCTag<T>
 | name | string | The Resource location of the tag |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -101,7 +107,7 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 name as string in myTagManagerBlock
 ```
 
-
+:::
 
 
 ## Properties

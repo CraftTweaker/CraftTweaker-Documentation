@@ -21,7 +21,7 @@ MCPlayerInteractEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/M
 
 ## Methods
 
-### getBlockPos
+:::group{name=getBlockPos}
 
 If the interaction was on an entity, will be a BlockPos centered on the entity.
  If the interaction was on a block, will be the position of that block.
@@ -34,7 +34,9 @@ MCPlayerInteractEvent.getBlockPos() as BlockPos
 myMCPlayerInteractEvent.getBlockPos();
 ```
 
-### getFace
+:::
+
+:::group{name=getFace}
 
 The face involved in this interaction.
  For all non-block interactions, this will return null
@@ -46,7 +48,9 @@ MCPlayerInteractEvent.getFace() as Direction?
 myMCPlayerInteractEvent.getFace();
 ```
 
-### getItemStack
+:::
+
+:::group{name=getItemStack}
 
 The stack involved in this interaction.
  May be empty, but will never be null.
@@ -57,6 +61,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCPlayerInteractEvent.getItemStack() as IItemStack
 myMCPlayerInteractEvent.getItemStack();
 ```
+
+:::
 
 
 ## Properties

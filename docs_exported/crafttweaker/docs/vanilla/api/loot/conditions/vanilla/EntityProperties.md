@@ -26,7 +26,7 @@ EntityProperties implements the following interfaces. That means all methods def
 
 ## Methods
 
-### withPredicate
+:::group{name=withPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be matched against the targeted entity.
 
@@ -46,7 +46,9 @@ EntityProperties.withPredicate(builder as Consumer<EntityPredicate>) as EntityPr
 | builder | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer that will be used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withTargetedEntity
+:::
+
+:::group{name=withTargetedEntity}
 
 Sets the entity that should be targeted by the loot condition.
 
@@ -64,5 +66,7 @@ EntityProperties.withTargetedEntity(entity as TargetedEntity) as EntityPropertie
 |-----------|------|-------------|
 | entity | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | The entity that should be targeted. |
 
+
+:::
 
 

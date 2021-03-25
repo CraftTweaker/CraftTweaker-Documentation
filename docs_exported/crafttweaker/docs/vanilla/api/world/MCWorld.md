@@ -24,7 +24,7 @@ MCWorld implements the following interfaces. That means all methods defined in t
 
 ## Methods
 
-### addEntity
+:::group{name=addEntity}
 
 add an entity to the world, return if the entity is added successfully.
 
@@ -39,7 +39,9 @@ MCWorld.addEntity(entity as MCEntity) as boolean
 | entity | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
 
-### asServerWorld
+:::
+
+:::group{name=asServerWorld}
 
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
@@ -48,7 +50,9 @@ MCWorld.asServerWorld() as MCServerWorld
 world.asServerWorld();
 ```
 
-### destroyBlock
+:::
+
+:::group{name=destroyBlock}
 
 Destroys a block within the world.
 
@@ -81,7 +85,9 @@ world.destroyBlock(new BlockPos(0, 1, 2), true, player);
 | breaker | [MCEntity](/vanilla/api/entity/MCEntity) | The entity to break the block. |
 
 
-### getBiome
+:::
+
+:::group{name=getBiome}
 
 Gets the biome at a given position.
 
@@ -97,7 +103,9 @@ world.getBiome(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### getBlockState
+:::
+
+:::group{name=getBlockState}
 
 Gets the block state at a given position.
 
@@ -113,7 +121,9 @@ world.getBlockState(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### getEntitiesInArea
+:::
+
+:::group{name=getEntitiesInArea}
 
 Gets all entities in given area, but the arguments are block poses.
  If `pos2` is omitted, it will use `pos1.add(1, 1, 1)`
@@ -149,7 +159,9 @@ world.getEntitiesInArea(1.0, 1.0, 1.0, 11.4, 11.4, 11.4);
 | z2 | double | No Description Provided |
 
 
-### getEntitiesInAreaExcluding
+:::
+
+:::group{name=getEntitiesInAreaExcluding}
 
 
 
@@ -188,7 +200,9 @@ world.getEntitiesInAreaExcluding(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entit
 | predicate | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | the entity filter |
 
 
-### getRedstonePower
+:::
+
+:::group{name=getRedstonePower}
 
 Gets the redstone signal strength available to a position from a given direction.
 
@@ -205,7 +219,9 @@ world.getRedstonePower(new BlockPos(0, 1, 2), <direction:north>);
 | direction | [Direction](/vanilla/api/util/Direction) | The direction to query. |
 
 
-### getRedstonePowerFromNeighbors
+:::
+
+:::group{name=getRedstonePowerFromNeighbors}
 
 Gets the highest redstone signal available to a position from any of it's neighbors.
 
@@ -221,7 +237,9 @@ world.getRedstonePowerFromNeighbors(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### getStrongPower
+:::
+
+:::group{name=getStrongPower}
 
 Gets the highest strong (direct) redstone signal of any neighboring block.
 
@@ -237,7 +255,9 @@ world.getStrongPower(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### getTileData
+:::
+
+:::group{name=getTileData}
 
 Gets the tile entity data for a tile entity at a given position.
 
@@ -253,7 +273,9 @@ world.getTileData(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the tile entity. |
 
 
-### isAir
+:::
+
+:::group{name=isAir}
 
 Checks if the block at a given position is air.
 
@@ -269,7 +291,9 @@ world.isAir(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isBlockPowered
+:::
+
+:::group{name=isBlockPowered}
 
 Checks if a given position is receiving a redstone signal.
 
@@ -285,7 +309,9 @@ world.isBlockPowered(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### isLoaded
+:::
+
+:::group{name=isLoaded}
 
 Checks if the block at a given position is in a loaded chunk.
 
@@ -301,7 +327,9 @@ world.isLoaded(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isRainingAt
+:::
+
+:::group{name=isRainingAt}
 
 Checks if it is raining at a specific position. This can never be true
  if the position does not have direct line of sight to the sky.
@@ -318,7 +346,9 @@ world.isRainingAt(new BlockPos(0, 1, 2));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### isRemote
+:::
+
+:::group{name=isRemote}
 
 Checks if the world is remote. This is always true on the rendering
  thread.
@@ -330,7 +360,9 @@ MCWorld.isRemote() as boolean
 world.isRemote();
 ```
 
-### playEvent
+:::
+
+:::group{name=playEvent}
 
 Triggers a predetermined event on the client. Using this on a server
  or integrated server will send the event to all nearby players.
@@ -369,7 +401,9 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
         is generally unused. |
 
 
-### setBlockState
+:::
+
+:::group{name=setBlockState}
 
 Sets the block and it's state at a given position.
 
@@ -385,6 +419,8 @@ world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to set the block at. |
 | state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The new state of the block. |
 
+
+:::
 
 
 ## Properties

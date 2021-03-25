@@ -23,7 +23,7 @@ Delegate implements the following interfaces. That means all methods defined in 
 
 ## Methods
 
-### withDelegate
+:::group{name=withDelegate}
 
 Sets the delegate to the loot condition created with the given [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
@@ -57,5 +57,7 @@ Delegate.withDelegate(other as ILootCondition) as Delegate
 |-----------|------|-------------|
 | other | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) | The delegate loot condition. |
 
+
+:::
 
 

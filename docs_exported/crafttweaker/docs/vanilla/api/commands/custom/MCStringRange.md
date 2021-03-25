@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.MCStringRange;
 
 ## Methods
 
-### at
+:::group{name=at}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -23,7 +23,9 @@ MCStringRange.at(pos as int) as MCStringRange
 | pos | int | No Description Provided |
 
 
-### between
+:::
+
+:::group{name=between}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -37,7 +39,9 @@ MCStringRange.between(start as int, end as int) as MCStringRange
 | end | int | No Description Provided |
 
 
-### encompassing
+:::
+
+:::group{name=encompassing}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -51,9 +55,11 @@ MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRa
 | b | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
+:::
+
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -66,7 +72,9 @@ MCStringRange.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### getEnd
+:::
+
+:::group{name=getEnd}
 
 Return Type: int
 
@@ -75,7 +83,9 @@ MCStringRange.getEnd() as int
 myMCStringRange.getEnd();
 ```
 
-### getFrom
+:::
+
+:::group{name=getFrom}
 
 Return Type: string
 
@@ -99,7 +109,9 @@ MCStringRange.getFrom(string as string) as string
 | string | string | No Description Provided |
 
 
-### getLength
+:::
+
+:::group{name=getLength}
 
 Return Type: int
 
@@ -108,7 +120,9 @@ MCStringRange.getLength() as int
 myMCStringRange.getLength();
 ```
 
-### getStart
+:::
+
+:::group{name=getStart}
 
 Return Type: int
 
@@ -117,7 +131,9 @@ MCStringRange.getStart() as int
 myMCStringRange.getStart();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -126,7 +142,9 @@ MCStringRange.hashCode() as int
 myMCStringRange.hashCode();
 ```
 
-### isEmpty
+:::
+
+:::group{name=isEmpty}
 
 Return Type: boolean
 
@@ -135,7 +153,9 @@ MCStringRange.isEmpty() as boolean
 myMCStringRange.isEmpty();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -143,5 +163,7 @@ Return Type: string
 MCStringRange.toString() as string
 myMCStringRange.toString();
 ```
+
+:::
 
 

@@ -14,7 +14,7 @@ MCEquipmentSlotType extends Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEq
 
 ## Methods
 
-### isArmor
+:::group{name=isArmor}
 
 Return Type: boolean
 
@@ -23,7 +23,9 @@ MCEquipmentSlotType.isArmor() as boolean
 myMCEquipmentSlotType.isArmor();
 ```
 
-### isHand
+:::
+
+:::group{name=isHand}
 
 Return Type: boolean
 
@@ -31,6 +33,8 @@ Return Type: boolean
 MCEquipmentSlotType.isHand() as boolean
 myMCEquipmentSlotType.isHand();
 ```
+
+:::
 
 
 ## Properties

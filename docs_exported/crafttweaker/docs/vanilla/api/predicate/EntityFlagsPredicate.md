@@ -21,7 +21,7 @@ EntityFlagsPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/ap
 
 ## Methods
 
-### withAdult
+:::group{name=withAdult}
 
 Indicates that the entity must be in its adult form.
 
@@ -34,7 +34,9 @@ EntityFlagsPredicate.withAdult() as EntityFlagsPredicate
 myEntityFlagsPredicate.withAdult();
 ```
 
-### withBaby
+:::
+
+:::group{name=withBaby}
 
 Indicates that the entity must be in its baby form, if applicable.
 
@@ -47,7 +49,9 @@ EntityFlagsPredicate.withBaby() as EntityFlagsPredicate
 myEntityFlagsPredicate.withBaby();
 ```
 
-### withBurningState
+:::
+
+:::group{name=withBurningState}
 
 Indicates that the entity must be on fire.
 
@@ -60,7 +64,9 @@ EntityFlagsPredicate.withBurningState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withBurningState();
 ```
 
-### withSneakingState
+:::
+
+:::group{name=withSneakingState}
 
 Indicates that the entity must be sneaking, if applicable to the current entity.
 
@@ -73,7 +79,9 @@ EntityFlagsPredicate.withSneakingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withSneakingState();
 ```
 
-### withSprintingState
+:::
+
+:::group{name=withSprintingState}
 
 Indicates that the entity must be sprinting, if applicable to the current entity.
 
@@ -86,7 +94,9 @@ EntityFlagsPredicate.withSprintingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withSprintingState();
 ```
 
-### withSwimmingState
+:::
+
+:::group{name=withSwimmingState}
 
 Indicates that the entity must be swimming.
 
@@ -99,7 +109,9 @@ EntityFlagsPredicate.withSwimmingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withSwimmingState();
 ```
 
-### withoutBurningState
+:::
+
+:::group{name=withoutBurningState}
 
 Indicates that the entity must not be on fire.
 
@@ -112,7 +124,9 @@ EntityFlagsPredicate.withoutBurningState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withoutBurningState();
 ```
 
-### withoutSneakingState
+:::
+
+:::group{name=withoutSneakingState}
 
 Indicates that the entity must not be sneaking.
 
@@ -125,7 +139,9 @@ EntityFlagsPredicate.withoutSneakingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withoutSneakingState();
 ```
 
-### withoutSprintingState
+:::
+
+:::group{name=withoutSprintingState}
 
 Indicates that the entity must not be sprinting.
 
@@ -138,7 +154,9 @@ EntityFlagsPredicate.withoutSprintingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withoutSprintingState();
 ```
 
-### withoutSwimmingState
+:::
+
+:::group{name=withoutSwimmingState}
 
 Indicates that the entity must not be swimming.
 
@@ -150,5 +168,7 @@ Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 EntityFlagsPredicate.withoutSwimmingState() as EntityFlagsPredicate
 myEntityFlagsPredicate.withoutSwimmingState();
 ```
+
+:::
 
 

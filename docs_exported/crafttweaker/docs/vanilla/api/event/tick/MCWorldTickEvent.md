@@ -18,7 +18,7 @@ MCWorldTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Tha
 
 ## Methods
 
-### getWorld
+:::group{name=getWorld}
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
@@ -26,6 +26,8 @@ Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 MCWorldTickEvent.getWorld() as MCWorld
 myMCWorldTickEvent.getWorld();
 ```
+
+:::
 
 
 ## Properties

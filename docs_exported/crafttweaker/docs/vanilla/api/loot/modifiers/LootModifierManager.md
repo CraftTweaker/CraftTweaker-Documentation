@@ -21,7 +21,7 @@ import crafttweaker.api.loot.modifiers.LootModifierManager;
 
 ## Methods
 
-### getAll
+:::group{name=getAll}
 
 Gets a list containing all currently registered loot modifiers.
 
@@ -32,7 +32,9 @@ LootModifierManager.getAll() as stdlib.List<ILootModifier>
 myLootModifierManager.getAll();
 ```
 
-### getAllNames
+:::
+
+:::group{name=getAllNames}
 
 Gets a list of all the names of the currently registered loot modifiers.
 
@@ -43,7 +45,9 @@ LootModifierManager.getAllNames() as stdlib.List<string>
 myLootModifierManager.getAllNames();
 ```
 
-### getByName
+:::
+
+:::group{name=getByName}
 
 Gets the loot modifier with the given name, if it exists.
 
@@ -60,7 +64,9 @@ LootModifierManager.getByName(name as string) as ILootModifier
 | name | string | The name of the loot modifier. |
 
 
-### register
+:::
+
+:::group{name=register}
 
 Registers a new global loot modifier with the given name.
 
@@ -113,7 +119,9 @@ LootModifierManager.register(name as string, conditions as ILootCondition?[], mo
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
-### registerUnconditional
+:::
+
+:::group{name=registerUnconditional}
 
 Registers a new global loot modifier with the given name without providing any conditions.
 
@@ -133,7 +141,9 @@ LootModifierManager.registerUnconditional(name as string, modifier as ILootModif
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Removes all loot modifiers that have been registered up to this point.
 
@@ -144,7 +154,9 @@ LootModifierManager.removeAll() as void
 myLootModifierManager.removeAll();
 ```
 
-### removeByModId
+:::
+
+:::group{name=removeByModId}
 
 Removes all loot modifiers that have been registered by the mod with the given ID.
 
@@ -159,7 +171,9 @@ LootModifierManager.removeByModId(modId as string) as void
 | modId | string | The mod ID. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Removes the loot modifier with the given name.
 
@@ -177,7 +191,9 @@ LootModifierManager.removeByName(name as string) as void
 | name | string | The name of the loot modifier to remove. |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Removes all loot modifiers whose name matches the given regular expression.
 
@@ -194,5 +210,7 @@ LootModifierManager.removeByRegex(regex as string) as void
 |-----------|------|-------------|
 | regex | string | The regular expression to match. |
 
+
+:::
 
 

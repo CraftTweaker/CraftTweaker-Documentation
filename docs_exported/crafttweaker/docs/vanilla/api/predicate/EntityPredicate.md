@@ -33,7 +33,7 @@ EntityPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pre
 
 ## Methods
 
-### withCatType
+:::group{name=withCatType}
 
 Sets the type of cat this entity should be.
 
@@ -51,7 +51,9 @@ EntityPredicate.withCatType(catType as MCResourceLocation) as EntityPredicate
 | catType | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The type of cat this entity should be. |
 
 
-### withDataPredicate
+:::
+
+:::group{name=withDataPredicate}
 
 Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that will be used to match the entity's NBT data.
 
@@ -68,7 +70,9 @@ EntityPredicate.withDataPredicate(builder as Consumer<NBTPredicate>) as EntityPr
 | builder | Consumer&lt;[NBTPredicate](/vanilla/api/predicate/NBTPredicate)&gt; | A consumer that will be used to configure the [NBTPredicate](/vanilla/api/predicate/NBTPredicate). |
 
 
-### withDistancePredicate
+:::
+
+:::group{name=withDistancePredicate}
 
 Creates and sets the [DistancePredicate](/vanilla/api/predicate/DistancePredicate) that will be used to match the entity's distance from a point.
 
@@ -85,7 +89,9 @@ EntityPredicate.withDistancePredicate(builder as Consumer<DistancePredicate>) as
 | builder | Consumer&lt;[DistancePredicate](/vanilla/api/predicate/DistancePredicate)&gt; | A consumer that will be used to configure the [DistancePredicate](/vanilla/api/predicate/DistancePredicate). |
 
 
-### withEffectPredicate
+:::
+
+:::group{name=withEffectPredicate}
 
 Creates and sets the [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate) that will be used to match the entity's current potion effects.
 
@@ -121,7 +127,9 @@ EntityPredicate.withEffectPredicate(effect as MCPotionEffect, builder as Consume
 | builder | Consumer&lt;[EffectData](/vanilla/api/predicate/EffectData)&gt; | A consumer that will be used to configure and provide the effect's data. |
 
 
-### withEntityTypePredicate
+:::
+
+:::group{name=withEntityTypePredicate}
 
 Creates and sets the [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate) that will be used to match the entity's type.
 
@@ -138,7 +146,9 @@ EntityPredicate.withEntityTypePredicate(builder as Consumer<EntityTypePredicate>
 | builder | Consumer&lt;[EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)&gt; | A consumer that will be used to configure the [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate). |
 
 
-### withEquipmentPredicate
+:::
+
+:::group{name=withEquipmentPredicate}
 
 Creates and sets the [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate) that will be used to match the entity's equipment.
 
@@ -155,7 +165,9 @@ EntityPredicate.withEquipmentPredicate(builder as Consumer<EntityEquipmentPredic
 | builder | Consumer&lt;[EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)&gt; | A consumer that will be used to configure the [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate). |
 
 
-### withFishingPredicate
+:::
+
+:::group{name=withFishingPredicate}
 
 Creates and sets the [FishingPredicate](/vanilla/api/predicate/FishingPredicate) that will be used as specialization for fishing hooks.
 
@@ -175,7 +187,9 @@ EntityPredicate.withFishingPredicate(builder as Consumer<FishingPredicate>) as E
 | builder | Consumer&lt;[FishingPredicate](/vanilla/api/predicate/FishingPredicate)&gt; | A consumer that will be used to configure the [FishingPredicate](/vanilla/api/predicate/FishingPredicate). |
 
 
-### withFlagsPredicate
+:::
+
+:::group{name=withFlagsPredicate}
 
 Creates and sets the [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate) that will be used to match the entity's status flags.
 
@@ -192,7 +206,9 @@ EntityPredicate.withFlagsPredicate(builder as Consumer<EntityFlagsPredicate>) as
 | builder | Consumer&lt;[EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)&gt; | A consumer that will be used to configure the [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate). |
 
 
-### withLocationPredicate
+:::
+
+:::group{name=withLocationPredicate}
 
 Creates and sets the [LocationPredicate](/vanilla/api/predicate/LocationPredicate) that will be used to match the entity's location.
 
@@ -209,7 +225,9 @@ EntityPredicate.withLocationPredicate(builder as Consumer<LocationPredicate>) as
 | builder | Consumer&lt;[LocationPredicate](/vanilla/api/predicate/LocationPredicate)&gt; | A consumer that will be used to configure the [LocationPredicate](/vanilla/api/predicate/LocationPredicate). |
 
 
-### withPlayerPredicate
+:::
+
+:::group{name=withPlayerPredicate}
 
 Creates and sets the [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate) that will be used as specialization for players.
 
@@ -229,7 +247,9 @@ EntityPredicate.withPlayerPredicate(builder as Consumer<PlayerPredicate>) as Ent
 | builder | Consumer&lt;[PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)&gt; | A consumer that will be used to configure the [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate). |
 
 
-### withRiddenEntityPredicate
+:::
+
+:::group{name=withRiddenEntityPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be used for the entity that is being ridden by this
  entity.
@@ -250,7 +270,9 @@ EntityPredicate.withRiddenEntityPredicate(builder as Consumer<EntityPredicate>) 
 | builder | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer that will be used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withTargetedEntityPredicate
+:::
+
+:::group{name=withTargetedEntityPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be used for the entity that is being targeted for attacks
  by this entity.
@@ -271,7 +293,9 @@ EntityPredicate.withTargetedEntityPredicate(builder as Consumer<EntityPredicate>
 | builder | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer that will be used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withTeam
+:::
+
+:::group{name=withTeam}
 
 Sets the scoreboard team this entity should be a part of.
 
@@ -285,5 +309,7 @@ EntityPredicate.withTeam(team as string) as EntityPredicate
 |-----------|------|-------------|
 | team | string | The scoreboard team this entity should be a part of. |
 
+
+:::
 
 

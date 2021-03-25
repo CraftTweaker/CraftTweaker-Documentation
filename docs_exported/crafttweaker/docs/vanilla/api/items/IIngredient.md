@@ -25,7 +25,7 @@ IIngredient implements the following interfaces. That means all methods defined 
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -38,7 +38,9 @@ IIngredient.addShiftTooltip(content as MCTextComponent, showMessage as MCTextCom
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -51,7 +53,9 @@ IIngredient.addTooltip(content as MCTextComponent) as void
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -60,7 +64,9 @@ IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
 <tag:items:forge:ingots>.anyDamage();
 ```
 
-### asVanillaIngredient
+:::
+
+:::group{name=asVanillaIngredient}
 
 Create a Vanilla ingredient matching this one.
 
@@ -71,7 +77,9 @@ IIngredient.asVanillaIngredient() as Ingredient
 <tag:items:forge:ingots>.asVanillaIngredient();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
@@ -80,7 +88,9 @@ IIngredient.clearTooltip() as void
 <tag:items:forge:ingots>.clearTooltip();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Does the ingredient contain the given ingredient?
 
@@ -96,7 +106,9 @@ IIngredient.contains(ingredient as IIngredient) as boolean
 | ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
 
 
-### getRemainingItem
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
  Does not check if the stack matches though!
@@ -114,7 +126,9 @@ IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -144,7 +158,9 @@ IIngredient.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 | ignoreDamage | boolean | Should damage be checked? |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -157,7 +173,9 @@ IIngredient.modifyTooltip(function as ITooltipFunction) as void
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### only
+:::
+
+:::group{name=only}
 
 Use this if you already have the condition from another ingredient
 
@@ -172,7 +190,9 @@ IIngredient.only(condition as IIngredientCondition<IIngredient>) as MCIngredient
 | condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -181,7 +201,9 @@ IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
 <tag:items:forge:ingots>.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -194,7 +216,9 @@ IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngred
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -207,10 +231,12 @@ IIngredient.removeTooltip(regex as string) as void
 | regex | string | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Does the ingredient contain the given ingredient?
 
@@ -219,15 +245,15 @@ ingredient as IIngredient in myIIngredient
 (<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <tag:items:forge:ingots>
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myIIngredient | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties

@@ -24,7 +24,7 @@ MatchTool implements the following interfaces. That means all methods defined in
 
 ## Methods
 
-### matching
+:::group{name=matching}
 
 Sets the tool that should be matched by this loot condition.
 
@@ -118,7 +118,9 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean, matchCount as boo
 | matchNbt | boolean | Whether the NBT data should be taken into account when matching. |
 
 
-### withPredicate
+:::
+
+:::group{name=withPredicate}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be matched against the tool.
 
@@ -137,5 +139,7 @@ MatchTool.withPredicate(builder as Consumer<ItemPredicate>) as MatchTool
 |-----------|------|-------------|
 | builder | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
+
+:::
 
 

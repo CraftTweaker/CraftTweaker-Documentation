@@ -15,7 +15,7 @@ import crafttweaker.api.loot.modifiers.ILootModifier;
 
 ## Methods
 
-### applyModifier
+:::group{name=applyModifier}
 
 Applies the modifier to the drops of a loot table.
 
@@ -30,5 +30,7 @@ ILootModifier.applyModifier(loot as stdlib.List<IItemStack>, currentContext as L
 | loot | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | The loot dropped by a loot table. |
 | currentContext | [LootContext](/vanilla/api/loot/LootContext) | The context that caused the loot table to drop the loot. |
 
+
+:::
 
 

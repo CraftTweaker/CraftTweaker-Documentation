@@ -18,7 +18,7 @@ MCBlockEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all metho
 
 ## Methods
 
-### getBlockState
+:::group{name=getBlockState}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -27,7 +27,9 @@ MCBlockEvent.getBlockState() as MCBlockState
 myMCBlockEvent.getBlockState();
 ```
 
-### getPos
+:::
+
+:::group{name=getPos}
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
@@ -36,7 +38,9 @@ MCBlockEvent.getPos() as BlockPos
 myMCBlockEvent.getPos();
 ```
 
-### getWorld
+:::
+
+:::group{name=getWorld}
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
@@ -44,6 +48,8 @@ Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 MCBlockEvent.getWorld() as MCWorld
 myMCBlockEvent.getWorld();
 ```
+
+:::
 
 
 ## Properties

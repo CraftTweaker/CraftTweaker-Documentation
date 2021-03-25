@@ -10,7 +10,7 @@ import crafttweaker.api.util.Random;
 
 ## Methods
 
-### getRandomUUID
+:::group{name=getRandomUUID}
 
 Return Type: string
 
@@ -19,7 +19,9 @@ Random.getRandomUUID() as string
 myRandom.getRandomUUID();
 ```
 
-### nextBoolean
+:::
+
+:::group{name=nextBoolean}
 
 Return Type: boolean
 
@@ -28,7 +30,9 @@ Random.nextBoolean() as boolean
 myRandom.nextBoolean();
 ```
 
-### nextDouble
+:::
+
+:::group{name=nextDouble}
 
 Returns the next pseudorandom, uniformly distributed double value
  between 0.0 and 1.0 from this random number generator's sequence.
@@ -54,7 +58,9 @@ Random.nextDouble(min as double, max as double) as double
 | max | double | No Description Provided |
 
 
-### nextFloat
+:::
+
+:::group{name=nextFloat}
 
 Returns the next pseudorandom, uniformly distributed float value
  between 0.0f and 1.0f from this random number generator's sequence.
@@ -80,7 +86,9 @@ Random.nextFloat(min as float, max as float) as float
 | max | float | No Description Provided |
 
 
-### nextInt
+:::
+
+:::group{name=nextInt}
 
 Returns the next pseudorandom, uniformly distributed int value from this random number generator's sequence.
 
@@ -118,5 +126,7 @@ Random.nextInt(min as int, max as int) as int
 | min | int | No Description Provided |
 | max | int | No Description Provided |
 
+
+:::
 
 

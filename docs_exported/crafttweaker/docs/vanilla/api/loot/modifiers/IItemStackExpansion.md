@@ -4,7 +4,7 @@ Additional methods for easier modification of item stack-related loot tables.
 
 ## Methods
 
-### addToolModifier
+:::group{name=addToolModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking.
 
@@ -76,5 +76,7 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, matchCount as
 | matchNbt | boolean | Whether to consider NBT data or not when trying to match the tool. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add. |
 
+
+:::
 
 

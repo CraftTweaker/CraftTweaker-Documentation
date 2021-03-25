@@ -24,7 +24,7 @@ DistancePredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/p
 
 ## Methods
 
-### withMaximumAbsoluteDistance
+:::group{name=withMaximumAbsoluteDistance}
 
 Sets the maximum value the absolute distance should be to <code>max</code>.
 
@@ -45,7 +45,9 @@ DistancePredicate.withMaximumAbsoluteDistance(max as float) as DistancePredicate
 | max | float | The maximum value the absolute distance should be. |
 
 
-### withMaximumHorizontalDistance
+:::
+
+:::group{name=withMaximumHorizontalDistance}
 
 Sets the maximum value the horizontal distance should be to <code>max</code>.
 
@@ -66,7 +68,9 @@ DistancePredicate.withMaximumHorizontalDistance(max as float) as DistancePredica
 | max | float | The maximum value the horizontal distance should be. |
 
 
-### withMaximumX
+:::
+
+:::group{name=withMaximumX}
 
 Sets the maximum value the distance along the X axis should be to <code>max</code>.
 
@@ -87,7 +91,9 @@ DistancePredicate.withMaximumX(max as float) as DistancePredicate
 | max | float | The maximum value the distance along the X axis should be. |
 
 
-### withMaximumY
+:::
+
+:::group{name=withMaximumY}
 
 Sets the maximum value the distance along the Y axis should be to <code>max</code>.
 
@@ -108,7 +114,9 @@ DistancePredicate.withMaximumY(max as float) as DistancePredicate
 | max | float | The maximum value the distance along the Y axis should be. |
 
 
-### withMaximumZ
+:::
+
+:::group{name=withMaximumZ}
 
 Sets the maximum value the distance along the Z axis should be to <code>max</code>.
 
@@ -129,7 +137,9 @@ DistancePredicate.withMaximumZ(max as float) as DistancePredicate
 | max | float | The maximum value the distance along the Z axis should be. |
 
 
-### withMinimumAbsoluteDistance
+:::
+
+:::group{name=withMinimumAbsoluteDistance}
 
 Sets the minimum value the absolute distance should be to <code>min</code>.
 
@@ -150,7 +160,9 @@ DistancePredicate.withMinimumAbsoluteDistance(min as float) as DistancePredicate
 | min | float | The minimum value the absolute distance should be. |
 
 
-### withMinimumHorizontalDistance
+:::
+
+:::group{name=withMinimumHorizontalDistance}
 
 Sets the minimum value the horizontal distance should be to <code>min</code>.
 
@@ -171,7 +183,9 @@ DistancePredicate.withMinimumHorizontalDistance(min as float) as DistancePredica
 | min | float | The minimum value the horizontal distance should be. |
 
 
-### withMinimumX
+:::
+
+:::group{name=withMinimumX}
 
 Sets the minimum value the distance along the X axis should be to <code>min</code>.
 
@@ -192,7 +206,9 @@ DistancePredicate.withMinimumX(min as float) as DistancePredicate
 | min | float | The minimum value the distance along the X axis should be. |
 
 
-### withMinimumY
+:::
+
+:::group{name=withMinimumY}
 
 Sets the minimum value the distance along the Y axis should be to <code>min</code>.
 
@@ -213,7 +229,9 @@ DistancePredicate.withMinimumY(min as float) as DistancePredicate
 | min | float | The minimum value the distance along the Y axis should be. |
 
 
-### withMinimumZ
+:::
+
+:::group{name=withMinimumZ}
 
 Sets the minimum value the distance along the Z axis should be to <code>min</code>.
 
@@ -234,7 +252,9 @@ DistancePredicate.withMinimumZ(min as float) as DistancePredicate
 | min | float | The minimum value the distance along the Z axis should be. |
 
 
-### withRangedAbsoluteDistance
+:::
+
+:::group{name=withRangedAbsoluteDistance}
 
 Sets both the minimum and maximum value the absolute distance should be to <code>min</code> and <code>max</code>
  respectively.
@@ -256,7 +276,9 @@ DistancePredicate.withRangedAbsoluteDistance(min as float, max as float) as Dist
 | max | float | The maximum value the absolute distance should be. |
 
 
-### withRangedHorizontalDistance
+:::
+
+:::group{name=withRangedHorizontalDistance}
 
 Sets both the minimum and maximum value the horizontal distance should be to <code>min</code> and
  <code>max</code> respectively.
@@ -278,7 +300,9 @@ DistancePredicate.withRangedHorizontalDistance(min as float, max as float) as Di
 | max | float | The maximum value the horizontal distance should be. |
 
 
-### withRangedX
+:::
+
+:::group{name=withRangedX}
 
 Sets both the minimum and maximum value the distance along the X axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -300,7 +324,9 @@ DistancePredicate.withRangedX(min as float, max as float) as DistancePredicate
 | max | float | The maximum value the distance along the X axis should be. |
 
 
-### withRangedY
+:::
+
+:::group{name=withRangedY}
 
 Sets both the minimum and maximum value the distance along the Y axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -322,7 +348,9 @@ DistancePredicate.withRangedY(min as float, max as float) as DistancePredicate
 | max | float | The maximum value the distance along the Y axis should be. |
 
 
-### withRangedZ
+:::
+
+:::group{name=withRangedZ}
 
 Sets both the minimum and maximum value the distance along the Z axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -343,5 +371,7 @@ DistancePredicate.withRangedZ(min as float, max as float) as DistancePredicate
 | min | float | The minimum value the distance along the Z axis should be. |
 | max | float | The maximum value the distance along the Z axis should be. |
 
+
+:::
 
 

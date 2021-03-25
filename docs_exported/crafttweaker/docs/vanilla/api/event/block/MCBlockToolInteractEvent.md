@@ -23,7 +23,7 @@ MCBlockToolInteractEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlock
 
 ## Methods
 
-### getFinalState
+:::group{name=getFinalState}
 
 Gets the transformed state after tool use.
  If setFinalState is not called, it will return the original state.
@@ -36,7 +36,9 @@ MCBlockToolInteractEvent.getFinalState() as MCBlockState?
 myMCBlockToolInteractEvent.getFinalState();
 ```
 
-### getHeldItemStack
+:::
+
+:::group{name=getHeldItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -45,7 +47,9 @@ MCBlockToolInteractEvent.getHeldItemStack() as IItemStack
 myMCBlockToolInteractEvent.getHeldItemStack();
 ```
 
-### getPlayer
+:::
+
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
@@ -54,7 +58,9 @@ MCBlockToolInteractEvent.getPlayer() as MCPlayerEntity
 myMCBlockToolInteractEvent.getPlayer();
 ```
 
-### getToolType
+:::
+
+:::group{name=getToolType}
 
 Return Type: string
 
@@ -63,7 +69,9 @@ MCBlockToolInteractEvent.getToolType() as string
 myMCBlockToolInteractEvent.getToolType();
 ```
 
-### setFinalState
+:::
+
+:::group{name=setFinalState}
 
 Sets the transformed state after tool use.
  If not set, will return the original state.
@@ -79,6 +87,8 @@ MCBlockToolInteractEvent.setFinalState(state as MCBlockState) as void
 |-----------|------|-------------|
 | state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | No Description Provided |
 
+
+:::
 
 
 ## Properties

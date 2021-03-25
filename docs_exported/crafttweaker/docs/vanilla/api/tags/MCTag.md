@@ -28,7 +28,7 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds the given items to the tag. Creates the tag if it does not exist.
 
@@ -73,7 +73,9 @@ MCTag.add(tag as MCTag<T>) as void
 | tag | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | The tag to add. |
 
 
-### asTagWithAmount
+:::
+
+:::group{name=asTagWithAmount}
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
@@ -82,7 +84,9 @@ MCTag.asTagWithAmount() as MCTagWithAmount<T>
 <tag:items:forge:gems>.asTagWithAmount();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Return Type: boolean
 
@@ -95,7 +99,9 @@ MCTag.contains(element as T) as boolean
 | element | T | No Description Provided |
 
 
-### exists
+:::
+
+:::group{name=exists}
 
 Return Type: boolean
 
@@ -104,7 +110,9 @@ MCTag.exists() as boolean
 <tag:items:forge:gems>.exists();
 ```
 
-### getElements
+:::
+
+:::group{name=getElements}
 
 Return Type: stdlib.List&lt;T&gt;
 
@@ -113,7 +121,9 @@ MCTag.getElements() as stdlib.List<T>
 <tag:items:forge:gems>.getElements();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
@@ -122,7 +132,9 @@ MCTag.getId() as MCResourceLocation
 <tag:items:forge:gems>.getId();
 ```
 
-### getManager
+:::
+
+:::group{name=getManager}
 
 Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 
@@ -131,7 +143,9 @@ MCTag.getManager() as TagManager<T>
 <tag:items:forge:gems>.getManager();
 ```
 
-### remove
+:::
+
+:::group{name=remove}
 
 Return Type: void
 
@@ -166,7 +180,9 @@ MCTag.remove(tag as MCTag<T>) as void
 | tag | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | No Description Provided |
 
 
-### withAmount
+:::
+
+:::group{name=withAmount}
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
@@ -179,32 +195,34 @@ MCTag.withAmount(amount as int) as MCTagWithAmount<T>
 | amount | int | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 ```zenscript
 element as T in myMCTag
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCTag == other as MCTag<T>
 ```
 
+:::
 
-
-### MUL
+:::group{name=MUL}
 
 ```zenscript
 myMCTag * amount as int
 ```
 
-
+:::
 
 
 ## Properties

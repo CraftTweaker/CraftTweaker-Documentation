@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -29,7 +29,9 @@ MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 | other | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### build
+:::
+
+:::group{name=build}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,7 +40,9 @@ MCSuggestionsBuilder.build() as MCSuggestions
 myMCSuggestionsBuilder.build();
 ```
 
-### createOffset
+:::
+
+:::group{name=createOffset}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -51,7 +55,9 @@ MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 | start | int | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -64,7 +70,9 @@ MCSuggestionsBuilder.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### getInput
+:::
+
+:::group{name=getInput}
 
 Return Type: string
 
@@ -73,7 +81,9 @@ MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput();
 ```
 
-### getRemaining
+:::
+
+:::group{name=getRemaining}
 
 Return Type: string
 
@@ -82,7 +92,9 @@ MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining();
 ```
 
-### getStart
+:::
+
+:::group{name=getStart}
 
 Return Type: int
 
@@ -91,7 +103,9 @@ MCSuggestionsBuilder.getStart() as int
 myMCSuggestionsBuilder.getStart();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -100,7 +114,9 @@ MCSuggestionsBuilder.hashCode() as int
 myMCSuggestionsBuilder.hashCode();
 ```
 
-### restart
+:::
+
+:::group{name=restart}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -109,7 +125,9 @@ MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
 myMCSuggestionsBuilder.restart();
 ```
 
-### suggest
+:::
+
+:::group{name=suggest}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -157,7 +175,9 @@ MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBu
 | tooltip | string | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -166,15 +186,17 @@ MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString();
 ```
 
+:::
+
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionsBuilder == o as Object
 ```
 
-
+:::
 
 

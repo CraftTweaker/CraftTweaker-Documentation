@@ -16,7 +16,7 @@ import crafttweaker.api.event.block.CropGrowPostEvent;
 
 ## Methods
 
-### getOriginState
+:::group{name=getOriginState}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -24,6 +24,8 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 CropGrowPostEvent.getOriginState() as MCBlockState
 myCropGrowPostEvent.getOriginState();
 ```
+
+:::
 
 
 ## Properties

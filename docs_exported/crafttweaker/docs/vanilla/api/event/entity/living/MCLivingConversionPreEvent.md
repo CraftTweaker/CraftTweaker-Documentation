@@ -21,7 +21,7 @@ import crafttweaker.api.event.living.MCLivingConversionPreEvent;
 
 ## Methods
 
-### setConversionTimer
+:::group{name=setConversionTimer}
 
 Sets the conversion timer, by changing this it prevents the
  event being triggered every tick
@@ -39,6 +39,8 @@ MCLivingConversionPreEvent.setConversionTimer(ticks as int) as void
 |-----------|------|-------------|
 | ticks | int | No Description Provided |
 
+
+:::
 
 
 ## Properties

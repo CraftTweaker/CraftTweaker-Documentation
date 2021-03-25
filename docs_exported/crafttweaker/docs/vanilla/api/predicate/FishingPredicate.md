@@ -22,7 +22,7 @@ FishingPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pr
 
 ## Methods
 
-### withClosedWaters
+:::group{name=withClosedWaters}
 
 Indicates that the fishing hook has been used in not open waters, such as a pond.
 
@@ -35,7 +35,9 @@ FishingPredicate.withClosedWaters() as FishingPredicate
 myFishingPredicate.withClosedWaters();
 ```
 
-### withOpenWaters
+:::
+
+:::group{name=withOpenWaters}
 
 Indicates that the fishing hook has been used in open waters.
 
@@ -47,5 +49,7 @@ Return Type: [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 FishingPredicate.withOpenWaters() as FishingPredicate
 myFishingPredicate.withOpenWaters();
 ```
+
+:::
 
 

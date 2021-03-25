@@ -24,7 +24,7 @@ Json implements the following interfaces. That means all methods defined in thes
 
 ## Methods
 
-### create
+:::group{name=create}
 
 Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
 
@@ -73,9 +73,11 @@ Json.create(type as string, json as IData) as ILootCondition
 | json | [IData](/vanilla/api/data/IData) | The JSON data, according to the given constraints. |
 
 
+:::
+
 ## Methods
 
-### withJson
+:::group{name=withJson}
 
 Sets the type of the condition that will be built along with the JSON representation that will be parsed.
 
@@ -111,5 +113,7 @@ Json.withJson(type as string, json as IData) as Json
 | type | string | A string in resource location format identifying the type of the loot condition. |
 | json | [IData](/vanilla/api/data/IData) | The JSON data, according to the given constraints. |
 
+
+:::
 
 

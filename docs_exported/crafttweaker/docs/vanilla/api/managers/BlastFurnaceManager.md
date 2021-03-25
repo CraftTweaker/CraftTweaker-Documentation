@@ -17,7 +17,7 @@ BlastFurnaceManager implements the following interfaces. That means all methods 
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ blastFurnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe based on given params.
 
@@ -54,7 +56,9 @@ blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:mine
 | cookTime | int | how long it takes to cook |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -63,7 +67,9 @@ BlastFurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 blastFurnace.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -76,7 +82,9 @@ BlastFurnaceManager.getRecipeByName(name as string) as WrapperRecipe
 | name | string | No Description Provided |
 
 
-### getRecipesByOutput
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -89,7 +97,9 @@ BlastFurnaceManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wra
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
@@ -100,7 +110,9 @@ BlastFurnaceManager.removeAll() as void
 blastFurnace.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
@@ -131,7 +143,9 @@ blastFurnace.removeByModid("minecraft", (name as string) => {return name == "ora
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
@@ -147,7 +161,9 @@ blastFurnace.removeByName("minecraft:furnace");
 | name | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
@@ -163,7 +179,9 @@ blastFurnace.removeByRegex("\\d_\\d");
 | regex | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -193,5 +211,7 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 | output | [IItemStack](/vanilla/api/items/IItemStack) | IItemStack output of the recipe. |
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
+
+:::
 
 

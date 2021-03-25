@@ -25,7 +25,7 @@ MCRightClickBlockEvent extends [MCPlayerInteractEvent](/vanilla/api/event/entity
 
 ## Methods
 
-### getFace
+:::group{name=getFace}
 
 The face of the block that was clicked
  Unlike in [MCPlayerInteractEvent](/vanilla/api/event/entity/player/interact/MCPlayerInteractEvent) this is known not to be null
@@ -36,6 +36,8 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 MCRightClickBlockEvent.getFace() as Direction
 myMCRightClickBlockEvent.getFace();
 ```
+
+:::
 
 
 ## Properties

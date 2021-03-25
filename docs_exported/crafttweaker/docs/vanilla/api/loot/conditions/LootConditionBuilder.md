@@ -20,7 +20,7 @@ import crafttweaker.api.loot.conditions.LootConditionBuilder;
 
 ## Methods
 
-### create
+:::group{name=create}
 
 Creates a new empty [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
@@ -32,7 +32,9 @@ LootConditionBuilder.create() as LootConditionBuilder
 LootConditionBuilder.create();
 ```
 
-### createForSingle
+:::
+
+:::group{name=createForSingle}
 
 Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) and automatically adds a single condition of the specified type.
 
@@ -53,7 +55,9 @@ LootConditionBuilder.createForSingle<T : ILootConditionTypeBuilder>(lender as Co
 | T | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself. |
 
 
-### createInAnd
+:::
+
+:::group{name=createInAnd}
 
 Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [And](/vanilla/api/loot/conditions/crafttweaker/And).
 
@@ -72,7 +76,9 @@ LootConditionBuilder.createInAnd(lender as Consumer<And>) as LootConditionBuilde
 | lender | Consumer&lt;[And](/vanilla/api/loot/conditions/crafttweaker/And)&gt; | A consumer used to configure an [And](/vanilla/api/loot/conditions/crafttweaker/And) condition builder. |
 
 
-### createInOr
+:::
+
+:::group{name=createInOr}
 
 Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [Or](/vanilla/api/loot/conditions/crafttweaker/Or).
 
@@ -91,7 +97,9 @@ LootConditionBuilder.createInOr(lender as Consumer<Or>) as LootConditionBuilder
 | lender | Consumer&lt;[Or](/vanilla/api/loot/conditions/crafttweaker/Or)&gt; | A consumer used to configure an [Or](/vanilla/api/loot/conditions/crafttweaker/Or) condition builder. |
 
 
-### makeJson
+:::
+
+:::group{name=makeJson}
 
 Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
 
@@ -136,7 +144,9 @@ LootConditionBuilder.makeJson(type as string, data as IData) as ILootCondition
 | data | [IData](/vanilla/api/data/IData) | The JSON data, according to the given constraints. |
 
 
-### makeSingle
+:::
+
+:::group{name=makeSingle}
 
 Creates a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given type, according to the parameters specified in the
  <code>lender</code>.
@@ -159,9 +169,11 @@ LootConditionBuilder.makeSingle<T : ILootConditionTypeBuilder>(lender as Consume
 | T | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself. |
 
 
+:::
+
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds a new condition of the given type to the ones of this builder.
 
@@ -199,7 +211,9 @@ LootConditionBuilder.add<T : ILootConditionTypeBuilder>(lender as Consumer<T>) a
 | T | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself. |
 
 
-### build
+:::
+
+:::group{name=build}
 
 Builds the current builder, returning all its contents as an array of [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)s.
 
@@ -211,5 +225,7 @@ Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)[]
 LootConditionBuilder.build() as ILootCondition[]
 myLootConditionBuilder.build();
 ```
+
+:::
 
 

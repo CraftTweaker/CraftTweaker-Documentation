@@ -22,7 +22,7 @@ MCPlayerDestroyItemEvent extends [MCPlayerEvent](/vanilla/api/event/entity/playe
 
 ## Methods
 
-### getDestroyedItem
+:::group{name=getDestroyedItem}
 
 Gets a snapshot of the item from before it broke. Modifying this item
  will have no effect and it should be treated as unmodifiable.
@@ -33,6 +33,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
 event.getDestroyedItem();
 ```
+
+:::
 
 
 ## Properties

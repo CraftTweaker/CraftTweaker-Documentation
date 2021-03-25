@@ -28,7 +28,7 @@ RandomChanceWithLooting implements the following interfaces. That means all meth
 
 ## Methods
 
-### withChance
+:::group{name=withChance}
 
 Sets the chance of the loot condition successfully passing the check.
 
@@ -48,7 +48,9 @@ RandomChanceWithLooting.withChance(chance as float) as RandomChanceWithLooting
 | chance | float | The success rate of the condition. |
 
 
-### withLootingMultiplier
+:::
+
+:::group{name=withLootingMultiplier}
 
 Sets the looting modifier of the loot condition.
 
@@ -68,5 +70,7 @@ RandomChanceWithLooting.withLootingMultiplier(lootingMultiplier as float) as Ran
 |-----------|------|-------------|
 | lootingMultiplier | float | The looting modifier of the condition. |
 
+
+:::
 
 

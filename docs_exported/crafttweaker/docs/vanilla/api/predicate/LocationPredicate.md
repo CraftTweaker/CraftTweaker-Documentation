@@ -25,7 +25,7 @@ LocationPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/p
 
 ## Methods
 
-### withBiomeName
+:::group{name=withBiomeName}
 
 Sets the biome in which the location should be.
 
@@ -40,7 +40,9 @@ LocationPredicate.withBiomeName(biome as MCResourceLocation) as LocationPredicat
 | biome | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The name of the biome. |
 
 
-### withBlockPredicate
+:::
+
+:::group{name=withBlockPredicate}
 
 Creates and sets the [BlockPredicate](/vanilla/api/predicate/BlockPredicate) that will be used to match the block at the location.
 
@@ -57,7 +59,9 @@ LocationPredicate.withBlockPredicate(builder as Consumer<BlockPredicate>) as Loc
 | builder | Consumer&lt;[BlockPredicate](/vanilla/api/predicate/BlockPredicate)&gt; | A consumer that will be used to configure the [BlockPredicate](/vanilla/api/predicate/BlockPredicate). |
 
 
-### withCampfireBelow
+:::
+
+:::group{name=withCampfireBelow}
 
 Indicates that the location must be on top of a campfire.
 
@@ -70,7 +74,9 @@ LocationPredicate.withCampfireBelow() as LocationPredicate
 myLocationPredicate.withCampfireBelow();
 ```
 
-### withDimension
+:::
+
+:::group{name=withDimension}
 
 Sets the dimension where the location should be located in.
 
@@ -85,7 +91,9 @@ LocationPredicate.withDimension(dimension as MCResourceLocation) as LocationPred
 | dimension | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The name of the dimension. |
 
 
-### withExactXPosition
+:::
+
+:::group{name=withExactXPosition}
 
 Sets the value of the X position to exactly match the given <code>value</code>.
 
@@ -102,7 +110,9 @@ LocationPredicate.withExactXPosition(x as float) as LocationPredicate
 | x | float | The exact value the X position should assume. |
 
 
-### withExactYPosition
+:::
+
+:::group{name=withExactYPosition}
 
 Sets the value of the Y position to exactly match the given <code>value</code>.
 
@@ -119,7 +129,9 @@ LocationPredicate.withExactYPosition(y as int) as LocationPredicate
 | y | int | The exact value the Y position should assume. |
 
 
-### withExactZPosition
+:::
+
+:::group{name=withExactZPosition}
 
 Sets the value of the Z position to exactly match the given <code>value</code>.
 
@@ -136,7 +148,9 @@ LocationPredicate.withExactZPosition(z as int) as LocationPredicate
 | z | int | The exact value the Z position should assume. |
 
 
-### withFeatureName
+:::
+
+:::group{name=withFeatureName}
 
 Sets the name of the feature this location should be located in.
 
@@ -151,7 +165,9 @@ LocationPredicate.withFeatureName(feature as string) as LocationPredicate
 | feature | string | The name of the feature. |
 
 
-### withFluidPredicate
+:::
+
+:::group{name=withFluidPredicate}
 
 Creates and sets the [FluidPredicate](/vanilla/api/predicate/FluidPredicate) that will be used to match the block at the location, if present.
 
@@ -168,7 +184,9 @@ LocationPredicate.withFluidPredicate(builder as Consumer<FluidPredicate>) as Loc
 | builder | Consumer&lt;[FluidPredicate](/vanilla/api/predicate/FluidPredicate)&gt; | A consumer that will be used to configure the [FluidPredicate](/vanilla/api/predicate/FluidPredicate). |
 
 
-### withLightPredicate
+:::
+
+:::group{name=withLightPredicate}
 
 Creates and sets the [LightPredicate](/vanilla/api/predicate/LightPredicate) that will be used to match the light level at the location.
 
@@ -185,7 +203,9 @@ LocationPredicate.withLightPredicate(builder as Consumer<LightPredicate>) as Loc
 | builder | Consumer&lt;[LightPredicate](/vanilla/api/predicate/LightPredicate)&gt; | A consumer that will be used to configure the [LightPredicate](/vanilla/api/predicate/LightPredicate). |
 
 
-### withMaximumXPosition
+:::
+
+:::group{name=withMaximumXPosition}
 
 Sets the maximum value the X position can assume to <code>max</code>.
 
@@ -206,7 +226,9 @@ LocationPredicate.withMaximumXPosition(max as float) as LocationPredicate
 | max | float | The maximum value the X position can assume. |
 
 
-### withMaximumYPosition
+:::
+
+:::group{name=withMaximumYPosition}
 
 Sets the maximum value the Y position can assume to <code>max</code>.
 
@@ -227,7 +249,9 @@ LocationPredicate.withMaximumYPosition(max as float) as LocationPredicate
 | max | float | The maximum value the Y position can assume. |
 
 
-### withMaximumZPosition
+:::
+
+:::group{name=withMaximumZPosition}
 
 Sets the maximum value the Z position can assume to <code>max</code>.
 
@@ -248,7 +272,9 @@ LocationPredicate.withMaximumZPosition(max as float) as LocationPredicate
 | max | float | The maximum value the Z position can assume. |
 
 
-### withMinimumXPosition
+:::
+
+:::group{name=withMinimumXPosition}
 
 Sets the minimum value the X position can assume to <code>min</code>.
 
@@ -269,7 +295,9 @@ LocationPredicate.withMinimumXPosition(min as float) as LocationPredicate
 | min | float | The minimum value the X position can assume. |
 
 
-### withMinimumYPosition
+:::
+
+:::group{name=withMinimumYPosition}
 
 Sets the minimum value the Y position can assume to <code>min</code>.
 
@@ -290,7 +318,9 @@ LocationPredicate.withMinimumYPosition(min as float) as LocationPredicate
 | min | float | The minimum value the Y position can assume. |
 
 
-### withMinimumZPosition
+:::
+
+:::group{name=withMinimumZPosition}
 
 Sets the minimum value the Z position can assume to <code>min</code>.
 
@@ -311,7 +341,9 @@ LocationPredicate.withMinimumZPosition(min as float) as LocationPredicate
 | min | float | The minimum value the Z position can assume. |
 
 
-### withRangedXPosition
+:::
+
+:::group{name=withRangedXPosition}
 
 Sets both the minimum and maximum values the X position can assume to <code>min</code> and <code>max</code>
  respectively.
@@ -333,7 +365,9 @@ LocationPredicate.withRangedXPosition(min as float, max as float) as LocationPre
 | max | float | The maximum value the X position can assume. |
 
 
-### withRangedYPosition
+:::
+
+:::group{name=withRangedYPosition}
 
 Sets both the minimum and maximum values the Y position can assume to <code>min</code> and <code>max</code>
  respectively.
@@ -355,7 +389,9 @@ LocationPredicate.withRangedYPosition(min as float, max as float) as LocationPre
 | max | float | The maximum value the Y position can assume. |
 
 
-### withRangedZPosition
+:::
+
+:::group{name=withRangedZPosition}
 
 Sets both the minimum and maximum values the Z position can assume to <code>min</code> and <code>max</code>
  respectively.
@@ -377,7 +413,9 @@ LocationPredicate.withRangedZPosition(min as float, max as float) as LocationPre
 | max | float | The maximum value the Z position can assume. |
 
 
-### withoutCampfireBelow
+:::
+
+:::group{name=withoutCampfireBelow}
 
 Indicates that the location must not be on top of a campfire.
 
@@ -389,5 +427,7 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.withoutCampfireBelow() as LocationPredicate
 myLocationPredicate.withoutCampfireBelow();
 ```
+
+:::
 
 

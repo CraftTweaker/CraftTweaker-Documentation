@@ -24,7 +24,7 @@ MCBlockPlaceEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 
 ## Methods
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
@@ -33,7 +33,9 @@ MCBlockPlaceEvent.getEntity() as MCEntity
 myMCBlockPlaceEvent.getEntity();
 ```
 
-### getPlacedAgainst
+:::
+
+:::group{name=getPlacedAgainst}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -42,7 +44,9 @@ MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
 myMCBlockPlaceEvent.getPlacedAgainst();
 ```
 
-### getPlacedBlock
+:::
+
+:::group{name=getPlacedBlock}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -51,7 +55,9 @@ MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
 myMCBlockPlaceEvent.getPlacedBlock();
 ```
 
-### getReplacedBlock
+:::
+
+:::group{name=getReplacedBlock}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -59,6 +65,8 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
 myMCBlockPlaceEvent.getReplacedBlock();
 ```
+
+:::
 
 
 ## Properties

@@ -22,7 +22,7 @@ IngredientList implements the following interfaces. That means all methods defin
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -35,7 +35,9 @@ IngredientList.addShiftTooltip(content as MCTextComponent, showMessage as MCText
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -48,7 +50,9 @@ IngredientList.addTooltip(content as MCTextComponent) as void
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -57,7 +61,9 @@ IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
 myIngredientList.anyDamage();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
@@ -66,7 +72,9 @@ IngredientList.clearTooltip() as void
 myIngredientList.clearTooltip();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Does the ingredient contain the given ingredient?
 
@@ -82,7 +90,9 @@ myIngredientList.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_in
 | ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
 
 
-### getRemainingItem
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
  Does not check if the stack matches though!
@@ -100,7 +110,9 @@ myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -116,7 +128,9 @@ myIngredientList.matches(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -129,7 +143,9 @@ IngredientList.modifyTooltip(function as ITooltipFunction) as void
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### only
+:::
+
+:::group{name=only}
 
 Use this if you already have the condition from another ingredient
 
@@ -144,7 +160,9 @@ IngredientList.only(condition as IIngredientCondition<IIngredient>) as MCIngredi
 | condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -153,7 +171,9 @@ IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
 myIngredientList.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -166,7 +186,9 @@ IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIng
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -179,10 +201,12 @@ IngredientList.removeTooltip(regex as string) as void
 | regex | string | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Does the ingredient contain the given ingredient?
 
@@ -191,15 +215,15 @@ ingredient as IIngredient in myIngredientList
 (<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientList
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myIngredientList | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties

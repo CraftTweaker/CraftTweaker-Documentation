@@ -17,7 +17,7 @@ IngredientAny implements the following interfaces. That means all methods define
 
 ## Methods
 
-### getInstance
+:::group{name=getInstance}
 
 Return Type: [IngredientAny](/vanilla/api/items/IngredientAny)
 
@@ -25,6 +25,8 @@ Return Type: [IngredientAny](/vanilla/api/items/IngredientAny)
 IngredientAny.getInstance() as IngredientAny
 IngredientAny.getInstance();
 ```
+
+:::
 
 ## Casters
 
@@ -35,7 +37,7 @@ IngredientAny.getInstance();
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -48,7 +50,9 @@ IngredientAny.addShiftTooltip(content as MCTextComponent, showMessage as MCTextC
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -61,7 +65,9 @@ IngredientAny.addTooltip(content as MCTextComponent) as void
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -70,7 +76,9 @@ IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
 myIngredientAny.anyDamage();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
@@ -79,7 +87,9 @@ IngredientAny.clearTooltip() as void
 myIngredientAny.clearTooltip();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Does the ingredient contain the given ingredient?
 
@@ -95,7 +105,9 @@ myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ing
 | ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
 
 
-### getRemainingItem
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
  Does not check if the stack matches though!
@@ -113,7 +125,9 @@ myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -129,7 +143,9 @@ myIngredientAny.matches(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -142,7 +158,9 @@ IngredientAny.modifyTooltip(function as ITooltipFunction) as void
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### only
+:::
+
+:::group{name=only}
 
 Use this if you already have the condition from another ingredient
 
@@ -157,7 +175,9 @@ IngredientAny.only(condition as IIngredientCondition<IIngredient>) as MCIngredie
 | condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -166,7 +186,9 @@ IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
 myIngredientAny.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -179,7 +201,9 @@ IngredientAny.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngr
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -192,10 +216,12 @@ IngredientAny.removeTooltip(regex as string) as void
 | regex | string | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Does the ingredient contain the given ingredient?
 
@@ -204,15 +230,15 @@ ingredient as IIngredient in myIngredientAny
 (<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientAny
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myIngredientAny | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties

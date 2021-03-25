@@ -25,7 +25,7 @@ Not implements the following interfaces. That means all methods defined in these
 
 ## Methods
 
-### withCondition
+:::group{name=withCondition}
 
 Sets the negated condition to the one created with the given [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
@@ -73,5 +73,7 @@ Not.withCondition<T : ILootConditionTypeBuilder>(lender as Consumer<T>) as Not
 | lender | Consumer&lt;T&gt; | A consumer that allows configuration of the created condition. |
 | T | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself. |
 
+
+:::
 
 

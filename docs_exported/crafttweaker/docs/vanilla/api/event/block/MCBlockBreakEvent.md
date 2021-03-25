@@ -24,7 +24,7 @@ MCBlockBreakEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 
 ## Methods
 
-### getExpToDrop
+:::group{name=getExpToDrop}
 
 Return Type: int
 
@@ -33,7 +33,9 @@ MCBlockBreakEvent.getExpToDrop() as int
 myMCBlockBreakEvent.getExpToDrop();
 ```
 
-### getPlayer
+:::
+
+:::group{name=getPlayer}
 
 Gets the player who broke the block. If no player is available, use a fake player
 
@@ -44,7 +46,9 @@ MCBlockBreakEvent.getPlayer() as MCPlayerEntity
 myMCBlockBreakEvent.getPlayer();
 ```
 
-### setExpToDrop
+:::
+
+:::group{name=setExpToDrop}
 
 Return Type: void
 
@@ -56,6 +60,8 @@ MCBlockBreakEvent.setExpToDrop(amount as int) as void
 |-----------|------|-------------|
 | amount | int | No Description Provided |
 
+
+:::
 
 
 ## Properties
