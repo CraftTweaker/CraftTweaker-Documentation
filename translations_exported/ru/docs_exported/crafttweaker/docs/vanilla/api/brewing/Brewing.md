@@ -12,7 +12,7 @@ import crafttweaker.api.Brewing;
 
 ## Methods
 
-### addRecipe
+:::group{name=addRecipe}
 
 Adds a new brewing recipe to the Brewing Stand.
 
@@ -30,7 +30,9 @@ brewing.addRecipe(<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft
 | input    | [IIngredient](/vanilla/api/items/IIngredient) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Removes an ItemStack to ItemStack recipe from the Brewing Stand. These are mainly potions added by mods.
 
@@ -48,6 +50,10 @@ brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:min
 | input    | [IItemStack](/vanilla/api/items/IItemStack) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
+:::
+
+:::group{name=removeRecipe}
+
 Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the default vanilla recipes.
 
 Return Type: void
@@ -64,7 +70,9 @@ brewing.removeRecipe(<potion:minecraft:thick>, <item:minecraft:glowstone_dust>, 
 | input    | [MCPotion](/vanilla/api/potions/MCPotion)   | The Potion ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
-### removeRecipeByInput
+:::
+
+:::group{name=removeRecipeByInput}
 
 Removes recipes from the Brewing Stand based on their Input (The ItemStack that goes in the bottom 3 slots). E.G. A water bottle in Vanilla brewing recipes
 
@@ -80,7 +88,9 @@ brewing.removeRecipeByInput(<item:minecraft:glass>);
 | input    | [IItemStack](/vanilla/api/items/IItemStack) | The input of the recipes to remove. |
 
 
-### removeRecipeByInputPotion
+:::
+
+:::group{name=removeRecipeByInputPotion}
 
 Removes recipes from the Brewing Stand based on their input Potion. These are mainly the default vanilla recipes. The input potion is the potion that is in the top slot of the Brewing Stand.
 
@@ -95,7 +105,9 @@ Brewing.removeRecipeByInputPotion(input as MCPotion) as void
 | input    | [MCPotion](/vanilla/api/potions/MCPotion) | The input potion of the recipes to remove. |
 
 
-### removeRecipeByOutputPotion
+:::
+
+:::group{name=removeRecipeByOutputPotion}
 
 Removes recipes from the Brewing Stand based on their output Potion. These are mainly the default vanilla recipes.
 
@@ -111,7 +123,9 @@ brewing.removeRecipeByOutputPotion(<potion:minecraft:swiftness>);
 | output   | [MCPotion](/vanilla/api/potions/MCPotion) | The potion of the recipes to remove. |
 
 
-### removeRecipeByReagent
+:::
+
+:::group{name=removeRecipeByReagent}
 
 Removes recipes from the Brewing Stand based on their Reagent (The item in the top slot).
 
@@ -126,5 +140,7 @@ brewing.removeRecipeByReagent(<item:minecraft:golden_carrot>);
 | -------- | ------------------------------------------- | ------------------------------------- |
 | reagent  | [IItemStack](/vanilla/api/items/IItemStack) | The reagent of the recipes to remove. |
 
+
+:::
 
 
