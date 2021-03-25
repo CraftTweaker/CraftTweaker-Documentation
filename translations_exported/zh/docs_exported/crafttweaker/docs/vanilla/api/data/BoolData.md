@@ -34,7 +34,6 @@ new BoolData(internal as boolean) as BoolData
 | ----------------------------------------------------------- | ----- |
 | [ByteData #字节数据](/vanilla/api/data/ByteData)                | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
-| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
 
@@ -67,15 +66,6 @@ Return Type: [IData](/vanilla/api/data/IData)[string]
 ```zenscript
 BoolData.asMap() as IData[string]
 true.asMap();
-```
-
-### asNumber
-
-Return Type: [INumberData](/vanilla/api/data/INumberData)
-
-```zenscript
-BoolData.asNumber() as INumberData
-true.asNumber();
 ```
 
 ### contains #容器
