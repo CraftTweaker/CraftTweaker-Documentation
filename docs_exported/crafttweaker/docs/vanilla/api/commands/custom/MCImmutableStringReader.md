@@ -19,6 +19,10 @@ MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
 
+:::
+
+:::group{name=canRead}
+
 Return Type: boolean
 
 ```zenscript
@@ -106,6 +110,10 @@ Return Type: char
 MCImmutableStringReader.peek() as char
 myMCImmutableStringReader.peek();
 ```
+
+:::
+
+:::group{name=peek}
 
 Return Type: char
 

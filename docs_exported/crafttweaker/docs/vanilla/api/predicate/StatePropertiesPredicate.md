@@ -42,6 +42,10 @@ StatePropertiesPredicate.withExactProperty(name as string, value as boolean) as 
 | value | boolean | The boolean value the property must have. |
 
 
+:::
+
+:::group{name=withExactProperty}
+
 Adds the property <code>name</code> to the list of properties that should be matched, along with an integer value
  that should be matched exactly.
 
@@ -59,6 +63,10 @@ StatePropertiesPredicate.withExactProperty(name as string, value as int) as Stat
 | name | string | The name of the property to check. |
 | value | int | The integer value the property must have. |
 
+
+:::
+
+:::group{name=withExactProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a string value
  that should be matched exactly.
@@ -122,6 +130,10 @@ StatePropertiesPredicate.withRangedProperty(name as string, min as int, max as i
 | min | int | The minimum integer value the property must have. |
 | max | int | The maximum integer value the property must have. |
 
+
+:::
+
+:::group{name=withRangedProperty}
 
 Adds the property <code>name</code> to the list of properties that should be matched, along with a range that
  goes from <code>min</code> to <code>max</code> in which the string value should be.

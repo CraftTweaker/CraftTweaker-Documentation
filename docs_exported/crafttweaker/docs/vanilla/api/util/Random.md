@@ -44,6 +44,10 @@ Random.nextDouble() as double
 myRandom.nextDouble();
 ```
 
+:::
+
+:::group{name=nextDouble}
+
 Returns the next pseudorandom double. Its range is [min, max]
 
 Return Type: double
@@ -72,6 +76,10 @@ Random.nextFloat() as float
 myRandom.nextFloat();
 ```
 
+:::
+
+:::group{name=nextFloat}
+
 Returns the next pseudorandom float. Its range is [min, max]
 
 Return Type: float
@@ -99,6 +107,10 @@ Random.nextInt() as int
 myRandom.nextInt();
 ```
 
+:::
+
+:::group{name=nextInt}
+
 Returns the next pseudorandom, uniformly distributed int value between zero (inclusive)
  and bound (exclusive) from this random number generator's sequence
 
@@ -112,6 +124,10 @@ Random.nextInt(bound as int) as int
 |-----------|------|-------------|
 | bound | int | the upper bound (exclusive). Must be positive. |
 
+
+:::
+
+:::group{name=nextInt}
 
 Returns the next pseudorandom int. Its range is [min, max]
 

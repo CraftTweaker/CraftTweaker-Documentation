@@ -98,6 +98,10 @@ MCVector3d.getCoordinate(axis as DirectionAxis) as double
 | axis | [DirectionAxis](/vanilla/api/util/DirectionAxis) | The axis. |
 
 
+:::
+
+:::group{name=getCoordinate}
+
 Gets the coordinate of this vector identified by the specified index.
 
  Namely, 0 corresponds to the X coordinate, 1 to Y, and 2 to Z.
@@ -129,6 +133,10 @@ MCVector3d.minus(other as MCVector3d) as MCVector3d
 |-----------|------|-------------|
 | other | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=minus}
 
 Subtracts the vector <code>(x, y, z)</code> from this vector.
 
@@ -174,6 +182,10 @@ MCVector3d.plus(other as MCVector3d) as MCVector3d
 |-----------|------|-------------|
 | other | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=plus}
 
 Adds this vector to the vector <code>(x, y, z)</code>, computing their sum member by member.
 
@@ -259,6 +271,10 @@ MCVector3d.times(other as MCVector3d) as MCVector3d
 |-----------|------|-------------|
 | other | [MCVector3d](/vanilla/api/util/MCVector3d) | The other vector. |
 
+
+:::
+
+:::group{name=times}
 
 Multiplies this vector with the vector <code>(x, y, z)</code>, computing what is known as the Hadamard product.
 

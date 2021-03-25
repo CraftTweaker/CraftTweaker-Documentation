@@ -206,6 +206,10 @@ MCRequiredArgumentBuilder.redirect(target as MCCommandNode) as MCRequiredArgumen
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
+:::
+
+:::group{name=redirect}
+
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
@@ -263,6 +267,10 @@ MCRequiredArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuild
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
 
+:::
+
+:::group{name=then}
+
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
@@ -273,6 +281,10 @@ MCRequiredArgumentBuilder.then(argument as MCCommandNode) as MCRequiredArgumentB
 |-----------|------|-------------|
 | argument | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
+
+:::
+
+:::group{name=then}
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 

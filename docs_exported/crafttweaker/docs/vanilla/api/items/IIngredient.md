@@ -144,6 +144,10 @@ IIngredient.matches(stack as IItemStack) as boolean
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
+
+:::group{name=matches}
+
 Does the given stack match the ingredient?
 
 Return Type: boolean

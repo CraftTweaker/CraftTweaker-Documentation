@@ -61,6 +61,10 @@ new ListData(["Hello", "World"]).add("today");
 | value | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
+:::
+
+:::group{name=add}
+
 
 
 Return Type: void

@@ -127,6 +127,10 @@ smithing.removeByModid("minecraft");
 | modid | string | modid of the recipes to remove |
 
 
+:::
+
+:::group{name=removeByModid}
+
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void

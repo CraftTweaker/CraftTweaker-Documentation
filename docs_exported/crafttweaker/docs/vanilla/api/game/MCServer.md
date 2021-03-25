@@ -34,6 +34,10 @@ MCServer.executeCommand(command as string) as int
 | command | string | No Description Provided |
 
 
+:::
+
+:::group{name=executeCommand}
+
 let a player send a command
 
  Returns The success value of the command, or 0 if an exception occurred.

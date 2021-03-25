@@ -41,6 +41,10 @@ ItemPredicate.matching(stack as IItemStack) as ItemPredicate
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack that should be matched. |
 
 
+:::
+
+:::group{name=matching}
+
 Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStack) as closely as possible, optionally considering damage.
 
  Additional properties such as count or NBT data are ignored.
@@ -56,6 +60,10 @@ ItemPredicate.matching(stack as IItemStack, matchDamage as boolean) as ItemPredi
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack that should be matched. |
 | matchDamage | boolean | Whether to consider damage or not when matching the stack. |
 
+
+:::
+
+:::group{name=matching}
 
 Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStack) as closely as possible, optionally considering damage
  and count.
@@ -74,6 +82,10 @@ ItemPredicate.matching(stack as IItemStack, matchDamage as boolean, matchCount a
 | matchDamage | boolean | Whether to consider damage or not when matching the stack. |
 | matchCount | boolean | Whether to consider the amount or not when matching the stack. |
 
+
+:::
+
+:::group{name=matching}
 
 Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStack) as closely as possible, optionally considering damage,
  count, and NBT data.
@@ -133,6 +145,10 @@ ItemPredicate.withEnchantmentPredicate(builder as Consumer<EnchantmentPredicate>
 |-----------|------|-------------|
 | builder | Consumer&lt;[EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)&gt; | A consumer that will be used to configure the [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate). |
 
+
+:::
+
+:::group{name=withEnchantmentPredicate}
 
 Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) for the given [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) to the list of predicates
  to match against the item's enchantments.
@@ -211,6 +227,10 @@ ItemPredicate.withItem(definition as MCItemDefinition) as ItemPredicate
 |-----------|------|-------------|
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | The item the predicate should match. |
 
+
+:::
+
+:::group{name=withItem}
 
 Sets the [MCItemDefinition](/vanilla/api/item/MCItemDefinition) that this predicate should match to the one contained in the given [IItemStack](/vanilla/api/items/IItemStack).
 
@@ -403,6 +423,10 @@ ItemPredicate.withStoredEnchantmentPredicate(builder as Consumer<EnchantmentPred
 |-----------|------|-------------|
 | builder | Consumer&lt;[EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)&gt; | A consumer that will be used to configure the [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate). |
 
+
+:::
+
+:::group{name=withStoredEnchantmentPredicate}
 
 Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) for the given [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) to the list of predicates
  to match against the item's stored enchantments.

@@ -40,6 +40,10 @@ MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 
+:::
+
+:::group{name=doesWaterFreeze}
+
 Return Type: boolean
 
 ```zenscript

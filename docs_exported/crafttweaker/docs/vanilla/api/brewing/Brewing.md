@@ -50,6 +50,10 @@ brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:min
 | input | [IItemStack](/vanilla/api/items/IItemStack) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
+:::
+
+:::group{name=removeRecipe}
+
 Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the default vanilla recipes.
 
 Return Type: void

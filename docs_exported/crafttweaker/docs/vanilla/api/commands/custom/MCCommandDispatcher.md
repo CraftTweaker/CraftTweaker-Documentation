@@ -44,6 +44,10 @@ MCCommandDispatcher.execute(parse as MCParseResults) as int
 | parse | [MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No Description Provided |
 
 
+:::
+
+:::group{name=execute}
+
 Return Type: int
 
 ```zenscript
@@ -117,6 +121,10 @@ MCCommandDispatcher.getCompletionSuggestions(parse as MCParseResults) as MCSugge
 |-----------|------|-------------|
 | parse | [MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No Description Provided |
 
+
+:::
+
+:::group{name=getCompletionSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 

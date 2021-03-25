@@ -43,6 +43,10 @@ MCTag.add(items as stdlib.List<T>) as void
 | items | stdlib.List&lt;T&gt; | The items to add. Provided as list. |
 
 
+:::
+
+:::group{name=add}
+
 Adds the given items to the tag. Creates the tag if it does not exist.
 
 Return Type: void
@@ -58,6 +62,10 @@ MCTag.add(items as T[]) as void
 |-----------|------|-------------|
 | items | T[] | The items to add. Can be one or more items. |
 
+
+:::
+
+:::group{name=add}
 
 Adds the given tag to this tag. Creates the tag if it does not exist.
 
@@ -158,6 +166,10 @@ MCTag.remove(items as stdlib.List<T>) as void
 | items | stdlib.List&lt;T&gt; | No Description Provided |
 
 
+:::
+
+:::group{name=remove}
+
 Return Type: void
 
 ```zenscript
@@ -168,6 +180,10 @@ MCTag.remove(items as T[]) as void
 |-----------|------|-------------|
 | items | T[] | No Description Provided |
 
+
+:::
+
+:::group{name=remove}
 
 Return Type: void
 

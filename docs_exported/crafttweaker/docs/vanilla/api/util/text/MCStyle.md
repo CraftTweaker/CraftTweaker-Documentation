@@ -178,6 +178,10 @@ MCStyle.setColor(colour as int) as MCStyle
 | colour | int | No Description Provided |
 
 
+:::
+
+:::group{name=setColor}
+
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript

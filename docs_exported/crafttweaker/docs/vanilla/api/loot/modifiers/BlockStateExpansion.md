@@ -177,6 +177,10 @@ MCBlockState.addToolLootModifier(name as string, tool as IItemStack, modifier as
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block state. |
 
 
+:::
+
+:::group{name=addToolLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if this block state gets broken with the given tool, optionally
  considering its damage.
 
@@ -195,6 +199,10 @@ MCBlockState.addToolLootModifier(name as string, tool as IItemStack, matchDamage
 | matchDamage | boolean | Whether to consider damage or not when trying to match the tool. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block state. |
 
+
+:::
+
+:::group{name=addToolLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if this block state gets broken with the given tool, optionally
  considering its damage or NBT.

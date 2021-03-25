@@ -95,6 +95,10 @@ Json.withJson(type as MCResourceLocation, json as IData) as Json
 | json | [IData](/vanilla/api/data/IData) | The JSON data, according to the given constraints. |
 
 
+:::
+
+:::group{name=withJson}
+
 Sets the type of the condition that will be built along with the JSON representation that will be parsed.
 
  The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this

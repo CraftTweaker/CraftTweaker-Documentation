@@ -46,6 +46,10 @@ Inverted.withCondition(builder as LootConditionBuilder) as Inverted
 | builder | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | The builder to create a single [ILootCondition](/vanilla/api/loot/conditions/ILootCondition). |
 
 
+:::
+
+:::group{name=withCondition}
+
 Sets the loot condition to invert.
 
  This parameter is <strong>required</strong>.
@@ -60,6 +64,10 @@ Inverted.withCondition(condition as ILootCondition) as Inverted
 |-----------|------|-------------|
 | condition | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) | The condition to invert. |
 
+
+:::
+
+:::group{name=withCondition}
 
 Creates and builds the sub-condition that will then be inverted.
 

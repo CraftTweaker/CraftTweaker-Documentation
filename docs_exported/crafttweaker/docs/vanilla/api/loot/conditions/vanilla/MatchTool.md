@@ -48,6 +48,10 @@ MatchTool.matching(tool as IItemStack) as MatchTool
 | tool | [IItemStack](/vanilla/api/items/IItemStack) | The tool that should be matched. |
 
 
+:::
+
+:::group{name=matching}
+
 Sets the tool that should be matched by this loot condition, optionally ignoring damage.
 
  The check will ignore any amount and NBT data that may be attached to the tool.
@@ -70,6 +74,10 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean) as MatchTool
 | tool | [IItemStack](/vanilla/api/items/IItemStack) | The tool that should be matched. |
 | matchDamage | boolean | Whether damage should be taken into account when matching. |
 
+
+:::
+
+:::group{name=matching}
 
 Sets the tool that should be matched by this loot condition, optionally ignoring damage or count.
 
@@ -94,6 +102,10 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean, matchCount as boo
 | matchDamage | boolean | Whether damage should be taken into account when matching. |
 | matchCount | boolean | Whether the amount should be taken into account when matching. |
 
+
+:::
+
+:::group{name=matching}
 
 Sets the tool that should be matched by this loot condition, optionally ignoring damage, count, or NBT data.
 

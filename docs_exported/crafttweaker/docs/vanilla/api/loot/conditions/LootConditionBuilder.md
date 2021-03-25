@@ -193,6 +193,10 @@ LootConditionBuilder.add<T : ILootConditionTypeBuilder>() as LootConditionBuilde
 | T | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself. |
 
 
+:::
+
+:::group{name=add}
+
 Adds a new condition of the given type and configuration to the ones of this builder.
 
  The condition is built according to the specified [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) and configured according to

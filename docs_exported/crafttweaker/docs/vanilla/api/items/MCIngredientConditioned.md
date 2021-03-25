@@ -128,6 +128,10 @@ myMCIngredientConditioned.matches(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
+
+:::group{name=matches}
+
 Return Type: boolean
 
 ```zenscript

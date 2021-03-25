@@ -32,6 +32,10 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
 
+:::
+
+:::group{name=addTrade}
+
 Adds a Villager Trade for an Item for an Item. An example being, giving a villager 2 diamonds for an arrow.
 
 Return Type: void
@@ -49,6 +53,10 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | maxTrades | int | How many times can this trade be done. | false |  |
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
+
+:::
+
+:::group{name=addTrade}
 
 Adds a Villager Trade for two Items for an Item. An example being, giving a villager 2 diamonds and 2 dirt for an arrow.
 

@@ -140,6 +140,10 @@ MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 | text | string | No Description Provided |
 
 
+:::
+
+:::group{name=suggest}
+
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
@@ -150,6 +154,10 @@ MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
 |-----------|------|-------------|
 | value | int | No Description Provided |
 
+
+:::
+
+:::group{name=suggest}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -162,6 +170,10 @@ MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestions
 | text | string | No Description Provided |
 | tooltip | string | No Description Provided |
 
+
+:::
+
+:::group{name=suggest}
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 

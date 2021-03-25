@@ -45,6 +45,10 @@ Not.withCondition(builder as LootConditionBuilder) as Not
 | builder | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | The builder to create a single [ILootCondition](/vanilla/api/loot/conditions/ILootCondition). |
 
 
+:::
+
+:::group{name=withCondition}
+
 Sets the loot condition to negate.
 
  This parameter is <strong>required</strong>.
@@ -59,6 +63,10 @@ Not.withCondition(condition as ILootCondition) as Not
 |-----------|------|-------------|
 | condition | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) | The condition to negate. |
 
+
+:::
+
+:::group{name=withCondition}
 
 Creates and builds the sub-condition that will then be negated.
 

@@ -73,6 +73,10 @@ MCLivingEntity.canAttack(target as MCLivingEntity) as boolean
 | target | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
 
 
+:::
+
+:::group{name=canAttack}
+
 Return Type: boolean
 
 ```zenscript

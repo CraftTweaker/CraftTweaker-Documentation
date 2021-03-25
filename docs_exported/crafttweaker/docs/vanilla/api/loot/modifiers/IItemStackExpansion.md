@@ -22,6 +22,10 @@ IItemStack.addToolModifier(name as string, modifier as ILootModifier) as void
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add. |
 
 
+:::
+
+:::group{name=addToolModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally
  considering its damage.
 
@@ -39,6 +43,10 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, modifier as I
 | matchDamage | boolean | Whether to consider damage or not when trying to match the tool. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add. |
 
+
+:::
+
+:::group{name=addToolModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally
  considering its damage and count.
@@ -58,6 +66,10 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, matchCount as
 | matchCount | boolean | Whether to consider the amount or not when trying to match the tool. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add. |
 
+
+:::
+
+:::group{name=addToolModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally
  considering its damage, count, and NBT data.

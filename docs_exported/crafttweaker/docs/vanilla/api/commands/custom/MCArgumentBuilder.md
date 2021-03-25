@@ -180,6 +180,10 @@ MCArgumentBuilder.redirect(target as MCCommandNode) as MCArgumentBuilder
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
+:::
+
+:::group{name=redirect}
+
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
@@ -221,6 +225,10 @@ MCArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
 |-----------|------|-------------|
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
+
+:::
+
+:::group{name=then}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 

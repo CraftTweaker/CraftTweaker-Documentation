@@ -195,6 +195,10 @@ MCLiteralArgumentBuilder.redirect(target as MCCommandNode) as MCLiteralArgumentB
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
+:::
+
+:::group{name=redirect}
+
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
@@ -236,6 +240,10 @@ MCLiteralArgumentBuilder.then(argument as MCArgumentBuilder) as MCLiteralArgumen
 |-----------|------|-------------|
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
+
+:::
+
+:::group{name=then}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 

@@ -54,6 +54,10 @@ DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
 | z | double | z value of the coordinate |
 
 
+:::
+
+:::group{name=getCoordinate}
+
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
 Return Type: int

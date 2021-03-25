@@ -176,6 +176,10 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
 
+:::
+
+:::group{name=addWeaponAndPlayerOnlyLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player with the
  given weapon, optionally considering its damage.
 
@@ -194,6 +198,10 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 | matchDamage | boolean | Whether to consider damage or not when identifying the weapon. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
+
+:::
+
+:::group{name=addWeaponAndPlayerOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player with the
  given weapon, optionally considering its damage and NBT data.
@@ -280,6 +288,10 @@ MCEntityType.addWeaponOnlyLootModifier(name as string, weapon as IItemStack, mod
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
 
+:::
+
+:::group{name=addWeaponOnlyLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed with the given
  weapon, optionally considering its damage.
 
@@ -298,6 +310,10 @@ MCEntityType.addWeaponOnlyLootModifier(name as string, weapon as IItemStack, mat
 | matchDamage | boolean | Whether to consider damage or not when identifying the weapon. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
+
+:::
+
+:::group{name=addWeaponOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed with the given
  weapon, optionally considering its damage and NBT data.

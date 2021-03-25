@@ -43,6 +43,10 @@ Delegate.withDelegate(builder as LootConditionBuilder) as Delegate
 | builder | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | The builder to create a single [ILootCondition](/vanilla/api/loot/conditions/ILootCondition). |
 
 
+:::
+
+:::group{name=withDelegate}
+
 Sets the delegate loot condition.
 
  This parameter is <strong>required</strong>.

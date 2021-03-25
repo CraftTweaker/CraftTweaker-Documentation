@@ -93,6 +93,10 @@ LootModifierManager.register(name as string, builder as LootConditionBuilder, mo
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
+:::
+
+:::group{name=register}
+
 Registers a new global loot modifier with the given name.
 
  The loot modifier will be run only when all conditions pass, effectively as if they were merged with an 'AND'

@@ -44,6 +44,10 @@ Reference.withName(name as MCResourceLocation) as Reference
 | name | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The name of the predicate to query. |
 
 
+:::
+
+:::group{name=withName}
+
 Sets the name of the data-pack loot condition to query.
 
  The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this

@@ -69,6 +69,10 @@ world.destroyBlock(new BlockPos(0, 1, 2), true);
 | doDrops | boolean | Whether or not the block drops itself and it's loot. |
 
 
+:::
+
+:::group{name=destroyBlock}
+
 Destroys a block within the world.
 
 Return Type: boolean
@@ -140,6 +144,10 @@ world.getEntitiesInArea(new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 | pos1 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | false |  |
 | pos2 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | true |  |
 
+:::
+
+:::group{name=getEntitiesInArea}
+
 Gets all entities in given area.
 
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
@@ -178,6 +186,10 @@ world.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new
 | predicate | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | No Description Provided | false |  |
 | pos1 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | false |  |
 | pos2 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | true |  |
+
+:::
+
+:::group{name=getEntitiesInAreaExcluding}
 
 Gets all entities in given area, excluding the one passed into it.
 
@@ -381,6 +393,10 @@ world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 | data | int | Four bytes of additional data encoded as an integer. This
         is generally unused. |
 
+
+:::
+
+:::group{name=playEvent}
 
 Triggers a predetermined event on the client. Using this on a server
  or integrated server will send the event to all nearby players.

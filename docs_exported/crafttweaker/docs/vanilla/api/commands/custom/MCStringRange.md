@@ -98,6 +98,10 @@ MCStringRange.getFrom(reader as MCImmutableStringReader) as string
 | reader | [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No Description Provided |
 
 
+:::
+
+:::group{name=getFrom}
+
 Return Type: string
 
 ```zenscript

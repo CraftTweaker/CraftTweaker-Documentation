@@ -30,6 +30,10 @@ TagManagerFluid.exists(location as MCResourceLocation) as boolean
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
 
 
+:::
+
+:::group{name=exists}
+
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
 Return Type: boolean
@@ -76,6 +80,10 @@ TagManagerFluid.getTag(location as MCResourceLocation) as MCTag<T>
 |-----------|------|-------------|
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
+
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name.
  Will also be called by the BEP.

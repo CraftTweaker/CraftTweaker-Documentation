@@ -108,6 +108,10 @@ EntityPredicate.withEffectPredicate(builder as Consumer<MobEffectsPredicate>) as
 | builder | Consumer&lt;[MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate)&gt; | A consumer that will be used to configure the [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate). |
 
 
+:::
+
+:::group{name=withEffectPredicate}
+
 Sets the effect that should be present on the entity.
 
  The effect should also match the data that gets configured in the [EffectData](/vanilla/api/predicate/EffectData) predicate.

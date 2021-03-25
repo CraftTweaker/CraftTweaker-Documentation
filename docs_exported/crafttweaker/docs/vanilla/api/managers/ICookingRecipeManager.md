@@ -128,6 +128,10 @@ furnace.removeByModid("minecraft");
 | modid | string | modid of the recipes to remove |
 
 
+:::
+
+:::group{name=removeByModid}
+
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
@@ -196,6 +200,10 @@ furnace.removeRecipe(<item:minecraft:glass>);
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
+
+:::
+
+:::group{name=removeRecipe}
 
 Removes a recipe based on it's output and input.
 

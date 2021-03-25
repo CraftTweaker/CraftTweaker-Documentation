@@ -187,6 +187,10 @@ MCEntity.getDistanceSq(entityIn as MCEntity) as double
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
 
+:::
+
+:::group{name=getDistanceSq}
+
 Return Type: double
 
 ```zenscript
