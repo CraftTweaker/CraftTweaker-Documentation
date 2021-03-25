@@ -4,7 +4,7 @@ Additional methods for easier modification of block-related loot tables.
 
 ## Methods
 
-### addDrop
+:::group{name=addDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) as a drop for this block.
 
@@ -20,7 +20,9 @@ MCBlock.addDrop(uniqueId as string, stack as IItemStack) as void
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.              |
 
 
-### addDrops
+:::
+
+:::group{name=addDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s as drops for this block.
 
@@ -36,7 +38,9 @@ MCBlock.addDrops(uniqueId as string, stacks as IItemStack[]) as void
 | stacks    | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.             |
 
 
-### addLootModifier
+:::
+
+:::group{name=addLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to this block, with the given name.
 
@@ -52,7 +56,9 @@ MCBlock.addLootModifier(name as string, modifier as ILootModifier) as void
 | modifier  | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add.             |
 
 
-### addStateDrop
+:::
+
+:::group{name=addStateDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this block if it matches the state outlined in the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate).
 
@@ -69,7 +75,9 @@ MCBlock.addStateDrop(uniqueId as string, statePredicate as Consumer<StatePropert
 | stack          | [IItemStack](/vanilla/api/items/IItemStack)                                                             | The stack to add to the drops.                                                                                                        |
 
 
-### addStateLootModifier
+:::
+
+:::group{name=addStateLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to this block, firing only if it matches the state outlined in the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate).
 
@@ -86,7 +94,9 @@ MCBlock.addStateLootModifier(name as string, statePredicate as Consumer<StatePro
 | modifier       | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)                                              | The loot modifier to add.                                                                                                             |
 
 
-### addToolDrop
+:::
+
+:::group{name=addToolDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this block, if it gets broken with the given tool.
 
@@ -105,7 +115,9 @@ MCBlock.addToolDrop(uniqueId as string, tool as IItemStack, stack as IItemStack)
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.              |
 
 
-### addToolDrops
+:::
+
+:::group{name=addToolDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this block, if it gets broken with the given tool.
 
@@ -124,7 +136,9 @@ MCBlock.addToolDrops(uniqueId as string, tool as IItemStack, stacks as IItemStac
 | stacks    | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.             |
 
 
-### addToolLootModifier
+:::
+
+:::group{name=addToolLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if this block gets broken with the given tool.
 
@@ -142,6 +156,10 @@ MCBlock.addToolLootModifier(name as string, tool as IItemStack, modifier as ILoo
 | tool      | [IItemStack](/vanilla/api/items/IItemStack)                | The tool the block was broken with.    |
 | modifier  | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block. |
 
+
+:::
+
+:::group{name=addToolLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if this block gets broken with the given tool, optionally considering its damage.
 
@@ -161,6 +179,10 @@ MCBlock.addToolLootModifier(name as string, tool as IItemStack, matchDamage as b
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block.                           |
 
 
+:::
+
+:::group{name=addToolLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if this block gets broken with the given tool, optionally considering its damage or NBT.
 
  Additional parameters that may be attached to the tool, such as count, are ignored.
@@ -179,5 +201,7 @@ MCBlock.addToolLootModifier(name as string, tool as IItemStack, matchDamage as b
 | matchNbt    | boolean型                                                   | Whether to consider NBT data or not when trying to match the tool. |
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block.                             |
 
+
+:::
 
 
