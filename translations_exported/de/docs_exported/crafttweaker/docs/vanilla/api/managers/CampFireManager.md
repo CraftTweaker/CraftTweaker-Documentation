@@ -17,7 +17,7 @@ CampFireManager implements the following interfaces. That means all methods defi
 
 ## Methoden
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ campfire.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore
 | data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe based on given params.
 
@@ -54,7 +56,9 @@ campfire.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraf
 | cookTime  | int                                           | how long it takes to cook       |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -63,7 +67,9 @@ CampFireManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 campfire.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -76,7 +82,9 @@ CampFireManager.getRecipeByName(name as string) as WrapperRecipe
 | name      | string | No Description Provided |
 
 
-### getRecipesByAusgabe
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -89,7 +97,9 @@ CampFireManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wrapper
 | output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
@@ -100,7 +110,9 @@ CampFireManager.removeAll() as void
 campfire.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
@@ -115,6 +127,10 @@ campfire.removeByModid("minecraft");
 | --------- | ------ | ------------------------------ |
 | modid     | string | modid of the recipes to remove |
 
+
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -131,7 +147,9 @@ campfire.removeByModid("minecraft", (name as string) => {return name == "orange_
 | ausschließen | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | zu entfernende Rezepte.        |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
@@ -147,7 +165,9 @@ campfire.removeByName("minecraft:furnace");
 | name      | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
@@ -163,7 +183,9 @@ campfire.removeByRegex("\\d_\\d");
 | regex     | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -179,6 +201,10 @@ campfire.removeRecipe(<item:minecraft:glass>);
 | output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
+:::
+
+:::group{name=removeRecipe}
+
 Removes a recipe based on it's output and input.
 
 Return Type: void
@@ -193,5 +219,7 @@ campfire.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 | output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
 | input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
+
+:::
 
 
