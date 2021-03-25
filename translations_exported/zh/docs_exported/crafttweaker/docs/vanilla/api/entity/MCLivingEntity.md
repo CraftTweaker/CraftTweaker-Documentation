@@ -40,6 +40,20 @@ MCLivingEntity.attackEntityAsMob(entityIn as MCEntity) as boolean
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
 
+### attackEntityFrom
+
+Return Type: void
+
+```zenscript
+MCLivingEntity.attackEntityFrom(damageSource as DamageSource, amount as float) as void
+```
+
+| 参数           | 类型                                             | 描述                      |
+| ------------ | ---------------------------------------------- | ----------------------- |
+| damageSource | [DamageSource](/vanilla/api/util/DamageSource) | No Description Provided |
+| amount       | float                                          | No Description Provided |
+
+
 ### canAttack
 
 Return Type: boolean
@@ -224,6 +238,21 @@ Return Type: int
 MCLivingEntity.getIdleTime() as int
 myMCLivingEntity.getIdleTime();
 ```
+
+### getItemStackFromSlot
+
+Gets the ItemStack in the specific slot.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+MCLivingEntity.getItemStackFromSlot(slot as MCEquipmentSlotType) as IItemStack
+```
+
+| 参数   | 类型                                                           | 描述                      |
+| ---- | ------------------------------------------------------------ | ----------------------- |
+| slot | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | No Description Provided |
+
 
 ### getLastAttackedEntity
 
@@ -461,6 +490,22 @@ MCLivingEntity.setIdleTime(idleTimeIn as int) as void
 | 参数         | 类型  | 描述                      |
 | ---------- | --- | ----------------------- |
 | idleTimeIn | int | No Description Provided |
+
+
+### setItemStackToSlot
+
+Sets a copied given itemStack to the slot
+
+Return Type: void
+
+```zenscript
+MCLivingEntity.setItemStackToSlot(slot as MCEquipmentSlotType, itemStack as IItemStack) as void
+```
+
+| 参数   | 类型                                                           | 描述                      |
+| ---- | ------------------------------------------------------------ | ----------------------- |
+| slot | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | No Description Provided |
+| 物品应用 | [IItemStack](/vanilla/api/items/IItemStack)                  | No Description Provided |
 
 
 ### setLastAttackedEntity
