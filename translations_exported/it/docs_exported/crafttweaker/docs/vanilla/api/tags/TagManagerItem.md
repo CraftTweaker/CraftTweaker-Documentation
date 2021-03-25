@@ -15,7 +15,7 @@ TagManagerItem implements the following interfaces. That means all methods defin
 
 ## Methods
 
-### exists
+:::group{name=exists}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -30,6 +30,10 @@ TagManagerItem.exists(location as MCResourceLocation) as boolean
 | posizione | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
 
 
+:::
+
+:::group{name=exists}
+
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
 Return Type: boolean
@@ -43,7 +47,9 @@ TagManagerItem.exists(name as string) as boolean
 | name      | string | The resource location to check for |
 
 
-### getAllTags
+:::
+
+:::group{name=getAllTags}
 
 Retrieves a list of all tags currently registered.
 
@@ -54,7 +60,9 @@ TagManagerItem.getAllTags() as stdlib.List<MCTag<T>>
 myTagManagerItem.getAllTags();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
@@ -69,6 +77,10 @@ TagManagerItem.getTag(location as MCResourceLocation) as MCTag<T>
 | posizione | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
 
+:::
+
+:::group{name=getTag}
+
 Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
@@ -82,10 +94,12 @@ TagManagerItem.getTag(name as string) as MCTag<T>
 | name      | string | The Resource location of the tag |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -93,7 +107,7 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 name as string in myTagManagerItem
 ```
 
-
+:::
 
 
 ## Properties
