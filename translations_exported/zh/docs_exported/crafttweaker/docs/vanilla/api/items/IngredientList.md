@@ -22,6 +22,32 @@ IngredientList implements the following interfaces. That means all methods defin
 
 ## 方法
 
+### addShiftTooltip
+
+Return Type: void
+
+```zenscript
+IngredientList.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
+```
+
+| 参数          | 类型                                                 | 描述                      | 可选    | DefaultValue |
+| ----------- | -------------------------------------------------- | ----------------------- | ----- | ------------ |
+| 内容          | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |              |
+| showMessage | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true  |              |
+
+### addTooltip
+
+Return Type: void
+
+```zenscript
+IngredientList.addTooltip(content as MCTextComponent) as void
+```
+
+| 参数 | 类型                                                 | 描述                      |
+| -- | -------------------------------------------------- | ----------------------- |
+| 内容 | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
 ### anyDamage
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -30,6 +56,31 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
 myIngredientList.anyDamage();
 ```
+
+### clearTooltip
+
+Return Type: void
+
+```zenscript
+IngredientList.clearTooltip() as void
+myIngredientList.clearTooltip();
+```
+
+### contains #容器
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IngredientList.contains(ingredient as IIngredient) as boolean
+myIngredientList.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| 参数         | 类型                                                | 描述                      |
+| ---------- | ------------------------------------------------- | ----------------------- |
+| ingredient | [材料（IIngredient）](/vanilla/api/items/IIngredient) | The ingredient to check |
+
 
 ### getRemainingItem
 
@@ -63,6 +114,34 @@ myIngredientList.matches(<item:minecraft:iron_ingot>);
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+### modifyTooltip
+
+Return Type: void
+
+```zenscript
+IngredientList.modifyTooltip(function as ITooltipFunction) as void
+```
+
+| 参数       | 类型                                                      | 描述                      |
+| -------- | ------------------------------------------------------- | ----------------------- |
+| function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
+
+### only
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| 参数        | 类型                                                                                                                               | 描述                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
 ### onlyDamaged
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -85,8 +164,32 @@ IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIng
 | uid      | string                                                                   | No Description Provided | false |              |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
 
+### removeTooltip
+
+Return Type: void
+
+```zenscript
+IngredientList.removeTooltip(regex as string) as void
+```
+
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| regex | string | No Description Provided |
+
+
 
 ## 运算符
+
+### CONTAINS
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIngredientList
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientList
+```
+
+
 
 ### OR
 
@@ -96,4 +199,10 @@ myIngredientList | other as IIngredient
 
 
 
+
+## 参数
+
+| 名称       | 类型   | 可获得   | 可设置  |
+| -------- | ---- | ----- | ---- |
+| burnTime | void | false | true |
 
