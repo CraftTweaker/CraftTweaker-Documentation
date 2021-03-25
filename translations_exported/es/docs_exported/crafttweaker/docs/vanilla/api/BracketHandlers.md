@@ -12,6 +12,24 @@ import crafttweaker.api.BracketHandlers;
 
 ## Methods
 
+### getBiome
+
+Gets a Biome based on the tokens. Throws an error if it can't get the biome
+
+Returns: The found biome Return Type: [MCBiome](/vanilla/api/world/MCBiome)
+
+```zenscript
+<biome:minecraft:plain>
+
+BracketHandlers.getBiome(tokens as string) as MCBiome
+BracketHandlers.getBiome("minecraft:plain");
+```
+
+| Parameter | Type   | Description                   |
+| --------- | ------ | ----------------------------- |
+| tokens    | string | The biome's resource location |
+
+
 ### getBlock
 
 Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
@@ -66,6 +84,24 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 | Parameter | Type   | Description                                |
 | --------- | ------ | ------------------------------------------ |
 | tokens    | string | The block's resource location and variants |
+
+
+### getDamageSource
+
+Gets a damage source based on type. If the damage source is not pre-registered, it will create a new one with the given name
+
+Returns: The found pre-registered damage source or a new one Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+<damagesource:magic>
+
+BracketHandlers.getDamageSource(tokens as string) as DamageSource
+BracketHandlers.getDamageSource("magic");
+```
+
+| Parameter | Type   | Description              |
+| --------- | ------ | ------------------------ |
+| tokens    | string | the damage sources' type |
 
 
 ### getDirectionAxis
@@ -158,6 +194,24 @@ BracketHandlers.getEntityType("minecraft:pig");
 | tokens    | string | The entityType's resource location |
 
 
+### getEquipmentSlotType
+
+Gets the equipment slot type based on name. Throws an error if it can't find the equipment slot type.
+
+Returns: The found equipment slot type Return Type: [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)
+
+```zenscript
+<equipmentslottype:mainhand>
+
+BracketHandlers.getEquipmentSlotType(tokens as string) as MCEquipmentSlotType
+BracketHandlers.getEquipmentSlotType("mainhand");
+```
+
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| tokens    | string | The equipment slot type's name |
+
+
 ### getFluidStack
 
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
@@ -227,7 +281,7 @@ BracketHandlers.getProfession("minecraft:armorer");
 
 ### getRecipeManager
 
-Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. Throws an expcetion if the given recipeType is not found. <p> This will always return IRecipeManager.<br> There is also a BEP for that but that works differently so it can't be automatically added to the docs here. But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
+Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. Throws an exception if the given recipeType is not found. <p> This will always return IRecipeManager.<br> There is also a BEP for that but that works differently so it can't be automatically added to the docs here. But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
 
 Returns: The found recipeManager Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
