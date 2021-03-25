@@ -23,7 +23,7 @@ Reference implements the following interfaces. That means all methods defined in
 
 ## Methods
 
-### withName
+:::group{name=withName}
 
 Sets the name of the data-pack loot condition to query.
 
@@ -39,6 +39,10 @@ Reference.withName(name as MCResourceLocation) as Reference
 | --------- | ---------------------------------------------------------- | ----------------------------------- |
 | name      | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The name of the predicate to query. |
 
+
+:::
+
+:::group{name=withName}
 
 Sets the name of the data-pack loot condition to query.
 
@@ -56,5 +60,7 @@ Reference.withName(name as string) as Reference
 | --------- | ------ | ------------------------------------------------------------------------------------------------------- |
 | name      | string | The name of the predicate to query, in [MCResourceLocation](/vanilla/api/util/MCResourceLocation) form. |
 
+
+:::
 
 
