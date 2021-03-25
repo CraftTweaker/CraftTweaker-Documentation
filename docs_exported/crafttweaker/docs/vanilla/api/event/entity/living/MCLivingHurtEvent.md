@@ -3,6 +3,14 @@
 This event is fired just before an entity is hurt. This allows you to modify
  the damage received, cancel the attack, or run additional effects.
 
+The event is cancelable.
+
+If the event is canceled, the entity is not hurt
+
+The event does not have a result.
+
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.

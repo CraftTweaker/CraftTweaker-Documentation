@@ -1,8 +1,16 @@
 # MCLivingHealEvent
 
-This event is fired just before an entity is healed. This allows you to 
- modify the amount of healing or prevent it all together by canceling the 
+This event is fired just before an entity is healed. This allows you to
+ modify the amount of healing or prevent it all together by canceling the
  event.
+
+The event is cancelable.
+
+If the event is canceled, the entity is not healed
+
+The event does not have a result.
+
+
 
 ## Importing the class
 

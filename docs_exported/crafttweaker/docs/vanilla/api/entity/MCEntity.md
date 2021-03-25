@@ -60,6 +60,19 @@ MCEntity.canSwim() as boolean
 myMCEntity.canSwim();
 ```
 
+### changeDimension
+
+Return Type: void
+
+```zenscript
+MCEntity.changeDimension(world as MCServerWorld) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCServerWorld](/vanilla/api/world/MCServerWorld) | No Description Provided |
+
+
 ### extinguish
 
 Return Type: void
@@ -113,6 +126,15 @@ Return Type: float
 ```zenscript
 MCEntity.getBrightness() as float
 myMCEntity.getBrightness();
+```
+
+### getData
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+MCEntity.getData() as MapData
+myMCEntity.getData();
 ```
 
 ### getDistance
@@ -206,6 +228,15 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 ```zenscript
 MCEntity.getType() as MCEntityType
 myMCEntity.getType();
+```
+
+### getUUID
+
+Return Type: string
+
+```zenscript
+MCEntity.getUUID() as string
+myMCEntity.getUUID();
 ```
 
 ### getWorld
@@ -493,12 +524,45 @@ MCEntity.setSilent(isSilent as boolean) as void
 | isSilent | boolean | No Description Provided |
 
 
+### teleportKeepLoaded
+
+Teleports the entity, forcing the destination to stay loaded for a short time
+
+Return Type: void
+
+```zenscript
+MCEntity.teleportKeepLoaded(x as double, y as double, z as double) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | No Description Provided |
+| y | double | No Description Provided |
+| z | double | No Description Provided |
+
+
+### updateData
+
+Return Type: void
+
+```zenscript
+MCEntity.updateData(data as MapData) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
 
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | air | int | true | true |
+| data | [MapData](/vanilla/api/data/MapData) | true | false |
+| facingDirections | [Direction](/vanilla/api/util/Direction)[] | true | false |
 | name | string | true | false |
+| uuid | string | true | false |
 | world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
 

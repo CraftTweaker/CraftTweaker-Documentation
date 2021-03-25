@@ -36,7 +36,6 @@ new BoolData(internal as boolean) as BoolData
 |-------------|-------------|
 | [ByteData](/vanilla/api/data/ByteData) | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
 
@@ -69,15 +68,6 @@ Return Type: [IData](/vanilla/api/data/IData)[string]
 ```zenscript
 BoolData.asMap() as IData[string]
 true.asMap();
-```
-
-### asNumber
-
-Return Type: [INumberData](/vanilla/api/data/INumberData)
-
-```zenscript
-BoolData.asNumber() as INumberData
-true.asNumber();
 ```
 
 ### contains
