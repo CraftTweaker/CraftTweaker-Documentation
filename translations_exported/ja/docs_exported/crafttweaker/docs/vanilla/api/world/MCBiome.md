@@ -67,16 +67,18 @@ MCBiome.getTemperature(pos as BlockPos) as float
 
 ## Properties
 
-| 名称             | Type     | Has Getter | Has Setter |
-| -------------- | -------- | ---------- | ---------- |
-| category       | string   | true       | false      |
-| depth          | float    | true       | false      |
-| doesRain       | boolean型 | true       | false      |
-| doesSnow       | boolean型 | true       | false      |
-| downfall       | float    | true       | false      |
-| isHighHumidity | boolean型 | true       | false      |
-| rainType       | string   | true       | false      |
-| scale          | float    | true       | false      |
-| waterColor     | int      | true       | false      |
-| waterFogColor  | int      | true       | false      |
+| 名称             | Type                                                       | Has Getter | Has Setter |
+| -------------- | ---------------------------------------------------------- | ---------- | ---------- |
+| category       | string                                                     | true       | false      |
+| commandString  | string                                                     | true       | false      |
+| depth          | float                                                      | true       | false      |
+| doesRain       | boolean型                                                   | true       | false      |
+| doesSnow       | boolean型                                                   | true       | false      |
+| downfall       | float                                                      | true       | false      |
+| isHighHumidity | boolean型                                                   | true       | false      |
+| rainType       | string                                                     | true       | false      |
+| registryName   | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| scale          | float                                                      | true       | false      |
+| waterColor     | int                                                        | true       | false      |
+| waterFogColor  | int                                                        | true       | false      |
 
