@@ -25,6 +25,32 @@ IIngredient implements the following interfaces. That means all methods defined 
 
 ## Methods
 
+### addShiftTooltip
+
+Return Type: void
+
+```zenscript
+IIngredient.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
+```
+
+| Parameter   | Type                                                      | Description             | Optional | DefaultValue |
+| ----------- | --------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| content     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
+| showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
+
+### addTooltip
+
+Return Type: void
+
+```zenscript
+IIngredient.addTooltip(content as MCTextComponent) as void
+```
+
+| Parameter | Type                                                      | Description             |
+| --------- | --------------------------------------------------------- | ----------------------- |
+| content   | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
 ### anyDamage
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -44,6 +70,31 @@ Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 IIngredient.asVanillaIngredient() as Ingredient
 <tag:items:forge:ingots>.asVanillaIngredient();
 ```
+
+### clearTooltip
+
+Return Type: void
+
+```zenscript
+IIngredient.clearTooltip() as void
+<tag:items:forge:ingots>.clearTooltip();
+```
+
+### contains
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IIngredient.contains(ingredient as IIngredient) as boolean
+<tag:items:forge:ingots>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Parameter  | Type                                          | Description             |
+| ---------- | --------------------------------------------- | ----------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
 
 ### getRemainingItem
 
@@ -91,6 +142,34 @@ IIngredient.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 | ignoreDamage | boolean                                     | Should damage be checked? |
 
 
+### modifyTooltip
+
+Return Type: void
+
+```zenscript
+IIngredient.modifyTooltip(function as ITooltipFunction) as void
+```
+
+| Parameter | Type                                                    | Description             |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
+
+### only
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IIngredient.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type                                                                                                                             | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
 ### onlyDamaged
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -113,8 +192,32 @@ IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngred
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
+### removeTooltip
+
+Return Type: void
+
+```zenscript
+IIngredient.removeTooltip(regex as string) as void
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| regex     | string | No Description Provided |
+
+
 
 ## Operators
+
+### CONTAINS
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIIngredient
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <tag:items:forge:ingots>
+```
+
+
 
 ### OR
 
@@ -129,6 +232,7 @@ myIIngredient | other as IIngredient
 
 | Name          | Type                                          | Has Getter | Has Setter |
 | ------------- | --------------------------------------------- | ---------- | ---------- |
+| burnTime      | void                                          | false      | true       |
 | commandString | string                                        | true       | false      |
 | items         | [IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 
