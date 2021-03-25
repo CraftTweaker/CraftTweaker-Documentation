@@ -4,7 +4,7 @@ Additional methods for easier modification of item stack-related loot tables.
 
 ## 方法
 
-### addToolModifier
+:::group{name=addToolModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking.
 
@@ -22,6 +22,10 @@ IItemStack.addToolModifier(name as string, modifier as ILootModifier) as void
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add.     |
 
 
+:::
+
+:::group{name=addToolModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally considering its damage.
 
  Additional parameters that further identify the tool, such as NBT data, or count, are ignored.
@@ -38,6 +42,10 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, modifier as I
 | matchDamage | boolean                                                    | Whether to consider damage or not when trying to match the tool. |
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add.                                        |
 
+
+:::
+
+:::group{name=addToolModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally considering its damage and count.
 
@@ -57,6 +65,10 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, matchCount as
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add.                                            |
 
 
+:::
+
+:::group{name=addToolModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) for everything that uses this item as a tool, such as block breaking, optionally considering its damage, count, and NBT data.
 
 Return Type: void
@@ -73,5 +85,7 @@ IItemStack.addToolModifier(name as string, matchDamage as boolean, matchCount as
 | matchNbt    | boolean                                                    | Whether to consider NBT data or not when trying to match the tool.   |
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add.                                            |
 
+
+:::
 
 
