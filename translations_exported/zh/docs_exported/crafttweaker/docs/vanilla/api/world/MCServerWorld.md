@@ -56,6 +56,7 @@ Return Type: boolean
 
 ```zenscript
 MCServerWorld.isVillage(pos as BlockPos) as boolean
+world as MCServerWorld.isVillage(new BlockPos(0, 1, 2));
 ```
 
 | 参数 | 类型                                     | 描述                       |
@@ -113,5 +114,6 @@ world as MCServerWorld.setTimeToNoon();
 | 名称        | 类型                                                | 可获得   | 可设置   |
 | --------- | ------------------------------------------------- | ----- | ----- |
 | seed      | long                                              | true  | false |
+| server    | [MCServer](/vanilla/api/game/MCServer)            | true  | false |
 | timeOfDay | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false | true  |
 
