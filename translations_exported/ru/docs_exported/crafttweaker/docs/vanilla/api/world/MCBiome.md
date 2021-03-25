@@ -67,16 +67,18 @@ MCBiome.getTemperature(pos as BlockPos) as float
 
 ## Свойства
 
-| Название       | Тип     | Имеет Getter | Имеет Setter |
-| -------------- | ------- | ------------ | ------------ |
-| category       | string  | true         | false        |
-| depth          | float   | true         | false        |
-| doesRain       | boolean | true         | false        |
-| doesSnow       | boolean | true         | false        |
-| downfall       | float   | true         | false        |
-| isHighHumidity | boolean | true         | false        |
-| rainType       | string  | true         | false        |
-| scale          | float   | true         | false        |
-| waterColor     | int     | true         | false        |
-| waterFogColor  | int     | true         | false        |
+| Название       | Тип                                                                      | Имеет Getter | Имеет Setter |
+| -------------- | ------------------------------------------------------------------------ | ------------ | ------------ |
+| category       | string                                                                   | true         | false        |
+| commandString  | string                                                                   | true         | false        |
+| depth          | float                                                                    | true         | false        |
+| doesRain       | boolean                                                                  | true         | false        |
+| doesSnow       | boolean                                                                  | true         | false        |
+| downfall       | float                                                                    | true         | false        |
+| isHighHumidity | boolean                                                                  | true         | false        |
+| rainType       | string                                                                   | true         | false        |
+| registryName   | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation) | true         | false        |
+| scale          | float                                                                    | true         | false        |
+| waterColor     | int                                                                      | true         | false        |
+| waterFogColor  | int                                                                      | true         | false        |
 
