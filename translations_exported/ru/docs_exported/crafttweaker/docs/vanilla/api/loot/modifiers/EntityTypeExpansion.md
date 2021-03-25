@@ -4,7 +4,7 @@ Additional methods for easier modification of entity-related loot tables.
 
 ## Methods
 
-### addDrop
+:::group{name=addDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity.
 
@@ -20,7 +20,9 @@ MCEntityType.addDrop(uniqueId as string, stack as IItemStack) as void
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.     |
 
 
-### addDrops
+:::
+
+:::group{name=addDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity.
 
@@ -36,7 +38,9 @@ MCEntityType.addDrops(uniqueId as string, stacks as IItemStack[]) as void
 | stacks   | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.    |
 
 
-### addLootModifier
+:::
+
+:::group{name=addLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity.
 
@@ -52,7 +56,9 @@ MCEntityType.addLootModifier(name as string, modifier as ILootModifier) as void
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
 
-### addPlayerOnlyDrop
+:::
+
+:::group{name=addPlayerOnlyDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed by a player.
 
@@ -68,7 +74,9 @@ MCEntityType.addPlayerOnlyDrop(uniqueId as string, stack as IItemStack) as void
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.     |
 
 
-### addPlayerOnlyDrops
+:::
+
+:::group{name=addPlayerOnlyDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed by a player.
 
@@ -84,7 +92,9 @@ MCEntityType.addPlayerOnlyDrops(uniqueId as string, stacks as IItemStack[]) as v
 | stacks   | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.    |
 
 
-### addPlayerOnlyLootModifier
+:::
+
+:::group{name=addPlayerOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player.
 
@@ -100,7 +110,9 @@ MCEntityType.addPlayerOnlyLootModifier(name as string, modifier as ILootModifier
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity. |
 
 
-### addWeaponAndPlayerOnlyDrop
+:::
+
+:::group{name=addWeaponAndPlayerOnlyDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed by a player with the given weapon.
 
@@ -119,7 +131,9 @@ MCEntityType.addWeaponAndPlayerOnlyDrop(uniqueId as string, weapon as IItemStack
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.                       |
 
 
-### addWeaponAndPlayerOnlyDrops
+:::
+
+:::group{name=addWeaponAndPlayerOnlyDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed by a player with the given weapon.
 
@@ -138,7 +152,9 @@ MCEntityType.addWeaponAndPlayerOnlyDrops(uniqueId as string, weapon as IItemStac
 | stacks   | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.                      |
 
 
-### addWeaponAndPlayerOnlyLootModifier
+:::
+
+:::group{name=addWeaponAndPlayerOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player with the given weapon.
 
@@ -157,6 +173,10 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.              |
 
 
+:::
+
+:::group{name=addWeaponAndPlayerOnlyLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player with the given weapon, optionally considering its damage.
 
  Additional parameters that further specify the weapon, such as NBT, or count, are ignored.
@@ -174,6 +194,10 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 | matchDamage | boolean                                                    | Whether to consider damage or not when identifying the weapon. |
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.                        |
 
+
+:::
+
+:::group{name=addWeaponAndPlayerOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed by a player with the given weapon, optionally considering its damage and NBT data.
 
@@ -194,7 +218,9 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.                          |
 
 
-### addWeaponOnlyDrop
+:::
+
+:::group{name=addWeaponOnlyDrop}
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed with the given weapon.
 
@@ -213,7 +239,9 @@ MCEntityType.addWeaponOnlyDrop(uniqueId as string, weapon as IItemStack, stack a
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to add to the drops.                       |
 
 
-### addWeaponOnlyDrops
+:::
+
+:::group{name=addWeaponOnlyDrops}
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed with the given weapon.
 
@@ -232,7 +260,9 @@ MCEntityType.addWeaponOnlyDrops(uniqueId as string, weapon as IItemStack, stacks
 | stacks   | [IItemStack](/vanilla/api/items/IItemStack)[] | The stacks to add to the drops.                      |
 
 
-### addWeaponOnlyLootModifier
+:::
+
+:::group{name=addWeaponOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed with the given weapon.
 
@@ -250,6 +280,10 @@ MCEntityType.addWeaponOnlyLootModifier(name as string, weapon as IItemStack, mod
 | weapon   | [IItemStack](/vanilla/api/items/IItemStack)                | The weapon that needs to be used to kill the entity. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.              |
 
+
+:::
+
+:::group{name=addWeaponOnlyLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed with the given weapon, optionally considering its damage.
 
@@ -269,6 +303,10 @@ MCEntityType.addWeaponOnlyLootModifier(name as string, weapon as IItemStack, mat
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.                        |
 
 
+:::
+
+:::group{name=addWeaponOnlyLootModifier}
+
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current entity that fires only if the entity was killed with the given weapon, optionally considering its damage and NBT data.
 
  Additional parameters that further specify the weapon, such as count, are ignored.
@@ -287,5 +325,7 @@ MCEntityType.addWeaponOnlyLootModifier(name as string, weapon as IItemStack, mat
 | matchNbt    | boolean                                                    | Whether to consider NBT data or not when identifying the weapon. |
 | modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the entity.                          |
 
+
+:::
 
 
