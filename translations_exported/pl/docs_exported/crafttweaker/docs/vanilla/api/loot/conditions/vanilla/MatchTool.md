@@ -23,7 +23,7 @@ MatchTool implements the following interfaces. That means all methods defined in
 
 ## Methods
 
-### matching
+:::group{name=matching}
 
 Sets the tool that should be matched by this loot condition.
 
@@ -46,6 +46,10 @@ MatchTool.matching(tool as IItemStack) as MatchTool
 | tool      | [IItemStack](/vanilla/api/items/IItemStack) | The tool that should be matched. |
 
 
+:::
+
+:::group{name=matching}
+
 Sets the tool that should be matched by this loot condition, optionally ignoring damage.
 
  The check will ignore any amount and NBT data that may be attached to the tool.
@@ -67,6 +71,10 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean) as MatchTool
 | tool        | [IItemStack](/vanilla/api/items/IItemStack) | The tool that should be matched.                           |
 | matchDamage | boolean                                     | Whether damage should be taken into account when matching. |
 
+
+:::
+
+:::group{name=matching}
 
 Sets the tool that should be matched by this loot condition, optionally ignoring damage or count.
 
@@ -91,6 +99,10 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean, matchCount as boo
 | matchCount  | boolean                                     | Whether the amount should be taken into account when matching. |
 
 
+:::
+
+:::group{name=matching}
+
 Sets the tool that should be matched by this loot condition, optionally ignoring damage, count, or NBT data.
 
  This acts as a helper method that allows a more streamlined configuration of the condition instead of having to manually build the predicate.
@@ -113,7 +125,9 @@ MatchTool.matching(tool as IItemStack, matchDamage as boolean, matchCount as boo
 | matchNbt    | boolean                                     | Whether the NBT data should be taken into account when matching. |
 
 
-### withPredicate
+:::
+
+:::group{name=withPredicate}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be matched against the tool.
 
@@ -131,5 +145,7 @@ MatchTool.withPredicate(builder as Consumer<ItemPredicate>) as MatchTool
 | ----------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | konstruktor | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
+
+:::
 
 
