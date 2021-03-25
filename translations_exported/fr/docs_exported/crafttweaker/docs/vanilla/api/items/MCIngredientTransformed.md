@@ -22,7 +22,7 @@ MCIngredientTransformed implements the following interfaces. That means all meth
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -35,7 +35,9 @@ MCIngredientTransformed.addShiftTooltip(content as MCTextComponent, showMessage 
 | contenu     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -48,7 +50,9 @@ MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
 | contenu   | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -57,7 +61,9 @@ MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
 myMCIngredientTransformed.anyDamage();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
@@ -66,7 +72,9 @@ MCIngredientTransformed.clearTooltip() as void
 myMCIngredientTransformed.clearTooltip();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Does the ingredient contain the given ingredient?
 
@@ -82,7 +90,9 @@ myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraf
 | ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -98,6 +108,10 @@ myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
+
+:::group{name=matches}
+
 Return Type: boolean
 
 ```zenscript
@@ -110,7 +124,9 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | Ignorer les dégâts | boolean                                     | No Description Provided |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -123,7 +139,9 @@ MCIngredientTransformed.modifyTooltip(function as ITooltipFunction) as void
 | function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### only
+:::
+
+:::group{name=only}
 
 Use this if you already have the condition from another ingredient
 
@@ -138,7 +156,9 @@ MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as 
 | condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -147,7 +167,9 @@ MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
 myMCIngredientTransformed.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -160,7 +182,9 @@ MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>)
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -173,10 +197,12 @@ MCIngredientTransformed.removeTooltip(regex as string) as void
 | regex     | string | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Does the ingredient contain the given ingredient?
 
@@ -185,15 +211,15 @@ ingredient as IIngredient in myMCIngredientTransformed
 (<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myMCIngredientTransformed
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myMCIngredientTransformed | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties
