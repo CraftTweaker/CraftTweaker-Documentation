@@ -21,7 +21,7 @@ Not implements the following interfaces. That means all methods defined in these
 
 ## 方法
 
-### withCondition
+:::group{name=withCondition}
 
 Sets the negated condition to the one created with the given [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
@@ -40,6 +40,10 @@ Not.withCondition(builder as LootConditionBuilder) as Not
 | 生成器 | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | The builder to create a single [ILootCondition](/vanilla/api/loot/conditions/ILootCondition). |
 
 
+:::
+
+:::group{name=withCondition}
+
 Sets the loot condition to negate.
 
  This parameter is <strong>required</strong>.
@@ -55,6 +59,10 @@ Not.withCondition(condition as ILootCondition) as Not
 | condition | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) | The condition to negate. |
 
 
+:::
+
+:::group{name=withCondition}
+
 Creates and builds the sub-condition that will then be negated.
 
 Return Type: [Not](/vanilla/api/loot/conditions/crafttweaker/Not)
@@ -68,5 +76,7 @@ Not.withCondition<T : ILootConditionTypeBuilder>(lender as Consumer<T>) as Not
 | lender | Consumer&lt;T&gt;                                                       | A consumer that allows configuration of the created condition. |
 | T      | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself.                        |
 
+
+:::
 
 
