@@ -15,7 +15,7 @@ MCServer implements the following interfaces. That means all methods defined in 
 
 ## Methods
 
-### executeCommand
+:::group{name=executeCommand}
 
 Runs a command.
 
@@ -31,6 +31,10 @@ MCServer.executeCommand(command as string) as int
 | --------- | ------ | ----------------------- |
 | command   | string | No Description Provided |
 
+
+:::
+
+:::group{name=executeCommand}
 
 let a player send a command
 
@@ -48,7 +52,9 @@ MCServer.executeCommand(command as string, player as MCPlayerEntity) as int
 | player    | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
 
 
-### getWorld
+:::
+
+:::group{name=getWorld}
 
 Get a server world instance based on resource location Throws an exception if the world location is unknown
 
@@ -63,6 +69,8 @@ myMCServer.getWorld(<resource:minecraft:the_end>);
 | --------- | ------------------------------------------------------------ | ----------------------- |
 | ubicación | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
+
+:::
 
 
 ## Properties
