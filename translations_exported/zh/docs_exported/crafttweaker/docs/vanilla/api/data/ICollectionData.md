@@ -17,7 +17,7 @@ ICollectionData实现了以下接口。 That means all methods defined in these 
 
 ## 方法
 
-### getFromMembers
+:::group{name=getFromMembers}
 
 Creates the most specific ICollectionData form possible for the provided members.
 
@@ -34,6 +34,8 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 | members | [IData](/vanilla/api/data/IData)[] | No Description Provided |
 
 
+:::
+
 ## Casters
 
 | 结果类型                                                        | 是否隐藏  |
@@ -43,7 +45,7 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 ## 方法
 
-### add
+:::group{name=add}
 
 
 
@@ -58,6 +60,10 @@ new ListData(["Hello", "World"]).add("today");
 | ----- | -------------------------------- | -------- |
 | value | [IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
+
+:::
+
+:::group{name=add}
 
 
 
@@ -74,7 +80,9 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 | value | [IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
-### asCollection
+:::
+
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -83,7 +91,9 @@ ICollectionData.asCollection() as ICollectionData
 new ListData(["Hello", "World"]).asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -94,7 +104,9 @@ ICollectionData.asList() as stdlib.List<IData>
 new ListData(["Hello", "World"]).asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -105,7 +117,9 @@ ICollectionData.asMap() as IData[string]
 new ListData(["Hello", "World"]).asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -114,7 +128,9 @@ ICollectionData.asNumber() as INumberData
 new ListData(["Hello", "World"]).asNumber();
 ```
 
-### asString #作为字符串
+:::
+
+:::group{name=asString}
 
 获取此IData的字符串表示形式
 
@@ -125,7 +141,9 @@ ICollectionData.asString() as string
 new ListData(["Hello", "World"]).asString();
 ```
 
-### clear #清除
+:::
+
+:::group{name=clear}
 
 删除列表中的每个元素
 
@@ -136,7 +154,9 @@ ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
 ```
 
-### contains #容器
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -152,7 +172,9 @@ new ListData(["Hello", "World"]).contains("Display");
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### copy #复制
+:::
+
+:::group{name=copy}
 
 制作此IData的副本。
 
@@ -165,7 +187,9 @@ ICollectionData.copy() as IData
 new ListData(["Hello", "World"]).copy();
 ```
 
-### getAt
+:::
+
+:::group{name=getAt}
 
 Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -181,7 +205,9 @@ new ListData(["Hello", "World"]).getAt(0);
 | index | int | The index (从0开始) |
 
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -194,7 +220,9 @@ ICollectionData.getId() as byte
 new ListData(["Hello", "World"]).getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -205,7 +233,9 @@ ICollectionData.getString() as string
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+:::
+
+:::group{name=remove}
 
 Removes the [IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -221,7 +251,9 @@ new ListData(["Hello", "World"]).remove(0);
 | index | int | The index (从0开始) |
 
 
-### setAt
+:::
+
+:::group{name=setAt}
 
 在给定值的索引处设置项目
 
@@ -237,6 +269,8 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 | index | int                              | 要设置的索引 (从0开始) |
 | value | [IData](/vanilla/api/data/IData) | 新值            |
 
+
+:::
 
 
 ## 参数
