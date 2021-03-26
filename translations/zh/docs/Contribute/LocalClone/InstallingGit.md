@@ -1,16 +1,16 @@
-# 安装 Git
+# 安装Git
 
-In order for you to [clone your forked repository](/Contribute/LocalClone/Clone/) you will need to install git.  
-Git is a distributed version control system (basically, it's what GitHub, BitBucket and other version control services use).
+为了让您能够[clone你fork的项目到本地](/Contribute/LocalClone/Clone/)，你需要安装Git。  
+Git 是一个分布式版本控制系统( 事实上，Github, BitBucket 和绝大多数源代码托管网站都使用Git)。
 
-## Getting Git
+## 获取Git
 
-You can check if you have git installed by opening the Command Prompt and executing the command `git`.  
-If you get the usage page, then you have it installed and can skip this page.  
-If you do not get the usage page then you either have it not installed or you have not added it to your PATH (see below). In a case like this you will need to install git or add it to your path:  
+您可以打开命令提示符并执行命令`git`来检查是否已安装Git  
+如果显示了指令帮助页面，这代表你已经安装了Git，请跳过这一阶段  
+如果未显示帮助页面，而是返回类似于“Git不是可用的程序”，这说明您尚未安装Git或者未将其添加至PATH（环境变量）中（请参见下文） 在这样的情况下，您需要安装git或将其添加到您的路径：  
 ![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
 
-### Downloading and installing Git
+### 下载并安装Git
 
 If you do not have git installed, then you can download the installer from [their official page](https://git-scm.com/downloads/).  
 Choose your Operation System, download the installer, run it and follow the instructions.  
