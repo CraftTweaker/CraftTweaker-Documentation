@@ -179,7 +179,8 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Mutable
 
-Gets a mutable ItemStack.
+Gets a mutable ItemStack. Its damage, amount and tag is mutable. Its `withTag`, `withAmount` and other methods will change the item itself,
+rather than returning a new changed item.
 
 | Method call                                        | Returns                                                        |
 | ---------------------------------------------------|------------------------------
