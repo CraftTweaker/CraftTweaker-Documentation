@@ -12,12 +12,11 @@ Git 是一个分布式版本控制系统( 事实上，Github, BitBucket 和绝�
 
 ### 下载并安装Git
 
-If you do not have git installed, then you can download the installer from [their official page](https://git-scm.com/downloads/).  
-Choose your Operation System, download the installer, run it and follow the instructions.  
-If you are not sure on which options to check, leave them as default.  
-If you cannot proceed after setting your preferred text editor, go back one page and then go forward to the page again, in some cases this will make the `next` button appear.
+如果您尚未安装git，可以从[Git的官方页面](https://git-scm.com/downloads/)来下载，或自行前往镜像站寻找镜像。 选择您的操作系统，下载安装程序，运行安装程序并按照说明进行操作。  
+如果您不确定要检查哪些选项，请将其保留为默认值，除了首选文本编辑器。  
+我们建议您将首选文本编辑器设置为自己最常用的那一个，并且在选择文本编辑器之前确认您已经安装了对应的编辑器。如果设置了首选的文本编辑器后无法继续操作（例如next按钮变灰），请返回上一页，然后再次前进到该页面。在某些情况下，这会使`next（继续）`按钮正常工作。
 
-### Adding Git to your PATH
+### 添加Git到您的 PATH
 
 After you have installed Git, it should be added to your PATH. If not, first try to close and open your command prompt.  
 If it still tells you it doesn't know git, restart your computer.  
