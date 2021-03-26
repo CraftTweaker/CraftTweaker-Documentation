@@ -33,6 +33,7 @@ crafttweaker.world.IWorld.getFromID(int id);
 |getWorldInfo()     | worldInfo     |[IWorldInfo](/Vanilla/World/IWorldInfo/)         |Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
 |getProvider()      | provider      |[IWorldProvider](/Vanilla/World/IWorldProvider/) |Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
 |getSeaLevel()      | seaLevel      |int                              |Returns the world's sea level.                                                                                                                                                         |
+|getRandom()         | random |[IRandom](/Vanilla/Utils/IRandom/) | Returns the world's random generator
 
 ## ZenMethods with parameters
 ### Get Biome at specific Position

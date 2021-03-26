@@ -177,13 +177,18 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
 | `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
+#### Mutable
+
+Gets a mutable ItemStack.
+
+| Method call                                        | Returns                                                        |
+| ---------------------------------------------------|------------------------------
+| `stack.mutable();`                                  | [IMutableItemStack](/Vanilla/Items/IMutableItemStack)          |
 
 ## ItemTransformers and ItemConditions
 You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
-
-
 
 ## Examples
 
