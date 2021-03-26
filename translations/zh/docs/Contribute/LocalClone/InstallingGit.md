@@ -1,4 +1,4 @@
-# Installing Git
+# 安装 Git
 
 In order for you to [clone your forked repository](/Contribute/LocalClone/Clone/) you will need to install git.  
 Git is a distributed version control system (basically, it's what GitHub, BitBucket and other version control services use).
