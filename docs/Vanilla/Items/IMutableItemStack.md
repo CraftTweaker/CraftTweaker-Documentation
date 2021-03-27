@@ -9,11 +9,14 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Getting the Instance
 
-Use IItemStack's  `mutable()` method.
+You can get a IMutableItemStack by using IItemStack's `mutable()` method. like so:
+```zenscript
+<minecraft:dirt>.mutable()
+```
 
 ## Extending the IItemStack
 
-IMutableItemStack extends [IItemStack](/Vanilla/Items/IItemStack/) and are able to call all of its methods/getters/setters as well.
+IMutableItemStack extends [IItemStack](/Vanilla/Items/IItemStack/) and is able to call all of its methods/getters/setters as well.
 
 ## ZenMethods
 
@@ -30,4 +33,4 @@ Besides `withAmount`, you can easily call these methods below to change the coun
 
 `IItemStack copy();`
 
-The copy method will returns a new immutable stack with the same properties. If you are certain that the stack shouldn't be changed anymore and want to avoid unexpected item changes, you will need to use the method.
+The copy method will returns a new immutable ItemStack with the same properties. If you are certain that the stack shouldn't be changed anymore and want to avoid unexpected item changes, you will need to use the method.
