@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Getting the Instance
 
-Using `mutable` method of IItemStack.
+Use IItemStack's  `mutable()` method.
 
 ## Extending the IItemStack
 
