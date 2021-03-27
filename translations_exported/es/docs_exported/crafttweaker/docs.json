@@ -86,8 +86,8 @@
           "MCAnvilUpdateEvent": "vanilla/api/event/MCAnvilUpdateEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
           "Block": {
-            "CropGrowPostEvent": "vanilla/api/event/block/CropGrowPostEvent.md",
-            "CropGrowPreEvent": "vanilla/api/event/block/CropGrowPreEvent.md",
+            "MCCropGrowPostEvent": "vanilla/api/event/block/CropGrowPostEvent.md",
+            "MCCropGrowPreEvent": "vanilla/api/event/block/CropGrowPreEvent.md",
             "MCBlockBreakEvent": "vanilla/api/event/block/MCBlockBreakEvent.md",
             "MCBlockEvent": "vanilla/api/event/block/MCBlockEvent.md",
             "MCBlockNeighborNotifyEvent": "vanilla/api/event/block/MCBlockNeighborNotifyEvent.md",
@@ -110,7 +110,7 @@
             "Living": {
               "MCEnderTeleportEvent": "vanilla/api/event/entity/living/MCEnderTeleportEvent.md",
               "MCLivingAttackEvent": "vanilla/api/event/entity/living/MCLivingAttackEvent.md",
-              "LivingConversionPostEvent": "vanilla/api/event/entity/living/MCLivingConversionPostEvent.md",
+              "MCLivingConversionPostEvent": "vanilla/api/event/entity/living/MCLivingConversionPostEvent.md",
               "MCLivingConversionPreEvent": "vanilla/api/event/entity/living/MCLivingConversionPreEvent.md",
               "MCLivingDeathEvent": "vanilla/api/event/entity/living/MCLivingDeathEvent.md",
               "MCLivingEntityUseItemEvent": "vanilla/api/event/entity/living/MCLivingEntityUseItemEvent.md",
@@ -152,7 +152,7 @@
           },
           "Living": {
             "MCLivingDamageEvent": "vanilla/api/event/living/MCLivingDamageEvent.md",
-            "LivingDestroyBlockEvent": "vanilla/api/event/living/MCLivingDestroyBlockEvent.md",
+            "MCLivingDestroyBlockEvent": "vanilla/api/event/living/MCLivingDestroyBlockEvent.md",
             "MCLivingDropsEvent": "vanilla/api/event/living/MCLivingDropsEvent.md"
           },
           "Tick": {
@@ -189,6 +189,7 @@
           "IngredientList": "vanilla/api/items/IngredientList.md",
           "MCIngredientConditioned": "vanilla/api/items/MCIngredientConditioned.md",
           "MCIngredientTransformed": "vanilla/api/items/MCIngredientTransformed.md",
+          "MCItemStackMutable": "vanilla/api/items/MCItemStackMutable.md",
           "MCWeightedItemStack": "vanilla/api/items/MCWeightedItemStack.md"
         },
         "Logger": {
