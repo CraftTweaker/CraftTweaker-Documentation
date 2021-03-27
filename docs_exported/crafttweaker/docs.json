@@ -189,6 +189,7 @@
           "IngredientList": "vanilla/api/items/IngredientList.md",
           "MCIngredientConditioned": "vanilla/api/items/MCIngredientConditioned.md",
           "MCIngredientTransformed": "vanilla/api/items/MCIngredientTransformed.md",
+          "MCItemStackMutable": "vanilla/api/items/MCItemStackMutable.md",
           "MCWeightedItemStack": "vanilla/api/items/MCWeightedItemStack.md"
         },
         "Logger": {

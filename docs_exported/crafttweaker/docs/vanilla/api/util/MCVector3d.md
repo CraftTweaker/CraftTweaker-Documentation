@@ -85,7 +85,7 @@ MCVector3d.dot(other as MCVector3d) as double
 
 :::group{name=getCoordinate}
 
-Gets the coordinate of this vector that corresponds to the given Direction.Axis.
+Gets the coordinate of this vector that corresponds to the given [DirectionAxis](/vanilla/api/util/DirectionAxis).
 
 Return Type: double
 
