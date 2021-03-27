@@ -1,6 +1,6 @@
 # IMutableItemStack
 
-An mutable ItemStack. `withTag` `withAmount` `damageItem` etc. will modify and return the ItemStack itself.
+A mutable ItemStack. `withTag` `withAmount` `damageItem` etc. Changes (such as count or tag changes) will modify and return the ItemStack itself instead of a new ItemStack with the changed properties.
 
 ## Importing the package
 
