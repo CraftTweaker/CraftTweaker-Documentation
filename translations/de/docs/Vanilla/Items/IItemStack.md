@@ -179,6 +179,14 @@ Gets or Sets an item's forge capability data. In most cases, the tag of the stac
 | `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
 | `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
+#### Mutable
+
+Gets a mutable ItemStack. Its damage, amount and tag is mutable. Its `withTag`, `withAmount` and other methods will change the item itself, rather than returning a new changed item.
+
+| Methodenaufruf     | Rückgabewert                                          |
+| ------------------ | ----------------------------------------------------- |
+| `stack.mutable();` | [IMutableItemStack](/Vanilla/Items/IMutableItemStack) |
+
 ## ItemTransformers and ItemConditions
 
 You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
