@@ -1,6 +1,6 @@
 # IRandom
 
-The IRandom is a random number generator. The class can only be used when you have an instance of a World (Such as in an Event handler), it can not be in recipes.
+IRandom is a random number generator. The class can only be used when you have an instance of a World (Such as in an Event handler), it can not be in recipes.
 
 ## Importing the package
 
@@ -12,7 +12,10 @@ It might be required for you to [import](/AdvancedFunctions/Import/) the package
 
 You can get an instance of IRandom by using an [IWorld](/Vanilla/World/IWorld/) instance.
 
-Once you have an [IWorld](/Vanilla/World/IWorld/) instance, you can simply do: `world.random`
+Once you have an [IWorld](/Vanilla/World/IWorld/) instance, you can simply do: 
+```zenscript
+world.random
+```
 
 ## ZenMethods
 
