@@ -227,6 +227,7 @@
       "Items": {
         "IItemDefinition": "Vanilla/Items/IItemDefinition.md",
         "IItemStack": "Vanilla/Items/IItemStack.md",
+        "IMutableItemStack": "Vanilla/Items/IMutableItemStack.md",
         "Item Conditions": "Vanilla/Items/Item_Conditions.md",
         "Item Transformers": "Vanilla/Items/Item_Transformers.md",
         "Tooltips": "Vanilla/Items/Tooltips.md",
@@ -279,6 +280,7 @@
         "IFormattedText": "Vanilla/Utils/IFormattedText.md",
         "IFormatter": "Vanilla/Utils/IFormatter.md",
         "ItemUtils": "Vanilla/Utils/IItemUtils.md",
+        "IRandom": "Vanilla/Utils/IRandom.md",
         "Logger": "Vanilla/Utils/Logger.md",
         "Position3f": "Vanilla/Utils/Position3f.md"
       },
