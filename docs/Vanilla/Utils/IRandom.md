@@ -28,3 +28,5 @@ world.random
 * `nextDouble(double min, double max)` returns the next pseudorandom double, ranging from [min, max]
 * `nextBoolean()` returns the next pseudorandom boolean
 * `String getRandomUUID()` returns a random UUID
+
+The ranges above are presented in using the mathematical interval notation, you can read more about it [here](https://en.wikipedia.org/wiki/Interval_(mathematics)#Notations_for_intervals)
