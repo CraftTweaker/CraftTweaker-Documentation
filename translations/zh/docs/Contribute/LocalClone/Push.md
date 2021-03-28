@@ -1,12 +1,12 @@
-# 推送（push）
+# 推送（Push）
 
 ## 需求
 
-You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
+您需要知道如何 [创建commit(提交)](/Contribute/LocalClone/CreateCommit/) 并且至少创建一个commit。
 
 ## 我们将做什么
 
-We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
+我们使用创建的commit(例如在[创建commit](/Contribute/LocalClone/CreateCommit/)中的做法)并且将变化push到github上。
 
 ## 检查当前状态
 
