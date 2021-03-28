@@ -8,7 +8,7 @@ Git 是一个分布式版本控制系统( 事实上，Github, BitBucket 和绝�
 您可以打开命令提示符并执行命令`git`来检查是否已安装Git  
 如果显示了指令帮助页面，这代表你已经安装了Git，请跳过这一阶段  
 如果未显示帮助页面，而是返回类似于“Git不是可用的程序”，这说明您尚未安装Git或者未将其添加至PATH（环境变量）中（请参见下文） 在这样的情况下，您需要安装git或将其添加到您的路径：  
-![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
+![CMD在未安装git的情况下返回git命令 ](/Contribute/LocalClone/assets/CMD_noGit.png)
 
 ### 下载并安装Git
 
@@ -18,16 +18,16 @@ Git 是一个分布式版本控制系统( 事实上，Github, BitBucket 和绝�
 
 ### 添加Git到您的 PATH
 
-After you have installed Git, it should be added to your PATH. If not, first try to close and open your command prompt.  
-If it still tells you it doesn't know git, restart your computer.  
-If it still tells you it doesn't know git, you may need to add it to your path.
+安装Git后，它应该被添加到您的 PATH。 如果没有，请先重启您的CMD窗口。  
+如果它仍然告诉您它不知道git, 请重启您的计算机。  
+如果它仍然告诉您它不知道git，您可能需要将它添加到您的PATH。
 
-I won't cover how to add it in detail, all you need to do is add the directory where you installed git to as path.  
-If you for example installed Git to `C:\Program Files\Git` you will need to add `C:\Program Files\Git\cmd` to your path.  
-Afterwards restart your command prompt or your computer.
+您需要做的只是将安装git的目录添加到PATH中，但我不会详细解释如何添加一个路径到PATH，请自行寻找教程。  
+例如：如果您安装了 Git 到 `C:\Program Files\Git` ，那么您需要将 `C:\Program Files\Git\cmd` 添加到您的PATH。  
+稍后重启您的CMD或计算机。
 
-Technically, this is not required but it makes some commands easier.
+其实这并不是必需的，但这可以大大提升您的工作效率。
 
 ## 下一步该做什么
 
-Now that you have installed git you can [clone your forked repository](/Contribute/LocalClone/Clone/).
+现在你已经安装好了Git，可以[clone你fork的项目](/Contribute/LocalClone/Clone/)了。
