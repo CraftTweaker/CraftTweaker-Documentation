@@ -8,14 +8,14 @@ You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) a
 
 We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
 
-## Check the current status
+## 检查当前状态
 
 If you run `git status` you can see how many commits your local clone is ahead/behind your fork.
 
 In this case we are ahead by 1 commit:  
 ![git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
 
-## Git push
+## Git 推送
 
 Now we run `git push` to push our changes to the remote branch.  
 You might be asked for your GH username and password.  
