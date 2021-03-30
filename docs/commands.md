@@ -23,5 +23,8 @@ Here are the commands that matter:
 /ct dump recipeTypes
 ```
 ```plaintext
+/ct dumpBrackets
+```
+```plaintext
 /ct help
 ```
