@@ -20,7 +20,7 @@ Here are the commands that matter:
 /ct dump
 ```
 ```plaintext
-/ct recipeTypes
+/ct dump recipeTypes
 ```
 ```plaintext
 /ct help
