@@ -12,7 +12,7 @@ import crafttweaker.api.BracketHandlers;
 
 ## Methods
 
-### getBiome
+:::group{name=getBiome}
 
 Gets a Biome based on the tokens. Throws an error if it can't get the biome
 
@@ -30,7 +30,9 @@ BracketHandlers.getBiome("minecraft:plain");
 | tokens    | string | The biome's resource location |
 
 
-### getBlock
+:::
+
+:::group{name=getBlock}
 
 Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
 
@@ -48,7 +50,9 @@ BracketHandlers.getBlock("minecraft:dirt");
 | tokens    | string | Ce que vous écririez dans l'appel BEP. |
 
 
-### getBlockMaterial
+:::
+
+:::group{name=getBlockMaterial}
 
 Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
 
@@ -66,7 +70,9 @@ BracketHandlers.getBlockMaterial("earth");
 | tokens    | string | Ce que vous écririez dans l'appel BEP. |
 
 
-### getBlockState
+:::
+
+:::group{name=getBlockState}
 
 Creates a Blockstate based on the given inputs. Returns `null` if it cannot find the block, ignored invalid variants
 
@@ -86,7 +92,9 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 | tokens    | string | The block's resource location and variants |
 
 
-### getDamageSource
+:::
+
+:::group{name=getDamageSource}
 
 Gets a damage source based on type. If the damage source is not pre-registered, it will create a new one with the given name
 
@@ -104,7 +112,9 @@ BracketHandlers.getDamageSource("magic");
 | tokens    | string | the damage sources' type |
 
 
-### getDirectionAxis
+:::
+
+:::group{name=getDirectionAxis}
 
 Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
 
@@ -122,7 +132,9 @@ BracketHandlers.getDirectionAxis("x");
 | tokens    | string | The direction Axis's resource location |
 
 
-### getEffect
+:::
+
+:::group{name=getEffect}
 
 Gets the effect based on registry name. Throws an error if it can't find the effect.
 
@@ -140,7 +152,9 @@ BracketHandlers.getEffect("minecraft:haste");
 | tokens    | string | The effect's resource location |
 
 
-### getEnchantment
+:::
+
+:::group{name=getEnchantment}
 
 Gets the enchantment based on registry name. Throws an error if it can't find the enchantment.
 
@@ -158,7 +172,9 @@ BracketHandlers.getEnchantment("minecraft:riptide");
 | tokens    | string | The enchantment's registry name |
 
 
-### getEntityClassification
+:::
+
+:::group{name=getEntityClassification}
 
 Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
 
@@ -176,16 +192,18 @@ BracketHandlers.getEntityClassification("monster");
 | tokens    | string | The entityClassification's resource location |
 
 
-### getEntityType
+:::
+
+:::group{name=getEntityType}
 
 Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
 
-Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)?
+Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
 <entitytype:minecraft:pig>
 
-BracketHandlers.getEntityType(tokens as string) as MCEntityType?
+BracketHandlers.getEntityType(tokens as string) as MCEntityType
 BracketHandlers.getEntityType("minecraft:pig");
 ```
 
@@ -194,7 +212,9 @@ BracketHandlers.getEntityType("minecraft:pig");
 | tokens    | string | The entityType's resource location |
 
 
-### getEquipmentSlotType
+:::
+
+:::group{name=getEquipmentSlotType}
 
 Gets the equipment slot type based on name. Throws an error if it can't find the equipment slot type.
 
@@ -212,7 +232,9 @@ BracketHandlers.getEquipmentSlotType("mainhand");
 | tokens    | string | The equipment slot type's name |
 
 
-### getFluidStack
+:::
+
+:::group{name=getFluidStack}
 
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
 
@@ -230,7 +252,9 @@ BracketHandlers.getFluidStack("minecraft:water");
 | tokens    | string | The Fluid's resource location |
 
 
-### getItem
+:::
+
+:::group{name=getItem}
 
 Gets the item based on registry name. Throws an error if it can't find the item.
 
@@ -248,7 +272,9 @@ BracketHandlers.getItem("minecraft:dirt");
 | tokens    | string | The item's resource location |
 
 
-### getPotion
+:::
+
+:::group{name=getPotion}
 
 Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
 
@@ -261,16 +287,18 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 | tokens    | string | No Description Provided |
 
 
-### getProfession
+:::
+
+:::group{name=getProfession}
 
 Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
 
-Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)?
+Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
 
 ```zenscript
 <profession:minecraft:armorer>
 
-BracketHandlers.getProfession(tokens as string) as MCVillagerProfession?
+BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
 BracketHandlers.getProfession("minecraft:armorer");
 ```
 
@@ -279,7 +307,9 @@ BracketHandlers.getProfession("minecraft:armorer");
 | tokens    | string | The profession's resource location |
 
 
-### getRecipeManager
+:::
+
+:::group{name=getRecipeManager}
 
 Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. Throws an exception if the given recipeType is not found. <p> This will always return IRecipeManager.<br> There is also a BEP for that but that works differently so it can't be automatically added to the docs here. But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
 
@@ -295,7 +325,9 @@ BracketHandlers.getRecipeManager("minecraft:crafting");
 | tokens    | string | The recipeManager's resource location |
 
 
-### getResourceLocation
+:::
+
+:::group{name=getResourceLocation}
 
 Creates a Resource location based on the tokens. Throws an error if the tokens are not a valid location.
 
@@ -313,7 +345,9 @@ BracketHandlers.getResourceLocation("minecraft:dirt");
 | tokens    | string | The resource location |
 
 
-### getTextFormatting
+:::
+
+:::group{name=getTextFormatting}
 
 Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
 
@@ -325,4 +359,6 @@ BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 | --------- | ------ | ----------------------- |
 | tokens    | string | No Description Provided |
 
+
+:::
 
