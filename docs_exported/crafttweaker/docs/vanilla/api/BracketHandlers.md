@@ -213,12 +213,12 @@ BracketHandlers.getEntityClassification("monster");
 Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
 
 Returns: The found entityType
-Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)?
+Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
 <entitytype:minecraft:pig>
 
-BracketHandlers.getEntityType(tokens as string) as MCEntityType?
+BracketHandlers.getEntityType(tokens as string) as MCEntityType
 BracketHandlers.getEntityType("minecraft:pig");
 ```
 
@@ -312,12 +312,12 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
 
 Returns: The found profession
-Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)?
+Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
 
 ```zenscript
 <profession:minecraft:armorer>
 
-BracketHandlers.getProfession(tokens as string) as MCVillagerProfession?
+BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
 BracketHandlers.getProfession("minecraft:armorer");
 ```
 
