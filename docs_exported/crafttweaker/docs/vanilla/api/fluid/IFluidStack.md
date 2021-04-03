@@ -51,6 +51,19 @@ myIFluidStack.copy();
 
 :::
 
+:::group{name=getTag}
+
+Returns the NBT tag attached to this FluidStack.
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+IFluidStack.getTag() as IData
+myIFluidStack.getTag();
+```
+
+:::
+
 :::group{name=mutable}
 
 Makes this stack mutable
@@ -78,6 +91,24 @@ myIFluidStack.setAmount(1000);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | amount | int | The amount to multiply this stack |
+
+
+:::
+
+:::group{name=withTag}
+
+Sets the tag for the FluidStack.
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.withTag(tag as IData) as IFluidStack
+myIFluidStack.withTag({Display: {lore: ["Hello"]}});
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tag | [IData](/vanilla/api/data/IData) | The tag to set. |
 
 
 :::
@@ -115,5 +146,7 @@ myIFluidStack * 1000
 | commandString | string | true | false |
 | empty | boolean | true | false |
 | fluid | [MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
+| hasTag | boolean | true | false |
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
+| tag | [IData](/vanilla/api/data/IData) | true | false |
 
