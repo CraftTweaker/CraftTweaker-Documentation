@@ -13,6 +13,19 @@ IngredientList implements the following interfaces. That means all methods defin
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 
+## Constructors
+
+No Description Provided
+```zenscript
+new IngredientList(ingredients as IIngredient[]) as IngredientList
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| ingredients | [IIngredient](/vanilla/api/items/IIngredient)[] | No Description Provided |
+
+
+
 ## Casters
 
 | Result type | Is Implicit |
