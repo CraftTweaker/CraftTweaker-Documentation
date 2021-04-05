@@ -18,7 +18,7 @@ The following script will add a recipe that will output 8000Mb of Creosote (Flui
 
 #### Remove FluidStack Recipes
 
-The follow script will remove all recipes from the Mixer that output exactly 500Mb of Concrete (Fluid).
+The following script will remove all recipes from the Mixer that output exactly 500Mb of Concrete (Fluid).
 
 ```zenscript
 // <recipetype:immersiveengineering:mixer>.removeRecipe(IFluidStack output)
@@ -28,7 +28,7 @@ The follow script will remove all recipes from the Mixer that output exactly 500
 
 #### Remove Fluid Recipes
 
-The follow script will remove all recipes from the Mixer that output any amount of Concrete (Fluid).
+The following script will remove all recipes from the Mixer that output any amount of Concrete (Fluid).
 
 ```zenscript
 // <recipetype:immersiveengineering:mixer>.removeRecipe(MCFluid output)

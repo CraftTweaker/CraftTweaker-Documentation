@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alchemy Table that output a clay ball.
+The following script will remove all recipes from the Alchemy Table that output a clay ball.
 
 ```zenscript
 // <recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);

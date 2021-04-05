@@ -6,7 +6,7 @@ The Pure Daisy is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManage
 
 #### Add Recipe with BlockState input
 
-The follow script will add a recipe to the Pure Daisy that will convert a Gold Block to a Diamond Block and will take 20 ticks to convert.
+The following script will add a recipe to the Pure Daisy that will convert a Gold Block to a Diamond Block and will take 20 ticks to convert.
 
 ```zenscript
 // <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, BlockState input, int time)
@@ -16,7 +16,7 @@ The follow script will add a recipe to the Pure Daisy that will convert a Gold B
 
 #### Add Recipe with Block[] input
 
-The follow script will add a recipe to the Pure Daisy that will convert a Stone Block or a Cobblestone Block to an Iron Block and will take 20 ticks to convert.
+The following script will add a recipe to the Pure Daisy that will convert a Stone Block or a Cobblestone Block to an Iron Block and will take 20 ticks to convert.
 
 ```zenscript
 // <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, Block[] inputs, int time)
@@ -26,7 +26,7 @@ The follow script will add a recipe to the Pure Daisy that will convert a Stone 
 
 #### Add Recipe with BlockTag input
 
-The follow script will add a recipe to the Pure Daisy that will convert any Block in the `minecraft:wool` BlockTag to a Lapis Lazuli Block and will take 20 ticks to convert.
+The following script will add a recipe to the Pure Daisy that will convert any Block in the `minecraft:wool` BlockTag to a Lapis Lazuli Block and will take 20 ticks to convert.
 
 ```zenscript
 // <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, Block[] inputs, int time)
@@ -37,7 +37,7 @@ The follow script will add a recipe to the Pure Daisy that will convert any Bloc
 
 #### Remove Recipes
 
-The follow script will remove all Pure Daisy recipes that convert blocks into Living Rock
+The following script will remove all Pure Daisy recipes that convert blocks into Living Rock
 
 ```zenscript
 // <recipetype:botania:pure_daisy>.removeRecipe(BlockState state);

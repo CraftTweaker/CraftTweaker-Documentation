@@ -32,13 +32,13 @@ mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
 
 ## Mod Hiding
 
-The following script will hide all the Items added by "minecraft", except for Stone from the item list. There will still be some Items left over, these are hard-coded in and cannon be removed.
+The following script will hide all the Items added by "minecraft", except for Stone from the item list.
 
 ```zenscript
 // mods.jei.JEI.hideItem(string modid, crafttweaker.api.recipeFilter exclude)
 
 mods.jei.JEI.hideMod("minecraft", (name as string) => {
-    return name != "stone";
+    return name == "stone";
 });
 ```
 
@@ -54,7 +54,7 @@ mods.jei.JEI.hideRegex(".*stone.*");
 
 ## Category Hiding
 
-The following script will hide the Furnace category from JEI. It essentially hiding all the recipes in the category.
+The following script will hide the Furnace category from JEI. It is essentially hiding all the recipes in the category.
 
 ```zenscript
 // mods.jei.JEI.hideCategory(String category)
@@ -77,6 +77,16 @@ The default categories are:
 ```
 
 Mods can add more categories though, so be sure to do `/ct dump jeiCategories` to get a full list of them!
+
+# Recipe Hiding
+
+The following script will hide the Oak Boat recipe from the Crafting category. This will not remove the recipe, it will just hide it.
+
+```zenscript
+// mods.jei.JEI.hideRecipe(String category, String recipeName)
+
+mods.jei.JEI.hideRecipe("minecraft:crafting", "minecraft:oak_boat");
+```
 
 ## Add Info
 

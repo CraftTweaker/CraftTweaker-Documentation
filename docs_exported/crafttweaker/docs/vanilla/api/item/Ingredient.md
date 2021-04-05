@@ -26,7 +26,7 @@ Ingredient implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### asIIngredient
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
@@ -34,5 +34,7 @@ Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 Ingredient.asIIngredient() as IIngredient
 myIngredient.asIIngredient();
 ```
+
+:::
 
 

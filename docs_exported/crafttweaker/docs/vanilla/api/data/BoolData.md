@@ -36,11 +36,10 @@ new BoolData(internal as boolean) as BoolData
 |-------------|-------------|
 | [ByteData](/vanilla/api/data/ByteData) | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -49,7 +48,9 @@ BoolData.asCollection() as ICollectionData
 true.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -60,7 +61,9 @@ BoolData.asList() as stdlib.List<IData>
 true.asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -71,16 +74,9 @@ BoolData.asMap() as IData[string]
 true.asMap();
 ```
 
-### asNumber
+:::
 
-Return Type: [INumberData](/vanilla/api/data/INumberData)
-
-```zenscript
-BoolData.asNumber() as INumberData
-true.asNumber();
-```
-
-### contains
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -96,7 +92,9 @@ true.contains("Display");
 | data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### getByteData
+:::
+
+:::group{name=getByteData}
 
 Converts this BoolData to a [ByteData](/vanilla/api/data/ByteData) object.
  This will be used when this Data is converted to NBT
@@ -108,7 +106,9 @@ BoolData.getByteData() as ByteData
 true.getByteData();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -121,7 +121,9 @@ BoolData.getId() as byte
 true.getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -131,5 +133,7 @@ Return Type: string
 BoolData.getString() as string
 true.getString();
 ```
+
+:::
 
 

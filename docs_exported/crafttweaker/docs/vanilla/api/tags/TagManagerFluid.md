@@ -15,7 +15,7 @@ TagManagerFluid implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### exists
+:::group{name=exists}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -30,6 +30,10 @@ TagManagerFluid.exists(location as MCResourceLocation) as boolean
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
 
 
+:::
+
+:::group{name=exists}
+
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
 Return Type: boolean
@@ -43,7 +47,9 @@ TagManagerFluid.exists(name as string) as boolean
 | name | string | The resource location to check for |
 
 
-### getAllTags
+:::
+
+:::group{name=getAllTags}
 
 Retrieves a list of all tags currently registered.
 
@@ -54,7 +60,9 @@ TagManagerFluid.getAllTags() as stdlib.List<MCTag<T>>
 myTagManagerFluid.getAllTags();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
@@ -73,6 +81,10 @@ TagManagerFluid.getTag(location as MCResourceLocation) as MCTag<T>
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
 
+:::
+
+:::group{name=getTag}
+
 Retrieves a tag by its name.
  Will also be called by the BEP.
  <p>
@@ -90,10 +102,12 @@ TagManagerFluid.getTag(name as string) as MCTag<T>
 | name | string | The Resource location of the tag |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -101,7 +115,7 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 name as string in myTagManagerFluid
 ```
 
-
+:::
 
 
 ## Properties

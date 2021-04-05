@@ -32,7 +32,7 @@ IItemStack implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -45,7 +45,9 @@ IItemStack.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComp
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -58,7 +60,9 @@ IItemStack.addTooltip(content as MCTextComponent) as void
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -67,7 +71,9 @@ IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
 <item:minecraft:dirt>.anyDamage();
 ```
 
-### asIIngredientWithAmount
+:::
+
+:::group{name=asIIngredientWithAmount}
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
@@ -76,7 +82,9 @@ IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
 <item:minecraft:dirt>.asIIngredientWithAmount();
 ```
 
-### asVanillaIngredient
+:::
+
+:::group{name=asVanillaIngredient}
 
 Create a Vanilla ingredient matching this one.
 
@@ -87,7 +95,9 @@ IItemStack.asVanillaIngredient() as Ingredient
 <item:minecraft:dirt>.asVanillaIngredient();
 ```
 
-### clearCustomName
+:::
+
+:::group{name=clearCustomName}
 
 Clears any custom name set for this ItemStack
 
@@ -98,7 +108,9 @@ IItemStack.clearCustomName() as void
 <item:minecraft:dirt>.clearCustomName();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
@@ -107,7 +119,27 @@ IItemStack.clearTooltip() as void
 <item:minecraft:dirt>.clearTooltip();
 ```
 
-### copy
+:::
+
+:::group{name=contains}
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IItemStack.contains(ingredient as IIngredient) as boolean
+<item:minecraft:dirt>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
+:::
+
+:::group{name=copy}
 
 Creates a copy
 
@@ -118,7 +150,9 @@ IItemStack.copy() as IItemStack
 <item:minecraft:dirt>.copy();
 ```
 
-### getDefinition
+:::
+
+:::group{name=getDefinition}
 
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
@@ -127,7 +161,9 @@ IItemStack.getDefinition() as MCItemDefinition
 <item:minecraft:dirt>.getDefinition();
 ```
 
-### getInternal
+:::
+
+:::group{name=getInternal}
 
 Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
 
@@ -138,7 +174,9 @@ IItemStack.getInternal() as ItemStack
 <item:minecraft:dirt>.getInternal();
 ```
 
-### getRemainingItem
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
  Does not check if the stack matches though!
@@ -156,7 +194,20 @@ IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=isFood}
+
+Return Type: boolean
+
+```zenscript
+IItemStack.isFood() as boolean
+<item:minecraft:dirt>.isFood();
+```
+
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -172,7 +223,9 @@ IItemStack.matches(stack as IItemStack) as boolean
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -185,7 +238,9 @@ IItemStack.modifyTooltip(function as ITooltipFunction) as void
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### mutable
+:::
+
+:::group{name=mutable}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -194,7 +249,26 @@ IItemStack.mutable() as IItemStack
 <item:minecraft:dirt>.mutable();
 ```
 
-### onlyDamaged
+:::
+
+:::group{name=only}
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IItemStack.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -203,7 +277,9 @@ IItemStack.onlyDamaged() as MCIngredientConditioned<IIngredient>
 <item:minecraft:dirt>.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -216,7 +292,9 @@ IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredi
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -229,7 +307,9 @@ IItemStack.removeTooltip(regex as string) as void
 | regex | string | No Description Provided |
 
 
-### setDisplayName
+:::
+
+:::group{name=setDisplayName}
 
 Sets the display name of the ItemStack
 
@@ -245,7 +325,9 @@ IItemStack.setDisplayName(name as string) as IItemStack
 | name | string | New name of the stack. |
 
 
-### weight
+:::
+
+:::group{name=weight}
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
@@ -258,7 +340,9 @@ IItemStack.weight(weight as double) as MCWeightedItemStack
 | weight | double | No Description Provided |
 
 
-### withDamage
+:::
+
+:::group{name=withDamage}
 
 Sets the damage of the ItemStack
 
@@ -274,7 +358,9 @@ IItemStack.withDamage(damage as int) as IItemStack
 | damage | int | the new damage value |
 
 
-### withTag
+:::
+
+:::group{name=withTag}
 
 Sets the tag for the ItemStack.
 
@@ -290,18 +376,31 @@ IItemStack.withTag(tag as IData) as IItemStack
 | tag | [IData](/vanilla/api/data/IData) | The tag to set. |
 
 
+:::
+
 
 ## Operators
 
-### MOD
+:::group{name=CONTAINS}
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIItemStack
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <item:minecraft:dirt>
+```
+
+:::
+
+:::group{name=MOD}
 
 ```zenscript
 myIItemStack % percentage as int
 ```
 
+:::
 
-
-### MUL
+:::group{name=MUL}
 
 Sets the amount of the ItemStack
 
@@ -310,15 +409,15 @@ myIItemStack * amount as int
 <item:minecraft:dirt> * 3
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myIItemStack | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties
@@ -334,7 +433,7 @@ myIItemStack | other as IIngredient
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false |
 | displayName | string | true | false |
 | empty | boolean | true | false |
-| food | [MCFood](/vanilla/api/food/MCFood) | true | true |
+| food | [MCFood](/vanilla/api/food/MCFood)? | true | true |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false |
 | getRepairCost | int | true | false |
 | hasDisplayName | boolean | true | false |

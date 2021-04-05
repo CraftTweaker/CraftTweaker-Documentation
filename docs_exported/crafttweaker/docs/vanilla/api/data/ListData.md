@@ -44,7 +44,7 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -53,7 +53,9 @@ ListData.asCollection() as ICollectionData
 ["Hello", "World", "!"].asCollection();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -64,7 +66,9 @@ ListData.asMap() as IData[string]
 ["Hello", "World", "!"].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -73,7 +77,9 @@ ListData.asNumber() as INumberData
 ["Hello", "World", "!"].asNumber();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -86,7 +92,9 @@ ListData.getId() as byte
 ["Hello", "World", "!"].getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -96,5 +104,7 @@ Return Type: string
 ListData.getString() as string
 ["Hello", "World", "!"].getString();
 ```
+
+:::
 
 

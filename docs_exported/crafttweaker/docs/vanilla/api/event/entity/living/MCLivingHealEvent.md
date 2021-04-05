@@ -1,8 +1,16 @@
 # MCLivingHealEvent
 
-This event is fired just before an entity is healed. This allows you to 
- modify the amount of healing or prevent it all together by canceling the 
+This event is fired just before an entity is healed. This allows you to
+ modify the amount of healing or prevent it all together by canceling the
  event.
+
+The event is cancelable.
+
+If the event is canceled, the entity is not healed
+
+The event does not have a result.
+
+
 
 ## Importing the class
 
@@ -18,7 +26,7 @@ MCLivingHealEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Methods
 
-### getAmount
+:::group{name=getAmount}
 
 Gets the amount of healing.
 
@@ -29,7 +37,9 @@ MCLivingHealEvent.getAmount() as float
 event.getAmount();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the amount of healing.
 
@@ -44,6 +54,8 @@ event.setAmount(0.5);
 |-----------|------|-------------|
 | amount | float | The amount of damage to heal. |
 
+
+:::
 
 
 ## Properties

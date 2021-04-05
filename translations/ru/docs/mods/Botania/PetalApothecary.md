@@ -6,7 +6,7 @@ The Petal Apothecary is a type of [IRecipeManager](/vanilla/api/managers/IRecipe
 
 #### Add Recipe
 
-The follow script will add a recipe to the Petal Apothecary that will give a Diamond when a piece of Dirt is given to the Petal Apothecary (You will still need to complete the recipe by throwing Wheat Seeds into the Petal Apothecary).
+The following script will add a recipe to the Petal Apothecary that will give a Diamond when a piece of Dirt is given to the Petal Apothecary (You will still need to complete the recipe by throwing Wheat Seeds into the Petal Apothecary).
 
 ```zenscript
 // <recipetype:botania:petal_apothecary>.addRecipe(String name, IItemStack output, IIngredient... inputs)
@@ -16,7 +16,7 @@ The follow script will add a recipe to the Petal Apothecary that will give a Dia
 
 #### Remove Recipes
 
-The follow script will remove all Petal Apothecary recipes that output a Hydroangeas
+The following script will remove all Petal Apothecary recipes that output a Hydroangeas
 
 ```zenscript
 // <recipetype:botania:petal_apothecary>.removeRecipe(IItemStack output);

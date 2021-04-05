@@ -18,7 +18,7 @@ The following script will add a tier "one" recipe to the Glyph Press that will o
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Glyph Press that output Glyph: Touch.
+The following script will remove all recipes from the Glyph Press that output Glyph: Touch.
 
 ```zenscript
 // <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(IItemStack output);

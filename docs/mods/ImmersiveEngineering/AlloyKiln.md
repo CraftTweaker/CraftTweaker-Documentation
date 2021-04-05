@@ -18,7 +18,7 @@ The following script will add a recipe that will output 2 Gold ingots after 200 
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alloy Kiln that outputs a Constantan Ingot.
+The following script will remove all recipes from the Alloy Kiln that outputs a Constantan Ingot.
 
 ```zenscript
 // <recipetype:immersiveengineering:alloy>.removeRecipe(output as IItemStack)

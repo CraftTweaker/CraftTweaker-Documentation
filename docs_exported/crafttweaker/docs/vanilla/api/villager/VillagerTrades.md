@@ -12,7 +12,7 @@ import crafttweaker.api.villagers.VillagerTrades;
 
 ## Methods
 
-### addTrade
+:::group{name=addTrade}
 
 Adds a Villager Trade for emeralds for an Item. An example being, giving a villager 2 emeralds for an arrow.
 
@@ -32,6 +32,10 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
 
+:::
+
+:::group{name=addTrade}
+
 Adds a Villager Trade for an Item for an Item. An example being, giving a villager 2 diamonds for an arrow.
 
 Return Type: void
@@ -49,6 +53,10 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | maxTrades | int | How many times can this trade be done. | false |  |
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
+
+:::
+
+:::group{name=addTrade}
 
 Adds a Villager Trade for two Items for an Item. An example being, giving a villager 2 diamonds and 2 dirt for an arrow.
 
@@ -69,7 +77,9 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
 
-### addWanderingTrade
+:::
+
+:::group{name=addWanderingTrade}
 
 Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds for an arrow.
 
@@ -89,7 +99,9 @@ villagerTrades.addWanderingTrade(1, 16, <item:minecraft:diamond>, 16, 2);
 | xp | int | How much Experience is given by trading. |
 
 
-### removeDyedArmorForEmeraldsTrade
+:::
+
+:::group{name=removeDyedArmorForEmeraldsTrade}
 
 Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager a diamond and getting a Blue Dyed Leather clestplate.
 
@@ -107,7 +119,9 @@ villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1,
 | buyingItem | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | The base ItemStack that a random Dye colour will be applied to. E.G. A leather chestplate with no effect applied. |
 
 
-### removeEmeraldForItemsTrade
+:::
+
+:::group{name=removeEmeraldForItemsTrade}
 
 Removes a Villager trade for Emeralds for Items. An example being, giving a villager 2 Emaralds for an Arrow.
 
@@ -125,7 +139,9 @@ villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <ite
 | tradeFor | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | What Itemstack is being sold (by the Villager). |
 
 
-### removeEmeraldForMapTrade
+:::
+
+:::group{name=removeEmeraldForMapTrade}
 
 Removes a Villager trade for a Map. An example being, giving a villager Emeralds and getting a Map to a structure.
 
@@ -142,7 +158,9 @@ villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:farmer>, 1);
 | villagerLevel | int | The level the Villager needs to be. |
 
 
-### removeEnchantedBookForEmeraldsTrade
+:::
+
+:::group{name=removeEnchantedBookForEmeraldsTrade}
 
 Removes a Villager trade for an Enchanted Book. An example being, giving a villager Emeralds and getting an Enchanted Book with a random Enchantment.
 
@@ -159,7 +177,9 @@ villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>
 | villagerLevel | int | The level the Villager needs to be. |
 
 
-### removeEnchantedItemForEmeraldsTrade
+:::
+
+:::group{name=removeEnchantedItemForEmeraldsTrade}
 
 Removes a Villager trade for an Enchanted Item. An example being, giving a villager Emeralds and getting an Enchanted Pickaxe.
 
@@ -177,7 +197,9 @@ villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>
 | buyingItem | [IItemStack](/vanilla/api/items/IItemStack) | The ItemStack that the Villager is selling (including any NBT). |
 
 
-### removeItemWithPotionForEmeraldsAndItemsTrade
+:::
+
+:::group{name=removeItemWithPotionForEmeraldsAndItemsTrade}
 
 Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and getting a Tipped Arrow with night vision.
 
@@ -196,7 +218,9 @@ villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraf
 | sellingItem | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | What Itemstack is being given to the Villager. |
 
 
-### removeItemsForEmeraldsAndItemsTrade
+:::
+
+:::group{name=removeItemsForEmeraldsAndItemsTrade}
 
 Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager an Emerald and Gravel and getting 16 Flint.
 
@@ -215,7 +239,9 @@ villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>
 | buyingItem | [IItemStack](/vanilla/api/items/IItemStack) | The item that the Villager is selling. |
 
 
-### removeItemsForEmeraldsTrade
+:::
+
+:::group{name=removeItemsForEmeraldsTrade}
 
 Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Arrow and getting 2 Emaralds.
 
@@ -233,7 +259,9 @@ villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <it
 | sellingItem | [IItemStack](/vanilla/api/items/IItemStack) | What Itemstack is being given to the Villager. |
 
 
-### removeSuspiciousStewForEmeraldTrade
+:::
+
+:::group{name=removeSuspiciousStewForEmeraldTrade}
 
 Removes a Villager trade for Suspicious Stew. An example being, giving a villager Emeralds and getting a bowl of Suspicious Stew back..
 
@@ -250,7 +278,9 @@ villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>
 | villagerLevel | int | The level the Villager needs to be. |
 
 
-### removeWanderingTrade
+:::
+
+:::group{name=removeWanderingTrade}
 
 Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader  2 Emaralds for an Arrow.
 
@@ -266,5 +296,7 @@ villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
 | rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
 | tradeFor | [IItemStack](/vanilla/api/items/IItemStack) | What Itemstack is being sold (by the Villager). |
 
+
+:::
 
 

@@ -6,7 +6,7 @@ Elven Trade is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) 
 
 #### 添加配方
 
-The follow script will add three recipes to Elven Trading, the recipes will do the following: 1) When Glass is thrown through an Elven Portal, a piece of Dirt will be given back. 2) When a Glowstone Block and Yellow Wool are thrown through an Elven Portal, an Apple will be given back. 3) When a piece of Redstone Dust is thrown through an Elven Portal, an Apple and a Lapis Lazuli Block will be given back.
+The following script will add three recipes to Elven Trading, the recipes will do the following: 1) When Glass is thrown through an Elven Portal, a piece of Dirt will be given back. 2) When a Glowstone Block and Yellow Wool are thrown through an Elven Portal, an Apple will be given back. 3) When a piece of Redstone Dust is thrown through an Elven Portal, an Apple and a Lapis Lazuli Block will be given back.
 
 ```zenscript
 // <recipetype:botania:elven_trade>.addRecipe(String name, IItemStack[] outputs, IIngredient... inputs)
@@ -21,7 +21,7 @@ The follow script will add three recipes to Elven Trading, the recipes will do t
 
 ##### Single Item Outputs
 
-The follow script will remove all recipes from Elven Trading that outputs a Dragon Stone.
+The following script will remove all recipes from Elven Trading that outputs a Dragon Stone.
 
 ```zenscript
 // <recipetype:botania:elven_trade>.removeRecipe(IItemStack output);
@@ -31,7 +31,7 @@ The follow script will remove all recipes from Elven Trading that outputs a Drag
 
 ##### Multiple Item Outputs
 
-The follow script will remove all recipes from Elven Trading that outputs a Dragon Stone and a Diamond.
+The following script will remove all recipes from Elven Trading that outputs a Dragon Stone and a Diamond.
 
 **NOTE**
 

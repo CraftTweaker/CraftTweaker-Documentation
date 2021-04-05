@@ -28,7 +28,7 @@ The following script will add a Fuel to the Blast Furnace that will take a Golde
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Blast Furnace that outputs Charcoal.
+The following script will remove all recipes from the Blast Furnace that outputs Charcoal.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace>.removeRecipe(IItemStack output)
@@ -38,7 +38,7 @@ The follow script will remove all recipes from the Blast Furnace that outputs Ch
 
 #### Remove Fuels
 
-The follow script will remove Charcoal as a Fuel for the Blast Furnace.
+The following script will remove Charcoal as a Fuel for the Blast Furnace.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.removeRecipe(IItemStack fuel)

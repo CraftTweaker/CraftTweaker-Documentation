@@ -4,6 +4,14 @@ This event is fired every time the player fishes up an item. It can be used
  to add or remove drops, change the durability damage, do other effects, and
  even prevent the fishing by canceling the event.
 
+The event is cancelable.
+
+If the event is canceled, will cause the player to receive no items at all
+
+The event does not have a result.
+
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -18,7 +26,7 @@ MCItemFishedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 
 ## Methods
 
-### getDrops
+:::group{name=getDrops}
 
 Gets the list of items being fished up by the player.
 
@@ -29,7 +37,9 @@ MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
 event.getDrops();
 ```
 
-### getItemDamage
+:::
+
+:::group{name=getItemDamage}
 
 Gets the amount of durability damage to inflict on the fishing rod.
 
@@ -40,7 +50,9 @@ MCItemFishedEvent.getItemDamage() as int
 event.getItemDamage();
 ```
 
-### setItemDamage
+:::
+
+:::group{name=setItemDamage}
 
 Sets the amount of durability damage to inflict on the fishing rod.
 
@@ -55,6 +67,8 @@ event.setItemDamage(5);
 |-----------|------|-------------|
 | damage | int | The amount of durability damage. |
 
+
+:::
 
 
 ## Properties

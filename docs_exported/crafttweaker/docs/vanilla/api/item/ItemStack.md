@@ -22,7 +22,7 @@ import crafttweaker.api.item.ItemStack;
 
 ## Methods
 
-### asIIngredient
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
@@ -31,7 +31,9 @@ ItemStack.asIIngredient() as IIngredient
 myItemStack.asIIngredient();
 ```
 
-### asIItemStack
+:::
+
+:::group{name=asIItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -40,7 +42,9 @@ ItemStack.asIItemStack() as IItemStack
 myItemStack.asIItemStack();
 ```
 
-### print
+:::
+
+:::group{name=print}
 
 Debug method, expect this to be removed anytime!
 
@@ -50,5 +54,7 @@ Return Type: void
 ItemStack.print() as void
 myItemStack.print();
 ```
+
+:::
 
 
