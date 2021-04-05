@@ -8,4 +8,17 @@ Puedes usar el preprocesador de prioridad añadiendo ` #priority X ` a tu archiv
 
 ## Lo que hace:
 
-Como más grande sea la prioridad de un archivo, antes se ejecutará. Si dos archivos tienen la misma prioridad, se ordenaran como de forma predeterminada, es decir, de forma alfabética. Un ejemplo de esto: </br> ======================================= </br></br> File 1 </br></br> #priority 1000</br> print("Este archivo carga antes que");</br></br> ==================================</br></br> File 2</br> </br> #priority 100</br> print("Este");</br>
+Como más grande sea la prioridad de un archivo, antes se ejecutará. Si dos archivos tienen la misma prioridad, se ordenaran como de forma predeterminada, es decir, de forma alfabética. Un ejemplo de esto:   
+=======================================   
+  
+File 1   
+  
+#priority 1000  
+print("Este archivo carga antes que");  
+  
+==================================  
+  
+File 2  
+  
+#priority 100  
+print("Este")

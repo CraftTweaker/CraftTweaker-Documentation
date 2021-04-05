@@ -17,7 +17,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Examples
+      Ejemplos
     </th>
   </tr>
   

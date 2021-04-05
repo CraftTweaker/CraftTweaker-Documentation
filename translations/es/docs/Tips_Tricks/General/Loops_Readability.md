@@ -1,15 +1,15 @@
-# Use Loops to make your script look better
+# Usar Bucles para hacer que tu archivo se vea mejor 
 
-## Problem
+## El problema 
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+Todos lo habremos visto: Archivos con más de 500 líneas donde dice 500 veces lo mismo: `recipes.remove(item1);recipes.remove(item2),...`  
+No sólo es un palo para el que escribe, pero también vas a estar horas para intentar ver dónde tienes un error dentro de ésas 500 líneas cuando tu error es: `error in recipes.zs: null` 
 
-## Solution
+## La solución
 
-My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
+Cuando estés escribiendo la misma línea o acción más de 10 veces, con solo un parámetro cambiando, utilitza un bucle.
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+Así que ahora, en vez de escribir todo muchas veces, declaramos un ` Array ` que contenga todos los items o parámetros y repetimos la misma acción por cada miembro del ` Array. `
 
 ```zenscript
 import crafttweaker.item.IIngredient;
@@ -27,15 +27,15 @@ for item in Array{
 }
 ```
 
-## Advantages
+## Ventajas:
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- Tu script es más práctico para el que lo lee.
+- Sabes exactamente dónde está el error.
+- Los cambios a última hora són fáciles de aplicar porque lo único que tienes que hacer es añadir o borrar un item y una coma. 
 
-## Disadvantages
+## Desventajas:
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- Sólo funciona cuando cambia un parámetro o dos.
+- Podría ser que todo dejara de funcionar por, yo que sé, darle un tipo que no toca a tu Array.
+- Cualquier error en el Array hará que todo el Array falle y ninguna acción será ejecutada.
+- Sería posible que recibieras mensajes de error debido a que el Array no fue creado de la forma correcta.

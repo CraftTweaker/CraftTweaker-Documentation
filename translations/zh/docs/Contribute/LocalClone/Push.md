@@ -1,21 +1,21 @@
-# 推送（push）
+# 推送（Push）
 
 ## 需求
 
-You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
+您需要知道如何 [创建commit(提交)](/Contribute/LocalClone/CreateCommit/) 并且至少创建一个commit。
 
 ## 我们将做什么
 
-We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
+我们使用创建的commit(例如在[创建commit](/Contribute/LocalClone/CreateCommit/)中的做法)并且将变化push到github上。
 
-## Check the current status
+## 检查当前状态
 
 If you run `git status` you can see how many commits your local clone is ahead/behind your fork.
 
 In this case we are ahead by 1 commit:  
 ![git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
 
-## Git push
+## Git 推送
 
 Now we run `git push` to push our changes to the remote branch.  
 You might be asked for your GH username and password.  

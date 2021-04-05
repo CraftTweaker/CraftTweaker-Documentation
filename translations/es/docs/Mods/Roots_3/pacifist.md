@@ -22,7 +22,7 @@ void removeEntity(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.Pacifist;

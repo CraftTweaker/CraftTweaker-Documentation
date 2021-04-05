@@ -28,7 +28,7 @@ Also optional: If left out it will be 0.
 Normally, this will return an IItemStack Object.  
 Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
-## Examples
+## Ejemplos 
 
 An example of the Item Bracket Handler would be:
 

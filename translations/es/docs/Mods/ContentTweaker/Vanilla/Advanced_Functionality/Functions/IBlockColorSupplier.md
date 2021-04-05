@@ -16,7 +16,7 @@ The IBlockColorSupplier Function is a function with following parameters.
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → the position of the block whose color is being requested.
 - int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
-## Examples
+## Ejemplos 
 
 ```zenscript
 #loader contenttweaker

@@ -1,4 +1,6 @@
-# Solderer
+# Solderer (DEPRECATED)
+
+NOTE: Solderer is deprecated and is removed in RefinedStorage 1.6. The class does not do anything in ModTweaker and exists purely as backwards compatibility.
 
 The Solderer package is used for adding or removing recipes to/from the Refined Storage Solderer.
 

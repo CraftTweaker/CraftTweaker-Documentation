@@ -4,7 +4,7 @@ Un array es una Lista de varios elementos DEL MISMO TIPO.
 
 ## Declarando Arrays
 
-Se declara como una variable y usando ```</code> [ </0>``` y ```</code> ] </0>```.
+Se declara como una variable y usando `````` [ `````` y `````` ] ``````.
 
 Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
@@ -24,7 +24,7 @@ Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es por
 
 ## Dando un tipo a un Array (Inicializar)
 
-Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave </code> as [tipo] </code> en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. This can be the cause of strange conversion error logs!  
+Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave ` as ` (tipo) en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
 

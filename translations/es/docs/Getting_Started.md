@@ -31,7 +31,7 @@ Ahora carga Minecraft y abre el archivo ` crafttweaker.log`.
 
 El archivo ` crafttweaker.log ` debería estar dentro de tu directorio de Minecraft y puede ser leído por cualquier programa que pueda leer archivos de texto (VSC, Notepad ++ , Bloc de Notas).
 
-Se recomenda usar Notepad ++ o Sublime Text para editar tus archivos, pero cualquiera valdrá.
+Se recomienda usar Notepad ++ o Sublime Text para editar tus archivos, pero cualquiera valdrá.
 
 ### El archivo ` crafttweaker.log </0></h3>
 
@@ -59,5 +59,5 @@ Comentario de una línea alternativo: ` #Yo también `
 
 Comentario de más de una línea
 
-    <code> /*  Soy </br> un comentario </br> multilinear!
+    <code> /*  Soy <br/> un comentario <br/> multilinear!
      */

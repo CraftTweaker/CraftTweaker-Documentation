@@ -39,7 +39,7 @@ All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and
 | unlocalizedName     | String                                                                                                    | Yes      |                                                                                                                | Name, should be all lowercase                                                                       |
 | witherProof         | boolean                                                                                                   | No       | false                                                                                                          | Can Wither's destroy this block                                                                     |
 
-## Examples
+## Ejemplos 
 
 ```zenscript
 #loader contenttweaker

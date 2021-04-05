@@ -23,7 +23,7 @@ For ChanceFluidIngredients, a 'stack difference' must also be specified, which d
 mods.nuclearcraft.mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chancePercent, @Optional int minStackSize);
 ```
 
-#### Examples
+#### Ejemplos
 
 ```zenscript
 ChanceItemIngredient.create(<minecraft:coal>*2, 25);
@@ -46,7 +46,7 @@ These can be used anywhere where regular `ILiquidStack` is used.
 mods.nuclearcraft.mods.nuclearcraft.ChanceFluidIngredient.create(IIngredient ingredient, int chancePercent, int stackDiff, @Optional int minStackSize);
 ```
 
-#### Examples
+#### Ejemplos
 ```zenscript
 ChanceFluidIngredient.create(<liquid:water>*1500, 35, 300);
 ChanceFluidIngredient.create(<liquid:oil>*1000, 80, 200, 400);

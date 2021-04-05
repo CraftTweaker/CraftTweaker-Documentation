@@ -1,22 +1,22 @@
-# Split your scripts into multiple files
+# Divide tu código en más de un archivo
 
-It is a good idea to split your script into multiple files
+Se considera una buena idea separar lo que hagas en más de un archivo
 
-## Problem
+## El problema 
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- Cuando escribes archivos para un modpack grande o medianamente grande, tu archivo podría hacerse bastante largo y confuso.
+- Intentar encontrar un error en un archivo con muchas líneas puede tardar mucho, especialmente si el error no es de compilador, sino de ejecución (como por ejemplo el de un evento), que no apunta a una línea específica.
 
-## What we know/need to know
+## Lo que sabemos y lo que deberías saber 
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweaker puede cargar más de un archivo.
+- CraftTweaker puede cargar archivos en subcarpetas.
+- Además, CraftTweaker puede cargar archivos de código que estén dentro de archivos comprimidos .zip siempre y cuando el .zip no esté protegido por una contraseña.
 
-## Solution
+## La solución
 
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+- Separa tus archivos en otros más pequeños y nombralos de forma lógica.
+- Por ejemplo, podrías crear un archivo para cada mod o para cada máquina de mod a la que añadas o modifiques recetas.
 
 ## Example
 
@@ -25,22 +25,22 @@ scripts
     thermalExpansion
         Compactor.zs
         Crucible.zs
-    Vanilla
-        Recipes
-            Remove.zs
+    Minecraft
+        Recetas
+            Eliminar.zs
             Shaped.zs
             Shapeless.zs
-        Seeds.zs
+        Semillas.zs
     oreDict.zs
 ```
 
-## Advantages
+## Ventajas:
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+- Es mucho más fácil encontrar un error.
+- Un error no detendrá un script completo sino que sólo una parte de tus archivos fallarán.
+- La gente que lea tus archivos puede encontrar las cosas de forma más rápida.
 
-## Disadvantages
+## Desventajas:
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- Ten cuidado con el orden de cargado de tus archivos, especialmente si un archivo elimina una receta y otro añade otra. Quizás quieras usar el [Preprocesador de Prioridad](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) si el orden de cargado de tus archivos supone un problema para ti.
+- Hay muchas maneras de ordenar tus archivos y tu manera puede ser confusa para otros.

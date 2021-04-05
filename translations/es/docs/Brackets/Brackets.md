@@ -1,27 +1,27 @@
-# Bracket Handlers
+# Paréntesis de ZS
 
-ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
+Zenscript usa paréntesis para referenciar objetos del juego como por ejemplo Items, Entidades y Oredicts.
 
-## How to use Bracket Handlers
+## Como usar los Paréntesis de ZS
 
-Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+Los paréntesis se definen usando `<` y `>`, cualquier cosa que este dentro de uno de estos se considerará una unidad que ZS leerá.
 
-An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
+Un ejemplo de un paréntesis de ZenScript sería el de Items, que te da acceso a los objetos dentro del juego. 
 
-## Examples
+## Ejemplos 
 
-An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
+Un ejemplo del [Paréntesis de Items ](/Vanilla/Brackets/Bracket_Item/) sería
 
 ```zenscript
 <minecraft:apple>
 ```
 
-This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack/).
+Esto te dará acceso al item de la manzana.
 
-An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
+Un ejemplo de una entrada de [OreDict](/Vanilla/Brackets/Bracket_Ore/) sería:
 
 ```zenscript
 <ore:ingotIron>
 ```
 
-This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.
+Esto te da acceso a la Entrada de OreDictionary para `ingotIron`. Es decir todos los items dentro de esa entrada serán accesibles mediante ZS.

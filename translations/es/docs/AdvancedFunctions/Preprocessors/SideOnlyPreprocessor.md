@@ -6,9 +6,9 @@ Este preprocesador selecciona en que lado (Cliente o Servidor) se ejecuta el arc
 
 Se usa así:
 
-`<code> #sideonly nombreDeLado </0>`
+`` `#sideonly nombreDeLado ` ``
 
-` #sideonly client ` O `#sideonly server ` </br>  </br>
+` #sideonly client ` O `#sideonly server ` <br/>  <br/>
 
 ## Lo que hace:
 

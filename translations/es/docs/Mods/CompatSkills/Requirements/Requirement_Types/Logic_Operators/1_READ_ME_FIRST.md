@@ -27,7 +27,7 @@ They also share the syntax: `gate|[requirement<sub>1</sub>]~[requirement<sub>2</
 
 The **AND** requirement unlike the other logic requirements is mainly useful for nested logic requirements (more on this lower down), as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-## Examples
+## Ejemplos 
 
 All the examples below are going to be shown using the syntax from CompatSkill's CraftTweaker support as it is easier to read. The logic requirements work just fine from the config as well.
 

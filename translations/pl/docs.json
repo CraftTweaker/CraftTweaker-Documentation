@@ -227,6 +227,7 @@
       "Items": {
         "IItemDefinition": "Vanilla/Items/IItemDefinition.md",
         "IItemStack": "Vanilla/Items/IItemStack.md",
+        "IMutableItemStack": "Vanilla/Items/IMutableItemStack.md",
         "Item Conditions": "Vanilla/Items/Item_Conditions.md",
         "Item Transformers": "Vanilla/Items/Item_Transformers.md",
         "Tooltips": "Vanilla/Items/Tooltips.md",
@@ -279,6 +280,7 @@
         "IFormattedText": "Vanilla/Utils/IFormattedText.md",
         "IFormatter": "Vanilla/Utils/IFormatter.md",
         "ItemUtils": "Vanilla/Utils/IItemUtils.md",
+        "IRandom": "Vanilla/Utils/IRandom.md",
         "Logger": "Vanilla/Utils/Logger.md",
         "Position3f": "Vanilla/Utils/Position3f.md"
       },
@@ -473,6 +475,9 @@
       },
       "Arcane Archives": {
         "Gem Cutter's Table": "Mods/Arcane_Archives/gct.md"
+      },
+      "Arcane World": {
+        "Arcane World": "Mods/Arcane_World/ArcaneWorld.md"
       },
       "Astral Sorcery": {
         "About Astral Sorcery": "Mods/Astral_Sorcery/Astral_Sorcery.md",
@@ -1221,6 +1226,21 @@
         "Death Chest Defense": "Mods/VanillaDeathChest/Death_Chest_Defense.md",
         "Death Chest Spawning": "Mods/VanillaDeathChest/Death_Chest_Spawning.md",
         "VanillaDeathChest": "Mods/VanillaDeathChest/VanillaDeathChest.md"
+      },
+      "Zen&#58; Foundry": {
+        "Zen&#58; Foundry": "Mods/Zen_Foundry/ZenFoundry.md",
+        "Machines": {
+          "Alloying Crucible": "Mods/Zen_Foundry/Machines/AlloyingCrucible.md",
+          "Alloy Mixer": "Mods/Zen_Foundry/Machines/AlloyMixer.md",
+          "Casting Table": "Mods/Zen_Foundry/Machines/CastingTable.md",
+          "Melting Crucible": "Mods/Zen_Foundry/Machines/MeltingCrucible.md",
+          "Metal Caster": "Mods/Zen_Foundry/Machines/Caster.md",
+          "Metal Infuser": "Mods/Zen_Foundry/Machines/Infuser.md",
+          "Mold Station": "Mods/Zen_Foundry/Machines/MoldStation.md",
+          "Burner Fuel": "Mods/Zen_Foundry/Machines/BurnerFuel.md",
+          "Fluid Fuel": "Mods/Zen_Foundry/Machines/FluidFuel.md",
+          "Heat Sources": "Mods/Zen_Foundry/Machines/HeatSources.md"
+        }
       }
     },
     "How to contribute": {
