@@ -17,7 +17,7 @@ TagManager implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### exists
+:::group{name=exists}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -32,6 +32,10 @@ TagManager.exists(location as MCResourceLocation) as boolean
 | location  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
 
 
+:::
+
+:::group{name=exists}
+
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
 Return Type: boolean
@@ -45,7 +49,9 @@ TagManager.exists(name as string) as boolean
 | name      | string | The resource location to check for |
 
 
-### getAllTags
+:::
+
+:::group{name=getAllTags}
 
 Retrieves a list of all tags currently registered.
 
@@ -56,7 +62,9 @@ TagManager.getAllTags() as stdlib.List<MCTag<T>>
 myTagManager.getAllTags();
 ```
 
-### getAllTagsFor
+:::
+
+:::group{name=getAllTagsFor}
 
 Retrieves all tags contain the provided element
 
@@ -71,7 +79,9 @@ TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 | element   | T    | The element whose tags should be returned |
 
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
@@ -86,6 +96,10 @@ TagManager.getTag(location as MCResourceLocation) as MCTag<T>
 | location  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
 
+:::
+
+:::group{name=getTag}
+
 Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
@@ -99,7 +113,9 @@ TagManager.getTag(name as string) as MCTag<T>
 | name      | string | The Resource location of the tag |
 
 
-### getTagFolder
+:::
+
+:::group{name=getTagFolder}
 
 Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <p>
  {
@@ -111,10 +127,12 @@ TagManager.getTagFolder() as string
 myTagManager.getTagFolder();
 ```
 
+:::
+
 
 ## 연산자
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -122,7 +140,7 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 name as string in myTagManager
 ```
 
-
+:::
 
 
 ## Properties

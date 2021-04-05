@@ -2,13 +2,13 @@
 
 # Immersive Engineering Fermenter
 
-The Fermenter is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Fermenter ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-#### Add Fluid Recipes
+#### Flüssigkeitsrezepte hinzufügen
 
-The following script will add a recipe to the Fermenter that will take a Wooden Hoe, 1000 IF and output 100Mb of Water (Fluid).
+Das folgende Skript fügt dem Fermenter ein Rezept hinzu, das eine Holzsense und 1000 IF braucht und 100mb Wasser ausgibt (Fluid).
 
 ```zenscript
 //<recipetype:immersiveengineering:fermenter>.addRecipe(string name, IIngredient input, int energy, IFluidStack fluidOutput)
@@ -16,9 +16,9 @@ The following script will add a recipe to the Fermenter that will take a Wooden 
 <recipetype:immersiveengineering:fermenter>.addRecipe("fermenter_extract_water", <item:minecraft:wooden_hoe>, 1000, <fluid:minecraft:water> * 100);
 ```
 
-#### Add Item Recipes
+#### Item Rezepte hinzufügen
 
-The following script will add a recipe to the Fermenter that will take a Wooden Shovel, 1000 IF and output a Stone Shovel.
+Das folgende Skript fügt dem Fermenter ein Rezept hinzu, das eine Holzschaufel und 1000 IF einnimmt und eine Steinschaufel ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:fermenter>.addRecipe(string name, IIngredient input, int energy, IItemStack itemOutput)
@@ -26,9 +26,9 @@ The following script will add a recipe to the Fermenter that will take a Wooden 
 <recipetype:immersiveengineering:fermenter>.addRecipe("fermenter_upgrade_hoe", <item:minecraft:wooden_shovel>, 1000, <item:minecraft:stone_shovel>);
 ```
 
-#### Add Item and Fluid Recipes
+#### Rezepte für Items und Flüssigkeiten hinzufügen
 
-The following script will add a recipe to the Fermenter that will take a Wooden Sword, 1000 IF and output a Stone Sword and 100Mb of Water.
+Das folgende Skript wird dem Fermenter ein Rezept hinzufügen, das ein Holzschwert und 1000 IF benötigt und ein Steinschwert und 100mb Wasser ausgibt.
 
 ```zenscript
 //<recipetype:immersiveengineering:fermenter>.addRecipe(name as string, input as IIngredient, energy as int, itemOutput as IItemStack, fluidOutput as IFluidStack)
@@ -36,9 +36,9 @@ The following script will add a recipe to the Fermenter that will take a Wooden 
 <recipetype:immersiveengineering:fermenter>.addRecipe("fermenter_upgrade_sword", <item:minecraft:wooden_sword>, 1000, <item:minecraft:stone_sword>, <fluid:minecraft:water> * 100);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
-The following script will remove all recipes from the Fermenter output Ethanol (Fluid). Note that with Immersive Engineering on it's own, this will remove all the default recipes.
+Das folgende Skript entfernt alle Rezepte mit der Ausgabe Ethanol (Fluid). Beachten Sie, dass mit Immersive Engineering allein alle Standardrezepte entfernt werden.
 
 ```zenscript
 <recipetype:immersiveengineering:fermenter>.removeRecipe(MCFluid output)
@@ -46,9 +46,9 @@ The following script will remove all recipes from the Fermenter output Ethanol (
 <recipetype:immersiveengineering:fermenter>.removeRecipe(<fluid:immersiveengineering:ethanol>.fluid);
 ```
 
-#### Remove Item Recipes
+#### Item Rezepte entfernen
 
-The following script will remove all recipes from the Fermenter that outputs a Stone Shovel. Note that with Immersive Engineering on it's own, there is no recipe that outputs an Item, the example provided will only exist if the recipe is added beforehand.
+Das folgende Skript entfernt alle Rezepte aus dem Fermenter, das eine Steinschaufel ausgibt. Beachte, dass es mit Immersive Engineering allein kein Rezept gibt, das ein Item ausgibt, das angegebene Beispiel existiert nur, wenn das Rezept vorher hinzugefügt wird.
 
 ```zenscript
 // <recipetype:immersiveengineering:fermenter>.removeRecipe(IItemStack output)

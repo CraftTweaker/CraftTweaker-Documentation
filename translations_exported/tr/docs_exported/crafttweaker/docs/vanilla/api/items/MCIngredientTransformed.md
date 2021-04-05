@@ -22,7 +22,37 @@ MCIngredientTransformed implements the following interfaces. That means all meth
 
 ## Methods
 
-### anyDamage
+:::group{name=addShiftTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
+```
+
+| Parameter   | Type                                                      | Description             | Optional | DefaultValue |
+| ----------- | --------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| content     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
+| showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
+
+:::
+
+:::group{name=addTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
+```
+
+| Parameter | Type                                                      | Description             |
+| --------- | --------------------------------------------------------- | ----------------------- |
+| content   | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -31,7 +61,38 @@ MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
 myMCIngredientTransformed.anyDamage();
 ```
 
-### matches
+:::
+
+:::group{name=clearTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.clearTooltip() as void
+myMCIngredientTransformed.clearTooltip();
+```
+
+:::
+
+:::group{name=contains}
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Parameter  | Type                                          | Description             |
+| ---------- | --------------------------------------------- | ----------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -47,6 +108,10 @@ myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
+
+:::group{name=matches}
+
 Return Type: boolean
 
 ```zenscript
@@ -59,7 +124,41 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | ignoreDamage | boolean                                     | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=modifyTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.modifyTooltip(function as ITooltipFunction) as void
+```
+
+| Parameter | Type                                                    | Description             |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
+
+:::
+
+:::group{name=only}
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type                                                                                                                             | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -68,7 +167,9 @@ MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
 myMCIngredientTransformed.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -81,16 +182,44 @@ MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>)
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
+:::
+
+:::group{name=removeTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.removeTooltip(regex as string) as void
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| regex     | string | No Description Provided |
+
+
+:::
+
 
 ## Operators
 
-### OR
+:::group{name=CONTAINS}
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myMCIngredientTransformed
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myMCIngredientTransformed
+```
+
+:::
+
+:::group{name=OR}
 
 ```zenscript
 myMCIngredientTransformed | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties
@@ -98,6 +227,7 @@ myMCIngredientTransformed | other as IIngredient
 | Name           | Type                                                                                     | Has Getter | Has Setter |
 | -------------- | ---------------------------------------------------------------------------------------- | ---------- | ---------- |
 | baseIngredient | T                                                                                        | true       | false      |
+| burnTime       | void                                                                                     | false      | true       |
 | items          | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true       | false      |
 | transformer    | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true       | false      |
 

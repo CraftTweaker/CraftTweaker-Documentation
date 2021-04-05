@@ -1,5 +1,15 @@
 # MCRightClickBlockEvent
 
+This event is fired on both sides whenever the player right clicks while targeting a block. This event controls which of Item.onItemUseFirst, Block.onBlockActivated, and Item.onItemUse will be called.
+
+The event is cancelable.
+
+If the event is canceled, will cause none of the above three to be called.
+
+The event does not have a result.
+
+
+
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.

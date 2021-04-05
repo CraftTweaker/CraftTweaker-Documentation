@@ -21,6 +21,17 @@ DamageSource.canBypassCreative() as boolean
 myDamageSource.canBypassCreative();
 ```
 
+### getDamageLocation
+
+Gets the location where the damage occurred.
+
+Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)?
+
+```zenscript
+DamageSource.getDamageLocation() as MCVector3d?
+myDamageSource.getDamageLocation();
+```
+
 ### getDamageType
 
 Gets the type of damage.
@@ -74,6 +85,28 @@ Return Type: boolean
 ```zenscript
 DamageSource.isAbsoluteDamage() as boolean
 myDamageSource.isAbsoluteDamage();
+```
+
+### isCreativePlayer
+
+Gets whether the damage was inflicted by a creative player.
+
+Return Type: boolean
+
+```zenscript
+DamageSource.isCreativePlayer() as boolean
+myDamageSource.isCreativePlayer();
+```
+
+### isDifficultyScaled
+
+Gets whether the damage changes strength based on the current difficulty.
+
+Return Type: boolean
+
+```zenscript
+DamageSource.isDifficultyScaled() as boolean
+myDamageSource.isDifficultyScaled();
 ```
 
 ### isExplosionDamage
@@ -134,17 +167,20 @@ myDamageSource.isUnblockableDamage();
 
 ## Properties
 
-| Name            | Type                                     | Has Getter | Has Setter |
-| --------------- | ---------------------------------------- | ---------- | ---------- |
-| absolute        | boolean                                  | true       | false      |
-| bypassCreative  | boolean                                  | true       | false      |
-| explosion       | boolean                                  | true       | false      |
-| fire            | boolean                                  | true       | false      |
-| hungerDamage    | float                                    | true       | false      |
-| immediateSource | [MCEntity](/vanilla/api/entity/MCEntity) | true       | false      |
-| magic           | boolean                                  | true       | false      |
-| projectile      | boolean                                  | true       | false      |
-| trueSource      | [MCEntity](/vanilla/api/entity/MCEntity) | true       | false      |
-| type            | string                                   | true       | false      |
-| unblockable     | boolean                                  | true       | false      |
+| Name             | Type                                        | Has Getter | Has Setter |
+| ---------------- | ------------------------------------------- | ---------- | ---------- |
+| absolute         | boolean                                     | true       | false      |
+| bypassCreative   | boolean                                     | true       | false      |
+| creativePlayer   | boolean                                     | true       | false      |
+| difficultyScaled | boolean                                     | true       | false      |
+| explosion        | boolean                                     | true       | false      |
+| fire             | boolean                                     | true       | false      |
+| hungerDamage     | float                                       | true       | false      |
+| immediateSource  | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      |
+| location         | [MCVector3d](/vanilla/api/util/MCVector3d)? | true       | false      |
+| magic            | boolean                                     | true       | false      |
+| projectile       | boolean                                     | true       | false      |
+| trueSource       | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      |
+| type             | string                                      | true       | false      |
+| unblockable      | boolean                                     | true       | false      |
 

@@ -1,15 +1,15 @@
 ::requiredMod[Aquaculture 2]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/aquaculture}
 
-# Fish Data
+# Fischdaten
 
-Requires Aquaculture 2 version 2.1.14 or newer.
+Benötigt Aquaculture 2 Version 2.1.14 oder neuer.
 
-Fish Data is what handles the amount of fish fillet's you get, when filleting a fish. Additional, it handles the min and max weight of fish. (If the config option is enabled)
+Fischdaten händeln die Menge an Fischfillets, die man bekommt beim Fisch filletieren. Zusätzlich behandelt er das Mindest- und Maximalgewicht des Fisches. (Wenn die Konfigurationsoption aktiviert ist)
 
 ## Package
 `mods.aquaculture.FishData`
 
-## Adding Fish Data
+## Füge Fischdaten hinzu
 
 ```zenscript
 // mods.aquaculture.FishData.add(fishStack, minWeight, maxWeight, filletAmount);
@@ -18,17 +18,17 @@ mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ```
 
 - `fishStack` [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
-- `minWeight` Double number (Only used if weight config is enabled)
-- `maxWeight` Double number (Only used if weight config is enabled)
-- `filletAmount` Integer number (Used when weight config is disabled)
+- `minWeight` Double Nummer (nur verwendet, wenn die Gewichtskonfiguration aktiviert ist)
+- `maxWeight` Double Nummer (nur verwendet, wenn die Gewichtskonfiguration aktiviert ist)
+- `filletAmount` Integer Nummer (nur verwendet, wenn die Gewichtskonfiguration aktiviert ist)
 
 
-## Removing Fish Data
+## Entferne Fischdaten
 
 ```zenscript
 // mods.aquaculture.FishData.remove(fishStack);
 
-mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>);
+mods.aquaculture.FishData.remove(<item:aquuaculture:atlantic_cod>);
 ```
 
 - `fishStack` [MCItemDefinition](/vanilla/api/item/MCItemDefinition)

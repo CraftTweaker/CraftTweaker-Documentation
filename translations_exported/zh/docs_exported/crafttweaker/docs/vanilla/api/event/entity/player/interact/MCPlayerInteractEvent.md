@@ -2,6 +2,10 @@
 
 This event is the superclass of all other PlayerInteract events. Generally, you want to use the subtypes of this event.
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -31,10 +35,10 @@ myMCPlayerInteractEvent.getBlockPos();
 
 The face involved in this interaction. For all non-block interactions, this will return null
 
-Return Type: [Direction](/vanilla/api/util/Direction)
+Return Type: [Direction](/vanilla/api/util/Direction)?
 
 ```zenscript
-MCPlayerInteractEvent.getFace() as Direction
+MCPlayerInteractEvent.getFace() as Direction?
 myMCPlayerInteractEvent.getFace();
 ```
 
@@ -55,6 +59,6 @@ myMCPlayerInteractEvent.getItemStack();
 | 名称       | 类型                                          | 可获得  | 可设置   |
 | -------- | ------------------------------------------- | ---- | ----- |
 | blockPos | [BlockPos](/vanilla/api/util/BlockPos)      | true | false |
-| face     | [Direction](/vanilla/api/util/Direction)    | true | false |
+| face     | [Direction](/vanilla/api/util/Direction)?   | true | false |
 | 物品应用     | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 

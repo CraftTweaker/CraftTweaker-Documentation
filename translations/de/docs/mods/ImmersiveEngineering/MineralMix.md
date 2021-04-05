@@ -2,13 +2,13 @@
 
 # Immersive Engineering Mineral Mix
 
-Mineral Mix is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Mineral Mix ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager's verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-#### Add Mix
+#### Mix hinzufügen
 
-The following script will add a mix that will output White Wool 50% of the time, Orange Wool 25% of the time, and Magenta Wool 100% of the time. The mix has a weight of 50, and a fail change of 0.5. The mix will only be available in the Overworld and will show as White Wool in Samples.
+Das folgende Skript fügt einen Mix hinzu, der mit einer Chance von 50% Weiße Wolle, einer Chance von 25% Orangene Wolle und einer Chance von 100% Magenta Wolle ausgibt. Der Mix hat eine Gewichtung von 50 und einen Fehlschlag von 0,5. Der Mix wird nur in der Overworld verfügbar sein und wird Weiße Wolle als Beispiel zeigen.
 
 ```zenscript
 // <recipetype:immersiveengineering:mineral_mix>.addRecipe(string recipePath, MCWeightedItemStack[] outputs, int weight, float failChance, ResourceLocation[] dimensions, Block background)
@@ -18,7 +18,7 @@ The following script will add a mix that will output White Wool 50% of the time,
 
 #### Remove Recipes
 
-The following script will remove a Mix with the name `"immersiveengineering:mineral/ancient_debris"`.
+Das Folgeskript entfernt einen Mix mit dem Namen `"immersiveengineering:mineral/ancient_debris"`.
 
 ```zenscript
 // <recipetype:immersiveengineering:mineral_mix>.removeByName(string name)

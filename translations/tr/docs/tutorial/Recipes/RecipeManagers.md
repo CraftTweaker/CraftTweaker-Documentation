@@ -1,4 +1,4 @@
-# Recipe Managers
+# Tarif Yöneticileri
 
 Recipe Managers are crafting systems (like the Crafting Table, Furnace or Camp Fire) that use the Vanilla Data Pack JSON system.  
 Most Recipe Managers have the same **removal** methods but different methods to add recipes.
@@ -64,7 +64,7 @@ getRecipeByName(String name);
 You could use this method to get the `ingredients` of a recipe and print the `commandString` of each ingredient.
 
 ```zenscript
-for ingredient in craftingTable.getRecipeByName("minecraft:boat").ingredients {
+for ingredient in craftingTable.getRecipeByName("minecraft:arrow").ingredients {
     println(ingredient.commandString);
 }
 ```
@@ -135,10 +135,10 @@ This method allows you to remove recipes from this Recipe Manager by the recipe'
 removeByName(String name);
 ```
 
-An example use case for this method is removing the recipe for a Boat from the Crafting Table:
+An example use case for this method is removing the recipe for an Arrow from the Crafting Table:
 
 ```zenscript
-craftingTable.removeByName("minecraft:boat");
+craftingTable.removeByName("minecraft:arrow");
 ```
 
 ### removeByModid

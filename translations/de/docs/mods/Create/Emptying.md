@@ -16,7 +16,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und Lava (Flüss
 <recipetype:create:emptying>.addRecipe("emptying_test", <item:minecraft:diamond>, <fluid:minecraft:lava>, <item:minecraft:dirt>);
 ```
 
-#### Remove Recipes for Items
+#### Rezepte für Items entfernen
 
 Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
 
@@ -26,9 +26,9 @@ Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
 <recipetype:create:emptying>.removeRecipe(<item:minecraft:bucket>);
 ```
 
-#### Remove Recipes for Fluids
+#### Rezepte für Flüssigkeiten entfernen
 
-The following script will remove all Compacting recipes that output Honey (Fluid)
+Das folgende Skript wird alle kompatiblen Rezepte entfernen, die Honig ausgeben (Fluid)
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IFluidStack output)

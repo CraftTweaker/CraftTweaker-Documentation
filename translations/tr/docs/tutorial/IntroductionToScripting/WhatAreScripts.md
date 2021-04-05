@@ -1,24 +1,24 @@
-# What Are Scripts
+# Script Nedir
 
-A script is simply a file with a `.zs` file extension, that is all that is needed to classify a file as a script file.
+Bir script `.zs` dosya uzantısına sahiptir. Bir dosyayı script dosyası olarak sınıflandırabilmek için gereken tek şey budur.
 
 #### Note
 
-Windows hides the file extensions of "known" file types, this means that `text.txt` may show up as just `text` on your machine.
+Windows bilinen dosya tiplerinin uzantılarını gizler. Bu da `text.txt` dosyasının bilgisayarınızda `text` olarak görünebileceği anlamına gelir.
 
-This also means that `script.zs.txt` will also show up as `script.zs` on your machine.
+Ayrıca bu `script.zs.txt` dosyasının bilgisayarınızda `script.zs` olarak da görünebileceği anlamına gelir.
 
-If you are unsure if file extensions are shown or not, take a look in your game directory and find the file called `options.txt`, if you see a file called `options` and not `options.txt`, that means that your file extensions are hidden and you may have trouble when making script files.
+Eğer dosya uzantılarının göründüğünden emin değilseniz oyununuzun bulunduğu klasöre giderek `options.txt` dosyasına bir göz atın. Eğer dosya adını `options.txt` olarak değil de sadece `options` olarak görüyorsanız bu dosya uzantılarının gizli olduğu anlamına gelmektedir ve script dosyası oluştururken bir takım sorunlarla karşılaşabilirsiniz.
 
-You can find out how to fix this [here](https://www.howtohaven.com/system/show-file-extensions-in-windows-explorer.shtml).
+Bunun nasıl çözüleceğini öğrenmek için [ buraya](https://helpx.adobe.com/tr/x-productkb/global/show-hidden-files-folders-extensions.html) tıklayabilirsiniz.
 
-# Where do scripts go
+# Script dosyaları nereye gidiyor
 
-Generally scripts go in the `scripts` folder of the install, it is on the same level as `mods`, `config` and `logs`.
+Genellikle script dosyaları `scripts` klasörünün içerisinde olur. Bu klasör `mods`, `config` ve `logs` klasörlerinin de bulunduğu konumda bulunuyor.
 
-If you're having trouble finding it, you can run the `/ct scripts` command in game, and it should open the scripts folder.
+Eğer bu klasörü bulmakta sorun yaşıyorsanız oyundayken `/ct scripts` komutunu çalıştırarak scripts klasörünü açabilirsiniz.
 
-A tree view of how it should look is like so:
+Nasıl göründüğü ile ilgili aşağıda bir dizin ağacı bulunmaktadır.
 
 ```plaintext
 ├── config
@@ -29,20 +29,20 @@ A tree view of how it should look is like so:
 └── scripts
 ```
 
-## Sub-Folders
+## Alt Klasörler
 
-Scripts inside the `scripts` folder can be in any number of sub folders, an example of this is putting scripts into folders based on the mod, here is a tree view of that:
+Scripts klasörünün içerisinde birden fazla alt klasör bulunabilir. Örneğin, modlara göre klasör oluşturup scripts klasörünün içerisine koyabiliriz. Bunun dizin ağacı aşağıdaki gibi olacaktır.
 
 ```plaintext
 scripts/
 └── mods
     ├── botania
     ├── recipes.zs
-    └── tags.zs
+    ├── tags.zs
     └── thermal
         ├── recipes.zs
         └── tags.zs
 ```
 
-That is perfectly valid and is a great way to manage script files in a large modpack!
+Böyle yapmak, büyük bir mod paketindeki script dosyalarını yönetmenin mükemmel ve geçerli bir yoludur.
 

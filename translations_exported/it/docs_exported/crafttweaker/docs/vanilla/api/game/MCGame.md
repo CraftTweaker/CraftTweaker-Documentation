@@ -33,6 +33,8 @@ game.localize("gui.up");
 
 | Name                  | Type                                                                                               | Ha Getter | Ha Setter |
 | --------------------- | -------------------------------------------------------------------------------------------------- | --------- | --------- |
+| blockStates           | Collection&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;                     | true      | false     |
+| blocks                | Collection&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;                               | true      | false     |
 | directionAxises       | Collection&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;                     | true      | false     |
 | effects               | Collection&lt;[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)&gt;                | true      | false     |
 | entityClassifications | Collection&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; | true      | false     |

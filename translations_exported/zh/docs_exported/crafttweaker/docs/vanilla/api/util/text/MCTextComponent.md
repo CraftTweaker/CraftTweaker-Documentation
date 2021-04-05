@@ -10,7 +10,7 @@ import crafttweaker.api.util.text.MCTextComponent;
 
 ## 方法
 
-### createStringTextComponent
+:::group{name=createStringTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -23,7 +23,9 @@ MCTextComponent.createStringTextComponent(text as string) as MCTextComponent
 | 文本 | string | No Description Provided |
 
 
-### createTranslationTextComponent
+:::
+
+:::group{name=createTranslationTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -35,6 +37,10 @@ MCTextComponent.createTranslationTextComponent(translationKey as string) as MCTe
 | -------------- | ------ | ----------------------- |
 | translationKey | string | No Description Provided |
 
+
+:::
+
+:::group{name=createTranslationTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -48,6 +54,8 @@ MCTextComponent.createTranslationTextComponent(translationKey as string, args as
 | args           | Object[] | No Description Provided |
 
 
+:::
+
 ## Casters
 
 | 结果类型   | 是否隐藏  |
@@ -56,7 +64,7 @@ MCTextComponent.createTranslationTextComponent(translationKey as string, args as
 
 ## 方法
 
-### appendSibling
+:::group{name=appendSibling}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -69,7 +77,9 @@ MCTextComponent.appendSibling(component as MCTextComponent) as MCTextComponent
 | component | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### appendText
+:::
+
+:::group{name=appendText}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -82,7 +92,9 @@ MCTextComponent.appendText(text as string) as MCTextComponent
 | 文本 | string | No Description Provided |
 
 
-### copyRaw
+:::
+
+:::group{name=copyRaw}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -91,7 +103,9 @@ MCTextComponent.copyRaw() as MCTextComponent
 myMCTextComponent.copyRaw();
 ```
 
-### deepCopy
+:::
+
+:::group{name=deepCopy}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -100,7 +114,9 @@ MCTextComponent.deepCopy() as MCTextComponent
 myMCTextComponent.deepCopy();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 Return Type: string
 
@@ -109,7 +125,9 @@ MCTextComponent.getString() as string
 myMCTextComponent.getString();
 ```
 
-### getStringTruncated
+:::
+
+:::group{name=getStringTruncated}
 
 Return Type: string
 
@@ -122,7 +140,9 @@ MCTextComponent.getStringTruncated(maxLen as int) as string
 | maxLen | int | No Description Provided |
 
 
-### getUnformattedComponentText
+:::
+
+:::group{name=getUnformattedComponentText}
 
 Return Type: string
 
@@ -131,7 +151,9 @@ MCTextComponent.getUnformattedComponentText() as string
 myMCTextComponent.getUnformattedComponentText();
 ```
 
-### setStyle
+:::
+
+:::group{name=setStyle}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -144,32 +166,34 @@ MCTextComponent.setStyle(style as MCStyle) as MCTextComponent
 | 样式 | [MC样式](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
+:::
+
 
 ## 运算符
 
-### ADD
+:::group{name=ADD}
 
 ```zenscript
 myMCTextComponent + component as MCTextComponent
 ```
 
+:::
 
-
-### CAT
+:::group{name=CAT}
 
 ```zenscript
 myMCTextComponent ~ component as MCTextComponent
 ```
 
+:::
 
-
-### SHL
+:::group{name=SHL}
 
 ```zenscript
 myMCTextComponent << component as MCTextComponent
 ```
 
-
+:::
 
 
 ## 参数

@@ -21,10 +21,10 @@ myMCCommandSource.getName();
 
 ### getPlayer
 
-Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
+Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)?
 
 ```zenscript
-MCCommandSource.getPlayer() as MCPlayerEntity
+MCCommandSource.getPlayer() as MCPlayerEntity?
 myMCCommandSource.getPlayer();
 ```
 

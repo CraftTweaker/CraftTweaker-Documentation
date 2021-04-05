@@ -2,13 +2,13 @@
 
 # Immersive Engineering Arc Furnace
 
-The Arc Furnace is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Arc Furnace ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output Bedrock and a Gold Nugget (as Slag) after 2000 ticks when two Coal Blocks, a Diamond and any Item from the Wool Tag is put into an Arc Furnace. The recipe will use 100000 IF.
+Das folgende Skript wird ein Rezept hinzufügen, das Bedrock und einen Gold Nugget (als Slag) nach 2000 Ticks ausgibt, wenn zwei Kohleblöcke, ein Diamant und ein beliebiger Gegenstand aus dem Woll-Tag in einen Arc Furnace gelegt werden. Das Rezept benötigt 100000 IF.
 
 ```zenscript
 // <recipetype:immersiveengineering:arc_furnace>.addRecipe(string recipePath, IIngredient mainIngredient, IIngredient[] additives, int time, int energy, IItemStack[] outputs, @Optional(<item:minecraft:air>) IItemStack slag)
@@ -18,11 +18,11 @@ The following script will add a recipe that will output Bedrock and a Gold Nugge
 
 #### Remove Recipes
 
-Removes any recipes where at least one of the output matches the output provided.
+Entfernt alle Rezepte, bei denen mindestens eines der Ausgaben mit der angegebenen Ausgabe übereinstimmt.
 
-The following script will remove two recipes from the Arc Furnace.
+Das folgende Skript wird zwei Rezepte aus dem Arc Furnace entfernen.
 
-The first recipe that is removed is the recipe for Slag, since `checkSlag` is `true`, it will remove all recipes that output Slag. The second recipe that is removed is the recipe for three Iron Ingots.
+Das erste Rezept, das entfernt wird, ist das Rezept für Slag. Da `checkSlag` `true` ist, wird es alle Rezepte entfernen, die Slag ausgeben. Das zweite Rezept, das entfernt wird, ist das Rezept für drei Eisenbarren.
 
 ```zenscript
 // <recipetype:immersiveengineering:arc_furnace>.removeRecipe(IItemStack output, @Optional(false) bool checkSlag)

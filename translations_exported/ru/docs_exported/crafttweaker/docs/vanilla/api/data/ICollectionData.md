@@ -17,7 +17,7 @@ ICollectionData implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### getFromMembers
+:::group{name=getFromMembers}
 
 Creates the most specific ICollectionData form possible for the provided members.
 
@@ -34,6 +34,8 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 | members  | [IData](/vanilla/api/data/IData)[] | No Description Provided |
 
 
+:::
+
 ## Утилиты
 
 | Тип результата                                       | Является неявным |
@@ -43,7 +45,7 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 ## Methods
 
-### add
+:::group{name=add}
 
 
 
@@ -58,6 +60,10 @@ new ListData(["Hello", "World"]).add("today");
 | -------- | -------------------------------- | ---------------------------- |
 | value    | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
+
+:::
+
+:::group{name=add}
 
 
 
@@ -74,7 +80,9 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 | value    | [IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
-### asCollection
+:::
+
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -83,7 +91,9 @@ ICollectionData.asCollection() as ICollectionData
 new ListData(["Hello", "World"]).asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -94,7 +104,9 @@ ICollectionData.asList() as stdlib.List<IData>
 new ListData(["Hello", "World"]).asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -105,7 +117,9 @@ ICollectionData.asMap() as IData[string]
 new ListData(["Hello", "World"]).asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -114,7 +128,9 @@ ICollectionData.asNumber() as INumberData
 new ListData(["Hello", "World"]).asNumber();
 ```
 
-### asString
+:::
+
+:::group{name=asString}
 
 Gets the String representation of this IData
 
@@ -125,7 +141,9 @@ ICollectionData.asString() as string
 new ListData(["Hello", "World"]).asString();
 ```
 
-### clear
+:::
+
+:::group{name=clear}
 
 Removes every element in the list
 
@@ -136,7 +154,9 @@ ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -152,7 +172,9 @@ new ListData(["Hello", "World"]).contains("Display");
 | data     | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### copy
+:::
+
+:::group{name=copy}
 
 Makes a copy of this IData.
 
@@ -165,7 +187,9 @@ ICollectionData.copy() as IData
 new ListData(["Hello", "World"]).copy();
 ```
 
-### getAt
+:::
+
+:::group{name=getAt}
 
 Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -181,7 +205,9 @@ new ListData(["Hello", "World"]).getAt(0);
 | index    | int | The index (0-based) |
 
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -194,7 +220,9 @@ ICollectionData.getId() as byte
 new ListData(["Hello", "World"]).getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -205,7 +233,9 @@ ICollectionData.getString() as string
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+:::
+
+:::group{name=remove}
 
 Removes the [IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -221,7 +251,9 @@ new ListData(["Hello", "World"]).remove(0);
 | index    | int | The index (0-based) |
 
 
-### setAt
+:::
+
+:::group{name=setAt}
 
 Sets the item at the provided index to the given value
 
@@ -237,6 +269,8 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 | index    | int                              | The index to set (0-based) |
 | value    | [IData](/vanilla/api/data/IData) | The new Value              |
 
+
+:::
 
 
 ## Свойства

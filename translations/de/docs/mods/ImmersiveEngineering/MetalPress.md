@@ -1,14 +1,14 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Metal Press
+# Immersive Engineering Metallpresse
 
-The Metal Press is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Metallpresse ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the MEtal Press that will take Paper, use the Engineer's Manual as a Mold, use 1000 IF and output an Engineer's Manual.
+Das folgende Skript fügt ein Rezept zur Metallpresse hinzu, das Papier verwendet, benutzt das Ingenieurhandbuch als Form, benötigt 1000 IF und gibt ein Ingenieurhandbuch aus.
 
 ```zenscript
 // <recipetype:immersiveengineering:metal_press>.addRecipe(String recipePath, IIngredient input, IItemStack mold, int energy, IItemStack output)
@@ -19,7 +19,7 @@ The following script will add a recipe to the MEtal Press that will take Paper, 
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Metal Press that output two Empty Casing.
+Das folgende Skript wird alle Rezepte aus der Metallpresse entfernen, die zwei "Empty Casing" ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:metal_press>.removeRecipe(IItemStack output)

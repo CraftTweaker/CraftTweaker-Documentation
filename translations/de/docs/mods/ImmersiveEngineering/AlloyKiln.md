@@ -1,14 +1,14 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Alloy Kiln
+# Immersive Engineering Legierungsofen
 
-The Alloy Kiln is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Legierungsofen ist vom Typ von [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output 2 Gold ingots after 200 ticks when 10 Iron Ingots and any item from the Wool Tag is put in an Alloy Kiln.
+Das folgende Skript fügt ein Rezept hinzu, das nach 200 Ticks 2 Goldbarren ausgibt, wenn 10 Eisenbarren und beliebige Gegenstände aus dem Woll-Tag in einen Legierungsöfen gelegt werden.
 
 ```zenscript
 // <recipetype:immersiveengineering:alloy>.addRecipe(string recipePath, IIngredient inputA, IIngredient inputB, int time, IItemStack output)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output 2 Gold ingots after 200 
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Alloy Kiln that outputs a Constantan Ingot.
+Das folgende Skript wird alle Rezepte aus dem Legierungsöfen entfernen, das einen Konstantanbarren ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:alloy>.removeRecipe(output as IItemStack)

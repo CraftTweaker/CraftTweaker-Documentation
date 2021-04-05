@@ -23,7 +23,24 @@ MCWorld implements the following interfaces. That means all methods defined in t
 
 ## Methods
 
-### asServerWorld
+:::group{name=addEntity}
+
+add an entity to the world, return if the entity is added successfully.
+
+Return Type: boolean
+
+```zenscript
+MCWorld.addEntity(entity as MCEntity) as boolean
+```
+
+| Parameter | Type                                     | Description             |
+| --------- | ---------------------------------------- | ----------------------- |
+| entity    | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=asServerWorld}
 
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
@@ -32,7 +49,9 @@ MCWorld.asServerWorld() as MCServerWorld
 world.asServerWorld();
 ```
 
-### destroyBlock
+:::
+
+:::group{name=destroyBlock}
 
 Destroys a block within the world.
 
@@ -48,6 +67,10 @@ world.destroyBlock(new BlockPos(0, 1, 2), true);
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position of the block.                           |
 | doDrops   | boolean                                | Whether or not the block drops itself and it's loot. |
 
+
+:::
+
+:::group{name=destroyBlock}
 
 Destroys a block within the world.
 
@@ -65,7 +88,9 @@ world.destroyBlock(new BlockPos(0, 1, 2), true, player);
 | breaker   | [MCEntity](/vanilla/api/entity/MCEntity) | The entity to break the block.                       |
 
 
-### getBiome
+:::
+
+:::group{name=getBiome}
 
 Gets the biome at a given position.
 
@@ -81,7 +106,9 @@ world.getBiome(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### getBlockState
+:::
+
+:::group{name=getBlockState}
 
 Gets the block state at a given position.
 
@@ -97,7 +124,95 @@ world.getBlockState(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### getRedstonePower
+:::
+
+:::group{name=getEntitiesInArea}
+
+Gets all entities in given area, but the arguments are block poses. If `pos2` is omitted, it will use `pos1.add(1, 1, 1)`
+
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+MCWorld.getEntitiesInArea(pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+world.getEntitiesInArea(new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
+```
+
+| Parameter | Type                                   | Description             | Optional | DefaultValue |
+| --------- | -------------------------------------- | ----------------------- | -------- | ------------ |
+| pos1      | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | false    |              |
+| pos2      | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | true     |              |
+
+:::
+
+:::group{name=getEntitiesInArea}
+
+Gets all entities in given area.
+
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+MCWorld.getEntitiesInArea(x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double) as stdlib.List<MCEntity>
+world.getEntitiesInArea(1.0, 1.0, 1.0, 11.4, 11.4, 11.4);
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| x1        | double | No Description Provided |
+| y1        | double | No Description Provided |
+| z1        | double | No Description Provided |
+| x2        | double | No Description Provided |
+| y2        | double | No Description Provided |
+| z2        | double | No Description Provided |
+
+
+:::
+
+:::group{name=getEntitiesInAreaExcluding}
+
+
+
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, predicate as Predicate<MCEntity>, pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+world.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
+```
+
+| Parameter       | Type                                                                  | Description             | Optional | DefaultValue |
+| --------------- | --------------------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| excludingEntity | [MCEntity](/vanilla/api/entity/MCEntity)?                             | No Description Provided | false    |              |
+| predicate       | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | No Description Provided | false    |              |
+| pos1            | [BlockPos](/vanilla/api/util/BlockPos)                                | No Description Provided | false    |              |
+| pos2            | [BlockPos](/vanilla/api/util/BlockPos)                                | No Description Provided | true     |              |
+
+:::
+
+:::group{name=getEntitiesInAreaExcluding}
+
+Gets all entities in given area, excluding the one passed into it.
+
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double, predicate as Predicate<MCEntity>) as stdlib.List<MCEntity>
+world.getEntitiesInAreaExcluding(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entityIn) => entityIn.isInWater());
+```
+
+| Parameter       | Type                                                                  | Description             |
+| --------------- | --------------------------------------------------------------------- | ----------------------- |
+| excludingEntity | [MCEntity](/vanilla/api/entity/MCEntity)?                             | No Description Provided |
+| x1              | double                                                                | No Description Provided |
+| y1              | double                                                                | No Description Provided |
+| z1              | double                                                                | No Description Provided |
+| x2              | double                                                                | No Description Provided |
+| y2              | double                                                                | No Description Provided |
+| z2              | double                                                                | No Description Provided |
+| predicate       | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | the entity filter       |
+
+
+:::
+
+:::group{name=getRedstonePower}
 
 Gets the redstone signal strength available to a position from a given direction.
 
@@ -114,7 +229,9 @@ world.getRedstonePower(new BlockPos(0, 1, 2), <direction:north>);
 | direction | [Direction](/vanilla/api/util/Direction) | The direction to query. |
 
 
-### getRedstonePowerFromNeighbors
+:::
+
+:::group{name=getRedstonePowerFromNeighbors}
 
 Gets the highest redstone signal available to a position from any of it's neighbors.
 
@@ -130,7 +247,9 @@ world.getRedstonePowerFromNeighbors(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### getStrongPower
+:::
+
+:::group{name=getStrongPower}
 
 Gets the highest strong (direct) redstone signal of any neighboring block.
 
@@ -146,7 +265,9 @@ world.getStrongPower(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### getTileData
+:::
+
+:::group{name=getTileData}
 
 Gets the tile entity data for a tile entity at a given position.
 
@@ -162,7 +283,9 @@ world.getTileData(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position of the tile entity. |
 
 
-### isAir
+:::
+
+:::group{name=isAir}
 
 Checks if the block at a given position is air.
 
@@ -178,7 +301,9 @@ world.isAir(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isBlockPowered
+:::
+
+:::group{name=isBlockPowered}
 
 Checks if a given position is receiving a redstone signal.
 
@@ -194,7 +319,9 @@ world.isBlockPowered(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### isLoaded
+:::
+
+:::group{name=isLoaded}
 
 Checks if the block at a given position is in a loaded chunk.
 
@@ -210,7 +337,9 @@ world.isLoaded(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isRainingAt
+:::
+
+:::group{name=isRainingAt}
 
 Checks if it is raining at a specific position. This can never be true if the position does not have direct line of sight to the sky.
 
@@ -226,7 +355,9 @@ world.isRainingAt(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
 
 
-### isRemote
+:::
+
+:::group{name=isRemote}
 
 Checks if the world is remote. This is always true on the rendering thread.
 
@@ -237,7 +368,9 @@ MCWorld.isRemote() as boolean
 world.isRemote();
 ```
 
-### playEvent
+:::
+
+:::group{name=playEvent}
 
 Triggers a predetermined event on the client. Using this on a server or integrated server will send the event to all nearby players.
 
@@ -255,6 +388,10 @@ world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 | data      | int                                    | Four bytes of additional data encoded as an integer. This |
  is generally unused. |
 
+
+:::
+
+:::group{name=playEvent}
 
 Triggers a predetermined event on the client. Using this on a server or integrated server will send the event to all nearby players.
 
@@ -274,7 +411,9 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
  is generally unused. |
 
 
-### setBlockState
+:::
+
+:::group{name=setBlockState}
 
 Sets the block and it's state at a given position.
 
@@ -291,21 +430,24 @@ world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 | state     | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The new state of the block.       |
 
 
+:::
+
 
 ## Properties
 
-| Name             | Type    | Has Getter | Has Setter |
-| ---------------- | ------- | ---------- | ---------- |
-| dayTime          | boolean | true       | false      |
-| difficulty       | string  | true       | false      |
-| difficultyLocked | boolean | true       | false      |
-| dimension        | string  | true       | false      |
-| gameTime         | long    | true       | false      |
-| hardcore         | boolean | true       | false      |
-| nightTime        | boolean | true       | false      |
-| raining          | boolean | true       | false      |
-| remote           | boolean | true       | false      |
-| seaLevel         | int     | true       | false      |
-| thundering       | boolean | true       | false      |
-| timeOfDay        | long    | true       | false      |
+| Name             | Type                               | Has Getter | Has Setter |
+| ---------------- | ---------------------------------- | ---------- | ---------- |
+| dayTime          | boolean                            | true       | false      |
+| difficulty       | string                             | true       | false      |
+| difficultyLocked | boolean                            | true       | false      |
+| dimension        | string                             | true       | false      |
+| gameTime         | long                               | true       | false      |
+| hardcore         | boolean                            | true       | false      |
+| nightTime        | boolean                            | true       | false      |
+| raining          | boolean                            | true       | false      |
+| random           | [Random](/vanilla/api/util/Random) | true       | false      |
+| remote           | boolean                            | true       | false      |
+| seaLevel         | int                                | true       | false      |
+| thundering       | boolean                            | true       | false      |
+| timeOfDay        | long                               | true       | false      |
 

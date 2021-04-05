@@ -1,36 +1,36 @@
-# The CraftTweaker Log File
+# CraftTweaker Log Dosyası
 
-CraftTweaker uses it's own log file, this is mainly done to make debugging easier.
+CraftTweaker kendi log dosyasını kullanır. Bunun böyle olması hata ayıklamayı daha kolay bir hale getirmiştir.
 
-### Location
+### Konum
 
-Much like the `latest.log`, the `crafttweaker.log` can be found in the `logs` directory.
+`latest.log` dosyası gibi `crafttweaker.log` dosyası da `logs` klasörünün içerisinde bulunabilir.
 
-You can also use `/ct log` to open the log file in your system's default text editor.
+Ayrıa `/ct log` komutunu kullanarak log dosyasını varsayılan metin editörünüzle de açabilirsiniz.
 
 
 ### Format
-The `crafttweaker.log` file uses a specific format in it's output, that format is:
+`crafttweaker.log` dosyası çıktılarda kendi özel formatını kullanır. Bu format şu şekildedir:
 
 ```plaintext
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-An example of how this may look would be:
+Bunun nasıl görünebileceği ile ilgili bir örnek:
 
 ```plaintext
 [14:58:06.697][DONE][SERVER][INFO] Merhaba Dünya!
 ```
 
-The format is used for debugging purposes and the only time the format is not used is when printing command dumps, where it just prints the message so it is easier to copy and paste it.
+Bur format hata ayıklama amacıyla kullanılır. Bu formatın kullanılmadığı tek zaman komut dökümlerinin ekrana bastırıldığı zamandır. Ekrana mesaj bastırılacağı için mesajın kopyalanıp yapıştırılması daha kolay olacaktır.
 
 
-To explain it a bit more:
+Bunu biraz daha açıklamak gerekirse:
 
-The Time (`HH:MM:SS.ms`) is included mainly as a way to ensure that logs are fresh, but it also gives some insight on how long each task is taking.
+Zaman (`HH:MM:SS.ms`) logların ne kadar yeni olup olmadığını görmek için bulunmaktadır. Ayrıca her bir işlemin ne kadar sürdüğünü de gösterir.
 
-The LoaderStage tells us *when* the script is loaded in the game life cycle (while the game is still starting up, or when joining a world for example).
+LoaderStage, script dosyasının oyunun yaşam döngüsüne *ne zaman* yüklendiğini söyler (örneğin oyun başlarken veya bir dünyaya giriş yaparken).
 
-The Side (`SERVER` or `CLIENT`) tells us which logical thread the script is running on.
+Side ise script dosyasının hangi tarafta(`SERVER` veya `CLIENT`) çalıştığını söyler.
 
-the Type tells us the type of message, it makes navigating logs a breeze and tells you the severity of the message (Simply searching `ERROR` ins a log file can show you were all the errors are without having to sift through all the `INFO` or `DEBUG` outputs).
+Type ise bize mesajın tipini söyler. Bu logların okunmasını çocuk oyuncağı haline getirir. Ayrıca mesajın ciddiyetini de belirtir (örneğin tüm loglara bakmak yerine sadece `ERROR` loglarını ararsanız bu size sadece hatalarla ilgili logları getirecektir. Böylelikle `INFO` ve `DEBUG` loglarına bakmak zorunda kalmazsınız).

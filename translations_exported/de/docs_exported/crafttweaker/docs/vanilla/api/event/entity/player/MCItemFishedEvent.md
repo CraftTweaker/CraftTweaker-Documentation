@@ -2,6 +2,14 @@
 
 This event is fired every time the player fishes up an item. It can be used to add or remove drops, change the durability damage, do other effects, and even prevent the fishing by canceling the event.
 
+The event is cancelable.
+
+If the event is canceled, will cause the player to receive no items at all
+
+The event does not have a result.
+
+
+
 ## Diese Klasse importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.

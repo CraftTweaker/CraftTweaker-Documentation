@@ -2,13 +2,13 @@
 
 # Immersive Engineering Crusher
 
-The Crusher is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Crusher ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the Crusher that will take TNT, 500 IF and will produce four Gunpower, Coal 50% of the time and a Diamond 1% of the time.
+Das folgende Skript wird dem Crusher ein Rezept hinzufügen, das TNT annimmt, verwendet 500 IF und gibt vier Gunpower, mit einer Chance von 50% ein Kohle und mit einer Chance von 1% einen Diamant.
 
 ```zenscript
 // <recipetype:immersiveengineering:crusher>.addRecipe(string recipePath, IIngredient input, int energy, IItemStack mainOutput, MCWeightedItemStack... additionalOutputs)
@@ -18,7 +18,7 @@ The following script will add a recipe to the Crusher that will take TNT, 500 IF
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Crusher where either of the outputs (primary or secondary) is Iron Dust.
+Das folgende Skript wird alle Rezepte vom Crusher entfernen, wo eine der Ausgaben (primär oder sekundär) Eisenstaub ist.
 
 ```zenscript
 // <recipetype:immersiveengineering:crusher>.removeRecipe(IIngredient output)

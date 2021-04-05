@@ -21,7 +21,7 @@ DirectionAxis implements the following interfaces. That means all methods define
 
 ## Methoden
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -34,7 +34,9 @@ DirectionAxis.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getCoordinate
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
@@ -52,6 +54,10 @@ DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
 | z         | double | z value of the coordinate |
 
 
+:::
+
+:::group{name=getCoordinate}
+
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
 Return Type: int
@@ -68,7 +74,9 @@ DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 | z         | int  | z value of the coordinate |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -76,6 +84,8 @@ Return Type: int
 DirectionAxis.hashCode() as int
 <directionaxis:x>.hashCode();
 ```
+
+:::
 
 
 ## Properties

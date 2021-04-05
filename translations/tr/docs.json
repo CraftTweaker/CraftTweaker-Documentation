@@ -29,6 +29,10 @@
       }
     },
     "Mods": {
+      "Applied Energistics 2": {
+        "Grinder": "mods/AppliedEnergistics2/Grinder.md",
+        "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
+      },
       "Aquaculture 2": {
         "Fish Data": "mods/Aquaculture2/FishData.md"
       },
@@ -69,6 +73,10 @@
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
         "Splashing": "mods/Create/Splashing.md"
+      },
+      "Cyclic": {
+        "Melter": "mods/Cyclic/Melter.md",
+        "Solidifier": "mods/Cyclic/Solidifier.md"
       },
       "Ex Nihilo Sequentia": {
         "Composting": "mods/ExNihiloSequentia/Composting.md",

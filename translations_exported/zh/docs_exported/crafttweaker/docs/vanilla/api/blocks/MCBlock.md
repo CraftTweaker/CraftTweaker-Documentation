@@ -34,6 +34,15 @@ MCBlock.getDefaultState() as MCBlockState
 myMCBlock.getDefaultState();
 ```
 
+### getValidStates
+
+Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;
+
+```zenscript
+MCBlock.getValidStates() as stdlib.List<MCBlockState>
+myMCBlock.getValidStates();
+```
+
 
 ## 参数
 

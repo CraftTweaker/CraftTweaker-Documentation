@@ -1,16 +1,16 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Sawmill
+# Immersive Engineering Sägewerk
 
-The Sawmill is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Das Sägewerk ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-#### Add Sawing Recipe
+#### Sägerezept hinzufügen
 
-The following script will add a recipe to the Sawmill that will output five Bone and 2 Bone Meal from a Bone Block and 1000 IF.
+Das folgende Skript fügt dem Sägewerk ein Rezept hinzu, das fünf Knochen- und 2 Knochenmehl ausgibt bei einem Einsatz einem Knochenblock und 1000IF.
 
-This recipe requires a Sawblade to be in the Sawmill to work.
+Dieses Rezept erfordert, dass ein Sägeblatt im Sägewerk vorhanden ist, um zu funktionieren.
 
 ```zenscript
 // <recipetype:immersiveengineering:sawmill>.addRecipe(string recipePath, IIngredient input, int energy, IItemStack output, IItemStack[] outputSecondaries)
@@ -18,11 +18,11 @@ This recipe requires a Sawblade to be in the Sawmill to work.
 <recipetype:immersiveengineering:sawmill>.addRecipe("splitting_bones", <item:minecraft:bone_block>, 1000, <item:minecraft:bone> * 5, [<item:minecraft:bone_meal> * 2]);
 ```
 
-#### Add Sawing and Stripping Recipe
+#### Sawing- und Stripping-Rezept hinzufügen
 
-The following script will add a recipe to the Sawmill that will, if a Sawblade is present, output Grass, two Sticks and Sawdust, but if a Sawblade is not present, will only output Grass and a Dead Bush. The input for this recipe is any Item from the Saplings Tag and 1200 IF.
+Das folgende Skript fügt dem Sägewerk ein Rezept hinzu, das wenn eine Sägeblatte vorhanden ist, einen Grasblock, zwei Stöcke und Sägestaub ausgegeben, aber wenn eine Sägeblatte nicht vorhanden ist, nur ein Grasblock und einen Toten Busch ausgegeben wird. Die Eingabe für dieses Rezept ist jedes Item aus dem Setzlingtag und benötigt 1200 IF.
 
-This recipe does not need a Sawblade to be present in the Sawmill.
+Dieses Rezept braucht kein Sägeblatt, um im Sägewerk präsent zu sein.
 
 ```zenscript
 //<recipetype:immersiveengineering:sawmill>.addRecipe(string recipePath, IIngredient input, int energy, IItemStack strippedOutput, IItemStack[] strippedOutputSecondaries, IItemStack output, IItemStack[] outputSecondaries)
@@ -32,7 +32,7 @@ This recipe does not need a Sawblade to be present in the Sawmill.
 
 #### Remove Recipes
 
-The following script will remove all recipes (Sawing or Stripping) from the Sawmill that output Oak Planks as either the primary or secondary result.
+Das folgende Skript entfernt alle Rezepte (Sägen oder Strippen), die Eichenbretter als primäre oder sekundäre Ausgabe haben.
 
 ```zenscript
 // <recipetype:immersiveengineering:sawmill>.removeRecipe(output as IItemStack)
