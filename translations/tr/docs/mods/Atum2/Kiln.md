@@ -19,7 +19,7 @@ Removes the recipe(s) with the specified item/block from the recipes the Kiln wi
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
@@ -34,17 +34,17 @@ Adds a recipe with the specified input, output, experience & cook time
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
 The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
 `mods.atum.Kiln.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);

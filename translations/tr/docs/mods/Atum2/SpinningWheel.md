@@ -3,7 +3,7 @@
 ## Package
 `mods.atum.SpinningWheel;`
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
 
@@ -17,15 +17,15 @@ Girilen input ve output değerlerine göre bir tarif oluşturur. Verilen rotatio
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
 `mods.atum.SpinningWheel.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);

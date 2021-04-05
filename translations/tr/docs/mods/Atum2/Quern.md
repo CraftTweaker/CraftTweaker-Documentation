@@ -3,7 +3,7 @@
 ## Package
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## Tarif Ekleme
 
 `mods.atum.Quern.addRecipe(input, output, rotations);`
 
@@ -17,15 +17,15 @@ Adds a recipe with the specified input & output, that takes the specified rotati
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Removing a Recipe
+## Bir Tarifi Kaldırma
 
-### Remove Recipes by Output
+### Çıkışa göre Tarif Kaldırma
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
