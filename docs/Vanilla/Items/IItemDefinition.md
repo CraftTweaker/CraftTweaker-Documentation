@@ -26,7 +26,7 @@ val itemDefinitionList = game.items;
 |--------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | id                 | Returns the item ID                                                                                  | string                                                  |
 | name               | Returns the unlocalized item Name                                                                    | string                                                  |
-| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
+| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\> |
 | owner              | Returns the mod name that this item belongs to.                                                      | string                                                  |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                                |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)      |
