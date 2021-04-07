@@ -2,13 +2,13 @@
 
 # Immersive Engineering Coke Oven
 
-The Coke Oven is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Coke Oven ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the Coke Oven that, after 100 ticks, will output a Treated Stick and 1Mb of Creosote (Fluid) with an input of a Stick.
+Das folgende Skript wird dem Coke Oven ein Rezept hinzufügen, dass nach 100 Ticks einen behandelten Stick und 1mb Creosote (Fluid) ausgibt, beim Hinzufügen von einem Stick.
 ```zenscript
 // <recipetype:immersiveengineering:coke_oven>.addRecipe(string recipePath, IIngredient ingredient, int time, IItemStack output, @Optional(0) int creosoteProduced)
 
@@ -17,7 +17,7 @@ The following script will add a recipe to the Coke Oven that, after 100 ticks, w
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Coke Oven that output Coal Coke.
+Das folgende Skript wird alle Rezepte aus dem Coke Oven entfernen, die Coal Coke ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:coke_oven>.removeRecipe(IItemStack fuel)

@@ -1,43 +1,43 @@
-# Writing Your First Script
+# İlk Script Dosyanızı Yazın
 
-To get started writing your first script, you're going to want to navigate to the scripts folder.  
-If you're unsure where that is, take a look at the [What Are Scripts](/tutorial/IntroductionToScripting/WhatAreScripts) page.
+İlk script'inizi yazmak için scripts klasörüne gitmeniz gerekiyor.  
+Eğer bu klasörün nerede olduğunu bilmiyorsanız [Script Nedir](/tutorial/IntroductionToScripting/WhatAreScripts) sayfasına göz atabilirsiniz.
 
-Now that we're in the scripts folder, lets make a new file called `script.zs`.
+Şimdi scripts klasörünün içerisinde olduğumuza göre `script.zs` adında bir dosya oluşturalım.
 
-Open `script.zs` in your favourite text editor and put the following piece of code:
+Bir metin editöründe `scripts.zs` dosyasını açarak aşağıdaki kod parçacığını yazınız.
 
 ```zenscript
-println("Hello World!");
+println("Merhaba Dünya!");
 ```
 
-Now load up Minecraft, or use the `/reload` command and take a look at the `crafttweaker.log` file (If you're unsure of where this is, take a look at [The CraftTweaker Log File](/tutorial/IntroductionToScripting/TheCraftTweakerLogFile) page).
+Şimdi Minecraft'ı açın veya `/reload` komutunu çalıştırın. Ardından `crafttweaker.log` dosyasına bakınız (Eğer bu dosyanın nerede olduğunu bilmiyorsanız [CraftTweaker Log Dosyası](/tutorial/IntroductionToScripting/TheCraftTweakerLogFile) sayfasına göz atabilirsiniz).
 
-You can ignore all the entries with `[DEBUG]`, what you're looking for is an entry that looks like:
+`[DEBUG]` girdilerinin hepsiniz göz ardı edebilirsiniz. Aradığınız girdi şuna benzer bir şey olacak:
 
 ```plaintext
-[05:05:41.856][DONE][CLIENT][INFO] Hello World!
+[05:05:41.856][DONE][CLIENT][INFO] Merhaba Dünya!
 ```
 
-If you can find the entry, then that's great!  
-Your script file has been loaded into the game and you are ready to start actually modifying the game and add new recipes!
+Eğer bu girdiyi bulduysan, bu çok iyi bir haber!  
+Script dosyan oyuna yüklenmiş oldu. Oyunu özelleştirmek için ve oyuna yeni tarifler eklemek için artık hazırsın!
 
-If you can't find the entry, that could mean a few things, either your script didn't load or it is possible that you forgot to hit save when you were done writing your script (don't worry! it happens to the best of us!).
+Eğer bu girdiyi bulamadıysan, bunun birkaç anlamı olabilir. Ya script dosyanız yüklenmemiştir ya da script dosyanızı yazdıktan sonra dosyayı kayıt etmeyi unutmuş olabilirsiniz (endişelenmeyin, bu bazen bizde de oluyor!).
 
-To check if your script loaded, try and find a line that looks like:
+Script dosyasının yüklenip yüklenmediğini kontrol etmek için şuna benzer bir satır olması gerekiyor:
 
 ```plaintext
 [05:05:23.365][DONE][CLIENT][INFO] Loading file: script.zs
 ```
 
-If you can't find it, it means that your script file didn't get loaded, try and make sure that it doesn't have a `.txt` file extension (as discussed in the [What Are Scripts](/tutorial/IntroductionToScripting/WhatAreScripts) page).
+Eğer bunu bulamazsanız, bunun anlamı script dosyanızın yüklenmediğidir. Dosyanızın uzantısının `.txt` olmadığından emin olunuz ([Script Nedir](/tutorial/IntroductionToScripting/WhatAreScripts) sayfasında söylediğimiz gibi).
 
-Also take a look for any lines that look like:
+Ayrıca buna benzer bir satır olup olmadığını kontrol ediniz:
 
 ```plaintext
 [05:08:57.688][DONE][CLIENT][ERROR]
 ```
 
-This could mean that your script file loaded, but there was an error (such as a missing `;` at the end of the line), so just double check the file and make sure that all of it looks good.
+Bu, script dosyanızın yüklendiği anlamına geliyor fakat bir hata meydana gelmiş (örneğin satır sonuna `;` yazmamak gibi). Bu yüzden dosyanızı kontrol edin ve her şeyin sorunsuza olduğundan emin olun.
 
-If you're still having trouble, then join the [CraftTweaker Discord](https://discord.blamejared.com) server and we can help you there!
+Eğer hala hata alıyorsanız [CraftTweaker Discord](https://discord.blamejared.com) sunucumuza katılabilirsiniz. Size orada yardım edebiliriz.

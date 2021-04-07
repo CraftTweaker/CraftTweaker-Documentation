@@ -72,7 +72,7 @@ wheat.setDisplay(<blockstate:minecraft:gold_block>);
 wheat.setDisplay([<blockstate:minecraft:iron_block>, <blockstate:minecraft:iron_ore>]);
 ```
 
-## Soils
+## Suelo
 Soils can be modified using the soil manager. To do this you will need to import the following into your script.
 
 ```zenscript
@@ -121,7 +121,7 @@ dirt.setDisplay(<blockstate:minecraft:stone>);
 dirt.setGrowthModifier(0.20);
 ```
 
-## Fertilizers
+## Fertilizantes
 Fertilizers can be modified using the fertilizer manager. To do this you will need to import the following into your script.
 
 ```zenscript

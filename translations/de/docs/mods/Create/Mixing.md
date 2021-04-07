@@ -34,7 +34,7 @@ The following script will add recipes that will:
 <recipetype:create:mixing>.addRecipe("mixing_test_3", "superheated", <fluid:minecraft:water>, [<item:minecraft:glass>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
 ```
 
-#### Remove Recipes for Items
+#### Rezepte für Items entfernen
 
 Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen ausgeben.
 
@@ -44,9 +44,9 @@ Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen
 <recipetype:create:mixing>.removeRecipe(<item:create:andesite_alloy>);
 ```
 
-#### Remove Recipes for Fluids
+#### Rezepte für Flüssigkeiten entfernen
 
-The following script will remove all Compacting recipes that output Builders Tea (Fluid)
+Das folgende Skript wird alle kompatiblen Rezepte entfernen, die Builders Tee ausgeben (Fluid)
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IFluidStack output)

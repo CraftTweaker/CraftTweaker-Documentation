@@ -2,13 +2,13 @@
 
 # Immersive Engineering Squeezer
 
-The Squeezer is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Squeezer ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-#### Add Item Recipe
+#### Item Rezepte hinzufügen
 
-The following script will add a recipe that will output Dirt from nine Slag and 9000 IF.
+Das folgende Skript wird ein Rezept hinzufügen, das Erde aus neun Slag und 9000 IF ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.addRecipe(string recipePath, IIngredient input, int energy, IItemStack itemOutput)
@@ -16,9 +16,9 @@ The following script will add a recipe that will output Dirt from nine Slag and 
 <recipetype:immersiveengineering:squeezer>.addRecipe("slag_off", <item:immersiveengineering:slag> * 9, 5000, <item:minecraft:dirt>);
 ```
 
-#### Add Fluid Recipe
+#### Flüssigkeitsrezepte hinzufügen
 
-The following script will add a recipe that will output 250Mb of Creosote (Fluid) from 8 Coal and 6000 IF.
+Das folgende Skript wird ein Rezept hinzufügen, das 250mb Creosote (Fluid) ausgibt aus 8 Kohle und 6000 IF.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.addRecipe(string recipePath, IIngredient input, int energy, IFluidStack fluidOutput)
@@ -26,9 +26,9 @@ The following script will add a recipe that will output 250Mb of Creosote (Fluid
 <recipetype:immersiveengineering:squeezer>.addRecipe("the_last_drops", <item:minecraft:coal> * 8, 6000, <fluid:immersiveengineering:creosote> * 250);
 ```
 
-#### Add Item and Fluid Recipe
+#### Rezepte für Items und Flüssigkeiten hinzufügen
 
-The following script will add a recipe that will output 2500Mb of Creosote (Fluid) and a Diamond from 8 Coal Blocks and 6000 IF.
+Das folgende Skript wird ein Rezept hinzufügen, das 2500mb Kreosote (Fluid) und einen Diamanten aus 8 Kohleblöcken und 6000 IF ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.addRecipe(string recipePath, IIngredient input, int energy, IFluidStack fluidOutput, IItemStack itemOutput)
@@ -36,9 +36,9 @@ The following script will add a recipe that will output 2500Mb of Creosote (Flui
 <recipetype:immersiveengineering:squeezer>.addRecipe("pressure_creates_diamonds", <item:minecraft:coal_block> * 8, 6000, <fluid:immersiveengineering:creosote> * 2500, <item:minecraft:diamond>);
 ```
 
-#### Remove Item Recipes
+#### Item Rezepte entfernen
 
-The following script will remove all recipes from the Squeezer that output HOP Graphite Dust.
+Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, die HOP Graphite Staub ausgeben.
 
 ```zenscript
 //<recipetype:immersiveengineering:squeezer>.removeRecipe(IItemStack output)
@@ -46,9 +46,9 @@ The following script will remove all recipes from the Squeezer that output HOP G
 <recipetype:immersiveengineering:squeezer>.removeRecipe(<item:immersiveengineering:dust_hop_graphite>);
 ```
 
-#### Remove FluidStack Recipes
+#### FluidStack-Rezepte entfernen
 
-The following script will remove all recipes from the Squeezer that output exactly 60Mb of Plant Oil.
+Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, der exakt 60mb Pflanzenöl ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(IFluidStack output)
@@ -56,9 +56,9 @@ The following script will remove all recipes from the Squeezer that output exact
 <recipetype:immersiveengineering:squeezer>.removeRecipe(<fluid:immersiveengineering:plantoil> * 60);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
-The following script will remove all recipes from the Squeezer that output any amount of Plant Oil.
+Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, die eine beliebige Menge Pflanzenöl ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(MCFluid output)

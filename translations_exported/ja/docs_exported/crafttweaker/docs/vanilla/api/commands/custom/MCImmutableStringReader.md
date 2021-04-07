@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.MCImmutableStringReader;
 
 ## Methods
 
-### canRead
+:::group{name=canRead}
 
 Return Type: boolean
 
@@ -18,6 +18,10 @@ Return Type: boolean
 MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
+
+:::
+
+:::group{name=canRead}
 
 Return Type: boolean
 
@@ -30,7 +34,9 @@ MCImmutableStringReader.canRead(arg0 as int) as boolean
 | arg0      | int  | No Description Provided |
 
 
-### getCursor
+:::
+
+:::group{name=getCursor}
 
 Return Type: int
 
@@ -39,7 +45,9 @@ MCImmutableStringReader.getCursor() as int
 myMCImmutableStringReader.getCursor();
 ```
 
-### getRead
+:::
+
+:::group{name=getRead}
 
 Return Type: string
 
@@ -48,7 +56,9 @@ MCImmutableStringReader.getRead() as string
 myMCImmutableStringReader.getRead();
 ```
 
-### 残りの取得
+:::
+
+:::group{name=getRemaining}
 
 Return Type: string
 
@@ -57,7 +67,9 @@ MCImmutableStringReader.getRemaining() as string
 myMCImmutableStringReader.getRemaining();
 ```
 
-### getRemainingLength
+:::
+
+:::group{name=getRemainingLength}
 
 Return Type: int
 
@@ -66,7 +78,9 @@ MCImmutableStringReader.getRemainingLength() as int
 myMCImmutableStringReader.getRemainingLength();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Return Type: string
 
@@ -75,7 +89,9 @@ MCImmutableStringReader.getString() as string
 myMCImmutableStringReader.getString();
 ```
 
-### 取得総長さ
+:::
+
+:::group{name=getTotalLength}
 
 Return Type: int
 
@@ -84,7 +100,9 @@ MCImmutableStringReader.getTotalLength() as int
 myMCImmutableStringReader.getTotalLength();
 ```
 
-### のぞき見る
+:::
+
+:::group{name=peek}
 
 Return Type: char
 
@@ -92,6 +110,10 @@ Return Type: char
 MCImmutableStringReader.peek() as char
 myMCImmutableStringReader.peek();
 ```
+
+:::
+
+:::group{name=peek}
 
 Return Type: char
 
@@ -103,5 +125,7 @@ MCImmutableStringReader.peek(arg0 as int) as char
 | --------- | ---- | ----------------------- |
 | arg0      | int  | No Description Provided |
 
+
+:::
 
 

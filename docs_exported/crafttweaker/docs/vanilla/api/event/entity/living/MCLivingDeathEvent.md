@@ -3,6 +3,14 @@
 This event is fired just before an entity is killed. This allows you to run
  additional logic or prevent the death.
 
+The event is cancelable.
+
+If the event is canceled, the entity does not die.
+
+The event does not have a result.
+
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -17,7 +25,7 @@ MCLivingDeathEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## Methods
 
-### getSource
+:::group{name=getSource}
 
 Gets the source of the damage that killed the entity.
 
@@ -27,6 +35,8 @@ Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 MCLivingDeathEvent.getSource() as DamageSource
 event.getSource();
 ```
+
+:::
 
 
 ## Properties

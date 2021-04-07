@@ -14,6 +14,19 @@ MCPlayerEntity extends [MCLivingEntity](/vanilla/api/entity/MCLivingEntity). Tha
 
 ## Methods
 
+### addExhaustion
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.addExhaustion(exhaustion as float) as void
+```
+
+| Parameter  | Type  | Description             |
+| ---------- | ----- | ----------------------- |
+| exhaustion | float | No Description Provided |
+
+
 ### canUseCommandBlock
 
 Return Type: boolean
@@ -36,6 +49,37 @@ MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 | p_225609_1_ | boolean | No Description Provided |
 
 
+### getCurrentItem
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+MCPlayerEntity.getCurrentItem() as IItemStack
+myMCPlayerEntity.getCurrentItem();
+```
+
+### getFoodLevel
+
+Return Type: int
+
+```zenscript
+MCPlayerEntity.getFoodLevel() as int
+myMCPlayerEntity.getFoodLevel();
+```
+
+### getInventoryItemStack
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+MCPlayerEntity.getInventoryItemStack(slotIndex as int) as IItemStack
+```
+
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| slotIndex | int  | No Description Provided |
+
+
 ### getLuck
 
 Return Type: float
@@ -54,6 +98,26 @@ MCPlayerEntity.getMaxInPortalTime() as int
 myMCPlayerEntity.getMaxInPortalTime();
 ```
 
+### getName
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCPlayerEntity.getName() as MCTextComponent
+myMCPlayerEntity.getName();
+```
+
+### getPersistentData
+
+Gets the persisted NBT tag that is saved between deaths. Many mods use this to keep track of if they have given the player an item or not.
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+MCPlayerEntity.getPersistentData() as MapData
+myMCPlayerEntity.getPersistentData();
+```
+
 ### getPortalCooldown
 
 Return Type: int
@@ -61,6 +125,15 @@ Return Type: int
 ```zenscript
 MCPlayerEntity.getPortalCooldown() as int
 myMCPlayerEntity.getPortalCooldown();
+```
+
+### getSaturationLevel
+
+Return Type: float
+
+```zenscript
+MCPlayerEntity.getSaturationLevel() as float
+myMCPlayerEntity.getSaturationLevel();
 ```
 
 ### getSleepTimer
@@ -71,6 +144,19 @@ Return Type: int
 MCPlayerEntity.getSleepTimer() as int
 myMCPlayerEntity.getSleepTimer();
 ```
+
+### give
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.give(stack as IItemStack) as void
+```
+
+| Parameter | Type                                        | Description             |
+| --------- | ------------------------------------------- | ----------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 ### isCreative
 
@@ -135,6 +221,15 @@ MCPlayerEntity.isUser() as boolean
 myMCPlayerEntity.isUser();
 ```
 
+### needFood
+
+Return Type: boolean
+
+```zenscript
+MCPlayerEntity.needFood() as boolean
+myMCPlayerEntity.needFood();
+```
+
 ### sendMessage
 
 Return Type: void
@@ -146,6 +241,33 @@ MCPlayerEntity.sendMessage(text as MCTextComponent) as void
 | Parameter | Type                                                      | Description             |
 | --------- | --------------------------------------------------------- | ----------------------- |
 | texto     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
+### sendStatusMessage
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.sendStatusMessage(text as MCTextComponent, actionBar as boolean) as void
+```
+
+| Parameter | Type                                                      | Description             |
+| --------- | --------------------------------------------------------- | ----------------------- |
+| texto     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+| actionBar | boolean                                                   | No Description Provided |
+
+
+### setFoodLevel
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.setFoodLevel(value as int) as void
+```
+
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| value     | int  | No Description Provided |
 
 
 ### unlockRecipes
@@ -161,6 +283,21 @@ MCPlayerEntity.unlockRecipes(p_193102_1_ as MCResourceLocation[]) as void
 | p_193102_1_ | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)[] | No Description Provided |
 
 
+### updatePersistentData
+
+Updates the player's persisted data that is saved between deaths.
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.updatePersistentData(data as MapData) as void
+```
+
+| Parameter | Type                                 | Description             |
+| --------- | ------------------------------------ | ----------------------- |
+| data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
 ### wakeUp
 
 Return Type: void
@@ -173,7 +310,10 @@ myMCPlayerEntity.wakeUp();
 
 ## Properties
 
-| Name | Type    | Has Getter | Has Setter |
-| ---- | ------- | ---------- | ---------- |
-| fake | boolean | true       | false      |
+| Name            | Type                                                      | Has Getter | Has Setter |
+| --------------- | --------------------------------------------------------- | ---------- | ---------- |
+| fake            | boolean                                                   | true       | false      |
+| foodLevel       | int                                                       | true       | true       |
+| name            | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true       | false      |
+| saturationLevel | float                                                     | true       | false      |
 

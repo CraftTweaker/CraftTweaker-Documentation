@@ -35,7 +35,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ## Methods
 
-### weight
+:::group{name=weight}
 
 Creates a new Weighted Stack with the given weight
 
@@ -51,10 +51,12 @@ MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 | newWeight | double | The percentage |
 
 
+:::
+
 
 ## Operators
 
-### MOD
+:::group{name=MOD}
 
 Creates a new Weighted Stack with the given percentage
 
@@ -63,9 +65,9 @@ myMCWeightedItemStack % newWeight as int
 <item:minecraft:bedrock>.weight(0.5D) % 75
 ```
 
+:::
 
-
-### MUL
+:::group{name=MUL}
 
 Sets the itemStack's amount.
  <p>
@@ -76,7 +78,7 @@ myMCWeightedItemStack * newAmount as int
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
 
-
+:::
 
 
 ## Properties

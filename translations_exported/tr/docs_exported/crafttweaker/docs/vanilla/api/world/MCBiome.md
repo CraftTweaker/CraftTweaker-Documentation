@@ -10,7 +10,7 @@ import crafttweaker.api.world.MCBiome;
 
 ## Methods
 
-### doesSnowFreeze
+:::group{name=doesSnowFreeze}
 
 Return Type: boolean
 
@@ -24,7 +24,9 @@ MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 
-### doesWaterFreeze
+:::
+
+:::group{name=doesWaterFreeze}
 
 Return Type: boolean
 
@@ -37,6 +39,10 @@ MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
 | world     | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
+
+:::
+
+:::group{name=doesWaterFreeze}
 
 Return Type: boolean
 
@@ -51,7 +57,9 @@ MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boole
 | mustBeAtEdge | boolean                                | No Description Provided |
 
 
-### getTemperature
+:::
+
+:::group{name=getTemperature}
 
 Return Type: float
 
@@ -64,19 +72,23 @@ MCBiome.getTemperature(pos as BlockPos) as float
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 
+:::
+
 
 ## Properties
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| category       | string  | true       | false      |
-| depth          | float   | true       | false      |
-| doesRain       | boolean | true       | false      |
-| doesSnow       | boolean | true       | false      |
-| downfall       | float   | true       | false      |
-| isHighHumidity | boolean | true       | false      |
-| rainType       | string  | true       | false      |
-| scale          | float   | true       | false      |
-| waterColor     | int     | true       | false      |
-| waterFogColor  | int     | true       | false      |
+| Name           | Type                                                       | Has Getter | Has Setter |
+| -------------- | ---------------------------------------------------------- | ---------- | ---------- |
+| category       | string                                                     | true       | false      |
+| commandString  | string                                                     | true       | false      |
+| depth          | float                                                      | true       | false      |
+| doesRain       | boolean                                                    | true       | false      |
+| doesSnow       | boolean                                                    | true       | false      |
+| downfall       | float                                                      | true       | false      |
+| isHighHumidity | boolean                                                    | true       | false      |
+| rainType       | string                                                     | true       | false      |
+| registryName   | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| scale          | float                                                      | true       | false      |
+| waterColor     | int                                                        | true       | false      |
+| waterFogColor  | int                                                        | true       | false      |
 

@@ -1,29 +1,29 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Cloche
+# Immersive Engineering Garden Cloche
 
-The Cloche is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`. Along with the Cloche is the Cloche Fertilizer, which is also a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Garden Cloche ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`. Zusammen mit der Garden Cloche kommt der Dünger, das ist auch vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager's verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
-## Render Types
+## Render-Typen
 
-Render types are used to define how the BlockState should render when the recipe is being grown in the Cloche.
+Render-Typen werden verwendet, um festzulegen, wie der BlockState aussehen soll, wenn das Rezept in der Garden Cloche angebaut wird.
 
-The default type is "generic".
+Der Standardtyp ist "generisch".
 
-The following are valid types:
+Folgende Typen sind gültig:
 
-| Name     | Beschreibung                                                      |
-| -------- | ----------------------------------------------------------------- |
-| crop     | Can be used for any 1-block crops with an age property like Wheat |
-| stacking | Can be used for stacking plants like Sugar Cane or Cactus         |
-| stem     | Can be used for stem-grown plants like Melon or Pumpkin           |
-| generic  | Can be used for any block, making it grow in size, like Mushrooms |
+| Name     | Beschreibung                                                                             |
+| -------- | ---------------------------------------------------------------------------------------- |
+| crop     | Kann für jede 1-Block-Ernte mit einer Alterseigenschaft wie z.B. Weizen verwendet werden |
+| stacking | Kann für Stapeln von Pflanzen wie Zuckerrohr oder Kaktus verwendet werden                |
+| stem     | Kann für Stammpflanzen wie Melon oder Kürbis verwendet werden                            |
+| generic  | Kann für jeden Block verwendet werden, so dass er größer wird, wie Pilze                 |
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the Cloche that uses an Oak Sapling as the seed input, the soil needed is Dirt, it will take 100 ticks to grow and will output an Apple, an Oak Sapling and five Oak Wood. The recipe will render an Oak Sapling while it is growing and it uses the "generic" render type.
+Das folgende Skript fügt der Garden Cloche ein Rezept hinzu, das einen Eichensetzling als Sameneingabe verwendet, der Boden, der benötigt wird, ist Erde, es wird 100 Ticks brauchen, um zu wachsen und wird einen Apple, einen Eichensetzling und fünf Eichenholz ausgeben. Das Rezept wird einen Eichensetzling rendern, während es wächst, und es verwendet den "generischen" Render-Typ.
 
 ```zenscript
 // <recipetype:immersiveengineering:cloche>.addRecipe(string name, IIngredient seed, IIngredient soil, int time, IItemStack[] outputs, MCBlock renderBlock, @Optional("generic") string renderType)
@@ -32,9 +32,9 @@ The following script will add a recipe to the Cloche that uses an Oak Sapling as
 
 ```
 
-#### Add Fertilizer
+#### Dünger hinzufügen
 
-The following script will add a Fertilizer with a growth modifier of 6.0 that uses any Item from the Forge Dusts Sulfur tag.
+Das folgende Skript fügt einen Dünger mit einem Wachstumsmodifikator von 6.0 hinzu, der jedes Element aus dem Forge-Schwefelstaub-Tag verwendet.
 
 ```zenscript
 // <recipetype:immersiveengineering:fertilizer>.addFertilizer(name as string, fertilizer as IIngredient, growthModifier as float)
@@ -44,7 +44,7 @@ The following script will add a Fertilizer with a growth modifier of 6.0 that us
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Cloche that outputs Melon.
+Das folgende Skript wird alle Rezepte aus der Garden Cloche entfernen, die Melon ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:cloche>.removeRecipe(IItemStack output)
@@ -52,9 +52,9 @@ The following script will remove all recipes from the Cloche that outputs Melon.
 <recipetype:immersiveengineering:cloche>.removeRecipe(<item:minecraft:melon>);
 ```
 
-#### Remove Fertilizer
+#### Dünger entfernen
 
-The following script will remove Bone Meal as a Fertilizer.
+Das folgende Skript entfernt Knochenmehl als Düngemittel.
 
 ```zenscript
 // <recipetype:immersiveengineering:fertilizer>.removeFertilizer(fertilizer as IItemStack)

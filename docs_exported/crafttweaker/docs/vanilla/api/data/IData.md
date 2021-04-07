@@ -21,7 +21,7 @@ import crafttweaker.api.data.IData;
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -30,7 +30,9 @@ IData.asCollection() as ICollectionData
 {Display: {lore: ["Hello", "World"]}}.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -41,7 +43,9 @@ IData.asList() as stdlib.List<IData>
 {Display: {lore: ["Hello", "World"]}}.asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -52,7 +56,9 @@ IData.asMap() as IData[string]
 {Display: {lore: ["Hello", "World"]}}.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -61,7 +67,9 @@ IData.asNumber() as INumberData
 {Display: {lore: ["Hello", "World"]}}.asNumber();
 ```
 
-### asString
+:::
+
+:::group{name=asString}
 
 Gets the String representation of this IData
 
@@ -72,7 +80,9 @@ IData.asString() as string
 {Display: {lore: ["Hello", "World"]}}.asString();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -88,7 +98,9 @@ IData.contains(data as IData) as boolean
 | data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### copy
+:::
+
+:::group{name=copy}
 
 Makes a copy of this IData.
 
@@ -101,7 +113,9 @@ IData.copy() as IData
 {Display: {lore: ["Hello", "World"]}}.copy();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -114,7 +128,9 @@ IData.getId() as byte
 {Display: {lore: ["Hello", "World"]}}.getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -124,5 +140,7 @@ Return Type: string
 IData.getString() as string
 {Display: {lore: ["Hello", "World"]}}.getString();
 ```
+
+:::
 
 

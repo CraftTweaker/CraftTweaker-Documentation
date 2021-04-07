@@ -1,14 +1,14 @@
 ::requiredMod[Ars-Nouveau]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ars-nouveau}
 
-# Ars-Nouveau Glyph Press
+# Ars-Nouveau Glyphenpresse
 
-The Glyph Press is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Glyphenpresse ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a tier "one" recipe to the Glyph Press that will output a Diamond when dirt is given to the Press.
+Das folgende Skript fügt der Glyphenpresse ein Tier "1" Rezept hinzu, das einen Diamanten ausgibt, wenn der Presse Erde gegeben wird.
 
 ```zenscript
 // <recipetype:ars_nouveau:glyph_recipe>.addRecipe(String name, String tier, IItemStack reagent, IItemStack output);
@@ -18,7 +18,7 @@ The following script will add a tier "one" recipe to the Glyph Press that will o
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Glyph Press that output Glyph: Touch.
+Das folgende Skript entfernt alle Rezepte von der Glyphenpresse, die "Glyph: Touch" ausgibt.
 
 ```zenscript
 // <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(IItemStack output);

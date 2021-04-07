@@ -2,13 +2,13 @@
 
 # Immersive Engineering Blast Furnace
 
-The Blast Furnace is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`. Along with the Blast Furnace is the Blast Furnace Fuel, which is also a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Blast Furnace ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`. Zusammen mit dem Blast Furnace kommt der Blast Furnace Brennstoff, das ist auch vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager's verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output Charcoal, and a piece of String (as Slag), after 1000 ticks when any Item from the Wool Tag is given to the Blast Furnace.
+Das folgende Skript fügt ein Rezept hinzu, das Kohle ausgibt, und einen Faden (als Slag), nach 1000 Ticks, wenn ein Gegenstand aus dem Wolltag dem Blast Furnace gegeben wird.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace>.addRecipe(string recipePath, IIngredient ingredient, int time, IItemStack output, @Optional(<item:minecraft:air>) IItemStack slag)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output Charcoal, and a piece of
 
 #### Add Fuel
 
-The following script will add a Fuel to the Blast Furnace that will take a Golden Sword with the name "Sword of the Sungod" and will burn for 100000 ticks.
+Das folgende Skript fügt dem Blast Furnace einen Brennstoff hinzu, der ein goldenes Schwert mit dem Namen "Sword of the Sungod" nimmt und für 100000 Ticks verbrennt.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.addFuel(string name, IIngredient fuel, int burnTime)
@@ -28,7 +28,7 @@ The following script will add a Fuel to the Blast Furnace that will take a Golde
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Blast Furnace that outputs Charcoal.
+Das folgende Skript wird alle Rezepte aus dem Blast Furnace entfernen, die Holzkohle ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace>.removeRecipe(IItemStack output)
@@ -36,9 +36,9 @@ The following script will remove all recipes from the Blast Furnace that outputs
 <recipetype:immersiveengineering:blast_furnace>.removeRecipe(<item:minecraft:charcoal>);
 ```
 
-#### Remove Fuels
+#### Brennstoffe entfernen
 
-The following script will remove Charcoal as a Fuel for the Blast Furnace.
+Das folgende Skript wird Holzkohle als Brennstoff für den Blast Furnace entfernen.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.removeRecipe(IItemStack fuel)

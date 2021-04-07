@@ -13,6 +13,19 @@ IngredientList implements the following interfaces. That means all methods defin
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 
+## Constructors
+
+No Description Provided
+```zenscript
+new IngredientList(ingredients as IIngredient[]) as IngredientList
+```
+
+| Параметр    | Тип                                             | Description             |
+| ----------- | ----------------------------------------------- | ----------------------- |
+| ingredients | [IIngredient](/vanilla/api/items/IIngredient)[] | No Description Provided |
+
+
+
 ## Утилиты
 
 | Тип результата                       | Является неявным |
@@ -22,7 +35,37 @@ IngredientList implements the following interfaces. That means all methods defin
 
 ## Methods
 
-### anyDamage
+:::group{name=addShiftTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
+```
+
+| Параметр    | Тип                                                                 | Description             | Optional | DefaultValue |
+| ----------- | ------------------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| контент     | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
+| showMessage | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
+
+:::
+
+:::group{name=addTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.addTooltip(content as MCTextComponent) as void
+```
+
+| Параметр | Тип                                                                 | Description             |
+| -------- | ------------------------------------------------------------------- | ----------------------- |
+| контент  | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -31,7 +74,38 @@ IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
 myIngredientList.anyDamage();
 ```
 
-### getRemainingItem
+:::
+
+:::group{name=clearTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.clearTooltip() as void
+myIngredientList.clearTooltip();
+```
+
+:::
+
+:::group{name=contains}
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IngredientList.contains(ingredient as IIngredient) as boolean
+myIngredientList.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Параметр   | Тип                                           | Description             |
+| ---------- | --------------------------------------------- | ----------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
 
@@ -47,7 +121,9 @@ myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
@@ -63,7 +139,41 @@ myIngredientList.matches(<item:minecraft:iron_ingot>);
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### onlyDamaged
+:::
+
+:::group{name=modifyTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.modifyTooltip(function as ITooltipFunction) as void
+```
+
+| Параметр | Тип                                                     | Description             |
+| -------- | ------------------------------------------------------- | ----------------------- |
+| function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
+
+:::
+
+:::group{name=only}
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
+```
+
+| Параметр  | Тип                                                                                                                              | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
+
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -72,7 +182,9 @@ IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
 myIngredientList.onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -85,15 +197,49 @@ IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIng
 | uid      | string                                                                   | No Description Provided | false    |              |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
+:::
+
+:::group{name=removeTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.removeTooltip(regex as string) as void
+```
+
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| regex    | string | No Description Provided |
+
+
+:::
+
 
 ## Операторы
 
-### OR
+:::group{name=CONTAINS}
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIngredientList
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientList
+```
+
+:::
+
+:::group{name=OR}
 
 ```zenscript
 myIngredientList | other as IIngredient
 ```
 
+:::
 
 
+## Свойства
+
+| Название | Тип  | Имеет Getter | Имеет Setter |
+| -------- | ---- | ------------ | ------------ |
+| burnTime | void | false        | true         |
 

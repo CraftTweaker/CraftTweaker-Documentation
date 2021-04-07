@@ -27,7 +27,7 @@ The following script will add recipes that will:
 ```zenscript
 // <recipetype:create:compacting>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
-<recipetype:create:compacting>.addRecipe("compacting_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>]. [], 200);
+<recipetype:create:compacting>.addRecipe("compacting_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>], [], 200);
 <recipetype:create:compacting>.addRecipe("compacting_test_2", "heated", <item:minecraft:brick>, [<item:minecraft:diamond>, <item:minecraft:dirt>], [<fluid:minecraft:lava>], 1000);
 <recipetype:create:compacting>.addRecipe("compacting_test_3", "superheated", <item:minecraft:paper>, [<item:minecraft:glass>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
 ```
@@ -42,7 +42,7 @@ Das folgende Skript fügt Rezepte hinzu, die Wasser (Flüssigkeit) ausgeben, wen
 <recipetype:create:compacting>.addRecipe("compacting_test_4", "superheated", <fluid:minecraft:water>, [<item:minecraft:paper>, <item:minecraft:stick>], [<fluid:minecraft:lava>], 500);
 ```
 
-#### Remove Recipes for Items
+#### Rezepte für Items entfernen
 
 Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokoladentafel ausgeben.
 
@@ -53,9 +53,9 @@ Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokolade
 ```
 
 
-#### Remove Recipes for Fluids
+#### Rezepte für Flüssigkeiten entfernen
 
-The following script will remove all Compacting recipes that output Water (Fluid)
+Das folgende Skript wird alle Verdichtungsrezepte entfernen, die Wasser ausgeben (Fluid)
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IFluidStack output)

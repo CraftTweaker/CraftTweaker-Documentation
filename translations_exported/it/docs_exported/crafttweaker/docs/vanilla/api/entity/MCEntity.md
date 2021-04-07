@@ -10,7 +10,7 @@ import crafttweaker.api.entity.MCEntity;
 
 ## Methods
 
-### addTag
+:::group{name=addTag}
 
 Return Type: boolean
 
@@ -23,7 +23,9 @@ MCEntity.addTag(tag as string) as boolean
 | tag       | string | No Description Provided |
 
 
-### addVelocity
+:::
+
+:::group{name=addVelocity}
 
 Return Type: void
 
@@ -38,7 +40,9 @@ MCEntity.addVelocity(x as double, y as double, z as double) as void
 | z         | double | No Description Provided |
 
 
-### applyEntityCollision
+:::
+
+:::group{name=applyEntityCollision}
 
 Return Type: void
 
@@ -51,7 +55,9 @@ MCEntity.applyEntityCollision(entityIn as MCEntity) as void
 | entityIn  | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
 
-### canSwim
+:::
+
+:::group{name=canSwim}
 
 Return Type: boolean
 
@@ -60,7 +66,24 @@ MCEntity.canSwim() as boolean
 myMCEntity.canSwim();
 ```
 
-### extinguish
+:::
+
+:::group{name=changeDimension}
+
+Return Type: void
+
+```zenscript
+MCEntity.changeDimension(world as MCServerWorld) as void
+```
+
+| Parameter | Type                                              | Description             |
+| --------- | ------------------------------------------------- | ----------------------- |
+| world     | [MCServerWorld](/vanilla/api/world/MCServerWorld) | No Description Provided |
+
+
+:::
+
+:::group{name=extinguish}
 
 Return Type: void
 
@@ -69,7 +92,9 @@ MCEntity.extinguish() as void
 myMCEntity.extinguish();
 ```
 
-### forceFireTicks
+:::
+
+:::group{name=forceFireTicks}
 
 Return Type: void
 
@@ -82,7 +107,9 @@ MCEntity.forceFireTicks(ticks as int) as void
 | ticks     | int  | No Description Provided |
 
 
-### forceSetPosition
+:::
+
+:::group{name=forceSetPosition}
 
 Return Type: void
 
@@ -97,7 +124,9 @@ MCEntity.forceSetPosition(x as double, y as double, z as double) as void
 | z         | double | No Description Provided |
 
 
-### getAir
+:::
+
+:::group{name=getAir}
 
 Return Type: int
 
@@ -106,7 +135,9 @@ MCEntity.getAir() as int
 myMCEntity.getAir();
 ```
 
-### getBrightness
+:::
+
+:::group{name=getBrightness}
 
 Return Type: float
 
@@ -115,7 +146,20 @@ MCEntity.getBrightness() as float
 myMCEntity.getBrightness();
 ```
 
-### getDistance
+:::
+
+:::group{name=getData}
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+MCEntity.getData() as MapData
+myMCEntity.getData();
+```
+
+:::
+
+:::group{name=getDistance}
 
 Return Type: float
 
@@ -128,7 +172,9 @@ MCEntity.getDistance(entityIn as MCEntity) as float
 | entityIn  | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
 
-### getDistanceSq
+:::
+
+:::group{name=getDistanceSq}
 
 Return Type: double
 
@@ -140,6 +186,10 @@ MCEntity.getDistanceSq(entityIn as MCEntity) as double
 | --------- | ---------------------------------------- | ----------------------- |
 | entityIn  | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
+
+:::
+
+:::group{name=getDistanceSq}
 
 Return Type: double
 
@@ -154,7 +204,9 @@ MCEntity.getDistanceSq(x as double, y as double, z as double) as double
 | z         | double | No Description Provided |
 
 
-### getEntityId
+:::
+
+:::group{name=getEntityId}
 
 Return Type: int
 
@@ -163,7 +215,9 @@ MCEntity.getEntityId() as int
 myMCEntity.getEntityId();
 ```
 
-### getFireTimer
+:::
+
+:::group{name=getFireTimer}
 
 Return Type: int
 
@@ -172,7 +226,9 @@ MCEntity.getFireTimer() as int
 myMCEntity.getFireTimer();
 ```
 
-### getMaxInPortalTime
+:::
+
+:::group{name=getMaxInPortalTime}
 
 Return Type: int
 
@@ -181,7 +237,9 @@ MCEntity.getMaxInPortalTime() as int
 myMCEntity.getMaxInPortalTime();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
@@ -190,7 +248,9 @@ MCEntity.getName() as string
 myMCEntity.getName();
 ```
 
-### getTags
+:::
+
+:::group{name=getTags}
 
 Return Type: Set&lt;string&gt;
 
@@ -199,7 +259,9 @@ MCEntity.getTags() as Set<string>
 myMCEntity.getTags();
 ```
 
-### getType
+:::
+
+:::group{name=getType}
 
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
@@ -208,7 +270,20 @@ MCEntity.getType() as MCEntityType
 myMCEntity.getType();
 ```
 
-### getWorld
+:::
+
+:::group{name=getUUID}
+
+Return Type: string
+
+```zenscript
+MCEntity.getUUID() as string
+myMCEntity.getUUID();
+```
+
+:::
+
+:::group{name=getWorld}
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
@@ -217,7 +292,9 @@ MCEntity.getWorld() as MCWorld
 myMCEntity.getWorld();
 ```
 
-### hasNoGravity
+:::
+
+:::group{name=hasNoGravity}
 
 Return Type: boolean
 
@@ -226,7 +303,9 @@ MCEntity.hasNoGravity() as boolean
 myMCEntity.hasNoGravity();
 ```
 
-### isEntityInRange
+:::
+
+:::group{name=isEntityInRange}
 
 Return Type: boolean
 
@@ -240,7 +319,9 @@ MCEntity.isEntityInRange(entity as MCEntity, distance as double) as boolean
 | distance  | double                                   | No Description Provided |
 
 
-### isImmuneToFire
+:::
+
+:::group{name=isImmuneToFire}
 
 Return Type: boolean
 
@@ -249,7 +330,9 @@ MCEntity.isImmuneToFire() as boolean
 myMCEntity.isImmuneToFire();
 ```
 
-### isInLava
+:::
+
+:::group{name=isInLava}
 
 Return Type: boolean
 
@@ -258,7 +341,9 @@ MCEntity.isInLava() as boolean
 myMCEntity.isInLava();
 ```
 
-### isInWater
+:::
+
+:::group{name=isInWater}
 
 Return Type: boolean
 
@@ -267,7 +352,9 @@ MCEntity.isInWater() as boolean
 myMCEntity.isInWater();
 ```
 
-### isInWaterOrBubbleColumn
+:::
+
+:::group{name=isInWaterOrBubbleColumn}
 
 Return Type: boolean
 
@@ -276,7 +363,9 @@ MCEntity.isInWaterOrBubbleColumn() as boolean
 myMCEntity.isInWaterOrBubbleColumn();
 ```
 
-### isInWaterRainOrBubbleColumn
+:::
+
+:::group{name=isInWaterRainOrBubbleColumn}
 
 Return Type: boolean
 
@@ -285,7 +374,9 @@ MCEntity.isInWaterRainOrBubbleColumn() as boolean
 myMCEntity.isInWaterRainOrBubbleColumn();
 ```
 
-### isOffsetPositionInLiquid
+:::
+
+:::group{name=isOffsetPositionInLiquid}
 
 Return Type: boolean
 
@@ -300,7 +391,9 @@ MCEntity.isOffsetPositionInLiquid(x as double, y as double, z as double) as bool
 | z         | double | No Description Provided |
 
 
-### isOnGround
+:::
+
+:::group{name=isOnGround}
 
 Return Type: boolean
 
@@ -309,7 +402,9 @@ MCEntity.isOnGround() as boolean
 myMCEntity.isOnGround();
 ```
 
-### isSilent
+:::
+
+:::group{name=isSilent}
 
 Return Type: boolean
 
@@ -318,7 +413,9 @@ MCEntity.isSilent() as boolean
 myMCEntity.isSilent();
 ```
 
-### isSpectator
+:::
+
+:::group{name=isSpectator}
 
 Return Type: boolean
 
@@ -327,7 +424,9 @@ MCEntity.isSpectator() as boolean
 myMCEntity.isSpectator();
 ```
 
-### isWet
+:::
+
+:::group{name=isWet}
 
 Return Type: boolean
 
@@ -336,7 +435,9 @@ MCEntity.isWet() as boolean
 myMCEntity.isWet();
 ```
 
-### moveForced
+:::
+
+:::group{name=moveForced}
 
 Return Type: void
 
@@ -351,7 +452,9 @@ MCEntity.moveForced(x as double, y as double, z as double) as void
 | z         | double | No Description Provided |
 
 
-### onCollideWithPlayer
+:::
+
+:::group{name=onCollideWithPlayer}
 
 Return Type: void
 
@@ -364,7 +467,9 @@ MCEntity.onCollideWithPlayer(entityIn as MCPlayerEntity) as void
 | entityIn  | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
 
 
-### onKillCommand
+:::
+
+:::group{name=onKillCommand}
 
 Return Type: void
 
@@ -373,7 +478,9 @@ MCEntity.onKillCommand() as void
 myMCEntity.onKillCommand();
 ```
 
-### onLivingFall
+:::
+
+:::group{name=onLivingFall}
 
 Return Type: boolean
 
@@ -387,7 +494,9 @@ MCEntity.onLivingFall(distance as float, damageMultiplier as float) as boolean
 | damageMultiplier | float | No Description Provided |
 
 
-### removeTag
+:::
+
+:::group{name=removeTag}
 
 Return Type: boolean
 
@@ -400,7 +509,9 @@ MCEntity.removeTag(tag as string) as boolean
 | tag       | string | No Description Provided |
 
 
-### setAir
+:::
+
+:::group{name=setAir}
 
 Return Type: void
 
@@ -413,7 +524,9 @@ MCEntity.setAir(air as int) as void
 | air       | int  | No Description Provided |
 
 
-### setEntityId
+:::
+
+:::group{name=setEntityId}
 
 Return Type: void
 
@@ -426,7 +539,9 @@ MCEntity.setEntityId(id as int) as void
 | id        | int  | No Description Provided |
 
 
-### setFire
+:::
+
+:::group{name=setFire}
 
 Return Type: void
 
@@ -439,7 +554,9 @@ MCEntity.setFire(seconds as int) as void
 | seconds   | int  | No Description Provided |
 
 
-### setNoGravity
+:::
+
+:::group{name=setNoGravity}
 
 Return Type: void
 
@@ -452,7 +569,9 @@ MCEntity.setNoGravity(noGravity as boolean) as void
 | noGravity | boolean | No Description Provided |
 
 
-### setOnGround
+:::
+
+:::group{name=setOnGround}
 
 Return Type: void
 
@@ -465,7 +584,9 @@ MCEntity.setOnGround(grounded as boolean) as void
 | grounded  | boolean | No Description Provided |
 
 
-### setPosition
+:::
+
+:::group{name=setPosition}
 
 Return Type: void
 
@@ -480,7 +601,9 @@ MCEntity.setPosition(x as double, y as double, z as double) as void
 | z         | double | No Description Provided |
 
 
-### setSilent
+:::
+
+:::group{name=setSilent}
 
 Return Type: void
 
@@ -493,12 +616,51 @@ MCEntity.setSilent(isSilent as boolean) as void
 | isSilent  | boolean | No Description Provided |
 
 
+:::
+
+:::group{name=teleportKeepLoaded}
+
+Teleports the entity, forcing the destination to stay loaded for a short time
+
+Return Type: void
+
+```zenscript
+MCEntity.teleportKeepLoaded(x as double, y as double, z as double) as void
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| x         | double | No Description Provided |
+| y         | double | No Description Provided |
+| z         | double | No Description Provided |
+
+
+:::
+
+:::group{name=updateData}
+
+Return Type: void
+
+```zenscript
+MCEntity.updateData(data as MapData) as void
+```
+
+| Parameter | Type                                 | Description             |
+| --------- | ------------------------------------ | ----------------------- |
+| data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
+:::
+
 
 ## Properties
 
-| Name  | Type                                  | Ha Getter | Ha Setter |
-| ----- | ------------------------------------- | --------- | --------- |
-| air   | int                                   | true      | true      |
-| name  | string                                | true      | false     |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true      | false     |
+| Name             | Type                                       | Ha Getter | Ha Setter |
+| ---------------- | ------------------------------------------ | --------- | --------- |
+| air              | int                                        | true      | true      |
+| data             | [MapData](/vanilla/api/data/MapData)       | true      | false     |
+| facingDirections | [Direction](/vanilla/api/util/Direction)[] | true      | false     |
+| name             | string                                     | true      | false     |
+| uuid             | string                                     | true      | false     |
+| world            | [MCWorld](/vanilla/api/world/MCWorld)      | true      | false     |
 

@@ -25,7 +25,7 @@ Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#
 
 [Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
@@ -54,7 +54,7 @@ Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for m
 
 Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 // Adding a shaped recipe

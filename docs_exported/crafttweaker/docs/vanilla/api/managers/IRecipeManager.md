@@ -17,7 +17,7 @@ IRecipeManager implements the following interfaces. That means all methods defin
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -43,7 +45,9 @@ IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 craftingTable.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -56,7 +60,9 @@ IRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 | name | string | No Description Provided |
 
 
-### getRecipesByOutput
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -69,7 +75,9 @@ IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperR
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
@@ -80,7 +88,9 @@ IRecipeManager.removeAll() as void
 craftingTable.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
@@ -95,6 +105,10 @@ craftingTable.removeByModid("minecraft");
 |-----------|------|-------------|
 | modid | string | modid of the recipes to remove |
 
+
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -111,7 +125,9 @@ craftingTable.removeByModid("minecraft", (name as string) => {return name == "or
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
@@ -127,7 +143,9 @@ craftingTable.removeByName("minecraft:furnace");
 | name | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
@@ -143,7 +161,9 @@ craftingTable.removeByRegex("\\d_\\d");
 | regex | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -158,5 +178,7 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
+
+:::
 
 

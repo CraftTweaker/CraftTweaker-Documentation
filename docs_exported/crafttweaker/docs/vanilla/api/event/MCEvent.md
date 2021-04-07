@@ -1,5 +1,9 @@
 # MCEvent
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -10,7 +14,20 @@ import crafttweaker.api.event.MCEvent;
 
 ## Methods
 
-### hasResult
+:::group{name=cancel}
+
+Cancels the event. Same as `setCanceled(true)`
+
+Return Type: void
+
+```zenscript
+MCEvent.cancel() as void
+myMCEvent.cancel();
+```
+
+:::
+
+:::group{name=hasResult}
 
 Return Type: boolean
 
@@ -19,7 +36,9 @@ MCEvent.hasResult() as boolean
 myMCEvent.hasResult();
 ```
 
-### isCancelable
+:::
+
+:::group{name=isCancelable}
 
 Return Type: boolean
 
@@ -28,7 +47,9 @@ MCEvent.isCancelable() as boolean
 myMCEvent.isCancelable();
 ```
 
-### isCanceled
+:::
+
+:::group{name=isCanceled}
 
 Return Type: boolean
 
@@ -37,7 +58,22 @@ MCEvent.isCanceled() as boolean
 myMCEvent.isCanceled();
 ```
 
-### setCanceled
+:::
+
+:::group{name=setAllow}
+
+sets the event's result to `allow`
+
+Return Type: void
+
+```zenscript
+MCEvent.setAllow() as void
+myMCEvent.setAllow();
+```
+
+:::
+
+:::group{name=setCanceled}
 
 Return Type: void
 
@@ -49,6 +85,34 @@ MCEvent.setCanceled(cancel as boolean) as void
 |-----------|------|-------------|
 | cancel | boolean | No Description Provided |
 
+
+:::
+
+:::group{name=setDefault}
+
+sets the event's result to `default`
+
+Return Type: void
+
+```zenscript
+MCEvent.setDefault() as void
+myMCEvent.setDefault();
+```
+
+:::
+
+:::group{name=setDeny}
+
+sets the event's result to `deny`
+
+Return Type: void
+
+```zenscript
+MCEvent.setDeny() as void
+myMCEvent.setDeny();
+```
+
+:::
 
 
 ## Properties

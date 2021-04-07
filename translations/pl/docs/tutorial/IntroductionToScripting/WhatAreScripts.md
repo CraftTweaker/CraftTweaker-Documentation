@@ -38,7 +38,7 @@ scripts/
 └── mods
     ├── botania
     ├── recipes.zs
-    └── tags.zs
+    ├── tags.zs
     └── thermal
         ├── recipes.zs
         └── tags.zs

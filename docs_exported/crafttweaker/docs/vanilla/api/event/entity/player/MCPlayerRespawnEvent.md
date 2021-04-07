@@ -2,6 +2,10 @@
 
 This Event is fired whenever a player respawns due to dying, or due to using the end portal.
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -16,7 +20,7 @@ MCPlayerRespawnEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MC
 
 ## Methods
 
-### isEndConquered
+:::group{name=isEndConquered}
 
 Was this event caused by the player entering the portal in the end?
 
@@ -26,6 +30,8 @@ Return Type: boolean
 MCPlayerRespawnEvent.isEndConquered() as boolean
 myMCPlayerRespawnEvent.isEndConquered();
 ```
+
+:::
 
 
 ## Properties

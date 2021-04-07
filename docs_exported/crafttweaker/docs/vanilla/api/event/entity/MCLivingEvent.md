@@ -1,5 +1,9 @@
 # MCLivingEvent
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -14,7 +18,7 @@ MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). 
 
 ## Methods
 
-### getEntityLiving
+:::group{name=getEntityLiving}
 
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
@@ -22,6 +26,8 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 MCLivingEvent.getEntityLiving() as MCLivingEntity
 myMCLivingEvent.getEntityLiving();
 ```
+
+:::
 
 
 ## Properties

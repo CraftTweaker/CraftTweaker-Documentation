@@ -2,19 +2,19 @@
 
 # Immersive Engineering Blueprint
 
-The Blueprint is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Blaupause ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Categories
 
-Blueprints use different categories to determine what type of Blueprint is needed, you can use:
+Blaupausen verwenden verschiedene Kategorien, um festzustellen, welche Art von Blaupause benötigt wird. Du kannst folgenden Kommando verwenden:
 
 ```
 /ct dump ieBlueprintCategories
 ```
 
-to print all the known categories to the CraftTweaker log file.
+um alle bekannten Kategorien in das CraftTweaker Log zu schreiben.
 
-With Immersive Engineering alone, the following is printed to the log:
+Allein mit Immersive Engineering wird folgendes im Log geschrieben:
 
 ```
 - bannerpatterns
@@ -29,7 +29,7 @@ With Immersive Engineering alone, the following is printed to the log:
 
 #### Rezept hinzufügen
 
-The following script will add a "bullet" Blueprint recipe that will use a piece of Redstone and any item from the Forge Gems tag and output an Iron Sword.
+Das folgende Skript fügt ein "bullet" Blaupausenrezept hinzu, das ein Stück Redstone und alle Gegenstände aus dem Forge-Juwelen-Tag verwendet und ein Eisenschwert ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:blueprint>.addRecipe(name as string, blueprintCategory as string, inputs as IIngredient[], output as IItemStack)
@@ -39,7 +39,7 @@ The following script will add a "bullet" Blueprint recipe that will use a piece 
 
 #### Remove Recipes
 
-The following script will remove all Blueprint recipes that output a Casull Cartridge.
+Das folgende Skript wird alle Blaupausenrezepte entfernen, die eine Kasull-Patrone ausgeben.
 
 ```zenscript
 // <recipetype:immersiveengineering:blueprint>.removeRecipe(IItemStack output)

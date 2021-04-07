@@ -17,7 +17,7 @@ SmithingManager implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ smithing.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore
 | data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe to the smithing table.
 
@@ -53,7 +55,9 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | addition   | [IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item.       |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -62,7 +66,9 @@ SmithingManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 smithing.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -75,7 +81,9 @@ SmithingManager.getRecipeByName(name as string) as WrapperRecipe
 | name      | string | No Description Provided |
 
 
-### Obtenir des recettes par sortie
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -88,7 +96,9 @@ SmithingManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wrapper
 | output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Supprimer toutes les recettes de ce registre.
 
@@ -99,7 +109,9 @@ SmithingManager.removeAll() as void
 smithing.removeAll();
 ```
 
-### Retirer par Modid
+:::
+
+:::group{name=removeByModid}
 
 Supprimer la recette basée sur la modification du nom du Registre.
 
@@ -114,6 +126,10 @@ smithing.removeByModid("minecraft");
 | --------- | ------ | --------------------------------- |
 | modid     | string | modifier les recettes à supprimer |
 
+
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -130,7 +146,9 @@ smithing.removeByModid("minecraft", (name as string) => {return name == "orange_
 | exclure   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | des recettes pour ne plus être enlevées. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Supprimer la recette basée sur le nom du Registre.
 
@@ -146,7 +164,9 @@ smithing.removeByName("minecraft:furnace");
 | name      | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Supprimer la recette basée sur la regex.
 
@@ -162,7 +182,9 @@ smithing.removeByRegex("\\d_\\d");
 | regex     | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -177,5 +199,7 @@ smithing.removeRecipe(<item:minecraft:glass>);
 | --------- | ------------------------------------------- | -------------------- |
 | output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
+
+:::
 
 

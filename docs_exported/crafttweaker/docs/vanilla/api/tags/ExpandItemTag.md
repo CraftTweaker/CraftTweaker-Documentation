@@ -15,7 +15,7 @@ This expansion specifically targets itemTags.
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Return Type: void
 
@@ -28,7 +28,9 @@ MCTag.add(items as stdlib.List<IItemStack>) as void
 | items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided |
 
 
-### asIData
+:::
+
+:::group{name=asIData}
 
 Return Type: [IData](/vanilla/api/data/IData)
 
@@ -37,7 +39,9 @@ MCTag.asIData() as IData
 <tag:items:forge:gems>.asIData();
 ```
 
-### asIIngredient
+:::
+
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
@@ -46,7 +50,9 @@ MCTag.asIIngredient() as IIngredient
 <tag:items:forge:gems>.asIIngredient();
 ```
 
-### asIIngredientWithAmount
+:::
+
+:::group{name=asIIngredientWithAmount}
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
@@ -54,5 +60,7 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 MCTag.asIIngredientWithAmount() as IIngredientWithAmount
 <tag:items:forge:gems>.asIIngredientWithAmount();
 ```
+
+:::
 
 

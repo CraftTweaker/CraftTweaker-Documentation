@@ -21,7 +21,7 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 ## 方法
 
-### containsOther
+:::group{name=containsOther}
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
@@ -36,7 +36,9 @@ IFluidStack.containsOther(other as IFluidStack) as boolean
 | other | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
 
-### copy #复制
+:::
+
+:::group{name=copy}
 
 Copies the stack. Only needed when mutable stacks are involved.
 
@@ -47,7 +49,22 @@ IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
 
-### 可变的
+:::
+
+:::group{name=getTag}
+
+Returns the NBT tag attached to this FluidStack.
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+IFluidStack.getTag() as IData
+myIFluidStack.getTag();
+```
+
+:::
+
+:::group{name=mutable}
 
 Makes this stack mutable
 
@@ -58,7 +75,9 @@ IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the fluid amount in MilliBuckets (mB)
 
@@ -74,10 +93,30 @@ myIFluidStack.setAmount(1000);
 | amount | int | The amount to multiply this stack |
 
 
+:::
+
+:::group{name=withTag}
+
+Sets the tag for the FluidStack.
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.withTag(tag as IData) as IFluidStack
+myIFluidStack.withTag({Display: {lore: ["Hello"]}});
+```
+
+| 参数  | 类型                               | 描述              |
+| --- | -------------------------------- | --------------- |
+| tag | [IData](/vanilla/api/data/IData) | The tag to set. |
+
+
+:::
+
 
 ## 运算符
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
@@ -85,9 +124,9 @@ Checks if this IFluidStack, contains the given IFluidStack by checking if the fl
 other as IFluidStack in myIFluidStack
 ```
 
+:::
 
-
-### MUL
+:::group{name=MUL}
 
 Sets the fluid amount in MilliBuckets (MB)
 
@@ -96,7 +135,7 @@ myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-
+:::
 
 
 ## 参数
@@ -107,5 +146,7 @@ myIFluidStack * 1000
 | commandString | string                                                     | true | false |
 | empty         | boolean                                                    | true | false |
 | fluid         | [MCFluid](/vanilla/api/fluid/MCFluid)                      | true | false |
+| hasTag        | boolean                                                    | true | false |
 | registryName  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
+| tag           | [IData](/vanilla/api/data/IData)                           | true | false |
 

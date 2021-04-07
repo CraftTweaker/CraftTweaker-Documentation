@@ -1,5 +1,9 @@
 # MCTickEvent
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -14,7 +18,7 @@ MCTickEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all method
 
 ## Methods
 
-### getPhase
+:::group{name=getPhase}
 
 Return Type: string
 
@@ -23,7 +27,9 @@ MCTickEvent.getPhase() as string
 myMCTickEvent.getPhase();
 ```
 
-### getSide
+:::
+
+:::group{name=getSide}
 
 Return Type: string
 
@@ -32,7 +38,9 @@ MCTickEvent.getSide() as string
 myMCTickEvent.getSide();
 ```
 
-### getType
+:::
+
+:::group{name=getType}
 
 Return Type: string
 
@@ -41,7 +49,9 @@ MCTickEvent.getType() as string
 myMCTickEvent.getType();
 ```
 
-### isClient
+:::
+
+:::group{name=isClient}
 
 Return Type: boolean
 
@@ -50,7 +60,9 @@ MCTickEvent.isClient() as boolean
 myMCTickEvent.isClient();
 ```
 
-### isEnd
+:::
+
+:::group{name=isEnd}
 
 Return Type: boolean
 
@@ -59,7 +71,9 @@ MCTickEvent.isEnd() as boolean
 myMCTickEvent.isEnd();
 ```
 
-### isServer
+:::
+
+:::group{name=isServer}
 
 Return Type: boolean
 
@@ -68,7 +82,9 @@ MCTickEvent.isServer() as boolean
 myMCTickEvent.isServer();
 ```
 
-### isStart
+:::
+
+:::group{name=isStart}
 
 Return Type: boolean
 
@@ -76,6 +92,8 @@ Return Type: boolean
 MCTickEvent.isStart() as boolean
 myMCTickEvent.isStart();
 ```
+
+:::
 
 
 ## Properties

@@ -17,7 +17,7 @@ FurnaceManager implements the following interfaces. That means all methods defin
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
@@ -34,7 +34,9 @@ furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>
 | data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe based on given params.
 
@@ -42,7 +44,7 @@ Return Type: void
 
 ```zenscript
 FurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
+furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
 | Parameter | Type                                          | Description                     |
@@ -54,7 +56,9 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>
 | cookTime  | int                                           | how long it takes to cook       |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -63,7 +67,9 @@ FurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 furnace.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -76,7 +82,9 @@ FurnaceManager.getRecipeByName(name as string) as WrapperRecipe
 | name      | string | No Description Provided |
 
 
-### Obtener recetas por salida
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -89,7 +97,9 @@ FurnaceManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperR
 | output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
@@ -100,7 +110,9 @@ FurnaceManager.removeAll() as void
 furnace.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
@@ -115,6 +127,10 @@ furnace.removeByModid("minecraft");
 | --------- | ------ | ------------------------------ |
 | modid     | string | modid of the recipes to remove |
 
+
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -131,7 +147,9 @@ furnace.removeByModid("minecraft", (name as string) => {return name == "orange_w
 | excluir   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recetas para exluir de ser eliminadas. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
@@ -147,7 +165,9 @@ furnace.removeByName("minecraft:furnace");
 | name      | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
@@ -163,7 +183,9 @@ furnace.removeByRegex("\\d_\\d");
 | regex     | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
@@ -179,6 +201,10 @@ furnace.removeRecipe(<item:minecraft:glass>);
 | output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
+:::
+
+:::group{name=removeRecipe}
+
 Removes a recipe based on it's output and input.
 
 Return Type: void
@@ -193,5 +219,7 @@ furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 | output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
 | input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
+
+:::
 
 

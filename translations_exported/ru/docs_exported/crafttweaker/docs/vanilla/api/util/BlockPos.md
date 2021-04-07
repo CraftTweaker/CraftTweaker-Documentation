@@ -34,7 +34,7 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds two positions together and returns the result.
 
@@ -49,6 +49,10 @@ new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 | -------- | -------------------------------------- | --------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 
+
+:::
+
+:::group{name=add}
 
 Adds the given values to this position, and returns a new position with the new values.
 
@@ -66,6 +70,10 @@ new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 | z        | double | z value to add |
 
 
+:::
+
+:::group{name=add}
+
 Adds the given values to this position, and returns a new position with the new values.
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
@@ -82,7 +90,9 @@ new BlockPos(0, 1, 2).add(50, -20, -25);
 | z        | int | z value to add |
 
 
-### crossProduct
+:::
+
+:::group{name=crossProduct}
 
 Creates a new BlockPos based on the cross product of this position, and the given position
 
@@ -98,7 +108,9 @@ new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
 
 
-### distanceSq
+:::
+
+:::group{name=distanceSq}
 
 Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
 
@@ -114,6 +126,10 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 | to       | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 
 
+:::
+
+:::group{name=distanceSq}
+
 Gets the squared distance of this position to the specified BlockPos
 
 Return Type: double
@@ -128,6 +144,10 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 | to        | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
 | useCenter | boolean                                | should the center of the coordinate be used? (adds 0.5 to each value) |
 
+
+:::
+
+:::group{name=distanceSq}
 
 Gets the squared distance of this position to the specified coordinates
 
@@ -146,7 +166,9 @@ new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
-### down
+:::
+
+:::group{name=down}
 
 Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
 
@@ -156,6 +178,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.down() as BlockPos
 new BlockPos(0, 1, 2).down();
 ```
+
+:::
+
+:::group{name=down}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) lower than this BlockPos
 
@@ -170,7 +196,9 @@ BlockPos.down(n as int) as BlockPos
 | n        | int | No Description Provided |
 
 
-### east
+:::
+
+:::group{name=east}
 
 Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
 
@@ -180,6 +208,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.east() as BlockPos
 new BlockPos(0, 1, 2).east();
 ```
+
+:::
+
+:::group{name=east}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
 
@@ -195,7 +227,9 @@ new BlockPos(0, 1, 2).east(2);
 | n        | int | No Description Provided |
 
 
-### manhattanDistance
+:::
+
+:::group{name=manhattanDistance}
 
 Gets the Manhattan Distance of this pos compared to a different position
 
@@ -211,7 +245,9 @@ new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 | other    | [BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
 
 
-### north
+:::
+
+:::group{name=north}
 
 Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
 
@@ -221,6 +257,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.north() as BlockPos
 new BlockPos(0, 1, 2).north();
 ```
+
+:::
+
+:::group{name=north}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
 
@@ -236,7 +276,9 @@ new BlockPos(0, 1, 2).north(10);
 | n        | int | No Description Provided |
 
 
-### offset
+:::
+
+:::group{name=offset}
 
 Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
 
@@ -251,6 +293,10 @@ new BlockPos(0, 1, 2).offset(<direction:east>);
 | --------- | ---------------------------------------- | ----------------------- |
 | direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
 
+
+:::
+
+:::group{name=offset}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
 
@@ -267,7 +313,9 @@ new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 | n         | int                                      | No Description Provided |
 
 
-### south
+:::
+
+:::group{name=south}
 
 Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
 
@@ -277,6 +325,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.south() as BlockPos
 new BlockPos(0, 1, 2).south();
 ```
+
+:::
+
+:::group{name=south}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
 
@@ -292,7 +344,9 @@ new BlockPos(0, 1, 2).south(12);
 | n        | int | No Description Provided |
 
 
-### subtract
+:::
+
+:::group{name=subtract}
 
 Subtracts two positions together and returns the result.
 
@@ -308,7 +362,9 @@ new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
 
-### up
+:::
+
+:::group{name=up}
 
 Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
 
@@ -318,6 +374,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.up() as BlockPos
 new BlockPos(0, 1, 2).up();
 ```
+
+:::
+
+:::group{name=up}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
 
@@ -333,7 +393,9 @@ new BlockPos(0, 1, 2).up(45);
 | n        | int | No Description Provided |
 
 
-### west
+:::
+
+:::group{name=west}
 
 Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
 
@@ -343,6 +405,10 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 BlockPos.west() as BlockPos
 new BlockPos(0, 1, 2).west();
 ```
+
+:::
+
+:::group{name=west}
 
 Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
 
@@ -358,7 +424,9 @@ new BlockPos(0, 1, 2).west(120);
 | n        | int | No Description Provided |
 
 
-### withinDistance
+:::
+
+:::group{name=withinDistance}
 
 Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
 
@@ -374,6 +442,8 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
 | distance | double                                 | distance to check within                       |
 
+
+:::
 
 
 ## Свойства

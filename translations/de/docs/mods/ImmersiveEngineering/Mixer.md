@@ -2,13 +2,13 @@
 
 # Immersive Engineering Mixer
 
-The Mixer is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Mixer ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output 8000Mb of Creosote (Fluid) when an Oak Sapling, four Bone Meal, a bucket of Creosote and 8000Mb of Water (Fluid) is put into a Mixer.
+Das folgende Skript wird ein Rezept hinzufügen, das 8000mb Kreosote (Fluid) ausgibt, wenn ein Eichensetzling, 4 Knochenmehl, ein Eimer mit Kreosote und 8000mb Wasser (Fluid) dem Mixer hinzugefügt wird.
 
 ```zenscript
 // <recipetype:immersiveengineering:mixer>.addRecipe(String recipePath, MCTag<MCFluid> fluidInput , IIngredientWithAmount[] IIngredientinputItems, int energy, MCFluid output, int amount)
@@ -16,9 +16,9 @@ The following script will add a recipe that will output 8000Mb of Creosote (Flui
 <recipetype:immersiveengineering:mixer>.addRecipe("grow_creosote_oil", <tag:fluids:minecraft:water>, [<item:minecraft:oak_sapling>, <item:minecraft:bone_meal> * 4, <item:immersiveengineering:creosote_bucket>], 5000, <fluid:immersiveengineering:creosote>, 8000);
 ```
 
-#### Remove FluidStack Recipes
+#### FluidStack-Rezepte entfernen
 
-The following script will remove all recipes from the Mixer that output exactly 500Mb of Concrete (Fluid).
+Das folgende Skript wird alle Rezepte aus dem Mixer entfernen, die exakt 500mb Beton ausgeben (Fluid).
 
 ```zenscript
 // <recipetype:immersiveengineering:mixer>.removeRecipe(IFluidStack output)
@@ -26,9 +26,9 @@ The following script will remove all recipes from the Mixer that output exactly 
 <recipetype:immersiveengineering:mixer>.removeRecipe(<fluid:immersiveengineering:concrete> * 500);
 ```
 
-#### Remove Fluid Recipes
+#### Flüssigkeitsrezepte entfernen
 
-The following script will remove all recipes from the Mixer that output any amount of Concrete (Fluid).
+Das folgende Skript wird alle Rezepte aus dem Mixer entfernen, die eine beliebige Menge Beton ausgeben (Fluid).
 
 ```zenscript
 // <recipetype:immersiveengineering:mixer>.removeRecipe(MCFluid output)
@@ -36,9 +36,9 @@ The following script will remove all recipes from the Mixer that output any amou
 <recipetype:immersiveengineering:mixer>.removeRecipe(<fluid:immersiveengineering:concrete>.fluid);
 ```
 
-#### Remove Potion Recipes
+#### Trank Rezepte entfernen
 
-Potion Recipes are hardcoded in, the only way to remove them it to remove all of them at once, and is done like so.
+Trank Rezepte sind Hardcodes, der einzige Weg, um sie zu entfernen, ist sie alle auf einmal zu entfernen, und so wird's gemacht.
 
 ```zenscript
 <recipetype:immersiveengineering:mixer>.removeByName("immersiveengineering:mixer_potion_list");

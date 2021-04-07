@@ -1,14 +1,14 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Bottling Machine
+# Immersive Engineering Abfüllmaschine
 
-The Bottling Machine is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Abfüllmaschine ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe to the Bottling Machine that will use a Stick, 250Mb of any Fluid in the Water Fluid Tag and output a Wooden Pickaxe.
+Das folgende Skript wird ein Rezept zu der Abfüllmaschine hinzufügen, die einen Stick verwenden, 250mb aller Flüssigkeiten im Wasser-Tag und geben eine Holzspitzhacke aus.
 
 ```zenscript
 // <recipetype:immersiveengineering:bottling_machine>.addRecipe(string recipePath, IIngredient itemInput, MCTagWithAmount<Fluid> fluidTag, IItemStack output)
@@ -18,7 +18,7 @@ The following script will add a recipe to the Bottling Machine that will use a S
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Bottling Machine that output a Wet Sponge.
+Das folgende Skript wird alle Rezepte von der Abfüllmaschine entfernen, die einen nassen Schwamm ausgibt.
 
 ```zenscript
 // <recipetype:immersiveengineering:bottling_machine>.removeRecipe(IItemStack output)
