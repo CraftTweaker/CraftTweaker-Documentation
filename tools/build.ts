@@ -7,6 +7,7 @@ import {
     checkForDuplicates
 } from "./util";
 
+
 let result = require('dotenv').config();
 if (result.error) {
     throw result.error;
@@ -19,6 +20,9 @@ let unified = require('unified');
 let markdown = require('remark-parse');
 let vfile = require('to-vfile');
 let mergeJson = require("merge-json");
+let GithubSlugger = require('github-slugger');
+let slugger = new GithubSlugger()
+
 
 interface Doc {
     location: string,
@@ -28,119 +32,161 @@ interface Doc {
 
 const buildIndex = (folder: string) => {
 
-    let fileList: string[] = [];
-    listFiles(folder, fileList, true, ["md"]);
+        let fileList: string[] = [];
+        listFiles(folder, fileList, true, ["md"]);
 
-    let processor = unified().use(markdown, {});
-    let docs: Doc[] = [];
-    let linkError: boolean = false;
-    fileList.forEach(value => {
-        let processedFile = processor.parse(vfile.readSync(value));
-        processedFile.children.forEach((child: Node) => {
-            // Check headers first, then paragraphs > text
-            // @ts-ignore
-            if (child.type === "heading" && child.depth < 4) {
-                // @ts-ignore
-                for (let childrenKey in child.children) {
+        let processor = unified().use(markdown, {});
+        let docs: Doc[] = [];
+        let linkError: boolean = false;
+        fileList.forEach(file => {
+                let processedFile = processor.parse(vfile.readSync(file));
+                processedFile.children.forEach((child: Node) => {
+                    slugger.reset()
+                    // Check headers first, then paragraphs > text
                     // @ts-ignore
-                    let childrenObj = child.children[childrenKey];
-                    if (!childrenObj.value) {
-                        continue;
-                    }
-                    docs.push({
-                        title: childrenObj.value,
-                        location: `${value}#${childrenObj.value.replace(/(\W|\s)/gi, "_")}`,
-                        text: childrenObj.value
-                    });
-                }
-            } else {
-                if (child.type === "paragraph") {
-                    // @ts-ignore
-                    for (let childrenKey in child.children) {
+                    if (child.type === "heading" && child.depth > 1 && child.depth < 4) {
                         // @ts-ignore
-                        let childObj = child.children[childrenKey];
-                        docs.push({
-                            title: childObj.value,
-                            location: value,
-                            text: childObj.value
-                        });
-                        if (childObj.type === "link") {
-                            let url = childObj.url;
-                            // We aren't going to check external site links, seems a bit too much. Maybe in the future we can just send a get request to make sure it returns 200 though
-                            if (url.startsWith("http")) {
+                        for (let childrenKey in child.children) {
+                            // @ts-ignore
+                            let childrenObj = child.children[childrenKey];
+                            if (!childrenObj.value) {
                                 continue;
                             }
-                            // We can't really check this nicely, also I don't think we have any links that use this, but future proofing
-                            if (url.indexOf("#") !== -1) {
-                                // Same page link, not something we're looking for
-                                if (url.startsWith("#")) {
+                            docs.push({
+                                title: childrenObj.value,
+                                location: `${file}#${slugger.slug(childrenObj.value)}`,
+                                text: childrenObj.value
+                            });
+                        }
+                    } else if (child.type === "paragraph") {
+                        // @ts-ignore
+                        for (let childrenKey in child.children) {
+                            // @ts-ignore
+                            let childObj = child.children[childrenKey];
+                            if (["text"].indexOf(childObj.type) !== -1) {
+
+                                let value = childObj.value;
+
+                                if (value.startsWith(":::group")) {
+                                    let groupName = value.split(":::group{name=")[1];
+                                    if (groupName.startsWith("\"")) {
+                                        groupName = groupName.substring(1).replace("\"}", "");
+                                    } else {
+                                        groupName = groupName.replace("}", "");
+                                    }
+                                    docs.push({
+                                        title: groupName,
+                                        location: file,
+                                        text: groupName
+                                    });
+                                }
+                            }
+                            if (childObj.type === "link") {
+                                let url = childObj.url;
+                                // We aren't going to check external site links, seems a bit too much. Maybe in the future we can just send a get request to make sure it returns 200 though
+                                if (url.startsWith("http")) {
                                     continue;
-                                } else {
+                                }
+                                // We can't really check this nicely, also I don't think we have any links that use this, but future proofing
+                                // Same page link, not something we're looking for, so check if it doesn't start with #
+                                if (url.indexOf("#") > 0) {
+
                                     // Lets try and make sure the base file exists at-least
                                     url = url.substring(0, url.indexOf("#"));
                                 }
-                            }
-                            // Links should start with a "/", just makes things easier to handle, and all our current links pass this check
-                            if (!url.startsWith("/") && !url.startsWith("../")) {
-                                console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`);
-                                linkError = true;
-                                continue;
-                            }
-                            // Finally see if the file exists on disk
-                            let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
-                            let filePathNoSlash = path.join(path.join(folder, "docs"), url.substring(0, url.length - 1) + ".md");
-                            if (url.indexOf("../") !== -1) {
-                                filePath = path.resolve(path.join(value, url + ".md"));
-                                filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1) + ".md"));
-                            }
-                            if (!fs.existsSync(filePath)) {
-                                if (url.endsWith("/")) {
-                                    if (!fs.existsSync(filePathNoSlash)) {
-                                        console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`)
+                                // Links should start with a "/", just makes things easier to handle, and all our current links pass this check
+                                if (!url.startsWith("/") && !url.startsWith("../")) {
+                                    console.error(`Invalid Link in ${file.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`);
+                                    linkError = true;
+                                    continue;
+                                }
+                                // Finally see if the file exists on disk
+                                let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
+                                let filePathNoSlash = path.join(path.join(folder, "docs"), url.substring(0, url.length - 1) + ".md");
+                                if (url.indexOf("../") !== -1) {
+                                    filePath = path.resolve(path.join(file, url + ".md"));
+                                    filePathNoSlash = path.resolve(path.join(file, url.substring(0, url.length - 1) + ".md"));
+                                }
+                                if (!fs.existsSync(filePath)) {
+                                    if (url.endsWith("/")) {
+                                        if (!fs.existsSync(filePathNoSlash)) {
+                                            console.error(`Invalid Link in ${file.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`)
+                                            linkError = true;
+                                        }
+                                    } else {
+                                        console.error(`Invalid Link in ${file.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`)
                                         linkError = true;
                                     }
-                                } else {
-                                    console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`)
-                                    linkError = true;
+
+                                }
+                            }
+                        }
+
+                    } else if (child.type === "table") {
+                        let skippedHeader = false;
+                        // @ts-ignore
+                        for (let childrenKey in child.children) {
+                            // @ts-ignore
+                            let row = child.children[childrenKey];
+                            if (row.type === "tableRow") {
+                                if (!skippedHeader) {
+                                    skippedHeader = true;
+                                    continue;
+                                }
+                                // @ts-ignore
+                                for (let cellKey in row.children) {
+                                    // @ts-ignore
+                                    let cell = row.children[cellKey];
+                                    let cellValue = cell.children[0];
+                                    if (typeof cellValue === "undefined" || cellValue.type !== "text") {
+                                        continue;
+                                    }
+                                    docs.push({
+                                        title: cellValue.value,
+                                        location: file,
+                                        text: cellValue.value
+                                    });
+
                                 }
 
                             }
                         }
                     }
 
-                }
+
+                });
             }
-
-        });
-    });
-    if (linkError) {
-        console.log(new Error("Link check failed!"));
-    }
-    // Convert to relative links that we can use
-    docs = docs.map(value => {
-        return {
-            text: value.title,
-            title: value.text,
-            location: value.location.substring(folder.length + "/docs".length)
-        };
-    });
-    // Finally build the index
-    let idx = lunr(function (builder: Builder) {
-        builder.ref('location');
-        builder.field('title');
-        builder.field('text');
-
-        for (let page of docs) {
-            builder.add(page);
+        )
+        ;
+        if (linkError) {
+            console.log(new Error("Link check failed!"));
         }
-    });
-    // Save the index and the docs for later use!
-    fs.writeJSONSync(path.join(folder, "search_index.json"), {
-        docs,
-        idx
-    });
+// Convert to relative links that we can use
+        docs = docs.map(value => {
+            return {
+                text: value.title,
+                title: value.text,
+                location: value.location.substring(folder.length + "/docs".length)
+            };
+        });
+// Finally build the index
+        let idx = lunr(function (builder: Builder) {
+            builder.ref('location');
+            builder.field('title');
+            builder.field('text');
 
-};
+            for (let page of docs) {
+                builder.add(page);
+            }
+        });
+// Save the index and the docs for later use!
+        fs.writeJSONSync(path.join(folder, "search_index.json"), {
+            docs,
+            idx
+        });
+
+    }
+;
 
 const performDocumentationMerge = (buildsDir: string, exportedDocsDir: string, translationsDir: string, exportedTranslationsDir: string, languages: string[]): void => {
     const findDirectoryForLang = (lang: string, docs: string, translation: string): string => {
