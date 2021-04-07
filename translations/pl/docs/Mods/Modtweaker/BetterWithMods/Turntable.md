@@ -23,14 +23,6 @@ mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## Removal by output
-
-* Remove a recipe based on the output
-
-```zenscript
-mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
-```
-
 ## Remove all
 
 * Remove all recipes
