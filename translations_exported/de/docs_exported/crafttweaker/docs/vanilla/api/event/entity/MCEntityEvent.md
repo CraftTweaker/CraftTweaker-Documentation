@@ -18,7 +18,7 @@ MCEntityEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all meth
 
 ## Methoden
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
@@ -26,6 +26,8 @@ Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 MCEntityEvent.getEntity() as MCEntity
 myMCEntityEvent.getEntity();
 ```
+
+:::
 
 
 ## Properties
