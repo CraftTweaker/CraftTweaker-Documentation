@@ -12,7 +12,7 @@ import crafttweaker.api.mods.Mods;
 
 ## 方法
 
-### getMod
+:::group{name=getMod}
 
 Gets a specific mod
 
@@ -28,7 +28,9 @@ loadedMods.getMod("minecraft");
 | modid | string | No Description Provided |
 
 
-### isModLoaded
+:::
+
+:::group{name=isModLoaded}
 
 Checks if a mod is laoded
 
@@ -43,6 +45,8 @@ loadedMods.isModLoaded("minecraft");
 | ----- | ------ | ----- |
 | modid | string | 摩托车检查 |
 
+
+:::
 
 
 ## 参数
