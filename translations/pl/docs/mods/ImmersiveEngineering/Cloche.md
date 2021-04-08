@@ -44,7 +44,7 @@ The following script will add a Fertilizer with a growth modifier of 6.0 that us
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Cloche that outputs Melon.
+The follow script will remove all recipes from the Cloche that outputs Melon.
 
 ```zenscript
 // <recipetype:immersiveengineering:cloche>.removeRecipe(IItemStack output)
@@ -54,7 +54,7 @@ The following script will remove all recipes from the Cloche that outputs Melon.
 
 #### Remove Fertilizer
 
-The following script will remove Bone Meal as a Fertilizer.
+The follow script will remove Bone Meal as a Fertilizer.
 
 ```zenscript
 // <recipetype:immersiveengineering:fertilizer>.removeFertilizer(fertilizer as IItemStack)
