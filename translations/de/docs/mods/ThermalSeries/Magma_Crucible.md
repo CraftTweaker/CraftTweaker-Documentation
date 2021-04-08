@@ -13,7 +13,7 @@ The following script will add a recipe that will output 250 mB of Lava by Meltin
 
 #### Remove Recipes
 
-The following script will remove all Crucible recipes that output Lava.
+The follow script will remove all Crucible recipes that output Lava.
 
 ```zenscript
 // <recipetype:thermal:crucible>.removeRecipe(IFluidStack output);
