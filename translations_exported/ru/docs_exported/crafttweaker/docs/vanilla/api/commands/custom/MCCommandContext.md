@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCCommandContext;
 
 ## Methods
 
-### copyFor
+:::group{name=copyFor}
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -29,7 +29,9 @@ MCCommandContext.copyFor(source as MCCommandSource) as MCCommandContext
 | источник | [Источник MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +44,9 @@ MCCommandContext.equals(o as Object) as boolean
 | o        | Object | No Description Provided |
 
 
-### getАргумент
+:::
+
+:::group{name=getArgument}
 
 Return Type: string
 
@@ -55,7 +59,9 @@ MCCommandContext.getArgument(name as string) as string
 | name     | string | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -64,7 +70,9 @@ MCCommandContext.getChild() as MCCommandContext
 myMCCommandContext.getChild();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
@@ -73,7 +81,9 @@ MCCommandContext.getCommand() as MCCommand
 myMCCommandContext.getCommand();
 ```
 
-### getInput
+:::
+
+:::group{name=getInput}
 
 Return Type: string
 
@@ -82,7 +92,9 @@ MCCommandContext.getInput() as string
 myMCCommandContext.getInput();
 ```
 
-### getLastChild
+:::
+
+:::group{name=getLastChild}
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -91,7 +103,9 @@ MCCommandContext.getLastChild() as MCCommandContext
 myMCCommandContext.getLastChild();
 ```
 
-### getNodes
+:::
+
+:::group{name=getNodes}
 
 Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
@@ -100,7 +114,9 @@ MCCommandContext.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContext.getNodes();
 ```
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -109,7 +125,9 @@ MCCommandContext.getRange() as MCStringRange
 myMCCommandContext.getRange();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
@@ -118,7 +136,9 @@ MCCommandContext.getRedirectModifier() as MCRedirectModifier
 myMCCommandContext.getRedirectModifier();
 ```
 
-### getRootNode
+:::
+
+:::group{name=getRootNode}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -127,7 +147,9 @@ MCCommandContext.getRootNode() as MCCommandNode
 myMCCommandContext.getRootNode();
 ```
 
-### getSource
+:::
+
+:::group{name=getSource}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -136,7 +158,9 @@ MCCommandContext.getSource() as MCCommandSource
 myMCCommandContext.getSource();
 ```
 
-### hasNodes
+:::
+
+:::group{name=hasNodes}
 
 Return Type: boolean
 
@@ -145,7 +169,9 @@ MCCommandContext.hasNodes() as boolean
 myMCCommandContext.hasNodes();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -154,7 +180,9 @@ MCCommandContext.hashCode() as int
 myMCCommandContext.hashCode();
 ```
 
-### isForked
+:::
+
+:::group{name=isForked}
 
 Return Type: boolean
 
@@ -163,7 +191,9 @@ MCCommandContext.isForked() as boolean
 myMCCommandContext.isForked();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -172,15 +202,17 @@ MCCommandContext.toString() as string
 myMCCommandContext.toString();
 ```
 
+:::
+
 
 ## Операторы
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCCommandContext == o как объект
 ```
 
-
+:::
 
 
