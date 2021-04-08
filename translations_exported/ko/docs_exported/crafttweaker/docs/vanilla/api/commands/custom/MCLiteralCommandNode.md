@@ -20,7 +20,7 @@ MCLiteralCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCComm
 
 ## Methods
 
-### addChild
+:::group{name=addChild}
 
 Return Type: void
 
@@ -33,7 +33,9 @@ MCLiteralCommandNode.addChild(node as MCCommandNode) as void
 | node      | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### canUse
+:::
+
+:::group{name=canUse}
 
 Return Type: boolean
 
@@ -46,7 +48,9 @@ MCLiteralCommandNode.canUse(source as MCCommandSource) as boolean
 | source    | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### createBuilder
+:::
+
+:::group{name=createBuilder}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -55,7 +59,9 @@ MCLiteralCommandNode.createBuilder() as MCLiteralArgumentBuilder
 myMCLiteralCommandNode.createBuilder();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +74,9 @@ MCLiteralCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### findAmbiguities
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -81,7 +89,9 @@ MCLiteralCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | consumer  | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -94,7 +104,9 @@ MCLiteralCommandNode.getChild(name as string) as MCCommandNode
 | name      | string | No Description Provided |
 
 
-### getChildren
+:::
+
+:::group{name=getChildren}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -103,7 +115,9 @@ MCLiteralCommandNode.getChildren() as Collection<MCCommandNode>
 myMCLiteralCommandNode.getChildren();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
@@ -112,7 +126,9 @@ MCLiteralCommandNode.getCommand() as MCCommand
 myMCLiteralCommandNode.getCommand();
 ```
 
-### getExamples
+:::
+
+:::group{name=getExamples}
 
 Return Type: Collection&lt;string&gt;
 
@@ -121,7 +137,9 @@ MCLiteralCommandNode.getExamples() as Collection<string>
 myMCLiteralCommandNode.getExamples();
 ```
 
-### getLiteral
+:::
+
+:::group{name=getLiteral}
 
 Return Type: string
 
@@ -130,7 +148,9 @@ MCLiteralCommandNode.getLiteral() as string
 myMCLiteralCommandNode.getLiteral();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
@@ -139,7 +159,9 @@ MCLiteralCommandNode.getName() as string
 myMCLiteralCommandNode.getName();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -148,7 +170,9 @@ MCLiteralCommandNode.getRedirect() as MCCommandNode
 myMCLiteralCommandNode.getRedirect();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
@@ -157,7 +181,9 @@ MCLiteralCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCLiteralCommandNode.getRedirectModifier();
 ```
 
-### getRelevantNodes
+:::
+
+:::group{name=getRelevantNodes}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -170,7 +196,9 @@ MCLiteralCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNo
 | input     | string | No Description Provided |
 
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -179,7 +207,9 @@ MCLiteralCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCLiteralCommandNode.getRequirement();
 ```
 
-### getUsageText
+:::
+
+:::group{name=getUsageText}
 
 Return Type: string
 
@@ -188,7 +218,9 @@ MCLiteralCommandNode.getUsageText() as string
 myMCLiteralCommandNode.getUsageText();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -197,7 +229,9 @@ MCLiteralCommandNode.hashCode() as int
 myMCLiteralCommandNode.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
@@ -206,7 +240,9 @@ MCLiteralCommandNode.isFork() as boolean
 myMCLiteralCommandNode.isFork();
 ```
 
-### isValidInput
+:::
+
+:::group{name=isValidInput}
 
 Return Type: boolean
 
@@ -219,7 +255,9 @@ MCLiteralCommandNode.isValidInput(input as string) as boolean
 | input     | string | No Description Provided |
 
 
-### listSuggestions
+:::
+
+:::group{name=listSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -233,7 +271,9 @@ MCLiteralCommandNode.listSuggestions(context as MCCommandContext, builder as MCS
 | builder   | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: void
 
@@ -247,7 +287,9 @@ MCLiteralCommandNode.parse(input as string, contextBuilder as MCCommandContextBu
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -256,23 +298,25 @@ MCLiteralCommandNode.toString() as string
 myMCLiteralCommandNode.toString();
 ```
 
+:::
+
 
 ## 연산자
 
-### COMPARE
+:::group{name=COMPARE}
 
 ```zenscript
 myMCLiteralCommandNode < o as MCCommandNode
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCLiteralCommandNode == o as Object
 ```
 
-
+:::
 
 
