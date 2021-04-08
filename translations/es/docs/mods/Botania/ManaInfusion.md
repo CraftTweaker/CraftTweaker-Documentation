@@ -6,7 +6,7 @@ Mana Infusion is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager
 
 #### Add Recipe
 
-The following script will add two Mana Infusion recipes, the recipes will do the following:
+The follow script will add two Mana Infusion recipes, the recipes will do the following:
 
 1) When an Enchanted Golden Apple is given to a Mana Pool, a piece of Dirt will be given back. 2) When an Apple is given to a Mana Pool with a Diamond Block beneath it, a Diamond will be given back.
 
@@ -19,7 +19,7 @@ The following script will add two Mana Infusion recipes, the recipes will do the
 
 #### Remove Recipes
 
-The following script will remove all Mana Infusion recipes that output an Apple
+The follow script will remove all Mana Infusion recipes that output an Apple
 
 ```zenscript
 // <recipetype:botania:mana_infusion>.removeRecipe(IItemStack output);
