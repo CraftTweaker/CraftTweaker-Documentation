@@ -38,7 +38,7 @@ The following script will add a recipe to the Fermenter that will take a Wooden 
 
 #### Remove Fluid Recipes
 
-The following script will remove all recipes from the Fermenter output Ethanol (Fluid). Note that with Immersive Engineering on it's own, this will remove all the default recipes.
+The follow script will remove all recipes from the Fermenter output Ethanol (Fluid). Note that with Immersive Engineering on it's own, this will remove all the default recipes.
 
 ```zenscript
 <recipetype:immersiveengineering:fermenter>.removeRecipe(MCFluid output)
@@ -48,7 +48,7 @@ The following script will remove all recipes from the Fermenter output Ethanol (
 
 #### Remove Item Recipes
 
-The following script will remove all recipes from the Fermenter that outputs a Stone Shovel. Note that with Immersive Engineering on it's own, there is no recipe that outputs an Item, the example provided will only exist if the recipe is added beforehand.
+The follow script will remove all recipes from the Fermenter that outputs a Stone Shovel. Note that with Immersive Engineering on it's own, there is no recipe that outputs an Item, the example provided will only exist if the recipe is added beforehand.
 
 ```zenscript
 // <recipetype:immersiveengineering:fermenter>.removeRecipe(IItemStack output)
