@@ -10,7 +10,7 @@ import crafttweaker.api.block.material.MCMaterial;
 
 ## Methods
 
-### blocksMovement
+:::group{name=blocksMovement}
 
 Возвращает, если этот материал считается твёрдым или нет.
 
@@ -21,7 +21,9 @@ MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
 
-### getColor
+:::
+
+:::group{name=getColor}
 
 Извлекает цветовой индекс блока. Это тот же цвет, который используется ванильными картами для представления этого блока.
 
@@ -32,7 +34,9 @@ MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
 
-### isFlammable
+:::
+
+:::group{name=isFlammable}
 
 Возвращает, если блок может гореть или нет.
 
@@ -43,7 +47,9 @@ MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
 
-### isLiquid
+:::
+
+:::group{name=isLiquid}
 
 Возвращает, если блоки из этих материалов являются жидкостями.
 
@@ -54,7 +60,9 @@ MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
 
-### isOpaque
+:::
+
+:::group{name=isOpaque}
 
 Укажите, является ли материал непрозрачным
 
@@ -65,7 +73,9 @@ MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
 
-### isReplaceable
+:::
+
+:::group{name=isReplaceable}
 
 Возвращает, можно ли заменить материал другими блоками при размещении - например, снегом, лозой или высокой травой.
 
@@ -76,7 +86,9 @@ MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
 
-### isSolid
+:::
+
+:::group{name=isSolid}
 
 Возвращает true, если блок считается твёрдым. По умолчанию это true.
 
@@ -86,6 +98,8 @@ Return Type: boolean
 MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
+
+:::
 
 
 ## Свойства
