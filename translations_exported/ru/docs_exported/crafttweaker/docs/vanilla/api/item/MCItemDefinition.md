@@ -16,7 +16,7 @@ import crafttweaker.api.item.MCItemDefinition;
 
 ## Methods
 
-### getDefaultInstance
+:::group{name=getDefaultInstance}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -24,6 +24,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCItemDefinition.getDefaultInstance() as IItemStack
 myMCItemDefinition.getDefaultInstance();
 ```
+
+:::
 
 
 ## Свойства
