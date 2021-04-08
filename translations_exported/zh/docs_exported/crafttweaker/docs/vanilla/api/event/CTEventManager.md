@@ -14,7 +14,7 @@ import crafttweaker.api.events.CTEventManager;
 
 ## 方法
 
-### 注册
+:::group{name=register}
 
 Registers a new Event listener.
 
@@ -38,4 +38,6 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
 | 消费者 | Consumer&lt;T&gt;         | The event handler as consumer |
 | T   | [MCEvent](/vanilla/api/event/MCEvent) | The type of the event         |
 
+
+:::
 
