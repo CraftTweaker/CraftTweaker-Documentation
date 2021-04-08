@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.MCCommandSource;
 
 ## Methoden
 
-### getName
+:::group{name=getName}
 
 Return Type: string
 
@@ -19,7 +19,9 @@ MCCommandSource.getName() as string
 myMCCommandSource.getName();
 ```
 
-### getPlayer
+:::
+
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)?
 
@@ -28,7 +30,9 @@ MCCommandSource.getPlayer() as MCPlayerEntity?
 myMCCommandSource.getPlayer();
 ```
 
-### getPlayerName
+:::
+
+:::group{name=getPlayerNames}
 
 Return Type: Collection&lt;string&gt;
 
@@ -37,7 +41,9 @@ MCCommandSource.getPlayerNames() as Collection<string>
 myMCCommandSource.getPlayerNames();
 ```
 
-### GetTargetedEntity
+:::
+
+:::group{name=getTargetedEntity}
 
 Return Type: Collection&lt;string&gt;
 
@@ -46,7 +52,9 @@ MCCommandSource.getTargetedEntity() as Collection<string>
 myMCCommandSource.getTargetedEntity();
 ```
 
-### getTeamnamen
+:::
+
+:::group{name=getTeamNames}
 
 Return Type: Collection&lt;string&gt;
 
@@ -55,7 +63,9 @@ MCCommandSource.getTeamNames() as Collection<string>
 myMCCommandSource.getTeamNames();
 ```
 
-### hasPermissionLevel
+:::
+
+:::group{name=hasPermissionLevel}
 
 Return Type: boolean
 
@@ -68,7 +78,9 @@ MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 | p_197034_1_ | int  | No Description Provided |
 
 
-### isPlayer
+:::
+
+:::group{name=isPlayer}
 
 Return Type: boolean
 
@@ -77,7 +89,9 @@ MCCommandSource.isPlayer() as boolean
 myMCCommandSource.isPlayer();
 ```
 
-### sendErrorMessage
+:::
+
+:::group{name=sendErrorMessage}
 
 Return Type: void
 
@@ -90,7 +104,9 @@ MCCommandSource.sendErrorMessage(message as string) as void
 | message   | string | No Description Provided |
 
 
-### sendFeedback
+:::
+
+:::group{name=sendFeedback}
 
 Return Type: void
 
@@ -104,7 +120,9 @@ MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as voi
 | allowLogging | boolean | No Description Provided |
 
 
-### ohne Feedbackdeaktiviert
+:::
+
+:::group{name=withFeedbackDisabled}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -113,7 +131,9 @@ MCCommandSource.withFeedbackDisabled() as MCCommandSource
 myMCCommandSource.withFeedbackDisabled();
 ```
 
-### withMinPermissionLevel
+:::
+
+:::group{name=withMinPermissionLevel}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -126,7 +146,9 @@ MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 | p_197026_1_ | int  | No Description Provided |
 
 
-### withPermissionLevel
+:::
+
+:::group{name=withPermissionLevel}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -138,5 +160,7 @@ MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 | ------------- | ---- | ----------------------- |
 | p_197033_1_ | int  | No Description Provided |
 
+
+:::
 
 
