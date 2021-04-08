@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCParsedArgument;
 
 ## 方法
 
-### equals #等于
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,7 +29,9 @@ MCParsedArgument.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -38,7 +40,9 @@ MCParsedArgument.getRange() as MCStringRange
 myMCParsedArgument.getRange();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -47,7 +51,9 @@ MCParsedArgument.hashCode() as int
 myMCParsedArgument.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -56,15 +62,17 @@ MCParsedArgument.toString() as string
 myMCParsedArgument.toString();
 ```
 
+:::
+
 
 ## 运算符
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCParsedArgument == o 为对象
 ```
 
-
+:::
 
 
