@@ -29,7 +29,7 @@ new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 
 ## 方法
 
-### equals #等于
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +42,9 @@ MCCommand.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -51,7 +53,9 @@ MCCommand.hashCode() as int
 myMCCommand.hashCode();
 ```
 
-### 运行
+:::
+
+:::group{name=run}
 
 Return Type: int
 
@@ -64,7 +68,9 @@ MCCommand.run(context as MCCommandContext) as int
 | 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -73,15 +79,17 @@ MCCommand.toString() as string
 myMCCommand.toString();
 ```
 
+:::
+
 
 ## 运算符
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCCommand == o 为对象
 ```
 
-
+:::
 
 
