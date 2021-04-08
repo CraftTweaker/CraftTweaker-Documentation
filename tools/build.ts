@@ -147,6 +147,9 @@ const buildIndex = (folder: string) => {
                                     if(cellValue.type === "link"){
                                         actualValue = cellValue.children[0].value;
                                     }
+                                    if (["true", "false"].indexOf(actualValue) >= 0) {
+                                        continue;
+                                    }
                                     // TODO look at filtering out "No description provided", hard to do due to translations though
                                     docs.push({
                                         title: actualValue,
