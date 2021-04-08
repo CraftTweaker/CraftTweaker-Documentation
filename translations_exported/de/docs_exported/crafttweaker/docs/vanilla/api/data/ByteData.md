@@ -43,7 +43,7 @@ new ByteData(internal as byte) as ByteData
 
 ## Methoden
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -52,7 +52,9 @@ ByteData.asCollection() as ICollectionData
 4.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -63,7 +65,9 @@ ByteData.asList() as stdlib.List<IData>
 4.asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -74,7 +78,9 @@ ByteData.asMap() as IData[string]
 4.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -83,7 +89,9 @@ ByteData.asNumber() as INumberData
 4.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
@@ -94,7 +102,9 @@ ByteData.getByte() as byte
 4.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
@@ -105,7 +115,9 @@ ByteData.getDouble() as double
 4.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
@@ -116,7 +128,9 @@ ByteData.getFloat() as float
 4.getFloat();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -129,7 +143,9 @@ ByteData.getId() as byte
 4.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
@@ -140,7 +156,9 @@ ByteData.getInt() as int
 4.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
@@ -151,7 +169,9 @@ ByteData.getLong() as long
 4.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
@@ -162,7 +182,9 @@ ByteData.getShort() as short
 4.getShort();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -172,5 +194,7 @@ Return Type: string
 ByteData.getString() as string
 4.getString();
 ```
+
+:::
 
 
