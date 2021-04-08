@@ -37,7 +37,7 @@ new IntArrayData(internal as int[]) as IntArrayData
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -46,7 +46,9 @@ IntArrayData.asCollection() as ICollectionData
 [4, 128, 256, 1024].asCollection();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -57,7 +59,9 @@ IntArrayData.asMap() as IData[string]
 [4, 128, 256, 1024].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -66,7 +70,9 @@ IntArrayData.asNumber() as INumberData
 [4, 128, 256, 1024].asNumber();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -82,7 +88,9 @@ IntArrayData.contains(data as IData) as boolean
 | data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -95,7 +103,9 @@ IntArrayData.getId() as byte
 [4, 128, 256, 1024].getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -105,5 +115,7 @@ Return Type: string
 IntArrayData.getString() as string
 [4, 128, 256, 1024].getString();
 ```
+
+:::
 
 
