@@ -15,7 +15,7 @@ MCPotionEffectInstance implements the following interfaces. That means all metho
 
 ## Methods
 
-### addCurativeItem
+:::group{name=addCurativeItem}
 
 Return Type: void
 
@@ -28,7 +28,9 @@ MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### combine
+:::
+
+:::group{name=combine}
 
 Return Type: boolean
 
@@ -41,7 +43,9 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 | effect   | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 
 
-### getCurativeItems
+:::
+
+:::group{name=getCurativeItems}
 
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
@@ -50,7 +54,9 @@ MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
 myMCPotionEffectInstance.getCurativeItems();
 ```
 
-### isCurativeItem
+:::
+
+:::group{name=isCurativeItem}
 
 Return Type: boolean
 
@@ -63,7 +69,9 @@ MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### setCurativeItems
+:::
+
+:::group{name=setCurativeItems}
 
 Return Type: void
 
@@ -75,6 +83,8 @@ MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 | -------- | --------------------------------------------- | ----------------------- |
 | items    | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 
+
+:::
 
 
 ## Свойства
