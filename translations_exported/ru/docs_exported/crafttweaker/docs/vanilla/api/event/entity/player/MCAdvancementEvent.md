@@ -20,7 +20,7 @@ MCAdvancementEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## Methods
 
-### getId
+:::group{name=getId}
 
 Gets the ID of the advancement being unlocked.
 
@@ -30,6 +30,8 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 MCAdvancementEvent.getId() as MCResourceLocation
 event.getId();
 ```
+
+:::
 
 
 ## Свойства
