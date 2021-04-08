@@ -36,7 +36,7 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 
 ## Methods
 
-### asData
+:::group{name=asData}
 
 Return Type: [IData](/vanilla/api/data/IData)
 
@@ -45,7 +45,9 @@ MCResourceLocation.asData() as IData
 myMCResourceLocation.asData();
 ```
 
-### comparar con
+:::
+
+:::group{name=compareTo}
 
 Return Type: int
 
@@ -58,7 +60,9 @@ MCResourceLocation.compareTo(other as MCResourceLocation) as int
 | other     | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -71,7 +75,9 @@ MCResourceLocation.equals(other as Object) as boolean
 | other     | Object | No Description Provided |
 
 
-### getNamespace
+:::
+
+:::group{name=getNamespace}
 
 Return Type: string
 
@@ -80,7 +86,9 @@ MCResourceLocation.getNamespace() as string
 myMCResourceLocation.getNamespace();
 ```
 
-### getPath
+:::
+
+:::group{name=getPath}
 
 Return Type: string
 
@@ -89,7 +97,9 @@ MCResourceLocation.getPath() as string
 myMCResourceLocation.getPath();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -98,7 +108,9 @@ MCResourceLocation.hashCode() as int
 myMCResourceLocation.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -106,6 +118,8 @@ Return Type: string
 MCResourceLocation.toString() as string
 myMCResourceLocation.toString();
 ```
+
+:::
 
 
 ## Properties
