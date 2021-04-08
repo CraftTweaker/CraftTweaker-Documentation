@@ -129,6 +129,7 @@ const buildIndex = (folder: string) => {
                             // @ts-ignore
                             let row = child.children[childrenKey];
                             if (row.type === "tableRow") {
+                                // TODO instead of skipping, use the info to give better results
                                 if (!skippedHeader) {
                                     skippedHeader = true;
                                     continue;
@@ -138,13 +139,18 @@ const buildIndex = (folder: string) => {
                                     // @ts-ignore
                                     let cell = row.children[cellKey];
                                     let cellValue = cell.children[0];
-                                    if (typeof cellValue === "undefined" || cellValue.type !== "text") {
+                                    let value = cellValue.value;
+                                    if (typeof cellValue === "undefined" || ["text", "link"].indexOf(cellValue.type)===-1) {
                                         continue;
                                     }
+                                    if(cellValue.type === "link"){
+                                        value = cellValue.children[0].value;
+                                    }
+                                    // TODO look at filtering out "No description provided", hard to do due to translations though
                                     docs.push({
-                                        title: cellValue.value,
+                                        title: value,
                                         location: file,
-                                        text: cellValue.value
+                                        text: value
                                     });
 
                                 }
