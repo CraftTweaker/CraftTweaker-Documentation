@@ -9,14 +9,15 @@
 
 ## Геттеры
 
-| Геттер   | Что он делает?                          | Возвращаемый тип                                                | Использование   |
-| -------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
-| biomes   | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
-| blocks   | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
-| entities | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
-| items    | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
-| liquids  | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
-| potions  | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
+| Zengetter \--- | Что он делает?                              | Возвращаемый тип                                                              | Использование       |
+| -------------- | ------------------------------------------- | ----------------------------------------------------------------------------- | ------------------- |
+| biomes         | Returns all registered biomes as list       | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                                      | `game.biomes`       |
+| blocks         | Returns all registered blocks as list       | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>                   | `game.blocks`       |
+| entities       | Returns all registered entities as list     | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)>               | `game.entities`     |
+| items          | Returns all registered items as list        | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>                      | `game.items`        |
+| liquids        | Returns all registered liquids as list      | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>                | `game.liquids`      |
+| potions        | Returns all registered potions as list      | List<[IPotion](/Vanilla/Potions/IPotion/)>                                    | `game.potions`      |
+| enchantments   | Returns all registered enchantments as list | List<[IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/)> | `game.enchantments` |
 
 ## Методы
 
