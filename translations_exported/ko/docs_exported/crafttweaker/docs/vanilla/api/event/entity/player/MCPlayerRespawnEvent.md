@@ -20,7 +20,7 @@ MCPlayerRespawnEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MC
 
 ## Methods
 
-### isEndConquered
+:::group{name=isEndConquered}
 
 Was this event caused by the player entering the portal in the end?
 
@@ -30,6 +30,8 @@ Return Type: boolean
 MCPlayerRespawnEvent.isEndConquered() as boolean
 myMCPlayerRespawnEvent.isEndConquered();
 ```
+
+:::
 
 
 ## Properties
