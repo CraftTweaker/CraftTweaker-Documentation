@@ -18,7 +18,7 @@ MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). 
 
 ## Methods
 
-### getEntityLiving
+:::group{name=getEntityLiving}
 
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
@@ -26,6 +26,8 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 MCLivingEvent.getEntityLiving() as MCLivingEntity
 myMCLivingEvent.getEntityLiving();
 ```
+
+:::
 
 
 ## Свойства
