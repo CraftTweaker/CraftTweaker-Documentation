@@ -44,7 +44,7 @@ The following script will add recipes that will output Water (fluid) when Paper,
 
 #### Remove Recipes for Items
 
-The following script will remove all Compacting recipes that output a Bar Of Chocolate.
+The follow script will remove all Compacting recipes that output a Bar Of Chocolate.
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IItemStack output)
@@ -55,7 +55,7 @@ The following script will remove all Compacting recipes that output a Bar Of Cho
 
 #### Remove Recipes for Fluids
 
-The following script will remove all Compacting recipes that output Water (Fluid)
+The follow script will remove all Compacting recipes that output Water (Fluid)
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IFluidStack output)
