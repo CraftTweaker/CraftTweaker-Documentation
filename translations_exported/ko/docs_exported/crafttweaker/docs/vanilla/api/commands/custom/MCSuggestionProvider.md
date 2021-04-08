@@ -29,7 +29,7 @@ new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +42,9 @@ MCSuggestionProvider.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getSuggestions
+:::
+
+:::group{name=getSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -56,7 +58,9 @@ MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSu
 | builder   | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -65,7 +69,9 @@ MCSuggestionProvider.hashCode() as int
 myMCSuggestionProvider.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -74,15 +80,17 @@ MCSuggestionProvider.toString() as string
 myMCSuggestionProvider.toString();
 ```
 
+:::
+
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionProvider == o as Object
 ```
 
-
+:::
 
 
