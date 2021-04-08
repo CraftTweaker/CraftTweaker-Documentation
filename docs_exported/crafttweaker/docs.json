@@ -1,5 +1,12 @@
 {
   "nav": {
+    "Crafttweaker": {
+      "Api": {
+        "Misc": {
+          "Composter": "crafttweaker/api/misc/Composter.md"
+        }
+      }
+    },
     "Vanilla": {
       "Api": {
         "BracketHandlers": "vanilla/api/BracketHandlers.md",
