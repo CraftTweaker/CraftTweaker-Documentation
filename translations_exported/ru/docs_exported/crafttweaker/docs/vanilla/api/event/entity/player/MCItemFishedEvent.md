@@ -24,7 +24,7 @@ MCItemFishedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 
 ## Methods
 
-### getDrops
+:::group{name=getDrops}
 
 Gets the list of items being fished up by the player.
 
@@ -35,7 +35,9 @@ MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
 event.getDrops();
 ```
 
-### getItemDamage
+:::
+
+:::group{name=getItemDamage}
 
 Gets the amount of durability damage to inflict on the fishing rod.
 
@@ -46,7 +48,9 @@ MCItemFishedEvent.getItemDamage() as int
 event.getItemDamage();
 ```
 
-### setItemDamage
+:::
+
+:::group{name=setItemDamage}
 
 Sets the amount of durability damage to inflict on the fishing rod.
 
@@ -61,6 +65,8 @@ event.setItemDamage(5);
 | -------- | --- | -------------------------------- |
 | damage   | int | The amount of durability damage. |
 
+
+:::
 
 
 ## Свойства
