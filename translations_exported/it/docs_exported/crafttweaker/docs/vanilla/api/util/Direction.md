@@ -21,7 +21,7 @@ Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That mea
 | sides | [Direction](/vanilla/api/util/Direction)[] | true      | false     |
 ## Methods
 
-### rotateY
+:::group{name=rotateY}
 
 Rotates this direction on the Y axis
 
@@ -32,7 +32,9 @@ Direction.rotateY() as Direction
 <direction:north>.rotateY();
 ```
 
-### rotateYCCW
+:::
+
+:::group{name=rotateYCCW}
 
 Rotates this direction counter-clock wise on the Y axis
 
@@ -42,6 +44,8 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 Direction.rotateYCCW() as Direction
 <direction:north>.rotateYCCW();
 ```
+
+:::
 
 
 ## Properties
