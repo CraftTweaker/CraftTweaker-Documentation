@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond 10% of the tim
 
 #### Remove Recipes
 
-The following script will remove all Crushing recipes that output a Crushed Zinc Ore.
+The follow script will remove all Crushing recipes that output a Crushed Zinc Ore.
 
 ```zenscript
 // <recipetype:create:crushing>.removeRecipe(IItemStack output)
