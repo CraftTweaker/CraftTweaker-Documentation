@@ -10,7 +10,7 @@ import crafttweaker.api.block.material.MCMaterial;
 
 ## 方法
 
-### blocksMovement
+:::group{name=blocksMovement}
 
 判断材料是否为可移动固体(不知道为啥这一行和下面有一行好像)
 
@@ -21,7 +21,9 @@ MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
 
-### getColor #获取颜色
+:::
+
+:::group{name=getColor}
 
 获取方块的颜色索引。 输出与原版地图表示此方块的相同颜色
 
@@ -32,7 +34,9 @@ MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
 
-### isFlammable #是否为可燃物
+:::
+
+:::group{name=isFlammable}
 
 判断方块是否为可燃物
 
@@ -43,7 +47,9 @@ MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
 
-### isLiquid #是否为液体
+:::
+
+:::group{name=isLiquid}
 
 判断方块是否为液体
 
@@ -54,7 +60,9 @@ MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
 
-### isOpaque #是否为不透明方块
+:::
+
+:::group{name=isOpaque}
 
 判断方块是否为不透明方块
 
@@ -65,7 +73,9 @@ MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
 
-### isReplaceable #是否可替换
+:::
+
+:::group{name=isReplaceable}
 
 返回是否在放置时可以用其他方块替换该材料，例如雪，藤蔓和高草丛
 
@@ -76,7 +86,9 @@ MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
 
-### isSolid #是否为固体
+:::
+
+:::group{name=isSolid}
 
 判断方块是否为固体 默认情况下返回为true
 
@@ -86,6 +98,8 @@ Return Type: boolean
 MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
+
+:::
 
 
 ## 参数
