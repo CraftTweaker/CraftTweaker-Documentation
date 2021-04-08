@@ -12,7 +12,7 @@ import crafttweaker.api.villager.MCVillagerProfession;
 
 ## 方法
 
-### getName
+:::group{name=getName}
 
 Return Type: string
 
@@ -20,6 +20,8 @@ Return Type: string
 MCVillagerProfession.getName() as string
 <profession:minecraft:fletcher>.getName();
 ```
+
+:::
 
 
 ## 参数
