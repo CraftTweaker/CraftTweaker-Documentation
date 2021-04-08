@@ -16,7 +16,7 @@ import crafttweaker.api.blocks.MCBlock;
 
 ## Methods
 
-### canSpawnInBlock
+:::group{name=canSpawnInBlock}
 
 Return Type: boolean
 
@@ -25,7 +25,9 @@ MCBlock.canSpawnInBlock() as boolean
 myMCBlock.canSpawnInBlock();
 ```
 
-### getDefaultState
+:::
+
+:::group{name=getDefaultState}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -34,7 +36,9 @@ MCBlock.getDefaultState() as MCBlockState
 myMCBlock.getDefaultState();
 ```
 
-### getValidStates
+:::
+
+:::group{name=getValidStates}
 
 Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;
 
@@ -42,6 +46,8 @@ Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;
 MCBlock.getValidStates() as stdlib.List<MCBlockState>
 myMCBlock.getValidStates();
 ```
+
+:::
 
 
 ## Свойства
