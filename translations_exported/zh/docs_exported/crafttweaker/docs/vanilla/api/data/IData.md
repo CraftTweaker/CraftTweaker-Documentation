@@ -19,7 +19,7 @@ import crafttweaker.api.data.IData;
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -28,7 +28,9 @@ IData.asCollection() as ICollectionData
 {Display: {lore: ["Hello", "World"]}}.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -39,7 +41,9 @@ IData.asList() as stdlib.List<IData>
 {Display: {lore: ["Hello", "World"]}}.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -50,7 +54,9 @@ IData.asMap() as IData[string]
 {Display: {lore: ["Hello", "World"]}}.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -59,7 +65,9 @@ IData.asNumber() as INumberData
 {Display: {lore: ["Hello", "World"]}}.asNumber();
 ```
 
-### asString #作为字符串
+:::
+
+:::group{name=asString}
 
 获取此IData的字符串表示形式
 
@@ -70,7 +78,9 @@ IData.asString() as string
 {Display: {lore: ["Hello", "World"]}}.asString();
 ```
 
-### contains #容器
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -86,7 +96,9 @@ IData.contains(data as IData) as boolean
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### copy #复制
+:::
+
+:::group{name=copy}
 
 制作此IData的副本。
 
@@ -99,7 +111,9 @@ IData.copy() as IData
 {Display: {lore: ["Hello", "World"]}}.copy();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -112,7 +126,9 @@ IData.getId() as byte
 {Display: {lore: ["Hello", "World"]}}.getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -122,5 +138,7 @@ Return Type: string
 IData.getString() as string
 {Display: {lore: ["Hello", "World"]}}.getString();
 ```
+
+:::
 
 
