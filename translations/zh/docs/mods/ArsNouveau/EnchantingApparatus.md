@@ -18,7 +18,7 @@ The following script will add a recipe to the Enchanting Apparatus that will out
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Enchanting Apparatus that output the Ring of Lesser Discount.
+The follow script will remove all recipes from the Enchanting Apparatus that output the Ring of Lesser Discount.
 
 ```zenscript
 // <recipetype:ars_nouveau:enchanting_apparatus>.removeRecipe(IItemStack output);
