@@ -8,7 +8,7 @@
 
 ## Methods
 
-### asIIngredientWithAmount
+:::group{name=asIIngredientWithAmount}
 
 Used implicitly when a machine can accept more than one item but you only provide one.
 
@@ -19,7 +19,9 @@ IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
 <tag:items:forge:ingots>.asIIngredientWithAmount();
 ```
 
-### mul
+:::
+
+:::group{name=mul}
 
 Use this in contexts where machines accept more than one item to state that fact.
 
@@ -34,7 +36,9 @@ IIngredient.mul(amount as int) as IIngredientWithAmount
 | amount    | int  | No Description Provided |
 
 
-### reuse
+:::
+
+:::group{name=reuse}
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -43,7 +47,9 @@ IIngredient.reuse() as MCIngredientTransformed<IIngredient>
 <tag:items:forge:ingots>.reuse();
 ```
 
-### transform
+:::
+
+:::group{name=transform}
 
 Use this if you already have the transformer from another ingredient
 
@@ -58,7 +64,9 @@ IIngredient.transform(transformer as IIngredientTransformer<IIngredient>) as MCI
 | transformador | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### transformCustom
+:::
+
+:::group{name=transformCustom}
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -71,7 +79,9 @@ IIngredient.transformCustom(uid as string, function as Function<IItemStack,IItem
 | uid       | string                                                                                                              | No Description Provided | false    |              |
 | function  | Function&lt;[IItemStack](/vanilla/api/items/IItemStack),[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
-### transformDamage
+:::
+
+:::group{name=transformDamage}
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -83,7 +93,9 @@ IIngredient.transformDamage(amount as int) as MCIngredientTransformed<IIngredien
 | --------- | ---- | ----------------------- | -------- | ------------ |
 | amount    | int  | No Description Provided | true     | 1            |
 
-### transformReplace
+:::
+
+:::group{name=transformReplace}
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -95,5 +107,7 @@ IIngredient.transformReplace(replaceWith as IItemStack) as MCIngredientTransform
 | ----------- | ------------------------------------------- | ----------------------- |
 | replaceWith | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
+
+:::
 
 
