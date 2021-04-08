@@ -37,7 +37,7 @@ new StringData(internal as string) as StringData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -46,7 +46,9 @@ StringData.asCollection() as ICollectionData
 new StringData("Hello").asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -57,7 +59,9 @@ StringData.asList() as stdlib.List<IData>
 new StringData("Hello").asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -68,7 +72,9 @@ StringData.asMap() as IData[string]
 new StringData("Hello").asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -77,7 +83,9 @@ StringData.asNumber() as INumberData
 new StringData("Hello").asNumber();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -90,7 +98,9 @@ StringData.getId() as byte
 new StringData("Hello").getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -101,10 +111,12 @@ StringData.getString() as string
 new StringData("Hello").getString();
 ```
 
+:::
+
 
 ## 运算符
 
-### ADD
+:::group{name=ADD}
 
 连接两个字符串数据并返回结果。
 
@@ -113,6 +125,6 @@ myStringData + data as StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-
+:::
 
 
