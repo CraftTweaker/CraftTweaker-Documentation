@@ -44,7 +44,7 @@ new MapData(map as IData[string]) as MapData
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -53,7 +53,9 @@ MapData.asCollection() as ICollectionData
 {Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -64,7 +66,9 @@ MapData.asList() as stdlib.List<IData>
 {Hello : "World", Somewhere: "Over the rainbow"}.asList();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -73,7 +77,9 @@ MapData.asNumber() as INumberData
 {Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if the Map contains the given key.
 
@@ -89,7 +95,9 @@ MapData.contains(key as string) as boolean
 | key       | string | The key to search for |
 
 
-### getAt
+:::
+
+:::group{name=getAt}
 
 Retrieves the value associated with the key
 
@@ -105,7 +113,9 @@ MapData.getAt(key as string) as IData
 | key       | string | The key to search for |
 
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -118,7 +128,9 @@ MapData.getId() as byte
 {Hello : "World", Somewhere: "Over the rainbow"}.getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -129,7 +141,9 @@ MapData.getString() as string
 {Hello : "World", Somewhere: "Over the rainbow"}.getString();
 ```
 
-### merge
+:::
+
+:::group{name=merge}
 
 Merges this map and the other map. If entries from this map and the other map share the values are tried to be merged. If that does not work, then the value from the other map is used.
 
@@ -145,7 +159,9 @@ MapData.merge(other as MapData) as MapData
 | other     | [MapData](/vanilla/api/data/MapData) | The other map. |
 
 
-### put
+:::
+
+:::group{name=put}
 
 Adds sets the value for the given key or creates a new entry if it did not exist before.
 
@@ -162,7 +178,9 @@ MapData.put(key as string, value as IData) as IData
 | value     | [IData](/vanilla/api/data/IData) | The value to set.             |
 
 
-### putAll
+:::
+
+:::group{name=putAll}
 
 Adds all entries from the given map into this one. Can override existing keys.
 
@@ -178,7 +196,9 @@ MapData.putAll(map as IData[string]) as void
 | map       | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
 
 
-### remove
+:::
+
+:::group{name=remove}
 
 Removes the entry with the given key from the Map
 
@@ -194,10 +214,12 @@ MapData.remove(key as string) as void
 | key       | string | The key of the entry to remove |
 
 
+:::
+
 
 ## Operators
 
-### ADD
+:::group{name=ADD}
 
 Adds all entries from the given IData to this entry
 
@@ -205,7 +227,7 @@ Adds all entries from the given IData to this entry
 myMapData + data as IData
 ```
 
-
+:::
 
 
 ## Properties
