@@ -10,7 +10,7 @@ import crafttweaker.api.item.IIngredientTransformer;
 
 ## Methods
 
-### getCommandString
+:::group{name=getCommandString}
 
 Return Type: string
 
@@ -23,7 +23,9 @@ IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 | transformedIngredient | T   | No Description Provided |
 
 
-### transform
+:::
+
+:::group{name=transform}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -35,5 +37,7 @@ IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 | -------- | ------------------------------------------- | ----------------------- |
 | stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
+
+:::
 
 
