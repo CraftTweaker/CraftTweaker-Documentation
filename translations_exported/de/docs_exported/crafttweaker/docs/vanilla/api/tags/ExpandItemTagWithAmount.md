@@ -8,7 +8,7 @@
 
 ## Methoden
 
-### asIngredient
+:::group{name=asIngredient}
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
@@ -16,5 +16,7 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 MCTagWithAmount.asIngredient() as IIngredientWithAmount
 myMCTagWithAmount.asIngredient();
 ```
+
+:::
 
 
