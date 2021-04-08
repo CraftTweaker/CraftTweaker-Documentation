@@ -14,7 +14,7 @@ import crafttweaker.api.event.MCEvent;
 
 ## Methods
 
-### cancel
+:::group{name=cancel}
 
 Cancels the event. Same as `setCanceled(true)`
 
@@ -25,7 +25,9 @@ MCEvent.cancel() as void
 myMCEvent.cancel();
 ```
 
-### hasResult
+:::
+
+:::group{name=hasResult}
 
 Return Type: boolean
 
@@ -34,7 +36,9 @@ MCEvent.hasResult() as boolean
 myMCEvent.hasResult();
 ```
 
-### isCancelable
+:::
+
+:::group{name=isCancelable}
 
 Return Type: boolean
 
@@ -43,7 +47,9 @@ MCEvent.isCancelable() as boolean
 myMCEvent.isCancelable();
 ```
 
-### isCanceled
+:::
+
+:::group{name=isCanceled}
 
 Return Type: boolean
 
@@ -52,7 +58,9 @@ MCEvent.isCanceled() as boolean
 myMCEvent.isCanceled();
 ```
 
-### setAllow
+:::
+
+:::group{name=setAllow}
 
 sets the event's result to `allow`
 
@@ -63,7 +71,9 @@ MCEvent.setAllow() as void
 myMCEvent.setAllow();
 ```
 
-### setCanceled
+:::
+
+:::group{name=setCanceled}
 
 Return Type: void
 
@@ -76,7 +86,9 @@ MCEvent.setCanceled(cancel as boolean) as void
 | cancel    | boolean | No Description Provided |
 
 
-### setDefault
+:::
+
+:::group{name=setDefault}
 
 sets the event's result to `default`
 
@@ -87,7 +99,9 @@ MCEvent.setDefault() as void
 myMCEvent.setDefault();
 ```
 
-### setDeny
+:::
+
+:::group{name=setDeny}
 
 sets the event's result to `deny`
 
@@ -97,6 +111,8 @@ Return Type: void
 MCEvent.setDeny() as void
 myMCEvent.setDeny();
 ```
+
+:::
 
 
 ## Properties
