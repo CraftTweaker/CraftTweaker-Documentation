@@ -16,7 +16,7 @@ MCServerWorld extends [MCWorld](/vanilla/api/world/MCWorld). That means all meth
 
 ## Methods
 
-### isRaid
+:::group{name=isRaid}
 
 Checks if a position is within an active raid.
 
@@ -32,7 +32,9 @@ world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isSlimeChunk
+:::
+
+:::group{name=isSlimeChunk}
 
 Checks if a position is within a chunk that is considered a slime chunk.
 
@@ -48,7 +50,9 @@ world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### isVillage
+:::
+
+:::group{name=isVillage}
 
 Checks if a position is within a village.
 
@@ -64,7 +68,9 @@ world as MCServerWorld.isVillage(new BlockPos(0, 1, 2));
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
 
 
-### setTimeToDay
+:::
+
+:::group{name=setTimeToDay}
 
 Sets the time of the Minecraft day to day. This is like using the "time set day" command or setting the time to 1000.
 
@@ -75,7 +81,9 @@ MCServerWorld.setTimeToDay() as void
 world as MCServerWorld.setTimeToDay();
 ```
 
-### setTimeToMidnight
+:::
+
+:::group{name=setTimeToMidnight}
 
 Sets the time of the Minecraft day to midnight. This is like using the "time set midnight" command or setting the time to 18000.
 
@@ -86,7 +94,9 @@ MCServerWorld.setTimeToMidnight() as void
 world as MCServerWorld.setTimeToMidnight();
 ```
 
-### setTimeToNight
+:::
+
+:::group{name=setTimeToNight}
 
 Sets the time of the Minecraft day to night. This is like using the "time set night" command or setting the time to 13000.
 
@@ -97,7 +107,9 @@ MCServerWorld.setTimeToNight() as void
 world as MCServerWorld.setTimeToNight();
 ```
 
-### setTimeToNoon
+:::
+
+:::group{name=setTimeToNoon}
 
 Sets the time of the Minecraft day to noon. This is like using the "time set noon" command or setting the time to 6000.
 
@@ -107,6 +119,8 @@ Return Type: void
 MCServerWorld.setTimeToNoon() as void
 world as MCServerWorld.setTimeToNoon();
 ```
+
+:::
 
 
 ## Properties
