@@ -18,7 +18,7 @@ MCItemCraftedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## Methoden
 
-### getCrafting
+:::group{name=getCrafting}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -26,6 +26,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCItemCraftedEvent.getCrafting() as IItemStack
 myMCItemCraftedEvent.getCrafting();
 ```
+
+:::
 
 
 ## Properties
