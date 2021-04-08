@@ -39,7 +39,7 @@ The following script will add a "bullet" Blueprint recipe that will use a piece 
 
 #### Remove Recipes
 
-The following script will remove all Blueprint recipes that output a Casull Cartridge.
+The follow script will remove all Blueprint recipes that output a Casull Cartridge.
 
 ```zenscript
 // <recipetype:immersiveengineering:blueprint>.removeRecipe(IItemStack output)
