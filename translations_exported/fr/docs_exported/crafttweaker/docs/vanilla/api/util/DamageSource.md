@@ -10,7 +10,7 @@ import crafttweaker.api.util.DamageSource;
 
 ## Methods
 
-### canBypassCreative
+:::group{name=canBypassCreative}
 
 Checks if the damage can bypass creative mode.
 
@@ -21,7 +21,9 @@ DamageSource.canBypassCreative() as boolean
 myDamageSource.canBypassCreative();
 ```
 
-### getDamageLocation
+:::
+
+:::group{name=getDamageLocation}
 
 Gets the location where the damage occurred.
 
@@ -32,7 +34,9 @@ DamageSource.getDamageLocation() as MCVector3d?
 myDamageSource.getDamageLocation();
 ```
 
-### getDamageType
+:::
+
+:::group{name=getDamageType}
 
 Gets the type of damage.
 
@@ -43,7 +47,9 @@ DamageSource.getDamageType() as string
 myDamageSource.getDamageType();
 ```
 
-### getHungerDamage
+:::
+
+:::group{name=getHungerDamage}
 
 Gets the amount of exhaustion to add to the player's hunger bar if they get hit by this damage.
 
@@ -54,7 +60,9 @@ DamageSource.getHungerDamage() as float
 myDamageSource.getHungerDamage();
 ```
 
-### getImmediateSource
+:::
+
+:::group{name=getImmediateSource}
 
 Gets the immediate source of the damage, like an arrow.
 
@@ -65,7 +73,9 @@ DamageSource.getImmediateSource() as MCEntity
 myDamageSource.getImmediateSource();
 ```
 
-### getTrueSource
+:::
+
+:::group{name=getTrueSource}
 
 Gets the true source of the damage, like the player who shot the arrow.
 
@@ -76,7 +86,9 @@ DamageSource.getTrueSource() as MCEntity
 myDamageSource.getTrueSource();
 ```
 
-### isAbsoluteDamage
+:::
+
+:::group{name=isAbsoluteDamage}
 
 Checks if the damage is absolute.
 
@@ -87,7 +99,9 @@ DamageSource.isAbsoluteDamage() as boolean
 myDamageSource.isAbsoluteDamage();
 ```
 
-### isCreativePlayer
+:::
+
+:::group{name=isCreativePlayer}
 
 Gets whether the damage was inflicted by a creative player.
 
@@ -98,7 +112,9 @@ DamageSource.isCreativePlayer() as boolean
 myDamageSource.isCreativePlayer();
 ```
 
-### isDifficultyScaled
+:::
+
+:::group{name=isDifficultyScaled}
 
 Gets whether the damage changes strength based on the current difficulty.
 
@@ -109,7 +125,9 @@ DamageSource.isDifficultyScaled() as boolean
 myDamageSource.isDifficultyScaled();
 ```
 
-### isExplosionDamage
+:::
+
+:::group{name=isExplosionDamage}
 
 Checks if the damage is caused by an explosion.
 
@@ -120,7 +138,9 @@ DamageSource.isExplosionDamage() as boolean
 myDamageSource.isExplosionDamage();
 ```
 
-### isFireDamage
+:::
+
+:::group{name=isFireDamage}
 
 Checks if the damage is caused by fire or burning.
 
@@ -131,7 +151,9 @@ DamageSource.isFireDamage() as boolean
 myDamageSource.isFireDamage();
 ```
 
-### isMagicDamage
+:::
+
+:::group{name=isMagicDamage}
 
 Checks if the damage is caused by magic.
 
@@ -142,7 +164,9 @@ DamageSource.isMagicDamage() as boolean
 myDamageSource.isMagicDamage();
 ```
 
-### isProjectileDamage
+:::
+
+:::group{name=isProjectileDamage}
 
 Checks if the damage is caused by a projectile.
 
@@ -153,7 +177,9 @@ DamageSource.isProjectileDamage() as boolean
 myDamageSource.isProjectileDamage();
 ```
 
-### isUnblockableDamage
+:::
+
+:::group{name=isUnblockableDamage}
 
 Checks if the damage can be blocked.
 
@@ -163,6 +189,8 @@ Return Type: boolean
 DamageSource.isUnblockableDamage() as boolean
 myDamageSource.isUnblockableDamage();
 ```
+
+:::
 
 
 ## Properties
