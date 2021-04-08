@@ -43,7 +43,7 @@ new FloatData(internal as float) as FloatData
 
 ## Methoden
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -52,7 +52,9 @@ FloatData.asCollection() as ICollectionData
 8.5.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -63,7 +65,9 @@ FloatData.asList() as stdlib.List<IData>
 8.5.asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -74,7 +78,9 @@ FloatData.asMap() as IData[string]
 8.5.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -83,7 +89,9 @@ FloatData.asNumber() as INumberData
 8.5.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
@@ -94,7 +102,9 @@ FloatData.getByte() as byte
 8.5.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
@@ -105,7 +115,9 @@ FloatData.getDouble() as double
 8.5.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
@@ -116,7 +128,9 @@ FloatData.getFloat() as float
 8.5.getFloat();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -129,7 +143,9 @@ FloatData.getId() as byte
 8.5.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
@@ -140,7 +156,9 @@ FloatData.getInt() as int
 8.5.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
@@ -151,7 +169,9 @@ FloatData.getLong() as long
 8.5.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
@@ -162,7 +182,9 @@ FloatData.getShort() as short
 8.5.getShort();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -172,5 +194,7 @@ Return Type: string
 FloatData.getString() as string
 8.5.getString();
 ```
+
+:::
 
 
