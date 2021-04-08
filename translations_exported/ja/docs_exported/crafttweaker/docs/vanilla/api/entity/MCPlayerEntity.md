@@ -14,7 +14,7 @@ MCPlayerEntity extends [MCLivingEntity](/vanilla/api/entity/MCLivingEntity). Tha
 
 ## Methods
 
-### addExhaustion
+:::group{name=addExhaustion}
 
 Return Type: void
 
@@ -27,7 +27,9 @@ MCPlayerEntity.addExhaustion(exhaustion as float) as void
 | exhaustion | float | No Description Provided |
 
 
-### canUseCommandBlock
+:::
+
+:::group{name=canUseCommandBlock}
 
 Return Type: boolean
 
@@ -36,7 +38,9 @@ MCPlayerEntity.canUseCommandBlock() as boolean
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### drop
+:::
+
+:::group{name=drop}
 
 Return Type: boolean
 
@@ -49,7 +53,9 @@ MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 | p_225609_1_ | boolean型 | No Description Provided |
 
 
-### getCurrentItem
+:::
+
+:::group{name=getCurrentItem}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -58,7 +64,9 @@ MCPlayerEntity.getCurrentItem() as IItemStack
 myMCPlayerEntity.getCurrentItem();
 ```
 
-### getFoodLevel
+:::
+
+:::group{name=getFoodLevel}
 
 Return Type: int
 
@@ -67,7 +75,9 @@ MCPlayerEntity.getFoodLevel() as int
 myMCPlayerEntity.getFoodLevel();
 ```
 
-### getInventoryItemStack
+:::
+
+:::group{name=getInventoryItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -80,7 +90,9 @@ MCPlayerEntity.getInventoryItemStack(slotIndex as int) as IItemStack
 | slotIndex | int  | No Description Provided |
 
 
-### getLuck
+:::
+
+:::group{name=getLuck}
 
 Return Type: float
 
@@ -89,7 +101,9 @@ MCPlayerEntity.getLuck() as float
 myMCPlayerEntity.getLuck();
 ```
 
-### getMaxInPortalTime
+:::
+
+:::group{name=getMaxInPortalTime}
 
 Return Type: int
 
@@ -98,7 +112,9 @@ MCPlayerEntity.getMaxInPortalTime() as int
 myMCPlayerEntity.getMaxInPortalTime();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -107,7 +123,9 @@ MCPlayerEntity.getName() as MCTextComponent
 myMCPlayerEntity.getName();
 ```
 
-### getPersistentData
+:::
+
+:::group{name=getPersistentData}
 
 Gets the persisted NBT tag that is saved between deaths. Many mods use this to keep track of if they have given the player an item or not.
 
@@ -118,7 +136,9 @@ MCPlayerEntity.getPersistentData() as MapData
 myMCPlayerEntity.getPersistentData();
 ```
 
-### getPortalCooldown
+:::
+
+:::group{name=getPortalCooldown}
 
 Return Type: int
 
@@ -127,7 +147,9 @@ MCPlayerEntity.getPortalCooldown() as int
 myMCPlayerEntity.getPortalCooldown();
 ```
 
-### getSaturationLevel
+:::
+
+:::group{name=getSaturationLevel}
 
 Return Type: float
 
@@ -136,7 +158,9 @@ MCPlayerEntity.getSaturationLevel() as float
 myMCPlayerEntity.getSaturationLevel();
 ```
 
-### getSleepTimer
+:::
+
+:::group{name=getSleepTimer}
 
 Return Type: int
 
@@ -145,7 +169,9 @@ MCPlayerEntity.getSleepTimer() as int
 myMCPlayerEntity.getSleepTimer();
 ```
 
-### give
+:::
+
+:::group{name=give}
 
 Return Type: void
 
@@ -158,7 +184,9 @@ MCPlayerEntity.give(stack as IItemStack) as void
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### isCreative
+:::
+
+:::group{name=isCreative}
 
 Return Type: boolean
 
@@ -167,7 +195,9 @@ MCPlayerEntity.isCreative() as boolean
 myMCPlayerEntity.isCreative();
 ```
 
-### isFake
+:::
+
+:::group{name=isFake}
 
 Return Type: boolean
 
@@ -176,7 +206,9 @@ MCPlayerEntity.isFake() as boolean
 myMCPlayerEntity.isFake();
 ```
 
-### isPushedByWater
+:::
+
+:::group{name=isPushedByWater}
 
 Return Type: boolean
 
@@ -185,7 +217,9 @@ MCPlayerEntity.isPushedByWater() as boolean
 myMCPlayerEntity.isPushedByWater();
 ```
 
-### isSecondaryUseActive
+:::
+
+:::group{name=isSecondaryUseActive}
 
 Return Type: boolean
 
@@ -194,7 +228,9 @@ MCPlayerEntity.isSecondaryUseActive() as boolean
 myMCPlayerEntity.isSecondaryUseActive();
 ```
 
-### isSpectator
+:::
+
+:::group{name=isSpectator}
 
 Return Type: boolean
 
@@ -203,7 +239,9 @@ MCPlayerEntity.isSpectator() as boolean
 myMCPlayerEntity.isSpectator();
 ```
 
-### isSwimming
+:::
+
+:::group{name=isSwimming}
 
 Return Type: boolean
 
@@ -212,7 +250,9 @@ MCPlayerEntity.isSwimming() as boolean
 myMCPlayerEntity.isSwimming();
 ```
 
-### isUser
+:::
+
+:::group{name=isUser}
 
 Return Type: boolean
 
@@ -221,7 +261,9 @@ MCPlayerEntity.isUser() as boolean
 myMCPlayerEntity.isUser();
 ```
 
-### needFood
+:::
+
+:::group{name=needFood}
 
 Return Type: boolean
 
@@ -230,7 +272,9 @@ MCPlayerEntity.needFood() as boolean
 myMCPlayerEntity.needFood();
 ```
 
-### sendMessage
+:::
+
+:::group{name=sendMessage}
 
 Return Type: void
 
@@ -243,7 +287,9 @@ MCPlayerEntity.sendMessage(text as MCTextComponent) as void
 | テキスト      | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### sendStatusMessage
+:::
+
+:::group{name=sendStatusMessage}
 
 Return Type: void
 
@@ -257,7 +303,9 @@ MCPlayerEntity.sendStatusMessage(text as MCTextComponent, actionBar as boolean) 
 | actionBar | boolean型                                                  | No Description Provided |
 
 
-### setFoodLevel
+:::
+
+:::group{name=setFoodLevel}
 
 Return Type: void
 
@@ -270,7 +318,9 @@ MCPlayerEntity.setFoodLevel(value as int) as void
 | value     | int  | No Description Provided |
 
 
-### unlockRecipes
+:::
+
+:::group{name=unlockRecipes}
 
 Return Type: void
 
@@ -283,7 +333,9 @@ MCPlayerEntity.unlockRecipes(p_193102_1_ as MCResourceLocation[]) as void
 | p_193102_1_ | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)[] | No Description Provided |
 
 
-### updatePersistentData
+:::
+
+:::group{name=updatePersistentData}
 
 Updates the player's persisted data that is saved between deaths.
 
@@ -298,7 +350,9 @@ MCPlayerEntity.updatePersistentData(data as MapData) as void
 | data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
 
 
-### wakeUp
+:::
+
+:::group{name=wakeUp}
 
 Return Type: void
 
@@ -306,6 +360,8 @@ Return Type: void
 MCPlayerEntity.wakeUp() as void
 myMCPlayerEntity.wakeUp();
 ```
+
+:::
 
 
 ## Properties
