@@ -43,7 +43,7 @@ new DoubleData(internal as double) as DoubleData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -52,7 +52,9 @@ DoubleData.asCollection() as ICollectionData
 3.25.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -63,7 +65,9 @@ DoubleData.asList() as stdlib.List<IData>
 3.25.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -74,7 +78,9 @@ DoubleData.asMap() as IData[string]
 3.25.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -83,7 +89,9 @@ DoubleData.asNumber() as INumberData
 3.25.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
@@ -94,7 +102,9 @@ DoubleData.getByte() as byte
 3.25.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
@@ -105,7 +115,9 @@ DoubleData.getDouble() as double
 3.25.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
@@ -116,7 +128,9 @@ DoubleData.getFloat() as float
 3.25.getFloat();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -129,7 +143,9 @@ DoubleData.getId() as byte
 3.25.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
@@ -140,7 +156,9 @@ DoubleData.getInt() as int
 3.25.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
@@ -151,7 +169,9 @@ DoubleData.getLong() as long
 3.25.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
@@ -162,7 +182,9 @@ DoubleData.getShort() as short
 3.25.getShort();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -172,5 +194,7 @@ Return Type: string
 DoubleData.getString() as string
 3.25.getString();
 ```
+
+:::
 
 
