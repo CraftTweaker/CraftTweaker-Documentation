@@ -1,12 +1,5 @@
 {
   "nav": {
-    "Crafttweaker": {
-      "Api": {
-        "Misc": {
-          "Composter": "crafttweaker/api/misc/Composter.md"
-        }
-      }
-    },
     "Vanilla": {
       "Api": {
         "BracketHandlers": "vanilla/api/BracketHandlers.md",
@@ -262,6 +255,9 @@
           "SmithingManager": "vanilla/api/managers/SmithingManager.md",
           "SmokerManager": "vanilla/api/managers/SmokerManager.md",
           "StoneCutterManager": "vanilla/api/managers/StoneCutterManager.md"
+        },
+        "Misc": {
+          "Composter": "vanilla/api/misc/Composter.md"
         },
         "Mods": {
           "ModInfo": "vanilla/api/mods/ModInfo.md",
