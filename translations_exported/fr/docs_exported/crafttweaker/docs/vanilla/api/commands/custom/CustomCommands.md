@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.CustomCommands;
 
 ## Methods
 
-### Argument
+:::group{name=argument}
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
@@ -23,7 +23,9 @@ CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 | name      | string | No Description Provided |
 
 
-### littéral
+:::
+
+:::group{name=literal}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -36,7 +38,9 @@ CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 | name      | string | No Description Provided |
 
 
-### Enregistrer la commande
+:::
+
+:::group{name=registerCommand}
 
 Return Type: void
 
@@ -48,4 +52,6 @@ CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 | ------------ | ------------------------------------------------------------------------------------------- | ----------------------- |
 | constructeur | [format@@0 MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
 
+
+:::
 
