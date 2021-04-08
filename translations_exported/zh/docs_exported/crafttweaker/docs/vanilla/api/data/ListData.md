@@ -44,7 +44,7 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -53,7 +53,9 @@ ListData.asCollection() as ICollectionData
 ["Hello", "World", "!"].asCollection();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -64,7 +66,9 @@ ListData.asMap() as IData[string]
 ["Hello", "World", "!"].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -73,7 +77,9 @@ ListData.asNumber() as INumberData
 ["Hello", "World", "!"].asNumber();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -86,7 +92,9 @@ ListData.getId() as byte
 ["Hello", "World", "!"].getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -96,5 +104,7 @@ Return Type: string
 ListData.getString() as string
 ["Hello", "World", "!"].getString();
 ```
+
+:::
 
 
