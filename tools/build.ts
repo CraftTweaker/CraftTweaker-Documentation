@@ -139,10 +139,11 @@ const buildIndex = (folder: string) => {
                                     // @ts-ignore
                                     let cell = row.children[cellKey];
                                     let cellValue = cell.children[0];
-                                    let value = cellValue.value;
+
                                     if (typeof cellValue === "undefined" || ["text", "link"].indexOf(cellValue.type)===-1) {
                                         continue;
                                     }
+                                    let value = cellValue.value;
                                     if(cellValue.type === "link"){
                                         value = cellValue.children[0].value;
                                     }
