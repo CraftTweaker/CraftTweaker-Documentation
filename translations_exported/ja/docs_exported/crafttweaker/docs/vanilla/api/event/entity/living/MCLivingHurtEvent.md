@@ -24,7 +24,7 @@ MCLivingHurtEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Methods
 
-### getAmount
+:::group{name=getAmount}
 
 Gets the amount of damage.
 
@@ -35,7 +35,9 @@ MCLivingHurtEvent.getAmount() as float
 event.getAmount();
 ```
 
-### getSource
+:::
+
+:::group{name=getSource}
 
 Gets the source of the damage.
 
@@ -46,7 +48,9 @@ MCLivingHurtEvent.getSource() as DamageSource
 event.getSource();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the amount of damage.
 
@@ -61,6 +65,8 @@ event.setAmount(0.5);
 | --------- | ----- | --------------------- |
 | amount    | float | The amount of damage. |
 
+
+:::
 
 
 ## Properties
