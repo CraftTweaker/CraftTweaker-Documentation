@@ -10,7 +10,7 @@ import crafttweaker.api.block.material.MCMaterial;
 
 ## Methoden
 
-### blocksMovement
+:::group{name=blocksMovement}
 
 Returns if this material is considered solid or not
 
@@ -21,7 +21,9 @@ MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
 
-### getColor
+:::
+
+:::group{name=getColor}
 
 Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
@@ -32,7 +34,9 @@ MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
 
-### isFlammable
+:::
+
+:::group{name=isFlammable}
 
 Returns if the block can burn or not.
 
@@ -43,7 +47,9 @@ MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
 
-### isLiquid
+:::
+
+:::group{name=isLiquid}
 
 Returns if blocks of these materials are liquids.
 
@@ -54,7 +60,9 @@ MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
 
-### isOpaque
+:::
+
+:::group{name=isOpaque}
 
 Indicate if the material is opaque
 
@@ -65,7 +73,9 @@ MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
 
-### isReplaceable
+:::
+
+:::group{name=isReplaceable}
 
 Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
@@ -76,7 +86,9 @@ MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
 
-### isSolid
+:::
+
+:::group{name=isSolid}
 
 Returns true if the block is a considered solid. This is true by default.
 
@@ -86,6 +98,8 @@ Return Type: boolean
 MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
+
+:::
 
 
 ## Properties
