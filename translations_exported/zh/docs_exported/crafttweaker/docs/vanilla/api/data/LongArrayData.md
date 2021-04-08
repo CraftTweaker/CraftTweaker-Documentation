@@ -37,7 +37,7 @@ new LongArrayData(internal as long[]) as LongArrayData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -46,7 +46,9 @@ LongArrayData.asCollection() as ICollectionData
 [100000, 800000, 50000].asCollection();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -57,7 +59,9 @@ LongArrayData.asMap() as IData[string]
 [100000, 800000, 50000].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -66,7 +70,9 @@ LongArrayData.asNumber() as INumberData
 [100000, 800000, 50000].asNumber();
 ```
 
-### contains #容器
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -82,7 +88,9 @@ LongArrayData.contains(data as IData) as boolean
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -95,7 +103,9 @@ LongArrayData.getId() as byte
 [100000, 800000, 50000].getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -105,5 +115,7 @@ Return Type: string
 LongArrayData.getString() as string
 [100000, 800000, 50000].getString();
 ```
+
+:::
 
 
