@@ -18,7 +18,7 @@ MCPlayerTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Th
 
 ## 方法
 
-### getPlayer
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
@@ -26,6 +26,8 @@ Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 MCPlayerTickEvent.getPlayer() as MCPlayerEntity
 myMCPlayerTickEvent.getPlayer();
 ```
+
+:::
 
 
 ## 参数
