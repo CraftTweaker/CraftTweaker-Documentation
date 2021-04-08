@@ -12,7 +12,7 @@ import crafttweaker.api.ILogger;
 
 ## Methoden
 
-### debug
+:::group{name=debug}
 
 Logs a debug message.
 
@@ -28,7 +28,9 @@ logger.debug("message");
 | message   | string | message to be logged. |
 
 
-### error
+:::
+
+:::group{name=error}
 
 Logs an error message.
 
@@ -44,7 +46,9 @@ logger.error("message");
 | message   | string | message to be logged. |
 
 
-### info
+:::
+
+:::group{name=info}
 
 Logs an info message.
 
@@ -60,7 +64,9 @@ logger.info("message");
 | message   | string | message to be logged. |
 
 
-### trace
+:::
+
+:::group{name=trace}
 
 Logs a trace message.
 
@@ -76,7 +82,9 @@ logger.trace("message");
 | message   | string | message to be logged |
 
 
-### warning
+:::
+
+:::group{name=warning}
 
 Logs a warning message.
 
@@ -91,5 +99,7 @@ logger.warning("message");
 | --------- | ------ | --------------------- |
 | message   | string | message to be logged. |
 
+
+:::
 
 
