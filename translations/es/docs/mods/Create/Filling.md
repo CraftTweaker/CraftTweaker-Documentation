@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The following script will remove all Filling recipes that output Redstone.
+The follow script will remove all Filling recipes that output Redstone.
 
 ```zenscript
 // <recipetype:create:filling>.removeRecipe(IItemStack output)
