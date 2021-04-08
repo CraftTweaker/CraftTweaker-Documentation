@@ -13,7 +13,7 @@ The following script will add a recipe that will output a Gold Ingot by Smelting
 
 ## Remove Recipes
 
-The following script will remove all Furnace recipes that output a Gold Ingot.
+The follow script will remove all Furnace recipes that output a Gold Ingot.
 
 ```zenscript
 // <recipetype:thermal:furnace>.removeRecipe(IItemStack... output);
