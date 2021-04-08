@@ -43,7 +43,7 @@ new ShortData(internal as short) as ShortData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -52,7 +52,9 @@ ShortData.asCollection() as ICollectionData
 1058.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -63,7 +65,9 @@ ShortData.asList() as stdlib.List<IData>
 1058.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -74,7 +78,9 @@ ShortData.asMap() as IData[string]
 1058.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -83,7 +89,9 @@ ShortData.asNumber() as INumberData
 1058.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
@@ -94,7 +102,9 @@ ShortData.getByte() as byte
 1058.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
@@ -105,7 +115,9 @@ ShortData.getDouble() as double
 1058.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
@@ -116,7 +128,9 @@ ShortData.getFloat() as float
 1058.getFloat();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -129,7 +143,9 @@ ShortData.getId() as byte
 1058.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
@@ -140,7 +156,9 @@ ShortData.getInt() as int
 1058.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
@@ -151,7 +169,9 @@ ShortData.getLong() as long
 1058.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
@@ -162,7 +182,9 @@ ShortData.getShort() as short
 1058.getShort();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -172,5 +194,7 @@ Return Type: string
 ShortData.getString() as string
 1058.getString();
 ```
+
+:::
 
 
