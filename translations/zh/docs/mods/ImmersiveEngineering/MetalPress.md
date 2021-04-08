@@ -19,7 +19,7 @@ The following script will add a recipe to the MEtal Press that will take Paper, 
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Metal Press that output two Empty Casing.
+The follow script will remove all recipes from the Metal Press that output two Empty Casing.
 
 ```zenscript
 // <recipetype:immersiveengineering:metal_press>.removeRecipe(IItemStack output)
