@@ -10,7 +10,7 @@ import crafttweaker.api.block.material.MCMaterialColor;
 
 ## Methoden
 
-### getMapColor
+:::group{name=getMapColor}
 
 Return Type: int
 
@@ -22,5 +22,7 @@ MCMaterialColor.getMapColor(index as int) as int
 | --------- | ---- | ----------------------- |
 | index     | int  | No Description Provided |
 
+
+:::
 
 
