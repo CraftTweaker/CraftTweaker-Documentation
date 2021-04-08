@@ -20,7 +20,7 @@ import crafttweaker.api.event.entity.player.xp.MCXpChangeEvent;
 
 ## Methoden
 
-### getXp
+:::group{name=getXp}
 
 Gets the amount of xp that the player's xp counter is being changed by.
 
@@ -31,7 +31,9 @@ MCXpChangeEvent.getXp() as int
 event.getXp();
 ```
 
-### setXp
+:::
+
+:::group{name=setXp}
 
 Sets the amount of xp to change the player's xp counter by.
 
@@ -47,6 +49,8 @@ event.setXp(15);
 | amount    | int  | The amount of xp that the player's xp counter should be |
  changed by. |
 
+
+:::
 
 
 ## Properties
