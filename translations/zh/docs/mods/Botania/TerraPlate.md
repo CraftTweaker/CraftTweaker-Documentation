@@ -6,7 +6,7 @@ The Terra Plate is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManag
 
 #### 添加配方
 
-The following script will add a recipe to the Terra plate that will use 2000 Mana, and output a Diamond after giving the Terra Plate a piece of Dirt.
+The follow script will add a recipe to the Terra plate that will use 2000 Mana, and output a Diamond after giving the Terra Plate a piece of Dirt.
 
 ```zenscript
 // <recipetype:botania:terra_plate>.addRecipe(String name, IItemStack output, int mana, IIngredient... inputs)
@@ -16,7 +16,7 @@ The following script will add a recipe to the Terra plate that will use 2000 Man
 
 #### Remove Recipes
 
-The following script will remove all Terra Plate recipes that output a Terrasteel Ingot.
+The follow script will remove all Terra Plate recipes that output a Terrasteel Ingot.
 
 ```zenscript
 // <recipetype:botania:terra_plate>.removeRecipe(IItemStack output);
