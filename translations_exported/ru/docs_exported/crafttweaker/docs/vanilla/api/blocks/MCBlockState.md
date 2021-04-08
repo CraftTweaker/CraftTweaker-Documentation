@@ -17,7 +17,7 @@ import crafttweaker.api.blocks.MCBlockState;
 
 ## Methods
 
-### getAllowedValuesForProperty
+:::group{name=getAllowedValuesForProperty}
 
 Return Type: stdlib.List&lt;string&gt;
 
@@ -30,7 +30,9 @@ MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 | name     | string | No Description Provided |
 
 
-### getProperties
+:::
+
+:::group{name=getProperties}
 
 Return Type: string[string]
 
@@ -39,7 +41,9 @@ MCBlockState.getProperties() as string[string]
 myMCBlockState.getProperties();
 ```
 
-### getPropertyNames
+:::
+
+:::group{name=getPropertyNames}
 
 Return Type: stdlib.List&lt;string&gt;
 
@@ -48,7 +52,9 @@ MCBlockState.getPropertyNames() as stdlib.List<string>
 myMCBlockState.getPropertyNames();
 ```
 
-### getPropertyValue
+:::
+
+:::group{name=getPropertyValue}
 
 Return Type: string
 
@@ -61,7 +67,9 @@ MCBlockState.getPropertyValue(name as string) as string
 | name     | string | No Description Provided |
 
 
-### hasProperty
+:::
+
+:::group{name=hasProperty}
 
 Return Type: boolean
 
@@ -74,7 +82,9 @@ MCBlockState.hasProperty(name as string) as boolean
 | name     | string | No Description Provided |
 
 
-### withProperty
+:::
+
+:::group{name=withProperty}
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
@@ -87,6 +97,8 @@ MCBlockState.withProperty(name as string, value as string) as MCBlockState
 | name     | string | No Description Provided |
 | value    | string | No Description Provided |
 
+
+:::
 
 
 ## Свойства
