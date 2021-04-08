@@ -37,7 +37,7 @@ new BoolData(internal as boolean) as BoolData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -46,7 +46,9 @@ BoolData.asCollection() as ICollectionData
 true.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -57,7 +59,9 @@ BoolData.asList() as stdlib.List<IData>
 true.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -68,7 +72,9 @@ BoolData.asMap() as IData[string]
 true.asMap();
 ```
 
-### contains #容器
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -84,7 +90,9 @@ true.contains("Display");
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### getByteData
+:::
+
+:::group{name=getByteData}
 
 Converts this BoolData to a [ByteData](/vanilla/api/data/ByteData) object. This will be used when this Data is converted to NBT
 
@@ -95,7 +103,9 @@ BoolData.getByteData() as ByteData
 true.getByteData();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -108,7 +118,9 @@ BoolData.getId() as byte
 true.getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -118,5 +130,7 @@ Return Type: string
 BoolData.getString() as string
 true.getString();
 ```
+
+:::
 
 
