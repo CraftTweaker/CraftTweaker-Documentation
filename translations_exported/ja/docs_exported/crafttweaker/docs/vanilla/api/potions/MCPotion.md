@@ -10,7 +10,7 @@ import crafttweaker.api.potion.MCPotion;
 
 ## Methods
 
-### getNamePrefixed
+:::group{name=getNamePrefixed}
 
 Return Type: string
 
@@ -22,6 +22,8 @@ MCPotion.getNamePrefixed(name as string) as string
 | --------- | ------ | ----------------------- |
 | name      | string | No Description Provided |
 
+
+:::
 
 
 ## Properties
