@@ -44,7 +44,7 @@ new MapData(map as IData[string]) as MapData
 
 ## 方法
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -53,7 +53,9 @@ MapData.asCollection() as ICollectionData
 {Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -64,7 +66,9 @@ MapData.asList() as stdlib.List<IData>
 {Hello : "World", Somewhere: "Over the rainbow"}.asList();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -73,7 +77,9 @@ MapData.asNumber() as INumberData
 {Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
 ```
 
-### contains #容器
+:::
+
+:::group{name=contains}
 
 检查地图是否包含给定的密钥。
 
@@ -89,7 +95,9 @@ MapData.contains(key as string) as boolean
 | key | string | 要搜索的密钥 |
 
 
-### getAt
+:::
+
+:::group{name=getAt}
 
 检索与密钥相关的值
 
@@ -105,7 +113,9 @@ MapData.getAt(key as string) as IData
 | key | string | 要搜索的密钥 |
 
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
@@ -118,7 +128,9 @@ MapData.getId() as byte
 {Hello : "World", Somewhere: "Over the rainbow"}.getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
@@ -129,7 +141,9 @@ MapData.getString() as string
 {Hello : "World", Somewhere: "Over the rainbow"}.getString();
 ```
 
-### merge #合并
+:::
+
+:::group{name=merge}
 
 合并此地图和其他地图。 如果来自此地图和其他地图的条目共享，则尝试合并这些值。 如果无法工作，则使用其他地图的值。
 
@@ -145,7 +159,9 @@ MapData.merge(other as MapData) as MapData
 | other | [MapData #地图数据](/vanilla/api/data/MapData) | 另一张地图。 |
 
 
-### put #放置
+:::
+
+:::group{name=put}
 
 添加给定键值或创建一个新条目，如果它以前不存在。
 
@@ -162,7 +178,9 @@ MapData.put(key as string, value as IData) as IData
 | value | [IData](/vanilla/api/data/IData) | 要设置的值    |
 
 
-### putAll #放置全部
+:::
+
+:::group{name=putAll}
 
 将给定地图中的所有条目添加到这个条目。 可以覆盖现有密钥。
 
@@ -178,7 +196,9 @@ MapData.putAll(map as IData[string]) as void
 | map | [IData](/vanilla/api/data/IData)[string] | 要添加到此地图的其他条目 |
 
 
-### remove
+:::
+
+:::group{name=remove}
 
 从地图中移除给定键的条目
 
@@ -194,10 +214,12 @@ MapData.remove(key as string) as void
 | key | string | 要删除的条目的密钥 |
 
 
+:::
+
 
 ## 运算符
 
-### ADD
+:::group{name=ADD}
 
 将给定的 IData 中的所有条目添加到此条目
 
@@ -205,7 +227,7 @@ MapData.remove(key as string) as void
 myMapData + data as IData
 ```
 
-
+:::
 
 
 ## 参数
