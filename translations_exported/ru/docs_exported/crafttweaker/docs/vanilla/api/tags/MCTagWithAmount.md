@@ -15,7 +15,7 @@ MCTagWithAmount implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### getAmount
+:::group{name=getAmount}
 
 Return Type: int
 
@@ -24,7 +24,9 @@ MCTagWithAmount.getAmount() as int
 myMCTagWithAmount.getAmount();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
@@ -33,7 +35,9 @@ MCTagWithAmount.getTag() as MCTag<T>
 myMCTagWithAmount.getTag();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
@@ -45,6 +49,8 @@ MCTagWithAmount.setAmount(amount as int) as MCTagWithAmount<T>
 | -------- | --- | ----------------------- |
 | amount   | int | No Description Provided |
 
+
+:::
 
 
 ## Свойства
