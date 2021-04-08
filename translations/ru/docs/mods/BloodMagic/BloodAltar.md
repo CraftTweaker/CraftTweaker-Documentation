@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Blood Altar that output a Reinforced Slate.
+The follow script will remove all recipes from the Blood Altar that output a Reinforced Slate.
 
 ```zenscript
 // <recipetype:bloodmagic:altar>.removeRecipe(IItemStack output);
