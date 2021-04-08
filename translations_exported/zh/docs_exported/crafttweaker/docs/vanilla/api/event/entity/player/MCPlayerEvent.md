@@ -18,7 +18,7 @@ MCPlayerEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEvent). 
 
 ## 方法
 
-### getPlayer
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
@@ -26,6 +26,8 @@ Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 MCPlayerEvent.getPlayer() as MCPlayerEntity
 myMCPlayerEvent.getPlayer();
 ```
+
+:::
 
 
 ## 参数
