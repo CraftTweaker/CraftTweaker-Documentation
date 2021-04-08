@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.MCResultConsumer;
 
 ## 方法
 
-### onCommand完成
+:::group{name=onCommandComplete}
 
 Return Type: void
 
@@ -24,5 +24,7 @@ MCResultConsumer.onCommandComplete(commandContext as MCCommandContext, success a
 | success | boolean                                                           | No Description Provided |
 | result  | int                                                               | No Description Provided |
 
+
+:::
 
 
