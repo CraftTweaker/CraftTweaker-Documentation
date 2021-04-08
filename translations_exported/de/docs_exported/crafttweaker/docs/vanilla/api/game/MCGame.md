@@ -12,7 +12,7 @@ import crafttweaker.api.game.MCGame;
 
 ## Methoden
 
-### localize
+:::group{name=localize}
 
 
 
@@ -27,6 +27,8 @@ game.localize("gui.up");
 | -------------- | ------ | ----------------------- |
 | translationKey | string | No Description Provided |
 
+
+:::
 
 
 ## Properties
