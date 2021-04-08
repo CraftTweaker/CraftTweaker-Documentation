@@ -29,7 +29,7 @@ new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSour
 
 ## Methods
 
-### zastosuj
+:::group{name=apply}
 
 Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -42,7 +42,9 @@ MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSou
 | kontekst  | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -55,7 +57,9 @@ MCRedirectModifier.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -64,7 +68,9 @@ MCRedirectModifier.hashCode() as int
 myMCRedirectModifier.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -73,15 +79,17 @@ MCRedirectModifier.toString() as string
 myMCRedirectModifier.toString();
 ```
 
+:::
+
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCRedirectModifier == o jako obiekt
 ```
 
-
+:::
 
 
