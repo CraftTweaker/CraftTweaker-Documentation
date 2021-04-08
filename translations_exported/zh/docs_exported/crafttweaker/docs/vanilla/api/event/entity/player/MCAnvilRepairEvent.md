@@ -18,7 +18,7 @@ MCAnvilRepairEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## 方法
 
-### getBreakChance
+:::group{name=getBreakChance}
 
 Return Type: float
 
@@ -27,7 +27,9 @@ MCAnvilRepairEvent.getBreakChance() as float
 myMCAnvilRepairEvent.getBreakChance();
 ```
 
-### getIngredientInput
+:::
+
+:::group{name=getIngredientInput}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -36,7 +38,9 @@ MCAnvilRepairEvent.getIngredientInput() as IItemStack
 myMCAnvilRepairEvent.getIngredientInput();
 ```
 
-### getItemInput
+:::
+
+:::group{name=getItemInput}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -45,7 +49,9 @@ MCAnvilRepairEvent.getItemInput() as IItemStack
 myMCAnvilRepairEvent.getItemInput();
 ```
 
-### getItemResult
+:::
+
+:::group{name=getItemResult}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -54,7 +60,9 @@ MCAnvilRepairEvent.getItemResult() as IItemStack
 myMCAnvilRepairEvent.getItemResult();
 ```
 
-### setBreakChance
+:::
+
+:::group{name=setBreakChance}
 
 Return Type: void
 
@@ -66,6 +74,8 @@ MCAnvilRepairEvent.setBreakChance(breakChance as float) as void
 | ----------- | ----- | ----------------------- |
 | breakChance | float | No Description Provided |
 
+
+:::
 
 
 ## 参数
