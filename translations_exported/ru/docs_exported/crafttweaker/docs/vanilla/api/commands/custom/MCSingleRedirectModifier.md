@@ -29,7 +29,7 @@ new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) 
 
 ## Methods
 
-### применить
+:::group{name=apply}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -42,7 +42,9 @@ MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 | контекст | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -55,7 +57,9 @@ MCSingleRedirectModifier.equals(o as Object) as boolean
 | o        | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -64,7 +68,9 @@ MCSingleRedirectModifier.hashCode() as int
 myMCSingleRedirectModifier.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -73,15 +79,17 @@ MCSingleRedirectModifier.toString() as string
 myMCSingleRedirectModifier.toString();
 ```
 
+:::
+
 
 ## Операторы
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSingleRedirectModifier == o как объект
 ```
 
-
+:::
 
 
