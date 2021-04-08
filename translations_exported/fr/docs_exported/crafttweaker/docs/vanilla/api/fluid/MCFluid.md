@@ -10,7 +10,7 @@ import crafttweaker.api.fluid.MCFluid;
 
 ## Methods
 
-### format@@0 makeStack
+:::group{name=makeStack}
 
 Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amount of fluid.
 
@@ -25,6 +25,8 @@ myMCFluid.makeStack(1000);
 | --------- | ---- | ----------------------- |
 | amount    | int  | No Description Provided |
 
+
+:::
 
 
 ## Properties
