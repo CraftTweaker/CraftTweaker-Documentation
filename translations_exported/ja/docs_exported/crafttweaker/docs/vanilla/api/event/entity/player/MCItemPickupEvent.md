@@ -18,7 +18,7 @@ MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 
 ## Methods
 
-### getStack
+:::group{name=getStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -26,6 +26,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCItemPickupEvent.getStack() as IItemStack
 myMCItemPickupEvent.getStack();
 ```
+
+:::
 
 
 ## Properties
