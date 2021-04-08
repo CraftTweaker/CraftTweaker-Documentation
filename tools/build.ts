@@ -143,15 +143,15 @@ const buildIndex = (folder: string) => {
                                     if (typeof cellValue === "undefined" || ["text", "link"].indexOf(cellValue.type)===-1) {
                                         continue;
                                     }
-                                    let value = cellValue.value;
+                                    let actualValue = cellValue.value;
                                     if(cellValue.type === "link"){
-                                        value = cellValue.children[0].value;
+                                        actualValue = cellValue.children[0].value;
                                     }
                                     // TODO look at filtering out "No description provided", hard to do due to translations though
                                     docs.push({
-                                        title: value,
+                                        title: actualValue,
                                         location: file,
-                                        text: value
+                                        text: actualValue
                                     });
 
                                 }
