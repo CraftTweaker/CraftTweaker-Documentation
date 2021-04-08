@@ -20,7 +20,7 @@ MCRootCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommand
 
 ## Methoden
 
-### addChild
+:::group{name=addChild}
 
 Return Type: void
 
@@ -33,7 +33,9 @@ MCRootCommandNode.addChild(node as MCCommandNode) as void
 | knoten    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### canUse
+:::
+
+:::group{name=canUse}
 
 Return Type: boolean
 
@@ -46,7 +48,9 @@ MCRootCommandNode.canUse(source as MCCommandSource) as boolean
 | quell     | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### createBuilder
+:::
+
+:::group{name=createBuilder}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -55,7 +59,9 @@ MCRootCommandNode.createBuilder() as MCArgumentBuilder
 myMCRootCommandNode.createBuilder();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +74,9 @@ MCRootCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### findAmbiguitäten
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -81,7 +89,9 @@ MCRootCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | konsumenten | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -94,7 +104,9 @@ MCRootCommandNode.getChild(name as string) as MCCommandNode
 | name      | string | No Description Provided |
 
 
-### getChildren
+:::
+
+:::group{name=getChildren}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -103,7 +115,9 @@ MCRootCommandNode.getChildren() as Collection<MCCommandNode>
 myMCRootCommandNode.getChildren();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
@@ -112,7 +126,9 @@ MCRootCommandNode.getCommand() as MCCommand
 myMCRootCommandNode.getCommand();
 ```
 
-### getExamples
+:::
+
+:::group{name=getExamples}
 
 Return Type: Collection&lt;string&gt;
 
@@ -121,7 +137,9 @@ MCRootCommandNode.getExamples() as Collection<string>
 myMCRootCommandNode.getExamples();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
@@ -130,7 +148,9 @@ MCRootCommandNode.getName() as string
 myMCRootCommandNode.getName();
 ```
 
-### getUmleitung
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -139,7 +159,9 @@ MCRootCommandNode.getRedirect() as MCCommandNode
 myMCRootCommandNode.getRedirect();
 ```
 
-### getRedirectModifizierer
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
@@ -148,7 +170,9 @@ MCRootCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCRootCommandNode.getRedirectModifier();
 ```
 
-### getRelevantNodes
+:::
+
+:::group{name=getRelevantNodes}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -161,7 +185,9 @@ MCRootCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 | input     | string | No Description Provided |
 
 
-### getAnforderung
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -170,7 +196,9 @@ MCRootCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCRootCommandNode.getRequirement();
 ```
 
-### getUsageText
+:::
+
+:::group{name=getUsageText}
 
 Return Type: string
 
@@ -179,7 +207,9 @@ MCRootCommandNode.getUsageText() as string
 myMCRootCommandNode.getUsageText();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -188,7 +218,9 @@ MCRootCommandNode.hashCode() as int
 myMCRootCommandNode.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
@@ -197,7 +229,9 @@ MCRootCommandNode.isFork() as boolean
 myMCRootCommandNode.isFork();
 ```
 
-### isValidInput
+:::
+
+:::group{name=isValidInput}
 
 Return Type: boolean
 
@@ -210,7 +244,9 @@ MCRootCommandNode.isValidInput(input as string) as boolean
 | input     | string | No Description Provided |
 
 
-### listSuggestions
+:::
+
+:::group{name=listSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -224,7 +260,9 @@ MCRootCommandNode.listSuggestions(context as MCCommandContext, builder as MCSugg
 | bauer     | [MCSuggestions-Builder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: void
 
@@ -238,7 +276,9 @@ MCRootCommandNode.parse(input as string, contextBuilder as MCCommandContextBuild
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -247,23 +287,25 @@ MCRootCommandNode.toString() as string
 myMCRootCommandNode.toString();
 ```
 
+:::
+
 
 ## Operatoren
 
-### COMPARE
+:::group{name=COMPARE}
 
 ```zenscript
 myMCRootCommandNode < o as MCCommandNode
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCRootCommandNode == o as Object
 ```
 
-
+:::
 
 
