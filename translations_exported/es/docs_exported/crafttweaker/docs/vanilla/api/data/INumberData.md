@@ -30,7 +30,7 @@ INumberData implements the following interfaces. That means all methods defined 
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -39,7 +39,9 @@ INumberData.asCollection() as ICollectionData
 1.asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
@@ -50,7 +52,9 @@ INumberData.asList() as stdlib.List<IData>
 1.asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
@@ -61,7 +65,9 @@ INumberData.asMap() as IData[string]
 1.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
@@ -70,7 +76,9 @@ INumberData.asNumber() as INumberData
 1.asNumber();
 ```
 
-### asString
+:::
+
+:::group{name=asString}
 
 Gets the String representation of this IData
 
@@ -81,7 +89,9 @@ INumberData.asString() as string
 1.asString();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
@@ -97,7 +107,9 @@ INumberData.contains(data as IData) as boolean
 | data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### copy
+:::
+
+:::group{name=copy}
 
 Makes a copy of this IData.
 
@@ -110,7 +122,9 @@ INumberData.copy() as IData
 1.copy();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
@@ -121,7 +135,9 @@ INumberData.getByte() as byte
 1.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
@@ -132,7 +148,9 @@ INumberData.getDouble() as double
 1.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
@@ -143,7 +161,9 @@ INumberData.getFloat() as float
 1.getFloat();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
@@ -156,7 +176,9 @@ INumberData.getId() as byte
 1.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
@@ -167,7 +189,9 @@ INumberData.getInt() as int
 1.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
@@ -178,7 +202,9 @@ INumberData.getLong() as long
 1.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
@@ -189,7 +215,9 @@ INumberData.getShort() as short
 1.getShort();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
@@ -199,5 +227,7 @@ Return Type: string
 INumberData.getString() as string
 1.getString();
 ```
+
+:::
 
 
