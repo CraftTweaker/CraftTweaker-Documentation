@@ -10,7 +10,7 @@ import crafttweaker.api.recipes.WrapperRecipe;
 
 ## Methods
 
-### canFit
+:::group{name=canFit}
 
 Return Type: boolean
 
@@ -23,6 +23,8 @@ WrapperRecipe.canFit(width as int, height as int) as boolean
 | width     | int  | No Description Provided |
 | height    | int  | No Description Provided |
 
+
+:::
 
 
 ## Properties
