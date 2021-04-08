@@ -18,7 +18,7 @@ MCItemSmeltedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## 方法
 
-### getSmelted
+:::group{name=getSmelted}
 
 Gets the smelted item (the output stack)
 
@@ -28,6 +28,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCItemSmeltedEvent.getSmelted() as IItemStack
 myMCItemSmeltedEvent.getSmelted();
 ```
+
+:::
 
 
 ## 参数
