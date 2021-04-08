@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and Lava (flui
 
 #### Remove Recipes for Items
 
-The following script will remove all Emptying recipes that output a Bucket.
+The follow script will remove all Emptying recipes that output a Bucket.
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IItemStack output)
@@ -28,7 +28,7 @@ The following script will remove all Emptying recipes that output a Bucket.
 
 #### Remove Recipes for Fluids
 
-The following script will remove all Compacting recipes that output Honey (Fluid)
+The follow script will remove all Compacting recipes that output Honey (Fluid)
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IFluidStack output)
