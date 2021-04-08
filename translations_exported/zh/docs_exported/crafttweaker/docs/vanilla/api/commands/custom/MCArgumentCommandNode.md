@@ -20,7 +20,7 @@ MCArgumentCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCom
 
 ## 方法
 
-### addChild
+:::group{name=addChild}
 
 Return Type: void
 
@@ -33,7 +33,9 @@ MCArgumentCommandNode.addChild(node as MCCommandNode) as void
 | 节点 | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### canUse
+:::
+
+:::group{name=canUse}
 
 Return Type: boolean
 
@@ -46,7 +48,9 @@ MCArgumentCommandNode.canUse(source as MCCommandSource) as boolean
 | 来源 | [MC命令源](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### createBuilder
+:::
+
+:::group{name=createBuilder}
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
@@ -55,7 +59,9 @@ MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
 myMCArgumentCommandNode.createBuilder();
 ```
 
-### equals #等于
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +74,9 @@ MCArgumentCommandNode.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### 查找模糊性
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -81,7 +89,9 @@ MCArgumentCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | 消费者 | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -94,7 +104,9 @@ MCArgumentCommandNode.getChild(name as string) as MCCommandNode
 | name | string | No Description Provided |
 
 
-### getChildren
+:::
+
+:::group{name=getChildren}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -103,7 +115,9 @@ MCArgumentCommandNode.getChildren() as Collection<MCCommandNode>
 myMCArgumentCommandNode.getChildren();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
@@ -112,7 +126,9 @@ MCArgumentCommandNode.getCommand() as MCCommand
 myMCArgumentCommandNode.getCommand();
 ```
 
-### getCustomSuggestions
+:::
+
+:::group{name=getCustomSuggestions}
 
 Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
 
@@ -121,7 +137,9 @@ MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
 myMCArgumentCommandNode.getCustomSuggestions();
 ```
 
-### getExamples
+:::
+
+:::group{name=getExamples}
 
 Return Type: Collection&lt;string&gt;
 
@@ -130,7 +148,9 @@ MCArgumentCommandNode.getExamples() as Collection<string>
 myMCArgumentCommandNode.getExamples();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
@@ -139,7 +159,9 @@ MCArgumentCommandNode.getName() as string
 myMCArgumentCommandNode.getName();
 ```
 
-### 获取重定向
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -148,7 +170,9 @@ MCArgumentCommandNode.getRedirect() as MCCommandNode
 myMCArgumentCommandNode.getRedirect();
 ```
 
-### 获取重定向修改器
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
@@ -157,7 +181,9 @@ MCArgumentCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCArgumentCommandNode.getRedirectModifier();
 ```
 
-### getRelevantNodes
+:::
+
+:::group{name=getRelevantNodes}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -170,7 +196,9 @@ MCArgumentCommandNode.getRelevantNodes(input as string) as Collection<MCCommandN
 | input（输入） | string | No Description Provided |
 
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -179,7 +207,9 @@ MCArgumentCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCArgumentCommandNode.getRequirement();
 ```
 
-### getUsageText
+:::
+
+:::group{name=getUsageText}
 
 Return Type: string
 
@@ -188,7 +218,9 @@ MCArgumentCommandNode.getUsageText() as string
 myMCArgumentCommandNode.getUsageText();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
@@ -197,7 +229,9 @@ MCArgumentCommandNode.hashCode() as int
 myMCArgumentCommandNode.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
@@ -206,7 +240,9 @@ MCArgumentCommandNode.isFork() as boolean
 myMCArgumentCommandNode.isFork();
 ```
 
-### listSuggestions
+:::
+
+:::group{name=listSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -220,7 +256,9 @@ MCArgumentCommandNode.listSuggestions(context as MCCommandContext, builder as MC
 | 生成器  | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: void
 
@@ -234,7 +272,9 @@ MCArgumentCommandNode.parse(input as string, contextBuilder as MCCommandContextB
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
@@ -243,23 +283,25 @@ MCArgumentCommandNode.toString() as string
 myMCArgumentCommandNode.toString();
 ```
 
+:::
+
 
 ## 运算符
 
-### COMPARE
+:::group{name=COMPARE}
 
 ```zenscript
 myMCArgumentCommandNode < o as MCCommandNode
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCArgumentCommandNode == o as Object
 ```
 
-
+:::
 
 
