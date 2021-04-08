@@ -38,7 +38,7 @@ The following script will add a recipe that will output 2500Mb of Creosote (Flui
 
 #### Remove Item Recipes
 
-The following script will remove all recipes from the Squeezer that output HOP Graphite Dust.
+The follow script will remove all recipes from the Squeezer that output HOP Graphite Dust.
 
 ```zenscript
 //<recipetype:immersiveengineering:squeezer>.removeRecipe(IItemStack output)
@@ -48,7 +48,7 @@ The following script will remove all recipes from the Squeezer that output HOP G
 
 #### Remove FluidStack Recipes
 
-The following script will remove all recipes from the Squeezer that output exactly 60Mb of Plant Oil.
+The follow script will remove all recipes from the Squeezer that output exactly 60Mb of Plant Oil.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(IFluidStack output)
@@ -58,7 +58,7 @@ The following script will remove all recipes from the Squeezer that output exact
 
 #### Remove Fluid Recipes
 
-The following script will remove all recipes from the Squeezer that output any amount of Plant Oil.
+The follow script will remove all recipes from the Squeezer that output any amount of Plant Oil.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(MCFluid output)
