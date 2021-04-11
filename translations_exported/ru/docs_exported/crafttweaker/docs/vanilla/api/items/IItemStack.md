@@ -82,6 +82,17 @@ IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
 
 :::
 
+:::group{name=asImmutable}
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.asImmutable() as IItemStack
+<item:minecraft:dirt>.asImmutable();
+```
+
+:::
+
 :::group{name=asVanillaIngredient}
 
 Create a Vanilla ingredient matching this one.
@@ -161,6 +172,17 @@ IItemStack.getDefinition() as MCItemDefinition
 
 :::
 
+:::group{name=getImmutableInternal}
+
+Return Type: [ItemStack](/vanilla/api/item/ItemStack)
+
+```zenscript
+IItemStack.getImmutableInternal() as ItemStack
+<item:minecraft:dirt>.getImmutableInternal();
+```
+
+:::
+
 :::group{name=getInternal}
 
 Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
@@ -199,6 +221,17 @@ Return Type: boolean
 ```zenscript
 IItemStack.isFood() as boolean
 <item:minecraft:dirt>.isFood();
+```
+
+:::
+
+:::group{name=isImmutable}
+
+Return Type: boolean
+
+```zenscript
+IItemStack.isImmutable() as boolean
+<item:minecraft:dirt>.isImmutable();
 ```
 
 :::
@@ -438,6 +471,7 @@ myIItemStack | other as IIngredient
 | isCrossbow     | boolean                                                                  | true         | false        |
 | isEnchantable  | boolean                                                                  | true         | false        |
 | isEnchanted    | boolean                                                                  | true         | false        |
+| isImmutable    | boolean                                                                  | true         | false        |
 | items          | [IItemStack](/vanilla/api/items/IItemStack)[]                            | true         | false        |
 | maxDamage      | int                                                                      | true         | false        |
 | maxStackSize   | int                                                                      | true         | false        |
