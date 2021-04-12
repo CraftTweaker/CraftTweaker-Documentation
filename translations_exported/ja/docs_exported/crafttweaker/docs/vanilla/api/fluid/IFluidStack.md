@@ -21,6 +21,17 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 ## Methods
 
+:::group{name=asImmutable}
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.asImmutable() as IFluidStack
+myIFluidStack.asImmutable();
+```
+
+:::
+
 :::group{name=containsOther}
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
@@ -60,6 +71,17 @@ Return Type: [IData](/vanilla/api/data/IData)
 ```zenscript
 IFluidStack.getTag() as IData
 myIFluidStack.getTag();
+```
+
+:::
+
+:::group{name=isImmutable}
+
+Return Type: boolean
+
+```zenscript
+IFluidStack.isImmutable() as boolean
+myIFluidStack.isImmutable();
 ```
 
 :::
@@ -147,6 +169,7 @@ myIFluidStack * 1000
 | empty         | boolean型                                                   | true       | false      |
 | fluid         | [MCFluid](/vanilla/api/fluid/MCFluid)                      | true       | false      |
 | hasTag        | boolean型                                                   | true       | false      |
+| isImmutable   | boolean型                                                   | true       | false      |
 | registryName  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 | tag           | [IData](/vanilla/api/data/IData)                           | true       | false      |
 
