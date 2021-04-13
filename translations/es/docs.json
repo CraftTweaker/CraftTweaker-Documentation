@@ -1,13 +1,14 @@
 {
   "nav": {
-    "Home": "index.md",
-    "Getting Started With Scripts": "Getting_Started.md",
-    "Using this wiki": "UsingThisWiki.md",
-    "Commands": "Vanilla/Commands.md",
+    "Inicio": "index.md",
+
+    "Empezando con tus archivos": "Getting_Started.md",
+    "Usando esta wiki": "UsingThisWiki.md",
+    "Comandos": "Vanilla/Commands.md",
     "CTGUI": "Vanilla/CTGUI.md",
-    "Global functions": "Vanilla/Global_Functions.md",
-    "Bracket Handlers": "Brackets/Brackets.md",
-    "Advanced Functions": {
+    "Funciones globales": "Vanilla/Global_Functions.md",
+    Paréntesis Especiales
+    "Funciones Avanzadas": {
       "Arrays and Loops": "AdvancedFunctions/Arrays_and_Loops.md",
       "Associative Arrays (Maps)": "AdvancedFunctions/Associative_Arrays.md",
       "Calculations": "AdvancedFunctions/Calculations.md",
