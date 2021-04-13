@@ -177,7 +177,7 @@
           "ItemStack": "vanilla/api/item/ItemStack.md",
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md"
         },
-        "Items": {
+        "Objetos": {
           "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IIngredientCondition": "vanilla/api/items/IIngredientCondition.md",
