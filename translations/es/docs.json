@@ -7,9 +7,9 @@
     "Comandos": "Vanilla/Commands.md",
     "CTGUI": "Vanilla/CTGUI.md",
     "Funciones globales": "Vanilla/Global_Functions.md",
-    Paréntesis Especiales
+    "Parentesis Especiales": "Brackets/Brackets.md",
     "Funciones Avanzadas": {
-      "Arrays and Loops": "AdvancedFunctions/Arrays_and_Loops.md",
+      "Arrays y Bucles": "AdvancedFunctions/Arrays_and_Loops.md",
       "Associative Arrays (Maps)": "AdvancedFunctions/Associative_Arrays.md",
       "Calculations": "AdvancedFunctions/Calculations.md",
       "Conditional Statements": "AdvancedFunctions/Conditional_Statements.md",
@@ -17,28 +17,28 @@
       "Custom Functions": "AdvancedFunctions/Custom_Functions.md",
       "Global and Static Variables": "AdvancedFunctions/Global_Static_Variables.md",
       "Import": "AdvancedFunctions/Import.md",
-      "Preprocessors": {
-        "On Preprocessors": "AdvancedFunctions/Preprocessors/On_Preprocessors.md",
-        "Debug": "AdvancedFunctions/Preprocessors/DebugPreprocessor.md",
-        "Ignore Bracket Errors": "AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md",
-        "IKWID": "AdvancedFunctions/Preprocessors/IKWIDPreprocessor.md",
-        "Loader": "AdvancedFunctions/Preprocessors/LoaderPreprocessor.md",
-        "Mod Loaded": "AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md",
-        "No Run": "AdvancedFunctions/Preprocessors/NoRunPreprocessor.md",
-        "No Warn": "AdvancedFunctions/Preprocessors/NoWarnPreprocessor.md",
-        "Priority": "AdvancedFunctions/Preprocessors/PriorityPreprocessor.md",
-        "Profile": "AdvancedFunctions/Preprocessors/ProfilePreprocessor.md",
-        "SideOnly": "AdvancedFunctions/Preprocessors/SideOnlyPreprocessor.md"
+      "Preprocesadores": {
+        "Preprocesadores en General": "AdvancedFunctions/Preprocessors/On_Preprocessors.md",
+        "Preprocesador de Depuración": "AdvancedFunctions/Preprocessors/DebugPreprocessor.md",
+        "Ignorar errores de parentesis": "AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md",
+        "Se lo que estoy haciendo": "AdvancedFunctions/Preprocessors/IKWIDPreprocessor.md",
+        "Preprocesador de Carga": "AdvancedFunctions/Preprocessors/LoaderPreprocessor.md",
+        Preprocesador de ModCargado
+        "Apaga y vamonos": "AdvancedFunctions/Preprocessors/NoRunPreprocessor.md",
+        "Si no miras no esta": "AdvancedFunctions/Preprocessors/NoWarnPreprocessor.md",
+        "Prioridad": "AdvancedFunctions/Preprocessors/PriorityPreprocessor.md",
+        "Perfil de Acciones": "AdvancedFunctions/Preprocessors/ProfilePreprocessor.md",
+        "Un lado": "AdvancedFunctions/Preprocessors/SideOnlyPreprocessor.md"
       }
     },
-    "Tips and Tricks": {
-      "Foreword": "Tips_Tricks/Foreword.md",
-      "Items": {
-        "Using IItemDefinitions for meta ranges": "Tips_Tricks/Items/IItemDefinition_Metas.md"
+    "Consejos y trucos": {
+      "Unas palabras": "Tips_Tricks/Foreword.md",
+      "Objetos": {
+        "Usar IItemDefinitions para ahorrar tiempo": "Tips_Tricks/Items/IItemDefinition_Metas.md"
       },
-      "General Tips": {
-        "Split your scripts into multiple files": "Tips_Tricks/General/Split_Files.md",
-        "Use Loops to make your scripts easier to read": "Tips_Tricks/General/Loops_Readability.md"
+      "Consejos generales": {
+        "Divide tu código en más de un archivo": "Tips_Tricks/General/Split_Files.md",
+        "Usa bucles para que tu archivo se vea mejor": "Tips_Tricks/General/Loops_Readability.md"
       }
     },
     "Vanilla": {
@@ -225,7 +225,7 @@
         "ITeam": "Vanilla/Game/ITeam.md",
         "Mods": "Vanilla/Game/Mods.md"
       },
-      "Items": {
+      "Objetos": {
         "IItemDefinition": "Vanilla/Items/IItemDefinition.md",
         "IItemStack": "Vanilla/Items/IItemStack.md",
         "IMutableItemStack": "Vanilla/Items/IMutableItemStack.md",
