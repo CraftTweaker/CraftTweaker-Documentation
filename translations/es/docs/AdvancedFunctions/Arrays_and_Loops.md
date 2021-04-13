@@ -4,7 +4,7 @@ Un array es una Lista de varios elementos DEL MISMO TIPO.
 
 ## Declarando Arrays
 
-Se declara como una variable y usando `````` [ `````` y `````` ] ``````.
+Se declara como una variable y usando ````[ ```` y ````]````.
 
 Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
@@ -24,29 +24,27 @@ Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es por
 
 ## Dando un tipo a un Array (Inicializar)
 
-Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave ` as ` (tipo) en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
+Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave ` as ` (tipo) en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. Ésta podría ser la razón a errores de conversión de tipo. </br> Mas vale prevenir que curar, y darle un tipo a tu Array, que debería ser único. </br> Deberías tener en cuenta que si le das un tipo (en Inglés casteas) a un tipo no primitivo (es decir que no viene de por si en un lenguaje de programación y que es propio de Minecraft), deberías ` importar ` el tipo arriba de todo del archivo.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
-val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
+val myArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 ```
 
-## Nested Arrays
+## Arrays dentro de Arrays
 
-You can place Arrays in Arrays.
+Puedes insertar un Array dentro de otro.
 
 ```zenscript
-val stringArray1 = ["Hello","World"] as string[];
-val stringArray2 = ["I","am"] as string[];
-val stringArray3 = ["a","beatuful"] as string[];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+val stringArray1 = ["¡Hola","Mundo"] as string[];
+val stringArray2 = ["Soy"] as string[];
+val stringArray3 = ["una","mariposa"] as string[];
+val stringArrayAll = [stringArray1,stringArray2,stringArray3,["preciosa","!"]] as string[][];
 ```
 
-## Reffering to items in an Array
+## Referirse a un objeto dentro de un Array
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Te puedes referirse a un elemento dentro de un Array usando el índice (orden ordinal) del mismo. Los Arrays empiezan a contar desde 0. Es decir, el primer elemento tiene un índice de 0, el segundo de 1, y así sucesivamente.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
