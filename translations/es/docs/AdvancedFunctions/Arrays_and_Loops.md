@@ -20,11 +20,15 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es porque si que los has visto antes. </br> </br> Recuerda ```recipes.add(out,[[],[],[]]);```? Esto usa 3 arrays con cada uno conteniendo hasta un máximo de tres entradas para definir lo que es una receta en la craftingTable.
+Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es porque si que los has visto antes.   
+  
+Recuerda ```recipes.add(out,[[],[],[]]);```? Esto usa 3 arrays con cada uno conteniendo hasta un máximo de tres entradas para definir lo que es una receta en la craftingTable.
 
 ## Dando un tipo a un Array (Inicializar)
 
-Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave ` as ` (tipo) en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. Ésta podría ser la razón a errores de conversión de tipo. </br> Mas vale prevenir que curar, y darle un tipo a tu Array, que debería ser único. </br> Deberías tener en cuenta que si le das un tipo (en Inglés casteas) a un tipo no primitivo (es decir que no viene de por si en un lenguaje de programación y que es propio de Minecraft), deberías ` importar ` el tipo arriba de todo del archivo.
+Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave ` as ` (tipo) en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. Ésta podría ser la razón a errores de conversión de tipo.   
+Mas vale prevenir que curar, y darle un tipo a tu Array, que debería ser único.   
+Deberías tener en cuenta que si le das un tipo (en Inglés casteas) a un tipo no primitivo (es decir que no viene de por si en un lenguaje de programación y que es propio de Minecraft), deberías ` importar ` el tipo arriba de todo del archivo.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -46,49 +50,49 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["preciosa","!"]] a
 
 Te puedes referirse a un elemento dentro de un Array usando el índice (orden ordinal) del mismo. Los Arrays empiezan a contar desde 0. Es decir, el primer elemento tiene un índice de 0, el segundo de 1, y así sucesivamente.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Si te quieres referir a algo que esta en un Array dentro de otro Array, necesitas dos localizadores, cada uno da información de a lo que nos queremos referir.
 
 ```zenscript
 /*
-stringArray[0] is "Hello"
-stringArray[1] is "World"
-stringArray[2] is "I"
-stringArray[3] is "am"
+stringArray[0] is "Hola"
+stringArray[1] is "Mundo"
+stringArray[2] is "Yo"
+stringArray[3] is "soy"
 */
-val stringArray = ["Hello","World","I","am"] as string[];
+val stringArray = ["Hola","Mundo","Yo","soy"] as string[];
 
-//prints "Hello"
+//añade "Hola" al log
 print(stringArray[0]);
 
 
-//Nested Arrays
-val stringArray1 = ["Hello","World"] as string[];
-val stringArray2 = ["I","am"] as string[];
-val stringArray3 = ["a","beautiful"] as string[];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+//Array dentro de un Array
+val stringArray1 = ["¡Hola","Mundo"] as string[];
+val stringArray2 = ["Yo","soy"] as string[];
+val stringArray3 = ["una","linda"] as string[];
+val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Mariposa","!"]] as string[][];
 
 /*
-stringArrayAll[0] is ["Hello","World"]
-stringArrayAll[1] is ["I","am"]
-stringArrayAll[2] is ["a","beautiful"]
-stringArrayAll[3] is ["Butterfly","!"]
+stringArrayAll[0] es ["Hola","Mundo"]
+stringArrayAll[1] es ["¡Yo","soy"]
+stringArrayAll[2] es ["una","linda"]
+stringArrayAll[3] es ["Mariposa","!"]
 
-stringArrayAll[0][0] is "Hello"
-stringArrayAll[0][1] is "World"
+stringArrayAll[0][0] es "Hola"
+stringArrayAll[0][1] es "Mundo"
 etc.
 */
 
-//prints "World"
+//añade "Mundo" al log
 print(stringArrayAll[0][1]);
 ```
 
-# Loops
+# Bucles
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Un bucle es una función que se repite. Puedes usar un bucle para aplicar la misma acción a todo lo que se encuentre dentro de un Array.
 
-## For Loop
+## Bucle for 
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+El bucle for se usa para usar todos los miembros de un Array Iterating means doing an action to all elements of an array.  
 You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
