@@ -6,7 +6,7 @@ files:
       - '*.js'
       - '*.css'
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
-  - source: /docs.json
+  - source: ./docs.json
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
     type: txt
   - source: /docs_exported
