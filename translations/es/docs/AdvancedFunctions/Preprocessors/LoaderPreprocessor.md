@@ -8,7 +8,4 @@ Puedes usar el Preprocesador de cargado añadiendo `#loader nombreDeCargador` a 
 
 ## Lo que hace:
 
-Los archivos que tengan un cargado diferente al predeterminado ( crafttweaker </0>) serán reconocidos por ese cargador. Normalmente los diferentes cargadores vienen añadidos por "addons" de CraftTweaker2 que necesitan su propio cargador. 
-Lista de posibles cargadores: <code> crafttweaker, contenttweaker, alchemistry, mekatweaker </0>. 
-Nota: El cargador <code> crafttweaker </0> no es necesario. 
-Nota 2: Modtweaker2 usa el cargador predeterminado, <code> crafttweaker </0>.</p>
+Los archivos que tengan un cargado diferente al predeterminado (` crafttweaker `) serán reconocidos por ese cargador. Normalmente los diferentes cargadores vienen añadidos por "addons" de CraftTweaker2 que necesitan su propio cargador. Lista de posibles cargadores: ` crafttweaker, contenttweaker, alchemistry, mekatweaker `. Nota: El cargador ` crafttweaker ` no es necesario. Nota 2: Modtweaker2 usa el cargador predeterminado, ` crafttweaker `.
