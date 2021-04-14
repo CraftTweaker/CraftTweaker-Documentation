@@ -179,11 +179,11 @@ Solo puedes añadir objetos de uno en uno, no puedes sumar un array a un array, 
 ```zenscript
 import crafttweaker.item.IItemStack;
 
-val iron = <minecraft:iron_ingot>;
+val lingoteHierro = <minecraft:iron_ingot>;
 var array as IItemStack[] = [iron, iron, iron];
 
-array += iron;
-for item in array {
-    print(item.displayName);
+array += lingoteHierro;
+for objeto in array {
+    print(objeto.displayName); </br>  // Añadirá Lingote de Hierro al log
 }
 ```
