@@ -54,31 +54,31 @@ Si te quieres referir a algo que esta en un Array dentro de otro Array, necesita
 
 ```zenscript
 /*
-stringArray[0] is "Hola"
-stringArray[1] is "Mundo"
-stringArray[2] is "Yo"
-stringArray[3] is "soy"
+arrayDeStrings[0] es "Hola"
+arrayDeStrings[1] es "Mundo"
+arrayDeStrings[2] es "Yo"
+arrayDeStrings[3] es "soy"
 */
-val stringArray = ["Hola","Mundo","Yo","soy"] as string[];
+val arrayDeStrings = ["Hola","Mundo","Yo","soy"] as string[];
 
 //añade "Hola" al log
-print(stringArray[0]);
+print(arrayDeStrings0]);
 
 
 //Array dentro de un Array
-val stringArray1 = ["¡Hola","Mundo"] as string[];
-val stringArray2 = ["Yo","soy"] as string[];
-val stringArray3 = ["una","linda"] as string[];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Mariposa","!"]] as string[][];
+val arrayDeStrings1 = ["¡Hola","Mundo"] as string[];
+val arrayDeStrings2 = ["Yo","soy"] as string[];
+val arrayDeStrings3 = ["una","linda"] as string[];
+val arrayDeStringsMúltiple = [stringArray1,stringArray2,stringArray3,["Mariposa","!"]] as string[][];
 
 /*
-stringArrayAll[0] es ["Hola","Mundo"]
-stringArrayAll[1] es ["¡Yo","soy"]
-stringArrayAll[2] es ["una","linda"]
-stringArrayAll[3] es ["Mariposa","!"]
+arrayDeStringsMúltiple[0] es ["Hola","Mundo"]
+arrayDeStringsMúltiple[1] es ["¡Yo","soy"]
+arrayDeStringsMúltiple2] es ["una","linda"]
+arrayDeStringsMúltiple[3] es ["Mariposa","!"]
 
-stringArrayAll[0][0] es "Hola"
-stringArrayAll[0][1] es "Mundo"
+arrayDeStringsMúltiple[0][0] es "Hola"
+arrayDeStringsMúltiple[0][1] es "Mundo"
 etc.
 */
 
@@ -92,43 +92,43 @@ Un bucle es una función que se repite. Puedes usar un bucle para aplicar la mis
 
 ## Bucle for 
 
-El bucle for se usa para usar todos los miembros de un Array Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+El bucle for se usa para ir uno por uno a través los miembros de un Array. Esto sirve para poder repetir la misma acción con todos y cada uno de ellos.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
 
-val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
-val JArray = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] as IItemStack[];
-val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
+val array1 = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
+val array2 = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] as IItemStack[];
+val array3 = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
 
 
-//for [IntegerName, ] elementName in IArray {code}
+//for [indice (opcional), ] nombreElemento in nombreArray {code}
 
-for item in IArray {
-    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Just use this variable now!
-    //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
-    recipes.addShapeless(item,[JArray[i],KArray[i]]);
-}
+for objeto in array1 {
+    //define la variable "objeto" por cada elemento del array.  <br/>  La acción se ejecutará una vez para el objeto <minecraft:dirt>, y después para <minecraft:planks> y <minecraft:diamond>.
+    //Usa esta variable a partir de ahora.
+
+    }
+
 
 for i in 0 to 10 {
-    //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+    //define la variable "i" como un número que val del 0 al 9 (10 es el limite), y que va cambiando a medida que el bucle se ejecuta.
     print(i);
 }
 
-for i in 10 ..
+for i in 10 to 20 { <br/>
+    //define la variable "i" como un número que va del 10 al 19 (a 20 no llegará)
 
-    recipes.remove(item);
-}
 
-for i, item in IArray {
-    //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Just use these variables now! 20 {
-    //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
-    print(i);
-}
+    }
+
+for i, objeto in array1 {
+    //Define la variable "i" como el indice de cada elemento del array1.
+    //Define la variable objeto como el elemento del array1
+    //Ahora puedes usar estas variables. <br/>
+//Craftea un Item del array1 con un Item del array2, y del array3, sin tener en cuenta lo que sean. 
+recipes.addShapeless(item,[array1[i],array2[i]]);
+
 
 for item in loadedMods["minecraft"].items {
     //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
