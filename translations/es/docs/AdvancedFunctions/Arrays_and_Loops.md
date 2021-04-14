@@ -92,7 +92,7 @@ Un bucle es una función que se repite. Puedes usar un bucle para aplicar la mis
 
 ## Bucle for 
 
-El bucle for se usa para ir uno por uno a través los miembros de un Array. Esto sirve para poder repetir la misma acción con todos y cada uno de ellos.
+El bucle for se usa para ir uno por uno a través los miembros de un Array. Esto sirve para poder repetir la misma acción con todos y cada uno de ellos. Puedes usar la palabra clave `break` para terminar el bucle.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -130,30 +130,30 @@ for i, objeto in array1 {
 recipes.addShapeless(item,[array1[i],array2[i]]);
 
 
-for item in loadedMods["minecraft"].items {
-    //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
-    recipes.remove(item);
+for objeto in loadedMods["minecraft"].items {
+    //Define la variable "objeto" como uno de los muchos items añadidos por el mod con modid "minecraft" y elimina su receta de crafteo.
+    recipes.remove(objeto);
 }
 ```
 
-## While Loop
+## Bucle While
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+El bucle while se ejecuta siempre y cuando la condición dada (en forma de bool) sea ` true `.   
+Alternativamente puedes terminar el bucle de forma prematura usando la palabra clave `break`. Un bucle que no termina puede provocar problemas de RAM.
 
 ```zenscript
 var i = 0; 
 
-//Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+//Añadira los números que van del 0 a 9 al log, ya que son más pequeños que 10, ya que cuando i = 10 el bucle no se ejecuta.
 while i < 10 {
     print(i); 
     i += 1;
 } 
 
-print("After loop: " + i);
+print("Despues del bucle i es: " + i);
 
 
-//Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+//Añadira los números que van del 10 - 6 porque cuando i = 5 el bucle se termina forzosamente.
 while (i > 0) {
     if i == 5
         break;
@@ -161,7 +161,7 @@ while (i > 0) {
     i -= 1;
 }
 
-print("After loop 2: " + i);
+print("Despues del segundo bucle i es: " + i);
 
 
 for k in 1 .. 10 {
@@ -171,11 +171,10 @@ for k in 1 .. 10 {
 }
 ```
 
-# Adding items to an Array
+# Añadir elementos a un Array
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Aunque no se recomienda, es posible añadir objetos dentro de un Array.   
+Solo puedes añadir objetos de uno en uno, no puedes sumar un array a un array, pero si que puedes hacer un bucle que sume cada uno de los elementos ;D. Usas el operador ` + ` para hacer sumas a Arrays.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
