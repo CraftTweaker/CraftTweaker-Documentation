@@ -8,21 +8,21 @@ Se declara como una variable y usando ````[ ```` y ````]````.
 
 Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
-`var floatArray as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
+`var arrayDeFloats as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
 
-Para inicializar un array vacío hazlo así: ` var floatArray as float[] = []; `
+Para inicializar un array vacío hazlo así: ` var arrayDeFloats as float[] = []; `
 
 ```zenscript
 //Array que contiene "Hello" y "World"
-val stringArray = ["Hello", "World"] as string[];
+val arrayDeStrings = ["Hola", "Mundo"] as string[];
 
 //Array que contiene 1-3
-val intArray = [1,2,3] as int[];
+val arrayDeInts = [1,2,3] as int[];
 ```
 
 Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es porque si que los has visto antes.   
   
-Recuerda ```recipes.add(out,[[],[],[]]);```? Esto usa 3 arrays con cada uno conteniendo hasta un máximo de tres entradas para definir lo que es una receta en la craftingTable.
+Recuerda ```recipes.add(IItemStack,[[],[],[]]);```? Esto usa 3 arrays con cada uno conteniendo hasta un máximo de tres entradas para definir lo que es una receta en la mesa de crafteo.
 
 ## Dando un tipo a un Array (Inicializar)
 
@@ -40,10 +40,10 @@ val myArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 Puedes insertar un Array dentro de otro.
 
 ```zenscript
-val stringArray1 = ["¡Hola","Mundo"] as string[];
-val stringArray2 = ["Soy"] as string[];
-val stringArray3 = ["una","mariposa"] as string[];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["preciosa","!"]] as string[][];
+val arrayDeStrings1 = ["¡Hola","Mundo"] as string[];
+val arrayDeStrings2 = ["Yo", "Soy"] as string[];
+val arrayDeStrings3 = ["una","linda"] as string[];
+val arrayDeStringsMúltiple = [stringArray1,stringArray2,stringArray3,["Mariposa","!"]] as string[][];
 ```
 
 ## Referirse a un objeto dentro de un Array
