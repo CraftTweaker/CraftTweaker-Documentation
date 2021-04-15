@@ -20,8 +20,8 @@ Por partes:
 - ` tierra : <minecraft:dirt>` Almacenamos el valor `<minecraft:dirt>` al lado de la clave ` tierra : `
 - `,` Hay más de un elemento en el Mapa
 - `oro : <minecraft:gold_ingot> ` Almacenamos el valor `<minecraft:gold_ingot>` al lado de la clave ` gold: `
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- ` } ` Hemos llegado al final del Array.
+- `as IItemStack[string];` este Mapa utiliza strings como indices y IItemStacks como elementos
 
 Okay, so what do I need to think of when using these?
 
