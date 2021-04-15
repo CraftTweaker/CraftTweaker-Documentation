@@ -23,16 +23,15 @@ Por partes:
 - ` } ` Hemos llegado al final del Array.
 - `as IItemStack[string];` este Mapa utiliza strings como indices y IItemStacks como elementos
 
-Okay, so what do I need to think of when using these?
+¿Cómo uso estos?
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Puedes usar cualquier tipo que esta expuesto a Zenscript como un elemento o una clave.
+- No puedes usar variables como claves ya que el texto a la izquierda de los dos puntos se auto interpreta como un String aunque no tenga las comillas. Por tanto, si tu tuvieras una variable la convertiria a un string con el nombre de la variable, no con el valor que esa variable representa.
 
-## Refering to Items inside an Associative Array.
+## Referirse a un Elemento dentro de un Mapa
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
-`Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+Te puedes referir a algo dentro de un Array asociativo de la misma manera que te refieres a un elemento dentro de un Array normal. `Array[clave]`  
+La diferencia esta en que esta vez no necesitas un Int que sea un index sino que puede ser un IItemStack, un String, un IOreDictEntry...
 
 ```zenscript
 <br /><br />val dirt = <minecraft:dirt>;
