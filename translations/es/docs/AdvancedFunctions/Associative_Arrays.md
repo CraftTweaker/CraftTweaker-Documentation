@@ -1,25 +1,25 @@
 # Arrays Asociativos
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Un Array Asociativo (A veces llamado Mapa o Diccionario) es como un Array normal que puede almancenar más de una entrada. A diferencia de un Array, en el que puedes eliges el elemento a partir del indice, en un mapa tú eliges que es el indice es forma de una "clave".
 
-## Declaring an Associative Array
+## Declarando un Array Asociativo
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Declaras un Array Asociativo usando claudators `{}` y dos puntos `:`
 
 ```zenscript
-val myAssocArray = {
-    dirt : <minecraft:dirt>,
-    gold : <minecraft:gold_ingot>
+val miArrayAsociativo = {
+   tierra : <minecraft:dirt>,
+   oro : <minecraft:gold_ingot>
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Por partes:
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
+- `val myArrayAsociativo =` declaramos el array como una variable
+- `{` esto es un Array Asociativo 
+- ` tierra : <minecraft:dirt>` Almacenamos el valor `<minecraft:dirt>` al lado de la clave ` tierra : `
+- `,` Hay más de un elemento en el Mapa
+- `oro : <minecraft:gold_ingot> ` Almacenamos el valor `<minecraft:gold_ingot>` al lado de la clave ` gold: `
 - `}` we have reached the end of the Array, Sir!
 - `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
