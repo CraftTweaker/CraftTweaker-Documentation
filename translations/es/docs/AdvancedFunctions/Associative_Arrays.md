@@ -34,38 +34,38 @@ Te puedes referir a algo dentro de un Array asociativo de la misma manera que te
 La diferencia esta en que esta vez no necesitas un Int que sea un index sino que puede ser un IItemStack, un String, un IOreDictEntry...
 
 ```zenscript
-<br /><br />val dirt = <minecraft:dirt>;
-val assocArray = {
+<br />val tierra = <minecraft:dirt>;
+val elMapa = {
     <minecraft:dirt> : "This is me"
 } as string[IItemStack];
 
-//array[index]
-print(assocArray[<minecraft:dirt>]);
+//array[clave]
+print(elMapa[<minecraft:dirt>]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
-print(assocArray[dirt]);
+//Puedes usar variables como clave siempre y cuando sean del mismo tipo que la clave (aqui la clave es tipo IItemStack), y tengan un valor que este definido en el Mapa.
+print(elMapa[tierra]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+Hay un caso especial en el que puedes usar strings como claves   
+En este caso puedes usar el Getter de Miembros asi:
 
 ```zenscript
-val assocWithStrings = {
-    //you can use "" if you want
-    "one" : "1",
+val mapaConStrings = {
+    //Puedes usar comillas 
+    "uno" : "1",
 
-    //but you don't have to
-    two : "2"
+    //pero no hace falta para la clave
+    dos : "2"
 } as string[string];
 
-//You can either use the memberGetter
-print(assocWithStrings.one);
+//Ahora puedes usar el Getter de Miembros
+print(mapaConStrings.uno);
 
-//Or the standard index Getter
-print(assocWithStrings["two"]);
+//O la clave entre corchetes.
+print(mapaConStrings["dos"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Manipulando elementos que se encuentran dentro de un Array Asociativo
 
 As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
 There is one major differenc though:  
