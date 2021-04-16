@@ -20,6 +20,7 @@ Return Type: void
 
 ```zenscript
 VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -42,6 +43,7 @@ Return Type: void
 
 ```zenscript
 VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:dirt> * 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -64,6 +66,7 @@ Return Type: void
 
 ```zenscript
 VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, input2 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond> * 2, <item:minecraft:dirt> * 2, <item:minecraft:arrow>, 5, 2, 0.05);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
