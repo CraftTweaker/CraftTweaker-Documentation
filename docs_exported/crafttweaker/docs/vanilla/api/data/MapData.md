@@ -49,7 +49,8 @@ new MapData(map as IData[string]) as MapData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-MapData.asCollection() as ICollectionData
+// MapData.asCollection() as ICollectionData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
 ```
 
@@ -62,7 +63,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-MapData.asList() as stdlib.List<IData>
+// MapData.asList() as stdlib.List<IData>
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asList();
 ```
 
@@ -73,7 +75,8 @@ MapData.asList() as stdlib.List<IData>
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-MapData.asNumber() as INumberData
+// MapData.asNumber() as INumberData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
 ```
 
@@ -86,7 +89,8 @@ Checks if the Map contains the given key.
 Return Type: boolean
 
 ```zenscript
-MapData.contains(key as string) as boolean
+// MapData.contains(key as string) as boolean
+
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
 
@@ -104,7 +108,8 @@ Retrieves the value associated with the key
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.getAt(key as string) as IData
+// MapData.getAt(key as string) as IData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
 
@@ -124,7 +129,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-MapData.getId() as byte
+// MapData.getId() as byte
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getId();
 ```
 
@@ -137,7 +143,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-MapData.getString() as string
+// MapData.getString() as string
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getString();
 ```
 
@@ -152,7 +159,8 @@ Merges this map and the other map.
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MapData.merge(other as MapData) as MapData
+// MapData.merge(other as MapData) as MapData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
 ```
 
@@ -170,7 +178,8 @@ Adds sets the value for the given key or creates a new entry if it did not exist
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.put(key as string, value as IData) as IData
+// MapData.put(key as string, value as IData) as IData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
 
@@ -190,7 +199,8 @@ Adds all entries from the given map into this one.
 Return Type: void
 
 ```zenscript
-MapData.putAll(map as IData[string]) as void
+// MapData.putAll(map as IData[string]) as void
+
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
@@ -208,7 +218,8 @@ Removes the entry with the given key from the Map
 Return Type: void
 
 ```zenscript
-MapData.remove(key as string) as void
+// MapData.remove(key as string) as void
+
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
 

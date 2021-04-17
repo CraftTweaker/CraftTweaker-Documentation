@@ -50,7 +50,8 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
-MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+// MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+
 myMCPotionEffectInstance.getCurativeItems();
 ```
 

@@ -21,7 +21,8 @@ import crafttweaker.api.item.MCItemDefinition;
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemDefinition.getDefaultInstance() as IItemStack
+// MCItemDefinition.getDefaultInstance() as IItemStack
+
 myMCItemDefinition.getDefaultInstance();
 ```
 

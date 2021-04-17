@@ -43,7 +43,8 @@ Gets the coordinate of this axis based on the given values, if this axis is "X",
 Return Type: double
 
 ```zenscript
-DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+// DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+
 <directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
 
@@ -63,7 +64,8 @@ Gets the coordinate of this axis based on the given values, if this axis is "X",
 Return Type: int
 
 ```zenscript
-DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
+// DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
+
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
@@ -81,7 +83,8 @@ DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 Return Type: int
 
 ```zenscript
-DirectionAxis.hashCode() as int
+// DirectionAxis.hashCode() as int
+
 <directionaxis:x>.hashCode();
 ```
 

@@ -25,7 +25,8 @@ Gets the smelted item (the output stack)
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemSmeltedEvent.getSmelted() as IItemStack
+// MCItemSmeltedEvent.getSmelted() as IItemStack
+
 myMCItemSmeltedEvent.getSmelted();
 ```
 

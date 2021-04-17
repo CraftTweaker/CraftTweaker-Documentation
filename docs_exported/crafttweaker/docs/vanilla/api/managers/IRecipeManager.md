@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-IRecipeManager.addJSONRecipe(name as string, data as IData) as void
+// IRecipeManager.addJSONRecipe(name as string, data as IData) as void
+
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -41,7 +42,8 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 craftingTable.getAllRecipes();
 ```
 
@@ -84,7 +86,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeAll() as void
+// IRecipeManager.removeAll() as void
+
 craftingTable.removeAll();
 ```
 
@@ -97,7 +100,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByModid(modid as string) as void
+// IRecipeManager.removeByModid(modid as string) as void
+
 craftingTable.removeByModid("minecraft");
 ```
 
@@ -115,7 +119,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// IRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -134,7 +139,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByName(name as string) as void
+// IRecipeManager.removeByName(name as string) as void
+
 craftingTable.removeByName("minecraft:furnace");
 ```
 
@@ -152,7 +158,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByRegex(regex as string) as void
+// IRecipeManager.removeByRegex(regex as string) as void
+
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
@@ -170,7 +177,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeRecipe(output as IItemStack) as void
+// IRecipeManager.removeRecipe(output as IItemStack) as void
+
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 

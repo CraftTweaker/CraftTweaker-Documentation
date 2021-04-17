@@ -32,7 +32,8 @@ Gets the transformed state after tool use.
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)?
 
 ```zenscript
-MCBlockToolInteractEvent.getFinalState() as MCBlockState?
+// MCBlockToolInteractEvent.getFinalState() as MCBlockState?
+
 myMCBlockToolInteractEvent.getFinalState();
 ```
 
@@ -43,7 +44,8 @@ myMCBlockToolInteractEvent.getFinalState();
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCBlockToolInteractEvent.getHeldItemStack() as IItemStack
+// MCBlockToolInteractEvent.getHeldItemStack() as IItemStack
+
 myMCBlockToolInteractEvent.getHeldItemStack();
 ```
 
@@ -54,7 +56,8 @@ myMCBlockToolInteractEvent.getHeldItemStack();
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCBlockToolInteractEvent.getPlayer() as MCPlayerEntity
+// MCBlockToolInteractEvent.getPlayer() as MCPlayerEntity
+
 myMCBlockToolInteractEvent.getPlayer();
 ```
 
@@ -65,7 +68,8 @@ myMCBlockToolInteractEvent.getPlayer();
 Return Type: string
 
 ```zenscript
-MCBlockToolInteractEvent.getToolType() as string
+// MCBlockToolInteractEvent.getToolType() as string
+
 myMCBlockToolInteractEvent.getToolType();
 ```
 

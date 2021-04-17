@@ -29,7 +29,8 @@ MCBlockPlaceEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCBlockPlaceEvent.getEntity() as MCEntity
+// MCBlockPlaceEvent.getEntity() as MCEntity
+
 myMCBlockPlaceEvent.getEntity();
 ```
 
@@ -40,7 +41,8 @@ myMCBlockPlaceEvent.getEntity();
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
+// MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
+
 myMCBlockPlaceEvent.getPlacedAgainst();
 ```
 
@@ -51,7 +53,8 @@ myMCBlockPlaceEvent.getPlacedAgainst();
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
+// MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
+
 myMCBlockPlaceEvent.getPlacedBlock();
 ```
 
@@ -62,7 +65,8 @@ myMCBlockPlaceEvent.getPlacedBlock();
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
+// MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
+
 myMCBlockPlaceEvent.getReplacedBlock();
 ```
 

@@ -23,7 +23,8 @@ MCPlayerEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEvent). 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCPlayerEvent.getPlayer() as MCPlayerEntity
+// MCPlayerEvent.getPlayer() as MCPlayerEntity
+
 myMCPlayerEvent.getPlayer();
 ```
 

@@ -30,7 +30,8 @@ Indicates that the entity must be in its adult form.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withAdult() as EntityFlagsPredicate
+// EntityFlagsPredicate.withAdult() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withAdult();
 ```
 
@@ -45,7 +46,8 @@ Indicates that the entity must be in its baby form, if applicable.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withBaby() as EntityFlagsPredicate
+// EntityFlagsPredicate.withBaby() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withBaby();
 ```
 
@@ -60,7 +62,8 @@ Indicates that the entity must be on fire.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withBurningState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withBurningState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withBurningState();
 ```
 
@@ -75,7 +78,8 @@ Indicates that the entity must be sneaking, if applicable to the current entity.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withSneakingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withSneakingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withSneakingState();
 ```
 
@@ -90,7 +94,8 @@ Indicates that the entity must be sprinting, if applicable to the current entity
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withSprintingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withSprintingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withSprintingState();
 ```
 
@@ -105,7 +110,8 @@ Indicates that the entity must be swimming.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withSwimmingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withSwimmingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withSwimmingState();
 ```
 
@@ -120,7 +126,8 @@ Indicates that the entity must not be on fire.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withoutBurningState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withoutBurningState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withoutBurningState();
 ```
 
@@ -135,7 +142,8 @@ Indicates that the entity must not be sneaking.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withoutSneakingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withoutSneakingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withoutSneakingState();
 ```
 
@@ -150,7 +158,8 @@ Indicates that the entity must not be sprinting.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withoutSprintingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withoutSprintingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withoutSprintingState();
 ```
 
@@ -165,7 +174,8 @@ Indicates that the entity must not be swimming.
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
-EntityFlagsPredicate.withoutSwimmingState() as EntityFlagsPredicate
+// EntityFlagsPredicate.withoutSwimmingState() as EntityFlagsPredicate
+
 myEntityFlagsPredicate.withoutSwimmingState();
 ```
 

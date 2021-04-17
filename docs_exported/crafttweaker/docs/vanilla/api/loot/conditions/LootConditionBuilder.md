@@ -28,7 +28,8 @@ Returns: The newly created instance.
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
-LootConditionBuilder.create() as LootConditionBuilder
+// LootConditionBuilder.create() as LootConditionBuilder
+
 LootConditionBuilder.create();
 ```
 
@@ -230,7 +231,8 @@ Builds the current builder, returning all its contents as an array of [ILootCond
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)[]
 
 ```zenscript
-LootConditionBuilder.build() as ILootCondition[]
+// LootConditionBuilder.build() as ILootCondition[]
+
 myLootConditionBuilder.build();
 ```
 

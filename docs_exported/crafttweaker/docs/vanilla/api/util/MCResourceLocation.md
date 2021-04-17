@@ -41,7 +41,8 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MCResourceLocation.asData() as IData
+// MCResourceLocation.asData() as IData
+
 myMCResourceLocation.asData();
 ```
 
@@ -82,7 +83,8 @@ MCResourceLocation.equals(other as Object) as boolean
 Return Type: string
 
 ```zenscript
-MCResourceLocation.getNamespace() as string
+// MCResourceLocation.getNamespace() as string
+
 myMCResourceLocation.getNamespace();
 ```
 
@@ -93,7 +95,8 @@ myMCResourceLocation.getNamespace();
 Return Type: string
 
 ```zenscript
-MCResourceLocation.getPath() as string
+// MCResourceLocation.getPath() as string
+
 myMCResourceLocation.getPath();
 ```
 
@@ -104,7 +107,8 @@ myMCResourceLocation.getPath();
 Return Type: int
 
 ```zenscript
-MCResourceLocation.hashCode() as int
+// MCResourceLocation.hashCode() as int
+
 myMCResourceLocation.hashCode();
 ```
 
@@ -115,7 +119,8 @@ myMCResourceLocation.hashCode();
 Return Type: string
 
 ```zenscript
-MCResourceLocation.toString() as string
+// MCResourceLocation.toString() as string
+
 myMCResourceLocation.toString();
 ```
 

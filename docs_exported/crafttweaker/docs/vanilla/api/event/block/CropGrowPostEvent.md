@@ -21,7 +21,8 @@ import crafttweaker.api.event.block.MCCropGrowPostEvent;
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCCropGrowPostEvent.getOriginState() as MCBlockState
+// MCCropGrowPostEvent.getOriginState() as MCBlockState
+
 myMCCropGrowPostEvent.getOriginState();
 ```
 

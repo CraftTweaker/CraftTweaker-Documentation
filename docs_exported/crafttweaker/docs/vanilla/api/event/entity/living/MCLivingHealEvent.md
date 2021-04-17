@@ -33,7 +33,8 @@ Gets the amount of healing.
 Return Type: float
 
 ```zenscript
-MCLivingHealEvent.getAmount() as float
+// MCLivingHealEvent.getAmount() as float
+
 event.getAmount();
 ```
 
@@ -46,7 +47,8 @@ Sets the amount of healing.
 Return Type: void
 
 ```zenscript
-MCLivingHealEvent.setAmount(amount as float) as void
+// MCLivingHealEvent.setAmount(amount as float) as void
+
 event.setAmount(0.5);
 ```
 

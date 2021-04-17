@@ -19,7 +19,8 @@ MCEquipmentSlotType extends Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEq
 Return Type: boolean
 
 ```zenscript
-MCEquipmentSlotType.isArmor() as boolean
+// MCEquipmentSlotType.isArmor() as boolean
+
 myMCEquipmentSlotType.isArmor();
 ```
 
@@ -30,7 +31,8 @@ myMCEquipmentSlotType.isArmor();
 Return Type: boolean
 
 ```zenscript
-MCEquipmentSlotType.isHand() as boolean
+// MCEquipmentSlotType.isHand() as boolean
+
 myMCEquipmentSlotType.isHand();
 ```
 

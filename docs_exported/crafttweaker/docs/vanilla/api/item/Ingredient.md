@@ -31,7 +31,8 @@ Ingredient implements the following interfaces. That means all methods defined i
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-Ingredient.asIIngredient() as IIngredient
+// Ingredient.asIIngredient() as IIngredient
+
 myIngredient.asIIngredient();
 ```
 

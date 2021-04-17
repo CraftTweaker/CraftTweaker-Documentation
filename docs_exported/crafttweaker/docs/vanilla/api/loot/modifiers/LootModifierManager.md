@@ -28,7 +28,8 @@ Gets a list containing all currently registered loot modifiers.
 Return Type: stdlib.List&lt;[ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)&gt;
 
 ```zenscript
-LootModifierManager.getAll() as stdlib.List<ILootModifier>
+// LootModifierManager.getAll() as stdlib.List<ILootModifier>
+
 myLootModifierManager.getAll();
 ```
 
@@ -41,7 +42,8 @@ Gets a list of all the names of the currently registered loot modifiers.
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-LootModifierManager.getAllNames() as stdlib.List<string>
+// LootModifierManager.getAllNames() as stdlib.List<string>
+
 myLootModifierManager.getAllNames();
 ```
 
@@ -154,7 +156,8 @@ Removes all loot modifiers that have been registered up to this point.
 Return Type: void
 
 ```zenscript
-LootModifierManager.removeAll() as void
+// LootModifierManager.removeAll() as void
+
 myLootModifierManager.removeAll();
 ```
 

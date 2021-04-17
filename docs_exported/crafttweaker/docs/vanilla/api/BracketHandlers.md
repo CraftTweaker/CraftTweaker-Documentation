@@ -25,7 +25,8 @@ Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 ```zenscript
 <biome:minecraft:plain>
 
-BracketHandlers.getBiome(tokens as string) as MCBiome
+// BracketHandlers.getBiome(tokens as string) as MCBiome
+
 BracketHandlers.getBiome("minecraft:plain");
 ```
 
@@ -46,7 +47,8 @@ Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 ```zenscript
 <block:minecraft:dirt>
 
-BracketHandlers.getBlock(tokens as string) as MCBlock
+// BracketHandlers.getBlock(tokens as string) as MCBlock
+
 BracketHandlers.getBlock("minecraft:dirt");
 ```
 
@@ -67,7 +69,8 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 ```zenscript
 <blockmaterial:earth>
 
-BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
+// BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
+
 BracketHandlers.getBlockMaterial("earth");
 ```
 
@@ -90,7 +93,8 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 <blockstate:minecraft:acacia_planks>
 <blockstate:minecraft:furnace:facing=north,lit=false>
 
-BracketHandlers.getBlockState(tokens as string) as MCBlockState
+// BracketHandlers.getBlockState(tokens as string) as MCBlockState
+
 BracketHandlers.getBlockState("minecraft:acacia_planks");
 BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
@@ -113,7 +117,8 @@ Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 ```zenscript
 <damagesource:magic>
 
-BracketHandlers.getDamageSource(tokens as string) as DamageSource
+// BracketHandlers.getDamageSource(tokens as string) as DamageSource
+
 BracketHandlers.getDamageSource("magic");
 ```
 
@@ -134,7 +139,8 @@ Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 ```zenscript
 <directionaxis:x>
 
-BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
+// BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
+
 BracketHandlers.getDirectionAxis("x");
 ```
 
@@ -155,7 +161,8 @@ Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 ```zenscript
 <effect:minecraft:haste>
 
-BracketHandlers.getEffect(tokens as string) as MCPotionEffect
+// BracketHandlers.getEffect(tokens as string) as MCPotionEffect
+
 BracketHandlers.getEffect("minecraft:haste");
 ```
 
@@ -176,7 +183,8 @@ Return Type: [MCEnchantment](/vanilla/api/enchantment/MCEnchantment)
 ```zenscript
 <enchantment:minecraft:riptide>
 
-BracketHandlers.getEnchantment(tokens as string) as MCEnchantment
+// BracketHandlers.getEnchantment(tokens as string) as MCEnchantment
+
 BracketHandlers.getEnchantment("minecraft:riptide");
 ```
 
@@ -197,7 +205,8 @@ Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification
 ```zenscript
 <entityclassification:monster>
 
-BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
+// BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
+
 BracketHandlers.getEntityClassification("monster");
 ```
 
@@ -218,7 +227,8 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 ```zenscript
 <entitytype:minecraft:pig>
 
-BracketHandlers.getEntityType(tokens as string) as MCEntityType
+// BracketHandlers.getEntityType(tokens as string) as MCEntityType
+
 BracketHandlers.getEntityType("minecraft:pig");
 ```
 
@@ -239,7 +249,8 @@ Return Type: [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)
 ```zenscript
 <equipmentslottype:mainhand>
 
-BracketHandlers.getEquipmentSlotType(tokens as string) as MCEquipmentSlotType
+// BracketHandlers.getEquipmentSlotType(tokens as string) as MCEquipmentSlotType
+
 BracketHandlers.getEquipmentSlotType("mainhand");
 ```
 
@@ -260,7 +271,8 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 ```zenscript
 <fluid:minecraft:water>
 
-BracketHandlers.getFluidStack(tokens as string) as IFluidStack
+// BracketHandlers.getFluidStack(tokens as string) as IFluidStack
+
 BracketHandlers.getFluidStack("minecraft:water");
 ```
 
@@ -281,7 +293,8 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 ```zenscript
 <item:minecraft:dirt>
 
-BracketHandlers.getItem(tokens as string) as IItemStack
+// BracketHandlers.getItem(tokens as string) as IItemStack
+
 BracketHandlers.getItem("minecraft:dirt");
 ```
 
@@ -317,7 +330,8 @@ Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
 ```zenscript
 <profession:minecraft:armorer>
 
-BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
+// BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
+
 BracketHandlers.getProfession("minecraft:armorer");
 ```
 
@@ -341,7 +355,8 @@ Returns: The found recipeManager
 Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ```zenscript
-BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
+// BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
+
 BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 
@@ -363,7 +378,8 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 ```zenscript
 <resource:minecraft:dirt>
 
-BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
+// BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
+
 BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 

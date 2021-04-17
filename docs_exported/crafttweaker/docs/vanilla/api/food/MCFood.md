@@ -45,7 +45,8 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 Return Type: void
 
 ```zenscript
-MCFood.clearEffects() as void
+// MCFood.clearEffects() as void
+
 myMCFood.clearEffects();
 ```
 

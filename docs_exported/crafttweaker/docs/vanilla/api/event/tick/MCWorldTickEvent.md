@@ -23,7 +23,8 @@ MCWorldTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Tha
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
-MCWorldTickEvent.getWorld() as MCWorld
+// MCWorldTickEvent.getWorld() as MCWorld
+
 myMCWorldTickEvent.getWorld();
 ```
 

@@ -66,7 +66,8 @@ MCItemStackMutable.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
+// MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.mutable().anyDamage();
 ```
 
@@ -77,7 +78,8 @@ MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-MCItemStackMutable.asIIngredientWithAmount() as IIngredientWithAmount
+// MCItemStackMutable.asIIngredientWithAmount() as IIngredientWithAmount
+
 <item:minecraft:dirt>.mutable().asIIngredientWithAmount();
 ```
 
@@ -90,7 +92,8 @@ Clears any custom name set for this ItemStack
 Return Type: void
 
 ```zenscript
-MCItemStackMutable.clearCustomName() as void
+// MCItemStackMutable.clearCustomName() as void
+
 <item:minecraft:dirt>.mutable().clearCustomName();
 ```
 
@@ -101,7 +104,8 @@ MCItemStackMutable.clearCustomName() as void
 Return Type: void
 
 ```zenscript
-MCItemStackMutable.clearTooltip() as void
+// MCItemStackMutable.clearTooltip() as void
+
 <item:minecraft:dirt>.mutable().clearTooltip();
 ```
 
@@ -114,7 +118,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-MCItemStackMutable.contains(ingredient as IIngredient) as boolean
+// MCItemStackMutable.contains(ingredient as IIngredient) as boolean
+
 <item:minecraft:dirt>.mutable().contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -130,7 +135,8 @@ MCItemStackMutable.contains(ingredient as IIngredient) as boolean
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 ```zenscript
-MCItemStackMutable.getDefinition() as MCItemDefinition
+// MCItemStackMutable.getDefinition() as MCItemDefinition
+
 <item:minecraft:dirt>.mutable().getDefinition();
 ```
 
@@ -145,7 +151,8 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemStackMutable.getRemainingItem(stack as IItemStack) as IItemStack
+// MCItemStackMutable.getRemainingItem(stack as IItemStack) as IItemStack
+
 <item:minecraft:dirt>.mutable().getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -163,7 +170,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-MCItemStackMutable.matches(stack as IItemStack) as boolean
+// MCItemStackMutable.matches(stack as IItemStack) as boolean
+
 <item:minecraft:dirt>.mutable().matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -211,7 +219,8 @@ MCItemStackMutable.only(condition as IIngredientCondition<IIngredient>) as MCIng
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCItemStackMutable.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// MCItemStackMutable.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.mutable().onlyDamaged();
 ```
 

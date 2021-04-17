@@ -62,7 +62,8 @@ MCEntity.applyEntityCollision(entityIn as MCEntity) as void
 Return Type: boolean
 
 ```zenscript
-MCEntity.canSwim() as boolean
+// MCEntity.canSwim() as boolean
+
 myMCEntity.canSwim();
 ```
 
@@ -88,7 +89,8 @@ MCEntity.changeDimension(world as MCServerWorld) as void
 Return Type: void
 
 ```zenscript
-MCEntity.extinguish() as void
+// MCEntity.extinguish() as void
+
 myMCEntity.extinguish();
 ```
 
@@ -131,7 +133,8 @@ MCEntity.forceSetPosition(x as double, y as double, z as double) as void
 Return Type: int
 
 ```zenscript
-MCEntity.getAir() as int
+// MCEntity.getAir() as int
+
 myMCEntity.getAir();
 ```
 
@@ -142,7 +145,8 @@ myMCEntity.getAir();
 Return Type: float
 
 ```zenscript
-MCEntity.getBrightness() as float
+// MCEntity.getBrightness() as float
+
 myMCEntity.getBrightness();
 ```
 
@@ -153,7 +157,8 @@ myMCEntity.getBrightness();
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MCEntity.getData() as MapData
+// MCEntity.getData() as MapData
+
 myMCEntity.getData();
 ```
 
@@ -211,7 +216,8 @@ MCEntity.getDistanceSq(x as double, y as double, z as double) as double
 Return Type: int
 
 ```zenscript
-MCEntity.getEntityId() as int
+// MCEntity.getEntityId() as int
+
 myMCEntity.getEntityId();
 ```
 
@@ -222,7 +228,8 @@ myMCEntity.getEntityId();
 Return Type: int
 
 ```zenscript
-MCEntity.getFireTimer() as int
+// MCEntity.getFireTimer() as int
+
 myMCEntity.getFireTimer();
 ```
 
@@ -233,7 +240,8 @@ myMCEntity.getFireTimer();
 Return Type: int
 
 ```zenscript
-MCEntity.getMaxInPortalTime() as int
+// MCEntity.getMaxInPortalTime() as int
+
 myMCEntity.getMaxInPortalTime();
 ```
 
@@ -244,7 +252,8 @@ myMCEntity.getMaxInPortalTime();
 Return Type: string
 
 ```zenscript
-MCEntity.getName() as string
+// MCEntity.getName() as string
+
 myMCEntity.getName();
 ```
 
@@ -255,7 +264,8 @@ myMCEntity.getName();
 Return Type: Set&lt;string&gt;
 
 ```zenscript
-MCEntity.getTags() as Set<string>
+// MCEntity.getTags() as Set<string>
+
 myMCEntity.getTags();
 ```
 
@@ -266,7 +276,8 @@ myMCEntity.getTags();
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
-MCEntity.getType() as MCEntityType
+// MCEntity.getType() as MCEntityType
+
 myMCEntity.getType();
 ```
 
@@ -277,7 +288,8 @@ myMCEntity.getType();
 Return Type: string
 
 ```zenscript
-MCEntity.getUUID() as string
+// MCEntity.getUUID() as string
+
 myMCEntity.getUUID();
 ```
 
@@ -288,7 +300,8 @@ myMCEntity.getUUID();
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
-MCEntity.getWorld() as MCWorld
+// MCEntity.getWorld() as MCWorld
+
 myMCEntity.getWorld();
 ```
 
@@ -299,7 +312,8 @@ myMCEntity.getWorld();
 Return Type: boolean
 
 ```zenscript
-MCEntity.hasNoGravity() as boolean
+// MCEntity.hasNoGravity() as boolean
+
 myMCEntity.hasNoGravity();
 ```
 
@@ -326,7 +340,8 @@ MCEntity.isEntityInRange(entity as MCEntity, distance as double) as boolean
 Return Type: boolean
 
 ```zenscript
-MCEntity.isImmuneToFire() as boolean
+// MCEntity.isImmuneToFire() as boolean
+
 myMCEntity.isImmuneToFire();
 ```
 
@@ -337,7 +352,8 @@ myMCEntity.isImmuneToFire();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isInLava() as boolean
+// MCEntity.isInLava() as boolean
+
 myMCEntity.isInLava();
 ```
 
@@ -348,7 +364,8 @@ myMCEntity.isInLava();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isInWater() as boolean
+// MCEntity.isInWater() as boolean
+
 myMCEntity.isInWater();
 ```
 
@@ -359,7 +376,8 @@ myMCEntity.isInWater();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isInWaterOrBubbleColumn() as boolean
+// MCEntity.isInWaterOrBubbleColumn() as boolean
+
 myMCEntity.isInWaterOrBubbleColumn();
 ```
 
@@ -370,7 +388,8 @@ myMCEntity.isInWaterOrBubbleColumn();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isInWaterRainOrBubbleColumn() as boolean
+// MCEntity.isInWaterRainOrBubbleColumn() as boolean
+
 myMCEntity.isInWaterRainOrBubbleColumn();
 ```
 
@@ -398,7 +417,8 @@ MCEntity.isOffsetPositionInLiquid(x as double, y as double, z as double) as bool
 Return Type: boolean
 
 ```zenscript
-MCEntity.isOnGround() as boolean
+// MCEntity.isOnGround() as boolean
+
 myMCEntity.isOnGround();
 ```
 
@@ -409,7 +429,8 @@ myMCEntity.isOnGround();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isSilent() as boolean
+// MCEntity.isSilent() as boolean
+
 myMCEntity.isSilent();
 ```
 
@@ -420,7 +441,8 @@ myMCEntity.isSilent();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isSpectator() as boolean
+// MCEntity.isSpectator() as boolean
+
 myMCEntity.isSpectator();
 ```
 
@@ -431,7 +453,8 @@ myMCEntity.isSpectator();
 Return Type: boolean
 
 ```zenscript
-MCEntity.isWet() as boolean
+// MCEntity.isWet() as boolean
+
 myMCEntity.isWet();
 ```
 
@@ -474,7 +497,8 @@ MCEntity.onCollideWithPlayer(entityIn as MCPlayerEntity) as void
 Return Type: void
 
 ```zenscript
-MCEntity.onKillCommand() as void
+// MCEntity.onKillCommand() as void
+
 myMCEntity.onKillCommand();
 ```
 

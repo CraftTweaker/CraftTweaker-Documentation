@@ -22,7 +22,8 @@ Registers a new Event listener.
 Return Type: void
 
 ```zenscript
-CTEventManager.register<T : MCEvent>(consumer as Consumer<T>) as void
+// CTEventManager.register<T : MCEvent>(consumer as Consumer<T>) as void
+
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>((event) => {
      var player = event.player;
      var result = event.itemResult;

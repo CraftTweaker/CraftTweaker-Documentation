@@ -42,7 +42,8 @@ Creates a new Weighted Stack with the given weight
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+// MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 

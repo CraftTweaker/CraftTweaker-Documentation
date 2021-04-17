@@ -20,7 +20,8 @@ import crafttweaker.api.game.MCGame;
 Return Type: string
 
 ```zenscript
-MCGame.localize(translationKey as string) as string
+// MCGame.localize(translationKey as string) as string
+
 game.localize("gui.up");
 ```
 

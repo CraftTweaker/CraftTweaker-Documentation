@@ -33,7 +33,8 @@ The face of the block that was clicked
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-MCRightClickBlockEvent.getFace() as Direction
+// MCRightClickBlockEvent.getFace() as Direction
+
 myMCRightClickBlockEvent.getFace();
 ```
 

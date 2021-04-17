@@ -17,7 +17,8 @@ Returns if this material is considered solid or not
 Return Type: boolean
 
 ```zenscript
-MCMaterial.blocksMovement() as boolean
+// MCMaterial.blocksMovement() as boolean
+
 myMCMaterial.blocksMovement();
 ```
 
@@ -30,7 +31,8 @@ Retrieves the color index of the block. This is is the same color used by vanill
 Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
-MCMaterial.getColor() as MCMaterialColor
+// MCMaterial.getColor() as MCMaterialColor
+
 myMCMaterial.getColor();
 ```
 
@@ -43,7 +45,8 @@ Returns if the block can burn or not.
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isFlammable() as boolean
+// MCMaterial.isFlammable() as boolean
+
 myMCMaterial.isFlammable();
 ```
 
@@ -56,7 +59,8 @@ Returns if blocks of these materials are liquids.
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isLiquid() as boolean
+// MCMaterial.isLiquid() as boolean
+
 myMCMaterial.isLiquid();
 ```
 
@@ -69,7 +73,8 @@ Indicate if the material is opaque
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isOpaque() as boolean
+// MCMaterial.isOpaque() as boolean
+
 myMCMaterial.isOpaque();
 ```
 
@@ -82,7 +87,8 @@ Returns whether the material can be replaced by other blocks when placed - eg sn
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isReplaceable() as boolean
+// MCMaterial.isReplaceable() as boolean
+
 myMCMaterial.isReplaceable();
 ```
 
@@ -95,7 +101,8 @@ Returns true if the block is a considered solid. This is true by default.
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isSolid() as boolean
+// MCMaterial.isSolid() as boolean
+
 myMCMaterial.isSolid();
 ```
 

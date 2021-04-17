@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-FurnaceManager.addJSONRecipe(name as string, data as IData) as void
+// FurnaceManager.addJSONRecipe(name as string, data as IData) as void
+
 furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a recipe based on given params.
 Return Type: void
 
 ```zenscript
-FurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+// FurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
 furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
@@ -63,7 +65,8 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-FurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// FurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 furnace.getAllRecipes();
 ```
 
@@ -106,7 +109,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeAll() as void
+// FurnaceManager.removeAll() as void
+
 furnace.removeAll();
 ```
 
@@ -119,7 +123,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeByModid(modid as string) as void
+// FurnaceManager.removeByModid(modid as string) as void
+
 furnace.removeByModid("minecraft");
 ```
 
@@ -137,7 +142,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// FurnaceManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 furnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -156,7 +162,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeByName(name as string) as void
+// FurnaceManager.removeByName(name as string) as void
+
 furnace.removeByName("minecraft:furnace");
 ```
 
@@ -174,7 +181,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeByRegex(regex as string) as void
+// FurnaceManager.removeByRegex(regex as string) as void
+
 furnace.removeByRegex("\\d_\\d");
 ```
 
@@ -192,7 +200,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeRecipe(output as IItemStack) as void
+// FurnaceManager.removeRecipe(output as IItemStack) as void
+
 furnace.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -210,7 +219,8 @@ Removes a recipe based on it's output and input.
 Return Type: void
 
 ```zenscript
-FurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+// FurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
 furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 

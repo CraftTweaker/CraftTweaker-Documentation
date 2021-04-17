@@ -70,7 +70,8 @@ Indicates that the location must be on top of a campfire.
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
-LocationPredicate.withCampfireBelow() as LocationPredicate
+// LocationPredicate.withCampfireBelow() as LocationPredicate
+
 myLocationPredicate.withCampfireBelow();
 ```
 
@@ -424,7 +425,8 @@ Indicates that the location must not be on top of a campfire.
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
-LocationPredicate.withoutCampfireBelow() as LocationPredicate
+// LocationPredicate.withoutCampfireBelow() as LocationPredicate
+
 myLocationPredicate.withoutCampfireBelow();
 ```
 

@@ -23,7 +23,8 @@ MCPlayerTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Th
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCPlayerTickEvent.getPlayer() as MCPlayerEntity
+// MCPlayerTickEvent.getPlayer() as MCPlayerEntity
+
 myMCPlayerTickEvent.getPlayer();
 ```
 

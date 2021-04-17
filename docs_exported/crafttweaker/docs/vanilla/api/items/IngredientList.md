@@ -70,7 +70,8 @@ IngredientList.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
+// IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
+
 myIngredientList.anyDamage();
 ```
 
@@ -81,7 +82,8 @@ myIngredientList.anyDamage();
 Return Type: void
 
 ```zenscript
-IngredientList.clearTooltip() as void
+// IngredientList.clearTooltip() as void
+
 myIngredientList.clearTooltip();
 ```
 
@@ -94,7 +96,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientList.contains(ingredient as IIngredient) as boolean
+// IngredientList.contains(ingredient as IIngredient) as boolean
+
 myIngredientList.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -114,7 +117,8 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IngredientList.getRemainingItem(stack as IItemStack) as IItemStack
+// IngredientList.getRemainingItem(stack as IItemStack) as IItemStack
+
 myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -132,7 +136,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientList.matches(stack as IItemStack) as boolean
+// IngredientList.matches(stack as IItemStack) as boolean
+
 myIngredientList.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -180,7 +185,8 @@ IngredientList.only(condition as IIngredientCondition<IIngredient>) as MCIngredi
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 myIngredientList.onlyDamaged();
 ```
 

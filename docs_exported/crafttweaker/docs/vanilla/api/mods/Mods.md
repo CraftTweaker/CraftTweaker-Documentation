@@ -20,7 +20,8 @@ Gets a specific mod
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-Mods.getMod(modid as string) as ModInfo
+// Mods.getMod(modid as string) as ModInfo
+
 loadedMods.getMod("minecraft");
 ```
 
@@ -38,7 +39,8 @@ Checks if a mod is laoded
 Return Type: boolean
 
 ```zenscript
-Mods.isModLoaded(modid as string) as boolean
+// Mods.isModLoaded(modid as string) as boolean
+
 loadedMods.isModLoaded("minecraft");
 ```
 

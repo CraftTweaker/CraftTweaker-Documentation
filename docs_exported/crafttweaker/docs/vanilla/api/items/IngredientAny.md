@@ -22,7 +22,8 @@ IngredientAny implements the following interfaces. That means all methods define
 Return Type: [IngredientAny](/vanilla/api/items/IngredientAny)
 
 ```zenscript
-IngredientAny.getInstance() as IngredientAny
+// IngredientAny.getInstance() as IngredientAny
+
 IngredientAny.getInstance();
 ```
 
@@ -72,7 +73,8 @@ IngredientAny.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
+// IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
+
 myIngredientAny.anyDamage();
 ```
 
@@ -83,7 +85,8 @@ myIngredientAny.anyDamage();
 Return Type: void
 
 ```zenscript
-IngredientAny.clearTooltip() as void
+// IngredientAny.clearTooltip() as void
+
 myIngredientAny.clearTooltip();
 ```
 
@@ -96,7 +99,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientAny.contains(ingredient as IIngredient) as boolean
+// IngredientAny.contains(ingredient as IIngredient) as boolean
+
 myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -116,7 +120,8 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
+// IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
+
 myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -134,7 +139,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientAny.matches(stack as IItemStack) as boolean
+// IngredientAny.matches(stack as IItemStack) as boolean
+
 myIngredientAny.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -182,7 +188,8 @@ IngredientAny.only(condition as IIngredientCondition<IIngredient>) as MCIngredie
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 myIngredientAny.onlyDamaged();
 ```
 

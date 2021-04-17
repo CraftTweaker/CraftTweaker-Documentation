@@ -32,7 +32,8 @@ Indicates that the damage source must be able to bypass armor protection (for ex
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withArmorBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withArmorBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withArmorBypass();
 ```
 
@@ -68,7 +69,8 @@ Indicates that the damage must have been caused by an explosion.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withExplosionSource() as DamageSourcePredicate
+// DamageSourcePredicate.withExplosionSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withExplosionSource();
 ```
 
@@ -83,7 +85,8 @@ Indicates that the damage must have been caused by fire.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withFireSource() as DamageSourcePredicate
+// DamageSourcePredicate.withFireSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withFireSource();
 ```
 
@@ -98,7 +101,8 @@ Indicates that the damage source must be able to bypass invulnerability (for exa
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withInvulnerabilityBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withInvulnerabilityBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withInvulnerabilityBypass();
 ```
 
@@ -113,7 +117,8 @@ Indicates that the damage must have been caused by a lightning strike.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withLightningSource() as DamageSourcePredicate
+// DamageSourcePredicate.withLightningSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withLightningSource();
 ```
 
@@ -128,7 +133,8 @@ Indicates that the damage source must be able to bypass magic protection (for ex
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withMagicBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withMagicBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withMagicBypass();
 ```
 
@@ -143,7 +149,8 @@ Indicates that the damage must have been caused by magic sources.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withMagicSource() as DamageSourcePredicate
+// DamageSourcePredicate.withMagicSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withMagicSource();
 ```
 
@@ -158,7 +165,8 @@ Indicates that the damage must have been caused by a projectile.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withProjectileSource() as DamageSourcePredicate
+// DamageSourcePredicate.withProjectileSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withProjectileSource();
 ```
 
@@ -194,7 +202,8 @@ Indicates that the damage source must not be able to bypass armor protection.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutArmorBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutArmorBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutArmorBypass();
 ```
 
@@ -209,7 +218,8 @@ Indicates that the damage must not have been caused by an explosion.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutExplosionSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutExplosionSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutExplosionSource();
 ```
 
@@ -224,7 +234,8 @@ Indicates that the damage must not have been caused by fire.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutFireSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutFireSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutFireSource();
 ```
 
@@ -239,7 +250,8 @@ Indicates that the damage source must not be able to bypass invulnerability.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutInvulnerabilityBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutInvulnerabilityBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutInvulnerabilityBypass();
 ```
 
@@ -254,7 +266,8 @@ Indicates that the damage must not have been caused by a lightning strike.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutLightningSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutLightningSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutLightningSource();
 ```
 
@@ -269,7 +282,8 @@ Indicates that the damage source must not be able to bypass magic protection.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutMagicBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutMagicBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutMagicBypass();
 ```
 
@@ -284,7 +298,8 @@ Indicates that the damage must not have been caused by magic sources.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutMagicSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutMagicSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutMagicSource();
 ```
 
@@ -299,7 +314,8 @@ Indicates that the damage must not have been caused by a projectile.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutProjectileSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutProjectileSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutProjectileSource();
 ```
 

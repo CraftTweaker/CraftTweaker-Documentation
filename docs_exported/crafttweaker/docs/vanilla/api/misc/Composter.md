@@ -21,7 +21,8 @@ Sets the compost value of the given IItemStack.
 Return Type: void
 
 ```zenscript
-Composter.setValue(stack as IItemStack, amount as float) as void
+// Composter.setValue(stack as IItemStack, amount as float) as void
+
 composter.setValue(<item:minecraft:diamond>, 0.85);
 ```
 

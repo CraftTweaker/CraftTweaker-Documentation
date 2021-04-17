@@ -23,7 +23,8 @@ MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemPickupEvent.getStack() as IItemStack
+// MCItemPickupEvent.getStack() as IItemStack
+
 myMCItemPickupEvent.getStack();
 ```
 

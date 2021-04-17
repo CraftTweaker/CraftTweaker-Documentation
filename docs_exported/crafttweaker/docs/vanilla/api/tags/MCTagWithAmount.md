@@ -20,7 +20,8 @@ MCTagWithAmount implements the following interfaces. That means all methods defi
 Return Type: int
 
 ```zenscript
-MCTagWithAmount.getAmount() as int
+// MCTagWithAmount.getAmount() as int
+
 myMCTagWithAmount.getAmount();
 ```
 
@@ -31,7 +32,8 @@ myMCTagWithAmount.getAmount();
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
-MCTagWithAmount.getTag() as MCTag<T>
+// MCTagWithAmount.getTag() as MCTag<T>
+
 myMCTagWithAmount.getTag();
 ```
 

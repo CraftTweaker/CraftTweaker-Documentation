@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-SmokerManager.addJSONRecipe(name as string, data as IData) as void
+// SmokerManager.addJSONRecipe(name as string, data as IData) as void
+
 smoker.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a recipe based on given params.
 Return Type: void
 
 ```zenscript
-SmokerManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+// SmokerManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
 smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
@@ -63,7 +65,8 @@ smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-SmokerManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// SmokerManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 smoker.getAllRecipes();
 ```
 
@@ -106,7 +109,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-SmokerManager.removeAll() as void
+// SmokerManager.removeAll() as void
+
 smoker.removeAll();
 ```
 
@@ -119,7 +123,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-SmokerManager.removeByModid(modid as string) as void
+// SmokerManager.removeByModid(modid as string) as void
+
 smoker.removeByModid("minecraft");
 ```
 
@@ -137,7 +142,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-SmokerManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// SmokerManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -156,7 +162,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-SmokerManager.removeByName(name as string) as void
+// SmokerManager.removeByName(name as string) as void
+
 smoker.removeByName("minecraft:furnace");
 ```
 
@@ -174,7 +181,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-SmokerManager.removeByRegex(regex as string) as void
+// SmokerManager.removeByRegex(regex as string) as void
+
 smoker.removeByRegex("\\d_\\d");
 ```
 
@@ -192,7 +200,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-SmokerManager.removeRecipe(output as IItemStack) as void
+// SmokerManager.removeRecipe(output as IItemStack) as void
+
 smoker.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -210,7 +219,8 @@ Removes a recipe based on it's output and input.
 Return Type: void
 
 ```zenscript
-SmokerManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+// SmokerManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
 smoker.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 

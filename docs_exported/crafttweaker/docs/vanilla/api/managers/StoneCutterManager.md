@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-StoneCutterManager.addJSONRecipe(name as string, data as IData) as void
+// StoneCutterManager.addJSONRecipe(name as string, data as IData) as void
+
 stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a recipe to the stone cutter
 Return Type: void
 
 ```zenscript
-StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
+// StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
+
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraft:wool>);
 ```
 
@@ -61,7 +63,8 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraf
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-StoneCutterManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// StoneCutterManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 stoneCutter.getAllRecipes();
 ```
 
@@ -104,7 +107,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeAll() as void
+// StoneCutterManager.removeAll() as void
+
 stoneCutter.removeAll();
 ```
 
@@ -117,7 +121,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeByModid(modid as string) as void
+// StoneCutterManager.removeByModid(modid as string) as void
+
 stoneCutter.removeByModid("minecraft");
 ```
 
@@ -135,7 +140,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// StoneCutterManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -154,7 +160,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeByName(name as string) as void
+// StoneCutterManager.removeByName(name as string) as void
+
 stoneCutter.removeByName("minecraft:furnace");
 ```
 
@@ -172,7 +179,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeByRegex(regex as string) as void
+// StoneCutterManager.removeByRegex(regex as string) as void
+
 stoneCutter.removeByRegex("\\d_\\d");
 ```
 
@@ -190,7 +198,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-StoneCutterManager.removeRecipe(output as IItemStack) as void
+// StoneCutterManager.removeRecipe(output as IItemStack) as void
+
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 

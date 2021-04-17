@@ -13,7 +13,8 @@
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-MCTagWithAmount.asIngredient() as IIngredientWithAmount
+// MCTagWithAmount.asIngredient() as IIngredientWithAmount
+
 myMCTagWithAmount.asIngredient();
 ```
 

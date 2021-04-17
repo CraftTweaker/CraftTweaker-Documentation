@@ -67,7 +67,8 @@ IItemStack.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
+// IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.anyDamage();
 ```
 
@@ -78,7 +79,8 @@ IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
+// IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
+
 <item:minecraft:dirt>.asIIngredientWithAmount();
 ```
 
@@ -89,7 +91,8 @@ IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.asImmutable() as IItemStack
+// IItemStack.asImmutable() as IItemStack
+
 <item:minecraft:dirt>.asImmutable();
 ```
 
@@ -102,7 +105,8 @@ Create a Vanilla ingredient matching this one.
 Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 
 ```zenscript
-IItemStack.asVanillaIngredient() as Ingredient
+// IItemStack.asVanillaIngredient() as Ingredient
+
 <item:minecraft:dirt>.asVanillaIngredient();
 ```
 
@@ -115,7 +119,8 @@ Clears any custom name set for this ItemStack
 Return Type: void
 
 ```zenscript
-IItemStack.clearCustomName() as void
+// IItemStack.clearCustomName() as void
+
 <item:minecraft:dirt>.clearCustomName();
 ```
 
@@ -126,7 +131,8 @@ IItemStack.clearCustomName() as void
 Return Type: void
 
 ```zenscript
-IItemStack.clearTooltip() as void
+// IItemStack.clearTooltip() as void
+
 <item:minecraft:dirt>.clearTooltip();
 ```
 
@@ -139,7 +145,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-IItemStack.contains(ingredient as IIngredient) as boolean
+// IItemStack.contains(ingredient as IIngredient) as boolean
+
 <item:minecraft:dirt>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -157,7 +164,8 @@ Creates a copy
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.copy() as IItemStack
+// IItemStack.copy() as IItemStack
+
 <item:minecraft:dirt>.copy();
 ```
 
@@ -168,7 +176,8 @@ IItemStack.copy() as IItemStack
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 ```zenscript
-IItemStack.getDefinition() as MCItemDefinition
+// IItemStack.getDefinition() as MCItemDefinition
+
 <item:minecraft:dirt>.getDefinition();
 ```
 
@@ -179,7 +188,8 @@ IItemStack.getDefinition() as MCItemDefinition
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
-IItemStack.getImmutableInternal() as ItemStack
+// IItemStack.getImmutableInternal() as ItemStack
+
 <item:minecraft:dirt>.getImmutableInternal();
 ```
 
@@ -192,7 +202,8 @@ Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
-IItemStack.getInternal() as ItemStack
+// IItemStack.getInternal() as ItemStack
+
 <item:minecraft:dirt>.getInternal();
 ```
 
@@ -207,7 +218,8 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
+// IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
+
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -223,7 +235,8 @@ IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
 Return Type: boolean
 
 ```zenscript
-IItemStack.isFood() as boolean
+// IItemStack.isFood() as boolean
+
 <item:minecraft:dirt>.isFood();
 ```
 
@@ -234,7 +247,8 @@ IItemStack.isFood() as boolean
 Return Type: boolean
 
 ```zenscript
-IItemStack.isImmutable() as boolean
+// IItemStack.isImmutable() as boolean
+
 <item:minecraft:dirt>.isImmutable();
 ```
 
@@ -247,7 +261,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-IItemStack.matches(stack as IItemStack) as boolean
+// IItemStack.matches(stack as IItemStack) as boolean
+
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -278,7 +293,8 @@ IItemStack.modifyTooltip(function as ITooltipFunction) as void
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.mutable() as IItemStack
+// IItemStack.mutable() as IItemStack
+
 <item:minecraft:dirt>.mutable();
 ```
 
@@ -306,7 +322,8 @@ IItemStack.only(condition as IIngredientCondition<IIngredient>) as MCIngredientC
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IItemStack.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// IItemStack.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.onlyDamaged();
 ```
 
@@ -349,7 +366,8 @@ Sets the display name of the ItemStack
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.setDisplayName(name as string) as IItemStack
+// IItemStack.setDisplayName(name as string) as IItemStack
+
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
@@ -382,7 +400,8 @@ Sets the damage of the ItemStack
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.withDamage(damage as int) as IItemStack
+// IItemStack.withDamage(damage as int) as IItemStack
+
 <item:minecraft:dirt>.withDamage(10);
 ```
 
@@ -400,7 +419,8 @@ Sets the tag for the ItemStack.
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.withTag(tag as IData) as IItemStack
+// IItemStack.withTag(tag as IData) as IItemStack
+
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 

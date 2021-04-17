@@ -162,7 +162,8 @@ Normalizes the current vector, making it of unit length.
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
-MCVector3d.normalize() as MCVector3d
+// MCVector3d.normalize() as MCVector3d
+
 myMCVector3d.normalize();
 ```
 

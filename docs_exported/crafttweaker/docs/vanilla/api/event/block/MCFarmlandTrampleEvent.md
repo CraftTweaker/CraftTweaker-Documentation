@@ -29,7 +29,8 @@ MCFarmlandTrampleEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEv
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCFarmlandTrampleEvent.getEntity() as MCEntity
+// MCFarmlandTrampleEvent.getEntity() as MCEntity
+
 myMCFarmlandTrampleEvent.getEntity();
 ```
 
@@ -40,7 +41,8 @@ myMCFarmlandTrampleEvent.getEntity();
 Return Type: float
 
 ```zenscript
-MCFarmlandTrampleEvent.getFallDistance() as float
+// MCFarmlandTrampleEvent.getFallDistance() as float
+
 myMCFarmlandTrampleEvent.getFallDistance();
 ```
 

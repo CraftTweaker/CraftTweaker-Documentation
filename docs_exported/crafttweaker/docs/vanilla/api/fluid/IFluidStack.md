@@ -26,7 +26,8 @@ IFluidStack implements the following interfaces. That means all methods defined 
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-IFluidStack.asImmutable() as IFluidStack
+// IFluidStack.asImmutable() as IFluidStack
+
 myIFluidStack.asImmutable();
 ```
 
@@ -56,7 +57,8 @@ Copies the stack. Only needed when mutable stacks are involved.
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-IFluidStack.copy() as IFluidStack
+// IFluidStack.copy() as IFluidStack
+
 myIFluidStack.copy();
 ```
 
@@ -69,7 +71,8 @@ Returns the NBT tag attached to this FluidStack.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-IFluidStack.getTag() as IData
+// IFluidStack.getTag() as IData
+
 myIFluidStack.getTag();
 ```
 
@@ -80,7 +83,8 @@ myIFluidStack.getTag();
 Return Type: boolean
 
 ```zenscript
-IFluidStack.isImmutable() as boolean
+// IFluidStack.isImmutable() as boolean
+
 myIFluidStack.isImmutable();
 ```
 
@@ -93,7 +97,8 @@ Makes this stack mutable
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-IFluidStack.mutable() as IFluidStack
+// IFluidStack.mutable() as IFluidStack
+
 myIFluidStack.mutable();
 ```
 
@@ -106,7 +111,8 @@ Sets the fluid amount in MilliBuckets (mB)
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-IFluidStack.setAmount(amount as int) as IFluidStack
+// IFluidStack.setAmount(amount as int) as IFluidStack
+
 myIFluidStack.setAmount(1000);
 ```
 
@@ -124,7 +130,8 @@ Sets the tag for the FluidStack.
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-IFluidStack.withTag(tag as IData) as IFluidStack
+// IFluidStack.withTag(tag as IData) as IFluidStack
+
 myIFluidStack.withTag({Display: {lore: ["Hello"]}});
 ```
 

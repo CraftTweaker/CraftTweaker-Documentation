@@ -30,7 +30,8 @@ Gets a snapshot of the item from before it broke. Modifying this item
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+// MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+
 event.getDestroyedItem();
 ```
 

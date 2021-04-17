@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addJSONRecipe(name as string, data as IData) as void
+// CraftingTableManager.addJSONRecipe(name as string, data as IData) as void
+
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a shaped recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+// CraftingTableManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+
 craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -63,7 +65,8 @@ Adds a mirrored shaped recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShapedMirrored(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+// CraftingTableManager.addShapedMirrored(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+
 craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -83,7 +86,8 @@ Adds a shapeless recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray) as void
+// CraftingTableManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray) as void
+
 craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:items:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -101,7 +105,8 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-CraftingTableManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// CraftingTableManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 craftingTable.getAllRecipes();
 ```
 
@@ -144,7 +149,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeAll() as void
+// CraftingTableManager.removeAll() as void
+
 craftingTable.removeAll();
 ```
 
@@ -157,7 +163,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByModid(modid as string) as void
+// CraftingTableManager.removeByModid(modid as string) as void
+
 craftingTable.removeByModid("minecraft");
 ```
 
@@ -175,7 +182,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// CraftingTableManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -194,7 +202,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByName(name as string) as void
+// CraftingTableManager.removeByName(name as string) as void
+
 craftingTable.removeByName("minecraft:furnace");
 ```
 
@@ -212,7 +221,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByRegex(regex as string) as void
+// CraftingTableManager.removeByRegex(regex as string) as void
+
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
@@ -230,7 +240,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeRecipe(output as IItemStack) as void
+// CraftingTableManager.removeRecipe(output as IItemStack) as void
+
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 

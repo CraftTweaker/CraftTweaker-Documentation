@@ -21,7 +21,8 @@ import crafttweaker.api.blocks.MCBlock;
 Return Type: boolean
 
 ```zenscript
-MCBlock.canSpawnInBlock() as boolean
+// MCBlock.canSpawnInBlock() as boolean
+
 myMCBlock.canSpawnInBlock();
 ```
 
@@ -32,7 +33,8 @@ myMCBlock.canSpawnInBlock();
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlock.getDefaultState() as MCBlockState
+// MCBlock.getDefaultState() as MCBlockState
+
 myMCBlock.getDefaultState();
 ```
 
@@ -43,7 +45,8 @@ myMCBlock.getDefaultState();
 Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;
 
 ```zenscript
-MCBlock.getValidStates() as stdlib.List<MCBlockState>
+// MCBlock.getValidStates() as stdlib.List<MCBlockState>
+
 myMCBlock.getValidStates();
 ```
 

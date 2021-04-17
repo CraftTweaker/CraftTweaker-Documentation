@@ -77,7 +77,8 @@ Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carr
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
-CommonLootModifiers.clearLoot() as ILootModifier
+// CommonLootModifiers.clearLoot() as ILootModifier
+
 CommonLootModifiers.clearLoot();
 ```
 

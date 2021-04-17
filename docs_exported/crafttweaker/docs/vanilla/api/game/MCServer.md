@@ -66,7 +66,8 @@ Get a server world instance based on resource location
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
 ```zenscript
-MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+// MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+
 myMCServer.getWorld(<resource:minecraft:the_end>);
 ```
 

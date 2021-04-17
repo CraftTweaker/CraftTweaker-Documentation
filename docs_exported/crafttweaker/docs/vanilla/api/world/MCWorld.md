@@ -46,7 +46,8 @@ MCWorld.addEntity(entity as MCEntity) as boolean
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
 ```zenscript
-MCWorld.asServerWorld() as MCServerWorld
+// MCWorld.asServerWorld() as MCServerWorld
+
 world.asServerWorld();
 ```
 
@@ -59,7 +60,8 @@ Destroys a block within the world.
 Return Type: boolean
 
 ```zenscript
-MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean) as boolean
+// MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean) as boolean
+
 world.destroyBlock(new BlockPos(0, 1, 2), true);
 ```
 
@@ -78,7 +80,8 @@ Destroys a block within the world.
 Return Type: boolean
 
 ```zenscript
-MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean, breaker as MCEntity) as boolean
+// MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean, breaker as MCEntity) as boolean
+
 world.destroyBlock(new BlockPos(0, 1, 2), true, player);
 ```
 
@@ -98,7 +101,8 @@ Gets the biome at a given position.
 Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 
 ```zenscript
-MCWorld.getBiome(pos as BlockPos) as MCBiome
+// MCWorld.getBiome(pos as BlockPos) as MCBiome
+
 world.getBiome(new BlockPos(0, 1, 2));
 ```
 
@@ -116,7 +120,8 @@ Gets the block state at a given position.
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCWorld.getBlockState(pos as BlockPos) as MCBlockState
+// MCWorld.getBlockState(pos as BlockPos) as MCBlockState
+
 world.getBlockState(new BlockPos(0, 1, 2));
 ```
 
@@ -135,7 +140,8 @@ Gets all entities in given area, but the arguments are block poses.
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
-MCWorld.getEntitiesInArea(pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+// MCWorld.getEntitiesInArea(pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+
 world.getEntitiesInArea(new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 ```
 
@@ -153,7 +159,8 @@ Gets all entities in given area.
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
-MCWorld.getEntitiesInArea(x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double) as stdlib.List<MCEntity>
+// MCWorld.getEntitiesInArea(x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double) as stdlib.List<MCEntity>
+
 world.getEntitiesInArea(1.0, 1.0, 1.0, 11.4, 11.4, 11.4);
 ```
 
@@ -176,7 +183,8 @@ world.getEntitiesInArea(1.0, 1.0, 1.0, 11.4, 11.4, 11.4);
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
-MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, predicate as Predicate<MCEntity>, pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+// MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, predicate as Predicate<MCEntity>, pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<MCEntity>
+
 world.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 ```
 
@@ -196,7 +204,8 @@ Gets all entities in given area, excluding the one passed into it.
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
-MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double, predicate as Predicate<MCEntity>) as stdlib.List<MCEntity>
+// MCWorld.getEntitiesInAreaExcluding(excludingEntity as MCEntity?, x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double, predicate as Predicate<MCEntity>) as stdlib.List<MCEntity>
+
 world.getEntitiesInAreaExcluding(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entityIn) => entityIn.isInWater());
 ```
 
@@ -221,7 +230,8 @@ Gets the redstone signal strength available to a position from a given direction
 Return Type: int
 
 ```zenscript
-MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
+// MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
+
 world.getRedstonePower(new BlockPos(0, 1, 2), <direction:north>);
 ```
 
@@ -240,7 +250,8 @@ Gets the highest redstone signal available to a position from any of it's neighb
 Return Type: int
 
 ```zenscript
-MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
+// MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
+
 world.getRedstonePowerFromNeighbors(new BlockPos(0, 1, 2));
 ```
 
@@ -258,7 +269,8 @@ Gets the highest strong (direct) redstone signal of any neighboring block.
 Return Type: int
 
 ```zenscript
-MCWorld.getStrongPower(pos as BlockPos) as int
+// MCWorld.getStrongPower(pos as BlockPos) as int
+
 world.getStrongPower(new BlockPos(0, 1, 2));
 ```
 
@@ -276,7 +288,8 @@ Gets the tile entity data for a tile entity at a given position.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MCWorld.getTileData(pos as BlockPos) as IData
+// MCWorld.getTileData(pos as BlockPos) as IData
+
 world.getTileData(new BlockPos(0, 1, 2));
 ```
 
@@ -294,7 +307,8 @@ Checks if the block at a given position is air.
 Return Type: boolean
 
 ```zenscript
-MCWorld.isAir(pos as BlockPos) as boolean
+// MCWorld.isAir(pos as BlockPos) as boolean
+
 world.isAir(new BlockPos(0, 1, 2));
 ```
 
@@ -312,7 +326,8 @@ Checks if a given position is receiving a redstone signal.
 Return Type: boolean
 
 ```zenscript
-MCWorld.isBlockPowered(pos as BlockPos) as boolean
+// MCWorld.isBlockPowered(pos as BlockPos) as boolean
+
 world.isBlockPowered(new BlockPos(0, 1, 2));
 ```
 
@@ -330,7 +345,8 @@ Checks if the block at a given position is in a loaded chunk.
 Return Type: boolean
 
 ```zenscript
-MCWorld.isLoaded(pos as BlockPos) as boolean
+// MCWorld.isLoaded(pos as BlockPos) as boolean
+
 world.isLoaded(new BlockPos(0, 1, 2));
 ```
 
@@ -349,7 +365,8 @@ Checks if it is raining at a specific position. This can never be true
 Return Type: boolean
 
 ```zenscript
-MCWorld.isRainingAt(pos as BlockPos) as boolean
+// MCWorld.isRainingAt(pos as BlockPos) as boolean
+
 world.isRainingAt(new BlockPos(0, 1, 2));
 ```
 
@@ -368,7 +385,8 @@ Checks if the world is remote. This is always true on the rendering
 Return Type: boolean
 
 ```zenscript
-MCWorld.isRemote() as boolean
+// MCWorld.isRemote() as boolean
+
 world.isRemote();
 ```
 
@@ -382,7 +400,8 @@ Triggers a predetermined event on the client. Using this on a server
 Return Type: void
 
 ```zenscript
-MCWorld.playEvent(eventId as int, pos as BlockPos, data as int) as void
+// MCWorld.playEvent(eventId as int, pos as BlockPos, data as int) as void
+
 world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 ```
 
@@ -404,7 +423,8 @@ Triggers a predetermined event on the client. Using this on a server
 Return Type: void
 
 ```zenscript
-MCWorld.playEvent(excluded as MCPlayerEntity, eventId as int, pos as BlockPos, data as int) as void
+// MCWorld.playEvent(excluded as MCPlayerEntity, eventId as int, pos as BlockPos, data as int) as void
+
 world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 ```
 
@@ -426,7 +446,8 @@ Sets the block and it's state at a given position.
 Return Type: boolean
 
 ```zenscript
-MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
+// MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
+
 world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 ```
 

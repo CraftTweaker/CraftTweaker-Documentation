@@ -27,7 +27,8 @@ Was this event caused by the player entering the portal in the end?
 Return Type: boolean
 
 ```zenscript
-MCPlayerRespawnEvent.isEndConquered() as boolean
+// MCPlayerRespawnEvent.isEndConquered() as boolean
+
 myMCPlayerRespawnEvent.isEndConquered();
 ```
 

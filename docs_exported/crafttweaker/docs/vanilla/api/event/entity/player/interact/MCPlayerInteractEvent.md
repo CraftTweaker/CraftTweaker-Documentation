@@ -30,7 +30,8 @@ If the interaction was on an entity, will be a BlockPos centered on the entity.
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-MCPlayerInteractEvent.getBlockPos() as BlockPos
+// MCPlayerInteractEvent.getBlockPos() as BlockPos
+
 myMCPlayerInteractEvent.getBlockPos();
 ```
 
@@ -44,7 +45,8 @@ The face involved in this interaction.
 Return Type: [Direction](/vanilla/api/util/Direction)?
 
 ```zenscript
-MCPlayerInteractEvent.getFace() as Direction?
+// MCPlayerInteractEvent.getFace() as Direction?
+
 myMCPlayerInteractEvent.getFace();
 ```
 
@@ -58,7 +60,8 @@ The stack involved in this interaction.
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerInteractEvent.getItemStack() as IItemStack
+// MCPlayerInteractEvent.getItemStack() as IItemStack
+
 myMCPlayerInteractEvent.getItemStack();
 ```
 

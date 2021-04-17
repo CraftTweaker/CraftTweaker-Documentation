@@ -23,7 +23,8 @@ MCBlockEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all metho
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlockEvent.getBlockState() as MCBlockState
+// MCBlockEvent.getBlockState() as MCBlockState
+
 myMCBlockEvent.getBlockState();
 ```
 
@@ -34,7 +35,8 @@ myMCBlockEvent.getBlockState();
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-MCBlockEvent.getPos() as BlockPos
+// MCBlockEvent.getPos() as BlockPos
+
 myMCBlockEvent.getPos();
 ```
 
@@ -45,7 +47,8 @@ myMCBlockEvent.getPos();
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
-MCBlockEvent.getWorld() as MCWorld
+// MCBlockEvent.getWorld() as MCWorld
+
 myMCBlockEvent.getWorld();
 ```
 

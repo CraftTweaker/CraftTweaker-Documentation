@@ -49,7 +49,8 @@ MCCommand.equals(o as Object) as boolean
 Return Type: int
 
 ```zenscript
-MCCommand.hashCode() as int
+// MCCommand.hashCode() as int
+
 myMCCommand.hashCode();
 ```
 
@@ -75,7 +76,8 @@ MCCommand.run(context as MCCommandContext) as int
 Return Type: string
 
 ```zenscript
-MCCommand.toString() as string
+// MCCommand.toString() as string
+
 myMCCommand.toString();
 ```
 

@@ -23,7 +23,8 @@ MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). 
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEvent.getEntityLiving() as MCLivingEntity
+// MCLivingEvent.getEntityLiving() as MCLivingEntity
+
 myMCLivingEvent.getEntityLiving();
 ```
 

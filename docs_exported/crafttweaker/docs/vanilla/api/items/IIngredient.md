@@ -60,7 +60,8 @@ IIngredient.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
+// IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
+
 <tag:items:forge:ingots>.anyDamage();
 ```
 
@@ -73,7 +74,8 @@ Create a Vanilla ingredient matching this one.
 Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 
 ```zenscript
-IIngredient.asVanillaIngredient() as Ingredient
+// IIngredient.asVanillaIngredient() as Ingredient
+
 <tag:items:forge:ingots>.asVanillaIngredient();
 ```
 
@@ -84,7 +86,8 @@ IIngredient.asVanillaIngredient() as Ingredient
 Return Type: void
 
 ```zenscript
-IIngredient.clearTooltip() as void
+// IIngredient.clearTooltip() as void
+
 <tag:items:forge:ingots>.clearTooltip();
 ```
 
@@ -97,7 +100,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-IIngredient.contains(ingredient as IIngredient) as boolean
+// IIngredient.contains(ingredient as IIngredient) as boolean
+
 <tag:items:forge:ingots>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -117,7 +121,8 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
+// IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
+
 <tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -135,7 +140,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-IIngredient.matches(stack as IItemStack) as boolean
+// IIngredient.matches(stack as IItemStack) as boolean
+
 <tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -201,7 +207,8 @@ IIngredient.only(condition as IIngredientCondition<IIngredient>) as MCIngredient
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 <tag:items:forge:ingots>.onlyDamaged();
 ```
 

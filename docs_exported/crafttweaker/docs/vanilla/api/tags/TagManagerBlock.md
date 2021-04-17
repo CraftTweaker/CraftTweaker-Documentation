@@ -56,7 +56,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerBlock.getAllTags();
 ```
 

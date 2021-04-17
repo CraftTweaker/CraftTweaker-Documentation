@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-CampFireManager.addJSONRecipe(name as string, data as IData) as void
+// CampFireManager.addJSONRecipe(name as string, data as IData) as void
+
 campfire.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a recipe based on given params.
 Return Type: void
 
 ```zenscript
-CampFireManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+// CampFireManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
 campfire.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
@@ -63,7 +65,8 @@ campfire.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraf
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-CampFireManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// CampFireManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 campfire.getAllRecipes();
 ```
 
@@ -106,7 +109,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-CampFireManager.removeAll() as void
+// CampFireManager.removeAll() as void
+
 campfire.removeAll();
 ```
 
@@ -119,7 +123,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-CampFireManager.removeByModid(modid as string) as void
+// CampFireManager.removeByModid(modid as string) as void
+
 campfire.removeByModid("minecraft");
 ```
 
@@ -137,7 +142,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-CampFireManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// CampFireManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 campfire.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -156,7 +162,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-CampFireManager.removeByName(name as string) as void
+// CampFireManager.removeByName(name as string) as void
+
 campfire.removeByName("minecraft:furnace");
 ```
 
@@ -174,7 +181,8 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-CampFireManager.removeByRegex(regex as string) as void
+// CampFireManager.removeByRegex(regex as string) as void
+
 campfire.removeByRegex("\\d_\\d");
 ```
 
@@ -192,7 +200,8 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-CampFireManager.removeRecipe(output as IItemStack) as void
+// CampFireManager.removeRecipe(output as IItemStack) as void
+
 campfire.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -210,7 +219,8 @@ Removes a recipe based on it's output and input.
 Return Type: void
 
 ```zenscript
-CampFireManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+// CampFireManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
 campfire.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 

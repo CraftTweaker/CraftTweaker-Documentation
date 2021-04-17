@@ -37,7 +37,8 @@ MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 Return Type: string[string]
 
 ```zenscript
-MCBlockState.getProperties() as string[string]
+// MCBlockState.getProperties() as string[string]
+
 myMCBlockState.getProperties();
 ```
 
@@ -48,7 +49,8 @@ myMCBlockState.getProperties();
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-MCBlockState.getPropertyNames() as stdlib.List<string>
+// MCBlockState.getPropertyNames() as stdlib.List<string>
+
 myMCBlockState.getPropertyNames();
 ```
 

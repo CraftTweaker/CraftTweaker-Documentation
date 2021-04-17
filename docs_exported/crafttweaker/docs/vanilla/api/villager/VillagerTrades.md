@@ -19,7 +19,8 @@ Adds a Villager Trade for emeralds for an Item. An example being, giving a villa
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
 villagerTrades.addTrade(<profession:minecraft:farmer>, 1, 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
@@ -42,7 +43,8 @@ Adds a Villager Trade for an Item for an Item. An example being, giving a villag
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
 villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:dirt> * 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
@@ -65,7 +67,8 @@ Adds a Villager Trade for two Items for an Item. An example being, giving a vill
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, input2 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, input2 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
 villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond> * 2, <item:minecraft:dirt> * 2, <item:minecraft:arrow>, 5, 2, 0.05);
 ```
 
@@ -89,7 +92,8 @@ Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving
 Return Type: void
 
 ```zenscript
-VillagerTrades.addWanderingTrade(rarity as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int) as void
+// VillagerTrades.addWanderingTrade(rarity as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int) as void
+
 villagerTrades.addWanderingTrade(1, 16, <item:minecraft:diamond>, 16, 2);
 ```
 
@@ -111,7 +115,8 @@ Removes a Villager trade for Items for Dyed leather armor. An example being, giv
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeDyedArmorForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as MCItemDefinition) as void
+// VillagerTrades.removeDyedArmorForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as MCItemDefinition) as void
+
 villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:leather_chestplate>);
 ```
 
@@ -131,7 +136,8 @@ Removes a Villager trade for Emeralds for Items. An example being, giving a vill
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEmeraldForItemsTrade(profession as MCVillagerProfession, villagerLevel as int, tradeFor as MCItemDefinition) as void
+// VillagerTrades.removeEmeraldForItemsTrade(profession as MCVillagerProfession, villagerLevel as int, tradeFor as MCItemDefinition) as void
+
 villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>.definition);
 ```
 
@@ -151,7 +157,8 @@ Removes a Villager trade for a Map. An example being, giving a villager Emeralds
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEmeraldForMapTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+// VillagerTrades.removeEmeraldForMapTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
 villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:farmer>, 1);
 ```
 
@@ -170,7 +177,8 @@ Removes a Villager trade for an Enchanted Book. An example being, giving a villa
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEnchantedBookForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+// VillagerTrades.removeEnchantedBookForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
 villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>, 1);
 ```
 
@@ -189,7 +197,8 @@ Removes a Villager trade for an Enchanted Item. An example being, giving a villa
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEnchantedItemForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as IItemStack) as void
+// VillagerTrades.removeEnchantedItemForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as IItemStack) as void
+
 villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond_sword>.withTag({Enchantments: [{lvl: 1 as short, id: "minecraft:smite" as string}]}));
 ```
 
@@ -209,7 +218,8 @@ Removes a Villager trade for Items for an Item with a PotionEffect. An example b
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, potionStack as IItemStack, sellingItem as MCItemDefinition) as void
+// VillagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, potionStack as IItemStack, sellingItem as MCItemDefinition) as void
+
 villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:tipped_arrow>, <item:minecraft:arrow>);
 ```
 
@@ -230,7 +240,8 @@ Removes a Villager trade for Emeralds and Items for Items. An example being, giv
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemsForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack, buyingItem as IItemStack) as void
+// VillagerTrades.removeItemsForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack, buyingItem as IItemStack) as void
+
 villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:gravel>, <item:minecraft:flint>);
 ```
 
@@ -251,7 +262,8 @@ Removes a Villager trade for Items for Emeralds. An example being, giving a vill
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemsForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack) as void
+// VillagerTrades.removeItemsForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack) as void
+
 villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>);
 ```
 
@@ -271,7 +283,8 @@ Removes a Villager trade for Suspicious Stew. An example being, giving a village
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeSuspiciousStewForEmeraldTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+// VillagerTrades.removeSuspiciousStewForEmeraldTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
 villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>, 1);
 ```
 
@@ -290,7 +303,8 @@ Removes a Wandering Trader trade for Emeralds for Items. An example being, givin
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
+// VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
+
 villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
 ```
 

@@ -57,7 +57,8 @@ MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+// MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientTransformed.anyDamage();
 ```
 
@@ -68,7 +69,8 @@ myMCIngredientTransformed.anyDamage();
 Return Type: void
 
 ```zenscript
-MCIngredientTransformed.clearTooltip() as void
+// MCIngredientTransformed.clearTooltip() as void
+
 myMCIngredientTransformed.clearTooltip();
 ```
 
@@ -81,7 +83,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+// MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+
 myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -99,7 +102,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientTransformed.matches(stack as IItemStack) as boolean
+// MCIngredientTransformed.matches(stack as IItemStack) as boolean
+
 myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -163,7 +167,8 @@ MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientTransformed.onlyDamaged();
 ```
 
