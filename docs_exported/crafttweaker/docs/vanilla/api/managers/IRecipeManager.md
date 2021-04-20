@@ -177,14 +177,14 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-// IRecipeManager.removeRecipe(output as IItemStack) as void
+// IRecipeManager.removeRecipe(output as IIngredient) as void
 
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| output | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
 
 
 :::
