@@ -201,12 +201,31 @@ Return Type: void
 ```zenscript
 // SmithingManager.removeRecipe(output as IIngredient) as void
 
-smithing.removeRecipe(<item:minecraft:glass>);
+smithing.removeRecipe(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | output | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// SmithingManager.removeRecipe(output as IItemStack) as void
+
+smithing.removeRecipe(<item:minecraft:glass>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 :::
