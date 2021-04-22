@@ -13,6 +13,26 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Methods
+
+:::group{name=create}
+
+Creates a new entity in the world.
+
+Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
+
+```zenscript
+MCEntityType.create(world as MCWorld) as MCEntity
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | World for the entity to be created in |
+
+
+:::
+
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |
