@@ -115,7 +115,9 @@ Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any i
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeBasicTrade(profession as MCVillagerProfession, villagerLevel as int, forSale as IItemStack, price as IItemStack, price2 as IItemStack) as void
+// VillagerTrades.removeBasicTrade(profession as MCVillagerProfession, villagerLevel as int, forSale as IItemStack, price as IItemStack, price2 as IItemStack) as void
+
+villagerTrades.removeBasicTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>, <item:minecraft:stick>, <item:minecraft:emerald>);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
