@@ -405,3 +405,26 @@ BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 
 :::
 
+:::group{name=getToolType}
+
+Gets a tool type by name.
+ If the tool type doesn't exist yet, this will create a new one with the given name
+
+Returns: The found tool type or a new one
+Return Type: [ToolType](/vanilla/api/tool/ToolType)
+
+```zenscript
+<tooltype:shovel>
+
+// BracketHandlers.getToolType(tokens as string) as ToolType
+
+BracketHandlers.getToolType("shovel");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | the tool type's name |
+
+
+:::
+

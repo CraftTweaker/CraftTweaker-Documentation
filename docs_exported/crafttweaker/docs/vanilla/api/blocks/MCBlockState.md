@@ -110,6 +110,8 @@ MCBlockState.withProperty(name as string, value as string) as MCBlockState
 | block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
 | canProvidePower | boolean | true | false |
 | commandString | string | true | false |
+| harvestLevel | int | true | false |
+| harvestTool | [ToolType](/vanilla/api/tool/ToolType) | true | false |
 | hasTileEntity | boolean | true | false |
 | isSolid | boolean | true | false |
 | isSticky | boolean | true | false |

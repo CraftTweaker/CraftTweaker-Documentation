@@ -317,6 +317,9 @@
         "Tileentity": {
           "MCTileEntity": "vanilla/api/tileentity/MCTileEntity.md"
         },
+        "Tool": {
+          "ToolType": "vanilla/api/tool/ToolType.md"
+        },
         "Util": {
           "BlockPos": "vanilla/api/util/BlockPos.md",
           "DamageSource": "vanilla/api/util/DamageSource.md",

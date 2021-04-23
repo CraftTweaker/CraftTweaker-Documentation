@@ -65,10 +65,10 @@ myMCBlockToolInteractEvent.getPlayer();
 
 :::group{name=getToolType}
 
-Return Type: string
+Return Type: [ToolType](/vanilla/api/tool/ToolType)
 
 ```zenscript
-// MCBlockToolInteractEvent.getToolType() as string
+// MCBlockToolInteractEvent.getToolType() as ToolType
 
 myMCBlockToolInteractEvent.getToolType();
 ```
@@ -102,5 +102,5 @@ MCBlockToolInteractEvent.setFinalState(state as MCBlockState) as void
 | finalState | [MCBlockState](/vanilla/api/blocks/MCBlockState)? | true | true |
 | heldItemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 | player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false |
-| toolType | string | true | false |
+| toolType | [ToolType](/vanilla/api/tool/ToolType) | true | false |
 

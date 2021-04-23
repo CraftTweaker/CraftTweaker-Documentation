@@ -503,6 +503,7 @@ myIItemStack | other as IIngredient
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 | stackable | boolean | true | false |
 | tag | [IData](/vanilla/api/data/IData) | true | false |
+| toolTypes | [ToolType](/vanilla/api/tool/ToolType)[] | true | false |
 | translationKey | string | true | false |
 | useDuration | int | true | false |
 
