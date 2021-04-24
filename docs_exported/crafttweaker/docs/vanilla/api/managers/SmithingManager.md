@@ -230,4 +230,23 @@ smithing.removeRecipe(<item:minecraft:glass>);
 
 :::
 
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// SmithingManager.removeRecipeByInput(input as IItemStack) as void
+
+smithing.removeRecipeByInput(<item:minecraft:ironingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| input | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
 

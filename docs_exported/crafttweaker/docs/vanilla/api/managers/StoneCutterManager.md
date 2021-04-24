@@ -229,4 +229,23 @@ stoneCutter.removeRecipe(<item:minecraft:glass>);
 
 :::
 
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// StoneCutterManager.removeRecipeByInput(input as IItemStack) as void
+
+stoneCutter.removeRecipeByInput(<item:minecraft:ironingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| input | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
 

@@ -251,4 +251,23 @@ smoker.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 
 :::
 
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeRecipeByInput(input as IItemStack) as void
+
+smoker.removeRecipeByInput(<item:minecraft:ironingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| input | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
 
