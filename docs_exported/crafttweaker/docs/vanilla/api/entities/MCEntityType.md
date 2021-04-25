@@ -13,6 +13,12 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true |
+
 ## Methods
 
 :::group{name=create}
@@ -29,6 +35,17 @@ MCEntityType.create(world as MCWorld) as MCEntity
 |-----------|------|-------------|
 | world | [MCWorld](/vanilla/api/world/MCWorld) | World for the entity to be created in |
 
+
+:::
+
+
+## Operators
+
+:::group{name=OR}
+
+```zenscript
+myMCEntityType | other as EntityIngredient
+```
 
 :::
 
