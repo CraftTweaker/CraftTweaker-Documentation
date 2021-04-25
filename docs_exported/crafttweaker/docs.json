@@ -162,6 +162,7 @@
           }
         },
         "Fluid": {
+          "FluidIngredient": "vanilla/api/fluid/FluidIngredient.md",
           "IFluidStack": "vanilla/api/fluid/IFluidStack.md",
           "MCFluid": "vanilla/api/fluid/MCFluid.md"
         },
@@ -304,6 +305,8 @@
           "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
         },
         "Tags": {
+          "ExpandFluidTag": "vanilla/api/tags/ExpandFluidTag.md",
+          "ExpandFluidTagWithAmount": "vanilla/api/tags/ExpandFluidTagWithAmount.md",
           "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
           "ExpandItemTagWithAmount": "vanilla/api/tags/ExpandItemTagWithAmount.md",
           "MCTag": "vanilla/api/tags/MCTag.md",

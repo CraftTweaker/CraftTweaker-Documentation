@@ -17,6 +17,7 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true |
 | [MCFluid](/vanilla/api/fluid/MCFluid) | true |
 
 ## Methods
@@ -162,6 +163,14 @@ Sets the fluid amount in MilliBuckets (MB)
 ```zenscript
 myIFluidStack * amount as int
 myIFluidStack * 1000
+```
+
+:::
+
+:::group{name=OR}
+
+```zenscript
+myIFluidStack | other as FluidIngredient
 ```
 
 :::
