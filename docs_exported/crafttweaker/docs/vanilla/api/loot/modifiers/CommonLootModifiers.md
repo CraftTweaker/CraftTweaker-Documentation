@@ -19,7 +19,7 @@ import crafttweaker.api.loot.modifiers.CommonLootModifiers;
 
 Adds the given [IItemStack](/vanilla/api/items/IItemStack) to the drops.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -37,7 +37,7 @@ CommonLootModifiers.add(stack as IItemStack) as ILootModifier
 
 Adds all the given [IItemStack](/vanilla/api/items/IItemStack) to the drops.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -55,7 +55,7 @@ CommonLootModifiers.addAll(stacks as IItemStack[]) as ILootModifier
 
 Chains the given list of [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)s to be executed one after the other.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -73,7 +73,7 @@ CommonLootModifiers.chaining(modifiers as ILootModifier[]) as ILootModifier
 
 Clears the entire drop list.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -88,7 +88,7 @@ CommonLootModifiers.clearLoot();
 
 Removes every instance of the targeted [IIngredient](/vanilla/api/items/IIngredient) from the drops.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -106,7 +106,7 @@ CommonLootModifiers.remove(target as IIngredient) as ILootModifier
 
 Removes every instance of all the targeted [IIngredient](/vanilla/api/items/IIngredient)s from the drops.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -131,7 +131,7 @@ Replaces every instance of the targeted [IItemStack](/vanilla/api/items/IItemSta
 
  This loot modifier acts differently than [this](.)#replaceAllWith(Map), where a simpler approach is used.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -154,7 +154,7 @@ Replaces every instance of the targeted [IIngredient](/vanilla/api/items/IIngred
  by the corresponding value, without considering stack size. If stack size is to be preserved, refer to
  [this](.)#replaceAllStacksWith(Map).
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -180,7 +180,7 @@ Replaces every instance of the targeted [IItemStack](/vanilla/api/items/IItemSta
  This loot modifier acts differently than [this](.)#replaceWith(IIngredient, IItemStack), where a simpler approach
  is used.
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript
@@ -203,7 +203,7 @@ Replaces every instance of the targeted [IIngredient](/vanilla/api/items/IIngred
  is replaced by the <code>replacement</code> without considering stack size. If stack size is to be preserved,
  refer to [this](.)#replaceStackWith(IItemStack, IItemStack).
 
-Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.
+Returns: An [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript

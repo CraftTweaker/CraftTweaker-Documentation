@@ -253,6 +253,7 @@
           "CampFireManager": "vanilla/api/managers/CampFireManager.md",
           "CraftingTableManager": "vanilla/api/managers/CraftingTableManager.md",
           "FurnaceManager": "vanilla/api/managers/FurnaceManager.md",
+          "GenericRecipesManager": "vanilla/api/managers/GenericRecipesManager.md",
           "ICookingRecipeManager": "vanilla/api/managers/ICookingRecipeManager.md",
           "IRecipeManager": "vanilla/api/managers/IRecipeManager.md",
           "SmithingManager": "vanilla/api/managers/SmithingManager.md",

@@ -24,7 +24,7 @@ import crafttweaker.api.loot.conditions.LootConditionBuilder;
 
 Creates a new empty [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
-Returns: The newly created instance.
+Returns: The newly created instance.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -43,7 +43,7 @@ Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionB
  but only wants to add a single condition to it. It is effectively a call to <code>create</code> followed by one
  to <code>add</code>.
 
-Returns: The newly created builder, already containing the created condition.
+Returns: The newly created builder, already containing the created condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -65,7 +65,7 @@ Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionB
  This ensures that, no matter what the underlying implementation may assume, the various conditions will be
  treated as part of an 'And' condition. Refer to [And](/vanilla/api/loot/conditions/crafttweaker/And) for more information.
 
-Returns: The newly created instance, containing the 'And' condition.
+Returns: The newly created instance, containing the 'And' condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -86,7 +86,7 @@ Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionB
  This ensures that, no matter what the underlying implementation may assume, the various conditions will be
  treated as part of an 'Or' condition. Refer to [Or](/vanilla/api/loot/conditions/crafttweaker/Or) for more information.
 
-Returns: The newly created instance, containing the 'Or' condition.
+Returns: The newly created instance, containing the 'Or' condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -109,7 +109,7 @@ Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the 
 
  If no valid condition is found, or the JSON is invalid, an error gets thrown.
 
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
@@ -136,7 +136,7 @@ Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the 
 
  If no valid condition is found, or the JSON is invalid, an error gets thrown.
 
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
@@ -161,7 +161,7 @@ Creates a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of t
  This is particularly useful if the creation of a single loot condition is required and the user wants to use one
  of the already existing builders.
 
-Returns: The condition created by the builder itself.
+Returns: The condition created by the builder itself.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript

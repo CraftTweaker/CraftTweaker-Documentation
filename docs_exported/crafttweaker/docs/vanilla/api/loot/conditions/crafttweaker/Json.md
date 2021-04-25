@@ -35,7 +35,7 @@ Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the 
 
  This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
@@ -64,7 +64,7 @@ Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the 
 
  This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript

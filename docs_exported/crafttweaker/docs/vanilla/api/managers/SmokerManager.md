@@ -87,6 +87,20 @@ SmokerManager.getRecipeByName(name as string) as WrapperRecipe
 
 :::
 
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// SmokerManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+smoker.getRecipeMap();
+```
+
+:::
+
 :::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
@@ -270,4 +284,11 @@ smoker.removeRecipeByInput(<item:minecraft:ironingot>);
 
 :::
 
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt; | true | false |
+| recipeMap | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true | false |
 

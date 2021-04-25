@@ -17,7 +17,7 @@ import crafttweaker.util.NameUtils;
 Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a
  well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
-Returns: The fixed string.
+Returns: The fixed string.  
 Return Type: string
 
 ```zenscript
@@ -36,7 +36,7 @@ NameUtils.fixing(input as string) as string
 Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a
  well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
-Returns: The fixed string.
+Returns: The fixed string.  
 Return Type: string
 
 ```zenscript
@@ -58,7 +58,7 @@ NameUtils.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.Lis
 Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that
  may be present in the string.
 
-Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.
+Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
@@ -77,7 +77,7 @@ NameUtils.fromFixedName(input as string) as MCResourceLocation
 Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that
  may be present in the string.
 
-Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.
+Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
