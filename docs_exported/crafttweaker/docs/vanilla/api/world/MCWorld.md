@@ -300,6 +300,21 @@ world.getTileData(new BlockPos(0, 1, 2));
 
 :::
 
+:::group{name=getTileEntity}
+
+Return Type: [MCTileEntity](/vanilla/api/tileentity/MCTileEntity)?
+
+```zenscript
+MCWorld.getTileEntity(pos as BlockPos) as MCTileEntity?
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+:::
+
 :::group{name=isAir}
 
 Checks if the block at a given position is air.

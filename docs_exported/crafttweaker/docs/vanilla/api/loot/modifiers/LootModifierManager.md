@@ -30,7 +30,7 @@ Return Type: stdlib.List&lt;[ILootModifier](/vanilla/api/loot/modifiers/ILootMod
 ```zenscript
 // LootModifierManager.getAll() as stdlib.List<ILootModifier>
 
-myLootModifierManager.getAll();
+loot.modifiers.getAll();
 ```
 
 :::
@@ -44,7 +44,7 @@ Return Type: stdlib.List&lt;string&gt;
 ```zenscript
 // LootModifierManager.getAllNames() as stdlib.List<string>
 
-myLootModifierManager.getAllNames();
+loot.modifiers.getAllNames();
 ```
 
 :::
@@ -158,7 +158,7 @@ Return Type: void
 ```zenscript
 // LootModifierManager.removeAll() as void
 
-myLootModifierManager.removeAll();
+loot.modifiers.removeAll();
 ```
 
 :::

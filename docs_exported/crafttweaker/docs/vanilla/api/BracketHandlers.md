@@ -219,7 +219,7 @@ BracketHandlers.getEntityClassification("monster");
 
 :::group{name=getEntityType}
 
-Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
+Gets the entityType based on registry name. Throws an exception if it can't find the entityType.
 
 Returns: The found entityType
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
@@ -322,7 +322,7 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 
 :::group{name=getProfession}
 
-Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
+Gets the villager profession based on registry name. Throws an exception if it can't find the profession.
 
 Returns: The found profession
 Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)

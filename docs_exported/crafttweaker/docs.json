@@ -94,6 +94,7 @@
             "MCBlockNeighborNotifyEvent": "vanilla/api/event/block/MCBlockNeighborNotifyEvent.md",
             "MCBlockPlaceEvent": "vanilla/api/event/block/MCBlockPlaceEvent.md",
             "MCBlockToolInteractEvent": "vanilla/api/event/block/MCBlockToolInteractEvent.md",
+            "MCCropGrowEvent": "vanilla/api/event/block/MCCropGrowEvent.md",
             "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
             "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
           },

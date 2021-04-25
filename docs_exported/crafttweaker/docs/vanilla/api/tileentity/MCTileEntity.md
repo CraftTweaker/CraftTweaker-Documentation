@@ -10,3 +10,29 @@ import crafttweaker.api.tileentity.MCTileEntity;
 ```
 
 
+## Methods
+
+:::group{name=updateData}
+
+Return Type: void
+
+```zenscript
+MCTileEntity.updateData(data as MapData) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| data | [MapData](/vanilla/api/data/MapData) | true | false |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+

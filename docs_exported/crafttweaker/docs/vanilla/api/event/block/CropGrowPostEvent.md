@@ -14,6 +14,10 @@ import crafttweaker.api.event.block.MCCropGrowPostEvent;
 ```
 
 
+## Extending MCCropGrowEvent
+
+MCCropGrowPostEvent extends [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent). That means all methods available in [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent) are also available in MCCropGrowPostEvent
+
 ## Methods
 
 :::group{name=getOriginState}

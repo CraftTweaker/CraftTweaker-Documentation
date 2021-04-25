@@ -22,3 +22,7 @@ import crafttweaker.api.event.block.MCCropGrowPreEvent;
 ```
 
 
+## Extending MCCropGrowEvent
+
+MCCropGrowPreEvent extends [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent). That means all methods available in [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent) are also available in MCCropGrowPreEvent
+
