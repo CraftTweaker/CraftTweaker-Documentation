@@ -259,6 +259,18 @@ myMCEntity.getName();
 
 :::
 
+:::group{name=getPosition}
+
+Return Type: [BlockPos](/vanilla/api/util/BlockPos)
+
+```zenscript
+// MCEntity.getPosition() as BlockPos
+
+myMCEntity.getPosition();
+```
+
+:::
+
 :::group{name=getTags}
 
 Return Type: Set&lt;string&gt;
@@ -685,6 +697,7 @@ MCEntity.updateData(data as MapData) as void
 | data | [MapData](/vanilla/api/data/MapData) | true | false |
 | facingDirections | [Direction](/vanilla/api/util/Direction)[] | true | false |
 | name | string | true | false |
+| position | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
 | uuid | string | true | false |
 | world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
 
