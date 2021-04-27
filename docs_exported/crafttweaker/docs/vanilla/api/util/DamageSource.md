@@ -210,20 +210,21 @@ myDamageSource.isUnblockableDamage();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| absolute | boolean | true | false |
-| bypassCreative | boolean | true | false |
-| creativePlayer | boolean | true | false |
-| difficultyScaled | boolean | true | false |
-| explosion | boolean | true | false |
-| fire | boolean | true | false |
-| hungerDamage | float | true | false |
-| immediateSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false |
-| location | [MCVector3d](/vanilla/api/util/MCVector3d)? | true | false |
-| magic | boolean | true | false |
-| projectile | boolean | true | false |
-| trueSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false |
-| type | string | true | false |
-| unblockable | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| absolute | boolean | true | false | Checks if the damage is absolute. |
+| bypassCreative | boolean | true | false | Checks if the damage can bypass creative mode. |
+| creativePlayer | boolean | true | false | Gets whether the damage was inflicted by a creative player. |
+| difficultyScaled | boolean | true | false | Gets whether the damage changes strength based on the current difficulty. |
+| explosion | boolean | true | false | Checks if the damage is caused by an explosion. |
+| fire | boolean | true | false | Checks if the damage is caused by fire or burning. |
+| hungerDamage | float | true | false | Gets the amount of exhaustion to add to the player's hunger bar if they
+ get hit by this damage. |
+| immediateSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | Gets the immediate source of the damage, like an arrow. |
+| location | [MCVector3d](/vanilla/api/util/MCVector3d)? | true | false | Gets the location where the damage occurred. |
+| magic | boolean | true | false | Checks if the damage is caused by magic. |
+| projectile | boolean | true | false | Checks if the damage is caused by a projectile. |
+| trueSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | Gets the true source of the damage, like the player who shot the arrow. |
+| type | string | true | false | Gets the type of damage. |
+| unblockable | boolean | true | false | Checks if the damage can be blocked. |
 

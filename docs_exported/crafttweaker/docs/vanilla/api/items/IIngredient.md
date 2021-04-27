@@ -269,9 +269,9 @@ myIIngredient | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| burnTime | void | false | true |
-| commandString | string | true | false |
-| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| commandString | string | true | false | Returns the BEP to get this stack |
+| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
 

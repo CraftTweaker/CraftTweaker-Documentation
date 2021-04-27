@@ -247,7 +247,7 @@ myIngredientList | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| burnTime | void | false | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
 

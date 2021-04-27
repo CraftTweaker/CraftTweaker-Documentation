@@ -35,7 +35,7 @@ myMCCropGrowPostEvent.getOriginState();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| originState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| originState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
 

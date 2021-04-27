@@ -84,8 +84,8 @@ myMCWeightedItemStack * newAmount as int
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
-| weight | double | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets the original (unweighted) stack |
+| weight | double | true | false | Gets the weight (usually between 0 and 1) |
 

@@ -475,35 +475,39 @@ myIItemStack | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| amount | int | true | false |
-| burnTime | int | true | true |
-| commandString | string | true | false |
-| damage | int | true | false |
-| damageable | boolean | true | false |
-| damaged | boolean | true | false |
-| definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false |
-| displayName | string | true | false |
-| empty | boolean | true | false |
-| food | [MCFood](/vanilla/api/food/MCFood)? | true | true |
-| getOrCreate | [IData](/vanilla/api/data/IData) | true | false |
-| getRepairCost | int | true | false |
-| hasDisplayName | boolean | true | false |
-| hasEffect | boolean | true | false |
-| hasTag | boolean | true | false |
-| isCrossbow | boolean | true | false |
-| isEnchantable | boolean | true | false |
-| isEnchanted | boolean | true | false |
-| isImmutable | boolean | true | false |
-| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
-| maxDamage | int | true | false |
-| maxStackSize | int | true | false |
-| owner | string | true | false |
-| registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
-| stackable | boolean | true | false |
-| tag | [IData](/vanilla/api/data/IData) | true | false |
-| toolTypes | [ToolType](/vanilla/api/tool/ToolType)[] | true | false |
-| translationKey | string | true | false |
-| useDuration | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| amount | int | true | false | Gets the amount of Items in the ItemStack |
+| burnTime | int | true | true | No Description Provided |
+| commandString | string | true | false | Returns the BEP to get this stack |
+| damage | int | true | false | No Description Provided |
+| damageable | boolean | true | false | Returns if the ItemStack is damageable
+ I.E Swords and tools are damageable, sticks are not. |
+| damaged | boolean | true | false | Returns if the ItemStack is damaged
+ I.E a Swords that is no at full durability is damaged. |
+| definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
+| displayName | string | true | false | Gets the display name of the ItemStack |
+| empty | boolean | true | false | Returns if the ItemStack is empty |
+| food | [MCFood](/vanilla/api/food/MCFood)? | true | true | No Description Provided |
+| getOrCreate | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
+| getRepairCost | int | true | false | Gets the repair cost of the ItemStack, or 0 if no repair is defined. |
+| hasDisplayName | boolean | true | false | Returns true if the ItemStack has a display name. |
+| hasEffect | boolean | true | false | Returns true if this ItemStack has an effect. |
+| hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
+| isCrossbow | boolean | true | false | Returns true if this stack is considered a crossbow item |
+| isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
+| isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
+| isImmutable | boolean | true | false | No Description Provided |
+| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
+| maxDamage | int | true | false | Returns the max damage of the ItemStack
+ This is the max durability of the ItemStack. |
+| maxStackSize | int | true | false | Returns the max stack size of the Item in the ItemStack |
+| owner | string | true | false | Gets owning mod for the Item in this IItemStack |
+| registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
+| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1
+ I.E Swords and tools are not stackable, sticks are. |
+| tag | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack. |
+| toolTypes | [ToolType](/vanilla/api/tool/ToolType)[] | true | false | No Description Provided |
+| translationKey | string | true | false | Returns the unlocalized Name of the Item in the ItemStack |
+| useDuration | int | true | false | Gets the use duration of the ItemStack |
 

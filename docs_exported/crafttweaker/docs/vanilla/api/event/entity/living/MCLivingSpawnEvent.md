@@ -18,10 +18,10 @@ MCLivingSpawnEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
-| x | double | true | false |
-| y | double | true | false |
-| z | double | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
+| x | double | true | false | No Description Provided |
+| y | double | true | false | No Description Provided |
+| z | double | true | false | No Description Provided |
 

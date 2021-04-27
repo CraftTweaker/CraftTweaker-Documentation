@@ -54,8 +54,8 @@ loadedMods.isModLoaded("minecraft");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false |
-| size | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false | Gets a list of all mods in the game |
+| size | int | true | false | Gets the amount of mods loaded |
 

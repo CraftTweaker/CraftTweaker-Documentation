@@ -105,13 +105,13 @@ myMCTickEvent.isStart();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| client | boolean | true | false |
-| end | boolean | true | false |
-| phase | string | true | false |
-| server | boolean | true | false |
-| side | string | true | false |
-| start | boolean | true | false |
-| type | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| client | boolean | true | false | No Description Provided |
+| end | boolean | true | false | No Description Provided |
+| phase | string | true | false | No Description Provided |
+| server | boolean | true | false | No Description Provided |
+| side | string | true | false | No Description Provided |
+| start | boolean | true | false | No Description Provided |
+| type | string | true | false | No Description Provided |
 

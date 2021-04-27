@@ -57,8 +57,8 @@ MCTagWithAmount.setAmount(amount as int) as MCTagWithAmount<T>
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| amount | int | true | true |
-| tag | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| amount | int | true | true | No Description Provided |
+| tag | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | true | false | No Description Provided |
 

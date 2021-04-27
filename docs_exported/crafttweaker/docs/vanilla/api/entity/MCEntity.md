@@ -691,13 +691,13 @@ MCEntity.updateData(data as MapData) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| air | int | true | true |
-| data | [MapData](/vanilla/api/data/MapData) | true | false |
-| facingDirections | [Direction](/vanilla/api/util/Direction)[] | true | false |
-| name | string | true | false |
-| position | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| uuid | string | true | false |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| air | int | true | true | No Description Provided |
+| data | [MapData](/vanilla/api/data/MapData) | true | false | No Description Provided |
+| facingDirections | [Direction](/vanilla/api/util/Direction)[] | true | false | No Description Provided |
+| name | string | true | false | No Description Provided |
+| position | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
+| uuid | string | true | false | No Description Provided |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 

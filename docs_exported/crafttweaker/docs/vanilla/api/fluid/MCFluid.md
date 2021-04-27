@@ -32,7 +32,7 @@ myMCFluid.makeStack(1000);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
 

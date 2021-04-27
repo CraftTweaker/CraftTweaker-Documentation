@@ -138,9 +138,9 @@ world as MCServerWorld.setTimeToNoon();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| seed | long | true | false |
-| server | [MCServer](/vanilla/api/game/MCServer) | true | false |
-| timeOfDay | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| seed | long | true | false | Gets the random seed of the world. |
+| server | [MCServer](/vanilla/api/game/MCServer) | true | false | No Description Provided |
+| timeOfDay | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false | true | Sets the time of the Minecraft day. |
 

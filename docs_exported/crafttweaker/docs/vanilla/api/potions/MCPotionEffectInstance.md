@@ -90,13 +90,13 @@ MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| ambient | boolean | true | false |
-| amplifier | int | true | false |
-| duration | int | true | false |
-| effectName | string | true | false |
-| potion | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false |
-| showIcon | boolean | true | false |
-| showParticles | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| ambient | boolean | true | false | No Description Provided |
+| amplifier | int | true | false | No Description Provided |
+| duration | int | true | false | No Description Provided |
+| effectName | string | true | false | No Description Provided |
+| potion | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false | No Description Provided |
+| showIcon | boolean | true | false | No Description Provided |
+| showParticles | boolean | true | false | No Description Provided |
 

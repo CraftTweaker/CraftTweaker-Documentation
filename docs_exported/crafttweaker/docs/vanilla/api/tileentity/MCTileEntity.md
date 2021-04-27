@@ -30,9 +30,9 @@ MCTileEntity.updateData(data as MapData) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| data | [MapData](/vanilla/api/data/MapData) | true | false |
-| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | true | false | No Description Provided |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 

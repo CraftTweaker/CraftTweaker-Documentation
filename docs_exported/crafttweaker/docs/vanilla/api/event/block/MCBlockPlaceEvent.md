@@ -75,10 +75,10 @@ myMCBlockPlaceEvent.getReplacedBlock();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false |
-| placedAgainst | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
-| placedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
-| replacedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | No Description Provided |
+| placedAgainst | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| placedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| replacedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
 

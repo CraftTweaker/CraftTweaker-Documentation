@@ -229,10 +229,10 @@ myMCIngredientTransformed | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| baseIngredient | T | true | false |
-| burnTime | void | false | true |
-| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
-| transformer | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| baseIngredient | T | true | false | No Description Provided |
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
+| transformer | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false | No Description Provided |
 

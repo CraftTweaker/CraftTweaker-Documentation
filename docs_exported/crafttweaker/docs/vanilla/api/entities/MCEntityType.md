@@ -52,16 +52,16 @@ myMCEntityType | other as EntityIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false |
-| commandString | string | true | false |
-| height | float | true | false |
-| immuneToFire | boolean | true | false |
-| lootTable | string | true | false |
-| name | string | true | false |
-| serializable | boolean | true | false |
-| summonable | boolean | true | false |
-| translationKey | string | true | false |
-| width | float | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| commandString | string | true | false | No Description Provided |
+| height | float | true | false | No Description Provided |
+| immuneToFire | boolean | true | false | No Description Provided |
+| lootTable | string | true | false | No Description Provided |
+| name | string | true | false | No Description Provided |
+| serializable | boolean | true | false | No Description Provided |
+| summonable | boolean | true | false | No Description Provided |
+| translationKey | string | true | false | No Description Provided |
+| width | float | true | false | No Description Provided |
 

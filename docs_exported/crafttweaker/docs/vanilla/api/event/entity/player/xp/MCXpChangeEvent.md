@@ -60,7 +60,7 @@ event.setXp(15);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| xp | int | true | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| xp | int | true | true | Gets the amount of xp that the player's xp counter is being changed by. |
 

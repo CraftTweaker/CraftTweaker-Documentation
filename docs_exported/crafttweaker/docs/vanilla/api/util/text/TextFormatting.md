@@ -21,10 +21,10 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| colorIndex | int | true | false |
-| fancyStyling | boolean | true | false |
-| friendlyName | string | true | false |
-| isColor | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| colorIndex | int | true | false | No Description Provided |
+| fancyStyling | boolean | true | false | No Description Provided |
+| friendlyName | string | true | false | No Description Provided |
+| isColor | boolean | true | false | No Description Provided |
 

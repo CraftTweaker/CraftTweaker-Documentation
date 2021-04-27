@@ -250,10 +250,10 @@ myMCIngredientConditioned | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| baseIngredient | T | true | false |
-| burnTime | void | false | true |
-| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;T&gt; | true | false |
-| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| baseIngredient | T | true | false | No Description Provided |
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;T&gt; | true | false | No Description Provided |
+| items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
 

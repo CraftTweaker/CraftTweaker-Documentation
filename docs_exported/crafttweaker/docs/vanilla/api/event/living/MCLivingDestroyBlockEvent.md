@@ -24,8 +24,8 @@ MCLivingDestroyBlockEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLi
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
+| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
 

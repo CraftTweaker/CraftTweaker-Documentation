@@ -84,10 +84,10 @@ MCAnvilRepairEvent.setBreakChance(breakChance as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| breakChance | float | true | true |
-| ingredientInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
-| itemInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
-| itemResult | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| breakChance | float | true | true | No Description Provided |
+| ingredientInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
+| itemInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
+| itemResult | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 

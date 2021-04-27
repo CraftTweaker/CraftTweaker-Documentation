@@ -35,17 +35,17 @@ game.localize("gui.up");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| blockStates | Collection&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt; | true | false |
-| blocks | Collection&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | true | false |
-| directionAxises | Collection&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; | true | false |
-| effects | Collection&lt;[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)&gt; | true | false |
-| entityClassifications | Collection&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; | true | false |
-| entityTypes | Collection&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
-| fluids | Collection&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false |
-| formattings | Collection&lt;[TextFormatting](/vanilla/api/util/text/TextFormatting)&gt; | true | false |
-| items | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
-| potions | Collection&lt;[MCPotion](/vanilla/api/potions/MCPotion)&gt; | true | false |
-| recipeTypes | Collection&lt;[IRecipeManager](/vanilla/api/managers/IRecipeManager)&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| blockStates | Collection&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt; | true | false | No Description Provided |
+| blocks | Collection&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | true | false | No Description Provided |
+| directionAxises | Collection&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; | true | false | No Description Provided |
+| effects | Collection&lt;[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)&gt; | true | false | No Description Provided |
+| entityClassifications | Collection&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; | true | false | No Description Provided |
+| entityTypes | Collection&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false | No Description Provided |
+| fluids | Collection&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false | No Description Provided |
+| formattings | Collection&lt;[TextFormatting](/vanilla/api/util/text/TextFormatting)&gt; | true | false | No Description Provided |
+| items | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false | No Description Provided |
+| potions | Collection&lt;[MCPotion](/vanilla/api/potions/MCPotion)&gt; | true | false | No Description Provided |
+| recipeTypes | Collection&lt;[IRecipeManager](/vanilla/api/managers/IRecipeManager)&gt; | true | false | No Description Provided |
 

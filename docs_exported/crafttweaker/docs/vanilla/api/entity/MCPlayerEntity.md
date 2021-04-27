@@ -386,10 +386,10 @@ myMCPlayerEntity.wakeUp();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| fake | boolean | true | false |
-| foodLevel | int | true | true |
-| name | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true | false |
-| saturationLevel | float | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| fake | boolean | true | false | No Description Provided |
+| foodLevel | int | true | true | No Description Provided |
+| name | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true | false | No Description Provided |
+| saturationLevel | float | true | false | No Description Provided |
 

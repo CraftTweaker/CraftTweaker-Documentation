@@ -76,8 +76,8 @@ event.setItemDamage(5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| drops | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false |
-| itemDamage | int | true | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| drops | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | Gets the list of items being fished up by the player. |
+| itemDamage | int | true | true | Gets the amount of durability damage to inflict on the fishing rod. |
 

@@ -70,9 +70,13 @@ myMCPlayerInteractEvent.getItemStack();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| face | [Direction](/vanilla/api/util/Direction)? | true | false |
-| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity.
+ If the interaction was on a block, will be the position of that block.
+ Otherwise, will be a BlockPos centered on the player. |
+| face | [Direction](/vanilla/api/util/Direction)? | true | false | The face involved in this interaction.
+ For all non-block interactions, this will return null |
+| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | The stack involved in this interaction.
+ May be empty, but will never be null. |
 

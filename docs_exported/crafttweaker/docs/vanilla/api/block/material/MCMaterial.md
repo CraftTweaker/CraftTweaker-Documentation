@@ -111,8 +111,8 @@ myMCMaterial.isSolid();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| color | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true | false |
-| commandString | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| color | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true | false | Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block. |
+| commandString | string | true | false | No Description Provided |
 

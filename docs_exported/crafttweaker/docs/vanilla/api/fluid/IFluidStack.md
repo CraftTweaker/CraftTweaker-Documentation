@@ -178,14 +178,14 @@ myIFluidStack | other as FluidIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| amount | int | true | false |
-| commandString | string | true | false |
-| empty | boolean | true | false |
-| fluid | [MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
-| hasTag | boolean | true | false |
-| isImmutable | boolean | true | false |
-| registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
-| tag | [IData](/vanilla/api/data/IData) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| amount | int | true | false | Gets the fluid amount in MilliBuckets (mB). |
+| commandString | string | true | false | Returns the BEP to get this thingy |
+| empty | boolean | true | false | Gets whether or not this fluid stack is empty. |
+| fluid | [MCFluid](/vanilla/api/fluid/MCFluid) | true | false | Retrieves this fluid stack's fluid. |
+| hasTag | boolean | true | false | Returns true if this FluidStack has a Tag |
+| isImmutable | boolean | true | false | No Description Provided |
+| registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the fluid this stack is representing. |
+| tag | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this FluidStack. |
 

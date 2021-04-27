@@ -33,7 +33,7 @@ myMCLivingEvent.getEntityLiving();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true | false | No Description Provided |
 

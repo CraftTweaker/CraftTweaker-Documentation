@@ -16,9 +16,15 @@ TriState extends Enum&lt;[TriState](/vanilla/api/predicate/TriState)&gt;. That m
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| FALSE | [TriState](/vanilla/api/predicate/TriState) | true | false |
-| TRUE | [TriState](/vanilla/api/predicate/TriState) | true | false |
-| UNSET | [TriState](/vanilla/api/predicate/TriState) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| FALSE | [TriState](/vanilla/api/predicate/TriState) | true | false | The false value of the TriState.
+
+ It can be considered the same as a boolean's 'false' value. |
+| TRUE | [TriState](/vanilla/api/predicate/TriState) | true | false | The true value of the TriState.
+
+ It can be considered the same as a boolean's 'true' value. |
+| UNSET | [TriState](/vanilla/api/predicate/TriState) | true | false | The unset value of the TriState.
+
+ It represents the lack of a state or a decision that hasn't been made yet. |
 

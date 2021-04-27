@@ -68,8 +68,8 @@ MCBlockBreakEvent.setExpToDrop(amount as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| expToDrop | int | true | true |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| expToDrop | int | true | true | No Description Provided |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false | Gets the player who broke the block. If no player is available, use a fake player |
 

@@ -33,7 +33,7 @@ myMCEntityEvent.getEntity();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | No Description Provided |
 

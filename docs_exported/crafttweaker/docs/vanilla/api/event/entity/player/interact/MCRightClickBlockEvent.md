@@ -43,7 +43,8 @@ myMCRightClickBlockEvent.getFace();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| face | [Direction](/vanilla/api/util/Direction) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| face | [Direction](/vanilla/api/util/Direction) | true | false | The face of the block that was clicked
+ Unlike in [MCPlayerInteractEvent](/vanilla/api/event/entity/player/interact/MCPlayerInteractEvent) this is known not to be null |
 
