@@ -16,3 +16,11 @@ import crafttweaker.api.predicate.TargetedEntity;
 
 TargetedEntity extends Enum&lt;[TargetedEntity](/vanilla/api/predicate/TargetedEntity)&gt;. That means all methods available in Enum&lt;[TargetedEntity](/vanilla/api/predicate/TargetedEntity)&gt; are also available in TargetedEntity
 
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| ACTOR | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
+| DIRECT_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
+| KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
+| PLAYER_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |

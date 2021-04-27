@@ -14,3 +14,10 @@ import crafttweaker.api.predicate.TriState;
 
 TriState extends Enum&lt;[TriState](/vanilla/api/predicate/TriState)&gt;. That means all methods available in Enum&lt;[TriState](/vanilla/api/predicate/TriState)&gt; are also available in TriState
 
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| FALSE | [TriState](/vanilla/api/predicate/TriState) | true | false |
+| TRUE | [TriState](/vanilla/api/predicate/TriState) | true | false |
+| UNSET | [TriState](/vanilla/api/predicate/TriState) | true | false |

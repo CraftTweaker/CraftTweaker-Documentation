@@ -18,7 +18,13 @@ Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That mea
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
+| down | [Direction](/vanilla/api/util/Direction) | true | false |
+| east | [Direction](/vanilla/api/util/Direction) | true | false |
+| north | [Direction](/vanilla/api/util/Direction) | true | false |
 | sides | [Direction](/vanilla/api/util/Direction)[] | true | false |
+| south | [Direction](/vanilla/api/util/Direction) | true | false |
+| up | [Direction](/vanilla/api/util/Direction) | true | false |
+| west | [Direction](/vanilla/api/util/Direction) | true | false |
 ## Methods
 
 :::group{name=rotateY}
