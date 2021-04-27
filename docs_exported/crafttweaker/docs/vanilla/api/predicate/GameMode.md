@@ -25,3 +25,4 @@ GameMode extends Enum&lt;[GameMode](/vanilla/api/predicate/GameMode)&gt;. That m
 | CREATIVE | [GameMode](/vanilla/api/predicate/GameMode) | true | false |
 | SPECTATOR | [GameMode](/vanilla/api/predicate/GameMode) | true | false |
 | SURVIVAL | [GameMode](/vanilla/api/predicate/GameMode) | true | false |
+

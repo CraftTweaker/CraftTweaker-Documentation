@@ -24,3 +24,4 @@ TargetedEntity extends Enum&lt;[TargetedEntity](/vanilla/api/predicate/TargetedE
 | DIRECT_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
 | KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
 | PLAYER_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false |
+
