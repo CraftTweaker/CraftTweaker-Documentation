@@ -16,8 +16,7 @@ import crafttweaker.api.BracketHandlers;
 
 :::group{name=getBiome}
 
-Gets a Biome based on the tokens.
- Throws an error if it can't get the biome
+Gets a Biome based on the tokens. <br />  Throws an error if it can't get the biome
 
 Returns: The found biome  
 Return Type: [MCBiome](/vanilla/api/world/MCBiome)
@@ -83,8 +82,7 @@ BracketHandlers.getBlockMaterial("earth");
 
 :::group{name=getBlockState}
 
-Creates a Blockstate based on the given inputs.
- Returns `null` if it cannot find the block, ignored invalid variants
+Creates a Blockstate based on the given inputs. <br />  Returns `null` if it cannot find the block, ignored invalid variants
 
 Returns: The found BlockState  
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
@@ -108,8 +106,7 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 
 :::group{name=getDamageSource}
 
-Gets a damage source based on type.
- If the damage source is not pre-registered, it will create a new one with the given name
+Gets a damage source based on type. <br />  If the damage source is not pre-registered, it will create a new one with the given name
 
 Returns: The found pre-registered damage source or a new one  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
@@ -344,12 +341,7 @@ BracketHandlers.getProfession("minecraft:armorer");
 
 :::group{name=getRecipeManager}
 
-Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager.
- Throws an exception if the given recipeType is not found.
- <p>
- This will always return IRecipeManager.<br>
- There is also a BEP for that but that works differently so it can't be automatically added to the docs here.
- But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
+Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. <br />  Throws an exception if the given recipeType is not found. <br />  <p> <br />  This will always return IRecipeManager.<br> <br />  There is also a BEP for that but that works differently so it can't be automatically added to the docs here. <br />  But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
 
 Returns: The found recipeManager  
 Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
@@ -369,8 +361,7 @@ BracketHandlers.getRecipeManager("minecraft:crafting");
 
 :::group{name=getResourceLocation}
 
-Creates a Resource location based on the tokens.
- Throws an error if the tokens are not a valid location.
+Creates a Resource location based on the tokens. <br />  Throws an error if the tokens are not a valid location.
 
 Returns: The location  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
@@ -407,8 +398,7 @@ BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 
 :::group{name=getToolType}
 
-Gets a tool type by name.
- If the tool type doesn't exist yet, this will create a new one with the given name
+Gets a tool type by name. <br />  If the tool type doesn't exist yet, this will create a new one with the given name
 
 Returns: The found tool type or a new one  
 Return Type: [ToolType](/vanilla/api/tool/ToolType)

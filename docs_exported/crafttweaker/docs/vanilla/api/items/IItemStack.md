@@ -481,10 +481,8 @@ myIItemStack | other as IIngredient
 | burnTime | int | true | true | No Description Provided |
 | commandString | string | true | false | Returns the BEP to get this stack |
 | damage | int | true | false | No Description Provided |
-| damageable | boolean | true | false | Returns if the ItemStack is damageable
- I.E Swords and tools are damageable, sticks are not. |
-| damaged | boolean | true | false | Returns if the ItemStack is damaged
- I.E a Swords that is no at full durability is damaged. |
+| damageable | boolean | true | false | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not. |
+| damaged | boolean | true | false | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged. |
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
 | displayName | string | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
@@ -499,13 +497,11 @@ myIItemStack | other as IIngredient
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
 | isImmutable | boolean | true | false | No Description Provided |
 | items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
-| maxDamage | int | true | false | Returns the max damage of the ItemStack
- This is the max durability of the ItemStack. |
+| maxDamage | int | true | false | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
 | maxStackSize | int | true | false | Returns the max stack size of the Item in the ItemStack |
 | owner | string | true | false | Gets owning mod for the Item in this IItemStack |
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
-| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1
- I.E Swords and tools are not stackable, sticks are. |
+| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
 | tag | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack. |
 | toolTypes | [ToolType](/vanilla/api/tool/ToolType)[] | true | false | No Description Provided |
 | translationKey | string | true | false | Returns the unlocalized Name of the Item in the ItemStack |

@@ -18,10 +18,7 @@ import crafttweaker.api.mods.ModInfo;
 | displayName | string | true | false | Gets the display name of the mod |
 | entitytypes | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false | Finds all EntityTypes registered for that mod |
 | fluids | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false | Finds all EntityTypes registered for that mod |
-| items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false | Gets all known items from that mod
- <p>
- Does not take "sub items" into account!
- That means, that it will e.g. find an enchanted book, but without tags, and only one! |
+| items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false | Gets all known items from that mod <br />  <p> <br />  Does not take "sub items" into account! <br />  That means, that it will e.g. find an enchanted book, but without tags, and only one! |
 | modid | string | true | false | Gets the modid of the mod |
 | namespace | string | true | false | Gets the namespace of the mod |
 | version | string | true | false | Gets the version of the mod |

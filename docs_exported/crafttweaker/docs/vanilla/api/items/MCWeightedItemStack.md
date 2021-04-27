@@ -19,8 +19,7 @@ MCWeightedItemStack implements the following interfaces. That means all methods 
 
 ## Constructors
 
-Manually creates the weightedItemStack.
- Usually you can use the operator or `.weight(weight)` method of IItemStack, though
+Manually creates the weightedItemStack. <br />  Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -70,9 +69,7 @@ myMCWeightedItemStack % newWeight as int
 
 :::group{name=MUL}
 
-Sets the itemStack's amount.
- <p>
- If the original Stack was mutable, also mutates the original stack's size.
+Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int

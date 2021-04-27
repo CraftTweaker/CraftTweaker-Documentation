@@ -160,7 +160,5 @@ name as string in myTagManager
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false | Retrieves a list of all tags currently registered. |
-| tagType | string | true | false | Get the tag type. In a Bracket call, this will used to determine which TagManager to use.
- <p>
- { |
+| tagType | string | true | false | Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <br />  <p> <br />  { |
 

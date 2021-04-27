@@ -51,8 +51,7 @@ event.setXp(15);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| amount | int | The amount of xp that the player's xp counter should be
-        changed by. |
+| amount | int | The amount of xp that the player's xp counter should be <br />         changed by. |
 
 
 :::

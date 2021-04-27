@@ -218,8 +218,7 @@ myDamageSource.isUnblockableDamage();
 | difficultyScaled | boolean | true | false | Gets whether the damage changes strength based on the current difficulty. |
 | explosion | boolean | true | false | Checks if the damage is caused by an explosion. |
 | fire | boolean | true | false | Checks if the damage is caused by fire or burning. |
-| hungerDamage | float | true | false | Gets the amount of exhaustion to add to the player's hunger bar if they
- get hit by this damage. |
+| hungerDamage | float | true | false | Gets the amount of exhaustion to add to the player's hunger bar if they <br />  get hit by this damage. |
 | immediateSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | Gets the immediate source of the damage, like an arrow. |
 | location | [MCVector3d](/vanilla/api/util/MCVector3d)? | true | false | Gets the location where the damage occurred. |
 | magic | boolean | true | false | Checks if the damage is caused by magic. |
