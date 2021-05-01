@@ -115,6 +115,10 @@
       "JEITweaker": {
         "JEITweaker": "mods/JEITweaker/JEITweaker.md"
       },
+      "Mystical Agriculture": {
+        "Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
+        "Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
+      },
       "RecipeStages": {
         "RecipeStages": "mods/RecipeStages/RecipeStages.md"
       },
