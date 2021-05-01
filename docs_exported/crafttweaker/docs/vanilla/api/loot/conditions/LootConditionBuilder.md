@@ -24,7 +24,7 @@ import crafttweaker.api.loot.conditions.LootConditionBuilder;
 
 Creates a new empty [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
-Returns: The newly created instance.
+Returns: The newly created instance.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -37,13 +37,9 @@ LootConditionBuilder.create();
 
 :::group{name=createForSingle}
 
-Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) and automatically adds a single condition of the specified type.
+Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) and automatically adds a single condition of the specified type. <br />  <br />  This is merely a helper method to avoid multiple method calls and chains when the user needs to create a builder <br />  but only wants to add a single condition to it. It is effectively a call to <code>create</code> followed by one <br />  to <code>add</code>.
 
- This is merely a helper method to avoid multiple method calls and chains when the user needs to create a builder
- but only wants to add a single condition to it. It is effectively a call to <code>create</code> followed by one
- to <code>add</code>.
-
-Returns: The newly created builder, already containing the created condition.
+Returns: The newly created builder, already containing the created condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -60,12 +56,9 @@ LootConditionBuilder.createForSingle<T : ILootConditionTypeBuilder>(lender as Co
 
 :::group{name=createInAnd}
 
-Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [And](/vanilla/api/loot/conditions/crafttweaker/And).
+Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [And](/vanilla/api/loot/conditions/crafttweaker/And). <br />  <br />  This ensures that, no matter what the underlying implementation may assume, the various conditions will be <br />  treated as part of an 'And' condition. Refer to [And](/vanilla/api/loot/conditions/crafttweaker/And) for more information.
 
- This ensures that, no matter what the underlying implementation may assume, the various conditions will be
- treated as part of an 'And' condition. Refer to [And](/vanilla/api/loot/conditions/crafttweaker/And) for more information.
-
-Returns: The newly created instance, containing the 'And' condition.
+Returns: The newly created instance, containing the 'And' condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -81,12 +74,9 @@ LootConditionBuilder.createInAnd(lender as Consumer<And>) as LootConditionBuilde
 
 :::group{name=createInOr}
 
-Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [Or](/vanilla/api/loot/conditions/crafttweaker/Or).
+Creates a new [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) containing an [Or](/vanilla/api/loot/conditions/crafttweaker/Or). <br />  <br />  This ensures that, no matter what the underlying implementation may assume, the various conditions will be <br />  treated as part of an 'Or' condition. Refer to [Or](/vanilla/api/loot/conditions/crafttweaker/Or) for more information.
 
- This ensures that, no matter what the underlying implementation may assume, the various conditions will be
- treated as part of an 'Or' condition. Refer to [Or](/vanilla/api/loot/conditions/crafttweaker/Or) for more information.
-
-Returns: The newly created instance, containing the 'Or' condition.
+Returns: The newly created instance, containing the 'Or' condition.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -102,14 +92,9 @@ LootConditionBuilder.createInOr(lender as Consumer<Or>) as LootConditionBuilder
 
 :::group{name=makeJson}
 
-Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
+Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>. <br />  <br />  The JSON must respect the constraints specified in the documentation of the [Json](/vanilla/api/loot/conditions/crafttweaker/Json) <br />  loot condition. <br />  <br />  If no valid condition is found, or the JSON is invalid, an error gets thrown.
 
- The JSON must respect the constraints specified in the documentation of the [Json](/vanilla/api/loot/conditions/crafttweaker/Json)
- loot condition.
-
- If no valid condition is found, or the JSON is invalid, an error gets thrown.
-
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
@@ -126,17 +111,9 @@ LootConditionBuilder.makeJson(type as MCResourceLocation, data as IData) as ILoo
 
 :::group{name=makeJson}
 
-Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
+Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>. <br />  <br />  The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this <br />  reason, it's suggested to prefer the method with a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) as parameter. <br />  <br />  The JSON must respect the constraints specified in the documentation of the [Json](/vanilla/api/loot/conditions/crafttweaker/Json) <br />  loot condition. <br />  <br />  If no valid condition is found, or the JSON is invalid, an error gets thrown.
 
- The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this
- reason, it's suggested to prefer the method with a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) as parameter.
-
- The JSON must respect the constraints specified in the documentation of the [Json](/vanilla/api/loot/conditions/crafttweaker/Json)
- loot condition.
-
- If no valid condition is found, or the JSON is invalid, an error gets thrown.
-
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
@@ -153,15 +130,9 @@ LootConditionBuilder.makeJson(type as string, data as IData) as ILootCondition
 
 :::group{name=makeSingle}
 
-Creates a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given type, according to the parameters specified in the
- <code>lender</code>.
+Creates a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given type, according to the parameters specified in the <br />  <code>lender</code>. <br />  <br />  In other words, a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) is created based on the chosen [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder). <br />  <br />  This is particularly useful if the creation of a single loot condition is required and the user wants to use one <br />  of the already existing builders.
 
- In other words, a new [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) is created based on the chosen [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder).
-
- This is particularly useful if the creation of a single loot condition is required and the user wants to use one
- of the already existing builders.
-
-Returns: The condition created by the builder itself.
+Returns: The condition created by the builder itself.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript

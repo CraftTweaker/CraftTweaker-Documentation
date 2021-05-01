@@ -55,9 +55,9 @@ myMCBlock.getValidStates();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| lootTable | string | true | false |
-| translationKey | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| lootTable | string | true | false | No Description Provided |
+| translationKey | string | true | false | No Description Provided |
 

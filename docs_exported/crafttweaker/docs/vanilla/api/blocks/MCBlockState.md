@@ -105,16 +105,16 @@ MCBlockState.withProperty(name as string, value as string) as MCBlockState
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
-| canProvidePower | boolean | true | false |
-| commandString | string | true | false |
-| harvestLevel | int | true | false |
-| harvestTool | [ToolType](/vanilla/api/tool/ToolType) | true | false |
-| hasTileEntity | boolean | true | false |
-| isSolid | boolean | true | false |
-| isSticky | boolean | true | false |
-| lightLevel | int | true | false |
-| ticksRandomly | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false | No Description Provided |
+| canProvidePower | boolean | true | false | No Description Provided |
+| commandString | string | true | false | No Description Provided |
+| harvestLevel | int | true | false | No Description Provided |
+| harvestTool | [ToolType](/vanilla/api/tool/ToolType) | true | false | No Description Provided |
+| hasTileEntity | boolean | true | false | No Description Provided |
+| isSolid | boolean | true | false | No Description Provided |
+| isSticky | boolean | true | false | No Description Provided |
+| lightLevel | int | true | false | No Description Provided |
+| ticksRandomly | boolean | true | false | No Description Provided |
 

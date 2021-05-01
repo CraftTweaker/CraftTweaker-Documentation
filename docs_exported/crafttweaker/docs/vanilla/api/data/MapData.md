@@ -246,9 +246,9 @@ myMapData + data as IData
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| isEmpty | boolean | true | false |
-| keySet | Set&lt;string&gt; | true | false |
-| size | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| isEmpty | boolean | true | false | No Description Provided |
+| keySet | Set&lt;string&gt; | true | false | No Description Provided |
+| size | int | true | false | No Description Provided |
 

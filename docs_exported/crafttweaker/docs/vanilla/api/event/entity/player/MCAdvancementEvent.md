@@ -38,7 +38,7 @@ event.getId();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the ID of the advancement being unlocked. |
 

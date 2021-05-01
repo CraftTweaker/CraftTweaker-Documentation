@@ -62,7 +62,7 @@ event.setAmount(0.5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| amount | float | true | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| amount | float | true | true | Gets the amount of healing. |
 

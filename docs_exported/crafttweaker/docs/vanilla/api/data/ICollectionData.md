@@ -19,9 +19,7 @@ ICollectionData implements the following interfaces. That means all methods defi
 
 :::group{name=getFromMembers}
 
-Creates the most specific ICollectionData form possible for the provided members.
-
- Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+Creates the most specific ICollectionData form possible for the provided members. <br />  <br />  Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -290,7 +288,7 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| size | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| size | int | true | false | No Description Provided |
 

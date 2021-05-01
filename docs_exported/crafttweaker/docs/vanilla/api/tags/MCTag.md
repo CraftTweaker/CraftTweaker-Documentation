@@ -250,10 +250,10 @@ myMCTag * amount as int
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| elements | stdlib.List&lt;T&gt; | true | false |
-| exists | boolean | true | false |
-| id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
-| manager | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| elements | stdlib.List&lt;T&gt; | true | false | No Description Provided |
+| exists | boolean | true | false | No Description Provided |
+| id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | No Description Provided |
+| manager | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt; | true | false | No Description Provided |
 

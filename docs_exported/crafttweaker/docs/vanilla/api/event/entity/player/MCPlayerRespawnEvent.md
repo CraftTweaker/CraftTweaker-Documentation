@@ -37,7 +37,7 @@ myMCPlayerRespawnEvent.isEndConquered();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| endConquered | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| endConquered | boolean | true | false | Was this event caused by the player entering the portal in the end? |
 

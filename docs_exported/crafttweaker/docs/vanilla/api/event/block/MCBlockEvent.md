@@ -57,9 +57,9 @@ myMCBlockEvent.getWorld();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
+| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 

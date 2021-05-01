@@ -14,7 +14,7 @@ import crafttweaker.api.event.entity.living.MCLivingConversionPostEvent;
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| outcome | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| outcome | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true | false | No Description Provided |
 

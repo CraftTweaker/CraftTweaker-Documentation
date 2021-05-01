@@ -35,7 +35,7 @@ myMCItemSmeltedEvent.getSmelted();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets the smelted item (the output stack) |
 

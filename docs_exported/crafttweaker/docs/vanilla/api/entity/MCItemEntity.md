@@ -31,7 +31,7 @@ new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true | No Description Provided |
 

@@ -127,6 +127,20 @@ CraftingTableManager.getRecipeByName(name as string) as WrapperRecipe
 
 :::
 
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// CraftingTableManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+craftingTable.getRecipeMap();
+```
+
+:::
+
 :::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
@@ -290,4 +304,11 @@ craftingTable.removeRecipeByInput(<item:minecraft:ironingot>);
 
 :::
 
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt; | true | false | No Description Provided |
+| recipeMap | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true | false | Returns a map of all known recipes. |
 

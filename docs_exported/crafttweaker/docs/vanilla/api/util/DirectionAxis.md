@@ -93,12 +93,12 @@ Return Type: int
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| hashCode | int | true | false |
-| horizontal | boolean | true | false |
-| name | string | true | false |
-| ordinal | int | true | false |
-| vertical | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| hashCode | int | true | false | No Description Provided |
+| horizontal | boolean | true | false | No Description Provided |
+| name | string | true | false | Get the name of this Axis ("X", "Y" or "Z") |
+| ordinal | int | true | false | Gets the enum ordinal of this axis |
+| vertical | boolean | true | false | No Description Provided |
 

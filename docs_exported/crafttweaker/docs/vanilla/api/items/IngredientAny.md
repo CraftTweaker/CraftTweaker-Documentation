@@ -75,7 +75,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 ```zenscript
 // IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
 
-myIngredientAny.anyDamage();
+IngredientAny.getInstance().anyDamage();
 ```
 
 :::
@@ -87,7 +87,7 @@ Return Type: void
 ```zenscript
 // IngredientAny.clearTooltip() as void
 
-myIngredientAny.clearTooltip();
+IngredientAny.getInstance().clearTooltip();
 ```
 
 :::
@@ -101,7 +101,7 @@ Return Type: boolean
 ```zenscript
 // IngredientAny.contains(ingredient as IIngredient) as boolean
 
-myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+IngredientAny.getInstance().contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
 | Parameter | Type | Description |
@@ -122,7 +122,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 ```zenscript
 // IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
 
-myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
+IngredientAny.getInstance().getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -141,7 +141,7 @@ Return Type: boolean
 ```zenscript
 // IngredientAny.matches(stack as IItemStack) as boolean
 
-myIngredientAny.matches(<item:minecraft:iron_ingot>);
+IngredientAny.getInstance().matches(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -190,7 +190,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 ```zenscript
 // IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
 
-myIngredientAny.onlyDamaged();
+IngredientAny.getInstance().onlyDamaged();
 ```
 
 :::
@@ -234,7 +234,7 @@ Does the ingredient contain the given ingredient?
 
 ```zenscript
 ingredient as IIngredient in myIngredientAny
-(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientAny
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in IngredientAny.getInstance()
 ```
 
 :::
@@ -250,7 +250,7 @@ myIngredientAny | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| burnTime | void | false | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
 

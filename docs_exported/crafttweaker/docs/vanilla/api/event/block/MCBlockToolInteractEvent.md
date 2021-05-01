@@ -97,10 +97,10 @@ MCBlockToolInteractEvent.setFinalState(state as MCBlockState) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| finalState | [MCBlockState](/vanilla/api/blocks/MCBlockState)? | true | true |
-| heldItemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false |
-| toolType | [ToolType](/vanilla/api/tool/ToolType) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| finalState | [MCBlockState](/vanilla/api/blocks/MCBlockState)? | true | true | Gets the transformed state after tool use. <br />  If setFinalState is not called, it will return the original state. <br />  This will be bypassed if canceled, returning null instead. |
+| heldItemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false | No Description Provided |
+| toolType | [ToolType](/vanilla/api/tool/ToolType) | true | false | No Description Provided |
 

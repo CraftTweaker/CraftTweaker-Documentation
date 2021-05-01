@@ -129,9 +129,9 @@ myMCResourceLocation.toString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| namespace | string | true | false |
-| path | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| namespace | string | true | false | No Description Provided |
+| path | string | true | false | No Description Provided |
 

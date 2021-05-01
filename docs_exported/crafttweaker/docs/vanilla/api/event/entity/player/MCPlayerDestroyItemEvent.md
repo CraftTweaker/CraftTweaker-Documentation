@@ -40,7 +40,7 @@ event.getDestroyedItem();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
 

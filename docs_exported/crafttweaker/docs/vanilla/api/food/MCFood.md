@@ -145,11 +145,11 @@ MCFood.setSaturation(saturation as float) as MCFood
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| canEatWhenFull | boolean | true | false |
-| healing | int | true | false |
-| isFastEating | boolean | true | false |
-| meat | boolean | true | false |
-| saturation | float | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| canEatWhenFull | boolean | true | false | No Description Provided |
+| healing | int | true | false | No Description Provided |
+| isFastEating | boolean | true | false | No Description Provided |
+| meat | boolean | true | false | No Description Provided |
+| saturation | float | true | false | No Description Provided |
 

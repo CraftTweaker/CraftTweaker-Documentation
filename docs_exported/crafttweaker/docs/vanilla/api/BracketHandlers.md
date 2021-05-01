@@ -16,10 +16,9 @@ import crafttweaker.api.BracketHandlers;
 
 :::group{name=getBiome}
 
-Gets a Biome based on the tokens.
- Throws an error if it can't get the biome
+Gets a Biome based on the tokens. <br />  Throws an error if it can't get the biome
 
-Returns: The found biome
+Returns: The found biome  
 Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 
 ```zenscript
@@ -41,7 +40,7 @@ BracketHandlers.getBiome("minecraft:plain");
 
 Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
 
-Returns: The found [MCBlock](/vanilla/api/blocks/MCBlock)
+Returns: The found [MCBlock](/vanilla/api/blocks/MCBlock)  
 Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 
 ```zenscript
@@ -63,7 +62,7 @@ BracketHandlers.getBlock("minecraft:dirt");
 
 Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
 
-Returns: The found [MCMaterial](/vanilla/api/block/material/MCMaterial)
+Returns: The found [MCMaterial](/vanilla/api/block/material/MCMaterial)  
 Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 
 ```zenscript
@@ -83,10 +82,9 @@ BracketHandlers.getBlockMaterial("earth");
 
 :::group{name=getBlockState}
 
-Creates a Blockstate based on the given inputs.
- Returns `null` if it cannot find the block, ignored invalid variants
+Creates a Blockstate based on the given inputs. <br />  Returns `null` if it cannot find the block, ignored invalid variants
 
-Returns: The found BlockState
+Returns: The found BlockState  
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
@@ -108,10 +106,9 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 
 :::group{name=getDamageSource}
 
-Gets a damage source based on type.
- If the damage source is not pre-registered, it will create a new one with the given name
+Gets a damage source based on type. <br />  If the damage source is not pre-registered, it will create a new one with the given name
 
-Returns: The found pre-registered damage source or a new one
+Returns: The found pre-registered damage source or a new one  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
@@ -133,7 +130,7 @@ BracketHandlers.getDamageSource("magic");
 
 Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
 
-Returns: The found direction Axis
+Returns: The found direction Axis  
 Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 
 ```zenscript
@@ -155,7 +152,7 @@ BracketHandlers.getDirectionAxis("x");
 
 Gets the effect based on registry name. Throws an error if it can't find the effect.
 
-Returns: The found effect
+Returns: The found effect  
 Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 
 ```zenscript
@@ -177,7 +174,7 @@ BracketHandlers.getEffect("minecraft:haste");
 
 Gets the enchantment based on registry name. Throws an error if it can't find the enchantment.
 
-Returns: The found enchantment
+Returns: The found enchantment  
 Return Type: [MCEnchantment](/vanilla/api/enchantment/MCEnchantment)
 
 ```zenscript
@@ -199,7 +196,7 @@ BracketHandlers.getEnchantment("minecraft:riptide");
 
 Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
 
-Returns: The found entityClassification
+Returns: The found entityClassification  
 Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification)
 
 ```zenscript
@@ -219,9 +216,9 @@ BracketHandlers.getEntityClassification("monster");
 
 :::group{name=getEntityType}
 
-Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
+Gets the entityType based on registry name. Throws an exception if it can't find the entityType.
 
-Returns: The found entityType
+Returns: The found entityType  
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
@@ -243,7 +240,7 @@ BracketHandlers.getEntityType("minecraft:pig");
 
 Gets the equipment slot type based on name. Throws an error if it can't find the equipment slot type.
 
-Returns: The found equipment slot type
+Returns: The found equipment slot type  
 Return Type: [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)
 
 ```zenscript
@@ -265,7 +262,7 @@ BracketHandlers.getEquipmentSlotType("mainhand");
 
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
 
-Returns: A stack of the liquid with amount == 1mb
+Returns: A stack of the liquid with amount == 1mb  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
@@ -287,7 +284,7 @@ BracketHandlers.getFluidStack("minecraft:water");
 
 Gets the item based on registry name. Throws an error if it can't find the item.
 
-Returns: The found item
+Returns: The found item  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
@@ -322,9 +319,9 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 
 :::group{name=getProfession}
 
-Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
+Gets the villager profession based on registry name. Throws an exception if it can't find the profession.
 
-Returns: The found profession
+Returns: The found profession  
 Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
 
 ```zenscript
@@ -344,14 +341,9 @@ BracketHandlers.getProfession("minecraft:armorer");
 
 :::group{name=getRecipeManager}
 
-Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager.
- Throws an exception if the given recipeType is not found.
- <p>
- This will always return IRecipeManager.<br>
- There is also a BEP for that but that works differently so it can't be automatically added to the docs here.
- But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
+Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. <br />  Throws an exception if the given recipeType is not found. <br />  <p> <br />  This will always return IRecipeManager.<br> <br />  There is also a BEP for that but that works differently so it can't be automatically added to the docs here. <br />  But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
 
-Returns: The found recipeManager
+Returns: The found recipeManager  
 Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ```zenscript
@@ -369,10 +361,9 @@ BracketHandlers.getRecipeManager("minecraft:crafting");
 
 :::group{name=getResourceLocation}
 
-Creates a Resource location based on the tokens.
- Throws an error if the tokens are not a valid location.
+Creates a Resource location based on the tokens. <br />  Throws an error if the tokens are not a valid location.
 
-Returns: The location
+Returns: The location  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
@@ -407,10 +398,9 @@ BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 
 :::group{name=getToolType}
 
-Gets a tool type by name.
- If the tool type doesn't exist yet, this will create a new one with the given name
+Gets a tool type by name. <br />  If the tool type doesn't exist yet, this will create a new one with the given name
 
-Returns: The found tool type or a new one
+Returns: The found tool type or a new one  
 Return Type: [ToolType](/vanilla/api/tool/ToolType)
 
 ```zenscript

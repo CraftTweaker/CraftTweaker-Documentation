@@ -297,12 +297,12 @@ MCVector3d.times(x as double, y as double, z as double) as MCVector3d
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| inverse | [MCVector3d](/vanilla/api/util/MCVector3d) | true | false |
-| magnitude | double | true | false |
-| magnitudeSquared | double | true | false |
-| x | double | true | false |
-| y | double | true | false |
-| z | double | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| inverse | [MCVector3d](/vanilla/api/util/MCVector3d) | true | false | Inverts the vector, effectively flipping it. <br />  <br />  This is equivalent to a scale by -1, or a rotation of pi radians around the origin. |
+| magnitude | double | true | false | Gets the length, also known as magnitude, of the vector. |
+| magnitudeSquared | double | true | false | Gets the squared length, also known as squared magnitude, of the vector. <br />  <br />  This method is faster and less error-prone than calling <code>magnitude</code> and squaring the result. |
+| x | double | true | false | Gets the X coordinate of this vector. |
+| y | double | true | false | Gets the Y coordinate of this vector. |
+| z | double | true | false | Gets the Z coordinate of this vector. |
 

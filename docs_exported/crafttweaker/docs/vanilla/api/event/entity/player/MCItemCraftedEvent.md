@@ -33,7 +33,7 @@ myMCItemCraftedEvent.getCrafting();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 

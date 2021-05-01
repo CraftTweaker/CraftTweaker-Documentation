@@ -75,8 +75,8 @@ event.setAmount(0.5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| amount | float | true | true |
-| source | [DamageSource](/vanilla/api/util/DamageSource) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| amount | float | true | true | Gets the amount of damage. |
+| source | [DamageSource](/vanilla/api/util/DamageSource) | true | false | Gets the source of the damage. |
 

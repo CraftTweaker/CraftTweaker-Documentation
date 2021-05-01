@@ -471,9 +471,9 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| x | int | true | false |
-| y | int | true | false |
-| z | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| x | int | true | false | No Description Provided |
+| y | int | true | false | No Description Provided |
+| z | int | true | false | No Description Provided |
 

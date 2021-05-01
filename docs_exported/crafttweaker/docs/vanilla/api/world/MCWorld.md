@@ -300,6 +300,21 @@ world.getTileData(new BlockPos(0, 1, 2));
 
 :::
 
+:::group{name=getTileEntity}
+
+Return Type: [MCTileEntity](/vanilla/api/tileentity/MCTileEntity)?
+
+```zenscript
+MCWorld.getTileEntity(pos as BlockPos) as MCTileEntity?
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+:::
+
 :::group{name=isAir}
 
 Checks if the block at a given position is air.
@@ -409,8 +424,7 @@ world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 |-----------|------|-------------|
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This
-        is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This <br />         is generally unused. |
 
 
 :::
@@ -433,8 +447,7 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 | excluded | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | An excluded player who will not receive the event. |
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This
-        is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This <br />         is generally unused. |
 
 
 :::
@@ -462,19 +475,19 @@ world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| dayTime | boolean | true | false |
-| difficulty | string | true | false |
-| difficultyLocked | boolean | true | false |
-| dimension | string | true | false |
-| gameTime | long | true | false |
-| hardcore | boolean | true | false |
-| nightTime | boolean | true | false |
-| raining | boolean | true | false |
-| random | [Random](/vanilla/api/util/Random) | true | false |
-| remote | boolean | true | false |
-| seaLevel | int | true | false |
-| thundering | boolean | true | false |
-| timeOfDay | long | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| dayTime | boolean | true | false | Checks if it is day time in the world. Different dimensions will have <br />  different logic for how this is determined. |
+| difficulty | string | true | false | Gets the difficulty setting for the world. |
+| difficultyLocked | boolean | true | false | Checks if the difficulty of the world has been locked. |
+| dimension | string | true | false | Gets the registry name of the dimension this world represents. |
+| gameTime | long | true | false | Gets the current game time in ticks. |
+| hardcore | boolean | true | false | Checks if hardcore mode is enabled. |
+| nightTime | boolean | true | false | Checks if it is night time in the world. Different dimensions will have <br />  different logic for how this is determined. |
+| raining | boolean | true | false | Checks if it is raining. |
+| random | [Random](/vanilla/api/util/Random) | true | false | No Description Provided |
+| remote | boolean | true | false | Checks if the world is remote. This is always true on the rendering <br />  thread. |
+| seaLevel | int | true | false | Gets the height of the sea level. |
+| thundering | boolean | true | false | Checks if there is a thunder storm. |
+| timeOfDay | long | true | false | Gets the current time of the day in ticks. |
 

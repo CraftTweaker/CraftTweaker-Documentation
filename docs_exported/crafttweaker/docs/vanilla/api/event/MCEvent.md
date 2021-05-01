@@ -124,9 +124,9 @@ myMCEvent.setDeny();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| cancelable | boolean | true | false |
-| canceled | boolean | true | true |
-| hasResult | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| cancelable | boolean | true | false | No Description Provided |
+| canceled | boolean | true | true | No Description Provided |
+| hasResult | boolean | true | false | No Description Provided |
 

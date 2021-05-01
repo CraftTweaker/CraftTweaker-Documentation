@@ -14,11 +14,11 @@ MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/ent
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| isAnimal | boolean | true | false |
-| isPeaceful | boolean | true | false |
-| maxNumberOfEntity | int | true | false |
-| name | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| isAnimal | boolean | true | false | No Description Provided |
+| isPeaceful | boolean | true | false | No Description Provided |
+| maxNumberOfEntity | int | true | false | No Description Provided |
+| name | string | true | false | No Description Provided |
 

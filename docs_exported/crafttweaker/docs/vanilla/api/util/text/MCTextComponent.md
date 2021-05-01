@@ -202,9 +202,9 @@ myMCTextComponent << component as MCTextComponent
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| formattedText | string | true | false |
-| siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false |
-| unformattedComponentText | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| formattedText | string | true | false | No Description Provided |
+| siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false | No Description Provided |
+| unformattedComponentText | string | true | false | No Description Provided |
 
