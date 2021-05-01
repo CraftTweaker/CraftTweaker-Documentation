@@ -11,7 +11,7 @@ The Enchanting Apparatus is a type of [IRecipeManager](/vanilla/api/managers/IRe
 The following script will add a recipe to the Enchanting Apparatus that will output a Diamond, when Glass is enchanted with Dirt, an Apple and an Arrow on pedestals.
 
 ```zenscript
-// <recipetype:ars_nouveau:enchanting_apparatus>.addRecipe(String name, IItemStack result, IIngredient reagent, IIngredient[] pedestalItems)
+// <recipetype:ars_nouveau:enchanting_apparatus>.addRecipe(name as string, result as IItemStack, reagent as IIngredient, pedestalItems as IIngredient[])
 
 <recipetype:ars_nouveau:enchanting_apparatus>.addRecipe("enchanting_test", <item:minecraft:diamond>, <item:minecraft:glass>, [<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft:arrow>]);
 ```
@@ -21,7 +21,7 @@ The following script will add a recipe to the Enchanting Apparatus that will out
 The following script will remove all recipes from the Enchanting Apparatus that output the Ring of Lesser Discount.
 
 ```zenscript
-// <recipetype:ars_nouveau:enchanting_apparatus>.removeRecipe(IItemStack output);
+// <recipetype:ars_nouveau:enchanting_apparatus>.removeRecipe(output as IItemStack);
 
 <recipetype:ars_nouveau:enchanting_apparatus>.removeRecipe(<item:ars_nouveau:ring_of_lesser_discount>);
 ```

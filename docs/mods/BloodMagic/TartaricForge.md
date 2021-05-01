@@ -11,7 +11,7 @@ The Tartaric Forge / Hell Forge is a type of [IRecipeManager](/vanilla/api/manag
 The following script will add a recipe that will output a Diamond when Coal is given to a Tartaric Forge / Hell Forge. The Forge requires a minimum of 0 souls and will drain 500 souls.
 
 ```zenscript
-// <recipetype:bloodmagic:altar>.addRecipe(String name, IItemStack output, IIngredient[] input, double minimumSouls, double soulDrain)
+// <recipetype:bloodmagic:altar>.addRecipe(name as string, output as IItemStack, input as IIngredient[], minimumSouls as double, soulDrain as double)
 
 <recipetype:bloodmagic:soulforge>.addRecipe("soulforge_test", <item:minecraft:diamond>, [<item:minecraft:coal>], 0, 500);
 ```
@@ -21,7 +21,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 The following script will remove all recipes from the Tartaric Forge / Hell Forge that output a Soul Axe
 
 ```zenscript
-// <recipetype:bloodmagic:soulforge>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:soulforge>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:soulforge>.removeRecipe(<item:bloodmagic:soulaxe>);
 ```
