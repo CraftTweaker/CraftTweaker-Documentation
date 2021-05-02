@@ -6,7 +6,8 @@
         "Block": {
           "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
-            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
+            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md",
+            "PushReaction": "vanilla/api/block/material/PushReaction.md"
           }
         },
         "Blocks": {

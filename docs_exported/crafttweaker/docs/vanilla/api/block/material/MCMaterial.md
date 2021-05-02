@@ -38,6 +38,34 @@ myMCMaterial.getColor();
 
 :::
 
+:::group{name=getCommandString}
+
+Gets the bracket syntax for this Material
+
+Return Type: string
+
+```zenscript
+// MCMaterial.getCommandString() as string
+
+myMCMaterial.getCommandString();
+```
+
+:::
+
+:::group{name=getPushReaction}
+
+Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).
+
+Return Type: [PushReaction](/vanilla/api/block/material/PushReaction)
+
+```zenscript
+// MCMaterial.getPushReaction() as PushReaction
+
+myMCMaterial.getPushReaction();
+```
+
+:::
+
 :::group{name=isFlammable}
 
 Returns if the block can burn or not.
@@ -113,6 +141,13 @@ myMCMaterial.isSolid();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| blocksMovement | boolean | true | false | Returns if this material is considered solid or not |
 | color | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true | false | Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block. |
-| commandString | string | true | false | No Description Provided |
+| commandString | string | true | false | Gets the bracket syntax for this Material |
+| flammable | boolean | true | false | Returns if the block can burn or not. |
+| liquid | boolean | true | false | Returns if blocks of these materials are liquids. |
+| opaque | boolean | true | false | Indicate if the material is opaque |
+| pushReaction | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction). |
+| replaceable | boolean | true | false | Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass. |
+| solid | boolean | true | false | Returns true if the block is a considered solid. This is true by default. |
 
