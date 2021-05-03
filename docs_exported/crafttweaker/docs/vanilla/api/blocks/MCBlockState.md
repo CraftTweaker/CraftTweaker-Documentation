@@ -17,6 +17,27 @@ import crafttweaker.api.blocks.MCBlockState;
 
 ## Methods
 
+:::group{name=canHarvestBlock}
+
+Checks whether the player can harvest the BlockState.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canHarvestBlock(world as MCWorld, pos as BlockPos, player as MCPlayerEntity) as boolean
+
+myMCBlockState.canHarvestBlock(world, new BlockPos(1,2,3), player);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | The player that is trying to harvest the block. |
+
+
+:::
+
 :::group{name=canProvidePower}
 
 Checks whether this BlockState can provide Redstone Power
@@ -111,6 +132,26 @@ myMCBlockState.getLightLevel();
 
 :::
 
+:::group{name=getLightValue}
+
+Gets the light value of the BlockState at the given position.
+
+Return Type: int
+
+```zenscript
+// MCBlockState.getLightValue(world as MCWorld, pos as BlockPos) as int
+
+myMCBlockState.getLightValue(world, new BlockPos(1,2,3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world Object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check the light value of. |
+
+
+:::
+
 :::group{name=getProperties}
 
 Gets the properties of this BlockState.
@@ -156,6 +197,26 @@ MCBlockState.getPropertyValue(name as string) as string
 
 :::
 
+:::group{name=getSlipperiness}
+
+Gets the slipperiness of the BlockState at the given location for the given entity (if one is given)
+
+Return Type: float
+
+```zenscript
+// MCBlockState.getSlipperiness(world as MCWorld, pos as BlockPos, entity as MCEntity) as float
+
+myMCBlockState.getSlipperiness(world, new Blockpos(0,0,0);, entity);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. | false |  |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. | false |  |
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | The entity to work with. | true |  |
+
+:::
+
 :::group{name=hasProperty}
 
 Checks whether this BlockState has the given property.
@@ -186,6 +247,47 @@ Return Type: boolean
 
 myMCBlockState.hasTileEntity();
 ```
+
+:::
+
+:::group{name=isBed}
+
+Determines if the block can be used to sleep.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isBed(world as MCWorld, pos as BlockPos, sleeper as MCLivingEntity) as boolean
+
+myMCBlockState.isBed(world, new BlockPos(1,2,3), entity);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. | false |  |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. | false |  |
+| sleeper | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The Living Entity that is trying to sleep. | true |  |
+
+:::
+
+:::group{name=isLadder}
+
+Checks if a Living Entity can use this block to climb like a ladder.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isLadder(world as MCWorld, pos as BlockPos, entity as MCLivingEntity) as boolean
+
+myMCBlockState.isLadder(world, new BlockPos(1,2,3), entity);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. |
+| entity | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The entity that wants to climb the block. |
+
 
 :::
 
