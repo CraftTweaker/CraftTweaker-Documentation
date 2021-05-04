@@ -131,7 +131,7 @@ villagerTrades.removeBasicTrade(<profession:minecraft:farmer>, 1, <item:minecraf
 
 :::group{name=removeDyedArmorForEmeraldsTrade}
 
-Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager a diamond and getting a Blue Dyed Leather chestplate.
+Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager Leather Leggings and 3 Emeralds and getting a Blue Dyed Leather Leggings.
 
 Return Type: void
 
@@ -152,7 +152,7 @@ villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1,
 
 :::group{name=removeEmeraldForItemsTrade}
 
-Removes a Villager trade for Emeralds for Items. An example being, giving a villager 2 Emeralds for an Arrow.
+Removes a Villager trade for Emeralds for Items. An example being, giving a villager 20 Wheat and getting an Emerald from the villager.
 
 Return Type: void
 
@@ -173,7 +173,7 @@ villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <ite
 
 :::group{name=removeEmeraldForMapTrade}
 
-Removes a Villager trade for a Map. An example being, giving a villager Emeralds and getting a Map to a structure.
+Removes a Villager trade for a Map. An example being, giving a villager 13 Emeralds and getting a Map to a structure.
 
 Return Type: void
 
@@ -213,7 +213,7 @@ villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeEnchantedItemForEmeraldsTrade}
 
-Removes a Villager trade for an Enchanted Item. An example being, giving a villager Emeralds and getting an Enchanted Pickaxe.
+Removes a Villager trade for an Enchanted Item. An example being, giving a villager 3 Emeralds and getting an Enchanted Pickaxe.
 
 Return Type: void
 
@@ -234,7 +234,7 @@ villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeItemWithPotionForEmeraldsAndItemsTrade}
 
-Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and getting a Tipped Arrow with night vision.
+Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and an Emerald and getting a Tipped Arrow with night vision.
 
 Return Type: void
 
@@ -256,7 +256,7 @@ villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraf
 
 :::group{name=removeItemsForEmeraldsAndItemsTrade}
 
-Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager an Emerald and Gravel and getting 16 Flint.
+Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager 6 uncooked Cod and an Emerald and getting back 6 Cooked Cod.
 
 Return Type: void
 
@@ -278,7 +278,7 @@ villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeItemsForEmeraldsTrade}
 
-Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Arrow and getting 2 Emeralds.
+Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Emerald and getting 4 Pumpkin Pies from the villager.
 
 Return Type: void
 
@@ -299,7 +299,7 @@ villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <it
 
 :::group{name=removeSuspiciousStewForEmeraldTrade}
 
-Removes a Villager trade for Suspicious Stew. An example being, giving a villager Emeralds and getting a bowl of Suspicious Stew back..
+Removes a Villager trade for Suspicious Stew. An example being, giving a villager an Emerald and getting a bowl of Suspicious Stew back.
 
 Return Type: void
 
