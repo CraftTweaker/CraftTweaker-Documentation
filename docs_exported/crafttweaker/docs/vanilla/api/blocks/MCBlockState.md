@@ -1,5 +1,7 @@
 # MCBlockState
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -26,7 +28,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canBeReplacedByLeaves(world as MCWorld, pos as BlockPos) as boolean
 
-myMCBlockState.canBeReplacedByLeaves(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.canBeReplacedByLeaves(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -46,7 +48,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canBeReplacedByLogs(world as MCWorld, pos as BlockPos) as boolean
 
-myMCBlockState.canBeReplacedByLogs(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.canBeReplacedByLogs(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -84,7 +86,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canCreatureSpawn(world as MCWorld, pos as BlockPos, type as PlacementType, entityType as MCEntityType) as boolean
 
-myMCBlockState.canCreatureSpawn(world, new BlockPos(1, 2, 3), PlacementType.IN_WATER, <entitytype:minecraft:pig>);
+<blockstat:minecraft:grass>.canCreatureSpawn(world, new BlockPos(1, 2, 3), PlacementType.IN_WATER, <entitytype:minecraft:pig>);
 ```
 
 | Parameter | Type | Description |
@@ -106,7 +108,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canDropFromExplosion(world as MCWorld, pos as BlockPos, explosion as Explosion) as boolean
 
-myMCBlockState.canDropFromExplosion(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
+<blockstat:minecraft:grass>.canDropFromExplosion(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
 ```
 
 | Parameter | Type | Description |
@@ -146,7 +148,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canHarvestBlock(world as MCWorld, pos as BlockPos, player as MCPlayerEntity) as boolean
 
-myMCBlockState.canHarvestBlock(world, new BlockPos(1, 2, 3), player);
+<blockstat:minecraft:grass>.canHarvestBlock(world, new BlockPos(1, 2, 3), player);
 ```
 
 | Parameter | Type | Description |
@@ -167,7 +169,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canProvidePower() as boolean
 
-myMCBlockState.canProvidePower();
+<blockstat:minecraft:grass>.canProvidePower();
 ```
 
 :::
@@ -181,7 +183,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canStickTo(other as MCBlockState) as boolean
 
-myMCBlockState.canStickTo(<blockstate:minecraft:grass>);
+<blockstat:minecraft:grass>.canStickTo(<blockstate:minecraft:grass>);
 ```
 
 | Parameter | Type | Description |
@@ -200,7 +202,7 @@ Return Type: stdlib.List&lt;string&gt;
 ```zenscript
 // MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 
-myMCBlockState.getAllowedValuesForProperty("snowy");
+<blockstat:minecraft:grass>.getAllowedValuesForProperty("snowy");
 ```
 
 | Parameter | Type | Description |
@@ -222,7 +224,7 @@ Return Type: void
 ```zenscript
 // MCBlockState.getBedDirection(world as MCWorld, pos as BlockPos) as void
 
-myMCBlockState.getBedDirection(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.getBedDirection(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -247,7 +249,7 @@ Return Type: string
 ```zenscript
 // MCBlockState.getCommandString() as string
 
-myMCBlockState.getCommandString();
+<blockstat:minecraft:grass>.getCommandString();
 ```
 
 :::
@@ -261,7 +263,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getExpDrop(world as MCWorld, pos as BlockPos, fortune as int, silktouch as int) as int
 
-myMCBlockState.getExpDrop(world, new BlockPos(1, 2, 3), 1, 0);
+<blockstat:minecraft:grass>.getExpDrop(world, new BlockPos(1, 2, 3), 1, 0);
 ```
 
 | Parameter | Type | Description |
@@ -283,7 +285,7 @@ Return Type: float
 ```zenscript
 // MCBlockState.getExplosionResistance(world as MCWorld, pos as BlockPos, explosion as Explosion) as float
 
-myMCBlockState.getExplosionResistance(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
+<blockstat:minecraft:grass>.getExplosionResistance(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
 ```
 
 | Parameter | Type | Description |
@@ -328,7 +330,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getFlammability(world as MCWorld, pos as BlockPos, face as Direction) as int
 
-myMCBlockState.getFlammability(world, new BlockPos(1, 2, 3), Direction.south);
+<blockstat:minecraft:grass>.getFlammability(world, new BlockPos(1, 2, 3), Direction.south);
 ```
 
 | Parameter | Type | Description |
@@ -349,7 +351,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getHarvestLevel() as int
 
-myMCBlockState.getHarvestLevel();
+<blockstat:minecraft:grass>.getHarvestLevel();
 ```
 
 :::
@@ -363,7 +365,7 @@ Return Type: [ToolType](/vanilla/api/tool/ToolType)
 ```zenscript
 // MCBlockState.getHarvestTool() as ToolType
 
-myMCBlockState.getHarvestTool();
+<blockstat:minecraft:grass>.getHarvestTool();
 ```
 
 :::
@@ -377,7 +379,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getLightLevel() as int
 
-myMCBlockState.getLightLevel();
+<blockstat:minecraft:grass>.getLightLevel();
 ```
 
 :::
@@ -391,7 +393,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getLightValue(world as MCWorld, pos as BlockPos) as int
 
-myMCBlockState.getLightValue(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.getLightValue(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -411,7 +413,7 @@ Return Type: string[string]
 ```zenscript
 // MCBlockState.getProperties() as string[string]
 
-myMCBlockState.getProperties();
+<blockstat:minecraft:grass>.getProperties();
 ```
 
 :::
@@ -425,7 +427,7 @@ Return Type: stdlib.List&lt;string&gt;
 ```zenscript
 // MCBlockState.getPropertyNames() as stdlib.List<string>
 
-myMCBlockState.getPropertyNames();
+<blockstat:minecraft:grass>.getPropertyNames();
 ```
 
 :::
@@ -456,7 +458,7 @@ Return Type: float
 ```zenscript
 // MCBlockState.getSlipperiness(world as MCWorld, pos as BlockPos, entity as MCEntity) as float
 
-myMCBlockState.getSlipperiness(world, new Blockpos(0,0,0);, entity);
+<blockstat:minecraft:grass>.getSlipperiness(world, new Blockpos(0,0,0);, entity);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -476,7 +478,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.hasProperty(name as string) as boolean
 
-myMCBlockState.hasProperty("snowy");
+<blockstat:minecraft:grass>.hasProperty("snowy");
 ```
 
 | Parameter | Type | Description |
@@ -495,7 +497,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.hasTileEntity() as boolean
 
-myMCBlockState.hasTileEntity();
+<blockstat:minecraft:grass>.hasTileEntity();
 ```
 
 :::
@@ -509,7 +511,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isBed(world as MCWorld, pos as BlockPos, sleeper as MCLivingEntity) as boolean
 
-myMCBlockState.isBed(world, new BlockPos(1, 2, 3), entity);
+<blockstat:minecraft:grass>.isBed(world, new BlockPos(1, 2, 3), entity);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -529,7 +531,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isBurning(world as MCWorld, pos as BlockPos) as boolean
 
-myMCBlockState.isBurning(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.isBurning(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -549,7 +551,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isConduitFrame(world as MCWorld, pos as BlockPos, conduitPosition as BlockPos) as boolean
 
-myMCBlockState.isConduitFrame(world, new BlockPos(1, 2, 3), new BlockPos(1, 5, 3));
+<blockstat:minecraft:grass>.isConduitFrame(world, new BlockPos(1, 2, 3), new BlockPos(1, 5, 3));
 ```
 
 | Parameter | Type | Description |
@@ -575,7 +577,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isFertile(world as MCWorld, pos as BlockPos) as boolean
 
-myMCBlockState.isFertile(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.isFertile(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -595,7 +597,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isFireSource(world as MCWorld, pos as BlockPos, side as Direction) as boolean
 
-myMCBlockState.isFireSource(world, new BlockPos(1, 2, 3), Direction.east);
+<blockstat:minecraft:grass>.isFireSource(world, new BlockPos(1, 2, 3), Direction.east);
 ```
 
 | Parameter | Type | Description |
@@ -616,7 +618,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isFlammable(world as MCWorld, pos as BlockPos, face as Direction) as boolean
 
-myMCBlockState.isFlammable(world, new BlockPos(1, 2, 3), Direction.east);
+<blockstat:minecraft:grass>.isFlammable(world, new BlockPos(1, 2, 3), Direction.east);
 ```
 
 | Parameter | Type | Description |
@@ -637,7 +639,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isLadder(world as MCWorld, pos as BlockPos, entity as MCLivingEntity) as boolean
 
-myMCBlockState.isLadder(world, new BlockPos(1, 2, 3), entity);
+<blockstat:minecraft:grass>.isLadder(world, new BlockPos(1, 2, 3), entity);
 ```
 
 | Parameter | Type | Description |
@@ -658,7 +660,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isPortalFrame(world as MCWorld, pos as BlockPos) as boolean
 
-myMCBlockState.isPortalFrame(world, new BlockPos(1, 2, 3));
+<blockstat:minecraft:grass>.isPortalFrame(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -678,7 +680,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isScaffolding(entity as MCLivingEntity) as boolean
 
-myMCBlockState.isScaffolding(entity);
+<blockstat:minecraft:grass>.isScaffolding(entity);
 ```
 
 | Parameter | Type | Description |
@@ -697,7 +699,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isSlime() as boolean
 
-myMCBlockState.isSlime();
+<blockstat:minecraft:grass>.isSlime();
 ```
 
 :::
@@ -711,7 +713,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isSolid() as boolean
 
-myMCBlockState.isSolid();
+<blockstat:minecraft:grass>.isSolid();
 ```
 
 :::
@@ -728,7 +730,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isSticky() as boolean
 
-myMCBlockState.isSticky();
+<blockstat:minecraft:grass>.isSticky();
 ```
 
 :::
@@ -762,7 +764,7 @@ Return Type: void
 ```zenscript
 // MCBlockState.setBedOccupied(world as MCWorld, pos as BlockPos, sleeper as MCLivingEntity, occupied as boolean) as void
 
-myMCBlockState.setBedOccupied(world, new BlockPos(1, 2, 3), livingEntity, true);
+<blockstat:minecraft:grass>.setBedOccupied(world, new BlockPos(1, 2, 3), livingEntity, true);
 ```
 
 | Parameter | Type | Description |
@@ -784,7 +786,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.ticksRandomly() as boolean
 
-myMCBlockState.ticksRandomly();
+<blockstat:minecraft:grass>.ticksRandomly();
 ```
 
 :::
@@ -798,7 +800,7 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 ```zenscript
 // MCBlockState.withProperty(name as string, value as string) as MCBlockState
 
-myMCBlockState.withProperty("snowy", "true");
+<blockstat:minecraft:grass>.withProperty("snowy", "true");
 ```
 
 | Parameter | Type | Description |
