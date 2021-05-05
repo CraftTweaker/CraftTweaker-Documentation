@@ -81,7 +81,8 @@
           "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
           "MCItemEntity": "vanilla/api/entity/MCItemEntity.md",
           "MCLivingEntity": "vanilla/api/entity/MCLivingEntity.md",
-          "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
+          "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md",
+          "PlacementType": "vanilla/api/entity/PlacementType.md"
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
@@ -352,6 +353,8 @@
           "VillagerTrades": "vanilla/api/villager/VillagerTrades.md"
         },
         "World": {
+          "Explosion": "vanilla/api/world/Explosion.md",
+          "ExplosionMode": "vanilla/api/world/ExplosionMode.md",
           "MCBiome": "vanilla/api/world/MCBiome.md",
           "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"

@@ -17,6 +17,126 @@ import crafttweaker.api.blocks.MCBlockState;
 
 ## Methods
 
+:::group{name=canBeReplacedByLeaves}
+
+Checks if this BlockState can be replaced by leaves in tree growth.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canBeReplacedByLeaves(world as MCWorld, pos as BlockPos) as boolean
+
+myMCBlockState.canBeReplacedByLeaves(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState |
+
+
+:::
+
+:::group{name=canBeReplacedByLogs}
+
+Checks if this BlockState can be replaced by logs in tree growth.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canBeReplacedByLogs(world as MCWorld, pos as BlockPos) as boolean
+
+myMCBlockState.canBeReplacedByLogs(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState |
+
+
+:::
+
+:::group{name=canConnectRedstone}
+
+Determines if Redstone can connect to this BlockState at the given position and (optional) side.
+
+Return Type: boolean
+
+```zenscript
+MCBlockState.canConnectRedstone(world as MCWorld, pos as BlockPos, side as Direction) as boolean
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. | false |  |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. | false |  |
+| side | [Direction](/vanilla/api/util/Direction) | The side to check for. | true |  |
+
+:::
+
+:::group{name=canCreatureSpawn}
+
+Checks if a specific entity type can spawn on this BlockState at the position in the world.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canCreatureSpawn(world as MCWorld, pos as BlockPos, type as PlacementType, entityType as MCEntityType) as boolean
+
+myMCBlockState.canCreatureSpawn(world, new BlockPos(1, 2, 3), PlacementType.IN_WATER, <entitytype:minecraft:pig>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position in the world. |
+| type | [PlacementType](/vanilla/api/entity/PlacementType) | The PlaceMentType to check for. |
+| entityType | [MCEntityType](/vanilla/api/entities/MCEntityType) | The EntityType to check for. |
+
+
+:::
+
+:::group{name=canDropFromExplosion}
+
+Checks if the BlockState will drop from the given explosion at the given position.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canDropFromExplosion(world as MCWorld, pos as BlockPos, explosion as Explosion) as boolean
+
+myMCBlockState.canDropFromExplosion(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| explosion | [Explosion](/vanilla/api/world/Explosion) | The Explosion to check against. |
+
+
+:::
+
+:::group{name=canEntityDestroy}
+
+Determines if this BlockState can be destroyed by the Entity at the specific position.
+
+Return Type: boolean
+
+```zenscript
+MCBlockState.canEntityDestroy(world as MCWorld, pos as BlockPos, entity as MCEntity) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | The Entity that is trying to destroy the BlockState. |
+
+
+:::
+
 :::group{name=canHarvestBlock}
 
 Checks whether the player can harvest the BlockState.
@@ -26,7 +146,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.canHarvestBlock(world as MCWorld, pos as BlockPos, player as MCPlayerEntity) as boolean
 
-myMCBlockState.canHarvestBlock(world, new BlockPos(1,2,3), player);
+myMCBlockState.canHarvestBlock(world, new BlockPos(1, 2, 3), player);
 ```
 
 | Parameter | Type | Description |
@@ -52,6 +172,25 @@ myMCBlockState.canProvidePower();
 
 :::
 
+:::group{name=canStickTo}
+
+Checks if this BlockState can stick to the other BlockState when pushed by a piston.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.canStickTo(other as MCBlockState) as boolean
+
+myMCBlockState.canStickTo(<blockstate:minecraft:grass>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| other | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The BlockState check if it will stick against. |
+
+
+:::
+
 :::group{name=getAllowedValuesForProperty}
 
 Gets a list of allowed values for a given property.
@@ -67,6 +206,29 @@ myMCBlockState.getAllowedValuesForProperty("snowy");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | The name of the property to find the allowed values for. |
+
+
+:::
+
+:::group{name=getBedDirection}
+
+Gets the direction of the bed. This can be called on any BlockState that has the `HORIZONTAL_FACING` property, not just beds.
+
+ The game ***WILL*** crash if you call this on a blockstate that doesn't have the property, so make sure
+ you check it before calling it!
+
+Return Type: void
+
+```zenscript
+// MCBlockState.getBedDirection(world as MCWorld, pos as BlockPos) as void
+
+myMCBlockState.getBedDirection(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState |
 
 
 :::
@@ -87,6 +249,94 @@ Return Type: string
 
 myMCBlockState.getCommandString();
 ```
+
+:::
+
+:::group{name=getExpDrop}
+
+Returns how much Experience this BlockState will drop when broken.
+
+Return Type: int
+
+```zenscript
+// MCBlockState.getExpDrop(world as MCWorld, pos as BlockPos, fortune as int, silktouch as int) as int
+
+myMCBlockState.getExpDrop(world, new BlockPos(1, 2, 3), 1, 0);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| fortune | int | The fortune level of the tool being used to break the block. |
+| silktouch | int | The silktouch level of the tool being used to break the block. This will most likely either be 0 or 1. |
+
+
+:::
+
+:::group{name=getExplosionResistance}
+
+Gets the explosion resistance of the BlockState in the world for the given Explosion
+
+Return Type: float
+
+```zenscript
+// MCBlockState.getExplosionResistance(world as MCWorld, pos as BlockPos, explosion as Explosion) as float
+
+myMCBlockState.getExplosionResistance(world, new BlockPos(1, 2, 3), Explosiotn.create(world, 1, 2, 3, 5, true, ExplosionMode.BREAK));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState |
+| explosion | [Explosion](/vanilla/api/world/Explosion) | The explosion object to check against. |
+
+
+:::
+
+:::group{name=getFireSpreadSpeed}
+
+Determines how fast fire spreads from this block.
+ The higher the number the faster that fire will spread around the BlockState.
+
+Return Type: int
+
+```zenscript
+MCBlockState.getFireSpreadSpeed(world as MCWorld, pos as BlockPos, face as Direction) as int
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| face | [Direction](/vanilla/api/util/Direction) | The face that the fire is coming from. |
+
+
+:::
+
+:::group{name=getFlammability}
+
+Gets the chance that fire will spread and consume this BlockState.
+
+ Values range from 0 - 300.
+
+ A value of 300 is a 100% chance, and 0 is a 0% chance.
+
+Return Type: int
+
+```zenscript
+// MCBlockState.getFlammability(world as MCWorld, pos as BlockPos, face as Direction) as int
+
+myMCBlockState.getFlammability(world, new BlockPos(1, 2, 3), Direction.south);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| face | [Direction](/vanilla/api/util/Direction) | The face that the fire is coming from. |
+
 
 :::
 
@@ -141,7 +391,7 @@ Return Type: int
 ```zenscript
 // MCBlockState.getLightValue(world as MCWorld, pos as BlockPos) as int
 
-myMCBlockState.getLightValue(world, new BlockPos(1,2,3));
+myMCBlockState.getLightValue(world, new BlockPos(1, 2, 3));
 ```
 
 | Parameter | Type | Description |
@@ -259,7 +509,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isBed(world as MCWorld, pos as BlockPos, sleeper as MCLivingEntity) as boolean
 
-myMCBlockState.isBed(world, new BlockPos(1,2,3), entity);
+myMCBlockState.isBed(world, new BlockPos(1, 2, 3), entity);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -267,6 +517,114 @@ myMCBlockState.isBed(world, new BlockPos(1,2,3), entity);
 | world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. | false |  |
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. | false |  |
 | sleeper | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The Living Entity that is trying to sleep. | true |  |
+
+:::
+
+:::group{name=isBurning}
+
+Checks if the BlockState is burning at the given position.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isBurning(world as MCWorld, pos as BlockPos) as boolean
+
+myMCBlockState.isBurning(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+
+
+:::
+
+:::group{name=isConduitFrame}
+
+Determines if this BlockState can be used as the frame of a Conduit.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isConduitFrame(world as MCWorld, pos as BlockPos, conduitPosition as BlockPos) as boolean
+
+myMCBlockState.isConduitFrame(world, new BlockPos(1, 2, 3), new BlockPos(1, 5, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| conduitPosition | [BlockPos](/vanilla/api/util/BlockPos) | The Position of the Conduit. |
+
+
+:::
+
+:::group{name=isFertile}
+
+Checks if the BlockState is "fertile" at the given position.
+
+ This will only ever return `true` if the BlockState is in the `<tag:blocks:minecraft:farmland>` tag and if it has the `moisture` state.
+
+ The game ***WILL*** crash if you call this on a blockstate that doesn't have the property, so make sure
+ you check it before calling it!
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isFertile(world as MCWorld, pos as BlockPos) as boolean
+
+myMCBlockState.isFertile(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState |
+
+
+:::
+
+:::group{name=isFireSource}
+
+Checks if this BlockState is a fire source at the given position with the fire coming from the given direciton.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isFireSource(world as MCWorld, pos as BlockPos, side as Direction) as boolean
+
+myMCBlockState.isFireSource(world, new BlockPos(1, 2, 3), Direction.east);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| side | [Direction](/vanilla/api/util/Direction) | The face that the fire is coming form. |
+
+
+:::
+
+:::group{name=isFlammable}
+
+Checks if this BlockState is flammable at the given position with the fire coming from the given direciton.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isFlammable(world as MCWorld, pos as BlockPos, face as Direction) as boolean
+
+myMCBlockState.isFlammable(world, new BlockPos(1, 2, 3), Direction.east);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| face | [Direction](/vanilla/api/util/Direction) | The face that the fire is coming from. |
+
 
 :::
 
@@ -279,7 +637,7 @@ Return Type: boolean
 ```zenscript
 // MCBlockState.isLadder(world as MCWorld, pos as BlockPos, entity as MCLivingEntity) as boolean
 
-myMCBlockState.isLadder(world, new BlockPos(1,2,3), entity);
+myMCBlockState.isLadder(world, new BlockPos(1, 2, 3), entity);
 ```
 
 | Parameter | Type | Description |
@@ -288,6 +646,59 @@ myMCBlockState.isLadder(world, new BlockPos(1,2,3), entity);
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to check at. |
 | entity | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The entity that wants to climb the block. |
 
+
+:::
+
+:::group{name=isPortalFrame}
+
+Determins if this BlockState can be used as the frame of a Nether portal.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isPortalFrame(world as MCWorld, pos as BlockPos) as boolean
+
+myMCBlockState.isPortalFrame(world, new BlockPos(1, 2, 3));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the Blockstate. |
+
+
+:::
+
+:::group{name=isScaffolding}
+
+Checks if the entity should handle movement on this BlockState like it handles movement on scaffolding.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isScaffolding(entity as MCLivingEntity) as boolean
+
+myMCBlockState.isScaffolding(entity);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The entity that is being checked against. |
+
+
+:::
+
+:::group{name=isSlime}
+
+Checks if this BlockState is a Slime Block.
+
+Return Type: boolean
+
+```zenscript
+// MCBlockState.isSlime() as boolean
+
+myMCBlockState.isSlime();
+```
 
 :::
 
@@ -319,6 +730,48 @@ Return Type: boolean
 
 myMCBlockState.isSticky();
 ```
+
+:::
+
+:::group{name=isToolEffective}
+
+Checks if the given ToolType is effective against this BlockState.
+
+Return Type: boolean
+
+```zenscript
+MCBlockState.isToolEffective(tool as ToolType) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tool | [ToolType](/vanilla/api/tool/ToolType) | The ToolType to check for. |
+
+
+:::
+
+:::group{name=setBedOccupied}
+
+Marks the block as "occupied", this is only supported on blocks that have the "occupied" BlockState property.
+
+ The game ***WILL*** crash if you call this on a blockstate that doesn't have the property, so make sure
+ you check it before calling it!
+
+Return Type: void
+
+```zenscript
+// MCBlockState.setBedOccupied(world as MCWorld, pos as BlockPos, sleeper as MCLivingEntity, occupied as boolean) as void
+
+myMCBlockState.setBedOccupied(world, new BlockPos(1, 2, 3), livingEntity, true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | A world object. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the BlockState. |
+| sleeper | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The LivingEntity that is occupying the bed. |
+| occupied | boolean | If the bed is occupied or not. |
+
 
 :::
 
@@ -367,6 +820,7 @@ myMCBlockState.withProperty("snowy", "true");
 | harvestLevel | int | true | false | Gets the harvest level of this BlockState. |
 | harvestTool | [ToolType](/vanilla/api/tool/ToolType) | true | false | Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState. |
 | hasTileEntity | boolean | true | false | Checks whether this BlockState has a [MCTileEntity](/vanilla/api/tileentity/MCTileEntity). |
+| isSlime | boolean | true | false | Checks if this BlockState is a Slime Block. |
 | isSolid | boolean | true | false | Checks whether this BlockState is solid. |
 | isSticky | boolean | true | false | Checks if this BlockState is sticky. <br />  <br />  This is used to determine if the block should pull or push adjacent blocks when pushed / pulled by a piston. <br />  For example, Slime Blocks are sticky blocks. |
 | lightLevel | int | true | false | Gets the light level of this BlockState |
