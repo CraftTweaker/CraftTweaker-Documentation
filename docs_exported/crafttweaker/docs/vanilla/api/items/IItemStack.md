@@ -209,6 +209,34 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 :::
 
+:::group{name=getMaxStackSize}
+
+Returns the max stack size of the Item in the ItemStack
+
+Return Type: int
+
+```zenscript
+// IItemStack.getMaxStackSize() as int
+
+<item:minecraft:dirt>.getMaxStackSize();
+```
+
+:::
+
+:::group{name=getRarity}
+
+Returns the rarity of the Item in the ItemStack
+
+Return Type: [Rarity](/vanilla/api/item/Rarity)
+
+```zenscript
+// IItemStack.getRarity() as Rarity
+
+<item:minecraft:dirt>.getRarity();
+```
+
+:::
+
 :::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
@@ -238,6 +266,20 @@ Return Type: boolean
 // IItemStack.isFood() as boolean
 
 <item:minecraft:dirt>.isFood();
+```
+
+:::
+
+:::group{name=isImmuneToFire}
+
+Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.
+
+Return Type: boolean
+
+```zenscript
+// IItemStack.isImmuneToFire() as boolean
+
+<item:minecraft:dirt>.isImmuneToFire();
 ```
 
 :::
@@ -378,6 +420,65 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 :::
 
+:::group{name=setImmuneToFire}
+
+Sets if this IItemStack is immune to fire / lava.
+
+ If true, the item will not burn when thrown into fire or lava.
+
+Return Type: void
+
+```zenscript
+// IItemStack.setImmuneToFire(immuneToFire as boolean) as void
+
+<item:minecraft:dirt>.setImmuneToFire(true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| immuneToFire | boolean | Should the item be immune to fire. |
+
+
+:::
+
+:::group{name=setMaxStackSize}
+
+Sets the max stacksize of the Item.
+
+Return Type: void
+
+```zenscript
+// IItemStack.setMaxStackSize(newMaxStackSize as int) as void
+
+<item:minecraft:dirt>.setMaxStackSize(16);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newMaxStackSize | int | The new max stack size of the Item. |
+
+
+:::
+
+:::group{name=setRarity}
+
+Sets the rarity of the Item.
+
+Return Type: void
+
+```zenscript
+// IItemStack.setRarity(newRarity as Rarity) as void
+
+<item:minecraft:dirt>.setRarity(Rarity.UNCOMMON);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newRarity | [Rarity](/vanilla/api/item/Rarity) | The new rarity of the Item. |
+
+
+:::
+
 :::group{name=weight}
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
@@ -492,14 +593,16 @@ myIItemStack | other as IIngredient
 | hasDisplayName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasEffect | boolean | true | false | Returns true if this ItemStack has an effect. |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
+| immuneToFire | void | true | true | Sets if this IItemStack is immune to fire / lava. <br />  <br />  If true, the item will not burn when thrown into fire or lava. |
 | isCrossbow | boolean | true | false | Returns true if this stack is considered a crossbow item |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
 | isImmutable | boolean | true | false | No Description Provided |
 | items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false | No Description Provided |
 | maxDamage | int | true | false | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
-| maxStackSize | int | true | false | Returns the max stack size of the Item in the ItemStack |
+| maxStackSize | int | true | true | Returns the max stack size of the Item in the ItemStack |
 | owner | string | true | false | Gets owning mod for the Item in this IItemStack |
+| rarity | [Rarity](/vanilla/api/item/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
 | stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
 | tag | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack. |

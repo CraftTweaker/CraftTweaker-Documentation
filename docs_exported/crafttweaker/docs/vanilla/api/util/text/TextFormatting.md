@@ -17,6 +17,7 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [MCStyle](/vanilla/api/util/text/MCStyle) | true |
 | string | true |
 
 ## Properties

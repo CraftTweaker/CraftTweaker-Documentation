@@ -142,6 +142,34 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 :::
 
+:::group{name=getMaxStackSize}
+
+Returns the max stack size of the Item in the ItemStack
+
+Return Type: int
+
+```zenscript
+// MCItemStackMutable.getMaxStackSize() as int
+
+<item:minecraft:dirt>.mutable().getMaxStackSize();
+```
+
+:::
+
+:::group{name=getRarity}
+
+Returns the rarity of the Item in the ItemStack
+
+Return Type: [Rarity](/vanilla/api/item/Rarity)
+
+```zenscript
+// MCItemStackMutable.getRarity() as Rarity
+
+<item:minecraft:dirt>.mutable().getRarity();
+```
+
+:::
+
 :::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
@@ -160,6 +188,32 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
+
+:::
+
+:::group{name=isFood}
+
+Return Type: boolean
+
+```zenscript
+// MCItemStackMutable.isFood() as boolean
+
+<item:minecraft:dirt>.mutable().isFood();
+```
+
+:::
+
+:::group{name=isImmuneToFire}
+
+Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.
+
+Return Type: boolean
+
+```zenscript
+// MCItemStackMutable.isImmuneToFire() as boolean
+
+<item:minecraft:dirt>.mutable().isImmuneToFire();
+```
 
 :::
 
@@ -256,6 +310,65 @@ MCItemStackMutable.removeTooltip(regex as string) as void
 
 :::
 
+:::group{name=setImmuneToFire}
+
+Sets if this IItemStack is immune to fire / lava.
+
+ If true, the item will not burn when thrown into fire or lava.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setImmuneToFire(immuneToFire as boolean) as void
+
+<item:minecraft:dirt>.mutable().setImmuneToFire(true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| immuneToFire | boolean | Should the item be immune to fire. |
+
+
+:::
+
+:::group{name=setMaxStackSize}
+
+Sets the max stacksize of the Item.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setMaxStackSize(newMaxStackSize as int) as void
+
+<item:minecraft:dirt>.mutable().setMaxStackSize(16);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newMaxStackSize | int | The new max stack size of the Item. |
+
+
+:::
+
+:::group{name=setRarity}
+
+Sets the rarity of the Item.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setRarity(newRarity as Rarity) as void
+
+<item:minecraft:dirt>.mutable().setRarity(Rarity.UNCOMMON);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newRarity | [Rarity](/vanilla/api/item/Rarity) | The new rarity of the Item. |
+
+
+:::
+
 :::group{name=weight}
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
@@ -321,17 +434,20 @@ myMCItemStackMutable | other as IIngredient
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
 | displayName | string | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
+| food | [MCFood](/vanilla/api/food/MCFood)? | true | true | No Description Provided |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | getRepairCost | int | true | false | Gets the repair cost of the ItemStack, or 0 if no repair is defined. |
 | hasDisplayName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasEffect | boolean | true | false | Returns true if this ItemStack has an effect. |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
+| immuneToFire | void | true | true | Sets if this IItemStack is immune to fire / lava. <br />  <br />  If true, the item will not burn when thrown into fire or lava. |
 | isCrossbow | boolean | true | false | Returns true if this stack is considered a crossbow item |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
 | maxDamage | int | true | false | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
-| maxStackSize | int | true | false | Returns the max stack size of the Item in the ItemStack |
+| maxStackSize | int | true | true | Returns the max stack size of the Item in the ItemStack |
 | owner | string | true | false | Gets owning mod for the Item in this IItemStack |
+| rarity | [Rarity](/vanilla/api/item/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
 | stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
 | tag | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack. |

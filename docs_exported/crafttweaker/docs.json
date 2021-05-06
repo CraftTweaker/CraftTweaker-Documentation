@@ -128,7 +128,8 @@
               "MCLivingHealEvent": "vanilla/api/event/entity/living/MCLivingHealEvent.md",
               "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md",
               "MCLivingKnockBackEvent": "vanilla/api/event/entity/living/MCLivingKnockBackEvent.md",
-              "MCLivingSpawnEvent": "vanilla/api/event/entity/living/MCLivingSpawnEvent.md"
+              "MCLivingSpawnEvent": "vanilla/api/event/entity/living/MCLivingSpawnEvent.md",
+              "MCLivingUpdateEvent": "vanilla/api/event/entity/living/MCLivingUpdateEvent.md"
             },
             "Player": {
               "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
@@ -180,7 +181,8 @@
         "Item": {
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
-          "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md"
+          "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
+          "Rarity": "vanilla/api/item/Rarity.md"
         },
         "Items": {
           "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
