@@ -8,7 +8,7 @@ import crafttweaker.api.commands.custom.MCSuggestions;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=create}
 

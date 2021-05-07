@@ -22,7 +22,7 @@ Json implements the following interfaces. That means all methods defined in thes
 
 - [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder)
 
-## Methods
+## Static Methods
 
 :::group{name=create}
 

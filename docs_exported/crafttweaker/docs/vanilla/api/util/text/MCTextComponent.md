@@ -8,7 +8,7 @@ import crafttweaker.api.util.text.MCTextComponent;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=createStringTextComponent}
 

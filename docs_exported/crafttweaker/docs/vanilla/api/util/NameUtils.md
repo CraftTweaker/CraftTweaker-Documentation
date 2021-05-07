@@ -10,7 +10,7 @@ import crafttweaker.util.NameUtils;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=fixing}
 

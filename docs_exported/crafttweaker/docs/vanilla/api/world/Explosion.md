@@ -8,6 +8,29 @@ import crafttweaker.api.world.Explosion;
 ```
 
 
+## Static Methods
+
+:::group{name=create}
+
+Return Type: [Explosion](/vanilla/api/world/Explosion)
+
+```zenscript
+Explosion.create(world as MCWorld, x as double, y as double, z as double, size as float, causesFire as boolean, mode as ExplosionMode, exploder as MCEntity, source as DamageSource) as Explosion
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| world | [MCWorld](/vanilla/api/world/MCWorld) | No Description Provided | false |  |
+| x | double | No Description Provided | false |  |
+| y | double | No Description Provided | false |  |
+| z | double | No Description Provided | false |  |
+| size | float | No Description Provided | false |  |
+| causesFire | boolean | No Description Provided | false |  |
+| mode | [ExplosionMode](/vanilla/api/world/ExplosionMode) | No Description Provided | false |  |
+| exploder | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | true |  || source | [DamageSource](/vanilla/api/util/DamageSource) | No Description Provided | true |  |
+
+:::
+
 ## Methods
 
 :::group{name=clearAffectedBlockPositions}

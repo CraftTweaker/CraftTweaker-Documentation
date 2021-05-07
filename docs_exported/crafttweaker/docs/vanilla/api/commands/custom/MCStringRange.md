@@ -8,7 +8,7 @@ import crafttweaker.api.commands.custom.MCStringRange;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=at}
 

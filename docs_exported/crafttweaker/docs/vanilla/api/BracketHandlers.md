@@ -12,7 +12,7 @@ import crafttweaker.api.BracketHandlers;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=getBiome}
 

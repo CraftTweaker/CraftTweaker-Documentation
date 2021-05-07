@@ -13,7 +13,7 @@ import crafttweaker.api.loot.modifiers.CommonLootModifiers;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=add}
 

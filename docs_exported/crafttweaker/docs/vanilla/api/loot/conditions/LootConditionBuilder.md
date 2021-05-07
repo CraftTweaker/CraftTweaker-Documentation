@@ -18,7 +18,7 @@ import crafttweaker.api.loot.conditions.LootConditionBuilder;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=create}
 

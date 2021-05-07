@@ -12,6 +12,29 @@ import crafttweaker.api.item.Rarity;
 
 Rarity extends Enum&lt;[Rarity](/vanilla/api/item/Rarity)&gt;. That means all methods available in Enum&lt;[Rarity](/vanilla/api/item/Rarity)&gt; are also available in Rarity
 
+## Static Methods
+
+:::group{name=create}
+
+Creates a new Rarity with the given name and given color.
+
+Returns: A new Rarity with the given name and color  
+Return Type: [Rarity](/vanilla/api/item/Rarity)
+
+```zenscript
+// Rarity.create(name as string, formatting as TextFormatting) as Rarity
+
+Rarity.create("insanely epic", <formatting:obfucated>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | string | The name of the new Rarity. |
+| formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | The color of the rarity. |
+
+
+:::
+
 ## Methods
 
 :::group{name=color}

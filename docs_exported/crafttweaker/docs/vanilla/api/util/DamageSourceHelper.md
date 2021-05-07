@@ -10,7 +10,7 @@ import crafttweaker.api.util.DamageSourceHelper;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=causeBeeStingDamage}
 

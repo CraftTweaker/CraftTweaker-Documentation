@@ -15,7 +15,7 @@ IngredientAny implements the following interfaces. That means all methods define
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## Static Methods
 
 :::group{name=getInstance}
 

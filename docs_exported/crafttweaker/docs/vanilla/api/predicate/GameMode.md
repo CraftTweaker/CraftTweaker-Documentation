@@ -17,7 +17,7 @@ import crafttweaker.api.predicate.GameMode;
 
 GameMode extends Enum&lt;[GameMode](/vanilla/api/predicate/GameMode)&gt;. That means all methods available in Enum&lt;[GameMode](/vanilla/api/predicate/GameMode)&gt; are also available in GameMode
 
-## Properties
+## Static Properties
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|

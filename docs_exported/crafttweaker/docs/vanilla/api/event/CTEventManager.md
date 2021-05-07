@@ -13,7 +13,7 @@ import crafttweaker.api.events.CTEventManager;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=register}
 

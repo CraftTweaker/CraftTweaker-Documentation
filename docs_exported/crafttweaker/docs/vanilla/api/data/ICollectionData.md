@@ -15,7 +15,7 @@ ICollectionData implements the following interfaces. That means all methods defi
 
 - [IData](/vanilla/api/data/IData)
 
-## Methods
+## Static Methods
 
 :::group{name=getFromMembers}
 
