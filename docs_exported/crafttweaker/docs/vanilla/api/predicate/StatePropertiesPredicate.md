@@ -1,6 +1,6 @@
 # StatePropertiesPredicate
 
-Represents a predicate for a [MCBlock](/vanilla/api/blocks/MCBlock) or [MCFluid](/vanilla/api/fluid/MCFluid) state properties.
+Represents a predicate for a [MCBlock](/vanilla/api/block/MCBlock) or [MCFluid](/vanilla/api/fluid/MCFluid) state properties.
 
  This predicate can check an arbitrary amount of properties either for an exact match or a value that is within the
  range of allowed values. The predicate is <strong>not</strong> able to check for the absence of a state property, and

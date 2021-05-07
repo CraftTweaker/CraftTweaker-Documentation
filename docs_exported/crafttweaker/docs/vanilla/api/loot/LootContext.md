@@ -17,7 +17,7 @@ import crafttweaker.api.loot.LootContext;
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| blockState | [MCBlockState](/vanilla/api/blocks/MCBlockState)? | true | false | Gets the block state that was broken, if present; null otherwise. |
+| blockState | [MCBlockState](/vanilla/api/block/MCBlockState)? | true | false | Gets the block state that was broken, if present; null otherwise. |
 | damageSource | [DamageSource](/vanilla/api/util/DamageSource)? | true | false | Gets the damage source that caused the death of the current entity, if present; null otherwise. |
 | directKillerEntity | [MCEntity](/vanilla/api/entity/MCEntity)? | true | false | Gets the entity that effectively killed the current entity, if present; null otherwise. <br />  <br />  The difference between this and <code>killerEntity</code> resides on the direct-ness of the entity. For example, <br />  if a player kills a skeleton with an arrow, the player will be the <code>killerEntity</code>, while the arrow <br />  will be the <code>directKillerEntity</code>. |
 | explosionRadius | float | true | false | Gets the explosion radius that caused the death of the entity or the destruction of the block, if present; 0.0 <br />  otherwise. |

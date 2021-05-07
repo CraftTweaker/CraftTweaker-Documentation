@@ -70,9 +70,9 @@ myMCBlock.getCommandString();
 
 :::group{name=getDefaultState}
 
-Gets the default [MCBlockState](/vanilla/api/blocks/MCBlockState) of this Block.
+Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block.
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlock.getDefaultState() as MCBlockState
@@ -142,7 +142,7 @@ myMCBlock.getSpeedFactor();
 
 Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.
 
-Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;&gt;
+Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt;
 
 ```zenscript
 // MCBlock.getTags() as stdlib.List<MCTag<MCBlock>>
@@ -168,9 +168,9 @@ myMCBlock.getTranslationKey();
 
 :::group{name=getValidStates}
 
-Gets a list of valid [MCBlockState](/vanilla/api/blocks/MCBlockState)s for this Block.
+Gets a list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block.
 
-Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt;
+Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt;
 
 ```zenscript
 // MCBlock.getValidStates() as stdlib.List<MCBlockState>
@@ -192,7 +192,7 @@ MCBlock.isInTag(tag as MCTag<MCBlock>) as boolean
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | The [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; to check against. |
+| tag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt; | The [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; to check against. |
 
 
 :::
@@ -223,7 +223,7 @@ MCBlock.matchesBlock(other as MCBlock) as boolean
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| other | [MCBlock](/vanilla/api/blocks/MCBlock) | The other Block to check if this Block matches. |
+| other | [MCBlock](/vanilla/api/block/MCBlock) | The other Block to check if this Block matches. |
 
 
 :::
@@ -234,13 +234,13 @@ MCBlock.matchesBlock(other as MCBlock) as boolean
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
-| defaultState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | Gets the default [MCBlockState](/vanilla/api/blocks/MCBlockState) of this Block. |
+| defaultState | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block. |
 | jumpFactor | float | true | false | Gets the jump factor of this Block. |
 | lootTable | string | true | false | Gets the loot table id for this Block. |
 | slipperiness | float | true | false | Gets the slipperiness of this Block. |
 | speedFactor | float | true | false | Gets the speed factor of this Block. |
-| tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;&gt; | true | false | Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block. |
+| tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt; | true | false | Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block. |
 | translationKey | string | true | false | Gets the translation key that is used to localize this Block. |
-| validStates | stdlib.List&lt;[MCBlockState](/vanilla/api/blocks/MCBlockState)&gt; | true | false | Gets a list of valid [MCBlockState](/vanilla/api/blocks/MCBlockState)s for this Block. |
+| validStates | stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt; | true | false | Gets a list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block. |
 | variableOpacity | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |
 

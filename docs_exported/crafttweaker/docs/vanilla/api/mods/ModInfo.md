@@ -14,7 +14,7 @@ import crafttweaker.api.mods.ModInfo;
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| blocks | stdlib.List&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | true | false | Finds all blocks registered for that mod. |
+| blocks | stdlib.List&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt; | true | false | Finds all blocks registered for that mod. |
 | displayName | string | true | false | Gets the display name of the mod |
 | entitytypes | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false | Finds all EntityTypes registered for that mod |
 | fluids | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false | Finds all EntityTypes registered for that mod |

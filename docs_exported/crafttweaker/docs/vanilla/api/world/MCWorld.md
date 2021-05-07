@@ -117,7 +117,7 @@ world.getBiome(new BlockPos(0, 1, 2));
 
 Gets the block state at a given position.
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCWorld.getBlockState(pos as BlockPos) as MCBlockState
@@ -467,7 +467,7 @@ world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position to set the block at. |
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The new state of the block. |
+| state | [MCBlockState](/vanilla/api/block/MCBlockState) | The new state of the block. |
 
 
 :::

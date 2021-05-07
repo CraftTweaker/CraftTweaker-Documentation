@@ -11,7 +11,7 @@ import crafttweaker.api.tag.TagManagerBlock;
 ## Implemented Interfaces
 TagManagerBlock implements the following interfaces. That means all methods defined in these interfaces are also available in TagManagerBlock
 
-- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;
+- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;
 
 ## Methods
 

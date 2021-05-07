@@ -20,7 +20,7 @@ MCBlockEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all metho
 
 :::group{name=getBlockState}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlockEvent.getBlockState() as MCBlockState
@@ -60,6 +60,6 @@ myMCBlockEvent.getWorld();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| state | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
 | world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 

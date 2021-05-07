@@ -4,15 +4,13 @@
       "Api": {
         "BracketHandlers": "vanilla/api/BracketHandlers.md",
         "Block": {
+          "MCBlock": "vanilla/api/block/MCBlock.md",
+          "MCBlockState": "vanilla/api/block/MCBlockState.md",
           "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
             "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md",
             "PushReaction": "vanilla/api/block/material/PushReaction.md"
           }
-        },
-        "Blocks": {
-          "MCBlock": "vanilla/api/blocks/MCBlock.md",
-          "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
         },
         "Brackets": {
           "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"

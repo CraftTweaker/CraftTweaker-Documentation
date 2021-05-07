@@ -14,7 +14,7 @@ import crafttweaker.api.blocks.MCBlockState;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| [MCBlock](/vanilla/api/blocks/MCBlock) | true |
+| [MCBlock](/vanilla/api/block/MCBlock) | true |
 | string | false |
 
 ## Methods
@@ -188,7 +188,7 @@ Return Type: boolean
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| other | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The BlockState check if it will stick against. |
+| other | [MCBlockState](/vanilla/api/block/MCBlockState) | The BlockState check if it will stick against. |
 
 
 :::
@@ -795,7 +795,7 @@ Return Type: boolean
 
 Sets a block property based on it's name.
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlockState.withProperty(name as string, value as string) as MCBlockState
@@ -816,7 +816,7 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false | Gets the base [MCBlock](/vanilla/api/blocks/MCBlock) of this BlockState. <br />  <br />  The [MCBlock](/vanilla/api/blocks/MCBlock) will not contain any of the properties of this BlockState. |
+| block | [MCBlock](/vanilla/api/block/MCBlock) | true | false | Gets the base [MCBlock](/vanilla/api/block/MCBlock) of this BlockState. <br />  <br />  The [MCBlock](/vanilla/api/block/MCBlock) will not contain any of the properties of this BlockState. |
 | canProvidePower | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
 | commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  <code> <br />  <blockstate:minecraft:grass:snowy=true> <br />  </code> |
 | harvestLevel | int | true | false | Gets the harvest level of this BlockState. |

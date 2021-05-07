@@ -22,7 +22,7 @@ MCCropGrowPostEvent extends [MCCropGrowEvent](/vanilla/api/event/block/MCCropGro
 
 :::group{name=getOriginState}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCCropGrowPostEvent.getOriginState() as MCBlockState
@@ -37,5 +37,5 @@ myMCCropGrowPostEvent.getOriginState();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| originState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| originState | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
 

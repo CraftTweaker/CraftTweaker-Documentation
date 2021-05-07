@@ -38,7 +38,7 @@ BlockState.withState(state as MCBlockState) as BlockState
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The state to check. |
+| state | [MCBlockState](/vanilla/api/block/MCBlockState) | The state to check. |
 
 
 :::

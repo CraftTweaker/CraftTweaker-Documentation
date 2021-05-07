@@ -38,7 +38,7 @@ myMCBlockPlaceEvent.getEntity();
 
 :::group{name=getPlacedAgainst}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
@@ -50,7 +50,7 @@ myMCBlockPlaceEvent.getPlacedAgainst();
 
 :::group{name=getPlacedBlock}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
@@ -62,7 +62,7 @@ myMCBlockPlaceEvent.getPlacedBlock();
 
 :::group{name=getReplacedBlock}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 // MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
@@ -78,7 +78,7 @@ myMCBlockPlaceEvent.getReplacedBlock();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | No Description Provided |
-| placedAgainst | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
-| placedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
-| replacedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false | No Description Provided |
+| placedAgainst | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
+| placedBlock | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
+| replacedBlock | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
 

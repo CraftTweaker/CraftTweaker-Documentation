@@ -38,10 +38,10 @@ BracketHandlers.getBiome("minecraft:plain");
 
 :::group{name=getBlock}
 
-Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
+Gets the give [MCBlock](/vanilla/api/block/MCBlock). Throws an Exception if not found
 
-Returns: The found [MCBlock](/vanilla/api/blocks/MCBlock)  
-Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
+Returns: The found [MCBlock](/vanilla/api/block/MCBlock)  
+Return Type: [MCBlock](/vanilla/api/block/MCBlock)
 
 ```zenscript
 <block:minecraft:dirt>
@@ -85,7 +85,7 @@ BracketHandlers.getBlockMaterial("earth");
 Creates a Blockstate based on the given inputs. <br />  Returns `null` if it cannot find the block, ignored invalid variants
 
 Returns: The found BlockState  
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
 <blockstate:minecraft:acacia_planks>
