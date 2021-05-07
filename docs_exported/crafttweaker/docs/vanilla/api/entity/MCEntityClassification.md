@@ -12,6 +12,17 @@ import crafttweaker.api.entity.MCEntityClassification;
 
 MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt;. That means all methods available in Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; are also available in MCEntityClassification
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| AMBIENT | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| CREATURE | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| MISC | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| MONSTER | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| WATER_AMBIENT | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| WATER_CREATURE | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

@@ -35,6 +35,15 @@ Rarity.create("insanely epic", <formatting:obfucated>);
 
 :::
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| COMMON | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
+| EPIC | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
+| RARE | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
+| UNCOMMON | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
+
 ## Methods
 
 :::group{name=color}

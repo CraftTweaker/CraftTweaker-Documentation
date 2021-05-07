@@ -12,3 +12,13 @@ import crafttweaker.api.block.material.PushReaction;
 
 PushReaction extends Enum&lt;[PushReaction](/vanilla/api/block/material/PushReaction)&gt;. That means all methods available in Enum&lt;[PushReaction](/vanilla/api/block/material/PushReaction)&gt; are also available in PushReaction
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| BLOCK | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+| DESTROY | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+| IGNORE | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+| NORMAL | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+| PUSH_ONLY | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+

@@ -12,3 +12,11 @@ import crafttweaker.api.world.ExplosionMode;
 
 ExplosionMode extends Enum&lt;[ExplosionMode](/vanilla/api/world/ExplosionMode)&gt;. That means all methods available in Enum&lt;[ExplosionMode](/vanilla/api/world/ExplosionMode)&gt; are also available in ExplosionMode
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| BREAK | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
+| DESTROY | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
+| NONE | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
+

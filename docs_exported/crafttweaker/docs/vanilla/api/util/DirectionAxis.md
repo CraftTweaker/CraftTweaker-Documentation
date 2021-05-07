@@ -19,6 +19,14 @@ DirectionAxis implements the following interfaces. That means all methods define
 
 - Predicate
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| X | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+| Y | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+| Z | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+
 ## Methods
 
 :::group{name=equals}
