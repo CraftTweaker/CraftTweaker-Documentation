@@ -1,5 +1,7 @@
 # MCBlock
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -28,7 +30,21 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 ```zenscript
 // MCBlock.asItem() as MCItemDefinition
 
-myMCBlock.asItem();
+<block:minecraft:grass_block>.asItem();
+```
+
+:::
+
+:::group{name=canCollide}
+
+Checks if entities can collide with this Block.
+
+Return Type: boolean
+
+```zenscript
+// MCBlock.canCollide() as boolean
+
+<block:minecraft:grass_block>.canCollide();
 ```
 
 :::
@@ -44,7 +60,21 @@ Return Type: boolean
 ```zenscript
 // MCBlock.canSpawnInBlock() as boolean
 
-myMCBlock.canSpawnInBlock();
+<block:minecraft:grass_block>.canSpawnInBlock();
+```
+
+:::
+
+:::group{name=getBlastResistance}
+
+Gets the blast resistance of this Block.
+
+Return Type: float
+
+```zenscript
+// MCBlock.getBlastResistance() as float
+
+<block:minecraft:grass_block>.getBlastResistance();
 ```
 
 :::
@@ -63,7 +93,7 @@ Return Type: string
 ```zenscript
 // MCBlock.getCommandString() as string
 
-myMCBlock.getCommandString();
+<block:minecraft:grass_block>.getCommandString();
 ```
 
 :::
@@ -77,7 +107,7 @@ Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 ```zenscript
 // MCBlock.getDefaultState() as MCBlockState
 
-myMCBlock.getDefaultState();
+<block:minecraft:grass_block>.getDefaultState();
 ```
 
 :::
@@ -91,7 +121,7 @@ Return Type: float
 ```zenscript
 // MCBlock.getJumpFactor() as float
 
-myMCBlock.getJumpFactor();
+<block:minecraft:grass_block>.getJumpFactor();
 ```
 
 :::
@@ -105,7 +135,21 @@ Return Type: string
 ```zenscript
 // MCBlock.getLootTable() as string
 
-myMCBlock.getLootTable();
+<block:minecraft:grass_block>.getLootTable();
+```
+
+:::
+
+:::group{name=getMaterial}
+
+Gets the material of this Block.
+
+Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
+
+```zenscript
+// MCBlock.getMaterial() as MCMaterial
+
+<block:minecraft:grass_block>.getMaterial();
 ```
 
 :::
@@ -119,7 +163,7 @@ Return Type: float
 ```zenscript
 // MCBlock.getSlipperiness() as float
 
-myMCBlock.getSlipperiness();
+<block:minecraft:grass_block>.getSlipperiness();
 ```
 
 :::
@@ -133,7 +177,7 @@ Return Type: float
 ```zenscript
 // MCBlock.getSpeedFactor() as float
 
-myMCBlock.getSpeedFactor();
+<block:minecraft:grass_block>.getSpeedFactor();
 ```
 
 :::
@@ -147,7 +191,7 @@ Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanil
 ```zenscript
 // MCBlock.getTags() as stdlib.List<MCTag<MCBlock>>
 
-myMCBlock.getTags();
+<block:minecraft:grass_block>.getTags();
 ```
 
 :::
@@ -161,7 +205,7 @@ Return Type: string
 ```zenscript
 // MCBlock.getTranslationKey() as string
 
-myMCBlock.getTranslationKey();
+<block:minecraft:grass_block>.getTranslationKey();
 ```
 
 :::
@@ -175,7 +219,7 @@ Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt;
 ```zenscript
 // MCBlock.getValidStates() as stdlib.List<MCBlockState>
 
-myMCBlock.getValidStates();
+<block:minecraft:grass_block>.getValidStates();
 ```
 
 :::
@@ -206,7 +250,7 @@ Return Type: boolean
 ```zenscript
 // MCBlock.isVariableOpacity() as boolean
 
-myMCBlock.isVariableOpacity();
+<block:minecraft:grass_block>.isVariableOpacity();
 ```
 
 :::
@@ -228,17 +272,134 @@ MCBlock.matchesBlock(other as MCBlock) as boolean
 
 :::
 
+:::group{name=setCanCollide}
+
+Sets whether entities can collide with this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setCanCollide(canCollide as boolean) as void
+
+<block:minecraft:grass_block>.setCanCollide(true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| canCollide | boolean | Can entities collide with this Block. |
+
+
+:::
+
+:::group{name=setCanCollide}
+
+Sets the blast resistance of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setCanCollide(resistance as float) as void
+
+<block:minecraft:grass_block>.setCanCollide(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| resistance | float | The new blast resistance of this Block. |
+
+
+:::
+
+:::group{name=setJumpFactor}
+
+Sets the jump factor of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setJumpFactor(jumpFactor as float) as void
+
+<block:minecraft:grass_block>.setJumpFactor(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| jumpFactor | float | The new jump factor of this Block. |
+
+
+:::
+
+:::group{name=setMaterial}
+
+Sets the material of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setMaterial(material as MCMaterial) as void
+
+<block:minecraft:grass_block>.setMaterial(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | No Description Provided |
+
+
+:::
+
+:::group{name=setSlipperiness}
+
+Sets the slipperiness of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setSlipperiness(slipperiness as float) as void
+
+<block:minecraft:grass_block>.setSlipperiness(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| slipperiness | float | The new slipperiness of this Block. |
+
+
+:::
+
+:::group{name=setSpeedFactor}
+
+Sets the speed factor of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setSpeedFactor(speedFactor as float) as void
+
+<block:minecraft:grass_block>.setSpeedFactor(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| speedFactor | float | The new speed factor of this Block. |
+
+
+:::
+
 
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| blastResistance | float | true | false | Gets the blast resistance of this Block. |
+| canCollide | boolean | true | true | Checks if entities can collide with this Block. |
 | commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
 | defaultState | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block. |
-| jumpFactor | float | true | false | Gets the jump factor of this Block. |
+| jumpFactor | float | true | true | Gets the jump factor of this Block. |
 | lootTable | string | true | false | Gets the loot table id for this Block. |
-| slipperiness | float | true | false | Gets the slipperiness of this Block. |
-| speedFactor | float | true | false | Gets the speed factor of this Block. |
+| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | true | true | Gets the material of this Block. |
+| slipperiness | float | true | true | Gets the slipperiness of this Block. |
+| speedFactor | float | true | true | Gets the speed factor of this Block. |
 | tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt; | true | false | Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block. |
 | translationKey | string | true | false | Gets the translation key that is used to localize this Block. |
 | validStates | stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt; | true | false | Gets a list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block. |
