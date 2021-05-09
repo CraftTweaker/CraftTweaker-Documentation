@@ -68,6 +68,7 @@
           "StringData": "vanilla/api/data/StringData.md"
         },
         "Enchantment": {
+          "EnchantmentRarity": "vanilla/api/enchantment/EnchantmentRarity.md",
           "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md"
         },
         "Entities": {
