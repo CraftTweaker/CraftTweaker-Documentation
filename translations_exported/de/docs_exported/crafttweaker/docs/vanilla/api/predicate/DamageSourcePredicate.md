@@ -20,7 +20,7 @@ DamageSourcePredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/a
 
 ## Methoden
 
-### withArmorBypass
+:::group{name=withArmorBypass}
 
 Indicates that the damage source must be able to bypass armor protection (for example, suffocation)
 
@@ -29,11 +29,14 @@ Indicates that the damage source must be able to bypass armor protection (for ex
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withArmorBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withArmorBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withArmorBypass();
 ```
 
-### withDirectEntityPredicate
+:::
+
+:::group{name=withDirectEntityPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be used to check the entity that directly caused damage.
 
@@ -52,7 +55,9 @@ DamageSourcePredicate.withDirectEntityPredicate(builder as Consumer<EntityPredic
 | bauer     | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withExplosionSource
+:::
+
+:::group{name=withExplosionSource}
 
 Indicates that the damage must have been caused by an explosion.
 
@@ -61,11 +66,14 @@ Indicates that the damage must have been caused by an explosion.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withExplosionSource() as DamageSourcePredicate
+// DamageSourcePredicate.withExplosionSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withExplosionSource();
 ```
 
-### withFireSource
+:::
+
+:::group{name=withFireSource}
 
 Indicates that the damage must have been caused by fire.
 
@@ -74,11 +82,14 @@ Indicates that the damage must have been caused by fire.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withFireSource() as DamageSourcePredicate
+// DamageSourcePredicate.withFireSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withFireSource();
 ```
 
-### withInvulnerabilityBypass
+:::
+
+:::group{name=withInvulnerabilityBypass}
 
 Indicates that the damage source must be able to bypass invulnerability (for example, void damage).
 
@@ -87,11 +98,14 @@ Indicates that the damage source must be able to bypass invulnerability (for exa
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withInvulnerabilityBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withInvulnerabilityBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withInvulnerabilityBypass();
 ```
 
-### withLightningSource
+:::
+
+:::group{name=withLightningSource}
 
 Indicates that the damage must have been caused by a lightning strike.
 
@@ -100,11 +114,14 @@ Indicates that the damage must have been caused by a lightning strike.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withLightningSource() as DamageSourcePredicate
+// DamageSourcePredicate.withLightningSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withLightningSource();
 ```
 
-### withMagicBypass
+:::
+
+:::group{name=withMagicBypass}
 
 Indicates that the damage source must be able to bypass magic protection (for example, starvation).
 
@@ -113,11 +130,14 @@ Indicates that the damage source must be able to bypass magic protection (for ex
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withMagicBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withMagicBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withMagicBypass();
 ```
 
-### withMagicSource
+:::
+
+:::group{name=withMagicSource}
 
 Indicates that the damage must have been caused by magic sources.
 
@@ -126,11 +146,14 @@ Indicates that the damage must have been caused by magic sources.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withMagicSource() as DamageSourcePredicate
+// DamageSourcePredicate.withMagicSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withMagicSource();
 ```
 
-### withProjectileSource
+:::
+
+:::group{name=withProjectileSource}
 
 Indicates that the damage must have been caused by a projectile.
 
@@ -139,11 +162,14 @@ Indicates that the damage must have been caused by a projectile.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withProjectileSource() as DamageSourcePredicate
+// DamageSourcePredicate.withProjectileSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withProjectileSource();
 ```
 
-### withSourceEntityPredicate
+:::
+
+:::group{name=withSourceEntityPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be used to check the entity that caused damage.
 
@@ -162,7 +188,9 @@ DamageSourcePredicate.withSourceEntityPredicate(builder as Consumer<EntityPredic
 | bauer     | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withoutArmorBypass
+:::
+
+:::group{name=withoutArmorBypass}
 
 Indicates that the damage source must not be able to bypass armor protection.
 
@@ -171,11 +199,14 @@ Indicates that the damage source must not be able to bypass armor protection.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutArmorBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutArmorBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutArmorBypass();
 ```
 
-### withoutExplosionSource
+:::
+
+:::group{name=withoutExplosionSource}
 
 Indicates that the damage must not have been caused by an explosion.
 
@@ -184,11 +215,14 @@ Indicates that the damage must not have been caused by an explosion.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutExplosionSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutExplosionSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutExplosionSource();
 ```
 
-### withoutFireSource
+:::
+
+:::group{name=withoutFireSource}
 
 Indicates that the damage must not have been caused by fire.
 
@@ -197,11 +231,14 @@ Indicates that the damage must not have been caused by fire.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutFireSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutFireSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutFireSource();
 ```
 
-### withoutInvulnerabilityBypass
+:::
+
+:::group{name=withoutInvulnerabilityBypass}
 
 Indicates that the damage source must not be able to bypass invulnerability.
 
@@ -210,11 +247,14 @@ Indicates that the damage source must not be able to bypass invulnerability.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutInvulnerabilityBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutInvulnerabilityBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutInvulnerabilityBypass();
 ```
 
-### withoutLightningSource
+:::
+
+:::group{name=withoutLightningSource}
 
 Indicates that the damage must not have been caused by a lightning strike.
 
@@ -223,11 +263,14 @@ Indicates that the damage must not have been caused by a lightning strike.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutLightningSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutLightningSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutLightningSource();
 ```
 
-### withoutMagicBypass
+:::
+
+:::group{name=withoutMagicBypass}
 
 Indicates that the damage source must not be able to bypass magic protection.
 
@@ -236,11 +279,14 @@ Indicates that the damage source must not be able to bypass magic protection.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutMagicBypass() as DamageSourcePredicate
+// DamageSourcePredicate.withoutMagicBypass() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutMagicBypass();
 ```
 
-### withoutMagicSource
+:::
+
+:::group{name=withoutMagicSource}
 
 Indicates that the damage must not have been caused by magic sources.
 
@@ -249,11 +295,14 @@ Indicates that the damage must not have been caused by magic sources.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutMagicSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutMagicSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutMagicSource();
 ```
 
-### withoutProjectileSource
+:::
+
+:::group{name=withoutProjectileSource}
 
 Indicates that the damage must not have been caused by a projectile.
 
@@ -262,8 +311,11 @@ Indicates that the damage must not have been caused by a projectile.
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
-DamageSourcePredicate.withoutProjectileSource() as DamageSourcePredicate
+// DamageSourcePredicate.withoutProjectileSource() as DamageSourcePredicate
+
 myDamageSourcePredicate.withoutProjectileSource();
 ```
+
+:::
 
 
