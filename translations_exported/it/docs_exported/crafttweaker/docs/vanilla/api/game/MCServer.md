@@ -61,7 +61,8 @@ Get a server world instance based on resource location Throws an exception if th
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
 ```zenscript
-MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+// MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+
 myMCServer.getWorld(<resource:minecraft:the_end>);
 ```
 
@@ -75,7 +76,7 @@ myMCServer.getWorld(<resource:minecraft:the_end>);
 
 ## Properties
 
-| Name   | Type                                                                            | Ha Getter | Ha Setter |
-| ------ | ------------------------------------------------------------------------------- | --------- | --------- |
-| worlds | Collection&lt;[MCServerWorld](/vanilla/api/world/MCServerWorld)&gt; | true      | false     |
+| Name   | Type                                                                            | Ha Getter | Ha Setter | Description             |
+| ------ | ------------------------------------------------------------------------------- | --------- | --------- | ----------------------- |
+| worlds | Collection&lt;[MCServerWorld](/vanilla/api/world/MCServerWorld)&gt; | true      | false     | No Description Provided |
 
