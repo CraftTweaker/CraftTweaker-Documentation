@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when 3 sticks 
 
 #### Remove Recipes
 
-The follow script will remove all Mechanical Crafter recipes that output a Flywheel.
+The following script will remove all Mechanical Crafter recipes that output a Flywheel.
 
 ```zenscript
 // <recipetype:create:mechanical_crafting>.removeRecipe(IItemStack output)
