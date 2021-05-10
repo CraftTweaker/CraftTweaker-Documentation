@@ -57,7 +57,8 @@ MCIngredientConditioned.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientConditioned.anyDamage() as MCIngredientConditioned<IIngredient>
+// MCIngredientConditioned.anyDamage() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientConditioned.anyDamage();
 ```
 
@@ -68,7 +69,8 @@ myMCIngredientConditioned.anyDamage();
 Return Type: void
 
 ```zenscript
-MCIngredientConditioned.clearTooltip() as void
+// MCIngredientConditioned.clearTooltip() as void
+
 myMCIngredientConditioned.clearTooltip();
 ```
 
@@ -81,7 +83,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientConditioned.contains(ingredient as IIngredient) as boolean
+// MCIngredientConditioned.contains(ingredient as IIngredient) as boolean
+
 myMCIngredientConditioned.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -99,7 +102,8 @@ When this ingredient stack is crafted, what will remain in the grid? Does not ch
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCIngredientConditioned.getRemainingItem(stack as IItemStack) as IItemStack
+// MCIngredientConditioned.getRemainingItem(stack as IItemStack) as IItemStack
+
 myMCIngredientConditioned.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -117,7 +121,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientConditioned.matches(stack as IItemStack) as boolean
+// MCIngredientConditioned.matches(stack as IItemStack) as boolean
+
 myMCIngredientConditioned.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -181,7 +186,8 @@ MCIngredientConditioned.only(condition as IIngredientCondition<IIngredient>) as 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientConditioned.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// MCIngredientConditioned.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientConditioned.onlyDamaged();
 ```
 
@@ -242,10 +248,10 @@ myMCIngredientConditioned | other as IIngredient
 
 ## Properties
 
-| Name               | Type                                                                                 | Has Getter | Has Setter |
-| ------------------ | ------------------------------------------------------------------------------------ | ---------- | ---------- |
-| Ingrédient de base | T                                                                                    | true       | false      |
-| burnTime           | void                                                                                 | false      | true       |
-| condition          | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;T&gt; | true       | false      |
-| items              | [IItemStack](/vanilla/api/items/IItemStack)[]                                        | true       | false      |
+| Name               | Type                                                                                 | Has Getter | Has Setter | Description                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------ | ---------- | ---------- | -------------------------------------------------------------------------------- |
+| Ingrédient de base | T                                                                                    | true       | false      | No Description Provided                                                          |
+| burnTime           | void                                                                                 | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| condition          | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;T&gt; | true       | false      | No Description Provided                                                          |
+| items              | [IItemStack](/vanilla/api/items/IItemStack)[]                                        | true       | false      | No Description Provided                                                          |
 
