@@ -18,19 +18,22 @@ MCWorldTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Tha
 
 ## 方法
 
-### getWorld
+:::group{name=getWorld}
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
-MCWorldTickEvent.getWorld() as MCWorld
+// MCWorldTickEvent.getWorld() as MCWorld
+
 myMCWorldTickEvent.getWorld();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称    | 类型                                    | 可获得  | 可设置   |
-| ----- | ------------------------------------- | ---- | ----- |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+| 名称    | 类型                                    | 可获得  | 可设置   | 描述                      |
+| ----- | ------------------------------------- | ---- | ----- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 
