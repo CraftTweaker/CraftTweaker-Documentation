@@ -24,7 +24,7 @@ MCLivingEntityUseItemFinishEvent extends [MCLivingEntityUseItemEvent](/vanilla/a
 
 ## 参数
 
-| 名称          | 类型                                          | 可获得  | 可设置  |
-| ----------- | ------------------------------------------- | ---- | ---- |
-| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true | true |
+| 名称          | 类型                                          | 可获得  | 可设置  | 描述                      |
+| ----------- | ------------------------------------------- | ---- | ---- | ----------------------- |
+| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true | true | No Description Provided |
 
