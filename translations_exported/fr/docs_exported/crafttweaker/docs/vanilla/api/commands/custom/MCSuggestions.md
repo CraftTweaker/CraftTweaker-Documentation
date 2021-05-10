@@ -8,7 +8,7 @@ import crafttweaker.api.commands.custom.MCSuggestions;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=create}
 
@@ -31,7 +31,8 @@ MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>)
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.empty() as MCSuggestions
+// MCSuggestions.empty() as MCSuggestions
+
 MCSuggestions.empty();
 ```
 
@@ -81,7 +82,8 @@ MCSuggestions.equals(o as Object) as boolean
 Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
-MCSuggestions.getList() as stdlib.List<MCSuggestion>
+// MCSuggestions.getList() as stdlib.List<MCSuggestion>
+
 myMCSuggestions.getList();
 ```
 
@@ -92,7 +94,8 @@ myMCSuggestions.getList();
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCSuggestions.getRange() as MCStringRange
+// MCSuggestions.getRange() as MCStringRange
+
 myMCSuggestions.getRange();
 ```
 
@@ -103,7 +106,8 @@ myMCSuggestions.getRange();
 Return Type: int
 
 ```zenscript
-MCSuggestions.hashCode() as int
+// MCSuggestions.hashCode() as int
+
 myMCSuggestions.hashCode();
 ```
 
@@ -114,7 +118,8 @@ myMCSuggestions.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCSuggestions.isEmpty() as boolean
+// MCSuggestions.isEmpty() as boolean
+
 myMCSuggestions.isEmpty();
 ```
 
@@ -125,7 +130,8 @@ myMCSuggestions.isEmpty();
 Return Type: string
 
 ```zenscript
-MCSuggestions.toString() as string
+// MCSuggestions.toString() as string
+
 myMCSuggestions.toString();
 ```
 
