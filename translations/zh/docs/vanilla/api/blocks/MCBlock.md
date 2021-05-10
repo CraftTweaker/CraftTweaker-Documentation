@@ -9,7 +9,7 @@ crafttweaker.api.block.MCBlock
 ```
 
 ## 方法
-### canSpawnInBlock
+### canSpawnInBlock 可以在方块内放置
 
 返回为布尔值
 
