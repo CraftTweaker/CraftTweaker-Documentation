@@ -11,7 +11,7 @@
 - **int chopTimes** Chop times
 - **String group** Recipe group
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:stone_age:tree_stump>.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
