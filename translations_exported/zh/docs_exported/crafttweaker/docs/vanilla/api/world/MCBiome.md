@@ -77,18 +77,18 @@ MCBiome.getTemperature(pos as BlockPos) as float
 
 ## 参数
 
-| 名称             | 类型                                                         | 可获得  | 可设置   |
-| -------------- | ---------------------------------------------------------- | ---- | ----- |
-| category       | string                                                     | true | false |
-| commandString  | string                                                     | true | false |
-| depth          | float                                                      | true | false |
-| doesRain       | boolean                                                    | true | false |
-| doesSnow       | boolean                                                    | true | false |
-| downfall       | float                                                      | true | false |
-| isHighHumidity | boolean                                                    | true | false |
-| rainType       | string                                                     | true | false |
-| registryName   | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
-| scale          | float                                                      | true | false |
-| waterColor     | int                                                        | true | false |
-| waterFogColor  | int                                                        | true | false |
+| 名称             | 类型                                                         | 可获得  | 可设置   | 描述                      |
+| -------------- | ---------------------------------------------------------- | ---- | ----- | ----------------------- |
+| category       | string                                                     | true | false | No Description Provided |
+| commandString  | string                                                     | true | false | No Description Provided |
+| depth          | float                                                      | true | false | No Description Provided |
+| doesRain       | boolean                                                    | true | false | No Description Provided |
+| doesSnow       | boolean                                                    | true | false | No Description Provided |
+| downfall       | float                                                      | true | false | No Description Provided |
+| isHighHumidity | boolean                                                    | true | false | No Description Provided |
+| rainType       | string                                                     | true | false | No Description Provided |
+| registryName   | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | No Description Provided |
+| scale          | float                                                      | true | false | No Description Provided |
+| waterColor     | int                                                        | true | false | No Description Provided |
+| waterFogColor  | int                                                        | true | false | No Description Provided |
 
