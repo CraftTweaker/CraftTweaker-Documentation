@@ -8,7 +8,7 @@ import crafttweaker.api.commands.custom.CustomCommands;
 ```
 
 
-## Methods
+## Static Methods
 
 :::group{name=argument}
 
