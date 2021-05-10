@@ -64,7 +64,8 @@ MCItemStackMutable.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
+// MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.mutable().anyDamage();
 ```
 
@@ -75,7 +76,8 @@ MCItemStackMutable.anyDamage() as MCIngredientConditioned<IIngredient>
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-MCItemStackMutable.asIIngredientWithAmount() as IIngredientWithAmount
+// MCItemStackMutable.asIIngredientWithAmount() as IIngredientWithAmount
+
 <item:minecraft:dirt>.mutable().asIIngredientWithAmount();
 ```
 
@@ -88,7 +90,8 @@ Clears any custom name set for this ItemStack
 Return Type: void
 
 ```zenscript
-MCItemStackMutable.clearCustomName() as void
+// MCItemStackMutable.clearCustomName() as void
+
 <item:minecraft:dirt>.mutable().clearCustomName();
 ```
 
@@ -99,7 +102,8 @@ MCItemStackMutable.clearCustomName() as void
 Return Type: void
 
 ```zenscript
-MCItemStackMutable.clearTooltip() as void
+// MCItemStackMutable.clearTooltip() as void
+
 <item:minecraft:dirt>.mutable().clearTooltip();
 ```
 
@@ -112,7 +116,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-MCItemStackMutable.contains(ingredient as IIngredient) as boolean
+// MCItemStackMutable.contains(ingredient as IIngredient) as boolean
+
 <item:minecraft:dirt>.mutable().contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -128,8 +133,37 @@ MCItemStackMutable.contains(ingredient as IIngredient) as boolean
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 ```zenscript
-MCItemStackMutable.getDefinition() as MCItemDefinition
+// MCItemStackMutable.getDefinition() as MCItemDefinition
+
 <item:minecraft:dirt>.mutable().getDefinition();
+```
+
+:::
+
+:::group{name=getMaxStackSize}
+
+Returns the max stack size of the Item in the ItemStack
+
+Return Type: int
+
+```zenscript
+// MCItemStackMutable.getMaxStackSize() as int
+
+<item:minecraft:dirt>.mutable().getMaxStackSize();
+```
+
+:::
+
+:::group{name=getRarity}
+
+Returns the rarity of the Item in the ItemStack
+
+Return Type: [Rarity](/vanilla/api/item/Rarity)
+
+```zenscript
+// MCItemStackMutable.getRarity() as Rarity
+
+<item:minecraft:dirt>.mutable().getRarity();
 ```
 
 :::
@@ -141,7 +175,8 @@ When this ingredient stack is crafted, what will remain in the grid? Does not ch
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemStackMutable.getRemainingItem(stack as IItemStack) as IItemStack
+// MCItemStackMutable.getRemainingItem(stack as IItemStack) as IItemStack
+
 <item:minecraft:dirt>.mutable().getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
@@ -152,6 +187,32 @@ MCItemStackMutable.getRemainingItem(stack as IItemStack) as IItemStack
 
 :::
 
+:::group{name=isFood}
+
+Return Type: boolean
+
+```zenscript
+// MCItemStackMutable.isFood() as boolean
+
+<item:minecraft:dirt>.mutable().isFood();
+```
+
+:::
+
+:::group{name=isImmuneToFire}
+
+Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.
+
+Return Type: boolean
+
+```zenscript
+// MCItemStackMutable.isImmuneToFire() as boolean
+
+<item:minecraft:dirt>.mutable().isImmuneToFire();
+```
+
+:::
+
 :::group{name=matches}
 
 Does the given stack match the ingredient?
@@ -159,7 +220,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-MCItemStackMutable.matches(stack as IItemStack) as boolean
+// MCItemStackMutable.matches(stack as IItemStack) as boolean
+
 <item:minecraft:dirt>.mutable().matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -207,7 +269,8 @@ MCItemStackMutable.only(condition as IIngredientCondition<IIngredient>) as MCIng
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCItemStackMutable.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// MCItemStackMutable.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 <item:minecraft:dirt>.mutable().onlyDamaged();
 ```
 
@@ -239,6 +302,65 @@ MCItemStackMutable.removeTooltip(regex as string) as void
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | regex     | string | No Description Provided |
+
+
+:::
+
+:::group{name=setImmuneToFire}
+
+Sets if this IItemStack is immune to fire / lava.
+
+ If true, the item will not burn when thrown into fire or lava.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setImmuneToFire(immuneToFire as boolean) as void
+
+<item:minecraft:dirt>.mutable().setImmuneToFire(true);
+```
+
+| Parameter    | Type    | Description                        |
+| ------------ | ------- | ---------------------------------- |
+| immuneToFire | boolean | Should the item be immune to fire. |
+
+
+:::
+
+:::group{name=setMaxStackSize}
+
+Sets the max stacksize of the Item.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setMaxStackSize(newMaxStackSize as int) as void
+
+<item:minecraft:dirt>.mutable().setMaxStackSize(16);
+```
+
+| Parameter       | Type | Description                         |
+| --------------- | ---- | ----------------------------------- |
+| newMaxStackSize | int  | The new max stack size of the Item. |
+
+
+:::
+
+:::group{name=setRarity}
+
+Sets the rarity of the Item.
+
+Return Type: void
+
+```zenscript
+// MCItemStackMutable.setRarity(newRarity as Rarity) as void
+
+<item:minecraft:dirt>.mutable().setRarity(Rarity.UNCOMMON);
+```
+
+| Parameter | Type                               | Description                 |
+| --------- | ---------------------------------- | --------------------------- |
+| newRarity | [Rarity](/vanilla/api/item/Rarity) | The new rarity of the Item. |
 
 
 :::
@@ -299,29 +421,33 @@ myMCItemStackMutable | other as IIngredient
 
 ## Properties
 
-| Name           | Type                                                         | Has Getter | Has Setter |
-| -------------- | ------------------------------------------------------------ | ---------- | ---------- |
-| amount         | int                                                          | true       | false      |
-| burnTime       | int                                                          | true       | true       |
-| damageable     | boolean                                                      | true       | false      |
-| damaged        | boolean                                                      | true       | false      |
-| definition     | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)       | true       | false      |
-| displayName    | string                                                       | true       | false      |
-| empty          | boolean                                                      | true       | false      |
-| getOrCreate    | [IData](/vanilla/api/data/IData)                             | true       | false      |
-| getRepairCost  | int                                                          | true       | false      |
-| hasDisplayName | boolean                                                      | true       | false      |
-| hasEffect      | boolean                                                      | true       | false      |
-| hasTag         | boolean                                                      | true       | false      |
-| isCrossbow     | boolean                                                      | true       | false      |
-| isEnchantable  | boolean                                                      | true       | false      |
-| isEnchanted    | boolean                                                      | true       | false      |
-| maxDamage      | int                                                          | true       | false      |
-| maxStackSize   | int                                                          | true       | false      |
-| owner          | string                                                       | true       | false      |
-| registryName   | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | true       | false      |
-| stackable      | boolean                                                      | true       | false      |
-| tag            | [IData](/vanilla/api/data/IData)                             | true       | false      |
-| translationKey | string                                                       | true       | false      |
-| useDuration    | int                                                          | true       | false      |
+| Name           | Type                                                         | Has Getter | Has Setter | Description                                                                                                                                  |
+| -------------- | ------------------------------------------------------------ | ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| amount         | int                                                          | true       | false      | Gets the amount of Items in the ItemStack                                                                                                    |
+| burnTime       | int                                                          | true       | true       | No Description Provided                                                                                                                      |
+| damageable     | boolean                                                      | true       | false      | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not.                                    |
+| damaged        | boolean                                                      | true       | false      | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged.                                     |
+| definition     | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)       | true       | false      | No Description Provided                                                                                                                      |
+| displayName    | string                                                       | true       | false      | Gets the display name of the ItemStack                                                                                                       |
+| empty          | boolean                                                      | true       | false      | Returns if the ItemStack is empty                                                                                                            |
+| food           | [MCFood](/vanilla/api/food/MCFood)?                          | true       | true       | No Description Provided                                                                                                                      |
+| getOrCreate    | [IData](/vanilla/api/data/IData)                             | true       | false      | Returns the NBT tag attached to this ItemStack or makes a new tag.                                                                           |
+| getRepairCost  | int                                                          | true       | false      | Gets the repair cost of the ItemStack, or 0 if no repair is defined.                                                                         |
+| hasDisplayName | boolean                                                      | true       | false      | Returns true if the ItemStack has a display name.                                                                                            |
+| hasEffect      | boolean                                                      | true       | false      | Returns true if this ItemStack has an effect.                                                                                                |
+| hasTag         | boolean                                                      | true       | false      | Returns true if this ItemStack has a Tag                                                                                                     |
+| immuneToFire   | void                                                         | true       | true       | Sets if this IItemStack is immune to fire / lava. <br />  <br />  If true, the item will not burn when thrown into fire or lava. |
+| isCrossbow     | boolean                                                      | true       | false      | Returns true if this stack is considered a crossbow item                                                                                     |
+| isEnchantable  | boolean                                                      | true       | false      | Can this ItemStack be enchanted?                                                                                                             |
+| isEnchanted    | boolean                                                      | true       | false      | Is this ItemStack enchanted?                                                                                                                 |
+| maxDamage      | int                                                          | true       | false      | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack.                                           |
+| maxStackSize   | int                                                          | true       | true       | Returns the max stack size of the Item in the ItemStack                                                                                      |
+| owner          | string                                                       | true       | false      | Gets owning mod for the Item in this IItemStack                                                                                              |
+| rarity         | [Rarity](/vanilla/api/item/Rarity)                           | true       | true       | Returns the rarity of the Item in the ItemStack                                                                                              |
+| registryName   | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | true       | false      | Gets the registry name for the Item in this IItemStack                                                                                       |
+| stackable      | boolean                                                      | true       | false      | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are.                 |
+| tag            | [IData](/vanilla/api/data/IData)                             | true       | false      | Returns the NBT tag attached to this ItemStack.                                                                                              |
+| toolTypes      | [ToolType](/vanilla/api/tool/ToolType)[]                     | true       | false      | No Description Provided                                                                                                                      |
+| translationKey | string                                                       | true       | false      | Returns the unlocalized Name of the Item in the ItemStack                                                                                    |
+| useDuration    | int                                                          | true       | false      | Gets the use duration of the ItemStack                                                                                                       |
 
