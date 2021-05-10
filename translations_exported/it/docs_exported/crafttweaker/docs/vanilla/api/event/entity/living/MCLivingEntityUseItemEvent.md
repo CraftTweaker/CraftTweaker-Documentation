@@ -18,8 +18,8 @@ MCLivingEntityUseItemEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCL
 
 ## Properties
 
-| Name     | Type                                        | Ha Getter | Ha Setter |
-| -------- | ------------------------------------------- | --------- | --------- |
-| duration | int                                         | true      | true      |
-| item     | [IItemStack](/vanilla/api/items/IItemStack) | true      | false     |
+| Name     | Type                                        | Ha Getter | Ha Setter | Description             |
+| -------- | ------------------------------------------- | --------- | --------- | ----------------------- |
+| duration | int                                         | true      | true      | No Description Provided |
+| item     | [IItemStack](/vanilla/api/items/IItemStack) | true      | false     | No Description Provided |
 
