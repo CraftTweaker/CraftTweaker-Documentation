@@ -36,7 +36,8 @@ MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestionsBuilder.build() as MCSuggestions
+// MCSuggestionsBuilder.build() as MCSuggestions
+
 myMCSuggestionsBuilder.build();
 ```
 
@@ -77,7 +78,8 @@ MCSuggestionsBuilder.equals(o as Object) as boolean
 Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.getInput() as string
+// MCSuggestionsBuilder.getInput() as string
+
 myMCSuggestionsBuilder.getInput();
 ```
 
@@ -88,7 +90,8 @@ myMCSuggestionsBuilder.getInput();
 Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.getRemaining() as string
+// MCSuggestionsBuilder.getRemaining() as string
+
 myMCSuggestionsBuilder.getRemaining();
 ```
 
@@ -99,7 +102,8 @@ myMCSuggestionsBuilder.getRemaining();
 Return Type: int
 
 ```zenscript
-MCSuggestionsBuilder.getStart() as int
+// MCSuggestionsBuilder.getStart() as int
+
 myMCSuggestionsBuilder.getStart();
 ```
 
@@ -110,7 +114,8 @@ myMCSuggestionsBuilder.getStart();
 Return Type: int
 
 ```zenscript
-MCSuggestionsBuilder.hashCode() as int
+// MCSuggestionsBuilder.hashCode() as int
+
 myMCSuggestionsBuilder.hashCode();
 ```
 
@@ -121,7 +126,8 @@ myMCSuggestionsBuilder.hashCode();
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
+// MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
+
 myMCSuggestionsBuilder.restart();
 ```
 
@@ -194,7 +200,8 @@ MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBu
 Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.toString() as string
+// MCSuggestionsBuilder.toString() as string
+
 myMCSuggestionsBuilder.toString();
 ```
 
