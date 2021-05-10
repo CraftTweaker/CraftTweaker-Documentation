@@ -17,7 +17,8 @@ Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amoun
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-MCFluid.makeStack(amount as int) as IFluidStack
+// MCFluid.makeStack(amount as int) as IFluidStack
+
 myMCFluid.makeStack(1000);
 ```
 
@@ -31,7 +32,7 @@ myMCFluid.makeStack(1000);
 
 ## Properties
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | string | true       | false      |
+| Name          | Type   | Has Getter | Has Setter | Description             |
+| ------------- | ------ | ---------- | ---------- | ----------------------- |
+| commandString | string | true       | false      | No Description Provided |
 
