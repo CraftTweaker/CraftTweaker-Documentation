@@ -1,50 +1,53 @@
-# Conditional Statements
+# Código condicional
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Es posible que en algun momento quieras que una parte de código solo se ejecute si unos criterios determinados se cumplen. Para eso es lo que en programación existe el Código condicional.
 
-## If
+## If 
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
+Una declaración con if es la primera parte de Código condicional. Declara una condición que debe ser verdadera para que el código se ejecute. **¡Cuidado, necesitas 2 iguales para comparar dos valores!**. (Eso es porque un igual se interpreta como una declaración de una variable)</p> 
 
 ```zenscript
-val test = 0;
+val prueba = 0;
 
-if (test == 0) { //true
-    print("Test is zero!");
+if (prueba == 0) { //Verdadero
+    print("Prueba es igual a cero");
 }
 ```
 
-## Else
+## Else 
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Una declaración else puede ser añadido al final de una parte de código condicional para declarar lo que debería pasar cuando el ` if <code/> que viene antes es falso,  y por tanto no se ejecuta.</p>
 
-```zenscript
-var test = 0;
+<pre><code class="zenscript">var Prueba = 0;
 
-if (test == 0) { //true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+if (Prueba == 0) { //verdadero
+    //Se ejecutará cuando prueba es igual a 0
+    print("Prueba es cero");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //Se ejecutará cuando prueba NO es igual a 0
+    print("Prueba NO es cero");
 }
 
-test = 1;
-if (test == 0) { //false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+Prueba = 1;
+if (Prueba == 0) { //falso
+    //Se ejecutará cuando prueba es igual a 0
+    print("Ahora, prueba es cero");
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //will be executed when Prueba is not equal to 0
+    print("Ahora, prueba no es 0");
 }
 
-```
+// Por tanto en nuestro log veremos:
+Prueba es cero
+Ahora, prueba no es 0
 
-## Things to check for
+`</pre> 
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+## Cosas que revisar
 
-Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
+Los cálculos posibles son: `+`,`-`,`*`,`/`,`módulo(%)`,`concadenación(~)`
+
+Operadores posibles son `Lógico OR(||)`, `Lógico AND(&&)`, `deBits OR(|)`, `deBits AND(&)`, and `deBits XOR(^)`
 
 ```zenscript
 //You can check for:
@@ -106,7 +109,7 @@ switchy ?
 
 You can use these operators. All the examples given evaluate to true.
 
-| Name             | token        | Explanation                                                                                                                                                                  | Example           |
+| Name             | token        | Explanation                                                                                                                                                                  | Ejemplo           |
 | ---------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | Not              | `!`          | Inverts a boolean                                                                                                                                                            | !false            |
 | Not Equal        | `!=`         | Checks if the value before and after are not equal                                                                                                                           | 1 != 2            |
