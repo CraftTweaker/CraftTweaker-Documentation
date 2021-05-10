@@ -17,22 +17,22 @@ IBlockDefinition 对象提供方块的额外信息。
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | 功能          | 返回值类型                                               |
-| --------------- | ------------------- | ----------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | 返回方块上能否生成实体 | bool                                                |
-| creativeTab     | creativeTab         |             | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |             | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |             | float                                               |
-| id              |                     | 返回方块 ID     | string                                              |
-| displayName     |                     | 返回方块的显示名称   | string                                              |
-|                 | hardness            |             | int                                                 |
-| harvestLevel    |                     | 返回方块的挖掘等级   | int                                                 |
-| harvestTool     |                     | 返回方块的挖掘工具   | string                                              |
-|                 | lightOpacity        |             | int                                                 |
-|                 | lightLevel          |             | int                                                 |
-|                 | resistance          |             | int                                                 |
-| unlocalizedName |                     | 返回方块的未本地化名  | string                                              |
-| tickRandomly    | tickRandomly        |             | bool                                                |
+| ZenGetter                | ZenSetter           | 功能                                                | 返回值类型                                               |
+| ------------------------ | ------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| canSpawnInBlock 可以在方块内放置 |                     | Returns true if an entity can spawn in this block | bool                                                |
+| creativeTab              | creativeTab         |                                                   | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState             |                     |                                                   | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                          | defaultSlipperiness |                                                   | float                                               |
+| id                       |                     | 返回方块 ID                                           | string                                              |
+| displayName              |                     | 返回方块的显示名称                                         | string                                              |
+| hardness                 | hardness            |                                                   | int                                                 |
+| harvestLevel             |                     | 返回方块的挖掘等级                                         | int                                                 |
+| harvestTool              |                     | 返回方块的挖掘工具                                         | string                                              |
+|                          | lightOpacity        |                                                   | int                                                 |
+|                          | lightLevel          |                                                   | int                                                 |
+|                          | resistance          |                                                   | int                                                 |
+| unlocalizedName          |                     | 返回方块的未本地化名                                        | string                                              |
+| tickRandomly             | tickRandomly        |                                                   | bool                                                |
 
 ## ZenMethods
 
@@ -76,18 +76,44 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 
 ### 设置方块的挖掘等级
 
-接受一个 string 和一个 int。  
-不返回值。
+Uses a string, an int and an optional [IBlockState](/Vanilla/Blocks/IBlockState/).  
+if the IBlockState argument is ignored, it will set harvest level to all block states in the block definition.  
+Returns void (nothing).
 
 ```zenscript
-defObj.setHarvestLevel(string toolclass, int level);
+defObj.setHarvestLevel(string toolclass, int level, @Optional IBlockState state);
 ```
 
-### 通过元数据获取方块状态
+### Get harvest level of block state
 
-使用一个整数。  
-返回一个 [IBlockState](/Vanilla/Blocks/IBlockState/)。
+returns an int.
+
+```zenscript
+defObj.getHarvestLevel(IBlockState state);
+```
+
+### Get harvest tool of block state
+
+returns a string.
+
+```zenscript
+defObj.getHarvestTool(IBlockState state);
+```
+
+### Get a block state by metadata
+
+Uses an int.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 defObj.getStateFromMeta(int meta);
+```
+
+### Block effective for the tool
+
+Uses a string and an [IBlockState](/Vanilla/Blocks/IBlockState/).  
+Returns a bool.
+
+```zenscript
+defObj.isToolEffective(String type, IBlockState state);
 ```
