@@ -1,3 +1,5 @@
+::requiredMod[Recipe Stages]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/recipe-stages}
+
 # Recipe Stages
 This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Recipe Stages allows for Crafting Table Recipes to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/recipe-stages)
 
