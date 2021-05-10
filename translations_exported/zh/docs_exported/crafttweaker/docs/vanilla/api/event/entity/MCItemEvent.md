@@ -18,7 +18,7 @@ MCItemEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). Th
 
 ## 参数
 
-| 名称         | 类型                                               | 可获得  | 可设置   |
-| ---------- | ------------------------------------------------ | ---- | ----- |
-| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true | false |
+| 名称         | 类型                                               | 可获得  | 可设置   | 描述                      |
+| ---------- | ------------------------------------------------ | ---- | ----- | ----------------------- |
+| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true | false | No Description Provided |
 
