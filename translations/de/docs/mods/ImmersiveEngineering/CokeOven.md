@@ -17,7 +17,7 @@ Das folgende Skript wird dem Coke Oven ein Rezept hinzufügen, dass nach 100 Tic
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus dem Coke Oven entfernen, die Coal Coke ausgeben.
+The following script will remove all recipes from the Coke Oven that output Coal Coke.
 
 ```zenscript
 // <recipetype:immersiveengineering:coke_oven>.removeRecipe(IItemStack fuel)
