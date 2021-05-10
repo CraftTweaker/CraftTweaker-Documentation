@@ -25,7 +25,8 @@ Gets the smelted item (the output stack)
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemSmeltedEvent.getSmelted() as IItemStack
+// MCItemSmeltedEvent.getSmelted() as IItemStack
+
 myMCItemSmeltedEvent.getSmelted();
 ```
 
@@ -34,7 +35,7 @@ myMCItemSmeltedEvent.getSmelted();
 
 ## Properties
 
-| Name    | Type                                        | Has Getter | Has Setter |
-| ------- | ------------------------------------------- | ---------- | ---------- |
-| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Name    | Type                                        | Has Getter | Has Setter | Beschreibung                             |
+| ------- | ------------------------------------------- | ---------- | ---------- | ---------------------------------------- |
+| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the smelted item (the output stack) |
 
