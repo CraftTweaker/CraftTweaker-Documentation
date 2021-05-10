@@ -24,27 +24,33 @@ MCBlockBreakEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 
 ## Methods
 
-### getExpToDrop
+:::group{name=getExpToDrop}
 
 Return Type: int
 
 ```zenscript
-MCBlockBreakEvent.getExpToDrop() as int
+// MCBlockBreakEvent.getExpToDrop() as int
+
 myMCBlockBreakEvent.getExpToDrop();
 ```
 
-### getPlayer
+:::
+
+:::group{name=getPlayer}
 
 Gets the player who broke the block. If no player is available, use a fake player
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCBlockBreakEvent.getPlayer() as MCPlayerEntity
+// MCBlockBreakEvent.getPlayer() as MCPlayerEntity
+
 myMCBlockBreakEvent.getPlayer();
 ```
 
-### setExpToDrop
+:::
+
+:::group{name=setExpToDrop}
 
 Return Type: void
 
@@ -57,11 +63,13 @@ MCBlockBreakEvent.setExpToDrop(amount as int) as void
 | amount    | int  | No Description Provided |
 
 
+:::
+
 
 ## Properties
 
-| Name      | Type                                                 | Ha Getter | Ha Setter |
-| --------- | ---------------------------------------------------- | --------- | --------- |
-| expToDrop | int                                                  | true      | true      |
-| player    | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     |
+| Name      | Type                                                 | Ha Getter | Ha Setter | Description                                                                       |
+| --------- | ---------------------------------------------------- | --------- | --------- | --------------------------------------------------------------------------------- |
+| expToDrop | int                                                  | true      | true      | No Description Provided                                                           |
+| player    | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     | Gets the player who broke the block. If no player is available, use a fake player |
 
