@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.FireClayKnapping;FireClayKnapping;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
@@ -18,7 +18,7 @@ FireClayKnapping.removeRecipe(IItemStack output);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## Ejemplo
 ```zenscript
 // add fireClay knapping recipe for enderio conduit binder
 FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
