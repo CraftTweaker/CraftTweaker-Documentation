@@ -12,7 +12,7 @@ mods.naturesaura.TreeRitualTreeRitual
 - **init time** The time the process takes in ticks
 - **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) items** The required items for the ritual
 
-## Addition
+## Suma
 
 ```zenscript
 mods.naturesaura.AnimalSpawnermods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
