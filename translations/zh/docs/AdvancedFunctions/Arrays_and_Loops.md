@@ -6,11 +6,11 @@
 
 使用 ```[``` 和 ```]以声明数组```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+**重要</ 0>：*必须*将数组初始化为某类型，即使它是一个空数组也是如此。</p> 
 
 `浮点数组为浮点[]；` 不会给出语法错误，但在重新加载您的游戏时，您将会遇到一个错误，您的脚本将无法工作。
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+而是将这样的空数组初始化为像这样 `var floatArray as float [] = [];`
 
 ```zenscript
 //包含"你好"和"世界"的数组
@@ -20,14 +20,14 @@ val stringArray = ["你好", "世界"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+如果你现在认为“等等，我以前没有看过这些括号！”，那么你就错了。 还记得这个吗 ```recipes.add(out,[[],[],[]]);```? 这里就使用了三个数组，每个数组又包含三个条目，以此来定义工作台配方。
 
 ## 创建数组
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
+你肯定注意到这里的所有数组都有 ` as ` 语句。  
+你问为什么会这样？ 这是因为 ZenScript 有时无法预测数组中项的类型。 这就会导致游戏中会出现类型转换错误日志！  
+为此，最安全的方法就是在构建数组的时候就指定正确的类型！  
+还有一点，如果你构建了一个非基本类型（即字符串，整型类似的类型之外的其他类型）的数组，请确保你在脚本的最顶上[导入](/AdvancedFunctions/Import/)对应的包：
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## 嵌套数组
 
-You can place Arrays in Arrays.
+数组中可以嵌套数组。
 
 ```zenscript
 val stringArray1 = ["你好","世界"] as string[];
@@ -47,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] a
 
 ## 引用数组中的项
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+你可以通过一个项在数组中的位置引用这个项。 数组中的第一项的序数是 0，第二项是1，以此类推。
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+如果要引用嵌套数组中的项，则需要两个或多个序数表示它的位置，因为每个序数仅指代一个数组中的项。
 
 ```zenscript
 /*
@@ -87,11 +87,11 @@ print(stringArrayAll[0][1]);
 
 # 循环
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+循环是一个重复自身的函数。 它用于将操作应用于数组中的所有元素
 
 ## For 循环
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+For 循环的主要用途是遍历数组中的每一个项。 Iterating means doing an action to all elements of an array.  
 You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
@@ -137,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## While 循环
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+While 循环会在给定条件为 `true` 时执行循环。  
+另外也可以使用 `break` 关键字中断循环。
 
 ```zenscript
 var i = 0; 
@@ -172,9 +172,9 @@ for k in 1 .. 10 {
 
 # 向数组中添加项
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+虽然不建议这样做，但向数组添加项中是可行的。  
+你只能将单个项添加到数组中，也不能添加两个数组。  
+使用 ` + ` 运算符向数组中添加项：
 
 ```zenscript
 import crafttweaker.item.IItemStack;
