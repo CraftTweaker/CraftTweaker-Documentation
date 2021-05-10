@@ -1,6 +1,6 @@
 # Mortar
 
-## Addition
+## Suma
 
 ```zenscript
 import mods.cuisine.Mortar;
