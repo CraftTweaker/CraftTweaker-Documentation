@@ -21,7 +21,8 @@ import crafttweaker.api.item.MCItemDefinition;
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemDefinition.getDefaultInstance() as IItemStack
+// MCItemDefinition.getDefaultInstance() as IItemStack
+
 myMCItemDefinition.getDefaultInstance();
 ```
 
@@ -30,8 +31,8 @@ myMCItemDefinition.getDefaultInstance();
 
 ## 参数
 
-| 名称              | 类型                                          | 可获得  | 可设置   |
-| --------------- | ------------------------------------------- | ---- | ----- |
-| commandString   | string                                      | true | false |
-| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称              | 类型                                          | 可获得  | 可设置   | 描述                      |
+| --------------- | ------------------------------------------- | ---- | ----- | ----------------------- |
+| commandString   | string                                      | true | false | No Description Provided |
+| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 
