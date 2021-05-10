@@ -19,7 +19,7 @@ Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands
 You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer/) has the OP permission:
 
 ```zenscript
-server.isOP(player);
+server.isOp(player);
 ```
 
 ## Get the command manager
