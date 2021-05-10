@@ -27,7 +27,8 @@ Was this event caused by the player entering the portal in the end?
 Return Type: boolean
 
 ```zenscript
-MCPlayerRespawnEvent.isEndConquered() as boolean
+// MCPlayerRespawnEvent.isEndConquered() as boolean
+
 myMCPlayerRespawnEvent.isEndConquered();
 ```
 
@@ -36,7 +37,7 @@ myMCPlayerRespawnEvent.isEndConquered();
 
 ## Properties
 
-| 名称           | Type     | Has Getter | Has Setter |
-| ------------ | -------- | ---------- | ---------- |
-| endConquered | boolean型 | true       | false      |
+| 名称           | Type     | Has Getter | Has Setter | Description                                                         |
+| ------------ | -------- | ---------- | ---------- | ------------------------------------------------------------------- |
+| endConquered | boolean型 | true       | false      | Was this event caused by the player entering the portal in the end? |
 
