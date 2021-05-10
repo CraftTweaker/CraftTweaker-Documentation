@@ -11,17 +11,17 @@ Die Tartaric Forge / Höllenschmiede ist vom Typ [IRecipeManager](/vanilla/api/m
 Das folgende Skript fügt ein Rezept hinzu, das Diamanten ausgibt, wenn Kohle einer Tartaric Schmiede / Höllenschmiede gegeben wird. Die Schmiede benötigt mindestens 0 Seelen und wird 500 Seelen entziehen.
 
 ```zenscript
-// <recipetype:bloodmagic:altar>.addRecipe(String name, IItemStack output, IIngredient[] input, double minimumSouls, double soulDrain)
+// <recipetype:bloodmagic:altar>.addRecipe(name as string, output as IItemStack, input as IIngredient[], minimumSouls as double, soulDrain as double)
 
 <recipetype:bloodmagic:soulforge>.addRecipe("soulforge_test", <item:minecraft:diamond>, [<item:minecraft:coal>], 0, 500);
 ```
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus der Tartarien Schmiede / Höllenschmiede entfernen, die eine Seelenaxt ausgibt
+The following script will remove all recipes from the Tartaric Forge / Hell Forge that output a Soul Axe
 
 ```zenscript
-// <recipetype:bloodmagic:soulforge>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:soulforge>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:soulforge>.removeRecipe(<item:bloodmagic:soulaxe>);
 ```
