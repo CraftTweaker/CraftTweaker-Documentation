@@ -19,7 +19,7 @@ Das folgende Skript fügt ein Rezept zur Metallpresse hinzu, das Papier verwende
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus der Metallpresse entfernen, die zwei "Empty Casing" ausgeben.
+The following script will remove all recipes from the Metal Press that output two Empty Casing.
 
 ```zenscript
 // <recipetype:immersiveengineering:metal_press>.removeRecipe(IItemStack output)
