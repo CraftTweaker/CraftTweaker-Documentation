@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.leatherKnapping;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
@@ -18,7 +18,7 @@ leatherKnapping.removeRecipe(IItemStack output);
 leatherKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## Ejemplo
 ```zenscript
 // quiver recipe
 leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
