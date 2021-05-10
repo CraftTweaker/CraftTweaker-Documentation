@@ -42,7 +42,8 @@ new BoolData(internal as boolean) as BoolData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-BoolData.asCollection() as ICollectionData
+// BoolData.asCollection() as ICollectionData
+
 true.asCollection();
 ```
 
@@ -55,7 +56,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-BoolData.asList() as stdlib.List<IData>
+// BoolData.asList() as stdlib.List<IData>
+
 true.asList();
 ```
 
@@ -68,7 +70,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-BoolData.asMap() as IData[string]
+// BoolData.asMap() as IData[string]
+
 true.asMap();
 ```
 
@@ -81,7 +84,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-BoolData.contains(data as IData) as boolean
+// BoolData.contains(data as IData) as boolean
+
 true.contains("Display");
 ```
 
@@ -99,7 +103,8 @@ Converts this BoolData to a [ByteData](/vanilla/api/data/ByteData) object. This 
 Return Type: [ByteData](/vanilla/api/data/ByteData)
 
 ```zenscript
-BoolData.getByteData() as ByteData
+// BoolData.getByteData() as ByteData
+
 true.getByteData();
 ```
 
@@ -114,7 +119,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-BoolData.getId() as byte
+// BoolData.getId() as byte
+
 true.getId();
 ```
 
@@ -127,7 +133,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-BoolData.getString() as string
+// BoolData.getString() as string
+
 true.getString();
 ```
 
