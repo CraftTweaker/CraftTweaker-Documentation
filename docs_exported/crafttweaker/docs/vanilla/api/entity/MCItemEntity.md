@@ -1,5 +1,7 @@
 # MCItemEntity
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -29,9 +31,45 @@ new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack 
 
 
 
+## Methods
+
+:::group{name=getItem}
+
+Gets the IItemStack inside this ItemEntity.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// MCItemEntity.getItem() as IItemStack
+
+itemEntity.getItem();
+```
+
+:::
+
+:::group{name=setItem}
+
+Sets the IItemStack inside this ItemEntity.
+
+Return Type: void
+
+```zenscript
+// MCItemEntity.setItem(stack as IItemStack) as void
+
+itemEntity.setItem(<item:minecraft:diamond>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The new IItemStack. |
+
+
+:::
+
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true | No Description Provided |
+| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true | Gets the IItemStack inside this ItemEntity. |
 
