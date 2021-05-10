@@ -17,7 +17,8 @@ import crafttweaker.api.block.material.MCMaterial;
 Return Type: boolean
 
 ```zenscript
-MCMaterial.blocksMovement() as boolean
+// MCMaterial.blocksMovement() as boolean
+
 myMCMaterial.blocksMovement();
 ```
 
@@ -30,8 +31,37 @@ myMCMaterial.blocksMovement();
 Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
-MCMaterial.getColor() as MCMaterialColor
+// MCMaterial.getColor() as MCMaterialColor
+
 myMCMaterial.getColor();
+```
+
+:::
+
+:::group{name=getCommandString}
+
+Gets the bracket syntax for this Material
+
+Return Type: string
+
+```zenscript
+// MCMaterial.getCommandString() as string
+
+myMCMaterial.getCommandString();
+```
+
+:::
+
+:::group{name=getPushReaction}
+
+Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).
+
+Return Type: [PushReaction](/vanilla/api/block/material/PushReaction)
+
+```zenscript
+// MCMaterial.getPushReaction() as PushReaction
+
+myMCMaterial.getPushReaction();
 ```
 
 :::
@@ -43,7 +73,8 @@ myMCMaterial.getColor();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isFlammable() as boolean
+// MCMaterial.isFlammable() as boolean
+
 myMCMaterial.isFlammable();
 ```
 
@@ -56,7 +87,8 @@ myMCMaterial.isFlammable();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isLiquid() as boolean
+// MCMaterial.isLiquid() as boolean
+
 myMCMaterial.isLiquid();
 ```
 
@@ -69,7 +101,8 @@ myMCMaterial.isLiquid();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isOpaque() as boolean
+// MCMaterial.isOpaque() as boolean
+
 myMCMaterial.isOpaque();
 ```
 
@@ -82,7 +115,8 @@ myMCMaterial.isOpaque();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isReplaceable() as boolean
+// MCMaterial.isReplaceable() as boolean
+
 myMCMaterial.isReplaceable();
 ```
 
@@ -95,7 +129,8 @@ myMCMaterial.isReplaceable();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isSolid() as boolean
+// MCMaterial.isSolid() as boolean
+
 myMCMaterial.isSolid();
 ```
 
@@ -104,8 +139,15 @@ myMCMaterial.isSolid();
 
 ## Свойства
 
-| Название      | Тип                                                            | Имеет Getter | Имеет Setter |
-| ------------- | -------------------------------------------------------------- | ------------ | ------------ |
-| color         | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true         | false        |
-| commandString | string                                                         | true         | false        |
+| Название       | Тип                                                            | Имеет Getter | Имеет Setter | Description                                                                                                              |
+| -------------- | -------------------------------------------------------------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| blocksMovement | boolean                                                        | true         | false        | Возвращает, если этот материал считается твёрдым или нет.                                                                |
+| color          | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true         | false        | Извлекает цветовой индекс блока. Это тот же цвет, который используется ванильными картами для представления этого блока. |
+| commandString  | string                                                         | true         | false        | Gets the bracket syntax for this Material                                                                                |
+| flammable      | boolean                                                        | true         | false        | Возвращает, если блок может гореть или нет.                                                                              |
+| liquid         | boolean                                                        | true         | false        | Возвращает, если блоки из этих материалов являются жидкостями.                                                           |
+| opaque         | boolean                                                        | true         | false        | Укажите, является ли материал непрозрачным                                                                               |
+| pushReaction   | [PushReaction](/vanilla/api/block/material/PushReaction)       | true         | false        | Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).                                           |
+| replaceable    | boolean                                                        | true         | false        | Возвращает, можно ли заменить материал другими блоками при размещении - например, снегом, лозой или высокой травой.      |
+| solid          | boolean                                                        | true         | false        | Возвращает true, если блок считается твёрдым. По умолчанию это true.                                                     |
 
