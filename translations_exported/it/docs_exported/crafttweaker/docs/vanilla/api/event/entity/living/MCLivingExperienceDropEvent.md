@@ -24,9 +24,9 @@ MCLivingExperienceDropEvent extends [MCLivingEvent](/vanilla/api/event/entity/MC
 
 ## Properties
 
-| Name                     | Type                                                 | Ha Getter | Ha Setter |
-| ------------------------ | ---------------------------------------------------- | --------- | --------- |
-| attackingPlayer          | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     |
-| droppedExperience        | int                                                  | true      | true      |
-| originalExperiencePoints | int                                                  | true      | false     |
+| Name                     | Type                                                 | Ha Getter | Ha Setter | Description             |
+| ------------------------ | ---------------------------------------------------- | --------- | --------- | ----------------------- |
+| attackingPlayer          | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     | No Description Provided |
+| droppedExperience        | int                                                  | true      | true      | No Description Provided |
+| originalExperiencePoints | int                                                  | true      | false     | No Description Provided |
 
