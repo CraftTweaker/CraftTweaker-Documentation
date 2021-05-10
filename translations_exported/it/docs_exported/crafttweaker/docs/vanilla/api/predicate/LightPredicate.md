@@ -20,7 +20,7 @@ LightPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pred
 
 ## Methods
 
-### withBoundedLightLevel
+:::group{name=withBoundedLightLevel}
 
 Sets both the minimum and maximum value the light level should be to <code>min</code> and <code>max</code>
  respectively.
@@ -42,7 +42,9 @@ LightPredicate.withBoundedLightLevel(min as int, max as int) as LightPredicate
 | max       | int  | The maximum value the light level should be. |
 
 
-### withMaximumLightLevel
+:::
+
+:::group{name=withMaximumLightLevel}
 
 Sets the maximum value the light level should be to <code>max</code>.
 
@@ -61,7 +63,9 @@ LightPredicate.withMaximumLightLevel(max as int) as LightPredicate
 | max       | int  | The maximum value the light level should be. |
 
 
-### withMinimumLightLevel
+:::
+
+:::group{name=withMinimumLightLevel}
 
 Sets the minimum value the light level should be to <code>min</code>.
 
@@ -79,5 +83,7 @@ LightPredicate.withMinimumLightLevel(min as int) as LightPredicate
 | --------- | ---- | -------------------------------------------- |
 | min       | int  | The minimum value the light level should be. |
 
+
+:::
 
 
