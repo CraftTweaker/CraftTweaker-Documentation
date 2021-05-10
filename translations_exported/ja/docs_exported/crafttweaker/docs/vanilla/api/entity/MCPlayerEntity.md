@@ -34,7 +34,8 @@ MCPlayerEntity.addExhaustion(exhaustion as float) as void
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.canUseCommandBlock() as boolean
+// MCPlayerEntity.canUseCommandBlock() as boolean
+
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
@@ -60,7 +61,8 @@ MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerEntity.getCurrentItem() as IItemStack
+// MCPlayerEntity.getCurrentItem() as IItemStack
+
 myMCPlayerEntity.getCurrentItem();
 ```
 
@@ -71,7 +73,8 @@ myMCPlayerEntity.getCurrentItem();
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getFoodLevel() as int
+// MCPlayerEntity.getFoodLevel() as int
+
 myMCPlayerEntity.getFoodLevel();
 ```
 
@@ -97,7 +100,8 @@ MCPlayerEntity.getInventoryItemStack(slotIndex as int) as IItemStack
 Return Type: float
 
 ```zenscript
-MCPlayerEntity.getLuck() as float
+// MCPlayerEntity.getLuck() as float
+
 myMCPlayerEntity.getLuck();
 ```
 
@@ -108,7 +112,8 @@ myMCPlayerEntity.getLuck();
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getMaxInPortalTime() as int
+// MCPlayerEntity.getMaxInPortalTime() as int
+
 myMCPlayerEntity.getMaxInPortalTime();
 ```
 
@@ -119,7 +124,8 @@ myMCPlayerEntity.getMaxInPortalTime();
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCPlayerEntity.getName() as MCTextComponent
+// MCPlayerEntity.getName() as MCTextComponent
+
 myMCPlayerEntity.getName();
 ```
 
@@ -132,7 +138,8 @@ Gets the persisted NBT tag that is saved between deaths. Many mods use this to k
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MCPlayerEntity.getPersistentData() as MapData
+// MCPlayerEntity.getPersistentData() as MapData
+
 myMCPlayerEntity.getPersistentData();
 ```
 
@@ -143,7 +150,8 @@ myMCPlayerEntity.getPersistentData();
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getPortalCooldown() as int
+// MCPlayerEntity.getPortalCooldown() as int
+
 myMCPlayerEntity.getPortalCooldown();
 ```
 
@@ -154,7 +162,8 @@ myMCPlayerEntity.getPortalCooldown();
 Return Type: float
 
 ```zenscript
-MCPlayerEntity.getSaturationLevel() as float
+// MCPlayerEntity.getSaturationLevel() as float
+
 myMCPlayerEntity.getSaturationLevel();
 ```
 
@@ -165,7 +174,8 @@ myMCPlayerEntity.getSaturationLevel();
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getSleepTimer() as int
+// MCPlayerEntity.getSleepTimer() as int
+
 myMCPlayerEntity.getSleepTimer();
 ```
 
@@ -191,7 +201,8 @@ MCPlayerEntity.give(stack as IItemStack) as void
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isCreative() as boolean
+// MCPlayerEntity.isCreative() as boolean
+
 myMCPlayerEntity.isCreative();
 ```
 
@@ -202,7 +213,8 @@ myMCPlayerEntity.isCreative();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isFake() as boolean
+// MCPlayerEntity.isFake() as boolean
+
 myMCPlayerEntity.isFake();
 ```
 
@@ -213,7 +225,8 @@ myMCPlayerEntity.isFake();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isPushedByWater() as boolean
+// MCPlayerEntity.isPushedByWater() as boolean
+
 myMCPlayerEntity.isPushedByWater();
 ```
 
@@ -224,7 +237,8 @@ myMCPlayerEntity.isPushedByWater();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSecondaryUseActive() as boolean
+// MCPlayerEntity.isSecondaryUseActive() as boolean
+
 myMCPlayerEntity.isSecondaryUseActive();
 ```
 
@@ -235,7 +249,8 @@ myMCPlayerEntity.isSecondaryUseActive();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSpectator() as boolean
+// MCPlayerEntity.isSpectator() as boolean
+
 myMCPlayerEntity.isSpectator();
 ```
 
@@ -246,7 +261,8 @@ myMCPlayerEntity.isSpectator();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSwimming() as boolean
+// MCPlayerEntity.isSwimming() as boolean
+
 myMCPlayerEntity.isSwimming();
 ```
 
@@ -257,7 +273,8 @@ myMCPlayerEntity.isSwimming();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isUser() as boolean
+// MCPlayerEntity.isUser() as boolean
+
 myMCPlayerEntity.isUser();
 ```
 
@@ -268,7 +285,8 @@ myMCPlayerEntity.isUser();
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.needFood() as boolean
+// MCPlayerEntity.needFood() as boolean
+
 myMCPlayerEntity.needFood();
 ```
 
@@ -357,7 +375,8 @@ MCPlayerEntity.updatePersistentData(data as MapData) as void
 Return Type: void
 
 ```zenscript
-MCPlayerEntity.wakeUp() as void
+// MCPlayerEntity.wakeUp() as void
+
 myMCPlayerEntity.wakeUp();
 ```
 
@@ -366,10 +385,10 @@ myMCPlayerEntity.wakeUp();
 
 ## Properties
 
-| 名称              | Type                                                      | Has Getter | Has Setter |
-| --------------- | --------------------------------------------------------- | ---------- | ---------- |
-| fake            | boolean型                                                  | true       | false      |
-| foodLevel       | int                                                       | true       | true       |
-| name            | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true       | false      |
-| saturationLevel | float                                                     | true       | false      |
+| 名称              | Type                                                      | Has Getter | Has Setter | Description             |
+| --------------- | --------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| fake            | boolean型                                                  | true       | false      | No Description Provided |
+| foodLevel       | int                                                       | true       | true       | No Description Provided |
+| name            | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true       | false      | No Description Provided |
+| saturationLevel | float                                                     | true       | false      | No Description Provided |
 
