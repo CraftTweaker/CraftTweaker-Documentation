@@ -20,7 +20,7 @@ EntityTypePredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api
 
 ## Methods
 
-### withTag
+:::group{name=withTag}
 
 Sets the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; that this predicate should use for matching the entity's type.
 
@@ -39,7 +39,9 @@ EntityTypePredicate.withTag(tag as MCTag<MCEntityType>) as EntityTypePredicate
 | tag       | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | The tag the predicate should use for matching. |
 
 
-### withType
+:::
+
+:::group{name=withType}
 
 Sets the [MCEntityType](/vanilla/api/entities/MCEntityType) that this predicate should match exactly.
 
@@ -55,5 +57,7 @@ EntityTypePredicate.withType(type as MCEntityType) as EntityTypePredicate
 | --------- | -------------------------------------------------- | -------------------------------------------- |
 | type      | [MCEntityType](/vanilla/api/entities/MCEntityType) | The entity type this predicate should match. |
 
+
+:::
 
 
