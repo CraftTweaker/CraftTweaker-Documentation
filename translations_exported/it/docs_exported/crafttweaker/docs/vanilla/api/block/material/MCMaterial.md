@@ -17,7 +17,8 @@ Ritorna se questo materiale è considerato solido o no
 Return Type: boolean
 
 ```zenscript
-MCMaterial.blocksMovement() as boolean
+// MCMaterial.blocksMovement() as boolean
+
 myMCMaterial.blocksMovement();
 ```
 
@@ -30,8 +31,37 @@ Restituisce l'indice di colore del blocco. Questo è lo stesso colore utilizzato
 Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
-MCMaterial.getColor() as MCMaterialColor
+// MCMaterial.getColor() as MCMaterialColor
+
 myMCMaterial.getColor();
+```
+
+:::
+
+:::group{name=getCommandString}
+
+Gets the bracket syntax for this Material
+
+Return Type: string
+
+```zenscript
+// MCMaterial.getCommandString() as string
+
+myMCMaterial.getCommandString();
+```
+
+:::
+
+:::group{name=getPushReaction}
+
+Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).
+
+Return Type: [PushReaction](/vanilla/api/block/material/PushReaction)
+
+```zenscript
+// MCMaterial.getPushReaction() as PushReaction
+
+myMCMaterial.getPushReaction();
 ```
 
 :::
@@ -43,7 +73,8 @@ Ritorna se il blocco può bruciare o meno.
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isFlammable() as boolean
+// MCMaterial.isFlammable() as boolean
+
 myMCMaterial.isFlammable();
 ```
 
@@ -56,7 +87,8 @@ Restituisce se i blocchi fatti di questo materiale sono liquidi.
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isLiquid() as boolean
+// MCMaterial.isLiquid() as boolean
+
 myMCMaterial.isLiquid();
 ```
 
@@ -69,7 +101,8 @@ Indica se questo materiale è opaco
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isOpaque() as boolean
+// MCMaterial.isOpaque() as boolean
+
 myMCMaterial.isOpaque();
 ```
 
@@ -82,7 +115,8 @@ Restituisce se questo materiale può essere rimpiazzato da altri blocchi quando 
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isReplaceable() as boolean
+// MCMaterial.isReplaceable() as boolean
+
 myMCMaterial.isReplaceable();
 ```
 
@@ -95,7 +129,8 @@ Restituisce true se il blocco è considerato solido. Questo vale per impostazion
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isSolid() as boolean
+// MCMaterial.isSolid() as boolean
+
 myMCMaterial.isSolid();
 ```
 
@@ -104,8 +139,15 @@ myMCMaterial.isSolid();
 
 ## Properties
 
-| Name          | Type                                                           | Ha Getter | Ha Setter |
-| ------------- | -------------------------------------------------------------- | --------- | --------- |
-| color         | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true      | false     |
-| commandString | string                                                         | true      | false     |
+| Name           | Type                                                           | Ha Getter | Ha Setter | Description                                                                                                                            |
+| -------------- | -------------------------------------------------------------- | --------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| blocksMovement | boolean                                                        | true      | false     | Ritorna se questo materiale è considerato solido o no                                                                                  |
+| color          | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true      | false     | Restituisce l'indice di colore del blocco. Questo è lo stesso colore utilizzato dalle mappe vanilla per rappresentare questo blocco.   |
+| commandString  | string                                                         | true      | false     | Gets the bracket syntax for this Material                                                                                              |
+| flammable      | boolean                                                        | true      | false     | Ritorna se il blocco può bruciare o meno.                                                                                              |
+| liquid         | boolean                                                        | true      | false     | Restituisce se i blocchi fatti di questo materiale sono liquidi.                                                                       |
+| opaque         | boolean                                                        | true      | false     | Indica se questo materiale è opaco                                                                                                     |
+| pushReaction   | [PushReaction](/vanilla/api/block/material/PushReaction)       | true      | false     | Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).                                                         |
+| replaceable    | boolean                                                        | true      | false     | Restituisce se questo materiale può essere rimpiazzato da altri blocchi quando vengono piazzati - per esempio neve, liane e erba alta. |
+| solid          | boolean                                                        | true      | false     | Restituisce true se il blocco è considerato solido. Questo vale per impostazione predefinita.                                          |
 
