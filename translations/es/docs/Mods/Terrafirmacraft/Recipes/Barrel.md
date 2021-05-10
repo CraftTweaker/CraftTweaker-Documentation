@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Barrel;Barrel;
 ```
 
-## Addition
+## Suma
 ```zenscript
 Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
 ```
