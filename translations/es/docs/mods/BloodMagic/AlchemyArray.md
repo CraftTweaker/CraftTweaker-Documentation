@@ -11,7 +11,7 @@ The Alchemy Array is a type of [IRecipeManager](/vanilla/api/managers/IRecipeMan
 The following script will add a recipe that will output a Diamond when Dirt and Glass are given to an Alchemy Array. When the Dirt is given, the Alchemy Array will use the texture of a Diamond.
 
 ```zenscript
-// <recipetype:bloodmagic:array>.addRecipe(String name, IItemStack output, IIngredient baseInput, IIngredient addedInput, ResourceLocation texture)
+// <recipetype:bloodmagic:array>.addRecipe(name as string, output as IItemStack, baseInput as IIngredient, addedInput as IIngredient, texture as ResourceLocation)
 
 <recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>);
 ```
@@ -42,10 +42,10 @@ The default values that Blood Magic themselves use are as follows, but you can u
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alchemy Array that output a Divination Sigil.
+The following script will remove all recipes from the Alchemy Array that output a Divination Sigil.
 
 ```zenscript
-// <recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:array>>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:array>.removeRecipe(<item:bloodmagic:divinationsigil>);
 ```
