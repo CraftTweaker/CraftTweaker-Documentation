@@ -24,10 +24,10 @@ MCLivingDropsEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## Properties
 
-| 名称           | Type                                                                      | Has Getter | Has Setter |
-| ------------ | ------------------------------------------------------------------------- | ---------- | ---------- |
-| drops        | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true       | false      |
-| lootingLevel | int                                                                       | true       | false      |
-| recentlyHit  | boolean型                                                                  | true       | false      |
-| ソース          | [DamageSource](/vanilla/api/util/DamageSource)                            | true       | false      |
+| 名称           | Type                                                                      | Has Getter | Has Setter | Description             |
+| ------------ | ------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| drops        | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true       | false      | No Description Provided |
+| lootingLevel | int                                                                       | true       | false      | No Description Provided |
+| recentlyHit  | boolean型                                                                  | true       | false      | No Description Provided |
+| ソース          | [DamageSource](/vanilla/api/util/DamageSource)                            | true       | false      | No Description Provided |
 
