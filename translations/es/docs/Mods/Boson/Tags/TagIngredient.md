@@ -18,7 +18,7 @@ A `TagIngredient` provides read-only access to an additional set of properties, 
 | ------------- | ---------------------------------------- | --------------------------------------------------------------- |
 | `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
-## Example
+## Ejemplo
 
 ```zenscript
 val anyIngot = <tag-items:forge:ingots>;
