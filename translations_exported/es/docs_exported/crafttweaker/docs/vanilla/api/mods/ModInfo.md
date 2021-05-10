@@ -12,14 +12,14 @@ import crafttweaker.api.mods.ModInfo;
 
 ## Properties
 
-| Name               | Type                                                                              | Has Getter | Has Setter |
-| ------------------ | --------------------------------------------------------------------------------- | ---------- | ---------- |
-| blocks             | stdlib.List&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;             | true       | false      |
-| displayName        | string                                                                            | true       | false      |
-| tipos de entidades | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      |
-| fluids             | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt;              | true       | false      |
-| items              | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;        | true       | false      |
-| modid              | string                                                                            | true       | false      |
-| namespace          | string                                                                            | true       | false      |
-| version            | string                                                                            | true       | false      |
+| Name               | Type                                                                              | Has Getter | Has Setter | Description                                                                                                                                                                                                                          |
+| ------------------ | --------------------------------------------------------------------------------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| blocks             | stdlib.List&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;              | true       | false      | Finds all blocks registered for that mod.                                                                                                                                                                                            |
+| displayName        | string                                                                            | true       | false      | Gets the display name of the mod                                                                                                                                                                                                     |
+| tipos de entidades | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      | Finds all EntityTypes registered for that mod                                                                                                                                                                                        |
+| fluids             | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt;              | true       | false      | Finds all EntityTypes registered for that mod                                                                                                                                                                                        |
+| items              | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;        | true       | false      | Gets all known items from that mod <br />  <p> <br />  Does not take "sub items" into account! <br />  That means, that it will e.g. find an enchanted book, but without tags, and only one! |
+| modid              | string                                                                            | true       | false      | Gets the modid of the mod                                                                                                                                                                                                            |
+| namespace          | string                                                                            | true       | false      | Gets the namespace of the mod                                                                                                                                                                                                        |
+| version            | string                                                                            | true       | false      | Gets the version of the mod                                                                                                                                                                                                          |
 
