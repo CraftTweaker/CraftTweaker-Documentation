@@ -15,13 +15,11 @@ ICollectionData implements the following interfaces. That means all methods defi
 
 - [IData](/vanilla/api/data/IData)
 
-## Methods
+## Static Methods
 
 :::group{name=getFromMembers}
 
-Creates the most specific ICollectionData form possible for the provided members.
-
- Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+Creates the most specific ICollectionData form possible for the provided members. <br />  <br />  Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -52,7 +50,8 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 Return Type: void
 
 ```zenscript
-ICollectionData.add(value as IData) as void
+// ICollectionData.add(value as IData) as void
+
 new ListData(["Hello", "World"]).add("today");
 ```
 
@@ -70,7 +69,8 @@ new ListData(["Hello", "World"]).add("today");
 Return Type: void
 
 ```zenscript
-ICollectionData.add(index as int, value as IData) as void
+// ICollectionData.add(index as int, value as IData) as void
+
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
@@ -87,7 +87,8 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-ICollectionData.asCollection() as ICollectionData
+// ICollectionData.asCollection() as ICollectionData
+
 new ListData(["Hello", "World"]).asCollection();
 ```
 
@@ -100,7 +101,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-ICollectionData.asList() as stdlib.List<IData>
+// ICollectionData.asList() as stdlib.List<IData>
+
 new ListData(["Hello", "World"]).asList();
 ```
 
@@ -113,7 +115,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-ICollectionData.asMap() as IData[string]
+// ICollectionData.asMap() as IData[string]
+
 new ListData(["Hello", "World"]).asMap();
 ```
 
@@ -124,7 +127,8 @@ new ListData(["Hello", "World"]).asMap();
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-ICollectionData.asNumber() as INumberData
+// ICollectionData.asNumber() as INumberData
+
 new ListData(["Hello", "World"]).asNumber();
 ```
 
@@ -137,7 +141,8 @@ Gets the String representation of this IData
 Return Type: string
 
 ```zenscript
-ICollectionData.asString() as string
+// ICollectionData.asString() as string
+
 new ListData(["Hello", "World"]).asString();
 ```
 
@@ -150,7 +155,8 @@ Removes every element in the list
 Return Type: void
 
 ```zenscript
-ICollectionData.clear() as void
+// ICollectionData.clear() as void
+
 new ListData(["Hello", "World"]).clear();
 ```
 
@@ -163,7 +169,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-ICollectionData.contains(data as IData) as boolean
+// ICollectionData.contains(data as IData) as boolean
+
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
@@ -183,7 +190,8 @@ Makes a copy of this IData.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.copy() as IData
+// ICollectionData.copy() as IData
+
 new ListData(["Hello", "World"]).copy();
 ```
 
@@ -196,7 +204,8 @@ Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.getAt(index as int) as IData
+// ICollectionData.getAt(index as int) as IData
+
 new ListData(["Hello", "World"]).getAt(0);
 ```
 
@@ -216,7 +225,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-ICollectionData.getId() as byte
+// ICollectionData.getId() as byte
+
 new ListData(["Hello", "World"]).getId();
 ```
 
@@ -229,7 +239,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-ICollectionData.getString() as string
+// ICollectionData.getString() as string
+
 new ListData(["Hello", "World"]).getString();
 ```
 
@@ -242,7 +253,8 @@ Removes the [IData](/vanilla/api/data/IData) stored at the given index.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.remove(index as int) as IData
+// ICollectionData.remove(index as int) as IData
+
 new ListData(["Hello", "World"]).remove(0);
 ```
 
@@ -260,7 +272,8 @@ Sets the item at the provided index to the given value
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.setAt(index as int, value as IData) as IData
+// ICollectionData.setAt(index as int, value as IData) as IData
+
 new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
 
@@ -275,7 +288,7 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 
 ## Properties
 
-| 名称   | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| 名称   | Type | Has Getter | Has Setter | Description             |
+| ---- | ---- | ---------- | ---------- | ----------------------- |
+| size | int  | true       | false      | No Description Provided |
 
