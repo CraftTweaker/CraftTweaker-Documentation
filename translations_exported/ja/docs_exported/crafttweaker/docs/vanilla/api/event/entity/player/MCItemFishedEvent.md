@@ -31,7 +31,8 @@ Gets the list of items being fished up by the player.
 Return Type: stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 
 ```zenscript
-MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
+// MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
+
 event.getDrops();
 ```
 
@@ -44,7 +45,8 @@ Gets the amount of durability damage to inflict on the fishing rod.
 Return Type: int
 
 ```zenscript
-MCItemFishedEvent.getItemDamage() as int
+// MCItemFishedEvent.getItemDamage() as int
+
 event.getItemDamage();
 ```
 
@@ -57,7 +59,8 @@ Sets the amount of durability damage to inflict on the fishing rod.
 Return Type: void
 
 ```zenscript
-MCItemFishedEvent.setItemDamage(damage as int) as void
+// MCItemFishedEvent.setItemDamage(damage as int) as void
+
 event.setItemDamage(5);
 ```
 
@@ -71,8 +74,8 @@ event.setItemDamage(5);
 
 ## Properties
 
-| 名称         | Type                                                                    | Has Getter | Has Setter |
-| ---------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| drops      | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true       | false      |
-| itemDamage | int                                                                     | true       | true       |
+| 名称         | Type                                                                    | Has Getter | Has Setter | Description                                                         |
+| ---------- | ----------------------------------------------------------------------- | ---------- | ---------- | ------------------------------------------------------------------- |
+| drops      | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true       | false      | Gets the list of items being fished up by the player.               |
+| itemDamage | int                                                                     | true       | true       | Gets the amount of durability damage to inflict on the fishing rod. |
 
