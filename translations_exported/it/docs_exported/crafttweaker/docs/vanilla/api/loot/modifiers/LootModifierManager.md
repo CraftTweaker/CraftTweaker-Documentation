@@ -25,8 +25,9 @@ Gets a list containing all currently registered loot modifiers.
 Return Type: stdlib.List&lt;[ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)&gt;
 
 ```zenscript
-LootModifierManager.getAll() as stdlib.List<ILootModifier>
-myLootModifierManager.getAll();
+// LootModifierManager.getAll() as stdlib.List<ILootModifier>
+
+loot.modifiers.getAll();
 ```
 
 :::
@@ -38,8 +39,9 @@ Gets a list of all the names of the currently registered loot modifiers.
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-LootModifierManager.getAllNames() as stdlib.List<string>
-myLootModifierManager.getAllNames();
+// LootModifierManager.getAllNames() as stdlib.List<string>
+
+loot.modifiers.getAllNames();
 ```
 
 :::
@@ -79,12 +81,11 @@ Return Type: void
 LootModifierManager.register(name as string, builder as LootConditionBuilder, modifier as ILootModifier) as void
 ```
 
-| Parameter | Type   | Description                                                                                         |
-| --------- | ------ | --------------------------------------------------------------------------------------------------- |
-| name      | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and |
- colons. | | builder | 
-
-[LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | A [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) representing a list of conditions that should be merged together via 'AND'. | | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
+| Parameter   | Type                                                                      | Description                                                                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| name        | string                                                                    | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons.                                                |
+| costruttore | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | A [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) representing a list of conditions that should be merged together <br />                 via 'AND'. |
+| modifier    | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)                | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers).                                                              |
 
 
 :::
@@ -103,12 +104,11 @@ Return Type: void
 LootModifierManager.register(name as string, conditions as ILootCondition?[], modifier as ILootModifier) as void
 ```
 
-| Parameter | Type   | Description                                                                                         |
-| --------- | ------ | --------------------------------------------------------------------------------------------------- |
-| name      | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and |
- colons. | | conditions | 
-
-[ILootCondition](/vanilla/api/loot/conditions/ILootCondition)?[] | A set of conditions that restrict the context in which the loot modifier applies. It can be empty or <code>null</code>, which indicates a lack of conditions. The conditions are all merged together with an 'AND' connector. | | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
+| Parameter  | Type                                                             | Description                                                                                                                                                                                                                                                                                          |
+| ---------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name       | string                                                           | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons.                                                                                                                                                                |
+| conditions | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)?[] | A set of conditions that restrict the context in which the loot modifier applies. It can be <br />                    empty or <code>null</code>, which indicates a lack of conditions. The conditions are all merged <br />                    together with an 'AND' connector. |
+| modifier   | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)       | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers).                                                                                                                                                                              |
 
 
 :::
@@ -125,12 +125,10 @@ Return Type: void
 LootModifierManager.registerUnconditional(name as string, modifier as ILootModifier) as void
 ```
 
-| Parameter | Type   | Description                                                                                         |
-| --------- | ------ | --------------------------------------------------------------------------------------------------- |
-| name      | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and |
- colons. | | modifier | 
-
-[ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
+| Parameter | Type                                                       | Description                                                                                                                           |
+| --------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| name      | string                                                     | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons. |
+| modifier  | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers).               |
 
 
 :::
@@ -142,8 +140,9 @@ Removes all loot modifiers that have been registered up to this point.
 Return Type: void
 
 ```zenscript
-LootModifierManager.removeAll() as void
-myLootModifierManager.removeAll();
+// LootModifierManager.removeAll() as void
+
+loot.modifiers.removeAll();
 ```
 
 :::
