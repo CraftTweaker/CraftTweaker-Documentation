@@ -2,7 +2,7 @@
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Pressurised Reaction Chamber through the command `/ct mekrecipes prc`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);
