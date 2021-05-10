@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und Lava (Flüss
 
 #### Rezepte für Items entfernen
 
-Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
+The following script will remove all Emptying recipes that output a Bucket.
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IItemStack output)
@@ -28,7 +28,7 @@ Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
 
 #### Rezepte für Flüssigkeiten entfernen
 
-Das folgende Skript wird alle kompatiblen Rezepte entfernen, die Honig ausgeben (Fluid)
+The following script will remove all Compacting recipes that output Honey (Fluid)
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IFluidStack output)
