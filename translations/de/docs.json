@@ -204,8 +204,8 @@
       "Immersive Petroleum": {
         "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "Destillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Destillation.md",
-          "Kraftstoffregistrierung": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
           "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
           "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
