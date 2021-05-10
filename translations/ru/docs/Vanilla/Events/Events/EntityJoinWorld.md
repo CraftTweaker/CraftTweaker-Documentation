@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Наследование от интерфейсов событий
 EntityJoinWorld Event implements the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEntityEvent](/Vanilla/Events/Events/ILivingEvent/)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
