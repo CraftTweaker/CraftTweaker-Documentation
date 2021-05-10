@@ -1,15 +1,15 @@
-# SideOnlyPreprocessor
+# SideOnly预处理器
 
-The preprocessor can set what side the scripts are loaded.
+预处理器可以设置脚本的加载类型。
 
 ## 调用
 
-It can be used as follows:
+可以使用以下类型：
 
-`#sideonly sidename`
+`#sideonly 类型名`
 
-Example: `#sideonly client` or `#sideonly server`
+例：`#sideonly client` 或 `#sideonly server`
 
 ## 它的作用
 
-This will make scripts only load when the execution side is the specified side of the network. Leaving the loader out will cause the script to load on both sides (the default).
+它可以让脚本仅在执行端是网络的指定端时加载。 不使用此预处理器将导致脚本在两个指定端都加载（默认）。
