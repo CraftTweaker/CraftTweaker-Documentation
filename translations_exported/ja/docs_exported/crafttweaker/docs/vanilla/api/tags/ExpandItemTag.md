@@ -32,7 +32,8 @@ MCTag.add(items as stdlib.List<IItemStack>) as void
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MCTag.asIData() as IData
+// MCTag.asIData() as IData
+
 <tag:items:forge:gems>.asIData();
 ```
 
@@ -43,7 +44,8 @@ MCTag.asIData() as IData
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-MCTag.asIIngredient() as IIngredient
+// MCTag.asIIngredient() as IIngredient
+
 <tag:items:forge:gems>.asIIngredient();
 ```
 
@@ -54,7 +56,8 @@ MCTag.asIIngredient() as IIngredient
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-MCTag.asIIngredientWithAmount() as IIngredientWithAmount
+// MCTag.asIIngredientWithAmount() as IIngredientWithAmount
+
 <tag:items:forge:gems>.asIIngredientWithAmount();
 ```
 
