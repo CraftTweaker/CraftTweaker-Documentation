@@ -24,7 +24,7 @@ MCEntityJoinWorldEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntit
 
 ## Свойства
 
-| Название | Тип                                   | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------- | ------------ | ------------ |
-| world    | [MCWorld](/vanilla/api/world/MCWorld) | true         | false        |
+| Название | Тип                                   | Имеет Getter | Имеет Setter | Description             |
+| -------- | ------------------------------------- | ------------ | ------------ | ----------------------- |
+| world    | [MCWorld](/vanilla/api/world/MCWorld) | true         | false        | No Description Provided |
 
