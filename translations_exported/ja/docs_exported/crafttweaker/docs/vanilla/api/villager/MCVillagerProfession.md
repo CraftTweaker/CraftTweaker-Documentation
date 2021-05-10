@@ -17,7 +17,8 @@ import crafttweaker.api.villager.MCVillagerProfession;
 Return Type: string
 
 ```zenscript
-MCVillagerProfession.getName() as string
+// MCVillagerProfession.getName() as string
+
 <profession:minecraft:fletcher>.getName();
 ```
 
@@ -26,7 +27,7 @@ MCVillagerProfession.getName() as string
 
 ## Properties
 
-| 名称   | Type   | Has Getter | Has Setter |
-| ---- | ------ | ---------- | ---------- |
-| name | string | true       | false      |
+| 名称   | Type   | Has Getter | Has Setter | Description             |
+| ---- | ------ | ---------- | ---------- | ----------------------- |
+| name | string | true       | false      | No Description Provided |
 
