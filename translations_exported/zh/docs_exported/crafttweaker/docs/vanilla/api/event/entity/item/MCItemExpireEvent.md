@@ -24,7 +24,7 @@ MCItemExpireEvent extends [MCItemEvent](/vanilla/api/event/entity/MCItemEvent). 
 
 ## 参数
 
-| 名称        | 类型  | 可获得  | 可设置  |
-| --------- | --- | ---- | ---- |
-| extraLife | int | true | true |
+| 名称        | 类型  | 可获得  | 可设置  | 描述                      |
+| --------- | --- | ---- | ---- | ----------------------- |
+| extraLife | int | true | true | No Description Provided |
 
