@@ -244,7 +244,7 @@ function sortedWith(comparator: ToIntBiFunction<T, T>) as Sequence<T>;
 ## Operator Overloading
 `Sequence`s may support operator overloading in future revisions of the language. Refer to this documentation to keep up-to-date. Note that support may require a special compiler flag to be enabled: refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
-## Example
+## Ejemplo
 The following is an example script that shows some examples that may be done with sequences. This is nowhere a complete list, but is meant more as a reference and a proof of concept.
 
 ```zenscript
