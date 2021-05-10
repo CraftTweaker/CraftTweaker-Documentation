@@ -16,7 +16,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
