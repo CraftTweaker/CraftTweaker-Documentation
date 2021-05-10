@@ -26,12 +26,12 @@ MCAnvilUpdateEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all
 
 ## Свойства
 
-| Название            | Тип                                                   | Имеет Getter | Имеет Setter |
-| ------------------- | ----------------------------------------------------- | ------------ | ------------ |
-| left                | [IItemStack](/vanilla/api/items/IItemStack)           | true         | false        |
-| levelCost           | int                                                   | true         | true         |
-| стоимость материала | int                                                   | true         | true         |
-| output              | [IItemStack](/vanilla/api/items/IItemStack)           | true         | true         |
-| player              | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true         | false        |
-| right               | [IItemStack](/vanilla/api/items/IItemStack)           | true         | false        |
+| Название            | Тип                                                   | Имеет Getter | Имеет Setter | Description             |
+| ------------------- | ----------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| left                | [IItemStack](/vanilla/api/items/IItemStack)           | true         | false        | No Description Provided |
+| levelCost           | int                                                   | true         | true         | No Description Provided |
+| стоимость материала | int                                                   | true         | true         | No Description Provided |
+| output              | [IItemStack](/vanilla/api/items/IItemStack)           | true         | true         | No Description Provided |
+| player              | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true         | false        | No Description Provided |
+| right               | [IItemStack](/vanilla/api/items/IItemStack)           | true         | false        | No Description Provided |
 
