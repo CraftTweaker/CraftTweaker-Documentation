@@ -27,7 +27,8 @@ Gets a snapshot of the item from before it broke. Modifying this item will have 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+// MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+
 event.getDestroyedItem();
 ```
 
@@ -36,7 +37,7 @@ event.getDestroyedItem();
 
 ## Properties
 
-| Name          | Type                                        | Has Getter | Has Setter |
-| ------------- | ------------------------------------------- | ---------- | ---------- |
-| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Name          | Type                                        | Has Getter | Has Setter | Beschreibung                                                                                                                                      |
+| ------------- | ------------------------------------------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
 
