@@ -23,7 +23,8 @@ MCPlayerEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEvent). 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCPlayerEvent.getPlayer() as MCPlayerEntity
+// MCPlayerEvent.getPlayer() as MCPlayerEntity
+
 myMCPlayerEvent.getPlayer();
 ```
 
@@ -32,7 +33,7 @@ myMCPlayerEvent.getPlayer();
 
 ## Properties
 
-| Name   | Type                                                 | Has Getter | Has Setter |
-| ------ | ---------------------------------------------------- | ---------- | ---------- |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true       | false      |
+| Name   | Type                                                 | Has Getter | Has Setter | Beschreibung            |
+| ------ | ---------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true       | false      | No Description Provided |
 
