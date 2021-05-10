@@ -36,7 +36,8 @@ MCCommandContextBuilder.build(input as string) as MCCommandContext
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.copy() as MCCommandContextBuilder
+// MCCommandContextBuilder.copy() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.copy();
 ```
 
@@ -77,7 +78,8 @@ MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionCont
 Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
 
 ```zenscript
-MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
+// MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
+
 myMCCommandContextBuilder.getArguments();
 ```
 
@@ -88,7 +90,8 @@ myMCCommandContextBuilder.getArguments();
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.getChild() as MCCommandContextBuilder
+// MCCommandContextBuilder.getChild() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.getChild();
 ```
 
@@ -99,7 +102,8 @@ myMCCommandContextBuilder.getChild();
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCCommandContextBuilder.getCommand() as MCCommand
+// MCCommandContextBuilder.getCommand() as MCCommand
+
 myMCCommandContextBuilder.getCommand();
 ```
 
@@ -110,7 +114,8 @@ myMCCommandContextBuilder.getCommand();
 Return Type: [MCCommandDispatcher](/vanilla/api/commands/custom/MCCommandDispatcher)
 
 ```zenscript
-MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
+// MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
+
 myMCCommandContextBuilder.getDispatcher();
 ```
 
@@ -121,7 +126,8 @@ myMCCommandContextBuilder.getDispatcher();
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
+// MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.getLastChild();
 ```
 
@@ -132,7 +138,8 @@ myMCCommandContextBuilder.getLastChild();
 Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
-MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
+// MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
+
 myMCCommandContextBuilder.getNodes();
 ```
 
@@ -143,7 +150,8 @@ myMCCommandContextBuilder.getNodes();
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCCommandContextBuilder.getRange() as MCStringRange
+// MCCommandContextBuilder.getRange() as MCStringRange
+
 myMCCommandContextBuilder.getRange();
 ```
 
@@ -154,7 +162,8 @@ myMCCommandContextBuilder.getRange();
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandContextBuilder.getRootNode() as MCCommandNode
+// MCCommandContextBuilder.getRootNode() as MCCommandNode
+
 myMCCommandContextBuilder.getRootNode();
 ```
 
@@ -165,7 +174,8 @@ myMCCommandContextBuilder.getRootNode();
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-MCCommandContextBuilder.getSource() as MCCommandSource
+// MCCommandContextBuilder.getSource() as MCCommandSource
+
 myMCCommandContextBuilder.getSource();
 ```
 
@@ -176,7 +186,8 @@ myMCCommandContextBuilder.getSource();
 Return Type: int
 
 ```zenscript
-MCCommandContextBuilder.hashCode() as int
+// MCCommandContextBuilder.hashCode() as int
+
 myMCCommandContextBuilder.hashCode();
 ```
 
@@ -187,7 +198,8 @@ myMCCommandContextBuilder.hashCode();
 Return Type: string
 
 ```zenscript
-MCCommandContextBuilder.toString() as string
+// MCCommandContextBuilder.toString() as string
+
 myMCCommandContextBuilder.toString();
 ```
 
