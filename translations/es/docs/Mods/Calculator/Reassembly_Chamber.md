@@ -10,7 +10,7 @@ import mods.calculator.reassemblyChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Suma
 ```zenscript
 reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
