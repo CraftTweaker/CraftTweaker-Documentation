@@ -41,7 +41,8 @@ Adds two positions together and returns the result.
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(pos as BlockPos) as BlockPos
+// BlockPos.add(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
@@ -59,7 +60,8 @@ Adds the given values to this position, and returns a new position with the new 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(x as double, y as double, z as double) as BlockPos
+// BlockPos.add(x as double, y as double, z as double) as BlockPos
+
 new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
@@ -79,7 +81,8 @@ Adds the given values to this position, and returns a new position with the new 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(x as int, y as int, z as int) as BlockPos
+// BlockPos.add(x as int, y as int, z as int) as BlockPos
+
 new BlockPos(0, 1, 2).add(50, -20, -25);
 ```
 
@@ -99,7 +102,8 @@ Creates a new BlockPos based on the cross product of this position, and the give
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.crossProduct(pos as BlockPos) as BlockPos
+// BlockPos.crossProduct(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
@@ -117,7 +121,8 @@ Gets the squared distance of this position to the specified BlockPos, using the 
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(to as BlockPos) as double
+// BlockPos.distanceSq(to as BlockPos) as double
+
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
@@ -135,7 +140,8 @@ Gets the squared distance of this position to the specified BlockPos
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(to as BlockPos, useCenter as boolean) as double
+// BlockPos.distanceSq(to as BlockPos, useCenter as boolean) as double
+
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
@@ -154,7 +160,8 @@ Gets the squared distance of this position to the specified coordinates
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(x as double, y as double, z as double, useCenter as boolean) as double
+// BlockPos.distanceSq(x as double, y as double, z as double, useCenter as boolean) as double
+
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
@@ -175,7 +182,8 @@ Creates a new BlockPos based on this BlockPos that is one block lower than this 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.down() as BlockPos
+// BlockPos.down() as BlockPos
+
 new BlockPos(0, 1, 2).down();
 ```
 
@@ -205,7 +213,8 @@ Creates a new BlockPos based on this BlockPos that is one block east of this Blo
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.east() as BlockPos
+// BlockPos.east() as BlockPos
+
 new BlockPos(0, 1, 2).east();
 ```
 
@@ -218,7 +227,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) east of this Bl
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.east(n as int) as BlockPos
+// BlockPos.east(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).east(2);
 ```
 
@@ -236,7 +246,8 @@ Gets the Manhattan Distance of this pos compared to a different position
 Return Type: int
 
 ```zenscript
-BlockPos.manhattanDistance(other as BlockPos) as int
+// BlockPos.manhattanDistance(other as BlockPos) as int
+
 new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
@@ -254,7 +265,8 @@ Creates a new BlockPos based on this BlockPos that is one block north of this Bl
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.north() as BlockPos
+// BlockPos.north() as BlockPos
+
 new BlockPos(0, 1, 2).north();
 ```
 
@@ -267,7 +279,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) north of this B
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.north(n as int) as BlockPos
+// BlockPos.north(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).north(10);
 ```
 
@@ -285,7 +298,8 @@ Creates a new BlockPos based on this BlockPos that is one block offset of this B
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.offset(direction as Direction) as BlockPos
+// BlockPos.offset(direction as Direction) as BlockPos
+
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
@@ -303,7 +317,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) offset of this 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.offset(direction as Direction, n as int) as BlockPos
+// BlockPos.offset(direction as Direction, n as int) as BlockPos
+
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
@@ -322,7 +337,8 @@ Creates a new BlockPos based on this BlockPos that is one block south of this Bl
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.south() as BlockPos
+// BlockPos.south() as BlockPos
+
 new BlockPos(0, 1, 2).south();
 ```
 
@@ -335,7 +351,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) south of this B
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.south(n as int) as BlockPos
+// BlockPos.south(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).south(12);
 ```
 
@@ -353,7 +370,8 @@ Subtracts two positions together and returns the result.
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.subtract(pos as BlockPos) as BlockPos
+// BlockPos.subtract(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
@@ -371,7 +389,8 @@ Creates a new BlockPos based on this BlockPos that is one block higher than this
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.up() as BlockPos
+// BlockPos.up() as BlockPos
+
 new BlockPos(0, 1, 2).up();
 ```
 
@@ -384,7 +403,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) higher than thi
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.up(n as int) as BlockPos
+// BlockPos.up(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).up(45);
 ```
 
@@ -402,7 +422,8 @@ Creates a new BlockPos based on this BlockPos that is one block west of this Blo
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.west() as BlockPos
+// BlockPos.west() as BlockPos
+
 new BlockPos(0, 1, 2).west();
 ```
 
@@ -415,7 +436,8 @@ Creates a new BlockPos based on this BlockPos that is n block(s) west of this Bl
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.west(n as int) as BlockPos
+// BlockPos.west(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).west(120);
 ```
 
@@ -433,7 +455,8 @@ Checks if the given BlockPos is within the specified distance of this BlockPos (
 Return Type: boolean
 
 ```zenscript
-BlockPos.withinDistance(pos as BlockPos, distance as double) as boolean
+// BlockPos.withinDistance(pos as BlockPos, distance as double) as boolean
+
 new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
@@ -448,9 +471,9 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| Name | Type | Has Getter | Has Setter | Description             |
+| ---- | ---- | ---------- | ---------- | ----------------------- |
+| x    | int  | true       | false      | No Description Provided |
+| y    | int  | true       | false      | No Description Provided |
+| z    | int  | true       | false      | No Description Provided |
 
