@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das nach 200 Ticks 2 Goldbarren ausg
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus dem Legierungsöfen entfernen, das einen Konstantanbarren ausgibt.
+The following script will remove all recipes from the Alloy Kiln that outputs a Constantan Ingot.
 
 ```zenscript
 // <recipetype:immersiveengineering:alloy>.removeRecipe(output as IItemStack)
