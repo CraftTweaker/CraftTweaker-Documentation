@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Heating;Heating;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
