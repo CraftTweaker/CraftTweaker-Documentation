@@ -24,7 +24,8 @@ import crafttweaker.api.item.ItemStack;
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-ItemStack.asIIngredient() as IIngredient
+// ItemStack.asIIngredient() as IIngredient
+
 myItemStack.asIIngredient();
 ```
 
@@ -35,7 +36,8 @@ myItemStack.asIIngredient();
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-ItemStack.asIItemStack() as IItemStack
+// ItemStack.asIItemStack() as IItemStack
+
 myItemStack.asIItemStack();
 ```
 
@@ -48,7 +50,8 @@ Debug method, expect this to be removed anytime!
 Return Type: void
 
 ```zenscript
-ItemStack.print() as void
+// ItemStack.print() as void
+
 myItemStack.print();
 ```
 
