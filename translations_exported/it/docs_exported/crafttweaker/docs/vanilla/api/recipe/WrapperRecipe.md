@@ -29,12 +29,12 @@ WrapperRecipe.canFit(width as int, height as int) as boolean
 
 ## Properties
 
-| Name        | Type                                                                         | Ha Getter | Ha Setter |
-| ----------- | ---------------------------------------------------------------------------- | --------- | --------- |
-| dynamic     | boolean                                                                      | true      | false     |
-| gruppo      | string                                                                       | true      | false     |
-| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     |
-| id          | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true      | false     |
-| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true      | false     |
-| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     |
+| Name        | Type                                                                         | Ha Getter | Ha Setter | Description             |
+| ----------- | ---------------------------------------------------------------------------- | --------- | --------- | ----------------------- |
+| dynamic     | boolean                                                                      | true      | false     | No Description Provided |
+| gruppo      | string                                                                       | true      | false     | No Description Provided |
+| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     | No Description Provided |
+| id          | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true      | false     | No Description Provided |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true      | false     | No Description Provided |
+| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     | No Description Provided |
 
