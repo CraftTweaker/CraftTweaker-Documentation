@@ -10,7 +10,7 @@ import mods.calculator.scientific;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Suma
 ```zenscript
 scientific.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
