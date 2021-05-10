@@ -20,7 +20,7 @@ EntityEquipmentPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanill
 
 ## Methoden
 
-### withChestItem
+:::group{name=withChestItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's chest armor slot.
 
@@ -37,7 +37,9 @@ EntityEquipmentPredicate.withChestItem(builder as Consumer<ItemPredicate>) as En
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withFeetItem
+:::
+
+:::group{name=withFeetItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's feet armor slot.
 
@@ -54,7 +56,9 @@ EntityEquipmentPredicate.withFeetItem(builder as Consumer<ItemPredicate>) as Ent
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withHeadItem
+:::
+
+:::group{name=withHeadItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's head armor slot.
 
@@ -71,7 +75,9 @@ EntityEquipmentPredicate.withHeadItem(builder as Consumer<ItemPredicate>) as Ent
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInHand
+:::
+
+:::group{name=withItemInHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's hand.
 
@@ -90,7 +96,9 @@ EntityEquipmentPredicate.withItemInHand(builder as Consumer<ItemPredicate>) as E
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInMainHand
+:::
+
+:::group{name=withItemInMainHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's main hand.
 
@@ -107,7 +115,9 @@ EntityEquipmentPredicate.withItemInMainHand(builder as Consumer<ItemPredicate>) 
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInOffHand
+:::
+
+:::group{name=withItemInOffHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's off hand.
 
@@ -124,7 +134,9 @@ EntityEquipmentPredicate.withItemInOffHand(builder as Consumer<ItemPredicate>) a
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withLegsItem
+:::
+
+:::group{name=withLegsItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's legs armor slot.
 
@@ -140,5 +152,7 @@ EntityEquipmentPredicate.withLegsItem(builder as Consumer<ItemPredicate>) as Ent
 | --------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | bauer     | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
+
+:::
 
 
