@@ -15,7 +15,8 @@ import crafttweaker.api.util.Random;
 Return Type: string
 
 ```zenscript
-Random.getRandomUUID() as string
+// Random.getRandomUUID() as string
+
 myRandom.getRandomUUID();
 ```
 
@@ -26,7 +27,8 @@ myRandom.getRandomUUID();
 Return Type: boolean
 
 ```zenscript
-Random.nextBoolean() as boolean
+// Random.nextBoolean() as boolean
+
 myRandom.nextBoolean();
 ```
 
@@ -39,7 +41,8 @@ Returns the next pseudorandom, uniformly distributed double value between 0.0 an
 Return Type: double
 
 ```zenscript
-Random.nextDouble() as double
+// Random.nextDouble() as double
+
 myRandom.nextDouble();
 ```
 
@@ -70,7 +73,8 @@ Returns the next pseudorandom, uniformly distributed float value between 0.0f an
 Return Type: float
 
 ```zenscript
-Random.nextFloat() as float
+// Random.nextFloat() as float
+
 myRandom.nextFloat();
 ```
 
@@ -101,7 +105,8 @@ Returns the next pseudorandom, uniformly distributed int value from this random 
 Return Type: int
 
 ```zenscript
-Random.nextInt() as int
+// Random.nextInt() as int
+
 myRandom.nextInt();
 ```
 
