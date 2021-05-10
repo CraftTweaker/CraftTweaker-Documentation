@@ -17,7 +17,8 @@ Checks if the damage can bypass creative mode.
 Return Type: boolean
 
 ```zenscript
-DamageSource.canBypassCreative() as boolean
+// DamageSource.canBypassCreative() as boolean
+
 myDamageSource.canBypassCreative();
 ```
 
@@ -30,7 +31,8 @@ Gets the location where the damage occurred.
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)?
 
 ```zenscript
-DamageSource.getDamageLocation() as MCVector3d?
+// DamageSource.getDamageLocation() as MCVector3d?
+
 myDamageSource.getDamageLocation();
 ```
 
@@ -43,7 +45,8 @@ Gets the type of damage.
 Return Type: string
 
 ```zenscript
-DamageSource.getDamageType() as string
+// DamageSource.getDamageType() as string
+
 myDamageSource.getDamageType();
 ```
 
@@ -56,7 +59,8 @@ Gets the amount of exhaustion to add to the player's hunger bar if they get hit 
 Return Type: float
 
 ```zenscript
-DamageSource.getHungerDamage() as float
+// DamageSource.getHungerDamage() as float
+
 myDamageSource.getHungerDamage();
 ```
 
@@ -69,7 +73,8 @@ Gets the immediate source of the damage, like an arrow.
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-DamageSource.getImmediateSource() as MCEntity
+// DamageSource.getImmediateSource() as MCEntity
+
 myDamageSource.getImmediateSource();
 ```
 
@@ -82,7 +87,8 @@ Gets the true source of the damage, like the player who shot the arrow.
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-DamageSource.getTrueSource() as MCEntity
+// DamageSource.getTrueSource() as MCEntity
+
 myDamageSource.getTrueSource();
 ```
 
@@ -95,7 +101,8 @@ Checks if the damage is absolute.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isAbsoluteDamage() as boolean
+// DamageSource.isAbsoluteDamage() as boolean
+
 myDamageSource.isAbsoluteDamage();
 ```
 
@@ -108,7 +115,8 @@ Gets whether the damage was inflicted by a creative player.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isCreativePlayer() as boolean
+// DamageSource.isCreativePlayer() as boolean
+
 myDamageSource.isCreativePlayer();
 ```
 
@@ -121,7 +129,8 @@ Gets whether the damage changes strength based on the current difficulty.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isDifficultyScaled() as boolean
+// DamageSource.isDifficultyScaled() as boolean
+
 myDamageSource.isDifficultyScaled();
 ```
 
@@ -134,7 +143,8 @@ Checks if the damage is caused by an explosion.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isExplosionDamage() as boolean
+// DamageSource.isExplosionDamage() as boolean
+
 myDamageSource.isExplosionDamage();
 ```
 
@@ -147,7 +157,8 @@ Checks if the damage is caused by fire or burning.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isFireDamage() as boolean
+// DamageSource.isFireDamage() as boolean
+
 myDamageSource.isFireDamage();
 ```
 
@@ -160,7 +171,8 @@ Checks if the damage is caused by magic.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isMagicDamage() as boolean
+// DamageSource.isMagicDamage() as boolean
+
 myDamageSource.isMagicDamage();
 ```
 
@@ -173,7 +185,8 @@ Checks if the damage is caused by a projectile.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isProjectileDamage() as boolean
+// DamageSource.isProjectileDamage() as boolean
+
 myDamageSource.isProjectileDamage();
 ```
 
@@ -186,7 +199,8 @@ Checks if the damage can be blocked.
 Return Type: boolean
 
 ```zenscript
-DamageSource.isUnblockableDamage() as boolean
+// DamageSource.isUnblockableDamage() as boolean
+
 myDamageSource.isUnblockableDamage();
 ```
 
@@ -195,20 +209,20 @@ myDamageSource.isUnblockableDamage();
 
 ## Properties
 
-| Name             | Type                                        | Has Getter | Has Setter |
-| ---------------- | ------------------------------------------- | ---------- | ---------- |
-| absolute         | boolean                                     | true       | false      |
-| bypassCreative   | boolean                                     | true       | false      |
-| creativePlayer   | boolean                                     | true       | false      |
-| difficultyScaled | boolean                                     | true       | false      |
-| explosion        | boolean                                     | true       | false      |
-| fire             | boolean                                     | true       | false      |
-| hungerDamage     | float                                       | true       | false      |
-| immediateSource  | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      |
-| ubicación        | [MCVector3d](/vanilla/api/util/MCVector3d)? | true       | false      |
-| magic            | boolean                                     | true       | false      |
-| projectile       | boolean                                     | true       | false      |
-| trueSource       | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      |
-| type             | string                                      | true       | false      |
-| unblockable      | boolean                                     | true       | false      |
+| Name             | Type                                        | Has Getter | Has Setter | Description                                                                                                   |
+| ---------------- | ------------------------------------------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------- |
+| absolute         | boolean                                     | true       | false      | Checks if the damage is absolute.                                                                             |
+| bypassCreative   | boolean                                     | true       | false      | Checks if the damage can bypass creative mode.                                                                |
+| creativePlayer   | boolean                                     | true       | false      | Gets whether the damage was inflicted by a creative player.                                                   |
+| difficultyScaled | boolean                                     | true       | false      | Gets whether the damage changes strength based on the current difficulty.                                     |
+| explosion        | boolean                                     | true       | false      | Checks if the damage is caused by an explosion.                                                               |
+| fire             | boolean                                     | true       | false      | Checks if the damage is caused by fire or burning.                                                            |
+| hungerDamage     | float                                       | true       | false      | Gets the amount of exhaustion to add to the player's hunger bar if they <br />  get hit by this damage. |
+| immediateSource  | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      | Gets the immediate source of the damage, like an arrow.                                                       |
+| ubicación        | [MCVector3d](/vanilla/api/util/MCVector3d)? | true       | false      | Gets the location where the damage occurred.                                                                  |
+| magic            | boolean                                     | true       | false      | Checks if the damage is caused by magic.                                                                      |
+| projectile       | boolean                                     | true       | false      | Checks if the damage is caused by a projectile.                                                               |
+| trueSource       | [MCEntity](/vanilla/api/entity/MCEntity)    | true       | false      | Gets the true source of the damage, like the player who shot the arrow.                                       |
+| type             | string                                      | true       | false      | Gets the type of damage.                                                                                      |
+| unblockable      | boolean                                     | true       | false      | Checks if the damage can be blocked.                                                                          |
 
