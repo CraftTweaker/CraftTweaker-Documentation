@@ -95,7 +95,8 @@ MCLivingEntity.canAttack(typeIn as MCEntityType) as boolean
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.canBeRiddenInWater() as boolean
+// MCLivingEntity.canBeRiddenInWater() as boolean
+
 myMCLivingEntity.canBeRiddenInWater();
 ```
 
@@ -106,7 +107,8 @@ myMCLivingEntity.canBeRiddenInWater();
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.canBreatheUnderwater() as boolean
+// MCLivingEntity.canBreatheUnderwater() as boolean
+
 myMCLivingEntity.canBreatheUnderwater();
 ```
 
@@ -132,7 +134,8 @@ MCLivingEntity.canEquip(item as MCItemDefinition) as boolean
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.clearActivePotions() as boolean
+// MCLivingEntity.clearActivePotions() as boolean
+
 myMCLivingEntity.clearActivePotions();
 ```
 
@@ -143,7 +146,8 @@ myMCLivingEntity.clearActivePotions();
 Return Type: float
 
 ```zenscript
-MCLivingEntity.getAIMoveSpeed() as float
+// MCLivingEntity.getAIMoveSpeed() as float
+
 myMCLivingEntity.getAIMoveSpeed();
 ```
 
@@ -169,7 +173,8 @@ MCLivingEntity.getActivePotionEffect(potionIn as MCPotionEffect) as MCPotionEffe
 Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
 
 ```zenscript
-MCLivingEntity.getActivePotionEffects() as Collection<MCPotionEffectInstance>
+// MCLivingEntity.getActivePotionEffects() as Collection<MCPotionEffectInstance>
+
 myMCLivingEntity.getActivePotionEffects();
 ```
 
@@ -180,7 +185,8 @@ myMCLivingEntity.getActivePotionEffects();
 Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)[[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)]
 
 ```zenscript
-MCLivingEntity.getActivePotionMap() as MCPotionEffectInstance[MCPotionEffect]
+// MCLivingEntity.getActivePotionMap() as MCPotionEffectInstance[MCPotionEffect]
+
 myMCLivingEntity.getActivePotionMap();
 ```
 
@@ -191,7 +197,8 @@ myMCLivingEntity.getActivePotionMap();
 Return Type: float
 
 ```zenscript
-MCLivingEntity.getArmorCoverPercentage() as float
+// MCLivingEntity.getArmorCoverPercentage() as float
+
 myMCLivingEntity.getArmorCoverPercentage();
 ```
 
@@ -202,7 +209,8 @@ myMCLivingEntity.getArmorCoverPercentage();
 Return Type: stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 
 ```zenscript
-MCLivingEntity.getArmorInventoryList() as stdlib.Iterable<ItemStack>
+// MCLivingEntity.getArmorInventoryList() as stdlib.Iterable<ItemStack>
+
 myMCLivingEntity.getArmorInventoryList();
 ```
 
@@ -213,7 +221,8 @@ myMCLivingEntity.getArmorInventoryList();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getArrowCountInEntity() as int
+// MCLivingEntity.getArrowCountInEntity() as int
+
 myMCLivingEntity.getArrowCountInEntity();
 ```
 
@@ -224,7 +233,8 @@ myMCLivingEntity.getArrowCountInEntity();
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEntity.getAttackingEntity() as MCLivingEntity
+// MCLivingEntity.getAttackingEntity() as MCLivingEntity
+
 myMCLivingEntity.getAttackingEntity();
 ```
 
@@ -235,7 +245,8 @@ myMCLivingEntity.getAttackingEntity();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getBeeStingCount() as int
+// MCLivingEntity.getBeeStingCount() as int
+
 myMCLivingEntity.getBeeStingCount();
 ```
 
@@ -246,7 +257,8 @@ myMCLivingEntity.getBeeStingCount();
 Return Type: float
 
 ```zenscript
-MCLivingEntity.getHealth() as float
+// MCLivingEntity.getHealth() as float
+
 myMCLivingEntity.getHealth();
 ```
 
@@ -257,7 +269,8 @@ myMCLivingEntity.getHealth();
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
-MCLivingEntity.getHeldItemMainhand() as ItemStack
+// MCLivingEntity.getHeldItemMainhand() as ItemStack
+
 myMCLivingEntity.getHeldItemMainhand();
 ```
 
@@ -268,7 +281,8 @@ myMCLivingEntity.getHeldItemMainhand();
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
-MCLivingEntity.getHeldItemOffhand() as ItemStack
+// MCLivingEntity.getHeldItemOffhand() as ItemStack
+
 myMCLivingEntity.getHeldItemOffhand();
 ```
 
@@ -279,7 +293,8 @@ myMCLivingEntity.getHeldItemOffhand();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getIdleTime() as int
+// MCLivingEntity.getIdleTime() as int
+
 myMCLivingEntity.getIdleTime();
 ```
 
@@ -307,7 +322,8 @@ MCLivingEntity.getItemStackFromSlot(slot as MCEquipmentSlotType) as IItemStack
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEntity.getLastAttackedEntity() as MCLivingEntity
+// MCLivingEntity.getLastAttackedEntity() as MCLivingEntity
+
 myMCLivingEntity.getLastAttackedEntity();
 ```
 
@@ -318,7 +334,8 @@ myMCLivingEntity.getLastAttackedEntity();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getLastAttackedEntityTime() as int
+// MCLivingEntity.getLastAttackedEntityTime() as int
+
 myMCLivingEntity.getLastAttackedEntityTime();
 ```
 
@@ -329,7 +346,8 @@ myMCLivingEntity.getLastAttackedEntityTime();
 Return Type: float
 
 ```zenscript
-MCLivingEntity.getMaxHealth() as float
+// MCLivingEntity.getMaxHealth() as float
+
 myMCLivingEntity.getMaxHealth();
 ```
 
@@ -340,7 +358,8 @@ myMCLivingEntity.getMaxHealth();
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEntity.getRevengeTarget() as MCLivingEntity
+// MCLivingEntity.getRevengeTarget() as MCLivingEntity
+
 myMCLivingEntity.getRevengeTarget();
 ```
 
@@ -351,7 +370,8 @@ myMCLivingEntity.getRevengeTarget();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getRevengeTimer() as int
+// MCLivingEntity.getRevengeTimer() as int
+
 myMCLivingEntity.getRevengeTimer();
 ```
 
@@ -362,7 +382,8 @@ myMCLivingEntity.getRevengeTimer();
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.getShouldBeDead() as boolean
+// MCLivingEntity.getShouldBeDead() as boolean
+
 myMCLivingEntity.getShouldBeDead();
 ```
 
@@ -373,7 +394,8 @@ myMCLivingEntity.getShouldBeDead();
 Return Type: int
 
 ```zenscript
-MCLivingEntity.getTotalArmorValue() as int
+// MCLivingEntity.getTotalArmorValue() as int
+
 myMCLivingEntity.getTotalArmorValue();
 ```
 
@@ -399,7 +421,8 @@ MCLivingEntity.heal(healAmount as float) as void
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.isAlive() as boolean
+// MCLivingEntity.isAlive() as boolean
+
 myMCLivingEntity.isAlive();
 ```
 
@@ -410,7 +433,8 @@ myMCLivingEntity.isAlive();
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.isChild() as boolean
+// MCLivingEntity.isChild() as boolean
+
 myMCLivingEntity.isChild();
 ```
 
@@ -421,7 +445,8 @@ myMCLivingEntity.isChild();
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.isEntityUndead() as boolean
+// MCLivingEntity.isEntityUndead() as boolean
+
 myMCLivingEntity.isEntityUndead();
 ```
 
@@ -432,7 +457,8 @@ myMCLivingEntity.isEntityUndead();
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.isOnLadder() as boolean
+// MCLivingEntity.isOnLadder() as boolean
+
 myMCLivingEntity.isOnLadder();
 ```
 
@@ -473,7 +499,8 @@ MCLivingEntity.isPotionApplicable(potioneffectIn as MCPotionEffectInstance) as b
 Return Type: boolean
 
 ```zenscript
-MCLivingEntity.isWaterSensitive() as boolean
+// MCLivingEntity.isWaterSensitive() as boolean
+
 myMCLivingEntity.isWaterSensitive();
 ```
 
