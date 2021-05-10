@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Loom;Loom;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
@@ -20,7 +20,7 @@ Loom.removeRecipe(IItemStack output);
 Loom.removeRecipe(String registryName);
 ```
 
-## Example
+## Ejemplo
 ```zenscript
 Loom.addRecipe("burlap_cloth", <tfc:crop/product/jute_disc>, <tfc:crop/product/burlap_cloth>, "tfc:textures/blocks/devices/loom/product/burlap.png");
 ```
