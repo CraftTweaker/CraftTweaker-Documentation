@@ -12,7 +12,7 @@ The Grinder is a machine that converts an input item into an output item using s
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
