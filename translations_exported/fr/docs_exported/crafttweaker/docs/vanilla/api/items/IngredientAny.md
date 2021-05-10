@@ -15,16 +15,19 @@ IngredientAny implements the following interfaces. That means all methods define
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## Static Methods
 
-### getInstance
+:::group{name=getInstance}
 
 Return Type: [IngredientAny](/vanilla/api/items/IngredientAny)
 
 ```zenscript
-IngredientAny.getInstance() as IngredientAny
+// IngredientAny.getInstance() as IngredientAny
+
 IngredientAny.getInstance();
 ```
+
+:::
 
 ## Casters
 
@@ -35,7 +38,7 @@ IngredientAny.getInstance();
 
 ## Methods
 
-### addShiftTooltip
+:::group{name=addShiftTooltip}
 
 Return Type: void
 
@@ -48,7 +51,9 @@ IngredientAny.addShiftTooltip(content as MCTextComponent, showMessage as MCTextC
 | contenu     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
 
-### addTooltip
+:::
+
+:::group{name=addTooltip}
 
 Return Type: void
 
@@ -61,33 +66,42 @@ IngredientAny.addTooltip(content as MCTextComponent) as void
 | contenu   | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### anyDamage
+:::
+
+:::group{name=anyDamage}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
-myIngredientAny.anyDamage();
+// IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
+
+IngredientAny.getInstance().anyDamage();
 ```
 
-### clearTooltip
+:::
+
+:::group{name=clearTooltip}
 
 Return Type: void
 
 ```zenscript
-IngredientAny.clearTooltip() as void
-myIngredientAny.clearTooltip();
+// IngredientAny.clearTooltip() as void
+
+IngredientAny.getInstance().clearTooltip();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Does the ingredient contain the given ingredient?
 
 Return Type: boolean
 
 ```zenscript
-IngredientAny.contains(ingredient as IIngredient) as boolean
-myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+// IngredientAny.contains(ingredient as IIngredient) as boolean
+
+IngredientAny.getInstance().contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
 | Parameter  | Type                                          | Description             |
@@ -95,15 +109,18 @@ myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ing
 | ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
 
 
-### getRemainingItem
+:::
+
+:::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
-myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
+// IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
+
+IngredientAny.getInstance().getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type                                        | Description                               |
@@ -111,15 +128,18 @@ myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
 Return Type: boolean
 
 ```zenscript
-IngredientAny.matches(stack as IItemStack) as boolean
-myIngredientAny.matches(<item:minecraft:iron_ingot>);
+// IngredientAny.matches(stack as IItemStack) as boolean
+
+IngredientAny.getInstance().matches(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type                                        | Description        |
@@ -127,7 +147,9 @@ myIngredientAny.matches(<item:minecraft:iron_ingot>);
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### modifyTooltip
+:::
+
+:::group{name=modifyTooltip}
 
 Return Type: void
 
@@ -140,7 +162,9 @@ IngredientAny.modifyTooltip(function as ITooltipFunction) as void
 | function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### only
+:::
+
+:::group{name=only}
 
 Use this if you already have the condition from another ingredient
 
@@ -155,16 +179,21 @@ IngredientAny.only(condition as IIngredientCondition<IIngredient>) as MCIngredie
 | condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
 
-### onlyDamaged
+:::
+
+:::group{name=onlyDamaged}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
-myIngredientAny.onlyDamaged();
+// IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
+IngredientAny.getInstance().onlyDamaged();
 ```
 
-### onlyIf
+:::
+
+:::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -177,7 +206,9 @@ IngredientAny.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngr
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
-### removeTooltip
+:::
+
+:::group{name=removeTooltip}
 
 Return Type: void
 
@@ -190,32 +221,34 @@ IngredientAny.removeTooltip(regex as string) as void
 | regex     | string | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Does the ingredient contain the given ingredient?
 
 ```zenscript
 ingredient as IIngredient in myIngredientAny
-(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientAny
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in IngredientAny.getInstance()
 ```
 
+:::
 
-
-### OR
+:::group{name=OR}
 
 ```zenscript
 myIngredientAny | other as IIngredient
 ```
 
-
+:::
 
 
 ## Properties
 
-| Name     | Type | Has Getter | Has Setter |
-| -------- | ---- | ---------- | ---------- |
-| burnTime | void | false      | true       |
+| Name     | Type | Has Getter | Has Setter | Description                                                                      |
+| -------- | ---- | ---------- | ---------- | -------------------------------------------------------------------------------- |
+| burnTime | void | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
 
