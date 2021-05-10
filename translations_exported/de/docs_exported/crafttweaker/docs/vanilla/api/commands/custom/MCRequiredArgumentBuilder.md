@@ -25,7 +25,8 @@ MCRequiredArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/cust
 Return Type: [MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentCommandNode)
 
 ```zenscript
-MCRequiredArgumentBuilder.build() as MCArgumentCommandNode
+// MCRequiredArgumentBuilder.build() as MCArgumentCommandNode
+
 myMCRequiredArgumentBuilder.build();
 ```
 
@@ -99,7 +100,8 @@ MCRequiredArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirec
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
+// MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
+
 myMCRequiredArgumentBuilder.getArguments();
 ```
 
@@ -110,7 +112,8 @@ myMCRequiredArgumentBuilder.getArguments();
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCRequiredArgumentBuilder.getCommand() as MCCommand
+// MCRequiredArgumentBuilder.getCommand() as MCCommand
+
 myMCRequiredArgumentBuilder.getCommand();
 ```
 
@@ -121,7 +124,8 @@ myMCRequiredArgumentBuilder.getCommand();
 Return Type: string
 
 ```zenscript
-MCRequiredArgumentBuilder.getName() as string
+// MCRequiredArgumentBuilder.getName() as string
+
 myMCRequiredArgumentBuilder.getName();
 ```
 
@@ -132,7 +136,8 @@ myMCRequiredArgumentBuilder.getName();
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCRequiredArgumentBuilder.getRedirect() as MCCommandNode
+// MCRequiredArgumentBuilder.getRedirect() as MCCommandNode
+
 myMCRequiredArgumentBuilder.getRedirect();
 ```
 
@@ -143,7 +148,8 @@ myMCRequiredArgumentBuilder.getRedirect();
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCRequiredArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+// MCRequiredArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+
 myMCRequiredArgumentBuilder.getRedirectModifier();
 ```
 
@@ -154,7 +160,8 @@ myMCRequiredArgumentBuilder.getRedirectModifier();
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCRequiredArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+// MCRequiredArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+
 myMCRequiredArgumentBuilder.getRequirement();
 ```
 
@@ -165,7 +172,8 @@ myMCRequiredArgumentBuilder.getRequirement();
 Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
 
 ```zenscript
-MCRequiredArgumentBuilder.getSuggestionsProvider() as MCSuggestionProvider
+// MCRequiredArgumentBuilder.getSuggestionsProvider() as MCSuggestionProvider
+
 myMCRequiredArgumentBuilder.getSuggestionsProvider();
 ```
 
@@ -176,7 +184,8 @@ myMCRequiredArgumentBuilder.getSuggestionsProvider();
 Return Type: int
 
 ```zenscript
-MCRequiredArgumentBuilder.hashCode() as int
+// MCRequiredArgumentBuilder.hashCode() as int
+
 myMCRequiredArgumentBuilder.hashCode();
 ```
 
@@ -187,7 +196,8 @@ myMCRequiredArgumentBuilder.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCRequiredArgumentBuilder.isFork() as boolean
+// MCRequiredArgumentBuilder.isFork() as boolean
+
 myMCRequiredArgumentBuilder.isFork();
 ```
 
@@ -304,7 +314,8 @@ MCRequiredArgumentBuilder.then(argument as MCRequiredArgumentBuilder) as MCRequi
 Return Type: string
 
 ```zenscript
-MCRequiredArgumentBuilder.toString() as string
+// MCRequiredArgumentBuilder.toString() as string
+
 myMCRequiredArgumentBuilder.toString();
 ```
 
