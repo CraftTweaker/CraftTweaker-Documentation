@@ -49,7 +49,8 @@ new ListData(list as stdlib.List<IData>) as ListData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-ListData.asCollection() as ICollectionData
+// ListData.asCollection() as ICollectionData
+
 ["Hello", "World", "!"].asCollection();
 ```
 
@@ -62,7 +63,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-ListData.asMap() as IData[string]
+// ListData.asMap() as IData[string]
+
 ["Hello", "World", "!"].asMap();
 ```
 
@@ -73,7 +75,8 @@ ListData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-ListData.asNumber() as INumberData
+// ListData.asNumber() as INumberData
+
 ["Hello", "World", "!"].asNumber();
 ```
 
@@ -88,7 +91,8 @@ ListData.asNumber() as INumberData
 Return Type: byte
 
 ```zenscript
-ListData.getId() as byte
+// ListData.getId() as byte
+
 ["Hello", "World", "!"].getId();
 ```
 
@@ -101,7 +105,8 @@ ListData.getId() as byte
 Return Type: string
 
 ```zenscript
-ListData.getString() as string
+// ListData.getString() as string
+
 ["Hello", "World", "!"].getString();
 ```
 
