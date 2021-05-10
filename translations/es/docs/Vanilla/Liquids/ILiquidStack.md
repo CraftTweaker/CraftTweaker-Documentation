@@ -27,7 +27,7 @@ val lavaWithAmount = <liquid:lava> * 1000;
 As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | What is this?                                             | Return Type                                               | Example                                   |
+| Zengetter   | What is this?                                             | Return Type                                               | Ejemplo                                   |
 | ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
 | displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
