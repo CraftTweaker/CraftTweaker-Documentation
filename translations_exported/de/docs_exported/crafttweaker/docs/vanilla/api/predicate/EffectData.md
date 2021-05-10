@@ -20,7 +20,7 @@ EffectData extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/predicat
 
 ## Methoden
 
-### withAmbient
+:::group{name=withAmbient}
 
 Indicates that the effect must be environmental.
 
@@ -31,11 +31,14 @@ Indicates that the effect must be environmental.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withAmbient() as EffectData
+// EffectData.withAmbient() as EffectData
+
 myEffectData.withAmbient();
 ```
 
-### withBoundedAmplifier
+:::
+
+:::group{name=withBoundedAmplifier}
 
 Sets both the minimum and maximum value the amplifier should be to <code>min</code> and <code>max</code>
  respectively.
@@ -57,7 +60,9 @@ EffectData.withBoundedAmplifier(min as int, max as int) as EffectData
 | max       | int  | The maximum value the amplifier should be. |
 
 
-### withBoundedDuration
+:::
+
+:::group{name=withBoundedDuration}
 
 Sets both the minimum and maximum value the duration should be to <code>min</code> and <code>max</code>
  respectively.
@@ -79,7 +84,9 @@ EffectData.withBoundedDuration(min as int, max as int) as EffectData
 | max       | int  | The maximum value the duration should be. |
 
 
-### withExactAmplifier
+:::
+
+:::group{name=withExactAmplifier}
 
 Sets the amplifier to exactly match the given <code>value</code>.
 
@@ -96,7 +103,9 @@ EffectData.withExactAmplifier(value as int) as EffectData
 | value     | int  | The exact value the amplifier should be. |
 
 
-### withExactDuration
+:::
+
+:::group{name=withExactDuration}
 
 Sets the duration to exactly match the given <code>value</code>.
 
@@ -113,7 +122,9 @@ EffectData.withExactDuration(value as int) as EffectData
 | value     | int  | The exact value the duration should be. |
 
 
-### withInvisibility
+:::
+
+:::group{name=withInvisibility}
 
 Indicates that the effect's particles must be invisible.
 
@@ -122,11 +133,14 @@ Indicates that the effect's particles must be invisible.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withInvisibility() as EffectData
+// EffectData.withInvisibility() as EffectData
+
 myEffectData.withInvisibility();
 ```
 
-### withMaximumAmplifier
+:::
+
+:::group{name=withMaximumAmplifier}
 
 Sets the maximum value the amplifier should be to <code>max</code>.
 
@@ -145,7 +159,9 @@ EffectData.withMaximumAmplifier(max as int) as EffectData
 | max       | int  | The maximum value the amplifier should be. |
 
 
-### withMaximumDuration
+:::
+
+:::group{name=withMaximumDuration}
 
 Sets the maximum value the duration should be to <code>max</code>.
 
@@ -164,7 +180,9 @@ EffectData.withMaximumDuration(max as int) as EffectData
 | max       | int  | The maximum value the duration should be. |
 
 
-### withMinimumAmplifier
+:::
+
+:::group{name=withMinimumAmplifier}
 
 Sets the minimum value the amplifier should be to <code>min</code>.
 
@@ -183,7 +201,9 @@ EffectData.withMinimumAmplifier(min as int) as EffectData
 | min       | int  | The minimum value the amplifier should be. |
 
 
-### withMinimumDuration
+:::
+
+:::group{name=withMinimumDuration}
 
 Sets the minimum value the duration should be to <code>min</code>.
 
@@ -202,7 +222,9 @@ EffectData.withMinimumDuration(min as int) as EffectData
 | min       | int  | The minimum value the duration should be. |
 
 
-### withVisibility
+:::
+
+:::group{name=withVisibility}
 
 Indicates that the effect's particles must be visible.
 
@@ -211,11 +233,14 @@ Indicates that the effect's particles must be visible.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withVisibility() as EffectData
+// EffectData.withVisibility() as EffectData
+
 myEffectData.withVisibility();
 ```
 
-### withoutAmbient
+:::
+
+:::group{name=withoutAmbient}
 
 Indicates that the effect must not be environmental.
 
@@ -224,8 +249,11 @@ Indicates that the effect must not be environmental.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withoutAmbient() as EffectData
+// EffectData.withoutAmbient() as EffectData
+
 myEffectData.withoutAmbient();
 ```
+
+:::
 
 
