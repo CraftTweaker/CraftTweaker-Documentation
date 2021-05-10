@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Crucible
 
 ## Package
@@ -11,7 +13,7 @@
 - **setResultFluid(IFluidStack fluid)** the resulting fluid
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:crucible>.create("crucible_test").setInput(<item:minecraft:cobblestone>).setAmount(100).setCrucibleType("fired").setResultFluid(<fluid:minecraft:lava>);
