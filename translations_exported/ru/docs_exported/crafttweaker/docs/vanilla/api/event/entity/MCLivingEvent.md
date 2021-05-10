@@ -23,7 +23,8 @@ MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). 
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEvent.getEntityLiving() as MCLivingEntity
+// MCLivingEvent.getEntityLiving() as MCLivingEntity
+
 myMCLivingEvent.getEntityLiving();
 ```
 
@@ -32,7 +33,7 @@ myMCLivingEvent.getEntityLiving();
 
 ## Свойства
 
-| Название     | Тип                                                  | Имеет Getter | Имеет Setter |
-| ------------ | ---------------------------------------------------- | ------------ | ------------ |
-| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true         | false        |
+| Название     | Тип                                                  | Имеет Getter | Имеет Setter | Description             |
+| ------------ | ---------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true         | false        | No Description Provided |
 
