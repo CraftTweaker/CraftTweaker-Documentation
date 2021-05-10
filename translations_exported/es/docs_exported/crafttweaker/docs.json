@@ -4,14 +4,13 @@
       "Api": {
         "BracketHandlers": "vanilla/api/BracketHandlers.md",
         "Block": {
+          "MCBlock": "vanilla/api/block/MCBlock.md",
+          "MCBlockState": "vanilla/api/block/MCBlockState.md",
           "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
-            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
+            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md",
+            "PushReaction": "vanilla/api/block/material/PushReaction.md"
           }
-        },
-        "Blocks": {
-          "MCBlock": "vanilla/api/blocks/MCBlock.md",
-          "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
         },
         "Brackets": {
           "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
@@ -69,17 +68,20 @@
           "StringData": "vanilla/api/data/StringData.md"
         },
         "Enchantment": {
+          "EnchantmentRarity": "vanilla/api/enchantment/EnchantmentRarity.md",
           "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md"
         },
         "Entities": {
           "MCEntityType": "vanilla/api/entities/MCEntityType.md"
         },
         "Entity": {
+          "EntityIngredient": "vanilla/api/entity/EntityIngredient.md",
           "MCEntity": "vanilla/api/entity/MCEntity.md",
           "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
           "MCItemEntity": "vanilla/api/entity/MCItemEntity.md",
           "MCLivingEntity": "vanilla/api/entity/MCLivingEntity.md",
-          "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
+          "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md",
+          "PlacementType": "vanilla/api/entity/PlacementType.md"
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
@@ -93,6 +95,7 @@
             "MCBlockNeighborNotifyEvent": "vanilla/api/event/block/MCBlockNeighborNotifyEvent.md",
             "MCBlockPlaceEvent": "vanilla/api/event/block/MCBlockPlaceEvent.md",
             "MCBlockToolInteractEvent": "vanilla/api/event/block/MCBlockToolInteractEvent.md",
+            "MCCropGrowEvent": "vanilla/api/event/block/MCCropGrowEvent.md",
             "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
             "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
           },
@@ -124,7 +127,8 @@
               "MCLivingHealEvent": "vanilla/api/event/entity/living/MCLivingHealEvent.md",
               "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md",
               "MCLivingKnockBackEvent": "vanilla/api/event/entity/living/MCLivingKnockBackEvent.md",
-              "MCLivingSpawnEvent": "vanilla/api/event/entity/living/MCLivingSpawnEvent.md"
+              "MCLivingSpawnEvent": "vanilla/api/event/entity/living/MCLivingSpawnEvent.md",
+              "MCLivingUpdateEvent": "vanilla/api/event/entity/living/MCLivingUpdateEvent.md"
             },
             "Player": {
               "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
@@ -162,6 +166,7 @@
           }
         },
         "Fluid": {
+          "FluidIngredient": "vanilla/api/fluid/FluidIngredient.md",
           "IFluidStack": "vanilla/api/fluid/IFluidStack.md",
           "MCFluid": "vanilla/api/fluid/MCFluid.md"
         },
@@ -175,7 +180,8 @@
         "Item": {
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
-          "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md"
+          "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
+          "Rarity": "vanilla/api/item/Rarity.md"
         },
         "Objetos": {
           "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
@@ -250,11 +256,15 @@
           "CampFireManager": "vanilla/api/managers/CampFireManager.md",
           "CraftingTableManager": "vanilla/api/managers/CraftingTableManager.md",
           "FurnaceManager": "vanilla/api/managers/FurnaceManager.md",
+          "GenericRecipesManager": "vanilla/api/managers/GenericRecipesManager.md",
           "ICookingRecipeManager": "vanilla/api/managers/ICookingRecipeManager.md",
           "IRecipeManager": "vanilla/api/managers/IRecipeManager.md",
           "SmithingManager": "vanilla/api/managers/SmithingManager.md",
           "SmokerManager": "vanilla/api/managers/SmokerManager.md",
           "StoneCutterManager": "vanilla/api/managers/StoneCutterManager.md"
+        },
+        "Misc": {
+          "Composter": "vanilla/api/misc/Composter.md"
         },
         "Mods": {
           "ModInfo": "vanilla/api/mods/ModInfo.md",
@@ -301,6 +311,10 @@
           "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
         },
         "Tags": {
+          "ExpandEntityTag": "vanilla/api/tags/ExpandEntityTag.md",
+          "ExpandEntityTagWithAmount": "vanilla/api/tags/ExpandEntityTagWithAmount.md",
+          "ExpandFluidTag": "vanilla/api/tags/ExpandFluidTag.md",
+          "ExpandFluidTagWithAmount": "vanilla/api/tags/ExpandFluidTagWithAmount.md",
           "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
           "ExpandItemTagWithAmount": "vanilla/api/tags/ExpandItemTagWithAmount.md",
           "MCTag": "vanilla/api/tags/MCTag.md",
@@ -313,6 +327,9 @@
         },
         "Tileentity": {
           "MCTileEntity": "vanilla/api/tileentity/MCTileEntity.md"
+        },
+        "Tool": {
+          "ToolType": "vanilla/api/tool/ToolType.md"
         },
         "Util": {
           "BlockPos": "vanilla/api/util/BlockPos.md",
@@ -337,6 +354,8 @@
           "VillagerTrades": "vanilla/api/villager/VillagerTrades.md"
         },
         "World": {
+          "Explosion": "vanilla/api/world/Explosion.md",
+          "ExplosionMode": "vanilla/api/world/ExplosionMode.md",
           "MCBiome": "vanilla/api/world/MCBiome.md",
           "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
