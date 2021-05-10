@@ -26,12 +26,12 @@ MCAnvilUpdateEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all
 
 ## Properties
 
-| Name           | Type                                                  | Has Getter | Has Setter |
-| -------------- | ----------------------------------------------------- | ---------- | ---------- |
-| left           | [IItemStack](/vanilla/api/items/IItemStack)           | true       | false      |
-| levelCost      | int                                                   | true       | true       |
-| costo material | int                                                   | true       | true       |
-| output         | [IItemStack](/vanilla/api/items/IItemStack)           | true       | true       |
-| player         | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true       | false      |
-| right          | [IItemStack](/vanilla/api/items/IItemStack)           | true       | false      |
+| Name           | Type                                                  | Has Getter | Has Setter | Description             |
+| -------------- | ----------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| left           | [IItemStack](/vanilla/api/items/IItemStack)           | true       | false      | No Description Provided |
+| levelCost      | int                                                   | true       | true       | No Description Provided |
+| costo material | int                                                   | true       | true       | No Description Provided |
+| output         | [IItemStack](/vanilla/api/items/IItemStack)           | true       | true       | No Description Provided |
+| player         | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true       | false      | No Description Provided |
+| right          | [IItemStack](/vanilla/api/items/IItemStack)           | true       | false      | No Description Provided |
 
