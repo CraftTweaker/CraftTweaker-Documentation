@@ -23,7 +23,8 @@ MCEntityEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all meth
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCEntityEvent.getEntity() as MCEntity
+// MCEntityEvent.getEntity() as MCEntity
+
 myMCEntityEvent.getEntity();
 ```
 
@@ -32,7 +33,7 @@ myMCEntityEvent.getEntity();
 
 ## Свойства
 
-| Название | Тип                                      | Имеет Getter | Имеет Setter |
-| -------- | ---------------------------------------- | ------------ | ------------ |
-| entity   | [MCEntity](/vanilla/api/entity/MCEntity) | true         | false        |
+| Название | Тип                                      | Имеет Getter | Имеет Setter | Description             |
+| -------- | ---------------------------------------- | ------------ | ------------ | ----------------------- |
+| entity   | [MCEntity](/vanilla/api/entity/MCEntity) | true         | false        | No Description Provided |
 
