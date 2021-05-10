@@ -24,8 +24,8 @@ MCLivingAttackEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEv
 
 ## Свойства
 
-| Название | Тип                                            | Имеет Getter | Имеет Setter |
-| -------- | ---------------------------------------------- | ------------ | ------------ |
-| amount   | float                                          | true         | false        |
-| источник | [DamageSource](/vanilla/api/util/DamageSource) | true         | false        |
+| Название | Тип                                            | Имеет Getter | Имеет Setter | Description             |
+| -------- | ---------------------------------------------- | ------------ | ------------ | ----------------------- |
+| amount   | float                                          | true         | false        | No Description Provided |
+| источник | [DamageSource](/vanilla/api/util/DamageSource) | true         | false        | No Description Provided |
 
