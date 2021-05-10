@@ -26,7 +26,7 @@ MCEntityTravelToDimensionEvent extends [MCEntityEvent](/vanilla/api/event/entity
 
 ## Properties
 
-| 名称        | Type                                                       | Has Getter | Has Setter |
-| --------- | ---------------------------------------------------------- | ---------- | ---------- |
-| dimension | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| 名称        | Type                                                       | Has Getter | Has Setter | Description             |
+| --------- | ---------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| dimension | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      | No Description Provided |
 
