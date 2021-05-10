@@ -16,7 +16,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
