@@ -12,13 +12,24 @@ import crafttweaker.api.entity.MCEntityClassification;
 
 MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt;. That means all methods available in Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; are also available in MCEntityClassification
 
+## Static Properties
+
+| 名称             | Type                                                                 | Has Getter | Has Setter | Description             |
+| -------------- | -------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| AMBIENT        | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| CREATURE       | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| MISC           | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| MONSTER        | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| WATER_AMBIENT  | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| WATER_CREATURE | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+
 ## Properties
 
-| 名称                | Type     | Has Getter | Has Setter |
-| ----------------- | -------- | ---------- | ---------- |
-| commandString     | string   | true       | false      |
-| isAnimal          | boolean型 | true       | false      |
-| isPeaceful        | boolean型 | true       | false      |
-| maxNumberOfEntity | int      | true       | false      |
-| name              | string   | true       | false      |
+| 名称                | Type     | Has Getter | Has Setter | Description             |
+| ----------------- | -------- | ---------- | ---------- | ----------------------- |
+| commandString     | string   | true       | false      | No Description Provided |
+| isAnimal          | boolean型 | true       | false      | No Description Provided |
+| isPeaceful        | boolean型 | true       | false      | No Description Provided |
+| maxNumberOfEntity | int      | true       | false      | No Description Provided |
+| name              | string   | true       | false      | No Description Provided |
 
