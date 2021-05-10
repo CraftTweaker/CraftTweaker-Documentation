@@ -15,7 +15,8 @@ import crafttweaker.api.commands.custom.MCImmutableStringReader;
 Return Type: boolean
 
 ```zenscript
-MCImmutableStringReader.canRead() as boolean
+// MCImmutableStringReader.canRead() as boolean
+
 myMCImmutableStringReader.canRead();
 ```
 
@@ -41,7 +42,8 @@ MCImmutableStringReader.canRead(arg0 as int) as boolean
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getCursor() as int
+// MCImmutableStringReader.getCursor() as int
+
 myMCImmutableStringReader.getCursor();
 ```
 
@@ -52,7 +54,8 @@ myMCImmutableStringReader.getCursor();
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRead() as string
+// MCImmutableStringReader.getRead() as string
+
 myMCImmutableStringReader.getRead();
 ```
 
@@ -63,7 +66,8 @@ myMCImmutableStringReader.getRead();
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRemaining() as string
+// MCImmutableStringReader.getRemaining() as string
+
 myMCImmutableStringReader.getRemaining();
 ```
 
@@ -74,7 +78,8 @@ myMCImmutableStringReader.getRemaining();
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getRemainingLength() as int
+// MCImmutableStringReader.getRemainingLength() as int
+
 myMCImmutableStringReader.getRemainingLength();
 ```
 
@@ -85,7 +90,8 @@ myMCImmutableStringReader.getRemainingLength();
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getString() as string
+// MCImmutableStringReader.getString() as string
+
 myMCImmutableStringReader.getString();
 ```
 
@@ -96,7 +102,8 @@ myMCImmutableStringReader.getString();
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getTotalLength() as int
+// MCImmutableStringReader.getTotalLength() as int
+
 myMCImmutableStringReader.getTotalLength();
 ```
 
@@ -107,7 +114,8 @@ myMCImmutableStringReader.getTotalLength();
 Return Type: char
 
 ```zenscript
-MCImmutableStringReader.peek() as char
+// MCImmutableStringReader.peek() as char
+
 myMCImmutableStringReader.peek();
 ```
 
