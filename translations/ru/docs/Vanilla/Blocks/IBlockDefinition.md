@@ -17,22 +17,22 @@
 
 ## Геттеры/сеттеры
 
-| Геттер          | Сеттер              | Что он делает                                         | Тип                                                 |
-| --------------- | ------------------- | ----------------------------------------------------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | Возвращает, может ли сущность появиться на этом блоке | bool                                                |
-| creativeTab     | creativeTab         |                                                       | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                                       | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                                       | float                                               |
-| id              |                     | Возвращает ID блока                                   | string                                              |
-| displayName     |                     | Возвращает отображаемое имя блока                     | string                                              |
-|                 | hardness            |                                                       | int                                                 |
-| harvestLevel    |                     | Возвращает уровень добычи блока                       | int                                                 |
-| harvestTool     |                     | Возвращает инструмент для добычи этого блока          | string                                              |
-|                 | lightOpacity        |                                                       | int                                                 |
-|                 | lightLevel          |                                                       | int                                                 |
-|                 | resistance          |                                                       | int                                                 |
-| unlocalizedName |                     | Возвращает нелокализованное имя блока                 | string                                              |
-| tickRandomly    | tickRandomly        |                                                       | bool                                                |
+| Геттер          | Сеттер              | Что он делает                                     | Тип                                                 |
+| --------------- | ------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| canSpawnInBlock |                     | Returns true if an entity can spawn in this block | bool                                                |
+| creativeTab     | creativeTab         |                                                   | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                                   | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                                   | float                                               |
+| id              |                     | Возвращает ID блока                               | string                                              |
+| displayName     |                     | Возвращает отображаемое имя блока                 | string                                              |
+| hardness        | hardness            |                                                   | int                                                 |
+| harvestLevel    |                     | Возвращает уровень добычи блока                   | int                                                 |
+| harvestTool     |                     | Возвращает инструмент для добычи этого блока      | string                                              |
+|                 | lightOpacity        |                                                   | int                                                 |
+|                 | lightLevel          |                                                   | int                                                 |
+|                 | resistance          |                                                   | int                                                 |
+| unlocalizedName |                     | Возвращает нелокализованное имя блока             | string                                              |
+| tickRandomly    | tickRandomly        |                                                   | bool                                                |
 
 ## Методы
 
@@ -76,18 +76,44 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 
 ### setHarvestLevel
 
-Принимает строку и целое число.  
-Ничего не возвращает.
+Uses a string, an int and an optional [IBlockState](/Vanilla/Blocks/IBlockState/).  
+if the IBlockState argument is ignored, it will set harvest level to all block states in the block definition.  
+Returns void (nothing).
 
 ```zenscript
-defObj.setHarvestLevel(string toolclass, int level);
+defObj.setHarvestLevel(string toolclass, int level, @Optional IBlockState state);
 ```
 
-### Получить состояние блока метаданными
+### Get harvest level of block state
 
-Использует int.  
-возвращает [IBlockState](/Vanilla/Blocks/IBlockState/)
+returns an int.
+
+```zenscript
+defObj.getHarvestLevel(IBlockState state);
+```
+
+### Get harvest tool of block state
+
+returns a string.
+
+```zenscript
+defObj.getHarvestTool(IBlockState state);
+```
+
+### Get a block state by metadata
+
+Uses an int.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 defObj.getStateFromMeta(int meta);
+```
+
+### Block effective for the tool
+
+Uses a string and an [IBlockState](/Vanilla/Blocks/IBlockState/).  
+Returns a bool.
+
+```zenscript
+defObj.isToolEffective(String type, IBlockState state);
 ```
