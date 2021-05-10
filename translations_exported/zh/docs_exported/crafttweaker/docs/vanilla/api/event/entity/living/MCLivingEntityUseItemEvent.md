@@ -18,8 +18,8 @@ MCLivingEntityUseItemEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCL
 
 ## 参数
 
-| 名称       | 类型                                          | 可获得  | 可设置   |
-| -------- | ------------------------------------------- | ---- | ----- |
-| duration | int                                         | true | true  |
-| item     | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称       | 类型                                          | 可获得  | 可设置   | 描述                      |
+| -------- | ------------------------------------------- | ---- | ----- | ----------------------- |
+| duration | int                                         | true | true  | No Description Provided |
+| item     | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 
