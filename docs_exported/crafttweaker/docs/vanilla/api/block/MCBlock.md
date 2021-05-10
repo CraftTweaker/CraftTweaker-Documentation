@@ -184,7 +184,7 @@ Return Type: float
 
 :::group{name=getTags}
 
-Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.
+Gets all the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.
 
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt;
 
@@ -400,7 +400,7 @@ Return Type: void
 | material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | true | true | Gets the material of this Block. |
 | slipperiness | float | true | true | Gets the slipperiness of this Block. |
 | speedFactor | float | true | true | Gets the speed factor of this Block. |
-| tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt; | true | false | Gets all thr [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block. |
+| tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt; | true | false | Gets all the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block. |
 | translationKey | string | true | false | Gets the translation key that is used to localize this Block. |
 | validStates | stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt; | true | false | Gets a list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block. |
 | variableOpacity | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |
