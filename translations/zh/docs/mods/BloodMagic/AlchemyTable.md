@@ -11,17 +11,17 @@ The Alchemy Table is a type of [IRecipeManager](/vanilla/api/managers/IRecipeMan
 The following script will add a recipe that will output a Diamond when Coal is given to an Alchemy Table. The table will take 5 seconds to craft, requires a minimum tier of 0 and will drain (syphon) 0 LP from the player.
 
 ```zenscript
-// <recipetype:bloodmagic:alchemytable>.addRecipe(String name, IItemStack output, IIngredient[] input, int syphon, int ticks, int minimumTier)
+// <recipetype:bloodmagic:alchemytable>.addRecipe(name as string, output as IItemStack, input as IIngredient[], syphon as int, ticks as int, minimumTier as int)
 
 <recipetype:bloodmagic:alchemytable>.addRecipe("alchemytable_test", <item:minecraft:diamond>, [<item:minecraft:coal>], 0, 100, 0);
 ```
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alchemy Table that output a clay ball.
+The following script will remove all recipes from the Alchemy Table that output a clay ball.
 
 ```zenscript
-// <recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:alchemytable>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:alchemytable>.removeRecipe(<item:minecraft:clay_ball>);
 ```
