@@ -64,7 +64,8 @@ MCSingleRedirectModifier.equals(o as Object) as boolean
 Return Type: int
 
 ```zenscript
-MCSingleRedirectModifier.hashCode() as int
+// MCSingleRedirectModifier.hashCode() as int
+
 myMCSingleRedirectModifier.hashCode();
 ```
 
@@ -75,7 +76,8 @@ myMCSingleRedirectModifier.hashCode();
 Return Type: string
 
 ```zenscript
-MCSingleRedirectModifier.toString() as string
+// MCSingleRedirectModifier.toString() as string
+
 myMCSingleRedirectModifier.toString();
 ```
 
