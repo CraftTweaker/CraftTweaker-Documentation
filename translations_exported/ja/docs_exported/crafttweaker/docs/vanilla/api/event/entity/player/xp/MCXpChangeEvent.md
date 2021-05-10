@@ -27,7 +27,8 @@ Gets the amount of xp that the player's xp counter is being changed by.
 Return Type: int
 
 ```zenscript
-MCXpChangeEvent.getXp() as int
+// MCXpChangeEvent.getXp() as int
+
 event.getXp();
 ```
 
@@ -40,14 +41,14 @@ Sets the amount of xp to change the player's xp counter by.
 Return Type: void
 
 ```zenscript
-MCXpChangeEvent.setXp(amount as int) as void
+// MCXpChangeEvent.setXp(amount as int) as void
+
 event.setXp(15);
 ```
 
-| Parameter | Type | Description                                             |
-| --------- | ---- | ------------------------------------------------------- |
-| amount    | int  | The amount of xp that the player's xp counter should be |
- changed by. |
+| Parameter | Type | Description                                                                              |
+| --------- | ---- | ---------------------------------------------------------------------------------------- |
+| amount    | int  | The amount of xp that the player's xp counter should be <br />         changed by. |
 
 
 :::
@@ -55,7 +56,7 @@ event.setXp(15);
 
 ## Properties
 
-| 名称 | Type | Has Getter | Has Setter |
-| -- | ---- | ---------- | ---------- |
-| xp | int  | true       | true       |
+| 名称 | Type | Has Getter | Has Setter | Description                                                             |
+| -- | ---- | ---------- | ---------- | ----------------------------------------------------------------------- |
+| xp | int  | true       | true       | Gets the amount of xp that the player's xp counter is being changed by. |
 
