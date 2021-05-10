@@ -11,7 +11,7 @@ Die Alchemistische Reaktionskammer oder ARC ist vom Typ [IRecipeManager](/vanill
 Das folgende Skript wird dem ARC mehrere Rezepte hinzufügen. Hier sollten alle Grundlagen beschrieben sein.
 
 ```zenscript
-// <recipetype:bloodmagic:arc>addRecipe(String name, IItemStack output, IFluidStack outputFluid, IIngredient input, IFluidStack inputFluid, IIngredient arcTool, boolean consumeIngredient, @Optional MCWeightedItemStack[] addedItems)
+// <recipetype:bloodmagic:arc>addRecipe(name as string, output as IItemStack, outputFluid as IFluidStack, input as IIngredient, inputFluid as IFluidStack, arcTool as IIngredient, consumeIngredient as boolean, addedItems as @Optional MCWeightedItemStack[])
 
 <recipetype:bloodmagic:arc>.addRecipe("arc_recipe_test_all", <item:minecraft:glass>, <fluid:minecraft:lava>, <item:minecraft:diamond>, <fluid:minecraft:water>, <item:bloodmagic:basiccuttingfluid>.anyDamage(), false, [<item:minecraft:apple> % 50]);
 <recipetype:bloodmagic:arc>.addRecipe("arc_recipe_test_no_extras", <item:minecraft:diamond>, <fluid:minecraft:lava>, <item:minecraft:dirt>, <fluid:minecraft:water>, <item:bloodmagic:basiccuttingfluid>.anyDamage(), false);
@@ -26,10 +26,10 @@ Das folgende Skript wird dem ARC mehrere Rezepte hinzufügen. Hier sollten alle 
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus dem ARC entfernen, die einen Schwachen Blutsplitter ausgeben.
+The following script will remove all recipes from the ARC that output a Weak Blood Shard.
 
 ```zenscript
-// <recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:arc>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:arc>.removeRecipe(<item:bloodmagic:weakbloodshard>);
 ```
