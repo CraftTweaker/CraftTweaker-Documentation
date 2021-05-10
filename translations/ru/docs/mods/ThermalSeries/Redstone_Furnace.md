@@ -1,3 +1,5 @@
+::requiredMod[Thermal Expansion]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/thermal-expansion}
+
 # Redstone Furnace / Furnace
 
 ## Methods
@@ -13,7 +15,7 @@ The following script will add a recipe that will output a Gold Ingot by Smelting
 
 ## Remove Recipes
 
-The follow script will remove all Furnace recipes that output a Gold Ingot.
+The following script will remove all Furnace recipes that output a Gold Ingot.
 
 ```zenscript
 // <recipetype:thermal:furnace>.removeRecipe(IItemStack... output);
