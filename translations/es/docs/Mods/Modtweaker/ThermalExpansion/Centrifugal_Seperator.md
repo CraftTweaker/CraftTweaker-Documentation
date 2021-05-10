@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Centrifuge`
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
