@@ -24,7 +24,8 @@ import crafttweaker.api.data.IData;
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-IData.asCollection() as ICollectionData
+// IData.asCollection() as ICollectionData
+
 {Display: {lore: ["Hello", "World"]}}.asCollection();
 ```
 
@@ -37,7 +38,8 @@ IData.asCollection() as ICollectionData
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-IData.asList() as stdlib.List<IData>
+// IData.asList() as stdlib.List<IData>
+
 {Display: {lore: ["Hello", "World"]}}.asList();
 ```
 
@@ -50,7 +52,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-IData.asMap() as IData[string]
+// IData.asMap() as IData[string]
+
 {Display: {lore: ["Hello", "World"]}}.asMap();
 ```
 
@@ -61,7 +64,8 @@ IData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-IData.asNumber() as INumberData
+// IData.asNumber() as INumberData
+
 {Display: {lore: ["Hello", "World"]}}.asNumber();
 ```
 
@@ -74,7 +78,8 @@ IData.asNumber() as INumberData
 Return Type: string
 
 ```zenscript
-IData.asString() as string
+// IData.asString() as string
+
 {Display: {lore: ["Hello", "World"]}}.asString();
 ```
 
@@ -87,7 +92,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-IData.contains(data as IData) as boolean
+// IData.contains(data as IData) as boolean
+
 {Display: {lore: ["Hello", "World"]}}.contains("Display");
 ```
 
@@ -107,7 +113,8 @@ IData.contains(data as IData) as boolean
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-IData.copy() as IData
+// IData.copy() as IData
+
 {Display: {lore: ["Hello", "World"]}}.copy();
 ```
 
@@ -122,7 +129,8 @@ IData.copy() as IData
 Return Type: byte
 
 ```zenscript
-IData.getId() as byte
+// IData.getId() as byte
+
 {Display: {lore: ["Hello", "World"]}}.getId();
 ```
 
@@ -135,7 +143,8 @@ IData.getId() as byte
 Return Type: string
 
 ```zenscript
-IData.getString() as string
+// IData.getString() as string
+
 {Display: {lore: ["Hello", "World"]}}.getString();
 ```
 
