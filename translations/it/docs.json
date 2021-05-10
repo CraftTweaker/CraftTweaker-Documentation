@@ -1,19 +1,19 @@
 {
   "nav": {
-    "Pagina Principale": "index.md",
-    "Le Basi dello Scripting": "getting_started.md",
-    "Comandi": "commands.md",
-    "Esempi": "examples.md",
+    "Home": "index.md",
+    "Getting Started With Scripts": "getting_started.md",
+    "Commands": "commands.md",
+    "Examples": "examples.md",
     "Recipes": {
-      "Gestori di Ricette": "recipes/recipe_managers.md"
+      "Recipe Managers": "recipes/recipe_managers.md"
     },
     "Vanilla": {
-      "Come fare": {
-        "Ricette del Banco da Lavoro": "vanilla/how_to/crafting_table.md"
+      "How to": {
+        "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
       },
       "Api": {
         "Block": {
-          "Materiale": {
+          "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
             "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
           }
