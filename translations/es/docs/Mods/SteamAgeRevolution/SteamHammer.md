@@ -12,7 +12,7 @@ The Steam Hammer is a machine that converts two input items into an output item 
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
