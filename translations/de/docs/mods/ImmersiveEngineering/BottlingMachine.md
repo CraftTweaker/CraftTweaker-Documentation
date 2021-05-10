@@ -18,7 +18,7 @@ Das folgende Skript wird ein Rezept zu der Abfüllmaschine hinzufügen, die eine
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte von der Abfüllmaschine entfernen, die einen nassen Schwamm ausgibt.
+The following script will remove all recipes from the Bottling Machine that output a Wet Sponge.
 
 ```zenscript
 // <recipetype:immersiveengineering:bottling_machine>.removeRecipe(IItemStack output)
