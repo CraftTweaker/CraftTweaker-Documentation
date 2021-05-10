@@ -12,7 +12,7 @@ The Steam Furnace is a machine that converts an input item into an output item u
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
