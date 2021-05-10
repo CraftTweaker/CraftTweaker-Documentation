@@ -20,7 +20,7 @@ PlayerPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pre
 
 ## Methods
 
-### withAdvancementPredicate
+:::group{name=withAdvancementPredicate}
 
 Adds an advancement to the ones that should be checked, along with the [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate) that should be used to validate it.
 
@@ -38,7 +38,9 @@ PlayerPredicate.withAdvancementPredicate(advancement as string, builder as Consu
 | costruttore | Consumer&lt;[AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate)&gt; | A consumer to configure the [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate) for the given advancement. |
 
 
-### withBoundedExperienceLevel
+:::
+
+:::group{name=withBoundedExperienceLevel}
 
 Sets both the minimum and maximum value the experience level should be to <code>min</code> and <code>max</code>
  respectively.
@@ -60,7 +62,9 @@ PlayerPredicate.withBoundedExperienceLevel(min as int, max as int) as PlayerPred
 | max       | int  | The maximum value the experience level should be. |
 
 
-### withBoundedStatistic
+:::
+
+:::group{name=withBoundedStatistic}
 
 Sets both the minimum and maximum value the statistic should be to <code>minValue</code> and
  <code>maxValue</code> respectively.
@@ -84,7 +88,9 @@ PlayerPredicate.withBoundedStatistic(type as MCResourceLocation, name as MCResou
 | maxValue  | int                                                        | The maximum value the statistic should be. |
 
 
-### withExactExperienceLevel
+:::
+
+:::group{name=withExactExperienceLevel}
 
 Sets the experience level to exactly match the given <code>value</code>.
 
@@ -101,7 +107,9 @@ PlayerPredicate.withExactExperienceLevel(level as int) as PlayerPredicate
 | level     | int  | The exact value the experience level should be. |
 
 
-### withExactStatistic
+:::
+
+:::group{name=withExactStatistic}
 
 Sets the statistic to exactly match the given <code>value</code>.
 
@@ -120,7 +128,9 @@ PlayerPredicate.withExactStatistic(type as MCResourceLocation, name as MCResourc
 | value     | int                                                        | The exact value the statistic should be. |
 
 
-### withGameMode
+:::
+
+:::group{name=withGameMode}
 
 Sets the [GameMode](/vanilla/api/predicate/GameMode) the player has to be in.
 
@@ -135,7 +145,9 @@ PlayerPredicate.withGameMode(mode as GameMode) as PlayerPredicate
 | mode      | [GameMode](/vanilla/api/predicate/GameMode) | The game mode. |
 
 
-### withLockedRecipe
+:::
+
+:::group{name=withLockedRecipe}
 
 Adds the recipe <code>name</code> to the list of recipes that have to be locked.
 
@@ -152,7 +164,9 @@ PlayerPredicate.withLockedRecipe(name as string) as PlayerPredicate
 | name      | string | The name of the recipe that needs to be locked. |
 
 
-### withMaximumExperienceLevel
+:::
+
+:::group{name=withMaximumExperienceLevel}
 
 Sets the maximum value the experience level should be to <code>max</code>.
 
@@ -171,7 +185,9 @@ PlayerPredicate.withMaximumExperienceLevel(max as int) as PlayerPredicate
 | max       | int  | The maximum value the experience level should be. |
 
 
-### withMaximumStatistic
+:::
+
+:::group{name=withMaximumStatistic}
 
 Sets the maximum value the statistic should be to <code>max</code>.
 
@@ -192,7 +208,9 @@ PlayerPredicate.withMaximumStatistic(type as MCResourceLocation, name as MCResou
 | max       | int                                                        | The maximum value the statistic should be. |
 
 
-### withMinimumExperienceLevel
+:::
+
+:::group{name=withMinimumExperienceLevel}
 
 Sets the minimum value the experience level should be to <code>min</code>.
 
@@ -211,7 +229,9 @@ PlayerPredicate.withMinimumExperienceLevel(min as int) as PlayerPredicate
 | min       | int  | The minimum value the experience level should be. |
 
 
-### withMinimumStatistic
+:::
+
+:::group{name=withMinimumStatistic}
 
 Sets the minimum value the statistic should be to <code>min</code>.
 
@@ -232,7 +252,9 @@ PlayerPredicate.withMinimumStatistic(type as MCResourceLocation, name as MCResou
 | min       | int                                                        | The minimum value the statistic should be. |
 
 
-### withUnlockedRecipe
+:::
+
+:::group{name=withUnlockedRecipe}
 
 Adds the recipe <code>name</code> to the list of recipes that have to be unlocked.
 
@@ -248,5 +270,7 @@ PlayerPredicate.withUnlockedRecipe(name as string) as PlayerPredicate
 | --------- | ------ | ------------------------------------------------- |
 | name      | string | The name of the recipe that needs to be unlocked. |
 
+
+:::
 
 
