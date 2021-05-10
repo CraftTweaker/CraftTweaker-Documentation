@@ -19,7 +19,8 @@ Logs a debug message.
 Return Type: void
 
 ```zenscript
-ILogger.debug(message as string) as void
+// ILogger.debug(message as string) as void
+
 logger.debug("message");
 ```
 
@@ -37,7 +38,8 @@ Logs an error message.
 Return Type: void
 
 ```zenscript
-ILogger.error(message as string) as void
+// ILogger.error(message as string) as void
+
 logger.error("message");
 ```
 
@@ -55,7 +57,8 @@ Logs an info message.
 Return Type: void
 
 ```zenscript
-ILogger.info(message as string) as void
+// ILogger.info(message as string) as void
+
 logger.info("message");
 ```
 
@@ -73,7 +76,8 @@ Logs a trace message.
 Return Type: void
 
 ```zenscript
-ILogger.trace(message as string) as void
+// ILogger.trace(message as string) as void
+
 logger.trace("message");
 ```
 
@@ -91,7 +95,8 @@ Logs a warning message.
 Return Type: void
 
 ```zenscript
-ILogger.warning(message as string) as void
+// ILogger.warning(message as string) as void
+
 logger.warning("message");
 ```
 
