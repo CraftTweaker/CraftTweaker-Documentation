@@ -12,7 +12,7 @@
 - **int xp** The Experience cost for this recipe
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
