@@ -14,11 +14,18 @@ import crafttweaker.api.util.Direction;
 
 Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That means all methods available in Enum&lt;[Direction](/vanilla/api/util/Direction)&gt; are also available in Direction
 
-## Properties
+## Static Properties
 
-| 名称    | Type                                       | Has Getter | Has Setter |
-| ----- | ------------------------------------------ | ---------- | ---------- |
-| sides | [Direction](/vanilla/api/util/Direction)[] | true       | false      |
+| 名称    | Type                                       | Has Getter | Has Setter | Description             |
+| ----- | ------------------------------------------ | ---------- | ---------- | ----------------------- |
+| down  | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+| east  | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+| north | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+| sides | [Direction](/vanilla/api/util/Direction)[] | true       | false      | No Description Provided |
+| south | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+| up    | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+| west  | [Direction](/vanilla/api/util/Direction)   | true       | false      | No Description Provided |
+
 ## Methods
 
 :::group{name=rotateY}
@@ -28,7 +35,8 @@ Rotates this direction on the Y axis
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-Direction.rotateY() as Direction
+// Direction.rotateY() as Direction
+
 <direction:north>.rotateY();
 ```
 
@@ -41,7 +49,8 @@ Rotates this direction counter-clock wise on the Y axis
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-Direction.rotateYCCW() as Direction
+// Direction.rotateYCCW() as Direction
+
 <direction:north>.rotateYCCW();
 ```
 
@@ -50,16 +59,16 @@ Direction.rotateYCCW() as Direction
 
 ## Properties
 
-| 名称              | Type                                             | Has Getter | Has Setter |
-| --------------- | ------------------------------------------------ | ---------- | ---------- |
-| axis            | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                              | true       | false      |
-| horizontalAngle | float                                            | true       | false      |
-| horizontalIndex | int                                              | true       | false      |
-| index           | int                                              | true       | false      |
-| name            | string                                           | true       | false      |
-| opposite        | [Direction](/vanilla/api/util/Direction)         | true       | false      |
-| xOffset         | int                                              | true       | false      |
-| yOffset         | int                                              | true       | false      |
-| zOffset         | int                                              | true       | false      |
+| 名称              | Type                                             | Has Getter | Has Setter | Description                                                                                                                           |
+| --------------- | ------------------------------------------------ | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| axis            | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      | Gets the direction axis of this direction                                                                                             |
+| axisOffset      | int                                              | true       | false      | Gets the offset of this axis (is it pointing towards position or negative). down is negative, up is positive (-y for down, +y for up) |
+| horizontalAngle | float                                            | true       | false      | Gets the horizontal angle of this direction                                                                                           |
+| horizontalIndex | int                                              | true       | false      | Get the index of this horizontal direction (0-3). The order is S-W-N-E                                                                |
+| index           | int                                              | true       | false      | Get the Index of this direction (0-5). The order is D-U-N-S-W-E                                                                       |
+| name            | string                                           | true       | false      | Gets the name of this direction                                                                                                       |
+| opposite        | [Direction](/vanilla/api/util/Direction)         | true       | false      | Gets the opposite of this Direction (north returns south)                                                                             |
+| xOffset         | int                                              | true       | false      | Gets the X offset of this direction                                                                                                   |
+| yOffset         | int                                              | true       | false      | Gets the Y offset of this direction                                                                                                   |
+| zOffset         | int                                              | true       | false      | Gets the Z offset of this direction                                                                                                   |
 
