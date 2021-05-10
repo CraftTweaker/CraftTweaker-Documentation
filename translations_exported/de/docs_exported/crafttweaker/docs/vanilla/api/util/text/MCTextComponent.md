@@ -8,7 +8,7 @@ import crafttweaker.api.util.text.MCTextComponent;
 ```
 
 
-## Methoden
+## Static Methods
 
 :::group{name=createStringTextComponent}
 
@@ -99,7 +99,8 @@ MCTextComponent.appendText(text as string) as MCTextComponent
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.copyRaw() as MCTextComponent
+// MCTextComponent.copyRaw() as MCTextComponent
+
 myMCTextComponent.copyRaw();
 ```
 
@@ -110,7 +111,8 @@ myMCTextComponent.copyRaw();
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.deepCopy() as MCTextComponent
+// MCTextComponent.deepCopy() as MCTextComponent
+
 myMCTextComponent.deepCopy();
 ```
 
@@ -121,7 +123,8 @@ myMCTextComponent.deepCopy();
 Return Type: string
 
 ```zenscript
-MCTextComponent.getString() as string
+// MCTextComponent.getString() as string
+
 myMCTextComponent.getString();
 ```
 
@@ -147,7 +150,8 @@ MCTextComponent.getStringTruncated(maxLen as int) as string
 Return Type: string
 
 ```zenscript
-MCTextComponent.getUnformattedComponentText() as string
+// MCTextComponent.getUnformattedComponentText() as string
+
 myMCTextComponent.getUnformattedComponentText();
 ```
 
@@ -198,9 +202,9 @@ myMCTextComponent << component as MCTextComponent
 
 ## Properties
 
-| Name                     | Type                                                                                     | Has Getter | Has Setter |
-| ------------------------ | ---------------------------------------------------------------------------------------- | ---------- | ---------- |
-| formattedText            | string                                                                                   | true       | false      |
-| siblings                 | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
-| unformattedComponentText | string                                                                                   | true       | false      |
+| Name                     | Type                                                                                     | Has Getter | Has Setter | Beschreibung            |
+| ------------------------ | ---------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| formattedText            | string                                                                                   | true       | false      | No Description Provided |
+| siblings                 | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      | No Description Provided |
+| unformattedComponentText | string                                                                                   | true       | false      | No Description Provided |
 
