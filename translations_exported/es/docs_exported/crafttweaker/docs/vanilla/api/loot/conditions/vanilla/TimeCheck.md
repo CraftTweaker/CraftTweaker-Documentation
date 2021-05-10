@@ -21,7 +21,7 @@ TimeCheck implements the following interfaces. That means all methods defined in
 
 ## Methods
 
-### withExactValue
+:::group{name=withExactValue}
 
 Sets the game time to exactly match the given <code>value</code>.
 
@@ -40,7 +40,9 @@ TimeCheck.withExactValue(value as int) as TimeCheck
 | value     | int  | The exact value the world time must have. |
 
 
-### withMaximumValue
+:::
+
+:::group{name=withMaximumValue}
 
 Sets the maximum value of the game time to <code>max</code>.
 
@@ -61,7 +63,9 @@ TimeCheck.withMaximumValue(max as int) as TimeCheck
 | max       | int  | The maximum value the game time can have. |
 
 
-### withMinimumValue
+:::
+
+:::group{name=withMinimumValue}
 
 Sets the minimum value of the game time to <code>min</code>.
 
@@ -82,7 +86,9 @@ TimeCheck.withMinimumValue(min as int) as TimeCheck
 | min       | int  | The minimum value the game time can have. |
 
 
-### withRangedValue
+:::
+
+:::group{name=withRangedValue}
 
 Sets both the minimum and maximum values of the game time respectively to <code>min</code> and <code>max</code>.
 
@@ -105,7 +111,9 @@ TimeCheck.withRangedValue(min as int, max as int) as TimeCheck
 | max       | int  | The maximum value the game time can have. |
 
 
-### withTimePeriod
+:::
+
+:::group{name=withTimePeriod}
 
 Sets the time period to use for the modulo operation.
 
@@ -124,5 +132,7 @@ TimeCheck.withTimePeriod(period as int) as TimeCheck
 | --------- | ---- | ------------------------------------------------ |
 | period    | int  | The time period to use for the modulo operation. |
 
+
+:::
 
 
