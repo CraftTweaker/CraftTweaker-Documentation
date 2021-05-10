@@ -24,7 +24,7 @@ MCItemTossEvent extends [MCItemEvent](/vanilla/api/event/entity/MCItemEvent). Th
 
 ## Properties
 
-| Name   | Type                                                 | Ha Getter | Ha Setter |
-| ------ | ---------------------------------------------------- | --------- | --------- |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     |
+| Name   | Type                                                 | Ha Getter | Ha Setter | Description             |
+| ------ | ---------------------------------------------------- | --------- | --------- | ----------------------- |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     | No Description Provided |
 
