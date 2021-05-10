@@ -19,19 +19,14 @@ Json implements the following interfaces. That means all methods defined in thes
 
 - [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder)
 
-## Methoden
+## Static Methods
 
 :::group{name=create}
 
-Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
+Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>. <br />  <br />  The JSON must respect the constraints specified in the class documentation. It is suggested to use this method <br />  sparingly, preferring to instead create JSON conditions as needed from within a [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder). <br />  <br />  If no valid condition is found, or the JSON is invalid, an error gets thrown. <br />  <br />  This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
- The JSON must respect the constraints specified in the class documentation. It is suggested to use this method sparingly, preferring to instead create JSON conditions as needed from within a [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
-
- If no valid condition is found, or the JSON is invalid, an error gets thrown.
-
- This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
-
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible. Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
+Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
 Json.create(type as MCResourceLocation, json as IData) as ILootCondition
@@ -47,17 +42,10 @@ Json.create(type as MCResourceLocation, json as IData) as ILootCondition
 
 :::group{name=create}
 
-Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>.
+Creates an [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) of the given <code>type</code> parsing the given <code>json</code>. <br />  <br />  The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this <br />  reason, it's suggested to prefer the method with a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) as parameter. <br />  <br />  The JSON must respect the constraints specified in the class documentation. It is suggested to use this method <br />  sparingly, preferring to instead create JSON conditions as needed from within a [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder). <br />  <br />  If no valid condition is found, or the JSON is invalid, an error gets thrown. <br />  <br />  This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
 
- The name is treated as a [MCResourceLocation](/vanilla/api/util/MCResourceLocation), lacking the type safety of the bracket handler. For this reason, it's suggested to prefer the method with a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) as parameter.
-
- The JSON must respect the constraints specified in the class documentation. It is suggested to use this method sparingly, preferring to instead create JSON conditions as needed from within a [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
-
- If no valid condition is found, or the JSON is invalid, an error gets thrown.
-
- This method is equivalent to <code>makeJson</code> in [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder).
-
-Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible. Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
+Returns: An [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) instance built according to the given data, if possible.  
+Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
 Json.create(type as string, json as IData) as ILootCondition
