@@ -44,13 +44,13 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 
 ## 参数
 
-| 名称            | 类型                                                                         | 可获得  | 可设置   |
-| ------------- | -------------------------------------------------------------------------- | ---- | ----- |
-| commandString | string                                                                     | true | false |
-| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
-| displayName   | string                                                                     | true | false |
-| isBeneficial  | boolean                                                                    | true | false |
-| isInstant     | boolean                                                                    | true | false |
-| liquidColor   | int                                                                        | true | false |
-| name          | string                                                                     | true | false |
+| 名称            | 类型                                                                         | 可获得  | 可设置   | 描述                      |
+| ------------- | -------------------------------------------------------------------------- | ---- | ----- | ----------------------- |
+| commandString | string                                                                     | true | false | No Description Provided |
+| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false | No Description Provided |
+| displayName   | string                                                                     | true | false | No Description Provided |
+| isBeneficial  | boolean                                                                    | true | false | No Description Provided |
+| isInstant     | boolean                                                                    | true | false | No Description Provided |
+| liquidColor   | int                                                                        | true | false | No Description Provided |
+| name          | string                                                                     | true | false | No Description Provided |
 
