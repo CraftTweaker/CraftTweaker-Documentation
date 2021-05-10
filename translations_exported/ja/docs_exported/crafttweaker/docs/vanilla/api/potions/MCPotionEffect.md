@@ -44,13 +44,13 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 
 ## Properties
 
-| 名称            | Type                                                                       | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | string                                                                     | true       | false      |
-| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true       | false      |
-| displayName   | string                                                                     | true       | false      |
-| isBeneficial  | boolean型                                                                   | true       | false      |
-| isInstant     | boolean型                                                                   | true       | false      |
-| liquidColor   | int                                                                        | true       | false      |
-| name          | string                                                                     | true       | false      |
+| 名称            | Type                                                                       | Has Getter | Has Setter | Description             |
+| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| commandString | string                                                                     | true       | false      | No Description Provided |
+| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true       | false      | No Description Provided |
+| displayName   | string                                                                     | true       | false      | No Description Provided |
+| isBeneficial  | boolean型                                                                   | true       | false      | No Description Provided |
+| isInstant     | boolean型                                                                   | true       | false      | No Description Provided |
+| liquidColor   | int                                                                        | true       | false      | No Description Provided |
+| name          | string                                                                     | true       | false      | No Description Provided |
 
