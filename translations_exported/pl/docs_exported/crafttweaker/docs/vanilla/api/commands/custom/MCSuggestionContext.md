@@ -36,7 +36,8 @@ MCSuggestionContext.equals(o as Object) as boolean
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCSuggestionContext.getParent() as MCCommandNode
+// MCSuggestionContext.getParent() as MCCommandNode
+
 myMCSuggestionContext.getParent();
 ```
 
@@ -47,7 +48,8 @@ myMCSuggestionContext.getParent();
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.getStartPos() as int
+// MCSuggestionContext.getStartPos() as int
+
 myMCSuggestionContext.getStartPos();
 ```
 
@@ -58,7 +60,8 @@ myMCSuggestionContext.getStartPos();
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.hashCode() as int
+// MCSuggestionContext.hashCode() as int
+
 myMCSuggestionContext.hashCode();
 ```
 
@@ -69,7 +72,8 @@ myMCSuggestionContext.hashCode();
 Return Type: string
 
 ```zenscript
-MCSuggestionContext.toString() as string
+// MCSuggestionContext.toString() as string
+
 myMCSuggestionContext.toString();
 ```
 
