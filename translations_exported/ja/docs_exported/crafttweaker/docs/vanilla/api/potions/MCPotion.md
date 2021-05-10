@@ -28,9 +28,9 @@ MCPotion.getNamePrefixed(name as string) as string
 
 ## Properties
 
-| 名称               | Type                                                                                                 | Has Getter | Has Setter |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| commandString    | string                                                                                               | true       | false      |
-| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true       | false      |
-| hasInstantEffect | boolean型                                                                                             | true       | false      |
+| 名称               | Type                                                                                                 | Has Getter | Has Setter | Description             |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| commandString    | string                                                                                               | true       | false      | No Description Provided |
+| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true       | false      | No Description Provided |
+| hasInstantEffect | boolean型                                                                                             | true       | false      | No Description Provided |
 
