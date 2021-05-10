@@ -1,25 +1,27 @@
+::requiredMod[Botania]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/botania}
+
 # Botania Runic Altar
 
-Der Runic Altar ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die dem IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
+The Runic Altar is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-Das folgende Skript fügt dem Runic Altar ein Rezept hinzu, das 200 Mana verwendet und einen Diamanten gibt, wenn ein Stück Erde und ein Apfel in den Runic Altar gelegt werden (Du musst das Rezept trotzdem vervollständigen, indem du dem Altar ein Living Rock gibst).
+The following script will add a recipe to the Runic Altar that will use 200 mana and give a Diamond when a piece of Dirt and an Apple are put in the Runic Altar (You will still need to complete the recipe by giving the Altar a piece of Living Rock).
 
 ```zenscript
-// <recipetype:botania:runic_altar>.addRecipe(String name, IItemStack output, int mana, IIngredient... inputs)
+// <recipetype:botania:runic_altar>.addRecipe(name as string, output as IItemStack, mana as int, inputs as IIngredient...)
 
 <recipetype:botania:runic_altar>.addRecipe("rune_altar_test", <item:minecraft:diamond>, 200, <item:minecraft:dirt>, <item:minecraft:apple>);
 ```
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Runic Altar-Rezepte entfernen, die eine Rune des Zorns ausgeben
+The following script will remove all Runic Altar recipes that output a Rune of Wrath
 
 ```zenscript
-// <recipetype:botania:runic_altar>.removeRecipe(IItemStack output);
+// <recipetype:botania:runic_altar>.removeRecipe(output as IItemStack);
 
 <recipetype:botania:runic_altar>.removeRecipe(<item:botania:rune_wrath>);
 ```
