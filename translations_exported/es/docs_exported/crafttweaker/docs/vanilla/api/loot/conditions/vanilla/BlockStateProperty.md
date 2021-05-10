@@ -2,7 +2,7 @@
 
 Builder to create a 'BlockStateProperty' loot condition.
 
- This condition compares the the block state obtained from the [LootContext](/vanilla/api/loot/LootContext) and attempts to match it to the given [MCBlock](/vanilla/api/blocks/MCBlock). If this comparison succeeds, then the state is further compared according to the rules outlined in the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate).
+ This condition compares the the block state obtained from the [LootContext](/vanilla/api/loot/LootContext) and attempts to match it to the given [MCBlock](/vanilla/api/block/MCBlock). If this comparison succeeds, then the state is further compared according to the rules outlined in the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate).
 
  This condition thus passes only if the block matches the given one and, optionally, if all the state properties match according to the predicate given to this loot condition.
 
@@ -23,7 +23,7 @@ BlockStateProperty implements the following interfaces. That means all methods d
 
 ## Methods
 
-### withBlock
+:::group{name=withBlock}
 
 Sets the block that should be matched by the loot condition.
 
@@ -35,12 +35,14 @@ Return Type: [BlockStateProperty](/vanilla/api/loot/conditions/vanilla/BlockStat
 BlockStateProperty.withBlock(block as MCBlock) as BlockStateProperty
 ```
 
-| Parameter | Type                                   | Description              |
-| --------- | -------------------------------------- | ------------------------ |
-| block     | [MCBlock](/vanilla/api/blocks/MCBlock) | The block to be matched. |
+| Parameter | Type                                  | Description              |
+| --------- | ------------------------------------- | ------------------------ |
+| block     | [MCBlock](/vanilla/api/block/MCBlock) | The block to be matched. |
 
 
-### withStatePropertiesPredicate
+:::
+
+:::group{name=withStatePropertiesPredicate}
 
 Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) that will be matched against the state's properties.
 
@@ -58,5 +60,7 @@ BlockStateProperty.withStatePropertiesPredicate(builder as Consumer<StatePropert
 | ----------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | constructor | Consumer&lt;[StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)&gt; | A consumer that will be used to configure the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate). |
 
+
+:::
 
 
