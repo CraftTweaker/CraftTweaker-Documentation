@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Heating Sources
 
 ## Package
@@ -10,7 +12,7 @@
 
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:heat>.create("heat_test").setBlock(<block:minecraft:cobblestone>).setAmount(100);
