@@ -21,7 +21,7 @@ BlockState implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### withState
+:::group{name=withState}
 
 Sets the state that the condition must check.
 
@@ -35,9 +35,11 @@ Return Type: [BlockState](/vanilla/api/loot/conditions/crafttweaker/BlockState)
 BlockState.withState(state as MCBlockState) as BlockState
 ```
 
-| Parameter | Type                                             | Description         |
-| --------- | ------------------------------------------------ | ------------------- |
-| state     | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The state to check. |
+| Parameter | Type                                            | Description         |
+| --------- | ----------------------------------------------- | ------------------- |
+| state     | [MCBlockState](/vanilla/api/block/MCBlockState) | The state to check. |
 
+
+:::
 
 
