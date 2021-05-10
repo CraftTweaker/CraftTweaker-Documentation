@@ -18,7 +18,7 @@ Se considera una buena idea separar lo que hagas en más de un archivo
 - Separa tus archivos en otros más pequeños y nombralos de forma lógica.
 - Por ejemplo, podrías crear un archivo para cada mod o para cada máquina de mod a la que añadas o modifiques recetas.
 
-## Example
+## Ejemplo 
 
 ```zenscript
 scripts
