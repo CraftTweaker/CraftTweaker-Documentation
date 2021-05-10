@@ -15,7 +15,8 @@ Used implicitly when a machine can accept more than one item but you only provid
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
+// IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
+
 <tag:items:forge:ingots>.asIIngredientWithAmount();
 ```
 
@@ -43,7 +44,8 @@ IIngredient.mul(amount as int) as IIngredientWithAmount
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IIngredient.reuse() as MCIngredientTransformed<IIngredient>
+// IIngredient.reuse() as MCIngredientTransformed<IIngredient>
+
 <tag:items:forge:ingots>.reuse();
 ```
 
