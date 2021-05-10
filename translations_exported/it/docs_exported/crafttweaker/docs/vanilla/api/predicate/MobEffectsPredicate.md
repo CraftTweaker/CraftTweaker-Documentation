@@ -20,7 +20,7 @@ MobEffectsPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api
 
 ## Methods
 
-### withEffect
+:::group{name=withEffect}
 
 Adds an [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) to the ones that should be present on the entity, along with the [EffectData](/vanilla/api/predicate/EffectData) it should have.
 
@@ -37,5 +37,7 @@ MobEffectsPredicate.withEffect(effect as MCPotionEffect, builder as Consumer<Eff
 | effect      | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)                       | The effect that should be present on the entity.                                                  |
 | costruttore | Consumer&lt;[EffectData](/vanilla/api/predicate/EffectData)&gt; | A consumer to configure the [EffectData](/vanilla/api/predicate/EffectData) for the given effect. |
 
+
+:::
 
 
