@@ -49,23 +49,6 @@ mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutpu
 mods.nuclearcraft.FissionIrradiator.removeAllRecipes();
 ```
 
-## Pebble Bed Fission
-
-### Importing the Package
-`mods.nuclearcraft.PebbleFission`
-
-### Adding Recipes
-```zenscript
-mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
-```
-
-### Removing Recipes
-```zenscript
-mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.PebbleFission.removeAllRecipes();
-```
-
 ## Solid Fuel Fission
 
 ### Importing the Package
