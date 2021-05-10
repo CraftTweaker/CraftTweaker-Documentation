@@ -36,7 +36,8 @@ MCParseResults.equals(o as Object) as boolean
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCParseResults.getContext() as MCCommandContextBuilder
+// MCParseResults.getContext() as MCCommandContextBuilder
+
 myMCParseResults.getContext();
 ```
 
@@ -47,7 +48,8 @@ myMCParseResults.getContext();
 Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
-MCParseResults.getExceptions() as Exception[MCCommandNode]
+// MCParseResults.getExceptions() as Exception[MCCommandNode]
+
 myMCParseResults.getExceptions();
 ```
 
@@ -58,7 +60,8 @@ myMCParseResults.getExceptions();
 Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
 
 ```zenscript
-MCParseResults.getReader() as MCImmutableStringReader
+// MCParseResults.getReader() as MCImmutableStringReader
+
 myMCParseResults.getReader();
 ```
 
@@ -69,7 +72,8 @@ myMCParseResults.getReader();
 Return Type: int
 
 ```zenscript
-MCParseResults.hashCode() as int
+// MCParseResults.hashCode() as int
+
 myMCParseResults.hashCode();
 ```
 
@@ -80,7 +84,8 @@ myMCParseResults.hashCode();
 Return Type: string
 
 ```zenscript
-MCParseResults.toString() as string
+// MCParseResults.toString() as string
+
 myMCParseResults.toString();
 ```
 
