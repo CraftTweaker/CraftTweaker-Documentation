@@ -39,7 +39,7 @@ Das folgende Skript fügt ein "bullet" Blaupausenrezept hinzu, das ein Stück Re
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Blaupausenrezepte entfernen, die eine Kasull-Patrone ausgeben.
+The following script will remove all Blueprint recipes that output a Casull Cartridge.
 
 ```zenscript
 // <recipetype:immersiveengineering:blueprint>.removeRecipe(IItemStack output)
