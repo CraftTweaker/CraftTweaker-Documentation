@@ -11,17 +11,17 @@ Die Glyphenpresse ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeMana
 Das folgende Skript fügt der Glyphenpresse ein Tier "1" Rezept hinzu, das einen Diamanten ausgibt, wenn der Presse Erde gegeben wird.
 
 ```zenscript
-// <recipetype:ars_nouveau:glyph_recipe>.addRecipe(String name, String tier, IItemStack reagent, IItemStack output);
+// <recipetype:ars_nouveau:glyph_recipe>.addRecipe(name as String, tier as String, reagent as IItemStack, output as IItemStack);
 
 <recipetype:ars_nouveau:glyph_recipe>.addRecipe("glyph_test", "one", <item:minecraft:dirt>, <item:minecraft:diamond>);
 ```
 
 #### Remove Recipes
 
-Das folgende Skript entfernt alle Rezepte von der Glyphenpresse, die "Glyph: Touch" ausgibt.
+The following script will remove all recipes from the Glyph Press that output Glyph: Touch.
 
 ```zenscript
-// <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(IItemStack output);
+// <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(output as IItemStack);
 
 <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(<item:ars_nouveau:glyph_touch>);
 ```
