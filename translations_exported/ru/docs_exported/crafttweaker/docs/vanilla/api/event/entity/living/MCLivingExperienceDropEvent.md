@@ -24,9 +24,9 @@ MCLivingExperienceDropEvent extends [MCLivingEvent](/vanilla/api/event/entity/MC
 
 ## Свойства
 
-| Название                 | Тип                                                  | Имеет Getter | Имеет Setter |
-| ------------------------ | ---------------------------------------------------- | ------------ | ------------ |
-| attackingPlayer          | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true         | false        |
-| droppedExperience        | int                                                  | true         | true         |
-| originalExperiencePoints | int                                                  | true         | false        |
+| Название                 | Тип                                                  | Имеет Getter | Имеет Setter | Description             |
+| ------------------------ | ---------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| attackingPlayer          | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true         | false        | No Description Provided |
+| droppedExperience        | int                                                  | true         | true         | No Description Provided |
+| originalExperiencePoints | int                                                  | true         | false        | No Description Provided |
 
