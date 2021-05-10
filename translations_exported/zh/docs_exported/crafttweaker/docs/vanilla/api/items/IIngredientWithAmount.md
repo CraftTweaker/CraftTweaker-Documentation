@@ -17,9 +17,9 @@ IIngredientWithAmount implements the following interfaces. That means all method
 
 ## 参数
 
-| 名称            | 类型                                                | 可获得  | 可设置   |
-| ------------- | ------------------------------------------------- | ---- | ----- |
-| amount        | int                                               | true | false |
-| commandString | string                                            | true | false |
-| ingredient    | [材料（IIngredient）](/vanilla/api/items/IIngredient) | true | false |
+| 名称            | 类型                                                | 可获得  | 可设置   | 描述                                        |
+| ------------- | ------------------------------------------------- | ---- | ----- | ----------------------------------------- |
+| amount        | int                                               | true | false | Gets the amount of Items in the ItemStack |
+| commandString | string                                            | true | false | Returns the BEP to get this thingy        |
+| ingredient    | [材料（IIngredient）](/vanilla/api/items/IIngredient) | true | false | The backing ingredient                    |
 
