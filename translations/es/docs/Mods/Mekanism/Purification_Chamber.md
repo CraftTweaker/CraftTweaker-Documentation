@@ -2,7 +2,7 @@
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Purification Chamber through the command `/ct mekrecipes purification`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
