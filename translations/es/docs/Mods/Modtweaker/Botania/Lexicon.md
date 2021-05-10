@@ -8,7 +8,7 @@ You can call the Lexicon package using `mods.botania.Lexicon`
 
 ## Pages
 
-### Addition
+### Suma
 
 ```zenscript
 mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
@@ -33,7 +33,7 @@ mods.botania.Lexicon.removePage(String entry, int page_number);
 
 ## Entries
 
-### Addition
+### Suma
 
 ```zenscript
 mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
@@ -47,7 +47,7 @@ mods.botania.Lexicon.removeEntry(String entry);
 
 ## Categories
 
-### Addition
+### Suma
 
 ```zenscript
 mods.botania.Lexicon.addCategory(String name);
