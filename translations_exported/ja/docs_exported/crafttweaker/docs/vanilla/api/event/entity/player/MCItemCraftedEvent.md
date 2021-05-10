@@ -23,7 +23,8 @@ MCItemCraftedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemCraftedEvent.getCrafting() as IItemStack
+// MCItemCraftedEvent.getCrafting() as IItemStack
+
 myMCItemCraftedEvent.getCrafting();
 ```
 
@@ -32,7 +33,7 @@ myMCItemCraftedEvent.getCrafting();
 
 ## Properties
 
-| 名称       | Type                                        | Has Getter | Has Setter |
-| -------- | ------------------------------------------- | ---------- | ---------- |
-| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| 名称       | Type                                        | Has Getter | Has Setter | Description             |
+| -------- | ------------------------------------------- | ---------- | ---------- | ----------------------- |
+| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | No Description Provided |
 
