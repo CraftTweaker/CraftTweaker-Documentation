@@ -11,7 +11,7 @@
 - **int power** Power consumption, measured in EU/tick
 - **@Optional int time** Time cost. Default to 200 if not given.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] outputs, ILiquidStack input, int power, @Optional int time);
