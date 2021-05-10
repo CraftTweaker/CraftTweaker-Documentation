@@ -9,7 +9,7 @@
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Addition
+## Suma
 
 ```zenscript
 mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
