@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.StoneKnapping;StoneKnapping;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
