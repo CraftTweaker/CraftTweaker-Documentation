@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ei
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Schneidrezepte entfernen, die ein gestreiftes Dschungelholz ausgeben.
+The following script will remove all Cutting recipes that output a Stripped Jungle Wood.
 
 ```zenscript
 // <recipetype:create:cutting>.removeRecipe(IItemStack output)
