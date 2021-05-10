@@ -13,18 +13,55 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Casters
+
+| Result type                                              | Is Implicit |
+| -------------------------------------------------------- | ----------- |
+| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true        |
+
+## Methods
+
+:::group{name=create}
+
+Creates a new entity in the world.
+
+Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
+
+```zenscript
+MCEntityType.create(world as MCWorld) as MCEntity
+```
+
+| Parameter | Type                                  | Description                           |
+| --------- | ------------------------------------- | ------------------------------------- |
+| world     | [MCWorld](/vanilla/api/world/MCWorld) | World for the entity to be created in |
+
+
+:::
+
+
+## 演算子
+
+:::group{name=OR}
+
+```zenscript
+myMCEntityType | other as EntityIngredient
+```
+
+:::
+
+
 ## Properties
 
-| 名称             | Type                                                                 | Has Getter | Has Setter |
-| -------------- | -------------------------------------------------------------------- | ---------- | ---------- |
-| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      |
-| commandString  | string                                                               | true       | false      |
-| height         | float                                                                | true       | false      |
-| immuneToFire   | boolean型                                                             | true       | false      |
-| lootTable      | string                                                               | true       | false      |
-| name           | string                                                               | true       | false      |
-| serializable   | boolean型                                                             | true       | false      |
-| summonable     | boolean型                                                             | true       | false      |
-| translationKey | string                                                               | true       | false      |
-| width          | float                                                                | true       | false      |
+| 名称             | Type                                                                 | Has Getter | Has Setter | Description             |
+| -------------- | -------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
+| commandString  | string                                                               | true       | false      | No Description Provided |
+| height         | float                                                                | true       | false      | No Description Provided |
+| immuneToFire   | boolean型                                                             | true       | false      | No Description Provided |
+| lootTable      | string                                                               | true       | false      | No Description Provided |
+| name           | string                                                               | true       | false      | No Description Provided |
+| serializable   | boolean型                                                             | true       | false      | No Description Provided |
+| summonable     | boolean型                                                             | true       | false      | No Description Provided |
+| translationKey | string                                                               | true       | false      | No Description Provided |
+| width          | float                                                                | true       | false      | No Description Provided |
 
