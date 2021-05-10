@@ -16,7 +16,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);
