@@ -50,7 +50,8 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
-MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+// MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+
 myMCPotionEffectInstance.getCurativeItems();
 ```
 
@@ -89,13 +90,13 @@ MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 
 ## Properties
 
-| 名称            | Type                                                  | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------- | ---------- | ---------- |
-| ambient       | boolean型                                              | true       | false      |
-| amplifier     | int                                                   | true       | false      |
-| duration      | int                                                   | true       | false      |
-| effectName    | string                                                | true       | false      |
-| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
-| showIcon      | boolean型                                              | true       | false      |
-| showParticles | boolean型                                              | true       | false      |
+| 名称            | Type                                                  | Has Getter | Has Setter | Description             |
+| ------------- | ----------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| ambient       | boolean型                                              | true       | false      | No Description Provided |
+| amplifier     | int                                                   | true       | false      | No Description Provided |
+| duration      | int                                                   | true       | false      | No Description Provided |
+| effectName    | string                                                | true       | false      | No Description Provided |
+| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      | No Description Provided |
+| showIcon      | boolean型                                              | true       | false      | No Description Provided |
+| showParticles | boolean型                                              | true       | false      | No Description Provided |
 
