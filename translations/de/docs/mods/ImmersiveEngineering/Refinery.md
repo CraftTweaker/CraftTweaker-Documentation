@@ -18,7 +18,7 @@ Das folgende Skript fügt der Refinery ein Rezept hinzu, das 10mb Herbicid (Flui
 
 #### FluidStack-Rezepte entfernen
 
-Das folgende Skript wird alle Rezepte aus der Refinery entfernen, die exakt 16mb Biodiesel ausgeben.
+The following script will remove all recipes from the Refinery that output exactly 16Mb of Biodesiel.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(IFluidStack output)
@@ -28,7 +28,7 @@ Das folgende Skript wird alle Rezepte aus der Refinery entfernen, die exakt 16mb
 
 #### Flüssigkeitsrezepte entfernen
 
-Das folgende Skript wird alle Rezepte aus der Refinery entfernen, die eine beliebige Menge Biodiesel ausgeben.
+The following script will remove all recipes from the Refinery that output any amount of Biodesiel.
 
 ```zenscript
 // <recipetype:immersiveengineering:refinery>.removeRecipe(MCFluid output)
