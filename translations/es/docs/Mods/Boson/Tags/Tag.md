@@ -19,7 +19,7 @@ A `Tag` provides read-only access to a certain set of properties, as outlined in
 
 ## Methods
 
-### Addition
+### Suma
 Adding elements to a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
 
 ```zenscript
