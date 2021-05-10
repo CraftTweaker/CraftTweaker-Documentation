@@ -17,7 +17,8 @@ import crafttweaker.api.block.material.MCMaterial;
 Return Type: boolean
 
 ```zenscript
-MCMaterial.blocksMovement() as boolean
+// MCMaterial.blocksMovement() as boolean
+
 myMCMaterial.blocksMovement();
 ```
 
@@ -30,8 +31,37 @@ myMCMaterial.blocksMovement();
 Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
-MCMaterial.getColor() as MCMaterialColor
+// MCMaterial.getColor() as MCMaterialColor
+
 myMCMaterial.getColor();
+```
+
+:::
+
+:::group{name=getCommandString}
+
+Gets the bracket syntax for this Material
+
+Return Type: string
+
+```zenscript
+// MCMaterial.getCommandString() as string
+
+myMCMaterial.getCommandString();
+```
+
+:::
+
+:::group{name=getPushReaction}
+
+Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).
+
+Return Type: [PushReaction](/vanilla/api/block/material/PushReaction)
+
+```zenscript
+// MCMaterial.getPushReaction() as PushReaction
+
+myMCMaterial.getPushReaction();
 ```
 
 :::
@@ -43,7 +73,8 @@ myMCMaterial.getColor();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isFlammable() as boolean
+// MCMaterial.isFlammable() as boolean
+
 myMCMaterial.isFlammable();
 ```
 
@@ -56,7 +87,8 @@ myMCMaterial.isFlammable();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isLiquid() as boolean
+// MCMaterial.isLiquid() as boolean
+
 myMCMaterial.isLiquid();
 ```
 
@@ -69,7 +101,8 @@ myMCMaterial.isLiquid();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isOpaque() as boolean
+// MCMaterial.isOpaque() as boolean
+
 myMCMaterial.isOpaque();
 ```
 
@@ -82,7 +115,8 @@ myMCMaterial.isOpaque();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isReplaceable() as boolean
+// MCMaterial.isReplaceable() as boolean
+
 myMCMaterial.isReplaceable();
 ```
 
@@ -95,7 +129,8 @@ myMCMaterial.isReplaceable();
 Return Type: boolean
 
 ```zenscript
-MCMaterial.isSolid() as boolean
+// MCMaterial.isSolid() as boolean
+
 myMCMaterial.isSolid();
 ```
 
@@ -104,8 +139,15 @@ myMCMaterial.isSolid();
 
 ## 参数
 
-| 名称            | 类型                                                                     | 可获得  | 可设置   |
-| ------------- | ---------------------------------------------------------------------- | ---- | ----- |
-| color         | [MCMaterialColor #MC材料颜色](/vanilla/api/block/material/MCMaterialColor) | true | false |
-| commandString | string                                                                 | true | false |
+| 名称             | 类型                                                                     | 可获得  | 可设置   | 描述                                                                             |
+| -------------- | ---------------------------------------------------------------------- | ---- | ----- | ------------------------------------------------------------------------------ |
+| blocksMovement | boolean                                                                | true | false | 判断材料是否为可移动固体(不知道为啥这一行和下面有一行好像)                                                 |
+| color          | [MCMaterialColor #MC材料颜色](/vanilla/api/block/material/MCMaterialColor) | true | false | 获取方块的颜色索引。 输出与原版地图表示此方块的相同颜色                                                   |
+| commandString  | string                                                                 | true | false | Gets the bracket syntax for this Material                                      |
+| flammable      | boolean                                                                | true | false | 判断方块是否为可燃物                                                                     |
+| liquid         | boolean                                                                | true | false | 判断方块是否为液体                                                                      |
+| opaque         | boolean                                                                | true | false | 判断方块是否为不透明方块                                                                   |
+| pushReaction   | [PushReaction](/vanilla/api/block/material/PushReaction)               | true | false | Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction). |
+| replaceable    | boolean                                                                | true | false | 返回是否在放置时可以用其他方块替换该材料，例如雪，藤蔓和高草丛                                                |
+| solid          | boolean                                                                | true | false | 判断方块是否为固体 默认情况下返回为true                                                         |
 
