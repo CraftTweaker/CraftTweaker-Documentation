@@ -49,7 +49,8 @@ new MapData(map as IData[string]) as MapData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-MapData.asCollection() as ICollectionData
+// MapData.asCollection() as ICollectionData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
 ```
 
@@ -62,7 +63,8 @@ MapData.asCollection() as ICollectionData
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-MapData.asList() as stdlib.List<IData>
+// MapData.asList() as stdlib.List<IData>
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asList();
 ```
 
@@ -73,7 +75,8 @@ MapData.asList() as stdlib.List<IData>
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-MapData.asNumber() as INumberData
+// MapData.asNumber() as INumberData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
 ```
 
@@ -86,7 +89,8 @@ MapData.asNumber() as INumberData
 Return Type: boolean
 
 ```zenscript
-MapData.contains(key as string) as boolean
+// MapData.contains(key as string) as boolean
+
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
 
@@ -104,7 +108,8 @@ MapData.contains(key as string) as boolean
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.getAt(key as string) as IData
+// MapData.getAt(key as string) as IData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
 
@@ -124,7 +129,8 @@ MapData.getAt(key as string) as IData
 Return Type: byte
 
 ```zenscript
-MapData.getId() as byte
+// MapData.getId() as byte
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getId();
 ```
 
@@ -137,7 +143,8 @@ MapData.getId() as byte
 Return Type: string
 
 ```zenscript
-MapData.getString() as string
+// MapData.getString() as string
+
 {Hello : "World", Somewhere: "Over the rainbow"}.getString();
 ```
 
@@ -150,7 +157,8 @@ MapData.getString() as string
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MapData.merge(other as MapData) as MapData
+// MapData.merge(other as MapData) as MapData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
 ```
 
@@ -168,7 +176,8 @@ MapData.merge(other as MapData) as MapData
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.put(key as string, value as IData) as IData
+// MapData.put(key as string, value as IData) as IData
+
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
 
@@ -187,7 +196,8 @@ MapData.put(key as string, value as IData) as IData
 Return Type: void
 
 ```zenscript
-MapData.putAll(map as IData[string]) as void
+// MapData.putAll(map as IData[string]) as void
+
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
@@ -205,7 +215,8 @@ MapData.putAll(map as IData[string]) as void
 Return Type: void
 
 ```zenscript
-MapData.remove(key as string) as void
+// MapData.remove(key as string) as void
+
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
 
@@ -232,9 +243,9 @@ myMapData + data as IData
 
 ## 参数
 
-| 名称          | 类型                            | 可获得  | 可设置   |
-| ----------- | ----------------------------- | ---- | ----- |
-| isEmpty     | boolean                       | true | false |
-| keySet #设置键 | Set&lt;string&gt; | true | false |
-| size        | int                           | true | false |
+| 名称          | 类型                            | 可获得  | 可设置   | 描述                      |
+| ----------- | ----------------------------- | ---- | ----- | ----------------------- |
+| isEmpty     | boolean                       | true | false | No Description Provided |
+| keySet #设置键 | Set&lt;string&gt; | true | false | No Description Provided |
+| size        | int                           | true | false | No Description Provided |
 
