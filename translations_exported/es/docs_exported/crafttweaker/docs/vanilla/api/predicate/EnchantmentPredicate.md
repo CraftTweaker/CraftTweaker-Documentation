@@ -20,7 +20,7 @@ EnchantmentPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/ap
 
 ## Methods
 
-### withEnchantment
+:::group{name=withEnchantment}
 
 Sets the enchantment that needs to be present, and whose data needs to be checked.
 
@@ -37,7 +37,9 @@ EnchantmentPredicate.withEnchantment(enchantment as MCEnchantment) as Enchantmen
 | enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment that needs to be present. |
 
 
-### withExactLevel
+:::
+
+:::group{name=withExactLevel}
 
 Sets the level to exactly match the given <code>value</code>.
 
@@ -54,7 +56,9 @@ EnchantmentPredicate.withExactLevel(value as int) as EnchantmentPredicate
 | value     | int  | The exact value the level should be. |
 
 
-### withMaximumLevel
+:::
+
+:::group{name=withMaximumLevel}
 
 Sets the maximum value the level should be to <code>max</code>.
 
@@ -73,7 +77,9 @@ EnchantmentPredicate.withMaximumLevel(max as int) as EnchantmentPredicate
 | max       | int  | The maximum value the level should be. |
 
 
-### withMinimumLevel
+:::
+
+:::group{name=withMinimumLevel}
 
 Sets the minimum value the level should be to <code>min</code>.
 
@@ -92,7 +98,9 @@ EnchantmentPredicate.withMinimumLevel(min as int) as EnchantmentPredicate
 | min       | int  | The minimum value the level should be. |
 
 
-### withRangedLevel
+:::
+
+:::group{name=withRangedLevel}
 
 Sets both the minimum and maximum value the level should be to <code>min</code> and <code>max</code>
  respectively.
@@ -113,5 +121,7 @@ EnchantmentPredicate.withRangedLevel(min as int, max as int) as EnchantmentPredi
 | min       | int  | The minimum value the level should be. |
 | max       | int  | The maximum value the level should be. |
 
+
+:::
 
 
