@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Anvil;Anvil;
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
