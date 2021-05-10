@@ -1,77 +1,77 @@
-# Calculations
+# Operaciones
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+A veces escribir números no sirve A veces, necesitas realizar alguna operación.   
+Acuerdate que puedes usar mas de dos números a la vez ` 1+1+1+1 ` funcionaría igual.
 
-## A word of advice
+## Consejo rápido
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+Cuando hay resultados inesperados en una operación, es muy posible que hayas usado dos tipos diferentes.   
+Por ejemplo, `13 % 6.5` devuelve 1, aunque el resultado correcto es 0. ¿Por qué? ZenScript siempre hace operaciones con dos variables del mismo tipo. Para esto, convierte el segundo tipo para que sea el mismo que el primero. En este ejemplo, el calculo realizado fue ` 13 % 6 `, ya que el segundo número (un double) fue convertido para ser del mismo tipo que el primero (un int).
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+Siempre deberías comprobar que las dos variables (y los tipos) que usas sean el mismo, ante la duda usa ` print ` para añadir el resultado al log y confirmar los resultados.
 
-## Arithmetic Operators
+## Operadores de Aritmética
 
-I'm pretty sure all of you know these already, don't you?
+Seguramente ya los habrás visto alguna vez, pero volvamos a verlos.
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| Operador | Asignaoperador | Función  | Ejemplo |
+| -------- | -------------- | -------- | ------- |
+| `+`      | `+=`           | Suma     | 1+2     |
+| `-`      | `-=`           | Resta    | 2-1     |
+| `*`      | `*=`           | Producto | 1*1     |
+| `/`      | `/=`           | División | 2/2     |
+| `%`      | `%=`           | Módulo   | 13 % 6  |
 
-## Concatenation
+## Concatenar
 
-Puts one thing at the and of the other
+Engancha una cosa al final de la otra.
 
 ```zenscript
-//prints "Hello World"
-print("Hello" ~ " " ~ "World");
+//Añade "Hola Mundo" al log
+print("Hola" ~ " "~ "Mundo);
 ```
 
-## Calculation results
+## Resultados de una operación
 
-A calculation usually ends up with a result. So what to do with that?
+La mayoría de operaciones acaban con un resultado. ¿Qué hacemos con esto?
 
-### Assigning a variable
+### Asignar una variable.
 
-There are two ways of assigning a value to a variable:
+Hay 3 maneras de asignar un valor a una variable.
 
 ```zenscript
-var test = 0;
+var prueba = 0;
+//Opción 1:
+// Da el valor 3 a prueba (1+2)
+prueba = 1+2;
 
-//Option 1:
-//assigns test with the value 3 (1+2)
-test = 1+2;
+//Opción 2:
+//Da el valor 5 a prueba (3+2)
+prueba = prueba + 2
 
-//Option 2:
-//assigns test with 5 (3+2)
-test = test + 2;
-
-//Option 3:
-//assigns test with 2 (5-3)
-test -= 3;
+//Opción 3:
+//Da el valor 2 a prueba (5-3)
+prueba -= 3;
 ```
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Las opciones 1 y 2 dan el valor de la variable usando el operador ` = .`   
+Estas son probablemente las maneras más fáciles para principiantes y la única manera si quieres darle un valor a una variable que no se usa en la operación.
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+La opción 3 le da el valor a la variable antes de ` -= ` con el resultado de una resta normal.   
+Todos los operadores tienen su asignaOperador respectivos, en la tabla encima.
 
-### Using the result otherwise
+### Usando el resultado 
 
-You can always use the result of a calculation in a function or a conditional statement:
+Siempre puedes usar el resultado de una operación como argumento de una función o códigos condicionales
 
 ```zenscript
-//prints 4
+//Añade 4 al log
 print(3+1);
-
-//removes the item on array[4]
+//Elimina la receta de crafteo para el quinto elemento del Array (array[4])
 recipes.remove(array[3+1]);
 
 //
-if(3+1 == 2*2) {print("Used a calculation!")}
+if (3 + 1 == 2*2) { 
+   print ("He usado una operación");
+}
 ```
