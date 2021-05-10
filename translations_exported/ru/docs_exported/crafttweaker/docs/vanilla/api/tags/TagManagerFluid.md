@@ -56,7 +56,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerFluid.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerFluid.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerFluid.getAllTags();
 ```
 
@@ -112,7 +113,7 @@ name as string in myTagManagerFluid
 
 ## Свойства
 
-| Название | Тип                                                                                  | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------------------------------------------------------ | ------------ | ------------ |
-| all      | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true         | false        |
+| Название | Тип                                                                                  | Имеет Getter | Имеет Setter | Description                                        |
+| -------- | ------------------------------------------------------------------------------------ | ------------ | ------------ | -------------------------------------------------- |
+| all      | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true         | false        | Retrieves a list of all tags currently registered. |
 
