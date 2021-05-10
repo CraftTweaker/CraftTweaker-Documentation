@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.RedstoneFurnace`
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
