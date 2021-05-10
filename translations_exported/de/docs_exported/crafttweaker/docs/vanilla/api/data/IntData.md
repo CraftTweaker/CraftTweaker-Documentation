@@ -48,7 +48,8 @@ new IntData(internal as int) as IntData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-IntData.asCollection() as ICollectionData
+// IntData.asCollection() as ICollectionData
+
 8192.asCollection();
 ```
 
@@ -61,7 +62,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-IntData.asList() as stdlib.List<IData>
+// IntData.asList() as stdlib.List<IData>
+
 8192.asList();
 ```
 
@@ -74,7 +76,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-IntData.asMap() as IData[string]
+// IntData.asMap() as IData[string]
+
 8192.asMap();
 ```
 
@@ -85,7 +88,8 @@ IntData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-IntData.asNumber() as INumberData
+// IntData.asNumber() as INumberData
+
 8192.asNumber();
 ```
 
@@ -98,7 +102,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 Return Type: byte
 
 ```zenscript
-IntData.getByte() as byte
+// IntData.getByte() as byte
+
 8192.getByte();
 ```
 
@@ -111,7 +116,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a double
 Return Type: double
 
 ```zenscript
-IntData.getDouble() as double
+// IntData.getDouble() as double
+
 8192.getDouble();
 ```
 
@@ -124,7 +130,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a float
 Return Type: float
 
 ```zenscript
-IntData.getFloat() as float
+// IntData.getFloat() as float
+
 8192.getFloat();
 ```
 
@@ -139,7 +146,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-IntData.getId() as byte
+// IntData.getId() as byte
+
 8192.getId();
 ```
 
@@ -152,7 +160,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as an int
 Return Type: int
 
 ```zenscript
-IntData.getInt() as int
+// IntData.getInt() as int
+
 8192.getInt();
 ```
 
@@ -165,7 +174,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a long
 Return Type: long
 
 ```zenscript
-IntData.getLong() as long
+// IntData.getLong() as long
+
 8192.getLong();
 ```
 
@@ -178,7 +188,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a short
 Return Type: short
 
 ```zenscript
-IntData.getShort() as short
+// IntData.getShort() as short
+
 8192.getShort();
 ```
 
@@ -191,7 +202,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-IntData.getString() as string
+// IntData.getString() as string
+
 8192.getString();
 ```
 
