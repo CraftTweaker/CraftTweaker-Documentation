@@ -27,7 +27,8 @@ Gets the ID of the advancement being unlocked.
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-MCAdvancementEvent.getId() as MCResourceLocation
+// MCAdvancementEvent.getId() as MCResourceLocation
+
 event.getId();
 ```
 
@@ -36,7 +37,7 @@ event.getId();
 
 ## Properties
 
-| Name | Type                                                         | Has Getter | Has Setter |
-| ---- | ------------------------------------------------------------ | ---------- | ---------- |
-| id   | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| Name | Type                                                         | Has Getter | Has Setter | Description                                    |
+| ---- | ------------------------------------------------------------ | ---------- | ---------- | ---------------------------------------------- |
+| id   | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | true       | false      | Gets the ID of the advancement being unlocked. |
 
