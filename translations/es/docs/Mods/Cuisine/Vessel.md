@@ -1,6 +1,6 @@
 # Vessel
 
-## Addition
+## Suma
 
 ```zenscript
 import mods.cuisine.Vessel;
