@@ -1,3 +1,5 @@
+::requiredMod[Botany Pots]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/botany-pots}
+
 # [BotanyPots](https://www.curseforge.com/minecraft/mc-mods/botany-pots)
 
 ## Description
