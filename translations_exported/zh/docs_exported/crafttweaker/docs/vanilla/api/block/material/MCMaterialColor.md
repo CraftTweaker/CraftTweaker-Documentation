@@ -12,15 +12,19 @@ import crafttweaker.api.block.material.MCMaterialColor;
 
 :::group{name=getMapColor}
 
+Gets the Integer value of the colour of this material color on a map.
+
 Return Type: int
 
 ```zenscript
-MCMaterialColor.getMapColor(index as int) as int
+// MCMaterialColor.getMapColor(index as int) as int
+
+myMCMaterialColor.getMapColor(1);
 ```
 
-| 参数    | 类型  | 描述                      |
-| ----- | --- | ----------------------- |
-| index | int | No Description Provided |
+| 参数    | 类型  | 描述                               |
+| ----- | --- | -------------------------------- |
+| index | int | the index to get the colour for. |
 
 
 :::
