@@ -1,3 +1,5 @@
+::requiredMod[Thermal Expansion]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/thermal-expansion}
+
 # Magma Crucible / Crucible
 
 ## Methoden
@@ -13,7 +15,7 @@ The following script will add a recipe that will output 250 mB of Lava by Meltin
 
 #### Remove Recipes
 
-The follow script will remove all Crucible recipes that output Lava.
+The following script will remove all Crucible recipes that output Lava.
 
 ```zenscript
 // <recipetype:thermal:crucible>.removeRecipe(IFluidStack output);
