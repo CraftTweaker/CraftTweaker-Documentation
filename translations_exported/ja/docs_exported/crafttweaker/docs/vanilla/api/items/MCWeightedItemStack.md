@@ -17,7 +17,7 @@ MCWeightedItemStack implements the following interfaces. That means all methods 
 
 ## Constructors
 
-Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
+Manually creates the weightedItemStack. <br />  Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -39,7 +39,8 @@ Creates a new Weighted Stack with the given weight
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+// MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 
@@ -65,8 +66,7 @@ myMCWeightedItemStack % newWeight as int
 :::
 
 :::group{name=MUL}
-
-Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
+Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
@@ -78,8 +78,8 @@ myMCWeightedItemStack * newAmount as int
 
 ## Properties
 
-| 名称     | Type                                        | Has Getter | Has Setter |
-| ------ | ------------------------------------------- | ---------- | ---------- |
-| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
-| weight | double                                      | true       | false      |
+| 名称     | Type                                        | Has Getter | Has Setter | Description                               |
+| ------ | ------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the original (unweighted) stack      |
+| weight | double                                      | true       | false      | Gets the weight (usually between 0 and 1) |
 
