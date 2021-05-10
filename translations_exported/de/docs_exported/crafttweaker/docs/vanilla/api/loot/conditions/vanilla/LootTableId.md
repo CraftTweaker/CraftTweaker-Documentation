@@ -23,7 +23,7 @@ LootTableId implements the following interfaces. That means all methods defined 
 
 ## Methoden
 
-### withTableId
+:::group{name=withTableId}
 
 Sets the ID of the loot table that should be targeted.
 
@@ -39,5 +39,7 @@ LootTableId.withTableId(location as MCResourceLocation) as LootTableId
 | --------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | standort  | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The ID of the loot table to match, in [MCResourceLocation](/vanilla/api/util/MCResourceLocation) form. |
 
+
+:::
 
 
