@@ -23,7 +23,7 @@ TableBonus implements the following interfaces. That means all methods defined i
 
 ## Methoden
 
-### withChances
+:::group{name=withChances}
 
 Sets the array of chances, which will be queried according to the level.
 
@@ -44,7 +44,9 @@ TableBonus.withChances(chances as float[]) as TableBonus
 | chances   | float[] | The chances to use depending on level. |
 
 
-### withEnchantment
+:::
+
+:::group{name=withEnchantment}
 
 Sets the enchantment that should be checked on the tool.
 
@@ -60,5 +62,7 @@ TableBonus.withEnchantment(enchantment as MCEnchantment) as TableBonus
 | ----------- | ------------------------------------------------------- | ------------------------- |
 | enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to check. |
 
+
+:::
 
 
