@@ -14,7 +14,7 @@ import crafttweaker.api.loot.conditions.ILootCondition;
 
 ## 方法
 
-### test
+:::group{name=test}
 
 Tests the context for a set of conditions.
 
@@ -28,5 +28,7 @@ ILootCondition.test(context as LootContext) as boolean
 | ---- | -------------------------------------------- | ------------------- |
 | 上下文： | [LootContext](/vanilla/api/loot/LootContext) | The context to test |
 
+
+:::
 
 
