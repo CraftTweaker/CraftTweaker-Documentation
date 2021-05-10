@@ -18,10 +18,10 @@ MCLivingSpawnEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## 参数
 
-| 名称    | 类型                                    | 可获得  | 可设置   |
-| ----- | ------------------------------------- | ---- | ----- |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
-| x     | double                                | true | false |
-| y     | double                                | true | false |
-| z     | double                                | true | false |
+| 名称    | 类型                                    | 可获得  | 可设置   | 描述                      |
+| ----- | ------------------------------------- | ---- | ----- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
+| x     | double                                | true | false | No Description Provided |
+| y     | double                                | true | false | No Description Provided |
+| z     | double                                | true | false | No Description Provided |
 
