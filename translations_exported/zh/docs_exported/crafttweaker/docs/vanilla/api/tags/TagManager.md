@@ -58,7 +58,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManager.getAllTags() as stdlib.List<MCTag<T>>
+// TagManager.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManager.getAllTags();
 ```
 
@@ -123,7 +124,8 @@ Get the tag type. In a Bracket call, this will used to determine which TagManage
 Return Type: string
 
 ```zenscript
-TagManager.getTagFolder() as string
+// TagManager.getTagFolder() as string
+
 myTagManager.getTagFolder();
 ```
 
@@ -145,8 +147,8 @@ name as string in myTagManager
 
 ## 参数
 
-| 名称      | 类型                                                                                   | 可获得  | 可设置   |
-| ------- | ------------------------------------------------------------------------------------ | ---- | ----- |
-| all     | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false |
-| tagType | string                                                                               | true | false |
+| 名称      | 类型                                                                                   | 可获得  | 可设置   | 描述                                                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------ | ---- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| all     | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false | Retrieves a list of all tags currently registered.                                                                                                 |
+| tagType | string                                                                               | true | false | Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <br />  <p> <br />  { |
 
