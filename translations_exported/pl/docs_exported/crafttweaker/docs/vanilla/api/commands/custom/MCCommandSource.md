@@ -15,7 +15,8 @@ import crafttweaker.api.commands.custom.MCCommandSource;
 Return Type: string
 
 ```zenscript
-MCCommandSource.getName() as string
+// MCCommandSource.getName() as string
+
 myMCCommandSource.getName();
 ```
 
@@ -26,7 +27,8 @@ myMCCommandSource.getName();
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)?
 
 ```zenscript
-MCCommandSource.getPlayer() as MCPlayerEntity?
+// MCCommandSource.getPlayer() as MCPlayerEntity?
+
 myMCCommandSource.getPlayer();
 ```
 
@@ -37,7 +39,8 @@ myMCCommandSource.getPlayer();
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getPlayerNames() as Collection<string>
+// MCCommandSource.getPlayerNames() as Collection<string>
+
 myMCCommandSource.getPlayerNames();
 ```
 
@@ -48,7 +51,8 @@ myMCCommandSource.getPlayerNames();
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTargetedEntity() as Collection<string>
+// MCCommandSource.getTargetedEntity() as Collection<string>
+
 myMCCommandSource.getTargetedEntity();
 ```
 
@@ -59,7 +63,8 @@ myMCCommandSource.getTargetedEntity();
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTeamNames() as Collection<string>
+// MCCommandSource.getTeamNames() as Collection<string>
+
 myMCCommandSource.getTeamNames();
 ```
 
@@ -85,7 +90,8 @@ MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 Return Type: boolean
 
 ```zenscript
-MCCommandSource.isPlayer() as boolean
+// MCCommandSource.isPlayer() as boolean
+
 myMCCommandSource.isPlayer();
 ```
 
@@ -127,7 +133,8 @@ MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as voi
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-MCCommandSource.withFeedbackDisabled() as MCCommandSource
+// MCCommandSource.withFeedbackDisabled() as MCCommandSource
+
 myMCCommandSource.withFeedbackDisabled();
 ```
 
