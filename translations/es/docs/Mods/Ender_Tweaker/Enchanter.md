@@ -14,7 +14,7 @@
 
 **- double costMultiplier** Used to modify how expensive the recipe is.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
