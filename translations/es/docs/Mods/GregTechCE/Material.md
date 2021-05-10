@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### Ejemplo 
 
 ```zenscript
 #loader gregtech
