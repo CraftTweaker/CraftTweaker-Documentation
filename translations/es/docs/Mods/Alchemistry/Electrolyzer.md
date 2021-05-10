@@ -11,7 +11,7 @@
 - **int electrolyteConsumptionChance** - Chance of Electrolye being consumed
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** - Output for the recipe
 
-## Addition
+## Suma
 ```zenscript
 mods.alchemistry.AtomizerElectrolyzer.addRecipe(ILiquidStack input, IItemStack input, int electrolyteConsumptionChance, IItemStack output, IItemStack output2, @Nullable IItemStack output3, @Nullable int output3Chance, @Nullable IItemStack output4, @Nullable int output4Chance);
 mods.alchemistry.mods.alchemistry.Electrolyzer.addRecipe(ILiquidStack input, IItemStack input, int electrolyteConsumptionChance, IItemStack output, IItemStack output2, @Nullable IItemStack output3, @Nullable int output3Chance, @Nullable IItemStack output4, @Nullable int output4Chance);
