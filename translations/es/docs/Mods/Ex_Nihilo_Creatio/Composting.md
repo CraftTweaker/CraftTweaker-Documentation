@@ -12,7 +12,7 @@ mods.exnihilocreatio.Compost
 - **String color** The color is hex.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-## Addition
+## Suma
 
 Does not take arrays in for IIngredient.
 
