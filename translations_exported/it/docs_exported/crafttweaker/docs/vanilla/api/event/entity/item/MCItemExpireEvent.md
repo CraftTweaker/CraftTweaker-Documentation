@@ -24,7 +24,7 @@ MCItemExpireEvent extends [MCItemEvent](/vanilla/api/event/entity/MCItemEvent). 
 
 ## Properties
 
-| Name      | Type | Ha Getter | Ha Setter |
-| --------- | ---- | --------- | --------- |
-| extraLife | int  | true      | true      |
+| Name      | Type | Ha Getter | Ha Setter | Description             |
+| --------- | ---- | --------- | --------- | ----------------------- |
+| extraLife | int  | true      | true      | No Description Provided |
 
