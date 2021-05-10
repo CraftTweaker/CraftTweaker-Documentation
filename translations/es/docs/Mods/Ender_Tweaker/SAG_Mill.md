@@ -13,7 +13,7 @@
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 - **float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
