@@ -20,7 +20,7 @@ If any other mod registers a new infusion type, that type can be used in CraftTw
 
 As of Mekanism 9.7.0 it is now possible to view all registered infusions (including those from other mods) via the command `/ct infuseTypes`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, IItemStack outputStack);
