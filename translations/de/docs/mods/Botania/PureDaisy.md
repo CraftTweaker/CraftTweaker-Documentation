@@ -1,35 +1,37 @@
+::requiredMod[Botania]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/botania}
+
 # Botania Pure Daisy
 
-Die Pure Daisy ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
+The Pure Daisy is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
 
 ## Methoden
 
 #### Rezept mit BlockState Eingabe hinzufügen
 
-Das folgende Skript fügt ein Rezept zur Pure Daisy hinzu, das einen Goldenen Block in einen Diamantenblock umwandelt und 20 Ticks braucht, um ihn zu konvertieren.
+The following script will add a recipe to the Pure Daisy that will convert a Gold Block to a Diamond Block and will take 20 ticks to convert.
 
 ```zenscript
-// <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, BlockState input, int time)
+// <recipetype:botania:pure_daisy>.addRecipe(name as string, output as BlockState, input as BlockState, time as int)
 
 <recipetype:botania:pure_daisy>.addRecipe("pure_daisy_test", <blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, 20);
 ```
 
 #### Rezept mit Block[] Eingabe hinzufügen
 
-Das folgende Skript fügt ein Rezept zur Pure Daisy hinzu, das einen Steinblock oder einen Bruchstein zu einem Eisenblock umwandelt und 20 Ticks zum Konvertieren benötigt.
+The following script will add a recipe to the Pure Daisy that will convert a Stone Block or a Cobblestone Block to an Iron Block and will take 20 ticks to convert.
 
 ```zenscript
-// <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, Block[] inputs, int time)
+// <recipetype:botania:pure_daisy>.addRecipe(name as string, output as BlockState, inputs as Block[], time as int)
 
 <recipetype:botania:pure_daisy>.addRecipe("pure_daisy_block_array_test", <blockstate:minecraft:iron_block>, [<block:minecraft:stone>, <block:minecraft:cobblestone>], 20);
 ```
 
 #### Rezept mit BlockTag Eingabe hinzufügen
 
-Das folgende Skript fügt ein Rezept zur Pure Daisy hinzu, das jeden Block im `minecraft:wool` BlockTag in einen Lapis Lazuli Block umwandelt und 20 Ticks benötigt.
+The following script will add a recipe to the Pure Daisy that will convert any Block in the `minecraft:wool` BlockTag to a Lapis Lazuli Block and will take 20 ticks to convert.
 
 ```zenscript
-// <recipetype:botania:pure_daisy>.addRecipe(String name, BlockState output, Block[] inputs, int time)
+// <recipetype:botania:pure_daisy>.addRecipe(name as string, output as BlockState, inputs as Block[], time as int)
 
 <recipetype:botania:pure_daisy>.addRecipe("pure_daisy_block_tag_test", <blockstate:minecraft:lapis_block>, <tag:blocks:minecraft:wool>, 20);
 ```
@@ -37,10 +39,10 @@ Das folgende Skript fügt ein Rezept zur Pure Daisy hinzu, das jeden Block im `m
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Pure Daisy-Rezepte entfernen, die Blöcke in Living Rock konvertieren
+The following script will remove all Pure Daisy recipes that convert blocks into Living Rock
 
 ```zenscript
-// <recipetype:botania:pure_daisy>.removeRecipe(BlockState state);
+// <recipetype:botania:pure_daisy>.removeRecipe(state as BlockState);
 
 <recipetype:botania:pure_daisy>.removeRecipe(<blockstate:botania:livingrock>);
 ```
