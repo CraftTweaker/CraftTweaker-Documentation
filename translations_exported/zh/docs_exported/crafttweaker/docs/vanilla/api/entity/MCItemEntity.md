@@ -31,7 +31,7 @@ new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack 
 
 ## 参数
 
-| 名称   | 类型                                          | 可获得  | 可设置  |
-| ---- | ------------------------------------------- | ---- | ---- |
-| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true |
+| 名称   | 类型                                          | 可获得  | 可设置  | 描述                      |
+| ---- | ------------------------------------------- | ---- | ---- | ----------------------- |
+| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true | No Description Provided |
 
