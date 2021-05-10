@@ -11,7 +11,7 @@ The Casting Block is a machine that converts an input fluid into an output item.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
 - **int craftTime** Crafting time for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack output, int craftTime);
