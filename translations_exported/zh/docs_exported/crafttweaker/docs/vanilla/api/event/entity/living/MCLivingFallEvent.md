@@ -24,8 +24,8 @@ MCLivingFallEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## 参数
 
-| 名称               | 类型    | 可获得  | 可设置  |
-| ---------------- | ----- | ---- | ---- |
-| damageMultiplier | float | true | true |
-| distance         | float | true | true |
+| 名称               | 类型    | 可获得  | 可设置  | 描述                      |
+| ---------------- | ----- | ---- | ---- | ----------------------- |
+| damageMultiplier | float | true | true | No Description Provided |
+| distance         | float | true | true | No Description Provided |
 
