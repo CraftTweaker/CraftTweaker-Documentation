@@ -21,7 +21,7 @@ Or implements the following interfaces. That means all methods defined in these 
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds a new condition to the list of sub-conditions that will get merged together into an 'OR' condition.
 
@@ -38,5 +38,7 @@ Or.add<T : ILootConditionTypeBuilder>(lender as Consumer<T>) as Or
 | lender    | Consumer&lt;T&gt;                                                       | A consumer that allows configuration of the given condition. |
 | T         | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself.                      |
 
+
+:::
 
 
