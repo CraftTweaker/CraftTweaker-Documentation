@@ -11,7 +11,7 @@ import crafttweaker.api.tag.TagManagerBlock;
 ## Implemented Interfaces
 TagManagerBlock implements the following interfaces. That means all methods defined in these interfaces are also available in TagManagerBlock
 
-- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;
+- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;
 
 ## Methods
 
@@ -56,7 +56,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerBlock.getAllTags();
 ```
 
@@ -112,7 +113,7 @@ name as string in myTagManagerBlock
 
 ## Properties
 
-| 名称  | Type                                                                                 | Has Getter | Has Setter |
-| --- | ------------------------------------------------------------------------------------ | ---------- | ---------- |
-| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true       | false      |
+| 名称  | Type                                                                                 | Has Getter | Has Setter | Description                                        |
+| --- | ------------------------------------------------------------------------------------ | ---------- | ---------- | -------------------------------------------------- |
+| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true       | false      | Retrieves a list of all tags currently registered. |
 
