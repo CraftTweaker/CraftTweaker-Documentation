@@ -19,7 +19,7 @@ AdvancementPredicate implements the following interfaces. That means all methods
 
 ## Methoden
 
-### withCompleted
+:::group{name=withCompleted}
 
 Specifies that the advancement must be completed to pass the check.
 
@@ -28,11 +28,14 @@ Specifies that the advancement must be completed to pass the check.
 Return Type: [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate)
 
 ```zenscript
-AdvancementPredicate.withCompleted() as AdvancementPredicate
+// AdvancementPredicate.withCompleted() as AdvancementPredicate
+
 myAdvancementPredicate.withCompleted();
 ```
 
-### withInProgress
+:::
+
+:::group{name=withInProgress}
 
 Specifies that the advancement must not be completed, that is being in-progress, to pass the check.
 
@@ -41,11 +44,14 @@ Specifies that the advancement must not be completed, that is being in-progress,
 Return Type: [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate)
 
 ```zenscript
-AdvancementPredicate.withInProgress() as AdvancementPredicate
+// AdvancementPredicate.withInProgress() as AdvancementPredicate
+
 myAdvancementPredicate.withInProgress();
 ```
 
-### withInProgressCriterion
+:::
+
+:::group{name=withInProgressCriterion}
 
 Adds the criterion <code>name</code> to the list of criteria to check for in-progress status.
 
@@ -62,7 +68,9 @@ AdvancementPredicate.withInProgressCriterion(name as string) as AdvancementPredi
 | name      | string | The name of the criterion to check for in-progress status. |
 
 
-### withPassedCriterion
+:::
+
+:::group{name=withPassedCriterion}
 
 Adds the criterion <code>name</code> to the list of criteria to check for completion.
 
@@ -78,5 +86,7 @@ AdvancementPredicate.withPassedCriterion(name as string) as AdvancementPredicate
 | --------- | ------ | -------------------------------------------------- |
 | name      | string | The name of the criterion to check for completion. |
 
+
+:::
 
 
