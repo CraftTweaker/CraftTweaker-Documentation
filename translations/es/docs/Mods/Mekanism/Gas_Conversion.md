@@ -4,7 +4,7 @@ As of Mekanism 9.7.5 it is now possible to have custom item to gas conversions i
 
 If you want to change any of the values of the built in conversions it is recommended that you first remove the conversion and then add it back rather than overwriting it. This ensures that it properly removes all the data as in 9.7.5 it does not have a specified output/handling of what happens when an item is listed twice.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.GasConversion.register(IIngredient ingredient, IGasStack gas);
