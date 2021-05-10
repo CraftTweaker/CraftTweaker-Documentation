@@ -24,7 +24,7 @@ MCLivingEntityUseItemFinishEvent extends [MCLivingEntityUseItemEvent](/vanilla/a
 
 ## Свойства
 
-| Название    | Тип                                         | Имеет Getter | Имеет Setter |
-| ----------- | ------------------------------------------- | ------------ | ------------ |
-| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true         | true         |
+| Название    | Тип                                         | Имеет Getter | Имеет Setter | Description             |
+| ----------- | ------------------------------------------- | ------------ | ------------ | ----------------------- |
+| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true         | true         | No Description Provided |
 
