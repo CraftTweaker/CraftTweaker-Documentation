@@ -32,7 +32,7 @@ This recipe does not need a Sawblade to be present in the Sawmill.
 
 #### Remove Recipes
 
-The follow script will remove all recipes (Sawing or Stripping) from the Sawmill that output Oak Planks as either the primary or secondary result.
+The following script will remove all recipes (Sawing or Stripping) from the Sawmill that output Oak Planks as either the primary or secondary result.
 
 ```zenscript
 // <recipetype:immersiveengineering:sawmill>.removeRecipe(output as IItemStack)
