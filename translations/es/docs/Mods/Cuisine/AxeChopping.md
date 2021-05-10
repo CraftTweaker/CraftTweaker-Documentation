@@ -14,7 +14,7 @@ if (AxeChopping.isEnabled()) {
 }
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 import mods.cuisine.AxeChopping;
