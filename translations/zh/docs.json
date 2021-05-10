@@ -1,6 +1,6 @@
 {
   "nav": {
-    "首页": "index.md",
+    "Home": "index.md",
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
