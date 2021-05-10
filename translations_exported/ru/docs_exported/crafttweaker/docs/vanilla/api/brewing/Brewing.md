@@ -19,7 +19,8 @@ Adds a new brewing recipe to the Brewing Stand.
 Return Type: void
 
 ```zenscript
-Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient) as void
+// Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient) as void
+
 brewing.addRecipe(<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft:arrow>);
 ```
 
@@ -39,7 +40,8 @@ Removes an ItemStack to ItemStack recipe from the Brewing Stand. These are mainl
 Return Type: void
 
 ```zenscript
-Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack) as void
+// Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack) as void
+
 brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:minecraft:stick>);
 ```
 
@@ -59,7 +61,8 @@ Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the d
 Return Type: void
 
 ```zenscript
-Brewing.removeRecipe(output as MCPotion, reagent as IItemStack, input as MCPotion) as void
+// Brewing.removeRecipe(output as MCPotion, reagent as IItemStack, input as MCPotion) as void
+
 brewing.removeRecipe(<potion:minecraft:thick>, <item:minecraft:glowstone_dust>, <potion:minecraft:water>);
 ```
 
@@ -79,7 +82,8 @@ Removes recipes from the Brewing Stand based on their Input (The ItemStack that 
 Return Type: void
 
 ```zenscript
-Brewing.removeRecipeByInput(input as IItemStack) as void
+// Brewing.removeRecipeByInput(input as IItemStack) as void
+
 brewing.removeRecipeByInput(<item:minecraft:glass>);
 ```
 
@@ -114,7 +118,8 @@ Removes recipes from the Brewing Stand based on their output Potion. These are m
 Return Type: void
 
 ```zenscript
-Brewing.removeRecipeByOutputPotion(output as MCPotion) as void
+// Brewing.removeRecipeByOutputPotion(output as MCPotion) as void
+
 brewing.removeRecipeByOutputPotion(<potion:minecraft:swiftness>);
 ```
 
@@ -132,7 +137,8 @@ Removes recipes from the Brewing Stand based on their Reagent (The item in the t
 Return Type: void
 
 ```zenscript
-Brewing.removeRecipeByReagent(reagent as IItemStack) as void
+// Brewing.removeRecipeByReagent(reagent as IItemStack) as void
+
 brewing.removeRecipeByReagent(<item:minecraft:golden_carrot>);
 ```
 
