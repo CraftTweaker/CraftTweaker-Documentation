@@ -19,7 +19,8 @@ Gets a specific mod
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-Mods.getMod(modid as string) as ModInfo
+// Mods.getMod(modid as string) as ModInfo
+
 loadedMods.getMod("minecraft");
 ```
 
@@ -37,7 +38,8 @@ Checks if a mod is laoded
 Return Type: boolean
 
 ```zenscript
-Mods.isModLoaded(modid as string) as boolean
+// Mods.isModLoaded(modid as string) as boolean
+
 loadedMods.isModLoaded("minecraft");
 ```
 
@@ -51,8 +53,8 @@ loadedMods.isModLoaded("minecraft");
 
 ## 参数
 
-| 名称   | 类型                                                                  | 可获得  | 可设置   |
-| ---- | ------------------------------------------------------------------- | ---- | ----- |
-| 模组   | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false |
-| size | int                                                                 | true | false |
+| 名称   | 类型                                                                  | 可获得  | 可设置   | 描述                                  |
+| ---- | ------------------------------------------------------------------- | ---- | ----- | ----------------------------------- |
+| 模组   | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false | Gets a list of all mods in the game |
+| size | int                                                                 | true | false | Gets the amount of mods loaded      |
 
