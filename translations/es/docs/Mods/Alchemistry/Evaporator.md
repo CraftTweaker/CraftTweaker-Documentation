@@ -11,7 +11,7 @@ mods.alchemistry.EvaporatorEvaporator
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## Addition
+## Suma
 ```zenscript
 mods.alchemistry.AtomizerEvaporator.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
