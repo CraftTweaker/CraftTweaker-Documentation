@@ -1,16 +1,17 @@
 # Anvil
 
-The Anvil is a simple 4x4 Crafting Table with the same options.
+The Anvil is a simple 4x4 Crafting Table with the same options.  
+NOTE: Due to a bug with ModTweaker, Anvil recipes are flipped diagonally (e.g., the dirt in the recipe below would be at the bottom left corner).
 
 ## Shaped
 
-### Addition
+### Suma
 
 ```zenscript
 mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
 
 mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
-   [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
+   [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:dirt>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
@@ -30,7 +31,7 @@ mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
 
 ## Shapeless
 
-### Addition
+### Suma
 
 ```zenscript
 mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
