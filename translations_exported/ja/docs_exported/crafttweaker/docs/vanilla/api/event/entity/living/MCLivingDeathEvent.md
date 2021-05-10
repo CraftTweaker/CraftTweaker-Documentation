@@ -31,7 +31,8 @@ Gets the source of the damage that killed the entity.
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
-MCLivingDeathEvent.getSource() as DamageSource
+// MCLivingDeathEvent.getSource() as DamageSource
+
 event.getSource();
 ```
 
@@ -40,7 +41,7 @@ event.getSource();
 
 ## Properties
 
-| 名称  | Type                                           | Has Getter | Has Setter |
-| --- | ---------------------------------------------- | ---------- | ---------- |
-| ソース | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      |
+| 名称  | Type                                           | Has Getter | Has Setter | Description                                           |
+| --- | ---------------------------------------------- | ---------- | ---------- | ----------------------------------------------------- |
+| ソース | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      | Gets the source of the damage that killed the entity. |
 
