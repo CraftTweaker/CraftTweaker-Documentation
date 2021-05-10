@@ -24,7 +24,7 @@ MCEntityJoinWorldEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntit
 
 ## Properties
 
-| 名称    | Type                                  | Has Getter | Has Setter |
-| ----- | ------------------------------------- | ---------- | ---------- |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true       | false      |
+| 名称    | Type                                  | Has Getter | Has Setter | Description             |
+| ----- | ------------------------------------- | ---------- | ---------- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true       | false      | No Description Provided |
 
