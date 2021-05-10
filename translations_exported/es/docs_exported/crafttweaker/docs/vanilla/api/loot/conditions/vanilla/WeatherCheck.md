@@ -21,7 +21,7 @@ WeatherCheck implements the following interfaces. That means all methods defined
 
 ## Methods
 
-### withRain
+:::group{name=withRain}
 
 Sets the condition to require a rainy weather.
 
@@ -32,11 +32,14 @@ Sets the condition to require a rainy weather.
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
-WeatherCheck.withRain() as WeatherCheck
+// WeatherCheck.withRain() as WeatherCheck
+
 myWeatherCheck.withRain();
 ```
 
-### withThunders
+:::
+
+:::group{name=withThunders}
 
 Sets the condition to require a thundering weather.
 
@@ -47,11 +50,14 @@ Sets the condition to require a thundering weather.
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
-WeatherCheck.withThunders() as WeatherCheck
+// WeatherCheck.withThunders() as WeatherCheck
+
 myWeatherCheck.withThunders();
 ```
 
-### withoutRain
+:::
+
+:::group{name=withoutRain}
 
 Sets the condition to require a non-rainy weather.
 
@@ -62,11 +68,14 @@ Sets the condition to require a non-rainy weather.
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
-WeatherCheck.withoutRain() as WeatherCheck
+// WeatherCheck.withoutRain() as WeatherCheck
+
 myWeatherCheck.withoutRain();
 ```
 
-### withoutThunders
+:::
+
+:::group{name=withoutThunders}
 
 Sets the condition to require a non-thundering weather.
 
@@ -77,8 +86,11 @@ Sets the condition to require a non-thundering weather.
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
-WeatherCheck.withoutThunders() as WeatherCheck
+// WeatherCheck.withoutThunders() as WeatherCheck
+
 myWeatherCheck.withoutThunders();
 ```
+
+:::
 
 
