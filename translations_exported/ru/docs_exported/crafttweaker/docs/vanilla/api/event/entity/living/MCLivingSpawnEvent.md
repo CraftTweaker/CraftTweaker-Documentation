@@ -18,10 +18,10 @@ MCLivingSpawnEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## Свойства
 
-| Название | Тип                                   | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------- | ------------ | ------------ |
-| world    | [MCWorld](/vanilla/api/world/MCWorld) | true         | false        |
-| x        | double                                | true         | false        |
-| y        | double                                | true         | false        |
-| z        | double                                | true         | false        |
+| Название | Тип                                   | Имеет Getter | Имеет Setter | Description             |
+| -------- | ------------------------------------- | ------------ | ------------ | ----------------------- |
+| world    | [MCWorld](/vanilla/api/world/MCWorld) | true         | false        | No Description Provided |
+| x        | double                                | true         | false        | No Description Provided |
+| y        | double                                | true         | false        | No Description Provided |
+| z        | double                                | true         | false        | No Description Provided |
 
