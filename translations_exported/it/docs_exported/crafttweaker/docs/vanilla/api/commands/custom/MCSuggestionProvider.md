@@ -65,7 +65,8 @@ MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSu
 Return Type: int
 
 ```zenscript
-MCSuggestionProvider.hashCode() as int
+// MCSuggestionProvider.hashCode() as int
+
 myMCSuggestionProvider.hashCode();
 ```
 
@@ -76,7 +77,8 @@ myMCSuggestionProvider.hashCode();
 Return Type: string
 
 ```zenscript
-MCSuggestionProvider.toString() as string
+// MCSuggestionProvider.toString() as string
+
 myMCSuggestionProvider.toString();
 ```
 
