@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The follow script will remove all Sand Paper Polishing recipes that output Polished Rose Quartz.
+The following script will remove all Sand Paper Polishing recipes that output Polished Rose Quartz.
 
 ```zenscript
 // <recipetype:create:pressing>.removeRecipe(IItemStack output)
