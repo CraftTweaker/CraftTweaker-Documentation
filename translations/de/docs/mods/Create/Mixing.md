@@ -25,9 +25,9 @@ The following script will add recipes that will:
 1) Ein Pfeil ausgeben, wenn ein Diamant und ein Apfel ohne Wärme mit einer Dauer von 100 Ticks gemischt werden. 2) Ziegel ausgeben, wenn ein Diamant, Erde und Lava (Flüssigkeit) mit "heated" Wärme mit einer Dauer von 100 Ticks gemischt werden. 3) Gibt Wasser (Flüssigkeit) aus, wenn Glas, Erde und Lava (Flüssigkeit) mit "superheated" Wärme gemischt werden und eine Dauer von 100 Ticks.
 
 ```zenscript
-// <recipetype:create:mixing>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
+// <recipetype:create:mixing>.addRecipe(String name, String heat, IItemStack output, IIngredientWithAmount[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
-// <recipetype:create:mixing>.addRecipe(String name, String heat, IFluidStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
+// <recipetype:create:mixing>.addRecipe(String name, String heat, IFluidStack output, IIngredientWithAmount[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
 <recipetype:create:mixing>.addRecipe("mixing_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>]);
 <recipetype:create:mixing>.addRecipe("mixing_test_2", "heated", <item:minecraft:brick>, [<item:minecraft:diamond>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
@@ -36,7 +36,7 @@ The following script will add recipes that will:
 
 #### Rezepte für Items entfernen
 
-Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen ausgeben.
+The following script will remove all Mixing recipes that output Andesite Alloy.
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IItemStack output)
@@ -46,7 +46,7 @@ Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen
 
 #### Rezepte für Flüssigkeiten entfernen
 
-Das folgende Skript wird alle kompatiblen Rezepte entfernen, die Builders Tee ausgeben (Fluid)
+The following script will remove all Compacting recipes that output Builders Tea (Fluid)
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IFluidStack output)
