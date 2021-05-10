@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ei
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte für das Polieren mit Sandpapier entfernen, die poliertes Rose Quartz ausgeben.
+The following script will remove all Sand Paper Polishing recipes that output Polished Rose Quartz.
 
 ```zenscript
 // <recipetype:create:pressing>.removeRecipe(IItemStack output)
