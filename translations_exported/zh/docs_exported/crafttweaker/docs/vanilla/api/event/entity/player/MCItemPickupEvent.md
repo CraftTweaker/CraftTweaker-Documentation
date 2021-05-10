@@ -23,7 +23,8 @@ MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemPickupEvent.getStack() as IItemStack
+// MCItemPickupEvent.getStack() as IItemStack
+
 myMCItemPickupEvent.getStack();
 ```
 
@@ -32,7 +33,7 @@ myMCItemPickupEvent.getStack();
 
 ## 参数
 
-| 名称    | 类型                                          | 可获得  | 可设置   |
-| ----- | ------------------------------------------- | ---- | ----- |
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称    | 类型                                          | 可获得  | 可设置   | 描述                      |
+| ----- | ------------------------------------------- | ---- | ----- | ----------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 
