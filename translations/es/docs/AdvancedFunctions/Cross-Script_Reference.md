@@ -10,7 +10,7 @@ This allows you to access these fields/functions using the dot-notation.
 - You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
 - ZS first checks for matching directories then for matching files or values.
 
-## Example
+## Ejemplo 
 
 Let's say we have two scripts: `a.zs` and `b.zs`.
 
