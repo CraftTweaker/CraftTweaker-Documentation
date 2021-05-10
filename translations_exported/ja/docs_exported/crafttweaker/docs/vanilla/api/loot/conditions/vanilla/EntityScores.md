@@ -23,7 +23,7 @@ EntityScores implements the following interfaces. That means all methods defined
 
 ## Methods
 
-### withExactScore
+:::group{name=withExactScore}
 
 Adds the scoreboard property <code>name</code> to the ones that should be checked, making sure that the values matches exactly the given one.
 
@@ -43,7 +43,9 @@ EntityScores.withExactScore(name as string, value as int) as EntityScores
 | value     | int    | The exact value the scoreboard property must have. |
 
 
-### withMaximumScore
+:::
+
+:::group{name=withMaximumScore}
 
 Adds the scoreboard property <code>name</code> to the ones that should be checked, setting its maximum accepted value to <code>max</code>.
 
@@ -65,7 +67,9 @@ EntityScores.withMaximumScore(name as string, max as int) as EntityScores
 | max       | int    | The maximum value the scoreboard property can have. |
 
 
-### withMinimumScore
+:::
+
+:::group{name=withMinimumScore}
 
 Adds the scoreboard property <code>name</code> to the ones that should be checked, setting its minimum accepted value to <code>min</code>.
 
@@ -87,7 +91,9 @@ EntityScores.withMinimumScore(name as string, min as int) as EntityScores
 | min       | int    | The minimum value the scoreboard property can have. |
 
 
-### withRangedScore
+:::
+
+:::group{name=withRangedScore}
 
 Adds the scoreboard property <code>name</code> to the ones that should be checked, setting both its minimum and maximum accepted values respectively to <code>min</code> and <code>max</code>.
 
@@ -111,7 +117,9 @@ EntityScores.withRangedScore(name as string, min as int, max as int) as EntitySc
 | max       | int    | The maximum value the scoreboard property can have. |
 
 
-### withTargetedEntity
+:::
+
+:::group{name=withTargetedEntity}
 
 Sets the entity that should be targeted by the loot condition.
 
@@ -129,5 +137,7 @@ EntityScores.withTargetedEntity(entity as TargetedEntity) as EntityScores
 | --------- | ------------------------------------------------------- | ----------------------------------- |
 | entity    | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | The entity that should be targeted. |
 
+
+:::
 
 
