@@ -12,13 +12,24 @@ import crafttweaker.api.entity.MCEntityClassification;
 
 MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt;. That means all methods available in Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; are also available in MCEntityClassification
 
+## Static Properties
+
+| 名称             | 类型                                                                           | 可获得  | 可设置   | 描述                      |
+| -------------- | ---------------------------------------------------------------------------- | ---- | ----- | ----------------------- |
+| AMBIENT        | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| CREATURE       | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| MISC           | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| MONSTER        | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| WATER_AMBIENT  | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+| WATER_CREATURE | [MCEntityClassification #MC实体分类](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
+
 ## 参数
 
-| 名称                       | 类型      | 可获得  | 可设置   |
-| ------------------------ | ------- | ---- | ----- |
-| commandString            | string  | true | false |
-| isAnimal #识别为动物          | boolean | true | false |
-| isPeaceful #友好生物         | boolean | true | false |
-| maxNumberOfEntity #实体最大值 | int     | true | false |
-| name                     | string  | true | false |
+| 名称                       | 类型      | 可获得  | 可设置   | 描述                      |
+| ------------------------ | ------- | ---- | ----- | ----------------------- |
+| commandString            | string  | true | false | No Description Provided |
+| isAnimal #识别为动物          | boolean | true | false | No Description Provided |
+| isPeaceful #友好生物         | boolean | true | false | No Description Provided |
+| maxNumberOfEntity #实体最大值 | int     | true | false | No Description Provided |
+| name                     | string  | true | false | No Description Provided |
 
