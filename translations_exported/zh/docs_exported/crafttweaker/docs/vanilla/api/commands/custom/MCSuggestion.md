@@ -97,7 +97,8 @@ MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggesti
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCSuggestion.getRange() as MCStringRange
+// MCSuggestion.getRange() as MCStringRange
+
 myMCSuggestion.getRange();
 ```
 
@@ -108,7 +109,8 @@ myMCSuggestion.getRange();
 Return Type: string
 
 ```zenscript
-MCSuggestion.getText() as string
+// MCSuggestion.getText() as string
+
 myMCSuggestion.getText();
 ```
 
@@ -119,7 +121,8 @@ myMCSuggestion.getText();
 Return Type: string
 
 ```zenscript
-MCSuggestion.getTooltip() as string
+// MCSuggestion.getTooltip() as string
+
 myMCSuggestion.getTooltip();
 ```
 
@@ -130,7 +133,8 @@ myMCSuggestion.getTooltip();
 Return Type: int
 
 ```zenscript
-MCSuggestion.hashCode() as int
+// MCSuggestion.hashCode() as int
+
 myMCSuggestion.hashCode();
 ```
 
@@ -141,7 +145,8 @@ myMCSuggestion.hashCode();
 Return Type: string
 
 ```zenscript
-MCSuggestion.toString() as string
+// MCSuggestion.toString() as string
+
 myMCSuggestion.toString();
 ```
 
