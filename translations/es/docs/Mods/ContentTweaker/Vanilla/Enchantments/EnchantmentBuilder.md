@@ -85,7 +85,7 @@ myChant.setTypeBow()
 myChant.setTypeWearable()
 ```
 
-## Example
+## Ejemplo 
 
 ```zenscript
 #loader contenttweaker
