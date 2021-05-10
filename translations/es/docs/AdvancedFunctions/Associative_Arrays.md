@@ -67,89 +67,89 @@ print(mapaConStrings["dos"]);
 
 ## Manipulando elementos que se encuentran dentro de un Array Asociativo
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+Como en Arrays, puedes manipular elementos dentro de un Mapa usando `array[indice / clave] = nuevoElemento`.  
+Esto significa que puedes añadir una entrada a un valor con una clave que aún no exista. 
 
 ```zenscript
-val changingArray = {
-    <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
+val mapaCambiante = {
+    <minecraft:dirt> : "Este soy yo",
+    <minecraft:gold_ingot> : "y lo odio"
 } as string[IItemStack];
 
-val gg = <minecraft:gold>;
+val oro = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//Cambia el valor de lingoteDeOro
+mapaCambiante[oro] = "y me encanta";
 
-//adds a new entry
-changingArray[<minecraft:grass>] = "Power!";
+//Añade una entrada nueva
+mapaCambiante[<minecraft:grass>] = "Olé";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## Conseguir lots Sets de Claves y Elementos de un Mapa
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+Un Set de Claves es un Array que contiene todas las claves del mapa   
+Un Set de Claves es un Array que contiene todos los elementos que tienen una clave del mapa   
+Un Set de Entradas es un Array que contiene todas las entradas del mapa (ver abajo).
 
 ```zenscript
-myAssocArray.keySet   //keySet
-myAssocArray.keys     //keySet
-myAssocArray.values   //valueSet
-myAssocArray.valueSet //valueSet
-myAssocArray.entrySet //entrySet
+myAssocArray.keySet   //Set de Claves
+myAssocArray.keys     //Set de Claves
+myAssocArray.values   //Set de Elementos
+myAssocArray.valueSet //Set de Elementos
+myAssocArray.entrySet //Set de Entradas
 ```
 
-## Iterating over an Associative Array
+## Bucle + Mapa
 
-There are two Iterators that allow you to iterate over an Associative Array:
+Hay dos iteradores que te permiten hacer un Bucle con un Mapa:
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- The iterador de claves: Da vueltas a las claves, presenta una variable. 
+- El iteradores de entradas: Da vueltas a todo lo que se encuentra en el array, presenta dos variables.
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+Vamos a crear un Mapa que almacena recetas de crafteo para loopear:
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- Las claves seran el resultado de la receta de tipo ` IItemStack <code/></li>
+<li>Los elementos seran los ingredientes de crafteo de tipo <code> IIngredient <code/></li>
+<li>Usaremos los dos iteradores: <br/>
+Primero el de claves, que se construye así: <code> for clave in mapa { hazAlgo; }
+<code/></li>
+<li>Luego usaremos el de entradas, que se construye así: <code> for clave, elemento in mapa { hazAlgo;} <code/></li>
+</ul>
 
-```zenscript
-import crafttweaker.item.IItemStack;
+<pre><code class="zenscript">import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-val dirt = <minecraft:dirt>;
-val recipeMapShaped = {
-    <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
-    <minecraft:gold_ingot> : [[dirt, dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
+val tierra = <minecraft:dirt>;
+val mapaDeRecetasShaped = {
+    <minecraft:grass> : [[tierra, tierra, tierra],[tierra, tierra, tierra],[tierra, tierra, tierra]],
+    <minecraft:gold_ingot> : [[tierra, tierra, tierra],[tierra, <minecraft:gold_ingot>, tierra],[tierra, tierra, tierra]]
 } as IIngredient[][][IItemStack];
 
-recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
+mapaDeRecetasShaped[tierra] = [[tierra, tierra, tierra],[tierra, null, tierra],[tierra, tierra, tierra]];
 
-//key will be grass, goldIngot, dirt
-for key in recipeMapShaped {
-    recipes.addShaped(key, recipeMapShaped[key]);
+//las claves seran tierra, hierba y lingote de oro
+for clave in mapaDeRecetasShaped {
+    recipes.addShaped(clave, mapaDeRecetasShaped[clave]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
-for key, value in recipeMapShaped {
-    recipes.addShaped(key, value);
+//las claves seran tierra, hierba, y lingote de oro y los elementos seran sus respectivos ingredientes de crafteo.
+for clave, elemento in  mapaDeRecetasShaped {
+    recipes.addShaped(clave, elemento);
 }
-```
-
-# ZenType Entry
-
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
-
-You can use the getters to get `key` and `value`
-
-```zenscript
-//Replace map with a reference to an existing map/associative array
-val myEntry = map.entrySet[0];
-
-
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
-```
+`</pre> 
+    # Entrada ZenType
+    
+    Una entrada de un mapa consiste de una clave y un elemento   
+    Actualmente la única manera de obtener este objeto es usando el metodo entrySet (Set de Entradas).
+    
+    Puedes usar los getters para conseguir la ` clave <code/> y <code> elemento `
+    
+    ```zenscript
+    //Sustituye mapa con el nombre de un Array Asociativo existente.
+    val miEntrada = mapa.entrySet[0];
+    
+    
+    miEntrsfs.key;    //Devuelve la clave de la entrada.
+    miEntrada.value;  //Devuelve el elemento de la entrada.
+    ```
