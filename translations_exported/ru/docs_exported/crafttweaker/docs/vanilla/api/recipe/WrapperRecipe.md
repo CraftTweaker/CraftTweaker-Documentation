@@ -29,12 +29,12 @@ WrapperRecipe.canFit(width as int, height as int) as boolean
 
 ## Свойства
 
-| Название    | Тип                                                                          | Имеет Getter | Имеет Setter |
-| ----------- | ---------------------------------------------------------------------------- | ------------ | ------------ |
-| dynamic     | boolean                                                                      | true         | false        |
-| group       | string                                                                       | true         | false        |
-| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        |
-| id          | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation)     | true         | false        |
-| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true         | false        |
-| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        |
+| Название    | Тип                                                                          | Имеет Getter | Имеет Setter | Description             |
+| ----------- | ---------------------------------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| dynamic     | boolean                                                                      | true         | false        | No Description Provided |
+| group       | string                                                                       | true         | false        | No Description Provided |
+| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        | No Description Provided |
+| id          | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation)     | true         | false        | No Description Provided |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true         | false        | No Description Provided |
+| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        | No Description Provided |
 
