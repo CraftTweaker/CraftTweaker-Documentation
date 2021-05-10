@@ -10,7 +10,7 @@
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
 - **Int heat** heat per instance.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
