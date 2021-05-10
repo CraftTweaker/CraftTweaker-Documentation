@@ -4,7 +4,7 @@
 
 `mods.bloodmagic.BloodAltar`
 
-## Addition
+## Suma
 
 This creates a blood altar recipe that uses the given `input` item and produces the given `output` item.  
 To get the `minimumTier`, substract 1 from what JEI/the sigil tells you, so a T1 altar would require `0`.  
