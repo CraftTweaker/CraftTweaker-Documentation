@@ -11,7 +11,7 @@ mods.exnihilocreatio.Crook
 - **Float chance** chance between 0-1.
 - **Float fortune chance** chance between 0-1.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
