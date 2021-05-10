@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und einen Apfel 
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Splashing-Rezepte entfernen, die Gelben Beton ausgeben.
+The following script will remove all Splashing recipes that output Yellow Concrete.
 
 ```zenscript
 // <recipetype:create:splashing>.removeRecipe(IItemStack output)
