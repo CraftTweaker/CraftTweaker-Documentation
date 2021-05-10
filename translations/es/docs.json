@@ -1,6 +1,7 @@
 {
   "nav": {
-    "Home": "index.md",
+    "Inicio": "index.md",
+
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
@@ -106,7 +107,7 @@
         "Food": {
           "MCFood": "vanilla/api/food/MCFood.md"
         },
-        "Items": {
+        "Objetos": {
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IItemStack": "vanilla/api/items/IItemStack.md"
         },
