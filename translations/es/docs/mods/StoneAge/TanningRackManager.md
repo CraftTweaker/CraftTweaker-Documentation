@@ -10,7 +10,7 @@
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
 - **String group** Recipe group
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack output, IIngredient input, IIngredient tool, @OptionalString String group)
