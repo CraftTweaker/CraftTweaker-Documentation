@@ -31,7 +31,8 @@ Gets the amount of damage.
 Return Type: float
 
 ```zenscript
-MCLivingHurtEvent.getAmount() as float
+// MCLivingHurtEvent.getAmount() as float
+
 event.getAmount();
 ```
 
@@ -44,7 +45,8 @@ Gets the source of the damage.
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
-MCLivingHurtEvent.getSource() as DamageSource
+// MCLivingHurtEvent.getSource() as DamageSource
+
 event.getSource();
 ```
 
@@ -57,7 +59,8 @@ Sets the amount of damage.
 Return Type: void
 
 ```zenscript
-MCLivingHurtEvent.setAmount(amount as float) as void
+// MCLivingHurtEvent.setAmount(amount as float) as void
+
 event.setAmount(0.5);
 ```
 
@@ -71,8 +74,8 @@ event.setAmount(0.5);
 
 ## Properties
 
-| 名称     | Type                                           | Has Getter | Has Setter |
-| ------ | ---------------------------------------------- | ---------- | ---------- |
-| amount | float                                          | true       | true       |
-| ソース    | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      |
+| 名称     | Type                                           | Has Getter | Has Setter | Description                    |
+| ------ | ---------------------------------------------- | ---------- | ---------- | ------------------------------ |
+| amount | float                                          | true       | true       | Gets the amount of damage.     |
+| ソース    | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      | Gets the source of the damage. |
 
