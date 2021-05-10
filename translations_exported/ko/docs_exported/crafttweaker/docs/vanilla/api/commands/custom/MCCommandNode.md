@@ -51,7 +51,8 @@ MCCommandNode.canUse(source as MCCommandSource) as boolean
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-MCCommandNode.createBuilder() as MCArgumentBuilder
+// MCCommandNode.createBuilder() as MCArgumentBuilder
+
 myMCCommandNode.createBuilder();
 ```
 
@@ -107,7 +108,8 @@ MCCommandNode.getChild(name as string) as MCCommandNode
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCCommandNode.getChildren() as Collection<MCCommandNode>
+// MCCommandNode.getChildren() as Collection<MCCommandNode>
+
 myMCCommandNode.getChildren();
 ```
 
@@ -118,7 +120,8 @@ myMCCommandNode.getChildren();
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCCommandNode.getCommand() as MCCommand
+// MCCommandNode.getCommand() as MCCommand
+
 myMCCommandNode.getCommand();
 ```
 
@@ -129,7 +132,8 @@ myMCCommandNode.getCommand();
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandNode.getExamples() as Collection<string>
+// MCCommandNode.getExamples() as Collection<string>
+
 myMCCommandNode.getExamples();
 ```
 
@@ -140,7 +144,8 @@ myMCCommandNode.getExamples();
 Return Type: string
 
 ```zenscript
-MCCommandNode.getName() as string
+// MCCommandNode.getName() as string
+
 myMCCommandNode.getName();
 ```
 
@@ -151,7 +156,8 @@ myMCCommandNode.getName();
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandNode.getRedirect() as MCCommandNode
+// MCCommandNode.getRedirect() as MCCommandNode
+
 myMCCommandNode.getRedirect();
 ```
 
@@ -162,7 +168,8 @@ myMCCommandNode.getRedirect();
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCCommandNode.getRedirectModifier() as MCRedirectModifier
+// MCCommandNode.getRedirectModifier() as MCRedirectModifier
+
 myMCCommandNode.getRedirectModifier();
 ```
 
@@ -188,7 +195,8 @@ MCCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCCommandNode.getRequirement() as Predicate<MCCommandSource>
+// MCCommandNode.getRequirement() as Predicate<MCCommandSource>
+
 myMCCommandNode.getRequirement();
 ```
 
@@ -199,7 +207,8 @@ myMCCommandNode.getRequirement();
 Return Type: string
 
 ```zenscript
-MCCommandNode.getUsageText() as string
+// MCCommandNode.getUsageText() as string
+
 myMCCommandNode.getUsageText();
 ```
 
@@ -210,7 +219,8 @@ myMCCommandNode.getUsageText();
 Return Type: int
 
 ```zenscript
-MCCommandNode.hashCode() as int
+// MCCommandNode.hashCode() as int
+
 myMCCommandNode.hashCode();
 ```
 
@@ -221,7 +231,8 @@ myMCCommandNode.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCCommandNode.isFork() as boolean
+// MCCommandNode.isFork() as boolean
+
 myMCCommandNode.isFork();
 ```
 
@@ -264,7 +275,8 @@ MCCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) 
 Return Type: string
 
 ```zenscript
-MCCommandNode.toString() as string
+// MCCommandNode.toString() as string
+
 myMCCommandNode.toString();
 ```
 
