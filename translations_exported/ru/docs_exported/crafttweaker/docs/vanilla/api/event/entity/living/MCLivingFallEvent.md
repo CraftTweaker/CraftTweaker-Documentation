@@ -24,8 +24,8 @@ MCLivingFallEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Свойства
 
-| Название         | Тип   | Имеет Getter | Имеет Setter |
-| ---------------- | ----- | ------------ | ------------ |
-| damageMultiplier | float | true         | true         |
-| distance         | float | true         | true         |
+| Название         | Тип   | Имеет Getter | Имеет Setter | Description             |
+| ---------------- | ----- | ------------ | ------------ | ----------------------- |
+| damageMultiplier | float | true         | true         | No Description Provided |
+| distance         | float | true         | true         | No Description Provided |
 
