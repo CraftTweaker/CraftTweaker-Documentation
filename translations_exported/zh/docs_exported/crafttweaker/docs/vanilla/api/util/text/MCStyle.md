@@ -39,7 +39,8 @@ MCStyle.equals(other as Object) as boolean
 Return Type: boolean
 
 ```zenscript
-MCStyle.getBold() as boolean
+// MCStyle.getBold() as boolean
+
 myMCStyle.getBold();
 ```
 
@@ -50,7 +51,8 @@ myMCStyle.getBold();
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-MCStyle.getFontId() as MCResourceLocation
+// MCStyle.getFontId() as MCResourceLocation
+
 myMCStyle.getFontId();
 ```
 
@@ -61,7 +63,8 @@ myMCStyle.getFontId();
 Return Type: string
 
 ```zenscript
-MCStyle.getInsertion() as string
+// MCStyle.getInsertion() as string
+
 myMCStyle.getInsertion();
 ```
 
@@ -72,7 +75,8 @@ myMCStyle.getInsertion();
 Return Type: boolean
 
 ```zenscript
-MCStyle.getItalic() as boolean
+// MCStyle.getItalic() as boolean
+
 myMCStyle.getItalic();
 ```
 
@@ -83,7 +87,8 @@ myMCStyle.getItalic();
 Return Type: boolean
 
 ```zenscript
-MCStyle.getObfuscated() as boolean
+// MCStyle.getObfuscated() as boolean
+
 myMCStyle.getObfuscated();
 ```
 
@@ -94,7 +99,8 @@ myMCStyle.getObfuscated();
 Return Type: boolean
 
 ```zenscript
-MCStyle.getStrikethrough() as boolean
+// MCStyle.getStrikethrough() as boolean
+
 myMCStyle.getStrikethrough();
 ```
 
@@ -105,7 +111,8 @@ myMCStyle.getStrikethrough();
 Return Type: boolean
 
 ```zenscript
-MCStyle.getUnderlined() as boolean
+// MCStyle.getUnderlined() as boolean
+
 myMCStyle.getUnderlined();
 ```
 
@@ -116,7 +123,8 @@ myMCStyle.getUnderlined();
 Return Type: int
 
 ```zenscript
-MCStyle.hashCode() as int
+// MCStyle.hashCode() as int
+
 myMCStyle.hashCode();
 ```
 
@@ -129,7 +137,8 @@ Whether or not this style is empty (inherits everything from the parent).
 Return Type: boolean
 
 ```zenscript
-MCStyle.isEmpty() as boolean
+// MCStyle.isEmpty() as boolean
+
 myMCStyle.isEmpty();
 ```
 
@@ -307,7 +316,8 @@ MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 Return Type: string
 
 ```zenscript
-MCStyle.toString() as string
+// MCStyle.toString() as string
+
 myMCStyle.toString();
 ```
 
