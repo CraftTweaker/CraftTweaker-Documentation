@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Composting
 
 ## Package
@@ -9,7 +11,7 @@
 - **setAmount(int amount)** the chance for an item to add a level of compost
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:compost>.create("compost_test").setInput(<item:minecraft:oak_leaves>).setAmount(100);
