@@ -36,7 +36,8 @@ MCParsedArgument.equals(o as Object) as boolean
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCParsedArgument.getRange() as MCStringRange
+// MCParsedArgument.getRange() as MCStringRange
+
 myMCParsedArgument.getRange();
 ```
 
@@ -47,7 +48,8 @@ myMCParsedArgument.getRange();
 Return Type: int
 
 ```zenscript
-MCParsedArgument.hashCode() as int
+// MCParsedArgument.hashCode() as int
+
 myMCParsedArgument.hashCode();
 ```
 
@@ -58,7 +60,8 @@ myMCParsedArgument.hashCode();
 Return Type: string
 
 ```zenscript
-MCParsedArgument.toString() as string
+// MCParsedArgument.toString() as string
+
 myMCParsedArgument.toString();
 ```
 
