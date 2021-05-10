@@ -23,7 +23,8 @@ Checks if a position is within an active raid.
 Return Type: boolean
 
 ```zenscript
-MCServerWorld.isRaid(pos as BlockPos) as boolean
+// MCServerWorld.isRaid(pos as BlockPos) as boolean
+
 world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
 ```
 
@@ -41,7 +42,8 @@ Checks if a position is within a chunk that is considered a slime chunk.
 Return Type: boolean
 
 ```zenscript
-MCServerWorld.isSlimeChunk(pos as BlockPos) as boolean
+// MCServerWorld.isSlimeChunk(pos as BlockPos) as boolean
+
 world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
 ```
 
@@ -59,7 +61,8 @@ Checks if a position is within a village.
 Return Type: boolean
 
 ```zenscript
-MCServerWorld.isVillage(pos as BlockPos) as boolean
+// MCServerWorld.isVillage(pos as BlockPos) as boolean
+
 world as MCServerWorld.isVillage(new BlockPos(0, 1, 2));
 ```
 
@@ -77,7 +80,8 @@ Sets the time of the Minecraft day to day. This is like using the "time set day"
 Return Type: void
 
 ```zenscript
-MCServerWorld.setTimeToDay() as void
+// MCServerWorld.setTimeToDay() as void
+
 world as MCServerWorld.setTimeToDay();
 ```
 
@@ -90,7 +94,8 @@ Sets the time of the Minecraft day to midnight. This is like using the "time set
 Return Type: void
 
 ```zenscript
-MCServerWorld.setTimeToMidnight() as void
+// MCServerWorld.setTimeToMidnight() as void
+
 world as MCServerWorld.setTimeToMidnight();
 ```
 
@@ -103,7 +108,8 @@ Sets the time of the Minecraft day to night. This is like using the "time set ni
 Return Type: void
 
 ```zenscript
-MCServerWorld.setTimeToNight() as void
+// MCServerWorld.setTimeToNight() as void
+
 world as MCServerWorld.setTimeToNight();
 ```
 
@@ -116,7 +122,8 @@ Sets the time of the Minecraft day to noon. This is like using the "time set noo
 Return Type: void
 
 ```zenscript
-MCServerWorld.setTimeToNoon() as void
+// MCServerWorld.setTimeToNoon() as void
+
 world as MCServerWorld.setTimeToNoon();
 ```
 
@@ -125,9 +132,9 @@ world as MCServerWorld.setTimeToNoon();
 
 ## Properties
 
-| Name      | Type                                              | Has Getter | Has Setter |
-| --------- | ------------------------------------------------- | ---------- | ---------- |
-| seed      | long                                              | true       | false      |
-| server    | [MCServer](/vanilla/api/game/MCServer)            | true       | false      |
-| timeOfDay | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false      | true       |
+| Name      | Type                                              | Has Getter | Has Setter | Description                         |
+| --------- | ------------------------------------------------- | ---------- | ---------- | ----------------------------------- |
+| seed      | long                                              | true       | false      | Gets the random seed of the world.  |
+| server    | [MCServer](/vanilla/api/game/MCServer)            | true       | false      | No Description Provided             |
+| timeOfDay | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false      | true       | Sets the time of the Minecraft day. |
 
