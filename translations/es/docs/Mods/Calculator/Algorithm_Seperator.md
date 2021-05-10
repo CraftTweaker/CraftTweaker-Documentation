@@ -10,7 +10,7 @@ import mods.calculator.algorithmSeparator;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
-## Addition
+## Suma
 ```zenscript
 algorithmSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
