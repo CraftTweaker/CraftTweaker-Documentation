@@ -1,5 +1,7 @@
 # CraftTweaker
 
+**[There is a new Migration Guide for verion 7.1.0, click here to check it out](/migrations/migration_7_1_0)**
+
 CraftTweaker是一个允许我的世界模组作者自定义游戏（如增加/删除合成表等）的模组。
 
 CraftTweaker使用一个自定义脚本语言，叫做ZenScript， 它是一种相当容易学习的语言，这种语言比目前的其他语言(例如JavaScript) 更加符合CraftTweaker 的需求。
