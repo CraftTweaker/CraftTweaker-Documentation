@@ -343,7 +343,7 @@ Return Type: void
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | No Description Provided |
+| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | The new material of this Block. |
 
 
 :::
