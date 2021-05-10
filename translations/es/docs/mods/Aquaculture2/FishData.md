@@ -12,7 +12,7 @@ Fish Data is what handles the amount of fish fillet's you get, when filleting a 
 ## Adding Fish Data
 
 ```zenscript
-// mods.aquaculture.FishData.add(fishStack, minWeight, maxWeight, filletAmount);
+// mods.aquaculture.FishData.add(fish as Item, min as double, max as double, filletAmount as int);
 
 mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ```
@@ -26,7 +26,7 @@ mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ## Removing Fish Data
 
 ```zenscript
-// mods.aquaculture.FishData.remove(fishStack);
+// mods.aquaculture.FishData.remove(fishStack as Item);
 
 mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>);
 ```
