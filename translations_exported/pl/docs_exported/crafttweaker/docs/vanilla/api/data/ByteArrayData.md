@@ -42,7 +42,8 @@ new ByteArrayData(internal as byte[]) as ByteArrayData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-ByteArrayData.asCollection() as ICollectionData
+// ByteArrayData.asCollection() as ICollectionData
+
 [4, 1, 2].asCollection();
 ```
 
@@ -55,7 +56,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-ByteArrayData.asMap() as IData[string]
+// ByteArrayData.asMap() as IData[string]
+
 [4, 1, 2].asMap();
 ```
 
@@ -66,7 +68,8 @@ ByteArrayData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-ByteArrayData.asNumber() as INumberData
+// ByteArrayData.asNumber() as INumberData
+
 [4, 1, 2].asNumber();
 ```
 
@@ -79,7 +82,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-ByteArrayData.contains(data as IData) as boolean
+// ByteArrayData.contains(data as IData) as boolean
+
 [4, 1, 2].contains("Display");
 ```
 
@@ -99,7 +103,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-ByteArrayData.getId() as byte
+// ByteArrayData.getId() as byte
+
 [4, 1, 2].getId();
 ```
 
@@ -112,7 +117,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-ByteArrayData.getString() as string
+// ByteArrayData.getString() as string
+
 [4, 1, 2].getString();
 ```
 
