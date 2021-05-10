@@ -45,7 +45,8 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 Return Type: void
 
 ```zenscript
-MCFood.clearEffects() as void
+// MCFood.clearEffects() as void
+
 myMCFood.clearEffects();
 ```
 
@@ -144,11 +145,11 @@ MCFood.setSaturation(saturation as float) as MCFood
 
 ## Properties
 
-| Name           | Type    | Ha Getter | Ha Setter |
-| -------------- | ------- | --------- | --------- |
-| canEatWhenFull | boolean | true      | false     |
-| healing        | int     | true      | false     |
-| isFastEating   | boolean | true      | false     |
-| meat           | boolean | true      | false     |
-| saturation     | float   | true      | false     |
+| Name           | Type    | Ha Getter | Ha Setter | Description             |
+| -------------- | ------- | --------- | --------- | ----------------------- |
+| canEatWhenFull | boolean | true      | false     | No Description Provided |
+| healing        | int     | true      | false     | No Description Provided |
+| isFastEating   | boolean | true      | false     | No Description Provided |
+| meat           | boolean | true      | false     | No Description Provided |
+| saturation     | float   | true      | false     | No Description Provided |
 
