@@ -23,7 +23,8 @@ MCTickEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all method
 Return Type: string
 
 ```zenscript
-MCTickEvent.getPhase() as string
+// MCTickEvent.getPhase() as string
+
 myMCTickEvent.getPhase();
 ```
 
@@ -34,7 +35,8 @@ myMCTickEvent.getPhase();
 Return Type: string
 
 ```zenscript
-MCTickEvent.getSide() as string
+// MCTickEvent.getSide() as string
+
 myMCTickEvent.getSide();
 ```
 
@@ -45,7 +47,8 @@ myMCTickEvent.getSide();
 Return Type: string
 
 ```zenscript
-MCTickEvent.getType() as string
+// MCTickEvent.getType() as string
+
 myMCTickEvent.getType();
 ```
 
@@ -56,7 +59,8 @@ myMCTickEvent.getType();
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isClient() as boolean
+// MCTickEvent.isClient() as boolean
+
 myMCTickEvent.isClient();
 ```
 
@@ -67,7 +71,8 @@ myMCTickEvent.isClient();
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isEnd() as boolean
+// MCTickEvent.isEnd() as boolean
+
 myMCTickEvent.isEnd();
 ```
 
@@ -78,7 +83,8 @@ myMCTickEvent.isEnd();
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isServer() as boolean
+// MCTickEvent.isServer() as boolean
+
 myMCTickEvent.isServer();
 ```
 
@@ -89,7 +95,8 @@ myMCTickEvent.isServer();
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isStart() as boolean
+// MCTickEvent.isStart() as boolean
+
 myMCTickEvent.isStart();
 ```
 
@@ -98,13 +105,13 @@ myMCTickEvent.isStart();
 
 ## 参数
 
-| 名称     | 类型      | 可获得  | 可设置   |
-| ------ | ------- | ---- | ----- |
-| client | boolean | true | false |
-| 结束     | boolean | true | false |
-| phase  | string  | true | false |
-| server | boolean | true | false |
-| side   | string  | true | false |
-| 开始     | boolean | true | false |
-| 类型     | string  | true | false |
+| 名称     | 类型      | 可获得  | 可设置   | 描述                      |
+| ------ | ------- | ---- | ----- | ----------------------- |
+| client | boolean | true | false | No Description Provided |
+| 结束     | boolean | true | false | No Description Provided |
+| phase  | string  | true | false | No Description Provided |
+| server | boolean | true | false | No Description Provided |
+| side   | string  | true | false | No Description Provided |
+| 开始     | boolean | true | false | No Description Provided |
+| 类型     | string  | true | false | No Description Provided |
 
