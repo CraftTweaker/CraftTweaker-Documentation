@@ -150,6 +150,9 @@
         "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
         "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
         "Sawmill": "mods/ThermalSeries/Sawmill.md"
+      },
+      "Zen Summoning": {
+        "Examples": "mods/zensummoning/examples.md"
       }
     }
   }
