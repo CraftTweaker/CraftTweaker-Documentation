@@ -1,6 +1,6 @@
 # ZenSummoning Examples
 
-Once a Summon Info is registered with the Summoning Director, it will be available for players to use.
+Once a [Summoning Info](/mods/zensummoning/SummoningInfo) is registered with the [Summoning Director](/mods/zensummoning/SummoningDirector), it will be available for players to use.
 
 To perform a summoning, the player must insert the reagents into the altar and activate it with the catalyst in their hand.  
 Alternatively, the catalyst can be dropped above the altar and a redstone signal applied.
