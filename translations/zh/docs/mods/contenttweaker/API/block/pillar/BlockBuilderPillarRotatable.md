@@ -45,7 +45,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resou
 
 | 参数         | 类型                                                                               | 描述                                        |
 | ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
+| endTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the end sides. |
 
 
 
@@ -62,7 +62,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(blockn
 
 | 参数         | 类型                                                                                                                                                                                     | 描述                  |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| endTexture | 函数&lt;[craftmiliter.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| endTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
 
 
 ### withSideTexture
@@ -80,7 +80,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<reso
 
 | 参数           | 类型                                                                               | 描述                                    |
 | ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+| sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides. |
 
 
 
@@ -97,7 +97,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(block
 
 | 参数           | 类型                                                                                                                                                                                     | 描述                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | 函数&lt;[craftmiliter.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| sidesTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
 
 
 
