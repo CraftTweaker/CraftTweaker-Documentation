@@ -1,5 +1,25 @@
 # ZenSummoning Examples
 
+Once a Summon Info is registered with the Summoning Director, it will be available for players to use.
+
+To perform a summoning, the player must insert the reagents into the altar and activate it with the catalyst in their hand.  
+Alternatively, the catalyst can be dropped above the altar and a redstone signal applied.
+
+Players can look at the usage of the altar in JEI to see available summonings.  
+Looking at the recipes for spawn eggs will show summonings that include the mob the egg is for.
+
+## Example summoning 1
+
+- Summons 4 cows and 10 blazes
+    - Spawns the blazes 8 blocks above the altar, +/- 3 blocks in each direction
+    - Spawns the cows 4 blocks above the altar, +/- 3 blocks in each direction
+- Consumes 1 stone, 12 eggs, 1 stick as catalyst
+- Doesn't work in the rain
+    - If it's raining, displays a custom message
+    - If it's successful, displays "Woohoo!"
+- Gives the mobs custom NBT
+    - 1.16 renamed generic.maxHealth to generic.max_health.
+    - https://minecraft.fandom.com/wiki/Attribute
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -18,14 +38,14 @@ SummoningDirector.addSummonInfo(
             .setCount(4)
             .setOffset(0,4,0)
             .setSpread(3,3,3)
-            .setData({"Health": 200, "Attributes":[{"Name":"generic.maxHealth","Base":200}]})
+            .setData({"Health": 200, "Attributes":[{"Name":"generic.max_health","Base":200}]})
         )
         .addMob(MobInfo.create()
             .setMob("minecraft:blaze")
             .setCount(10)
             .setOffset(0,8,0)
             .setSpread(3,3,3)
-            .setData({"Health": 2, "Attributes":[{"Name":"generic.maxHealth","Base":2}]})
+            .setData({"Health": 2, "Attributes":[{"Name":"generic.max_health","Base":2}]})
         )
         .setMutator((attempt as SummoningAttempt) => {
             if (attempt.world.raining) {
@@ -36,6 +56,20 @@ SummoningDirector.addSummonInfo(
             }
         })
 );
+```
+
+## Example summoning 2
+
+- Spawns one cow
+- Consumes one sapling (with oredict support), consumes one stone as catalyst
+
+```zenscript
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.item.IIngredient;
+import mods.zensummoning.SummoningDirector;
+import mods.zensummoning.SummoningAttempt;
+import mods.zensummoning.SummoningInfo;
+import mods.zensummoning.MobInfo;
 
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
@@ -46,6 +80,17 @@ SummoningDirector.addSummonInfo(
         )
 );
 ```
+
+## Example summoning 3
+
+- Spawns a zombie villager
+    - Offset x+1, y+2, z+1
+    - Additional random offset +/- 1 in each direction
+    - Custom mob NBT
+        - Increased health, lowered movement speed, more attack damage
+        - Custom name displayed
+        - Doesn't despawn
+- Consumes 2 leather, one beef, and one bone as catalyst
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -67,9 +112,9 @@ SummoningDirector.addSummonInfo(
             .setData({
                 "Health":200,
                 "Attributes":[
-                    {"Name":"generic.maxHealth", "Base":200},
-                    {"Name":"generic.movementSpeed", "Base":0.3},
-                    {"Name":"generic.attackDamage", "Base":6}
+                    {"Name":"generic.max_health", "Base":200},
+                    {"Name":"generic.movement_speed", "Base":0.3},
+                    {"Name":"generic.attack_damage", "Base":6}
                 ],
                 "CustomName":"A Lost Soul",
                 "PersistenceRequired":1,
@@ -78,6 +123,12 @@ SummoningDirector.addSummonInfo(
         )
 );
 ```
+
+## Example summoning 4 and 5
+
+- Adds two summoning with same reagents an catalyst
+    - One spawns a blaze, the other spawns a cow. Both don't work in the rain.
+- When attempted, there is a 4:1 chance that you will summon the cow.
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -118,22 +169,15 @@ SummoningDirector.addSummonInfo(
         }
     })
 );
-
-SummoningDirector.addSummonInfo(
-    SummoningInfo.create()
-        .setCatalyst(<item:minecraft:pumpkin>)
-        .setReagents([<item:minecraft:gold_block>*2])
-        .addMob(MobInfo.create()
-            .setMob("minecraft:chicken")
-        )
-    .setMutator((attempt as SummoningAttempt) => {
-        if (attempt.world.raining) {
-            attempt.success = false;
-            attempt.message = "test!";
-        }
-    })
-);
 ```
+
+## Example summoning 6
+
+- Consumes 1 stone, 12 eggs
+- Doesn't consume the catalyst, 1 stick
+- Spawns 1 zombie
+    - Offset, spread, custom NBT
+- Doesn't work in the rain
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
