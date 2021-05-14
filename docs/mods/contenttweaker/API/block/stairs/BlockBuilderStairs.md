@@ -50,7 +50,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTextur
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| bottomTexture | MCResourceLocation | The texture to be used for the bottom side |
 
 
 
@@ -69,7 +69,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName a
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| bottomTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 ### withSidesTexture
@@ -87,7 +87,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture 
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| sidesTexture | MCResourceLocation | The texture to be used for the sides |
 
 
 
@@ -106,7 +106,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| sidesTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 ### withTopTexture
@@ -125,7 +125,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:conte
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| topTexture | MCResourceLocation | The texture to be used for the top side |
 
 
 
@@ -143,7 +143,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as f
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| topTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 

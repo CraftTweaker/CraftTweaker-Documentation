@@ -5,7 +5,7 @@
 
 ## Methods
 - **String name** Recipe name
-- **[IItemStack](/Vanilla/Items/IItemStack/) output**
+- **[IItemStack](/vanilla/api/items/IItemStack) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] inputMatrix**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool** Crafting tool
 - **String group** Recipe group

@@ -4,7 +4,7 @@
 
 | 类型 | 数据类型                                        |
 | -- | ------------------------------------------- |
-| 输入 | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 输入 | Fluidstack |
 
 ### 序言
 

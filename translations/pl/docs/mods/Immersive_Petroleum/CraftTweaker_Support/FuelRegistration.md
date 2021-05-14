@@ -4,7 +4,7 @@
 
 | Name     | Type                                        |
 | -------- | ------------------------------------------- |
-| Płyn / t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Płyn / t | Fluidstack |
 | Flux/t   | Integer                                     |
 
 Example:
@@ -18,7 +18,7 @@ mods.immersivePetum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> *
 
 | Name     | Type                                        |
 | -------- | ------------------------------------------- |
-| Płyn / t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Płyn / t | Fluidstack |
 
 Example:
 ```ZenScript

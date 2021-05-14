@@ -43,7 +43,7 @@ new mods.immersivepetroleum.StillationBuilder();
 
 | 名称   | 类型                                          |
 | ---- | ------------------------------------------- |
-| 输出流体 | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 输出流体 | Fluidstack |
 
 比如：
 ```zenscript
@@ -56,7 +56,7 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 | 名称     | 类型                                 |
 | ------ | ---------------------------------- |
-| Item   | [物品应用](/Vanilla/Items/IItemStack/) |
+| Item   | [物品应用](/vanilla/api/items/IItemStack) |
 | Chance | 整数 (0-100)                         |
 
 比如：
@@ -70,7 +70,7 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 | 名称     | 类型                                 |
 | ------ | ---------------------------------- |
-| Item   | [物品应用](/Vanilla/Items/IItemStack/) |
+| Item   | [物品应用](/vanilla/api/items/IItemStack) |
 | Chance | 双倍(0.0 - 1.0)                      |
 
 比如：

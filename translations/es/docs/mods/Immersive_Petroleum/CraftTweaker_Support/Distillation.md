@@ -43,7 +43,7 @@ new mods.immersivepetroleum.DistillationBuilder();
 
 | Name             | Type                                        |
 | ---------------- | ------------------------------------------- |
-| Fluido de salida | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Fluido de salida | Fluidstack |
 
 Example:
 ```zenscript
@@ -56,7 +56,7 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 | Name   | Type                                          |
 | ------ | --------------------------------------------- |
-| Item   | [Pila de objetos](/Vanilla/Items/IItemStack/) |
+| Item   | [Pila de objetos](/vanilla/api/items/IItemStack) |
 | Chance | Entero (0 - 100)                              |
 
 Example:
@@ -70,7 +70,7 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 | Name   | Type                                          |
 | ------ | --------------------------------------------- |
-| Item   | [Pila de objetos](/Vanilla/Items/IItemStack/) |
+| Item   | [Pila de objetos](/vanilla/api/items/IItemStack) |
 | Chance | Doble (0.0 - 1.0)                             |
 
 Example:

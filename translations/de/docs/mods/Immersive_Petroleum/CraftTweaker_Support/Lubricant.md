@@ -4,7 +4,7 @@
 
 | Type  | Datentyp                                    |
 | ----- | ------------------------------------------- |
-| Input | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Input | Fluidstack |
 
 ### Vorwort
 

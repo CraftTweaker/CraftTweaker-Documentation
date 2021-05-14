@@ -44,7 +44,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTextur
 
 | 参数            | 返回值类型                                                                            | 描述                                         |
 | ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| bottomTexture | MCResourceLocation | The texture to be used for the bottom side |
 
 
 
@@ -61,7 +61,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName a
 
 | 参数            | 返回值类型                                                                                                                                                                                                   | 描述                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| bottomTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 ### withSidesTexture
@@ -78,7 +78,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture 
 
 | 参数           | 返回值类型                                                                            | 描述                                   |
 | ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| sidesTexture | MCResourceLocation | The texture to be used for the sides |
 
 
 
@@ -95,7 +95,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as
 
 | 参数           | 返回值类型                                                                                                                                                                                                   | 描述                  |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| sidesTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 ### withTopTexture
@@ -113,7 +113,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:conte
 
 | 参数         | 返回值类型                                                                            | 描述                                      |
 | ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| topTexture | MCResourceLocation | The texture to be used for the top side |
 
 
 
@@ -129,7 +129,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as f
 
 | 参数         | 返回值类型                                                                                                                                                                                                   | 描述                  |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| topTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 

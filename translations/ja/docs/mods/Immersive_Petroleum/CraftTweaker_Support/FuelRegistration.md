@@ -4,7 +4,7 @@
 
 | 名称     | Type                                        |
 | ------ | ------------------------------------------- |
-| 流体/t   | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 流体/t   | Fluidstack |
 | Flux/t | Integer                                     |
 
 Example:
@@ -18,7 +18,7 @@ mods.immysivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water
 
 | 名称   | Type                                        |
 | ---- | ------------------------------------------- |
-| 流体/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 流体/t | Fluidstack |
 
 Example:
 ```ZenScript
