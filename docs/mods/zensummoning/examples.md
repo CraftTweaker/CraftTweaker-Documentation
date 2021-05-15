@@ -126,7 +126,7 @@ SummoningDirector.addSummonInfo(
 
 ## Example summoning 4 and 5
 
-- Adds two summoning with same reagents an catalyst
+- Adds two summoning with the same reagents an catalyst
     - One spawns a blaze, the other spawns a cow. Both don't work in the rain.
 - When attempted, there is a 4:1 chance that you will summon the cow.
 
