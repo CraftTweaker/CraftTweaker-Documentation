@@ -128,7 +128,7 @@ SummoningDirector.addSummonInfo(
 
 - Adds two summoning with the same reagents an catalyst
     - One spawns a blaze, the other spawns a cow. Both don't work in the rain.
-- When attempted, there is a 4:1 chance that you will summon the cow.
+- When attempted, there is a 4 in 5 chance that you will summon the cow.
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
