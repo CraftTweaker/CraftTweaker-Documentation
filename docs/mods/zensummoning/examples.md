@@ -13,7 +13,7 @@ Looking at the recipes for spawn eggs will show summonings that include the mob 
 - Summons 4 cows and 10 blazes
     - Spawns the blazes 8 blocks above the altar, +/- 3 blocks in each direction
     - Spawns the cows 4 blocks above the altar, +/- 3 blocks in each direction
-- Consumes 1 stone, 12 eggs, 1 stick as catalyst
+- Consumes 1 stone, 12 eggs and 1 stick as catalyst
 - Doesn't work in the rain
     - If it's raining, displays a custom message
     - If it's successful, displays "Woohoo!"
