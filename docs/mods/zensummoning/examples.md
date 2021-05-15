@@ -173,7 +173,7 @@ SummoningDirector.addSummonInfo(
 
 ## Example summoning 6
 
-- Consumes 1 stone, 12 eggs
+- Consumes 1 stone and 12 eggs
 - Doesn't consume the catalyst, 1 stick
 - Spawns 1 zombie
     - Offset, spread, custom NBT
