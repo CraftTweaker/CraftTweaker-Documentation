@@ -61,7 +61,7 @@ SummoningDirector.addSummonInfo(
 ## Example summoning 2
 
 - Spawns one cow
-- Consumes one sapling (with oredict support), consumes one stone as catalyst
+- Consumes one sapling (with oredict support) and consumes one stone as catalyst
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
