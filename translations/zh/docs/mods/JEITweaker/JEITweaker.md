@@ -80,7 +80,7 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 
 # Recipe Hiding
 
-The following script will hide the Oak Boat recipe from the Crafting category. This will not remove the recipe, it will just hide it.
+下面的脚本将会从合成类别中隐藏橡木船的配方。 这不会移除配方，仅仅是将它隐藏了。
 
 ```zenscript
 // mods.jei.JEI.hideRecipe(String category, String recipeName)
@@ -90,11 +90,11 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "minecraft:oak_boat");
 
 ## 添加信息
 
-The following script will add any custom information to an Item or a Fluid when looking at their usages in JEI.
+下面的脚本将在JEI中查看物品或流体的使用时为其添加自定义信息。
 
-### Item Info
+### 物品信息
 
-The following script will add three lines to the JEI Information tab when looking at a Diamond.
+下面的脚本将在查看钻石时向JEI信息标签中添加三行内容。
 
 ```zenscript
 // mods.jei.JEI.addInfo(IItemStack stack, String[] information)
@@ -104,9 +104,9 @@ mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This
 
 上面的代码将会显示出如下效果![填写完的提交框](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
-### Fluid Info
+### 流体信息
 
-Adding Fluid Info is very similar to adding Item Info, the only difference is that the Fluid has a size.
+添加流体信息与添加物品信息非常相似，唯一不同的是流体具有数量。
 
 Using `<fluid:minecraft:water>` will show a single layer of Water in JEI. Using `<fluid:minecraft:water> * 1000` will show a full block worth of Water in JEI.
 
