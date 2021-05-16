@@ -1,7 +1,7 @@
 # Recipe Managers
 
-Recipe Managers are crafting systems (like the Crafting Table, Furnace or Camp Fire) that use the Vanilla Data Pack JSON system.  
-Most Recipe Managers have the same **removal** methods but different methods to add recipes.
+配方管理器是使用原版数据包JSON系统的制作系统（如工作台、熔炉或营火）。  
+大多数配方管理器都有相同的**移除**方法，但添加配方的方法不同。
 
 Recipe Managers are generally what you will be using to interact with recipes in the game, there are however some mods that don't use the DataPack JSON system, and for those mods you would need to add and remove recipes differently.
 
@@ -189,13 +189,13 @@ craftingTable.removeByRegex(".*wool.*");
 
 ### removeAll
 
-This method allows you to remove all the recipes from the Recipe Manager.
+这个方法允许你从配方管理器中删除所有的配方。
 
 ```zenscript
 removeAll(String regex);
 ```
 
-An example use case for this method is removing all the Blast Furnace recipes.
+这个方法的一个用例是删除所有高炉的配方。
 
 ```zenscript
 blastFurnace.removeAll();
