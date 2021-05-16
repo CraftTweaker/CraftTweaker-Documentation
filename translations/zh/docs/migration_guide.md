@@ -1,6 +1,6 @@
-# Migration Guide
+# 迁移指南
 
-This page will list links to the required steps that need to be taken to migrate scripts from older versions of CraftTweaker to newer versions.  
-For most CraftTweaker updates, there won't be any steps necessary, so these updates are not listed here.
+本页将列出将脚本从旧版本的CraftTweaker迁移到新版本所需的步骤的链接。  
+对于大多数CraftTweaker的更新，不会有任何必要的步骤，因此这里没有列出这些更新。
 
-* [CraftTweaker version 7.0.0 to 7.1.0](/migrations/migration_7_1_0)
+* [从CraftTweaker 7.0.0 迁移到 7.1.0](/migrations/migration_7_1_0)
