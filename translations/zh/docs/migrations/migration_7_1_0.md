@@ -1,11 +1,11 @@
-# Migrating Scripts to CraftTweaker 7.1
+# 将脚本迁移至CraftTweaker 7.1
 
-CraftTweaker version 7.1 has some changes that break backwards compatibility.  
-These breaking changes are in the API that addons use as well as in the types that scripts use.  
-This document should give an overview of the most important changes and how pack developers can get their scripts working again.
+CraftTweaker 7.1 版本的一些改动破坏了向后兼容性。  
+这些破坏性的改变在模组所使用的API和脚本使用的类型中。  
+此文档应当概述了最重要的变化，以及开发者应该如何让他们的脚本重新工作起来。
 
 
-## MCTag becomes MCTag&LT;T&GT;
+## MCTag 变为 MCTag&LT;T&GT;
 
 We replaced Tags with a generic system that is more extensible and will work better with future updates.  
 That change will break existing scripts in two ways:
@@ -15,7 +15,7 @@ That change will break existing scripts in two ways:
 The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
 If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
 
-Migration example
+迁移示例
 ```zenscript
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.MCItemDefinition;
@@ -56,7 +56,7 @@ The broken classes will be logged in the crafttweaker log. If you find some of y
 Event listeners no longer have the consumer in a custom constructor.  
 Instead, the registitration method was changed to be generic.
 
-Migration example:
+迁移示例：
 ```zenscript
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCAnvilRepairEvent;
@@ -84,7 +84,7 @@ We removed Storage tags from the ZenCode language Specifications for now.
 They are not required for CraftTweaker and made debugging harder.  
 Most people did not need to use storage tags so we don't expect you to need to pursue this migration step.
 
-Migration example:
+迁移示例：
 ```zenscript
 var before = {} as string`static[string`static]`unique
 
