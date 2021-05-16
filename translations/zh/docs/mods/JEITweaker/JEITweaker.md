@@ -12,7 +12,7 @@
 
 ## 隐藏物品
 
-The following script will hide Dirt from JEI when looking at the item list.
+下面的脚本将在查看物品列表时从JEI中隐藏泥土。
 
 ```zenscript
 // mods.jei.JEI.hideItem(IItemStack stack)
@@ -20,9 +20,9 @@ The following script will hide Dirt from JEI when looking at the item list.
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## Fluid Hiding
+## 隐藏流体
 
-The following script will hide Lava from JEI when looking at the item list, this is just the actual Fluid, and not the Bucket Item or other Items that have the Fluid (like a Tank)
+下面的脚本将在查看物品列表时从JEI中隐藏熔岩，这仅仅隐藏实际的流体，并非装有液体的桶或其他装有流体的物品（列如储罐）。
 
 ```zenscript
 // mods.jei.JEI.hideFluid(IFluidStack stack)
@@ -30,9 +30,9 @@ The following script will hide Lava from JEI when looking at the item list, this
 mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
 ```
 
-## Mod Hiding
+## 隐藏模组
 
-The following script will hide all the Items added by "minecraft", except for Stone from the item list.
+下面的脚本将隐藏所有由“minecraft”添加的物品，除了石头。
 
 ```zenscript
 // mods.jei.JEI.hideItem(string modid, crafttweaker.api.recipeFilter exclude)
@@ -42,9 +42,9 @@ mods.jei.JEI.hideMod("minecraft", (name as string) => {
 });
 ```
 
-## Regex Hiding
+## 通过正则表达式隐藏
 
-The following script will hide all the Items that have `stone` in their name from the item list.
+下面的脚本将从物品列表中隐藏所有名字中带有`stone`的物品。
 
 ```zenscript
 // mods.jei.JEI.hideItem(string regex)
@@ -54,7 +54,7 @@ mods.jei.JEI.hideRegex(".*stone.*");
 
 ## 隐藏类别
 
-The following script will hide the Furnace category from JEI. It is essentially hiding all the recipes in the category.
+下面的脚本将从JEI中隐藏所有熔炼类别的配方。 它本质上是隐藏了该类别中的所有配方。
 
 ```zenscript
 // mods.jei.JEI.hideCategory(String category)
@@ -76,7 +76,7 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 "jei:information"
 ```
 
-Mods can add more categories though, so be sure to do `/ct dump jeiCategories` to get a full list of them!
+不过模组可以添加更多的类别，因此确保使用`/ct dump jeiCategories`指令来获取完整的类别列表！
 
 # Recipe Hiding
 
