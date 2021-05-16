@@ -13,7 +13,7 @@ You can also use `/ct log` to open the log file in your system's default text ed
 The `crafttweaker.log` file uses a specific format in it's output, that format is:
 
 ```plaintext
-[HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
+[HH:MM:SS.ms][Forge 加载阶段（LOADERSTAGE）][端（SIDE）][类型（TYPE）] <信息>
 ```
 
 An example of how this may look would be:
