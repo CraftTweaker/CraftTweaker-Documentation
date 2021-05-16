@@ -10,10 +10,10 @@ CraftTweaker 7.1 版本的一些改动破坏了向后兼容性。
 We replaced Tags with a generic system that is more extensible and will work better with future updates.  
 That change will break existing scripts in two ways:
 
-1) The specialized addition and removal methods have been removed. <br>You now use `add` and `remove` instead of `addItems`, `addFluids` and the like. 2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:items:forge:gems>`
+1) The specialized addition and removal methods have been removed. <br>现在使用`add`、`remove`，而不是`addItems`、`addFluid`等之类的方法。 2）括号处理程序的语法现在要求标签类型作为一个额外的参数。 <br>因此`<tag:forge:gems>`应变为`<tag:items:forge:gems>`
 
-The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
-If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
+`/ct dump tags`和`/ct hand`指令已更新来表现此改变。  
+如果需要从item标签使用IIngredient的任何扩展方法，则需要首先调用` .asIIngredient()`。
 
 迁移示例
 ```zenscript
@@ -78,7 +78,7 @@ CTEventManager.register<MCAnvilRepairEvent>((event) => {
 ```
 
 
-## ZenCode: Storage tags are gone
+## ZenCode：移除了Storage标签
 
 We removed Storage tags from the ZenCode language Specifications for now.  
 They are not required for CraftTweaker and made debugging harder.  
