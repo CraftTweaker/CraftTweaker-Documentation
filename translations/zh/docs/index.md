@@ -1,6 +1,6 @@
 # CraftTweaker
 
-**[There is a new Migration Guide for verion 7.1.0, click here to check it out](/migrations/migration_7_1_0)**
+**[有一个新的7.1.0版本的迁移指南，点击这里查看。](/migrations/migration_7_1_0)**
 
 CraftTweaker是一个允许我的世界模组作者自定义游戏（如增加/删除合成表等）的模组。
 
