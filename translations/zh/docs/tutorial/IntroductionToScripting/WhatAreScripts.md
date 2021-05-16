@@ -1,6 +1,6 @@
-# What Are Scripts
+# 脚本是什么
 
-A script is simply a file with a `.zs` file extension, that is all that is needed to classify a file as a script file.
+脚本只是一个带有`.zs`文件扩展名的文件，这就是将一个文件归类为脚本文件的全部条件了。
 
 #### Note
 
