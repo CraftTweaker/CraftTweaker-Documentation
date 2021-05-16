@@ -43,12 +43,12 @@ var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
 
 
-## Wrapper types become vanilla types
+## 封装类型变为原版类型
 
-We changed some internals workings of CraftTweaker to directly use minecraft types.  
-This change should not affect your existing scripts directly, but will break some of the integrations added by other mods.
+我们改变了一些CraftTweaker内部的工作方式来直接使用Minecraft的类型。  
+这一变化应该不会直接影响你现有的脚本，但会破坏其他模组添加的一些集成。
 
-The broken classes will be logged in the crafttweaker log. If you find some of your scripts breaking, check if they use one of the broken classes.
+损坏的类将被记录在crafttweaker的日志中。 如果你发现你的一些脚本损坏了，请检查它们是否使用了其中某个被损坏的类。
 
 
 ## Method to register EventHandlers changed signature
@@ -61,7 +61,7 @@ Instead, the registitration method was changed to be generic.
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCAnvilRepairEvent;
 
-//Old way:
+//旧方法
 CTEventManager.register(new MCAnvilRepairEvent((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -69,7 +69,7 @@ CTEventManager.register(new MCAnvilRepairEvent((event) => {
  }));
 
 
-//New way
+//新方法
 CTEventManager.register<MCAnvilRepairEvent>((event) => {
      var player = event.player;
      var result = event.itemResult;
