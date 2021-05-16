@@ -25,15 +25,15 @@ Some examples are:
 Vanilla Recipe Managers are special as they have dedicated Global Variables that allow you to reference them without using a BracketHandler.
 
 The Vanilla Recipe Managers are:
-| Recipe Manager   | Bracket Handler                                 | Global Variable |
-| ---------------- | ----------------------------------------------- | --------------- |
-| Blasting         | `<recipetype:minecraft:blasting>`         | `blastFurnace`  |
-| Campfire Cooking | `<recipetype:minecraft:campfire_cooking>` | `campfire`      |
-| Crafting         | `<recipetype:minecraft:crafting>`         | `craftingTable` |
-| Smelting         | `<recipetype:minecraft:smelting>`         | `furnace`       |
-| Smithing         | `<recipetype:minecraft:smithing>`         | `smithing`      |
-| Smoking          | `<recipetype:minecraft:smoking>`          | `smoker`        |
-| Stone Cutting    | `<recipetype:minecraft:stonecutting>`     | `stoneCutter`   |
+| Recipe Manager | Bracket Handler                                 | Global Variable |
+| -------------- | ----------------------------------------------- | --------------- |
+| 高炉             | `<recipetype:minecraft:blasting>`         | `blastFurnace`  |
+| 营火             | `<recipetype:minecraft:campfire_cooking>` | `campfire`      |
+| 工作台合成          | `<recipetype:minecraft:crafting>`         | `craftingTable` |
+| 熔炉             | `<recipetype:minecraft:smelting>`         | `furnace`       |
+| 锻造台            | `<recipetype:minecraft:smithing>`         | `smithing`      |
+| 烟熏炉            | `<recipetype:minecraft:smoking>`          | `smoker`        |
+| 切石机            | `<recipetype:minecraft:stonecutting>`     | `stoneCutter`   |
 
 The Vanilla Recipe Managers can be referenced by either their Bracket Handler or the Global Variable, for example:
 
