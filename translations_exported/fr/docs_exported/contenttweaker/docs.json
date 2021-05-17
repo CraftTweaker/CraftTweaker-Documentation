@@ -29,7 +29,6 @@
             "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
             "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
             "MCItemGroup": "mods/contenttweaker/API/item/MCItemGroup.md",
-            "MCToolType": "mods/contenttweaker/API/item/MCToolType.md",
             "Basic": {
               "ItemBuilderBasic": "mods/contenttweaker/API/item/basic/ItemBuilderBasic.md"
             },
