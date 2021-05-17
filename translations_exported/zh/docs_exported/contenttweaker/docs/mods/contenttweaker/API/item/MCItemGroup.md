@@ -16,19 +16,24 @@ import mods.contenttweaker.item.MCItemGroup;
 MCItemGroup implements the following interfaces. That means all methods defined in these interfaces are also available in MCItemGroup
 
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## 方法
 
-### getPath
+:::group{name=getPath}
 
 Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemGroup:` part.
 
 Return Type: string
 
 ```zenscript
-MCItemGroup.getPath() as string
+// MCItemGroup.getPath() as string
+
 <itemgroup:misc>.getPath();
 ```
-### setBackgroundImageName
+
+:::
+
+:::group{name=setBackgroundImageName}
 
 Sets the image name of the Background that is used for this tab in the creative menu
 
@@ -37,34 +42,46 @@ Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 ```zenscript
 MCItemGroup.setBackgroundImageName(texture as string) as MCItemGroup
 ```
+
 | 参数      | 类型     | 描述                     |
 | ------- | ------ | ---------------------- |
 | texture | string | The texture to be used |
 
-### setNoScrollbar
+
+:::
+
+:::group{name=setNoScrollbar}
 
 Removes the scrollbar of the item Group in the creative inventory
 
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-MCItemGroup.setNoScrollbar() as MCItemGroup
+// MCItemGroup.setNoScrollbar() as MCItemGroup
+
 <itemgroup:misc>.setNoScrollbar();
 ```
-### setNoTitle
+
+:::
+
+:::group{name=setNoTitle}
 
 Removes the title of the item Group in the creative inventory
 
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-MCItemGroup.setNoTitle() as MCItemGroup
+// MCItemGroup.setNoTitle() as MCItemGroup
+
 <itemgroup:misc>.setNoTitle();
 ```
 
+:::
+
+
 ## 参数
 
-| 名称   | 类型     | 可获得  | 可设置   |
-| ---- | ------ | ---- | ----- |
-| path | string | true | false |
+| 名称   | 类型     | 可获得  | 可设置   | 描述                                                                                                                                 |
+| ---- | ------ | ---- | ----- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| path | string | true | false | Gets the path of the item group. <br />  The path is what you use in the Bracket Expression after the `<itemGroup:` part. |
 
