@@ -16,3 +16,26 @@ import mods.contenttweaker.block.BlockTypeBuilder;
 BlockTypeBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in BlockTypeBuilder
 
 - [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+
+## 方法
+
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockTypeBuilder.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<BlockBuilderBasic>().build("my_awesome_block");
+```
+
+| 参数               | 类型     | 描述                                   |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+
