@@ -18,19 +18,45 @@ BlockBuilderStairs extends [BlockTypeBuilder](/mods/contenttweaker/API/block/Blo
 
 ## Methods
 
-### withBottomTexture
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockBuilderStairs.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Description                          |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+:::group{name=withBottomTexture}
 
 Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
 
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-BlockBuilderStairs.withBottomTexture(bottomTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderStairs
+// BlockBuilderStairs.withBottomTexture(bottomTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderStairs
+
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
+
 | Parameter     | Type                                                                                                                                              | Description         |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | bottomTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withBottomTexture}
 
 Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
@@ -39,23 +65,34 @@ Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBui
 ```zenscript
 BlockBuilderStairs.withBottomTexture(bottomTexture as MCResourceLocation) as BlockBuilderStairs
 ```
+
 | Parameter     | Type                                                         | Description                                |
 | ------------- | ------------------------------------------------------------ | ------------------------------------------ |
 | bottomTexture | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
 
-### withSidesTexture
+
+:::
+
+:::group{name=withSidesTexture}
 
 Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
 
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-BlockBuilderStairs.withSidesTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderStairs
+// BlockBuilderStairs.withSidesTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderStairs
+
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
+
 | Parameter    | Type                                                                                                                                              | Description         |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withSidesTexture}
 
 Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
@@ -64,11 +101,15 @@ Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBui
 ```zenscript
 BlockBuilderStairs.withSidesTexture(sidesTexture as MCResourceLocation) as BlockBuilderStairs
 ```
+
 | Parameter    | Type                                                         | Description                          |
 | ------------ | ------------------------------------------------------------ | ------------------------------------ |
 | sidesTexture | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
 
-### withTopTexture
+
+:::
+
+:::group{name=withTopTexture}
 
 Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
 
@@ -77,20 +118,31 @@ Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBui
 ```zenscript
 BlockBuilderStairs.withTopTexture(topTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderStairs
 ```
+
 | Parameter  | Type                                                                                                                                              | Description         |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | topTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withTopTexture}
 
 Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-BlockBuilderStairs.withTopTexture(topTexture as MCResourceLocation) as BlockBuilderStairs
+// BlockBuilderStairs.withTopTexture(topTexture as MCResourceLocation) as BlockBuilderStairs
+
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
+
 | Parameter  | Type                                                         | Description                             |
 | ---------- | ------------------------------------------------------------ | --------------------------------------- |
 | topTexture | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+
+
+:::
 
 
