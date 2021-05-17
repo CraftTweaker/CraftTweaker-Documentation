@@ -154,6 +154,20 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 
 :::
 
+:::group{name=getRegistryName}
+
+Gets the registry name of this block.
+
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+
+```zenscript
+// MCBlock.getRegistryName() as MCResourceLocation
+
+<block:minecraft:grass_block>.getRegistryName();
+```
+
+:::
+
 :::group{name=getSlipperiness}
 
 Gets the slipperiness of this Block.
@@ -341,9 +355,9 @@ Return Type: void
 <block:minecraft:grass_block>.setMaterial(2);
 ```
 
-| Параметр | Тип                                                  | Description             |
-| -------- | ---------------------------------------------------- | ----------------------- |
-| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | No Description Provided |
+| Параметр | Тип                                                  | Description                     |
+| -------- | ---------------------------------------------------- | ------------------------------- |
+| material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | The new material of this Block. |
 
 
 :::
@@ -398,6 +412,7 @@ Return Type: void
 | jumpFactor      | float                                                                                                                    | true         | true         | Gets the jump factor of this Block.                                                                                          |
 | lootTable       | string                                                                                                                   | true         | false        | Gets the loot table id for this Block.                                                                                       |
 | material        | [MCMaterial](/vanilla/api/block/material/MCMaterial)                                                                     | true         | true         | Gets the material of this Block.                                                                                             |
+| registryName    | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation)                                                 | true         | false        | Gets the registry name of this block.                                                                                        |
 | slipperiness    | float                                                                                                                    | true         | true         | Gets the slipperiness of this Block.                                                                                         |
 | speedFactor     | float                                                                                                                    | true         | true         | Gets the speed factor of this Block.                                                                                         |
 | tags            | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt; | true         | false        | Gets all the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.                                 |
