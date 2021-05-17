@@ -35,7 +35,7 @@
 
 ## 无模组的格式
 
-In cases where a modid isn't needed to reference an object (Such as Text Formatting, where mods can't add new objects), a different format is used.
+在不需要modid来引用对象的情况下（比如文本格式化，mods不能添加新对象），会使用不同的格式。
 
 ```zenscript
 <type:name>
@@ -44,9 +44,9 @@ In cases where a modid isn't needed to reference an object (Such as Text Formatt
 这方面的一些例子包括：
 
 ```zenscript
-<blockmaterial:earth> // References the Earth Block Material.
-<directionaxis:x> // References the X Direction Axis.
-<entityclassification:monster> // References the Monster Entity Classification.
+<blockmaterial:earth> // 指Earth方块材料.
+<directionaxis:x> // 指X轴.
+<entityclassification:monster> // 指实体分类怪物
 ```
 
 ## 标签格式
