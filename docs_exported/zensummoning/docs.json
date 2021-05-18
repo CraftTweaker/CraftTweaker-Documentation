@@ -2,17 +2,10 @@
   "nav": {
     "Mods": {
       "Zen Summoning": {
-<<<<<<< HEAD
         "Summoning Director": "mods/zensummoning/SummoningDirector.md",
         "Summoning Attempt": "mods/zensummoning/SummoningAttempt.md",
         "Summoning Info": "mods/zensummoning/SummoningInfo.md",
         "Mob Info": "mods/zensummoning/MobInfo.md"
-=======
-        "Summoning Director": "SummoningDirector.md",
-        "Summoning Attempt": "SummoningAttempt.md",
-        "Summoning Info": "SummoningInfo.md",
-        "Mob Info": "MobInfo.md"
->>>>>>> upstream/1.16
       }
     }
   }
