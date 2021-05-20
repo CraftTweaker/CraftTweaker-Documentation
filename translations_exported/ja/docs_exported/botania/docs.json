@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "Mods": {
+      "Botania": {
+        "ElvenTrade": "mods/Botania/ElvenTrade.md",
+        "ManaInfusion": "mods/Botania/ManaInfusion.md",
+        "Orechid": "mods/Botania/Orechid.md",
+        "PureDaisy": "mods/Botania/PureDaisy.md",
+        "RuneAltar": "mods/Botania/RunicAltar.md",
+        "StateIngredient": "mods/Botania/StateIngredient.md",
+        "TerraPlate": "mods/Botania/TerraPlate.md"
+      }
+    }
+  }
+}
