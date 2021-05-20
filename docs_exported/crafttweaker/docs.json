@@ -181,6 +181,7 @@
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
+          "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
           "Rarity": "vanilla/api/item/Rarity.md"
         },
         "Items": {
@@ -332,6 +333,7 @@
           "ToolType": "vanilla/api/tool/ToolType.md"
         },
         "Util": {
+          "ActionResultType": "vanilla/api/util/ActionResultType.md",
           "BlockPos": "vanilla/api/util/BlockPos.md",
           "DamageSource": "vanilla/api/util/DamageSource.md",
           "DamageSourceHelper": "vanilla/api/util/DamageSourceHelper.md",
@@ -357,6 +359,7 @@
           "Explosion": "vanilla/api/world/Explosion.md",
           "ExplosionMode": "vanilla/api/world/ExplosionMode.md",
           "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCBlockDisplayReader": "vanilla/api/world/MCBlockDisplayReader.md",
           "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
         }

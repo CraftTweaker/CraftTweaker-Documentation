@@ -264,6 +264,25 @@ myMCLivingEntity.getHealth();
 
 :::
 
+:::group{name=getHeldItem}
+
+Gets the ItemStack in the specific hand.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// MCLivingEntity.getHeldItem(hand as MCHand) as IItemStack
+
+myMCLivingEntity.getHeldItem(MCHand.MAIN_HAND);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+
+
+:::
+
 :::group{name=getHeldItemMainhand}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -592,6 +611,26 @@ MCLivingEntity.setHealth(health as float) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | health | float | No Description Provided |
+
+
+:::
+
+:::group{name=setHeldItem}
+
+Sets a copied given itemStack to the hand
+
+Return Type: void
+
+```zenscript
+// MCLivingEntity.setHeldItem(hand as MCHand, itemStack as IItemStack) as void
+
+myMCLivingEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:diamond>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 :::
