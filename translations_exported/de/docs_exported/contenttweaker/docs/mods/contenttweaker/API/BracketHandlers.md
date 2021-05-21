@@ -18,6 +18,50 @@ import mods.contenttweaker.BracketHandlers;
 
 ## Static Methods
 
+:::group{name=getCoTBlock}
+
+Gets the registered advanced CoT block. Will throw an error if the block could not be found
+
+Returns: The found IIsCotBlock  
+Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
+
+```zenscript
+<advancedblock:test_block>
+
+// BracketHandlers.getCoTBlock(tokens as string) as CoTBlockAdvanced
+
+BracketHandlers.getCoTBlock("test_block");
+```
+
+| Parameter | Type   | Beschreibung                                      |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | string | What you would createDataCompound in the BEP call |
+
+
+:::
+
+:::group{name=getCoTItem}
+
+Gets the registered advanced CoT item. Will throw an error if the item could not be found
+
+Returns: The found IIsCotItem  
+Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
+
+```zenscript
+<advanceditem:test_item>
+
+// BracketHandlers.getCoTItem(tokens as string) as CoTItemAdvanced
+
+BracketHandlers.getCoTItem("test_item");
+```
+
+| Parameter | Type   | Beschreibung                                      |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | string | What you would createDataCompound in the BEP call |
+
+
+:::
+
 :::group{name=getItemGroup}
 
 Gets the itemGroup. Will throw an error if the group could not be found
