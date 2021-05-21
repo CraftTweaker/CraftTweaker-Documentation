@@ -1,6 +1,6 @@
 # BlockBuilderBasic
 
-This builder builds the block type that is used by default in [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)#build This builder does not offer any special properties to set, you can only build it.
+This builder builds the block type that is used by default in BlockBuilder#build This builder does not offer any special properties to set, you can only build it.
 
 This class was added by a mod with mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
