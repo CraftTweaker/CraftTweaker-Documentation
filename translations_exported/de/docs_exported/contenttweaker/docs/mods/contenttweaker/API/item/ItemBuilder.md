@@ -47,6 +47,37 @@ new ItemBuilder().build("my_awesome_block");
 
 :::
 
+:::group{name=isImmuneToFire}
+
+Sets that this item is immune to fire
+
+Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+
+```zenscript
+// ItemBuilder.isImmuneToFire() as ItemBuilder
+
+new ItemBuilder().isImmuneToFire();
+```
+
+:::
+
+:::group{name=withFood}
+
+Sets that this item is a food
+
+Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+
+```zenscript
+ItemBuilder.withFood(food as MCFood) as ItemBuilder
+```
+
+| Parameter | Type                               | Beschreibung |
+| --------- | ---------------------------------- | ------------ |
+| food      | [MCFood](/vanilla/api/food/MCFood) | the food     |
+
+
+:::
+
 :::group{name=withItemGroup}
 
 Allows you to set the item group that this item will appear in. By default, items will land in `misc`
