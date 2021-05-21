@@ -54,6 +54,20 @@ myBlockBuilder.notSolid();
 
 :::
 
+:::group{name=setRequiresTool}
+
+Sets that the block needs a tool to harvest.
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.setRequiresTool() as BlockBuilder
+
+myBlockBuilder.setRequiresTool();
+```
+
+:::
+
 :::group{name=withHardnessAndResistance}
 
 Sets the block's hardness and resistance levels.
@@ -230,6 +244,24 @@ myBlockBuilder.withRarity("UNCOMMON");
 
 :::
 
+:::group{name=withRenderType}
+
+Sets the block's render type.
+ Will also set the block as [this](.)#notSolid() if the argument is not solid
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| renderType | [BlockRenderType](/mods/contenttweaker/API/block/BlockRenderType) | No Description Provided |
+
+
+:::
+
 :::group{name=withSlipperiness}
 
 Sets the slipperiness.
@@ -246,6 +278,20 @@ myBlockBuilder.withSlipperiness(0.5f);
 |-----------|------|-------------|
 | slipperinessIn | float | The value to set |
 
+
+:::
+
+:::group{name=withTickRandomly}
+
+Sets that the block should be ticked randomly.
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withTickRandomly() as BlockBuilder
+
+myBlockBuilder.withTickRandomly();
+```
 
 :::
 
