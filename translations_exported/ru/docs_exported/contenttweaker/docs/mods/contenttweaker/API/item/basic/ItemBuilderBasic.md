@@ -1,6 +1,6 @@
 # ItemBuilderBasic
 
-The basic builder for items, also called by ItemBuilder#build. Does not have any special properties, it exists.
+The basic builder for items, also called by [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#build. Does not have any special properties, it exists.
 
 This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
