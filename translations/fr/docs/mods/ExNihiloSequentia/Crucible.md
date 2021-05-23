@@ -6,8 +6,8 @@
 `import mods.exnihilosequentia.ZenCrucibleRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setInput(IIngredient input)** the input
+- **create(String nom)**
+- **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
 - **setAmount(int amount)** the amount of fluid produced
 - **setCrucibleType(String crucibleType)** the crucible type
 - **setResultFluid(IFluidStack fluid)** the resulting fluid
