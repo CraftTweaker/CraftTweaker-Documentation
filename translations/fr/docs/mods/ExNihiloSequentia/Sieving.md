@@ -6,11 +6,11 @@
 `import mods.exnihilosequentia.ZenSieveRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **addDrop(IItemStack drop)** the item that drops from the block
-- **addRoll(String mesh, float chance)** the mesh type and the chance for an additional item to drop
-- **setWaterlogged()** if the sieve must be waterlogged for the recipe
+- **create(String nom)**
+- **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
+- **addDrop(IItemStack drop)** l'item qui est drop du bloc.
+- **addRoll(String mesh, float chance)** le type de maille et les chances de drop de l'item.
+- **setWaterlogged()** si le tamis doit être sous l'eau pour la recette.
 
 
 ## Addition
