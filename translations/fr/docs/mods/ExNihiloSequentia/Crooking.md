@@ -6,8 +6,8 @@
 `import mods.exnihilosequentia.ZenCrookRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setInput(IIngredient input)** the input
+- **create(String nom)**
+- **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
 - **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
 
 
