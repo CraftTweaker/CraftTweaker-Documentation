@@ -6,7 +6,7 @@
 `import mods.exnihilosequentia.ZenFluidOnTopRecipe;`
 
 ## Methods
-- **create(String name)**
+- **create(String nom)**
 - **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
 - **setFluidOnTop(IFluidStack fluidOnTop)** the fluid on top
 - **setResult(IItemStack result)** the result of the recipe
