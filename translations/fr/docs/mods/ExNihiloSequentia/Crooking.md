@@ -8,7 +8,7 @@
 ## Methods
 - **create(String nom)**
 - **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
-- **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
+- **addDrop(IItemStack drop, float chance)** l'item qui est donner et sa chance de le drop.
 
 
 ## Addition
