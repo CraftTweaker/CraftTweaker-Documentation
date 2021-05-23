@@ -7,9 +7,9 @@
 
 ## Methods
 - **create(String nom)**
-- **setInput(IIngredient input)** the block that needs to be broken
-- **addOutput(IItemStack drop)** the item the block drops when broken
-- **addOutput(IItemStack drop, float chance)** the other item the blocks drops when broken and its chance to drop
+- **setInput(IIngrédient bloc)** Le bloc qui a besoin d'être cassé.
+- **addOutput(IItemStack drop)** L'élément que le bloc drop lorsqu'il est cassé.
+- **addOutput(IItemStack drop, float chance)** l'autre élément que le bloc lâchent quand il est cassé et sa chance de le drop.
 
 
 ## Addition
