@@ -1,15 +1,15 @@
 ::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
 
-# Fluid Transform
+# Transformation de fluide
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidTransformRecipe;`
 
 ## Methods
 - **create(String nom)**
-- **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
-- **setCatalyst(IIngredient catalyst)** the item to be inserted
-- **setResult(IFluidStack result)** the result of the recipe
+- **setFluidInTank(IFluidStack fluidInTank)** Le fluide dans le réservoir.
+- **setCatalyst(IIngrédient catalyseur)** l'élément à insérer
+- **setResult(IFluidStack resultat)** Le résultat de la recette.
 
 
 ## Addition
