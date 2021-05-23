@@ -6,7 +6,7 @@
 `import mods.exnihilosequentia.ZenHeatRecipe;`
 
 ## Methods
-- **create(String name)**
+- **create(String nom)**
 - **setBlock(MCBlock input)** the block to add as a heat source
 - **setAmount(int amount)** the heat source strenght
 
