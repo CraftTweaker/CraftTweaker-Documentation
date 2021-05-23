@@ -14,7 +14,7 @@
 ## Addition
 
 ```zenscript
-<recipetype:exnihilosequentia:compost>.create("compost_test").setInput(<item:minecraft:oak_leaves>).setAmount(100);
+<recipetype:exnihilosequentia:compost>.create("oakleaves_compost").setInput(<item:minecraft:oak_leaves>).setAmount(100);
 ```
 
 ## Removal
