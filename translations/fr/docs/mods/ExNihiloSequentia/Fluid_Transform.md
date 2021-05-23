@@ -15,7 +15,7 @@
 ## Addition
 
 ```zenscript
-<recipetype:exnihilosequentia:fluid_transform>.create("fluid_transform_test").setFluidInTank(<fluid:minecraft:lava>).setCatalyst(<item:minecraft:diamond>).setResult(<fluid:minecraft:water>);
+<recipetype:exnihilosequentia:fluid_transform>.create("test_transformation_fluide").setFluidInTank(<fluid:minecraft:lava>).setCatalyst(<item:minecraft:diamond>).setResult(<fluid:minecraft:water>);
 ```
 
 ## Removal
