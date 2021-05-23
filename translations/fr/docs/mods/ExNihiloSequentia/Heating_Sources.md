@@ -7,8 +7,8 @@
 
 ## Methods
 - **create(String nom)**
-- **setBlock(MCBlock input)** the block to add as a heat source
-- **setAmount(int amount)** the heat source strenght
+- **setBlock(MCBlock input)** Le bloc à ajouter comme source de chaleur.
+- **setAmount(int amount)** La force de la source de chaleur.
 
 
 
