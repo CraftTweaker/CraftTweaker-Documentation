@@ -11,7 +11,7 @@ crafttweaker.api.registries.IRecipeManager
 ```
 
 ## Implemented Interfaces
-IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
+IRecipeManager는 아래와 같은 인터페이스를 구현합니다. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
