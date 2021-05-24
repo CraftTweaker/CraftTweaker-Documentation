@@ -11,11 +11,11 @@
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 작물을 심는 데 쓰이는 아이템입니다.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 작물을 보여주는 데 사용하는 블록입니다.
-- `tickRate` &lt;int> 작물의 생장 속도를 결정하는 인자 중 하나입니다.
-- `multiplier` &lt;float> 작물의 생장 속도를 결정하는 또다른 인자입니다.
-- `categories` &lt;string[]> 작물이 자랄 수 있는 토양 카테고리의 배열입니다.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 작물을 심는 데 쓰이는 아이템.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 작물을 보여주는 데 사용하는 블록.
+- `tickRate` &lt;int> 작물의 생장 속도를 결정하는 인자 중 하나.
+- `multiplier` &lt;float> 작물의 생장 속도를 결정하는 또다른 인자.
+- `categories` &lt;string[]> 작물이 자랄 수 있는 토양 카테고리의 배열.
 
 새 작물을 생성하고자 할 때 사용할 수 있습니다. 부쉈을 때의 아이템은 별도로 추가해야 한다는 것을 잊지 마시기 바랍니다.
 
@@ -40,7 +40,7 @@ Crop.remove("botanypots:crop/wheat");
 `Crop.setSeed(id, seed);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 작물을 심는 데 쓰이는 아이템입니다.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 작물을 심는 데 쓰이는 아이템.
 
 작물을 심을 때 사용할 아이템을 설정합니다.
 
@@ -53,7 +53,7 @@ Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 `Crop.setDisplay(id, state);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 작물을 보여주는 데 사용하는 블록입니다.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 작물을 보여주는 데 사용하는 블록.
 
 작물을 표시할 때 사용할 블록을 설정합니다.
 
@@ -123,19 +123,19 @@ Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## Crop Drops
+## 작물 드롭 아이템
 
 ### Adding Drops
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> The id of the crop to add a drop to. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
-- `min` &lt;int> The min amount of that item to give.
-- `max` &lt;int> The max amount of that item to give.
+- `id` &lt;string> 추가할 드롭 아이템의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> 드롭할 아이템.
+- `chance` &lt;float> 드롭할 확률.
+- `min` &lt;int> 최소 드롭 아이템 개수.
+- `max` &lt;int> 최대 드롭 아이템 개수.
 
-This adds a new potential drop to the crop.
+작물에서 아이템이 드롭될 확률을 부여합니다.
 
 ```zenscript
 Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
@@ -145,22 +145,22 @@ Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> The id of the crop to remove a drop from. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
+- `id` &lt;string> 드롭 아이템을 제거할 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
+- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> 제거할 아이템.
 
-Removes any drops that have a matching item.
+작물에서 해당 드롭 아이템을 제거합니다.
 
 ```zenscript
 Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Getting All Ids
+## 모든 ID 보기
 
 `Crop.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
+- 반환: &lt;string[]> 실행한 시점의 모든 작물 ID의 배열.
 
-This will give you an array of all the known crop ids at the time.
+해당 시점의 모든 작물 ID의 배열을 제공해줍니다.
 
 ```zenscript
 // Log all ids to the crafttweaker.log file
@@ -169,9 +169,9 @@ for cropId in Crop.getAllIds() {
 }
 ```
 
-## Removing All Crops
+## 모든 작물 제거
 
-This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+현존하는 모든 작물을 완전히 제거합니다. 스크립트를 통해 모든 데이터를 다시 만들고자 하는 경우 유용합니다.
 
 ```zenscript
 Crop.removeAll();
