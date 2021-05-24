@@ -444,7 +444,7 @@ myMCItemStackMutable | other as IIngredient
 | isCrossbow | boolean | true | false | Returns true if this stack is considered a crossbow item |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
-| maxDamage | int | true | false | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
+| maxDamage | int | true | true | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
 | maxStackSize | int | true | true | Returns the max stack size of the Item in the ItemStack |
 | owner | string | true | false | Gets owning mod for the Item in this IItemStack |
 | rarity | [Rarity](/vanilla/api/item/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
