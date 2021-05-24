@@ -5,7 +5,7 @@
 ## Description
 This mod adds pots that can be used to grow various types of plants. Through CraftTweaker you can add/remove crops and soil types. You can also edit the properties of the existing content.
 
-## Crops
+## 작물
 Crops can be modified using the crop manager. To do this you will need to import the following into your script.
 
 ```zenscript
