@@ -11,7 +11,7 @@ import crafttweaker.api.registries.IRecipeManager;
 
 
 ## Implemented Interfaces
-IRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in IRecipeManager
+IRecipeManager는 아래와 같은 인터페이스를 구현합니다. That means all methods defined in these interfaces are also available in IRecipeManager
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
