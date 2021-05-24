@@ -123,7 +123,7 @@ dirt.setDisplay(<blockstate:minecraft:stone>);
 dirt.setGrowthModifier(0.20);
 ```
 
-## Fertilizers
+## 비료
 Fertilizers can be modified using the fertilizer manager. To do this you will need to import the following into your script.
 
 ```zenscript
@@ -131,7 +131,7 @@ import mods.botanypots.ZenFertilizer;
 val fertilizers = <recipetype:botanypots:fertilizer>;
 ```
 
-### Creating Fertilizers
+### 비료 생성
 To create a fertilizer you use the create method from the manager. This method will return a ZenFertilizer value which you can use to do further changes.
 
 ```zenscript
