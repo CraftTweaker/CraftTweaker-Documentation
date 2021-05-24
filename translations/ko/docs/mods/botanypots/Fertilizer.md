@@ -10,7 +10,7 @@ To use, import the class with `import mods.botanypots.Fertilizer;` at the beginn
 
 `Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the new fertilizer. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
 - `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
 - `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
@@ -25,7 +25,7 @@ Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 
 `Fertilizer.remove(id);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the fertilizer. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 
 This can be used to remove a fertilizer.
 
@@ -37,7 +37,7 @@ Fertilizer.remove("botanypots:fertilizers/bone_meal");
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the fertilizer. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
 - `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
 
@@ -51,7 +51,7 @@ Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 
 `Fertilizer.setIngredient(id, ingredient);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the fertilizer. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
 
 Sets the ingredient item that is the fertilizer.
