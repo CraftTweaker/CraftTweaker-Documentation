@@ -60,46 +60,46 @@ Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Set Tick Rate
+## 틱 속도 설정
 
 `Crop.setTickRate(id, tickRate);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
+- `tickRate` &lt;int> 틱 속도. 작물의 생장 속도를 결정하는 인자 중 하나입니다.
 
-Sets the crop tick factor.
+작물의 틱 인자를 설정합니다.
 
 ```zenscript
 Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## Changing Crop Categories
+## 작물 카테고리 변경
 
-Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
+작물에 부여된 카테고리를 변경합니다. 카테고리는 작물이 자라는 데 적합한 토양을 찾는 데 사용됩니다.
 
-### Add a Category to a Crop
+### 작물에 카테고리 추가
 
 `Crop.addCategory(id, categoriesToAdd);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
+- `categoriesToAdd` &lt;string[]> 작물에 부여할 토양 카테고리의 배열입니다.
 
 ```zenscript
 Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 ```
 
-### Remove a Category From a Crop
+### 작물에서 카테고리 제거
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
 - `id` &lt;string> 작물의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
+- `categoriesToRemove` &lt;string[]> 작물에서 제거할 카테고리의 배열입니다.
 
 ```zenscript
 Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### Clear All Categories From a Crop
+### 작물에서 모든 카테고리 제거
 
 `Crop.clearCategories(id);`
 
@@ -109,15 +109,15 @@ Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## Crop Drops
+## 작물 드롭 아이템
 
 ### Adding Drops
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> The id of the crop to add a drop to. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
+- `id` &lt;string> 추가할 드롭 아이템의 ID. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> 드롭할 아이템.
+- `chance` &lt;float> 드롭할 확률.
 - `min` &lt;int> The min amount of that item to give.
 - `max` &lt;int> The max amount of that item to give.
 
