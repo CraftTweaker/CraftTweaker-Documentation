@@ -10,7 +10,7 @@ To use, import the class with `import mods.botanypots.Soil;` at the beginning of
 
 `Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the new soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 - `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
@@ -26,7 +26,7 @@ Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:st
 
 `Soil.remove(id);`
 
-- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil to remove. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 
 Removes a soil from the game's data.
 
@@ -38,7 +38,7 @@ Soil.remove("botanypots:soil/podzol");
 
 `Soil.setGrowthModifier(id, tickRate);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
 
 Changes the growth modifier of a given soil.
@@ -51,7 +51,7 @@ Soil.setGrowthModifier("botanypots:soil/grass", 0.15);
 
 `Soil.setIngredient(id, ingredient);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 
 Changes the items used to put the soil into the botany pot.
@@ -64,7 +64,7 @@ Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 
 `Soil.setDisplayState(id, displayState);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 
 Changes the block displayed for the soil.
@@ -81,7 +81,7 @@ Changes the categories associated with the soil. These are used to match crops t
 
 `Soil.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
 
 ```zenscript
@@ -92,7 +92,7 @@ Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 
 `Soil.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 - `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
 
 ```zenscript
@@ -103,7 +103,7 @@ Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 
 `Soil.clearCategories(id);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the soil. 유효한 `namespace:path` 형식의 이름공간이 붙은 ID여야 합니다.
 
 ```zenscript
 Soil.clearCategories("botanypots:soil/farmland");
