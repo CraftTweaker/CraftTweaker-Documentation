@@ -29,7 +29,8 @@ Terminates the configuration of the loot condition and uses the current status t
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
-ILootConditionTypeBuilder.finish() as ILootCondition
+// ILootConditionTypeBuilder.finish() as ILootCondition
+
 myILootConditionTypeBuilder.finish();
 ```
 
