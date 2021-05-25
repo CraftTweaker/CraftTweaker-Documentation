@@ -181,6 +181,7 @@
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
+          "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
           "Rarity": "vanilla/api/item/Rarity.md"
         },
         "Items": {
@@ -212,6 +213,7 @@
             "Crafttweaker": {
               "And": "vanilla/api/loot/conditions/crafttweaker/And.md",
               "BlockState": "vanilla/api/loot/conditions/crafttweaker/BlockState.md",
+              "BlockTag": "vanilla/api/loot/conditions/crafttweaker/BlockTag.md",
               "Delegate": "vanilla/api/loot/conditions/crafttweaker/Delegate.md",
               "False": "vanilla/api/loot/conditions/crafttweaker/False.md",
               "Json": "vanilla/api/loot/conditions/crafttweaker/Json.md",
@@ -308,6 +310,7 @@
           "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
           "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md",
+          "Replacer": "vanilla/api/recipe/Replacer.md",
           "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
         },
         "Tags": {
@@ -332,6 +335,7 @@
           "ToolType": "vanilla/api/tool/ToolType.md"
         },
         "Util": {
+          "ActionResultType": "vanilla/api/util/ActionResultType.md",
           "BlockPos": "vanilla/api/util/BlockPos.md",
           "DamageSource": "vanilla/api/util/DamageSource.md",
           "DamageSourceHelper": "vanilla/api/util/DamageSourceHelper.md",
@@ -357,6 +361,7 @@
           "Explosion": "vanilla/api/world/Explosion.md",
           "ExplosionMode": "vanilla/api/world/ExplosionMode.md",
           "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCBlockDisplayReader": "vanilla/api/world/MCBlockDisplayReader.md",
           "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
         }
