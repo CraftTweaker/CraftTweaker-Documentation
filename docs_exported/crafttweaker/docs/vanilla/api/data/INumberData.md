@@ -35,7 +35,8 @@ INumberData implements the following interfaces. That means all methods defined 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-INumberData.asCollection() as ICollectionData
+// INumberData.asCollection() as ICollectionData
+
 1.asCollection();
 ```
 
@@ -48,7 +49,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-INumberData.asList() as stdlib.List<IData>
+// INumberData.asList() as stdlib.List<IData>
+
 1.asList();
 ```
 
@@ -61,7 +63,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-INumberData.asMap() as IData[string]
+// INumberData.asMap() as IData[string]
+
 1.asMap();
 ```
 
@@ -72,7 +75,8 @@ INumberData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-INumberData.asNumber() as INumberData
+// INumberData.asNumber() as INumberData
+
 1.asNumber();
 ```
 
@@ -85,7 +89,8 @@ Gets the String representation of this IData
 Return Type: string
 
 ```zenscript
-INumberData.asString() as string
+// INumberData.asString() as string
+
 1.asString();
 ```
 
@@ -98,7 +103,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-INumberData.contains(data as IData) as boolean
+// INumberData.contains(data as IData) as boolean
+
 1.contains("Display");
 ```
 
@@ -118,7 +124,8 @@ Makes a copy of this IData.
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-INumberData.copy() as IData
+// INumberData.copy() as IData
+
 1.copy();
 ```
 
@@ -131,7 +138,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 Return Type: byte
 
 ```zenscript
-INumberData.getByte() as byte
+// INumberData.getByte() as byte
+
 1.getByte();
 ```
 
@@ -144,7 +152,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a double
 Return Type: double
 
 ```zenscript
-INumberData.getDouble() as double
+// INumberData.getDouble() as double
+
 1.getDouble();
 ```
 
@@ -157,7 +166,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a float
 Return Type: float
 
 ```zenscript
-INumberData.getFloat() as float
+// INumberData.getFloat() as float
+
 1.getFloat();
 ```
 
@@ -172,7 +182,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-INumberData.getId() as byte
+// INumberData.getId() as byte
+
 1.getId();
 ```
 
@@ -185,7 +196,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as an int
 Return Type: int
 
 ```zenscript
-INumberData.getInt() as int
+// INumberData.getInt() as int
+
 1.getInt();
 ```
 
@@ -198,7 +210,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a long
 Return Type: long
 
 ```zenscript
-INumberData.getLong() as long
+// INumberData.getLong() as long
+
 1.getLong();
 ```
 
@@ -211,7 +224,8 @@ Gets the value of this [IData](/vanilla/api/data/IData) as a short
 Return Type: short
 
 ```zenscript
-INumberData.getShort() as short
+// INumberData.getShort() as short
+
 1.getShort();
 ```
 
@@ -224,7 +238,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-INumberData.getString() as string
+// INumberData.getString() as string
+
 1.getString();
 ```
 
