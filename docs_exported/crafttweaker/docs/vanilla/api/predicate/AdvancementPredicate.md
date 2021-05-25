@@ -32,7 +32,8 @@ Specifies that the advancement must be completed to pass the check.
 Return Type: [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate)
 
 ```zenscript
-AdvancementPredicate.withCompleted() as AdvancementPredicate
+// AdvancementPredicate.withCompleted() as AdvancementPredicate
+
 myAdvancementPredicate.withCompleted();
 ```
 
@@ -48,7 +49,8 @@ Specifies that the advancement must not be completed, that is being in-progress,
 Return Type: [AdvancementPredicate](/vanilla/api/predicate/AdvancementPredicate)
 
 ```zenscript
-AdvancementPredicate.withInProgress() as AdvancementPredicate
+// AdvancementPredicate.withInProgress() as AdvancementPredicate
+
 myAdvancementPredicate.withInProgress();
 ```
 
