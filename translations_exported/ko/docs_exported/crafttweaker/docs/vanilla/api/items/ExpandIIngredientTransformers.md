@@ -2,9 +2,9 @@
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
+| 반환 자료형                                                            | 암묵적  |
+| ----------------------------------------------------------------- | ---- |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
 
 ## Methods
 
