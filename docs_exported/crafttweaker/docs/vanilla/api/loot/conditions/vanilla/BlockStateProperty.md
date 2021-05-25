@@ -3,7 +3,7 @@
 Builder to create a 'BlockStateProperty' loot condition.
 
  This condition compares the the block state obtained from the [LootContext](/vanilla/api/loot/LootContext) and attempts to
- match it to the given [MCBlock](/vanilla/api/blocks/MCBlock). If this comparison succeeds, then the state is further compared according to the
+ match it to the given [MCBlock](/vanilla/api/block/MCBlock). If this comparison succeeds, then the state is further compared according to the
  rules outlined in the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate).
 
  This condition thus passes only if the block matches the given one and, optionally, if all the state properties match
@@ -40,7 +40,7 @@ BlockStateProperty.withBlock(block as MCBlock) as BlockStateProperty
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| block | [MCBlock](/vanilla/api/blocks/MCBlock) | The block to be matched. |
+| block | [MCBlock](/vanilla/api/block/MCBlock) | The block to be matched. |
 
 
 :::
