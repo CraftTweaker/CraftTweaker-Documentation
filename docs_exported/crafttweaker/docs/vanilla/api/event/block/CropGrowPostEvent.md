@@ -14,14 +14,19 @@ import crafttweaker.api.event.block.MCCropGrowPostEvent;
 ```
 
 
+## Extending MCCropGrowEvent
+
+MCCropGrowPostEvent extends [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent). That means all methods available in [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent) are also available in MCCropGrowPostEvent
+
 ## Methods
 
 :::group{name=getOriginState}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-MCCropGrowPostEvent.getOriginState() as MCBlockState
+// MCCropGrowPostEvent.getOriginState() as MCBlockState
+
 myMCCropGrowPostEvent.getOriginState();
 ```
 
@@ -30,7 +35,7 @@ myMCCropGrowPostEvent.getOriginState();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| originState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| originState | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | No Description Provided |
 
