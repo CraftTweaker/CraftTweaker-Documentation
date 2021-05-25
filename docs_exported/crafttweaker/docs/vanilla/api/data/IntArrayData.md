@@ -42,7 +42,8 @@ new IntArrayData(internal as int[]) as IntArrayData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-IntArrayData.asCollection() as ICollectionData
+// IntArrayData.asCollection() as ICollectionData
+
 [4, 128, 256, 1024].asCollection();
 ```
 
@@ -55,7 +56,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-IntArrayData.asMap() as IData[string]
+// IntArrayData.asMap() as IData[string]
+
 [4, 128, 256, 1024].asMap();
 ```
 
@@ -66,7 +68,8 @@ IntArrayData.asMap() as IData[string]
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-IntArrayData.asNumber() as INumberData
+// IntArrayData.asNumber() as INumberData
+
 [4, 128, 256, 1024].asNumber();
 ```
 
@@ -79,7 +82,8 @@ Checks if this IData contains another IData, mainly used in subclasses of [IColl
 Return Type: boolean
 
 ```zenscript
-IntArrayData.contains(data as IData) as boolean
+// IntArrayData.contains(data as IData) as boolean
+
 [4, 128, 256, 1024].contains("Display");
 ```
 
@@ -99,7 +103,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-IntArrayData.getId() as byte
+// IntArrayData.getId() as byte
+
 [4, 128, 256, 1024].getId();
 ```
 
@@ -112,7 +117,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-IntArrayData.getString() as string
+// IntArrayData.getString() as string
+
 [4, 128, 256, 1024].getString();
 ```
 
