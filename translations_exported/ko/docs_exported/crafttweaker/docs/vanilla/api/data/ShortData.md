@@ -30,16 +30,16 @@ new ShortData(internal as short) as ShortData
 
 ## Casters
 
-| Result type                                          | Is Implicit |
-| ---------------------------------------------------- | ----------- |
-| byte                                                 | false       |
-| double                                               | false       |
-| float                                                | false       |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
-| int                                                  | false       |
-| [INumberData](/vanilla/api/data/INumberData)         | false       |
-| long                                                 | false       |
-| short                                                | false       |
+| 반환 자료형                                               | 암묵적   |
+| ---------------------------------------------------- | ----- |
+| byte                                                 | false |
+| double                                               | false |
+| float                                                | false |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
+| int                                                  | false |
+| [INumberData](/vanilla/api/data/INumberData)         | false |
+| long                                                 | false |
+| short                                                | false |
 
 ## Methods
 
