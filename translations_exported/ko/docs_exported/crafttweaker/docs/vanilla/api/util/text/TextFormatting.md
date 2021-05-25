@@ -15,10 +15,10 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 ## Casters
 
-| Result type                               | Is Implicit |
-| ----------------------------------------- | ----------- |
-| [MCStyle](/vanilla/api/util/text/MCStyle) | true        |
-| string                                    | true        |
+| 반환 자료형                                    | 암묵적  |
+| ----------------------------------------- | ---- |
+| [MCStyle](/vanilla/api/util/text/MCStyle) | true |
+| string                                    | true |
 
 ## Properties
 
