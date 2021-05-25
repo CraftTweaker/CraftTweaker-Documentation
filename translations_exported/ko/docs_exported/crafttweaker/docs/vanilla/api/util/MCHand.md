@@ -21,8 +21,8 @@ MCHand extends Enum&lt;[MCHand](/vanilla/api/util/MCHand)&gt;. That means all me
 
 ## Casters
 
-| Result type                                                  | Is Implicit |
-| ------------------------------------------------------------ | ----------- |
-| [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true        |
-| string                                                       | true        |
+| 반환 자료형                                                       | 암묵적  |
+| ------------------------------------------------------------ | ---- |
+| [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true |
+| string                                                       | true |
 
