@@ -30,7 +30,8 @@ If the interaction was on an entity, will be a BlockPos centered on the entity.
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-MCPlayerInteractEvent.getBlockPos() as BlockPos
+// MCPlayerInteractEvent.getBlockPos() as BlockPos
+
 myMCPlayerInteractEvent.getBlockPos();
 ```
 
@@ -44,7 +45,8 @@ The face involved in this interaction.
 Return Type: [Direction](/vanilla/api/util/Direction)?
 
 ```zenscript
-MCPlayerInteractEvent.getFace() as Direction?
+// MCPlayerInteractEvent.getFace() as Direction?
+
 myMCPlayerInteractEvent.getFace();
 ```
 
@@ -58,7 +60,8 @@ The stack involved in this interaction.
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerInteractEvent.getItemStack() as IItemStack
+// MCPlayerInteractEvent.getItemStack() as IItemStack
+
 myMCPlayerInteractEvent.getItemStack();
 ```
 
@@ -67,9 +70,9 @@ myMCPlayerInteractEvent.getItemStack();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false |
-| face | [Direction](/vanilla/api/util/Direction)? | true | false |
-| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
+| face | [Direction](/vanilla/api/util/Direction)? | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
+| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | The stack involved in this interaction. <br />  May be empty, but will never be null. |
 
