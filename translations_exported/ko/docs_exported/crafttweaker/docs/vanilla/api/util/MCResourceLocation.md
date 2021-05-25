@@ -29,10 +29,10 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 
 ## Casters
 
-| Result type                      | Is Implicit |
-| -------------------------------- | ----------- |
-| [IData](/vanilla/api/data/IData) | true        |
-| string                           | true        |
+| 반환 자료형                           | 암묵적  |
+| -------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData) | true |
+| string                           | true |
 
 ## Methods
 
