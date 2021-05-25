@@ -213,6 +213,7 @@
             "Crafttweaker": {
               "And": "vanilla/api/loot/conditions/crafttweaker/And.md",
               "BlockState": "vanilla/api/loot/conditions/crafttweaker/BlockState.md",
+              "BlockTag": "vanilla/api/loot/conditions/crafttweaker/BlockTag.md",
               "Delegate": "vanilla/api/loot/conditions/crafttweaker/Delegate.md",
               "False": "vanilla/api/loot/conditions/crafttweaker/False.md",
               "Json": "vanilla/api/loot/conditions/crafttweaker/Json.md",
