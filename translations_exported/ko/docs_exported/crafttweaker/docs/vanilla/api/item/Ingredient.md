@@ -19,9 +19,9 @@ Ingredient implements the following interfaces. That means all methods defined i
 
 ## Casters
 
-| Result type                                   | Is Implicit |
-| --------------------------------------------- | ----------- |
-| [IIngredient](/vanilla/api/items/IIngredient) | true        |
+| 반환 자료형                                        | 암묵적  |
+| --------------------------------------------- | ---- |
+| [IIngredient](/vanilla/api/items/IIngredient) | true |
 
 ## Methods
 
