@@ -14,9 +14,9 @@ MCLiteralCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCComm
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
