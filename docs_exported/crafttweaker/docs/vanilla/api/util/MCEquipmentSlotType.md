@@ -12,6 +12,17 @@ import crafttweaker.api.util.MCEquipmentSlotType;
 
 MCEquipmentSlotType extends Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)&gt;. That means all methods available in Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)&gt; are also available in MCEquipmentSlotType
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CHEST | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| FEET | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| HEAD | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| LEGS | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| MAINHAND | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| OFFHAND | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+
 ## Methods
 
 :::group{name=isArmor}
@@ -19,7 +30,8 @@ MCEquipmentSlotType extends Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEq
 Return Type: boolean
 
 ```zenscript
-MCEquipmentSlotType.isArmor() as boolean
+// MCEquipmentSlotType.isArmor() as boolean
+
 myMCEquipmentSlotType.isArmor();
 ```
 
@@ -30,7 +42,8 @@ myMCEquipmentSlotType.isArmor();
 Return Type: boolean
 
 ```zenscript
-MCEquipmentSlotType.isHand() as boolean
+// MCEquipmentSlotType.isHand() as boolean
+
 myMCEquipmentSlotType.isHand();
 ```
 
@@ -39,8 +52,8 @@ myMCEquipmentSlotType.isHand();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| name | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| name | string | true | false | No Description Provided |
 
