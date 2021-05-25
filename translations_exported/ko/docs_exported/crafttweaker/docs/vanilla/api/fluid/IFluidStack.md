@@ -15,10 +15,10 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 ## Casters
 
-| Result type                                           | Is Implicit |
-| ----------------------------------------------------- | ----------- |
-| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true        |
-| [MCFluid](/vanilla/api/fluid/MCFluid)                 | true        |
+| 반환 자료형                                                | 암묵적  |
+| ----------------------------------------------------- | ---- |
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true |
+| [MCFluid](/vanilla/api/fluid/MCFluid)                 | true |
 
 ## Methods
 
