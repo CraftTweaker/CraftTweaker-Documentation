@@ -401,7 +401,7 @@ new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| long        | false       |
+| 반환 자료형 | 암묵적   |
+| ------ | ----- |
+| long   | false |
 
