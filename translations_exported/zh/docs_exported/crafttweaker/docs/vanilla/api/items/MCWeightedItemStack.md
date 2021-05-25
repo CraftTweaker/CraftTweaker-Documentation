@@ -1,6 +1,8 @@
 # MCWeightedItemStack
 
-一个带有机会的物品堆栈，通常用于配方输出。 <p> 小心，如果用来创建权重堆的堆栈是可变的，那么尺寸设置也会变换原始堆栈！
+一个带有机会的物品堆栈，通常用于配方输出。
+
+ 小心，如果用来创建权重堆的堆栈是可变的，那么尺寸设置也会变换原始堆栈！
 
 ## 导入相关包
 
@@ -66,7 +68,8 @@ myMCWeightedItemStack % newWeight as int
 :::
 
 :::group{name=MUL}
-Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
+
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
