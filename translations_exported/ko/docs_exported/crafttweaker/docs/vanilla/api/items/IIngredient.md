@@ -17,11 +17,11 @@ IIngredient implements the following interfaces. That means all methods defined 
 
 ## Casters
 
-| Result type                                | Is Implicit |
-| ------------------------------------------ | ----------- |
-| [IData](/vanilla/api/data/IData)           | true        |
-| [Ingredient](/vanilla/api/item/Ingredient) | true        |
-| [MapData](/vanilla/api/data/MapData)       | true        |
+| 반환 자료형                                     | 암묵적  |
+| ------------------------------------------ | ---- |
+| [IData](/vanilla/api/data/IData)           | true |
+| [Ingredient](/vanilla/api/item/Ingredient) | true |
+| [MapData](/vanilla/api/data/MapData)       | true |
 
 ## Methods
 
