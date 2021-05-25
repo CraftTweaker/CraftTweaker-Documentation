@@ -57,6 +57,6 @@ transformedItem = item.transformNew(function(item){return item;});
 ```
 
 The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
+Unlike the other transformer however, this will not be the itemstack that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
 In other words if you return `null` here, one item will be consumed, any other item that is returned will either be placed in the crafting slot, if possible, or given back to you, same as when dealing with buckets.  
 If you don't really need the player variable, this is the transformer to go for!
