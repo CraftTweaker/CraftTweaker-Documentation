@@ -17,10 +17,10 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 ## Casters
 
-| Result type                                                               | Is Implicit |
-| ------------------------------------------------------------------------- | ----------- |
-| [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt; | true        |
-| string                                                                    | true        |
+| 반환 자료형                                                                    | 암묵적  |
+| ------------------------------------------------------------------------- | ---- |
+| [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt; | true |
+| string                                                                    | true |
 
 ## Methods
 
