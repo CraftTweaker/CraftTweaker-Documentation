@@ -2,9 +2,9 @@
 
 ## Casters
 
-| Result type                                           | Is Implicit |
-| ----------------------------------------------------- | ----------- |
-| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true        |
+| 반환 자료형                                                | 암묵적  |
+| ----------------------------------------------------- | ---- |
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true |
 
 ## Methods
 
