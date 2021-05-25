@@ -12,10 +12,10 @@ import crafttweaker.api.item.ItemStack;
 
 ## Casters
 
-| Result type                                   | Is Implicit |
-| --------------------------------------------- | ----------- |
-| [IIngredient](/vanilla/api/items/IIngredient) | true        |
-| [IItemStack](/vanilla/api/items/IItemStack)   | true        |
+| 반환 자료형                                        | 암묵적  |
+| --------------------------------------------- | ---- |
+| [IIngredient](/vanilla/api/items/IIngredient) | true |
+| [IItemStack](/vanilla/api/items/IItemStack)   | true |
 
 ## Methods
 
