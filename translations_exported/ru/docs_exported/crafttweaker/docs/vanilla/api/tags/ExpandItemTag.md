@@ -1,6 +1,8 @@
 # Expansion for MCTag&lt;MCItemDefinition&gt;
 
-This expansion specifically targets itemTags. It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient. <p> Only downside is that if you want to use Ingredient Transformers, you will need to call `asIIngredient()` first.
+This expansion specifically targets itemTags. It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient.
+
+ Only downside is that if you want to use Ingredient Transformers, you will need to call `asIIngredient()` first.
 
 ## Утилиты
 
