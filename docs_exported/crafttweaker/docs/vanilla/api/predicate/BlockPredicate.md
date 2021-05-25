@@ -1,8 +1,8 @@
 # BlockPredicate
 
-Represents a predicate for a [MCBlock](/vanilla/api/blocks/MCBlock).
+Represents a predicate for a [MCBlock](/vanilla/api/block/MCBlock).
 
- This predicate will match a block state with either the given [MCBlock](/vanilla/api/blocks/MCBlock) or block tag ([MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;), with the
+ This predicate will match a block state with either the given [MCBlock](/vanilla/api/block/MCBlock) or block tag ([MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;), with the
  second check taking precedence over the first if they are both present. If this comparison succeeds, then the
  predicate may also verify additional block state properties via the supplied [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) or
  specific parts of the NBT data of the block entity associated to the state via a [NBTPredicate](/vanilla/api/predicate/NBTPredicate).
@@ -37,7 +37,7 @@ BlockPredicate.withBlock(block as MCBlock) as BlockPredicate
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| block | [MCBlock](/vanilla/api/blocks/MCBlock) | The block the predicate should match. |
+| block | [MCBlock](/vanilla/api/block/MCBlock) | The block the predicate should match. |
 
 
 :::
@@ -58,7 +58,7 @@ BlockPredicate.withBlockTag(blockTag as MCTag<MCBlock>) as BlockPredicate
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| blockTag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | The tag the predicate should use for matching. |
+| blockTag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt; | The tag the predicate should use for matching. |
 
 
 :::
