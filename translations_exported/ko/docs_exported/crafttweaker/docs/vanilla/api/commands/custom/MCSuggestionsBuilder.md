@@ -10,9 +10,9 @@ import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
