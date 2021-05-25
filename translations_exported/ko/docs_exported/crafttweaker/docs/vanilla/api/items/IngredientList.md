@@ -28,10 +28,10 @@ new IngredientList(ingredients as IIngredient[]) as IngredientList
 
 ## Casters
 
-| Result type                          | Is Implicit |
-| ------------------------------------ | ----------- |
-| [IData](/vanilla/api/data/IData)     | true        |
-| [MapData](/vanilla/api/data/MapData) | true        |
+| 반환 자료형                               | 암묵적  |
+| ------------------------------------ | ---- |
+| [IData](/vanilla/api/data/IData)     | true |
+| [MapData](/vanilla/api/data/MapData) | true |
 
 ## Methods
 
