@@ -56,9 +56,9 @@ MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MC
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
