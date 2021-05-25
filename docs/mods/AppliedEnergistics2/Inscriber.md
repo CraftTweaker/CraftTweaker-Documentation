@@ -16,7 +16,7 @@ The following script will add four recipes to the Inscriber that will do the fol
 4) Output a piece of Redstone when Inscribing an Apple in the middle slot, an Arrow in the top slot and a Stick in the bottom slot.
 
 ```zenscript
-// <recipetype:appliedenergistics2:inscriber>.addInscribeRecipe(String name, IItemStack output, IIngredient middleInput, @Optional IIngredient[] otherInputs)
+// <recipetype:appliedenergistics2:inscriber>.addInscribeRecipe(name as string, output as IItemStack, middleInput as IIngredient, otherInputs as @Optional IIngredient[])
 
 <recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("inscriber_inscribe_test", <item:minecraft:diamond>, <item:minecraft:dirt>);
 <recipetype:appliedenergistics2:inscriber>.addInscribeRecipe("inscriber_inscribe_test_top_input", <item:minecraft:dirt>, <item:minecraft:glass>, [<item:minecraft:dirt>] as IIngredient[]);
@@ -34,7 +34,7 @@ The following script will add four recipes to the Inscriber that will do the fol
 4) Output a Gold Ingot when Pressing a Magenta Dye in the middle slot, Magenta Wool in the top slot and Light Blue Wool in the bottom slot.
 
 ```zenscript
-// <recipetype:appliedenergistics2:inscriber>.addPressRecipe(String name, IItemStack output, IIngredient middleInput, @Optional IIngredient[] otherInputs)
+// <recipetype:appliedenergistics2:inscriber>.addPressRecipe(name as string, output as IItemStack, middleInput as IIngredient, otherInputs as @Optional IIngredient[])
 
 <recipetype:appliedenergistics2:inscriber>.addPressRecipe("inscriber_press_test", <item:minecraft:scute>, <item:minecraft:lapis_lazuli>);
 <recipetype:appliedenergistics2:inscriber>.addPressRecipe("inscriber_press_test_top_input", <item:minecraft:coal>, <item:minecraft:white_dye>, [<item:minecraft:white_wool>] as IIngredient[]);
@@ -47,7 +47,7 @@ The following script will add four recipes to the Inscriber that will do the fol
 The following script will remove all Inscriber recipes that output a Logic Processor.
 
 ```zenscript
-// <recipetype:appliedenergistics2:inscriber>.removeRecipe(IItemStack output)
+// <recipetype:appliedenergistics2:inscriber>.removeRecipe(output as IItemStack)
 
 <recipetype:appliedenergistics2:inscriber>.removeRecipe(<item:appliedenergistics2:logic_processor>);
 ```
