@@ -27,10 +27,10 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| long        | false       |
-| string      | true        |
+| 반환 자료형 | 암묵적   |
+| ------ | ----- |
+| long   | false |
+| string | true  |
 
 ## Methods
 
