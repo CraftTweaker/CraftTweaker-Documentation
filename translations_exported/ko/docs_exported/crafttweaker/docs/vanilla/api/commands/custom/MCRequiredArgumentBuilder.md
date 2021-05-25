@@ -14,9 +14,9 @@ MCRequiredArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/cust
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
