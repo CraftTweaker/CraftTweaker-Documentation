@@ -36,11 +36,11 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 ## Casters
 
-| Result type                                                     | Is Implicit |
-| --------------------------------------------------------------- | ----------- |
-| [ICollectionData](/vanilla/api/data/ICollectionData)            | false       |
-| [INumberData](/vanilla/api/data/INumberData)                    | false       |
-| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true        |
+| 반환 자료형                                                          | 암묵적   |
+| --------------------------------------------------------------- | ----- |
+| [ICollectionData](/vanilla/api/data/ICollectionData)            | false |
+| [INumberData](/vanilla/api/data/INumberData)                    | false |
+| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true  |
 
 ## Methods
 
