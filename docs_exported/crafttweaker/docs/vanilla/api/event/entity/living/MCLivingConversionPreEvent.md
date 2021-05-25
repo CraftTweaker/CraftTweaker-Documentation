@@ -45,7 +45,7 @@ MCLivingConversionPreEvent.setConversionTimer(ticks as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| outcome | [MCEntityType](/vanilla/api/entities/MCEntityType) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| outcome | [MCEntityType](/vanilla/api/entities/MCEntityType) | true | false | No Description Provided |
 
