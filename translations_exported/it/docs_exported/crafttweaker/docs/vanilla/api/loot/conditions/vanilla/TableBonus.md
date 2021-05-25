@@ -31,7 +31,7 @@ Sets the array of chances, which will be queried according to the level.
 
  A well-formed condition also requires that at least one of the values of the array be between 0.0 and 1.0, excluding extremes, to ensure at least one level has a chance to match.
 
- This parameter is <p>required</p>.
+ This parameter is required.
 
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
@@ -50,7 +50,7 @@ TableBonus.withChances(chances as float[]) as TableBonus
 
 Sets the enchantment that should be checked on the tool.
 
- This parameter is <p>required</p>.
+ This parameter is required.
 
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
