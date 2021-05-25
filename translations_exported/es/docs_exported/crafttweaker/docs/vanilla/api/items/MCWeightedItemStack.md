@@ -1,6 +1,8 @@
 # MCWeightedItemStack
 
-Una pila de ítems con una oportunidad, usualmente usada para las salidas de recetas. <p> Cuidado, si la pila que fue usada para crear el WeightedStack era mutable, ¡entonces el setter de tamaño también mutará la pila original!
+Una pila de ítems con una oportunidad, usualmente usada para las salidas de recetas.
+
+ Cuidado, si la pila que fue usada para crear el WeightedStack era mutable, ¡entonces el setter de tamaño también mutará la pila original!
 
 ## Importing the class
 
@@ -66,7 +68,8 @@ myMCWeightedItemStack % newWeight as int
 :::
 
 :::group{name=MUL}
-Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
+
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
