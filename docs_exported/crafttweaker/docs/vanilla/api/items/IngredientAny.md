@@ -15,14 +15,15 @@ IngredientAny implements the following interfaces. That means all methods define
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## Static Methods
 
 :::group{name=getInstance}
 
 Return Type: [IngredientAny](/vanilla/api/items/IngredientAny)
 
 ```zenscript
-IngredientAny.getInstance() as IngredientAny
+// IngredientAny.getInstance() as IngredientAny
+
 IngredientAny.getInstance();
 ```
 
@@ -72,8 +73,9 @@ IngredientAny.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
-myIngredientAny.anyDamage();
+// IngredientAny.anyDamage() as MCIngredientConditioned<IIngredient>
+
+IngredientAny.getInstance().anyDamage();
 ```
 
 :::
@@ -83,8 +85,9 @@ myIngredientAny.anyDamage();
 Return Type: void
 
 ```zenscript
-IngredientAny.clearTooltip() as void
-myIngredientAny.clearTooltip();
+// IngredientAny.clearTooltip() as void
+
+IngredientAny.getInstance().clearTooltip();
 ```
 
 :::
@@ -96,8 +99,9 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientAny.contains(ingredient as IIngredient) as boolean
-myIngredientAny.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+// IngredientAny.contains(ingredient as IIngredient) as boolean
+
+IngredientAny.getInstance().contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
 | Parameter | Type | Description |
@@ -116,8 +120,9 @@ When this ingredient stack is crafted, what will remain in the grid?
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
-myIngredientAny.getRemainingItem(<item:minecraft:iron_ingot>);
+// IngredientAny.getRemainingItem(stack as IItemStack) as IItemStack
+
+IngredientAny.getInstance().getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -134,8 +139,9 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-IngredientAny.matches(stack as IItemStack) as boolean
-myIngredientAny.matches(<item:minecraft:iron_ingot>);
+// IngredientAny.matches(stack as IItemStack) as boolean
+
+IngredientAny.getInstance().matches(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -182,8 +188,9 @@ IngredientAny.only(condition as IIngredientCondition<IIngredient>) as MCIngredie
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
-myIngredientAny.onlyDamaged();
+// IngredientAny.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
+IngredientAny.getInstance().onlyDamaged();
 ```
 
 :::
@@ -227,7 +234,7 @@ Does the ingredient contain the given ingredient?
 
 ```zenscript
 ingredient as IIngredient in myIngredientAny
-(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientAny
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in IngredientAny.getInstance()
 ```
 
 :::
@@ -243,7 +250,7 @@ myIngredientAny | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| burnTime | void | false | true |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
 
