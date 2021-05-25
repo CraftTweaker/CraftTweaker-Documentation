@@ -31,7 +31,8 @@ Indicates that the fishing hook has been used in not open waters, such as a pond
 Return Type: [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 
 ```zenscript
-FishingPredicate.withClosedWaters() as FishingPredicate
+// FishingPredicate.withClosedWaters() as FishingPredicate
+
 myFishingPredicate.withClosedWaters();
 ```
 
@@ -46,7 +47,8 @@ Indicates that the fishing hook has been used in open waters.
 Return Type: [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 
 ```zenscript
-FishingPredicate.withOpenWaters() as FishingPredicate
+// FishingPredicate.withOpenWaters() as FishingPredicate
+
 myFishingPredicate.withOpenWaters();
 ```
 
