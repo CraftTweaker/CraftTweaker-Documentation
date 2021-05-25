@@ -1,6 +1,6 @@
 # BlockBuilderBasic
 
-This builder builds the block type that is used by default in [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)#build
+This builder builds the block type that is used by default in BlockBuilder#build
  This builder does not offer any special properties to set, you can only build it.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
@@ -16,4 +16,26 @@ import mods.contenttweaker.block.basic.BlockBuilderBasic;
 ## Extending BlockTypeBuilder
 
 BlockBuilderBasic extends [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder). That means all methods available in [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) are also available in BlockBuilderBasic
+
+## Methods
+
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockBuilderBasic.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
 
