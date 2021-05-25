@@ -42,7 +42,8 @@ new StringData(internal as string) as StringData
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-StringData.asCollection() as ICollectionData
+// StringData.asCollection() as ICollectionData
+
 new StringData("Hello").asCollection();
 ```
 
@@ -55,7 +56,8 @@ Gets a List<IData> representation of this IData, returns null on anything but [L
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-StringData.asList() as stdlib.List<IData>
+// StringData.asList() as stdlib.List<IData>
+
 new StringData("Hello").asList();
 ```
 
@@ -68,7 +70,8 @@ Gets a Map<String, IData> representation of this IData, returns null on anything
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-StringData.asMap() as IData[string]
+// StringData.asMap() as IData[string]
+
 new StringData("Hello").asMap();
 ```
 
@@ -79,7 +82,8 @@ new StringData("Hello").asMap();
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-StringData.asNumber() as INumberData
+// StringData.asNumber() as INumberData
+
 new StringData("Hello").asNumber();
 ```
 
@@ -94,7 +98,8 @@ Gets the ID of the internal NBT tag.
 Return Type: byte
 
 ```zenscript
-StringData.getId() as byte
+// StringData.getId() as byte
+
 new StringData("Hello").getId();
 ```
 
@@ -107,7 +112,8 @@ Gets the String representation of the internal INBT tag
 Return Type: string
 
 ```zenscript
-StringData.getString() as string
+// StringData.getString() as string
+
 new StringData("Hello").getString();
 ```
 
