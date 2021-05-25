@@ -81,7 +81,7 @@ Compares if two given MCToolType objects are equal
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| 반환 자료형 | 암묵적   |
+| ------ | ----- |
+| String | false |
 
