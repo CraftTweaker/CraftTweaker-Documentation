@@ -12,9 +12,9 @@ import crafttweaker.api.tool.ToolType;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | false       |
+| 반환 자료형 | 암묵적   |
+| ------ | ----- |
+| string | false |
 
 ## Methods
 
