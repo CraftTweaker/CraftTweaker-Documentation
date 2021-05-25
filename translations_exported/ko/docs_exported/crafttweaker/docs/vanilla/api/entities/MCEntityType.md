@@ -15,9 +15,9 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 ## Casters
 
-| Result type                                              | Is Implicit |
-| -------------------------------------------------------- | ----------- |
-| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true        |
+| 반환 자료형                                                   | 암묵적  |
+| -------------------------------------------------------- | ---- |
+| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true |
 
 ## Methods
 
