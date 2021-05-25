@@ -309,6 +309,7 @@
           "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
           "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md",
+          "Replacer": "vanilla/api/recipe/Replacer.md",
           "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
         },
         "Tags": {

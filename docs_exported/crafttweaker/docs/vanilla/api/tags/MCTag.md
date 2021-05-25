@@ -3,7 +3,7 @@
 A reference to a Tag object.
  Note that this tag may not exist in the game already, such as when you create new tags.
  See the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;#exists() Method on whether or not this tag already exists.
- <p>
+ 
  A tag will be created as soon as you add
 
 ## Importing the class

@@ -87,7 +87,7 @@ TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
- <p>
+ 
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
@@ -108,7 +108,7 @@ TagManager.getTag(location as MCResourceLocation) as MCTag<T>
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
- <p>
+ 
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
@@ -128,8 +128,9 @@ TagManager.getTag(name as string) as MCTag<T>
 :::group{name=getTagFolder}
 
 Get the tag type. In a Bracket call, this will used to determine which TagManager to use.
- <p>
- {
+ 
+ `<tag:{tag_type`:tag_location:tag_name>} <br>
+ `<tagManager:{tag_type`>}
 
 Return Type: string
 
@@ -160,5 +161,5 @@ name as string in myTagManager
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false | Retrieves a list of all tags currently registered. |
-| tagType | string | true | false | Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <br />  <p> <br />  { |
+| tagType | string | true | false | Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <br />   <br />  `<tag:{tag_type`:tag_location:tag_name>} <br> <br />  `<tagManager:{tag_type`>} |
 

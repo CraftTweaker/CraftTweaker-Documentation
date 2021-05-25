@@ -1,7 +1,7 @@
 # MCWeightedItemStack
 
 An ItemStack with a chance, usually used for recipe outputs.
- <p>
+ 
  Careful, if the stack that was used to create the WeightedStack was mutable, then the size setter will mutate the original stack as well!
 
 ## Importing the class
@@ -69,7 +69,7 @@ myMCWeightedItemStack % newWeight as int
 
 :::group{name=MUL}
 
-Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
