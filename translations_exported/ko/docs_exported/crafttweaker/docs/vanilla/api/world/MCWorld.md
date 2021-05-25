@@ -17,9 +17,9 @@ MCWorld implements the following interfaces. That means all methods defined in t
 
 ## Casters
 
-| Result type                                       | Is Implicit |
-| ------------------------------------------------- | ----------- |
-| [MCServerWorld](/vanilla/api/world/MCServerWorld) | false       |
+| 반환 자료형                                            | 암묵적   |
+| ------------------------------------------------- | ----- |
+| [MCServerWorld](/vanilla/api/world/MCServerWorld) | false |
 
 ## Methods
 
