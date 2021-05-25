@@ -30,10 +30,10 @@ new BoolData(internal as boolean) as BoolData
 
 ## Casters
 
-| Result type                                          | Is Implicit |
-| ---------------------------------------------------- | ----------- |
-| [ByteData](/vanilla/api/data/ByteData)               | false       |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| 반환 자료형                                               | 암묵적   |
+| ---------------------------------------------------- | ----- |
+| [ByteData](/vanilla/api/data/ByteData)               | false |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 
 ## Methods
 
