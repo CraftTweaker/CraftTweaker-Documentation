@@ -30,10 +30,10 @@ new ByteArrayData(internal as byte[]) as ByteArrayData
 
 ## Casters
 
-| Result type                                          | Is Implicit |
-| ---------------------------------------------------- | ----------- |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
-| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| 반환 자료형                                               | 암묵적   |
+| ---------------------------------------------------- | ----- |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
+| [INumberData](/vanilla/api/data/INumberData)         | false |
 
 ## Methods
 
