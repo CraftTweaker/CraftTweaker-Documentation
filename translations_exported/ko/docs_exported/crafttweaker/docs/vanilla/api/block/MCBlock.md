@@ -12,10 +12,10 @@ import crafttweaker.api.blocks.MCBlock;
 
 ## Casters
 
-| Result type                                            | Is Implicit |
-| ------------------------------------------------------ | ----------- |
-| [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | false       |
-| string                                                 | false       |
+| 반환 자료형                                                 | 암묵적   |
+| ------------------------------------------------------ | ----- |
+| [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | false |
+| string                                                 | false |
 
 ## Methods
 
