@@ -29,7 +29,8 @@ MCBlockBreakEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 Return Type: int
 
 ```zenscript
-MCBlockBreakEvent.getExpToDrop() as int
+// MCBlockBreakEvent.getExpToDrop() as int
+
 myMCBlockBreakEvent.getExpToDrop();
 ```
 
@@ -42,7 +43,8 @@ Gets the player who broke the block. If no player is available, use a fake playe
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCBlockBreakEvent.getPlayer() as MCPlayerEntity
+// MCBlockBreakEvent.getPlayer() as MCPlayerEntity
+
 myMCBlockBreakEvent.getPlayer();
 ```
 
@@ -66,8 +68,8 @@ MCBlockBreakEvent.setExpToDrop(amount as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| expToDrop | int | true | true |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| expToDrop | int | true | true | No Description Provided |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true | false | Gets the player who broke the block. If no player is available, use a fake player |
 
