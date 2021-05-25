@@ -33,7 +33,8 @@ Gets if a redstone update was forced during setBlock call
 Return Type: boolean
 
 ```zenscript
-MCBlockNeighborNotifyEvent.getForceRedstoneUpdate() as boolean
+// MCBlockNeighborNotifyEvent.getForceRedstoneUpdate() as boolean
+
 myMCBlockNeighborNotifyEvent.getForceRedstoneUpdate();
 ```
 
@@ -46,7 +47,8 @@ Gets a list of directions from the base block that updates will occur upon.
 Return Type: stdlib.List&lt;[Direction](/vanilla/api/util/Direction)&gt;
 
 ```zenscript
-MCBlockNeighborNotifyEvent.getNotifiedSides() as stdlib.List<Direction>
+// MCBlockNeighborNotifyEvent.getNotifiedSides() as stdlib.List<Direction>
+
 myMCBlockNeighborNotifyEvent.getNotifiedSides();
 ```
 
@@ -55,8 +57,8 @@ myMCBlockNeighborNotifyEvent.getNotifiedSides();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| forceRedstoneUpdate | boolean | true | false |
-| notifiedSides | stdlib.List&lt;[Direction](/vanilla/api/util/Direction)&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| forceRedstoneUpdate | boolean | true | false | Gets if a redstone update was forced during setBlock call |
+| notifiedSides | stdlib.List&lt;[Direction](/vanilla/api/util/Direction)&gt; | true | false | Gets a list of directions from the base block that updates will occur upon. |
 
