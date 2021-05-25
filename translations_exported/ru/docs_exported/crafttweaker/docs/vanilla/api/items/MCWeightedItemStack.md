@@ -1,6 +1,8 @@
 # MCWeightedItemStack
 
-ItemStack с шансом, обычно используется для вывода рецептов. <p> Будьте осторожны, если стек был использован для создания WeightedStack, то набор размеров будет мутировать оригинальную стеку!
+ItemStack с шансом, обычно используется для вывода рецептов.
+
+ Будьте осторожны, если стек был использован для создания WeightedStack, то набор размеров будет мутировать оригинальную стеку!
 
 ## Импорт класса
 
@@ -66,7 +68,8 @@ myMCWeightedItemStack % newWeight as int
 :::
 
 :::group{name=MUL}
-Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
+
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
