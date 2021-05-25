@@ -65,7 +65,9 @@ myTagManagerFluid.getAllTags();
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
+
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
@@ -82,7 +84,9 @@ TagManagerFluid.getTag(location as MCResourceLocation) as MCTag<T>
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
+
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
