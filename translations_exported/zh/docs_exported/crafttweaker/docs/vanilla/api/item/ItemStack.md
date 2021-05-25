@@ -1,6 +1,8 @@
 # 物品应用
 
-This is the vanilla ItemStack. It is recommended that you use [IItemStack](/vanilla/api/items/IItemStack) whenever possible <p> They can be cast from each other, though.
+This is the vanilla ItemStack. It is recommended that you use [IItemStack](/vanilla/api/items/IItemStack) whenever possible
+
+ They can be cast from each other, though.
 
 ## 导入相关包
 
