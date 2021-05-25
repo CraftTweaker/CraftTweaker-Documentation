@@ -4,11 +4,11 @@ This expansion specifically targets itemTags. It adds implicit casters to IIngre
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [IData](/vanilla/api/data/IData)                                  | true        |
-| [IIngredient](/vanilla/api/items/IIngredient)                     | true        |
-| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
+| 반환 자료형                                                            | 암묵적  |
+| ----------------------------------------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData)                                  | true |
+| [IIngredient](/vanilla/api/items/IIngredient)                     | true |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
 
 ## Methods
 
