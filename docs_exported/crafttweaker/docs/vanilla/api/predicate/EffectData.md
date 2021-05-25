@@ -33,7 +33,8 @@ Indicates that the effect must be environmental.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withAmbient() as EffectData
+// EffectData.withAmbient() as EffectData
+
 myEffectData.withAmbient();
 ```
 
@@ -134,7 +135,8 @@ Indicates that the effect's particles must be invisible.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withInvisibility() as EffectData
+// EffectData.withInvisibility() as EffectData
+
 myEffectData.withInvisibility();
 ```
 
@@ -241,7 +243,8 @@ Indicates that the effect's particles must be visible.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withVisibility() as EffectData
+// EffectData.withVisibility() as EffectData
+
 myEffectData.withVisibility();
 ```
 
@@ -256,7 +259,8 @@ Indicates that the effect must not be environmental.
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
-EffectData.withoutAmbient() as EffectData
+// EffectData.withoutAmbient() as EffectData
+
 myEffectData.withoutAmbient();
 ```
 
