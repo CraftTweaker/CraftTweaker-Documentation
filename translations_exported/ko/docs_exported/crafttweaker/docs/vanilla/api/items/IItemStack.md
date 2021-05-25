@@ -18,15 +18,15 @@ IItemStack implements the following interfaces. That means all methods defined i
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [IData](/vanilla/api/data/IData)                                  | true        |
-| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
-| [Ingredient](/vanilla/api/item/Ingredient)                        | true        |
-| [ItemStack](/vanilla/api/item/ItemStack)                          | true        |
-| [MapData](/vanilla/api/data/MapData)                              | true        |
-| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true        |
-| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true        |
+| 반환 자료형                                                            | 암묵적  |
+| ----------------------------------------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData)                                  | true |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
+| [Ingredient](/vanilla/api/item/Ingredient)                        | true |
+| [ItemStack](/vanilla/api/item/ItemStack)                          | true |
+| [MapData](/vanilla/api/data/MapData)                              | true |
+| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true |
+| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true |
 
 ## Methods
 
