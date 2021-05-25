@@ -10,9 +10,9 @@ import crafttweaker.api.item.MCItemDefinition;
 
 ## Casters
 
-| Result type                                 | Is Implicit |
-| ------------------------------------------- | ----------- |
-| [IItemStack](/vanilla/api/items/IItemStack) | true        |
+| 반환 자료형                                      | 암묵적  |
+| ------------------------------------------- | ---- |
+| [IItemStack](/vanilla/api/items/IItemStack) | true |
 
 ## Methods
 
