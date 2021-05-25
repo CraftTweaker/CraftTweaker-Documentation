@@ -19,13 +19,13 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [IData](/vanilla/api/data/IData)                                  | true        |
-| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
-| [MapData](/vanilla/api/data/MapData)                              | true        |
-| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true        |
-| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true        |
+| 반환 자료형                                                            | 암묵적  |
+| ----------------------------------------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData)                                  | true |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
+| [MapData](/vanilla/api/data/MapData)                              | true |
+| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true |
+| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true |
 
 ## Methods
 
