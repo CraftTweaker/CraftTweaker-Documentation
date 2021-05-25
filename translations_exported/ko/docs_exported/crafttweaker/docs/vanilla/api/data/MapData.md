@@ -36,11 +36,11 @@ new MapData(map as IData[string]) as MapData
 
 ## Casters
 
-| Result type                                          | Is Implicit |
-| ---------------------------------------------------- | ----------- |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
-| [IData](/vanilla/api/data/IData)[string]             | true        |
-| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| 반환 자료형                                               | 암묵적   |
+| ---------------------------------------------------- | ----- |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
+| [IData](/vanilla/api/data/IData)[string]             | true  |
+| [INumberData](/vanilla/api/data/INumberData)         | false |
 
 ## Methods
 
