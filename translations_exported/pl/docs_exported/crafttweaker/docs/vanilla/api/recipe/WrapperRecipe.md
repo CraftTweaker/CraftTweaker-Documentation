@@ -8,6 +8,11 @@ import crafttweaker.api.recipes.WrapperRecipe;
 ```
 
 
+## Implemented Interfaces
+WrapperRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in WrapperRecipe
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Methods
 
 :::group{name=canFit}
@@ -26,15 +31,33 @@ WrapperRecipe.canFit(width as int, height as int) as boolean
 
 :::
 
+:::group{name=replace}
+
+Return Type: void
+
+```zenscript
+WrapperRecipe.replace(from as IIngredient, to as IIngredient) as void
+```
+
+| Parameter | Type                                          | Description             |
+| --------- | --------------------------------------------- | ----------------------- |
+| from      | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+| to        | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
+
+:::
+
 
 ## Properties
 
-| Name        | Type                                                                         | Has Getter | Has Setter | Description             |
-| ----------- | ---------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
-| dynamic     | boolean                                                                      | true       | false      | No Description Provided |
-| group       | string                                                                       | true       | false      | No Description Provided |
-| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true       | false      | No Description Provided |
-| id          | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true       | false      | No Description Provided |
-| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true       | false      | No Description Provided |
-| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true       | false      | No Description Provided |
+| Name          | Type                                                                         | Has Getter | Has Setter | Description             |
+| ------------- | ---------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| commandString | string                                                                       | true       | false      | No Description Provided |
+| dynamic       | boolean                                                                      | true       | false      | No Description Provided |
+| group         | string                                                                       | true       | false      | No Description Provided |
+| icon          | [IItemStack](/vanilla/api/items/IItemStack)                                  | true       | false      | No Description Provided |
+| id            | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true       | false      | No Description Provided |
+| ingredients   | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true       | false      | No Description Provided |
+| output        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true       | false      | No Description Provided |
+| recipeManager | [IRecipeManager](/vanilla/api/managers/IRecipeManager)                       | true       | false      | No Description Provided |
 
