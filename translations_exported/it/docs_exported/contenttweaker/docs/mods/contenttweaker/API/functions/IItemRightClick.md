@@ -14,19 +14,18 @@ import mods.contenttweaker.functions.IItemRightClick;
 
 :::group{name=apply}
 
-Return Type: void
+Return Type: [ActionResultType](/vanilla/api/util/ActionResultType)
 
 ```zenscript
-IItemRightClick.apply(stack as MCItemStackMutable, world as MCWorld, entity as MCEntity, itemSlot as int, isSelected as boolean) as void
+IItemRightClick.apply(item as MCItemStackMutable, playerEntity as MCPlayerEntity, world as MCWorld, hand as MCHand) as ActionResultType
 ```
 
-| Parameter  | Type                                                        | Description             |
-| ---------- | ----------------------------------------------------------- | ----------------------- |
-| stack      | [MCItemStackMutable](/vanilla/api/items/MCItemStackMutable) | No Description Provided |
-| world      | [MCWorld](/vanilla/api/world/MCWorld)                       | No Description Provided |
-| entity     | [MCEntity](/vanilla/api/entity/MCEntity)                    | No Description Provided |
-| itemSlot   | int                                                         | No Description Provided |
-| isSelected | boolean                                                     | No Description Provided |
+| Parameter    | Type                                                        | Description             |
+| ------------ | ----------------------------------------------------------- | ----------------------- |
+| item         | [MCItemStackMutable](/vanilla/api/items/MCItemStackMutable) | No Description Provided |
+| playerEntity | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)        | No Description Provided |
+| world        | [MCWorld](/vanilla/api/world/MCWorld)                       | No Description Provided |
+| hand         | [MCHand](/vanilla/api/util/MCHand)                          | No Description Provided |
 
 
 :::
