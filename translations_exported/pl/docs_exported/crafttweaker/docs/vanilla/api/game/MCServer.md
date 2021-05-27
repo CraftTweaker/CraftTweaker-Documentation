@@ -19,7 +19,9 @@ MCServer implements the following interfaces. That means all methods defined in 
 
 Runs a command.
 
- Returns The success value of the command, or 0 if an exception occurred. <p> Note: Some commands' success value is 0
+ Returns The success value of the command, or 0 if an exception occurred.
+
+ Note: Some commands' success value is 0
 
 Return Type: int
 
@@ -38,7 +40,9 @@ MCServer.executeCommand(command as string) as int
 
 let a player send a command
 
- Returns The success value of the command, or 0 if an exception occurred. <p> Note: Some commands' success value is 0
+ Returns The success value of the command, or 0 if an exception occurred.
+
+ Note: Some commands' success value is 0
 
 Return Type: int
 
