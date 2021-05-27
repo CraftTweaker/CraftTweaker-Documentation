@@ -1,6 +1,8 @@
 # MCWeightedItemStack
 
-[PLACEHOLDER] ItemStack with a przypadek, zwykle used for recipe outputs. <p> Ostrożnie, jeśli stos użyty do utworzenia Wagi Stack był zmienny, to ustawnik rozmiaru zmusza również oryginalny stos!
+[PLACEHOLDER] ItemStack with a przypadek, zwykle used for recipe outputs.
+
+ Ostrożnie, jeśli stos użyty do utworzenia Wagi Stack był zmienny, to ustawnik rozmiaru zmusza również oryginalny stos!
 
 ## Importing the class
 
@@ -66,7 +68,8 @@ myMCWeightedItemStack % newWeight as int
 :::
 
 :::group{name=MUL}
-Sets the itemStack's amount. <br />  <p> <br />  If the original Stack was mutable, also mutates the original stack's size.
+
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
