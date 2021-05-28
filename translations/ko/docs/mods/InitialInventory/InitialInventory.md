@@ -22,7 +22,7 @@ The parameters are:
 
 Description:
 
-Used to determine if an item should be given. key에는 모든 문자열이 들어갈 수 있으며, 이는 이전에 같은 아이템들을 받았는지 확인하는 데 쓰입니다.
+아이템을 주어야 할지 말지 정의하는 데 쓰입니다. key에는 모든 문자열이 들어갈 수 있으며, 이는 이전에 같은 아이템들을 받았는지 확인하는 데 쓰입니다.
 
 모드팩에서 추후에 시작 아이템을 추가하는 경우 유용합니다. 다른 키를 사용하여, 이미 처음 시작 아이템을 받은 사람에게도 해당 아이템을 줄 수 있습니다. 예를 들어서,
 
@@ -38,17 +38,17 @@ Used to determine if an item should be given. key에는 모든 문자열이 들�
 
 Description:
 
-The item to give to the player when they join.
+참여할 때 플레이어에게 줄 아이템입니다.
 
-Param: `index`
+매개변수: `index`
 
-Type: `int`
+자료형: `int`
 
 Description:
 
-Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
+원한다면 아이템이 들어올 위치를 정의하는 데 쓸 수 있는 정수입니다. 갑옷 슬롯과 같은 인벤토리 슬롯에 아이템을 넣는 데 쓸 수 있습니다.
 
-If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
+임의로 지정하지 않으면 기본값인 -1로 설정됩니다. 이러면 아이템은 가능한 첫째 슬롯으로 들어가거나, 이미 인벤토리에 있는 다른 아이템과 합쳐집니다.
 
 
 ## 예제
