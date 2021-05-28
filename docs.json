@@ -40,6 +40,13 @@
         "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
         "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
       },
+      "Astral Sorcery": {
+        "Altar": "mods/AstralSorcery/Altar.md",
+        "Block Transmutation": "mods/AstralSorcery/BlockTransmutation.md",
+        "Infusion": "mods/AstralSorcery/Infusion.md",
+        "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
+        "Well": "mods/AstralSorcery/Well.md"
+      },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
         "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
