@@ -46,7 +46,7 @@ new FluidBuilder(isMolten as boolean, color as int, stillTexture as MCResourceLo
 
 :::group{name=build}
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+CoT에게 이 건설자가 건설해야 하는 모든 것을 실제로 건설하도록 지시합니다.
 
 Return Type: void
 
@@ -56,9 +56,9 @@ Return Type: void
 myFluidBuilder.build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | string | The resource path to give this block |
+| Parameter        | Type   | Description       |
+| ---------------- | ------ | ----------------- |
+| resourceLocation | string | 이 블록을 제공하는 리소스 경로 |
 
 
 :::
