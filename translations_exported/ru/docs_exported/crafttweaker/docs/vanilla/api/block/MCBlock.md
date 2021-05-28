@@ -286,6 +286,25 @@ MCBlock.matchesBlock(other as MCBlock) as boolean
 
 :::
 
+:::group{name=setBlastResistance}
+
+Sets the blast resistance of this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setBlastResistance(resistance as float) as void
+
+<block:minecraft:grass_block>.setBlastResistance(2);
+```
+
+| Параметр   | Тип   | Description                             |
+| ---------- | ----- | --------------------------------------- |
+| resistance | float | The new blast resistance of this Block. |
+
+
+:::
+
 :::group{name=setCanCollide}
 
 Sets whether entities can collide with this Block.
@@ -301,25 +320,6 @@ Return Type: void
 | Параметр   | Тип     | Description                           |
 | ---------- | ------- | ------------------------------------- |
 | canCollide | boolean | Can entities collide with this Block. |
-
-
-:::
-
-:::group{name=setCanCollide}
-
-Sets the blast resistance of this Block.
-
-Return Type: void
-
-```zenscript
-// MCBlock.setCanCollide(resistance as float) as void
-
-<block:minecraft:grass_block>.setCanCollide(2);
-```
-
-| Параметр   | Тип   | Description                             |
-| ---------- | ----- | --------------------------------------- |
-| resistance | float | The new blast resistance of this Block. |
 
 
 :::
@@ -405,7 +405,7 @@ Return Type: void
 
 | Название        | Тип                                                                                                                      | Имеет Getter | Имеет Setter | Description                                                                                                                  |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| blastResistance | float                                                                                                                    | true         | false        | Gets the blast resistance of this Block.                                                                                     |
+| blastResistance | float                                                                                                                    | true         | true         | Gets the blast resistance of this Block.                                                                                     |
 | canCollide      | boolean                                                                                                                  | true         | true         | Checks if entities can collide with this Block.                                                                              |
 | commandString   | string                                                                                                                   | true         | false        | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
 | defaultState    | [MCBlockState](/vanilla/api/block/MCBlockState)                                                                          | true         | false        | Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block.                                              |
