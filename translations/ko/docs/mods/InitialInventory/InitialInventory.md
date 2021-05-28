@@ -4,37 +4,37 @@
 
 ## Description
 
-This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
+이 모드는 플레이어가 처음 세계에 참여할 때 단 한 번 아이템을 받도록 해 줍니다. 일부 모드에서 플레이어가 세계에 처음 참여할 때 책을 주는 것과 유사합니다.
 
 ## Package
 `mods.initialinventory.InvHandler`
 
-## Adding starting items
+## 시작 아이템 추가
 
-This will add an item to the players inventory when they join the world.
+플레이어가 세계에 합류할 때 인벤토리에 아이템이 추가됩니다.
 
 The parameters are:
 
 
-Param: `key`
+매개변수: `key`
 
-Type: `String`
+자료형: `String`
 
 Description:
 
-Used to determine if an item should be given. A key can be any string, the point of it is to determine if a player has been given a set of items before.
+Used to determine if an item should be given. key에는 모든 문자열이 들어갈 수 있으며, 이는 이전에 같은 아이템들을 받았는지 확인하는 데 쓰입니다.
 
-It is useful for modpacks which later add more starting items, by using a different key, players who have already started playing the pack, can still receive those items. An example would be:
+모드팩에서 추후에 시작 아이템을 추가하는 경우 유용합니다. 다른 키를 사용하여, 이미 처음 시작 아이템을 받은 사람에게도 해당 아이템을 줄 수 있습니다. 예를 들어서,
 
-Add a diamond as a starting item with key "1", join the world, the player will get the diamond.
+다이아몬드를 key "1"에 해당하는 시작 아이템으로 추가하고 세계에 참여하면, 플레이어는 다이아몬드를 받을 것입니다.
 
-Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.
+사과를 key "2"에 해당하는 시작 아이템으로 추가하고 세계에 참여하면, 플레이어는 사과를 받지만 다이아몬드를 다시 받지는 않습니다.
 
-Make a new world, the player will receive both an apple and a diamond.
+새로운 세계를 만들어 들어가면, 플레이어는 사과와 다이아몬드를 모두 받게 됩니다.
 
-param: `item`
+매개변수: `item`
 
-Type `IItemStack`
+자료형: `IItemStack`
 
 Description:
 
