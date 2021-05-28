@@ -11,7 +11,7 @@ mods.contenttweaker.block.basic.BlockBuilderBasic
 ```
 
 ## Implemented Interfaces
-BlockBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilderBasic은 아래와 같은 인터페이스를 구현합니다. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
