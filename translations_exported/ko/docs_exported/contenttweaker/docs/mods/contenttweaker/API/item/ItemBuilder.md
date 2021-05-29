@@ -30,7 +30,7 @@ new ItemBuilder();
 
 :::group{name=build}
 
-CoT에게 이 건설자가 건설해야 하는 모든 것을 실제로 건설하도록 지시합니다.
+CoT에게 이 제작기가 빌드해야 하는 모든 블록을 실제로 빌드하도록 지시합니다.
 
 Return Type: void
 
@@ -40,9 +40,9 @@ Return Type: void
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description       |
-| ---------------- | ------ | ----------------- |
-| resourceLocation | string | 이 블록을 제공하는 리소스 경로 |
+| Parameter        | Type   | Description   |
+| ---------------- | ------ | ------------- |
+| resourceLocation | string | 해당 블록의 리소스 경로 |
 
 
 :::
