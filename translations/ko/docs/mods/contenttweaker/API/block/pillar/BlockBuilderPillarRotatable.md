@@ -43,9 +43,9 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| Parameter  | Type                                                                             | Description                               |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
+| Parameter  | Type                                                                             | Description |
+| ---------- | -------------------------------------------------------------------------------- | ----------- |
+| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 끝 면에 쓰일 텍스처 |
 
 
 
@@ -67,7 +67,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((block
 
 ### withSideTexture
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. 해당 텍스처의 네임스페이스가 CoT의 네임스페이스나 이를 지원하는 애드온에 있는 경우 기본적으로 이미지가 생성됩니다.
+측면(위/아래 제외 모든 면)에서 써야 하는 텍스처의 경로를 재정의합니다. 해당 텍스처의 네임스페이스가 CoT의 네임스페이스나 이를 지원하는 애드온에 있는 경우 기본적으로 이미지가 생성됩니다.
 
  Returns: `This builder, used for method chaining`
 
@@ -78,13 +78,13 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sides
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| Parameter    | Type                                                                             | Description                           |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+| Parameter    | Type                                                                             | Description |
+| ------------ | -------------------------------------------------------------------------------- | ----------- |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 측면에 쓰일 텍스처  |
 
 
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. 해당 텍스처의 네임스페이스가 CoT의 네임스페이스나 이를 지원하는 애드온에 있는 경우 기본적으로 이미지가 생성됩니다. 블록의 이름을 입력으로 받아 끝 면 텍스처를 반환하는 함수를 씁니다.
+측면(위/아래 제외 모든 면)에서 써야 하는 텍스처의 경로를 재정의합니다. 해당 텍스처의 네임스페이스가 CoT의 네임스페이스나 이를 지원하는 애드온에 있는 경우 기본적으로 이미지가 생성됩니다. 블록의 이름을 입력으로 받아 끝 면 텍스처를 반환하는 함수를 씁니다.
 
  Returns: `This builder, used for method chaining`
 
