@@ -18,16 +18,16 @@ ItemBuilderTool implements the following interfaces. That means any method avail
 ## Methods
 ### build
 
-CoT에게 이 건설자가 건설해야 하는 모든 것을 실제로 건설하도록 지시합니다.
+CoT에게 이 제작기가 빌드해야 하는 모든 블록을 실제로 빌드하도록 지시합니다.
 
 ```zenscript
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceLocation as String);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description       |
-| ---------------- | ------ | ----------------- |
-| resourceLocation | String | 이 블록을 제공하는 리소스 경로 |
+| Parameter        | Type   | Description   |
+| ---------------- | ------ | ------------- |
+| resourceLocation | String | 해당 블록의 리소스 경로 |
 
 
 ### withAttackDamage
