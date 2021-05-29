@@ -151,6 +151,19 @@
         "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
         "Sawmill": "mods/ThermalSeries/Sawmill.md"
       },
+      "Tinkers' Construct": {
+        "Alloying": "mods/TinkersConstruct/Alloying.md",
+        "Casting Basin": "mods/TinkersConstruct/CastingBasin.md",
+        "Casting Table": "mods/TinkersConstruct/CastingTable.md",
+        "Entity Melting": "mods/TinkersConstruct/EntityMelting.md",
+        "Material Recipe": "mods/TinkersConstruct/MaterialRecipe.md",
+        "Melting": "mods/TinkersConstruct/Melting.md",
+        "Molding Basin": "mods/TinkersConstruct/MoldingBasin.md",
+        "Molding Table": "mods/TinkersConstruct/MoldingTable.md",
+        "Part builder": "mods/TinkersConstruct/PartBuilder.md",
+        "Severing": "mods/TinkersConstruct/Severing.md",
+        "Tinker station": "mods/TinkersConstruct/TinkerStation.md"
+      },
       "Zen Summoning": {
         "Examples": "mods/zensummoning/examples.md"
       }
