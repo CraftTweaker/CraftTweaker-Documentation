@@ -352,7 +352,7 @@ Return Type: void
 ```zenscript
 // MCBlock.setMaterial(material as MCMaterial) as void
 
-<block:minecraft:grass_block>.setMaterial(2);
+<block:minecraft:grass_block>.setMaterial(<blockmaterial:earth>);
 ```
 
 | Parameter | Type                                                 | Beschreibung                    |
