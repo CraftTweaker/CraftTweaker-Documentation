@@ -75,6 +75,9 @@
           "MCEntityType": "vanilla/api/entities/MCEntityType.md"
         },
         "Entity": {
+          "Attribute": "vanilla/api/entity/Attribute.md",
+          "AttributeModifier": "vanilla/api/entity/AttributeModifier.md",
+          "AttributeOperation": "vanilla/api/entity/AttributeOperation.md",
           "EntityIngredient": "vanilla/api/entity/EntityIngredient.md",
           "MCEntity": "vanilla/api/entity/MCEntity.md",
           "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
@@ -85,6 +88,7 @@
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
+          "ItemAttributeModifierEvent": "vanilla/api/event/ItemAttributeModifierEvent.md",
           "MCAnvilUpdateEvent": "vanilla/api/event/MCAnvilUpdateEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
           "Block": {
