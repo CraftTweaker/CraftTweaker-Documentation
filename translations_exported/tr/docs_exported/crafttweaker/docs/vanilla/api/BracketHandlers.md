@@ -12,6 +12,21 @@ import crafttweaker.api.BracketHandlers;
 
 ## Static Methods
 
+:::group{name=getAttribute}
+
+Return Type: [Attribute](/vanilla/api/entity/Attribute)
+
+```zenscript
+BracketHandlers.getAttribute(tokens as string) as Attribute
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | string | No Description Provided |
+
+
+:::
+
 :::group{name=getBiome}
 
 Gets a Biome based on the tokens. <br />  Throws an error if it can't get the biome
