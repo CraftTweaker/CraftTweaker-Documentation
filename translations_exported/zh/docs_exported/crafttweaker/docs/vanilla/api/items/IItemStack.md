@@ -30,6 +30,59 @@ IItemStack implements the following interfaces. That means all methods defined i
 
 ## 方法
 
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to have the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
+// IItemStack.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as void
+
+<item:minecraft:dirt>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                    |
+| --------- | -------------------------------------------------------------- | ------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.        |
+| name      | string                                                         | The name of the modifier.             |
+| value     | double                                                         | The value of the modifier.            |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.        |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+
+
+:::
+
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier. You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to have the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
+// IItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as void
+
+<item:minecraft:dirt>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                                |
+| --------- | -------------------------------------------------------------- | ------------------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.                    |
+| uuid      | string                                                         | The unique identifier of the modifier to replace. |
+| name      | string                                                         | The name of the modifier.                         |
+| value     | double                                                         | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.                    |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for.             |
+
+
+:::
+
 :::group{name=addShiftTooltip}
 
 Return Type: void
@@ -166,6 +219,25 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 <item:minecraft:dirt>.copy();
 ```
+
+:::
+
+:::group{name=getAttributes}
+
+Gets the Attributes and the AttributeModifiers on this IItemStack for the given EquipmentSlotType
+
+Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/Attribute)]
+
+```zenscript
+// IItemStack.getAttributes(slotType as MCEquipmentSlotType) as stdlib.List<AttributeModifier>[Attribute]
+
+<item:minecraft:dirt>.getAttributes(<equipmentslottype:chest>);
+```
+
+| 参数       | 类型                                                           | 描述                                  |
+| -------- | ------------------------------------------------------------ | ----------------------------------- |
+| slotType | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | The slot to get the Attributes for. |
+
 
 :::
 
@@ -382,6 +454,50 @@ IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredi
 
 :::
 
+:::group{name=removeGlobalAttribute}
+
+Removes all AttributeModifiers that use the given Attribute from this IIngredient.
+
+ Attributes removed with this method are removed from ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to remove the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withoutAttribute.
+
+ This method can only remove default Attributes from an ItemStack, it is still possible that an ItemStack can override it.
+
+Return Type: void
+
+```zenscript
+// IItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as MCEquipmentSlotType[]) as void
+
+<item:minecraft:dirt>.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                |
+| --------- | -------------------------------------------------------------- | --------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The attribute to remove.          |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | The slot types to remove it from. |
+
+
+:::
+
+:::group{name=removeGlobalAttributeModifier}
+
+Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+
+Return Type: void
+
+```zenscript
+// IItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as MCEquipmentSlotType[]) as void
+
+<item:minecraft:dirt>.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                                |
+| --------- | -------------------------------------------------------------- | ------------------------------------------------- |
+| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | The slot types to remove it from.                 |
+
+
+:::
+
 :::group{name=removeTooltip}
 
 Return Type: void
@@ -486,6 +602,61 @@ IItemStack.weight(weight as double) as MCWeightedItemStack
 | 参数     | 类型     | 描述                      |
 | ------ | ------ | ----------------------- |
 | weight | double | No Description Provided |
+
+
+:::
+
+:::group{name=withAttributeModifier}
+
+Adds an AttributeModifier to this IItemStack.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier. You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method will only appear on this specific IItemStack.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                    |
+| --------- | -------------------------------------------------------------- | ------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.        |
+| name      | string                                                         | The name of the modifier.             |
+| value     | double                                                         | The value of the modifier.            |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.        |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+
+
+:::
+
+:::group{name=withAttributeModifier}
+
+Adds an AttributeModifier to this IItemStack using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier. You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method will only appear on this specific IItemStack.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| 参数        | 类型                                                             | 描述                                                |
+| --------- | -------------------------------------------------------------- | ------------------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.                    |
+| uuid      | string                                                         | The unique identifier of the modifier to replace. |
+| name      | string                                                         | The name of the modifier.                         |
+| value     | double                                                         | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.                    |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for.             |
 
 
 :::
