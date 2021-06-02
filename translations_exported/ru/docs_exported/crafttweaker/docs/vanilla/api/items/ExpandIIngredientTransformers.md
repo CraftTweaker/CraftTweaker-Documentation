@@ -81,6 +81,7 @@ IIngredient.transformCustom(uid as string, function as Function<IItemStack,IItem
 | uid      | string                                                                                                              | No Description Provided | false    |              |
 | function | Function&lt;[IItemStack](/vanilla/api/items/IItemStack),[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
+
 :::
 
 :::group{name=transformDamage}
@@ -94,6 +95,7 @@ IIngredient.transformDamage(amount as int) as MCIngredientTransformed<IIngredien
 | Параметр | Тип | Description             | Optional | DefaultValue |
 | -------- | --- | ----------------------- | -------- | ------------ |
 | amount   | int | No Description Provided | true     | 1            |
+
 
 :::
 
