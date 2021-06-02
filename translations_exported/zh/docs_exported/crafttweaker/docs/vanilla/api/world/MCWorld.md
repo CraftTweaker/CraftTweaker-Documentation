@@ -148,6 +148,7 @@ world.getEntitiesInArea(new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 | pos1 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | false |              |
 | pos2 | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided | true  |              |
 
+
 :::
 
 :::group{name=getEntitiesInArea}
@@ -192,6 +193,7 @@ world.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new
 | predicate       | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | No Description Provided | false |              |
 | pos1            | [BlockPos](/vanilla/api/util/BlockPos)                                | No Description Provided | false |              |
 | pos2            | [BlockPos](/vanilla/api/util/BlockPos)                                | No Description Provided | true  |              |
+
 
 :::
 
