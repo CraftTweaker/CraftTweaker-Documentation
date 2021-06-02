@@ -39,6 +39,7 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 | duration  | int | No Description Provided | false |              |
 | amplifier | int | No Description Provided | true  | 0            |
 
+
 :::
 
 
