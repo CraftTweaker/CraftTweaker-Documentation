@@ -104,6 +104,7 @@ MCItemStackMutable.addShiftTooltip(content as MCTextComponent, showMessage as MC
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
+
 :::
 
 :::group{name=addTooltip}
@@ -371,6 +372,7 @@ MCItemStackMutable.onlyIf(uid as string, function as Predicate<IItemStack>) as M
 |-----------|------|-------------|----------|--------------|
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
+
 
 :::
 

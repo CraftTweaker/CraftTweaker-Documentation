@@ -98,6 +98,7 @@ IIngredient.addShiftTooltip(content as MCTextComponent, showMessage as MCTextCom
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
 
+
 :::
 
 :::group{name=addTooltip}
@@ -286,6 +287,7 @@ IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngred
 |-----------|------|-------------|----------|--------------|
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
+
 
 :::
 

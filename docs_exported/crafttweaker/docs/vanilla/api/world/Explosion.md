@@ -27,7 +27,9 @@ Explosion.create(world as MCWorld, x as double, y as double, z as double, size a
 | size | float | No Description Provided | false |  |
 | causesFire | boolean | No Description Provided | false |  |
 | mode | [ExplosionMode](/vanilla/api/world/ExplosionMode) | No Description Provided | false |  |
-| exploder | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | true |  || source | [DamageSource](/vanilla/api/util/DamageSource) | No Description Provided | true |  |
+| exploder | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | true |  |
+| source | [DamageSource](/vanilla/api/util/DamageSource) | No Description Provided | true |  |
+
 
 :::
 
