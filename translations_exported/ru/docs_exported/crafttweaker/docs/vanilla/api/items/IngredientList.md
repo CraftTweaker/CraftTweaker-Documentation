@@ -101,6 +101,7 @@ IngredientList.addShiftTooltip(content as MCTextComponent, showMessage as MCText
 | контент     | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
 | showMessage | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
 
+
 :::
 
 :::group{name=addTooltip}
@@ -255,6 +256,7 @@ IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIng
 | -------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
 | uid      | string                                                                   | No Description Provided | false    |              |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
 
 :::
 
