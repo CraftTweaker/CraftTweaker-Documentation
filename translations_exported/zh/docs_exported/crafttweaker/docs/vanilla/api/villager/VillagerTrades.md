@@ -34,6 +34,7 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, 16, <item:minecraft:di
 | xp            | int                                                                | How much Experience is given by trading.                            | false |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true  | 1.0          |
 
+
 :::
 
 :::group{name=addTrade}
@@ -57,6 +58,7 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:dirt> 
 | maxTrades     | int                                                                | How many times can this trade be done.                              | false |              |
 | xp            | int                                                                | How much Experience is given by trading.                            | false |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true  | 1.0          |
+
 
 :::
 
@@ -82,6 +84,7 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamon
 | maxTrades     | int                                                                | How many times can this trade be done.                              | false |              |
 | xp            | int                                                                | How much Experience is given by trading.                            | false |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true  | 1.0          |
+
 
 :::
 
@@ -120,12 +123,14 @@ Return Type: void
 villagerTrades.removeBasicTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>, <item:minecraft:stick>, <item:minecraft:emerald>);
 ```
 
-| 参数            | 类型                                                                 | 描述                                              | 可选    | DefaultValue                                                                                                                         |
-| ------------- | ------------------------------------------------------------------ | ----------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.       | false |                                                                                                                                      |
-| villagerLevel | int                                                                | The level the Villager needs to be.             | false |                                                                                                                                      |
-| forSale       | [IItemStack](/vanilla/api/items/IItemStack)                        | What ItemStack is being sold (by the Villager). | false |                                                                                                                                      |
-| price         | [IItemStack](/vanilla/api/items/IItemStack)                        | No Description Provided                         | true  | <item:minecraft:air> || price2 | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided | true | <item:minecraft:air> |
+| 参数            | 类型                                                                 | 描述                                              | 可选    | DefaultValue         |
+| ------------- | ------------------------------------------------------------------ | ----------------------------------------------- | ----- | -------------------- |
+| profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.       | false |                      |
+| villagerLevel | int                                                                | The level the Villager needs to be.             | false |                      |
+| forSale       | [IItemStack](/vanilla/api/items/IItemStack)                        | What ItemStack is being sold (by the Villager). | false |                      |
+| price         | [IItemStack](/vanilla/api/items/IItemStack)                        | No Description Provided                         | true  | <item:minecraft:air> |
+| price2        | [IItemStack](/vanilla/api/items/IItemStack)                        | No Description Provided                         | true  | <item:minecraft:air> |
+
 
 :::
 
