@@ -18,16 +18,18 @@ Return Type: [Explosion](/vanilla/api/world/Explosion)
 Explosion.create(world as MCWorld, x as double, y as double, z as double, size as float, causesFire as boolean, mode as ExplosionMode, exploder as MCEntity, source as DamageSource) as Explosion
 ```
 
-| 参数         | 类型                                                | 描述                      | 可选    | DefaultValue                                                                                  |
-| ---------- | ------------------------------------------------- | ----------------------- | ----- | --------------------------------------------------------------------------------------------- |
-| world      | [MCWorld](/vanilla/api/world/MCWorld)             | No Description Provided | false |                                                                                               |
-| x          | double                                            | No Description Provided | false |                                                                                               |
-| y          | double                                            | No Description Provided | false |                                                                                               |
-| z          | double                                            | No Description Provided | false |                                                                                               |
-| size       | float                                             | No Description Provided | false |                                                                                               |
-| causesFire | boolean                                           | No Description Provided | false |                                                                                               |
-| mode       | [ExplosionMode](/vanilla/api/world/ExplosionMode) | No Description Provided | false |                                                                                               |
-| exploder   | [MCEntity](/vanilla/api/entity/MCEntity)          | No Description Provided | true  | || source | [DamageSource](/vanilla/api/util/DamageSource) | No Description Provided | true | |
+| 参数         | 类型                                                | 描述                      | 可选    | DefaultValue |
+| ---------- | ------------------------------------------------- | ----------------------- | ----- | ------------ |
+| world      | [MCWorld](/vanilla/api/world/MCWorld)             | No Description Provided | false |              |
+| x          | double                                            | No Description Provided | false |              |
+| y          | double                                            | No Description Provided | false |              |
+| z          | double                                            | No Description Provided | false |              |
+| size       | float                                             | No Description Provided | false |              |
+| causesFire | boolean                                           | No Description Provided | false |              |
+| mode       | [ExplosionMode](/vanilla/api/world/ExplosionMode) | No Description Provided | false |              |
+| exploder   | [MCEntity](/vanilla/api/entity/MCEntity)          | No Description Provided | true  |              |
+| 来源         | [DamageSource](/vanilla/api/util/DamageSource)    | No Description Provided | true  |              |
+
 
 :::
 
