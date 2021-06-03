@@ -75,6 +75,7 @@ MCBlockState.canConnectRedstone(world as MCWorld, pos as BlockPos, side as Direc
 | 点     | [BlockPos](/vanilla/api/util/BlockPos)   | The position of the BlockState. | false |              |
 | side  | [Direction](/vanilla/api/util/Direction) | The side to check for.          | true  |              |
 
+
 :::
 
 :::group{name=canCreatureSpawn}
@@ -465,6 +466,7 @@ Return Type: float
 | 点      | [BlockPos](/vanilla/api/util/BlockPos)   | The position to check at. | false |              |
 | entity | [MCEntity](/vanilla/api/entity/MCEntity) | The entity to work with.  | true  |              |
 
+
 :::
 
 :::group{name=hasProperty}
@@ -517,6 +519,7 @@ Return Type: boolean
 | world   | [MCWorld](/vanilla/api/world/MCWorld)                | A world object.                            | false |              |
 | 点       | [BlockPos](/vanilla/api/util/BlockPos)               | The position to check at.                  | false |              |
 | sleeper | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | The Living Entity that is trying to sleep. | true  |              |
+
 
 :::
 
