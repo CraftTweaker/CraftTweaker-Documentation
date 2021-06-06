@@ -13,7 +13,8 @@
         "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
       },
       "Recipes": {
-        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md"
+        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
+        "Crafting": "tutorial/Recipes/Crafting.md"
       },
       "Software": "tutorial/Software.md"
     },
