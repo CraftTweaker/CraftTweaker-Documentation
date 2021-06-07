@@ -14,7 +14,13 @@
       },
       "Recipes": {
         "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
-        "Crafting": "tutorial/Recipes/Crafting.md"
+        "Crafting": {
+          "Add Recipes": {
+            "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+            "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+            "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+          }
+        }
       },
       "Software": "tutorial/Software.md"
     },
