@@ -23,7 +23,7 @@ PlayerAttackEntity Events implement the following interfaces and are able to cal
 | ---------- | ------------------------------------- |
 | `canceled` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| `target`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
