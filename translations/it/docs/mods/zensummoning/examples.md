@@ -232,3 +232,38 @@ SummoningDirector.addSummonInfo(
         })
 );
 ```
+
+## Example summoning 7
+
+- Requires the player to have their hunger bar below 15
+- Sets the player's hunger bar to 2 upon successful summoning
+
+```zenscript
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.item.IIngredient;
+import mods.zensummoning.SummoningDirector;
+import mods.zensummoning.SummoningAttempt;
+import mods.zensummoning.SummoningInfo;
+import mods.zensummoning.MobInfo;
+import crafttweaker.api.player.MCPlayerEntity;
+
+
+SummoningDirector.addSummonInfo(
+    SummoningInfo.create()
+        .setCatalyst(<item:minecraft:stick>)
+        .setConsumeCatalyst(false)
+        .setReagents([<item:minecraft:diamond>, <item:minecraft:redstone>*12])
+        .addMob(MobInfo.create().setMob(<entityType:minecraft:cow>))
+        .addCondition((attempt as SummoningAttempt) => {
+            if (attempt.summoner == null)
+                return false;
+            if ((attempt.summoner as MCPlayerEntity).foodLevel > 15)
+                return false;
+            return true;
+        }, "You aren't hungry enough", "Must be under 15 hunger!")
+        .setMutator((attempt as SummoningAttempt) => {
+            (attempt.summoner as MCPlayerEntity).foodLevel = 2;
+        })
+
+);
+```
