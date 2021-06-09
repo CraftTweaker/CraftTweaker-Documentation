@@ -14,8 +14,9 @@ import mods.zensummoning.SummoningAttempt;
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| message | string | true | true | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | No Description Provided |
-| success | boolean | true | true | No Description Provided |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
+| message | string | true | true | The [unlocalized] message to be displayed to the player. |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | Position of the altar. |
+| success | boolean | true | true | Whether or not the summoning will proceed. |
+| summoner | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true | false | Gets the person who activated the summoning |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | World that the summoning is occurring in. |
 
