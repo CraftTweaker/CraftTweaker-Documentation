@@ -55,6 +55,31 @@ Operadores posibles son `Lógico OR(||)`, `Lógico AND(&&)`, `deBits OR(|)`, `de
 //Valores númericos
 val a = 0 as int;
 if (a == 0){ print("a es igual a cero");}
+
+//Valores númericos con operaciones
+
+//Todas son ciertas
+if (b+c == 6) { print("¡Número Uno!"); } // Matze Knop estará orgulloso
+if (b*c == 5) { print("¡Número dos!"); }
+if (b/c == 0.2) { print("¡Número tres"); }
+
+//Operadores condicionales (||), (^), (&&)
+||: Con sólo que uno de los parámetros sea cierto, se ejecutará el bloque condicional
+^: Sólo uno puede ser cierto, de otro modo no ocurrirá nada
+&& Todos los parámetros deben ser ciertos.
+
+val d = "Hola";
+val e = "Mundo";
+val f = d~e; //f = "HolaMundo", ~ concadena los strings
+
+if (d == "Hola" || e == "Hola") { print("OR1!"); }        //cierto
+if (d == "Hola" || e == "Mundo") { print("OR2!"); }        //cierto
+
+if (d == "Hola" ^ e == "Hola") { print("XOR1!"); }        //cierto
+if (d == "Hola" ^ e == "Mundo") { print("XOR2!"); }        //falso
+
+if (d == "Hola" && e == "Hola") { print("AND1!"); }       //falso
+if (d == "Hola" && e == "Mundo") { print("AND2!"); }       //cierto
 ```
 
 ## The ? Operator
