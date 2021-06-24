@@ -10,9 +10,20 @@
 
 `mods.jei.JEI`
 
+## Adding Items
+
+The following script will add a new Item to JEI which will be a Diamond with the name "Super Diamond" and be enchanted with Knockback 5.
+
+```zenscript
+// mods.jei.JEI.addItem(IItemStack stack)
+
+mods.jei.JEI.addItem(<item:minecraft:diamond>.withTag({Enchantments: [{lvl: 5 as short, id: "minecraft:knockback"}], display: {Name: "{\"text\":\"Super Diamond\"}"}}));
+
+```
+
 ## 隐藏物品
 
-下面的脚本将在查看物品列表时从JEI中隐藏泥土。
+The following script will hide Dirt from JEI when looking at the item list.
 
 ```zenscript
 // mods.jei.JEI.hideItem(IItemStack stack)
@@ -20,9 +31,9 @@
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## 隐藏流体
+## Fluid Hiding
 
-下面的脚本将在查看物品列表时从JEI中隐藏熔岩，这仅仅隐藏实际的流体，并非装有液体的桶或其他装有流体的物品（列如储罐）。
+The following script will hide Lava from JEI when looking at the item list, this is just the actual Fluid, and not the Bucket Item or other Items that have the Fluid (like a Tank)
 
 ```zenscript
 // mods.jei.JEI.hideFluid(IFluidStack stack)
@@ -30,9 +41,9 @@ mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
 ```
 
-## 隐藏模组
+## Mod Hiding
 
-下面的脚本将隐藏所有由“minecraft”添加的物品，除了石头。
+The following script will hide all the Items added by "minecraft", except for Stone from the item list.
 
 ```zenscript
 // mods.jei.JEI.hideItem(string modid, crafttweaker.api.recipeFilter exclude)
@@ -42,9 +53,9 @@ mods.jei.JEI.hideMod("minecraft", (name as string) => {
 });
 ```
 
-## 通过正则表达式隐藏
+## Regex Hiding
 
-下面的脚本将从物品列表中隐藏所有名字中带有`stone`的物品。
+The following script will hide all the Items that have `stone` in their name from the item list.
 
 ```zenscript
 // mods.jei.JEI.hideItem(string regex)
@@ -54,7 +65,7 @@ mods.jei.JEI.hideRegex(".*stone.*");
 
 ## 隐藏类别
 
-下面的脚本将从JEI中隐藏所有熔炼类别的配方。 它本质上是隐藏了该类别中的所有配方。
+The following script will hide the Furnace category from JEI. It is essentially hiding all the recipes in the category.
 
 ```zenscript
 // mods.jei.JEI.hideCategory(String category)
@@ -76,11 +87,11 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 "jei:information"
 ```
 
-不过模组可以添加更多的类别，因此确保使用`/ct dump jeiCategories`指令来获取完整的类别列表！
+Mods can add more categories though, so be sure to do `/ct dump jeiCategories` to get a full list of them!
 
 # Recipe Hiding
 
-下面的脚本将会从合成类别中隐藏橡木船的配方。 这不会移除配方，仅仅是将它隐藏了。
+The following script will hide the Oak Boat recipe from the Crafting category. This will not remove the recipe, it will just hide it.
 
 ```zenscript
 // mods.jei.JEI.hideRecipe(String category, String recipeName)
@@ -90,11 +101,11 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "minecraft:oak_boat");
 
 ## 添加信息
 
-下面的脚本将在JEI中查看物品或流体的使用时为其添加自定义信息。
+The following script will add any custom information to an Item or a Fluid when looking at their usages in JEI.
 
 ### 物品信息
 
-下面的脚本将在查看钻石时向JEI信息标签中添加三行内容。
+The following script will add three lines to the JEI Information tab when looking at a Diamond.
 
 ```zenscript
 // mods.jei.JEI.addInfo(IItemStack stack, String[] information)
@@ -106,7 +117,7 @@ mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This
 
 ### 流体信息
 
-添加流体信息与添加物品信息非常相似，唯一不同的是流体具有数量。
+Adding Fluid Info is very similar to adding Item Info, the only difference is that the Fluid has a size.
 
 Using `<fluid:minecraft:water>` will show a single layer of Water in JEI. Using `<fluid:minecraft:water> * 1000` will show a full block worth of Water in JEI.
 
