@@ -10,6 +10,17 @@ This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI nati
 
 `mods.jei.JEI`
 
+## Adding Items
+
+The following script will add a new Item to JEI which will be a Diamond with the name "Super Diamond" and be enchanted with Knockback 5.
+
+```zenscript
+// mods.jei.JEI.addItem(IItemStack stack)
+
+mods.jei.JEI.addItem(<item:minecraft:diamond>.withTag({Enchantments: [{lvl: 5 as short, id: "minecraft:knockback"}], display: {Name: "{\"text\":\"Super Diamond\"}"}}));
+
+```
+
 ## Item Hiding
 
 The following script will hide Dirt from JEI when looking at the item list.
