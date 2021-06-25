@@ -231,7 +231,7 @@ Return Type: void
 ```zenscript
 // IRecipeManager.removeRecipeByInput(input as IItemStack) as void
 
-craftingTable.removeRecipeByInput(<item:minecraft:ironingot>);
+craftingTable.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |

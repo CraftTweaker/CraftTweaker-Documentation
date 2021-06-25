@@ -280,7 +280,7 @@ Return Type: void
 ```zenscript
 // BlastFurnaceManager.removeRecipeByInput(input as IItemStack) as void
 
-blastFurnace.removeRecipeByInput(<item:minecraft:ironingot>);
+blastFurnace.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
