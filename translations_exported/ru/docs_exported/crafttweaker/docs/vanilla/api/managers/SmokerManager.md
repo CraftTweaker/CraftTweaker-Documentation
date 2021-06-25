@@ -278,7 +278,7 @@ Return Type: void
 ```zenscript
 // SmokerManager.removeRecipeByInput(input as IItemStack) as void
 
-smoker.removeRecipeByInput(<item:minecraft:ironingot>);
+smoker.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Параметр | Тип                                         | Description           |
