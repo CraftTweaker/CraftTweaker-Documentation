@@ -278,7 +278,7 @@ Return Type: void
 ```zenscript
 // CampFireManager.removeRecipeByInput(input as IItemStack) as void
 
-campfire.removeRecipeByInput(<item:minecraft:ironingot>);
+campfire.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type                                        | Beschreibung          |
