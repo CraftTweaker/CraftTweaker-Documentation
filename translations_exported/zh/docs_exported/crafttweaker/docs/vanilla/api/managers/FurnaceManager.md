@@ -278,7 +278,7 @@ Return Type: void
 ```zenscript
 // FurnaceManager.removeRecipeByInput(input as IItemStack) as void
 
-furnace.removeRecipeByInput(<item:minecraft:ironingot>);
+furnace.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | 参数        | 类型                                          | 描述                    |
