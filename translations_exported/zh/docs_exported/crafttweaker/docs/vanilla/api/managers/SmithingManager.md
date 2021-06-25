@@ -253,7 +253,7 @@ Return Type: void
 ```zenscript
 // SmithingManager.removeRecipeByInput(input as IItemStack) as void
 
-smithing.removeRecipeByInput(<item:minecraft:ironingot>);
+smithing.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | 参数        | 类型                                          | 描述                    |
