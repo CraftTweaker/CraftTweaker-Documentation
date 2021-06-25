@@ -252,7 +252,7 @@ Return Type: void
 ```zenscript
 // StoneCutterManager.removeRecipeByInput(input as IItemStack) as void
 
-stoneCutter.removeRecipeByInput(<item:minecraft:ironingot>);
+stoneCutter.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type                                        | Beschreibung          |
