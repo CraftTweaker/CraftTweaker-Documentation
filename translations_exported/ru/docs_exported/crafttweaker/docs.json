@@ -223,6 +223,7 @@
               "Json": "vanilla/api/loot/conditions/crafttweaker/Json.md",
               "Not": "vanilla/api/loot/conditions/crafttweaker/Not.md",
               "Or": "vanilla/api/loot/conditions/crafttweaker/Or.md",
+              "ToolType": "vanilla/api/loot/conditions/crafttweaker/ToolType.md",
               "True": "vanilla/api/loot/conditions/crafttweaker/True.md"
             },
             "Vanilla": {
@@ -248,13 +249,15 @@
           "Modifiers": {
             "BlockExpansion": "vanilla/api/loot/modifiers/BlockExpansion.md",
             "BlockStateExpansion": "vanilla/api/loot/modifiers/BlockStateExpansion.md",
+            "BlockTagExpansion": "vanilla/api/loot/modifiers/BlockTagExpansion.md",
             "CommonLootModifiers": "vanilla/api/loot/modifiers/CommonLootModifiers.md",
             "EntityTypeExpansion": "vanilla/api/loot/modifiers/EntityTypeExpansion.md",
             "IItemStackExpansion": "vanilla/api/loot/modifiers/IItemStackExpansion.md",
             "ILootModifier": "vanilla/api/loot/modifiers/ILootModifier.md",
             "ItemExpansion": "vanilla/api/loot/modifiers/ItemExpansion.md",
             "LootModifierManager": "vanilla/api/loot/modifiers/LootModifierManager.md",
-            "MCLootModifier": "vanilla/api/loot/modifiers/MCLootModifier.md"
+            "MCLootModifier": "vanilla/api/loot/modifiers/MCLootModifier.md",
+            "ToolTypeExpansion": "vanilla/api/loot/modifiers/ToolTypeExpansion.md"
           }
         },
         "Managers": {
