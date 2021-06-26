@@ -22,12 +22,10 @@ No Description Provided
 new ListData() as ListData
 new ListData();
 ```
-
 No Description Provided
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
-
 | 参数   | 类型                                                              | 描述                      |
 | ---- | --------------------------------------------------------------- | ----------------------- |
 | list | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
@@ -60,6 +58,7 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
@@ -88,6 +87,7 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -102,6 +102,7 @@ Return Type: byte
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
