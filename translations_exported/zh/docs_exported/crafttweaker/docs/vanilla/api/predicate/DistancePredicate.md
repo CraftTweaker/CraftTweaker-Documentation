@@ -28,6 +28,7 @@ Sets the maximum value the absolute distance should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -49,6 +50,7 @@ Sets the maximum value the horizontal distance should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -70,6 +72,7 @@ Sets the maximum value the distance along the X axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -91,6 +94,7 @@ Sets the maximum value the distance along the Y axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -112,6 +116,7 @@ Sets the maximum value the distance along the Z axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -133,6 +138,7 @@ Sets the minimum value the absolute distance should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -154,6 +160,7 @@ Sets the minimum value the horizontal distance should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -175,6 +182,7 @@ Sets the minimum value the distance along the X axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -196,6 +204,7 @@ Sets the minimum value the distance along the Y axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -217,6 +226,7 @@ Sets the minimum value the distance along the Z axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -240,6 +250,7 @@ Sets both the minimum and maximum value the absolute distance should be to <code
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -264,6 +275,7 @@ Sets both the minimum and maximum value the horizontal distance should be to <co
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -288,6 +300,7 @@ Sets both the minimum and maximum value the distance along the X axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -312,6 +325,7 @@ Sets both the minimum and maximum value the distance along the Y axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -336,6 +350,7 @@ Sets both the minimum and maximum value the distance along the Z axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
