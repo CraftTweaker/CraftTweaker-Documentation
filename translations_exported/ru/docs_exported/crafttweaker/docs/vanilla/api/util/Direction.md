@@ -32,6 +32,7 @@ Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That mea
 
 Rotates this direction on the Y axis
 
+Returns: the direction that rotated on the Y axis of this direction  
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
@@ -46,6 +47,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 
 Rotates this direction counter-clock wise on the Y axis
 
+Returns: the direction that is counter clockwise on the Y axis  
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
