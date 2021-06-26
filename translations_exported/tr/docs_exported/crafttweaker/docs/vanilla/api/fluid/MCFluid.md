@@ -14,6 +14,7 @@ import crafttweaker.api.fluid.MCFluid;
 
 Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amount of fluid.
 
+Returns: a new (immutable) [IFluidStack](/vanilla/api/fluid/IFluidStack)  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
