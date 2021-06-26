@@ -14,6 +14,7 @@ import crafttweaker.api.util.DamageSource;
 
 Checks if the damage can bypass creative mode.
 
+Returns: Whether or not the damage can bypass creative mode.  
 Return Type: boolean
 
 ```zenscript
@@ -28,6 +29,7 @@ myDamageSource.canBypassCreative();
 
 Gets the location where the damage occurred.
 
+Returns: The location of the damage.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)?
 
 ```zenscript
@@ -42,6 +44,7 @@ myDamageSource.getDamageLocation();
 
 Gets the type of damage.
 
+Returns: The type of damage.  
 Return Type: string
 
 ```zenscript
@@ -56,6 +59,7 @@ myDamageSource.getDamageType();
 
 Gets the amount of exhaustion to add to the player's hunger bar if they get hit by this damage.
 
+Returns: The amount of exhaustion to add to the player's hunger bar.  
 Return Type: float
 
 ```zenscript
@@ -70,6 +74,7 @@ myDamageSource.getHungerDamage();
 
 Gets the immediate source of the damage, like an arrow.
 
+Returns: The immediate source of the damage.  
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
@@ -84,6 +89,7 @@ myDamageSource.getImmediateSource();
 
 Gets the true source of the damage, like the player who shot the arrow.
 
+Returns: The true source of the damage.  
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
@@ -98,6 +104,7 @@ myDamageSource.getTrueSource();
 
 Checks if the damage is absolute.
 
+Returns: Whether or not the damage is absolute.  
 Return Type: boolean
 
 ```zenscript
@@ -112,6 +119,7 @@ myDamageSource.isAbsoluteDamage();
 
 Gets whether the damage was inflicted by a creative player.
 
+Returns: Whether the damage was inflicted by a creative player.  
 Return Type: boolean
 
 ```zenscript
@@ -126,6 +134,7 @@ myDamageSource.isCreativePlayer();
 
 Gets whether the damage changes strength based on the current difficulty.
 
+Returns: Whether the damage changes strength according to difficulty.  
 Return Type: boolean
 
 ```zenscript
@@ -140,6 +149,7 @@ myDamageSource.isDifficultyScaled();
 
 Checks if the damage is caused by an explosion.
 
+Returns: Whether or not the damage is caused by an explosion.  
 Return Type: boolean
 
 ```zenscript
@@ -154,6 +164,7 @@ myDamageSource.isExplosionDamage();
 
 Checks if the damage is caused by fire or burning.
 
+Returns: Whether or not the damage is caused by fire or burning.  
 Return Type: boolean
 
 ```zenscript
@@ -168,6 +179,7 @@ myDamageSource.isFireDamage();
 
 Checks if the damage is caused by magic.
 
+Returns: Whether or not the damage is caused by magic.  
 Return Type: boolean
 
 ```zenscript
@@ -182,6 +194,7 @@ myDamageSource.isMagicDamage();
 
 Checks if the damage is caused by a projectile.
 
+Returns: Whether or not the damage is caused by a projectile.  
 Return Type: boolean
 
 ```zenscript
@@ -196,6 +209,7 @@ myDamageSource.isProjectileDamage();
 
 Checks if the damage can be blocked.
 
+Returns: Whether or not the damage can be blocked.  
 Return Type: boolean
 
 ```zenscript
