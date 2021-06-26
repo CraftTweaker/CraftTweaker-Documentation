@@ -50,6 +50,7 @@ Rarity.create("insanely epic", <formatting:obfucated>);
 
 Gets the color of this Rarity
 
+Returns: The color of this Rarity.  
 Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
 
 ```zenscript

@@ -28,6 +28,7 @@ Sets the fluid that this predicate should match.
 
  If a tag to match against has already been set, then the tag check will take precedence over this check.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript
@@ -49,6 +50,7 @@ Sets the tag that this predicate should use for matching.
 
  Specifying both a tag and a fluid to match against will make the tag take precedence over the fluid.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript
@@ -69,6 +71,7 @@ Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StateProp
  Any changes that have already been made to the state properties predicate will be overwritten, effectively
  replacing the previous one, if any.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript

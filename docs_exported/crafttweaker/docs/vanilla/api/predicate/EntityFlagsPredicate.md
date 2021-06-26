@@ -27,6 +27,7 @@ Indicates that the entity must be in its adult form.
 
  If the predicate has already been set to check for the entity in its baby form, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -43,6 +44,7 @@ Indicates that the entity must be in its baby form, if applicable.
 
  If the predicate has already been set to check for the entity in its adult form, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -59,6 +61,7 @@ Indicates that the entity must be on fire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -75,6 +78,7 @@ Indicates that the entity must be sneaking, if applicable to the current entity.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -91,6 +95,7 @@ Indicates that the entity must be sprinting, if applicable to the current entity
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -107,6 +112,7 @@ Indicates that the entity must be swimming.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -123,6 +129,7 @@ Indicates that the entity must not be on fire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -139,6 +146,7 @@ Indicates that the entity must not be sneaking.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -155,6 +163,7 @@ Indicates that the entity must not be sprinting.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript
@@ -171,6 +180,7 @@ Indicates that the entity must not be swimming.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate)
 
 ```zenscript

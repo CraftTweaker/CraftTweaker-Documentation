@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCFood(healing as int, saturation as float) as MCFood
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | healing | int | No Description Provided |

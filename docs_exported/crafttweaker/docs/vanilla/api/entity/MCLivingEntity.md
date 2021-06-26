@@ -268,6 +268,7 @@ myMCLivingEntity.getHealth();
 
 Gets the ItemStack in the specific hand.
 
+Returns: The ItemStack in the specific hand.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
@@ -323,6 +324,7 @@ myMCLivingEntity.getIdleTime();
 
 Gets the ItemStack in the specific slot.
 
+Returns: The ItemStack in the specific slot.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript

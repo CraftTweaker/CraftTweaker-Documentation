@@ -31,6 +31,7 @@ MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/ent
 
 Gets the command string for this EntityClassification
 
+Returns: The command string for this EntityClassification  
 Return Type: string
 
 ```zenscript
@@ -45,6 +46,7 @@ Return Type: string
 
 Gets how many Entities with this EntityClassification can be in the same area at the same time.
 
+Returns: How many Entities of this EntityClassification can be in the same area at the same time.  
 Return Type: int
 
 ```zenscript
@@ -59,6 +61,7 @@ Return Type: int
 
 Gets the name of this Entity Classification
 
+Returns: The name of this Entity Classification  
 Return Type: string
 
 ```zenscript
@@ -73,6 +76,7 @@ Return Type: string
 
 Checks if this EntityClassification is an animal.
 
+Returns: True if this EntityClassification is an animal. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -87,6 +91,7 @@ Return Type: boolean
 
 Checks if this EntityClassification is peaceful.
 
+Returns: True if this EntityClassification is peaceful. False otherwise.  
 Return Type: boolean
 
 ```zenscript

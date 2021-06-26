@@ -17,6 +17,7 @@ import crafttweaker.api.mods.Mods;
 
 Gets a specific mod
 
+Returns: a specific MCModInfo  
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
@@ -36,6 +37,7 @@ loadedMods.getMod("minecraft");
 
 Checks if a mod is laoded
 
+Returns: true if the mod is loaded  
 Return Type: boolean
 
 ```zenscript

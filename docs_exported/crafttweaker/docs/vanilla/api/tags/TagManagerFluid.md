@@ -19,6 +19,7 @@ TagManagerFluid implements the following interfaces. That means all methods defi
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -36,6 +37,7 @@ TagManagerFluid.exists(location as MCResourceLocation) as boolean
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -71,6 +73,7 @@ Retrieves a tag by its name.
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -92,6 +95,7 @@ Retrieves a tag by its name.
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript

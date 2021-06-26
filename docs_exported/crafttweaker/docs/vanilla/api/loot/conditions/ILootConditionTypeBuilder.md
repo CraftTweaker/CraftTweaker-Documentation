@@ -26,6 +26,7 @@ Terminates the configuration of the loot condition and uses the current status t
 
  You should never need to call this method. Refer to [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) for more information.
 
+Returns: The built [ILootCondition](/vanilla/api/loot/conditions/ILootCondition).  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript

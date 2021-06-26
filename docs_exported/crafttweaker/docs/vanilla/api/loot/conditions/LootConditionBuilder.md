@@ -158,6 +158,7 @@ Adds a new condition of the given type to the ones of this builder.
  the method may behave erratically or throw an exception: refer to the two parameter version of <code>add</code>
  for the method that allows configuration.
 
+Returns: This builder for chaining.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -179,6 +180,7 @@ Adds a new condition of the given type and configuration to the ones of this bui
  the details given in <code>lender</code>. If the default configuration is satisfying, then the single parameter
  version of <code>add</code> may also be used.
 
+Returns: This builder for chaining.  
 Return Type: [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder)
 
 ```zenscript
@@ -199,6 +201,7 @@ Builds the current builder, returning all its contents as an array of [ILootCond
 
  The builder may then be re-used for additional purposes, though this is not suggested.
 
+Returns: The current set of built conditions.  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)[]
 
 ```zenscript

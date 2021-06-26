@@ -29,6 +29,7 @@ Sets the block that this predicate should match.
 
  If a tag to match against has already been set, then the tag check will take precedence over this check.
 
+Returns: This predicate for chaining.  
 Return Type: [BlockPredicate](/vanilla/api/predicate/BlockPredicate)
 
 ```zenscript
@@ -50,6 +51,7 @@ Sets the tag that this predicate should use for matching.
 
  Specifying both a tag and a block to match against will make the tag take precedence over the block.
 
+Returns: This predicate for chaining.  
 Return Type: [BlockPredicate](/vanilla/api/predicate/BlockPredicate)
 
 ```zenscript
@@ -70,6 +72,7 @@ Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that wi
  Any changes that have already been made to the NBT predicate will be overwritten, effectively replacing the
  previous one, if any.
 
+Returns: This predicate for chaining.  
 Return Type: [BlockPredicate](/vanilla/api/predicate/BlockPredicate)
 
 ```zenscript
@@ -90,6 +93,7 @@ Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StateProp
  Any changes that have already been made to the state properties predicate will be overwritten, effectively
  replacing the previous one, if any.
 
+Returns: This predicate for chaining.  
 Return Type: [BlockPredicate](/vanilla/api/predicate/BlockPredicate)
 
 ```zenscript

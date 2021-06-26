@@ -31,6 +31,7 @@ Sets the condition to require a rainy weather.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
@@ -49,6 +50,7 @@ Sets the condition to require a thundering weather.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
@@ -67,6 +69,7 @@ Sets the condition to require a non-rainy weather.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
@@ -85,6 +88,7 @@ Sets the condition to require a non-thundering weather.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [WeatherCheck](/vanilla/api/loot/conditions/vanilla/WeatherCheck)
 
 ```zenscript
