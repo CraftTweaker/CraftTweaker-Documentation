@@ -14,6 +14,7 @@ import crafttweaker.api.entity.AttributeModifier;
 
 Gets the amount of this AttributeModifier.
 
+Returns: The amount of this AttributeModifier.  
 Return Type: double
 
 ```zenscript
@@ -28,6 +29,7 @@ myAttributeModifier.getAmount();
 
 Gets the ID of this AttributeModifier.
 
+Returns: The ID of this AttributeModifier  
 Return Type: string
 
 ```zenscript
@@ -42,6 +44,7 @@ myAttributeModifier.getID();
 
 Gets the name of this AttributeModifier.
 
+Returns: The name of this AttributeModifier.  
 Return Type: string
 
 ```zenscript
@@ -56,6 +59,7 @@ myAttributeModifier.getName();
 
 Gets the operation of this AttributeModifier.
 
+Returns: The operation of this AttributeModifier.  
 Return Type: [AttributeOperation](/vanilla/api/entity/AttributeOperation)
 
 ```zenscript
