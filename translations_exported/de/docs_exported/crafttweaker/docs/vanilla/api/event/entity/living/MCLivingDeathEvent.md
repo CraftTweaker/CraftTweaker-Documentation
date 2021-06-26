@@ -28,6 +28,7 @@ MCLivingDeathEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 Gets the source of the damage that killed the entity.
 
+Returns: The source of the damage that killed the entity.  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
