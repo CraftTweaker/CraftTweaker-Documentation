@@ -38,6 +38,7 @@ myIFluidStack.asImmutable();
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
+Returns: true if this fluid contains the other fluid  
 Return Type: boolean
 
 ```zenscript
@@ -55,6 +56,7 @@ IFluidStack.containsOther(other as IFluidStack) as boolean
 
 Copies the stack. Only needed when mutable stacks are involved.
 
+Returns: A new stack, that contains the same info as this one  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
@@ -69,6 +71,7 @@ myIFluidStack.copy();
 
 Returns the NBT tag attached to this FluidStack.
 
+Returns: IData of the FluidStack's NBT Tag, null if it doesn't exist.  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
@@ -95,6 +98,7 @@ myIFluidStack.isImmutable();
 
 Makes this stack mutable
 
+Returns: A new Stack, that is mutable.  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
@@ -109,6 +113,7 @@ myIFluidStack.mutable();
 
 Sets the fluid amount in MilliBuckets (mB)
 
+Returns: A new stack, or this stack, depending if this stack is mutable  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
@@ -128,6 +133,7 @@ myIFluidStack.setAmount(1000);
 
 Sets the tag for the FluidStack.
 
+Returns: This FluidStack if it is mutable, a new one with the changed property otherwise  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
