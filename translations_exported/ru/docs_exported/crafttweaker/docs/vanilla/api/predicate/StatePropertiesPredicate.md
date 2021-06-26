@@ -26,6 +26,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing an integer with a boolean is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -46,6 +47,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing a string with an integer is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -66,6 +68,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing an integer with a string is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -86,6 +89,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing a string with an integer is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -106,6 +110,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing a string with an integer is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -131,6 +136,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  A null value in both <code>min</code> and <code>max</code> is treated as a simple presence check, without caring about the actual value of the property.
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
@@ -152,6 +158,7 @@ Adds the property <code>name</code> to the list of properties that should be mat
 
  If the same property had already been specified, then the previous value is replaced, no matter the resulting type (i.e. replacing a string with an integer is allowed).
 
+Returns: This predicate for chaining.  
 Return Type: [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)
 
 ```zenscript
