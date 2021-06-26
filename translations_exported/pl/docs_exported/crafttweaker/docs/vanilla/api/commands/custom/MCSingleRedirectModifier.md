@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
-
 | Parameter | Type                                                                                                                                                          | Description             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | zabawa    | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
