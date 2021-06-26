@@ -20,6 +20,7 @@ Adds a new tag to the Entity.
 
  You can read more about how they can be used here: https://minecraft.fandom.com/wiki/Commands/tag
 
+Returns: True if the tag could ba added, and it did not replace a preexisting tag. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -79,6 +80,7 @@ myMCEntity.applyEntityCollision(entity);
 
 Checks if this Entity can swim.
 
+Returns: True if this Entity can swim. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -168,6 +170,7 @@ myMCEntity.forceSetPosition(5, 2, 9);
 
 Gets the air value for the Entity. The air value is used to determine when the Entity will start drowning when swimming.
 
+Returns: The air value of the Entity.  
 Return Type: int
 
 ```zenscript
@@ -182,6 +185,7 @@ myMCEntity.getAir();
 
 Gets how bright this Entity is.
 
+Returns: How bright the Entity is.  
 Return Type: float
 
 ```zenscript
@@ -196,6 +200,7 @@ myMCEntity.getBrightness();
 
 Gets the NBT data of this Entity.
 
+Returns: The NBT data of this Entity.  
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
@@ -210,6 +215,7 @@ myMCEntity.getData();
 
 Gets the distance between this Entity and the given Entity.
 
+Returns: The distance between this Entity and the other Entity.  
 Return Type: float
 
 ```zenscript
@@ -229,6 +235,7 @@ myMCEntity.getDistance(entity);
 
 Gets the squared distance from this Entity to the given Entity.
 
+Returns: The squared distance between this Entity and the other Entity.  
 Return Type: double
 
 ```zenscript
@@ -248,6 +255,7 @@ myMCEntity.getDistanceSq(entity);
 
 Gets the squared distance from this Entity's position to the given position.
 
+Returns: The squared distance from this Entity to the given position.  
 Return Type: double
 
 ```zenscript
@@ -269,6 +277,7 @@ myMCEntity.getDistanceSq(5, 6, 3);
 
 Gets this Entity's id that can be used to reference this Entity.
 
+Returns: The id of this Entity.  
 Return Type: int
 
 ```zenscript
@@ -283,6 +292,7 @@ myMCEntity.getEntityId();
 
 Gets which directions the Entity is currently facing.
 
+Returns: An array of direction that the Entity is currently facing  
 Return Type: [Direction](/vanilla/api/util/Direction)[]
 
 ```zenscript
@@ -297,6 +307,7 @@ myMCEntity.getFacingDirections();
 
 Gets the amount of ticks the Entity will be on fire for.
 
+Returns: The amount of ticks the Entity will be on fire for.  
 Return Type: int
 
 ```zenscript
@@ -311,6 +322,7 @@ myMCEntity.getFireTimer();
 
 Gets the maximum amount of time the Entity needs to be in the portal before they are teleported.
 
+Returns: The amount of time required for the Entity to be in the nether portal before being teleported.  
 Return Type: int
 
 ```zenscript
@@ -325,6 +337,7 @@ myMCEntity.getMaxInPortalTime();
 
 Gets the name of the Entity.
 
+Returns: The name of the Entity.  
 Return Type: string
 
 ```zenscript
@@ -339,6 +352,7 @@ myMCEntity.getName();
 
 Gets this Entity's position in the world.
 
+Returns: This Entity's position in the world.  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
@@ -357,6 +371,7 @@ Gets all the tags that are attached to the entity.
 
  You can read more about how they can be used here: https://minecraft.fandom.com/wiki/Commands/tag
 
+Returns: A set of all the Tags that an Entity has.  
 Return Type: Set&lt;string&gt;
 
 ```zenscript
@@ -371,6 +386,7 @@ myMCEntity.getTags();
 
 Gets this Entity's type.
 
+Returns: The type of this Entity.  
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
@@ -385,6 +401,7 @@ myMCEntity.getType();
 
 Gets the UUID of this Entity.
 
+Returns: The UUID of this Entity.  
 Return Type: string
 
 ```zenscript
@@ -399,6 +416,7 @@ myMCEntity.getUUID();
 
 Gets the World that this Entity is in.
 
+Returns: The World this Entity is in.  
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
@@ -413,6 +431,7 @@ myMCEntity.getWorld();
 
 Checks if this Entity has no gravity.
 
+Returns: True if this Entity does not have gravity. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -427,6 +446,7 @@ myMCEntity.hasNoGravity();
 
 Checks if this Entity is in the given range (distance) of the other Entity.
 
+Returns: True if this Entity is in range. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -447,6 +467,7 @@ myMCEntity.isEntityInRange(entity, 2.5);
 
 Checks if this Entity is immune to fire.
 
+Returns: True if this Entity is immune to fire. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -461,6 +482,7 @@ myMCEntity.isImmuneToFire();
 
 Checks if this Entity is in lava or not.
 
+Returns: True if the this Entity is in lava.  
 Return Type: boolean
 
 ```zenscript
@@ -475,6 +497,7 @@ myMCEntity.isInLava();
 
 Checks if this Entity is in water.
 
+Returns: True if this Entity is in water. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -489,6 +512,7 @@ myMCEntity.isInWater();
 
 Checks if this Entity is in water or a bubble column.
 
+Returns: True if this entity is in water or a bubble column. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -503,6 +527,7 @@ myMCEntity.isInWaterOrBubbleColumn();
 
 Checks if this Entity is in rain or a bubble column.
 
+Returns: True if this entity is in rain or a bubble column. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -517,6 +542,7 @@ myMCEntity.isInWaterRainOrBubbleColumn();
 
 Checks if the offset position from the Entity's current position is inside of a liquid.
 
+Returns: True if the offset position is in a liquid. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -538,6 +564,7 @@ myMCEntity.isOffsetPositionInLiquid(5, 4, 5);
 
 Checks whether the Entity is on the ground or not.
 
+Returns: True if the Entity is on the ground. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -554,6 +581,7 @@ Checks if this Entity is silent.
 
  Silent Entities do not play sounds.
 
+Returns: True if this Entity is silent. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -568,6 +596,7 @@ myMCEntity.isSilent();
 
 Checks if this Entity is in spectator mode.
 
+Returns: True if this Entity is in spectator mode. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -582,6 +611,7 @@ myMCEntity.isSpectator();
 
 Checks if this Entity is wet.
 
+Returns: True if this Entity is wet. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -652,6 +682,7 @@ myMCEntity.onKillCommand();
 
 Can be used to simulate the Entity falling the given distance with the given damage multiplier.
 
+Returns: True if the Entity took damage. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -676,6 +707,7 @@ Removes a tag from the Entity.
 
  You can read more about how they can be used here: https://minecraft.fandom.com/wiki/Commands/tag
 
+Returns: True if the Entity had the tag and it was removed. False otherwise.  
 Return Type: boolean
 
 ```zenscript
