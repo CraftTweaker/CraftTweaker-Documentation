@@ -29,6 +29,7 @@ Sets the delegate to the loot condition created with the given [LootConditionBui
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Delegate](/vanilla/api/loot/conditions/crafttweaker/Delegate)
 
 ```zenscript
@@ -48,6 +49,7 @@ Sets the delegate loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Delegate](/vanilla/api/loot/conditions/crafttweaker/Delegate)
 
 ```zenscript
