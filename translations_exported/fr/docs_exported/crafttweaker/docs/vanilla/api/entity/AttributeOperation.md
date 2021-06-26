@@ -26,6 +26,7 @@ AttributeOperation extends Enum&lt;[AttributeOperation](/vanilla/api/entity/Attr
 
 Gets the ID of this operation.
 
+Returns: The ID of this operation.  
 Return Type: int
 
 ```zenscript
