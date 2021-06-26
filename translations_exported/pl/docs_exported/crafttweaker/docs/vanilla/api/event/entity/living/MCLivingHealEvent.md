@@ -28,6 +28,7 @@ MCLivingHealEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 Gets the amount of healing.
 
+Returns: The amount of damage to heal.  
 Return Type: float
 
 ```zenscript
