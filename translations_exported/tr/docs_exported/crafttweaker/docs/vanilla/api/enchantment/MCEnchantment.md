@@ -16,6 +16,7 @@ import crafttweaker.api.enchantment.MCEnchantment;
 
 Checks if this Enchantment can be applied to the given IItemStack.
 
+Returns: True if this Enchantment can apply to the given IItemStack. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -35,6 +36,7 @@ Return Type: boolean
 
 Checks if this Enchantment can be applied to the given IItemStack at an enchanting table..
 
+Returns: True if this Enchantment can be applied. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -54,6 +56,7 @@ Return Type: boolean
 
 Checks if this Enchantment can generate in loot.
 
+Returns: True if this Enchantment can generate in loot.  
 Return Type: boolean
 
 ```zenscript
@@ -68,6 +71,7 @@ Return Type: boolean
 
 Checks if a villager can sell this Enchantment.
 
+Returns: True if a villager can sell this Enchantment. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -82,6 +86,7 @@ Return Type: boolean
 
 Gets the display name of this Enchantment at the given level.
 
+Returns: The display name of this Enchantment at the level.  
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
@@ -101,6 +106,7 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 Gets a map of all equipment that the entity is currently holding that this Enchantment can be applied to.
 
+Returns: A map of EquipmentSlotType to IItemStack  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)[[MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)]
 
 ```zenscript
@@ -122,6 +128,7 @@ Gets the maximum enchantability required to enchant this Enchantment at the give
 
  For example, to enchant an item with Fire Aspect at level 1, you need an enchantability that is less than 60..
 
+Returns: The enchantability of the Enchantment at the given level.  
 Return Type: int
 
 ```zenscript
@@ -141,6 +148,7 @@ Return Type: int
 
 Gets the maximum level for this Enchantment.
 
+Returns: The maximum level for this Enchantment.  
 Return Type: int
 
 ```zenscript
@@ -157,6 +165,7 @@ Gets the minimum enchantability required to enchant this Enchantment at the give
 
  For example, to enchant an item with Fire Aspect at level 1, you need an enchantability of at-least 10.
 
+Returns: The enchantability of the Enchantment at the given level.  
 Return Type: int
 
 ```zenscript
@@ -176,6 +185,7 @@ Return Type: int
 
 Gets the minimum level for this Enchantment.
 
+Returns: The minimum level for this Enchantment.  
 Return Type: int
 
 ```zenscript
@@ -190,6 +200,7 @@ Return Type: int
 
 Gets the name of this Enchantment
 
+Returns: The name of this Enchantment  
 Return Type: string
 
 ```zenscript
@@ -204,6 +215,7 @@ Return Type: string
 
 Gets the Rarity of this Enchantment
 
+Returns: The Rarity of this Enchantment  
 Return Type: [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity)
 
 ```zenscript
@@ -218,6 +230,7 @@ Return Type: [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity)
 
 Check if this Enchantment is allowed on books.
 
+Returns: True if this Enchantment can be applied on books. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -232,6 +245,7 @@ Return Type: boolean
 
 Checks if this Enchantment is compatible with the other given Enchantment.
 
+Returns: True if the Enchantments are compatible. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -251,6 +265,7 @@ Return Type: boolean
 
 Checks if this Enchantment is a curse Enchantment.
 
+Returns: True if this Enchantment is a curse enchantment. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -265,6 +280,7 @@ Return Type: boolean
 
 Checks if this Enchantment is a treasure Enchantment.
 
+Returns: True if this Enchantment is a treasure enchantment. False otherwise.  
 Return Type: boolean
 
 ```zenscript
