@@ -28,6 +28,7 @@ Sets the type of cat this entity should be.
 
  As a side effect of this method, this entity predicate will require the entity to be a cat, failing the check otherwise.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -47,6 +48,7 @@ Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that wi
 
  Any changes that have been made previously to the NBT data predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -66,6 +68,7 @@ Creates and sets the [DistancePredicate](/vanilla/api/predicate/DistancePredicat
 
  Any changes that have been made previously to the distance predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -85,6 +88,7 @@ Creates and sets the [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPred
 
  Any changes that have been made previously to the potion effects predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -106,6 +110,7 @@ Sets the effect that should be present on the entity.
 
  Any changes that have been previously made to the effect predicate, if any, are discarded. Any other effects that have been added using this method are also discarded, keeping only the currently specified one.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -126,6 +131,7 @@ Creates and sets the [EntityTypePredicate](/vanilla/api/predicate/EntityTypePred
 
  Any changes that have been made previously to the entity type predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -145,6 +151,7 @@ Creates and sets the [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEqu
 
  Any changes that have been made previously to the equipment predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -166,6 +173,7 @@ Creates and sets the [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 
  Any changes that have been made previously to the fishing hook predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -185,6 +193,7 @@ Creates and sets the [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPr
 
  Any changes that have been made previously to the status flags predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -204,6 +213,7 @@ Creates and sets the [LocationPredicate](/vanilla/api/predicate/LocationPredicat
 
  Any changes that have been made previously to the location predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -225,6 +235,7 @@ Creates and sets the [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate) t
 
  Any changes that have been made previously to the player predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -246,6 +257,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  Any changes that have been made previously to the ridden entity predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -267,6 +279,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  Any changes that have been made previously to the targeted entity predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
@@ -284,6 +297,7 @@ EntityPredicate.withTargetedEntityPredicate(builder as Consumer<EntityPredicate>
 
 Sets the scoreboard team this entity should be a part of.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityPredicate](/vanilla/api/predicate/EntityPredicate)
 
 ```zenscript
