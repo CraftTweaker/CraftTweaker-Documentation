@@ -24,6 +24,8 @@ import crafttweaker.api.recipe.Replacer;
 
 :::group{name=forAllTypes}
 
+::deprecated{message="Use [this](.)#forEverything() instead."}
+
 Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
 
 Returns: A new global `Replacer`.  
@@ -39,6 +41,8 @@ Replacer.forAllTypes();
 
 :::group{name=forAllTypesExcluding}
 
+::deprecated{message="Use [this](.)#forEverything() to create a replacer then use [this](.)#excluding(IRecipeManager...) to exclude the various unwanted managers."}
+
 Creates a `Replacer` that will perform replacements on all [IRecipeManager](/vanilla/api/managers/IRecipeManager)s except the ones <br />  specified.
 
 Returns: A new `Replacer` that targets all managers except the ones specified.  
@@ -53,6 +57,62 @@ Replacer.forAllTypesExcluding(stoneCutter);
 | 参数       | 类型                                                       | 描述                                         |
 | -------- | -------------------------------------------------------- | ------------------------------------------ |
 | managers | [IRecipeManager](/vanilla/api/managers/IRecipeManager)[] | The managers to exclude from the replacer. |
+
+
+:::
+
+:::group{name=forCustomRecipeSet}
+
+Creates a `Replacer` that will perform replacements only on the recipes whitelisted by the given function. <br />  <br />  The first parameter of the predicate is a [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe) that indicates the recipe that is currently <br />  being tested, whereas the second is the [IRecipeManager](/vanilla/api/managers/IRecipeManager) that is responsible for handling that particular <br />  type of recipes. The function should then return a boolean that either whitelists the recipe for replacement <br />  (`true`) or blacklists it (`false`). <br />  <br />  The given function must be a <strong>pure</strong> function, which means that the output must be the same <br />  given the same set of inputs. In other words, you should not rely on external state for this function, since it <br />  may be called multiple times on the same set of inputs in the same replacer run.
+
+Returns: A new `Replacer` that uses the given function for whitelisting.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forCustomRecipeSet(function as BiPredicate<WrapperRecipe,IRecipeManager>) as Replacer
+
+Replacer.forCustomRecipeSet(myPredicate);
+```
+
+| 参数       | 类型                                                                                                                                       | 描述                                |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| function | BiPredicate&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe),[IRecipeManager](/vanilla/api/managers/IRecipeManager)&gt; | The custom whitelisting function. |
+
+
+:::
+
+:::group{name=forEverything}
+
+Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
+
+Returns: A new global `Replacer`.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forEverything() as Replacer
+
+Replacer.forEverything();
+```
+
+:::
+
+:::group{name=forOutput}
+
+Creates a `Replacer` that will perform replacement only on recipes with the given output, optionally <br />  restricted to a set of whitelisted managers. <br />  <br />  The passed in whitelist may also be empty, in which case it'll be treated as meaning every possible recipe <br />  manager. If the whitelist is not empty, on the other hand, only the selected recipe managers will be considered <br />  when replacing ingredients.
+
+Returns: A new `Replacer` for recipes with the given output and an optional whitelist.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forOutput(output as IIngredient, whitelist as IRecipeManager[]) as Replacer
+
+Replacer.forOutput(<tag:items:forge:rods/wooden>, stoneCutter);
+```
+
+| 参数         | 类型                                                       | 描述                                                                          |
+| ---------- | -------------------------------------------------------- | --------------------------------------------------------------------------- |
+| output（输出） | [材料（IIngredient）](/vanilla/api/items/IIngredient)        | The output that should be matched.                                          |
+| whitelist  | [IRecipeManager](/vanilla/api/managers/IRecipeManager)[] | An optional list of managers that should be whitelisted in the replacement. |
 
 
 :::
@@ -101,14 +161,35 @@ Replacer.forTypes(smithing);
 
 :::group{name=excluding}
 
+Excludes a set of managers from undergoing replacement.
+
+Returns: A Replacer that excludes the given set of recipe managers.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.excluding(managers as IRecipeManager[]) as Replacer
+
+Replacer.forEverything().excluding(stoneCutter);
+```
+
+| 参数       | 类型                                                       | 描述                                            |
+| -------- | -------------------------------------------------------- | --------------------------------------------- |
+| managers | [IRecipeManager](/vanilla/api/managers/IRecipeManager)[] | The list of managers that should be excluded. |
+
+
+:::
+
+:::group{name=excluding}
+
 Excludes a set of recipes, identified by their name, from undergoing replacement.
 
+Returns: A Replacer that excludes the given set of recipes.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.excluding(recipes as MCResourceLocation[]) as Replacer
 
-Replacer.forAllTypes().excluding(<resource:minecraft:comparator>);
+Replacer.forEverything().excluding(<resource:minecraft:comparator>);
 ```
 
 | 参数      | 类型                                                           | 描述                                           |
@@ -127,7 +208,7 @@ Return Type: void
 ```zenscript
 // Replacer.execute() as void
 
-Replacer.forAllTypes().execute();
+Replacer.forEverything().execute();
 ```
 
 :::
@@ -138,12 +219,13 @@ Indicates that the recipe with the given `oldName` should be renamed to the `new
 
  This rename will only be applied if a replacement is carried out. Moreover, the given new name will also be fixed according to [NameUtils](/vanilla/api/util/NameUtils)#fixing(String).
 
+Returns: A Replacer that will rename the recipe according to the specified rule.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.explicitlyRename(oldName as MCResourceLocation, newName as string) as Replacer
 
-Replacer.forAllTypes().explicitlyRename(<resource:minecraft:birch_sign>, "damn_hard_birch_sign");
+Replacer.forEverything().explicitlyRename(<resource:minecraft:birch_sign>, "damn_hard_birch_sign");
 ```
 
 | 参数      | 类型                                                         | 描述                                                                                                               |
@@ -164,12 +246,13 @@ Replaces every match of the `from` [IIngredient](/vanilla/api/items/IIngredient)
 
  This method is a specialized by [this](.)#replace(IItemStack, IIngredient) for [IItemStack](/vanilla/api/items/IItemStack)s and should be preferred in these cases.
 
+Returns: A Replacer that will carry out the specified operation.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.replace(from as IIngredient, to as IIngredient) as Replacer
 
-Replacer.forAllTypes().replace(<tag:items:forge:storage_blocks/redstone>, <item:minecraft:diamond_block>);
+Replacer.forEverything().replace(<tag:items:forge:storage_blocks/redstone>, <item:minecraft:diamond_block>);
 ```
 
 | 参数   | 类型                                                | 描述                                                                                                           |
@@ -190,12 +273,13 @@ Replaces every match of the `from` [IItemStack](/vanilla/api/items/IItemStack) w
 
  This method is a specialization of [this](.)#replace(IIngredient, IIngredient) for [IItemStack](/vanilla/api/items/IItemStack)s and should be preferred in these cases.
 
+Returns: A Replacer that will carry out the specified operation.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.replace(from as IItemStack, to as IIngredient) as Replacer
 
-Replacer.forAllTypes().replace(<item:minecraft:coal_block>, <item:minecraft:diamond_block>);
+Replacer.forEverything().replace(<item:minecraft:coal_block>, <item:minecraft:diamond_block>);
 ```
 
 | 参数   | 类型                                                | 描述                                                                                                         |
@@ -214,12 +298,13 @@ Replaces every instance of the target `from` [IIngredient](/vanilla/api/items/II
 
  If this behavior is not desired, refer to [this](.)#replace(IIngredient, IIngredient) instead.
 
+Returns: A Replacer that will carry out the specified operation.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.replaceFully(from as IIngredient, to as IIngredient) as Replacer
 
-Replacer.forAllTypes().replaceFully(<tag:items:minecraft:anvil>, <tag:items:minecraft:flowers>);
+Replacer.forEverything().replaceFully(<tag:items:minecraft:anvil>, <tag:items:minecraft:flowers>);
 ```
 
 | 参数   | 类型                                                | 描述                                                                                                                |
@@ -230,18 +315,36 @@ Replacer.forAllTypes().replaceFully(<tag:items:minecraft:anvil>, <tag:items:mine
 
 :::
 
+:::group{name=suppressWarnings}
+
+Suppresses warnings that arise when trying to replace unsupported recipes.
+
+ Additional warnings will not be suppressed. Note that it is suggested to keep this disabled while testing and enable it only if excluding the problematic recipes via [this](.)#excluding(ResourceLocation...) would prove to be too cumbersome.
+
+Returns: A Replacer with replacement warnings suppressed.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.suppressWarnings() as Replacer
+
+Replacer.forEverything().suppressWarnings();
+```
+
+:::
+
 :::group{name=useForRenaming}
 
 Specifies the BiFunction&lt;T,U,R&gt; that will be used for renaming all recipes.
 
  The first argument to the function is the [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that uniquely identifies its name, whereas the second represents the default name for the recipe according to the default replacement rules. The return value of the function will then represent the new name of the recipe.
 
+Returns: A Replacer that will use the given function for renaming.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 
 ```zenscript
 // Replacer.useForRenaming(function as BiFunction<MCResourceLocation,string,string>) as Replacer
 
-Replacer.forAllTypes().useForRenaming(myFunction);
+Replacer.forEverything().useForRenaming(myFunction);
 ```
 
 | 参数       | 类型                                                                                                     | 描述                     |
