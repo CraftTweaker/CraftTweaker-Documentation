@@ -118,7 +118,9 @@ Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving
 Return Type: void
 
 ```zenscript
-VillagerTrades.addWanderingTrade(rarity as int, price as IItemStack, forSale as IItemStack, maxTrades as int, xp as int) as void
+// VillagerTrades.addWanderingTrade(rarity as int, price as IItemStack, forSale as IItemStack, maxTrades as int, xp as int) as void
+
+villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:diamond>, 16, 2);
 ```
 
 | Parameter | Type | Description |
