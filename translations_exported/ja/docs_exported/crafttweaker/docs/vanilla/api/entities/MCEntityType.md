@@ -25,6 +25,7 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 Creates a new entity in the world.
 
+Returns: The newly created Entity  
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
