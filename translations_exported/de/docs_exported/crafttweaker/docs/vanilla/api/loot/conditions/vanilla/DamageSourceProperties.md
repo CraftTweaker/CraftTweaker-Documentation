@@ -31,6 +31,7 @@ Creates and sets the [DamageSourcePredicate](/vanilla/api/predicate/DamageSource
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [DamageSourceProperties](/vanilla/api/loot/conditions/vanilla/DamageSourceProperties)
 
 ```zenscript
