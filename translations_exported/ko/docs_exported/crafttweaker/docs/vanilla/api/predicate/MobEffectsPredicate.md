@@ -26,6 +26,7 @@ Adds an [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) to the ones that s
 
  If the same effect had already been added to the map with a different set of effect data, then the previous configuration is replaced. Otherwise the addition completes normally.
 
+Returns: This predicate for chaining.  
 Return Type: [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate)
 
 ```zenscript
