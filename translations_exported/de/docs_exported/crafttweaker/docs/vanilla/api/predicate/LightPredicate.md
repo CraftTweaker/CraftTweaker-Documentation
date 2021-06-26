@@ -30,6 +30,7 @@ Sets both the minimum and maximum value the light level should be to <code>min</
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LightPredicate](/vanilla/api/predicate/LightPredicate)
 
 ```zenscript
@@ -52,6 +53,7 @@ Sets the maximum value the light level should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LightPredicate](/vanilla/api/predicate/LightPredicate)
 
 ```zenscript
@@ -73,6 +75,7 @@ Sets the minimum value the light level should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LightPredicate](/vanilla/api/predicate/LightPredicate)
 
 ```zenscript
