@@ -29,6 +29,7 @@ EnchantmentRarity extends Enum&lt;[EnchantmentRarity](/vanilla/api/enchantment/E
 
 Gets the weight of this enchantment rarity.
 
+Returns: The weight of the enchantment rarity.  
 Return Type: int
 
 ```zenscript
