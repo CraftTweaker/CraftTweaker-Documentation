@@ -26,6 +26,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -45,6 +46,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -64,6 +66,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -85,6 +88,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -104,6 +108,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -123,6 +128,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -142,6 +148,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
