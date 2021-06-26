@@ -19,7 +19,6 @@ No Description Provided
 ```zenscript
 new IngredientList(ingredients as IIngredient[]) as IngredientList
 ```
-
 | 参数          | 类型                                              | 描述                      |
 | ----------- | ----------------------------------------------- | ----------------------- |
 | ingredients | [IIngredient](/vanilla/api/items/IIngredient)[] | No Description Provided |
