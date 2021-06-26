@@ -25,6 +25,7 @@ Gets the Item representation of this Block.
 
  ***NOTE:*** Not all Blocks have Items, for instance, a Lit Redstone Lamp does not have an Item.
 
+Returns: The Item representation of this Block.  
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 ```zenscript
@@ -39,6 +40,7 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 Checks if entities can collide with this Block.
 
+Returns: True if entities will collide with this Block. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -55,6 +57,7 @@ Checks if an entity can be spawned inside this Block.
 
  This is used to find valid spawn locations for players.
 
+Returns: True if an entity can be spawned in this Block. False Otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -69,6 +72,7 @@ Return Type: boolean
 
 Gets the blast resistance of this Block.
 
+Returns: The blast resistance of this Block.  
 Return Type: float
 
 ```zenscript
@@ -88,6 +92,7 @@ Gets the block bracket handler syntax for this Block.
  <block:minecraft:dirt>
  </code>
 
+Returns: The block bracket handler syntax for this Block.  
 Return Type: string
 
 ```zenscript
@@ -102,6 +107,7 @@ Return Type: string
 
 Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block.
 
+Returns: The default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block.  
 Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
@@ -116,6 +122,7 @@ Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 Gets the jump factor of this Block.
 
+Returns: The jump factor of this Block.  
 Return Type: float
 
 ```zenscript
@@ -130,6 +137,7 @@ Return Type: float
 
 Gets the loot table id for this Block.
 
+Returns: The loot table id for this Block.  
 Return Type: string
 
 ```zenscript
@@ -144,6 +152,7 @@ Return Type: string
 
 Gets the material of this Block.
 
+Returns: The material of this Block.  
 Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 
 ```zenscript
@@ -158,6 +167,7 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 
 Gets the registry name of this block.
 
+Returns: A ResourceLocation of the registry name of this block.  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
@@ -172,6 +182,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 Gets the slipperiness of this Block.
 
+Returns: The Slipperiness of this Block.  
 Return Type: float
 
 ```zenscript
@@ -186,6 +197,7 @@ Return Type: float
 
 Gets the speed factor of this Block.
 
+Returns: The speed factor of this Block.  
 Return Type: float
 
 ```zenscript
@@ -200,6 +212,7 @@ Return Type: float
 
 Gets all the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.
 
+Returns: a List of [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;s that contain this Block.  
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;&gt;
 
 ```zenscript
@@ -214,6 +227,7 @@ Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCBlock](/vanil
 
 Gets the translation key that is used to localize this Block.
 
+Returns: The unlocalized name of this block.  
 Return Type: string
 
 ```zenscript
@@ -228,6 +242,7 @@ Return Type: string
 
 Gets a list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block.
 
+Returns: A list of valid [MCBlockState](/vanilla/api/block/MCBlockState)s for this Block.  
 Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt;
 
 ```zenscript
@@ -242,6 +257,7 @@ Return Type: stdlib.List&lt;[MCBlockState](/vanilla/api/block/MCBlockState)&gt;
 
 Checks if this Block is in the given [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;.
 
+Returns: True if this Block is in the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -259,6 +275,7 @@ MCBlock.isInTag(tag as MCTag<MCBlock>) as boolean
 
 Checks if the opacity of this block is different in different areas of the Block.
 
+Returns: True if this Block has variable opacity. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -273,6 +290,7 @@ Return Type: boolean
 
 Checks whether this Block matches another Block.
 
+Returns: True if this Block matches the other Block. False otherwise.  
 Return Type: boolean
 
 ```zenscript
