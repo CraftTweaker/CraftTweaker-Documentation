@@ -16,7 +16,6 @@ new MCStyle() as MCStyle
 new MCStyle();
 ```
 
-
 ## Methods
 
 :::group{name=equals}
