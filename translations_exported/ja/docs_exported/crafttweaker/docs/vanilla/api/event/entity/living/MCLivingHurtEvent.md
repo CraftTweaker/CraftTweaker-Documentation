@@ -28,6 +28,7 @@ MCLivingHurtEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 Gets the amount of damage.
 
+Returns: The amount of damage.  
 Return Type: float
 
 ```zenscript
@@ -42,6 +43,7 @@ event.getAmount();
 
 Gets the source of the damage.
 
+Returns: The source of the damage.  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
