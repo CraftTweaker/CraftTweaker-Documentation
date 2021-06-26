@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new StringData(internal as string) as StringData
 ```
-
 | 参数       | 类型     | 描述                      |
 | -------- | ------ | ----------------------- |
 | internal | string | No Description Provided |
@@ -53,6 +52,7 @@ new StringData("Hello").asCollection();
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -67,6 +67,7 @@ new StringData("Hello").asList();
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
@@ -95,6 +96,7 @@ new StringData("Hello").asNumber();
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -109,6 +111,7 @@ new StringData("Hello").getId();
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
