@@ -29,6 +29,7 @@ Sets the inverted condition to the one created with the given [LootConditionBuil
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Inverted](/vanilla/api/loot/conditions/vanilla/Inverted)
 
 ```zenscript
@@ -48,6 +49,7 @@ Sets the loot condition to invert.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Inverted](/vanilla/api/loot/conditions/vanilla/Inverted)
 
 ```zenscript
@@ -65,6 +67,7 @@ Inverted.withCondition(condition as ILootCondition) as Inverted
 
 Creates and builds the sub-condition that will then be inverted.
 
+Returns: This builder for chaining.  
 Return Type: [Inverted](/vanilla/api/loot/conditions/vanilla/Inverted)
 
 ```zenscript
