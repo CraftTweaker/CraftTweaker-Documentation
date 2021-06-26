@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new BoolData(internal as boolean) as BoolData
 ```
-
 | 参数       | 类型      | 描述                      |
 | -------- | ------- | ----------------------- |
 | internal | boolean | No Description Provided |
@@ -53,6 +52,7 @@ true.asCollection();
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -67,6 +67,7 @@ true.asList();
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
@@ -81,6 +82,7 @@ true.asMap();
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
+Returns: true if the given IData is contained in this IData  
 Return Type: boolean
 
 ```zenscript
@@ -116,6 +118,7 @@ true.getByteData();
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -130,6 +133,7 @@ true.getId();
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
