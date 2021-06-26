@@ -31,6 +31,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityProperties](/vanilla/api/loot/conditions/vanilla/EntityProperties)
 
 ```zenscript
@@ -52,6 +53,7 @@ Sets the entity that should be targeted by the loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityProperties](/vanilla/api/loot/conditions/vanilla/EntityProperties)
 
 ```zenscript
