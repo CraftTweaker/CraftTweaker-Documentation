@@ -26,6 +26,7 @@ Indicates that the damage source must be able to bypass armor protection (for ex
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -44,6 +45,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  Any changes that have been made to the entity predicate previously, if any, will be discarded.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -63,6 +65,7 @@ Indicates that the damage must have been caused by an explosion.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -79,6 +82,7 @@ Indicates that the damage must have been caused by fire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -95,6 +99,7 @@ Indicates that the damage source must be able to bypass invulnerability (for exa
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -111,6 +116,7 @@ Indicates that the damage must have been caused by a lightning strike.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -127,6 +133,7 @@ Indicates that the damage source must be able to bypass magic protection (for ex
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -143,6 +150,7 @@ Indicates that the damage must have been caused by magic sources.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -159,6 +167,7 @@ Indicates that the damage must have been caused by a projectile.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -177,6 +186,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  Any changes that have been made to the entity predicate previously, if any, will be discarded.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -196,6 +206,7 @@ Indicates that the damage source must not be able to bypass armor protection.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -212,6 +223,7 @@ Indicates that the damage must not have been caused by an explosion.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -228,6 +240,7 @@ Indicates that the damage must not have been caused by fire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -244,6 +257,7 @@ Indicates that the damage source must not be able to bypass invulnerability.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -260,6 +274,7 @@ Indicates that the damage must not have been caused by a lightning strike.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -276,6 +291,7 @@ Indicates that the damage source must not be able to bypass magic protection.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -292,6 +308,7 @@ Indicates that the damage must not have been caused by magic sources.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
@@ -308,6 +325,7 @@ Indicates that the damage must not have been caused by a projectile.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)
 
 ```zenscript
