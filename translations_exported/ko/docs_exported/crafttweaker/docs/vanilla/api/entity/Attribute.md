@@ -14,6 +14,7 @@ import crafttweaker.api.entity.Attribute;
 
 Clamps the given value to this Attribute's range if it exist.
 
+Returns: The clamped value if this Attribute has a range, otherwise the value is returned as is.  
 Return Type: double
 
 ```zenscript
@@ -38,6 +39,7 @@ Gets the attribute bracket handler syntax for this Attribute.
  <attribute:minecraft:generic.max_health>
  </code>
 
+Returns: The attribute bracket handler syntax for this Block.  
 Return Type: string
 
 ```zenscript
@@ -52,6 +54,7 @@ myAttribute.getCommandString();
 
 Gets the default value for this Attribute.
 
+Returns: The default value for this Attribute.  
 Return Type: double
 
 ```zenscript
@@ -66,6 +69,7 @@ myAttribute.getDefaultValue();
 
 Should this attribute be synced to the client.
 
+Returns: True if synced. False otherwise.  
 Return Type: boolean
 
 ```zenscript
