@@ -16,6 +16,7 @@ import crafttweaker.api.game.MCGame;
 
 
 
+Returns: a localized String  
 Return Type: string
 
 ```zenscript
