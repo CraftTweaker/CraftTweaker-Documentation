@@ -98,6 +98,7 @@ myExplosion.getAffectedBlockPositions();
 
 Gets the damage source of this Explosion.
 
+Returns: The damage source of this Explosion.  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
@@ -116,6 +117,7 @@ Gets the actual Entity that caused this Explosion to occur.
 
  You may need to cast the returned Entity to not be nullable.
 
+Returns: The Entity that caused this Explosion. If the Explosion wasn't caused by any Entity, it will return null.  
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)?
 
 ```zenscript
@@ -136,6 +138,7 @@ Gets the LivingEntity that caused this Explosion.
 
  You may need to cast the returned LivingEntity to not be nullable.
 
+Returns: The LivingEntity that caused this Explosion. `null` if no LivingEntity caused it.  
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)?
 
 ```zenscript
@@ -154,6 +157,7 @@ Gets the player knockback map for this Explosion.
 
  This map is used to calculate the vectors that players around the explosion will be pushed back by.
 
+Returns: A Map of PlayerEntity to Vector3d depicting knockback vectors.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)[[MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)]
 
 ```zenscript
