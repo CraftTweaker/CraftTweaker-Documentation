@@ -29,6 +29,7 @@ Sets the state that the condition must check.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [BlockState](/vanilla/api/loot/conditions/crafttweaker/BlockState)
 
 ```zenscript
