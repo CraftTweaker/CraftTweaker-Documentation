@@ -29,6 +29,7 @@ Sets the game time to exactly match the given <code>value</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -52,6 +53,7 @@ Sets the maximum value of the game time to <code>max</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -75,6 +77,7 @@ Sets the minimum value of the game time to <code>min</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -99,6 +102,7 @@ Sets both the minimum and maximum values of the game time respectively to <code>
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -122,6 +126,7 @@ Sets the time period to use for the modulo operation.
 
  A value of 0 disables the operation from being carried out. On the other hand a negative value is forbidden.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
