@@ -26,6 +26,7 @@ Sets the enchantment that needs to be present, and whose data needs to be checke
 
  This parameter is <strong>required</strong>.
 
+Returns: This predicate for chaining.  
 Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 
 ```zenscript
@@ -45,6 +46,7 @@ Sets the level to exactly match the given <code>value</code>.
 
  If the level had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 
 ```zenscript
@@ -66,6 +68,7 @@ Sets the maximum value the level should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 
 ```zenscript
@@ -87,6 +90,7 @@ Sets the minimum value the level should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 
 ```zenscript
@@ -110,6 +114,7 @@ Sets both the minimum and maximum value the level should be to <code>min</code> 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 
 ```zenscript
