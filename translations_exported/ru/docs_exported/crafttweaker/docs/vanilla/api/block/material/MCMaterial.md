@@ -42,6 +42,7 @@ myMCMaterial.getColor();
 
 Gets the bracket syntax for this Material
 
+Returns: The `<blockmaterial>` Bracket Syntax for this material  
 Return Type: string
 
 ```zenscript
@@ -56,6 +57,7 @@ myMCMaterial.getCommandString();
 
 Gets this Material's [PushReaction](/vanilla/api/block/material/PushReaction).
 
+Returns: The [PushReaction](/vanilla/api/block/material/PushReaction) of this Material.  
 Return Type: [PushReaction](/vanilla/api/block/material/PushReaction)
 
 ```zenscript
