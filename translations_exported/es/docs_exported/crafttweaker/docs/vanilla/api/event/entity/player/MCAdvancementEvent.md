@@ -24,6 +24,7 @@ MCAdvancementEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 Gets the ID of the advancement being unlocked.
 
+Returns: The ID of the advancement being unlocked by the player.  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
