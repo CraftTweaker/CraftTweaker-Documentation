@@ -27,6 +27,7 @@ Sets the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; that the condition must check
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [BlockTag](/vanilla/api/loot/conditions/crafttweaker/BlockTag)
 
 ```zenscript
