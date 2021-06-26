@@ -24,6 +24,7 @@ import crafttweaker.api.event.entity.player.xp.MCXpChangeEvent;
 
 Gets the amount of xp that the player's xp counter is being changed by.
 
+Returns: The amount of xp that the player's xp counter is being changed by.  
 Return Type: int
 
 ```zenscript
