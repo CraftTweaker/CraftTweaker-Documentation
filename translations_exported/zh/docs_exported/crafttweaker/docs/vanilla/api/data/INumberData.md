@@ -46,6 +46,7 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -60,6 +61,7 @@ Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
@@ -86,6 +88,7 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 获取此IData的字符串表示形式
 
+Returns: String that represents this IData (value and type).  
 Return Type: string
 
 ```zenscript
@@ -100,6 +103,7 @@ Return Type: string
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
+Returns: true if the given IData is contained in this IData  
 Return Type: boolean
 
 ```zenscript
@@ -121,6 +125,7 @@ Return Type: boolean
 
  IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
+Returns: a copy of this IData.  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
@@ -135,6 +140,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
+Returns: the byte value of this [IData](/vanilla/api/data/IData)  
 Return Type: byte
 
 ```zenscript
@@ -149,6 +155,7 @@ Return Type: byte
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
+Returns: the double value of this [IData](/vanilla/api/data/IData)  
 Return Type: double
 
 ```zenscript
@@ -163,6 +170,7 @@ Return Type: double
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
+Returns: the float value of this [IData](/vanilla/api/data/IData)  
 Return Type: float
 
 ```zenscript
@@ -179,6 +187,7 @@ Return Type: float
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -193,6 +202,7 @@ Return Type: byte
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
+Returns: the int value of this [IData](/vanilla/api/data/IData)  
 Return Type: int
 
 ```zenscript
@@ -207,6 +217,7 @@ Return Type: int
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
+Returns: the long value of this [IData](/vanilla/api/data/IData)  
 Return Type: long
 
 ```zenscript
@@ -221,6 +232,7 @@ Return Type: long
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
+Returns: the short value of this [IData](/vanilla/api/data/IData)  
 Return Type: short
 
 ```zenscript
@@ -235,6 +247,7 @@ Return Type: short
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
