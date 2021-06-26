@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
-
 | 参数  | 类型                                                                                                                                                            | 描述                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
