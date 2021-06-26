@@ -24,7 +24,6 @@ Manually creates the weightedItemStack. <br />  Usually you can use the operator
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-
 | 参数     | 类型                                          | 描述                        |
 | ------ | ------------------------------------------- | ------------------------- |
 | 物品应用   | [IItemStack](/vanilla/api/items/IItemStack) | 堆栈：                       |
@@ -38,6 +37,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 Creates a new Weighted Stack with the given weight
 
+Returns: A new WeightedItemStack  
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
