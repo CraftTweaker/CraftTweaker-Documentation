@@ -14,6 +14,7 @@ import crafttweaker.api.block.material.MCMaterialColor;
 
 Gets the Integer value of the colour of this material color on a map.
 
+Returns: the Integer value of the map colour  
 Return Type: int
 
 ```zenscript
