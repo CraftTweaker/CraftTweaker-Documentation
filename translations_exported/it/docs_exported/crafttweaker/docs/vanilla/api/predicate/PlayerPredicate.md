@@ -26,6 +26,7 @@ Adds an advancement to the ones that should be checked, along with the [Advancem
 
  If the same advancement had already been added to the map with a different predicate, then the previous configuration is replaced. Otherwise the addition completes normally.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -50,6 +51,7 @@ Sets both the minimum and maximum value the experience level should be to <code>
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -74,6 +76,7 @@ Sets both the minimum and maximum value the statistic should be to <code>minValu
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -96,6 +99,7 @@ Sets the experience level to exactly match the given <code>value</code>.
 
  If the experience level had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -115,6 +119,7 @@ Sets the statistic to exactly match the given <code>value</code>.
 
  If the statistic had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -134,6 +139,7 @@ PlayerPredicate.withExactStatistic(type as MCResourceLocation, name as MCResourc
 
 Sets the [GameMode](/vanilla/api/predicate/GameMode) the player has to be in.
 
+Returns: This player for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -153,6 +159,7 @@ Adds the recipe <code>name</code> to the list of recipes that have to be locked.
 
  If the predicate had already been set to check for this recipe's unlocked status, the setting is overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -174,6 +181,7 @@ Sets the maximum value the experience level should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -195,6 +203,7 @@ Sets the maximum value the statistic should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -218,6 +227,7 @@ Sets the minimum value the experience level should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -239,6 +249,7 @@ Sets the minimum value the statistic should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
@@ -260,6 +271,7 @@ Adds the recipe <code>name</code> to the list of recipes that have to be unlocke
 
  If the predicate had already been set to check for this recipe's locked status, the setting is overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate)
 
 ```zenscript
