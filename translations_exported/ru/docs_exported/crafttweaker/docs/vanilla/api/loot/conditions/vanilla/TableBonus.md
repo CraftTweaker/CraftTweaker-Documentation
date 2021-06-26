@@ -33,6 +33,7 @@ Sets the array of chances, which will be queried according to the level.
 
  This parameter is required.
 
+Returns: This builder for chaining.  
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
 ```zenscript
@@ -52,6 +53,7 @@ Sets the enchantment that should be checked on the tool.
 
  This parameter is required.
 
+Returns: This builder for chaining.  
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
 ```zenscript
