@@ -25,6 +25,7 @@ MCEntityType实现了以下接口。 That means all methods defined in these int
 
 Creates a new entity in the world.
 
+Returns: The newly created Entity  
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
