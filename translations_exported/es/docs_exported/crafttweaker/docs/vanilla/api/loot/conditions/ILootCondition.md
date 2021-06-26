@@ -18,6 +18,7 @@ import crafttweaker.api.loot.conditions.ILootCondition;
 
 Tests the context for a set of conditions.
 
+Returns: Whether the context passes the condition set.  
 Return Type: boolean
 
 ```zenscript
