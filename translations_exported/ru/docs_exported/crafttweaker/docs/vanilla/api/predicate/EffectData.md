@@ -28,6 +28,7 @@ Indicates that the effect must be environmental.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -48,6 +49,7 @@ Sets both the minimum and maximum value the amplifier should be to <code>min</co
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -72,6 +74,7 @@ Sets both the minimum and maximum value the duration should be to <code>min</cod
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -92,6 +95,7 @@ Sets the amplifier to exactly match the given <code>value</code>.
 
  If the amplifier had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -111,6 +115,7 @@ Sets the duration to exactly match the given <code>value</code>.
 
  If the duration had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -130,6 +135,7 @@ Indicates that the effect's particles must be invisible.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -148,6 +154,7 @@ Sets the maximum value the amplifier should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -169,6 +176,7 @@ Sets the maximum value the duration should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -190,6 +198,7 @@ Sets the minimum value the amplifier should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -211,6 +220,7 @@ Sets the minimum value the duration should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -230,6 +240,7 @@ Indicates that the effect's particles must be visible.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
@@ -246,6 +257,7 @@ Indicates that the effect must not be environmental.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [EffectData](/vanilla/api/predicate/EffectData)
 
 ```zenscript
