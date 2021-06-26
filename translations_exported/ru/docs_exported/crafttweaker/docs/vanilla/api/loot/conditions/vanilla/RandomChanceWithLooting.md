@@ -29,6 +29,7 @@ Sets the chance of the loot condition successfully passing the check.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [RandomChanceWithLooting](/vanilla/api/loot/conditions/vanilla/RandomChanceWithLooting)
 
 ```zenscript
@@ -50,6 +51,7 @@ Sets the looting modifier of the loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [RandomChanceWithLooting](/vanilla/api/loot/conditions/vanilla/RandomChanceWithLooting)
 
 ```zenscript
