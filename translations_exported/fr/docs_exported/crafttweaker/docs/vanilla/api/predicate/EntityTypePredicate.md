@@ -28,6 +28,7 @@ Sets the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; that this predicate should us
 
  Specifying both a tag and an entity type to check against will make the tag override the direct type comparison.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)
 
 ```zenscript
@@ -47,6 +48,7 @@ Sets the [MCEntityType](/vanilla/api/entities/MCEntityType) that this predicate 
 
  If a tag to match against has already been set, then the tag check will override this check.
 
+Returns: This predicate for chaining.  
 Return Type: [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)
 
 ```zenscript
