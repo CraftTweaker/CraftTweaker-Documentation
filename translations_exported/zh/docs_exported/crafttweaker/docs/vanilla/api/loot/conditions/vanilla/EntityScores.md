@@ -31,6 +31,7 @@ Adds the scoreboard property <code>name</code> to the ones that should be checke
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityScores](/vanilla/api/loot/conditions/vanilla/EntityScores)
 
 ```zenscript
@@ -55,6 +56,7 @@ Adds the scoreboard property <code>name</code> to the ones that should be checke
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityScores](/vanilla/api/loot/conditions/vanilla/EntityScores)
 
 ```zenscript
@@ -79,6 +81,7 @@ Adds the scoreboard property <code>name</code> to the ones that should be checke
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityScores](/vanilla/api/loot/conditions/vanilla/EntityScores)
 
 ```zenscript
@@ -104,6 +107,7 @@ Adds the scoreboard property <code>name</code> to the ones that should be checke
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityScores](/vanilla/api/loot/conditions/vanilla/EntityScores)
 
 ```zenscript
@@ -127,6 +131,7 @@ Sets the entity that should be targeted by the loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityScores](/vanilla/api/loot/conditions/vanilla/EntityScores)
 
 ```zenscript
