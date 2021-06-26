@@ -20,6 +20,7 @@ MCServerWorld extends [MCWorld](/vanilla/api/world/MCWorld). That means all meth
 
 Checks if a position is within an active raid.
 
+Returns: Whether or not the position was inside an active raid.  
 Return Type: boolean
 
 ```zenscript
@@ -39,6 +40,7 @@ world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
 
 Checks if a position is within a chunk that is considered a slime chunk.
 
+Returns: Whether or not the position was inside a slime chunk.  
 Return Type: boolean
 
 ```zenscript
@@ -58,6 +60,7 @@ world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
 
 Checks if a position is within a village.
 
+Returns: Whether or not the position was inside a village.  
 Return Type: boolean
 
 ```zenscript
