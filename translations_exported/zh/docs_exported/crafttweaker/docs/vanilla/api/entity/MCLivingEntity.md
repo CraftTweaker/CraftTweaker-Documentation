@@ -264,6 +264,26 @@ myMCLivingEntity.getHealth();
 
 :::
 
+:::group{name=getHeldItem}
+
+Gets the ItemStack in the specific hand.
+
+Returns: The ItemStack in the specific hand.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// MCLivingEntity.getHeldItem(hand as MCHand) as IItemStack
+
+myMCLivingEntity.getHeldItem(MCHand.MAIN_HAND);
+```
+
+| 参数   | 类型                                 | 描述                      |
+| ---- | ---------------------------------- | ----------------------- |
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+
+
+:::
+
 :::group{name=getHeldItemMainhand}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -304,6 +324,7 @@ myMCLivingEntity.getIdleTime();
 
 Gets the ItemStack in the specific slot.
 
+Returns: The ItemStack in the specific slot.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
@@ -592,6 +613,26 @@ MCLivingEntity.setHealth(health as float) as void
 | 参数     | 类型    | 描述                      |
 | ------ | ----- | ----------------------- |
 | health | float | No Description Provided |
+
+
+:::
+
+:::group{name=setHeldItem}
+
+Sets a copied given itemStack to the hand
+
+Return Type: void
+
+```zenscript
+// MCLivingEntity.setHeldItem(hand as MCHand, itemStack as IItemStack) as void
+
+myMCLivingEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:diamond>);
+```
+
+| 参数   | 类型                                          | 描述                      |
+| ---- | ------------------------------------------- | ----------------------- |
+| hand | [MCHand](/vanilla/api/util/MCHand)          | No Description Provided |
+| 物品应用 | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 :::
