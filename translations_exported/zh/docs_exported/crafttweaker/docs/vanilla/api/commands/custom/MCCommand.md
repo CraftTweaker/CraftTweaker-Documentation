@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
-
 | 参数  | 类型                                                                                                    | 描述                      |
 | --- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
