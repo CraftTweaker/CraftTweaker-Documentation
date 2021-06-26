@@ -22,12 +22,10 @@ No Description Provided
 new MapData() as MapData
 new MapData();
 ```
-
 No Description Provided
 ```zenscript
 new MapData(map as IData[string]) as MapData
 ```
-
 | 参数  | 类型                                       | 描述                      |
 | --- | ---------------------------------------- | ----------------------- |
 | map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
@@ -60,6 +58,7 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -86,6 +85,7 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 检查地图是否包含给定的密钥。
 
+Returns: True if the Map contains the key  
 Return Type: boolean
 
 ```zenscript
@@ -105,6 +105,7 @@ Return Type: boolean
 
 检索与密钥相关的值
 
+Returns: The value if present, null otherwise  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
@@ -126,6 +127,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -140,6 +142,7 @@ Return Type: byte
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
@@ -154,6 +157,7 @@ Return Type: string
 
 合并此地图和其他地图。 如果来自此地图和其他地图的条目共享，则尝试合并这些值。 如果无法工作，则使用其他地图的值。
 
+Returns: This map, after the merge  
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
@@ -173,6 +177,7 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 
 添加给定键值或创建一个新条目，如果它以前不存在。
 
+Returns: The previous value if present, null otherwise  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
