@@ -29,6 +29,7 @@ Sets the ID of the loot table that should be targeted.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LootTableId](/vanilla/api/loot/conditions/vanilla/LootTableId)
 
 ```zenscript
