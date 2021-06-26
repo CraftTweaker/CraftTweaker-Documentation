@@ -19,7 +19,6 @@ MCResourceLocation implements the following interfaces. That means all methods d
 ```zenscript
 new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
-
 | 参数   | 类型     | 描述                                                                   |
 | ---- | ------ | -------------------------------------------------------------------- |
 | 命名空间 | string | Usually a ModId                                                      |
