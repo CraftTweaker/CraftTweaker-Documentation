@@ -31,6 +31,7 @@ Creates and sets the [LocationPredicate](/vanilla/api/predicate/LocationPredicat
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -50,6 +51,7 @@ Sets the offset which should be used to offset the location prior to the predica
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -71,6 +73,7 @@ Sets the offset along the X axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -92,6 +95,7 @@ Sets the offset along the Y axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -113,6 +117,7 @@ Sets the offset along the Z axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
