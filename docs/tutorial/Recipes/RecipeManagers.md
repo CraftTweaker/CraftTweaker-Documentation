@@ -81,7 +81,7 @@ getRecipesByOutput(IIngredient name);
 You could use this method to get the `ingredients` of all the recipes that output a certain item and print the `commandString` of each ingredient of each recipe.
 
 ```zenscript
-for recipe in craftingTable.getRecipeByName(<item:minecraft:stick>) {
+for recipe in craftingTable.getRecipesByOutput(<item:minecraft:stick>) {
     println("> " + recipe.id);
     for ingredient in recipe.ingredients {
         println(ingredient.commandString);
