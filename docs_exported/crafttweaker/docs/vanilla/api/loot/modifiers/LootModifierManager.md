@@ -25,6 +25,7 @@ import crafttweaker.api.loot.modifiers.LootModifierManager;
 
 Gets a list containing all currently registered loot modifiers.
 
+Returns: A list containing all currently registered loot modifiers.  
 Return Type: stdlib.List&lt;[ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)&gt;
 
 ```zenscript
@@ -39,6 +40,7 @@ loot.modifiers.getAll();
 
 Gets a list of all the names of the currently registered loot modifiers.
 
+Returns: A list with all the names of the currently registered loot modifiers.  
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
@@ -55,6 +57,7 @@ Gets the loot modifier with the given name, if it exists.
 
  If no loot modifier with that name exists, a default no-op instance is returned.
 
+Returns: The [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) with the given name, or a default one if no such instance exists.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier)
 
 ```zenscript

@@ -22,12 +22,10 @@ No Description Provided
 new MapData() as MapData
 new MapData();
 ```
-
 No Description Provided
 ```zenscript
 new MapData(map as IData[string]) as MapData
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
@@ -60,6 +58,7 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -86,6 +85,7 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 Checks if the Map contains the given key.
 
+Returns: True if the Map contains the key  
 Return Type: boolean
 
 ```zenscript
@@ -105,6 +105,7 @@ Return Type: boolean
 
 Retrieves the value associated with the key
 
+Returns: The value if present, null otherwise  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
@@ -126,6 +127,7 @@ Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -140,6 +142,7 @@ Return Type: byte
 
 Gets the String representation of the internal INBT tag
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
@@ -156,6 +159,7 @@ Merges this map and the other map.
  If entries from this map and the other map share the values are tried to be merged.
  If that does not work, then the value from the other map is used.
 
+Returns: This map, after the merge  
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
@@ -175,6 +179,7 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 
 Adds sets the value for the given key or creates a new entry if it did not exist before.
 
+Returns: The previous value if present, null otherwise  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript

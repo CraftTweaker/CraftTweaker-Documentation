@@ -236,6 +236,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 Gets the Attributes and the AttributeModifiers on this IItemStack for the given EquipmentSlotType
 
+Returns: A Map of Attribute to a List of AttributeModifier for the given EquipmentSlotType.  
 Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/Attribute)]
 
 ```zenscript
@@ -279,6 +280,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
 
+Returns: internal ItemStack  
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
@@ -293,6 +295,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 Returns the max stack size of the Item in the ItemStack
 
+Returns: Max stack size of the Item.  
 Return Type: int
 
 ```zenscript
@@ -307,6 +310,7 @@ Return Type: int
 
 Returns the rarity of the Item in the ItemStack
 
+Returns: Rarity of the Item.  
 Return Type: [Rarity](/vanilla/api/item/Rarity)
 
 ```zenscript
@@ -354,6 +358,7 @@ Return Type: boolean
 
 Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.
 
+Returns: True if this IItemStack is immune to fire. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -703,6 +708,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 Sets the tag for the ItemStack.
 
+Returns: This itemStack if it is mutable, a new one with the changed property otherwise  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript

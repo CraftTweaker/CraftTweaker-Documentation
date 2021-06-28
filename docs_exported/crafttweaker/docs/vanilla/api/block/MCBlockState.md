@@ -63,6 +63,7 @@ Return Type: boolean
 
 Determines if Redstone can connect to this BlockState at the given position and (optional) side.
 
+Returns: True if Redstone can connect to this BlockState. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -82,6 +83,7 @@ MCBlockState.canConnectRedstone(world as MCWorld, pos as BlockPos, side as Direc
 
 Checks if a specific entity type can spawn on this BlockState at the position in the world.
 
+Returns: True if the entity type can spawn. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -104,6 +106,7 @@ Return Type: boolean
 
 Checks if the BlockState will drop from the given explosion at the given position.
 
+Returns: True if this BlockState will drop. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -125,6 +128,7 @@ Return Type: boolean
 
 Determines if this BlockState can be destroyed by the Entity at the specific position.
 
+Returns: True if the entity can destroy the BlockState. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -144,6 +148,7 @@ MCBlockState.canEntityDestroy(world as MCWorld, pos as BlockPos, entity as MCEnt
 
 Checks whether the player can harvest the BlockState.
 
+Returns: True if the player can harvest the block. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -165,6 +170,7 @@ Return Type: boolean
 
 Checks whether this BlockState can provide Redstone Power
 
+Returns: True if this BlockState can provide Redstone Power. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -179,6 +185,7 @@ Return Type: boolean
 
 Checks if this BlockState can stick to the other BlockState when pushed by a piston.
 
+Returns: True if the BlockStatess stick when pushed by a piston. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -198,6 +205,7 @@ Return Type: boolean
 
 Gets a list of allowed values for a given property.
 
+Returns: a List of allowed values.  
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
@@ -245,6 +253,7 @@ Gets the blockstate bracket handler syntax for this BlockState.
  <blockstate:minecraft:grass:snowy=true>
  </code>
 
+Returns: The blockstate bracket handler syntax for this BlockState.  
 Return Type: string
 
 ```zenscript
@@ -259,6 +268,7 @@ Return Type: string
 
 Returns how much Experience this BlockState will drop when broken.
 
+Returns: The amount of Experience that will drop when this BlockState is broken.  
 Return Type: int
 
 ```zenscript
@@ -281,6 +291,7 @@ Return Type: int
 
 Gets the explosion resistance of the BlockState in the world for the given Explosion
 
+Returns: The amount of the explosion that is absorbed.  
 Return Type: float
 
 ```zenscript
@@ -303,6 +314,7 @@ Return Type: float
 Determines how fast fire spreads from this block.
  The higher the number the faster that fire will spread around the BlockState.
 
+Returns: The spread speed of the BlockState.  
 Return Type: int
 
 ```zenscript
@@ -326,6 +338,7 @@ Gets the chance that fire will spread and consume this BlockState.
 
  A value of 300 is a 100% chance, and 0 is a 0% chance.
 
+Returns: A number between 0 and 300 dictating how flammable this BlockState is.  
 Return Type: int
 
 ```zenscript
@@ -347,6 +360,7 @@ Return Type: int
 
 Gets the harvest level of this BlockState.
 
+Returns: The harvest level of this BlockState.  
 Return Type: int
 
 ```zenscript
@@ -361,6 +375,7 @@ Return Type: int
 
 Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState.
 
+Returns: The [ToolType](/vanilla/api/tool/ToolType) of this BlockState.  
 Return Type: [ToolType](/vanilla/api/tool/ToolType)
 
 ```zenscript
@@ -375,6 +390,7 @@ Return Type: [ToolType](/vanilla/api/tool/ToolType)
 
 Gets the light level of this BlockState
 
+Returns: The light level of this BlockState.  
 Return Type: int
 
 ```zenscript
@@ -389,6 +405,7 @@ Return Type: int
 
 Gets the light value of the BlockState at the given position.
 
+Returns: The light value of the BlockState at the position.  
 Return Type: int
 
 ```zenscript
@@ -409,6 +426,7 @@ Return Type: int
 
 Gets the properties of this BlockState.
 
+Returns: a Map of the properties on this BlockState.  
 Return Type: string[string]
 
 ```zenscript
@@ -423,6 +441,7 @@ Return Type: string[string]
 
 Gets the names of the properties of this BlockState.
 
+Returns: the List of the names of the BlockStates's properties.  
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
@@ -437,6 +456,7 @@ Return Type: stdlib.List&lt;string&gt;
 
 Gets the value of the given property.
 
+Returns: The value of the property on this BlockState.  
 Return Type: string
 
 ```zenscript
@@ -454,6 +474,7 @@ MCBlockState.getPropertyValue(name as string) as string
 
 Gets the slipperiness of the BlockState at the given location for the given entity (if one is given)
 
+Returns: The slipperiness of the BlockState at the given BlockPos for the Entity.  
 Return Type: float
 
 ```zenscript
@@ -475,6 +496,7 @@ Return Type: float
 
 Checks whether this BlockState has the given property.
 
+Returns: True if this BlockState has the property. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -494,6 +516,7 @@ Return Type: boolean
 
 Checks whether this BlockState has a [MCTileEntity](/vanilla/api/tileentity/MCTileEntity).
 
+Returns: True if this BlockState has a [MCTileEntity](/vanilla/api/tileentity/MCTileEntity). False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -508,6 +531,7 @@ Return Type: boolean
 
 Determines if the block can be used to sleep.
 
+Returns: True if the block allows sleeping.  
 Return Type: boolean
 
 ```zenscript
@@ -529,6 +553,7 @@ Return Type: boolean
 
 Checks if the BlockState is burning at the given position.
 
+Returns: True if the BlockState is burning a the given position.  
 Return Type: boolean
 
 ```zenscript
@@ -549,6 +574,7 @@ Return Type: boolean
 
 Determines if this BlockState can be used as the frame of a Conduit.
 
+Returns: True if this BlockState can be used as a Conduit frame.  
 Return Type: boolean
 
 ```zenscript
@@ -575,6 +601,7 @@ Checks if the BlockState is "fertile" at the given position.
  The game ***WILL*** crash if you call this on a blockstate that doesn't have the property, so make sure
  you check it before calling it!
 
+Returns: True if the BlockState is Fertile. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -595,6 +622,7 @@ Return Type: boolean
 
 Checks if this BlockState is a fire source at the given position with the fire coming from the given direciton.
 
+Returns: True if this BlockState is a fire source. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -616,6 +644,7 @@ Return Type: boolean
 
 Checks if this BlockState is flammable at the given position with the fire coming from the given direciton.
 
+Returns: True if the BlockState if flammable. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -637,6 +666,7 @@ Return Type: boolean
 
 Checks if a Living Entity can use this block to climb like a ladder.
 
+Returns: True if the entity can climb the block. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -658,6 +688,7 @@ Return Type: boolean
 
 Determins if this BlockState can be used as the frame of a Nether portal.
 
+Returns: True if this BlockState can be used as a Nether portal frame. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -678,6 +709,7 @@ Return Type: boolean
 
 Checks if the entity should handle movement on this BlockState like it handles movement on scaffolding.
 
+Returns: True if this BlockState should act like scaffolding. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -697,6 +729,7 @@ Return Type: boolean
 
 Checks if this BlockState is a Slime Block.
 
+Returns: True if this BlockState is Slime. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -711,6 +744,7 @@ Return Type: boolean
 
 Checks whether this BlockState is solid.
 
+Returns: True if this BlockState is solid. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -728,6 +762,7 @@ Checks if this BlockState is sticky.
  This is used to determine if the block should pull or push adjacent blocks when pushed / pulled by a piston.
  For example, Slime Blocks are sticky blocks.
 
+Returns: True if this BlockState is Sticky. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -742,6 +777,7 @@ Return Type: boolean
 
 Checks if the given ToolType is effective against this BlockState.
 
+Returns: True if the ToolType is effective. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -784,6 +820,7 @@ Return Type: void
 
 Checks whether this BlockState ticks randomly.
 
+Returns: True if this BlockState ticks randomly. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -798,6 +835,7 @@ Return Type: boolean
 
 Sets a block property based on it's name.
 
+Returns: This BlockState with the new property value.  
 Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript

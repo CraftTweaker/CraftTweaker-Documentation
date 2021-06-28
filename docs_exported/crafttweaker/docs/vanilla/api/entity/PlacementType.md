@@ -27,6 +27,7 @@ PlacementType extends Enum&lt;[PlacementType](/vanilla/api/entity/PlacementType)
 
 Checks if a specific entity type can spawn in the world at the given position with this PlacementType.
 
+Returns: True if the entity type can spawn. False otherwise.  
 Return Type: boolean
 
 ```zenscript

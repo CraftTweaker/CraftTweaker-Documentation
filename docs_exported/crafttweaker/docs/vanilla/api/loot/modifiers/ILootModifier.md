@@ -19,6 +19,7 @@ import crafttweaker.api.loot.modifiers.ILootModifier;
 
 Applies the modifier to the drops of a loot table.
 
+Returns: A new list containing the modified loot, or the old list if the loot shouldn't be modified.  
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript

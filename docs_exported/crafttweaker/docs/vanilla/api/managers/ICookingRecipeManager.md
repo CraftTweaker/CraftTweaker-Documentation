@@ -97,6 +97,7 @@ ICookingRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 
 Returns a map of all known recipes.
 
+Returns: A Map of recipe name to recipe of all known recipes.  
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
 
 ```zenscript
@@ -280,7 +281,7 @@ Return Type: void
 ```zenscript
 // ICookingRecipeManager.removeRecipeByInput(input as IItemStack) as void
 
-furnace.removeRecipeByInput(<item:minecraft:ironingot>);
+furnace.removeRecipeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |

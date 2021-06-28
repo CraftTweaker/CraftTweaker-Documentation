@@ -27,6 +27,7 @@ MCPlayerDestroyItemEvent extends [MCPlayerEvent](/vanilla/api/event/entity/playe
 Gets a snapshot of the item from before it broke. Modifying this item
  will have no effect and it should be treated as unmodifiable.
 
+Returns: The original item from before it was broken.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript

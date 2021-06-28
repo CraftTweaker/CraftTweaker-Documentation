@@ -31,6 +31,7 @@ Sets the NBT data that should be matched by this predicate.
 
  If the NBT data had already been set, then the data is replaced with the new instance.
 
+Returns: This predicate for chaining.  
 Return Type: [NBTPredicate](/vanilla/api/predicate/NBTPredicate)
 
 ```zenscript

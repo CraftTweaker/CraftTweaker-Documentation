@@ -16,6 +16,7 @@ import crafttweaker.api.world.MCBlockDisplayReader;
 
 Gets if can see sky at a given position
 
+Returns: The block state at the position.  
 Return Type: boolean
 
 ```zenscript
@@ -35,6 +36,7 @@ myMCBlockDisplayReader.canSeeSky(new BlockPos(0, 1, 2));
 
 Gets the block state at a given position.
 
+Returns: The block state at the position.  
 Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
@@ -54,6 +56,7 @@ myMCBlockDisplayReader.getBlockState(new BlockPos(0, 1, 2));
 
 Gets the light level at a given position
 
+Returns: The light level at the position  
 Return Type: int
 
 ```zenscript
@@ -73,6 +76,7 @@ myMCBlockDisplayReader.getLightValue(new BlockPos(0, 1, 2));
 
 Gets the tile entity at a given position.
 
+Returns: The tile entity.  
 Return Type: [MCTileEntity](/vanilla/api/tileentity/MCTileEntity)?
 
 ```zenscript

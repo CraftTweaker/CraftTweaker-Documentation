@@ -26,6 +26,7 @@ ItemAttributeModifierEvent extends [MCEvent](/vanilla/api/event/MCEvent). That m
 
 Adds a new AttributeModifier to the ItemStack.
 
+Returns: True if the modifier was added. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -48,6 +49,7 @@ myItemAttributeModifierEvent.addModifier(<attribute:minecraft:generic.attack_dam
 
 Adds a new AttributeModifier to the ItemStack.
 
+Returns: True if the modifier was added. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -85,6 +87,7 @@ myItemAttributeModifierEvent.clearModifiers();
 
 Gets the ItemStack that this event is being ran for.
 
+Returns: The ItemStack this event is being ran for.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
@@ -99,6 +102,7 @@ myItemAttributeModifierEvent.getItemStack();
 
 Gets the modifiers on the ItemStack
 
+Returns: A Map of Attribute to a List of AttributeModifier.  
 Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/Attribute)]
 
 ```zenscript
@@ -113,6 +117,7 @@ myItemAttributeModifierEvent.getModifiers();
 
 Gets the original modifiers on the ItemStack before being changed by any other event listener.
 
+Returns: A Map of Attribute to a List of AttributeModifier.  
 Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/Attribute)]
 
 ```zenscript
@@ -129,6 +134,7 @@ Gets the EquipmentSlotType that this event is being ran for.
 
  If you only want to add / remove a modifier from a specific slot, you can use this to filter based on the slot.
 
+Returns: The EquipmentSlotType of this event.  
 Return Type: [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)
 
 ```zenscript
@@ -143,6 +149,7 @@ myItemAttributeModifierEvent.getSlotType();
 
 Removes an Attribute from the ItemStack.
 
+Returns: A List of the AttributeModifiers for the removed Attribute.  
 Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;
 
 ```zenscript
@@ -162,6 +169,7 @@ myItemAttributeModifierEvent.removeAttribute(<attribute:minecraft:generic.attack
 
 Removes an AttributeModifier from the ItemStack.
 
+Returns: True if the modifier was remove. False otherwise.  
 Return Type: boolean
 
 ```zenscript
@@ -182,6 +190,7 @@ myItemAttributeModifierEvent.removeModifier(<attribute:minecraft:generic.attack_
 
 Removes an AttributeModifier from the ItemStack based on the modifier's UUID.
 
+Returns: True if the modifier was remove. False otherwise.  
 Return Type: boolean
 
 ```zenscript

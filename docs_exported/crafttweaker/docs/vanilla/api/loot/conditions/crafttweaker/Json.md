@@ -70,6 +70,7 @@ Sets the type of the condition that will be built along with the JSON representa
 
  The JSON must respect the constraints specified in the class documentation.
 
+Returns: This builder for chaining.  
 Return Type: [Json](/vanilla/api/loot/conditions/crafttweaker/Json)
 
 ```zenscript
@@ -93,6 +94,7 @@ Sets the type of the condition that will be built along with the JSON representa
 
  The JSON must respect the constraints specified in the class documentation.
 
+Returns: This builder for chaining.  
 Return Type: [Json](/vanilla/api/loot/conditions/crafttweaker/Json)
 
 ```zenscript

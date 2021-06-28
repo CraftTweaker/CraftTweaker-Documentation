@@ -195,6 +195,7 @@ Return Type: boolean
 
 Gets the Attributes and the AttributeModifiers on this IItemStack for the given EquipmentSlotType
 
+Returns: A Map of Attribute to a List of AttributeModifier for the given EquipmentSlotType.  
 Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/Attribute)]
 
 ```zenscript
@@ -226,6 +227,7 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 Returns the max stack size of the Item in the ItemStack
 
+Returns: Max stack size of the Item.  
 Return Type: int
 
 ```zenscript
@@ -240,6 +242,7 @@ Return Type: int
 
 Returns the rarity of the Item in the ItemStack
 
+Returns: Rarity of the Item.  
 Return Type: [Rarity](/vanilla/api/item/Rarity)
 
 ```zenscript
@@ -287,6 +290,7 @@ Return Type: boolean
 
 Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.
 
+Returns: True if this IItemStack is immune to fire. False otherwise.  
 Return Type: boolean
 
 ```zenscript

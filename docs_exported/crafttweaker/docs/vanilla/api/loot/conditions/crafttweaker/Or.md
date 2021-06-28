@@ -34,6 +34,7 @@ Adds a new condition to the list of sub-conditions that will get merged together
 
  At least two sub-conditions should be added to obtain a well-built and well-behaved 'Or' loot condition.
 
+Returns: This condition for chaining.  
 Return Type: [Or](/vanilla/api/loot/conditions/crafttweaker/Or)
 
 ```zenscript

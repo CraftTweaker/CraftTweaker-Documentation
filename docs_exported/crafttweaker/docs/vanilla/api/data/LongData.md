@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new LongData(internal as long) as LongData
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | internal | long | No Description Provided |
@@ -59,6 +58,7 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
@@ -73,6 +73,7 @@ Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
@@ -99,6 +100,7 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
+Returns: the byte value of this [IData](/vanilla/api/data/IData)  
 Return Type: byte
 
 ```zenscript
@@ -113,6 +115,7 @@ Return Type: byte
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
+Returns: the double value of this [IData](/vanilla/api/data/IData)  
 Return Type: double
 
 ```zenscript
@@ -127,6 +130,7 @@ Return Type: double
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
+Returns: the float value of this [IData](/vanilla/api/data/IData)  
 Return Type: float
 
 ```zenscript
@@ -143,6 +147,7 @@ Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
@@ -157,6 +162,7 @@ Return Type: byte
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
+Returns: the int value of this [IData](/vanilla/api/data/IData)  
 Return Type: int
 
 ```zenscript
@@ -171,6 +177,7 @@ Return Type: int
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
+Returns: the long value of this [IData](/vanilla/api/data/IData)  
 Return Type: long
 
 ```zenscript
@@ -185,6 +192,7 @@ Return Type: long
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
+Returns: the short value of this [IData](/vanilla/api/data/IData)  
 Return Type: short
 
 ```zenscript
@@ -199,6 +207,7 @@ Return Type: short
 
 Gets the String representation of the internal INBT tag
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript

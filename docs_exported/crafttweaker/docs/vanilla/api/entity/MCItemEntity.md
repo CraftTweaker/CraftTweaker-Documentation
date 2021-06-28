@@ -20,7 +20,6 @@ MCItemEntity extends [MCEntity](/vanilla/api/entity/MCEntity). That means all me
 ```zenscript
 new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack as ItemStack) as MCItemEntity
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | world | [MCWorld](/vanilla/api/world/MCWorld) | No description provided |
@@ -37,6 +36,7 @@ new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack 
 
 Gets the IItemStack inside this ItemEntity.
 
+Returns: The IItemStack inside this ItemEntity.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript

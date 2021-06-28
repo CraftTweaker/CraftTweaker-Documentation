@@ -29,6 +29,7 @@ LocationPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/p
 
 Sets the biome in which the location should be.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -48,6 +49,7 @@ Creates and sets the [BlockPredicate](/vanilla/api/predicate/BlockPredicate) tha
 
  Any changes that have been made previously to the block predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -67,6 +69,7 @@ Indicates that the location must be on top of a campfire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -81,6 +84,7 @@ myLocationPredicate.withCampfireBelow();
 
 Sets the dimension where the location should be located in.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -100,6 +104,7 @@ Sets the value of the X position to exactly match the given <code>value</code>.
 
  If the position had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -119,6 +124,7 @@ Sets the value of the Y position to exactly match the given <code>value</code>.
 
  If the position had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -138,6 +144,7 @@ Sets the value of the Z position to exactly match the given <code>value</code>.
 
  If the position had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -155,6 +162,7 @@ LocationPredicate.withExactZPosition(z as int) as LocationPredicate
 
 Sets the name of the feature this location should be located in.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -174,6 +182,7 @@ Creates and sets the [FluidPredicate](/vanilla/api/predicate/FluidPredicate) tha
 
  Any changes that have been made previously to the fluid predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -193,6 +202,7 @@ Creates and sets the [LightPredicate](/vanilla/api/predicate/LightPredicate) tha
 
  Any changes that have been made previously to the light level predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -216,6 +226,7 @@ Sets the maximum value the X position can assume to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -239,6 +250,7 @@ Sets the maximum value the Y position can assume to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -262,6 +274,7 @@ Sets the maximum value the Z position can assume to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -285,6 +298,7 @@ Sets the minimum value the X position can assume to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -308,6 +322,7 @@ Sets the minimum value the Y position can assume to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -331,6 +346,7 @@ Sets the minimum value the Z position can assume to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -354,6 +370,7 @@ Sets both the minimum and maximum values the X position can assume to <code>min<
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -378,6 +395,7 @@ Sets both the minimum and maximum values the Y position can assume to <code>min<
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -402,6 +420,7 @@ Sets both the minimum and maximum values the Z position can assume to <code>min<
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript
@@ -422,6 +441,7 @@ Indicates that the location must not be on top of a campfire.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 
 ```zenscript

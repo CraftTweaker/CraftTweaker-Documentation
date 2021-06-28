@@ -48,6 +48,7 @@ DirectionAxis.equals(o as Object) as boolean
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
+Returns: value of the coordinate  
 Return Type: double
 
 ```zenscript
@@ -69,6 +70,7 @@ Return Type: double
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
+Returns: value of the coordinate  
 Return Type: int
 
 ```zenscript

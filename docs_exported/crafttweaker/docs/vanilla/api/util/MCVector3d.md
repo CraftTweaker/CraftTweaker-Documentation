@@ -21,7 +21,6 @@ import crafttweaker.api.util.MCVector3d;
 ```zenscript
 new MCVector3d(x as double, y as double, z as double) as MCVector3d
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | x | double | No description provided |
@@ -36,6 +35,7 @@ new MCVector3d(x as double, y as double, z as double) as MCVector3d
 
 Performs the cross product between this vector and <code>other</code>.
 
+Returns: The cross product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -53,6 +53,7 @@ MCVector3d.cross(other as MCVector3d) as MCVector3d
 
 Computes the Euclidean distance between this vector and the other vector.
 
+Returns: The Euclidean distance between them.  
 Return Type: double
 
 ```zenscript
@@ -70,6 +71,7 @@ MCVector3d.distanceTo(other as MCVector3d) as double
 
 Performs a dot product between this vector and <code>other</code>.
 
+Returns: The dot product.  
 Return Type: double
 
 ```zenscript
@@ -87,6 +89,7 @@ MCVector3d.dot(other as MCVector3d) as double
 
 Gets the coordinate of this vector that corresponds to the given [DirectionAxis](/vanilla/api/util/DirectionAxis).
 
+Returns: The value of the corresponding coordinate.  
 Return Type: double
 
 ```zenscript
@@ -106,6 +109,7 @@ Gets the coordinate of this vector identified by the specified index.
 
  Namely, 0 corresponds to the X coordinate, 1 to Y, and 2 to Z.
 
+Returns: The value of the corresponding coordinate.  
 Return Type: double
 
 ```zenscript
@@ -123,6 +127,7 @@ MCVector3d.getCoordinate(index as int) as double
 
 Subtracts <code>other</code> from this vector.
 
+Returns: The subtraction result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -140,6 +145,7 @@ MCVector3d.minus(other as MCVector3d) as MCVector3d
 
 Subtracts the vector <code>(x, y, z)</code> from this vector.
 
+Returns: The subtraction result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -159,6 +165,7 @@ MCVector3d.minus(x as double, y as double, z as double) as MCVector3d
 
 Normalizes the current vector, making it of unit length.
 
+Returns: The normalized vector.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -173,6 +180,7 @@ myMCVector3d.normalize();
 
 Adds this vector to the <code>other</code> vector, computing their sum member by member.
 
+Returns: The sum.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -190,6 +198,7 @@ MCVector3d.plus(other as MCVector3d) as MCVector3d
 
 Adds this vector to the vector <code>(x, y, z)</code>, computing their sum member by member.
 
+Returns: The sum.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -209,6 +218,7 @@ MCVector3d.plus(x as double, y as double, z as double) as MCVector3d
 
 Scales the current vector by the given <code>factor</code>.
 
+Returns: The scaled vector.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -228,6 +238,7 @@ Computes the squared Euclidean distance between this vector and the other vector
 
  This method is faster and less error-prone than calling <code>distanceTo</code> and squaring the result.
 
+Returns: The squared Euclidean distance between them.  
 Return Type: double
 
 ```zenscript
@@ -245,6 +256,7 @@ MCVector3d.squareDistanceTo(other as MCVector3d) as double
 
 Subtracts this vector from the <code>other</code> vector and returns the result.
 
+Returns: The result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -262,6 +274,7 @@ MCVector3d.subtractReverse(other as MCVector3d) as MCVector3d
 
 Multiplies the two vectors member by member, computing what is known as the Hadamard product.
 
+Returns: The Hadamard product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -279,6 +292,7 @@ MCVector3d.times(other as MCVector3d) as MCVector3d
 
 Multiplies this vector with the vector <code>(x, y, z)</code>, computing what is known as the Hadamard product.
 
+Returns: The Hadamard product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript

@@ -57,6 +57,7 @@ world.asServerWorld();
 
 Destroys a block within the world.
 
+Returns: Whether or not the block was changed.  
 Return Type: boolean
 
 ```zenscript
@@ -77,6 +78,7 @@ world.destroyBlock(new BlockPos(0, 1, 2), true);
 
 Destroys a block within the world.
 
+Returns: Whether or not the block was changed.  
 Return Type: boolean
 
 ```zenscript
@@ -98,6 +100,7 @@ world.destroyBlock(new BlockPos(0, 1, 2), true, player);
 
 Gets the biome at a given position.
 
+Returns: The biome at the given position.  
 Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 
 ```zenscript
@@ -117,6 +120,7 @@ world.getBiome(new BlockPos(0, 1, 2));
 
 Gets the block state at a given position.
 
+Returns: The block state at the position.  
 Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
@@ -137,6 +141,7 @@ world.getBlockState(new BlockPos(0, 1, 2));
 Gets all entities in given area, but the arguments are block poses.
  If `pos2` is omitted, it will use `pos1.add(1, 1, 1)`
 
+Returns: all entities in given area  
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
@@ -157,6 +162,7 @@ world.getEntitiesInArea(new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 
 Gets all entities in given area.
 
+Returns: all entities in given area.  
 Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 
 ```zenscript
@@ -229,6 +235,7 @@ world.getEntitiesInAreaExcluding(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entit
 
 Gets the redstone signal strength available to a position from a given direction.
 
+Returns: The redstone signal strength available from that direction.  
 Return Type: int
 
 ```zenscript
@@ -249,6 +256,7 @@ world.getRedstonePower(new BlockPos(0, 1, 2), <direction:north>);
 
 Gets the highest redstone signal available to a position from any of it's neighbors.
 
+Returns: The highest redstone signal available to the position.  
 Return Type: int
 
 ```zenscript
@@ -268,6 +276,7 @@ world.getRedstonePowerFromNeighbors(new BlockPos(0, 1, 2));
 
 Gets the highest strong (direct) redstone signal of any neighboring block.
 
+Returns: The highest strong (direct) redstone signal of all directly neighboring blocks.  
 Return Type: int
 
 ```zenscript
@@ -287,6 +296,7 @@ world.getStrongPower(new BlockPos(0, 1, 2));
 
 Gets the tile entity data for a tile entity at a given position.
 
+Returns: The data of the tile entity.  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
@@ -321,6 +331,7 @@ MCWorld.getTileEntity(pos as BlockPos) as MCTileEntity?
 
 Checks if the block at a given position is air.
 
+Returns: Whether or not the block is air.  
 Return Type: boolean
 
 ```zenscript
@@ -340,6 +351,7 @@ world.isAir(new BlockPos(0, 1, 2));
 
 Checks if a given position is receiving a redstone signal.
 
+Returns: Whether or not the position is receiving a redstone signal.  
 Return Type: boolean
 
 ```zenscript
@@ -359,6 +371,7 @@ world.isBlockPowered(new BlockPos(0, 1, 2));
 
 Checks if the block at a given position is in a loaded chunk.
 
+Returns: Whether or not the position is in a loaded chunk.  
 Return Type: boolean
 
 ```zenscript
@@ -379,6 +392,7 @@ world.isLoaded(new BlockPos(0, 1, 2));
 Checks if it is raining at a specific position. This can never be true
  if the position does not have direct line of sight to the sky.
 
+Returns: Whether or not it is raining at the current position.  
 Return Type: boolean
 
 ```zenscript
@@ -399,6 +413,7 @@ world.isRainingAt(new BlockPos(0, 1, 2));
 Checks if the world is remote. This is always true on the rendering
  thread.
 
+Returns: Whether or not the world is remote.  
 Return Type: boolean
 
 ```zenscript
@@ -458,6 +473,7 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 
 Sets the block and it's state at a given position.
 
+Returns: Whether or not the block was changed.  
 Return Type: boolean
 
 ```zenscript

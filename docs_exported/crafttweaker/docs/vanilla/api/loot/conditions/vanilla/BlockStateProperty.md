@@ -32,6 +32,7 @@ Sets the block that should be matched by the loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [BlockStateProperty](/vanilla/api/loot/conditions/vanilla/BlockStateProperty)
 
 ```zenscript
@@ -54,6 +55,7 @@ Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StateProp
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [BlockStateProperty](/vanilla/api/loot/conditions/vanilla/BlockStateProperty)
 
 ```zenscript
