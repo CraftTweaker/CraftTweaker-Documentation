@@ -36,7 +36,7 @@ import crafttweaker.api.recipe.Replacer;
 
 :::group{name=forAllTypes}
 
-::deprecated[Use [this\](.)#forEverything() instead.]
+::deprecated[Use [this](.)#forEverything() instead.]
 
 Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
 
@@ -53,7 +53,7 @@ Replacer.forAllTypes();
 
 :::group{name=forAllTypesExcluding}
 
-::deprecated[Use [this\](.)#forEverything() to create a replacer then use [this\](.)#excluding(IRecipeManager...) to exclude the various unwanted managers.]
+::deprecated[Use [this](.)#forEverything() to create a replacer then use [this](.)#excluding(IRecipeManager...) to exclude the various unwanted managers.]
 
 Creates a `Replacer` that will perform replacements on all [IRecipeManager](/vanilla/api/managers/IRecipeManager)s except the ones <br />  specified.
 
