@@ -1,11 +1,10 @@
-# Spinning Wheel
+::requiredMod[Atum 2]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/atum}
 
-## Package
-`mods.atum.SpinningWheel;`
+# Spinning Wheel
 
 ## Tarif Ekleme
 
-`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
+`<recipetype:atum:spinning_wheel>.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
@@ -14,26 +13,26 @@
 Girilen input ve output değerlerine göre bir tarif oluşturur. Verilen rotation değerine göre tarifi tamamlar.
 
 ```zenscript
-mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
+<recipetype:atum:spinning_wheel>.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
 ## Bir Tarifi Kaldırma
 
 ### Çıkışa göre Tarif Kaldırma
 
-`mods.atum.SpinningWheel.removeRecipeByOutput(output);`
+`<recipetype:atum:spinning_wheel>.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
 Girilen [IItemStack](/vanilla/api/items/IItemStack) çıktısının olduğu bütün tarifleri kaldırır.
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
+<recipetype:atum:spinning_wheel>.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
 ### Remove Recipes by Output & Input
 
-`mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
+`<recipetype:atum:spinning_wheel>.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
@@ -41,7 +40,7 @@ mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 Removes the specific recipe, with the specified output & input
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
+<recipetype:atum:spinning_wheel>.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
 ### Other removal methods
