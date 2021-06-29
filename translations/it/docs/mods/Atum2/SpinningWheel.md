@@ -1,11 +1,10 @@
-# Spinning Wheel
+::requiredMod[Atum 2]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/atum}
 
-## Package
-`mods.atum.SpinningWheel;`
+# Spinning Wheel
 
 ## Aggiungere una Ricetta
 
-`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
+`<recipetype:atum:spinning_wheel>.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
@@ -14,26 +13,26 @@
 Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
 
 ```zenscript
-mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
+<recipetype:atum:spinning_wheel>.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
 ## Rimuovere una RIcetta
 
 ### Rimuovere Ricette in base al Prodotto
 
-`mods.atum.SpinningWheel.removeRecipeByOutput(output);`
+`<recipetype:atum:spinning_wheel>.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
 Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/IItemStack) dato.
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
+<recipetype:atum:spinning_wheel>.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
 ### Remove Recipes by Output & Input
 
-`mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
+`<recipetype:atum:spinning_wheel>.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
@@ -41,7 +40,7 @@ mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 Removes the specific recipe, with the specified output & input
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
+<recipetype:atum:spinning_wheel>.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
 ### Other removal methods
