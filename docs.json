@@ -126,6 +126,18 @@
         "Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
         "Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
       },
+      "PneumaticCraft: Repressurized": {
+        "Assembly System": "mods/PneumaticCraft-Repressurized/AssemblySystem.md",
+        "Block Heat Properties": "mods/PneumaticCraft-Repressurized/BlockHeatProperties.md",
+        "Fluid Mixer": "mods/PneumaticCraft-Repressurized/FluidMixer.md",
+        "Explosion Crafting": "mods/PneumaticCraft-Repressurized/ExplosionCrafting.md",
+        "Experience Fluids": "mods/PneumaticCraft-Repressurized/XPFluids.md",
+        "Fuel Quality": "mods/PneumaticCraft-Repressurized/FuelQuality.md",
+        "Heat Frame Cooling": "mods/PneumaticCraft-Repressurized/HeatFrameCooling.md",
+        "Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
+        "Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
+        "Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
+      },
       "RecipeStages": {
         "RecipeStages": "mods/RecipeStages/RecipeStages.md"
       },
