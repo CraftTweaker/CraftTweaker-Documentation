@@ -16,6 +16,27 @@ MCServerWorld extends [MCWorld](/vanilla/api/world/MCWorld). That means all meth
 
 ## Methods
 
+:::group{name=getEntities}
+
+Gets entities in the world that match the given Predicate and the given MCEntityType (if provided).
+
+Returns: A List of Entities that match.  
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+// MCServerWorld.getEntities(predicate as Predicate<MCEntity>, type as MCEntityType) as stdlib.List<MCEntity>
+
+(world as MCServerWorld).getEntities((entity as MCEntity) => entity.isImmuneToFire(), <entitytype:minecraft:sheep>);
+```
+
+| Параметр  | Тип                                                                   | Description                     | Optional | DefaultValue |
+| --------- | --------------------------------------------------------------------- | ------------------------------- | -------- | ------------ |
+| predicate | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | The predicate to check against. | false    |              |
+| type      | [MCEntityType](/vanilla/api/entities/MCEntityType)                    | No Description Provided         | true     |              |
+
+
+:::
+
 :::group{name=isRaid}
 
 Checks if a position is within an active raid.
@@ -26,7 +47,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isRaid(pos as BlockPos) as boolean
 
-world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isRaid(new BlockPos(0, 1, 2));
 ```
 
 | Параметр | Тип                                    | Description              |
@@ -46,7 +67,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isSlimeChunk(pos as BlockPos) as boolean
 
-world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isSlimeChunk(new BlockPos(0, 1, 2));
 ```
 
 | Параметр | Тип                                    | Description              |
@@ -66,7 +87,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isVillage(pos as BlockPos) as boolean
 
-world as MCServerWorld.isVillage(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isVillage(new BlockPos(0, 1, 2));
 ```
 
 | Параметр | Тип                                    | Description              |
@@ -85,7 +106,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToDay() as void
 
-world as MCServerWorld.setTimeToDay();
+(world as MCServerWorld).setTimeToDay();
 ```
 
 :::
@@ -99,7 +120,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToMidnight() as void
 
-world as MCServerWorld.setTimeToMidnight();
+(world as MCServerWorld).setTimeToMidnight();
 ```
 
 :::
@@ -113,7 +134,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToNight() as void
 
-world as MCServerWorld.setTimeToNight();
+(world as MCServerWorld).setTimeToNight();
 ```
 
 :::
@@ -127,7 +148,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToNoon() as void
 
-world as MCServerWorld.setTimeToNoon();
+(world as MCServerWorld).setTimeToNoon();
 ```
 
 :::
