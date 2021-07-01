@@ -18,6 +18,27 @@ MCServerWorld extends [MCWorld](/vanilla/api/world/MCWorld). That means all meth
 
 ## Methods
 
+:::group{name=getEntities}
+
+Gets entities in the world that match the given Predicate and the given MCEntityType (if provided).
+
+Returns: A List of Entities that match.  
+Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
+
+```zenscript
+// MCServerWorld.getEntities(predicate as Predicate<MCEntity>, type as MCEntityType) as stdlib.List<MCEntity>
+
+world as MCServerWorld.getEntities((entity as MCEntity) => entity.isImmuneToFire();, <entitytype:minecraft:sheep>);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| predicate | Predicate&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; | The predicate to check against. | false |  |
+| type | [MCEntityType](/vanilla/api/entities/MCEntityType) | No Description Provided | true |  |
+
+
+:::
+
 :::group{name=isRaid}
 
 Checks if a position is within an active raid.

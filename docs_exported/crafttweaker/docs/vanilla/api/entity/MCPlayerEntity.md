@@ -80,6 +80,18 @@ myMCPlayerEntity.getFoodLevel();
 
 :::
 
+:::group{name=getInventory}
+
+Return Type: [PlayerInventory](/vanilla/api/inventory/PlayerInventory)
+
+```zenscript
+// MCPlayerEntity.getInventory() as PlayerInventory
+
+myMCPlayerEntity.getInventory();
+```
+
+:::
+
 :::group{name=getInventoryItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -388,6 +400,7 @@ myMCPlayerEntity.wakeUp();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+|  | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
 | fake | boolean | true | false | No Description Provided |
 | foodLevel | int | true | true | No Description Provided |
 | name | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true | false | No Description Provided |
