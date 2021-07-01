@@ -181,6 +181,10 @@
           "MCGame": "vanilla/api/game/MCGame.md",
           "MCServer": "vanilla/api/game/MCServer.md"
         },
+        "Inventory": {
+          "IInventory": "vanilla/api/inventory/IInventory.md",
+          "PlayerInventory": "vanilla/api/inventory/PlayerInventory.md"
+        },
         "Item": {
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
