@@ -28,7 +28,7 @@ Return Type: stdlib.List&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;
 ```zenscript
 // MCServerWorld.getEntities(predicate as Predicate<MCEntity>, type as MCEntityType) as stdlib.List<MCEntity>
 
-world as MCServerWorld.getEntities((entity as MCEntity) => entity.isImmuneToFire();, <entitytype:minecraft:sheep>);
+(world as MCServerWorld).getEntities((entity as MCEntity) => entity.isImmuneToFire(), <entitytype:minecraft:sheep>);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -49,7 +49,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isRaid(pos as BlockPos) as boolean
 
-world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isRaid(new BlockPos(0, 1, 2));
 ```
 
 | Parameter | Type | Description |
@@ -69,7 +69,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isSlimeChunk(pos as BlockPos) as boolean
 
-world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isSlimeChunk(new BlockPos(0, 1, 2));
 ```
 
 | Parameter | Type | Description |
@@ -89,7 +89,7 @@ Return Type: boolean
 ```zenscript
 // MCServerWorld.isVillage(pos as BlockPos) as boolean
 
-world as MCServerWorld.isVillage(new BlockPos(0, 1, 2));
+(world as MCServerWorld).isVillage(new BlockPos(0, 1, 2));
 ```
 
 | Parameter | Type | Description |
@@ -109,7 +109,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToDay() as void
 
-world as MCServerWorld.setTimeToDay();
+(world as MCServerWorld).setTimeToDay();
 ```
 
 :::
@@ -124,7 +124,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToMidnight() as void
 
-world as MCServerWorld.setTimeToMidnight();
+(world as MCServerWorld).setTimeToMidnight();
 ```
 
 :::
@@ -139,7 +139,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToNight() as void
 
-world as MCServerWorld.setTimeToNight();
+(world as MCServerWorld).setTimeToNight();
 ```
 
 :::
@@ -154,7 +154,7 @@ Return Type: void
 ```zenscript
 // MCServerWorld.setTimeToNoon() as void
 
-world as MCServerWorld.setTimeToNoon();
+(world as MCServerWorld).setTimeToNoon();
 ```
 
 :::
