@@ -399,9 +399,9 @@ myMCPlayerEntity.wakeUp();
 
 | 名称              | 类型                                                        | 可获得  | 可设置   | 描述                      |
 | --------------- | --------------------------------------------------------- | ---- | ----- | ----------------------- |
-|                 | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
 | fake            | boolean                                                   | true | false | No Description Provided |
 | foodLevel       | int                                                       | true | true  | No Description Provided |
+| inventory       | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
 | name            | [MCText组件](/vanilla/api/util/text/MCTextComponent)        | true | false | No Description Provided |
 | saturationLevel | float                                                     | true | false | No Description Provided |
 
