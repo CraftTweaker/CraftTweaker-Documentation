@@ -400,9 +400,9 @@ myMCPlayerEntity.wakeUp();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-|  | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
 | fake | boolean | true | false | No Description Provided |
 | foodLevel | int | true | true | No Description Provided |
+| inventory | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
 | name | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true | false | No Description Provided |
 | saturationLevel | float | true | false | No Description Provided |
 
