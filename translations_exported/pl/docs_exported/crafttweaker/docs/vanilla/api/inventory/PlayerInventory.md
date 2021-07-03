@@ -139,6 +139,21 @@ myPlayerInventory.getFirstEmptyStack();
 
 :::
 
+:::group{name=getIItemStack}
+
+Gets the IItemStack that is being held by the mouse in a Gui/Container.
+
+Returns: The held IItemStack  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// PlayerInventory.getIItemStack() as IItemStack
+
+myPlayerInventory.getIItemStack();
+```
+
+:::
+
 :::group{name=hasIItemStack}
 
 Checks if the given IItemStack is in the inventory.
@@ -159,11 +174,31 @@ myPlayerInventory.hasIItemStack(<item:minecraft:diamond>);
 
 :::
 
+:::group{name=setIItemStack}
+
+Sets the IItemStack that is being held by the mouse in a Gui/Container.
+
+Return Type: void
+
+```zenscript
+// PlayerInventory.setIItemStack(stack as IItemStack) as void
+
+myPlayerInventory.setIItemStack(<item:minecraft:dirt>);
+```
+
+| Parameter | Type                                        | Description        |
+| --------- | ------------------------------------------- | ------------------ |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to hold. |
+
+
+:::
+
 
 ## Properties
 
-| Name            | Type                                        | Has Getter | Has Setter | Description                                                                                                           |
-| --------------- | ------------------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------------- |
-| currentItem     | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the currently held item by the player.                                                                           |
-| firstEmptyStack | int                                         | true       | false      | Gets the first slot in the inventory that is empty. <br />  <br />  If no slot is found, it returns `-1`. |
+| Name             | Type                                        | Has Getter | Has Setter | Description                                                                                                           |
+| ---------------- | ------------------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------------- |
+| currentItem      | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the currently held item by the player.                                                                           |
+| firstEmptyStack  | int                                         | true       | false      | Gets the first slot in the inventory that is empty. <br />  <br />  If no slot is found, it returns `-1`. |
+| stos przedmiotów | [IItemStack](/vanilla/api/items/IItemStack) | true       | true       | Gets the IItemStack that is being held by the mouse in a Gui/Container.                                               |
 
