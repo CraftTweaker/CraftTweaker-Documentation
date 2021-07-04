@@ -30,10 +30,23 @@ myMCItemCraftedEvent.getCrafting();
 
 :::
 
+:::group{name=getCraftingMatrix}
+
+Return Type: [IInventory](/vanilla/api/inventory/IInventory)
+
+```zenscript
+// MCItemCraftedEvent.getCraftingMatrix() as IInventory
+
+myMCItemCraftedEvent.getCraftingMatrix();
+```
+
+:::
+
 
 ## 参数
 
-| 名称       | 类型                                          | 可获得  | 可设置   | 描述                      |
-| -------- | ------------------------------------------- | ---- | ----- | ----------------------- |
-| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
+| 名称             | 类型                                              | 可获得  | 可设置   | 描述                      |
+| -------------- | ----------------------------------------------- | ---- | ----- | ----------------------- |
+| crafting       | [IItemStack](/vanilla/api/items/IItemStack)     | true | false | No Description Provided |
+| craftingMatrix | [IInventory](/vanilla/api/inventory/IInventory) | true | false | No Description Provided |
 
