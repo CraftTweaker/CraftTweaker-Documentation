@@ -30,10 +30,23 @@ myMCItemCraftedEvent.getCrafting();
 
 :::
 
+:::group{name=getCraftingMatrix}
+
+Return Type: [IInventory](/vanilla/api/inventory/IInventory)
+
+```zenscript
+// MCItemCraftedEvent.getCraftingMatrix() as IInventory
+
+myMCItemCraftedEvent.getCraftingMatrix();
+```
+
+:::
+
 
 ## Properties
 
-| Name     | Type                                        | Ha Getter | Ha Setter | Description             |
-| -------- | ------------------------------------------- | --------- | --------- | ----------------------- |
-| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true      | false     | No Description Provided |
+| Name           | Type                                            | Ha Getter | Ha Setter | Description             |
+| -------------- | ----------------------------------------------- | --------- | --------- | ----------------------- |
+| crafting       | [IItemStack](/vanilla/api/items/IItemStack)     | true      | false     | No Description Provided |
+| craftingMatrix | [IInventory](/vanilla/api/inventory/IInventory) | true      | false     | No Description Provided |
 
