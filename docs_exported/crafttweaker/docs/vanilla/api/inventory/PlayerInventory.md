@@ -179,10 +179,11 @@ myPlayerInventory.hasIItemStack(<item:minecraft:diamond>);
 
 Removes all stacks that match the ingredient.
 
-Return Type: void
+Returns: True if anything was removed. False otherwise.  
+Return Type: boolean
 
 ```zenscript
-// PlayerInventory.remove(ingredient as IIngredient) as void
+// PlayerInventory.remove(ingredient as IIngredient) as boolean
 
 myPlayerInventory.remove(<item:minecraft:diamond>);
 ```
