@@ -14,7 +14,7 @@ import crafttweaker.api.util.BlockPos;
 
 :::group{name=getAllInBox}
 
-Gets all the BlockPos inside the given positions. <br />  <br />  For example, doing <br />  <br />  `getAllInBox(new BlockPos(0,0,0), new BlockPos(2,2,0` <br />  <br />  Would return a list of the following positions: <br />  <br />  `[{0,0,0`, {1,0,0}, {1,1,0}, {0,1,0}]}
+Gets all the BlockPos inside the given positions. <br />  <br />  For example, doing <br />  <br />  `getAllInBox(new BlockPos(0,0,0), new BlockPos(2,2,0` <br />  <br />  Would return a list of the following positions: <br />  <br />  `[(0,0,0), (1,0,0), (1,1,0), (0,1,0)]`
 
 Returns: A list of all the BlockPos within the given position.  
 Return Type: stdlib.List&lt;[BlockPos](/vanilla/api/util/BlockPos)&gt;
