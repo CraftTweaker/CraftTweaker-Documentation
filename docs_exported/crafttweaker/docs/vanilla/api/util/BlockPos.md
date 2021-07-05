@@ -10,6 +10,29 @@ import crafttweaker.api.util.BlockPos;
 ```
 
 
+## Static Methods
+
+:::group{name=getAllInBox}
+
+Gets all the BlockPos inside the given positions. <br />  <br />  For example, doing <br />  <br />  `getAllInBox(new BlockPos(0,0,0), new BlockPos(2,2,0` <br />  <br />  Would return a list of the following positions: <br />  <br />  `[{0,0,0`, {1,0,0}, {1,1,0}, {0,1,0}]}
+
+Returns: A list of all the BlockPos within the given position.  
+Return Type: stdlib.List&lt;[BlockPos](/vanilla/api/util/BlockPos)&gt;
+
+```zenscript
+// BlockPos.getAllInBox(first as BlockPos, second as BlockPos) as stdlib.List<BlockPos>
+
+BlockPos.getAllInBox(new BlockPos(0, 0, 0), new BlockPos(5, 5, 5););
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| first | [BlockPos](/vanilla/api/util/BlockPos) | The first position. |
+| second | [BlockPos](/vanilla/api/util/BlockPos) | The second position. |
+
+
+:::
+
 ## Constructors
 
 
