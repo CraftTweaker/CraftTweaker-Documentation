@@ -22,7 +22,7 @@ Return Type: stdlib.List&lt;[BlockPos](/vanilla/api/util/BlockPos)&gt;
 ```zenscript
 // BlockPos.getAllInBox(first as BlockPos, second as BlockPos) as stdlib.List<BlockPos>
 
-BlockPos.getAllInBox(new BlockPos(0, 0, 0), new BlockPos(5, 5, 5););
+BlockPos.getAllInBox(new BlockPos(0, 0, 0), new BlockPos(5, 5, 5));
 ```
 
 | Parameter | Type | Description |
