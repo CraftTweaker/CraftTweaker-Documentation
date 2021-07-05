@@ -77,7 +77,7 @@ myPlayerInventory.canStoreIItemStack(<item:minecraft:diamond>);
 
 :::group{name=deleteStack}
 
-Removes all instances of the given stack from the inventory.
+Removes the first instance of the given stack from the inventory.
 
 Return Type: void
 
@@ -89,7 +89,7 @@ myPlayerInventory.deleteStack(<item:minecraft:diamond>);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to delete. |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to remove. |
 
 
 :::
@@ -171,6 +171,25 @@ myPlayerInventory.hasIItemStack(<item:minecraft:diamond>);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to look for. |
+
+
+:::
+
+:::group{name=remove}
+
+Removes all stacks that match the ingredient.
+
+Return Type: void
+
+```zenscript
+// PlayerInventory.remove(ingredient as IIngredient) as void
+
+myPlayerInventory.remove(<item:minecraft:diamond>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to match against. |
 
 
 :::
