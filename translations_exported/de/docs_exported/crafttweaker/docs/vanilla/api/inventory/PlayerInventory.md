@@ -76,7 +76,7 @@ myPlayerInventory.canStoreIItemStack(<item:minecraft:diamond>);
 
 :::group{name=deleteStack}
 
-Removes all instances of the given stack from the inventory.
+Removes the first instance of the given stack from the inventory.
 
 Return Type: void
 
@@ -88,7 +88,7 @@ myPlayerInventory.deleteStack(<item:minecraft:diamond>);
 
 | Parameter | Type                                        | Beschreibung         |
 | --------- | ------------------------------------------- | -------------------- |
-| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to delete. |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to remove. |
 
 
 :::
@@ -156,20 +156,38 @@ myPlayerInventory.getIItemStack();
 
 :::group{name=hasIItemStack}
 
-Checks if the given IItemStack is in the inventory.
+Checks if any of the ItemStacks in the inventory match the given ingredient.
 
-Returns: True if the stack is found. False otherwise.  
+Returns: True if any of the stacks match. False otherwise.  
 Return Type: boolean
 
 ```zenscript
-// PlayerInventory.hasIItemStack(stack as IItemStack) as boolean
-
-myPlayerInventory.hasIItemStack(<item:minecraft:diamond>);
+PlayerInventory.hasIItemStack(ingredient as IIngredient) as boolean
 ```
 
-| Parameter | Type                                        | Beschreibung           |
-| --------- | ------------------------------------------- | ---------------------- |
-| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to look for. |
+| Parameter  | Type                                          | Beschreibung                      |
+| ---------- | --------------------------------------------- | --------------------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check against.. |
+
+
+:::
+
+:::group{name=remove}
+
+Removes all stacks that match the ingredient.
+
+Returns: True if anything was removed. False otherwise.  
+Return Type: boolean
+
+```zenscript
+// PlayerInventory.remove(ingredient as IIngredient) as boolean
+
+myPlayerInventory.remove(<item:minecraft:diamond>);
+```
+
+| Parameter  | Type                                          | Beschreibung                     |
+| ---------- | --------------------------------------------- | -------------------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to match against. |
 
 
 :::
