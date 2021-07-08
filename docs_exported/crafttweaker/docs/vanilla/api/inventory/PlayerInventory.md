@@ -157,20 +157,18 @@ myPlayerInventory.getIItemStack();
 
 :::group{name=hasIItemStack}
 
-Checks if the given IItemStack is in the inventory.
+Checks if any of the ItemStacks in the inventory match the given ingredient.
 
-Returns: True if the stack is found. False otherwise.  
+Returns: True if any of the stacks match. False otherwise.  
 Return Type: boolean
 
 ```zenscript
-// PlayerInventory.hasIItemStack(stack as IItemStack) as boolean
-
-myPlayerInventory.hasIItemStack(<item:minecraft:diamond>);
+PlayerInventory.hasIItemStack(ingredient as IIngredient) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to look for. |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check against.. |
 
 
 :::
