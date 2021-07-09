@@ -163,7 +163,7 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 ```zenscript
 // MapData.merge(other as MapData) as MapData
 
-{Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
+{Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do"});
 ```
 
 | Параметр | Тип                                  | Description    |
