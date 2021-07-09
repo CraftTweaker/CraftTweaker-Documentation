@@ -46,7 +46,7 @@ mineralMixObject.removeOre("oreIron");
 
 ## Fail Chance Getter/Setter
 
-### Example
+### Ejemplo 
 
 ```zenscript
 //Getter

@@ -1,7 +1,7 @@
-# ProfilePreprocessor
+# Profile预处理器
 
-This preprocessor will profile the script actions.
+该预处理器将分析脚本操作。
 
 ## 调用
 
-You call the profile Preprocessor by adding `#profile` to your script file.
+你可以添加 `#profile` 到你的脚本来调用不执行预处理器。

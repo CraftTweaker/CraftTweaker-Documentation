@@ -11,7 +11,7 @@ mods.alchemistry.CombinerCombiner
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
 
 
-## Addition
+## Suma
 ```zenscript
 mods.alchemistry.AtomizerCombiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);

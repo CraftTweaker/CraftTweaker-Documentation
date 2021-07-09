@@ -11,7 +11,7 @@ import mods.ic2.Sawmill;
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-### Addition
+### Suma
 
 ```zenscript
 mods.ic2.Sawmill.addRecipe(IItemStack output, IIngredient input);

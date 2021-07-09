@@ -1,18 +1,35 @@
 # Salt Fission
-**Note: Partially Broken**
 
-## Importing the Package
+## Fission Emergency Cooling
+
+### Importing the Package
+`mods.nuclearcraft.FissionEmergencyCooling`
+
+### Adding Recipes
+```zenscript
+ mods.nuclearcraft.FissionEmergencyCooling.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double coolingPerInputMB); 
+```
+
+### Removing Recipes
+```zenscript
+mods.nuclearcraft.FissionEmergencyCooling.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.FissionEmergencyCooling.removeRecipeWithOutput(ILiquidStack fluidOutput);
+```
+
+## Molten Salt Fission
+
+### Importing the Package
 `mods.nuclearcraft.SaltFissionSaltFission`
 
-## Adding Recipes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
+mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltFission.removeAllRecipes();SaltFission.removeAllRecipes();
+mods.nuclearcraft.SaltFission.removeAllRecipes();
 ```
+

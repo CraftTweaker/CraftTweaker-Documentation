@@ -12,7 +12,7 @@ mods.naturesaura.AnimalSpawnerAnimalSpawner
 - **int time** The time processes take in ticks
 - **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredients** The inputs
 
-## Addition
+## Suma
 
 ```zenscript
 mods.naturesaura.AnimalSpawnermods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)

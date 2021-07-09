@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.Empowerer`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time);

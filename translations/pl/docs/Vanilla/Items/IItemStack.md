@@ -100,10 +100,10 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 | Method call                    | Returns                                                        | ParameterTypes |
 | ------------------------------ | -------------------------------------------------------------- | -------------- |
-| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
-| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
+| `stack.anyAmount()`            | A new IItemStack with any amount for recipes                   |                |
+| `stack.amount(int amount)`     | A new IItemStack with the specified amount                     | int            |
+| `stack.withAmount(int amount)` | A new IItemStack with the specified amount                     | int            |
+| `stack * amount`               | A new IItemStack with the specified amount                     | int            |
 | `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
 
 #### Weight
@@ -115,22 +115,22 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Damage
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
-| ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
-| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
-| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
+| Method call                                    | Returns                                      | ParameterTypes                             |
+| ---------------------------------------------- | -------------------------------------------- | ------------------------------------------ |
+| `stack.anyDamage()`                            | A new IItemStack with any damage for recipes |                                            |
+| `stack.withDamage(int damage)`                 | A new IItemStack with the specified damage   | int                                        |
+| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                               | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
 #### Tags
 
-| Method call                                  | Returns                                    | ParameterTypes                      |
-| -------------------------------------------- | ------------------------------------------ | ----------------------------------- |
-| `stack.withEmtpyTag()`                       | A new IItemStack with the changed property |                                     |
-| `stack.withTag(IData tag)`                   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
-| `stack.withTag(tag IDI, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
-| `stack.removeTag(nazwa ciągu)`               | A new IItemStack with the changed property | string                              |
-| `stack.updateTag(tag I)`                     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
-| `stack.updateTag(IData, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| Method call                                  | Returns                                                           | ParameterTypes                      |
+| -------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------- |
+| `stack.withEmptyTag()`                       | A new IItemStack with an empty NBT tag                            |                                     |
+| `stack.withTag(IData tag)`                   | A new IItemStack with the specified NBT tag                       | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(tag IDI, bool matchTagExact)` | A new IItemStack with the specified NBT tag                       | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(nazwa ciągu)`               | A new IItemStack with the specified NBT tag removed, if it exists | string                              |
+| `stack.updateTag(tag I)`                     | A new IItemStack with the added NBT tag                           | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData, bool matchTagExact)` | A new IItemStack with the added NBT tag                           | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block Casting
 
@@ -141,20 +141,20 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
-| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
-| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+| Method call                          | Returns                                                                                                                   | ParameterTypes                           |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| `stack.withDisplayName(String name)` | A new IItemStack with the specified display name. Unlike the `displayName` setter, this only applies to this single item. | string (supports color codes with "§")   |
+| `stack.withLore(String[] lore)`      | A new IItemStack with the specified lore.                                                                                 | string[] (supports color codes with "§") |
+| `stack.clearCustomName()`            | void (nothing)                                                                                                            |                                          |
 
 #### Cap NBT
 
 Gets or Sets an item's forge capability data. In most cases, the tag of the stack has what you need, this is mainly for advanced use cases.
 
-| Method call                    | Returns                                    |
-| ------------------------------ | ------------------------------------------ |
-| `stack.getCapNBT()`            | [IData](/Vanilla/Data/IData/)              |
-| `stack.withCapNBT(IData data)` | A new IItemStack with the changed property |
+| Method call                    | Returns                                            |
+| ------------------------------ | -------------------------------------------------- |
+| `stack.getCapNBT()`            | [IData](/Vanilla/Data/IData/)                      |
+| `stack.withCapNBT(IData data)` | A new IItemStack with the specified capability NBT |
 
 #### Enchantments
 
@@ -174,18 +174,18 @@ Gets or Sets an item's forge capability data. In most cases, the tag of the stac
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
-| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
+| Method call                                                        | Returns                                                                                                     | Parameter Types                                                          |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `stack.createEntityItem(IWorld world, float x, float y, float z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), float, float, float                    |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`             | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
 #### Mutable
 
 Gets a mutable ItemStack. Its damage, amount and tag is mutable. Its `withTag`, `withAmount` and other methods will change the item itself, rather than returning a new changed item.
 
-| Method call        | Returns                                               |
-| ------------------ | ----------------------------------------------------- |
-| `stack.mutable();` | [IMutableItemStack](/Vanilla/Items/IMutableItemStack) |
+| Method call       | Returns                                               |
+| ----------------- | ----------------------------------------------------- |
+| `stack.mutable()` | [IMutableItemStack](/Vanilla/Items/IMutableItemStack) |
 
 ## ItemTransformers and ItemConditions
 
@@ -298,11 +298,14 @@ If the item does not contain a tag, it will return an empty tag, never null.
 //Removes existing tags
 <minecraft:apple>.withTag({Unbreakable: 1});
 
-//creates apple with an emtpy tag
+//creates apple with an empty tag
 <minecraft:apple>.withEmptyTag();
 
 //removes a tag by its name
 item.removeTag("tagName");
+
+//removes all tags from an item
+item.removeTag(null);
 
 //update the existing tag
 //If the tag doesn't override an existing tag, they will stay constant.

@@ -9,23 +9,23 @@ IBiome 接口允许你获取注册的生物群系的信息。
 
 ## 调用 IBiome
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/)
+您可以使用 [IGame](/Vanilla/Game/IGame/) 的 `game.biomes` 获取所有已注册生物群系的列表。
 
 ## ZenGetters
 
 现在，IBiome 对象唯一的作用就是获取其中的信息。
 
-| ZenGetter                    | 返回值类型                                          |
-| ---------------------------- | ---------------------------------------------- |
-| name                         | string                                         |
-| canRain                      | boolean                                        |
-| isSnowyBiome                 | boolean                                        |
-| highHumidity                 | boolean                                        |
-| spawningChance               | float                                          |
-| baseHeight                   | float                                          |
-| heightVariation              | float                                          |
-| rainfall                     | float                                          |
-| waterColorMultiplier         | int                                            |
-| ignorePlayerSpawnSuitability | boolean                                        |
-| temperature                  | float                                          |
-| types                        | List<[IBiomeType](/Vanilla/Biomes/IBiomeType/) |
+| ZenGetter                    | 返回值类型                                       |
+| ---------------------------- | ------------------------------------------- |
+| name                         | string                                      |
+| canRain                      | boolean                                     |
+| isSnowyBiome                 | boolean                                     |
+| highHumidity                 | boolean                                     |
+| spawningChance               | float                                       |
+| baseHeight                   | float                                       |
+| heightVariation              | float                                       |
+| rainfall                     | float                                       |
+| waterColorMultiplier         | int                                         |
+| ignorePlayerSpawnSuitability | boolean                                     |
+| temperature                  | float                                       |
+| types                        | 列表[IBiomeType](/Vanilla/Biomes/IBiomeType/) |

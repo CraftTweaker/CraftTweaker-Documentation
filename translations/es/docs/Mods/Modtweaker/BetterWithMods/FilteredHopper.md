@@ -4,7 +4,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
 
 # Filters
 
-* Addition
+* Suma
     
     * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
     ```zenscript

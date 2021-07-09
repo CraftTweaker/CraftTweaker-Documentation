@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Pulverizer`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);

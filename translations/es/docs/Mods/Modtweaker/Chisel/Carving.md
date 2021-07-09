@@ -4,7 +4,7 @@
 
 `mods.chisel.Carving`
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);

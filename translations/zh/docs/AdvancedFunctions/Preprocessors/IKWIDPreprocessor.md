@@ -1,11 +1,11 @@
-# IKWID Preprocessor
+# IKWID 预处理器
 
-This preprocessor will make it that all logger warnings and errors aren't printed to the player chat.
+该预处理器将确保所有警告和错误都不会打印到玩家聊天记录中。
 
 ## 调用
 
-You call the IKWID Preprocessor by adding `#ikwid` to your script file.
+你可以添加 `#ikwid` 到你的脚本来调用调试预处理器。
 
 ## 它的作用
 
-It globally suppresses errors and warnings to send to players' chat. It is only supposed to be used when you are already done with development and want to suppress false positive errors from the user.
+它可以停止全局发送给玩家聊天的错误和警告。 仅当你已经完成开发并希望停止用户的报错时，才应使用它。

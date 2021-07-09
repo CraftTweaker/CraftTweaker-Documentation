@@ -13,7 +13,7 @@ mods.naturesaura.AltarAltar
 - **int aura** The amount of Aura required for the completion of the recipe
 - **int time** The time processes take in ticks
 
-## Addition
+## Suma
 
 ```zenscript
 mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)

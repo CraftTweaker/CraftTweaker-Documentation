@@ -11,7 +11,7 @@
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 - **float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);

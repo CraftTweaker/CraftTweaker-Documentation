@@ -14,7 +14,7 @@
 
 **- float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.SliceNSplice.  

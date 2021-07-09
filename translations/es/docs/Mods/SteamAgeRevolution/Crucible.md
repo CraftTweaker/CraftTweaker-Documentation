@@ -12,7 +12,7 @@ The Crucible is a machine that converts an input item into an output fluid using
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);

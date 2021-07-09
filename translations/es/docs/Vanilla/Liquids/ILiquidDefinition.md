@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 So, what can we do with it?
 
-### Multiplication
+### Producto
 
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 

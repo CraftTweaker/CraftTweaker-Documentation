@@ -20,7 +20,7 @@
 
 **@Optional int energyCost** - How much FE the recipe uses. Defaults to 5000.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);

@@ -13,7 +13,7 @@ The Distiller is a machine that converts an input fluid into an output fluid and
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Suma
 
 ```zenscript
 mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outputStack, ILiquidStack output, int craftTime, int steamCost);

@@ -17,22 +17,22 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | 기능                             | 타입                                                  |
-| --------------- | ------------------- | ------------------------------ | --------------------------------------------------- |
-|                 | canSpawnInBlock     | 만약 엔티티가 이 블럭에 스폰이 가능한지의 여부를 반환 | bool                                                |
-| creativeTab     | creativeTab         |                                | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                | float                                               |
-| id              |                     | 블럭 ID를 반환                      | string                                              |
-| displayName     |                     | 블럭의 표시명을 반환                    | string                                              |
-|                 | hardness            |                                | int                                                 |
-| harvestLevel    |                     | 블럭의 하베스트 레벨을 반환                | int                                                 |
-| harvestTool     |                     | 블럭의 하베스트 가능 툴을 반환              | string                                              |
-|                 | lightOpacity        |                                | int                                                 |
-|                 | lightLevel          |                                | int                                                 |
-|                 | resistance          |                                | int                                                 |
-| unlocalizedName |                     | 번역되지 않은 블럭의 이름을 반환             | string                                              |
-| tickRandomly    | tickRandomly        |                                | bool                                                |
+| ZenGetter       | ZenSetter           | 기능                                                | 타입                                                  |
+| --------------- | ------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| canSpawnInBlock |                     | Returns true if an entity can spawn in this block | bool                                                |
+| creativeTab     | creativeTab         |                                                   | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                                   | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                                   | float                                               |
+| id              |                     | 블럭 ID를 반환                                         | string                                              |
+| displayName     |                     | 블럭의 표시명을 반환                                       | string                                              |
+| hardness        | hardness            |                                                   | int                                                 |
+| harvestLevel    |                     | 블럭의 하베스트 레벨을 반환                                   | int                                                 |
+| harvestTool     |                     | 블럭의 하베스트 가능 툴을 반환                                 | string                                              |
+|                 | lightOpacity        |                                                   | int                                                 |
+|                 | lightLevel          |                                                   | int                                                 |
+|                 | resistance          |                                                   | int                                                 |
+| unlocalizedName |                     | 번역되지 않은 블럭의 이름을 반환                                | string                                              |
+| tickRandomly    | tickRandomly        |                                                   | bool                                                |
 
 ## ZenMethods
 
@@ -72,11 +72,28 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 
 ### 블럭의 하베스트 레벨을 설정
 
-string타입의 인수와 int타입의 인수를 지정하며  
-반환값은 없습니다. 
+Uses a string, an int and an optional [IBlockState](/Vanilla/Blocks/IBlockState/).  
+if the IBlockState argument is ignored, it will set harvest level to all block states in the block definition.  
+Returns void (nothing).
 
 ```zenscript
-defObj.setHarvestLevel(string toolclass, int level);
+defObj.setHarvestLevel(string toolclass, int level, @Optional IBlockState state);
+```
+
+### Get harvest level of block state
+
+returns an int.
+
+```zenscript
+defObj.getHarvestLevel(IBlockState state);
+```
+
+### Get harvest tool of block state
+
+returns a string.
+
+```zenscript
+defObj.getHarvestTool(IBlockState state);
 ```
 
 ### Get a block state by metadata
@@ -86,4 +103,13 @@ Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 defObj.getStateFromMeta(int meta);
+```
+
+### Block effective for the tool
+
+Uses a string and an [IBlockState](/Vanilla/Blocks/IBlockState/).  
+Returns a bool.
+
+```zenscript
+defObj.isToolEffective(String type, IBlockState state);
 ```

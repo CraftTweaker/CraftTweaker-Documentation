@@ -4,7 +4,7 @@
 
 `mods.rockytweaks.Anvil`
 
-## Addition
+## Suma
 
 ### Single
 

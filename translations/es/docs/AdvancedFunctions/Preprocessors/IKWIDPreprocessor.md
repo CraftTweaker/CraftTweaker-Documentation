@@ -1,4 +1,4 @@
-# Preprocesador "Sé lo que estoy haciendo"
+# Preprocesador "Si no miras no esta"
 
 Este preprocesador elimina todos los avisos y errores que puedan aparecer al jugador.
 

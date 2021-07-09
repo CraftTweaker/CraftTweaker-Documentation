@@ -56,7 +56,7 @@ A Function applies a function to a single element, returning another element, wh
 
 | Class Name             | Function Signature                                 | Notes |
 | ---------------------- | -------------------------------------------------- | ----- |
-| `Function`             | `function apply(t as T) as R;`                     | \-   |
+| `Función`              | `function apply(t as T) as R;`                     | \-   |
 | `DoubleFunction`       | `function apply(value as double) as R;`            | \-   |
 | `DoubleToIntFunction`  | `function applyAsInt(value as double) as int;`     | \-   |
 | `DoubleToLongFunction` | `function applyAsLong(value as double) as long;`   | \-   |

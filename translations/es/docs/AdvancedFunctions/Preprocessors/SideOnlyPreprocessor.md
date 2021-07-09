@@ -8,7 +8,7 @@ Se usa así:
 
 `` `#sideonly nombreDeLado ` ``
 
-` #sideonly client ` O `#sideonly server ` <br/>  <br/>
+#sideonly client ` O alternativamente: `#sideonly server  <br/>  <br/>
 
 ## Lo que hace:
 

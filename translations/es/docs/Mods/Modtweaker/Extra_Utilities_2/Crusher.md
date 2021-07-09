@@ -13,7 +13,7 @@ You can call the Crusher package using `mods.extrautils2.Crusher`
 mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);

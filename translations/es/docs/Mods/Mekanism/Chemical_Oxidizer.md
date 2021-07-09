@@ -2,7 +2,7 @@
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Oxidizer through the command `/ct mekrecipes oxidizer`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.chemical.oxidizer.addRecipe(IIngredient inputStack, IGasStack outputGas);

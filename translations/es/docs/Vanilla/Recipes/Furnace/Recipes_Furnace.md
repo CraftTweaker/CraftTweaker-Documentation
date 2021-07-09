@@ -27,7 +27,7 @@ There also is a third way of removing furnace recipes, though this one will remo
 furnace.removeAll();
 ```
 
-### Addition
+### Suma
 
 There are 2 commands for adding furnace recipes:
 
@@ -85,7 +85,7 @@ This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:q
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### Suma
 
 This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 

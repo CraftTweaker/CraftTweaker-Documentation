@@ -13,7 +13,7 @@ You can call the package using `mods.forestry.Moistener`
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 

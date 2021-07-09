@@ -10,7 +10,7 @@
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int hardness** Minimum hardness requirement for blade.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);

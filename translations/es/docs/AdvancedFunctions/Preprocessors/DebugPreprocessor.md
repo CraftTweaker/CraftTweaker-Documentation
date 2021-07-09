@@ -1,4 +1,4 @@
-# Procesador de Depuración
+# Preprocesador de Depuración
 
 Este procesador activa el modo de depuración
 

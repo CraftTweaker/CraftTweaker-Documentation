@@ -23,14 +23,6 @@ mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## Removal by output
-
-* Remove a recipe based on the output
-
-```zenscript
-mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
-```
-
 ## Remove all
 
 * Remove all recipes
@@ -56,22 +48,20 @@ The Turntable has a recipe builder that allows more precise control over the rec
 * Turntable methods
      
      * Sets up the inputs and outputs of the recipe  
-          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
+          buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Sets the rotations required for the recipe to finish. This defaults to 8.  
-          zenscript setRotations(int rotations)  
               zenscript
               setRotations(int rotations)
      
      * Set the block that is placed when the recipe is finished.  
-          zenscript setProductState(IItemStack productState)  
               zenscript
               setProductState(IItemStack productState)
      
      * Finalize the recipe and add it to the game  
-          zenscript build()  
+          build()  
               zenscript
               build()
 

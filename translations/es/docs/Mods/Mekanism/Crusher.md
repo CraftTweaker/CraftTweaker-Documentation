@@ -2,7 +2,7 @@
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crusher through the command `/ct mekrecipes crusher`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);

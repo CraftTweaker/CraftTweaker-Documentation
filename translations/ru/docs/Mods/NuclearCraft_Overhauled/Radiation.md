@@ -101,9 +101,24 @@ IEntityLivingBase::getRadiationLevel();
 ```
 
 ## Radiation
-This method gets the radiation of an `IIngredient` in rads/tick.
+
+### Ingredient Radiation
+This method gets or sets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
-mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient ingredient);
+mods.nuclearcraft.Radiation.setRadiationLevel(IIngredient ingredient, double radiation);
+```
+
+### Food Radiation
+```zenscript
+mods.nuclearcraft.Radiation.setFoodRadiationStats(IItemStack food, double radiation, double resistance); 
+```
+
+### Other Radiation
+**Note: `setMaterialRadiationLevel(...)` can accept Unix-style wildcards.**
+```zenscript
+mods.nuclearcraft.Radiation.addToRadiationBlacklist(IIngredient ingredient); 
+mods.nuclearcraft.Radiation.setMaterialRadiationLevel(String oreSuffix, double radiation); 
 ```
 
 ## Radiation Immunity

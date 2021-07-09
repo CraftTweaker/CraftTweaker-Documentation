@@ -2,7 +2,7 @@
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Dissolution Chamber through the command `/ct mekrecipes dissolution`
 
-## Addition
+## Suma
 
 ```zenscript
 mods.mekanism.chemical.dissolution.addRecipe(IIngredient inputStack, IGasStack outputGas);

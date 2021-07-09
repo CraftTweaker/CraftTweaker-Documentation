@@ -18,7 +18,7 @@ The Mint modifier changes the recipes registered in the `COIN` recipe map in The
 
 Note that these recipes require the Numismatic Press Augment.
 
-### Addition
+### Suma
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -40,7 +40,7 @@ The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or
 
 These recipes do not require a specific Augment.
 
-### Addition
+### Suma
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -62,7 +62,7 @@ The Storage modifier changes the recipes registered in the `PLATE` recipe map in
 
 These recipes do not require a specific Augment, and seemingly are used only for plates.
 
-### Addition
+### Suma
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -84,7 +84,7 @@ The Gear modifier changes the recipes registered in the `GEAR` recipe map in The
 
 Note that these recipes require the Gearworking Die Augment.
 
-### Addition
+### Suma
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);

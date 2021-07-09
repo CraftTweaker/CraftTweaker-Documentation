@@ -4,7 +4,7 @@
 
 `mods.bloodmagic.AlchemyArray`
 
-## Addition
+## Suma
 
 ```zenscript
 //mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);

@@ -16,7 +16,7 @@
 - **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
-## Addition
+## Suma
 
 ```zenscript
 mods.exnihilocreatio.Ore.addRecipe(String,

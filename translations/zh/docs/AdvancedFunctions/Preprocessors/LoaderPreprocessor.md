@@ -1,14 +1,18 @@
 # 加载器预处理器
 
-加载器预处理器将会指定脚本的加载器。
+The loader preprocessor will set the script's loaders.
 
 ## 调用
 
-你可以添加 `#loader loaderName` 来调用加载器预处理器，`loaderName（加载器名称）`是你要分配给你的脚本加载器的名称  
-示例： `#loader contenttweaker`
+You call the loader Preprocessor by adding `#loader loaderNames...` to your script file with `loaderNames...` being the names of the loaders you want to assign the script to, seperated by spaces.  
+Example 1: `#loader contenttweaker`  
+Example 2: `#loader preinit crafttweaker gregtech`
 
 ## 它的作用
 
-有加载器预处理器的脚本将只会被指定的加载器加载。  
-上面的例子里， CraftTweaker 的加载器将不会触及该文件，取而代之的，叫 “contentTweaker” 的加载器将会执行这个脚本。  
-如果你不指定加载器，它默认会是 “crafttweaker” 。
+Scripts with the loader Preprocessor will only be loaded by the loaders specified.  
+In the first example above, crafttweaker's loader won't touch the file, instead the loader called "contenttweaker" will execute that script.  
+In the second example, the loaders called "preinit", "crafttweaker" and "gregtech" will each execute that script.  
+If you don't specify that preprocessor, it will default to being just "crafttweaker".  
+Is is highly recommended that you define only a single loader for a script running any code, as executing it multiple times with different loaders will usually lead to errors or undefined behaviour.  
+Defining multiple loaders is useful for declaring [static variables](/AdvancedFunctions/Global_Static_Variables/) and [custom functions](/AdvancedFunctions/Custom_Functions/) in utility scripts which are available during multiple loaders' execution via [cross-script references](/AdvancedFunctions/Cross-Script_Reference/).

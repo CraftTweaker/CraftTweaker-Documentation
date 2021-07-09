@@ -1,83 +1,85 @@
-# Conditional Statements
+# Código condicional
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Es posible que en algun momento quieras que una parte de código solo se ejecute si unos criterios determinados se cumplen. Para eso es lo que en programación existe el Código condicional.
 
-## If
+## If 
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
+Una declaración con if es la primera parte de Código condicional. Declara una condición que debe ser verdadera para que el código se ejecute. **¡Cuidado, necesitas 2 iguales para comparar dos valores!**. (Eso es porque un igual se interpreta como una declaración de una variable)</p> 
 
 ```zenscript
-val test = 0;
+val prueba = 0;
 
-if (test == 0) { //true
-    print("Test is zero!");
+if (prueba == 0) { //Verdadero
+    print("Prueba es igual a cero");
 }
 ```
 
-## Else
+## Else 
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Una declaración else puede ser añadido al final de una parte de código condicional para declarar lo que debería pasar cuando el ` if <code/> que viene antes es falso,  y por tanto no se ejecuta.</p>
 
-```zenscript
-var test = 0;
+<pre><code class="zenscript">var Prueba = 0;
 
-if (test == 0) { //true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+if (Prueba == 0) { //verdadero
+    //Se ejecutará cuando prueba es igual a 0
+    print("Prueba es cero");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //Se ejecutará cuando prueba NO es igual a 0
+    print("Prueba NO es cero");
 }
 
-test = 1;
-if (test == 0) { //false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+Prueba = 1;
+if (Prueba == 0) { //falso
+    //Se ejecutará cuando prueba es igual a 0
+    print("Ahora, prueba es cero");
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //will be executed when Prueba is not equal to 0
+    print("Ahora, prueba no es 0");
 }
 
-```
+// Por tanto en nuestro log veremos:
+Prueba es cero
+Ahora, prueba no es 0
 
-## Things to check for
+`</pre> 
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+## Cosas que revisar
 
-Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
+Los cálculos posibles son: `+`,`-`,`*`,`/`,`módulo(%)`,`concadenación(~)`
+
+Operadores posibles son `Lógico OR(||)`, `Lógico AND(&&)`, `deBits OR(|)`, `deBits AND(&)`, and `deBits XOR(^)`
 
 ```zenscript
-//You can check for:
+//Puedes comparar:
 
-
-//Number values
+//Valores númericos
 val a = 0 as int;
-if (a == 0) { print("NumVal"); }
+if (a == 0){ print("a es igual a cero");}
 
-//Calculated number values
-val b = 1;
-val c = 5;
-//All evaluate to true
-if (b+c == 6) { print("Num1!"); }
-if (b*c == 5) { print("Num2!"); }
-if (b/c == 0.2) { print("Num3!"); }
+//Valores númericos con operaciones
 
-//OR, XOR, AND
-val d = "Hello";
-val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+//Todas son ciertas
+if (b+c == 6) { print("¡Número Uno!"); } // Matze Knop estará orgulloso
+if (b*c == 5) { print("¡Número dos!"); }
+if (b/c == 0.2) { print("¡Número tres"); }
 
-//||(OR) means, as long as one of the criteria is met, it evaluates to true
-if (d == "Hello" || e == "Hello") { print("OR1!"); }        //true
-if (d == "Hello" || e == "World") { print("OR2!"); }        //true
+//Operadores condicionales (||), (^), (&&)
+||: Con sólo que uno de los parámetros sea cierto, se ejecutará el bloque condicional
+^: Sólo uno puede ser cierto, de otro modo no ocurrirá nada
+&& Todos los parámetros deben ser ciertos.
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
-if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }        //true
-if (d == "Hello" ^ e == "World") { print("XOR2!"); }        //false
+val d = "Hola";
+val e = "Mundo";
+val f = d~e; //f = "HolaMundo", ~ concadena los strings
 
-//&&(AND) means, both criteria need to be met, otherwise it evaluates to false
-if (d == "Hello" && e == "Hello") { print("AND1!"); }       //false
-if (d == "Hello" && e == "World") { print("AND2!"); }       //true
+if (d == "Hola" || e == "Hola") { print("OR1!"); }        //cierto
+if (d == "Hola" || e == "Mundo") { print("OR2!"); }        //cierto
+
+if (d == "Hola" ^ e == "Hola") { print("XOR1!"); }        //cierto
+if (d == "Hola" ^ e == "Mundo") { print("XOR2!"); }        //falso
+
+if (d == "Hola" && e == "Hola") { print("AND1!"); }       //falso
+if (d == "Hola" && e == "Mundo") { print("AND2!"); }       //cierto
 ```
 
 ## The ? Operator
@@ -106,7 +108,7 @@ switchy ?
 
 You can use these operators. All the examples given evaluate to true.
 
-| Name             | token        | Explanation                                                                                                                                                                  | Example           |
+| Name             | token        | Explanation                                                                                                                                                                  | Ejemplo           |
 | ---------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | Not              | `!`          | Inverts a boolean                                                                                                                                                            | !false            |
 | Not Equal        | `!=`         | Checks if the value before and after are not equal                                                                                                                           | 1 != 2            |

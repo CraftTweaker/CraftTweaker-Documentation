@@ -23,7 +23,7 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ---------- | ------------------------------------- |
 | `canceled` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| `target`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 

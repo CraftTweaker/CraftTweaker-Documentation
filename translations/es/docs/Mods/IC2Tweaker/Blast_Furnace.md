@@ -11,7 +11,7 @@
 - **int totalFluidCost** Per-tick IC2 liquefied air cost, measured in mB/tick
 - **int time** Total time cost, measured in ticks
 
-## Addition
+## Suma
 
 ```zenscript
 mods.ic2.BlastFurnace.addRecipe(IItemStack[] outputs, IIngredient input, int totalFluidCost, int time);

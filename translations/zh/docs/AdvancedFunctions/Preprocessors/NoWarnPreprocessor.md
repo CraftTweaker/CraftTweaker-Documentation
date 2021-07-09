@@ -1,11 +1,11 @@
-# NoWarnPreprocessor
+# NoWarn预处理器
 
-This preprocessor will make it that all logger warnings aren't printed to the player chat.
+该预处理器将确保所有警告都不会打印到玩家聊天记录中。
 
 ## 调用
 
-You call the no warn Preprocessor by adding `#nowarn` to your script file.
+你可以添加 `#nowarn` 到你的脚本来调用不执行预处理器。
 
 ## 它的作用
 
-It globally suppresses warnings to send to players' chat. The only thing that differs from [`#ikwid`](/AdvancedFunctions/Preprocessors/IKWIDPreprocessor) is that it doesn't suppress errors.
+它可以停止全局发送给玩家聊天的警告。 唯一不同于 [`#ikwid`](/AdvancedFunctions/Preprocessors/IKWIDPreprocessor) 的是，它依然会报告错误。
