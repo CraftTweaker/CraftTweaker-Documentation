@@ -13,7 +13,7 @@ mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
 
-## Addition
+## Recipe Addition
 
 ```zenscript
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
