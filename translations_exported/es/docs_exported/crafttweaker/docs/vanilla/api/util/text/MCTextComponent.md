@@ -145,6 +145,18 @@ MCTextComponent.getStringTruncated(maxLen as int) as string
 
 :::
 
+:::group{name=getStyle}
+
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+// MCTextComponent.getStyle() as MCStyle
+
+myMCTextComponent.getStyle();
+```
+
+:::
+
 :::group{name=getUnformattedComponentText}
 
 Return Type: string
@@ -206,5 +218,6 @@ myMCTextComponent << component as MCTextComponent
 | ------------------------ | ---------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
 | formattedText            | string                                                                                   | true       | false      | No Description Provided |
 | siblings                 | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      | No Description Provided |
+| estilo                   | [Estilo MC](/vanilla/api/util/text/MCStyle)                                              | true       | false      | No Description Provided |
 | unformattedComponentText | string                                                                                   | true       | false      | No Description Provided |
 
