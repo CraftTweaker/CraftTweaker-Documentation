@@ -252,7 +252,9 @@ Sets the block's render type.
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+// BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+
+myBlockBuilder.withRenderType(BlockRenderType.TRANSLUCENT);
 ```
 
 | Parameter | Type | Description |

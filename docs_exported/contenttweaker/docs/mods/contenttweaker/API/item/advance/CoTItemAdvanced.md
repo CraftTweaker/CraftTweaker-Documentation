@@ -24,12 +24,12 @@ Sets what will happen when the item is ticked in an inventory.
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
-CoTItemAdvanced.setInventoryTick(func as IItemRightClick) as CoTItemAdvanced
+CoTItemAdvanced.setInventoryTick(func as IItemInventoryTick) as CoTItemAdvanced
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| func | [IItemRightClick](/mods/contenttweaker/API/functions/IItemRightClick) | an IItemInventoryTick function |
+| func | [IItemInventoryTick](/mods/contenttweaker/API/functions/IItemInventoryTick) | an IItemInventoryTick function |
 
 
 :::
