@@ -20,23 +20,25 @@ FluidBuilder implements the following interfaces. That means all methods defined
 Creates a new FluidBuilder with default colorized textures
 ```zenscript
 new FluidBuilder(isMolten as boolean, color as int) as FluidBuilder
+new FluidBuilder(true, 0xff66ccff);
 ```
 
-| 参数       | 类型      | 描述                     |
-| -------- | ------- | ---------------------- |
-| isMolten | boolean | if the fluid is molten |
-| color    | int     | the color of the fluid |
+| 参数       | 类型      | 描述                           |
+| -------- | ------- | ---------------------------- |
+| isMolten | boolean | if the fluid is molten       |
+| color    | int     | the color of the fluid, ARGB |
 
 
 Creates a new FluidBuilder with two textures
 ```zenscript
 new FluidBuilder(isMolten as boolean, color as int, stillTexture as MCResourceLocation, flowTexture as MCResourceLocation) as FluidBuilder
+new FluidBuilder(true, 0xff66ccff, <resource:contenttweaker:fluid/liquid>, <resource:contenttweaker:fluid/liquid_flowing>);
 ```
 
 | 参数           | 类型                                                         | 描述                                                   |
 | ------------ | ---------------------------------------------------------- | ---------------------------------------------------- |
 | isMolten     | boolean                                                    | if the fluid is molten                               |
-| color        | int                                                        | the bucket fluid color                               |
+| color        | int                                                        | the bucket fluid color, ARGB                         |
 | stillTexture | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | the texture resource location of still fluid block   |
 | flowTexture  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | the texture resource location of flowing fluid block |
 
@@ -72,7 +74,9 @@ How fast you can walk in the fluid?
 Return Type: [FluidBuilder](/mods/contenttweaker/API/fluid/FluidBuilder)
 
 ```zenscript
-FluidBuilder.density(density as int) as FluidBuilder
+// FluidBuilder.density(density as int) as FluidBuilder
+
+myFluidBuilder.density(1400);
 ```
 
 | 参数      | 类型  | 描述                      |
@@ -105,7 +109,9 @@ The light-level emitted by the fluid
 Return Type: [FluidBuilder](/mods/contenttweaker/API/fluid/FluidBuilder)
 
 ```zenscript
-FluidBuilder.luminosity(luminosity as int) as FluidBuilder
+// FluidBuilder.luminosity(luminosity as int) as FluidBuilder
+
+myFluidBuilder.luminosity(15);
 ```
 
 | 参数         | 类型  | 描述                      |
@@ -124,7 +130,9 @@ The Fluid's temperature
 Return Type: [FluidBuilder](/mods/contenttweaker/API/fluid/FluidBuilder)
 
 ```zenscript
-FluidBuilder.temperature(temperature as int) as FluidBuilder
+// FluidBuilder.temperature(temperature as int) as FluidBuilder
+
+myFluidBuilder.temperature(500);
 ```
 
 | 参数          | 类型  | 描述                      |
@@ -143,7 +151,9 @@ How quickly the fluid spreads
 Return Type: [FluidBuilder](/mods/contenttweaker/API/fluid/FluidBuilder)
 
 ```zenscript
-FluidBuilder.viscosity(viscosity as int) as FluidBuilder
+// FluidBuilder.viscosity(viscosity as int) as FluidBuilder
+
+myFluidBuilder.viscosity(800);
 ```
 
 | 参数        | 类型  | 描述                      |
