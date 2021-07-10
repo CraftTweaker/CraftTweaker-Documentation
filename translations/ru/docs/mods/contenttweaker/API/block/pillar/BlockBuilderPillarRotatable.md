@@ -45,7 +45,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resou
 
 | Параметр   | Тип                                                                              | Описание                                  |
 | ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
+| endTexture | MCResourceLocation | The texture to be used for the end sides. |
 
 
 
@@ -62,7 +62,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((block
 
 | Параметр   | Тип                                                                                                                                                                                                     | Описание            |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| endTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 ### withSideTexture
@@ -80,7 +80,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<reso
 
 | Параметр     | Тип                                                                              | Описание                              |
 | ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+| sidesTexture | MCResourceLocation | The texture to be used for the sides. |
 
 
 
@@ -97,7 +97,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((bloc
 
 | Параметр     | Тип                                                                                                                                                                                                     | Описание            |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| sidesTexture | function.Function&lt;MCResourceLocation, MCResourceLocation&gt; | The function to use |
 
 
 

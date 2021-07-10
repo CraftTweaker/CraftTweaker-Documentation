@@ -4,7 +4,7 @@
 
 | 名称     | 类型                                          |
 | ------ | ------------------------------------------- |
-| 流体/t   | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 流体/t   | Fluidstack |
 | Flux/t | 整型                                          |
 
 比如：
@@ -18,7 +18,7 @@ mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:wate
 
 | 名称   | 类型                                          |
 | ---- | ------------------------------------------- |
-| 流体/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| 流体/t | Fluidstack |
 
 比如：
 ```ZenScript

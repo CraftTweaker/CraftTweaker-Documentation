@@ -5,7 +5,7 @@
 
 ## Methods
 - **String name** Recipe name
-- **[IItemStack](/Vanilla/Items/IItemStack/) output**
+- **[IItemStack](/vanilla/api/items/IItemStack) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **int activateCount** Activate millstone count
 - **String group** Recipe group
