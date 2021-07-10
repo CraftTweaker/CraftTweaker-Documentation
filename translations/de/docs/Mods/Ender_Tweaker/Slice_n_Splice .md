@@ -4,7 +4,7 @@
 
 `import mods.enderio.SliceNSplice;`
 
-## Methods
+## Methoden
 
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
