@@ -239,7 +239,9 @@ Sets the block's render type. Will also set the block as [this](.)#notSolid() if
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+// BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+
+myBlockBuilder.withRenderType(BlockRenderType.TRANSLUCENT);
 ```
 
 | 参数         | 类型                                                                | 描述                      |
