@@ -96,6 +96,26 @@ Replacer.forEverything();
 
 :::
 
+:::group{name=forMods}
+
+Creates a `Replacer` that targets only the given mods. <br />  <br />  In other words, the replacer will perform ingredient replacement across <strong>all</strong> <br />  [IRecipeManager](/vanilla/api/managers/IRecipeManager)s, targeting <strong>only</strong> the recipes added by the specified mods.
+
+Returns: A new `Replacer` that targets only the specified mods.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forMods(mods as string[]) as Replacer
+
+Replacer.forMods("minecraft");
+```
+
+| Parameter | Type     | Description                                                                         |
+| --------- | -------- | ----------------------------------------------------------------------------------- |
+| mods      | string[] | The mods whose recipes should be targeted by the replacer. It must be at least one. |
+
+
+:::
+
 :::group{name=forOutput}
 
 Creates a `Replacer` that will perform replacement only on recipes with the given output, optionally <br />  restricted to a set of whitelisted managers. <br />  <br />  The passed in whitelist may also be empty, in which case it'll be treated as meaning every possible recipe <br />  manager. If the whitelist is not empty, on the other hand, only the selected recipe managers will be considered <br />  when replacing ingredients.
@@ -133,6 +153,46 @@ Replacer.forRecipes(craftingTable.getRecipeByName("minecraft:emerald_block"));
 | Parameter | Type                                                 | Description                                                                   |
 | --------- | ---------------------------------------------------- | ----------------------------------------------------------------------------- |
 | recipes   | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[] | The recipes that should be targeted by the replacer. It must be at least one. |
+
+
+:::
+
+:::group{name=forRegexRecipes}
+
+Creates a `Replacer` that will perform replacement on all recipes whose names match the given regular <br />  expression.
+
+Returns: A new `Replacer` for recipes that satisfy the given regular expression.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forRegexRecipes(regex as string) as Replacer
+
+Replacer.forRegexRecipes("\\d_\\d");
+```
+
+| Parameter | Type   | Description                                              |
+| --------- | ------ | -------------------------------------------------------- |
+| regex     | string | The regular expression that should be used for matching. |
+
+
+:::
+
+:::group{name=forRegexTypes}
+
+Creates a `Replacer` that will perform replacement on all [IRecipeManager](/vanilla/api/managers/IRecipeManager)s that match the given <br />  regular expression. <br />  <br />  The managers will be matched on their bracket identifier, which corresponds to their bracket expression <br />  stripped of `<recipetype:` and `>`. E.g., a manager obtained in a script via <br />  `<recipetype:minecraft:crafting>` will be matched on `minecraft:crafting` only.
+
+Returns: A new `Replacer` for managers that satisfy the given regular expression.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.forRegexTypes(regex as string) as Replacer
+
+Replacer.forRegexTypes("^minecraft:[a-z]*ing");
+```
+
+| Parameter | Type   | Description                                              |
+| --------- | ------ | -------------------------------------------------------- |
+| regex     | string | The regular expression that should be used for matching. |
 
 
 :::
