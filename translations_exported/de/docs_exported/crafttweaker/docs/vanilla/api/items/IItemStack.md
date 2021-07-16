@@ -406,6 +406,22 @@ Return Type: boolean
 
 :::
 
+:::group{name=modifyShiftTooltip}
+
+Return Type: void
+
+```zenscript
+IItemStack.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+```
+
+| Parameter         | Type                                                    | Beschreibung            | Optional | DefaultValue |
+| ----------------- | ------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | false    |              |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | true     |              |
+
+
+:::
+
 :::group{name=modifyTooltip}
 
 Return Type: void
