@@ -203,6 +203,22 @@ IngredientAny.getInstance().matches(<item:minecraft:iron_ingot>);
 
 :::
 
+:::group{name=modifyShiftTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientAny.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+```
+
+| Параметр          | Тип                                                     | Description             | Optional | DefaultValue |
+| ----------------- | ------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | false    |              |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | true     |              |
+
+
+:::
+
 :::group{name=modifyTooltip}
 
 Return Type: void
