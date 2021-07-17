@@ -184,6 +184,22 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 
 :::
 
+:::group{name=modifyShiftTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+```
+
+| 参数                | 类型                                                      | 描述                      | 可选    | DefaultValue |
+| ----------------- | ------------------------------------------------------- | ----------------------- | ----- | ------------ |
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | false |              |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | true  |              |
+
+
+:::
+
 :::group{name=modifyTooltip}
 
 Return Type: void
