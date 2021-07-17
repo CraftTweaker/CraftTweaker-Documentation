@@ -595,6 +595,21 @@ myMCEntity.isSilent();
 
 :::
 
+:::group{name=isSneaking}
+
+Checks if this Entity is sneaking or not.
+
+Returns: True if sneaking. False otherwise.  
+Return Type: boolean
+
+```zenscript
+// MCEntity.isSneaking() as boolean
+
+myMCEntity.isSneaking();
+```
+
+:::
+
 :::group{name=isSpectator}
 
 Checks if this Entity is in spectator mode.
@@ -868,6 +883,25 @@ myMCEntity.setSilent(true);
 
 :::
 
+:::group{name=setSneaking}
+
+Sets the sneaking value of this Entity.
+
+Return Type: void
+
+```zenscript
+// MCEntity.setSneaking(value as boolean) as void
+
+myMCEntity.setSneaking(true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | boolean | The new sneaking value |
+
+
+:::
+
 :::group{name=teleportKeepLoaded}
 
 Teleports the entity, forcing the destination to stay loaded for a short time
@@ -925,6 +959,7 @@ myMCEntity.updateData({key: "value"});
 | onGround | [MCEntity](/vanilla/api/entity/MCEntity) | true | true | Sets if the Entity should be considered on the ground or not. |
 | position | [BlockPos](/vanilla/api/util/BlockPos) | true | false | Gets this Entity's position in the world. |
 | silent | boolean | true | true | Checks if this Entity is silent. <br />  <br />  Silent Entities do not play sounds. |
+| sneaking | boolean | true | true | Checks if this Entity is sneaking or not. |
 | spectator | boolean | true | false | Checks if this Entity is in spectator mode. |
 | type | [MCEntityType](/vanilla/api/entities/MCEntityType) | true | false | Gets this Entity's type. |
 | uuid | string | true | false | Gets the UUID of this Entity. |
