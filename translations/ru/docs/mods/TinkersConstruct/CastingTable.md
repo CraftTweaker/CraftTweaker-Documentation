@@ -1,6 +1,6 @@
 ::requiredMod[Tinkers' Construct]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/tinkers-construct}
 
-# Tinkers' Construct Casting Basin
+# Tinkers' Construct Casting Table
 
 The Casting Table is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
 
