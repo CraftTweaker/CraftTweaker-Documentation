@@ -1,135 +1,141 @@
 # MCSuggestion
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestion
+import crafttweaker.api.commands.custom.MCSuggestion;
 ```
+
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
 
 ## Methods
+
 ### применить
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCSuggestion.apply(ввод в виде строки);
+MCSuggestion.apply(input as string) as string
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| input    | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| input    | string | No Description Provided |
 
 
 ### сравнить
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareTo(o как crafttweaker.api.commands.custom.MCSuggestion);
+MCSuggestion.compareTo(o as MCSuggestion) as int
 ```
 
-| Параметр | Тип                                                                                        | Description          |
-| -------- | ------------------------------------------------------------------------------------------ | -------------------- |
-| o        | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Описание отсутствует |
+| Параметр | Тип                                                       | Description             |
+| -------- | --------------------------------------------------------- | ----------------------- |
+| o        | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### сравнениеИгнорирования
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareToIgnoreCase(b as crafttweaker.api.commands.custom.MCSuggestion);
+MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 ```
 
-| Параметр | Тип                                                                                        | Description          |
-| -------- | ------------------------------------------------------------------------------------------ | -------------------- |
-| т        | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Описание отсутствует |
+| Параметр | Тип                                                       | Description             |
+| -------- | --------------------------------------------------------- | ----------------------- |
+| т        | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestion.equals(o as Object);
+MCSuggestion.equals(o as Object) as boolean
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 
-### развернуть
+### expandWith
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
+Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 
 ```zenscript
-myMCSuggestion.expand(команда String, range as crafttweaker.api.commands.custom.MCStringRange);
+MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggestion
 ```
 
-| Параметр | Тип                                                                                          | Description          |
-| -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| command  | String                                                                                       | Описание отсутствует |
-| range    | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Описание отсутствует |
+| Параметр | Тип                                                         | Description             |
+| -------- | ----------------------------------------------------------- | ----------------------- |
+| command  | string                                                      | No Description Provided |
+| range    | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
 ### getRange
 
-Возврат типа: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestion.getRange() as MCStringRange
 myMCSuggestion.getRange();
 ```
 
 ### getText
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getText() as string
 myMCSuggestion.getText();
 ```
 
 ### getTooltip
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getTooltip() as string
 myMCSuggestion.getTooltip();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestion.hashCode() as int
 myMCSuggestion.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.toString() as string
 myMCSuggestion.toString();
 ```
 
 
 ## Операторы
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestion == o как объект
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
 
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 

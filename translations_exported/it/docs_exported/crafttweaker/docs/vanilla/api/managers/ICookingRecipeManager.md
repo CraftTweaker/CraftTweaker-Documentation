@@ -2,183 +2,224 @@
 
 Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.registries.ICookingRecipeManager
+import crafttweaker.api.registries.ICookingRecipeManager;
 ```
 
+
 ## Interfacce Implementate
-ICookingRecipeManager implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+ICookingRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in ICookingRecipeManager
+
+- [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ## Methods
-### addJSONRecipe
+
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
+Return Type: void
+
 ```zenscript
-furnace.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+ICookingRecipeManager.addJSONRecipe(name as string, data as IData) as void
 furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Parameter | Type                             | Description                     |
+| --------- | -------------------------------- | ------------------------------- |
+| name      | string                           | name of the recipe              |
+| data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe based on given params.
 
+Return Type: void
+
 ```zenscript
-furnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
 ```
 
-| Parameter | Type                                                                | Description                     |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| Parameter | Type                                          | Description                     |
+| --------- | --------------------------------------------- | ------------------------------- |
+| name      | string                                        | Name of the new recipe          |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
+| xp        | float                                         | how much xp the player gets     |
+| cookTime  | int                                           | how long it takes to cook       |
 
 
-### getAllRecipes
+:::
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+:::group{name=getAllRecipes}
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
+ICookingRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 furnace.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
 
-Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+:::group{name=getRecipeByName}
 
-```zenscript
-furnace.getRecipeByName(nome come stringa);
-```
-
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
-
-
-### getRecipesByOutput
-
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
-furnace.getRicetteByOutput(output come crafttweaker.api.item.IIngredient);
+ICookingRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 ```
 
-| Parameter | Type                                                                | Description                 |
-| --------- | ------------------------------------------------------------------- | --------------------------- |
-| output    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=getRecipesByOutput}
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+ICookingRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
+```
+
+| Parameter | Type                                          | Description             |
+| --------- | --------------------------------------------- | ----------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
+
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
+Return Type: void
+
 ```zenscript
+ICookingRecipeManager.removeAll() as void
 furnace.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
+Return Type: void
+
 ```zenscript
-furnace.removeByModid(modid as String);
+ICookingRecipeManager.removeByModid(modid as string) as void
 furnace.removeByModid("minecraft");
 ```
 
 | Parameter | Type   | Description                    |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modid     | string | modid of the recipes to remove |
 
 
+:::
 
-Rimuovere la ricetta in base al nome del Registro di sistema con un controllo di esclusione aggiunto, in modo da poter rimuovere l'intera mod oltre a alcuni specificati.
+:::group{name=removeByModid}
+
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
 
 ```zenscript
-furnace.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+ICookingRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
 furnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type                                                                     | Description                           |
-| --------- | ------------------------------------------------------------------------ | ------------------------------------- |
-| modid     | String                                                                   | modid of the recipes to remove        |
-| esclude   | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
+| Parameter | Type                                             | Description                           |
+| --------- | ------------------------------------------------ | ------------------------------------- |
+| modid     | string                                           | modid of the recipes to remove        |
+| esclude   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
+Return Type: void
+
 ```zenscript
-furnace.removeByName(name as String);
+ICookingRecipeManager.removeByName(name as string) as void
 furnace.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Description                       |
 | --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| name      | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
+Return Type: void
+
 ```zenscript
-furnace.removeByRegex(regex as String);
+ICookingRecipeManager.removeByRegex(regex as string) as void
 furnace.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| regex     | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
+Return Type: void
+
 ```zenscript
-furnace.removeRecipe(output as crafttweaker.api.item.IItemStack);
+ICookingRecipeManager.removeRecipe(output as IItemStack) as void
 furnace.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| Parameter | Type                                        | Description          |
+| --------- | ------------------------------------------- | -------------------- |
+| output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
+:::
+
+:::group{name=removeRecipe}
 
 Removes a recipe based on it's output and input.
 
+Return Type: void
+
 ```zenscript
-furnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Parameter | Type                                          | Description                          |
+| --------- | --------------------------------------------- | ------------------------------------ |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
+:::
 
-## Properties
-
-| Name          | Type   | Ha Getter | Ha Setter |
-| ------------- | ------ | --------- | --------- |
-| commandString | String | true      | false     |
 

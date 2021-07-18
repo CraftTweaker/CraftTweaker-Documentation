@@ -1,29 +1,30 @@
 # MCEntityType
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.entity.MCEntityType
+import crafttweaker.api.entity.MCEntityType;
 ```
 
+
 ## Implemented Interfaces
-MCEntityType implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCEntityType implements the following interfaces. That means all methods defined in these interfaces are also available in MCEntityType
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Свойства
 
-| Название       | Тип                                                                                            | Имеет Getter | Имеет Setter |
-| -------------- | ---------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true         | false        |
-| commandString  | String                                                                                         | true         | false        |
-| height         | float                                                                                          | true         | false        |
-| immuneToFire   | boolean                                                                                        | true         | false        |
-| lootTable      | String                                                                                         | true         | false        |
-| name           | String                                                                                         | true         | false        |
-| serializable   | boolean                                                                                        | true         | false        |
-| summonable     | boolean                                                                                        | true         | false        |
-| translationKey | String                                                                                         | true         | false        |
-| width          | float                                                                                          | true         | false        |
+| Название       | Тип                                                                  | Имеет Getter | Имеет Setter |
+| -------------- | -------------------------------------------------------------------- | ------------ | ------------ |
+| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true         | false        |
+| commandString  | string                                                               | true         | false        |
+| height         | float                                                                | true         | false        |
+| immuneToFire   | boolean                                                              | true         | false        |
+| lootTable      | string                                                               | true         | false        |
+| name           | string                                                               | true         | false        |
+| serializable   | boolean                                                              | true         | false        |
+| summonable     | boolean                                                              | true         | false        |
+| translationKey | string                                                               | true         | false        |
+| width          | float                                                                | true         | false        |
 

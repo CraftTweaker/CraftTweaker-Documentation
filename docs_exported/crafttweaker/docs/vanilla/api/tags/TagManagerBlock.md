@@ -11,14 +11,15 @@ import crafttweaker.api.tag.TagManagerBlock;
 ## Implemented Interfaces
 TagManagerBlock implements the following interfaces. That means all methods defined in these interfaces are also available in TagManagerBlock
 
-- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;
+- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;
 
 ## Methods
 
-### exists
+:::group{name=exists}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -30,8 +31,13 @@ TagManagerBlock.exists(location as MCResourceLocation) as boolean
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
 
 
+:::
+
+:::group{name=exists}
+
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -43,25 +49,31 @@ TagManagerBlock.exists(name as string) as boolean
 | name | string | The resource location to check for |
 
 
-### getAllTags
+:::
+
+:::group{name=getAllTags}
 
 Retrieves a list of all tags currently registered.
 
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerBlock.getAllTags();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
- <p>
+ 
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -73,12 +85,17 @@ TagManagerBlock.getTag(location as MCResourceLocation) as MCTag<T>
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
 
+:::
+
+:::group{name=getTag}
+
 Retrieves a tag by its name.
  Will also be called by the BEP.
- <p>
+ 
  Note that this method does _not_ yet create the tag if it does not exist.
  Adding something to the object created by this tag will create it for the game.
 
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -90,10 +107,12 @@ TagManagerBlock.getTag(name as string) as MCTag<T>
 | name | string | The Resource location of the tag |
 
 
+:::
+
 
 ## Operators
 
-### CONTAINS
+:::group{name=CONTAINS}
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -101,12 +120,12 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 name as string in myTagManagerBlock
 ```
 
-
+:::
 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false | Retrieves a list of all tags currently registered. |
 

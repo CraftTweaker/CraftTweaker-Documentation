@@ -1,231 +1,244 @@
 # MCCommandContextBuilder
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttbower.api.commands.custom.MCCommandContextBuilder
+import crafttweaker.api.commands.custom.MCCommandContextBuilder;
 ```
 
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
+
 ## 方法
+
 ### build
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
-myMCCommandContextBuilder.build(输入为字符串)；
+MCCommandContextBuilder.build(input as string) as MCCommandContext
 ```
 
 | 参数        | 类型     | 描述                      |
 | --------- | ------ | ----------------------- |
-| input（输入） | String | No description provided |
+| input（输入） | string | No Description Provided |
 
 
 ### copy #复制
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.copy() as MCCommandContextBuilder
 myMCCommandContextBuilder.copy();
 ```
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandContextBuilder.equals(ao as Object);
+MCCommandContextBuilder.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### 查找建议内容
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
+Return Type: [MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
 
 ```zenscript
-myMCCommandContextBuilder.findRecommendtionContext(光标为int)；
+MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionContext
 ```
 
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
-| cursor | int | No description provided |
+| cursor | int | No Description Provided |
 
 
 ### 获取参数
 
-返回类型： [craftbiner.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[String]
+Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
 
 ```zenscript
+MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
 myMCCommandContextBuilder.getArguments();
 ```
 
 ### getChild
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.getChild() as MCCommandContextBuilder
 myMCCommandContextBuilder.getChild();
 ```
 
 ### getCommand
 
-返回类型： [craftmiliter.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCCommandContextBuilder.getCommand() as MCCommand
 myMCCommandContextBuilder.getCommand();
 ```
 
 ### 获取调度器
 
-返回类型： [craftbiner.api.commands.custom.MCCommandDispater](/vanilla/api/commands/custom/MCCommandDispatcher)
+Return Type: [MCCommandDispatcher](/vanilla/api/commands/custom/MCCommandDispatcher)
 
 ```zenscript
+MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
 myMCCommandContextBuilder.getDispatcher();
 ```
 
 ### getLastChild
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
 myMCCommandContextBuilder.getLastChild();
 ```
 
 ### getNodes
 
-返回类型：邮件列表&lt;[craftminstrer.api.commands.custom.MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
+Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
+MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContextBuilder.getNodes();
 ```
 
 ### getRange
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCCommandContextBuilder.getRange() as MCStringRange
 myMCCommandContextBuilder.getRange();
 ```
 
 ### getRootNode
 
-返回类型： [crafttweeper.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCCommandContextBuilder.getRootNode() as MCCommandNode
 myMCCommandContextBuilder.getRootNode();
 ```
 
 ### getSource
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
+MCCommandContextBuilder.getSource() as MCCommandSource
 myMCCommandContextBuilder.getSource();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommandContextBuilder.hashCode() as int
 myMCCommandContextBuilder.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContextBuilder.toString() as string
 myMCCommandContextBuilder.toString();
 ```
 
 ### 有参数
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withArgumentation(name as String, articles as craftbiner.api.commands.custom.MCParsedArgument);
+MCCommandContextBuilder.withArgument(name as string, argument as MCParsedArgument) as MCCommandContextBuilder
 ```
 
-| 参数   | 类型                                                                                                  | 描述                      |
-| ---- | --------------------------------------------------------------------------------------------------- | ----------------------- |
-| name | String                                                                                              | No description provided |
-| 参数   | [craftminstrer.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| name | string                                                            | No Description Provided |
+| 参数   | [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No Description Provided |
 
 
 ### 与子节点
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withChild(child as craftweeper.api.commands.custom.MCCommandContextBuilder);
+MCCommandContextBuilder.withChild(child as MCCommandContextBuilder) as MCCommandContextBuilder
 ```
 
-| 参数  | 类型                                                                                                              | 描述                      |
-| --- | --------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 子节点 | [crafttbower.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
+| 参数  | 类型                                                                              | 描述                      |
+| --- | ------------------------------------------------------------------------------- | ----------------------- |
+| 子节点 | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
 ### 使用命令
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withCommand(command as craftbiner.api.commands.custom.MCCommand);
+MCCommandContextBuilder.withCommand(command as MCCommand) as MCCommandContextBuilder
 ```
 
-| 参数      | 类型                                                                                    | 描述                      |
-| ------- | ------------------------------------------------------------------------------------- | ----------------------- |
-| command | [craftminstrer.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
+| 参数      | 类型                                             | 描述                      |
+| ------- | ---------------------------------------------- | ----------------------- |
+| command | [MC命令](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
 ### withNode
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withNode(节点作为craftmilever.api.commands.custom.MCCommandNode, range as craftmilever.api.commands.custom.MCStringRange);
+MCCommandContextBuilder.withNode(node as MCCommandNode, range as MCStringRange) as MCCommandContextBuilder
 ```
 
-| 参数    | 类型                                                                                            | 描述                      |
-| ----- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| 节点    | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-| range | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| 参数    | 类型                                                          | 描述                      |
+| ----- | ----------------------------------------------------------- | ----------------------- |
+| 节点    | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode)   | No Description Provided |
+| range | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
 ### 与源代码
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withSource(source as craftwiner.api.commands.custom.MCCommandSource);
+MCCommandContextBuilder.withSource(source as MCCommandSource) as MCCommandContextBuilder
 ```
 
-| 参数 | 类型                                                                                                | 描述                      |
-| -- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 来源 | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 参数 | 类型                                                    | 描述                      |
+| -- | ----------------------------------------------------- | ----------------------- |
+| 来源 | [MC命令源](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCCommandContextBuilder == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

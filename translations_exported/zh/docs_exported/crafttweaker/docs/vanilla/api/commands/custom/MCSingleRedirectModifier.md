@@ -1,81 +1,87 @@
 # MCSingleRirectModifier
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstruer.api.commands.custom.MCSingleRedirectModifier
+import crafttweaker.api.commands.custom.MCSingleRedirectModifier;
 ```
+
 
 ## Constructor #构造函数
+
+No Description Provided
 ```zenscript
-新 craftminstrer.api.commands.custom.MCSingleRedctModifier(有趣的函数。函数<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCCommandSource>)；
+new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
-| 参数  | 类型                                                                                                                                                                                                                         | 描述                      |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 有趣的 | 函数&lt;[craftmiliter.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [craftmiliter.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
+
+| 参数  | 类型                                                                                                                                                            | 描述                      |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### 应用
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCSingleRirectModifier.apply(context as craftbiner.api.commands.custom.MCCommandContext);
+MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 ```
 
-| 参数   | 类型                                                                                                  | 描述                      |
-| ---- | --------------------------------------------------------------------------------------------------- | ----------------------- |
-| 上下文： | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSingleRedirectModifier.equals(o 为对象)；
+MCSingleRedirectModifier.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSingleRirectModifier.hashCode();
+MCSingleRedirectModifier.hashCode() as int
+myMCSingleRedirectModifier.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCSingleRirectModifier.toString();
+MCSingleRedirectModifier.toString() as string
+myMCSingleRedirectModifier.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCSingleRedirectModifier == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

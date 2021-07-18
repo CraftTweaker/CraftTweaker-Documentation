@@ -10,13 +10,35 @@ import crafttweaker.api.util.BlockPos;
 ```
 
 
+## Static Methods
+
+:::group{name=getAllInBox}
+
+Gets all the BlockPos inside the given positions. <br />  <br />  For example, doing <br />  <br />  `getAllInBox(new BlockPos(0,0,0), new BlockPos(2,2,0` <br />  <br />  Would return a list of the following positions: <br />  <br />  `[(0,0,0), (1,0,0), (1,1,0), (0,1,0)]`
+
+Returns: A list of all the BlockPos within the given position.  
+Return Type: stdlib.List&lt;[BlockPos](/vanilla/api/util/BlockPos)&gt;
+
+```zenscript
+// BlockPos.getAllInBox(first as BlockPos, second as BlockPos) as stdlib.List<BlockPos>
+
+BlockPos.getAllInBox(new BlockPos(0, 0, 0), new BlockPos(5, 5, 5));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| first | [BlockPos](/vanilla/api/util/BlockPos) | The first position. |
+| second | [BlockPos](/vanilla/api/util/BlockPos) | The second position. |
+
+
+:::
+
 ## Constructors
 
 
 ```zenscript
 new BlockPos(x as int, y as int, z as int) as BlockPos
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | x | int | No description provided |
@@ -34,14 +56,16 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Adds two positions together and returns the result.
 
+Returns: new [BlockPos](/vanilla/api/util/BlockPos) with the added values.  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(pos as BlockPos) as BlockPos
+// BlockPos.add(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
@@ -50,12 +74,18 @@ new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 
 
+:::
+
+:::group{name=add}
+
 Adds the given values to this position, and returns a new position with the new values.
 
+Returns: a new position based on values of provided values and this position  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(x as double, y as double, z as double) as BlockPos
+// BlockPos.add(x as double, y as double, z as double) as BlockPos
+
 new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
@@ -66,12 +96,18 @@ new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 | z | double | z value to add |
 
 
+:::
+
+:::group{name=add}
+
 Adds the given values to this position, and returns a new position with the new values.
 
+Returns: a new position based on values of provided values and this position  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.add(x as int, y as int, z as int) as BlockPos
+// BlockPos.add(x as int, y as int, z as int) as BlockPos
+
 new BlockPos(0, 1, 2).add(50, -20, -25);
 ```
 
@@ -82,14 +118,18 @@ new BlockPos(0, 1, 2).add(50, -20, -25);
 | z | int | z value to add |
 
 
-### crossProduct
+:::
+
+:::group{name=crossProduct}
 
 Creates a new BlockPos based on the cross product of this position, and the given position
 
+Returns: a new BlockPos based on the cross product of this BlockPos and the given BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.crossProduct(pos as BlockPos) as BlockPos
+// BlockPos.crossProduct(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
@@ -98,14 +138,18 @@ new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
 
 
-### distanceSq
+:::
+
+:::group{name=distanceSq}
 
 Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
 
+Returns: the squared distance of this current position and the given BlockPos.  
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(to as BlockPos) as double
+// BlockPos.distanceSq(to as BlockPos) as double
+
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
@@ -114,12 +158,18 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 | to | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 
 
+:::
+
+:::group{name=distanceSq}
+
 Gets the squared distance of this position to the specified BlockPos
 
+Returns: the squared distance of this current position and the given BlockPos.  
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(to as BlockPos, useCenter as boolean) as double
+// BlockPos.distanceSq(to as BlockPos, useCenter as boolean) as double
+
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
@@ -129,12 +179,18 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
+:::
+
+:::group{name=distanceSq}
+
 Gets the squared distance of this position to the specified coordinates
 
+Returns: the squared distance of this current position and the given coordinates.  
 Return Type: double
 
 ```zenscript
-BlockPos.distanceSq(x as double, y as double, z as double, useCenter as boolean) as double
+// BlockPos.distanceSq(x as double, y as double, z as double, useCenter as boolean) as double
+
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
@@ -146,19 +202,28 @@ new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
-### down
+:::
+
+:::group{name=down}
 
 Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
 
+Returns: a new BlockPos that is one block lower than this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.down() as BlockPos
+// BlockPos.down() as BlockPos
+
 new BlockPos(0, 1, 2).down();
 ```
 
+:::
+
+:::group{name=down}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) lower than this BlockPos
 
+Returns: a new BlockPos that is n block(s) lower than this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
@@ -170,23 +235,33 @@ BlockPos.down(n as int) as BlockPos
 | n | int | No Description Provided |
 
 
-### east
+:::
+
+:::group{name=east}
 
 Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
 
+Returns: a new BlockPos that is one block east of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.east() as BlockPos
+// BlockPos.east() as BlockPos
+
 new BlockPos(0, 1, 2).east();
 ```
 
+:::
+
+:::group{name=east}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
 
+Returns: a new BlockPos that is n block(s) east of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.east(n as int) as BlockPos
+// BlockPos.east(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).east(2);
 ```
 
@@ -195,14 +270,18 @@ new BlockPos(0, 1, 2).east(2);
 | n | int | No Description Provided |
 
 
-### manhattanDistance
+:::
+
+:::group{name=manhattanDistance}
 
 Gets the Manhattan Distance of this pos compared to a different position
 
+Returns: The manhattan distance of the positions  
 Return Type: int
 
 ```zenscript
-BlockPos.manhattanDistance(other as BlockPos) as int
+// BlockPos.manhattanDistance(other as BlockPos) as int
+
 new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
@@ -211,23 +290,33 @@ new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 | other | [BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
 
 
-### north
+:::
+
+:::group{name=north}
 
 Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
 
+Returns: a new BlockPos that is one block north of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.north() as BlockPos
+// BlockPos.north() as BlockPos
+
 new BlockPos(0, 1, 2).north();
 ```
 
+:::
+
+:::group{name=north}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
 
+Returns: a new BlockPos that is n block(s) north of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.north(n as int) as BlockPos
+// BlockPos.north(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).north(10);
 ```
 
@@ -236,14 +325,18 @@ new BlockPos(0, 1, 2).north(10);
 | n | int | No Description Provided |
 
 
-### offset
+:::
+
+:::group{name=offset}
 
 Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
 
+Returns: a new BlockPos that is 1 block offset of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.offset(direction as Direction) as BlockPos
+// BlockPos.offset(direction as Direction) as BlockPos
+
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
@@ -252,12 +345,18 @@ new BlockPos(0, 1, 2).offset(<direction:east>);
 | direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
 
 
+:::
+
+:::group{name=offset}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
 
+Returns: a new BlockPos that is n block(s) offset of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.offset(direction as Direction, n as int) as BlockPos
+// BlockPos.offset(direction as Direction, n as int) as BlockPos
+
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
@@ -267,23 +366,33 @@ new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 | n | int | No Description Provided |
 
 
-### south
+:::
+
+:::group{name=south}
 
 Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
 
+Returns: a new BlockPos that is one block south of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.south() as BlockPos
+// BlockPos.south() as BlockPos
+
 new BlockPos(0, 1, 2).south();
 ```
 
+:::
+
+:::group{name=south}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
 
+Returns: a new BlockPos that is n block(s) south of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.south(n as int) as BlockPos
+// BlockPos.south(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).south(12);
 ```
 
@@ -292,14 +401,18 @@ new BlockPos(0, 1, 2).south(12);
 | n | int | No Description Provided |
 
 
-### subtract
+:::
+
+:::group{name=subtract}
 
 Subtracts two positions together and returns the result.
 
+Returns: new [BlockPos](/vanilla/api/util/BlockPos) with the removed values.  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.subtract(pos as BlockPos) as BlockPos
+// BlockPos.subtract(pos as BlockPos) as BlockPos
+
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
@@ -308,23 +421,33 @@ new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
 
-### up
+:::
+
+:::group{name=up}
 
 Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
 
+Returns: a new BlockPos that is one block higher than this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.up() as BlockPos
+// BlockPos.up() as BlockPos
+
 new BlockPos(0, 1, 2).up();
 ```
 
+:::
+
+:::group{name=up}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
 
+Returns: a new BlockPos that is n block(s) higher than this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.up(n as int) as BlockPos
+// BlockPos.up(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).up(45);
 ```
 
@@ -333,23 +456,33 @@ new BlockPos(0, 1, 2).up(45);
 | n | int | No Description Provided |
 
 
-### west
+:::
+
+:::group{name=west}
 
 Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
 
+Returns: a new BlockPos that is one block west of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.west() as BlockPos
+// BlockPos.west() as BlockPos
+
 new BlockPos(0, 1, 2).west();
 ```
 
+:::
+
+:::group{name=west}
+
 Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
 
+Returns: a new BlockPos that is n block(s) west of this BlockPos  
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-BlockPos.west(n as int) as BlockPos
+// BlockPos.west(n as int) as BlockPos
+
 new BlockPos(0, 1, 2).west(120);
 ```
 
@@ -358,14 +491,18 @@ new BlockPos(0, 1, 2).west(120);
 | n | int | No Description Provided |
 
 
-### withinDistance
+:::
+
+:::group{name=withinDistance}
 
 Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
 
+Returns: true if the given BlockPos is within the given distance of this BlockPos  
 Return Type: boolean
 
 ```zenscript
-BlockPos.withinDistance(pos as BlockPos, distance as double) as boolean
+// BlockPos.withinDistance(pos as BlockPos, distance as double) as boolean
+
 new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
@@ -375,12 +512,14 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 | distance | double | distance to check within |
 
 
+:::
+
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| x | int | true | false |
-| y | int | true | false |
-| z | int | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| x | int | true | false | No Description Provided |
+| y | int | true | false | No Description Provided |
+| z | int | true | false | No Description Provided |
 

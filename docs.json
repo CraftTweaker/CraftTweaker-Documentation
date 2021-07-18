@@ -13,7 +13,14 @@
         "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
       },
       "Recipes": {
-        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md"
+        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
+        "Crafting": {
+          "Add Recipes": {
+            "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+            "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+            "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+          }
+        }
       },
       "Software": "tutorial/Software.md"
     },
@@ -29,6 +36,29 @@
       }
     },
     "Mods": {
+      "Applied Energistics 2": {
+        "Grinder": "mods/AppliedEnergistics2/Grinder.md",
+        "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
+      },
+      "Atum 2": {
+        "Kiln": "mods/Atum2/Kiln.md",
+        "Quern": "mods/Atum2/Quern.md",
+        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
+      },
+      "Aquaculture 2": {
+        "Fish Data": "mods/Aquaculture2/FishData.md"
+      },
+      "Ars-Nouveau": {
+        "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
+        "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
+      },
+      "Astral Sorcery": {
+        "Altar": "mods/AstralSorcery/Altar.md",
+        "Block Transmutation": "mods/AstralSorcery/BlockTransmutation.md",
+        "Infusion": "mods/AstralSorcery/Infusion.md",
+        "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
+        "Well": "mods/AstralSorcery/Well.md"
+      },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
         "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
@@ -36,18 +66,14 @@
         "Blood Altar": "mods/BloodMagic/BloodAltar.md",
         "Tartaric Forge": "mods/BloodMagic/TartaricForge.md"
       },
-      "Botania": {
-        "Elven Trade": "mods/Botania/ElvenTrade.md",
-        "Mana Infusion": "mods/Botania/ManaInfusion.md",
-        "Petal Apothecary": "mods/Botania/PetalApothecary.md",
-        "Pure Daisy": "mods/Botania/PureDaisy.md",
-        "Runic Altar": "mods/Botania/RunicAltar.md",
-        "Terra Plate": "mods/Botania/TerraPlate.md"
-      },
+      "Botania": {},
       "Botany Pots": {
         "Botany Pots": "mods/BotanyPots/BotanyPots.md"
       },
-      "ContentTweaker": {
+      "Caged Mobs": {
+        "Caged Mobs": "mods/CagedMobs/CagedMobs.md"
+      },
+      "Contenttweaker": {
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
       "Create": {
@@ -62,6 +88,10 @@
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
         "Splashing": "mods/Create/Splashing.md"
+      },
+      "Cyclic": {
+        "Melter": "mods/Cyclic/Melter.md",
+        "Solidifier": "mods/Cyclic/Solidifier.md"
       },
       "Ex Nihilo Sequentia": {
         "Composting": "mods/ExNihiloSequentia/Composting.md",
@@ -97,6 +127,22 @@
       "JEITweaker": {
         "JEITweaker": "mods/JEITweaker/JEITweaker.md"
       },
+      "Mystical Agriculture": {
+        "Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
+        "Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
+      },
+      "PneumaticCraft: Repressurized": {
+        "Assembly System": "mods/PneumaticCraft-Repressurized/AssemblySystem.md",
+        "Block Heat Properties": "mods/PneumaticCraft-Repressurized/BlockHeatProperties.md",
+        "Fluid Mixer": "mods/PneumaticCraft-Repressurized/FluidMixer.md",
+        "Explosion Crafting": "mods/PneumaticCraft-Repressurized/ExplosionCrafting.md",
+        "Experience Fluids": "mods/PneumaticCraft-Repressurized/XPFluids.md",
+        "Fuel Quality": "mods/PneumaticCraft-Repressurized/FuelQuality.md",
+        "Heat Frame Cooling": "mods/PneumaticCraft-Repressurized/HeatFrameCooling.md",
+        "Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
+        "Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
+        "Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
+      },
       "RecipeStages": {
         "RecipeStages": "mods/RecipeStages/RecipeStages.md"
       },
@@ -128,6 +174,22 @@
         "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
         "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
         "Sawmill": "mods/ThermalSeries/Sawmill.md"
+      },
+      "Tinkers' Construct": {
+        "Alloying": "mods/TinkersConstruct/Alloying.md",
+        "Casting Basin": "mods/TinkersConstruct/CastingBasin.md",
+        "Casting Table": "mods/TinkersConstruct/CastingTable.md",
+        "Entity Melting": "mods/TinkersConstruct/EntityMelting.md",
+        "Material Recipe": "mods/TinkersConstruct/MaterialRecipe.md",
+        "Melting": "mods/TinkersConstruct/Melting.md",
+        "Molding Basin": "mods/TinkersConstruct/MoldingBasin.md",
+        "Molding Table": "mods/TinkersConstruct/MoldingTable.md",
+        "Part builder": "mods/TinkersConstruct/PartBuilder.md",
+        "Severing": "mods/TinkersConstruct/Severing.md",
+        "Tinker station": "mods/TinkersConstruct/TinkerStation.md"
+      },
+      "Zen Summoning": {
+        "Examples": "mods/zensummoning/examples.md"
       }
     }
   }

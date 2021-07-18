@@ -1,49 +1,51 @@
 # 自定义命令
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-CustomCommands
+import crafttweaker.api.commands.custom.CustomCommands;
 ```
 
+
 ## 方法
+
 ### 参数
 
-返回类型： [crafttweeper.api.commands.custom.MCRequireedArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
-crafttbiner.api.commands.custom.CustomCommands.argument(name as String);
+CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 ```
 
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
-| name | String | No description provided |
+| name | string | No Description Provided |
 
 
 ### 纯文本
 
-返回类型： [craftbiner.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
-crafttbiner.api.commands.customCommands.literal(name as String);
+CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 ```
 
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
-| name | String | No description provided |
+| name | string | No Description Provided |
 
 
 ### 注册命令
 
+Return Type: void
+
 ```zenscript
-crafttmilower.api.commands.customCommands.registerCommand(生成器为 craftbiner.api.commands.custom.MCLiteralArgumentBuilder);
+CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 ```
 
-| 参数  | 类型                                                                                                                | 描述                      |
-| --- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 生成器 | [crafttbower.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
-
+| 参数  | 类型                                                                                | 描述                      |
+| --- | --------------------------------------------------------------------------------- | ----------------------- |
+| 生成器 | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
 
 

@@ -1,81 +1,87 @@
 # MC命令
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.commands.custom.MCCommand
+import crafttweaker.api.commands.custom.MCCommand;
 ```
+
 
 ## Constructor #构造函数
+
+No Description Provided
 ```zenscript
-新 craftminstrer.api.commands.custom.MCCommand(有趣的函数.Function<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
+new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
-| 参数  | 类型                                                                                                                           | 描述                      |
-| --- | ---------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 有趣的 | 函数&lt;[craftmiliter.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), 整数&gt; | No description provided |
+
+| 参数  | 类型                                                                                                    | 描述                      |
+| --- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
+| 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
 
 
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommand.equals(o as Object);
+MCCommand.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommand.hashCode() as int
 myMCCommand.hashCode();
 ```
 
 ### 运行
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCCommand.run(context as craftbiner.api.commands.custom.MCCommandContext);
+MCCommand.run(context as MCCommandContext) as int
 ```
 
-| 参数   | 类型                                                                                                  | 描述                      |
-| ---- | --------------------------------------------------------------------------------------------------- | ----------------------- |
-| 上下文： | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommand.toString() as string
 myMCCommand.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCCommand == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

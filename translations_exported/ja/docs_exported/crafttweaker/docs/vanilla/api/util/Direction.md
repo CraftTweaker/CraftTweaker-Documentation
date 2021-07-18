@@ -2,24 +2,33 @@
 
 Represents a cardinal direction (north, south, east, west) and (up and down).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.Direction
+import crafttweaker.api.util.Direction;
 ```
 
+
+## Extending Enum&lt;Direction&gt;
+
+Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That means all methods available in Enum&lt;[Direction](/vanilla/api/util/Direction)&gt; are also available in Direction
+
+## Properties
+
+| 名称    | Type                                       | Has Getter | Has Setter |
+| ----- | ------------------------------------------ | ---------- | ---------- |
+| sides | [Direction](/vanilla/api/util/Direction)[] | true       | false      |
 ## Methods
+
 ### rotateY
 
 Rotates this direction on the Y axis
 
- Returns: `the direction that rotated on the Y axis of this direction`
-
-戻り値の型: [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
+Direction.rotateY() as Direction
 <direction:north>.rotateY();
 ```
 
@@ -27,34 +36,26 @@ Rotates this direction on the Y axis
 
 Rotates this direction counter-clock wise on the Y axis
 
- Returns: `the direction that is counter clockwise on the Y axis`
-
-戻り値の型: [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
+Direction.rotateYCCW() as Direction
 <direction:north>.rotateYCCW();
 ```
 
 
 ## Properties
 
-| 名称              | Type                                                                   | Has Getter | Has Setter |
-| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                                                    | true       | false      |
-| down            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| east            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| horizontalAngle | float                                                                  | true       | false      |
-| horizontalIndex | int                                                                    | true       | false      |
-| index           | int                                                                    | true       | false      |
-| name            | String                                                                 | true       | false      |
-| north           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
-| 辺の方向            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)[]       | true       | true       |
-| south           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| up              | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| west            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| xOffset         | int                                                                    | true       | false      |
-| yOffset         | int                                                                    | true       | false      |
-| zOffset         | int                                                                    | true       | false      |
+| 名称              | Type                                             | Has Getter | Has Setter |
+| --------------- | ------------------------------------------------ | ---------- | ---------- |
+| axis            | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
+| axisOffset      | int                                              | true       | false      |
+| horizontalAngle | float                                            | true       | false      |
+| horizontalIndex | int                                              | true       | false      |
+| index           | int                                              | true       | false      |
+| name            | string                                           | true       | false      |
+| opposite        | [Direction](/vanilla/api/util/Direction)         | true       | false      |
+| xOffset         | int                                              | true       | false      |
+| yOffset         | int                                              | true       | false      |
+| zOffset         | int                                              | true       | false      |
 

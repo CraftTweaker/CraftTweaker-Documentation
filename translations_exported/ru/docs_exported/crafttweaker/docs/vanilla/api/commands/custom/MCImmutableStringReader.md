@@ -1,100 +1,131 @@
 # MCImmutableStringReader
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCImmutableStringReader
+import crafttweaker.api.commands.custom.MCImmutableStringReader;
 ```
 
-## Methods
-### canRead
 
-Return type: boolean
+## Methods
+
+:::group{name=canRead}
+
+Return Type: boolean
 
 ```zenscript
+MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
 
+:::
 
-Return type: boolean
+:::group{name=canRead}
+
+Return Type: boolean
 
 ```zenscript
-myMCImmutableReader.canRead(arg0 как int);
+MCImmutableStringReader.canRead(arg0 as int) as boolean
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| arg0     | int | Описание отсутствует |
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| arg0     | int | No Description Provided |
 
 
-### getCursor
+:::
 
-Return type: int
+:::group{name=getCursor}
+
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getCursor() as int
 myMCImmutableStringReader.getCursor();
 ```
 
-### getRead
+:::
 
-Return type: String
+:::group{name=getRead}
+
+Return Type: string
 
 ```zenscript
+MCImmutableStringReader.getRead() as string
 myMCImmutableStringReader.getRead();
 ```
 
-### получить оставшееся
+:::
 
-Return type: String
+:::group{name=getRemaining}
 
-```zenscript
-myMCImmutableReader.getRemain();
-```
-
-### получить оставшуюся длину
-
-Return type: int
+Return Type: string
 
 ```zenscript
-myMCImmutableReader.getRemainLength();
+MCImmutableStringReader.getRemaining() as string
+myMCImmutableStringReader.getRemaining();
 ```
 
-### getString
+:::
 
-Return type: String
+:::group{name=getRemainingLength}
+
+Return Type: int
 
 ```zenscript
-myMCImmutableReader.getString();
+MCImmutableStringReader.getRemainingLength() as int
+myMCImmutableStringReader.getRemainingLength();
 ```
 
-### getTotalLength
+:::
 
-Return type: int
+:::group{name=getString}
+
+Return Type: string
 
 ```zenscript
-myMCImmutableReader.getTotalLength();
+MCImmutableStringReader.getString() as string
+myMCImmutableStringReader.getString();
 ```
 
-### запек
+:::
 
-Тип возврата: символ
+:::group{name=getTotalLength}
+
+Return Type: int
 
 ```zenscript
-myMCImmutableReader.peek();
+MCImmutableStringReader.getTotalLength() as int
+myMCImmutableStringReader.getTotalLength();
 ```
 
+:::
 
-Тип возврата: символ
+:::group{name=peek}
+
+Return Type: char
 
 ```zenscript
-myMCImmutableReader.peek(arg0 как int);
+MCImmutableStringReader.peek() as char
+myMCImmutableStringReader.peek();
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| arg0     | int | Описание отсутствует |
+:::
 
+:::group{name=peek}
+
+Return Type: char
+
+```zenscript
+MCImmutableStringReader.peek(arg0 as int) as char
+```
+
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| arg0     | int | No Description Provided |
+
+
+:::
 
 

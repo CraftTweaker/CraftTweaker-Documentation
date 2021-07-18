@@ -2,69 +2,94 @@
 
 Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.ILogger
+import crafttweaker.api.ILogger;
 ```
 
+
 ## 方法
+
 ### debug
 
 Logs a debug message.
 
+Return Type: void
+
 ```zenscript
-logger.debug(message as String);
+ILogger.debug(message as string) as void
 logger.debug("message");
 ```
 
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 
 
 ### error
 
 Logs an error message.
 
+Return Type: void
+
 ```zenscript
-logger.error(message as String);
+ILogger.error(message as string) as void
 logger.error("message");
 ```
 
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 
 
 ### info
 
 Logs an info message.
 
+Return Type: void
+
 ```zenscript
-logger.info(message as String);
+ILogger.info(message as string) as void
 logger.info("message");
 ```
 
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
-| message | String | message to be logged. |
+| message | string | message to be logged. |
+
+
+### trace
+
+Logs a trace message.
+
+Return Type: void
+
+```zenscript
+ILogger.trace(message as string) as void
+logger.trace("message");
+```
+
+| 参数      | 类型     | 描述                   |
+| ------- | ------ | -------------------- |
+| message | string | message to be logged |
 
 
 ### warning
 
 Logs a warning message.
 
+Return Type: void
+
 ```zenscript
-logger.warning(message as String);
+ILogger.warning(message as string) as void
 logger.warning("message");
 ```
 
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 
 
 

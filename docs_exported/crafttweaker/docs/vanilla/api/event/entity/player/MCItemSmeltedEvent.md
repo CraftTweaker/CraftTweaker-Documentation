@@ -1,5 +1,9 @@
 # MCItemSmeltedEvent
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -14,21 +18,24 @@ MCItemSmeltedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## Methods
 
-### getSmelted
+:::group{name=getSmelted}
 
 Gets the smelted item (the output stack)
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemSmeltedEvent.getSmelted() as IItemStack
+// MCItemSmeltedEvent.getSmelted() as IItemStack
+
 myMCItemSmeltedEvent.getSmelted();
 ```
+
+:::
 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets the smelted item (the output stack) |
 

@@ -1,56 +1,52 @@
 # MCPotionEffect
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.potion.MCPotionEffect
+import crafttweaker.api.potion.MCPotionEffect;
 ```
 
-## Interfacce Implementate
-MCPotionEffect implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+
 ### isReady
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+MCPotionEffect.isReady(duration as int, amplifier as int) as boolean
 ```
 
-| Parameter | Type | Description                 |
-| --------- | ---- | --------------------------- |
-| duration  | int  | Nessuna descrizione fornita |
-| amplifier | int  | Nessuna descrizione fornita |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| duration  | int  | No Description Provided |
+| amplifier | int  | No Description Provided |
 
 
 ### newInstance
 
-Tipo di restituzione: [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectInstance
 ```
 
-| Parameter | Type | Description                 | IsOptional | Default Value |
-| --------- | ---- | --------------------------- | ---------- | ------------- |
-| duration  | int  | Nessuna descrizione fornita | false      | `null`        |
-| amplifier | int  | Nessuna descrizione fornita | true       | `0`           |
-
+| Parameter | Type | Description             | Optional | DefaultValue |
+| --------- | ---- | ----------------------- | -------- | ------------ |
+| duration  | int  | No Description Provided | false    |              |
+| amplifier | int  | No Description Provided | true     | 0            |
 
 
 ## Properties
 
-| Name          | Type                                                                                        | Ha Getter | Ha Setter |
-| ------------- | ------------------------------------------------------------------------------------------- | --------- | --------- |
-| commandString | String                                                                                      | true      | false     |
-| curativeItems | Elenca&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | true      | false     |
-| displayName   | String                                                                                      | true      | false     |
-| isBeneficial  | boolean                                                                                     | true      | false     |
-| isInstant     | boolean                                                                                     | true      | false     |
-| liquidColor   | int                                                                                         | true      | false     |
-| name          | String                                                                                      | true      | false     |
+| Name          | Type                                                                       | Ha Getter | Ha Setter |
+| ------------- | -------------------------------------------------------------------------- | --------- | --------- |
+| commandString | string                                                                     | true      | false     |
+| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true      | false     |
+| displayName   | string                                                                     | true      | false     |
+| isBeneficial  | boolean                                                                    | true      | false     |
+| isInstant     | boolean                                                                    | true      | false     |
+| liquidColor   | int                                                                        | true      | false     |
+| name          | string                                                                     | true      | false     |
 

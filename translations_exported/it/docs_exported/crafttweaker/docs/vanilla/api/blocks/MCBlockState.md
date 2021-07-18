@@ -1,105 +1,104 @@
 # MCBlockState
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.block.MCBlockState
+import crafttweaker.api.blocks.MCBlockState;
 ```
 
-## Interfacce Implementate
-MCBlockState implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Caster
+
+| Tipo Risultato                         | Implicito |
+| -------------------------------------- | --------- |
+| [MCBlock](/vanilla/api/blocks/MCBlock) | true      |
+| string                                 | false     |
 
 ## Methods
+
 ### getAllowedValuesForProperty
 
-Tipo di ritorno: Lista&lt;String&gt;
+Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(nome as String);
+MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 ### getProperties
 
-Tipo di ritorno: Stringa[String]
+Return Type: string[string]
 
 ```zenscript
+MCBlockState.getProperties() as string[string]
 myMCBlockState.getProperties();
 ```
 
 ### getPropertyNames
 
-Tipo di ritorno: Lista&lt;String&gt;
+Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
+MCBlockState.getPropertyNames() as stdlib.List<string>
 myMCBlockState.getPropertyNames();
 ```
 
 ### getPropertyValue
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCBlockState.getPropertyValue(nome as String);
+MCBlockState.getPropertyValue(name as string) as string
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 ### hasProperty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCBlockState.hasProperty(nome as String);
+MCBlockState.hasProperty(name as string) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 ### withProperty
 
-Tipo di restituzione: [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(nome as String, valore as String);
+MCBlockState.withProperty(name as string, value as string) as MCBlockState
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
-| value     | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
+| value     | string | No Description Provided |
 
 
 
 ## Properties
 
-| Name            | Type                                                          | Ha Getter | Ha Setter |
-| --------------- | ------------------------------------------------------------- | --------- | --------- |
-| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true      | false     |
-| canProvidePower | boolean                                                       | true      | false     |
-| commandString   | String                                                        | true      | false     |
-| hasTileEntity   | boolean                                                       | true      | false     |
-| isSolid         | boolean                                                       | true      | false     |
-| isSticky        | boolean                                                       | true      | false     |
-| lightLevel      | int                                                           | true      | false     |
-| ticksRandomly   | boolean                                                       | true      | false     |
-
-## Caster
-
-| Tipo Risultato                                                | Implicito |
-| ------------------------------------------------------------- | --------- |
-| String                                                        | false     |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true      |
+| Name            | Type                                   | Ha Getter | Ha Setter |
+| --------------- | -------------------------------------- | --------- | --------- |
+| block           | [MCBlock](/vanilla/api/blocks/MCBlock) | true      | false     |
+| canProvidePower | boolean                                | true      | false     |
+| commandString   | string                                 | true      | false     |
+| hasTileEntity   | boolean                                | true      | false     |
+| isSolid         | boolean                                | true      | false     |
+| isSticky        | boolean                                | true      | false     |
+| lightLevel      | int                                    | true      | false     |
+| ticksRandomly   | boolean                                | true      | false     |
 

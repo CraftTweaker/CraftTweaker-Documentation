@@ -1,29 +1,30 @@
 # MCEntityType
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.entity.MCEntityType
+import crafttweaker.api.entity.MCEntityType;
 ```
 
+
 ## Interfacce Implementate
-MCEntityType implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCEntityType implements the following interfaces. That means all methods defined in these interfaces are also available in MCEntityType
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Properties
 
-| Name           | Type                                                                                           | Ha Getter | Ha Setter |
-| -------------- | ---------------------------------------------------------------------------------------------- | --------- | --------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true      | false     |
-| commandString  | String                                                                                         | true      | false     |
-| height         | float                                                                                          | true      | false     |
-| immuneToFire   | boolean                                                                                        | true      | false     |
-| lootTable      | String                                                                                         | true      | false     |
-| name           | String                                                                                         | true      | false     |
-| serializable   | boolean                                                                                        | true      | false     |
-| summonable     | boolean                                                                                        | true      | false     |
-| translationKey | String                                                                                         | true      | false     |
-| width          | float                                                                                          | true      | false     |
+| Name           | Type                                                                 | Ha Getter | Ha Setter |
+| -------------- | -------------------------------------------------------------------- | --------- | --------- |
+| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true      | false     |
+| commandString  | string                                                               | true      | false     |
+| height         | float                                                                | true      | false     |
+| immuneToFire   | boolean                                                              | true      | false     |
+| lootTable      | string                                                               | true      | false     |
+| name           | string                                                               | true      | false     |
+| serializable   | boolean                                                              | true      | false     |
+| summonable     | boolean                                                              | true      | false     |
+| translationKey | string                                                               | true      | false     |
+| width          | float                                                                | true      | false     |
 

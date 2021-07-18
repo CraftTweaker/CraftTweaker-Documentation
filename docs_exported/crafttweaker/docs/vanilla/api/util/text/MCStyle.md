@@ -16,10 +16,9 @@ new MCStyle() as MCStyle
 new MCStyle();
 ```
 
-
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -32,90 +31,119 @@ MCStyle.equals(other as Object) as boolean
 | other | Object | No Description Provided |
 
 
-### getBold
+:::
+
+:::group{name=getBold}
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.getBold() as boolean
+// MCStyle.getBold() as boolean
+
 myMCStyle.getBold();
 ```
 
-### getFontId
+:::
+
+:::group{name=getFontId}
 
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-MCStyle.getFontId() as MCResourceLocation
+// MCStyle.getFontId() as MCResourceLocation
+
 myMCStyle.getFontId();
 ```
 
-### getInsertion
+:::
+
+:::group{name=getInsertion}
 
 Return Type: string
 
 ```zenscript
-MCStyle.getInsertion() as string
+// MCStyle.getInsertion() as string
+
 myMCStyle.getInsertion();
 ```
 
-### getItalic
+:::
+
+:::group{name=getItalic}
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.getItalic() as boolean
+// MCStyle.getItalic() as boolean
+
 myMCStyle.getItalic();
 ```
 
-### getObfuscated
+:::
+
+:::group{name=getObfuscated}
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.getObfuscated() as boolean
+// MCStyle.getObfuscated() as boolean
+
 myMCStyle.getObfuscated();
 ```
 
-### getStrikethrough
+:::
+
+:::group{name=getStrikethrough}
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.getStrikethrough() as boolean
+// MCStyle.getStrikethrough() as boolean
+
 myMCStyle.getStrikethrough();
 ```
 
-### getUnderlined
+:::
+
+:::group{name=getUnderlined}
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.getUnderlined() as boolean
+// MCStyle.getUnderlined() as boolean
+
 myMCStyle.getUnderlined();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCStyle.hashCode() as int
+// MCStyle.hashCode() as int
+
 myMCStyle.hashCode();
 ```
 
-### isEmpty
+:::
+
+:::group{name=isEmpty}
 
 Whether or not this style is empty (inherits everything from the parent).
 
 Return Type: boolean
 
 ```zenscript
-MCStyle.isEmpty() as boolean
+// MCStyle.isEmpty() as boolean
+
 myMCStyle.isEmpty();
 ```
 
-### mergeStyle
+:::
+
+:::group{name=mergeStyle}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -128,7 +156,9 @@ MCStyle.mergeStyle(style as MCStyle) as MCStyle
 | style | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
-### setBold
+:::
+
+:::group{name=setBold}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -141,7 +171,9 @@ MCStyle.setBold(boldIn as Boolean) as MCStyle
 | boldIn | Boolean | No Description Provided |
 
 
-### setColor
+:::
+
+:::group{name=setColor}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -154,6 +186,10 @@ MCStyle.setColor(colour as int) as MCStyle
 | colour | int | No Description Provided |
 
 
+:::
+
+:::group{name=setColor}
+
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
@@ -165,7 +201,9 @@ MCStyle.setColor(formatting as TextFormatting) as MCStyle
 | formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
-### setFontId
+:::
+
+:::group{name=setFontId}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -178,7 +216,9 @@ MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
-### setFormatting
+:::
+
+:::group{name=setFormatting}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -191,7 +231,9 @@ MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 | formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
-### setInsertion
+:::
+
+:::group{name=setInsertion}
 
 Set a text to be inserted into Chat when the component is shift-clicked
 
@@ -206,7 +248,9 @@ MCStyle.setInsertion(insertion as string) as MCStyle
 | insertion | string | No Description Provided |
 
 
-### setItalic
+:::
+
+:::group{name=setItalic}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -219,7 +263,9 @@ MCStyle.setItalic(italic as Boolean) as MCStyle
 | italic | Boolean | No Description Provided |
 
 
-### setObfuscated
+:::
+
+:::group{name=setObfuscated}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -232,7 +278,9 @@ MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 | obfuscated | Boolean | No Description Provided |
 
 
-### setStrikethrough
+:::
+
+:::group{name=setStrikethrough}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -245,7 +293,9 @@ MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 | strikethrough | Boolean | No Description Provided |
 
 
-### setUnderlined
+:::
+
+:::group{name=setUnderlined}
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
@@ -258,13 +308,18 @@ MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 | underlined | Boolean | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCStyle.toString() as string
+// MCStyle.toString() as string
+
 myMCStyle.toString();
 ```
+
+:::
 
 

@@ -1,231 +1,244 @@
 # MCCommandContextBuilder
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommandContextBuilder
+import crafttweaker.api.commands.custom.MCCommandContextBuilder;
 ```
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
+
 ## Methods
+
 ### build
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
-myMCCommandContextBuilder.build(wprowadź jako String);
+MCCommandContextBuilder.build(input as string) as MCCommandContext
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| input     | String | No description provided |
+| input     | string | No Description Provided |
 
 
 ### copy
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.copy() as MCCommandContextBuilder
 myMCCommandContextBuilder.copy();
 ```
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandContextBuilder.equals(o jako obiekt);
+MCCommandContextBuilder.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### Kontekst wyszukiwania
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
+Return Type: [MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
 
 ```zenscript
-myMCCommandContextBuilder.findSuggestionContext(kursor jak int);
+MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionContext
 ```
 
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
-| cursor    | int  | No description provided |
+| cursor    | int  | No Description Provided |
 
 
 ### getArgumenty
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[String]
+Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
 
 ```zenscript
+MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
 myMCCommandContextBuilder.getArguments();
 ```
 
 ### getChild
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.getChild() as MCCommandContextBuilder
 myMCCommandContextBuilder.getChild();
 ```
 
 ### getCommand
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCCommandContextBuilder.getCommand() as MCCommand
 myMCCommandContextBuilder.getCommand();
 ```
 
 ### getDispatcher
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandDispatcher](/vanilla/api/commands/custom/MCCommandDispatcher)
+Return Type: [MCCommandDispatcher](/vanilla/api/commands/custom/MCCommandDispatcher)
 
 ```zenscript
+MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
 myMCCommandContextBuilder.getDispatcher();
 ```
 
 ### getLastChild
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
 myMCCommandContextBuilder.getLastChild();
 ```
 
 ### getNodes
 
-Typ zwrotu: Lista&lt;[crafttweaker.api.commands.custom.MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
+Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
+MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContextBuilder.getNodes();
 ```
 
 ### Zakres getRange
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCCommandContextBuilder.getRange() as MCStringRange
 myMCCommandContextBuilder.getRange();
 ```
 
 ### getRootNode
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCCommandContextBuilder.getRootNode() as MCCommandNode
 myMCCommandContextBuilder.getRootNode();
 ```
 
 ### getSource
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
+MCCommandContextBuilder.getSource() as MCCommandSource
 myMCCommandContextBuilder.getSource();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommandContextBuilder.hashCode() as int
 myMCCommandContextBuilder.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContextBuilder.toString() as string
 myMCCommandContextBuilder.toString();
 ```
 
 ### z argumentem
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withArgument(nazwa jako String, argument jako crafttweaker.api.commands.custom.MCParsedArgument);
+MCCommandContextBuilder.withArgument(name as string, argument as MCParsedArgument) as MCCommandContextBuilder
 ```
 
-| Parameter | Type                                                                                               | Description             |
-| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
-| name      | String                                                                                             | No description provided |
-| argument  | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| name      | string                                                            | No Description Provided |
+| argument  | [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No Description Provided |
 
 
 ### withChild
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withChild(dziecko jako crafttweaker.api.commands.custom.MCCommandContextBuilder);
+MCCommandContextBuilder.withChild(child as MCCommandContextBuilder) as MCCommandContextBuilder
 ```
 
-| Parameter | Type                                                                                                             | Description             |
-| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| dziecko   | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
+| Parameter | Type                                                                            | Description             |
+| --------- | ------------------------------------------------------------------------------- | ----------------------- |
+| dziecko   | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
 ### z komendą
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withCommand(polecenie jako crafttweaker.api.commands.custom.MCCommand);
+MCCommandContextBuilder.withCommand(command as MCCommand) as MCCommandContextBuilder
 ```
 
-| Parameter | Type                                                                                 | Description             |
-| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
+| Parameter | Type                                                | Description             |
+| --------- | --------------------------------------------------- | ----------------------- |
+| command   | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
 ### withNode
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCommandNode, zakres jak crafttweaker.api.commands.custom.MCStringRange);
+MCCommandContextBuilder.withNode(node as MCCommandNode, range as MCStringRange) as MCCommandContextBuilder
 ```
 
-| Parameter | Type                                                                                         | Description             |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| węzeł     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| Parameter | Type                                                        | Description             |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| węzeł     | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+| range     | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
 ### Źródło
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-myMCCommandContextBuilder.withSource(źródło jako crafttweaker.api.commands.custom.MCCommandSource);
+MCCommandContextBuilder.withSource(source as MCCommandSource) as MCCommandContextBuilder
 ```
 
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| źródło    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| Parameter | Type                                                                       | Description             |
+| --------- | -------------------------------------------------------------------------- | ----------------------- |
+| źródło    | [Źródło polecenia MCCommand](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCCommandContextBuilder == o jako obiekt
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

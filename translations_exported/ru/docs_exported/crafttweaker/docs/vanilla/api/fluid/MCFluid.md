@@ -1,34 +1,29 @@
 # MCFluid
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.fluid.MCFluid
+import crafttweaker.api.fluid.MCFluid;
 ```
 
-## Implemented Interfaces
-MCFluid реализует следующие интерфейсы. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+
 ### makeStack
 
-Создает новый [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) с заданным количеством жидкости.
+Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amount of fluid.
 
- Возвращается: `новый (неизменяемый) [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)`
-
-Возвратный тип: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myMCFluid.makeStack(сумма как int);
+MCFluid.makeStack(amount as int) as IFluidStack
 myMCFluid.makeStack(1000);
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| amount   | int | Описание отсутствует |
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| amount   | int | No Description Provided |
 
 
 
@@ -36,21 +31,5 @@ myMCFluid.makeStack(1000);
 
 | Название      | Тип    | Имеет Getter | Имеет Setter |
 | ------------- | ------ | ------------ | ------------ |
-| commandString | String | true         | false        |
-
-## Операторы
-### MUL
-
-Создает новый [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) с заданным количеством жидкости.
-
- Возвращается: `новый (неизменяемый) [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)`
-
-```zenscript
-myMCFluid * сумма как int
-myMCFluid * 1000
-```
-
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| amount   | int | Описание отсутствует |
+| commandString | string | true         | false        |
 

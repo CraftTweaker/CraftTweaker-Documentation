@@ -19,9 +19,17 @@ DirectionAxis implements the following interfaces. That means all methods define
 
 - Predicate
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| X | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+| Y | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+| Z | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -34,14 +42,18 @@ DirectionAxis.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### getCoordinate
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
+Returns: value of the coordinate  
 Return Type: double
 
 ```zenscript
-DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+// DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+
 <directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
 
@@ -52,12 +64,18 @@ DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
 | z | double | z value of the coordinate |
 
 
+:::
+
+:::group{name=getCoordinate}
+
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
+Returns: value of the coordinate  
 Return Type: int
 
 ```zenscript
-DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
+// DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
+
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
@@ -68,24 +86,29 @@ DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 | z | int | z value of the coordinate |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-DirectionAxis.hashCode() as int
+// DirectionAxis.hashCode() as int
+
 <directionaxis:x>.hashCode();
 ```
+
+:::
 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| commandString | string | true | false |
-| hashCode | int | true | false |
-| horizontal | boolean | true | false |
-| name | string | true | false |
-| ordinal | int | true | false |
-| vertical | boolean | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
+| hashCode | int | true | false | No Description Provided |
+| horizontal | boolean | true | false | No Description Provided |
+| name | string | true | false | Get the name of this Axis ("X", "Y" or "Z") |
+| ordinal | int | true | false | Gets the enum ordinal of this axis |
+| vertical | boolean | true | false | No Description Provided |
 

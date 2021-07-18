@@ -1,81 +1,152 @@
 # IFluidStack
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.fluid.IFluidStack
+import crafttweaker.api.fluid.IFluidStack;
 ```
 
+
 ## Interfacce Implementate
-IFluidStack implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+IFluidStack implements the following interfaces. That means all methods defined in these interfaces are also available in IFluidStack
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Caster
+
+| Tipo Risultato                        | Implicito |
+| ------------------------------------- | --------- |
+| [MCFluid](/vanilla/api/fluid/MCFluid) | true      |
 
 ## Methods
-### copy
 
-Copia la pila. Necessario solo quando sono coinvolti pile mutevoli.
+:::group{name=containsOther}
 
- Restituisce: `Una nuova pila, che contiene le stesse informazioni di questa`
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
-Tipo di restituzione: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: boolean
 
 ```zenscript
+IFluidStack.containsOther(other as IFluidStack) as boolean
+```
+
+| Parameter | Type                                          | Description                          |
+| --------- | --------------------------------------------- | ------------------------------------ |
+| other     | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
+:::
+
+:::group{name=copy}
+
+Copies the stack. Only needed when mutable stacks are involved.
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
 
-### mutabile
+:::
 
-Rende questo stack mutabile
+:::group{name=getTag}
 
- Restituisce: `Una nuova pila, che è mutevole.`
+Returns the NBT tag attached to this FluidStack.
 
-Tipo di restituzione: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
+IFluidStack.getTag() as IData
+myIFluidStack.getTag();
+```
+
+:::
+
+:::group{name=mutable}
+
+Makes this stack mutable
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
 
-### setAmount
+:::
 
-Imposta la quantità di fluido in MilliBuckets (MB)
+:::group{name=setAmount}
 
- Restituisce: `Una nuova pila, o questa pila, a seconda che questa pila sia mutabile`
+Sets the fluid amount in MilliBuckets (mB)
 
-Tipo di restituzione: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(amount as int);
+IFluidStack.setAmount(amount as int) as IFluidStack
 myIFluidStack.setAmount(1000);
 ```
 
-| Parameter | Type | Description                            |
-| --------- | ---- | -------------------------------------- |
-| amount    | int  | L'importo per moltiplicare questa pila |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
 
 
+:::
 
-## Properties
+:::group{name=withTag}
 
-| Name          | Type                                                         | Ha Getter | Ha Setter |
-| ------------- | ------------------------------------------------------------ | --------- | --------- |
-| commandString | String                                                       | true      | false     |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true      | false     |
+Sets the tag for the FluidStack.
+
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+
+```zenscript
+IFluidStack.withTag(tag as IData) as IFluidStack
+myIFluidStack.withTag({Display: {lore: ["Hello"]}});
+```
+
+| Parameter | Type                             | Description     |
+| --------- | -------------------------------- | --------------- |
+| tag       | [IData](/vanilla/api/data/IData) | The tag to set. |
+
+
+:::
+
 
 ## Operators
-### MUL
 
-Imposta la quantità di fluido in MilliBuckets (MB)
+:::group{name=CONTAINS}
 
- Restituisce: `Una nuova pila, o questa pila, a seconda che questa pila sia mutabile`
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+```zenscript
+other as IFluidStack in myIFluidStack
+```
+
+:::
+
+:::group{name=MUL}
+
+Sets the fluid amount in MilliBuckets (MB)
 
 ```zenscript
 myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parameter | Type | Description                            |
-| --------- | ---- | -------------------------------------- |
-| amount    | int  | L'importo per moltiplicare questa pila |
+:::
+
+
+## Properties
+
+| Name          | Type                                                       | Ha Getter | Ha Setter |
+| ------------- | ---------------------------------------------------------- | --------- | --------- |
+| amount        | int                                                        | true      | false     |
+| commandString | string                                                     | true      | false     |
+| empty         | boolean                                                    | true      | false     |
+| fluid         | [MCFluid](/vanilla/api/fluid/MCFluid)                      | true      | false     |
+| hasTag        | boolean                                                    | true      | false     |
+| registryName  | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true      | false     |
+| tag           | [IData](/vanilla/api/data/IData)                           | true      | false     |
 

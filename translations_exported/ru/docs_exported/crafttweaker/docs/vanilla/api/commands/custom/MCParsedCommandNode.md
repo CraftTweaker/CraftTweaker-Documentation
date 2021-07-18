@@ -1,74 +1,79 @@
 # MCParsedCommandNode
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCParsedCommandNode
+import crafttweaker.api.commands.custom.MCParsedCommandNode;
 ```
+
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
 
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCParsedCommandNode.equals(o as Object);
+MCParsedCommandNode.equals(o as Object) as boolean
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 
 ### getNode
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCParsedCommandNode.getNode() as MCCommandNode
 myMCParsedCommandNode.getNode();
 ```
 
 ### getRange
 
-Возврат типа: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCParsedCommandNode.getRange() as MCStringRange
 myMCParsedCommandNode.getRange();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCParsedCommandNode.hashCode() as int
 myMCParsedCommandNode.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCParsedCommandNode.toString() as string
 myMCParsedCommandNode.toString();
 ```
 
 
 ## Операторы
+
 ### EQUALS
 
 ```zenscript
 myMCParsedCommandNode == o как объект
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
 
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 

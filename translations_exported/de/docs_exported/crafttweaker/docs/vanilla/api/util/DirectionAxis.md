@@ -2,29 +2,48 @@
 
 Represents a direction axis (X, Y, Z)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.DirectionAxis
+import crafttweaker.api.util.DirectionAxis;
 ```
 
+
+## Extending Enum&lt;DirectionAxis&gt;
+
+DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;. That means all methods available in Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; are also available in DirectionAxis
+
 ## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+DirectionAxis implements the following interfaces. That means all methods defined in these interfaces are also available in DirectionAxis
+
+- Predicate
 
 ## Methoden
-### getCoordinate
+
+:::group{name=equals}
+
+Return Type: boolean
+
+```zenscript
+DirectionAxis.equals(o as Object) as boolean
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
+
+
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- Gibt `Wert der Koordinate zurück`
-
-Rückgabetyp: Doppelt
+Return Type: double
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x Doppelt, y doppelt, z als Doppel);
+DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
 <directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
 
@@ -35,15 +54,16 @@ Rückgabetyp: Doppelt
 | z         | double | z value of the coordinate |
 
 
+:::
+
+:::group{name=getCoordinate}
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- Gibt `Wert der Koordinate zurück`
-
-Return type: int
+Return Type: int
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x as int, y as int, z as int);
+DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
@@ -54,14 +74,28 @@ Return type: int
 | z         | int  | z value of the coordinate |
 
 
+:::
+
+:::group{name=hashCode}
+
+Return Type: int
+
+```zenscript
+DirectionAxis.hashCode() as int
+<directionaxis:x>.hashCode();
+```
+
+:::
+
 
 ## Properties
 
 | Name          | Type    | Has Getter | Has Setter |
 | ------------- | ------- | ---------- | ---------- |
-| commandString | String  | true       | false      |
+| commandString | string  | true       | false      |
+| hashCode      | int     | true       | false      |
 | horizontal    | boolean | true       | false      |
-| name          | String  | true       | false      |
+| name          | string  | true       | false      |
 | ordinal       | int     | true       | false      |
 | vertical      | boolean | true       | false      |
 

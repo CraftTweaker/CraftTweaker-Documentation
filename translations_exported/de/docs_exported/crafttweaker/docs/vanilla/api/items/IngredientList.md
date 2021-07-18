@@ -1,119 +1,245 @@
 # Zutatenliste
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.IngredientList
+import crafttweaker.api.item.IngredientList;
 ```
+
 
 ## Implemented Interfaces
-IngredientList implementiert die folgenden Schnittstellen. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+IngredientList implements the following interfaces. That means all methods defined in these interfaces are also available in IngredientList
+
+- [IIngredient](/vanilla/api/items/IIngredient)
+
+## Constructors
+
+No Description Provided
+```zenscript
+new IngredientList(ingredients as IIngredient[]) as IngredientList
+```
+
+| Parameter   | Type                                            | Beschreibung            |
+| ----------- | ----------------------------------------------- | ----------------------- |
+| ingredients | [IIngredient](/vanilla/api/items/IIngredient)[] | No Description Provided |
+
+
+
+## Casters
+
+| Result type                          | Is Implicit |
+| ------------------------------------ | ----------- |
+| [IData](/vanilla/api/data/IData)     | true        |
+| [MapData](/vanilla/api/data/MapData) | true        |
 
 ## Methoden
-### anyDamage
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+:::group{name=addShiftTooltip}
 
-```zenscript
-null.anySchaden();
-```
-
-### getRemainingItem
-
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: void
 
 ```zenscript
-null.getRemainingItem(Stapel als crafttweaker.api.item.IItemStack);
-null.getRemainingItem(<item:minecraft:iron_ingot>);
+IngredientList.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
 ```
 
-| Parameter | Type                                                              | Beschreibung                              |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parameter   | Type                                                       | Beschreibung            | Optional | DefaultValue |
+| ----------- | ---------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| inhalt      | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
+| showMessage | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
+
+:::
+
+:::group{name=addTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.addTooltip(content as MCTextComponent) as void
+```
+
+| Parameter | Type                                                       | Beschreibung            |
+| --------- | ---------------------------------------------------------- | ----------------------- |
+| inhalt    | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### matches
+:::
+
+:::group{name=anyDamage}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
+myIngredientList.anyDamage();
+```
+
+:::
+
+:::group{name=clearTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.clearTooltip() as void
+myIngredientList.clearTooltip();
+```
+
+:::
+
+:::group{name=contains}
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+IngredientList.contains(ingredient as IIngredient) as boolean
+myIngredientList.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| Parameter  | Type                                          | Beschreibung            |
+| ---------- | --------------------------------------------- | ----------------------- |
+| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
+:::
+
+:::group{name=getRemainingItem}
+
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IngredientList.getRemainingItem(stack as IItemStack) as IItemStack
+myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type                                        | Beschreibung                              |
+| --------- | ------------------------------------------- | ----------------------------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
+
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-null.matches(Stapel als crafttweaker.api.item.IItemStack);
-null.matches(<item:minecraft:iron_ingot>);
+IngredientList.matches(stack as IItemStack) as boolean
+myIngredientList.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Beschreibung       |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parameter | Type                                        | Beschreibung       |
+| --------- | ------------------------------------------- | ------------------ |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
 
-Does the given stack match the ingredient?
+:::group{name=modifyTooltip}
 
-Return type: boolean
+Return Type: void
 
 ```zenscript
-null.matches(Stapel als crafttweaker.api.item.IItemStack, ignoreSchaden als boolean);
+IngredientList.modifyTooltip(function as ITooltipFunction) as void
 ```
 
-| Parameter     | Type                                                              | Beschreibung                       |
-| ------------- | ----------------------------------------------------------------- | ---------------------------------- |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check                 |
-| ignoreSchaden | boolean                                                           | Soll der Schaden überprüft werden? |
+| Parameter | Type                                                    | Beschreibung            |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
-### onlyDamaged
+:::
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+:::group{name=only}
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyDamaged();
+IngredientList.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
 ```
 
-### onlyIf
+| Parameter | Type                                                                                                                             | Beschreibung            |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+:::
+
+:::group{name=onlyDamaged}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myIngredientList.onlyDamaged();
 ```
 
-| Parameter | Type                                                                                                    | Beschreibung            | IsOptional | Standardwert |
-| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------- | ---------- | ------------ |
-| uid       | String                                                                                                  | No description provided | false      | `null`       |
-| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true       | `null`       |
+:::
 
+:::group{name=onlyIf}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type                                                                     | Beschreibung            | Optional | DefaultValue |
+| --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
+| uid       | string                                                                   | No Description Provided | false    |              |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
+:::
+
+:::group{name=removeTooltip}
+
+Return Type: void
+
+```zenscript
+IngredientList.removeTooltip(regex as string) as void
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| regex     | string | No Description Provided |
+
+
+:::
+
+
+## Operatoren
+
+:::group{name=CONTAINS}
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myIngredientList
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myIngredientList
+```
+
+:::
+
+:::group{name=OR}
+
+```zenscript
+myIngredientList | other as IIngredient
+```
+
+:::
 
 
 ## Properties
 
-| Name          | Type                                                                | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
-
-## Operatoren
-### OR (ODER)
-
-```zenscript
-<tag:ingotIron> | Andere als crafttweaker.api.item.IIngredient
-```
-
-| Parameter | Type                                                                | Beschreibung            |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
-
-## Casters
-
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| Name     | Type | Has Getter | Has Setter |
+| -------- | ---- | ---------- | ---------- |
+| burnTime | void | false      | true       |
 

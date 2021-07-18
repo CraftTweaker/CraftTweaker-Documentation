@@ -2,96 +2,118 @@
 
 
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.data.FloatData
+import crafttweaker.api.data.FloatData;
 ```
+
 
 ## Interfacce Implementate
-FloatData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.data.IData](/vanilla/api/data/IData)
-- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
+FloatData implements the following interfaces. That means all methods defined in these interfaces are also available in FloatData
+
+- [INumberData](/vanilla/api/data/INumberData)
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.data.FloatData(internal as float);
+new FloatData(internal as float) as FloatData
 ```
-| Parameter | Type  | Description                 |
-| --------- | ----- | --------------------------- |
-| internal  | float | Nessuna descrizione fornita |
+
+| Parameter | Type  | Description             |
+| --------- | ----- | ----------------------- |
+| internal  | float | No Description Provided |
 
 
+
+## Caster
+
+| Tipo Risultato                                       | Implicito |
+| ---------------------------------------------------- | --------- |
+| byte                                                 | false     |
+| double                                               | false     |
+| float                                                | false     |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false     |
+| int                                                  | false     |
+| [INumberData](/vanilla/api/data/INumberData)         | false     |
+| long                                                 | false     |
+| short                                                | false     |
 
 ## Methods
-### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+### asCollection
 
- Returns: `null if this IData is not a list.`
-
-Tipo di restituzione: Elenco&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt;
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
+FloatData.asCollection() as ICollectionData
+8.5.asCollection();
+```
+
+### asList
+
+Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+FloatData.asList() as stdlib.List<IData>
 8.5.asList();
 ```
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
-
-Tipo restituito: [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
+FloatData.asMap() as IData[string]
 8.5.asMap();
 ```
 
-### asString
+### asNumber
 
-Gets the String representation of this IData
-
- Returns: `String that represents this IData (value and type).`
-
-Return type: String
+Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-8.5.asString();
+FloatData.asNumber() as INumberData
+8.5.asNumber();
 ```
 
-### contains
+### getByte
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
- Restituisce: `true se gli IData forniti sono contenuti in questo IData`
-
-Return type: boolean
+Return Type: byte
 
 ```zenscript
-8.5.contains(dati come crafttweaker.api.data.IData);
-8.5.contains("Display");
+FloatData.getByte() as byte
+8.5.getByte();
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+### getDouble
 
+Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
-### copy
-
-Makes a copy of this IData.
-
- IData is immutable by default, use this to create a proper copy of the object.
-
- Returns: `a copy of this IData.`
-
-Tipo restituito: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Return Type: double
 
 ```zenscript
-8.5.copy();
+FloatData.getDouble() as double
+8.5.getDouble();
+```
+
+### getFloat
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a float
+
+Return Type: float
+
+```zenscript
+FloatData.getFloat() as float
+8.5.getFloat();
 ```
 
 ### getId
@@ -100,23 +122,54 @@ Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
- Returns: `ID of the NBT tag that this data represents.`
-
-Tipo restituito: byte
+Return Type: byte
 
 ```zenscript
+FloatData.getId() as byte
 8.5.getId();
+```
+
+### getInt
+
+Gets the value of this [IData](/vanilla/api/data/IData) as an int
+
+Return Type: int
+
+```zenscript
+FloatData.getInt() as int
+8.5.getInt();
+```
+
+### getLong
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a long
+
+Return Type: long
+
+```zenscript
+FloatData.getLong() as long
+8.5.getLong();
+```
+
+### getShort
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a short
+
+Return Type: short
+
+```zenscript
+FloatData.getShort() as short
+8.5.getShort();
 ```
 
 ### getString
 
 Gets the String representation of the internal INBT tag
 
- Returns: `String that represents the internal INBT of this IData.`
-
-Return type: String
+Return Type: string
 
 ```zenscript
+FloatData.getString() as string
 8.5.getString();
 ```
 

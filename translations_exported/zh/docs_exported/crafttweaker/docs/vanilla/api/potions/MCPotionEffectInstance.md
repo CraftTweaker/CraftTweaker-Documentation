@@ -1,80 +1,91 @@
 # MCPotionEffectInstance
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.potion.MCPotionEffectInstance
+import crafttweaker.api.potion.MCPotionEffectInstance;
 ```
+
+
+## 已实现的接口
+MCPotionEffectInstance implements the following interfaces. That means all methods defined in these interfaces are also available in MCPotionEffectInstance
+
+- Comparable&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
 
 ## 方法
+
 ### addCurativeItem
 
+Return Type: void
+
 ```zenscript
-myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemStack);
+MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 ```
 
-| 参数    | 类型                                                                | 描述                      |
-| ----- | ----------------------------------------------------------------- | ----------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数    | 类型                                          | 描述                      |
+| ----- | ------------------------------------------- | ----------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 ### combine
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 ```
 
-| 参数     | 类型                                                                                            | 描述                      |
-| ------ | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数     | 类型                                                                    | 描述                      |
+| ------ | --------------------------------------------------------------------- | ----------------------- |
+| effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 
 
 ### getCurativeItems
 
-返回类型：列表&lt;[craftminstrer.api.IItemStack](/vanilla/api/items/IItemStack)&gt;
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
+MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
 myMCPotionEffectInstance.getCurativeItems();
 ```
 
 ### isCurativeItem
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
+MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 ```
 
-| 参数    | 类型                                                                | 描述                      |
-| ----- | ----------------------------------------------------------------- | ----------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数    | 类型                                          | 描述                      |
+| ----- | ------------------------------------------- | ----------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 ### setCurativeItems
 
+Return Type: void
+
 ```zenscript
-myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
+MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 ```
 
-| 参数    | 类型                                                                  | 描述                      |
-| ----- | ------------------------------------------------------------------- | ----------------------- |
-| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| 参数    | 类型                                            | 描述                      |
+| ----- | --------------------------------------------- | ----------------------- |
+| items | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 
 
 
 ## 参数
 
-| 名称            | 类型                                                                            | 可获得  | 可设置   |
-| ------------- | ----------------------------------------------------------------------------- | ---- | ----- |
-| ambient       | boolean                                                                       | true | false |
-| amplifier     | int                                                                           | true | false |
-| duration      | int                                                                           | true | false |
-| effectName    | String                                                                        | true | false |
-| potion        | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false |
-| showIcon      | boolean                                                                       | true | false |
-| showParticles | boolean                                                                       | true | false |
+| 名称            | 类型                                                    | 可获得  | 可设置   |
+| ------------- | ----------------------------------------------------- | ---- | ----- |
+| ambient       | boolean                                               | true | false |
+| amplifier     | int                                                   | true | false |
+| duration      | int                                                   | true | false |
+| effectName    | string                                                | true | false |
+| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false |
+| showIcon      | boolean                                               | true | false |
+| showParticles | boolean                                               | true | false |
 

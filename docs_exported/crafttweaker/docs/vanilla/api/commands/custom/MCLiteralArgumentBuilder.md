@@ -20,16 +20,19 @@ MCLiteralArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custo
 
 ## Methods
 
-### build
+:::group{name=build}
 
 Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
 ```zenscript
-MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
+// MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
+
 myMCLiteralArgumentBuilder.build();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +45,9 @@ MCLiteralArgumentBuilder.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### executes
+:::
+
+:::group{name=executes}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -55,7 +60,9 @@ MCLiteralArgumentBuilder.executes(command as MCCommand) as MCLiteralArgumentBuil
 | command | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
-### fork
+:::
+
+:::group{name=fork}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -69,7 +76,9 @@ MCLiteralArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectMod
 | modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 
 
-### forward
+:::
+
+:::group{name=forward}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -84,79 +93,105 @@ MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirect
 | fork | boolean | No Description Provided |
 
 
-### getArguments
+:::
+
+:::group{name=getArguments}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
+// MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
+
 myMCLiteralArgumentBuilder.getArguments();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCLiteralArgumentBuilder.getCommand() as MCCommand
+// MCLiteralArgumentBuilder.getCommand() as MCCommand
+
 myMCLiteralArgumentBuilder.getCommand();
 ```
 
-### getLiteral
+:::
+
+:::group{name=getLiteral}
 
 Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.getLiteral() as string
+// MCLiteralArgumentBuilder.getLiteral() as string
+
 myMCLiteralArgumentBuilder.getLiteral();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
+// MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
+
 myMCLiteralArgumentBuilder.getRedirect();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+// MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+
 myMCLiteralArgumentBuilder.getRedirectModifier();
 ```
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+// MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+
 myMCLiteralArgumentBuilder.getRequirement();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCLiteralArgumentBuilder.hashCode() as int
+// MCLiteralArgumentBuilder.hashCode() as int
+
 myMCLiteralArgumentBuilder.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
 ```zenscript
-MCLiteralArgumentBuilder.isFork() as boolean
+// MCLiteralArgumentBuilder.isFork() as boolean
+
 myMCLiteralArgumentBuilder.isFork();
 ```
 
-### redirect
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -168,6 +203,10 @@ MCLiteralArgumentBuilder.redirect(target as MCCommandNode) as MCLiteralArgumentB
 |-----------|------|-------------|
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
+
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -181,7 +220,9 @@ MCLiteralArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleR
 | modifier | [MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
 
 
-### requires
+:::
+
+:::group{name=requires}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -194,7 +235,9 @@ MCLiteralArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as 
 | requirement | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
-### then
+:::
+
+:::group{name=then}
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
@@ -207,6 +250,10 @@ MCLiteralArgumentBuilder.then(argument as MCArgumentBuilder) as MCLiteralArgumen
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
 
+:::
+
+:::group{name=then}
+
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
@@ -218,24 +265,29 @@ MCLiteralArgumentBuilder.then(argument as MCCommandNode) as MCLiteralArgumentBui
 | argument | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.toString() as string
+// MCLiteralArgumentBuilder.toString() as string
+
 myMCLiteralArgumentBuilder.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCLiteralArgumentBuilder == o as Object
 ```
 
-
+:::
 
 

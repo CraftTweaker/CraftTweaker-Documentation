@@ -1,31 +1,26 @@
 # RecipeFilter
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.recipe.RecipeFilter
+import crafttweaker.api.recipe.RecipeFilter;
 ```
 
-## Functional Interface
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
-```zenscript
-(name) => false
-```
 ## Methods
+
 ### test
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myRecipeFilter.test(name as String);
+RecipeFilter.test(name as string) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 

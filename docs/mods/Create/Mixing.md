@@ -27,9 +27,9 @@ The following script will add recipes that will:
 3) Output Water (fluid) when Glass, Dirt and Lava (fluid) are Mixed with "superheated" heat with a duration of 100.
 
 ```zenscript
-// <recipetype:create:mixing>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
+// <recipetype:create:mixing>.addRecipe(String name, String heat, IItemStack output, IIngredientWithAmount[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
-// <recipetype:create:mixing>.addRecipe(String name, String heat, IFluidStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
+// <recipetype:create:mixing>.addRecipe(String name, String heat, IFluidStack output, IIngredientWithAmount[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
 
 <recipetype:create:mixing>.addRecipe("mixing_test_1", "none", <item:minecraft:arrow>, [<item:minecraft:diamond>, <item:minecraft:apple>]);
 <recipetype:create:mixing>.addRecipe("mixing_test_2", "heated", <item:minecraft:brick>, [<item:minecraft:diamond>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
@@ -38,7 +38,7 @@ The following script will add recipes that will:
 
 #### Remove Recipes for Items
 
-The follow script will remove all Mixing recipes that output Andesite Alloy.
+The following script will remove all Mixing recipes that output Andesite Alloy.
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IItemStack output)
@@ -48,7 +48,7 @@ The follow script will remove all Mixing recipes that output Andesite Alloy.
 
 #### Remove Recipes for Fluids
 
-The follow script will remove all Compacting recipes that output Builders Tea (Fluid)
+The following script will remove all Compacting recipes that output Builders Tea (Fluid)
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IFluidStack output)

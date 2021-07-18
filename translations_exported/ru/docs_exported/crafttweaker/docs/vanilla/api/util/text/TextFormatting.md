@@ -1,30 +1,30 @@
 # TextFormatting
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.text.TextFormatting
+import crafttweaker.api.text.TextFormatting;
 ```
 
+
 ## Implemented Interfaces
-TextFormatting implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+TextFormatting implements the following interfaces. That means all methods defined in these interfaces are also available in TextFormatting
 
-## Свойства
-
-| Название      | Тип     | Имеет Getter | Имеет Setter |
-| ------------- | ------- | ------------ | ------------ |
-| colorIndex    | int     | true         | false        |
-| commandString | String  | true         | false        |
-| fancyStyling  | boolean | true         | false        |
-| friendlyName  | String  | true         | false        |
-| isColor       | boolean | true         | false        |
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Утилиты
 
 | Тип результата | Является неявным |
 | -------------- | ---------------- |
-| String         | true             |
+| string         | true             |
+
+## Свойства
+
+| Название     | Тип     | Имеет Getter | Имеет Setter |
+| ------------ | ------- | ------------ | ------------ |
+| colorIndex   | int     | true         | false        |
+| fancyStyling | boolean | true         | false        |
+| friendlyName | string  | true         | false        |
+| isColor      | boolean | true         | false        |
 

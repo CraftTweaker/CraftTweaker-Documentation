@@ -1,118 +1,127 @@
 # MCSuggestions
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftbiner.api.commands.custom.MCSuggestions
+import crafttweaker.api.commands.custom.MCSuggestions;
 ```
+
 
 ## 方法
+
 ### 创建
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttbiner.api.commands.custom.MCSuggestions.create(命令作为字符串，建议作为收藏集<crafttweaker.api.commands.custom.MCSuggestion>)；
+MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 
-| 参数      | 类型                                                                                                               | 描述                      |
-| ------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| command | String                                                                                                           | No description provided |
-| 建议      | 收藏&lt;[craftmiliter.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No description provided |
+| 参数      | 类型                                                                                      | 描述                      |
+| ------- | --------------------------------------------------------------------------------------- | ----------------------- |
+| command | string                                                                                  | No Description Provided |
+| 建议      | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 
 
 ### empty
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttbiner.api.commands.custom.MCSuggestions.empty();
+MCSuggestions.empty() as MCSuggestions
+MCSuggestions.empty();
 ```
+
+### merge #合并
+
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MCSuggestions
+```
+
+| 参数        | 类型                                                                                        | 描述                      |
+| --------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| command   | string                                                                                    | No Description Provided |
+| input（输入） | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
+
+## 方法
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestions.equals(o as Object);
+MCSuggestions.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### getList
 
-Return type: List&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
+Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
+MCSuggestions.getList() as stdlib.List<MCSuggestion>
 myMCSuggestions.getList();
 ```
 
 ### getRange
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestions.getRange() as MCStringRange
 myMCSuggestions.getRange();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestions.hashCode() as int
 myMCSuggestions.hashCode();
 ```
 
 ### isEmpty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCSuggestions.isEmpty() as boolean
 myMCSuggestions.isEmpty();
 ```
 
-### merge #合并
-
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
-
-```zenscript
-crafttbiner.api.commands.custom.MCSuggestions.merge(命令字符串，输入为收藏<crafttweaker.api.commands.custom.MCSuggestions>)；
-```
-
-| 参数        | 类型                                                                                                                 | 描述                      |
-| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| command   | String                                                                                                             | No description provided |
-| input（输入） | 收藏&lt;[craftmiliter.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
-
-
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestions.toString() as string
 myMCSuggestions.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestions == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

@@ -1,82 +1,88 @@
 # MCSuggestionProvider
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttbiner.api.commands.custom.MCSuggestionProvider
+import crafttweaker.api.commands.custom.MCSuggestionProvider;
 ```
+
 
 ## Constructor #构造函数
+
+No Description Provided
 ```zenscript
-新 craftminstrer.api.commands.custom.MCSuggestionProvider(有趣的函数。BiFunction<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCSuggestionsBuilder, crafttweaker.api.commands.custom.MCSuggestions>);
+new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder,MCSuggestions>) as MCSuggestionProvider
 ```
-| 参数  | 类型                                                                                                                                                                                                                                                                                                                                            | 描述                      |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 有趣的 | 函数.BiFunction&lt;[craftmilever.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [craftmilower.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [craftmilower.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
+
+| 参数  | 类型                                                                                                                                                                                                                                    | 描述                      |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 有趣的 | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 
 
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestionProvider.equals(o 为对象)；
+MCSuggestionProvider.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### 获取建议
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCSuggestionProvider.getPropositions(context as craftweer.api.commands.custom.MCCommandContext, builder as craftweener.api.commands.custom.MCSuggestionsBuilder);
+MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
 
-| 参数   | 类型                                                                                                         | 描述                      |
-| ---- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 上下文： | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)        | No description provided |
-| 生成器  | [crafttweeper.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+| 参数   | 类型                                                                        | 描述                      |
+| ---- | ------------------------------------------------------------------------- | ----------------------- |
+| 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No Description Provided |
+| 生成器  | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionProvider.hashCode() as int
 myMCSuggestionProvider.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionProvider.toString() as string
 myMCSuggestionProvider.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestionProvider == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

@@ -16,16 +16,19 @@ import crafttweaker.api.commands.custom.MCArgumentBuilder;
 
 ## Methods
 
-### build
+:::group{name=build}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCArgumentBuilder.build() as MCCommandNode
+// MCArgumentBuilder.build() as MCCommandNode
+
 myMCArgumentBuilder.build();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -38,7 +41,9 @@ MCArgumentBuilder.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### executes
+:::
+
+:::group{name=executes}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -51,7 +56,9 @@ MCArgumentBuilder.executes(command as MCCommand) as MCArgumentBuilder
 | command | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
-### fork
+:::
+
+:::group{name=fork}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -65,7 +72,9 @@ MCArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectModifier) 
 | modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 
 
-### forward
+:::
+
+:::group{name=forward}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -80,70 +89,93 @@ MCArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifie
 | fork | boolean | No Description Provided |
 
 
-### getArguments
+:::
+
+:::group{name=getArguments}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
+// MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
+
 myMCArgumentBuilder.getArguments();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCArgumentBuilder.getCommand() as MCCommand
+// MCArgumentBuilder.getCommand() as MCCommand
+
 myMCArgumentBuilder.getCommand();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCArgumentBuilder.getRedirect() as MCCommandNode
+// MCArgumentBuilder.getRedirect() as MCCommandNode
+
 myMCArgumentBuilder.getRedirect();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+// MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+
 myMCArgumentBuilder.getRedirectModifier();
 ```
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+// MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+
 myMCArgumentBuilder.getRequirement();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCArgumentBuilder.hashCode() as int
+// MCArgumentBuilder.hashCode() as int
+
 myMCArgumentBuilder.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
 ```zenscript
-MCArgumentBuilder.isFork() as boolean
+// MCArgumentBuilder.isFork() as boolean
+
 myMCArgumentBuilder.isFork();
 ```
 
-### redirect
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -155,6 +187,10 @@ MCArgumentBuilder.redirect(target as MCCommandNode) as MCArgumentBuilder
 |-----------|------|-------------|
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
+
+:::
+
+:::group{name=redirect}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -168,7 +204,9 @@ MCArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleRedirect
 | modifier | [MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
 
 
-### requires
+:::
+
+:::group{name=requires}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -181,7 +219,9 @@ MCArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as MCArgum
 | requirement | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
-### then
+:::
+
+:::group{name=then}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
@@ -194,6 +234,10 @@ MCArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
 
+:::
+
+:::group{name=then}
+
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
@@ -205,24 +249,29 @@ MCArgumentBuilder.then(argument as MCCommandNode) as MCArgumentBuilder
 | argument | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCArgumentBuilder.toString() as string
+// MCArgumentBuilder.toString() as string
+
 myMCArgumentBuilder.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCArgumentBuilder == o as Object
 ```
 
-
+:::
 
 

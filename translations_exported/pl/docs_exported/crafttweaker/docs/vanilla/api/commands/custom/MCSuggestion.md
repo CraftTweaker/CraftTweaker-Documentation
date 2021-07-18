@@ -1,135 +1,141 @@
 # Sugestie MCH
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestion
+import crafttweaker.api.commands.custom.MCSuggestion;
 ```
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
+
 ## Methods
+
 ### zastosuj
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCSuggestion.apply(wprowadź jako String);
+MCSuggestion.apply(input as string) as string
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| input     | String | No description provided |
+| input     | string | No Description Provided |
 
 
 ### porównaj do
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareTo(o jako crafttweaker.api.commands.custom.MCSuggestion);
+MCSuggestion.compareTo(o as MCSuggestion) as int
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| o         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
+| Parameter | Type                                                      | Description             |
+| --------- | --------------------------------------------------------- | ----------------------- |
+| o         | [Sugestie MCH](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### PorównaToIgnoreCase
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareToIgnoreCase(b jako crafttweaker.api.commands.custom.MCSuggestion);
+MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| b         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
+| Parameter | Type                                                      | Description             |
+| --------- | --------------------------------------------------------- | ----------------------- |
+| b         | [Sugestie MCH](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestion.equals(o jako Obiekt);
+MCSuggestion.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
-### rozwiń
+### expandWith
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
+Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 
 ```zenscript
-myMCSuggestion.expand(komenda jako String, zasięg jak crafttweaker.api.commands.custom.MCStringRange);
+MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggestion
 ```
 
-| Parameter | Type                                                                                         | Description             |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| command   | String                                                                                       | No description provided |
-| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| Parameter | Type                                                        | Description             |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| command   | string                                                      | No Description Provided |
+| range     | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
 ### Zakres getRange
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestion.getRange() as MCStringRange
 myMCSuggestion.getRange();
 ```
 
 ### getText
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getText() as string
 myMCSuggestion.getText();
 ```
 
 ### getTooltip
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getTooltip() as string
 myMCSuggestion.getTooltip();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestion.hashCode() as int
 myMCSuggestion.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.toString() as string
 myMCSuggestion.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestion == o jako obiekt
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

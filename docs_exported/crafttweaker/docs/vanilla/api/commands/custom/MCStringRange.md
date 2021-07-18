@@ -8,9 +8,9 @@ import crafttweaker.api.commands.custom.MCStringRange;
 ```
 
 
-## Methods
+## Static Methods
 
-### at
+:::group{name=at}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -23,7 +23,9 @@ MCStringRange.at(pos as int) as MCStringRange
 | pos | int | No Description Provided |
 
 
-### between
+:::
+
+:::group{name=between}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -37,7 +39,9 @@ MCStringRange.between(start as int, end as int) as MCStringRange
 | end | int | No Description Provided |
 
 
-### encompassing
+:::
+
+:::group{name=encompassing}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
@@ -51,9 +55,11 @@ MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRa
 | b | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
+:::
+
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -66,16 +72,21 @@ MCStringRange.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 
 
-### getEnd
+:::
+
+:::group{name=getEnd}
 
 Return Type: int
 
 ```zenscript
-MCStringRange.getEnd() as int
+// MCStringRange.getEnd() as int
+
 myMCStringRange.getEnd();
 ```
 
-### getFrom
+:::
+
+:::group{name=getFrom}
 
 Return Type: string
 
@@ -88,6 +99,10 @@ MCStringRange.getFrom(reader as MCImmutableStringReader) as string
 | reader | [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No Description Provided |
 
 
+:::
+
+:::group{name=getFrom}
+
 Return Type: string
 
 ```zenscript
@@ -99,49 +114,66 @@ MCStringRange.getFrom(string as string) as string
 | string | string | No Description Provided |
 
 
-### getLength
+:::
+
+:::group{name=getLength}
 
 Return Type: int
 
 ```zenscript
-MCStringRange.getLength() as int
+// MCStringRange.getLength() as int
+
 myMCStringRange.getLength();
 ```
 
-### getStart
+:::
+
+:::group{name=getStart}
 
 Return Type: int
 
 ```zenscript
-MCStringRange.getStart() as int
+// MCStringRange.getStart() as int
+
 myMCStringRange.getStart();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCStringRange.hashCode() as int
+// MCStringRange.hashCode() as int
+
 myMCStringRange.hashCode();
 ```
 
-### isEmpty
+:::
+
+:::group{name=isEmpty}
 
 Return Type: boolean
 
 ```zenscript
-MCStringRange.isEmpty() as boolean
+// MCStringRange.isEmpty() as boolean
+
 myMCStringRange.isEmpty();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCStringRange.toString() as string
+// MCStringRange.toString() as string
+
 myMCStringRange.toString();
 ```
+
+:::
 
 

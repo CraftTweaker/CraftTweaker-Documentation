@@ -1,118 +1,127 @@
 # MCSuggestions
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions
+import crafttweaker.api.commands.custom.MCSuggestions;
 ```
+
 
 ## Methods
+
 ### создать
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.create(команда "Строка", предложения Коллекция<crafttweaker.api.commands.custom.MCSuggestion>);
+MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 
-| Параметр    | Тип                                                                                                                     | Description          |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| command     | String                                                                                                                  | Описание отсутствует |
-| предложения | Коллекция&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | Описание отсутствует |
+| Параметр    | Тип                                                                                     | Description             |
+| ----------- | --------------------------------------------------------------------------------------- | ----------------------- |
+| command     | string                                                                                  | No Description Provided |
+| предложения | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 
 
 ### empty
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.empty();
+MCSuggestions.empty() as MCSuggestions
+MCSuggestions.empty();
 ```
+
+### merge
+
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MCSuggestions
+```
+
+| Параметр | Тип                                                                                       | Description             |
+| -------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| command  | string                                                                                    | No Description Provided |
+| input    | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
+
+## Methods
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestions.equals(o as Object);
+MCSuggestions.equals(o as Object) as boolean
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 
 ### getList
 
-Return type: List&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
+Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
+MCSuggestions.getList() as stdlib.List<MCSuggestion>
 myMCSuggestions.getList();
 ```
 
 ### getRange
 
-Возврат типа: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestions.getRange() as MCStringRange
 myMCSuggestions.getRange();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestions.hashCode() as int
 myMCSuggestions.hashCode();
 ```
 
 ### isEmpty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCSuggestions.isEmpty() as boolean
 myMCSuggestions.isEmpty();
 ```
 
-### merge
-
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
-
-```zenscript
-crafttweaker.api.commands.custom.MCSuggestions.merge(command as String, input as Collection<crafttweaker.api.commands.custom.MCSuggestions>);
-```
-
-| Параметр | Тип                                                                                                                       | Description          |
-| -------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| command  | String                                                                                                                    | Описание отсутствует |
-| input    | Коллекция&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | Описание отсутствует |
-
-
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestions.toString() as string
 myMCSuggestions.toString();
 ```
 
 
 ## Операторы
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestions == o как объект
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
 
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 

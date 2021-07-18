@@ -2,24 +2,24 @@
 
 Задерживает информацию о загруженном моде
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.mods.ModInfo
+import crafttweaker.api.mods.ModInfo;
 ```
+
 
 ## Свойства
 
-| Название          | Тип                                                                                                  | Имеет Getter | Имеет Setter |
-| ----------------- | ---------------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| blocks            | Список&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true         | false        |
-| displayName       | String                                                                                               | true         | false        |
-| типы сущностей    | Список&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true         | false        |
-| fluids            | Список&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true         | false        |
-| items             | Список&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true         | false        |
-| modid             | String                                                                                               | true         | false        |
-| пространство имён | String                                                                                               | true         | false        |
-| version           | String                                                                                               | true         | false        |
+| Название          | Тип                                                                               | Имеет Getter | Имеет Setter |
+| ----------------- | --------------------------------------------------------------------------------- | ------------ | ------------ |
+| blocks            | stdlib.List&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;             | true         | false        |
+| displayName       | string                                                                            | true         | false        |
+| типы сущностей    | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true         | false        |
+| fluids            | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt;              | true         | false        |
+| items             | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;        | true         | false        |
+| modid             | string                                                                            | true         | false        |
+| пространство имён | string                                                                            | true         | false        |
+| version           | string                                                                            | true         | false        |
 

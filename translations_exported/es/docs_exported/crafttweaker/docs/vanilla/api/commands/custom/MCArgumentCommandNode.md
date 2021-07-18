@@ -1,246 +1,265 @@
 # MCArgumentCommandNode
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCArgumentCommandNode
+import crafttweaker.api.commands.custom.MCArgumentCommandNode;
 ```
 
-## Implemented Interfaces
-MCArgumentCommandNode implementa las siguientes interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+## Extending MCCommandNode
+
+MCArgumentCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode). That means all methods available in [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) are also available in MCArgumentCommandNode
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
 
 ## Methods
+
 ### addChild
 
+Return Type: void
+
 ```zenscript
-myMCArgumentCommandNode.addChild(node as crafttweaker.api.commands.custom.MCCommandNode);
+MCArgumentCommandNode.addChild(node as MCCommandNode) as void
 ```
 
-| Parameter | Type                                                                                         | Description             |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| nodo      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| nodo      | [Nodo MCComando](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
 ### canUse
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCArgumentCommandNode.canUse(source as crafttweaker.api.commands.custom.MCCommandSource);
+MCArgumentCommandNode.canUse(source as MCCommandSource) as boolean
 ```
 
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| fuente    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| Parameter | Type                                                                   | Description             |
+| --------- | ---------------------------------------------------------------------- | ----------------------- |
+| fuente    | [Fuente MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 ### createBuilder
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
+MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
 myMCArgumentCommandNode.createBuilder();
 ```
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCArgumentCommandNode.equals(o as Object);
+MCArgumentCommandNode.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### encontrar ambigüedades
 
+Return Type: void
+
 ```zenscript
-myMCArgumentCommandNode.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
+MCArgumentCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 ```
 
-| Parameter  | Type                                                                                                     | Description             |
-| ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
-| consumidor | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No description provided |
+| Parameter  | Type                                                                    | Description             |
+| ---------- | ----------------------------------------------------------------------- | ----------------------- |
+| consumidor | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
 ### getChild
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-myMCArgumentCommandNode.getChild(name as String);
+MCArgumentCommandNode.getChild(name as string) as MCCommandNode
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| name      | string | No Description Provided |
 
 
 ### getChildren
 
-Tipo de retorno: Colección&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
+MCArgumentCommandNode.getChildren() as Collection<MCCommandNode>
 myMCArgumentCommandNode.getChildren();
 ```
 
 ### getCommand
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCArgumentCommandNode.getCommand() as MCCommand
 myMCArgumentCommandNode.getCommand();
 ```
 
 ### getCustomSuggestions
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
+Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
 
 ```zenscript
+MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
 myMCArgumentCommandNode.getCustomSuggestions();
 ```
 
 ### getExamples
 
-Tipo de retorno: Colección&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCArgumentCommandNode.getExamples() as Collection<string>
 myMCArgumentCommandNode.getExamples();
 ```
 
 ### getName
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCArgumentCommandNode.getName() as string
 myMCArgumentCommandNode.getName();
 ```
 
 ### getRedirect
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCArgumentCommandNode.getRedirect() as MCCommandNode
 myMCArgumentCommandNode.getRedirect();
 ```
 
 ### getRedirectModifier
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
+MCArgumentCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCArgumentCommandNode.getRedirectModifier();
 ```
 
 ### getRelevantNodes
 
-Tipo de retorno: Colección&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-myMCArgumentCommandNode.getRelevantNodes(input as String);
+MCArgumentCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| input     | String | No description provided |
+| input     | string | No Description Provided |
 
 
 ### getRequirement
 
-Tipo de retorno: function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
+MCArgumentCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCArgumentCommandNode.getRequirement();
 ```
 
 ### getUsageText
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCArgumentCommandNode.getUsageText() as string
 myMCArgumentCommandNode.getUsageText();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCArgumentCommandNode.hashCode() as int
 myMCArgumentCommandNode.hashCode();
 ```
 
 ### isFork
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCArgumentCommandNode.isFork() as boolean
 myMCArgumentCommandNode.isFork();
 ```
 
 ### listSuggestions
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCArgumentCommandNode.listSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+MCArgumentCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
 
-| Parameter   | Type                                                                                                       | Description             |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| contexto    | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No description provided |
-| constructor | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+| Parameter   | Type                                                                              | Description             |
+| ----------- | --------------------------------------------------------------------------------- | ----------------------- |
+| contexto    | [Contexto MCCommand](/vanilla/api/commands/custom/MCCommandContext)               | No Description Provided |
+| constructor | [Constructor de MCSuggestions](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### parse
 
+Return Type: void
+
 ```zenscript
-myMCArgumentCommandNode.parse(input as String, contextBuilder as crafttweaker.api.commands.custom.MCCommandContextBuilder);
+MCArgumentCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) as void
 ```
 
-| Parameter      | Type                                                                                                             | Description             |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| input          | String                                                                                                           | No description provided |
-| contextBuilder | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
+| Parameter      | Type                                                                                     | Description             |
+| -------------- | ---------------------------------------------------------------------------------------- | ----------------------- |
+| input          | string                                                                                   | No Description Provided |
+| contextBuilder | [Contexto MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCArgumentCommandNode.toString() as string
 myMCArgumentCommandNode.toString();
 ```
 
 
 ## Operators
+
 ### COMPARE
 
 ```zenscript
-myMCCommandNode compare o as crafttweaker.api.commands.custom.MCCommandNode
+myMCArgumentCommandNode < o as MCCommandNode
 ```
 
-| Parameter | Type                                                                                         | Description             |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| o         | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+
+
 ### EQUALS
 
 ```zenscript
 myMCArgumentCommandNode == o as Object
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

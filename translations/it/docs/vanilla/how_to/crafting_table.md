@@ -25,7 +25,7 @@ Aggiunge una ricetta [informe](#recipe-types) al banco da lavoro. Siccome le ric
 
 Le ricette [informi](#recipe-types) possono avere fino a 9 elementi in input, ma quelle con 4 input o meno posso anche essere fabbricate nella griglia 2x2 disponibile nell'inventario.
 
-Le ricette del banco da lavoro possono produrre più di un oggetto singolo. Per far ciò, è possibile sfruttare l'[operatore di moltiplicazione di IItemStack](/vanilla/api/items/IItemStack/#mul) sull'oggetto prodotto.
+Le ricette del banco da lavoro possono produrre più di un oggetto singolo. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 craftingTable.addShapeless("esempio_informe_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
@@ -55,7 +55,7 @@ Rendere la ricetta una ricetta [con forma riflessa](#recipe-types) permette una 
 
 Sia le ricette [con forma](#recipe-types) sia quelle [con forma riflessa](#recipe-types) possono essere create per permetterne la fabbricazione in una griglia 2x2 (nell'inventario) o 3x3.
 
-Le ricette del banco da lavoro possono produrre più di un oggetto singolo. Per far ciò, è possibile sfruttare l'[operatore di moltiplicazione di IItemStack](/vanilla/api/items/IItemStack/#mul) sull'oggetto prodotto.
+Le ricette del banco da lavoro possono produrre più di un oggetto singolo. This can be achieved by using the [IItemStack multiplication operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 // Aggiunta di una ricetta con forma

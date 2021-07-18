@@ -1,139 +1,173 @@
 # MCStringRange
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCStringRange
+import crafttweaker.api.commands.custom.MCStringRange;
 ```
+
 
 ## Methods
-### a
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+:::group{name=at}
+
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCStringRange.at(pos as int);
+MCStringRange.at(pos as int) as MCStringRange
 ```
 
-| Parameter | Type | Description                 |
-| --------- | ---- | --------------------------- |
-| pos       | int  | Nessuna descrizione fornita |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| pos       | int  | No Description Provided |
 
 
-### tra
+:::
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+:::group{name=between}
+
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCStringRange.between(start as int, end as int);
+MCStringRange.between(start as int, end as int) as MCStringRange
 ```
 
-| Parameter | Type | Description                 |
-| --------- | ---- | --------------------------- |
-| inizio    | int  | Nessuna descrizione fornita |
-| fine      | int  | Nessuna descrizione fornita |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| inizio    | int  | No Description Provided |
+| fine      | int  | No Description Provided |
 
 
-### comprensivo
+:::
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+:::group{name=encompassing}
+
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttweaker.api.commands.custom.MCStringRange.encompassing(a as crafttweaker.api.commands.custom.MCStringRange, b as crafttweaker.api.commands.custom.MCStringRange);
+MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRange
 ```
 
-| Parameter | Type                                                                                         | Description                 |
-| --------- | -------------------------------------------------------------------------------------------- | --------------------------- |
-| a         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Nessuna descrizione fornita |
-| b         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Nessuna descrizione fornita |
+| Parameter | Type                                                        | Description             |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| a         | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+| b         | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
-### equals
+:::
 
-Return type: boolean
+## Methods
+
+:::group{name=equals}
+
+Return Type: boolean
 
 ```zenscript
-myMCStringRange.equals(o come oggetto);
+MCStringRange.equals(o as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
 
 
-### get
+:::
 
-Return type: String
+:::group{name=getEnd}
 
-```zenscript
-myMCStringRange.get(stringa come stringa);
-```
-
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| string    | String | Nessuna descrizione fornita |
-
-
-
-Return type: String
+Return Type: int
 
 ```zenscript
-myMCStringRange.get(reader as crafttweaker.api.commands.custom.MCImmutableStringReader);
-```
-
-| Parameter | Type                                                                                                             | Description                 |
-| --------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| lettore   | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | Nessuna descrizione fornita |
-
-
-### getEnd
-
-Return type: int
-
-```zenscript
+MCStringRange.getEnd() as int
 myMCStringRange.getEnd();
 ```
 
-### getLength
+:::
 
-Return type: int
+:::group{name=getFrom}
+
+Return Type: string
 
 ```zenscript
+MCStringRange.getFrom(reader as MCImmutableStringReader) as string
+```
+
+| Parameter | Type                                                                            | Description             |
+| --------- | ------------------------------------------------------------------------------- | ----------------------- |
+| reader    | [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No Description Provided |
+
+
+:::
+
+:::group{name=getFrom}
+
+Return Type: string
+
+```zenscript
+MCStringRange.getFrom(string as string) as string
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| string    | string | No Description Provided |
+
+
+:::
+
+:::group{name=getLength}
+
+Return Type: int
+
+```zenscript
+MCStringRange.getLength() as int
 myMCStringRange.getLength();
 ```
 
-### getStart
+:::
 
-Return type: int
+:::group{name=getStart}
+
+Return Type: int
 
 ```zenscript
+MCStringRange.getStart() as int
 myMCStringRange.getStart();
 ```
 
-### hashCode
+:::
 
-Return type: int
+:::group{name=hashCode}
+
+Return Type: int
 
 ```zenscript
+MCStringRange.hashCode() as int
 myMCStringRange.hashCode();
 ```
 
-### isEmpty
+:::
 
-Return type: boolean
+:::group{name=isEmpty}
+
+Return Type: boolean
 
 ```zenscript
+MCStringRange.isEmpty() as boolean
 myMCStringRange.isEmpty();
 ```
 
-### toString
+:::
 
-Return type: String
+:::group{name=toString}
+
+Return Type: string
 
 ```zenscript
+MCStringRange.toString() as string
 myMCStringRange.toString();
 ```
+
+:::
 
 

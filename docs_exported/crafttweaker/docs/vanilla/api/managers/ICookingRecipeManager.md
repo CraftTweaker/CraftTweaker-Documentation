@@ -17,14 +17,15 @@ ICookingRecipeManager implements the following interfaces. That means all method
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.addJSONRecipe(name as string, data as IData) as void
+// ICookingRecipeManager.addJSONRecipe(name as string, data as IData) as void
+
 furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -34,15 +35,24 @@ furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe based on given params.
+
+ Note: A `cookTime` of `0` will cause the recipe to never complete, it will burn and use fuel, but no progress will be made on the recipe, it needs to be at-least `1` or more.
+
+ Saying that, if you would like to make a recipe that will never complete
+ (for example being able to give the player an infinitely burning furnace for whatever reason), you can
+ still use a `cookTime` of `0`.
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
+// ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
+furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
 ```
 
 | Parameter | Type | Description |
@@ -54,16 +64,21 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>
 | cookTime | int | how long it takes to cook |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-ICookingRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// ICookingRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 furnace.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -76,7 +91,24 @@ ICookingRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 | name | string | No Description Provided |
 
 
-### getRecipesByOutput
+:::
+
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Returns: A Map of recipe name to recipe of all known recipes.  
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// ICookingRecipeManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+furnace.getRecipeMap();
+```
+
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -89,25 +121,31 @@ ICookingRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<W
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeAll() as void
+// ICookingRecipeManager.removeAll() as void
+
 furnace.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeByModid(modid as string) as void
+// ICookingRecipeManager.removeByModid(modid as string) as void
+
 furnace.removeByModid("minecraft");
 ```
 
@@ -116,12 +154,17 @@ furnace.removeByModid("minecraft");
 | modid | string | modid of the recipes to remove |
 
 
+:::
+
+:::group{name=removeByModid}
+
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// ICookingRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 furnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -131,14 +174,17 @@ furnace.removeByModid("minecraft", (name as string) => {return name == "orange_w
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeByName(name as string) as void
+// ICookingRecipeManager.removeByName(name as string) as void
+
 furnace.removeByName("minecraft:furnace");
 ```
 
@@ -147,14 +193,17 @@ furnace.removeByName("minecraft:furnace");
 | name | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeByRegex(regex as string) as void
+// ICookingRecipeManager.removeByRegex(regex as string) as void
+
 furnace.removeByRegex("\\d_\\d");
 ```
 
@@ -163,14 +212,36 @@ furnace.removeByRegex("\\d_\\d");
 | regex | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeRecipe(output as IItemStack) as void
+// ICookingRecipeManager.removeRecipe(output as IIngredient) as void
+
+furnace.removeRecipe(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| output | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// ICookingRecipeManager.removeRecipe(output as IItemStack) as void
+
 furnace.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -179,13 +250,18 @@ furnace.removeRecipe(<item:minecraft:glass>);
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
+:::
+
+:::group{name=removeRecipe}
+
 Removes a recipe based on it's output and input.
 
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+// ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
+furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -194,4 +270,32 @@ furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
+:::
+
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// ICookingRecipeManager.removeRecipeByInput(input as IItemStack) as void
+
+furnace.removeRecipeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| input | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt; | true | false | No Description Provided |
+| recipeMap | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true | false | Returns a map of all known recipes. |
 

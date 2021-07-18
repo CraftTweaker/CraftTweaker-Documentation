@@ -1,37 +1,38 @@
 # WrapperRecipe
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.recipes.WrapperRecipe
+import crafttweaker.api.recipes.WrapperRecipe;
 ```
+
 
 ## Methods
+
 ### canFit
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myWrapperRecipe.canFit(width as int, height as int);
+WrapperRecipe.canFit(width as int, height as int) as boolean
 ```
 
-| Parameter | Type | Description                 |
-| --------- | ---- | --------------------------- |
-| width     | int  | Nessuna descrizione fornita |
-| height    | int  | Nessuna descrizione fornita |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| width     | int  | No Description Provided |
+| height    | int  | No Description Provided |
 
 
 
 ## Properties
 
-| Name        | Type                                                                                        | Ha Getter | Ha Setter |
-| ----------- | ------------------------------------------------------------------------------------------- | --------- | --------- |
-| dynamic     | boolean                                                                                     | true      | false     |
-| group       | String                                                                                      | true      | false     |
-| icon        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true      | false     |
-| id          | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)            | true      | false     |
-| ingredients | List&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt; | true      | false     |
-| output      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true      | false     |
+| Name        | Type                                                                         | Ha Getter | Ha Setter |
+| ----------- | ---------------------------------------------------------------------------- | --------- | --------- |
+| dynamic     | boolean                                                                      | true      | false     |
+| gruppo      | string                                                                       | true      | false     |
+| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     |
+| id          | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true      | false     |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true      | false     |
+| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true      | false     |
 

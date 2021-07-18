@@ -8,9 +8,9 @@ import crafttweaker.api.util.text.MCTextComponent;
 ```
 
 
-## Methods
+## Static Methods
 
-### createStringTextComponent
+:::group{name=createStringTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -23,7 +23,9 @@ MCTextComponent.createStringTextComponent(text as string) as MCTextComponent
 | text | string | No Description Provided |
 
 
-### createTranslationTextComponent
+:::
+
+:::group{name=createTranslationTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -35,6 +37,10 @@ MCTextComponent.createTranslationTextComponent(translationKey as string) as MCTe
 |-----------|------|-------------|
 | translationKey | string | No Description Provided |
 
+
+:::
+
+:::group{name=createTranslationTextComponent}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -48,6 +54,8 @@ MCTextComponent.createTranslationTextComponent(translationKey as string, args as
 | args | Object[] | No Description Provided |
 
 
+:::
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -56,7 +64,7 @@ MCTextComponent.createTranslationTextComponent(translationKey as string, args as
 
 ## Methods
 
-### appendSibling
+:::group{name=appendSibling}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -69,7 +77,9 @@ MCTextComponent.appendSibling(component as MCTextComponent) as MCTextComponent
 | component | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### appendText
+:::
+
+:::group{name=appendText}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -82,34 +92,45 @@ MCTextComponent.appendText(text as string) as MCTextComponent
 | text | string | No Description Provided |
 
 
-### copyRaw
+:::
+
+:::group{name=copyRaw}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.copyRaw() as MCTextComponent
+// MCTextComponent.copyRaw() as MCTextComponent
+
 myMCTextComponent.copyRaw();
 ```
 
-### deepCopy
+:::
+
+:::group{name=deepCopy}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.deepCopy() as MCTextComponent
+// MCTextComponent.deepCopy() as MCTextComponent
+
 myMCTextComponent.deepCopy();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Return Type: string
 
 ```zenscript
-MCTextComponent.getString() as string
+// MCTextComponent.getString() as string
+
 myMCTextComponent.getString();
 ```
 
-### getStringTruncated
+:::
+
+:::group{name=getStringTruncated}
 
 Return Type: string
 
@@ -122,16 +143,33 @@ MCTextComponent.getStringTruncated(maxLen as int) as string
 | maxLen | int | No Description Provided |
 
 
-### getUnformattedComponentText
+:::
+
+:::group{name=getStyle}
+
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+// MCTextComponent.getStyle() as MCStyle
+
+myMCTextComponent.getStyle();
+```
+
+:::
+
+:::group{name=getUnformattedComponentText}
 
 Return Type: string
 
 ```zenscript
-MCTextComponent.getUnformattedComponentText() as string
+// MCTextComponent.getUnformattedComponentText() as string
+
 myMCTextComponent.getUnformattedComponentText();
 ```
 
-### setStyle
+:::
+
+:::group{name=setStyle}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
@@ -144,39 +182,42 @@ MCTextComponent.setStyle(style as MCStyle) as MCTextComponent
 | style | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
+:::
+
 
 ## Operators
 
-### ADD
+:::group{name=ADD}
 
 ```zenscript
 myMCTextComponent + component as MCTextComponent
 ```
 
+:::
 
-
-### CAT
+:::group{name=CAT}
 
 ```zenscript
 myMCTextComponent ~ component as MCTextComponent
 ```
 
+:::
 
-
-### SHL
+:::group{name=SHL}
 
 ```zenscript
 myMCTextComponent << component as MCTextComponent
 ```
 
-
+:::
 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| formattedText | string | true | false |
-| siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false |
-| unformattedComponentText | string | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| formattedText | string | true | false | No Description Provided |
+| siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false | No Description Provided |
+| style | [MCStyle](/vanilla/api/util/text/MCStyle) | true | false | No Description Provided |
+| unformattedComponentText | string | true | false | No Description Provided |
 

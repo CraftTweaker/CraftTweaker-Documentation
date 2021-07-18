@@ -1,80 +1,91 @@
 # MCPotionEffectInstance
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.potion.MCPotionEffectInstance
+import crafttweaker.api.potion.MCPotionEffectInstance;
 ```
+
+
+## Implemented Interfaces
+MCPotionEffectInstance implements the following interfaces. That means all methods defined in these interfaces are also available in MCPotionEffectInstance
+
+- Comparable&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
 
 ## Methods
+
 ### addCurativeItem
 
+Return Type: void
+
 ```zenscript
-myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemStack);
+MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 ```
 
-| Параметр | Тип                                                               | Description          |
-| -------- | ----------------------------------------------------------------- | -------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр | Тип                                         | Description             |
+| -------- | ------------------------------------------- | ----------------------- |
+| stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 ### combine
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 ```
 
-| Параметр | Тип                                                                                           | Description          |
-| -------- | --------------------------------------------------------------------------------------------- | -------------------- |
-| effect   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| Параметр | Тип                                                                   | Description             |
+| -------- | --------------------------------------------------------------------- | ----------------------- |
+| effect   | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 
 
 ### getCurativeItems
 
-Тип возврата: Список&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
+MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
 myMCPotionEffectInstance.getCurativeItems();
 ```
 
 ### isCurativeItem
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
+MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 ```
 
-| Параметр | Тип                                                               | Description          |
-| -------- | ----------------------------------------------------------------- | -------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр | Тип                                         | Description             |
+| -------- | ------------------------------------------- | ----------------------- |
+| stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 ### setCurativeItems
 
+Return Type: void
+
 ```zenscript
-myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
+MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 ```
 
-| Параметр | Тип                                                                 | Description          |
-| -------- | ------------------------------------------------------------------- | -------------------- |
-| items    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
+| Параметр | Тип                                           | Description             |
+| -------- | --------------------------------------------- | ----------------------- |
+| items    | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 
 
 
 ## Свойства
 
-| Название      | Тип                                                                           | Имеет Getter | Имеет Setter |
-| ------------- | ----------------------------------------------------------------------------- | ------------ | ------------ |
-| ambient       | boolean                                                                       | true         | false        |
-| amplifier     | int                                                                           | true         | false        |
-| duration      | int                                                                           | true         | false        |
-| effectName    | String                                                                        | true         | false        |
-| potion        | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true         | false        |
-| showIcon      | boolean                                                                       | true         | false        |
-| showParticles | boolean                                                                       | true         | false        |
+| Название      | Тип                                                   | Имеет Getter | Имеет Setter |
+| ------------- | ----------------------------------------------------- | ------------ | ------------ |
+| ambient       | boolean                                               | true         | false        |
+| amplifier     | int                                                   | true         | false        |
+| duration      | int                                                   | true         | false        |
+| effectName    | string                                                | true         | false        |
+| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true         | false        |
+| showIcon      | boolean                                               | true         | false        |
+| showParticles | boolean                                               | true         | false        |
 

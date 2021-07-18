@@ -17,14 +17,15 @@ SmithingManager implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### addJSONRecipe
+:::group{name=addJSONRecipe}
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 Return Type: void
 
 ```zenscript
-SmithingManager.addJSONRecipe(name as string, data as IData) as void
+// SmithingManager.addJSONRecipe(name as string, data as IData) as void
+
 smithing.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -34,15 +35,18 @@ smithing.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+:::
+
+:::group{name=addRecipe}
 
 Adds a recipe to the smithing table.
 
 Return Type: void
 
 ```zenscript
-SmithingManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
-smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:forge:ingots/gold>);
+// SmithingManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
+
+smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:items:forge:ingots/gold>);
 ```
 
 | Parameter | Type | Description |
@@ -53,16 +57,21 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | addition | [IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item. |
 
 
-### getAllRecipes
+:::
+
+:::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-SmithingManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// SmithingManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 smithing.getAllRecipes();
 ```
 
-### getRecipeByName
+:::
+
+:::group{name=getRecipeByName}
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
@@ -75,7 +84,24 @@ SmithingManager.getRecipeByName(name as string) as WrapperRecipe
 | name | string | No Description Provided |
 
 
-### getRecipesByOutput
+:::
+
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Returns: A Map of recipe name to recipe of all known recipes.  
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// SmithingManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+smithing.getRecipeMap();
+```
+
+:::
+
+:::group{name=getRecipesByOutput}
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
@@ -88,25 +114,31 @@ SmithingManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Wrapper
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
-### removeAll
+:::
+
+:::group{name=removeAll}
 
 Remove all recipes in this registry
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeAll() as void
+// SmithingManager.removeAll() as void
+
 smithing.removeAll();
 ```
 
-### removeByModid
+:::
+
+:::group{name=removeByModid}
 
 Remove recipe based on Registry name modid
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeByModid(modid as string) as void
+// SmithingManager.removeByModid(modid as string) as void
+
 smithing.removeByModid("minecraft");
 ```
 
@@ -115,12 +147,17 @@ smithing.removeByModid("minecraft");
 | modid | string | modid of the recipes to remove |
 
 
+:::
+
+:::group{name=removeByModid}
+
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// SmithingManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -130,14 +167,17 @@ smithing.removeByModid("minecraft", (name as string) => {return name == "orange_
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 
 
-### removeByName
+:::
+
+:::group{name=removeByName}
 
 Remove recipe based on Registry name
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeByName(name as string) as void
+// SmithingManager.removeByName(name as string) as void
+
 smithing.removeByName("minecraft:furnace");
 ```
 
@@ -146,14 +186,17 @@ smithing.removeByName("minecraft:furnace");
 | name | string | registry name of recipe to remove |
 
 
-### removeByRegex
+:::
+
+:::group{name=removeByRegex}
 
 Remove recipe based on regex
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeByRegex(regex as string) as void
+// SmithingManager.removeByRegex(regex as string) as void
+
 smithing.removeByRegex("\\d_\\d");
 ```
 
@@ -162,14 +205,36 @@ smithing.removeByRegex("\\d_\\d");
 | regex | string | regex to match against |
 
 
-### removeRecipe
+:::
+
+:::group{name=removeRecipe}
 
 Remove a recipe based on it's output.
 
 Return Type: void
 
 ```zenscript
-SmithingManager.removeRecipe(output as IItemStack) as void
+// SmithingManager.removeRecipe(output as IIngredient) as void
+
+smithing.removeRecipe(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| output | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// SmithingManager.removeRecipe(output as IItemStack) as void
+
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -178,4 +243,32 @@ smithing.removeRecipe(<item:minecraft:glass>);
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
+:::
+
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// SmithingManager.removeRecipeByInput(input as IItemStack) as void
+
+smithing.removeRecipeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| input | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt; | true | false | No Description Provided |
+| recipeMap | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true | false | Returns a map of all known recipes. |
 

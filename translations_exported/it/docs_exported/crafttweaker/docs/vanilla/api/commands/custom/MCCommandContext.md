@@ -1,172 +1,186 @@
 # MCCommandContext
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommandContext
+import crafttweaker.api.commands.custom.MCCommandContext;
 ```
+
+
+## Caster
+
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| string         | true      |
 
 ## Methods
+
 ### copyFor
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
-myMCCommandContext.copyFor(source as crafttweaker.api.commands.custom.MCCommandSource);
+MCCommandContext.copyFor(source as MCCommandSource) as MCCommandContext
 ```
 
-| Parameter | Type                                                                                             | Description                 |
-| --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
-| sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
+| Parameter | Type                                                            | Description             |
+| --------- | --------------------------------------------------------------- | ----------------------- |
+| sorgente  | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandContext.equals(o come oggetto);
+MCCommandContext.equals(o as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
 
 
 ### getArgomento
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCCommandContext.getArgument(nome come stringa);
+MCCommandContext.getArgument(name as string) as string
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 ### getChild
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
+MCCommandContext.getChild() as MCCommandContext
 myMCCommandContext.getChild();
 ```
 
 ### getCommand
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCCommandContext.getCommand() as MCCommand
 myMCCommandContext.getCommand();
 ```
 
 ### getInput
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContext.getInput() as string
 myMCCommandContext.getInput();
 ```
 
 ### getLastChild
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
+MCCommandContext.getLastChild() as MCCommandContext
 myMCCommandContext.getLastChild();
 ```
 
 ### getNodes
 
-Tipo di restituzione: Lista&lt;[crafttweaker.api.commands.custom.MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
+Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
+MCCommandContext.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContext.getNodes();
 ```
 
 ### getRange
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCCommandContext.getRange() as MCStringRange
 myMCCommandContext.getRange();
 ```
 
 ### getRedirectModifier
 
-Tipo di restituzione: [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
+MCCommandContext.getRedirectModifier() as MCRedirectModifier
 myMCCommandContext.getRedirectModifier();
 ```
 
 ### getRootNode
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCCommandContext.getRootNode() as MCCommandNode
 myMCCommandContext.getRootNode();
 ```
 
 ### getSource
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
+MCCommandContext.getSource() as MCCommandSource
 myMCCommandContext.getSource();
 ```
 
 ### hasNodes
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandContext.hasNodes() as boolean
 myMCCommandContext.hasNodes();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommandContext.hashCode() as int
 myMCCommandContext.hashCode();
 ```
 
 ### isForked
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandContext.isForked() as boolean
 myMCCommandContext.isForked();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContext.toString() as string
 myMCCommandContext.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCCommandContext == o come oggetto
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
 
-## Caster
 
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| String         | true      |
 

@@ -1,82 +1,88 @@
 # MCSuggestionProvider
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestionProvider
+import crafttweaker.api.commands.custom.MCSuggestionProvider;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.commands.custom.MCSuggestionProvider(fun as function.BiFunction<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCSuggestionsBuilder, crafttweaker.api.commands.custom.MCSuggestions>);
+new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder,MCSuggestions>) as MCSuggestionProvider
 ```
-| Parameter  | Type                                                                                                                                                                                                                                                                                                                                                | Description                 |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| divertente | function.BiFunction&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | Nessuna descrizione fornita |
+
+| Parameter  | Type                                                                                                                                                                                                                                  | Description             |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| divertente | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 
 
+
+## Caster
+
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| string         | true      |
 
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestionProvider.equals(o come oggetto);
+MCSuggestionProvider.equals(o as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
 
 
 ### getSuggestions
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCSuggestionProvider.getSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
 
-| Parameter   | Type                                                                                                       | Description                 |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | --------------------------- |
-| contesto    | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | Nessuna descrizione fornita |
-| costruttore | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Nessuna descrizione fornita |
+| Parameter   | Type                                                                      | Description             |
+| ----------- | ------------------------------------------------------------------------- | ----------------------- |
+| contesto    | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No Description Provided |
+| costruttore | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionProvider.hashCode() as int
 myMCSuggestionProvider.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionProvider.toString() as string
 myMCSuggestionProvider.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestionProvider == o come oggetto
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
 
-## Caster
 
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| String         | true      |
 

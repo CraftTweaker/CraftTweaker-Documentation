@@ -1,49 +1,51 @@
 # Команды
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands
+import crafttweaker.api.commands.custom.CustomCommands;
 ```
+
 
 ## Methods
+
 ### аргумент
 
-Тип возврата: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.argument(name as String);
+CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| name     | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| name     | string | No Description Provided |
 
 
 ### литерал
 
-Тип возврата: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
+CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| name     | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| name     | string | No Description Provided |
 
 
 ### registerCommand
 
+Return Type: void
+
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.registerCommand(builder as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
+CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 ```
 
-| Параметр    | Тип                                                                                                                | Description          |
-| ----------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| конструктор | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Описание отсутствует |
-
+| Параметр    | Тип                                                                               | Description             |
+| ----------- | --------------------------------------------------------------------------------- | ----------------------- |
+| конструктор | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
 
 

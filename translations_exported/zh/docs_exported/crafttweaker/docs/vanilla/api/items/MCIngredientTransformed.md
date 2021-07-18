@@ -1,119 +1,233 @@
-# MCIngredientTransformed
-
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
+# MCIngredientTransformed&LT;T : IIngredient&GT;
 
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstruer.api.item.MCIngredientTransformed
+import crafttweaker.api.item.MCIngredientTransformed;
 ```
+
 
 ## 已实现的接口
-MCIngredientTransformed 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+MCIngredientTransformed implements the following interfaces. That means all methods defined in these interfaces are also available in MCIngredientTransformed
+
+- [材料（IIngredient）](/vanilla/api/items/IIngredient)
+
+## Casters
+
+| 结果类型                                       | 是否隐藏 |
+| ------------------------------------------ | ---- |
+| [IData](/vanilla/api/data/IData)           | true |
+| [MapData #地图数据](/vanilla/api/data/MapData) | true |
 
 ## 方法
-### anyDamage
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+:::group{name=addShiftTooltip}
 
-```zenscript
-空.任何损害();
-```
-
-### getRemainingItem
-
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: void
 
 ```zenscript
-null.getRemainingItem(stack as craftbiner.api.item.IItemStack);
-null.getRemainingItem(<item:minecraft:iron_ingot>);
+MCIngredientTransformed.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
 ```
 
-| 参数    | 类型                                                                | 描述                                        |
-| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| 参数          | 类型                                                 | 描述                      | 可选    | DefaultValue |
+| ----------- | -------------------------------------------------- | ----------------------- | ----- | ------------ |
+| 内容          | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |              |
+| showMessage | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true  |              |
+
+:::
+
+:::group{name=addTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
+```
+
+| 参数 | 类型                                                 | 描述                      |
+| -- | -------------------------------------------------- | ----------------------- |
+| 内容 | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### matches
+:::
+
+:::group{name=anyDamage}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.anyDamage();
+```
+
+:::
+
+:::group{name=clearTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.clearTooltip() as void
+myMCIngredientTransformed.clearTooltip();
+```
+
+:::
+
+:::group{name=contains}
+
+Does the ingredient contain the given ingredient?
+
+Return Type: boolean
+
+```zenscript
+MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+```
+
+| 参数         | 类型                                                | 描述                      |
+| ---------- | ------------------------------------------------- | ----------------------- |
+| ingredient | [材料（IIngredient）](/vanilla/api/items/IIngredient) | The ingredient to check |
+
+
+:::
+
+:::group{name=matches}
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-null.matches(堆栈为 craftbiner.api.item.IItemStack)；
-null.matches(<item:minecraft:iron_ingot>)；
+MCIngredientTransformed.matches(stack as IItemStack) as boolean
+myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述                 |
-| ----- | ----------------------------------------------------------------- | ------------------ |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| 参数    | 类型                                          | 描述                 |
+| ----- | ------------------------------------------- | ------------------ |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
+:::
 
-Return type: boolean
+:::group{name=matches}
+
+Return Type: boolean
 
 ```zenscript
-myMCIngredientTransformed.matches(堆栈为 craftbiner.api.item.IItemStack, 忽略损害为 boolean);
+MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
 
-| 参数    | 类型                                                                | 描述                      |
-| ----- | ----------------------------------------------------------------- | ----------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| 忽略伤害  | boolean                                                           | No description provided |
+| 参数    | 类型                                          | 描述                      |
+| ----- | ------------------------------------------- | ----------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+| 忽略伤害  | boolean                                     | No Description Provided |
 
 
-### onlyDamaged
+:::
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+:::group{name=modifyTooltip}
+
+Return Type: void
 
 ```zenscript
-null.onlyDamaged();
+MCIngredientTransformed.modifyTooltip(function as ITooltipFunction) as void
 ```
 
-### onlyIf
+| 参数       | 类型                                                      | 描述                      |
+| -------- | ------------------------------------------------------- | ----------------------- |
+| function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+:::
+
+:::group{name=only}
+
+Use this if you already have the condition from another ingredient
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as MCIngredientConditioned<IIngredient>
 ```
 
-| 参数       | 类型                                                                                       | 描述                      | 可选的   | Default Value |
-| -------- | ---------------------------------------------------------------------------------------- | ----------------------- | ----- | ------------- |
-| uid      | String                                                                                   | No description provided | false | `null`        |
-| function | 预测&lt;[craftminstrer.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true  | `null`        |
+| 参数        | 类型                                                                                                                               | 描述                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
 
+
+:::
+
+:::group{name=onlyDamaged}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.onlyDamaged();
+```
+
+:::
+
+:::group{name=onlyIf}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+```
+
+| 参数       | 类型                                                                       | 描述                      | 可选    | DefaultValue |
+| -------- | ------------------------------------------------------------------------ | ----------------------- | ----- | ------------ |
+| uid      | string                                                                   | No Description Provided | false |              |
+| function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
+
+:::
+
+:::group{name=removeTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.removeTooltip(regex as string) as void
+```
+
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| regex | string | No Description Provided |
+
+
+:::
+
+
+## 运算符
+
+:::group{name=CONTAINS}
+
+Does the ingredient contain the given ingredient?
+
+```zenscript
+ingredient as IIngredient in myMCIngredientTransformed
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in myMCIngredientTransformed
+```
+
+:::
+
+:::group{name=OR}
+
+```zenscript
+myMCIngredientTransformed | other as IIngredient
+```
+
+:::
 
 
 ## 参数
 
-| 名称            | 类型                                                                                                               | 可获得  | 可设置   |
-| ------------- | ---------------------------------------------------------------------------------------------------------------- | ---- | ----- |
-| 基本属性          | T                                                                                                                | true | false |
-| commandString | String                                                                                                           | true | false |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]                                              | true | false |
-| 变压器           | [craftminstruer.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false |
-
-## 运算符
-### OR
-
-```zenscript
-<tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient
-```
-
-| 参数    | 类型                                                                  | 描述                      |
-| ----- | ------------------------------------------------------------------- | ----------------------- |
-| other | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
-
-## Casters
-
-| 结果类型                                                        | 是否隐藏 |
-| ----------------------------------------------------------- | ---- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)      | true |
-| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData) | true |
+| 名称       | 类型                                                                                       | 可获得   | 可设置   |
+| -------- | ---------------------------------------------------------------------------------------- | ----- | ----- |
+| 基本属性     | T                                                                                        | true  | false |
+| burnTime | void                                                                                     | false | true  |
+| items    | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true  | false |
+| 变压器      | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true  | false |
 

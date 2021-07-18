@@ -10,14 +10,19 @@ import crafttweaker.api.commands.custom.MCImmutableStringReader;
 
 ## Methods
 
-### canRead
+:::group{name=canRead}
 
 Return Type: boolean
 
 ```zenscript
-MCImmutableStringReader.canRead() as boolean
+// MCImmutableStringReader.canRead() as boolean
+
 myMCImmutableStringReader.canRead();
 ```
+
+:::
+
+:::group{name=canRead}
 
 Return Type: boolean
 
@@ -30,68 +35,93 @@ MCImmutableStringReader.canRead(arg0 as int) as boolean
 | arg0 | int | No Description Provided |
 
 
-### getCursor
+:::
+
+:::group{name=getCursor}
 
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getCursor() as int
+// MCImmutableStringReader.getCursor() as int
+
 myMCImmutableStringReader.getCursor();
 ```
 
-### getRead
+:::
+
+:::group{name=getRead}
 
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRead() as string
+// MCImmutableStringReader.getRead() as string
+
 myMCImmutableStringReader.getRead();
 ```
 
-### getRemaining
+:::
+
+:::group{name=getRemaining}
 
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRemaining() as string
+// MCImmutableStringReader.getRemaining() as string
+
 myMCImmutableStringReader.getRemaining();
 ```
 
-### getRemainingLength
+:::
+
+:::group{name=getRemainingLength}
 
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getRemainingLength() as int
+// MCImmutableStringReader.getRemainingLength() as int
+
 myMCImmutableStringReader.getRemainingLength();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getString() as string
+// MCImmutableStringReader.getString() as string
+
 myMCImmutableStringReader.getString();
 ```
 
-### getTotalLength
+:::
+
+:::group{name=getTotalLength}
 
 Return Type: int
 
 ```zenscript
-MCImmutableStringReader.getTotalLength() as int
+// MCImmutableStringReader.getTotalLength() as int
+
 myMCImmutableStringReader.getTotalLength();
 ```
 
-### peek
+:::
+
+:::group{name=peek}
 
 Return Type: char
 
 ```zenscript
-MCImmutableStringReader.peek() as char
+// MCImmutableStringReader.peek() as char
+
 myMCImmutableStringReader.peek();
 ```
+
+:::
+
+:::group{name=peek}
 
 Return Type: char
 
@@ -103,5 +133,7 @@ MCImmutableStringReader.peek(arg0 as int) as char
 |-----------|------|-------------|
 | arg0 | int | No Description Provided |
 
+
+:::
 
 

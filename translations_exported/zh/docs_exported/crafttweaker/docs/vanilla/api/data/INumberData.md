@@ -1,154 +1,202 @@
 # INumberData #编号数据
 
-以 crafttweaker.api.data.IData </ 0>的形式表示一个数字编号,可用于在类型之间进行转换(例如,从双精度转换为整型数据 /长数据）。</p> 
-
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
-
+Represents a Number in the form of an [IData](/vanilla/api/data/IData), useful for converting between types (double to int / long for example).
 
 ## 导入相关包
 
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。  
-
-
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.data.INumberData
+import crafttweaker.api.data.INumberData;
 ```
-
-
 
 
 ## 已实现的接口
+INumberData实现了以下接口。 That means all methods defined in these interfaces are also available in INumberData
 
-INumberData实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。  
+- [IData](/vanilla/api/data/IData)
 
-- [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+## Casters
 
-
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| byte                                                        | false |
+| double                                                      | false |
+| float                                                       | false |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| int                                                         | false |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
+| long                                                        | false |
+| short                                                       | false |
 
 ## 方法
 
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+INumberData.asCollection() as ICollectionData
+1.asCollection();
+```
 
 ### asList #作为列表
 
-获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
-如果IData值不是一个列表的话则返回值null
-
-返回类型：列表&lt;[craftminstrer.api.data.IData](/vanilla/api/data/IData)&gt;
-
-
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
+INumberData.asList() as stdlib.List<IData>
 1.asList();
 ```
 
-
-
-
 ### asMap #作为地图数据
 
-获取此IData的Map <String, IData>表示形式，对 crafttweaker.api.data.MapData </ 1>以外的任何内容返回null。</p> 
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
-如果IData值不是一个地图数据的话则返回值null
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)[String]
-
-
+Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
+INumberData.asMap() as IData[string]
 1.asMap();
 ```
 
+### asNumber
 
+Return Type: [INumberData](/vanilla/api/data/INumberData)
 
+```zenscript
+INumberData.asNumber() as INumberData
+1.asNumber();
+```
 
 ### asString #作为字符串
 
 获取此IData的字符串表示形式
 
-返回：`表示此IData（值和类型）的字符串。</ 0></p>
+Return Type: string
 
-<p spaces-before="0">Return type: String</p>
-
-<pre><code class="zenscript">1.asString();
-`</pre> 
-
-
+```zenscript
+INumberData.asString() as string
+1.asString();
+```
 
 ### contains #容器
 
-检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-返回: `true 如果给定的 IData 包含在此 IData 中`
-
-Return type: boolean
-
-
+Return Type: boolean
 
 ```zenscript
-1.contains(data as crafttweaker.api.data.IData);
-8192.contains("Display");
+INumberData.contains(data as IData) as boolean
+1.contains("Display");
 ```
 
-
-| 参数   | 类型                                                     | 描述          |
-| ---- | ------------------------------------------------------ | ----------- |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
-
-
-
+| 参数   | 类型                               | 描述          |
+| ---- | -------------------------------- | ----------- |
+| data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
 ### copy #复制
 
 制作此IData的副本。
 
-IData默认情况下是不可变的，使用它可以创建对象的正确副本。
+ IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
-返回：`此IData的副本`
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
+INumberData.copy() as IData
 1.copy();
 ```
 
+### getByte
 
+Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
+Return Type: byte
 
-### getId #获取id 
+```zenscript
+INumberData.getByte() as byte
+1.getByte();
+```
+
+### getDouble
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a double
+
+Return Type: double
+
+```zenscript
+INumberData.getDouble() as double
+1.getDouble();
+```
+
+### getFloat
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a float
+
+Return Type: float
+
+```zenscript
+INumberData.getFloat() as float
+1.getFloat();
+```
+
+### getId #获取id
 
 获取内部NBT标签的 ID。
 
-用来确定哪些NBT类型被存储(例如在列表中)
+ 用来确定哪些NBT类型被存储(例如在列表中)
 
-返回：`此数据代表的 NBT 标签ID。`
-
-返回类型：字节
-
-
+Return Type: byte
 
 ```zenscript
+INumberData.getId() as byte
 1.getId();
 ```
 
+### getInt
 
+Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
+Return Type: int
+
+```zenscript
+INumberData.getInt() as int
+1.getInt();
+```
+
+### getLong
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a long
+
+Return Type: long
+
+```zenscript
+INumberData.getLong() as long
+1.getLong();
+```
+
+### getShort
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a short
+
+Return Type: short
+
+```zenscript
+INumberData.getShort() as short
+1.getShort();
+```
 
 ### getString #获取字符串
 
 获取内部INBT标记的字符串表示形式
 
-返回：`表示此 IData 内部INBT 的字符串。`
-
-Return type: String
-
-
+Return Type: string
 
 ```zenscript
+INumberData.getString() as string
 1.getString();
 ```
 

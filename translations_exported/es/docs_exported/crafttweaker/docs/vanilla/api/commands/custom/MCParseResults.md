@@ -1,82 +1,88 @@
 # Resultados MCParseo
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCParseResultados
+import crafttweaker.api.commands.custom.MCParseResults;
 ```
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
+
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCParseResults.equals(o como objeto);
+MCParseResults.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### getContext
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCParseResults.getContext() as MCCommandContextBuilder
 myMCParseResults.getContext();
 ```
 
 ### Obtener Excepciones
 
-Tipo de retorno: Excepción[[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
+Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
+MCParseResults.getExceptions() as Exception[MCCommandNode]
 myMCParseResults.getExceptions();
 ```
 
 ### getReader
 
-Tipo de retorno: [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
+Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
 
 ```zenscript
+MCParseResults.getReader() as MCImmutableStringReader
 myMCParseResults.getReader();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
-miMCParseResults.hashCode();
+MCParseResults.hashCode() as int
+myMCParseResults.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
-miMCParseResults.toString();
+MCParseResults.toString() as string
+myMCParseResults.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCParseResults == o como objeto
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

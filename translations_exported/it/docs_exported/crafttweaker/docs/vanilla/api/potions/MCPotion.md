@@ -1,37 +1,34 @@
 # MCPotion
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.potion.MCPotion
+import crafttweaker.api.potion.MCPotion;
 ```
 
-## Interfacce Implementate
-MCPotion implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+
 ### getNamePrefixed
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCPotion.getNamePrefixed(name as String);
+MCPotion.getNamePrefixed(name as string) as string
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 
 ## Properties
 
-| Name             | Type                                                                                                                    | Ha Getter | Ha Setter |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
-| commandString    | String                                                                                                                  | true      | false     |
-| effects          | Elenco&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true      | false     |
-| hasInstantEffect | boolean                                                                                                                 | true      | false     |
+| Name             | Type                                                                                                 | Ha Getter | Ha Setter |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | --------- | --------- |
+| commandString    | string                                                                                               | true      | false     |
+| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true      | false     |
+| hasInstantEffect | boolean                                                                                              | true      | false     |
 

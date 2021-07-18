@@ -1,84 +1,109 @@
 # MCResourceLocation
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.MCResourceLocation
+import crafttweaker.api.util.MCResourceLocation;
 ```
+
 
 ## 已实现的接口
-MCResourceLocation 实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCResourceLocation implements the following interfaces. That means all methods defined in these interfaces are also available in MCResourceLocation
+
+- Comparable&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt;
 
 ## Constructor #构造函数
+
+
 ```zenscript
-新的 craftbiner.api.util.MCResourceLocation(命名空间作为字符串，路径作为字符串)；
+new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| 命名空间 | String | No description provided |
-| path | String | No description provided |
+
+| 参数   | 类型     | 描述                                                                   |
+| ---- | ------ | -------------------------------------------------------------------- |
+| 命名空间 | string | Usually a ModId                                                      |
+| path | string | May only contain lower-cased alphanumeric values, as well as / and _ |
 
 
+
+## Casters
+
+| 结果类型                             | 是否隐藏 |
+| -------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData) | true |
+| string                           | true |
 
 ## 方法
-### 比较到
 
-Return type: int
+### asData
+
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMCResourceLocation.compareTo(p_comparreeTo_1_ as craftminstrer.api.util.MCResourceLocation);
+MCResourceLocation.asData() as IData
+myMCResourceLocation.asData();
 ```
 
-| 参数               | 类型                                                                               | 描述                      |
-| ---------------- | -------------------------------------------------------------------------------- | ----------------------- |
-| p_compareTo_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
+### 比较到
+
+Return Type: int
+
+```zenscript
+MCResourceLocation.compareTo(other as MCResourceLocation) as int
+```
+
+| 参数    | 类型                                                         | 描述                      |
+| ----- | ---------------------------------------------------------- | ----------------------- |
+| other | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCResourceLocation.equals(其他作为目标)；
+MCResourceLocation.equals(other as Object) as boolean
 ```
 
 | 参数    | 类型     | 描述                      |
 | ----- | ------ | ----------------------- |
-| other | Object | No description provided |
+| other | Object | No Description Provided |
 
 
 ### getNamespace
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCResourceLocation.getNamespace() as string
 myMCResourceLocation.getNamespace();
 ```
 
 ### getPath
 
-Return type: String
+Return Type: string
 
 ```zenscript
-a. myMCResourceLocation.getPath()；
+MCResourceLocation.getPath() as string
+myMCResourceLocation.getPath();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCResourceLocation.hashCode() as int
 myMCResourceLocation.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCResourceLocation.toString() as string
 myMCResourceLocation.toString();
 ```
 
@@ -87,7 +112,7 @@ myMCResourceLocation.toString();
 
 | 名称            | 类型     | 可获得  | 可设置   |
 | ------------- | ------ | ---- | ----- |
-| commandString | String | true | false |
-| 命名空间          | String | true | false |
-| path          | String | true | false |
+| commandString | string | true | false |
+| 命名空间          | string | true | false |
+| path          | string | true | false |
 

@@ -2,17 +2,17 @@
 
 This is A helper interface for every item that is returned by a BEP!
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.brackets.CommandStringDisplayable
+import crafttweaker.api.brackets.CommandStringDisplayable;
 ```
+
 
 ## Свойства
 
 | Название      | Тип    | Имеет Getter | Имеет Setter |
 | ------------- | ------ | ------------ | ------------ |
-| commandString | String | true         | false        |
+| commandString | string | true         | false        |
 

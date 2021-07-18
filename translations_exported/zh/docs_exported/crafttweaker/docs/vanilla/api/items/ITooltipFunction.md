@@ -1,31 +1,28 @@
 # ITooltipFunction
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftbiner.api.item.tooltip.ITooltipfunction
+import crafttweaker.api.item.tooltip.ITooltipFunction;
 ```
 
-## Functional Interface
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
-```zenscript
-(stack, tooltip, isAdvanced) => {}
-```
 ## 方法
+
 ### 应用
 
+Return Type: void
+
 ```zenscript
-myITooltipFunction.apply(stack as crafttweaker.api.item.IItemStack, tooltip as List<crafttweaker.api.util.text.MCTextComponent>, isAdvanced as boolean);
+ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<MCTextComponent>, isAdvanced as boolean) as void
 ```
 
-| 参数         | 类型                                                                                                         | 描述                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| stack      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                          | No description provided |
-| 工具提示       | 列表&lt;[craftmiliter.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | No description provided |
-| isAdvanced | boolean                                                                                                    | No description provided |
+| 参数         | 类型                                                                                       | 描述                      |
+| ---------- | ---------------------------------------------------------------------------------------- | ----------------------- |
+| stack      | [IItemStack](/vanilla/api/items/IItemStack)                                              | No Description Provided |
+| 工具提示       | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | No Description Provided |
+| isAdvanced | boolean                                                                                  | No Description Provided |
 
 
 

@@ -1,172 +1,186 @@
 # MCCommandContext
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.commands.custom.MCCommandContext
+import crafttweaker.api.commands.custom.MCCommandContext;
 ```
+
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### copyFor
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
-myMCCommandContext.copyFor(source as craftwiner.api.commands.custom.MCCommandSource);
+MCCommandContext.copyFor(source as MCCommandSource) as MCCommandContext
 ```
 
-| 参数 | 类型                                                                                                | 描述                      |
-| -- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 来源 | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 参数 | 类型                                                    | 描述                      |
+| -- | ----------------------------------------------------- | ----------------------- |
+| 来源 | [MC命令源](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandContext.equals(o as Object);
+MCCommandContext.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### 获取参数
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCCommandContext.getArgument(名称为字符串)；
+MCCommandContext.getArgument(name as string) as string
 ```
 
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
-| name | String | No description provided |
+| name | string | No Description Provided |
 
 
 ### getChild
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
+MCCommandContext.getChild() as MCCommandContext
 myMCCommandContext.getChild();
 ```
 
 ### getCommand
 
-返回类型： [craftmiliter.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCCommandContext.getCommand() as MCCommand
 myMCCommandContext.getCommand();
 ```
 
 ### getInput
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContext.getInput() as string
 myMCCommandContext.getInput();
 ```
 
 ### getLastChild
 
-返回类型： [craftbiner.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
+Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
+MCCommandContext.getLastChild() as MCCommandContext
 myMCCommandContext.getLastChild();
 ```
 
 ### getNodes
 
-返回类型：邮件列表&lt;[craftminstrer.api.commands.custom.MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
+Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
+MCCommandContext.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContext.getNodes();
 ```
 
 ### getRange
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCCommandContext.getRange() as MCStringRange
 myMCCommandContext.getRange();
 ```
 
 ### 获取重定向修改器
 
-返回类型： [craftmilower.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-myMCCommandContext.getrediret Modifier();
+MCCommandContext.getRedirectModifier() as MCRedirectModifier
+myMCCommandContext.getRedirectModifier();
 ```
 
 ### getRootNode
 
-返回类型： [crafttweeper.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCCommandContext.getRootNode() as MCCommandNode
 myMCCommandContext.getRootNode();
 ```
 
 ### getSource
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
+MCCommandContext.getSource() as MCCommandSource
 myMCCommandContext.getSource();
 ```
 
 ### hasNodes
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandContext.hasNodes() as boolean
 myMCCommandContext.hasNodes();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommandContext.hashCode() as int
 myMCCommandContext.hashCode();
 ```
 
 ### isForked
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandContext.isForked() as boolean
 myMCCommandContext.isForked();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandContext.toString() as string
 myMCCommandContext.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCCommandContext == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 

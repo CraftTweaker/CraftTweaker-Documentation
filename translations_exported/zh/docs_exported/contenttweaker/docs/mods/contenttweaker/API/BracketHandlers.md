@@ -9,50 +9,44 @@ I advise against using the static methods in this class directly as they may be 
 This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-mods.contenttweaker.BracketHandlers
+import mods.contenttweaker.BracketHandlers;
 ```
 
+
 ## 方法
+
 ### getItemGroup
 
 Gets the itemGroup. Will throw an error if the group could not be found
 
- Returns: `The found MCItemGroup`
-
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Returns: The found MCItemGroup Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>
 
-mods.contenttweeper.BracketHandlers.getItemGroup(tokens as String);
-mods.contenttweeper.BracketHandlers.getItemGroup("misc");
+BracketHandlers.getItemGroup(tokens as string) as MCItemGroup
+BracketHandlers.getItemGroup("misc");
 ```
-
 | 参数     | 类型     | 描述                                          |
 | ------ | ------ | ------------------------------------------- |
-| tokens | String | What you createDataCompound in the BEP call |
-
+| tokens | string | What you createDataCompound in the BEP call |
 
 ### getToolType
 
-Gets a [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
+Gets a [MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
 
- Returns: `The [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType`
-
-Return type: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
+Returns: The [MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType Return Type: [MCToolType](/mods/contenttweaker/API/item/MCToolType)
 
 ```zenscript
 <tooltype:shovel>
 
-mods.contenttweeper.BracketHandlers.getToolType(tokens as String);
-mods.contenttweeper.BracketHandlers.getToolType("shovel");
+BracketHandlers.getToolType(tokens as string) as MCToolType
+BracketHandlers.getToolType("shovel");
 ```
-
 | 参数     | 类型     | 描述                                                |
 | ------ | ------ | ------------------------------------------------- |
-| tokens | String | What you would createDataCompound in the BEP call |
-
-
+| tokens | string | What you would createDataCompound in the BEP call |
 

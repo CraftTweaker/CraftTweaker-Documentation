@@ -4,6 +4,10 @@ This event is fired when a player destroys a tool or item. This happens
  after the tool has been destroyed and can not be used to prevent the
  destruction directly.
 
+The event is not cancelable.
+
+The event does not have a result.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -18,22 +22,26 @@ MCPlayerDestroyItemEvent extends [MCPlayerEvent](/vanilla/api/event/entity/playe
 
 ## Methods
 
-### getDestroyedItem
+:::group{name=getDestroyedItem}
 
 Gets a snapshot of the item from before it broke. Modifying this item
  will have no effect and it should be treated as unmodifiable.
 
+Returns: The original item from before it was broken.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+// MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+
 event.getDestroyedItem();
 ```
+
+:::
 
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-|------|------|------------|------------|
-| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
 
