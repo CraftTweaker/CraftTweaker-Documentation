@@ -254,6 +254,18 @@ new ListData(["Hello", "World"]).getString();
 
 :::
 
+:::group{name=isEmpty}
+
+Return Type: boolean
+
+```zenscript
+// ICollectionData.isEmpty() as boolean
+
+new ListData(["Hello", "World"]).isEmpty();
+```
+
+:::
+
 :::group{name=remove}
 
 Removes the [IData](/vanilla/api/data/IData) stored at the given index.
@@ -298,7 +310,8 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Beschreibung            |
-| ---- | ---- | ---------- | ---------- | ----------------------- |
-| size | int  | true       | false      | No Description Provided |
+| Name  | Type    | Has Getter | Has Setter | Beschreibung            |
+| ----- | ------- | ---------- | ---------- | ----------------------- |
+| empty | boolean | true       | false      | No Description Provided |
+| size  | int     | true       | false      | No Description Provided |
 
