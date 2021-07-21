@@ -248,6 +248,28 @@ myMapData + data as IData
 
 :::
 
+:::group{name=MEMBERGETTER}
+
+Retrieves the value associated with the key
+
+```zenscript
+myMapData.key as string
+{Hello : "World", Somewhere: "Over the rainbow"}."Hello"
+```
+
+:::
+
+:::group{name=MEMBERSETTER}
+
+Adds sets the value for the given key or creates a new entry if it did not exist before.
+
+```zenscript
+myMapData.key as string = value as IData
+{Hello : "World", Somewhere: "Over the rainbow"}."Hello" = "Goodbye"
+```
+
+:::
+
 
 ## Properties
 
