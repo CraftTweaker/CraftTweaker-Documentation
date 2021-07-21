@@ -147,6 +147,7 @@
               "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/MCPlayerLoggedOutEvent.md",
               "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/MCPlayerRespawnEvent.md",
               "Interact": {
+                "MCEntityInteractEvent": "vanilla/api/event/entity/player/interact/MCEntityInteractEvent.md",
                 "MCPlayerInteractEvent": "vanilla/api/event/entity/player/interact/MCPlayerInteractEvent.md",
                 "MCRightClickBlockEvent": "vanilla/api/event/entity/player/interact/MCRightClickBlockEvent.md",
                 "MCRightClickEmptyEvent": "vanilla/api/event/entity/player/interact/MCRightClickEmptyEvent.md",
