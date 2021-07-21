@@ -245,6 +245,28 @@ myMapData + data as IData
 
 :::
 
+:::group{name=MEMBERGETTER}
+
+检索与密钥相关的值
+
+```zenscript
+myMapData.key as string
+{Hello : "World", Somewhere: "Over the rainbow"}."Hello"
+```
+
+:::
+
+:::group{name=MEMBERSETTER}
+
+添加给定键值或创建一个新条目，如果它以前不存在。
+
+```zenscript
+myMapData.key as string = value as IData
+{Hello : "World", Somewhere: "Over the rainbow"}."Hello" = "Goodbye"
+```
+
+:::
+
 
 ## 参数
 
