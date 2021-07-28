@@ -720,6 +720,23 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 :::
 
+:::group{name=withDisplayName}
+
+ItemStackに表示される名前を設定します。
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.withDisplayName(text as MCTextComponent) as IItemStack
+```
+
+| Parameter | Type                                                      | Description |
+| --------- | --------------------------------------------------------- | ----------- |
+| テキスト      | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | stackの新しい名前 |
+
+
+:::
+
 :::group{name=withTag}
 
 ItemStackのタグを設定します。
