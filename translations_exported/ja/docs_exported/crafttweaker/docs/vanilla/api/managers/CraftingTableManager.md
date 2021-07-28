@@ -234,7 +234,7 @@ craftingTable.removeByName("minecraft:furnace");
 
 :::group{name=removeByRegex}
 
-Remove recipe based on regex
+Remove recipe based on regex.
 
 Return Type: void
 
@@ -247,6 +247,26 @@ craftingTable.removeByRegex("\\d_\\d");
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
 | regex     | string | regex to match against |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+// CraftingTableManager.removeByRegex(regex as string, exclude as RecipeFilter) as void
+
+craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+```
+
+| Parameter | Type                                             | Description             |
+| --------- | ------------------------------------------------ | ----------------------- |
+| regex     | string                                           | regex to match against  |
+| 除外する      | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::
