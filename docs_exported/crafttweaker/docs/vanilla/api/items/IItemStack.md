@@ -737,6 +737,23 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 :::
 
+:::group{name=withDisplayName}
+
+Sets the display name of the ItemStack
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.withDisplayName(text as MCTextComponent) as IItemStack
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| text | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | New name of the stack. |
+
+
+:::
+
 :::group{name=withTag}
 
 Sets the tag for the ItemStack.
