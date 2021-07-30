@@ -1,6 +1,7 @@
 {
   "nav": {
-    "Home": "index.md",
+    "Inicio": "index.md",
+
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
@@ -106,7 +107,7 @@
         "Food": {
           "MCFood": "vanilla/api/food/MCFood.md"
         },
-        "Items": {
+        "Objetos": {
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IItemStack": "vanilla/api/items/IItemStack.md"
         },
@@ -202,12 +203,12 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "Animolímetro Inmersivo": "mods/Inmersive_Petroleum/Inmersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "Distillo": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "Registro de combustible": "mods/Inmersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
-          "Lubricante": "mods/Inmersive_Petroleum/CraftTweaker_Support/Lubricant.md",
-          "Reserva": "mods/Inmersive_Petroleum/CraftTweaker_Support/Reservoir.md"
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       }
     }

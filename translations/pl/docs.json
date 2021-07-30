@@ -4,7 +4,7 @@
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
-    "Przepisy": {
+    "Recipes": {
       "Recipe Managers": "recipes/recipe_managers.md"
     },
     "Vanilla": {
@@ -18,14 +18,14 @@
             "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
           }
         },
-        "Bloki": {
+        "Blocks": {
           "MCBlock": "vanilla/api/blocks/MCBlock.md",
           "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
         },
-        "Nawiasy": {
+        "Brackets": {
           "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
         },
-        "Dane": {
+        "Data": {
           "ByteArrayData": "vanilla/api/data/ByteArrayData.md",
           "ByteData": "vanilla/api/data/ByteData.md",
           "DoubleData": "vanilla/api/data/DoubleData.md",
@@ -106,7 +106,7 @@
         "Food": {
           "MCFood": "vanilla/api/food/MCFood.md"
         },
-        "Przednioty": {
+        "Items": {
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IItemStack": "vanilla/api/items/IItemStack.md"
         },
@@ -129,7 +129,7 @@
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
           "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md"
         },
-        "Mikstury": {
+        "Potions": {
           "MCPotion": "vanilla/api/potions/MCPotion.md",
           "MCPotionEffect": "vanilla/api/potions/MCPotionEffect.md",
           "MCPotionEffectInstance": "vanilla/api/potions/MCPotionEffectInstance.md"
@@ -142,13 +142,13 @@
           "Direction": "vanilla/api/util/Direction.md",
           "DirectionAxis": "vanilla/api/util/DirectionAxis.md"
         },
-        "Świat": {
+        "World": {
           "MCBiome": "vanilla/api/world/MCBiome.md",
           "MCBiomeSpawnEntry": "vanilla/api/world/MCBiomeSpawnEntry.md"
         }
       }
     },
-    "Modyfikacje": {
+    "Mods": {
       "Botany Pots": {
         "Crop": "mods/botanypots/Crop.md",
         "Fertilizer": "mods/botanypots/Fertilizer.md",
@@ -202,12 +202,12 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "Niskolizyjna ropa naftowa": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "Destylacja": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "Rejestracja paliw": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
-          "Smar": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
-          "Zbiornik": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       }
     }

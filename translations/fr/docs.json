@@ -202,12 +202,12 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "Pétrole immersif": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
           "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "Enregistrement de carburant": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
-          "Lubrifiant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
-          "Réservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       }
     }

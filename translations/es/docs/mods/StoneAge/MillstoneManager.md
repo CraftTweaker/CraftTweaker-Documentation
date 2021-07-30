@@ -10,7 +10,7 @@
 - **int activateCount** Activate millstone count
 - **String group** Recipe group
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:stone_age:millstone>.addRecipe(String name, IItemStack output, IIngredient input, int activateCount, @OptionalString String group)

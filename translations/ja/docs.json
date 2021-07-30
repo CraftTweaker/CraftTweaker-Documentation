@@ -1,13 +1,13 @@
 {
   "nav": {
-    "ホーム": "index.md",
+    "Home": "index.md",
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
-    "レシピ": {
+    "Recipes": {
       "Recipe Managers": "recipes/recipe_managers.md"
     },
-    "バニラ": {
+    "Vanilla": {
       "How to": {
         "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
       },
@@ -18,14 +18,14 @@
             "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
           }
         },
-        "ブロック": {
+        "Blocks": {
           "MCBlock": "vanilla/api/blocks/MCBlock.md",
           "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
         },
-        "ブラケット記法": {
+        "Brackets": {
           "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
         },
-        "データ": {
+        "Data": {
           "ByteArrayData": "vanilla/api/data/ByteArrayData.md",
           "ByteData": "vanilla/api/data/ByteData.md",
           "DoubleData": "vanilla/api/data/DoubleData.md",
@@ -42,7 +42,7 @@
           "ShortData": "vanilla/api/data/ShortData.md",
           "StringData": "vanilla/api/data/StringData.md"
         },
-        "エンティティ": {
+        "Entities": {
           "MCEntityClassification": "vanilla/api/entities/MCEntityClassification.md",
           "MCEntityType": "vanilla/api/entities/MCEntityType.md"
         },
@@ -106,7 +106,7 @@
         "Food": {
           "MCFood": "vanilla/api/food/MCFood.md"
         },
-        "アイテム": {
+        "Items": {
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IItemStack": "vanilla/api/items/IItemStack.md"
         },
@@ -129,7 +129,7 @@
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
           "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md"
         },
-        "ポーション": {
+        "Potions": {
           "MCPotion": "vanilla/api/potions/MCPotion.md",
           "MCPotionEffect": "vanilla/api/potions/MCPotionEffect.md",
           "MCPotionEffectInstance": "vanilla/api/potions/MCPotionEffectInstance.md"
@@ -202,10 +202,10 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "没入型石油": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "蒸留": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "燃料登録": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
           "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
           "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }

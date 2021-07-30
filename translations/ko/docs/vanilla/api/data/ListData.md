@@ -118,7 +118,7 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Casters
 
-| Result type                                                  | Is Implicit |
-| ------------------------------------------------------------ | ----------- |
-| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true        |
+| 반환 자료형                                                       | 암묵적  |
+| ------------------------------------------------------------ | ---- |
+| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true |
 

@@ -1,6 +1,6 @@
 {
   "nav": {
-    "首页": "index.md",
+    "Home": "index.md",
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
@@ -202,12 +202,12 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "沉浸式石油": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "蒸馏": "mods/Immersive_Petroleum/CraftTinstrer_Support/Distillation.md",
-          "燃料注册": "mods/Immersive_Petroleum/CraftTinstrer_Support/FuelRegistration.md",
-          "卢比肯特": "mods/Immersive_Petroleum/CraftTinstrer_Support/Lubricant.md",
-          "储备": "mods/Immersive_Petroleum/CraftTinstrer_Support/Reservoir.md"
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       }
     }

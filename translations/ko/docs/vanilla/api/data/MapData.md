@@ -221,7 +221,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 ## Casters
 
-| Result type                                                    | Is Implicit |
-| -------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | true        |
+| 반환 자료형                                                         | 암묵적  |
+| -------------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | true |
 

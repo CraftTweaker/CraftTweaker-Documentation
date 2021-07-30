@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.MCEntityItemPickupEvent
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCEntityItemPickupEvent>);
+new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(function.Consumer<crafttweaker.api.event.entity.player.MCEntityItemPickupEvent> 기반 핸들러);
 ```
 | Parameter | Type                                                                                                                                        | Description             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
@@ -72,7 +72,7 @@ myMCEntityItemPickupEvent.isCanceled();
 ### setCanceled
 
 ```zenscript
-myMCEntityItemPickupEvent.setCanceled(cancel as boolean);
+myMCEntityItemPickupEvent.setCanceled(논리값 기반 취소);
 ```
 
 | Parameter | Type    | Description             |

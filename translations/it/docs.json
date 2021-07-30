@@ -1,24 +1,24 @@
 {
   "nav": {
-    "Pagina Principale": "index.md",
-    "Le Basi dello Scripting": "getting_started.md",
-    "Comandi": "commands.md",
-    "Esempi": "examples.md",
-    "Ricette": {
-      "Gestori di Ricette": "recipes/recipe_managers.md"
+    "Home": "index.md",
+    "Getting Started With Scripts": "getting_started.md",
+    "Commands": "commands.md",
+    "Examples": "examples.md",
+    "Recipes": {
+      "Recipe Managers": "recipes/recipe_managers.md"
     },
     "Vanilla": {
-      "Come fare": {
-        "Ricette del Banco da Lavoro": "vanilla/how_to/crafting_table.md"
+      "How to": {
+        "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
       },
       "Api": {
-        "Blocco": {
-          "Materiale": {
+        "Block": {
+          "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
             "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
           }
         },
-        "Blocchi": {
+        "Blocks": {
           "MCBlock": "vanilla/api/blocks/MCBlock.md",
           "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
         },
@@ -202,12 +202,12 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Immersive Petroleum": {
-        "Petrolio Immersivo": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "Immersive Petroleum": "mods/Immersive_Petroleum/Immersive_Petroleum.md",
         "CraftTweaker Support": {
-          "Distillazione": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "Registrazione Carburante": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.m",
-          "Lubrificante": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
-          "Serbatoio": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
+          "Distillation": "mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       }
     }

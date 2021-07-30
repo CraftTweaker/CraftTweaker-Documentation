@@ -19,7 +19,7 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+[crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)를 반환
 
 ```zenscript
 myMCBlock.getDefaultState();
@@ -35,7 +35,7 @@ myMCBlock.getDefaultState();
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| 반환 자료형 | 암묵적   |
+| ------ | ----- |
+| String | false |
 
