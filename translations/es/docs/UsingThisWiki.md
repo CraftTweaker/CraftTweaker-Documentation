@@ -8,32 +8,33 @@ Antes de empezar, estos términos van a aparecer a menudo, así que aquí tienes
 
 ## ZenGetter
 
-Un ZenGetter es un método para conseguir información de un objeto. Por ejemplo, el tipo ` IItemStack ` tiene un ` ZenGetter ` llamado "displayName". </br> Este ZenGetter se usa así:
+Un ZenGetter es un método para conseguir información de un objeto. Por ejemplo, el tipo ` IItemStack ` tiene un `ZenGetter` llamado "displayName". </br> Este `ZenGetter` se usa así:
 
 ```zenscript
 //Objeto.zenGetter;
 <minecraft:iron_ingot>.displayName;
 ```
 
-Un ZenGetter devuelve un algo, en este caso un string que representa el nombre que se verá cuando aguantes el objeto en tu inventario ("Lingote de Hierro").
+Un `ZenGetter` devuelve un algo, en este caso un string que representa el nombre que se verá cuando aguantes el objeto en tu inventario ("Lingote de Hierro").
 
 ## ZenSetter
 
-Un ZenSetter es lo mismo que un ZenGetter, pero un ZenSetter establece un valor mientras que un ZenGetter obtiene esa misma información. </br> Nos quedaremos con nuestro tipo `ItemStack </0>, ya que también tiene el ZenSetter "displayName". Sabemos por el tipo de ZenMethod que devolvera un tipo String.</p>
+Un `ZenSetter` es lo mismo que un `ZenGetter`, pero un `ZenSetter` establece un valor mientras que un `ZenGetter` obtiene esa misma información. </br> Nos quedaremos con nuestro tipo `ItemStack </0>, ya que también tiene el <code>ZenSetter` "displayName". Sabemos por el tipo de ZenMethod que devolvera un tipo String.
 
-<p>Usamos un ZenSetter así:</p>
+Usamos un ZenSetter así:
 
-<pre><code class="zenscript">//Objeto.zenSetter = nuevoValor;
+```zenscript
+//Objeto.zenSetter = nuevoValor;
 <minecraft:iron_ingot>.displayName = "Lingote Sospechoso";
-`</pre> 
+```
 
 Un ZenSetter nunca devolvera información, ya que está hecho para establecer el valor de algo, no para obtenerlo.
 
 ## Asignar operadores
 
-</code> Si un objeto tiene tanto un ZenGetter como un ZenSetter con el mismo nombre (por ejemplo: un tipo </code> IItemStack </code>tiene "displayName"), puedes usar otros operadores de asignación que no sean ` = </a>. `
+</code> Si un objeto tiene tanto un `ZenGetter` como un `ZenSetter` con el mismo nombre (por ejemplo: un tipo </code>IItemStack</code> tiene "displayName"), puedes usar otros operadores de asignación que no sean ` =. `
 
-Dependiendo del tipo puedes usar uno de esta lista: </code> &=, |=, +=, -=. *=. /=, %=, ~=. </code>
+Dependiendo del tipo puedes usar uno de esta lista: ` &=, |=, +=, -=. *=. /=, %=, ~=. `
 
 ```zenscript
 Como tenemos un ZenGetter y un ZenSetter con el mismo nombre, la primera línea hace lo mismo que la segunda:
