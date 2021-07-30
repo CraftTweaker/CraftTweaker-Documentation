@@ -6,7 +6,7 @@ Un array es una Lista de varios elementos DEL MISMO TIPO.
 
 Se declara como una variable y usando ````[ ```` y ````]````.
 
-Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
+Importante: siempre *DEBES* inicializar un array a un tipo, aunque este vacio.
 
 `var arrayDeFloats as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
 
@@ -105,9 +105,10 @@ val array3 = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emeral
 //for [indice (opcional), ] nombreElemento in nombreArray {code}
 
 for objeto in array1 {
-    //define la variable "objeto" por cada elemento del array.  <br/>  La acción se ejecutará una vez para el objeto <minecraft:dirt>, y después para <minecraft:planks> y <minecraft:diamond>.
-    //Usa esta variable a partir de ahora.
-
+    //define la variable "objeto" por cada elemento del array.  
+  La acción se ejecutará una vez para el objeto <minecraft:dirt>, y después para <minecraft:planks> y <minecraft:diamond>.
+    //Usa esta variable a partir de ahora. 
+recipes.remove(objeto); 
     }
 
 
@@ -116,7 +117,8 @@ for i in 0 to 10 {
     print(i);
 }
 
-for i in 10 to 20 { <br/>
+for i in 10 to 20 { 
+
     //define la variable "i" como un número que va del 10 al 19 (a 20 no llegará)
 
 
@@ -125,7 +127,8 @@ for i in 10 to 20 { <br/>
 for i, objeto in array1 {
     //Define la variable "i" como el indice de cada elemento del array1.
     //Define la variable objeto como el elemento del array1
-    //Ahora puedes usar estas variables. <br/>
+    //Ahora puedes usar estas variables. 
+
 //Craftea un Item del array1 con un Item del array2, y del array3, sin tener en cuenta lo que sean. 
 recipes.addShapeless(item,[array1[i],array2[i]]);
 
@@ -184,6 +187,7 @@ var array as IItemStack[] = [iron, iron, iron];
 
 array += lingoteHierro;
 for objeto in array {
-    print(objeto.displayName); </br>  // Añadirá Lingote de Hierro al log
+    print(objeto.displayName);
+  // Añadirá Lingote de Hierro al log
 }
 ```
