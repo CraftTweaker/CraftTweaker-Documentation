@@ -52,6 +52,18 @@ myMCPlayerInteractEvent.getFace();
 
 :::
 
+:::group{name=getHand}
+
+Return Type: [MCHand](/vanilla/api/util/MCHand)
+
+```zenscript
+// MCPlayerInteractEvent.getHand() as MCHand
+
+myMCPlayerInteractEvent.getHand();
+```
+
+:::
+
 :::group{name=getItemStack}
 
 The stack involved in this interaction.
@@ -74,5 +86,6 @@ myMCPlayerInteractEvent.getItemStack();
 |------|------|------------|------------|-------------|
 | blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
 | face | [Direction](/vanilla/api/util/Direction)? | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
+| hand | [MCHand](/vanilla/api/util/MCHand) | true | false | No Description Provided |
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | The stack involved in this interaction. <br />  May be empty, but will never be null. |
 
