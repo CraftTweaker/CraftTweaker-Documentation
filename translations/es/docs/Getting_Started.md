@@ -1,12 +1,12 @@
 # Empezando con tus archivos 
 
-CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este lenguaje de programación lee archivos ` .zs ` que se encontrarán en la carpeta ` scripts ` dentro de tu instalación o instancia de ` minecraft. `
+CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este lenguaje de programación lee archivos (o scripts) ` .zs ` que se encontrarán en la carpeta ` scripts ` dentro de tu instalación o instancia de ` minecraft. `
 
 ZenScript es un lenguaje de programación que va de arriba a abajo, lo que quiere decir que las ` declaraciones de Variables ` y las ` Importaciones ` deberían encontrarse como más arribo del fichero, mejor. Esto no quiere decir que no puedas declarar ` Variables ` en cualquier parte, solo que esa variable no existirá a los ojos de las líneas que estén por delante de la declaración. 
 
 ## Introducción
 
-¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? Como la mayoría de mods se desarrollan independientemente uno del otro, es muy posible que uno parezca muy fácil o mucho más útil que otro mod parecido. O quizás crees que debería haber una receta mejor para algunos de los items de estos mods. O incluso quieres eliminar un item del juego sin tener que eliminar el mod entero. También sería posible que encuentres que un grupo de items oreDict tenga demasiados items, o falte alguno. Ahora puedes hacer todo eso, con una sola instrucción con CrafttTweaker.
+¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? Como la mayoría de mods se desarrollan independientemente uno del otro, es muy posible que uno parezca muy fácil o mucho más útil que otro mod parecido. O quizás crees que debería haber una receta mejor para algunos de los items de estos mods. O incluso quieres eliminar un item del juego sin tener que eliminar el mod entero. También sería posible que encuentres que un grupo de items oreDict tenga demasiados items, o falte alguno. Ahora puedes hacer todo eso, con una sola instrucción con CraftTweaker.
 
 A parte de las características básicas de modificar Minecraft sin mods, también existen librarias con integración para la modificación de recetas de bloques añadidos por mods y el comportamiento de los mods.
 
@@ -23,7 +23,7 @@ Para empezar con tus archivos, crearemos un archivo muy basico, llamado ` hola.z
 Dentro de ` hola.zs ` pon la siguiente línea:
 
 ```zenscript
-<code> print ("Hello world!");
+print ("Hello world!");
 
 ```
 
@@ -40,10 +40,10 @@ El archivo ` crafttweaker.log ` usa una sintaxis muy specifica en la salida de i
     [ETAPADECARGADO][LADO][TIPO]
     
 
-Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
+Mirando el ejemplo de arriba, nuestra salida para el fichero `hola.zs` sería:
 
-<pre><code>[PREINITIALIZATION][CLIENT][INFO] Hello world!
-`</pre> 
+    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    
 
 La sintaxis se usa para depuración y la única vez en la que no sea usa es durante líneas que salen al archivo a causa de un comando, para que sea más fácil copiar y pegar la información que haya sido añadida al archivo como puede ser por ejemplo una lista de objetos. 
 
