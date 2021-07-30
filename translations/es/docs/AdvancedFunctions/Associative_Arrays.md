@@ -108,7 +108,7 @@ Hay dos iteradores que te permiten hacer un Bucle con un Mapa:
 
 Vamos a crear un Mapa que almacena recetas de crafteo para loopear:
 
-- Las claves seran el resultado de la receta de tipo ` IItemStack <code/></li>
+- Las claves seran el resultado de la receta de tipo `IItemStack<code/></li>
 <li>Los elementos seran los ingredientes de crafteo de tipo <code> IIngredient <code/></li>
 <li>Usaremos los dos iteradores: <br/>
 Primero el de claves, que se construye así: <code> for clave in mapa { hazAlgo; }
@@ -143,7 +143,7 @@ for clave, elemento in  mapaDeRecetasShaped {
     Una entrada de un mapa consiste de una clave y un elemento   
     Actualmente la única manera de obtener este objeto es usando el metodo entrySet (Set de Entradas).
     
-    Puedes usar los getters para conseguir la ` clave <code/> y <code> elemento `
+    Puedes usar los getters para conseguir la clave y elemento 
     
     ```zenscript
     //Sustituye mapa con el nombre de un Array Asociativo existente.
