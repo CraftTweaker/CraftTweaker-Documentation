@@ -8,4 +8,4 @@ ZenScript fue creado con la idea de que fuera fácil de usar para el usuario má
   
   
   
-Ésta es la traducción española de un lenguaje de programación escrito y pensado en Inglés. Como traductor, he tomado la libertad de dejar ciertas cosas sin traducir (como sintaxis específica del lenguaje de programación) además de cosar que en mi opinión es mejor no traducir. Muchas gracias, y ¡suerte programando!
+Ésta es la traducción española de un lenguaje de programación escrito y pensado en Inglés. Como traductor, he tomado la libertad de dejar ciertas cosas sin traducir (como sintaxis específica del lenguaje de programación) además de cosas que en mi opinión es mejor no traducir. Muchas gracias, y ¡suerte programando!
