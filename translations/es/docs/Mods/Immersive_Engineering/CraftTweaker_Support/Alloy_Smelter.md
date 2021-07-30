@@ -15,7 +15,7 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 | Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time    | Integer                                             |
 
-### Example
+### Ejemplo 
 
 ```zenscript
 //Example:
@@ -29,7 +29,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo 
 
 ```zenscript
 //Example:

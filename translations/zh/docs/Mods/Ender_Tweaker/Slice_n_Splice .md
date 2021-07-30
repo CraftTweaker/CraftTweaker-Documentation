@@ -1,10 +1,10 @@
 # Slice 'n' Splice
 
-## Package
+## 所属包名
 
 `import mods.enderio.SliceNSplice;`
 
-## Methods
+## 方法
 
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 

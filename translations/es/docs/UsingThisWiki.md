@@ -8,12 +8,12 @@ Antes de empezar, estos términos van a aparecer a menudo, así que aquí tienes
 
 ## ZenGetter
 
-Un ZenGetter es un método para conseguir información de un objeto. Por ejemplo, el tipo ` IItemStack </a> tiene un <code> ZenGetter </0> llamado "displayName". </br>
-Este ZenGetter se usa así:</p>
+Un ZenGetter es un método para conseguir información de un objeto. Por ejemplo, el tipo ` IItemStack ` tiene un ` ZenGetter ` llamado "displayName". </br> Este ZenGetter se usa así:
 
-<pre><code class="zenscript">//object.zenGetter;
+```zenscript
+//Objeto.zenGetter;
 <minecraft:iron_ingot>.displayName;
-`</pre> 
+```
 
 Un ZenGetter devuelve un algo, en este caso un string que representa el nombre que se verá cuando aguantes el objeto en tu inventario ("Lingote de Hierro").
 
@@ -23,7 +23,7 @@ Un ZenSetter es lo mismo que un ZenGetter, pero un ZenSetter establece un valor 
 
 <p>Usamos un ZenSetter así:</p>
 
-<pre><code class="zenscript">//object.zenSetter = nuevoValor;
+<pre><code class="zenscript">//Objeto.zenSetter = nuevoValor;
 <minecraft:iron_ingot>.displayName = "Lingote Sospechoso";
 `</pre> 
 
@@ -31,7 +31,7 @@ Un ZenSetter nunca devolvera información, ya que está hecho para establecer el
 
 ## Asignar operadores
 
-Si un objeto tiene tanto un ZenGetter como un ZenSetter con el mismo nombre (por ejemplo: un tipo </code> IItemStack </a> tiene "displayName"), puedes usar otros operadores de asignación que no sean </code> = </0>. 
+</code> Si un objeto tiene tanto un ZenGetter como un ZenSetter con el mismo nombre (por ejemplo: un tipo </code> IItemStack </code>tiene "displayName"), puedes usar otros operadores de asignación que no sean ` = </a>. `
 
 Dependiendo del tipo puedes usar uno de esta lista: </code> &=, |=, +=, -=. *=. /=, %=, ~=. </code>
 

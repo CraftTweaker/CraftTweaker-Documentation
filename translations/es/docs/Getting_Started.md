@@ -1,8 +1,8 @@
 # Empezando con tus archivos 
 
-CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este lenguaje de programación lee archivos ` .zs ` que se encontrarán en la carpeta ` scripts ` dentro de tu instalación o instancia de ` minecraft. </0></p>
+CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este lenguaje de programación lee archivos ` .zs ` que se encontrarán en la carpeta ` scripts ` dentro de tu instalación o instancia de ` minecraft. `
 
-<p>ZenScript es un lenguaje de programación que va de arriba a abajo, lo que quiere decir que las <code> declaraciones de Variables ` y las ` Importaciones ` deberían encontrarse como más arribo del fichero, mejor. Esto no quiere decir que no puedas declarar ` Variables ` en cualquier parte, solo que esa variable no existirá a los ojos de las líneas que estén por delante de la declaración. 
+ZenScript es un lenguaje de programación que va de arriba a abajo, lo que quiere decir que las ` declaraciones de Variables ` y las ` Importaciones ` deberían encontrarse como más arribo del fichero, mejor. Esto no quiere decir que no puedas declarar ` Variables ` en cualquier parte, solo que esa variable no existirá a los ojos de las líneas que estén por delante de la declaración. 
 
 ## Introducción
 
@@ -12,9 +12,9 @@ A parte de las características básicas de modificar Minecraft sin mods, tambi�
 
 ## Archivos
 
-Los archivos se almacenan en ` /scripts ` y se cargan durante la fase de ` PreInicialización ` de Minecraft. A diferencia de otras versiones de CrafttTweaker, los archivos no pueden ser recargados una vez en partida, debido a unos cambios que Mojang hizo en 1.12.2 a los que no se puede hacer nada al respeto. Los archivos TIENEN que estar en el ` SERVIDOR y CLIENTE </strong> para funcionar.</p>
+Los archivos se almacenan en ` /scripts ` y se cargan durante la fase de ` PreInicialización ` de Minecraft. A diferencia de otras versiones de CrafttTweaker, los archivos no pueden ser recargados una vez en partida, debido a unos cambios que Mojang hizo en 1.12.2 a los que no se puede hacer nada al respeto. Los archivos TIENEN que estar en el ` SERVIDOR y CLIENTE ` para funcionar.
 
-<p>Archivos tienen la extensión <code> .zs ` y pueden ser comprimidos dentro de un archivo ` .zip `, que será leído igual. 
+Archivos tienen la extensión ` .zs ` y pueden ser comprimidos dentro de un archivo ` .zip `, que será leído igual. 
 
 ### Escribiendo tu primer archivo.
 
@@ -33,11 +33,11 @@ El archivo ` crafttweaker.log ` debería estar dentro de tu directorio de Minecr
 
 Se recomienda usar Notepad ++ o Sublime Text para editar tus archivos, pero cualquiera valdrá.
 
-### El archivo ` crafttweaker.log </0></h3>
+### El archivo ` crafttweaker.log `
 
-<p>El archivo <code> crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:</p> 
+El archivo ` crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:
 
-    <code> [ETAPADECARGADO][LADO][TIPO] </0>
+    [ETAPADECARGADO][LADO][TIPO]
     
 
 Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
@@ -59,5 +59,7 @@ Comentario de una línea alternativo: ` #Yo también `
 
 Comentario de más de una línea
 
-    <code> /*  Soy <br/> un comentario <br/> multilinear!
+     /*  Soy
+    un comentario 
+    multilinear!
      */

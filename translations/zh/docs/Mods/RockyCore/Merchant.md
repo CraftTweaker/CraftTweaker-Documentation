@@ -7,9 +7,9 @@ The following commands are added to retrieve information about the availible mer
 - `/ct merchant professions` - outputs a log of valid merchant professions
 - `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
 
-## Package
+## 所属包
 
-`mods.rockycore.Merchant`
+`mods.rockytweaks.Merchant`
 
 ## 添加配方
 
@@ -17,7 +17,7 @@ Trades can be added to a specific merchant profession & carrer.
 
 ```zenscript
 // addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
-mods.rockycore.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
+mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
 ## Removal
