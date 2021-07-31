@@ -28,7 +28,7 @@ myMCBlock.getDefaultState();
 
 ## Properties
 
-| Name           | Type   | Has Getter | Has Setter |
+| Nombre         | Type   | Has Getter | Has Setter |
 | -------------- | ------ | ---------- | ---------- |
 | lootTable      | String | true       | false      |
 | translationKey | String | true       | false      |
