@@ -14,7 +14,7 @@ MCEntityClassification implements the following interfaces. That means any metho
 
 ## Properties
 
-| Name              | Type    | Has Getter | Has Setter |
+| Nombre            | Type    | Has Getter | Has Setter |
 | ----------------- | ------- | ---------- | ---------- |
 | commandString     | String  | true       | false      |
 | isAnimal          | boolean | true       | false      |
