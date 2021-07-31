@@ -43,8 +43,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| Параметр   | Тип                                                                              | Description                               |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| Параметр   | Тип                                      | Description                               |
+| ---------- | ---------------------------------------- | ----------------------------------------- |
 | endTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the end sides. |
 
 
@@ -60,8 +60,8 @@ Allows you to override the path of the texture that the end sides (top/bottom) s
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(blockName as MCResourceLocation) => новых MCResourceLocation(blockName.namace, blockName.path + "_end"));
 ```
 
-| Параметр   | Тип                                                                                                                                                                                                     | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Параметр   | Тип                                                                                                                     | Description         |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | endTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -78,8 +78,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sides
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| Параметр     | Тип                                                                              | Description                           |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
+| Параметр     | Тип                                      | Description                           |
+| ------------ | ---------------------------------------- | ------------------------------------- |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides. |
 
 
@@ -95,8 +95,8 @@ Allows you to override the path of the texture that the sides (everything but to
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((blockName as MCResourceLocation) => новых MCResourceLocation(blockName.namace, blockName.path + "_sides"));
 ```
 
-| Параметр     | Тип                                                                                                                                                                                                     | Description         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Параметр     | Тип                                                                                                                     | Description         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
