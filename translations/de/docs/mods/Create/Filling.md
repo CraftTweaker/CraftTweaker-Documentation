@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ei
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Befüllrezepte entfernen, die Redstone ausgeben.
+The following script will remove all Filling recipes that output Redstone.
 
 ```zenscript
 // <recipetype:create:filling>.removeRecipe(IItemStack output)
