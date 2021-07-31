@@ -20,7 +20,7 @@ Das folgende Skript wird ein Rezept hinzufügen, das Bedrock und einen Gold Nugg
 
 Entfernt alle Rezepte, bei denen mindestens eines der Ausgaben mit der angegebenen Ausgabe übereinstimmt.
 
-Das folgende Skript wird zwei Rezepte aus dem Arc Furnace entfernen.
+The following script will remove two recipes from the Arc Furnace.
 
 Das erste Rezept, das entfernt wird, ist das Rezept für Slag. Da `checkSlag` `true` ist, wird es alle Rezepte entfernen, die Slag ausgeben. Das zweite Rezept, das entfernt wird, ist das Rezept für drei Eisenbarren.
 
