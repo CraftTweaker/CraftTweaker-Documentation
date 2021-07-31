@@ -1,27 +1,26 @@
+::requiredMod[Atum 2]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/atum}
+
 # Kiln
 
 The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
-
-## Package
-`mods.atum.Kiln;`
 
 ## Blacklist
 
 The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
 
-`mods.atum.Kiln.blacklist(id);`
+`<recipetype:atum:kiln>.blacklist(id);`
 
 - `id` A namespaced ID for the input block/item that should be blacklisted.
 
 Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
 
 ```zenscript
-mods.atum.Kiln.blacklist("minecraft:cobblestone");
+<recipetype:atum:kiln>.blacklist("minecraft:cobblestone");
 ```
 
 ## Adding a Recipe
 
-`mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
+`<recipetype:atum:kiln>.addRecipe(input, output, experience, @Optional cookTime);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
@@ -31,7 +30,7 @@ mods.atum.Kiln.blacklist("minecraft:cobblestone");
 Adds a recipe with the specified input, output, experience & cook time
 
 ```zenscript
-mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
+<recipetype:atum:kiln>.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
 ## Removing a Recipe
@@ -40,19 +39,19 @@ The removal methods only work for recipes added specifically for the Kiln by Atu
 
 ### Remove Recipes by Output
 
-`mods.atum.Kiln.removeRecipeByOutput(output);`
+`<recipetype:atum:kiln>.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
-mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
+<recipetype:atum:kiln>.removeRecipeByOutput(<item:atum:marl>);
 ```
 
 ### Remove Recipes by Output & Input
 
-`mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
+`<recipetype:atum:kiln>.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
@@ -60,7 +59,7 @@ mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 Removes the specific recipe, with the specified output & input
 
 ```zenscript
-mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
+<recipetype:atum:kiln>.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
 ### Other removal methods
