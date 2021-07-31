@@ -20,12 +20,13 @@ EntityEquipmentPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanill
 
 ## Methods
 
-### withChestItem
+:::group{name=withChestItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's chest armor slot.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -37,12 +38,15 @@ EntityEquipmentPredicate.withChestItem(builder as Consumer<ItemPredicate>) as En
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withFeetItem
+:::
+
+:::group{name=withFeetItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's feet armor slot.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -54,12 +58,15 @@ EntityEquipmentPredicate.withFeetItem(builder as Consumer<ItemPredicate>) as Ent
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withHeadItem
+:::
+
+:::group{name=withHeadItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's head armor slot.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -71,7 +78,9 @@ EntityEquipmentPredicate.withHeadItem(builder as Consumer<ItemPredicate>) as Ent
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInHand
+:::
+
+:::group{name=withItemInHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's hand.
 
@@ -79,6 +88,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -90,12 +100,15 @@ EntityEquipmentPredicate.withItemInHand(builder as Consumer<ItemPredicate>) as E
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInMainHand
+:::
+
+:::group{name=withItemInMainHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's main hand.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -107,12 +120,15 @@ EntityEquipmentPredicate.withItemInMainHand(builder as Consumer<ItemPredicate>) 
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withItemInOffHand
+:::
+
+:::group{name=withItemInOffHand}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the item held in the entity's off hand.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -124,12 +140,15 @@ EntityEquipmentPredicate.withItemInOffHand(builder as Consumer<ItemPredicate>) a
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
 
-### withLegsItem
+:::
+
+:::group{name=withLegsItem}
 
 Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that will be used to match the entity's legs armor slot.
 
  Any changes that have been made previously to the item predicate will be discarded, if any.
 
+Returns: The predicate itself for chaining.  
 Return Type: [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate)
 
 ```zenscript
@@ -140,5 +159,7 @@ EntityEquipmentPredicate.withLegsItem(builder as Consumer<ItemPredicate>) as Ent
 | ------------ | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | constructeur | Consumer&lt;[ItemPredicate](/vanilla/api/predicate/ItemPredicate)&gt; | A consumer that will be used to configure the [ItemPredicate](/vanilla/api/predicate/ItemPredicate). |
 
+
+:::
 
 
