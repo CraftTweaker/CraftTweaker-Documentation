@@ -24,49 +24,61 @@ MCBlockPlaceEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEvent).
 
 ## Methods
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCBlockPlaceEvent.getEntity() as MCEntity
+// MCBlockPlaceEvent.getEntity() as MCEntity
+
 myMCBlockPlaceEvent.getEntity();
 ```
 
-### getPlacedAgainst
+:::
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+:::group{name=getPlacedAgainst}
+
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
+// MCBlockPlaceEvent.getPlacedAgainst() as MCBlockState
+
 myMCBlockPlaceEvent.getPlacedAgainst();
 ```
 
-### getPlacedBlock
+:::
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+:::group{name=getPlacedBlock}
+
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
+// MCBlockPlaceEvent.getPlacedBlock() as MCBlockState
+
 myMCBlockPlaceEvent.getPlacedBlock();
 ```
 
-### getReplacedBlock
+:::
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+:::group{name=getReplacedBlock}
+
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
+// MCBlockPlaceEvent.getReplacedBlock() as MCBlockState
+
 myMCBlockPlaceEvent.getReplacedBlock();
 ```
+
+:::
 
 
 ## Properties
 
-| Name          | Type                                             | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------ | ---------- | ---------- |
-| entity        | [MCEntity](/vanilla/api/entity/MCEntity)         | true       | false      |
-| placedAgainst | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true       | false      |
-| placedBlock   | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true       | false      |
-| replacedBlock | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true       | false      |
+| Name          | Type                                            | Has Getter | Has Setter | Description             |
+| ------------- | ----------------------------------------------- | ---------- | ---------- | ----------------------- |
+| entity        | [MCEntity](/vanilla/api/entity/MCEntity)        | true       | false      | No Description Provided |
+| placedAgainst | [MCBlockState](/vanilla/api/block/MCBlockState) | true       | false      | No Description Provided |
+| placedBlock   | [MCBlockState](/vanilla/api/block/MCBlockState) | true       | false      | No Description Provided |
+| replacedBlock | [MCBlockState](/vanilla/api/block/MCBlockState) | true       | false      | No Description Provided |
 
