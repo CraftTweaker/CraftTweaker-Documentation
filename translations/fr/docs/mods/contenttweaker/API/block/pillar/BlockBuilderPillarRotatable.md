@@ -43,8 +43,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| Parameter  | Type                                                                             | Description                               |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| Parameter  | Type                                     | Description                               |
+| ---------- | ---------------------------------------- | ----------------------------------------- |
 | endTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the end sides. |
 
 
@@ -60,8 +60,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter  | Type                                                                                                                    | Description         |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | endTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -78,8 +78,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sides
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| Parameter    | Type                                                                             | Description                           |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
+| Parameter    | Type                                     | Description                           |
+| ------------ | ---------------------------------------- | ------------------------------------- |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides. |
 
 
@@ -95,8 +95,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sides
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Description         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter    | Type                                                                                                                    | Description         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
