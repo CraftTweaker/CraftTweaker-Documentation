@@ -15,16 +15,17 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 ## Caster
 
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| string         | true      |
+| Tipo Risultato                            | Implicito |
+| ----------------------------------------- | --------- |
+| [MCStyle](/vanilla/api/util/text/MCStyle) | true      |
+| string                                    | true      |
 
 ## Properties
 
-| Name         | Type    | Ha Getter | Ha Setter |
-| ------------ | ------- | --------- | --------- |
-| colorIndex   | int     | true      | false     |
-| fancyStyling | boolean | true      | false     |
-| friendlyName | string  | true      | false     |
-| isColor      | boolean | true      | false     |
+| Name         | Type    | Ha Getter | Ha Setter | Description             |
+| ------------ | ------- | --------- | --------- | ----------------------- |
+| colorIndex   | int     | true      | false     | No Description Provided |
+| fancyStyling | boolean | true      | false     | No Description Provided |
+| friendlyName | string  | true      | false     | No Description Provided |
+| isColor      | boolean | true      | false     | No Description Provided |
 
