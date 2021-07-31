@@ -19,6 +19,7 @@ TagManagerItem implements the following interfaces. That means all methods defin
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -36,6 +37,7 @@ TagManagerItem.exists(location as MCResourceLocation) as boolean
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -56,7 +58,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerItem.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerItem.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerItem.getAllTags();
 ```
 
@@ -64,8 +67,11 @@ myTagManagerItem.getAllTags();
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -81,8 +87,11 @@ TagManagerItem.getTag(location as MCResourceLocation) as MCTag<T>
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -97,7 +106,7 @@ TagManagerItem.getTag(name as string) as MCTag<T>
 :::
 
 
-## Operators
+## Operadores
 
 :::group{name=CONTAINS}
 
@@ -112,7 +121,7 @@ name as string in myTagManagerItem
 
 ## Properties
 
-| Name | Type                                                                                 | Has Getter | Has Setter |
-| ---- | ------------------------------------------------------------------------------------ | ---------- | ---------- |
-| all  | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true       | false      |
+| Nombre | Type                                                                                 | Has Getter | Has Setter | Description                                        |
+| ------ | ------------------------------------------------------------------------------------ | ---------- | ---------- | -------------------------------------------------- |
+| all    | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true       | false      | Retrieves a list of all tags currently registered. |
 
