@@ -10,6 +10,17 @@
 
 `mods.jei.JEI`
 
+## Adding Items
+
+The following script will add a new Item to JEI which will be a Diamond with the name "Super Diamond" and be enchanted with Knockback 5.
+
+```zenscript
+// mods.jei.JEI.addItem(IItemStack stack)
+
+mods.jei.JEI.addItem(<item:minecraft:diamond>.withTag({Enchantments: [{lvl: 5 as short, id: "minecraft:knockback"}], display: {Name: "{\"text\":\"Super Diamond\"}"}}));
+
+```
+
 ## 隐藏物品
 
 The following script will hide Dirt from JEI when looking at the item list.
@@ -92,7 +103,7 @@ mods.jei.JEI.hideRecipe("minecraft:crafting", "minecraft:oak_boat");
 
 The following script will add any custom information to an Item or a Fluid when looking at their usages in JEI.
 
-### Item Info
+### 物品信息
 
 The following script will add three lines to the JEI Information tab when looking at a Diamond.
 
@@ -104,7 +115,7 @@ mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This
 
 上面的代码将会显示出如下效果![填写完的提交框](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
-### Fluid Info
+### 流体信息
 
 Adding Fluid Info is very similar to adding Item Info, the only difference is that the Fluid has a size.
 
