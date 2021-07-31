@@ -32,7 +32,7 @@ Dieses Rezept braucht kein Sägeblatt, um im Sägewerk präsent zu sein.
 
 #### Remove Recipes
 
-Das folgende Skript entfernt alle Rezepte (Sägen oder Strippen), die Eichenbretter als primäre oder sekundäre Ausgabe haben.
+The following script will remove all recipes (Sawing or Stripping) from the Sawmill that output Oak Planks as either the primary or secondary result.
 
 ```zenscript
 // <recipetype:immersiveengineering:sawmill>.removeRecipe(output as IItemStack)
