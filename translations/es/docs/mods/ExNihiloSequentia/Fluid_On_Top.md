@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Fluid On Top
 
 ## Package
@@ -10,7 +12,7 @@
 - **setResult(IItemStack result)** the result of the recipe
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:fluid_on_top>.create("fluid_on_top_test").setFluidInTank(<fluid:minecraft:lava>).setFluidOnTop(<fluid:minecraft:water>).setResult(<item:minecraft:netherrack>);
