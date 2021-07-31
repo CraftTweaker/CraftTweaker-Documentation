@@ -201,7 +201,7 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Nombre | Type | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| size   | int  | true       | false      |
 
