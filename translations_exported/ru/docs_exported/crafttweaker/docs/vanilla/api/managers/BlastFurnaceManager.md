@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.addJSONRecipe(name as string, data as IData) as void
+// BlastFurnaceManager.addJSONRecipe(name as string, data as IData) as void
+
 blastFurnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -40,11 +41,16 @@ blastFurnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold
 
 Adds a recipe based on given params.
 
+ Note: A `cookTime` of `0` will cause the recipe to never complete, it will burn and use fuel, but no progress will be made on the recipe, it needs to be at-least `1` or more.
+
+ Saying that, if you would like to make a recipe that will never complete (for example being able to give the player an infinitely burning furnace for whatever reason), you can still use a `cookTime` of `0`.
+
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 0);
+// BlastFurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
+blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
 ```
 
 | Параметр | Тип                                           | Description                     |
@@ -63,7 +69,8 @@ blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:mine
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-BlastFurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// BlastFurnaceManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 blastFurnace.getAllRecipes();
 ```
 
@@ -81,6 +88,21 @@ BlastFurnaceManager.getRecipeByName(name as string) as WrapperRecipe
 | -------- | ------ | ----------------------- |
 | name     | string | No Description Provided |
 
+
+:::
+
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Returns: A Map of recipe name to recipe of all known recipes.  
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// BlastFurnaceManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+blastFurnace.getRecipeMap();
+```
 
 :::
 
@@ -106,7 +128,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeAll() as void
+// BlastFurnaceManager.removeAll() as void
+
 blastFurnace.removeAll();
 ```
 
@@ -119,7 +142,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeByModid(modid as string) as void
+// BlastFurnaceManager.removeByModid(modid as string) as void
+
 blastFurnace.removeByModid("minecraft");
 ```
 
@@ -137,7 +161,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// BlastFurnaceManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 blastFurnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -156,7 +181,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeByName(name as string) as void
+// BlastFurnaceManager.removeByName(name as string) as void
+
 blastFurnace.removeByName("minecraft:furnace");
 ```
 
@@ -169,18 +195,39 @@ blastFurnace.removeByName("minecraft:furnace");
 
 :::group{name=removeByRegex}
 
-Remove recipe based on regex
+Remove recipe based on regex.
 
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeByRegex(regex as string) as void
+// BlastFurnaceManager.removeByRegex(regex as string) as void
+
 blastFurnace.removeByRegex("\\d_\\d");
 ```
 
 | Параметр | Тип    | Description            |
 | -------- | ------ | ---------------------- |
 | regex    | string | regex to match against |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+// BlastFurnaceManager.removeByRegex(regex as string, exclude as RecipeFilter) as void
+
+blastFurnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+```
+
+| Параметр  | Тип                                              | Description             |
+| --------- | ------------------------------------------------ | ----------------------- |
+| regex     | string                                           | regex to match against  |
+| исключить | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::
@@ -192,7 +239,27 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeRecipe(output as IItemStack) as void
+// BlastFurnaceManager.removeRecipe(output as IIngredient) as void
+
+blastFurnace.removeRecipe(<tag:items:minecraft:wool>);
+```
+
+| Параметр | Тип                                           | Description          |
+| -------- | --------------------------------------------- | -------------------- |
+| output   | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// BlastFurnaceManager.removeRecipe(output as IItemStack) as void
+
 blastFurnace.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -210,7 +277,8 @@ Removes a recipe based on it's output and input.
 Return Type: void
 
 ```zenscript
-BlastFurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+// BlastFurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
 blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
@@ -222,4 +290,30 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 
 :::
 
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// BlastFurnaceManager.removeRecipeByInput(input as IItemStack) as void
+
+blastFurnace.removeRecipeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Параметр | Тип                                         | Description           |
+| -------- | ------------------------------------------- | --------------------- |
+| input    | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
+
+## Свойства
+
+| Название   | Тип                                                                                                            | Имеет Getter | Имеет Setter | Description                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------- | ------------ | ------------ | ----------------------------------- |
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;                              | true         | false        | No Description Provided             |
+| recipeMap  | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true         | false        | Returns a map of all known recipes. |
 
