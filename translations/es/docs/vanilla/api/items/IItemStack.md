@@ -106,7 +106,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ## Properties
 
-| Name           | Type                                                                | Has Getter | Has Setter |
+| Nombre         | Type                                                                | Has Getter | Has Setter |
 | -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
 | amount         | int                                                                 | true       | false      |
 | burnTime       | int                                                                 | true       | true       |
@@ -133,7 +133,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 | translationKey | String                                                              | true       | false      |
 | useDuration    | int                                                                 | true       | false      |
 
-## Operators
+## Operadores
 ### MUL
 
 Sets the amount of the ItemStack
