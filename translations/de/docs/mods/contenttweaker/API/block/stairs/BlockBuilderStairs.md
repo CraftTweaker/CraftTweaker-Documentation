@@ -42,8 +42,8 @@ Rückgabetyp: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/conten
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter     | Type                                                                             | Beschreibung                               |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
+| Parameter     | Type                                     | Beschreibung                               |
+| ------------- | ---------------------------------------- | ------------------------------------------ |
 | bottomTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the bottom side |
 
 
@@ -59,8 +59,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTextur
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
 
-| Parameter     | Type                                                                                                                                                                                                    | Beschreibung        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter     | Type                                                                                                                    | Beschreibung        |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | bottomTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -76,8 +76,8 @@ Rückgabetyp: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/conten
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter    | Type                                                                             | Beschreibung                         |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
+| Parameter    | Type                                     | Beschreibung                         |
+| ------------ | ---------------------------------------- | ------------------------------------ |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides |
 
 
@@ -93,8 +93,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture 
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Beschreibung        |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter    | Type                                                                                                                    | Beschreibung        |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -111,8 +111,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as c
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parameter  | Type                                                                             | Beschreibung                            |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
+| Parameter  | Type                                     | Beschreibung                            |
+| ---------- | ---------------------------------------- | --------------------------------------- |
 | topTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the top side |
 
 
@@ -127,8 +127,8 @@ Rückgabetyp: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/conten
 neuer BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Beschreibung        |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter  | Type                                                                                                                    | Beschreibung        |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | topTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
