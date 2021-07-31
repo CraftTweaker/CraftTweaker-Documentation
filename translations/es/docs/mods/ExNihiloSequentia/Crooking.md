@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Crooking
 
 ## Package
@@ -9,13 +11,13 @@
 - **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:crook>.create("crook_test").setInput(<item:minecraft:oak_leaves>).addDrop(<item:minecraft:nether_star>, 1);
 ```
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:crook>.removeRecipe(<item:exnihilosequentia:silkworm>);
