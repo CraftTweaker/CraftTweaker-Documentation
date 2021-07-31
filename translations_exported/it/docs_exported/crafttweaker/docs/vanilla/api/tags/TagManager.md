@@ -21,6 +21,7 @@ TagManager implements the following interfaces. That means all methods defined i
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -38,6 +39,7 @@ TagManager.exists(location as MCResourceLocation) as boolean
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -58,7 +60,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManager.getAllTags() as stdlib.List<MCTag<T>>
+// TagManager.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManager.getAllTags();
 ```
 
@@ -83,8 +86,11 @@ TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -100,8 +106,11 @@ TagManager.getTag(location as MCResourceLocation) as MCTag<T>
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -117,13 +126,15 @@ TagManager.getTag(name as string) as MCTag<T>
 
 :::group{name=getTagFolder}
 
-Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <p>
- {
+Get the tag type. In a Bracket call, this will used to determine which TagManager to use.
+
+ `<tag:{tag_type`:tag_location:tag_name>} <br> `<tagManager:{tag_type`>}
 
 Return Type: string
 
 ```zenscript
-TagManager.getTagFolder() as string
+// TagManager.getTagFolder() as string
+
 myTagManager.getTagFolder();
 ```
 
@@ -145,8 +156,8 @@ name as string in myTagManager
 
 ## Properties
 
-| Name    | Type                                                                                 | Ha Getter | Ha Setter |
-| ------- | ------------------------------------------------------------------------------------ | --------- | --------- |
-| all     | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true      | false     |
-| tagType | string                                                                               | true      | false     |
+| Name    | Type                                                                                 | Ha Getter | Ha Setter | Description                                                                                                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------ | --------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| all     | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true      | false     | Retrieves a list of all tags currently registered.                                                                                                                                                                         |
+| tagType | string                                                                               | true      | false     | Get the tag type. In a Bracket call, this will used to determine which TagManager to use. <br />   <br />  `<tag:{tag_type`:tag_location:tag_name>} <br> <br />  `<tagManager:{tag_type`>} |
 
