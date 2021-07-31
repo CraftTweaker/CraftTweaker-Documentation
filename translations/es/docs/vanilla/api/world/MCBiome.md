@@ -46,7 +46,7 @@ myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 
 ## Properties
 
-| Name               | Type    | Has Getter | Has Setter |
+| Nombre             | Type    | Has Getter | Has Setter |
 | ------------------ | ------- | ---------- | ---------- |
 | category           | String  | true       | false      |
 | defaultTemperature | float   | true       | false      |
