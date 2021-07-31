@@ -18,19 +18,22 @@ MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 
 ## Methoden
 
-### getStack
+:::group{name=getStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemPickupEvent.getStack() as IItemStack
+// MCItemPickupEvent.getStack() as IItemStack
+
 myMCItemPickupEvent.getStack();
 ```
+
+:::
 
 
 ## Properties
 
-| Name  | Type                                        | Has Getter | Has Setter |
-| ----- | ------------------------------------------- | ---------- | ---------- |
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Name  | Type                                        | Has Getter | Has Setter | Beschreibung            |
+| ----- | ------------------------------------------- | ---------- | ---------- | ----------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | No Description Provided |
 
