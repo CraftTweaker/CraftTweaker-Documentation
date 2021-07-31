@@ -68,7 +68,7 @@ myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemSt
 
 ## Properties
 
-| Name          | Type                                                                          | Has Getter | Has Setter |
+| Nombre        | Type                                                                          | Has Getter | Has Setter |
 | ------------- | ----------------------------------------------------------------------------- | ---------- | ---------- |
 | ambient       | boolean                                                                       | true       | false      |
 | amplifier     | int                                                                           | true       | false      |
