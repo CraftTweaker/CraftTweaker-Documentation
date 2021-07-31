@@ -97,7 +97,7 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 
 ## Properties
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
 | commandString | String | true       | false      |
 
