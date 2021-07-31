@@ -20,7 +20,7 @@ MCArgumentCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCom
 
 ## Methods
 
-### addChild
+:::group{name=addChild}
 
 Return Type: void
 
@@ -33,7 +33,9 @@ MCArgumentCommandNode.addChild(node as MCCommandNode) as void
 | Nœud      | [Noeud MC:](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### canUse
+:::
+
+:::group{name=canUse}
 
 Return Type: boolean
 
@@ -46,16 +48,21 @@ MCArgumentCommandNode.canUse(source as MCCommandSource) as boolean
 | source    | [format@@0 MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### createBuilder
+:::
+
+:::group{name=createBuilder}
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
-MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
+// MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
+
 myMCArgumentCommandNode.createBuilder();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +75,9 @@ MCArgumentCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### trouver des Ambiguités
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -81,7 +90,9 @@ MCArgumentCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | consommateur | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -94,70 +105,93 @@ MCArgumentCommandNode.getChild(name as string) as MCCommandNode
 | name      | string | No Description Provided |
 
 
-### getChildren
+:::
+
+:::group{name=getChildren}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCArgumentCommandNode.getChildren() as Collection<MCCommandNode>
+// MCArgumentCommandNode.getChildren() as Collection<MCCommandNode>
+
 myMCArgumentCommandNode.getChildren();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCArgumentCommandNode.getCommand() as MCCommand
+// MCArgumentCommandNode.getCommand() as MCCommand
+
 myMCArgumentCommandNode.getCommand();
 ```
 
-### getCustomSuggestions
+:::
+
+:::group{name=getCustomSuggestions}
 
 Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
 
 ```zenscript
-MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
+// MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
+
 myMCArgumentCommandNode.getCustomSuggestions();
 ```
 
-### getExamples
+:::
+
+:::group{name=getExamples}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCArgumentCommandNode.getExamples() as Collection<string>
+// MCArgumentCommandNode.getExamples() as Collection<string>
+
 myMCArgumentCommandNode.getExamples();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
 ```zenscript
-MCArgumentCommandNode.getName() as string
+// MCArgumentCommandNode.getName() as string
+
 myMCArgumentCommandNode.getName();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCArgumentCommandNode.getRedirect() as MCCommandNode
+// MCArgumentCommandNode.getRedirect() as MCCommandNode
+
 myMCArgumentCommandNode.getRedirect();
 ```
 
-### Obtenir le modificateur de redirection
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCArgumentCommandNode.getRedirectModifier() as MCRedirectModifier
+// MCArgumentCommandNode.getRedirectModifier() as MCRedirectModifier
+
 myMCArgumentCommandNode.getRedirectModifier();
 ```
 
-### getRelevantNodes
+:::
+
+:::group{name=getRelevantNodes}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -170,43 +204,57 @@ MCArgumentCommandNode.getRelevantNodes(input as string) as Collection<MCCommandN
 | input     | string | No Description Provided |
 
 
-### Obtenir les conditions requises
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCArgumentCommandNode.getRequirement() as Predicate<MCCommandSource>
+// MCArgumentCommandNode.getRequirement() as Predicate<MCCommandSource>
+
 myMCArgumentCommandNode.getRequirement();
 ```
 
-### getUsageText
+:::
+
+:::group{name=getUsageText}
 
 Return Type: string
 
 ```zenscript
-MCArgumentCommandNode.getUsageText() as string
+// MCArgumentCommandNode.getUsageText() as string
+
 myMCArgumentCommandNode.getUsageText();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCArgumentCommandNode.hashCode() as int
+// MCArgumentCommandNode.hashCode() as int
+
 myMCArgumentCommandNode.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
 ```zenscript
-MCArgumentCommandNode.isFork() as boolean
+// MCArgumentCommandNode.isFork() as boolean
+
 myMCArgumentCommandNode.isFork();
 ```
 
-### listSuggestions
+:::
+
+:::group{name=listSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -220,7 +268,9 @@ MCArgumentCommandNode.listSuggestions(context as MCCommandContext, builder as MC
 | constructeur | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)   | No Description Provided |
 
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: void
 
@@ -234,32 +284,37 @@ MCArgumentCommandNode.parse(input as string, contextBuilder as MCCommandContextB
 | contextBuilder | [format@@0 MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCArgumentCommandNode.toString() as string
+// MCArgumentCommandNode.toString() as string
+
 myMCArgumentCommandNode.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### COMPARE
+:::group{name=COMPARE}
 
 ```zenscript
 myMCArgumentCommandNode < o as MCCommandNode
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCArgumentCommandNode == o as Object
 ```
 
-
+:::
 
 
