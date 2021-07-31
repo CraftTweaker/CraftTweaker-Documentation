@@ -1,3 +1,5 @@
+::requiredMod[Initial Inventory]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/initial-inventory}
+
 # InitialInventory
 
 ## Description
