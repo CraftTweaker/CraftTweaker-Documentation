@@ -18,56 +18,99 @@ BlockBuilderPillarRotatable extends [BlockTypeBuilder](/mods/contenttweaker/API/
 
 ## Methoden
 
-### withEndTexture
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockBuilderPillarRotatable.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<BlockBuilderPillarRotatable>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Beschreibung                         |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+:::group{name=withEndTexture}
 
 Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
 
 Return Type: [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-BlockBuilderPillarRotatable.withEndTexture(endTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderPillarRotatable
+// BlockBuilderPillarRotatable.withEndTexture(endTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderPillarRotatable
+
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_end"));
 ```
+
 | Parameter  | Type                                                                                                                                              | Beschreibung        |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | endTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withEndTexture}
 
 Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-BlockBuilderPillarRotatable.withEndTexture(endTexture as MCResourceLocation) as BlockBuilderPillarRotatable
+// BlockBuilderPillarRotatable.withEndTexture(endTexture as MCResourceLocation) as BlockBuilderPillarRotatable
+
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
+
 | Parameter  | Type                                                        | Beschreibung                              |
 | ---------- | ----------------------------------------------------------- | ----------------------------------------- |
 | endTexture | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
 
-### withSideTexture
+
+:::
+
+:::group{name=withSideTexture}
 
 Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the side texture for it.
 
 Return Type: [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-BlockBuilderPillarRotatable.withSideTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderPillarRotatable
+// BlockBuilderPillarRotatable.withSideTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderPillarRotatable
+
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
+
 | Parameter    | Type                                                                                                                                              | Beschreibung        |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withSideTexture}
 
 Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-BlockBuilderPillarRotatable.withSideTexture(sidesTexture as MCResourceLocation) as BlockBuilderPillarRotatable
+// BlockBuilderPillarRotatable.withSideTexture(sidesTexture as MCResourceLocation) as BlockBuilderPillarRotatable
+
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
+
 | Parameter    | Type                                                        | Beschreibung                          |
 | ------------ | ----------------------------------------------------------- | ------------------------------------- |
 | sidesTexture | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+
+
+:::
 
 
