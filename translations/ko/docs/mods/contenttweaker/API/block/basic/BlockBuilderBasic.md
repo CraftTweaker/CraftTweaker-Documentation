@@ -11,23 +11,23 @@ mods.contenttweaker.block.basic.BlockBuilderBasic
 ```
 
 ## Implemented Interfaces
-BlockBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilderBasic은 아래와 같은 인터페이스를 구현합니다. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## Methods
 ### build
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+CoT에게 이 제작기가 빌드해야 하는 모든 블록을 실제로 빌드하도록 지시합니다.
 
 ```zenscript
 new BlockBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parameter        | Type   | Description   |
+| ---------------- | ------ | ------------- |
+| resourceLocation | String | 해당 블록의 리소스 경로 |
 
 
 
