@@ -8,9 +8,9 @@ import crafttweaker.api.commands.custom.MCSuggestions;
 ```
 
 
-## Methoden
+## Static Methods
 
-### erstellen
+:::group{name=create}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -24,16 +24,21 @@ MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>)
 | vorschläge | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 
 
-### empty
+:::
+
+:::group{name=empty}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.empty() as MCSuggestions
+// MCSuggestions.empty() as MCSuggestions
+
 MCSuggestions.empty();
 ```
 
-### merge
+:::
+
+:::group{name=merge}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -47,6 +52,8 @@ MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MC
 | input     | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 
 
+:::
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -55,7 +62,7 @@ MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MC
 
 ## Methoden
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,60 +75,77 @@ MCSuggestions.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getList
+:::
+
+:::group{name=getList}
 
 Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
-MCSuggestions.getList() as stdlib.List<MCSuggestion>
+// MCSuggestions.getList() as stdlib.List<MCSuggestion>
+
 myMCSuggestions.getList();
 ```
 
-### getBereich
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCSuggestions.getRange() as MCStringRange
+// MCSuggestions.getRange() as MCStringRange
+
 myMCSuggestions.getRange();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestions.hashCode() as int
+// MCSuggestions.hashCode() as int
+
 myMCSuggestions.hashCode();
 ```
 
-### isEmpty
+:::
+
+:::group{name=isEmpty}
 
 Return Type: boolean
 
 ```zenscript
-MCSuggestions.isEmpty() as boolean
+// MCSuggestions.isEmpty() as boolean
+
 myMCSuggestions.isEmpty();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestions.toString() as string
+// MCSuggestions.toString() as string
+
 myMCSuggestions.toString();
 ```
+
+:::
 
 
 ## Operatoren
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestions == o als Objekt
 ```
 
-
+:::
 
 
