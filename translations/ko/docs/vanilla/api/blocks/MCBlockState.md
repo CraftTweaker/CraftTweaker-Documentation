@@ -70,7 +70,7 @@ myMCBlockState.hasProperty(name as String);
 
 ### withProperty
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+[crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)를 반환
 
 ```zenscript
 myMCBlockState.withProperty(name as String, value as String);
@@ -98,8 +98,8 @@ myMCBlockState.withProperty(name as String, value as String);
 
 ## Casters
 
-| Result type                                                   | Is Implicit |
-| ------------------------------------------------------------- | ----------- |
-| String                                                        | false       |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
+| 반환 자료형                                                        | 암묵적   |
+| ------------------------------------------------------------- | ----- |
+| String                                                        | false |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true  |
 
