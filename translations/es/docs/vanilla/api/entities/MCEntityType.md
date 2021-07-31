@@ -14,7 +14,7 @@ MCEntityType implements the following interfaces. That means any method availabl
 
 ## Properties
 
-| Name           | Type                                                                                           | Has Getter | Has Setter |
+| Nombre         | Type                                                                                           | Has Getter | Has Setter |
 | -------------- | ---------------------------------------------------------------------------------------------- | ---------- | ---------- |
 | classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true       | false      |
 | commandString  | String                                                                                         | true       | false      |
