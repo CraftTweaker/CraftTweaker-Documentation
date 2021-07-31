@@ -607,7 +607,7 @@ myMCPlayerEntity.getBedLocation();
 
 ### getBlockState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+[crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)를 반환
 
 ```zenscript
 myMCPlayerEntity.getBlockState();
