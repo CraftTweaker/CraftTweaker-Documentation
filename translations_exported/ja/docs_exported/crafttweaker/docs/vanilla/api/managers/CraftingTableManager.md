@@ -24,7 +24,8 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addJSONRecipe(name as string, data as IData) as void
+// CraftingTableManager.addJSONRecipe(name as string, data as IData) as void
+
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
@@ -43,7 +44,8 @@ Adds a shaped recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+// CraftingTableManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+
 craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -54,6 +56,7 @@ craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[][]                | array of an array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                          | false    |              |
 | recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) for more advanced conditions | true     |              |
 
+
 :::
 
 :::group{name=addShapedMirrored}
@@ -63,7 +66,8 @@ Adds a mirrored shaped recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShapedMirrored(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+// CraftingTableManager.addShapedMirrored(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+
 craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -74,6 +78,7 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:mi
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[][]                | array of an array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                          | false    |              |
 | recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) for more advanced conditions | true     |              |
 
+
 :::
 
 :::group{name=addShapeless}
@@ -83,7 +88,8 @@ Adds a shapeless recipe to the crafting table
 Return Type: void
 
 ```zenscript
-CraftingTableManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray) as void
+// CraftingTableManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray) as void
+
 craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:items:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
@@ -94,6 +100,7 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 | ingredients    | [IIngredient](/vanilla/api/items/IIngredient)[]                | array of [IIngredient](/vanilla/api/items/IIngredient) for inputs                                    | false    |              |
 | recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | optional [RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) for more advanced conditions | true     |              |
 
+
 :::
 
 :::group{name=getAllRecipes}
@@ -101,7 +108,8 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-CraftingTableManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+// CraftingTableManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
 craftingTable.getAllRecipes();
 ```
 
@@ -119,6 +127,21 @@ CraftingTableManager.getRecipeByName(name as string) as WrapperRecipe
 | --------- | ------ | ----------------------- |
 | name      | string | No Description Provided |
 
+
+:::
+
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Returns: A Map of recipe name to recipe of all known recipes.  
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// CraftingTableManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+craftingTable.getRecipeMap();
+```
 
 :::
 
@@ -144,7 +167,8 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeAll() as void
+// CraftingTableManager.removeAll() as void
+
 craftingTable.removeAll();
 ```
 
@@ -157,7 +181,8 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByModid(modid as string) as void
+// CraftingTableManager.removeByModid(modid as string) as void
+
 craftingTable.removeByModid("minecraft");
 ```
 
@@ -175,7 +200,8 @@ Remove recipe based on Registry name modid with an added exclusion check, so you
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+// CraftingTableManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -194,7 +220,8 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByName(name as string) as void
+// CraftingTableManager.removeByName(name as string) as void
+
 craftingTable.removeByName("minecraft:furnace");
 ```
 
@@ -207,18 +234,39 @@ craftingTable.removeByName("minecraft:furnace");
 
 :::group{name=removeByRegex}
 
-Remove recipe based on regex
+Remove recipe based on regex.
 
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeByRegex(regex as string) as void
+// CraftingTableManager.removeByRegex(regex as string) as void
+
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
 | regex     | string | regex to match against |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+// CraftingTableManager.removeByRegex(regex as string, exclude as RecipeFilter) as void
+
+craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+```
+
+| Parameter | Type                                             | Description             |
+| --------- | ------------------------------------------------ | ----------------------- |
+| regex     | string                                           | regex to match against  |
+| 除外する      | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::
@@ -230,7 +278,27 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-CraftingTableManager.removeRecipe(output as IItemStack) as void
+// CraftingTableManager.removeRecipe(output as IIngredient) as void
+
+craftingTable.removeRecipe(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type                                          | Description          |
+| --------- | --------------------------------------------- | -------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// CraftingTableManager.removeRecipe(output as IItemStack) as void
+
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
@@ -241,4 +309,30 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 
 :::
 
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// CraftingTableManager.removeRecipeByInput(input as IItemStack) as void
+
+craftingTable.removeRecipeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type                                        | Description           |
+| --------- | ------------------------------------------- | --------------------- |
+| input     | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
+
+## Properties
+
+| 名称         | Type                                                                                                           | Has Getter | Has Setter | Description                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------- |
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;                              | true       | false      | No Description Provided             |
+| recipeMap  | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 
