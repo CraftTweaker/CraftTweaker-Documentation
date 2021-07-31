@@ -12,14 +12,15 @@ import crafttweaker.api.ILogger;
 
 ## Methoden
 
-### debug
+:::group{name=debug}
 
 Logs a debug message.
 
 Return Type: void
 
 ```zenscript
-ILogger.debug(message as string) as void
+// ILogger.debug(message as string) as void
+
 logger.debug("message");
 ```
 
@@ -28,14 +29,17 @@ logger.debug("message");
 | message   | string | message to be logged. |
 
 
-### error
+:::
+
+:::group{name=error}
 
 Logs an error message.
 
 Return Type: void
 
 ```zenscript
-ILogger.error(message as string) as void
+// ILogger.error(message as string) as void
+
 logger.error("message");
 ```
 
@@ -44,14 +48,17 @@ logger.error("message");
 | message   | string | message to be logged. |
 
 
-### info
+:::
+
+:::group{name=info}
 
 Logs an info message.
 
 Return Type: void
 
 ```zenscript
-ILogger.info(message as string) as void
+// ILogger.info(message as string) as void
+
 logger.info("message");
 ```
 
@@ -60,14 +67,17 @@ logger.info("message");
 | message   | string | message to be logged. |
 
 
-### trace
+:::
+
+:::group{name=trace}
 
 Logs a trace message.
 
 Return Type: void
 
 ```zenscript
-ILogger.trace(message as string) as void
+// ILogger.trace(message as string) as void
+
 logger.trace("message");
 ```
 
@@ -76,14 +86,17 @@ logger.trace("message");
 | message   | string | message to be logged |
 
 
-### warning
+:::
+
+:::group{name=warning}
 
 Logs a warning message.
 
 Return Type: void
 
 ```zenscript
-ILogger.warning(message as string) as void
+// ILogger.warning(message as string) as void
+
 logger.warning("message");
 ```
 
@@ -91,5 +104,7 @@ logger.warning("message");
 | --------- | ------ | --------------------- |
 | message   | string | message to be logged. |
 
+
+:::
 
 
