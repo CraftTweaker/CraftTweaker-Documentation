@@ -118,7 +118,7 @@ new StringData("Hello").getString();
 ```
 
 
-## Operators
+## Operadores
 ### ADD
 
 Concatenates the two string Datas and returns the result.
