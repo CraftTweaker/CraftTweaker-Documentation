@@ -18,75 +18,119 @@ ItemBuilderTool extends [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemType
 
 ## Methoden
 
-### withAttackDamage
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// ItemBuilderTool.build(resourceLocation as string) as void
+
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Beschreibung                         |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+:::group{name=withAttackDamage}
 
 Allows you to set the attack damage bonus that you get when holding this item
 
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-ItemBuilderTool.withAttackDamage(attackDamage as float) as ItemBuilderTool
+// ItemBuilderTool.withAttackDamage(attackDamage as float) as ItemBuilderTool
+
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
+
 | Parameter    | Type  | Beschreibung                 |
 | ------------ | ----- | ---------------------------- |
 | attackDamage | float | The additional attack damage |
 
-### withAttackSpeed
+
+:::
+
+:::group{name=withAttackSpeed}
 
 Allows you to set the attack speed bonus that you get when holding this item.
 
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-ItemBuilderTool.withAttackSpeed(attackSpeed as double) as ItemBuilderTool
+// ItemBuilderTool.withAttackSpeed(attackSpeed as double) as ItemBuilderTool
+
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
+
 | Parameter   | Type   | Beschreibung     |
 | ----------- | ------ | ---------------- |
 | attackSpeed | double | The attack speed |
 
-### withDurabilityCostAttack
+
+:::
+
+:::group{name=withDurabilityCostAttack}
 
 Allows you to set the amount of damage that this item will receive when hitting enemies. By default this is `0`
 
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-ItemBuilderTool.withDurabilityCostAttack(durabilityCostAttack as int) as ItemBuilderTool
+// ItemBuilderTool.withDurabilityCostAttack(durabilityCostAttack as int) as ItemBuilderTool
+
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
+
 | Parameter            | Type | Beschreibung                             |
 | -------------------- | ---- | ---------------------------------------- |
 | durabilityCostAttack | int  | The damage points this item will receive |
 
-### withDurabilityCostMining
+
+:::
+
+:::group{name=withDurabilityCostMining}
 
 Allows you to set the amount of damage that this item will receive when mining blocks. By default this is `0`
 
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-ItemBuilderTool.withDurabilityCostMining(durabilityCostMining as int) as ItemBuilderTool
+// ItemBuilderTool.withDurabilityCostMining(durabilityCostMining as int) as ItemBuilderTool
+
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
+
 | Parameter            | Type | Beschreibung                             |
 | -------------------- | ---- | ---------------------------------------- |
 | durabilityCostMining | int  | The damage points this item will receive |
 
-### withToolType
+
+:::
+
+:::group{name=withToolType}
 
 Allows you to add a tool type to this tool. You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
 
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-ItemBuilderTool.withToolType(toolType as MCToolType, miningLevel as int, miningSpeed as float) as ItemBuilderTool
+// ItemBuilderTool.withToolType(toolType as ToolType, miningLevel as int, miningSpeed as float) as ItemBuilderTool
+
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
-| Parameter   | Type                                                   | Beschreibung                                         | Optional | DefaultValue |
-| ----------- | ------------------------------------------------------ | ---------------------------------------------------- | -------- | ------------ |
-| toolType    | [MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false    |              |
-| miningLevel | int                                                    | The mining level for this tool type                  | false    |              |
-| miningSpeed | float                                                  | How fast this tool can mine blocks of the given type | true     | 1.0          |
+
+| Parameter   | Type                                   | Beschreibung                                         | Optional | DefaultValue |
+| ----------- | -------------------------------------- | ---------------------------------------------------- | -------- | ------------ |
+| toolType    | [ToolType](/vanilla/api/tool/ToolType) | The type of the tool                                 | false    |              |
+| miningLevel | int                                    | The mining level for this tool type                  | false    |              |
+| miningSpeed | float                                  | How fast this tool can mine blocks of the given type | true     | 1.0          |
+
+:::
+
 
