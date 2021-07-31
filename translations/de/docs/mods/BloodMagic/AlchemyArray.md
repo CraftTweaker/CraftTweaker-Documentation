@@ -11,7 +11,7 @@ Das Alchemie-Array ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeMan
 Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Erde und Glas einem Alchemie-Array übergeben werden. Wenn die Erde gegeben wird, wird das Alchemie-Array die Textur eines Diamanten verwenden.
 
 ```zenscript
-// <recipetype:bloodmagic:array>.addRecipe(String name, IItemStack output, IIngredient baseInput, IIngredient addedInput, ResourceLocation texture)
+// <recipetype:bloodmagic:array>.addRecipe(name as string, output as IItemStack, baseInput as IIngredient, addedInput as IIngredient, texture as ResourceLocation)
 
 <recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>);
 ```
@@ -42,10 +42,10 @@ Die `ResourceLocation-Textur` kann jede Textur im Spiel sein und wird verwendet,
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus dem Alchemie-Array entfernen, die ein Göttliches Siegel ausgeben.
+The following script will remove all recipes from the Alchemy Array that output a Divination Sigil.
 
 ```zenscript
-// <recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:array>>.removeRecipe(output as IItemStack);
 
 <recipetype:bloodmagic:array>.removeRecipe(<item:bloodmagic:divinationsigil>);
 ```
