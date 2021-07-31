@@ -1,13 +1,15 @@
-# Fluid On Top
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
+# Fluide sur le dessus
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidOnTopRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
-- **setFluidOnTop(IFluidStack fluidOnTop)** the fluid on top
-- **setResult(IItemStack result)** the result of the recipe
+- **create(String nom)**
+- **setFluidInTank(IFluidStack fluidInTank)** Le fluide dans le réservoir.
+- **setFluidOnTop(IFluidStack fluidOnTop)** le fluide au dessus.
+- **setResult(IItemStack resultat)** Le résultat de la recette.
 
 
 ## Addition
