@@ -191,7 +191,7 @@ new ListData(["Hello", "World"]).set(0, "Bye");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Nombre | Type | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| size   | int  | true       | false      |
 
