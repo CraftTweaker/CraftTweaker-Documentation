@@ -1,12 +1,14 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Crooking
 
 ## Package
 `import mods.exnihilosequentia.ZenCrookRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
+- **create(String nom)**
+- **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
+- **addDrop(IItemStack drop, float chance)** l'item qui est donner et sa chance de le drop.
 
 
 ## Addition
