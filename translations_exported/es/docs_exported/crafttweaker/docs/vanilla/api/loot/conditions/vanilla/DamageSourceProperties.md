@@ -23,7 +23,7 @@ DamageSourceProperties implements the following interfaces. That means all metho
 
 ## Methods
 
-### withPredicate
+:::group{name=withPredicate}
 
 Creates and sets the [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate) that will be matched against the damage source.
 
@@ -31,6 +31,7 @@ Creates and sets the [DamageSourcePredicate](/vanilla/api/predicate/DamageSource
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [DamageSourceProperties](/vanilla/api/loot/conditions/vanilla/DamageSourceProperties)
 
 ```zenscript
@@ -41,5 +42,7 @@ DamageSourceProperties.withPredicate(builder as Consumer<DamageSourcePredicate>)
 | ----------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | constructor | Consumer&lt;[DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate)&gt; | A consumer that will be used to configure the [DamageSourcePredicate](/vanilla/api/predicate/DamageSourcePredicate). |
 
+
+:::
 
 
