@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCParseResults;
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,60 +29,77 @@ MCParseResults.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getContext
+:::
+
+:::group{name=getContext}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCParseResults.getContext() as MCCommandContextBuilder
+// MCParseResults.getContext() as MCCommandContextBuilder
+
 myMCParseResults.getContext();
 ```
 
-### Obtenir des exceptions
+:::
+
+:::group{name=getExceptions}
 
 Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
-MCParseResults.getExceptions() as Exception[MCCommandNode]
+// MCParseResults.getExceptions() as Exception[MCCommandNode]
+
 myMCParseResults.getExceptions();
 ```
 
-### Obtenir un lecteur
+:::
+
+:::group{name=getReader}
 
 Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
 
 ```zenscript
-MCParseResults.getReader() as MCImmutableStringReader
+// MCParseResults.getReader() as MCImmutableStringReader
+
 myMCParseResults.getReader();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCParseResults.hashCode() as int
+// MCParseResults.hashCode() as int
+
 myMCParseResults.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCParseResults.toString() as string
+// MCParseResults.toString() as string
+
 myMCParseResults.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCParseResults == o en tant qu'objet
 ```
 
-
+:::
 
 
