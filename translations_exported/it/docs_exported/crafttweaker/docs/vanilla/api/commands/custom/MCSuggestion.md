@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCSuggestion;
 
 ## Methods
 
-### applica
+:::group{name=apply}
 
 Return Type: string
 
@@ -29,7 +29,9 @@ MCSuggestion.apply(input as string) as string
 | input     | string | No Description Provided |
 
 
-### confrontaA
+:::
+
+:::group{name=compareTo}
 
 Return Type: int
 
@@ -42,7 +44,9 @@ MCSuggestion.compareTo(o as MCSuggestion) as int
 | o         | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
-### confrontaToIgnoreCase
+:::
+
+:::group{name=compareToIgnoreCase}
 
 Return Type: int
 
@@ -55,7 +59,9 @@ MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 | b         | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +74,9 @@ MCSuggestion.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### expandWith
+:::
+
+:::group{name=expandWith}
 
 Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 
@@ -82,60 +90,77 @@ MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggesti
 | range     | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCSuggestion.getRange() as MCStringRange
+// MCSuggestion.getRange() as MCStringRange
+
 myMCSuggestion.getRange();
 ```
 
-### getText
+:::
+
+:::group{name=getText}
 
 Return Type: string
 
 ```zenscript
-MCSuggestion.getText() as string
+// MCSuggestion.getText() as string
+
 myMCSuggestion.getText();
 ```
 
-### getTooltip
+:::
+
+:::group{name=getTooltip}
 
 Return Type: string
 
 ```zenscript
-MCSuggestion.getTooltip() as string
+// MCSuggestion.getTooltip() as string
+
 myMCSuggestion.getTooltip();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestion.hashCode() as int
+// MCSuggestion.hashCode() as int
+
 myMCSuggestion.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestion.toString() as string
+// MCSuggestion.toString() as string
+
 myMCSuggestion.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestion == o come oggetto
 ```
 
-
+:::
 
 
