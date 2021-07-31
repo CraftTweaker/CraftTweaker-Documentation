@@ -85,7 +85,7 @@ myMCBlockState.withProperty(name as String, value as String);
 
 ## Properties
 
-| Name            | Type                                                          | Has Getter | Has Setter |
+| Nombre          | Type                                                          | Has Getter | Has Setter |
 | --------------- | ------------------------------------------------------------- | ---------- | ---------- |
 | block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
 | canProvidePower | boolean                                                       | true       | false      |
