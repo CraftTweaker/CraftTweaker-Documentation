@@ -42,8 +42,8 @@ Allows you to override the path of the texture that the bottom side should use. 
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| 参数            | 类型                                                                               | 描述                                         |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
+| 参数            | 类型                                       | 描述                                         |
+| ------------- | ---------------------------------------- | ------------------------------------------ |
 | bottomTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the bottom side |
 
 
@@ -59,9 +59,9 @@ Allows you to override the path of the texture that the bottom side should use. 
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(blockname as MCResourceLocation) => new MCResourceLocation(blockName.namespace, namel.pace + "_bown");
 ```
 
-| 参数            | 类型                                                                                                                                                                                     | 描述                  |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| bottomTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
+| 参数            | 类型                                                                                                                      | 描述                  |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| bottomTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
 ### withSidesTexture
@@ -76,8 +76,8 @@ Allows you to override the path of the texture that the sides should use. If tha
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| 参数           | 类型                                                                               | 描述                                   |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
+| 参数           | 类型                                       | 描述                                   |
+| ------------ | ---------------------------------------- | ------------------------------------ |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides |
 
 
@@ -93,9 +93,9 @@ Allows you to override the path of the texture that the sides should use. If tha
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(blockname as MCResourceLocation) => new MCResourceLocation(nblockName.namespace, blockName.path + "_sides");
 ```
 
-| 参数           | 类型                                                                                                                                                                                     | 描述                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
+| 参数           | 类型                                                                                                                      | 描述                  |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
 ### withTopTexture
@@ -111,8 +111,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as c
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| 参数         | 类型                                                                               | 描述                                      |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
+| 参数         | 类型                                       | 描述                                      |
+| ---------- | ---------------------------------------- | --------------------------------------- |
 | topTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the top side |
 
 
@@ -127,9 +127,9 @@ Allows you to override the path of the texture that the top side should use. If 
 新 BlockBuilder().withType<BlockBuilderStairs>().withTopTexture (topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| 参数         | 类型                                                                                                                                                                                     | 描述                  |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| topTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
+| 参数         | 类型                                                                                                                      | 描述                  |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| topTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
 
