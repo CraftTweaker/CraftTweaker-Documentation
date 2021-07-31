@@ -38,7 +38,7 @@ Das folgende Skript wird ein Rezept hinzufügen, das 2500mb Kreosote (Fluid) und
 
 #### Item Rezepte entfernen
 
-Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, die HOP Graphite Staub ausgeben.
+The following script will remove all recipes from the Squeezer that output HOP Graphite Dust.
 
 ```zenscript
 //<recipetype:immersiveengineering:squeezer>.removeRecipe(IItemStack output)
@@ -48,7 +48,7 @@ Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, die HOP Graphi
 
 #### FluidStack-Rezepte entfernen
 
-Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, der exakt 60mb Pflanzenöl ausgibt.
+The following script will remove all recipes from the Squeezer that output exactly 60Mb of Plant Oil.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(IFluidStack output)
@@ -58,7 +58,7 @@ Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, der exakt 60mb
 
 #### Flüssigkeitsrezepte entfernen
 
-Das folgende Skript wird alle Rezepte aus dem Squeezer entfernen, die eine beliebige Menge Pflanzenöl ausgeben.
+The following script will remove all recipes from the Squeezer that output any amount of Plant Oil.
 
 ```zenscript
 // <recipetype:immersiveengineering:squeezer>.removeRecipe(MCFluid output)
