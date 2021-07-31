@@ -36,7 +36,7 @@ Returns int
 
 ## Properties
 
-| Name          | Type    | Has Getter | Has Setter |
+| Nombre        | Type    | Has Getter | Has Setter |
 | ------------- | ------- | ---------- | ---------- |
 | commandString | String  | true       | false      |
 | horizontal    | boolean | true       | false      |
