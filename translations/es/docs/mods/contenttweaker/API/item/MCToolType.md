@@ -60,12 +60,12 @@ Return type: String
 
 ## Properties
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
 | commandString | String | true       | false      |
 | name          | String | true       | false      |
 
-## Operators
+## Operadores
 ### EQUALS
 
 Compares if two given MCToolType objects are equal
