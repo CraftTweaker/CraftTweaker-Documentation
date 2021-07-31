@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "首页": "index.md",
+    "Getting Started With Scripts": "getting_started.md",
+    "Commands": "commands.md",
+    "Examples": "examples.md",
+    "Recipes": {
+      "Recipe Managers": "recipes/recipe_managers.md"
+    },
+    "Vanilla": {
+      "How to": {
+        "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
+      },
+      "Api": {
+        "Block": {
+          "Material": {
+            "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
+            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
+          }
+        },
+        "Blocks": {
+          "MCBlock": "vanilla/api/blocks/MCBlock.md",
+          "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
+        },
+        "Brackets": {
+          "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
+        },
+        "Data": {
+          "ByteArrayData": "vanilla/api/data/ByteArrayData.md",
+          "ByteData": "vanilla/api/data/ByteData.md",
+          "DoubleData": "vanilla/api/data/DoubleData.md",
+          "FloatData": "vanilla/api/data/FloatData.md",
+          "ICollectionData": "vanilla/api/data/ICollectionData.md",
+          "IData": "vanilla/api/data/IData.md",
+          "INumberData": "vanilla/api/data/INumberData.md",
+          "IntArrayData": "vanilla/api/data/IntArrayData.md",
+          "IntData": "vanilla/api/data/IntData.md",
+          "ListData": "vanilla/api/data/ListData.md",
+          "LongArrayData": "vanilla/api/data/LongArrayData.md",
+          "LongData": "vanilla/api/data/LongData.md",
+          "MapData": "vanilla/api/data/MapData.md",
+          "ShortData": "vanilla/api/data/ShortData.md",
+          "StringData": "vanilla/api/data/StringData.md"
+        },
+        "Entities": {
+          "MCEntityClassification": "vanilla/api/entities/MCEntityClassification.md",
+          "MCEntityType": "vanilla/api/entities/MCEntityType.md"
+        },
+        "Entity": {
+          "Player": {
+            "MCPlayerEntity": "vanilla/api/entity/player/MCPlayerEntity.md"
+          }
+        },
+        "Event": {
+          "Entity": {
+            "Player": {
+              "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
+              "MCAnvilRepairEvent": "vanilla/api/event/entity/player/MCAnvilRepairEvent.md",
+              "MCArrowLooseEvent": "vanilla/api/event/entity/player/MCArrowLooseEvent.md",
+              "MCArrowNockEvent": "vanilla/api/event/entity/player/MCArrowNockEvent.md",
+              "MCAttackEntityEvent": "vanilla/api/event/entity/player/MCAttackEntityEvent.md",
+              "MCBonemealEvent": "vanilla/api/event/entity/player/MCBonemealEvent.md",
+              "MCCriticalHitEvent": "vanilla/api/event/entity/player/MCCriticalHitEvent.md",
+              "MCEntityItemPickupEvent": "vanilla/api/event/entity/player/MCEntityItemPickupEvent.md",
+              "MCFillBucketEvent": "vanilla/api/event/entity/player/MCFillBucketEvent.md",
+              "MCItemFishedEvent": "vanilla/api/event/entity/player/MCItemFishedEvent.md",
+              "MCItemTooltipEvent": "vanilla/api/event/entity/player/MCItemTooltipEvent.md",
+              "MCPlayerDestroyItemEvent": "vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md",
+              "MCPlayerFlyableFallEvent": "vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md",
+              "MCPlayerSetSpawnEvent": "vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md",
+              "MCPlayerSleepInBedEvent": "vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md",
+              "MCPlayerWakeUpEvent": "vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md",
+              "MCSleepingLocationCheckEvent": "vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md",
+              "MCSleepingTimeCheckEvent": "vanilla/api/event/entity/player/MCSleepingTimeCheckEvent.md",
+              "MCUseHoeEvent": "vanilla/api/event/entity/player/MCUseHoeEvent.md",
+              "PlayerContainerEvent": {
+                "MCClose": "vanilla/api/event/entity/player/PlayerContainerEvent/MCClose.md",
+                "MCOpen": "vanilla/api/event/entity/player/PlayerContainerEvent/MCOpen.md"
+              },
+              "PlayerEvent": {
+                "MCItemCraftedEvent": "vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md",
+                "MCItemPickupEvent": "vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md",
+                "MCItemSmeltedEvent": "vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md",
+                "MCPlayerChangedDimensionEvent": "vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md",
+                "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedInEvent.md",
+                "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md",
+                "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md"
+              },
+              "PlayerInteractEvent": {
+                "MCEntityInteract": "vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract.md",
+                "MCEntityInteractSpecific": "vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteractSpecific.md",
+                "MCLeftClickBlock": "vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock.md",
+                "MCLeftClickEmpty": "vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md",
+                "MCRightClickBlock": "vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock.md",
+                "MCRightClickEmpty": "vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md",
+                "MCRightClickItem": "vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem.md"
+              },
+              "PlayerXpEvent": {
+                "MCLevelChange": "vanilla/api/event/entity/player/PlayerXpEvent/MCLevelChange.md",
+                "MCPickupXp": "vanilla/api/event/entity/player/PlayerXpEvent/MCPickupXp.md",
+                "MCXpChange": "vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md"
+              }
+            }
+          }
+        },
+        "Food": {
+          "MCFood": "vanilla/api/food/MCFood.md"
+        },
+        "Items": {
+          "IIngredient": "vanilla/api/items/IIngredient.md",
+          "IItemStack": "vanilla/api/items/IItemStack.md"
+        },
+        "Logger": {
+          "ILogger": "vanilla/api/logger/ILogger.md"
+        },
+        "Managers": {
+          "BlastFurnaceManager": "vanilla/api/managers/BlastFurnaceManager.md",
+          "CampFireManager": "vanilla/api/managers/CampFireManager.md",
+          "CraftingTableManager": "vanilla/api/managers/CraftingTableManager.md",
+          "FurnaceManager": "vanilla/api/managers/FurnaceManager.md",
+          "ICookingRecipeManager": "vanilla/api/managers/ICookingRecipeManager.md",
+          "IRecipeManager": "vanilla/api/managers/IRecipeManager.md",
+          "SmokerManager": "vanilla/api/managers/SmokerManager.md",
+          "StoneCutterManager": "vanilla/api/managers/StoneCutterManager.md"
+        },
+        "Recipe": {
+          "RecipeFilter": "vanilla/api/recipe/RecipeFilter.md",
+          "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
+          "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
+          "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md"
+        },
+        "Potions": {
+          "MCPotion": "vanilla/api/potions/MCPotion.md",
+          "MCPotionEffect": "vanilla/api/potions/MCPotionEffect.md",
+          "MCPotionEffectInstance": "vanilla/api/potions/MCPotionEffectInstance.md"
+        },
+        "Tags": {
+          "MCTag": "vanilla/api/tags/MCTag.md"
+        },
+        "Util": {
+          "BlockPos": "vanilla/api/util/BlockPos.md",
+          "Direction": "vanilla/api/util/Direction.md",
+          "DirectionAxis": "vanilla/api/util/DirectionAxis.md"
+        },
+        "World": {
+          "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCBiomeSpawnEntry": "vanilla/api/world/MCBiomeSpawnEntry.md"
+        }
+      }
+    },
+    "Mods": {
+      "Atum 2": {
+        "Kiln": "mods/Atum2/Kiln.md",
+        "Quern": "mods/Atum2/Quern.md",
+        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
+      },
+      "Botany Pots": {
+        "Crop": "mods/botanypots/Crop.md",
+        "Fertilizer": "mods/botanypots/Fertilizer.md",
+        "Soil": "mods/botanypots/Soil.md"
+      },
+      "ContentTweaker": {
+        "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md",
+        "API": {
+          "BracketHandlers": "mods/contenttweaker/API/BracketHandlers.md",
+          "Api": {
+            "IIsBuilder": "mods/contenttweaker/API/api/IIsBuilder.md"
+          },
+          "Block": {
+            "BlockBuilder": "mods/contenttweaker/API/block/BlockBuilder.md",
+            "BlockTypeBuilder": "mods/contenttweaker/API/block/BlockTypeBuilder.md",
+            "Basic": {
+              "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md"
+            },
+            "Pillar": {
+              "BlockBuilderPillarRotatable": "mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md"
+            },
+            "Stairs": {
+              "BlockBuilderStairs": "mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md"
+            }
+          },
+          "Item": {
+            "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
+            "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
+            "MCItemGroup": "mods/contenttweaker/API/item/MCItemGroup.md",
+            "MCToolType": "mods/contenttweaker/API/item/MCToolType.md",
+            "Basic": {
+              "ItemBuilderBasic": "mods/contenttweaker/API/item/basic/ItemBuilderBasic.md"
+            },
+            "Tool": {
+              "ItemBuilderTool": "mods/contenttweaker/API/item/tool/ItemBuilderTool.md"
+            }
+          }
+        }
+      },
+      "InitialInventory": {
+        "InitialInventory": "mods/InitialInventory/InitialInventory.md"
+      },
+      "JEITweaker": {
+        "JEITweaker": "mods/JEITweaker/JEITweaker.md"
+      },
+      "StoneAge": {
+        "Drying Rack": "mods/StoneAge/DryingRackManager.md",
+        "Flint Workbench": "mods/StoneAge/FlintWorkbenchManager.md",
+        "Millstone": "mods/StoneAge/MillstoneManager.md",
+        "Tanning Rack": "mods/StoneAge/TanningRackManager.md",
+        "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
+      }
+    }
+  }
+}

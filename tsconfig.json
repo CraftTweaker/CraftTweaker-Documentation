@@ -14,7 +14,7 @@
     "resolveJsonModule": true
   },
   "exclude": [
-    "Docs-Site/",
+    "site/",
     "out/",
     "build/",
     "translations/",
