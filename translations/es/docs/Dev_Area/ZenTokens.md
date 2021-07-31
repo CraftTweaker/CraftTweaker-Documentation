@@ -42,10 +42,13 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 45          | T_TILDEASSIGN       | `~=`                                                        |
 | 32          | T_TILDE             | `~`                                                         |
 | 33          | T_SEMICOLON         | `;`                                                         |
-| 34          | T_LTEQ              | `<=`                                                     |
-| 35          | T_LT                | `<`                                                      |
+| 34          | T_LTEQ              | `<=
+`                                                    |
+| 35          | T_LT                | `<
+`                                                     |
 | 36          | T_GTEQ              | `>=`                                                     |
-| 37          | T_GT                | `>`                                                      |
+| 37          | T_GT                | `>
+`                                                     |
 | 38          | T_EQ                | `==`                                                        |
 | 39          | T_ASSIGN            | `=`                                                         |
 | 42          | T_NOTEQ             | `!=`                                                        |
