@@ -367,13 +367,13 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| Nombre | Type | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| x      | int  | true       | false      |
+| y      | int  | true       | false      |
+| z      | int  | true       | false      |
 
-## Operators
+## Operadores
 ### ADD
 
 Adds two positions together and returns the result.
