@@ -24,29 +24,35 @@ MCFarmlandTrampleEvent extends [MCBlockEvent](/vanilla/api/event/block/MCBlockEv
 
 ## Methods
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCFarmlandTrampleEvent.getEntity() as MCEntity
+// MCFarmlandTrampleEvent.getEntity() as MCEntity
+
 myMCFarmlandTrampleEvent.getEntity();
 ```
 
-### getFallDistance
+:::
+
+:::group{name=getFallDistance}
 
 Return Type: float
 
 ```zenscript
-MCFarmlandTrampleEvent.getFallDistance() as float
+// MCFarmlandTrampleEvent.getFallDistance() as float
+
 myMCFarmlandTrampleEvent.getFallDistance();
 ```
+
+:::
 
 
 ## Properties
 
-| Name         | Type                                     | Ha Getter | Ha Setter |
-| ------------ | ---------------------------------------- | --------- | --------- |
-| entity       | [MCEntity](/vanilla/api/entity/MCEntity) | true      | false     |
-| fallDistance | float                                    | true      | false     |
+| Name         | Type                                     | Ha Getter | Ha Setter | Description             |
+| ------------ | ---------------------------------------- | --------- | --------- | ----------------------- |
+| entity       | [MCEntity](/vanilla/api/entity/MCEntity) | true      | false     | No Description Provided |
+| fallDistance | float                                    | true      | false     | No Description Provided |
 
