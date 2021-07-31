@@ -43,8 +43,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| 参数         | 类型                                                                               | 描述                                        |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
+| 参数         | 类型                                       | 描述                                        |
+| ---------- | ---------------------------------------- | ----------------------------------------- |
 | endTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the end sides. |
 
 
@@ -60,9 +60,9 @@ Allows you to override the path of the texture that the end sides (top/bottom) s
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(blockname as MCResourceLocation) => new MCResourceLocation(flockName.namespace, blockName.path + "_end");
 ```
 
-| 参数         | 类型                                                                                                                                                                                     | 描述                  |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| endTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
+| 参数         | 类型                                                                                                                      | 描述                  |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| endTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
 ### withSideTexture
@@ -78,8 +78,8 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sides
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| 参数           | 类型                                                                               | 描述                                    |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
+| 参数           | 类型                                       | 描述                                    |
+| ------------ | ---------------------------------------- | ------------------------------------- |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides. |
 
 
@@ -95,9 +95,9 @@ Allows you to override the path of the texture that the sides (everything but to
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(blockname as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides");
 ```
 
-| 参数           | 类型                                                                                                                                                                                     | 描述                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | 函数&lt;craftmiliter.api.util.MCResourceLocation, craftbiner.api.util.MCResourceLocation&gt; | The function to use |
+| 参数           | 类型                                                                                                                      | 描述                  |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
 
