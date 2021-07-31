@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und einen Apple 
 
 #### Remove Recipes
 
-Das folgende Skript entfernt alle Fräsrezepte, die Limesand ausgeben.
+The following script will remove all Milling recipes that output Limesand.
 
 ```zenscript
 // <recipetype:create:milling>.removeRecipe(IItemStack output)
