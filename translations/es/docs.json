@@ -11,7 +11,7 @@
     "Funciones Avanzadas": {
       "Arrays y Bucles": "AdvancedFunctions/Arrays_and_Loops.md",
       "Arrays Asociativos (Mapas)": "AdvancedFunctions/Associative_Arrays.md",
-      "Calculaciones": "AdvancedFunctions/Calculations.md",
+      "Operaciones": "AdvancedFunctions/Calculations.md",
       "Código condicional (if/else)": "AdvancedFunctions/Conditional_Statements.md",
       "Referenciar otro Archivo": "AdvancedFunctions/Cross-Script_Reference.md",
       "Funciones personalizadas": "AdvancedFunctions/Custom_Functions.md",
