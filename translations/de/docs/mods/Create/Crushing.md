@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten mit einer Chance
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Crushing Rezepte entfernen, die ein zerkleinertes Zinc Ore ausgeben.
+The following script will remove all Crushing recipes that output a Crushed Zinc Ore.
 
 ```zenscript
 // <recipetype:create:crushing>.removeRecipe(IItemStack output)
