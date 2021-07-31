@@ -42,8 +42,8 @@ Allows you to override the path of the texture that the bottom side should use. 
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter     | Type                                                                             | Description                                |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
+| Parameter     | Type                                     | Description                                |
+| ------------- | ---------------------------------------- | ------------------------------------------ |
 | bottomTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the bottom side |
 
 
@@ -59,8 +59,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTextur
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
 
-| Parameter     | Type                                                                                                                                                                                                    | Description         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter     | Type                                                                                                                    | Description         |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | bottomTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -76,8 +76,8 @@ Allows you to override the path of the texture that the sides should use. If tha
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter    | Type                                                                             | Description                          |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
+| Parameter    | Type                                     | Description                          |
+| ------------ | ---------------------------------------- | ------------------------------------ |
 | sidesTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the sides |
 
 
@@ -93,8 +93,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture 
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Description         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter    | Type                                                                                                                    | Description         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
@@ -111,8 +111,8 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as c
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parameter  | Type                                                                             | Description                             |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
+| Parameter  | Type                                     | Description                             |
+| ---------- | ---------------------------------------- | --------------------------------------- |
 | topTexture | crafttweaker.api.util.MCResourceLocation | The texture to be used for the top side |
 
 
@@ -127,8 +127,8 @@ Allows you to override the path of the texture that the top side should use. If 
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Parameter  | Type                                                                                                                    | Description         |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | topTexture | function.Function&lt;crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation&gt; | The function to use |
 
 
