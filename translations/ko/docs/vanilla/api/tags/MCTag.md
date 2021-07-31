@@ -147,8 +147,8 @@ myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 
 ## Casters
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| 반환 자료형                                                     | 암묵적  |
+| ---------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true |
 
