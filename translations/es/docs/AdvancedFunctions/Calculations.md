@@ -54,7 +54,7 @@ prueba = prueba + 2
 prueba -= 3;
 ```
 
-Las opciones 1 y 2 dan el valor de la variable usando el operador ` = .`   
+Las opciones 1 y 2 dan el valor de la variable usando el operador ` = ` .  
 Estas son probablemente las maneras más fáciles para principiantes y la única manera si quieres darle un valor a una variable que no se usa en la operación.
 
 La opción 3 le da el valor a la variable antes de ` -= ` con el resultado de una resta normal.   
