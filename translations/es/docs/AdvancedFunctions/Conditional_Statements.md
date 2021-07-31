@@ -16,7 +16,7 @@ if (prueba == 0) { //Verdadero
 
 ## Else 
 
-Una declaración else puede ser añadido al final de una parte de código condicional para declarar lo que debería pasar cuando el ` if <code/> que viene antes es falso,  y por tanto no se ejecuta.</p>
+Una declaración else puede ser añadido al final de una parte de código condicional para declarar lo que debería pasar cuando el `if<code/> que viene antes es falso,  y por tanto no se ejecuta.</p>
 
 <pre><code class="zenscript">var Prueba = 0;
 
@@ -82,46 +82,52 @@ if (d == "Hola" && e == "Hola") { print("AND1!"); }       //falso
 if (d == "Hola" && e == "Mundo") { print("AND2!"); }       //cierto
 ```
 
-## The ? Operator
+## El Operador ?
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+Es innegable que escribir un bloque if/else puede ser molesto. Especialmente si solo quieres una condicion o nada más. Por eso es por lo que el operador `?<code/> se implementó.
+Tiene la misma lógica que un bloque if/else, sólo que que ocupa menos espacio.
+
+Se usa así: <code>boolean ? if : else`
 
 ```zenscript
-val switchy = false;
+val cambiante = false;
 
-//prints switchy state
-print("Switchy is " ~ switchy);
+//printea el valor de cambiante
+print("Cambiante es " ~ cambiante);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
-val vInt = switchy ? 1 : 2;
-print(vInt);
+//Si cambiante es verdadero, numero es uno, sino es dos.
+val numero = cambiante ? 1 : 2;
+print(numero);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
-print(switchy ? print("Bye") : print("Hello"); "Hello" : "Bye");
+//Printea hola si cambiante es verdadero, sino printea adiós.
+print(cambiante ? print("Hola") : print("Adiós"); 
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
-switchy ?
+//Printea adiós si cambiante es verdadero, sino printea hola.
+cambiante ? print("Adiós") : print("Hola");
 
 ```
 
-## Operators
+## Operadores
 
-You can use these operators. All the examples given evaluate to true.
+Puedes usar estos operadores Todos los ejemplos acaban con un valor de true o verdadero
 
-| Name             | token        | Explanation                                                                                                                                                                  | Ejemplo           |
-| ---------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Not              | `!`          | Inverts a boolean                                                                                                                                                            | !false            |
-| Not Equal        | `!=`         | Checks if the value before and after are not equal                                                                                                                           | 1 != 2            |
-| Equal            | `==`         | Checks if the value before and after are equal                                                                                                                               | 1 == 1            |
-| Greater than     | `>`       | Checks if the value before is greater than after                                                                                                                             | 1 > 2             |
-| Greater or Equal | `>=`      | Checks if the value before is greater than or equal with after                                                                                                               | 1 >= 1            |
-| Lesser than      | `<`       | Checks if the value before is fewer than after                                                                                                                               | 1 < 2             |
-| Lesser or Equal  | `<=`      | Checks if the value before is fewer than or equal with after                                                                                                                 | 1 <= 1            |
-| Logical AND      | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
-| Logical OR       | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
-| Bitwise XOR      | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
-| Bitwise AND      | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
-| Bitwise OR       | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
+| Nombre            | Símbolo      | Explicación                                                                                                                                                                  | Ejemplo           |
+| ----------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| No                | `!`          | Inverte un boolean                                                                                                                                                           | !false            |
+| No igual          | `!=`         | Comprueba si los dos valores no son iguales                                                                                                                                  | 1 != 2            |
+| Igual             | `==`         | Comprueba si los dos valores son iguales                                                                                                                                     | 1 == 1            |
+| Mayor que         | `>
+`      | Comprueba si el primer valor es mayor al segundo                                                                                                                             | 1 > 2             |
+| Mayor o igual que | `>=`      | Comprueba si el primer valor es mayor o igual que el segundo                                                                                                                 | 1 >= 1            |
+| Menor que         | `<
+`      | Comprueba si el primer valor es menor al segundo                                                                                                                             | 1 < 2             |
+| Menor o giaul que | `<=
+`     | Comprueba si el primer valor es menor o igual que el segundo                                                                                                                 | 1 <= 1            |
+| Y Lógico          | `&&` | Comprueba si los dos booleans a cada lado del operador son ciertos.                                                                                                          | true && true      |
+| O Lógico          | `\|\|`     | Comprueba que uno de los dos booleans a cada lado sea cierto                                                                                                                 | false \|\| true |
+| Bitwise XOR       | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Bitwise AND       | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitwise OR        | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
 
 ### Difference between `|` and `||` (and `&` and `&&`)
 
