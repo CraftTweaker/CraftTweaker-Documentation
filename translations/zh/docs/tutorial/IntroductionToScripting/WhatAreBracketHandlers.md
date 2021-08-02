@@ -1,57 +1,57 @@
 # 尖括号引用
 
-Bracket Handlers or BracketExpressionParser (BEP for short) are pieces of code that reference game objects (or create new objects) such as Items, Blocks or Resource Locations.
+尖括号引用或BracketExpressionParser（简称BEP）是引用游戏对象（或创建新对象）的代码片段，如物品、区块或资源位置。
 
-An example of a Bracket Handler would be the Item Bracket Handler:
+一个尖括号引用的例子是物品尖括号引用：
 
 ```zenscript
 <item:minecraft:diamond>
 ```
 
-That references the Diamond Item in the game.
+这是指游戏中的物品钻石。
 
-## General Format
+## 一般格式
 
-Bracket Handlers always start with their type, so an Item Bracket Handler starts with `item` and a Block Bracket Handler starts with `block`.
+尖括号引用总是以其类型开始，所以一个物品尖括号引用以`item`开始，一个方块尖括号引用以`block`开始。
 
-The general format for Bracket Handlers are:
+尖括号引用的一般格式是：
 
 ```zenscript
 <type:modid:name>
 ```
 
-As stated above, `type` is what kind of Bracket Handler is being called. `modid` is the mod that owns the object. `name` is the name of the object being referenced.
+如上所述，`type`是指被调用的是哪种尖括号引用。 `modid`是指拥有该对象的模组。 `name`是指被引用的对象的名称。
 
-Some more examples are:
+还有以下几个例子：
 
 ```zenscript
-<block:minecraft:white_wool> // References the White Wool Block.
-<item:minecraft:white_wool> // References the White Wool Item.
-<fluid:minecraft:water> // References the Water Fluid.
-<effect:minecraft:haste> // References the Haste Potion Effect.
+<block:minecraft:white_wool> // 指方块白色羊毛
+<item:minecraft:white_wool> // 指物品白色羊毛.
+<fluid:minecraft:water> // 指流体水.
+<effect:minecraft:haste> // 指急迫效果.
 ```
 
-While the format above is used most of the time, there are some instances where there just isn't a need for the modid.
+虽然大多数时候都使用上面的格式，但在有些情况下，根本不需要使用modid。
 
-## Modless Formats
+## 无模组的格式
 
-In cases where a modid isn't needed to reference an object (Such as Text Formatting, where mods can't add new objects), a different format is used.
+在不需要modid来引用对象的情况下（比如文本格式化，mods不能添加新对象），会使用不同的格式。
 
 ```zenscript
 <type:name>
 ```
 
-Some examples of this are:
+这方面的一些例子包括：
 
 ```zenscript
-<blockmaterial:earth> // References the Earth Block Material.
-<directionaxis:x> // References the X Direction Axis.
-<entityclassification:monster> // References the Monster Entity Classification.
+<blockmaterial:earth> // 指Earth方块材料.
+<directionaxis:x> // 指X轴.
+<entityclassification:monster> // 指实体分类怪物
 ```
 
-## Tag Format
+## 标签格式
 
-##### Note: This is talking about the Vanilla Data Pack Tag
+##### 注意：这里说的是原版数据包的标签
 
 [Tags](https://minecraft.gamepedia.com/Tag) are special and need another layer of categorization, as a tag with the name `minecraft:white_wool` could be referring to both an ItemTag and a BlockTag.
 
@@ -70,11 +70,11 @@ Examples of this are:
 ```
 
 
-## Other Formats
+## 其他格式
 
 At the end of the day, Bracket Handlers don't have a fully defined format, a mod could come along and add a Bracket Handler in a completely different format than listed here, the ones listed here are just the ones used in CraftTweaker itself and to listed to try and give an understanding of how Bracket Handlers look.
 
 
-## Getting Bracket Handlers
+## 获取尖括号引用
 
 Since mods can add their own Bracket Handlers, it is impossible to list them all here, there is a command in-game that will output a list of all Bracket Handlers and their values though! Simply use `/ct dumpBrackets` and look in the newly created `ct_dumps` folder for them!
