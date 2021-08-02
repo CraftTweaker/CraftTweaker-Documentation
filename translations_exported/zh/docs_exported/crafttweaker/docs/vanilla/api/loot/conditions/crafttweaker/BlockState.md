@@ -21,7 +21,7 @@ BlockState implements the following interfaces. That means all methods defined i
 
 ## 方法
 
-### withState
+:::group{name=withState}
 
 Sets the state that the condition must check.
 
@@ -29,15 +29,18 @@ Sets the state that the condition must check.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [BlockState](/vanilla/api/loot/conditions/crafttweaker/BlockState)
 
 ```zenscript
 BlockState.withState(state as MCBlockState) as BlockState
 ```
 
-| 参数    | 类型                                                       | 描述                  |
-| ----- | -------------------------------------------------------- | ------------------- |
-| state | [MCBlockState #MC方块状态](/vanilla/api/blocks/MCBlockState) | The state to check. |
+| 参数    | 类型                                                      | 描述                  |
+| ----- | ------------------------------------------------------- | ------------------- |
+| state | [MCBlockState #MC方块状态](/vanilla/api/block/MCBlockState) | The state to check. |
 
+
+:::
 
 
