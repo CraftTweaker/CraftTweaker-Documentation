@@ -18,19 +18,22 @@ MCEntityEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all meth
 
 ## 方法
 
-### getEntity
+:::group{name=getEntity}
 
 Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
-MCEntityEvent.getEntity() as MCEntity
+// MCEntityEvent.getEntity() as MCEntity
+
 myMCEntityEvent.getEntity();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称     | 类型                                       | 可获得  | 可设置   |
-| ------ | ---------------------------------------- | ---- | ----- |
-| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false |
+| 名称     | 类型                                       | 可获得  | 可设置   | 描述                      |
+| ------ | ---------------------------------------- | ---- | ----- | ----------------------- |
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | No Description Provided |
 
