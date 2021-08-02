@@ -10,13 +10,14 @@ import crafttweaker.util.NameUtils;
 ```
 
 
-## 方法
+## Static Methods
 
 :::group{name=fixing}
 
-Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
+Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a <br />  well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
-Returns: The fixed string. Return Type: string
+Returns: The fixed string.  
+Return Type: string
 
 ```zenscript
 NameUtils.fixing(input as string) as string
@@ -31,28 +32,29 @@ NameUtils.fixing(input as string) as string
 
 :::group{name=fixing}
 
-Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
+Attempts to automatically fix the given <code>input</code> string, if possible, so that it can be used to build a <br />  well-formed [MCResourceLocation](/vanilla/api/util/MCResourceLocation).
 
-Returns: The fixed string. Return Type: string
+Returns: The fixed string.  
+Return Type: string
 
 ```zenscript
 NameUtils.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.List<string>>) as string
 ```
 
-| 参数             | 类型                                                                         | 描述                                                                                                                 |
-| -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| input（输入）      | string                                                                     | The string that should be fixed to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation)-compatible format. |
-| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first                        |
- element is the fixed string, and the second is a list of strings containing explanations for all the identified mistakes. |
+| 参数             | 类型                                                                         | 描述                                                                                                                                                                                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input（输入）      | string                                                                     | The string that should be fixed to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation)-compatible format.                                                                                                                                                                            |
+| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
 
 
 :::
 
 :::group{name=fromFixedName}
 
-Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that may be present in the string.
+Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that <br />  may be present in the string.
 
-Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input. Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.  
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 NameUtils.fromFixedName(input as string) as MCResourceLocation
@@ -67,19 +69,37 @@ NameUtils.fromFixedName(input as string) as MCResourceLocation
 
 :::group{name=fromFixedName}
 
-Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that may be present in the string.
+Creates a [MCResourceLocation](/vanilla/api/util/MCResourceLocation) from the given <code>input</code>, if possible, while fixing mistakes that <br />  may be present in the string.
 
-Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input. Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Returns: A [MCResourceLocation](/vanilla/api/util/MCResourceLocation) that represents the fixed input.  
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 NameUtils.fromFixedName(input as string, mistakeHandler as BiConsumer<string,stdlib.List<string>>) as MCResourceLocation
 ```
 
-| 参数             | 类型                                                                         | 描述                                                                                                             |
-| -------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| input（输入）      | string                                                                     | The string that should be fixed and converted to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation). |
-| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first                    |
- element is the fixed string, and the second is a list of strings containing explanations for all the identified mistakes. |
+| 参数             | 类型                                                                         | 描述                                                                                                                                                                                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input（输入）      | string                                                                     | The string that should be fixed and converted to a [MCResourceLocation](/vanilla/api/util/MCResourceLocation).                                                                                                                                                                                |
+| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
+
+
+:::
+
+:::group{name=isAutogeneratedName}
+
+Verifies whether the given name has been autogenerated by CraftTweaker.
+
+Returns: Whether the name has been autogenerated by CraftTweaker.  
+Return Type: boolean
+
+```zenscript
+NameUtils.isAutogeneratedName(name as MCResourceLocation) as boolean
+```
+
+| 参数   | 类型                                                         | 描述                  |
+| ---- | ---------------------------------------------------------- | ------------------- |
+| name | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The name to verify. |
 
 
 :::
