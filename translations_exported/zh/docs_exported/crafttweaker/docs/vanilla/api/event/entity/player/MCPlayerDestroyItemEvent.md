@@ -20,21 +20,25 @@ MCPlayerDestroyItemEvent extends [MCPlayerEvent](/vanilla/api/event/entity/playe
 
 ## 方法
 
-### getDestroyedItem
+:::group{name=getDestroyedItem}
 
 Gets a snapshot of the item from before it broke. Modifying this item will have no effect and it should be treated as unmodifiable.
 
+Returns: The original item from before it was broken.  
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+// MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+
 event.getDestroyedItem();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称            | 类型                                          | 可获得  | 可设置   |
-| ------------- | ------------------------------------------- | ---- | ----- |
-| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称            | 类型                                          | 可获得  | 可设置   | 描述                                                                                                                                                |
+| ------------- | ------------------------------------------- | ---- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| destroyedItem | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
 
