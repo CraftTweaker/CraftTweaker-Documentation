@@ -18,9 +18,9 @@ MCLivingEquipmentChangeEvent extends [MCLivingEvent](/vanilla/api/event/entity/M
 
 ## 参数
 
-| 名称   | 类型                                                           | 可获得  | 可设置   |
-| ---- | ------------------------------------------------------------ | ---- | ----- |
-| from | [IItemStack](/vanilla/api/items/IItemStack)                  | true | false |
-| slot | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false |
-| to   | [IItemStack](/vanilla/api/items/IItemStack)                  | true | false |
+| 名称   | 类型                                                           | 可获得  | 可设置   | 描述                      |
+| ---- | ------------------------------------------------------------ | ---- | ----- | ----------------------- |
+| from | [IItemStack](/vanilla/api/items/IItemStack)                  | true | false | No Description Provided |
+| slot | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
+| to   | [IItemStack](/vanilla/api/items/IItemStack)                  | true | false | No Description Provided |
 
