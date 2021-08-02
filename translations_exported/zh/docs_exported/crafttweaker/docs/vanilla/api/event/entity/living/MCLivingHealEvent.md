@@ -24,25 +24,30 @@ MCLivingHealEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## 方法
 
-### getAmount
+:::group{name=getAmount}
 
 Gets the amount of healing.
 
+Returns: The amount of damage to heal.  
 Return Type: float
 
 ```zenscript
-MCLivingHealEvent.getAmount() as float
+// MCLivingHealEvent.getAmount() as float
+
 event.getAmount();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the amount of healing.
 
 Return Type: void
 
 ```zenscript
-MCLivingHealEvent.setAmount(amount as float) as void
+// MCLivingHealEvent.setAmount(amount as float) as void
+
 event.setAmount(0.5);
 ```
 
@@ -51,10 +56,12 @@ event.setAmount(0.5);
 | amount | float | The amount of damage to heal. |
 
 
+:::
+
 
 ## 参数
 
-| 名称     | 类型    | 可获得  | 可设置  |
-| ------ | ----- | ---- | ---- |
-| amount | float | true | true |
+| 名称     | 类型    | 可获得  | 可设置  | 描述                          |
+| ------ | ----- | ---- | ---- | --------------------------- |
+| amount | float | true | true | Gets the amount of healing. |
 
