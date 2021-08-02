@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder,MCSuggestions>) as MCSuggestionProvider
 ```
-
 | 参数  | 类型                                                                                                                                                                                                                                    | 描述                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
@@ -29,7 +28,7 @@ new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder
 
 ## 方法
 
-### equals #等于
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +41,9 @@ MCSuggestionProvider.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### 获取建议
+:::
+
+:::group{name=getSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -56,33 +57,41 @@ MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSu
 | 生成器  | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionProvider.hashCode() as int
+// MCSuggestionProvider.hashCode() as int
+
 myMCSuggestionProvider.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestionProvider.toString() as string
+// MCSuggestionProvider.toString() as string
+
 myMCSuggestionProvider.toString();
 ```
+
+:::
 
 
 ## 运算符
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionProvider == o 为对象
 ```
 
-
+:::
 
 
