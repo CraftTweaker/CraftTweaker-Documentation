@@ -24,21 +24,25 @@ MCLivingDeathEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## 方法
 
-### getSource
+:::group{name=getSource}
 
 Gets the source of the damage that killed the entity.
 
+Returns: The source of the damage that killed the entity.  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
-MCLivingDeathEvent.getSource() as DamageSource
+// MCLivingDeathEvent.getSource() as DamageSource
+
 event.getSource();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称 | 类型                                             | 可获得  | 可设置   |
-| -- | ---------------------------------------------- | ---- | ----- |
-| 来源 | [DamageSource](/vanilla/api/util/DamageSource) | true | false |
+| 名称 | 类型                                             | 可获得  | 可设置   | 描述                                                    |
+| -- | ---------------------------------------------- | ---- | ----- | ----------------------------------------------------- |
+| 来源 | [DamageSource](/vanilla/api/util/DamageSource) | true | false | Gets the source of the damage that killed the entity. |
 
