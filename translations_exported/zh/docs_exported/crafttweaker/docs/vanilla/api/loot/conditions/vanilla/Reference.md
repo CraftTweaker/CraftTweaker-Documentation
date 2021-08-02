@@ -29,6 +29,7 @@ Sets the name of the data-pack loot condition to query.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Reference](/vanilla/api/loot/conditions/vanilla/Reference)
 
 ```zenscript
@@ -50,6 +51,7 @@ Sets the name of the data-pack loot condition to query.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Reference](/vanilla/api/loot/conditions/vanilla/Reference)
 
 ```zenscript
