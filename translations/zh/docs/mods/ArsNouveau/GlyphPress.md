@@ -11,7 +11,7 @@ The Glyph Press is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManag
 The following script will add a tier "one" recipe to the Glyph Press that will output a Diamond when dirt is given to the Press.
 
 ```zenscript
-// <recipetype:ars_nouveau:glyph_recipe>.addRecipe(String name, String tier, IItemStack reagent, IItemStack output);
+// <recipetype:ars_nouveau:glyph_recipe>.addRecipe(name as String, tier as String, reagent as IItemStack, output as IItemStack);
 
 <recipetype:ars_nouveau:glyph_recipe>.addRecipe("glyph_test", "one", <item:minecraft:dirt>, <item:minecraft:diamond>);
 ```
@@ -21,7 +21,7 @@ The following script will add a tier "one" recipe to the Glyph Press that will o
 The following script will remove all recipes from the Glyph Press that output Glyph: Touch.
 
 ```zenscript
-// <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(IItemStack output);
+// <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(output as IItemStack);
 
 <recipetype:ars_nouveau:glyph_recipe>.removeRecipe(<item:ars_nouveau:glyph_touch>);
 ```
