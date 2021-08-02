@@ -16,7 +16,7 @@ import crafttweaker.api.loot.LootManager;
 
 ## 参数
 
-| 名称        | 类型                                                                     | 可获得  | 可设置   |
-| --------- | ---------------------------------------------------------------------- | ---- | ----- |
-| modifiers | [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) | true | false |
+| 名称        | 类型                                                                     | 可获得  | 可设置   | 描述                                                                                                                                                                |
+| --------- | ---------------------------------------------------------------------- | ---- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modifiers | [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) | true | false | Gets the loot modifiers manager. <br />  <br />  Refer to [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) for additional info. |
 
