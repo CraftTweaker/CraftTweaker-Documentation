@@ -10,7 +10,7 @@ import crafttweaker.api.recipe.RecipeFunctionMatrix;
 
 ## 方法
 
-### process
+:::group{name=process}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -23,5 +23,7 @@ RecipeFunctionMatrix.process(usualOut as IItemStack, inputs as IItemStack[][]) a
 | usualOut | [IItemStack](/vanilla/api/items/IItemStack)     | No Description Provided |
 | inputs   | [IItemStack](/vanilla/api/items/IItemStack)[][] | No Description Provided |
 
+
+:::
 
 
