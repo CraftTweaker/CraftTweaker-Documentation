@@ -24,36 +24,45 @@ MCLivingHurtEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## 方法
 
-### getAmount
+:::group{name=getAmount}
 
 Gets the amount of damage.
 
+Returns: The amount of damage.  
 Return Type: float
 
 ```zenscript
-MCLivingHurtEvent.getAmount() as float
+// MCLivingHurtEvent.getAmount() as float
+
 event.getAmount();
 ```
 
-### getSource
+:::
+
+:::group{name=getSource}
 
 Gets the source of the damage.
 
+Returns: The source of the damage.  
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
 ```zenscript
-MCLivingHurtEvent.getSource() as DamageSource
+// MCLivingHurtEvent.getSource() as DamageSource
+
 event.getSource();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Sets the amount of damage.
 
 Return Type: void
 
 ```zenscript
-MCLivingHurtEvent.setAmount(amount as float) as void
+// MCLivingHurtEvent.setAmount(amount as float) as void
+
 event.setAmount(0.5);
 ```
 
@@ -62,11 +71,13 @@ event.setAmount(0.5);
 | amount | float | The amount of damage. |
 
 
+:::
+
 
 ## 参数
 
-| 名称     | 类型                                             | 可获得  | 可设置   |
-| ------ | ---------------------------------------------- | ---- | ----- |
-| amount | float                                          | true | true  |
-| 来源     | [DamageSource](/vanilla/api/util/DamageSource) | true | false |
+| 名称     | 类型                                             | 可获得  | 可设置   | 描述                             |
+| ------ | ---------------------------------------------- | ---- | ----- | ------------------------------ |
+| amount | float                                          | true | true  | Gets the amount of damage.     |
+| 来源     | [DamageSource](/vanilla/api/util/DamageSource) | true | false | Gets the source of the damage. |
 
