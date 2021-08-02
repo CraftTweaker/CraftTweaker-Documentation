@@ -1,24 +1,24 @@
-# What Are Scripts
+# 脚本是什么
 
-A script is simply a file with a `.zs` file extension, that is all that is needed to classify a file as a script file.
+脚本只是一个带有`.zs`文件扩展名的文件，这就是将一个文件归类为脚本文件的全部条件了。
 
 #### Note
 
-Windows hides the file extensions of "known" file types, this means that `text.txt` may show up as just `text` on your machine.
+Windows隐藏了“已知”文件类型的扩展名，这意味着`text.txt`在你的电脑上可能只显示为`text`。
 
-This also means that `script.zs.txt` will also show up as `script.zs` on your machine.
+这也意味着`script.zs.txt`在你的电脑上也将显示为`script.zs`。
 
-If you are unsure if file extensions are shown or not, take a look in your game directory and find the file called `options.txt`, if you see a file called `options` and not `options.txt`, that means that your file extensions are hidden and you may have trouble when making script files.
+如果你不确定文件扩展名是否显示，请在你的游戏目录中找到名为`options.txt`的文件，如果你看到一个名为`options`的文件，而不是`options.txt`，这意味着你的文件扩展名被隐藏，你在制作脚本文件时可能会遇到麻烦。
 
-You can find out how to fix this [here](https://www.howtohaven.com/system/show-file-extensions-in-windows-explorer.shtml).
+你可以在[这里](https://www.howtohaven.com/system/show-file-extensions-in-windows-explorer.shtml)找到如何解决这个问题的方法。
 
-# Where do scripts go
+# 脚本在哪里
 
-Generally scripts go in the `scripts` folder of the install, it is on the same level as `mods`, `config` and `logs`.
+一般来说脚本放在安装目录下的`scripts`文件夹中，它与`mods`、`config`和`logs`处于同一层级。
 
-If you're having trouble finding it, you can run the `/ct scripts` command in game, and it should open the scripts folder.
+如果你找不到它，你可以在游戏中运行`/ct scripts`命令，它应该会打开脚本文件夹。
 
-A tree view of how it should look is like so:
+它应该看起来像是这样的树状图：
 
 ```plaintext
 ├── config
@@ -29,9 +29,9 @@ A tree view of how it should look is like so:
 └── scripts
 ```
 
-## Sub-Folders
+## 子文件夹
 
-Scripts inside the `scripts` folder can be in any number of sub folders, an example of this is putting scripts into folders based on the mod, here is a tree view of that:
+`scripts`文件夹内的脚本可以放在任何数量的子文件夹中，列如根据mod将脚本放入文件夹，这是一个这样做的树状图：
 
 ```plaintext
 scripts/
@@ -44,5 +44,5 @@ scripts/
         └── tags.zs
 ```
 
-That is perfectly valid and is a great way to manage script files in a large modpack!
+这是完全有效的，而且这是管理大型整合包中的脚本文件的好方法！
 
