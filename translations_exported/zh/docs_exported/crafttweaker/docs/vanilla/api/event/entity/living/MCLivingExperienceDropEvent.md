@@ -24,9 +24,9 @@ MCLivingExperienceDropEvent extends [MCLivingEvent](/vanilla/api/event/entity/MC
 
 ## 参数
 
-| 名称                       | 类型                                                           | 可获得  | 可设置   |
-| ------------------------ | ------------------------------------------------------------ | ---- | ----- |
-| attackingPlayer          | [MCPlayerEntity #MC玩家实体](/vanilla/api/entity/MCPlayerEntity) | true | false |
-| droppedExperience        | int                                                          | true | true  |
-| originalExperiencePoints | int                                                          | true | false |
+| 名称                       | 类型                                                           | 可获得  | 可设置   | 描述                      |
+| ------------------------ | ------------------------------------------------------------ | ---- | ----- | ----------------------- |
+| attackingPlayer          | [MCPlayerEntity #MC玩家实体](/vanilla/api/entity/MCPlayerEntity) | true | false | No Description Provided |
+| droppedExperience        | int                                                          | true | true  | No Description Provided |
+| originalExperiencePoints | int                                                          | true | false | No Description Provided |
 
