@@ -24,8 +24,8 @@ MCLivingAttackEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEv
 
 ## 参数
 
-| 名称     | 类型                                             | 可获得  | 可设置   |
-| ------ | ---------------------------------------------- | ---- | ----- |
-| amount | float                                          | true | false |
-| 来源     | [DamageSource](/vanilla/api/util/DamageSource) | true | false |
+| 名称     | 类型                                             | 可获得  | 可设置   | 描述                      |
+| ------ | ---------------------------------------------- | ---- | ----- | ----------------------- |
+| amount | float                                          | true | false | No Description Provided |
+| 来源     | [DamageSource](/vanilla/api/util/DamageSource) | true | false | No Description Provided |
 
