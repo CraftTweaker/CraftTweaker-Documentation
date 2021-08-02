@@ -1,7 +1,7 @@
 # Recipe Managers
 
-Recipe Managers are crafting systems (like the Crafting Table, Furnace or Camp Fire) that use the Vanilla Data Pack JSON system.  
-Most Recipe Managers have the same **removal** methods but different methods to add recipes.
+配方管理器是使用原版数据包JSON系统的制作系统（如工作台、熔炉或营火）。  
+大多数配方管理器都有相同的**移除**方法，但添加配方的方法不同。
 
 Recipe Managers are generally what you will be using to interact with recipes in the game, there are however some mods that don't use the DataPack JSON system, and for those mods you would need to add and remove recipes differently.
 
@@ -25,15 +25,15 @@ Some examples are:
 Vanilla Recipe Managers are special as they have dedicated Global Variables that allow you to reference them without using a BracketHandler.
 
 The Vanilla Recipe Managers are:
-| Recipe Manager   | Bracket Handler                                 | Global Variable |
-| ---------------- | ----------------------------------------------- | --------------- |
-| Blasting         | `<recipetype:minecraft:blasting>`         | `blastFurnace`  |
-| Campfire Cooking | `<recipetype:minecraft:campfire_cooking>` | `campfire`      |
-| Crafting         | `<recipetype:minecraft:crafting>`         | `craftingTable` |
-| Smelting         | `<recipetype:minecraft:smelting>`         | `furnace`       |
-| Smithing         | `<recipetype:minecraft:smithing>`         | `smithing`      |
-| Smoking          | `<recipetype:minecraft:smoking>`          | `smoker`        |
-| Stone Cutting    | `<recipetype:minecraft:stonecutting>`     | `stoneCutter`   |
+| Recipe Manager | Bracket Handler                                 | Global Variable |
+| -------------- | ----------------------------------------------- | --------------- |
+| 高炉             | `<recipetype:minecraft:blasting>`         | `blastFurnace`  |
+| 营火             | `<recipetype:minecraft:campfire_cooking>` | `campfire`      |
+| 工作台合成          | `<recipetype:minecraft:crafting>`         | `craftingTable` |
+| 熔炉             | `<recipetype:minecraft:smelting>`         | `furnace`       |
+| 锻造台            | `<recipetype:minecraft:smithing>`         | `smithing`      |
+| 烟熏炉            | `<recipetype:minecraft:smoking>`          | `smoker`        |
+| 切石机            | `<recipetype:minecraft:stonecutting>`     | `stoneCutter`   |
 
 The Vanilla Recipe Managers can be referenced by either their Bracket Handler or the Global Variable, for example:
 
@@ -53,7 +53,7 @@ The reason that not all Recipe Managers are given Global Variables is that there
 
 ## 方法
 
-### getRecipeByName
+:::group{name=getRecipeByName}
 
 This method gets a recipe by it's name, and returns a [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -68,8 +68,9 @@ for ingredient in craftingTable.getRecipeByName("minecraft:arrow").ingredients {
     println(ingredient.commandString);
 }
 ```
+:::
 
-### getRecipesBy输出
+:::group{name=getRecipesByOutput}
 
 This method gets a list of recipes based on their outputs, and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -80,15 +81,16 @@ getRecipesByOutput(IIngredient name);
 You could use this method to get the `ingredients` of all the recipes that output a certain item and print the `commandString` of each ingredient of each recipe.
 
 ```zenscript
-for recipe in craftingTable.getRecipeByName(<item:minecraft:stick>) {
+for recipe in craftingTable.getRecipesByOutput(<item:minecraft:stick>) {
     println("> " + recipe.id);
     for ingredient in recipe.ingredients {
         println(ingredient.commandString);
     }
 }
 ```
+:::
 
-### getAllRecipes
+:::group{name=getAllRecipes}
 
 This method gets a list of all the recipes for the Recipe Manager and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -106,8 +108,9 @@ for recipe in furnace.getAllRecipes() {
     }
 }
 ```
+:::
 
-### 删除合成表
+:::group{name=removeRecipe}
 
 This method allows you to remove recipes from this Recipe Manager by the recipe's output item.
 
@@ -127,8 +130,9 @@ Another example of this method would be removing the Diamond Ore to Diamond reci
 ```zenscript
 furnace.removeRecipe(<item:minecraft:diamond>);
 ```
+:::
 
-### removeByName
+:::group{name=removeByName}
 
 This method allows you to remove recipes from this Recipe Manager by the recipe's name.
 
@@ -142,8 +146,9 @@ An example use case for this method is removing the recipe for an Arrow from the
 ```zenscript
 craftingTable.removeByName("minecraft:arrow");
 ```
+:::
 
-### removeByModid
+:::group{name=removeByModid}
 
 This method allows you to remove recipes from this Recipe Manager based on the the recipe name's modid.  
 There is an optional parameter that is used to exclude recipes from being removed.   
@@ -171,8 +176,9 @@ craftingTable.removeByModid("minecraft", (name as string) => {
     return name == "orange_wool";
 });
 ```
+:::
 
-### removeByRegex
+:::group{name=removeByRegex}
 
 This method allows you to remove recipes from this Recipe Manager by testing the recipe's id against a regex pattern.
 
@@ -186,8 +192,9 @@ An example use case for this method is removing all recipes who's id matches `.*
 ```zenscript
 craftingTable.removeByRegex(".*wool.*");
 ```
+:::
 
-### removeAll
+:::group{name=removeAll}
 
 This method allows you to remove all the recipes from the Recipe Manager.
 
@@ -200,3 +207,4 @@ An example use case for this method is removing all the Blast Furnace recipes.
 ```zenscript
 blastFurnace.removeAll();
 ```
+:::
