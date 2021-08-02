@@ -12,14 +12,14 @@ import crafttweaker.api.mods.ModInfo;
 
 ## 参数
 
-| 名称          | 类型                                                                                | 可获得  | 可设置   |
-| ----------- | --------------------------------------------------------------------------------- | ---- | ----- |
-| blocks      | stdlib.List&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;             | true | false |
-| displayName | string                                                                            | true | false |
-| 实体类型        | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
-| fluids      | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt;              | true | false |
-| items       | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;        | true | false |
-| modid       | string                                                                            | true | false |
-| 命名空间        | string                                                                            | true | false |
-| version     | string                                                                            | true | false |
+| 名称          | 类型                                                                                | 可获得  | 可设置   | 描述                                                                                                                                                                                                          |
+| ----------- | --------------------------------------------------------------------------------- | ---- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blocks      | stdlib.List&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;              | true | false | Finds all blocks registered for that mod.                                                                                                                                                                   |
+| displayName | string                                                                            | true | false | Gets the display name of the mod                                                                                                                                                                            |
+| 实体类型        | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false | Finds all EntityTypes registered for that mod                                                                                                                                                               |
+| fluids      | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt;              | true | false | Finds all EntityTypes registered for that mod                                                                                                                                                               |
+| items       | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;        | true | false | Gets all known items from that mod <br />   <br />  Does not take "sub items" into account! <br />  That means, that it will e.g. find an enchanted book, but without tags, and only one! |
+| modid       | string                                                                            | true | false | Gets the modid of the mod                                                                                                                                                                                   |
+| 命名空间        | string                                                                            | true | false | Gets the namespace of the mod                                                                                                                                                                               |
+| version     | string                                                                            | true | false | Gets the version of the mod                                                                                                                                                                                 |
 
