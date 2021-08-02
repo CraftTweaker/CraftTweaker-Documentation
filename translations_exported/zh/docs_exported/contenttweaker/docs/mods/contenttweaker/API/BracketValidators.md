@@ -10,16 +10,20 @@ import mods.contenttweaker.api.BracketValidators;
 ```
 
 
-## 方法
+## Static Methods
 
-### validateItemGroupBracket
+:::group{name=validateItemGroupBracket}
 
 Return Type: boolean
 
 ```zenscript
 BracketValidators.validateItemGroupBracket(tokens as string) as boolean
 ```
+
 | 参数     | 类型     | 描述                      |
 | ------ | ------ | ----------------------- |
 | tokens | string | No Description Provided |
+
+
+:::
 
