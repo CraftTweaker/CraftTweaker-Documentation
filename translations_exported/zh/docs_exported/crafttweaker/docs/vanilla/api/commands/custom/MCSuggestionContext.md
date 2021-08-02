@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCSuggestionContext;
 
 ## 方法
 
-### equals #等于
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,51 +29,65 @@ MCSuggestionContext.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### 获取父项
+:::
+
+:::group{name=getParent}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCSuggestionContext.getParent() as MCCommandNode
+// MCSuggestionContext.getParent() as MCCommandNode
+
 myMCSuggestionContext.getParent();
 ```
 
-### getStartPos
+:::
+
+:::group{name=getStartPos}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.getStartPos() as int
+// MCSuggestionContext.getStartPos() as int
+
 myMCSuggestionContext.getStartPos();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.hashCode() as int
+// MCSuggestionContext.hashCode() as int
+
 myMCSuggestionContext.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestionContext.toString() as string
+// MCSuggestionContext.toString() as string
+
 myMCSuggestionContext.toString();
 ```
+
+:::
 
 
 ## 运算符
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionContext == o 为对象
 ```
 
-
+:::
 
 
