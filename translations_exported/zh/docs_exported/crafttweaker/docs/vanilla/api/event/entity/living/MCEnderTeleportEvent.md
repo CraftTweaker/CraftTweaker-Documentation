@@ -24,10 +24,10 @@ MCEnderTeleportEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingE
 
 ## 参数
 
-| 名称           | 类型     | 可获得  | 可设置  |
-| ------------ | ------ | ---- | ---- |
-| attackDamage | float  | true | true |
-| targetX      | double | true | true |
-| targetY      | double | true | true |
-| targetZ      | double | true | true |
+| 名称           | 类型     | 可获得  | 可设置  | 描述                      |
+| ------------ | ------ | ---- | ---- | ----------------------- |
+| attackDamage | float  | true | true | No Description Provided |
+| targetX      | double | true | true | No Description Provided |
+| targetY      | double | true | true | No Description Provided |
+| targetZ      | double | true | true | No Description Provided |
 
