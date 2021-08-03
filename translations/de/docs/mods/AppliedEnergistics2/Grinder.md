@@ -1,8 +1,8 @@
 ::requiredMod[Applied Energistics 2]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2 requiredMod=AppliedEnergisticsTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/appliedenergisticstweaker}
 
-# Applied Energistics 2 Grinder
+# Applied Energistics 2 Quarzmühlstein
 
-The Grinder is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Quarzmühlstein ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie beispielsweise `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
