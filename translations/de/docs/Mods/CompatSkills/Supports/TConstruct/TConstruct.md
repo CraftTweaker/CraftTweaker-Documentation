@@ -4,7 +4,7 @@
 
 As of CompatSkills 1.9.0, TConstruct Locks now pass "up" to item-level. That way the tools are still inaccessible if a friend provides a crafted version.
 
-## Commands
+## Befehle
 
     // Dumps all Materials
     ~ /ct tinkermaterials
