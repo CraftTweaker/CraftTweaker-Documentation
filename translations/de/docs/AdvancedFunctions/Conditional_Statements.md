@@ -118,10 +118,10 @@ Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 | Logisches AND       | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
 | Logisches OR        | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
 | Bitweises XOR       | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
-| Bitwise AND         | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
-| Bitwise OR          | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
+| Bitweises AND       | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitweises OR        | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
 
-### Difference between `|` and `||` (and `&` and `&&`)
+### Unterschied zwischen `|` und `||` (sowie zwischen `&` und `&&`)
 
 The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
 
