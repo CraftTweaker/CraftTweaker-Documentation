@@ -9,15 +9,15 @@ Bevor wir beginnen, hier sind ein paar wichtige Begriffe, die man kennen sollte:
 
 ## ZenGetter
 
-Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat einen ZenGetter mit dem Namen "displayName".  
-So verwendet man einen ZenGetter:
+Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Zum Beispiel hat [IItemStack](/Vanilla/Items/IItemStack/) einen ZenGetter namens "displayName".  
+Wir verwenden einen ZenGetter wie folgt:
 
 ```zenscript
 //objekt.zenGetter;
 <minecraft:iron_ingot>.displayName;
 ```
 
-Ein ZenGetter wird immer etwas zurückliefern, in diesem Fall eine Zeichenkette ("String"), welche den Namen des Items enthält ("Iron Ingot").
+Ein ZenGetter gibt immer etwas zurück, in diesem Fall eine Zeichenkette mit dem Namen des Gegenstands ("Iron Ingot").
 
 ## ZenSetter
 
