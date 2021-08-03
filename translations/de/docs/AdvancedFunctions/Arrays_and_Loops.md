@@ -1,6 +1,6 @@
 # Arrays
 
-Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
+Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthält.
 
 ## Ein Array erstellen
 
