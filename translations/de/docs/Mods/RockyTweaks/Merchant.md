@@ -1,6 +1,6 @@
 # Merchant
 
-## Commands
+## Befehle
 
 The following commands are added to retrieve information about the availible merchant professions & carrers:
 
