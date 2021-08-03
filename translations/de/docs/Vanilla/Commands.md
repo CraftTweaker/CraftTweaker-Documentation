@@ -1,4 +1,4 @@
-# Commands
+# Befehle
 
 CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
