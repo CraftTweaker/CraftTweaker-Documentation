@@ -1,7 +1,7 @@
 # Inhalt dieses Wikis
 
-Dieses Wiki soll einen kleinen Überblick darüber geben, wie man die verschiedenen Funktionen von CraftTweaker nutzt.  
-Um alles möglichst anschaulich darzustellen, sind oft kleinere Beispiele vorhanden.
+Dieses Wiki soll einen kurzen Überblick darüber geben, wie man die verschiedenen Funktionen von CraftTweaker nutzt.  
+Um alles möglichst anschaulich darzustellen, sind oft Beispiele vorhanden.
 
 # Begriffe
 
