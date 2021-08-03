@@ -33,7 +33,7 @@ print("Hallo" ~ " " ~ "Welt");
 
 ## Ergebnisse von Berechnungen
 
-Naja, Berechnungen spucken ja Ergebnisse aus. Was macht man nun damit?
+Eine Berechnung führt in der Regel zu einem Ergebnis. Was macht man nun damit?
 
 ### Einer Variable zuweisen
 
