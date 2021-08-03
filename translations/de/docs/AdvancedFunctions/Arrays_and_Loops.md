@@ -25,9 +25,9 @@ Wenn du nun denkst "warte hab ich diese Klammern schon mal gesehen?", das hast d
 ## Arrays casten
 
 Vielleicht hast du gemerkt, dass hinter den Arrays oben immer ein `as` stand.  
-Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Objekte im Array sind. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
+Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Objekte im Array sind. Dies kann die Ursache für seltsame Konvertierungsfehler sein!  
+Gehe auf Nummer sicher und weise den Arrays die richtigen Typen zu!  
+Wenn Sie auf nicht-primitive Typen casten (alles außer Strings, ints und dergleichen), stellen Sie sicher, dass Sie das entsprechende Paket am ANFANG Ihres Skripts [importieren](/AdvancedFunctions/Import/):
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Verschachtelte Arrays
 
-You can place Arrays in Arrays.
+Du kannst Arrays in Arrays packen.
 
 ```zenscript
 val stringArray1 = ["Hallo","Welt"] as string[];
@@ -47,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!
 
 ## Auf Elemente innerhalb eines Arrays zugreifen
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Sie können auf ein Element innerhalb eines Arrays zugreifen, indem Sie dessen Platz in der Liste verwenden. Das erste Element hat den Index 0, das zweite den Index 1 und so weiter.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Wenn Sie auf ein Element in einem verschachtelten Array verweisen möchten, benötigen Sie zwei oder mehr Verweise, da jeder Verweis eine Ebene der Listen entfernt.
 
 ```zenscript
 /*
@@ -87,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Schleifen
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Eine Schleife ist eine Funktion, die sich selbst wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente in einem Array anzuwenden.
 
 ## For-Schleifen
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Die For-Schleife wird meistens dazu verwendet, um durch alle Elemente eines Arrays zu iterieren. Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
+Sie können das Schlüsselwort `break` verwenden, um die Schleife vorzeitig zu beenden.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -137,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## While-Schleife
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Die while-Schleife wird so lange ausgeführt, bis die gegebene Bedingung nicht mehr `true` (wahr) ist.  
+Alternativ kannst du die while-Schleife auch mit dem Schlüsselwort `break` vorzeitig beenden.
 
 ```zenscript
 var i = 0; 
@@ -172,9 +172,9 @@ for k in 1 .. 10 {
 
 # Elemente in ein Array hinzufügen
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Auch wenn es nicht empfehlenswert ist, kann man nachträglich Elemente an ein Array anhängen.  
+Man kann nur einzelne Elemente an ein Array anhängen, zwei Arrays addieren ist nicht möglich.  
+Dazu kannst du den Operator `+` verwenden:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
