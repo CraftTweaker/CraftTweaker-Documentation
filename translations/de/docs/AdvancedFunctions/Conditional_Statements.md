@@ -4,13 +4,13 @@ Manche Codezeilen sollten nur ausgeführt werden, wenn bestimmte Kriterien erfü
 
 ## If (Wenn)
 
-Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
+Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. **Vorsicht, du brauchst ZWEI GLEICHHEITSZEICHEN, wenn du Werte vergleichst! (Das liegt daran, dass ein Gleichheitszeichen für die Deklaration von Werten reserviert ist!)**
 
 ```zenscript
 val test = 0;
 
 if (test == 0) { //true
-    print("Test is zero!");
+    print("Test ist Null!");
 }
 ```
 
@@ -22,20 +22,20 @@ Ein Else-Statement kann an eine If-Abfrage angehängt werden und wird ausgeführ
 var test = 0;
 
 if (test == 0) { //true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+    //wird ausgeführt, falls test gleich 0 ist
+    print("Test ist Null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //wird ausgeführt, falls test ungleich 0 ist
+    print("Test ist NICHT Null!");
 }
 
 test = 1;
 if (test == 0) { //false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+    //wird ausgeführt, falls test gleich 0 ist
+    print("Jetzt ist test gleich Null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //wird ausgeführt, falls test ungleich 0 ist
+    print("Jetzt ist test NICHT gleich Null!");
 }
 
 ```
@@ -44,7 +44,7 @@ if (test == 0) { //false
 
 Berechnungen: `+`,`-`,`*`,`/`,`mod`,`verkettung(~)`
 
-Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
+Unterstützte Operatoren sind `Logisches OR(||)`, `Logisches AND(&&)`, `Bitweises OR(|)`, `Bitweises AND(&)`, und `Bitweises XOR(^).`
 
 ```zenscript
 //You can check for:
@@ -113,11 +113,11 @@ Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 | Gleich              | `==`         | Prüft, ob der Wert davor und danach gleich ist                                                                                                                               | 1 == 1            |
 | Größer als          | `>`       | Prüft, ob der Wert davor größer ist als der Wert danach                                                                                                                      | 2 > 1             |
 | Größer oder gleich  | `>=`      | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                                                                                     | 1 >= 1            |
-| Lesser than         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                                                                                     | 1 < 2             |
+| Kleiner als         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                                                                                     | 1 < 2             |
 | Kleiner oder gleich | `<=`      | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                                                                                                   | 1 <= 1            |
-| Logical AND         | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
-| Logical OR          | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
-| Bitwise XOR         | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Logisches AND       | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
+| Logisches OR        | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
+| Bitweises XOR       | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
 | Bitwise AND         | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
 | Bitwise OR          | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
 
