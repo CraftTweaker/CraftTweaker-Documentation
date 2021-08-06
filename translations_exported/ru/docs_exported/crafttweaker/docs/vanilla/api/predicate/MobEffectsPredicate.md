@@ -20,12 +20,13 @@ MobEffectsPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api
 
 ## Methods
 
-### withEffect
+:::group{name=withEffect}
 
 Adds an [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) to the ones that should be present on the entity, along with the [EffectData](/vanilla/api/predicate/EffectData) it should have.
 
  If the same effect had already been added to the map with a different set of effect data, then the previous configuration is replaced. Otherwise the addition completes normally.
 
+Returns: This predicate for chaining.  
 Return Type: [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate)
 
 ```zenscript
@@ -37,5 +38,7 @@ MobEffectsPredicate.withEffect(effect as MCPotionEffect, builder as Consumer<Eff
 | effect      | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)                       | The effect that should be present on the entity.                                                  |
 | конструктор | Consumer&lt;[EffectData](/vanilla/api/predicate/EffectData)&gt; | A consumer to configure the [EffectData](/vanilla/api/predicate/EffectData) for the given effect. |
 
+
+:::
 
 
