@@ -21,7 +21,8 @@ import crafttweaker.api.commands.custom.MCArgumentBuilder;
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCArgumentBuilder.build() as MCCommandNode
+// MCArgumentBuilder.build() as MCCommandNode
+
 myMCArgumentBuilder.build();
 ```
 
@@ -95,7 +96,8 @@ MCArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifie
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
+// MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
+
 myMCArgumentBuilder.getArguments();
 ```
 
@@ -106,7 +108,8 @@ myMCArgumentBuilder.getArguments();
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCArgumentBuilder.getCommand() as MCCommand
+// MCArgumentBuilder.getCommand() as MCCommand
+
 myMCArgumentBuilder.getCommand();
 ```
 
@@ -117,7 +120,8 @@ myMCArgumentBuilder.getCommand();
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCArgumentBuilder.getRedirect() as MCCommandNode
+// MCArgumentBuilder.getRedirect() as MCCommandNode
+
 myMCArgumentBuilder.getRedirect();
 ```
 
@@ -128,7 +132,8 @@ myMCArgumentBuilder.getRedirect();
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+// MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+
 myMCArgumentBuilder.getRedirectModifier();
 ```
 
@@ -139,7 +144,8 @@ myMCArgumentBuilder.getRedirectModifier();
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+// MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+
 myMCArgumentBuilder.getRequirement();
 ```
 
@@ -150,7 +156,8 @@ myMCArgumentBuilder.getRequirement();
 Return Type: int
 
 ```zenscript
-MCArgumentBuilder.hashCode() as int
+// MCArgumentBuilder.hashCode() as int
+
 myMCArgumentBuilder.hashCode();
 ```
 
@@ -161,7 +168,8 @@ myMCArgumentBuilder.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCArgumentBuilder.isFork() as boolean
+// MCArgumentBuilder.isFork() as boolean
+
 myMCArgumentBuilder.isFork();
 ```
 
@@ -248,7 +256,8 @@ MCArgumentBuilder.then(argument as MCCommandNode) as MCArgumentBuilder
 Return Type: string
 
 ```zenscript
-MCArgumentBuilder.toString() as string
+// MCArgumentBuilder.toString() as string
+
 myMCArgumentBuilder.toString();
 ```
 
