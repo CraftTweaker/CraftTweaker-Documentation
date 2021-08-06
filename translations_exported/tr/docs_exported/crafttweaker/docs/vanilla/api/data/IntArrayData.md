@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new IntArrayData(internal as int[]) as IntArrayData
 ```
-
 | Parameter | Type  | Description             |
 | --------- | ----- | ----------------------- |
 | internal  | int[] | No Description Provided |
@@ -37,43 +36,55 @@ new IntArrayData(internal as int[]) as IntArrayData
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-IntArrayData.asCollection() as ICollectionData
+// IntArrayData.asCollection() as ICollectionData
+
 [4, 128, 256, 1024].asCollection();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-IntArrayData.asMap() as IData[string]
+// IntArrayData.asMap() as IData[string]
+
 [4, 128, 256, 1024].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-IntArrayData.asNumber() as INumberData
+// IntArrayData.asNumber() as INumberData
+
 [4, 128, 256, 1024].asNumber();
 ```
 
-### contains
+:::
+
+:::group{name=contains}
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
+Returns: true if the given IData is contained in this IData  
 Return Type: boolean
 
 ```zenscript
-IntArrayData.contains(data as IData) as boolean
+// IntArrayData.contains(data as IData) as boolean
+
 [4, 128, 256, 1024].contains("Display");
 ```
 
@@ -82,28 +93,38 @@ IntArrayData.contains(data as IData) as boolean
 | data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-IntArrayData.getId() as byte
+// IntArrayData.getId() as byte
+
 [4, 128, 256, 1024].getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-IntArrayData.getString() as string
+// IntArrayData.getString() as string
+
 [4, 128, 256, 1024].getString();
 ```
+
+:::
 
 
