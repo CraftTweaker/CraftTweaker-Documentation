@@ -24,10 +24,10 @@ MCLivingDropsEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEve
 
 ## Свойства
 
-| Название     | Тип                                                                       | Имеет Getter | Имеет Setter |
-| ------------ | ------------------------------------------------------------------------- | ------------ | ------------ |
-| drops        | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true         | false        |
-| lootingLevel | int                                                                       | true         | false        |
-| recentlyHit  | boolean                                                                   | true         | false        |
-| источник     | [DamageSource](/vanilla/api/util/DamageSource)                            | true         | false        |
+| Название     | Тип                                                                       | Имеет Getter | Имеет Setter | Description             |
+| ------------ | ------------------------------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| drops        | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true         | false        | No Description Provided |
+| lootingLevel | int                                                                       | true         | false        | No Description Provided |
+| recentlyHit  | boolean                                                                   | true         | false        | No Description Provided |
+| источник     | [DamageSource](/vanilla/api/util/DamageSource)                            | true         | false        | No Description Provided |
 
