@@ -1,6 +1,8 @@
 # Stos przedmiotów
 
-This is the vanilla ItemStack. It is recommended that you use [IItemStack](/vanilla/api/items/IItemStack) whenever possible <p> They can be cast from each other, though.
+This is the vanilla ItemStack. It is recommended that you use [IItemStack](/vanilla/api/items/IItemStack) whenever possible
+
+ They can be cast from each other, though.
 
 ## Importing the class
 
@@ -19,33 +21,42 @@ import crafttweaker.api.item.ItemStack;
 
 ## Methods
 
-### asIIngredient
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-ItemStack.asIIngredient() as IIngredient
+// ItemStack.asIIngredient() as IIngredient
+
 myItemStack.asIIngredient();
 ```
 
-### asIItemStack
+:::
+
+:::group{name=asIItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-ItemStack.asIItemStack() as IItemStack
+// ItemStack.asIItemStack() as IItemStack
+
 myItemStack.asIItemStack();
 ```
 
-### print
+:::
+
+:::group{name=print}
 
 Debug method, expect this to be removed anytime!
 
 Return Type: void
 
 ```zenscript
-ItemStack.print() as void
+// ItemStack.print() as void
+
 myItemStack.print();
 ```
+
+:::
 
 
