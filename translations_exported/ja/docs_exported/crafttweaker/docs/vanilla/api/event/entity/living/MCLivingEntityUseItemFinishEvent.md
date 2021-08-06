@@ -24,7 +24,7 @@ MCLivingEntityUseItemFinishEvent extends [MCLivingEntityUseItemEvent](/vanilla/a
 
 ## Properties
 
-| 名称          | Type                                        | Has Getter | Has Setter |
-| ----------- | ------------------------------------------- | ---------- | ---------- |
-| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true       | true       |
+| 名称          | Type                                        | Has Getter | Has Setter | Description             |
+| ----------- | ------------------------------------------- | ---------- | ---------- | ----------------------- |
+| resultStack | [IItemStack](/vanilla/api/items/IItemStack) | true       | true       | No Description Provided |
 
