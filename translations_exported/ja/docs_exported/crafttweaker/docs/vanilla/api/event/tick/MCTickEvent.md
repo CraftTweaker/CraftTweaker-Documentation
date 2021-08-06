@@ -18,79 +18,100 @@ MCTickEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all method
 
 ## Methods
 
-### getPhase
+:::group{name=getPhase}
 
 Return Type: string
 
 ```zenscript
-MCTickEvent.getPhase() as string
+// MCTickEvent.getPhase() as string
+
 myMCTickEvent.getPhase();
 ```
 
-### getSide
+:::
+
+:::group{name=getSide}
 
 Return Type: string
 
 ```zenscript
-MCTickEvent.getSide() as string
+// MCTickEvent.getSide() as string
+
 myMCTickEvent.getSide();
 ```
 
-### getType
+:::
+
+:::group{name=getType}
 
 Return Type: string
 
 ```zenscript
-MCTickEvent.getType() as string
+// MCTickEvent.getType() as string
+
 myMCTickEvent.getType();
 ```
 
-### isClient
+:::
+
+:::group{name=isClient}
 
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isClient() as boolean
+// MCTickEvent.isClient() as boolean
+
 myMCTickEvent.isClient();
 ```
 
-### isEnd
+:::
+
+:::group{name=isEnd}
 
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isEnd() as boolean
+// MCTickEvent.isEnd() as boolean
+
 myMCTickEvent.isEnd();
 ```
 
-### isServer
+:::
+
+:::group{name=isServer}
 
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isServer() as boolean
+// MCTickEvent.isServer() as boolean
+
 myMCTickEvent.isServer();
 ```
 
-### isStart
+:::
+
+:::group{name=isStart}
 
 Return Type: boolean
 
 ```zenscript
-MCTickEvent.isStart() as boolean
+// MCTickEvent.isStart() as boolean
+
 myMCTickEvent.isStart();
 ```
+
+:::
 
 
 ## Properties
 
-| 名称     | Type     | Has Getter | Has Setter |
-| ------ | -------- | ---------- | ---------- |
-| client | boolean型 | true       | false      |
-| 終了     | boolean型 | true       | false      |
-| phase  | string   | true       | false      |
-| server | boolean型 | true       | false      |
-| side   | string   | true       | false      |
-| 開始     | boolean型 | true       | false      |
-| type   | string   | true       | false      |
+| 名称     | Type     | Has Getter | Has Setter | Description             |
+| ------ | -------- | ---------- | ---------- | ----------------------- |
+| client | boolean型 | true       | false      | No Description Provided |
+| 終了     | boolean型 | true       | false      | No Description Provided |
+| phase  | string   | true       | false      | No Description Provided |
+| server | boolean型 | true       | false      | No Description Provided |
+| side   | string   | true       | false      | No Description Provided |
+| 開始     | boolean型 | true       | false      | No Description Provided |
+| type   | string   | true       | false      | No Description Provided |
 
