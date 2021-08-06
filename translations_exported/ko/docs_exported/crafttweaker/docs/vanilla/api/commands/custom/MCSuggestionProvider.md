@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder,MCSuggestions>) as MCSuggestionProvider
 ```
-
 | Parameter | Type                                                                                                                                                                                                                                  | Description             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | fun       | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
@@ -23,13 +22,13 @@ new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,7 +41,9 @@ MCSuggestionProvider.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getSuggestions
+:::
+
+:::group{name=getSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -56,33 +57,41 @@ MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSu
 | builder   | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionProvider.hashCode() as int
+// MCSuggestionProvider.hashCode() as int
+
 myMCSuggestionProvider.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestionProvider.toString() as string
+// MCSuggestionProvider.toString() as string
+
 myMCSuggestionProvider.toString();
 ```
+
+:::
 
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionProvider == o as Object
 ```
 
-
+:::
 
 
