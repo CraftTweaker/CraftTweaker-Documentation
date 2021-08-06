@@ -24,21 +24,24 @@ MCRightClickBlockEvent extends [MCPlayerInteractEvent](/vanilla/api/event/entity
 
 ## 方法
 
-### getFace
+:::group{name=getFace}
 
 The face of the block that was clicked Unlike in [MCPlayerInteractEvent](/vanilla/api/event/entity/player/interact/MCPlayerInteractEvent) this is known not to be null
 
 Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-MCRightClickBlockEvent.getFace() as Direction
+// MCRightClickBlockEvent.getFace() as Direction
+
 myMCRightClickBlockEvent.getFace();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称   | 类型                                       | 可获得  | 可设置   |
-| ---- | ---------------------------------------- | ---- | ----- |
-| face | [Direction](/vanilla/api/util/Direction) | true | false |
+| 名称   | 类型                                       | 可获得  | 可设置   | 描述                                                                                                                                                                                   |
+| ---- | ---------------------------------------- | ---- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| face | [Direction](/vanilla/api/util/Direction) | true | false | The face of the block that was clicked <br />  Unlike in [MCPlayerInteractEvent](/vanilla/api/event/entity/player/interact/MCPlayerInteractEvent) this is known not to be null |
 
