@@ -19,7 +19,6 @@ MCResourceLocation implements the following interfaces. That means all methods d
 ```zenscript
 new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
-
 | Parameter | Type   | Description                                                          |
 | --------- | ------ | -------------------------------------------------------------------- |
 | namespace | string | Usually a ModId                                                      |
@@ -36,16 +35,19 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 
 ## Methods
 
-### asData
+:::group{name=asData}
 
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MCResourceLocation.asData() as IData
+// MCResourceLocation.asData() as IData
+
 myMCResourceLocation.asData();
 ```
 
-### compareTo
+:::
+
+:::group{name=compareTo}
 
 Return Type: int
 
@@ -58,7 +60,9 @@ MCResourceLocation.compareTo(other as MCResourceLocation) as int
 | other     | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -71,48 +75,62 @@ MCResourceLocation.equals(other as Object) as boolean
 | other     | Object | No Description Provided |
 
 
-### getNamespace
+:::
+
+:::group{name=getNamespace}
 
 Return Type: string
 
 ```zenscript
-MCResourceLocation.getNamespace() as string
+// MCResourceLocation.getNamespace() as string
+
 myMCResourceLocation.getNamespace();
 ```
 
-### getPath
+:::
+
+:::group{name=getPath}
 
 Return Type: string
 
 ```zenscript
-MCResourceLocation.getPath() as string
+// MCResourceLocation.getPath() as string
+
 myMCResourceLocation.getPath();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCResourceLocation.hashCode() as int
+// MCResourceLocation.hashCode() as int
+
 myMCResourceLocation.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCResourceLocation.toString() as string
+// MCResourceLocation.toString() as string
+
 myMCResourceLocation.toString();
 ```
+
+:::
 
 
 ## Properties
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | string | true       | false      |
-| namespace     | string | true       | false      |
-| path          | string | true       | false      |
+| Name          | Type   | Has Getter | Has Setter | Description             |
+| ------------- | ------ | ---------- | ---------- | ----------------------- |
+| commandString | string | true       | false      | No Description Provided |
+| namespace     | string | true       | false      | No Description Provided |
+| path          | string | true       | false      | No Description Provided |
 
