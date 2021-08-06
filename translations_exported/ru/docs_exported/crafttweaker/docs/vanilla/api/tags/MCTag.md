@@ -1,6 +1,8 @@
 # MCTag&LT;T : Object&GT;
 
-A reference to a Tag object. Note that this tag may not exist in the game already, such as when you create new tags. See the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;#exists() Method on whether or not this tag already exists. <p> A tag will be created as soon as you add
+A reference to a Tag object. Note that this tag may not exist in the game already, such as when you create new tags. See the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;#exists() Method on whether or not this tag already exists.
+
+ A tag will be created as soon as you add
 
 ## Импорт класса
 
@@ -48,7 +50,8 @@ Adds the given items to the tag. Creates the tag if it does not exist.
 Return Type: void
 
 ```zenscript
-MCTag.add(items as T[]) as void
+// MCTag.add(items as T[]) as void
+
 <tag:items:forge:gems>.add(<item:minecraft:bedrock>);
 <tag:items:forge:gems>.add(<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>);
 <tag:items:forge:gems>.add([<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]);
@@ -68,7 +71,8 @@ Adds the given tag to this tag. Creates the tag if it does not exist.
 Return Type: void
 
 ```zenscript
-MCTag.add(tag as MCTag<T>) as void
+// MCTag.add(tag as MCTag<T>) as void
+
 <tag:items:forge:gems>.add(<tag:items:forge:rods>);
 ```
 
@@ -84,7 +88,8 @@ MCTag.add(tag as MCTag<T>) as void
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
 ```zenscript
-MCTag.asTagWithAmount() as MCTagWithAmount<T>
+// MCTag.asTagWithAmount() as MCTagWithAmount<T>
+
 <tag:items:forge:gems>.asTagWithAmount();
 ```
 
@@ -110,7 +115,8 @@ MCTag.contains(element as T) as boolean
 Return Type: boolean
 
 ```zenscript
-MCTag.exists() as boolean
+// MCTag.exists() as boolean
+
 <tag:items:forge:gems>.exists();
 ```
 
@@ -121,7 +127,8 @@ MCTag.exists() as boolean
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-MCTag.getElements() as stdlib.List<T>
+// MCTag.getElements() as stdlib.List<T>
+
 <tag:items:forge:gems>.getElements();
 ```
 
@@ -132,7 +139,8 @@ MCTag.getElements() as stdlib.List<T>
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-MCTag.getId() as MCResourceLocation
+// MCTag.getId() as MCResourceLocation
+
 <tag:items:forge:gems>.getId();
 ```
 
@@ -143,7 +151,8 @@ MCTag.getId() as MCResourceLocation
 Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 
 ```zenscript
-MCTag.getManager() as TagManager<T>
+// MCTag.getManager() as TagManager<T>
+
 <tag:items:forge:gems>.getManager();
 ```
 
@@ -239,10 +248,10 @@ myMCTag * amount as int
 
 ## Свойства
 
-| Название | Тип                                                                      | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------------------------------------------ | ------------ | ------------ |
-| elements | stdlib.List&lt;T&gt;                                         | true         | false        |
-| exists   | boolean                                                                  | true         | false        |
-| id       | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation) | true         | false        |
-| manager  | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;          | true         | false        |
+| Название | Тип                                                                      | Имеет Getter | Имеет Setter | Description             |
+| -------- | ------------------------------------------------------------------------ | ------------ | ------------ | ----------------------- |
+| elements | stdlib.List&lt;T&gt;                                         | true         | false        | No Description Provided |
+| exists   | boolean                                                                  | true         | false        | No Description Provided |
+| id       | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation) | true         | false        | No Description Provided |
+| manager  | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;          | true         | false        | No Description Provided |
 
