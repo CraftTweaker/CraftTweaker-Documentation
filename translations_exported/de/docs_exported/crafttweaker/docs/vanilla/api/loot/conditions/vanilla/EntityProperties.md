@@ -23,7 +23,7 @@ EntityProperties implements the following interfaces. That means all methods def
 
 ## Methoden
 
-### withPredicate
+:::group{name=withPredicate}
 
 Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) that will be matched against the targeted entity.
 
@@ -31,6 +31,7 @@ Creates and sets the [EntityPredicate](/vanilla/api/predicate/EntityPredicate) t
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityProperties](/vanilla/api/loot/conditions/vanilla/EntityProperties)
 
 ```zenscript
@@ -42,7 +43,9 @@ EntityProperties.withPredicate(builder as Consumer<EntityPredicate>) as EntityPr
 | bauer     | Consumer&lt;[EntityPredicate](/vanilla/api/predicate/EntityPredicate)&gt; | A consumer that will be used to configure the [EntityPredicate](/vanilla/api/predicate/EntityPredicate). |
 
 
-### withTargetedEntity
+:::
+
+:::group{name=withTargetedEntity}
 
 Sets the entity that should be targeted by the loot condition.
 
@@ -50,6 +53,7 @@ Sets the entity that should be targeted by the loot condition.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [EntityProperties](/vanilla/api/loot/conditions/vanilla/EntityProperties)
 
 ```zenscript
@@ -60,5 +64,7 @@ EntityProperties.withTargetedEntity(entity as TargetedEntity) as EntityPropertie
 | --------- | ------------------------------------------------------- | ----------------------------------- |
 | entity    | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | The entity that should be targeted. |
 
+
+:::
 
 
