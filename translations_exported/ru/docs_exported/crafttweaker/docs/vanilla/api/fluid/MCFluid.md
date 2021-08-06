@@ -10,14 +10,16 @@ import crafttweaker.api.fluid.MCFluid;
 
 ## Methods
 
-### makeStack
+:::group{name=makeStack}
 
 Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amount of fluid.
 
+Returns: a new (immutable) [IFluidStack](/vanilla/api/fluid/IFluidStack)  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-MCFluid.makeStack(amount as int) as IFluidStack
+// MCFluid.makeStack(amount as int) as IFluidStack
+
 myMCFluid.makeStack(1000);
 ```
 
@@ -26,10 +28,12 @@ myMCFluid.makeStack(1000);
 | amount   | int | No Description Provided |
 
 
+:::
+
 
 ## Свойства
 
-| Название      | Тип    | Имеет Getter | Имеет Setter |
-| ------------- | ------ | ------------ | ------------ |
-| commandString | string | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter | Description             |
+| ------------- | ------ | ------------ | ------------ | ----------------------- |
+| commandString | string | true         | false        | No Description Provided |
 
