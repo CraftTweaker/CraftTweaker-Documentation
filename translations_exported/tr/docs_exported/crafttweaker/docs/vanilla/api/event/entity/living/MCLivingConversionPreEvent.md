@@ -20,7 +20,7 @@ import crafttweaker.api.event.living.MCLivingConversionPreEvent;
 
 ## Methods
 
-### setConversionTimer
+:::group{name=setConversionTimer}
 
 Sets the conversion timer, by changing this it prevents the event being triggered every tick Do note the timer of some of the entities are increments, but some of them are decrements Not every conversion is applicable for this
 
@@ -35,10 +35,12 @@ MCLivingConversionPreEvent.setConversionTimer(ticks as int) as void
 | ticks     | int  | No Description Provided |
 
 
+:::
+
 
 ## Properties
 
-| Name    | Type                                               | Has Getter | Has Setter |
-| ------- | -------------------------------------------------- | ---------- | ---------- |
-| outcome | [MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
+| Name    | Type                                               | Has Getter | Has Setter | Description             |
+| ------- | -------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| outcome | [MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      | No Description Provided |
 
