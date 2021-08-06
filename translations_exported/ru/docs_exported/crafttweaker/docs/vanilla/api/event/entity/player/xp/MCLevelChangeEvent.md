@@ -20,7 +20,7 @@ import crafttweaker.api.event.entity.player.xp.MCLevelChangeEvent;
 
 ## Свойства
 
-| Название | Тип | Имеет Getter | Имеет Setter |
-| -------- | --- | ------------ | ------------ |
-| levels   | int | true         | true         |
+| Название | Тип | Имеет Getter | Имеет Setter | Description                                                            |
+| -------- | --- | ------------ | ------------ | ---------------------------------------------------------------------- |
+| levels   | int | true         | true         | Gets the amount of levels that the player's level is being changed by. |
 
