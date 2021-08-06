@@ -19,7 +19,9 @@ Adds a Villager Trade for emeralds for an Item. An example being, giving a villa
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
 | Parameter     | Type                                                               | Description                                                         | Optional | DefaultValue |
@@ -27,10 +29,11 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.                           | false    |              |
 | villagerLevel | int                                                                | The level the Villager needs to be.                                 | false    |              |
 | emeralds      | int                                                                | The amount of Emeralds.                                             | false    |              |
-| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What Itemstack is being sold (by the Villager).                     | false    |              |
+| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What ItemStack is being sold (by the Villager).                     | false    |              |
 | maxTrades     | int                                                                | How many times can this trade be done.                              | false    |              |
 | xp            | int                                                                | How much Experience is given by trading.                            | false    |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true     | 1.0          |
+
 
 :::
 
@@ -41,18 +44,21 @@ Adds a Villager Trade for an Item for an Item. An example being, giving a villag
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:dirt> * 16, <item:minecraft:diamond>, 5, 2, 0.05);
 ```
 
 | Parameter     | Type                                                               | Description                                                         | Optional | DefaultValue |
 | ------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- | -------- | ------------ |
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.                           | false    |              |
 | villagerLevel | int                                                                | The level the Villager needs to be.                                 | false    |              |
-| input1        | [ItemStack](/vanilla/api/item/ItemStack)                           | The Itemstack that is being given to the Villager.                  | false    |              |
-| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What Itemstack is being sold (by the Villager).                     | false    |              |
+| input1        | [ItemStack](/vanilla/api/item/ItemStack)                           | The ItemStack that is being given to the Villager.                  | false    |              |
+| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What ItemStack is being sold (by the Villager).                     | false    |              |
 | maxTrades     | int                                                                | How many times can this trade be done.                              | false    |              |
 | xp            | int                                                                | How much Experience is given by trading.                            | false    |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true     | 1.0          |
+
 
 :::
 
@@ -63,19 +69,22 @@ Adds a Villager Trade for two Items for an Item. An example being, giving a vill
 Return Type: void
 
 ```zenscript
-VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, input2 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, input1 as ItemStack, input2 as ItemStack, forSale as ItemStack, maxTrades as int, xp as int, priceMult as float) as void
+
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond> * 2, <item:minecraft:dirt> * 2, <item:minecraft:arrow>, 5, 2, 0.05);
 ```
 
 | Parameter     | Type                                                               | Description                                                         | Optional | DefaultValue |
 | ------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- | -------- | ------------ |
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.                           | false    |              |
 | villagerLevel | int                                                                | The level the Villager needs to be.                                 | false    |              |
-| input1        | [ItemStack](/vanilla/api/item/ItemStack)                           | The main Itemstack that is being given to the Villager.             | false    |              |
-| input2        | [ItemStack](/vanilla/api/item/ItemStack)                           | The secondary Itemstack that is being given to the Villager.        | false    |              |
-| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What Itemstack is being sold (by the Villager).                     | false    |              |
+| input1        | [ItemStack](/vanilla/api/item/ItemStack)                           | The main ItemStack that is being given to the Villager.             | false    |              |
+| input2        | [ItemStack](/vanilla/api/item/ItemStack)                           | The secondary ItemStack that is being given to the Villager.        | false    |              |
+| forSale       | [ItemStack](/vanilla/api/item/ItemStack)                           | What ItemStack is being sold (by the Villager).                     | false    |              |
 | maxTrades     | int                                                                | How many times can this trade be done.                              | false    |              |
 | xp            | int                                                                | How much Experience is given by trading.                            | false    |              |
 | priceMult     | float                                                              | When this trade is discounted, how much should it be discounted by. | true     | 1.0          |
+
 
 :::
 
@@ -86,7 +95,8 @@ Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving
 Return Type: void
 
 ```zenscript
-VillagerTrades.addWanderingTrade(rarity as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int) as void
+// VillagerTrades.addWanderingTrade(rarity as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int) as void
+
 villagerTrades.addWanderingTrade(1, 16, <item:minecraft:diamond>, 16, 2);
 ```
 
@@ -94,22 +104,69 @@ villagerTrades.addWanderingTrade(1, 16, <item:minecraft:diamond>, 16, 2);
 | --------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | rarity    | int                                      | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
 | emeralds  | int                                      | The amount of Emeralds.                                                                                                     |
-| forSale   | [ItemStack](/vanilla/api/item/ItemStack) | What Itemstack is being sold (by the Wandering Trader).                                                                     |
+| forSale   | [ItemStack](/vanilla/api/item/ItemStack) | What ItemStack is being sold (by the Wandering Trader).                                                                     |
 | maxTrades | int                                      | How many times can this trade be done.                                                                                      |
 | xp        | int                                      | How much Experience is given by trading.                                                                                    |
 
 
 :::
 
-:::group{name=removeDyedArmorForEmeraldsTrade}
+:::group{name=addWanderingTrade}
 
-Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager a diamond and getting a Blue Dyed Leather clestplate.
+Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds for an arrow.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeDyedArmorForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as MCItemDefinition) as void
-villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:leather_chestplate>);
+// VillagerTrades.addWanderingTrade(rarity as int, price as IItemStack, forSale as IItemStack, maxTrades as int, xp as int) as void
+
+villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:diamond>, 16, 2);
+```
+
+| Parameter | Type                                        | Description                                                                                                                 |
+| --------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| rarity    | int                                         | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| price     | [IItemStack](/vanilla/api/items/IItemStack) | The ItemStack being given to the Wandering Trader.                                                                          |
+| forSale   | [IItemStack](/vanilla/api/items/IItemStack) | What ItemStack is being sold (by the Wandering Trader).                                                                     |
+| maxTrades | int                                         | How many times can this trade be done.                                                                                      |
+| xp        | int                                         | How much Experience is given by trading.                                                                                    |
+
+
+:::
+
+:::group{name=removeBasicTrade}
+
+Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any item, to any other item. It is only really used for mod recipes and is not used for any vanilla villager trade.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeBasicTrade(profession as MCVillagerProfession, villagerLevel as int, forSale as IItemStack, price as IItemStack, price2 as IItemStack) as void
+
+villagerTrades.removeBasicTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>, <item:minecraft:stick>, <item:minecraft:emerald>);
+```
+
+| Parameter     | Type                                                               | Description                                     | Optional | DefaultValue         |
+| ------------- | ------------------------------------------------------------------ | ----------------------------------------------- | -------- | -------------------- |
+| profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.       | false    |                      |
+| villagerLevel | int                                                                | The level the Villager needs to be.             | false    |                      |
+| forSale       | [IItemStack](/vanilla/api/items/IItemStack)                        | What ItemStack is being sold (by the Villager). | false    |                      |
+| price         | [IItemStack](/vanilla/api/items/IItemStack)                        | No Description Provided                         | true     | <item:minecraft:air> |
+| price2        | [IItemStack](/vanilla/api/items/IItemStack)                        | No Description Provided                         | true     | <item:minecraft:air> |
+
+
+:::
+
+:::group{name=removeDyedArmorForEmeraldsTrade}
+
+Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager Leather Leggings and 3 Emeralds and getting a Blue Dyed Leather Leggings.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeDyedArmorForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as MCItemDefinition) as void
+
+villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:leatherworker>, 1, <item:minecraft:leather_chestplate>);
 ```
 
 | Parameter     | Type                                                               | Description                                                                                                       |
@@ -123,33 +180,35 @@ villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1,
 
 :::group{name=removeEmeraldForItemsTrade}
 
-Removes a Villager trade for Emeralds for Items. An example being, giving a villager 2 Emaralds for an Arrow.
+Removes a Villager trade for Emeralds for Items. An example being, giving a villager 20 Wheat and getting an Emerald from the villager.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEmeraldForItemsTrade(profession as MCVillagerProfession, villagerLevel as int, tradeFor as MCItemDefinition) as void
-villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>.definition);
+// VillagerTrades.removeEmeraldForItemsTrade(profession as MCVillagerProfession, villagerLevel as int, tradeFor as MCItemDefinition) as void
+
+villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:potato>.definition);
 ```
 
 | Parameter     | Type                                                               | Description                                     |
 | ------------- | ------------------------------------------------------------------ | ----------------------------------------------- |
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.       |
 | villagerLevel | int                                                                | The level the Villager needs to be.             |
-| tradeFor      | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)             | What Itemstack is being sold (by the Villager). |
+| tradeFor      | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)             | What ItemStack is being sold (by the Villager). |
 
 
 :::
 
 :::group{name=removeEmeraldForMapTrade}
 
-Removes a Villager trade for a Map. An example being, giving a villager Emeralds and getting a Map to a structure.
+Removes a Villager trade for a Map. An example being, giving a villager 13 Emeralds and getting a Map to a structure.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEmeraldForMapTrade(profession as MCVillagerProfession, villagerLevel as int) as void
-villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:farmer>, 1);
+// VillagerTrades.removeEmeraldForMapTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
+villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:cartographer>, 1);
 ```
 
 | Parameter     | Type                                                               | Description                               |
@@ -167,8 +226,9 @@ Removes a Villager trade for an Enchanted Book. An example being, giving a villa
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEnchantedBookForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int) as void
-villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>, 1);
+// VillagerTrades.removeEnchantedBookForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
+villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:librarian>, 1);
 ```
 
 | Parameter     | Type                                                               | Description                               |
@@ -181,13 +241,14 @@ villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeEnchantedItemForEmeraldsTrade}
 
-Removes a Villager trade for an Enchanted Item. An example being, giving a villager Emeralds and getting an Enchanted Pickaxe.
+Removes a Villager trade for an Enchanted Item. An example being, giving a villager 3 Emeralds and getting an Enchanted Pickaxe.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeEnchantedItemForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as IItemStack) as void
-villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond_sword>.withTag({Enchantments: [{lvl: 1 as short, id: "minecraft:smite" as string}]}));
+// VillagerTrades.removeEnchantedItemForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as IItemStack) as void
+
+villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:armorer>, 1, <item:minecraft:diamond_boots>);
 ```
 
 | Parameter     | Type                                                               | Description                                                     |
@@ -201,13 +262,14 @@ villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeItemWithPotionForEmeraldsAndItemsTrade}
 
-Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and getting a Tipped Arrow with night vision.
+Removes a Villager trade for Items for an Item with a PotionEffect. An example being, giving a villager an Arrow and an Emerald and getting a Tipped Arrow with night vision.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, potionStack as IItemStack, sellingItem as MCItemDefinition) as void
-villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:tipped_arrow>, <item:minecraft:arrow>);
+// VillagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, potionStack as IItemStack, sellingItem as MCItemDefinition) as void
+
+villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraft:fletcher>, 1, <item:minecraft:tipped_arrow>, <item:minecraft:arrow>);
 ```
 
 | Parameter     | Type                                                               | Description                                                                                                    |
@@ -215,27 +277,28 @@ villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraf
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.                                                                      |
 | villagerLevel | int                                                                | The level the Villager needs to be.                                                                            |
 | potionStack   | [IItemStack](/vanilla/api/items/IItemStack)                        | The base ItemStack that a random potion effect will be applied to. E.G. A tipped Arrow with no effect applied. |
-| sellingItem   | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)             | What Itemstack is being given to the Villager.                                                                 |
+| sellingItem   | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)             | What ItemStack is being given to the Villager.                                                                 |
 
 
 :::
 
 :::group{name=removeItemsForEmeraldsAndItemsTrade}
 
-Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager an Emerald and Gravel and getting 16 Flint.
+Removes a Villager trade for Emeralds and Items for Items. An example being, giving a villager 6 uncooked Cod and an Emerald and getting back 6 Cooked Cod.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemsForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack, buyingItem as IItemStack) as void
-villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:gravel>, <item:minecraft:flint>);
+// VillagerTrades.removeItemsForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack, buyingItem as IItemStack) as void
+
+villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:fisherman>, 1, <item:minecraft:cooked_cod>, <item:minecraft:cod>);
 ```
 
 | Parameter     | Type                                                               | Description                                    |
 | ------------- | ------------------------------------------------------------------ | ---------------------------------------------- |
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.      |
 | villagerLevel | int                                                                | The level the Villager needs to be.            |
-| sellingItem   | [IItemStack](/vanilla/api/items/IItemStack)                        | What Itemstack is being given to the Villager. |
+| sellingItem   | [IItemStack](/vanilla/api/items/IItemStack)                        | What ItemStack is being given to the Villager. |
 | buyingItem    | [IItemStack](/vanilla/api/items/IItemStack)                        | The item that the Villager is selling.         |
 
 
@@ -243,32 +306,34 @@ villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>
 
 :::group{name=removeItemsForEmeraldsTrade}
 
-Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Arrow and getting 2 Emaralds.
+Removes a Villager trade for Items for Emeralds. An example being, giving a villager an Emerald and getting 4 Pumpkin Pies from the villager.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeItemsForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack) as void
-villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>);
+// VillagerTrades.removeItemsForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack) as void
+
+villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:apple>);
 ```
 
 | Parameter     | Type                                                               | Description                                    |
 | ------------- | ------------------------------------------------------------------ | ---------------------------------------------- |
 | profession    | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for.      |
 | villagerLevel | int                                                                | The level the Villager needs to be.            |
-| sellingItem   | [IItemStack](/vanilla/api/items/IItemStack)                        | What Itemstack is being given to the Villager. |
+| sellingItem   | [IItemStack](/vanilla/api/items/IItemStack)                        | What ItemStack is being given to the Villager. |
 
 
 :::
 
 :::group{name=removeSuspiciousStewForEmeraldTrade}
 
-Removes a Villager trade for Suspicious Stew. An example being, giving a villager Emeralds and getting a bowl of Suspicious Stew back..
+Removes a Villager trade for Suspicious Stew. An example being, giving a villager an Emerald and getting a bowl of Suspicious Stew back.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeSuspiciousStewForEmeraldTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+// VillagerTrades.removeSuspiciousStewForEmeraldTrade(profession as MCVillagerProfession, villagerLevel as int) as void
+
 villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>, 1);
 ```
 
@@ -282,19 +347,20 @@ villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>
 
 :::group{name=removeWanderingTrade}
 
-Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader  2 Emaralds for an Arrow.
+Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader 2 Emeralds for an Arrow.
 
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
+// VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
+
 villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
 ```
 
 | Parameter | Type                                        | Description                                                                                                                 |
 | --------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | rarity    | int                                         | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
-| tradeFor  | [IItemStack](/vanilla/api/items/IItemStack) | What Itemstack is being sold (by the Villager).                                                                             |
+| tradeFor  | [IItemStack](/vanilla/api/items/IItemStack) | What ItemStack is being sold (by the Villager).                                                                             |
 
 
 :::
