@@ -23,7 +23,7 @@ LocationCheck implements the following interfaces. That means all methods define
 
 ## Methods
 
-### withLocationPredicate
+:::group{name=withLocationPredicate}
 
 Creates and sets the [LocationPredicate](/vanilla/api/predicate/LocationPredicate) that will be matched against the offset location.
 
@@ -31,6 +31,7 @@ Creates and sets the [LocationPredicate](/vanilla/api/predicate/LocationPredicat
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -42,12 +43,15 @@ LocationCheck.withLocationPredicate(builder as Consumer<LocationPredicate>) as L
 | costruttore | Consumer&lt;[LocationPredicate](/vanilla/api/predicate/LocationPredicate)&gt; | A consumer that will be used to configure the [LocationPredicate](/vanilla/api/predicate/LocationPredicate). |
 
 
-### withOffset
+:::
+
+:::group{name=withOffset}
 
 Sets the offset which should be used to offset the location prior to the predicate check.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -59,7 +63,9 @@ LocationCheck.withOffset(pos as BlockPos) as LocationCheck
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The offset that should be applied. |
 
 
-### withXOffset
+:::
+
+:::group{name=withXOffset}
 
 Sets the offset along the X axis that should be used to offset the location prior to the predicate check.
 
@@ -67,6 +73,7 @@ Sets the offset along the X axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -78,7 +85,9 @@ LocationCheck.withXOffset(x as int) as LocationCheck
 | x         | int  | The offset that should be applied to the X axis. |
 
 
-### withYOffset
+:::
+
+:::group{name=withYOffset}
 
 Sets the offset along the Y axis that should be used to offset the location prior to the predicate check.
 
@@ -86,6 +95,7 @@ Sets the offset along the Y axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -97,7 +107,9 @@ LocationCheck.withYOffset(y as int) as LocationCheck
 | y         | int  | The offset that should be applied to the Y axis. |
 
 
-### withZOffset
+:::
+
+:::group{name=withZOffset}
 
 Sets the offset along the Z axis that should be used to offset the location prior to the predicate check.
 
@@ -105,6 +117,7 @@ Sets the offset along the Z axis that should be used to offset the location prio
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LocationCheck](/vanilla/api/loot/conditions/vanilla/LocationCheck)
 
 ```zenscript
@@ -115,5 +128,7 @@ LocationCheck.withZOffset(z as int) as LocationCheck
 | --------- | ---- | ------------------------------------------------ |
 | z         | int  | The offset that should be applied to the Z axis. |
 
+
+:::
 
 
