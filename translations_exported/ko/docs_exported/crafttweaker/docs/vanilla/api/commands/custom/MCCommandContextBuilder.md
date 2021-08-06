@@ -10,13 +10,13 @@ import crafttweaker.api.commands.custom.MCCommandContextBuilder;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### build
+:::group{name=build}
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -29,16 +29,21 @@ MCCommandContextBuilder.build(input as string) as MCCommandContext
 | input     | string | No Description Provided |
 
 
-### copy
+:::
+
+:::group{name=copy}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.copy() as MCCommandContextBuilder
+// MCCommandContextBuilder.copy() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.copy();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -51,7 +56,9 @@ MCCommandContextBuilder.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### findSuggestionContext
+:::
+
+:::group{name=findSuggestionContext}
 
 Return Type: [MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
 
@@ -64,106 +71,141 @@ MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionCont
 | cursor    | int  | No Description Provided |
 
 
-### getArguments
+:::
+
+:::group{name=getArguments}
 
 Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
 
 ```zenscript
-MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
+// MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
+
 myMCCommandContextBuilder.getArguments();
 ```
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.getChild() as MCCommandContextBuilder
+// MCCommandContextBuilder.getChild() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.getChild();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCCommandContextBuilder.getCommand() as MCCommand
+// MCCommandContextBuilder.getCommand() as MCCommand
+
 myMCCommandContextBuilder.getCommand();
 ```
 
-### getDispatcher
+:::
+
+:::group{name=getDispatcher}
 
 Return Type: [MCCommandDispatcher](/vanilla/api/commands/custom/MCCommandDispatcher)
 
 ```zenscript
-MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
+// MCCommandContextBuilder.getDispatcher() as MCCommandDispatcher
+
 myMCCommandContextBuilder.getDispatcher();
 ```
 
-### getLastChild
+:::
+
+:::group{name=getLastChild}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
+// MCCommandContextBuilder.getLastChild() as MCCommandContextBuilder
+
 myMCCommandContextBuilder.getLastChild();
 ```
 
-### getNodes
+:::
+
+:::group{name=getNodes}
 
 Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
-MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
+// MCCommandContextBuilder.getNodes() as stdlib.List<MCParsedCommandNode>
+
 myMCCommandContextBuilder.getNodes();
 ```
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCCommandContextBuilder.getRange() as MCStringRange
+// MCCommandContextBuilder.getRange() as MCStringRange
+
 myMCCommandContextBuilder.getRange();
 ```
 
-### getRootNode
+:::
+
+:::group{name=getRootNode}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandContextBuilder.getRootNode() as MCCommandNode
+// MCCommandContextBuilder.getRootNode() as MCCommandNode
+
 myMCCommandContextBuilder.getRootNode();
 ```
 
-### getSource
+:::
+
+:::group{name=getSource}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-MCCommandContextBuilder.getSource() as MCCommandSource
+// MCCommandContextBuilder.getSource() as MCCommandSource
+
 myMCCommandContextBuilder.getSource();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCCommandContextBuilder.hashCode() as int
+// MCCommandContextBuilder.hashCode() as int
+
 myMCCommandContextBuilder.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCCommandContextBuilder.toString() as string
+// MCCommandContextBuilder.toString() as string
+
 myMCCommandContextBuilder.toString();
 ```
 
-### withArgument
+:::
+
+:::group{name=withArgument}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -177,7 +219,9 @@ MCCommandContextBuilder.withArgument(name as string, argument as MCParsedArgumen
 | argument  | [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No Description Provided |
 
 
-### withChild
+:::
+
+:::group{name=withChild}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -190,7 +234,9 @@ MCCommandContextBuilder.withChild(child as MCCommandContextBuilder) as MCCommand
 | child     | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### withCommand
+:::
+
+:::group{name=withCommand}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -203,7 +249,9 @@ MCCommandContextBuilder.withCommand(command as MCCommand) as MCCommandContextBui
 | command   | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
-### withNode
+:::
+
+:::group{name=withNode}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -217,7 +265,9 @@ MCCommandContextBuilder.withNode(node as MCCommandNode, range as MCStringRange) 
 | range     | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
-### withSource
+:::
+
+:::group{name=withSource}
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -230,15 +280,17 @@ MCCommandContextBuilder.withSource(source as MCCommandSource) as MCCommandContex
 | source    | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
+:::
+
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCCommandContextBuilder == o as Object
 ```
 
-
+:::
 
 
