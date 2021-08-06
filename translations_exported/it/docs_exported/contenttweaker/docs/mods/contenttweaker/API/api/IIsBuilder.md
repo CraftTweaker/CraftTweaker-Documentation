@@ -14,18 +14,23 @@ import mods.contenttweaker.api.IIsBuilder;
 
 ## Methods
 
-### build
+:::group{name=build}
 
 Istruisce CoT per costruire realmente qualsiasi cosa il costruttore dovrebbe star costruendo.
 
 Return Type: void
 
 ```zenscript
-IIsBuilder.build(resourceLocation as string) as void
+// IIsBuilder.build(resourceLocation as string) as void
+
 myIIsBuilder.build("my_awesome_block");
 ```
+
 | Parameter        | Type   | Description                                      |
 | ---------------- | ------ | ------------------------------------------------ |
 | resourceLocation | string | Il percorso della risorsa per dare questo blocco |
+
+
+:::
 
 
