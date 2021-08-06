@@ -16,3 +16,25 @@ import mods.contenttweaker.item.basic.ItemBuilderBasic;
 
 ItemBuilderBasic extends [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder). That means all methods available in [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) are also available in ItemBuilderBasic
 
+## Methods
+
+:::group{name=build}
+
+CoT에게 이 제작기가 빌드해야 하는 모든 블록을 실제로 빌드하도록 지시합니다.
+
+Return Type: void
+
+```zenscript
+// ItemBuilderBasic.build(resourceLocation as string) as void
+
+new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Description   |
+| ---------------- | ------ | ------------- |
+| resourceLocation | string | 해당 블록의 리소스 경로 |
+
+
+:::
+
+
