@@ -10,7 +10,7 @@ import crafttweaker.api.item.IIngredientCondition;
 
 ## 方法
 
-### getCommandString
+:::group{name=getCommandString}
 
 Return Type: string
 
@@ -23,7 +23,9 @@ IIngredientCondition.getCommandString(ingredient as T) as string
 | ingredient | T  | No Description Provided |
 
 
-### matches
+:::
+
+:::group{name=matches}
 
 Return Type: boolean
 
@@ -35,5 +37,7 @@ IIngredientCondition.matches(stack as IItemStack) as boolean
 | ----- | ------------------------------------------- | ----------------------- |
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
+
+:::
 
 
