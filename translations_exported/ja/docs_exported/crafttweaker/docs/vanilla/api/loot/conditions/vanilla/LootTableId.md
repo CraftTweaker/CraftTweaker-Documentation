@@ -23,12 +23,13 @@ LootTableId implements the following interfaces. That means all methods defined 
 
 ## Methods
 
-### withTableId
+:::group{name=withTableId}
 
 Sets the ID of the loot table that should be targeted.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [LootTableId](/vanilla/api/loot/conditions/vanilla/LootTableId)
 
 ```zenscript
@@ -39,5 +40,7 @@ LootTableId.withTableId(location as MCResourceLocation) as LootTableId
 | --------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | 場所        | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The ID of the loot table to match, in [MCResourceLocation](/vanilla/api/util/MCResourceLocation) form. |
 
+
+:::
 
 
