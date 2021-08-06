@@ -1,8 +1,8 @@
 # 例子
 
-You can use the `/ct examples` command to get some commented scripts in your scripts/examples  directory
+你可以使用`/ct examples`指令，在你的scripts/examples目录下获得一些被注释掉的脚本。
 
-More script examples can be found here:
+在这里可以找到更多脚本示例：
 
 [例子](https://github.com/CraftTweaker/CraftTweaker/tree/1.16/src/main/resources/data/crafttweaker/scripts)
 
