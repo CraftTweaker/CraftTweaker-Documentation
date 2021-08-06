@@ -14,10 +14,11 @@ import crafttweaker.api.loot.conditions.ILootCondition;
 
 ## Methods
 
-### test
+:::group{name=test}
 
 Tests the context for a set of conditions.
 
+Returns: Whether the context passes the condition set.  
 Return Type: boolean
 
 ```zenscript
@@ -28,5 +29,7 @@ ILootCondition.test(context as LootContext) as boolean
 | --------- | -------------------------------------------- | ------------------- |
 | contesto  | [LootContext](/vanilla/api/loot/LootContext) | The context to test |
 
+
+:::
 
 
