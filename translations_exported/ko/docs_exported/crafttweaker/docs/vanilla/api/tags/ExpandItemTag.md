@@ -1,18 +1,20 @@
 # Expansion for MCTag&lt;MCItemDefinition&gt;
 
-This expansion specifically targets itemTags. It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient. <p> Only downside is that if you want to use Ingredient Transformers, you will need to call `asIIngredient()` first.
+This expansion specifically targets itemTags. It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient.
+
+ Only downside is that if you want to use Ingredient Transformers, you will need to call `asIIngredient()` first.
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [IData](/vanilla/api/data/IData)                                  | true        |
-| [IIngredient](/vanilla/api/items/IIngredient)                     | true        |
-| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
+| 반환 자료형                                                            | 암묵적  |
+| ----------------------------------------------------------------- | ---- |
+| [IData](/vanilla/api/data/IData)                                  | true |
+| [IIngredient](/vanilla/api/items/IIngredient)                     | true |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
 
 ## Methods
 
-### add
+:::group{name=add}
 
 Return Type: void
 
@@ -25,31 +27,42 @@ MCTag.add(items as stdlib.List<IItemStack>) as void
 | items     | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided |
 
 
-### asIData
+:::
+
+:::group{name=asIData}
 
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MCTag.asIData() as IData
+// MCTag.asIData() as IData
+
 <tag:items:forge:gems>.asIData();
 ```
 
-### asIIngredient
+:::
+
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-MCTag.asIIngredient() as IIngredient
+// MCTag.asIIngredient() as IIngredient
+
 <tag:items:forge:gems>.asIIngredient();
 ```
 
-### asIIngredientWithAmount
+:::
+
+:::group{name=asIIngredientWithAmount}
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 ```zenscript
-MCTag.asIIngredientWithAmount() as IIngredientWithAmount
+// MCTag.asIIngredientWithAmount() as IIngredientWithAmount
+
 <tag:items:forge:gems>.asIIngredientWithAmount();
 ```
+
+:::
 
 
