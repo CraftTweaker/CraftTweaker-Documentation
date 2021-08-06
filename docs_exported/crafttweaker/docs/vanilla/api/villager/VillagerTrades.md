@@ -136,7 +136,7 @@ villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:diamo
 
 :::group{name=removeBasicTrade}
 
-Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any item, to any other item. It it only really used for mod recipes and it not used for any vanilla villager trade.
+Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any item, to any other item. It is only really used for mod recipes and is not used for any vanilla villager trade.
 
 Return Type: void
 
@@ -166,7 +166,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeDyedArmorForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as MCItemDefinition) as void
 
-villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:leather_chestplate>);
+villagerTrades.removeDyedArmorForEmeraldsTrade(<profession:minecraft:leatherworker>, 1, <item:minecraft:leather_chestplate>);
 ```
 
 | Parameter | Type | Description |
@@ -187,7 +187,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeEmeraldForItemsTrade(profession as MCVillagerProfession, villagerLevel as int, tradeFor as MCItemDefinition) as void
 
-villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>.definition);
+villagerTrades.removeEmeraldForItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:potato>.definition);
 ```
 
 | Parameter | Type | Description |
@@ -208,7 +208,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeEmeraldForMapTrade(profession as MCVillagerProfession, villagerLevel as int) as void
 
-villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:farmer>, 1);
+villagerTrades.removeEmeraldForMapTrade(<profession:minecraft:cartographer>, 1);
 ```
 
 | Parameter | Type | Description |
@@ -228,7 +228,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeEnchantedBookForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int) as void
 
-villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:farmer>, 1);
+villagerTrades.removeEnchantedBookForEmeraldsTrade(<profession:minecraft:librarian>, 1);
 ```
 
 | Parameter | Type | Description |
@@ -248,7 +248,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeEnchantedItemForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, buyingItem as IItemStack) as void
 
-villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamond_sword>.withTag({Enchantments: [{lvl: 1 as short, id: "minecraft:smite" as string}]}));
+villagerTrades.removeEnchantedItemForEmeraldsTrade(<profession:minecraft:armorer>, 1, <item:minecraft:diamond_boots>);
 ```
 
 | Parameter | Type | Description |
@@ -269,7 +269,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, potionStack as IItemStack, sellingItem as MCItemDefinition) as void
 
-villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:tipped_arrow>, <item:minecraft:arrow>);
+villagerTrades.removeItemWithPotionForEmeraldsAndItemsTrade(<profession:minecraft:fletcher>, 1, <item:minecraft:tipped_arrow>, <item:minecraft:arrow>);
 ```
 
 | Parameter | Type | Description |
@@ -291,7 +291,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeItemsForEmeraldsAndItemsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack, buyingItem as IItemStack) as void
 
-villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:gravel>, <item:minecraft:flint>);
+villagerTrades.removeItemsForEmeraldsAndItemsTrade(<profession:minecraft:fisherman>, 1, <item:minecraft:cooked_cod>, <item:minecraft:cod>);
 ```
 
 | Parameter | Type | Description |
@@ -313,7 +313,7 @@ Return Type: void
 ```zenscript
 // VillagerTrades.removeItemsForEmeraldsTrade(profession as MCVillagerProfession, villagerLevel as int, sellingItem as IItemStack) as void
 
-villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:arrow>);
+villagerTrades.removeItemsForEmeraldsTrade(<profession:minecraft:farmer>, 1, <item:minecraft:apple>);
 ```
 
 | Parameter | Type | Description |
