@@ -16,20 +16,23 @@ import crafttweaker.api.item.MCItemDefinition;
 
 ## Methoden
 
-### getDefaultInstance
+:::group{name=getDefaultInstance}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemDefinition.getDefaultInstance() as IItemStack
+// MCItemDefinition.getDefaultInstance() as IItemStack
+
 myMCItemDefinition.getDefaultInstance();
 ```
+
+:::
 
 
 ## Properties
 
-| Name            | Type                                        | Has Getter | Has Setter |
-| --------------- | ------------------------------------------- | ---------- | ---------- |
-| commandString   | string                                      | true       | false      |
-| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Name            | Type                                        | Has Getter | Has Setter | Beschreibung            |
+| --------------- | ------------------------------------------- | ---------- | ---------- | ----------------------- |
+| commandString   | string                                      | true       | false      | No Description Provided |
+| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | No Description Provided |
 
