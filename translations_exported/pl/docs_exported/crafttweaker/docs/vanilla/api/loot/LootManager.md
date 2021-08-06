@@ -16,7 +16,7 @@ import crafttweaker.api.loot.LootManager;
 
 ## Properties
 
-| Name      | Type                                                                   | Has Getter | Has Setter |
-| --------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| modifiers | [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) | true       | false      |
+| Name      | Type                                                                   | Has Getter | Has Setter | Description                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| modifiers | [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) | true       | false      | Gets the loot modifiers manager. <br />  <br />  Refer to [LootModifierManager](/vanilla/api/loot/modifiers/LootModifierManager) for additional info. |
 
