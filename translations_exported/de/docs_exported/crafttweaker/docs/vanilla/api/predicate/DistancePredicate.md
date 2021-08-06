@@ -20,7 +20,7 @@ DistancePredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/p
 
 ## Methoden
 
-### withMaximumAbsoluteDistance
+:::group{name=withMaximumAbsoluteDistance}
 
 Sets the maximum value the absolute distance should be to <code>max</code>.
 
@@ -28,6 +28,7 @@ Sets the maximum value the absolute distance should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -39,7 +40,9 @@ DistancePredicate.withMaximumAbsoluteDistance(max as float) as DistancePredicate
 | max       | float | The maximum value the absolute distance should be. |
 
 
-### withMaximumHorizontalDistance
+:::
+
+:::group{name=withMaximumHorizontalDistance}
 
 Sets the maximum value the horizontal distance should be to <code>max</code>.
 
@@ -47,6 +50,7 @@ Sets the maximum value the horizontal distance should be to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -58,7 +62,9 @@ DistancePredicate.withMaximumHorizontalDistance(max as float) as DistancePredica
 | max       | float | The maximum value the horizontal distance should be. |
 
 
-### withMaximumX
+:::
+
+:::group{name=withMaximumX}
 
 Sets the maximum value the distance along the X axis should be to <code>max</code>.
 
@@ -66,6 +72,7 @@ Sets the maximum value the distance along the X axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -77,7 +84,9 @@ DistancePredicate.withMaximumX(max as float) as DistancePredicate
 | max       | float | The maximum value the distance along the X axis should be. |
 
 
-### withMaximumY
+:::
+
+:::group{name=withMaximumY}
 
 Sets the maximum value the distance along the Y axis should be to <code>max</code>.
 
@@ -85,6 +94,7 @@ Sets the maximum value the distance along the Y axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -96,7 +106,9 @@ DistancePredicate.withMaximumY(max as float) as DistancePredicate
 | max       | float | The maximum value the distance along the Y axis should be. |
 
 
-### withMaximumZ
+:::
+
+:::group{name=withMaximumZ}
 
 Sets the maximum value the distance along the Z axis should be to <code>max</code>.
 
@@ -104,6 +116,7 @@ Sets the maximum value the distance along the Z axis should be to <code>max</cod
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -115,7 +128,9 @@ DistancePredicate.withMaximumZ(max as float) as DistancePredicate
 | max       | float | The maximum value the distance along the Z axis should be. |
 
 
-### withMinimumAbsoluteDistance
+:::
+
+:::group{name=withMinimumAbsoluteDistance}
 
 Sets the minimum value the absolute distance should be to <code>min</code>.
 
@@ -123,6 +138,7 @@ Sets the minimum value the absolute distance should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -134,7 +150,9 @@ DistancePredicate.withMinimumAbsoluteDistance(min as float) as DistancePredicate
 | min       | float | The minimum value the absolute distance should be. |
 
 
-### withMinimumHorizontalDistance
+:::
+
+:::group{name=withMinimumHorizontalDistance}
 
 Sets the minimum value the horizontal distance should be to <code>min</code>.
 
@@ -142,6 +160,7 @@ Sets the minimum value the horizontal distance should be to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -153,7 +172,9 @@ DistancePredicate.withMinimumHorizontalDistance(min as float) as DistancePredica
 | min       | float | The minimum value the horizontal distance should be. |
 
 
-### withMinimumX
+:::
+
+:::group{name=withMinimumX}
 
 Sets the minimum value the distance along the X axis should be to <code>min</code>.
 
@@ -161,6 +182,7 @@ Sets the minimum value the distance along the X axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -172,7 +194,9 @@ DistancePredicate.withMinimumX(min as float) as DistancePredicate
 | min       | float | The minimum value the distance along the X axis should be. |
 
 
-### withMinimumY
+:::
+
+:::group{name=withMinimumY}
 
 Sets the minimum value the distance along the Y axis should be to <code>min</code>.
 
@@ -180,6 +204,7 @@ Sets the minimum value the distance along the Y axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -191,7 +216,9 @@ DistancePredicate.withMinimumY(min as float) as DistancePredicate
 | min       | float | The minimum value the distance along the Y axis should be. |
 
 
-### withMinimumZ
+:::
+
+:::group{name=withMinimumZ}
 
 Sets the minimum value the distance along the Z axis should be to <code>min</code>.
 
@@ -199,6 +226,7 @@ Sets the minimum value the distance along the Z axis should be to <code>min</cod
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -210,7 +238,9 @@ DistancePredicate.withMinimumZ(min as float) as DistancePredicate
 | min       | float | The minimum value the distance along the Z axis should be. |
 
 
-### withRangedAbsoluteDistance
+:::
+
+:::group{name=withRangedAbsoluteDistance}
 
 Sets both the minimum and maximum value the absolute distance should be to <code>min</code> and <code>max</code>
  respectively.
@@ -220,6 +250,7 @@ Sets both the minimum and maximum value the absolute distance should be to <code
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -232,7 +263,9 @@ DistancePredicate.withRangedAbsoluteDistance(min as float, max as float) as Dist
 | max       | float | The maximum value the absolute distance should be. |
 
 
-### withRangedHorizontalDistance
+:::
+
+:::group{name=withRangedHorizontalDistance}
 
 Sets both the minimum and maximum value the horizontal distance should be to <code>min</code> and
  <code>max</code> respectively.
@@ -242,6 +275,7 @@ Sets both the minimum and maximum value the horizontal distance should be to <co
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -254,7 +288,9 @@ DistancePredicate.withRangedHorizontalDistance(min as float, max as float) as Di
 | max       | float | The maximum value the horizontal distance should be. |
 
 
-### withRangedX
+:::
+
+:::group{name=withRangedX}
 
 Sets both the minimum and maximum value the distance along the X axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -264,6 +300,7 @@ Sets both the minimum and maximum value the distance along the X axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -276,7 +313,9 @@ DistancePredicate.withRangedX(min as float, max as float) as DistancePredicate
 | max       | float | The maximum value the distance along the X axis should be. |
 
 
-### withRangedY
+:::
+
+:::group{name=withRangedY}
 
 Sets both the minimum and maximum value the distance along the Y axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -286,6 +325,7 @@ Sets both the minimum and maximum value the distance along the Y axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -298,7 +338,9 @@ DistancePredicate.withRangedY(min as float, max as float) as DistancePredicate
 | max       | float | The maximum value the distance along the Y axis should be. |
 
 
-### withRangedZ
+:::
+
+:::group{name=withRangedZ}
 
 Sets both the minimum and maximum value the distance along the Z axis should be to <code>min</code> and
  <code>max</code> respectively.
@@ -308,6 +350,7 @@ Sets both the minimum and maximum value the distance along the Z axis should be 
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 
 ```zenscript
@@ -319,5 +362,7 @@ DistancePredicate.withRangedZ(min as float, max as float) as DistancePredicate
 | min       | float | The minimum value the distance along the Z axis should be. |
 | max       | float | The maximum value the distance along the Z axis should be. |
 
+
+:::
 
 
