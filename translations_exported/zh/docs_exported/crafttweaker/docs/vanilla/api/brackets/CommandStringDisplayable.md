@@ -12,7 +12,7 @@ import crafttweaker.api.brackets.CommandStringDisplayable;
 
 ## 参数
 
-| 名称            | 类型     | 可获得  | 可设置   |
-| ------------- | ------ | ---- | ----- |
-| commandString | string | true | false |
+| 名称            | 类型     | 可获得  | 可设置   | 描述                                 |
+| ------------- | ------ | ---- | ----- | ---------------------------------- |
+| commandString | string | true | false | Returns the BEP to get this thingy |
 
