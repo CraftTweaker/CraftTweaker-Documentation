@@ -18,7 +18,7 @@ MCItemEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). Th
 
 ## Свойства
 
-| Название   | Тип                                              | Имеет Getter | Имеет Setter |
-| ---------- | ------------------------------------------------ | ------------ | ------------ |
-| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true         | false        |
+| Название   | Тип                                              | Имеет Getter | Имеет Setter | Description             |
+| ---------- | ------------------------------------------------ | ------------ | ------------ | ----------------------- |
+| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true         | false        | No Description Provided |
 
