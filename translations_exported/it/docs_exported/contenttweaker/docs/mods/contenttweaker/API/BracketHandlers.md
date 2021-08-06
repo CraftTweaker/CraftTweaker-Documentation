@@ -16,37 +16,71 @@ import mods.contenttweaker.BracketHandlers;
 ```
 
 
-## Methods
+## Static Methods
 
-### getItemGroup
+:::group{name=getCoTBlock}
+
+Gets the registered advanced CoT block. Will throw an error if the block could not be found
+
+Returns: The found IIsCotBlock  
+Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
+
+```zenscript
+<advancedblock:test_block>
+
+// BracketHandlers.getCoTBlock(tokens as string) as CoTBlockAdvanced
+
+BracketHandlers.getCoTBlock("test_block");
+```
+
+| Parameter | Type   | Description                                       |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | string | What you would createDataCompound in the BEP call |
+
+
+:::
+
+:::group{name=getCoTItem}
+
+Gets the registered advanced CoT item. Will throw an error if the item could not be found
+
+Returns: The found IIsCotItem  
+Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
+
+```zenscript
+<advanceditem:test_item>
+
+// BracketHandlers.getCoTItem(tokens as string) as CoTItemAdvanced
+
+BracketHandlers.getCoTItem("test_item");
+```
+
+| Parameter | Type   | Description                                       |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | string | What you would createDataCompound in the BEP call |
+
+
+:::
+
+:::group{name=getItemGroup}
 
 Gets the itemGroup. Will throw an error if the group could not be found
 
-Returns: The found MCItemGroup Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Returns: The found MCItemGroup  
+Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>
 
-BracketHandlers.getItemGroup(tokens as string) as MCItemGroup
+// BracketHandlers.getItemGroup(tokens as string) as MCItemGroup
+
 BracketHandlers.getItemGroup("misc");
 ```
+
 | Parameter | Type   | Description                                 |
 | --------- | ------ | ------------------------------------------- |
 | tokens    | string | What you createDataCompound in the BEP call |
 
-### getToolType
 
-Gets a [MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
-
-Returns: The [MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType Return Type: [MCToolType](/mods/contenttweaker/API/item/MCToolType)
-
-```zenscript
-<tooltype:shovel>
-
-BracketHandlers.getToolType(tokens as string) as MCToolType
-BracketHandlers.getToolType("shovel");
-```
-| Parameter | Type   | Description                                       |
-| --------- | ------ | ------------------------------------------------- |
-| tokens    | string | What you would createDataCompound in the BEP call |
+:::
 
