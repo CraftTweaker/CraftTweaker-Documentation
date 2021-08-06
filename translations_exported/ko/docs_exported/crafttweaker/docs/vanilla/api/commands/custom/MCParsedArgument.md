@@ -10,13 +10,13 @@ import crafttweaker.api.commands.custom.MCParsedArgument;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,42 +29,53 @@ MCParsedArgument.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCParsedArgument.getRange() as MCStringRange
+// MCParsedArgument.getRange() as MCStringRange
+
 myMCParsedArgument.getRange();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCParsedArgument.hashCode() as int
+// MCParsedArgument.hashCode() as int
+
 myMCParsedArgument.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCParsedArgument.toString() as string
+// MCParsedArgument.toString() as string
+
 myMCParsedArgument.toString();
 ```
+
+:::
 
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCParsedArgument == o as Object
 ```
 
-
+:::
 
 
