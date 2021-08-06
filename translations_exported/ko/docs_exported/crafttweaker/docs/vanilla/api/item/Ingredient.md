@@ -19,19 +19,22 @@ Ingredient implements the following interfaces. That means all methods defined i
 
 ## Casters
 
-| Result type                                   | Is Implicit |
-| --------------------------------------------- | ----------- |
-| [IIngredient](/vanilla/api/items/IIngredient) | true        |
+| 반환 자료형                                        | 암묵적  |
+| --------------------------------------------- | ---- |
+| [IIngredient](/vanilla/api/items/IIngredient) | true |
 
 ## Methods
 
-### asIIngredient
+:::group{name=asIIngredient}
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
-Ingredient.asIIngredient() as IIngredient
+// Ingredient.asIIngredient() as IIngredient
+
 myIngredient.asIIngredient();
 ```
+
+:::
 
 
