@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new StringData(internal as string) as StringData
 ```
-
 | Параметр | Тип    | Description             |
 | -------- | ------ | ----------------------- |
 | internal | string | No Description Provided |
@@ -37,74 +36,96 @@ new StringData(internal as string) as StringData
 
 ## Methods
 
-### asCollection
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-StringData.asCollection() as ICollectionData
+// StringData.asCollection() as ICollectionData
+
 new StringData("Hello").asCollection();
 ```
 
-### asList
+:::
+
+:::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-StringData.asList() as stdlib.List<IData>
+// StringData.asList() as stdlib.List<IData>
+
 new StringData("Hello").asList();
 ```
 
-### asMap
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-StringData.asMap() as IData[string]
+// StringData.asMap() as IData[string]
+
 new StringData("Hello").asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-StringData.asNumber() as INumberData
+// StringData.asNumber() as INumberData
+
 new StringData("Hello").asNumber();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-StringData.getId() as byte
+// StringData.getId() as byte
+
 new StringData("Hello").getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-StringData.getString() as string
+// StringData.getString() as string
+
 new StringData("Hello").getString();
 ```
+
+:::
 
 
 ## Операторы
 
-### ADD
+:::group{name=ADD}
 
 Concatenates the two string Datas and returns the result.
 
@@ -113,6 +134,6 @@ myStringData + data as StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-
+:::
 
 
