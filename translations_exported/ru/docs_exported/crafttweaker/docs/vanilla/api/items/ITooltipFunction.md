@@ -10,7 +10,7 @@ import crafttweaker.api.item.tooltip.ITooltipFunction;
 
 ## Methods
 
-### применить
+:::group{name=apply}
 
 Return Type: void
 
@@ -24,5 +24,7 @@ ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<MCTextCompone
 | подсказка  | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | No Description Provided |
 | isAdvanced | boolean                                                                                  | No Description Provided |
 
+
+:::
 
 
