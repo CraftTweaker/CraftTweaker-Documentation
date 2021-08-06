@@ -10,13 +10,13 @@ import crafttweaker.api.commands.custom.MCSuggestionContext;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,51 +29,65 @@ MCSuggestionContext.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getParent
+:::
+
+:::group{name=getParent}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCSuggestionContext.getParent() as MCCommandNode
+// MCSuggestionContext.getParent() as MCCommandNode
+
 myMCSuggestionContext.getParent();
 ```
 
-### getStartPos
+:::
+
+:::group{name=getStartPos}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.getStartPos() as int
+// MCSuggestionContext.getStartPos() as int
+
 myMCSuggestionContext.getStartPos();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSuggestionContext.hashCode() as int
+// MCSuggestionContext.hashCode() as int
+
 myMCSuggestionContext.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSuggestionContext.toString() as string
+// MCSuggestionContext.toString() as string
+
 myMCSuggestionContext.toString();
 ```
+
+:::
 
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSuggestionContext == o as Object
 ```
 
-
+:::
 
 
