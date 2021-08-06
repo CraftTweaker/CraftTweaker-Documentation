@@ -1,9 +1,11 @@
+::requiredMod[Botany Pots]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/botany-pots}
+
 # [BotanyPots](https://www.curseforge.com/minecraft/mc-mods/botany-pots)
 
 ## Description
 This mod adds pots that can be used to grow various types of plants. Through CraftTweaker you can add/remove crops and soil types. You can also edit the properties of the existing content.
 
-## Crops
+## 작물
 Crops can be modified using the crop manager. To do this you will need to import the following into your script.
 
 ```zenscript
@@ -72,7 +74,7 @@ wheat.setDisplay(<blockstate:minecraft:gold_block>);
 wheat.setDisplay([<blockstate:minecraft:iron_block>, <blockstate:minecraft:iron_ore>]);
 ```
 
-## Soils
+## 토양
 Soils can be modified using the soil manager. To do this you will need to import the following into your script.
 
 ```zenscript
@@ -121,7 +123,7 @@ dirt.setDisplay(<blockstate:minecraft:stone>);
 dirt.setGrowthModifier(0.20);
 ```
 
-## Fertilizers
+## 비료
 Fertilizers can be modified using the fertilizer manager. To do this you will need to import the following into your script.
 
 ```zenscript
@@ -129,7 +131,7 @@ import mods.botanypots.ZenFertilizer;
 val fertilizers = <recipetype:botanypots:fertilizer>;
 ```
 
-### Creating Fertilizers
+### 비료 생성
 To create a fertilizer you use the create method from the manager. This method will return a ZenFertilizer value which you can use to do further changes.
 
 ```zenscript
