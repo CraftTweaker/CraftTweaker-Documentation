@@ -21,7 +21,7 @@ TimeCheck implements the following interfaces. That means all methods defined in
 
 ## Methods
 
-### withExactValue
+:::group{name=withExactValue}
 
 Sets the game time to exactly match the given <code>value</code>.
 
@@ -29,6 +29,7 @@ Sets the game time to exactly match the given <code>value</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -40,7 +41,9 @@ TimeCheck.withExactValue(value as int) as TimeCheck
 | value     | int  | The exact value the world time must have. |
 
 
-### withMaximumValue
+:::
+
+:::group{name=withMaximumValue}
 
 Sets the maximum value of the game time to <code>max</code>.
 
@@ -50,6 +53,7 @@ Sets the maximum value of the game time to <code>max</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -61,7 +65,9 @@ TimeCheck.withMaximumValue(max as int) as TimeCheck
 | max       | int  | The maximum value the game time can have. |
 
 
-### withMinimumValue
+:::
+
+:::group{name=withMinimumValue}
 
 Sets the minimum value of the game time to <code>min</code>.
 
@@ -71,6 +77,7 @@ Sets the minimum value of the game time to <code>min</code>.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -82,7 +89,9 @@ TimeCheck.withMinimumValue(min as int) as TimeCheck
 | min       | int  | The minimum value the game time can have. |
 
 
-### withRangedValue
+:::
+
+:::group{name=withRangedValue}
 
 Sets both the minimum and maximum values of the game time respectively to <code>min</code> and <code>max</code>.
 
@@ -93,6 +102,7 @@ Sets both the minimum and maximum values of the game time respectively to <code>
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -105,7 +115,9 @@ TimeCheck.withRangedValue(min as int, max as int) as TimeCheck
 | max       | int  | The maximum value the game time can have. |
 
 
-### withTimePeriod
+:::
+
+:::group{name=withTimePeriod}
 
 Sets the time period to use for the modulo operation.
 
@@ -114,6 +126,7 @@ Sets the time period to use for the modulo operation.
 
  A value of 0 disables the operation from being carried out. On the other hand a negative value is forbidden.
 
+Returns: This builder for chaining.  
 Return Type: [TimeCheck](/vanilla/api/loot/conditions/vanilla/TimeCheck)
 
 ```zenscript
@@ -124,5 +137,7 @@ TimeCheck.withTimePeriod(period as int) as TimeCheck
 | --------- | ---- | ------------------------------------------------ |
 | period    | int  | The time period to use for the modulo operation. |
 
+
+:::
 
 
