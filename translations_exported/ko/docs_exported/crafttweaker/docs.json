@@ -88,6 +88,7 @@
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
+          "EventPriority": "vanilla/api/event/EventPriority.md",
           "ItemAttributeModifierEvent": "vanilla/api/event/ItemAttributeModifierEvent.md",
           "MCAnvilUpdateEvent": "vanilla/api/event/MCAnvilUpdateEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
