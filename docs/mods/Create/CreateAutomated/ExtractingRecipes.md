@@ -6,7 +6,7 @@
 
 ## Creating a recipe using the progress builder
 
-The progress builder makes your code more readable, with a builder that actually makes sense instead of some big number
+The progress builder makes your code more readable, with a builder that actually makes sense instead of some big number.
 
 ### Using the builder
 
