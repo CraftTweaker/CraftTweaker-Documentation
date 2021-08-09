@@ -134,6 +134,41 @@ villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:diamo
 
 :::
 
+:::group{name=removeAllTrades}
+
+Removes all the trades for the given profession and villagerLevel
+
+Return Type: void
+
+```zenscript
+VillagerTrades.removeAllTrades(profession as MCVillagerProfession, villagerLevel as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | hat profession to remove from. |
+| villagerLevel | int | The level the Villager needs to be. |
+
+
+:::
+
+:::group{name=removeAllWanderinTrades}
+
+Removes all wandering trades of the given rarity
+
+Return Type: void
+
+```zenscript
+VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+
+
+:::
+
 :::group{name=removeBasicTrade}
 
 Removes a `BasicTrade` Villager trade. `BasicTrades` are trades that allow any item, to any other item. It is only really used for mod recipes and is not used for any vanilla villager trade.
