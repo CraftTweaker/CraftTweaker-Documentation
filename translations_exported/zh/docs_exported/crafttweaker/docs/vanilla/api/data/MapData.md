@@ -106,10 +106,10 @@ Return Type: boolean
 检索与密钥相关的值
 
 Returns: The value if present, null otherwise  
-Return Type: [IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)?
 
 ```zenscript
-// MapData.getAt(key as string) as IData
+// MapData.getAt(key as string) as IData?
 
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
@@ -178,10 +178,10 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 添加给定键值或创建一个新条目，如果它以前不存在。
 
 Returns: The previous value if present, null otherwise  
-Return Type: [IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)?
 
 ```zenscript
-// MapData.put(key as string, value as IData) as IData
+// MapData.put(key as string, value as IData) as IData?
 
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
