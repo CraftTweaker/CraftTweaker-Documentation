@@ -87,7 +87,14 @@
         "Mixing": "mods/Create/Mixing.md",
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
-        "Splashing": "mods/Create/Splashing.md"
+        "Splashing": "mods/Create/Splashing.md",
+        "Create Automated (Addon)": {
+          "Extracting Recipes": "mods/Create/CreateAutomated/ExtractingRecipes.md",
+          "Picking Recipes": "mods/Create/CreateAutomated/PickingRecipes.md",
+          "ContentTweaker": {
+            "Drill Heads": "mods/Create/CreateAutomated/DrillHeads.md"
+          }
+        }
       },
       "Cyclic": {
         "Melter": "mods/Cyclic/Melter.md",
