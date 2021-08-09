@@ -2,7 +2,9 @@
 
 Fired when when this block is right clicked by a tool to change its state. For example: Used to determine if an axe can strip a log, a shovel can turn grass into a path, or a hoe can till dirt into farmland.
 
-The event is not cancelable.
+The event is cancelable.
+
+If the event is canceled, this will prevent the tool from changing the block's state.
 
 The event does not have a result.
 
