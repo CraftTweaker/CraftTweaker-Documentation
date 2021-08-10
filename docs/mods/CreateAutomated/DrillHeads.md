@@ -6,10 +6,10 @@
 
 ⚠ You can only do this with [ContentTweaker](https://www.curseforge.com/minecraft/mc-mods/contenttweaker) installed!
 
-Allows creating custom drill heads with custom durability, and custom partials (model displayed on the extractor block)
+Allows creating custom drill heads with custom durability, and custom partials (model displayed on the extractor block).
 
 The DrillHead is a type of [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder),
-so you obtain it by calling [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#withType<DrillHeadBuilder>()
+so you obtain it by calling [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#withType<DrillHeadBuilder>().
 
 ```zenscript
 #loader contenttweaker
@@ -28,4 +28,4 @@ The partials are the model displayed on the extractor block.
 If you don't register one, the default iron drill head will be used.
 
 
-If your drill model is in `assets/contenttweaker/models/block/my_drill.json`, you would use `.partial("block/my_drill")`
+If your drill model is in `assets/contenttweaker/models/block/my_drill.json`, you would use `.partial("block/my_drill")`.
