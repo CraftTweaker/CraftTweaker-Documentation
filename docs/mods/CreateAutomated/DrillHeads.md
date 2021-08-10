@@ -1,6 +1,5 @@
-[comment]: <> (::requiredMod[CreateAutomated]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/create-automated})
-[comment]: <> (::requiredMod[Create Automated]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create-automated requiredMod=ContentTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/contenttweaker})
 ::requiredMod[Create Automated]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/create-automated}
+::requiredMod[Create Automated]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create-automated requiredMod=ContentTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/contenttweaker}
 
 # Drill Heads
 
@@ -9,7 +8,7 @@
 Allows creating custom drill heads with custom durability, and custom partials (model displayed on the extractor block).
 
 The DrillHead is a type of [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder),
-so you obtain it by calling [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#withType<DrillHeadBuilder>().
+so you obtain it by calling [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#withType&lt;DrillHeadBuilder&gt;().
 
 ```zenscript
 #loader contenttweaker
