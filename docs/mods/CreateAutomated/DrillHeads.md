@@ -21,7 +21,7 @@ new ItemBuilder()
     .withType<DrillHeadBuilder>()
     .durability(9898) // Sets the drill's durability, drill damage is defined in each extracting recipe
     .partial("block/my_drill") // Sets the model displayed on the extractor block. See how the partials work below
-    .build("i_like_putting_jokes_in_ids"); // Registers the block with the id contenttweaker:i_like_putting_jokes_in_ids
+    .build("i_like_putting_jokes_in_ids"); // Registers the item with the id contenttweaker:i_like_putting_jokes_in_ids
 ```
 
 The partials are the model displayed on the extractor block. 
