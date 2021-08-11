@@ -272,6 +272,18 @@ IItemStack.getEnchantmentLevel(enchantment as MCEnchantment) as int
 
 :::
 
+:::group{name=getEnchantments}
+
+Return Type: Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+
+```zenscript
+// IItemStack.getEnchantments() as Integer[MCEnchantment]
+
+<item:minecraft:dirt>.getEnchantments();
+```
+
+:::
+
 :::group{name=getImmutableInternal}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -494,6 +506,26 @@ IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredi
 
 :::
 
+:::group{name=removeEnchantment}
+
+Removes the given enchantment from this IItemStack.
+
+Returns: This itemStack if it is mutable, a new one with the enchantment removed otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.removeEnchantment(enchantment as MCEnchantment) as IItemStack
+
+<item:minecraft:dirt>.removeEnchantment(<enchantment:minecraft:riptide>);
+```
+
+| Параметр    | Тип                                                     | Description                |
+| ----------- | ------------------------------------------------------- | -------------------------- |
+| enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to remove. |
+
+
+:::
+
 :::group{name=removeGlobalAttribute}
 
 Removes all AttributeModifiers that use the given Attribute from this IIngredient.
@@ -568,6 +600,24 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 | Параметр | Тип    | Description            |
 | -------- | ------ | ---------------------- |
 | name     | string | New name of the stack. |
+
+
+:::
+
+:::group{name=setEnchantments}
+
+Sets the enchantments on this IItemStack.
+
+Returns: This itemStack if it is mutable, a new one with the enchantments otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.setEnchantments(enchantments as Integer[MCEnchantment]) as IItemStack
+```
+
+| Параметр     | Тип                                                              | Description          |
+| ------------ | ---------------------------------------------------------------- | -------------------- |
+| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | The new enchantments |
 
 
 :::
@@ -737,6 +787,27 @@ IItemStack.withDisplayName(text as MCTextComponent) as IItemStack
 
 :::
 
+:::group{name=withEnchantment}
+
+Enchants this IItemStack with the given Enchantment.
+
+Returns: This itemStack if it is mutable, a new one with the enchantment added otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.withEnchantment(enchantment as MCEnchantment, level as int) as IItemStack
+
+<item:minecraft:dirt>.withEnchantment(<enchantment:minecraft:riptide>, 2);
+```
+
+| Параметр    | Тип                                                     | Description                  | Optional | DefaultValue |
+| ----------- | ------------------------------------------------------- | ---------------------------- | -------- | ------------ |
+| enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to add.      | false    |              |
+| level       | int                                                     | The level of the enchantment | true     | 1            |
+
+
+:::
+
 :::group{name=withTag}
 
 Sets the tag for the ItemStack.
@@ -827,7 +898,7 @@ myIItemStack | other as IIngredient
 | definition     | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)                   | true         | false        | No Description Provided                                                                                                                      |
 | displayName    | string                                                                   | true         | false        | Gets the display name of the ItemStack                                                                                                       |
 | empty          | boolean                                                                  | true         | false        | Returns if the ItemStack is empty                                                                                                            |
-| enchantments   | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]         | true         | false        | No Description Provided                                                                                                                      |
+| enchantments   | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]         | true         | true         | No Description Provided                                                                                                                      |
 | food           | [MCFood](/vanilla/api/food/MCFood)?                                      | true         | true         | No Description Provided                                                                                                                      |
 | getOrCreate    | [IData](/vanilla/api/data/IData)                                         | true         | false        | Returns the NBT tag attached to this ItemStack or makes a new tag.                                                                           |
 | getRepairCost  | int                                                                      | true         | false        | Gets the repair cost of the ItemStack, or 0 if no repair is defined.                                                                         |
