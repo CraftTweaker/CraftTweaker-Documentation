@@ -89,6 +89,13 @@
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
         "Splashing": "mods/Create/Splashing.md"
       },
+      "Create Automated": {
+        "Extracting Recipes": "mods/CreateAutomated/ExtractingRecipes.md",
+        "Picking Recipes": "mods/CreateAutomated/PickingRecipes.md",
+        "ContentTweaker": {
+          "Drill Heads": "mods/CreateAutomated/DrillHeads.md"
+        }
+      },
       "Cyclic": {
         "Melter": "mods/Cyclic/Melter.md",
         "Solidifier": "mods/Cyclic/Solidifier.md"
