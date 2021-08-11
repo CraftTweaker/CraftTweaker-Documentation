@@ -240,6 +240,18 @@ MCItemStackMutable.getEnchantmentLevel(enchantment as MCEnchantment) as int
 
 :::
 
+:::group{name=getEnchantments}
+
+Return Type: Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+
+```zenscript
+// MCItemStackMutable.getEnchantments() as Integer[MCEnchantment]
+
+<item:minecraft:dirt>.mutable().getEnchantments();
+```
+
+:::
+
 :::group{name=getMaxStackSize}
 
 Returns the max stack size of the Item in the ItemStack
