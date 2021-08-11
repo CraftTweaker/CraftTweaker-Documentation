@@ -719,6 +719,20 @@ myMCEntity.onLivingFall(5, 5);
 
 :::
 
+:::group{name=remove}
+
+Removes the entity from the world.
+
+Return Type: void
+
+```zenscript
+// MCEntity.remove() as void
+
+myMCEntity.remove();
+```
+
+:::
+
 :::group{name=removeTag}
 
 Removes a tag from the Entity.

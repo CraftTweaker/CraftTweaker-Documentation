@@ -371,6 +371,26 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 :::
 
+:::group{name=grow}
+
+Grows this IItemStack's stack size by the given amount, or 1 if no amount is given.
+
+Returns: This IItemStack if mutable, a new one with the new amount otherwise.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.grow(amount as int) as IItemStack
+
+<item:minecraft:dirt>.grow(2);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| amount | int | The amount to grow by. | true | 1 |
+
+
+:::
+
 :::group{name=isFood}
 
 Return Type: boolean
@@ -692,6 +712,26 @@ Return Type: void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | newRarity | [Rarity](/vanilla/api/item/Rarity) | The new rarity of the Item. |
+
+
+:::
+
+:::group{name=shrink}
+
+Shrinks this IItemStack's stack size by the given amount, or 1 if no amount is given.
+
+Returns: This IItemStack if mutable, a new one with the new amount otherwise.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.shrink(amount as int) as IItemStack
+
+<item:minecraft:dirt>.shrink(2);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| amount | int | The amount to shrink by. | true | 1 |
 
 
 :::
