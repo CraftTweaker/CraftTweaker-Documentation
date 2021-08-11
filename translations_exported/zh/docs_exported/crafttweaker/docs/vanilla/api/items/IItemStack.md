@@ -737,6 +737,26 @@ IItemStack.withDisplayName(text as MCTextComponent) as IItemStack
 
 :::
 
+:::group{name=withEnchantment}
+
+Enchants this IItemStack with the given Enchantment.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.withEnchantment(enchantment as MCEnchantment, level as int) as IItemStack
+
+<item:minecraft:dirt>.withEnchantment(<enchantment:minecraft:riptide>, 2);
+```
+
+| 参数          | 类型                                                      | 描述                           | 可选    | DefaultValue |
+| ----------- | ------------------------------------------------------- | ---------------------------- | ----- | ------------ |
+| enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to add.      | false |              |
+| level       | int                                                     | The level of the enchantment | true  | 1            |
+
+
+:::
+
 :::group{name=withTag}
 
 Sets the tag for the ItemStack.
