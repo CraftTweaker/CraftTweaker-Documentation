@@ -22,7 +22,7 @@ Handles the replacing of ingredients in recipes for various [IRecipeManager](/va
  [this](.)#explicitlyRename(ResourceLocation, String).
 
  An example usage of a `Replacer` could be
- `Replacer.forTypes(crafingTable).replace(<item:minecraft:string>, <item:minecraft:diamond>).execute();`
+ `Replacer.forTypes(craftingTable).replace(<item:minecraft:string>, <item:minecraft:diamond>).execute();`
 
 ## Importing the class
 
