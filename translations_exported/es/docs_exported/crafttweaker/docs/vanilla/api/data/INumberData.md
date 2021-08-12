@@ -42,6 +42,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 :::
 
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+INumberData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter   | Type   | Description             |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
 :::group{name=asList}
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
