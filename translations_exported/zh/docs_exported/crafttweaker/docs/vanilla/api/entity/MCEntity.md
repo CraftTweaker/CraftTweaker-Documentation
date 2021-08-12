@@ -714,6 +714,20 @@ myMCEntity.onLivingFall(5, 5);
 
 :::
 
+:::group{name=remove}
+
+Removes the entity from the world.
+
+Return Type: void
+
+```zenscript
+// MCEntity.remove() as void
+
+myMCEntity.remove();
+```
+
+:::
+
 :::group{name=removeTag}
 
 Removes a tag from the Entity.
@@ -795,6 +809,29 @@ myMCEntity.setFire(5);
 | 参数      | 类型  | 描述                                                      |
 | ------- | --- | ------------------------------------------------------- |
 | seconds | int | The amount of seconds the Entity should be on fire for. |
+
+
+:::
+
+:::group{name=setLocationAndAngles}
+
+Sets the location and looking angles of the entity.
+
+Return Type: void
+
+```zenscript
+// MCEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float) as void
+
+myMCEntity.setLocationAndAngles(5, 1, 9, 90, 120);
+```
+
+| 参数    | 类型     | 描述                   |
+| ----- | ------ | -------------------- |
+| x     | double | The new x position.  |
+| y     | double | The new y position.  |
+| z     | double | The new z position.  |
+| yaw   | float  | The new yaw value.   |
+| pitch | float  | The new pitch value. |
 
 
 :::
