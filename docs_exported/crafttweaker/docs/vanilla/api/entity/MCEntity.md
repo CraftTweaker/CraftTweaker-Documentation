@@ -819,6 +819,29 @@ myMCEntity.setFire(5);
 
 :::
 
+:::group{name=setLocationAndAngles}
+
+Sets the location and looking angles of the entity.
+
+Return Type: void
+
+```zenscript
+// MCEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float) as void
+
+myMCEntity.setLocationAndAngles(5, 1, 9, 90, 120);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | The new x position. |
+| y | double | The new y position. |
+| z | double | The new z position. |
+| yaw | float | The new yaw value. |
+| pitch | float | The new pitch value. |
+
+
+:::
+
 :::group{name=setNoGravity}
 
 Sets this Entity to have no gravity.
