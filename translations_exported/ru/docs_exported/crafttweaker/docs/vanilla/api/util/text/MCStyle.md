@@ -45,6 +45,18 @@ myMCStyle.getBold();
 
 :::
 
+:::group{name=getColor}
+
+Return Type: int
+
+```zenscript
+// MCStyle.getColor() as int
+
+myMCStyle.getColor();
+```
+
+:::
+
 :::group{name=getFontId}
 
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
