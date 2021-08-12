@@ -94,6 +94,22 @@ new ListData(["Hello", "World"]).asCollection();
 
 :::
 
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ICollectionData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
 :::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
