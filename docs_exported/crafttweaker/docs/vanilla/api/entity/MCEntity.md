@@ -111,6 +111,18 @@ myMCEntity.changeDimension(world);
 
 :::
 
+:::group{name=dismount}
+
+Return Type: void
+
+```zenscript
+// MCEntity.dismount() as void
+
+myMCEntity.dismount();
+```
+
+:::
+
 :::group{name=extinguish}
 
 Extinguishes the Entity if it is on fire.
@@ -733,6 +745,18 @@ myMCEntity.remove();
 
 :::
 
+:::group{name=removePassengers}
+
+Return Type: void
+
+```zenscript
+// MCEntity.removePassengers() as void
+
+myMCEntity.removePassengers();
+```
+
+:::
+
 :::group{name=removeTag}
 
 Removes a tag from the Entity.
@@ -899,6 +923,23 @@ myMCEntity.setPosition(5, 2, 59);
 
 :::
 
+:::group{name=setPositionAndUpdate}
+
+Return Type: void
+
+```zenscript
+MCEntity.setPositionAndUpdate(x as double, y as double, z as double) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | No Description Provided |
+| y | double | No Description Provided |
+| z | double | No Description Provided |
+
+
+:::
+
 :::group{name=setSilent}
 
 Sets if this Entity is silent or not.
@@ -935,6 +976,22 @@ myMCEntity.setSneaking(true);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | value | boolean | The new sneaking value |
+
+
+:::
+
+:::group{name=startRiding}
+
+Return Type: boolean
+
+```zenscript
+MCEntity.startRiding(other as MCEntity, forced as boolean) as boolean
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| other | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | false |  |
+| forced | boolean | No Description Provided | true | false |
 
 
 :::
