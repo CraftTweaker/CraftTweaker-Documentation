@@ -10,7 +10,7 @@ Handles the replacing of ingredients in recipes for various [IRecipeManager](/va
 
  All recipes that get replaced by a `Replacer` get renamed according to a set naming scheme. You can modify completely by providing a lambda via [this](.)#useForRenaming(BiFunction), or just for a specific set of recipes via [this](.)#explicitlyRename(ResourceLocation, String).
 
- An example usage of a `Replacer` could be `Replacer.forTypes(crafingTable).replace(<item:minecraft:string>, <item:minecraft:diamond>).execute();`
+ An example usage of a `Replacer` could be `Replacer.forTypes(craftingTable).replace(<item:minecraft:string>, <item:minecraft:diamond>).execute();`
 
 ## Diese Klasse importieren
 
