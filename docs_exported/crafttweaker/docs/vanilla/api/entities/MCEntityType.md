@@ -39,6 +39,21 @@ MCEntityType.create(world as MCWorld) as MCEntity
 
 :::
 
+:::group{name=getRegistryName}
+
+Gets the registry name of this EntityType
+
+Returns: The registry name of this EntityType as a ResourceLocation  
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+
+```zenscript
+// MCEntityType.getRegistryName() as MCResourceLocation
+
+myMCEntityType.getRegistryName();
+```
+
+:::
+
 
 ## Operators
 
@@ -61,6 +76,7 @@ myMCEntityType | other as EntityIngredient
 | immuneToFire | boolean | true | false | No Description Provided |
 | lootTable | string | true | false | No Description Provided |
 | name | string | true | false | No Description Provided |
+| registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name of this EntityType |
 | serializable | boolean | true | false | No Description Provided |
 | summonable | boolean | true | false | No Description Provided |
 | translationKey | string | true | false | No Description Provided |
