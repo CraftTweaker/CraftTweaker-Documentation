@@ -375,6 +375,18 @@ myMCEntity.getPosition();
 
 :::
 
+:::group{name=getPositionVec}
+
+Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
+
+```zenscript
+// MCEntity.getPositionVec() as MCVector3d
+
+myMCEntity.getPositionVec();
+```
+
+:::
+
 :::group{name=getTags}
 
 Gets all the tags that are attached to the entity.
@@ -1046,6 +1058,7 @@ myMCEntity.updateData({key: "value"});
 | name             | string                                             | true       | false      | Gets the name of the Entity.                                                                                                           |
 | onGround         | [MCEntity](/vanilla/api/entity/MCEntity)           | true       | true       | Sets if the Entity should be considered on the ground or not.                                                                          |
 | position         | [BlockPos](/vanilla/api/util/BlockPos)             | true       | false      | Gets this Entity's position in the world.                                                                                              |
+| positionVec      | [MCVector3d](/vanilla/api/util/MCVector3d)         | true       | false      | No Description Provided                                                                                                                |
 | silent           | boolean                                            | true       | true       | Checks if this Entity is silent. <br />  <br />  Silent Entities do not play sounds.                                       |
 | sneaking         | boolean                                            | true       | true       | Checks if this Entity is sneaking or not.                                                                                              |
 | spectator        | boolean                                            | true       | false      | Checks if this Entity is in spectator mode.                                                                                            |
