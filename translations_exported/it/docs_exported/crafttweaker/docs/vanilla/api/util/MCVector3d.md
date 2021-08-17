@@ -14,6 +14,11 @@ import crafttweaker.api.util.MCVector3d;
 ```
 
 
+## Interfacce Implementate
+MCVector3d implements the following interfaces. That means all methods defined in these interfaces are also available in MCVector3d
+
+- [IPosition](/vanilla/api/dispenser/IPosition)
+
 ## Constructors
 
 
@@ -28,7 +33,25 @@ new MCVector3d(x as double, y as double, z as double) as MCVector3d
 
 
 
+## Caster
+
+| Tipo Risultato                             | Implicito |
+| ------------------------------------------ | --------- |
+| [MCVector3i](/vanilla/api/util/MCVector3i) | false     |
+
 ## Methods
+
+:::group{name=asVector3i}
+
+Return Type: [MCVector3i](/vanilla/api/util/MCVector3i)
+
+```zenscript
+// MCVector3d.asVector3i() as MCVector3i
+
+myMCVector3d.asVector3i();
+```
+
+:::
 
 :::group{name=cross}
 
