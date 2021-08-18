@@ -65,7 +65,7 @@ import mods.roots.SummonCreatures;
 // the Animal Harvest map
 SummonCreatures.clearLifeEssence();
 
-// Add a recipe to summon a Chicken using 3 items
+// Add a recipe to summon a Chicken using 3 thaumcraft.items
 SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
 // Remove the enderman added by the Animal Harvest example
