@@ -13,6 +13,30 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Static Methods
+
+:::group{name=setNameplateHandler}
+
+Sets the global nameplate handler for all EntityTypes.
+
+Return Type: void
+
+```zenscript
+// MCEntityType.setNameplateHandler(function as INameplateFunction) as void
+
+MCEntityType.setNameplateHandler((entity, result) => {
+ result.setAllow();
+ result.content = "Custom name! Position: " + entity.position;
+ }));
+```
+
+| Parameter | Type                                                         | Description                                                             |
+| --------- | ------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| function  | [INameplateFunction](/vanilla/api/entity/INameplateFunction) | The function that controls how all EntityType's nameplate are rendered. |
+
+
+:::
+
 ## Casters
 
 | Result type                                              | Is Implicit |
@@ -39,6 +63,43 @@ MCEntityType.create(world as MCWorld) as MCEntity
 
 :::
 
+:::group{name=getRegistryName}
+
+Gets the registry name of this EntityType
+
+Returns: The registry name of this EntityType as a ResourceLocation  
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+
+```zenscript
+// MCEntityType.getRegistryName() as MCResourceLocation
+
+myMCEntityType.getRegistryName();
+```
+
+:::
+
+:::group{name=setNameplate}
+
+Sets the nameplate handler for this EntityType.
+
+Return Type: void
+
+```zenscript
+// MCEntityType.setNameplate(function as INameplateFunction) as void
+
+myMCEntityType.setNameplate((entity, result) => {
+ result.setAllow();
+ result.content = "Custom name! Position: " + entity.position;
+ }));
+```
+
+| Parameter | Type                                                         | Description                                                             |
+| --------- | ------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| function  | [INameplateFunction](/vanilla/api/entity/INameplateFunction) | The function that controls how this EntityType's nameplate is rendered. |
+
+
+:::
+
 
 ## Operadores
 
@@ -53,16 +114,17 @@ myMCEntityType | other as EntityIngredient
 
 ## Properties
 
-| Nombre         | Type                                                                 | Has Getter | Has Setter | Description             |
-| -------------- | -------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
-| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided |
-| commandString  | string                                                               | true       | false      | No Description Provided |
-| height         | float                                                                | true       | false      | No Description Provided |
-| immuneToFire   | boolean                                                              | true       | false      | No Description Provided |
-| lootTable      | string                                                               | true       | false      | No Description Provided |
-| name           | string                                                               | true       | false      | No Description Provided |
-| serializable   | boolean                                                              | true       | false      | No Description Provided |
-| summonable     | boolean                                                              | true       | false      | No Description Provided |
-| translationKey | string                                                               | true       | false      | No Description Provided |
-| width          | float                                                                | true       | false      | No Description Provided |
+| Nombre         | Type                                                                 | Has Getter | Has Setter | Description                               |
+| -------------- | -------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true       | false      | No Description Provided                   |
+| commandString  | string                                                               | true       | false      | No Description Provided                   |
+| height         | float                                                                | true       | false      | No Description Provided                   |
+| immuneToFire   | boolean                                                              | true       | false      | No Description Provided                   |
+| lootTable      | string                                                               | true       | false      | No Description Provided                   |
+| name           | string                                                               | true       | false      | No Description Provided                   |
+| registryName   | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation)         | true       | false      | Gets the registry name of this EntityType |
+| serializable   | boolean                                                              | true       | false      | No Description Provided                   |
+| summonable     | boolean                                                              | true       | false      | No Description Provided                   |
+| translationKey | string                                                               | true       | false      | No Description Provided                   |
+| width          | float                                                                | true       | false      | No Description Provided                   |
 
