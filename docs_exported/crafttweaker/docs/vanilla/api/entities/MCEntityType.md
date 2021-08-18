@@ -13,6 +13,30 @@ MCEntityType implements the following interfaces. That means all methods defined
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Static Methods
+
+:::group{name=setNameplateHandler}
+
+Sets the global nameplate handler for all EntityTypes.
+
+Return Type: void
+
+```zenscript
+// MCEntityType.setNameplateHandler(function as INameplateFunction) as void
+
+MCEntityType.setNameplateHandler((entity, result) => {
+ result.setAllow();
+ result.content = "Custom name! Position: " + entity.position;
+ }));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| function | [INameplateFunction](/vanilla/api/entity/INameplateFunction) | The function that controls how all EntityType's nameplate are rendered. |
+
+
+:::
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -51,6 +75,28 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 myMCEntityType.getRegistryName();
 ```
+
+:::
+
+:::group{name=setNameplate}
+
+Sets the nameplate handler for this EntityType.
+
+Return Type: void
+
+```zenscript
+// MCEntityType.setNameplate(function as INameplateFunction) as void
+
+myMCEntityType.setNameplate((entity, result) => {
+ result.setAllow();
+ result.content = "Custom name! Position: " + entity.position;
+ }));
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| function | [INameplateFunction](/vanilla/api/entity/INameplateFunction) | The function that controls how this EntityType's nameplate is rendered. |
+
 
 :::
 
