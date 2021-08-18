@@ -82,11 +82,13 @@
           "AttributeModifier": "vanilla/api/entity/AttributeModifier.md",
           "AttributeOperation": "vanilla/api/entity/AttributeOperation.md",
           "EntityIngredient": "vanilla/api/entity/EntityIngredient.md",
+          "INameplateFunction": "vanilla/api/entity/INameplateFunction.md",
           "MCEntity": "vanilla/api/entity/MCEntity.md",
           "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
           "MCItemEntity": "vanilla/api/entity/MCItemEntity.md",
           "MCLivingEntity": "vanilla/api/entity/MCLivingEntity.md",
           "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md",
+          "NamePlateResult": "vanilla/api/entity/NamePlateResult.md",
           "PlacementType": "vanilla/api/entity/PlacementType.md"
         },
         "Event": {
@@ -106,9 +108,6 @@
             "MCCropGrowEvent": "vanilla/api/event/block/MCCropGrowEvent.md",
             "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
             "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
-          },
-          "Client": {
-            "RenderNameplateEvent": "vanilla/api/event/client/RenderNameplateEvent.md"
           },
           "Entity": {
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
