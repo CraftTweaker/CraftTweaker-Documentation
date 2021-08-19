@@ -72,7 +72,11 @@
         },
         "Enchantment": {
           "EnchantmentRarity": "vanilla/api/enchantment/EnchantmentRarity.md",
-          "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md"
+          "IArmorVanishable": "vanilla/api/enchantment/IArmorVanishable.md",
+          "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md",
+          "Vanishing": {
+            "IVanishable": "vanilla/api/enchantment/vanishing/IVanishable.md"
+          }
         },
         "Entities": {
           "MCEntityType": "vanilla/api/entities/MCEntityType.md"
@@ -108,6 +112,9 @@
             "MCCropGrowEvent": "vanilla/api/event/block/MCCropGrowEvent.md",
             "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
             "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
+          },
+          "Enchantming": {
+            "MCEnchantmentLevelSetEvent": "vanilla/api/event/enchantming/MCEnchantmentLevelSetEvent.md"
           },
           "Entity": {
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
@@ -197,7 +204,12 @@
           "ItemStack": "vanilla/api/item/ItemStack.md",
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
           "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
-          "Rarity": "vanilla/api/item/Rarity.md"
+          "Rarity": "vanilla/api/item/Rarity.md",
+          "Armor": {
+            "ArmorItem": "vanilla/api/item/armor/ArmorItem.md",
+            "ArmorMaterial": "vanilla/api/item/armor/ArmorMaterial.md",
+            "IArmorMaterial": "vanilla/api/item/armor/IArmorMaterial.md"
+          }
         },
         "Items": {
           "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
