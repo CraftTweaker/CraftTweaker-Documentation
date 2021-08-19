@@ -154,12 +154,31 @@ VillagerTrades.removeAllTrades(profession as MCVillagerProfession, villagerLevel
 
 :::group{name=removeAllWanderinTrades}
 
+::deprecated[Scheduled for removal next breaking change: use [this](.)#removeAllWanderingTrades(int) instead.]
+
 Removes all wandering trades of the given rarity
 
 Return Type: void
 
 ```zenscript
 VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+
+
+:::
+
+:::group{name=removeAllWanderingTrades}
+
+Removes all wandering trades of the given rarity
+
+Return Type: void
+
+```zenscript
+VillagerTrades.removeAllWanderingTrades(rarity as int) as void
 ```
 
 | Parameter | Type | Description |
