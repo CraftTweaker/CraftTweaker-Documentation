@@ -31,6 +31,7 @@ new LongData(internal as long) as LongData
 
 | Тип результата                                       | Является неявным |
 | ---------------------------------------------------- | ---------------- |
+| boolean                                              | false            |
 | byte                                                 | false            |
 | double                                               | false            |
 | float                                                | false            |
@@ -41,6 +42,18 @@ new LongData(internal as long) as LongData
 | short                                                | false            |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongData.asBoolean() as boolean
+
+800000000.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
