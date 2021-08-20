@@ -31,10 +31,23 @@ new BoolData(internal as boolean) as BoolData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ByteData #字节数据](/vanilla/api/data/ByteData)                | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// BoolData.asBoolean() as boolean
+
+true.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
