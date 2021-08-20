@@ -31,10 +31,23 @@ new IntArrayData(internal as int[]) as IntArrayData
 
 | 반환 자료형                                               | 암묵적   |
 | ---------------------------------------------------- | ----- |
+| boolean                                              | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData)         | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// IntArrayData.asBoolean() as boolean
+
+[4, 128, 256, 1024].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
