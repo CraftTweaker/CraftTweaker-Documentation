@@ -31,10 +31,23 @@ new LongArrayData(internal as long[]) as LongArrayData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongArrayData.asBoolean() as boolean
+
+[100000, 800000, 50000].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
