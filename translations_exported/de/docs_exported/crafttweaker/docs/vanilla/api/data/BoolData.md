@@ -31,10 +31,23 @@ new BoolData(internal as boolean) as BoolData
 
 | Result type                                          | Is Implicit |
 | ---------------------------------------------------- | ----------- |
+| boolean                                              | false       |
 | [ByteData](/vanilla/api/data/ByteData)               | false       |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
 
 ## Methoden
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// BoolData.asBoolean() as boolean
+
+true.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
