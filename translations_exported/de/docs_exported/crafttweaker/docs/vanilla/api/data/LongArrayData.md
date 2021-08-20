@@ -31,10 +31,23 @@ new LongArrayData(internal as long[]) as LongArrayData
 
 | Result type                                          | Is Implicit |
 | ---------------------------------------------------- | ----------- |
+| boolean                                              | false       |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
 | [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methoden
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongArrayData.asBoolean() as boolean
+
+[100000, 800000, 50000].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
