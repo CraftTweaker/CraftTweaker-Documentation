@@ -36,11 +36,24 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 | 结果类型                                                            | 是否隐藏  |
 | --------------------------------------------------------------- | ----- |
+| boolean                                                         | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData)     | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)              | false |
 | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true  |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ListData.asBoolean() as boolean
+
+["Hello", "World", "!"].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
