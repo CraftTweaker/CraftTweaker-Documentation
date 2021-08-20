@@ -36,11 +36,24 @@ new MapData(map as IData[string]) as MapData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [IData](/vanilla/api/data/IData)[string]                    | true  |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// MapData.asBoolean() as boolean
+
+{Hello : "World", Somewhere: "Over the rainbow"}.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
