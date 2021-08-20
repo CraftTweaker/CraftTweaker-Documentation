@@ -31,6 +31,7 @@ new DoubleData(internal as double) as DoubleData
 
 | Tipo Risultato                                       | Implicito |
 | ---------------------------------------------------- | --------- |
+| boolean                                              | false     |
 | byte                                                 | false     |
 | double                                               | false     |
 | float                                                | false     |
@@ -41,6 +42,18 @@ new DoubleData(internal as double) as DoubleData
 | short                                                | false     |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// DoubleData.asBoolean() as boolean
+
+3.25.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
