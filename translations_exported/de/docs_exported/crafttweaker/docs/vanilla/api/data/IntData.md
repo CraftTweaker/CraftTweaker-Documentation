@@ -31,6 +31,7 @@ new IntData(internal as int) as IntData
 
 | Result type                                          | Is Implicit |
 | ---------------------------------------------------- | ----------- |
+| boolean                                              | false       |
 | byte                                                 | false       |
 | double                                               | false       |
 | float                                                | false       |
@@ -41,6 +42,18 @@ new IntData(internal as int) as IntData
 | short                                                | false       |
 
 ## Methoden
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// IntData.asBoolean() as boolean
+
+8192.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
