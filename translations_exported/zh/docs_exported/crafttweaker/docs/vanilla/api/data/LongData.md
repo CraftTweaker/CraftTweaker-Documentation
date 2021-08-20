@@ -31,6 +31,7 @@ new LongData(internal as long) as LongData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -41,6 +42,18 @@ new LongData(internal as long) as LongData
 | short                                                       | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongData.asBoolean() as boolean
+
+800000000.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
