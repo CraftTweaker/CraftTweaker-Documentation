@@ -36,11 +36,24 @@ new MapData(map as IData[string]) as MapData
 
 | Тип результата                                       | Является неявным |
 | ---------------------------------------------------- | ---------------- |
+| boolean                                              | false            |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false            |
 | [IData](/vanilla/api/data/IData)[string]             | true             |
 | [INumberData](/vanilla/api/data/INumberData)         | false            |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// MapData.asBoolean() as boolean
+
+{Hello : "World", Somewhere: "Over the rainbow"}.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
