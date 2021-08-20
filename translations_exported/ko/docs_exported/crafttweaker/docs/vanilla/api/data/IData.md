@@ -14,10 +14,23 @@ import crafttweaker.api.data.IData;
 
 | 반환 자료형                                               | 암묵적   |
 | ---------------------------------------------------- | ----- |
+| boolean                                              | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData)         | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// IData.asBoolean() as boolean
+
+{Display: {lore: ["Hello", "World"]}}.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
