@@ -31,6 +31,7 @@ new FloatData(internal as float) as FloatData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -41,6 +42,18 @@ new FloatData(internal as float) as FloatData
 | short | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// FloatData.asBoolean() as boolean
+
+8.5.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 

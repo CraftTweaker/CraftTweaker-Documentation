@@ -19,6 +19,7 @@ INumberData implements the following interfaces. That means all methods defined 
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -29,6 +30,18 @@ INumberData implements the following interfaces. That means all methods defined 
 | short | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// INumberData.asBoolean() as boolean
+
+1.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 

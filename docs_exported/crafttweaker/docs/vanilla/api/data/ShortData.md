@@ -31,6 +31,7 @@ new ShortData(internal as short) as ShortData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -41,6 +42,18 @@ new ShortData(internal as short) as ShortData
 | short | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ShortData.asBoolean() as boolean
+
+1058.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 

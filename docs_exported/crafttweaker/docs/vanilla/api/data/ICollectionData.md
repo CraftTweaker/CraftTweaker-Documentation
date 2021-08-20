@@ -38,6 +38,7 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
@@ -79,6 +80,18 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 | index | int | The index to add to. Subsequent items will be moved one index higher |
 | value | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
+
+:::
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ICollectionData.asBoolean() as boolean
+
+new ListData(["Hello", "World"]).asBoolean();
+```
 
 :::
 
