@@ -31,6 +31,7 @@ new ShortData(internal as short) as ShortData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -41,6 +42,18 @@ new ShortData(internal as short) as ShortData
 | short                                                       | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ShortData.asBoolean() as boolean
+
+1058.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
