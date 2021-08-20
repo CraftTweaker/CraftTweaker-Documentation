@@ -31,10 +31,23 @@ new ByteArrayData(internal as byte[]) as ByteArrayData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ByteArrayData.asBoolean() as boolean
+
+[4, 1, 2].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
