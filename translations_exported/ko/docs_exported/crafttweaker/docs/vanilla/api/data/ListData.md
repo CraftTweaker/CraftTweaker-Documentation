@@ -36,11 +36,24 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 | 반환 자료형                                                          | 암묵적   |
 | --------------------------------------------------------------- | ----- |
+| boolean                                                         | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData)            | false |
 | [INumberData](/vanilla/api/data/INumberData)                    | false |
 | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true  |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ListData.asBoolean() as boolean
+
+["Hello", "World", "!"].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
