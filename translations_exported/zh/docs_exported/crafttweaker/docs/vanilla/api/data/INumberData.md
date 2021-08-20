@@ -19,6 +19,7 @@ INumberData实现了以下接口。 That means all methods defined in these inte
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -29,6 +30,18 @@ INumberData实现了以下接口。 That means all methods defined in these inte
 | short                                                       | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// INumberData.asBoolean() as boolean
+
+1.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
