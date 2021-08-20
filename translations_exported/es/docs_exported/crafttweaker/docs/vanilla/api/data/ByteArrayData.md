@@ -31,10 +31,23 @@ new ByteArrayData(internal as byte[]) as ByteArrayData
 
 | Result type                                          | Is Implicit |
 | ---------------------------------------------------- | ----------- |
+| boolean                                              | false       |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
 | [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ByteArrayData.asBoolean() as boolean
+
+[4, 1, 2].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
