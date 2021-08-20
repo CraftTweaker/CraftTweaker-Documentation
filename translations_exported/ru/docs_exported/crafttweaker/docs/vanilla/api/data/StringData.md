@@ -31,10 +31,23 @@ new StringData(internal as string) as StringData
 
 | Тип результата                                       | Является неявным |
 | ---------------------------------------------------- | ---------------- |
+| boolean                                              | false            |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false            |
 | [INumberData](/vanilla/api/data/INumberData)         | false            |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// StringData.asBoolean() as boolean
+
+new StringData("Hello").asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
