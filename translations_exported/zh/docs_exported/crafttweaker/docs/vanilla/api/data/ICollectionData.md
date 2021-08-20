@@ -38,6 +38,7 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
@@ -79,6 +80,18 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 | index | int                              | 要添加的索引。 后续项目将会上移一个索引 |
 | value | [IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
+
+:::
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ICollectionData.asBoolean() as boolean
+
+new ListData(["Hello", "World"]).asBoolean();
+```
 
 :::
 
