@@ -31,6 +31,7 @@ new ByteData(internal as byte) as ByteData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -41,6 +42,18 @@ new ByteData(internal as byte) as ByteData
 | short                                                       | false |
 
 ## 方法
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ByteData.asBoolean() as boolean
+
+4.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
