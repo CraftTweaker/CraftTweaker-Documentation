@@ -118,6 +118,42 @@ Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 :::
 
+:::group{name=getHarvestLevel}
+
+Gets the harvest level for this Block.
+
+ NOTE:
+ This will get the level for the default blockstate, you should use the BlockState specific method for a more accurate result!
+
+Returns: The harvest tool for this Block.  
+Return Type: int
+
+```zenscript
+// MCBlock.getHarvestLevel() as int
+
+<block:minecraft:grass_block>.getHarvestLevel();
+```
+
+:::
+
+:::group{name=getHarvestTool}
+
+Gets the harvest tool for this Block.
+
+ NOTE:
+ This will get the tool for the default blockstate, you should use the BlockState specific method for a more accurate result!
+
+Returns: The harvest tool for this Block.  
+Return Type: [ToolType](/vanilla/api/tool/ToolType)?
+
+```zenscript
+// MCBlock.getHarvestTool() as ToolType?
+
+<block:minecraft:grass_block>.getHarvestTool();
+```
+
+:::
+
 :::group{name=getJumpFactor}
 
 Gets the jump factor of this Block.
@@ -342,6 +378,44 @@ Return Type: void
 
 :::
 
+:::group{name=setHarvestLevel}
+
+Sets the harvest level for this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setHarvestLevel(level as int) as void
+
+<block:minecraft:grass_block>.setHarvestLevel(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| level | int | the new harvest level. |
+
+
+:::
+
+:::group{name=setHarvestTool}
+
+Sets the harvest tool for this Block.
+
+Return Type: void
+
+```zenscript
+// MCBlock.setHarvestTool(type as ToolType?) as void
+
+<block:minecraft:grass_block>.setHarvestTool(<tooltype:axe>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| type | [ToolType](/vanilla/api/tool/ToolType)? | The new tooltype. |
+
+
+:::
+
 :::group{name=setJumpFactor}
 
 Sets the jump factor of this Block.
@@ -427,6 +501,8 @@ Return Type: void
 | canCollide | boolean | true | true | Checks if entities can collide with this Block. |
 | commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
 | defaultState | [MCBlockState](/vanilla/api/block/MCBlockState) | true | false | Gets the default [MCBlockState](/vanilla/api/block/MCBlockState) of this Block. |
+| harvestLevel | int | true | true | Gets the harvest level for this Block. <br />  <br />  NOTE: <br />  This will get the level for the default blockstate, you should use the BlockState specific method for a more accurate result! |
+| harvestTool | [ToolType](/vanilla/api/tool/ToolType)? | true | true | Gets the harvest tool for this Block. <br />  <br />  NOTE: <br />  This will get the tool for the default blockstate, you should use the BlockState specific method for a more accurate result! |
 | jumpFactor | float | true | true | Gets the jump factor of this Block. |
 | lootTable | string | true | false | Gets the loot table id for this Block. |
 | material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | true | true | Gets the material of this Block. |
