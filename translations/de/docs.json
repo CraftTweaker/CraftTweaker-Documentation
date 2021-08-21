@@ -1126,15 +1126,33 @@
       "Roots 3": {
         "Animal Harvest Ritual": "Mods/Roots_3/animalharvest.md",
         "Bark Creation": "Mods/Roots_3/bark.md",
+        "Chrysopoeia Spell": "Mods/Roots_3/chrysopoeia.md",
         "Fey Crafter": "Mods/Roots_3/fey.md",
         "Flower Growth Ritual": "Mods/Roots_3/flowergrowth.md",
+        "Herbs": "Mods/Roots_3/herbs.md",
         "Mortar": "Mods/Roots_3/mortar.md",
         "Untrue Pacifist Creatures": "Mods/Roots_3/pacifist.md",
         "Pyre Crafting": "Mods/Roots_3/pyre.md",
         "Pyre Ritual Recipes": "Mods/Roots_3/ritual.md",
+        "Rituals": {
+            "Rituals": "Mods/Roots_3/rituals.md",
+            "Ritual": "Mods/Roots_3/ritual.md"
+        },
         "Runic Shears Recipes": "Mods/Roots_3/runicshears.md",
+        "Spells": {
+            "Spells": "Mods/Roots_3/spells.md",
+            "Spell": "Mods/Roots_3/spell.md",
+            "Costs": "Mods/Roots_3/costs.md"
+        },
         "Summon Creatures Ritual": "Mods/Roots_3/summoncreatures.md",
-        "Transmutation Ritual": "Mods/Roots_3/transmutation.md"
+        "Transmutation Ritual": "Mods/Roots_3/transmutation.md",
+        "Predicates": {
+          "Predicates": "Mods/Roots_3/predicates.md",
+          "StatePredicate": "Mods/Roots_3/statepredicate.md",
+          "PropertyPredicate": "Mods/Roots_3/propertypredicate.md",
+          "BlockStateAbove": "Mods/Roots_3/blockstateabove.md",
+          "BlockStateBelow": "Mods/Roots_3/blockstatebelow.md"       
+        }      
       },
       "Sky Resources 2": {
         "Sky Resources 2": "Mods/Sky_Resources_2/Sky_Resources_2.md",
