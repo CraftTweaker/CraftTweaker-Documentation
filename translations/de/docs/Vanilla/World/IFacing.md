@@ -46,3 +46,9 @@ facingOne == facingTwo;
 //Returns 0 if they are equal
 facingOne.compare(facingTwo);
 ```
+
+### Getting from Entities
+
+`IFacing.DirectionFromEntityLiving(IBlockPos pos, IEntityLivingBase placer);`
+
+The static method returns an IFacing from [IEntityLivingBase](Vanilla/Entities/IEntityLivingBase). The method is often used to determine the facing of some blocks when placed by players, like piston, observer, command block, etc. Unlike the `horizontalFacing` getter of `IEntity`, the method can return `UP` and `DOWN`. And it always returns the opposite value of the getter.
