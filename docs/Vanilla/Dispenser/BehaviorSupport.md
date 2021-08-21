@@ -19,7 +19,7 @@ Use the `IItemDefinition#addDispenserBehavior` method to add dispenser behavior 
 
 ### IDispenserBehavior
 
-The IDispenserBehavior function defines how dispenser dispenses the item. It has two parameters:
+The IDispenserBehavior function defines how a Dispenser dispenses the item. It has two parameters:
 
 * `source`: An [IBlockSource](Vanilla/Dispenser/IBlockSource) containing some information of the dispenser.
 * `item`: The [IItemStack](/Vanilla/Items/IItemStack/) to be dispensed.
