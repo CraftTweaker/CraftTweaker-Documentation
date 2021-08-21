@@ -14,6 +14,8 @@ void addRecipe(
 );
 ```
 
+Creates a recipe producing output from an array of ingredients (transforms are supported), requires a name.
+
 * * *
 
 ```zenscript
@@ -25,6 +27,8 @@ void addRecipe(
 );
 ```
 
+Creates a recipe producing output from an array of ingredients (transforms are supported), requires a name. Additional drops the specified amount of experience whenever the recipe is crafted.
+
 * * *
 
 ```zenscript
@@ -32,6 +36,8 @@ void removeRecipe(
   IItemStack output // the item produced by the recipe you wish to remove
 );
 ```
+
+Removes a Fey Crafting recipe via the output produced by the recipe.
 
 * * *
 
@@ -51,6 +57,8 @@ Fey.removeRecipe(<roots:living_axe>);
 
 // Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
+
+Fey.addRecipe("nether_stone", <minecraft:netherrack>, [<minecraft:flint_and_steel>.anyDamage().transformDamage(1), <minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
 ### Notes
