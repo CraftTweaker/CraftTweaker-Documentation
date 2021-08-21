@@ -8,13 +8,29 @@ import mods.roots.RunicShears;
 
 ```zenscript
 void addRecipe(
-  string name,                 // the name of the recipe being created
-  IItemStack outputDrop,       // the item output obtained by performing the shearing
-  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
-  IItemStack inputBlock,       // the block that is to be sheared
-  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
+  string name,                  // the name of the recipe being created
+  IItemStack outputDrop,        // the item output obtained by performing the shearing
+  IPredicate inputState,        // a predicate describing the input state (see Predicates)
+  IBlockState replacementState, // the replacement blockstate described as a block state
+  IItemStack displayItem        // the item that should be displayed in integration for this recipe
 );
 ```
+
+Creates a recipe with the defined name that creats the specified itemstack whenever runic shears are used on the specified input state, as well as the state that will replace the input state. Additionally, an optional item that can be displayed in integration.
+
+* * *
+
+```zenscript
+void addRecipeViaItem(
+  string name,                 // the name of the recipe being created
+  IItemStack outputDrop,       // the item output obtained by performing the shearing
+  IItemStack inputBlock,       // the block that is to be sheared
+  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
+  IItemStack displayItem       // the item that should be displayed in integration for this recipe
+);
+```
+
+As above, but using ItemStacks that describe ItemBlocks to determine blockstates.
 
 * * *
 
@@ -27,6 +43,8 @@ void addEntityRecipe(
 );
 ```
 
+Create a Runic Shears recipe that provides the outputDrop whenever the specified entity is interacted with using runic shears. The drop will only be created once every specified cooldown period. The entity specified must derive from EntityLivingBase.
+
 * * *
 
 ```zenscript
@@ -34,6 +52,18 @@ void removeRecipe(
   IItemStack output // the itemstack output that you wish to remove
 );
 ```
+
+Removes any/all recipes that have the output item specified.
+
+* * *
+
+```zenscript
+void removeEntityRecipe(
+  IEntityDefinition entity // the entity you wish to remove the recipef or
+);
+```
+
+Removes any/all recipes related to that entity
 
 * * *
 
@@ -44,7 +74,10 @@ import mods.roots.RunicShears;
 
 // Creates a recipe that obtains nether wart from red nether bricks
 // and then converts the bricks into normal nether bricks
-RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
+RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, StatePredicate.create(<blockstate:minecraft:red_nether_brick>), <blockstate:minecraft:nether_brick>, <minecraft:red_nether_brick>);
+
+// Removes the default chicken->mystical feather recipe
+RunicShears.removeEntityRecipe(<entity:minecraft:chicken>);
 
 // Creates a recipe that obtains eggs from chickens with a 2 minute cooldown
 RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
@@ -55,4 +88,4 @@ RunicShears.removeRecipe(<roots:fey_leather>);
 
 ### Notes
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of thaumcraft.entities) that matches the desired output.
