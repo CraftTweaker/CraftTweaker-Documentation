@@ -64,6 +64,6 @@ Pyre.addRecipe("stalicripe2", <roots:stalicripe>*64, [<minecraft:diamond_block>,
 
 ### Notes
 
-It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base thaumcraft.items.
+It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base items.
 
-For all other thaumcraft.items, please use a name descriptive of what your recipe does.
+For all other items, please use a name descriptive of what your recipe does.
