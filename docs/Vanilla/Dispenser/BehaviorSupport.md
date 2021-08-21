@@ -13,7 +13,7 @@ Use `IItemDefinition#removeDispenserBehavior` method to remove dispenser behavio
 
 ## Addition
 
-Using the `IItemDefinition#addDispenserBehavior` method to add dispenser behavior of the specific item.
+Use the `IItemDefinition#addDispenserBehavior` method to add dispenser behavior for the specific item.
 
 `itemDef.addDispenserBehavior(IDispenserBehavior behavior, @Optional IDispenserSoundFunction soundFunction)`
 
