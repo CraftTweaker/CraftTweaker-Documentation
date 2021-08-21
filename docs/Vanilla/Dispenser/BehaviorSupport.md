@@ -4,7 +4,7 @@ CraftTweaker allows you to add or remove dispenser behaviors.
 
 ## Removal
 
-Using `IItemDefinition#removeDispenserBehavior` method to remove dispenser behavior of the specific item.
+Use `IItemDefinition#removeDispenserBehavior` method to remove dispenser behavior of the specific item.
 
 ```zenscript
 // Dispenser can no longer shoot arrows
