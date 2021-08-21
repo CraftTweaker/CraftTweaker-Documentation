@@ -54,3 +54,5 @@ ZenMethods are for doing things with other things, in this case with a player.
 | executeCommand(raw)      | string                                  | Executes the command as the player                                  | `player.executeCommand("kill")`          |
 | dropItem(dropAll)        | bool                                    | Drops the current item (or the entire stack) that the player is holding.| `player.dropItem(false)`             |
 | dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/)| Drops the provided item at the player's position.                   | `player.dropItem(<minecraft:dirt>)`      |
+| getCooldown(item)        | [IItemStack](/Vanilla/Items/IItemStack/) | Gets current cooldown of specific item for the player | `player.getCooldown(<minecraft:ender_pearl>)` |
+| setCooldown(item, time)  | [IItemStack](/Vanilla/Items/IItemStack/), int | Sets cooldown time of specific item for the player | `player.setCooldown(<minecraft:ender_pearl>, 3)`
