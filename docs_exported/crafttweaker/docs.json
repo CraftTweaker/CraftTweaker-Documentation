@@ -209,6 +209,9 @@
             "ArmorItem": "vanilla/api/item/armor/ArmorItem.md",
             "ArmorMaterial": "vanilla/api/item/armor/ArmorMaterial.md",
             "IArmorMaterial": "vanilla/api/item/armor/IArmorMaterial.md"
+          },
+          "Block": {
+            "BlockItem": "vanilla/api/item/block/BlockItem.md"
           }
         },
         "Items": {
