@@ -113,8 +113,8 @@
             "MCFarmlandTrampleEvent": "vanilla/api/event/block/MCFarmlandTrampleEvent.md",
             "MCPortalSpawnEvent": "vanilla/api/event/block/MCPortalSpawnEvent.md"
           },
-          "Enchantming": {
-            "MCEnchantmentLevelSetEvent": "vanilla/api/event/enchantming/MCEnchantmentLevelSetEvent.md"
+          "Enchanting": {
+            "MCEnchantmentLevelSetEvent": "vanilla/api/event/enchanting/MCEnchantmentLevelSetEvent.md"
           },
           "Entity": {
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
@@ -209,6 +209,9 @@
             "ArmorItem": "vanilla/api/item/armor/ArmorItem.md",
             "ArmorMaterial": "vanilla/api/item/armor/ArmorMaterial.md",
             "IArmorMaterial": "vanilla/api/item/armor/IArmorMaterial.md"
+          },
+          "Block": {
+            "BlockItem": "vanilla/api/item/block/BlockItem.md"
           }
         },
         "Items": {
