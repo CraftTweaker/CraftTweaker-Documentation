@@ -14,6 +14,8 @@ void addRecipe(
 );
 ```
 
+Adds a recipe that converts a block (in the form of an item stack) into another item stack. Log input *must* be an itemblock.
+
 * * *
 
 ```zenscript
@@ -21,6 +23,8 @@ void removeRecipe(
   IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
 ```
+
+Removes a bark recipe via output from the list.
 
 * * *
 
