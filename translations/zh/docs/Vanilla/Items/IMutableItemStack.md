@@ -10,6 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 ## Getting the Instance
 
 You can get a IMutableItemStack by using IItemStack's `mutable()` method. like so:
+
 ```zenscript
 <minecraft:dirt>.mutable()
 ```
@@ -28,6 +29,12 @@ Besides `withAmount`, you can easily call these methods below to change the coun
 | ------------- | ---- | --------------------------------------------------- |
 | grow(count)   | int  | Increases the stack's count by the `count` provided |
 | shrink(count) | int  | Decreases the stack's count by the `count` provided |
+
+### Damaging
+
+The method attempts to damage the stack with an optional player. Returns if the stack is damaged successfully.
+
+`boolean attemptDamageItem(int amount, @Optional IPlayer player);`
 
 ### Copying
 
