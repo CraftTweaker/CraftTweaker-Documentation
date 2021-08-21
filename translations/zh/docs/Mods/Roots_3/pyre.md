@@ -14,6 +14,8 @@ void addRecipe(
 );
 ```
 
+Adds a Pyre crafting recipe that produces output after the standard amount of time, with the specified input ingredients (with potential transformers).
+
 * * *
 
 ```zenscript
@@ -25,6 +27,8 @@ void addRecipe(
 );
 ```
 
+Adds a Pyre crafting recipe that produces output after the standard amount of time, with the specified input ingredients (with potential transformers). Allows for the specification of an amount of experience to be generated once the craft is finished.
+
 * * *
 
 ```zenscript
@@ -32,6 +36,8 @@ void removeRecipe(
   IItemStack output // the output of the recipe to remove
 );
 ```
+
+Removes a Pyre crafting recipe based on its output.
 
 * * *
 
@@ -44,16 +50,16 @@ import mods.roots.Pyre;
 // 注意：在检测配方是否匹配的时候不需要提及产物数量。
 Pyre.removeRecipe(<roots:stalicripe>);
 
-// 重新添加另一个没有奖励经验的配方 ，
-// 虽然没有奖励经验，但是产物是非常可观的。
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
+// Re-adds the stalicripe using an addition recipe that grants no XP,
+// but with considerably greater output
+Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1), <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
 
-// 添加一个和上方语句一样的配方，并且奖励 30级的经验(从零级开始算起)。
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
+// As above, but rewarding 30 levels of experience (calculated from level 0)
+Pyre.addRecipe("stalicripe2", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
 ```
 
 ### 注意
 
-在取代一个配方的时候，确保配方名字一致时极其重要的，这能确保Patchouli手册 mod能够正常地显示配方的原材料。
+It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base items.
 
-对于其他的配方，请使用能够描述出你配方的用途的名字。
+For all other items, please use a name descriptive of what your recipe does.
