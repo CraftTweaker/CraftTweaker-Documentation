@@ -14,6 +14,8 @@ void addRecipe(
 );
 ```
 
+Creates a recipe producing output from an array of ingredients (transforms are supported), requires a name.
+
 * * *
 
 ```zenscript
@@ -25,6 +27,8 @@ void addRecipe(
 );
 ```
 
+Creates a recipe producing output from an array of ingredients (transforms are supported), requires a name. Additional drops the specified amount of experience whenever the recipe is crafted.
+
 * * *
 
 ```zenscript
@@ -32,6 +36,8 @@ void removeRecipe(
   IItemStack output // the item produced by the recipe you wish to remove
 );
 ```
+
+Removes a Fey Crafting recipe via the output produced by the recipe.
 
 * * *
 
@@ -51,8 +57,10 @@ Fey.removeRecipe(<roots:living_axe>);
 
 // 添加新的合成配方，务必保持与原配方同名，以确保它能被Patchouli手册展示出来。 默认情况下，所有精灵工匠台的名称与物品的名称相同。
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
+
+Fey.addRecipe("nether_stone", <minecraft:netherrack>, [<minecraft:flint_and_steel>.anyDamage().transformDamage(1), <minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
 ### 注意
 
-Patchouli手册的正常工作很重要，如果你删除一个默认配方 (例如 `living_axe`，也就是活镐)，如果你想要Patchouli手册正确显示新的配方，你必须用另一个配方替换它，并且给配方名称 `"living_axe"` 。
+It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.
