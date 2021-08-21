@@ -13,6 +13,7 @@ void addEntity(
 );
 ```
 
+Allows the addition of new entities to the list of 'Pacifist' creatures, i.e., those that, when killed, will grant the Untrue Pacifist advancement.
 
 ---
 
@@ -23,6 +24,7 @@ void removeEntity(
 );
 ```
 
+Removes an entity from the list of 'Pacifist Creatures', i.e., those that, when killed, will grant the Untrue Pacfist advancement.
 
 ---
 
