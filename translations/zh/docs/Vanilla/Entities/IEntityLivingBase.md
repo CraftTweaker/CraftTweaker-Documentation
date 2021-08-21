@@ -38,6 +38,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | revengeTarget                | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)       |
 | swingInProgress              | boolean                                                         |
 | totalArmorValue              | int                                                             |
+| moveForward                  | float                                                           |
+| moveStrafing                 | float                                                           |
+| moveVertical                 | float                                                           |
 
 ## ZenSetters
 
@@ -49,6 +52,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | lastAttackedEntity | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
 | revengeTarget      | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
 | swingProgress      | int                                                       |
+| moveForward        | float                                                     |
+| moveStrafing       | float                                                     |
+| moveVertical       | float                                                     |
 
 ## More ZenMethods
 
