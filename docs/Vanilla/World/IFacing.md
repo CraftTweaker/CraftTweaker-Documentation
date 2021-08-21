@@ -3,12 +3,15 @@
 The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
 ## Importing the package
+
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IFacing;` 
+`import crafttweaker.world.IFacing;`
 
 ## Enumerations
+
 The Facing interface has 6 static methods that return the said direction.  
 It also has one more that takes the direction as String input (e.g. `"NORTH"`)
+
 ```zenscript
 crafttweaker.world.IFacing.north()
 crafttweaker.world.IFacing.east()
@@ -22,6 +25,7 @@ crafttweaker.world.IFacing.fromString(String name);
 ```
 
 ## ZenGetters/ZenMethods without parameters
+
 | ZenGetter  | ZenMethod  | Return Type |
 |------------|------------|-------------|
 | name       | getName()  | string      |
@@ -29,9 +33,12 @@ crafttweaker.world.IFacing.fromString(String name);
 | opposite   | opposite() | IFacing     |
 
 ## Other methods
+
 ### Comparing two Facings
+
 You can compare two facings using the standart comparing Operators `== != < > <= >=`  
 Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+
 ```zenscript
 //Returns true or false
 facingOne == facingTwo;
@@ -39,3 +46,10 @@ facingOne == facingTwo;
 //Returns 0 if they are equal
 facingOne.compare(facingTwo);
 ```
+
+### Getting from Entities
+
+`IFacing.DirectionFromEntityLiving(IBlockPos pos, IEntityLivingBase placer);`
+
+The static method returns an IFacing from [IEntityLivingBase](Vanilla/Entities/IEntityLivingBase). The method is often used to determine the facing of some blocks when placed by players, like piston, observer, command block, etc. Unlike the `horizontalFacing` getter of `IEntity`, the method can return `UP` and `DOWN`. And it always returns the opposite value of the getter.
+

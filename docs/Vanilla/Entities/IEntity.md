@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
 <details><summary>Derived Methods</summary>
-	<ul>
+	<ul>	
 		<li>entity.displayName</li>
 		<li>entity.position</li>
 		<li>entity.world</li>
@@ -91,7 +91,13 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | rotationPitch               |                     | float                                        |
 | lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d/)        |
 | nbt                         | getNBT()            | [IData](/Vanilla/Data/IData/)                  |
-
+| horizontalFacing            | gethorizontalFacing() | [IFacing](/Vanilla/World/IFacing/)         |
+| updateBlocked               | getUpdateBlocked()  | boolean                                  |
+| inPortal                    | getInPortal()       | boolean                                      |
+| portalCounter               | getPortalCounter() | int                                      |
+| lastPortalVec               | getLastPortalVec() | [IVector3d](/Vanilla/World/IVector3d/)  |
+| lastPortalPos               | getLastPortalPos() | [IBlockPos](/Vanilla/World/IBlockPos/)     |
+| lastPortalDirection         | getLastPortalDirection() | [IFacing](/Vanilla/World/IFacing/) |
 
 ## ZenSetters
 
@@ -121,7 +127,12 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posZ                        |                     | double                                       |
 | nbt                         | setNBT(data)        | [IData](/Vanilla/Data/IData/)                |
 | team                        | setTeam(team)       | [ITeam](/Vanilla/Game/ITeam/)                |
-
+| updateBlocked               | setUpdateBlocked(value) | boolean                                  |
+| inPortal                    | setInPortal(value)  | boolean                                      |
+| portalCounter               | setPortalCounter(value) | int                                      |
+| lastPortalVec               | setLastPortalVec(vector) | [IVector3d](/Vanilla/World/IVector3d/)  |
+| lastPortalPos               | setLastPortalPos(pos) | [IBlockPos](/Vanilla/World/IBlockPos/)     |
+| lastPortalDirection         | setLastPortalDirection(direction) | [IFacing](/Vanilla/World/IFacing/) |
 
 ## More ZenMethods
 
@@ -142,6 +153,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - void dismountRidingEntity();
 - boolean isOnSameTeam(IEntity other);
 - void setInWeb();
+- void doWaterSplashEffect();
 - boolean isEntityEqual(IEntity other);
 - boolean isInvulnerableTo([IDamageSource](/Vanilla/Damage/IDamageSource/) source);
 - boolean shouldRiderDismountInWater(IEntity rider)
