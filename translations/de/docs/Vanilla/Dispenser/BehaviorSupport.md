@@ -28,7 +28,7 @@ The function must return an IItemStack as the remaining item after dispensed.
 
 ### IDispenserSoundFunction
 
-The IDispenserSoundFunction defines what sound the dispenser should play. It has an IBlockSource parameter. The function must return a [DispenserSound](Vanilla/Dispenser/DispenserSound).
+The IDispenserSoundFunction defines what sound the dispenser should play. It has an IBlockSource parameter. The function must return a [DispenserSound](/Vanilla/Dispenser/DispenserSound).
 
 ### Beispiel
 
