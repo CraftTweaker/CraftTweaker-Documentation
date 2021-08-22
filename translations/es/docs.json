@@ -86,6 +86,11 @@
       "Damage": {
         "IDamageSource": "Vanilla/Damage/IDamageSource.md"
       },
+      "Dispenser": {
+        "BehaviorSupport": "Vanilla/Dispenser/BehaviorSupport.md",
+        "DispenserSound": "Vanilla/Dispenser/DispenserSound.md",
+        "IBlockSource": "Vanilla/Dispenser/IBlockSource.md"
+      },
       "Enchantments": {
         "IEnchantment": "Vanilla/Enchantments/IEnchantment.md",
         "IEnchantmentDefinition": "Vanilla/Enchantments/IEnchantmentDefinition.md"
