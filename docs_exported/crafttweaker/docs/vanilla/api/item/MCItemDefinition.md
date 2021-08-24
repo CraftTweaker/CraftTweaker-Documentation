@@ -28,6 +28,18 @@ myMCItemDefinition.getDefaultInstance();
 
 :::
 
+:::group{name=getTags}
+
+Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt;&gt;
+
+```zenscript
+// MCItemDefinition.getTags() as stdlib.List<MCTag<MCItemDefinition>>
+
+myMCItemDefinition.getTags();
+```
+
+:::
+
 :::group{name=isIn}
 
 Checks if this item is in the Given tag.
