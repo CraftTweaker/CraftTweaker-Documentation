@@ -362,6 +362,20 @@ myMCEntity.getName();
 
 :::
 
+:::group{name=getPersistentData}
+
+Gets the persisted NBT tag.
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// MCEntity.getPersistentData() as MapData
+
+myMCEntity.getPersistentData();
+```
+
+:::
+
 :::group{name=getPosition}
 
 Gets this Entity's position in the world.
@@ -1048,6 +1062,23 @@ myMCEntity.updateData({key: "value"});
 
 :::
 
+:::group{name=updatePersistentData}
+
+Updates the persisted data.
+
+Return Type: void
+
+```zenscript
+MCEntity.updatePersistentData(data as MapData) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
+:::
+
 
 ## Properties
 
@@ -1063,6 +1094,7 @@ myMCEntity.updateData({key: "value"});
 | isWet | boolean | true | false | Checks if this Entity is wet. |
 | name | string | true | false | Gets the name of the Entity. |
 | onGround | [MCEntity](/vanilla/api/entity/MCEntity) | true | true | Sets if the Entity should be considered on the ground or not. |
+| persistedData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the persisted NBT tag. |
 | position | [BlockPos](/vanilla/api/util/BlockPos) | true | false | Gets this Entity's position in the world. |
 | positionVec | [MCVector3d](/vanilla/api/util/MCVector3d) | true | false | No Description Provided |
 | silent | boolean | true | true | Checks if this Entity is silent. <br />  <br />  Silent Entities do not play sounds. |
