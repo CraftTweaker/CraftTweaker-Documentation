@@ -77,6 +77,10 @@
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
       "Create": {
+        "Util": {
+          "Processing Recipe Builder": "mods/Create/util/ProcessingRecipeBuilder",
+          "Heat Condition": "mods/Create/util/HeatCondition"
+        },
         "Compacting": "mods/Create/Compacting.md",
         "Crushing": "mods/Create/Crushing.md",
         "Cutting": "mods/Create/Cutting.md",
