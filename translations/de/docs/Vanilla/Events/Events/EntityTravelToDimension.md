@@ -13,7 +13,7 @@ You will need to cast the event in the function header as this class:
 ## Erweiterte Event-Schnittellen
 EntityTravelToDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
