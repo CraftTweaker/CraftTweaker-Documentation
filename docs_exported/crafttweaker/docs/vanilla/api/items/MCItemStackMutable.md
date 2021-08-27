@@ -19,6 +19,12 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 
 - [IItemStack](/vanilla/api/items/IItemStack)
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |

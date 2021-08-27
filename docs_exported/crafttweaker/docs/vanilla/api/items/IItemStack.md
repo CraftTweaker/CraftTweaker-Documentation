@@ -18,6 +18,12 @@ IItemStack implements the following interfaces. That means all methods defined i
 - [IIngredient](/vanilla/api/items/IIngredient)
 - [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -760,21 +766,26 @@ Adds an AttributeModifier to this IItemStack.
 
  Attributes added with this method will only appear on this specific IItemStack.
 
+ By defaults, adding a modifier will remove the default Attribute Modifiers on the Item, like the Diamond Chestplate's Armor and Toughness values.
+ When `preserveDefaults` is set to true (by default it is false.), the default Attribute Modifiers will be preserved when adding this modifier.
+ This means that if you were adding the `forge:nametag_distance` attribute to an Item, it would keep its default attributes (like Armor and Toughness values).
+
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-// IItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+// IItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[], preserveDefaults as boolean) as IItemStack
 
-<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>], true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. | false |  |
+| name | string | The name of the modifier. | false |  |
+| value | double | The value of the modifier. | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. | false |  |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. | false |  |
+| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
 
 
 :::
@@ -788,22 +799,27 @@ Adds an AttributeModifier to this IItemStack using a specific UUID.
 
  Attributes added with this method will only appear on this specific IItemStack.
 
+ By defaults, adding a modifier will remove the default Attribute Modifiers on the Item, like the Diamond Chestplate's Armor and Toughness values.
+ When `preserveDefaults` is set to true (by default it is false.), the default Attribute Modifiers will be preserved when adding this modifier.
+ This means that if you were adding the `forge:nametag_distance` attribute to an Item, it would keep its default attributes (like Armor and Toughness values).
+
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-// IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+// IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[], preserveDefaults as boolean) as IItemStack
 
-<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>], true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. |
-| uuid | string | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. | false |  |
+| uuid | string | The unique identifier of the modifier to replace. | false |  |
+| name | string | The name of the modifier. | false |  |
+| value | double | The value of the modifier. | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. | false |  |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. | false |  |
+| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
 
 
 :::
