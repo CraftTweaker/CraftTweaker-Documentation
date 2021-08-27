@@ -26,3 +26,12 @@ The following script will remove all Pressing recipes that output Paper.
 <recipetype:create:pressing>.removeRecipe(<item:minecraft:paper>);
 ```
 
+#### Get a Processing Recipe Factory
+
+You can get a ProcessingRecipeFactory of this recipe type like so:
+
+```zenscript
+// <recipetype:create:pressing>.factory() as ProcessingRecipeFactory
+
+<recipetype:create:pressing>.factory()
+```

@@ -6,6 +6,7 @@ The Compacting mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRec
 
 ## Methods
 
+
 ### Heat Types
 
 Create has three different "heat" types that are used in recipes. which are the following:
@@ -63,4 +64,14 @@ The following script will remove all Compacting recipes that output Water (Fluid
 // <recipetype:create:compacting>.removeRecipe(IFluidStack output)
 
 <recipetype:create:compacting>.removeRecipe(<fluid:minecraft:water>);
+```
+
+#### Get a Processing Recipe Factory
+
+You can get a ProcessingRecipeFactory of this recipe type like so:
+
+```zenscript
+// <recipetype:create:compacting>.factory() as ProcessingRecipeFactory
+
+<recipetype:create:compacting>.factory()
 ```

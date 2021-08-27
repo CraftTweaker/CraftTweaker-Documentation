@@ -78,12 +78,15 @@
       },
       "Create": {
         "Util": {
+          "Heat Condition": "mods/Create/util/HeatCondition.md",
           "Processing Recipe Builder": "mods/Create/util/ProcessingRecipeBuilder.md",
-          "Heat Condition": "mods/Create/util/HeatCondition.md"
+          "Processing Recipe Factory": "mods/Create/util/ProcessingRecipeFactory.md",
+          "Sequenced Asembly Recipe Builder": "mods/Create/util/SequencedAssemblyRecipeBuilder.md"
         },
         "Compacting": "mods/Create/Compacting.md",
         "Crushing": "mods/Create/Crushing.md",
         "Cutting": "mods/Create/Cutting.md",
+        "Deployer Application": "mods/Create/DeployerApplication.md",
         "Emptying": "mods/Create/Emptying.md",
         "Filling": "mods/Create/Filling.md",
         "Mechanical Crafter": "mods/Create/MechanicalCrafter.md",
@@ -91,6 +94,7 @@
         "Mixing": "mods/Create/Mixing.md",
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
+        "Sequenced Assembly": "mods/Create/SequencedAssembly.md",
         "Splashing": "mods/Create/Splashing.md"
       },
       "Create Automated": {
