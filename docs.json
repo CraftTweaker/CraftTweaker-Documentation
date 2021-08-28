@@ -119,6 +119,12 @@
         "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
         "Sieving": "mods/ExNihiloSequentia/Sieving.md"
       },
+      "Game Stages": {
+        "Introduction": "mods/GameStages/Introduction.md",
+        "Expanded Player": "mods/GameStages/PlayerStages.md",
+        "The StageHelper": "mods/GameStages/StageHelper.md",
+        "GameStage Events": "mods/GameStages/GameStageEvents.md"
+      },
       "Immersive Engineering": {
         "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
         "Arc Furnace": "mods/ImmersiveEngineering/ArcFurnace.md",
