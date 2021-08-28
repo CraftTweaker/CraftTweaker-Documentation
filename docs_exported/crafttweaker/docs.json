@@ -104,6 +104,7 @@
           "Block": {
             "MCCropGrowPostEvent": "vanilla/api/event/block/CropGrowPostEvent.md",
             "MCCropGrowPreEvent": "vanilla/api/event/block/CropGrowPreEvent.md",
+            "FluidPlaceBlockEvent": "vanilla/api/event/block/FluidPlaceBlockEvent.md",
             "MCBlockBreakEvent": "vanilla/api/event/block/MCBlockBreakEvent.md",
             "MCBlockEvent": "vanilla/api/event/block/MCBlockEvent.md",
             "MCBlockNeighborNotifyEvent": "vanilla/api/event/block/MCBlockNeighborNotifyEvent.md",
