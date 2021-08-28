@@ -10,7 +10,7 @@ The main concept to understand is that stages are not created or registered. The
 To ensure your stage name is valid and everything works smoothly youre stage names must meet the following requirements.
 - Must be a string with at least one character and less than 65 characters.
 - Can only contain lowercase characters.
-- Can only contain latin alphabet, 0-9, '_', and ':'.
+- Can only contain latin alphabet, `0-9`, `_`, and `:`.
 - Can not contain spaces!
 
 ### Granting Stages
