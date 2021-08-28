@@ -9,7 +9,7 @@ These are all of the new player methods added by GameStages.
 ### Adding Stages
 Any time you have access to a player you can add a stage using the following method.
 
-```zs
+```zenscript
 // player.addGameStage(String stageName);
 player.addGameStage("stage_one");
 ```
@@ -17,27 +17,27 @@ player.addGameStage("stage_one");
 ### Removing Stages
 Any time you have access to a player you can remove a stage using the following method.
 
-```zs
+```zenscript
 // player.removeGameStage(String stageName);
 player.removeGameStage("stage_one");
 ```
 
 You can also clear all stages granted to a player using the clear method.
 
-```zs
+```zenscript
 player.clearGameStages();
 ```
 
 ### Checking GameStages
 Any time you have access to a player you can check if they have a specific stage.
 
-```zs
+```zenscript
 //player.hasGameStage(String stageName);
 player.hasGameStage("stage_one");
 ```
 
 You can also check if the player has any stage from an array of potential stages.
-```zs
+```zenscript
 //player.hasAnyGameStages(String... stageNames);
 player.hasAnyGameStages("stage_one", "stage_two", "defeated_boss_a");
 
@@ -47,7 +47,7 @@ player.hasAnyGameStages(validStagesForX);
 ```
 
 You can also check if the player has all of the stages from an array.
-```zs
+```zenscript
 //player.hasllGameStages(String... stageNames);
 player.hasAllGameStages("stage_one", "stage_two", "defeated_boss_a");
 
@@ -59,7 +59,7 @@ player.hasAllGameStages(requiredStagesForX);
 ## Example 1 - Event Listeners
 This example registers a new event listener that will will give a player a stage when they join the game if they haven't already unlocked it.
 
-```zs
+```zenscript
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCPlayerLoggedInEvent; 
 

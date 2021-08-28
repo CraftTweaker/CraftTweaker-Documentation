@@ -4,14 +4,14 @@
 StageHelper is a collection of optional helper functions that make simple tasks like granting stages much easier. While it can be very beneficial to use these helpers they are designed with simple use cases in mind and using them may limit your ability to fine tune. Fortunately all functionality made available through this helper can be replicated using the standard CraftTweaker features which should be used for very advanced use cases. 
 
 To use the StageHelper you will need to import it. 
-```zs
+```zenscript
 import mods.gamestages.StageHelper;
 ```
 
 ## Give Stage on Advancement
 The following helpers will grant stages when a player earns an advancement that matches your specified predicate. You can optionally specify more than one stage to grant. You can also specify a hook that allows additional logic to be chained on to when the stage(s) are granted to the player. 
 
-```zs
+```zenscript
 // Grants a stage when a player earns an advancement with a specific ID. In 
 // this case the player must earn the "We Need to Go Deeper" advancement.
 StageHelper.grantStageOnAdvancement("minecraft:story/enter_the_nether", "advancement_example_one");
@@ -46,7 +46,7 @@ StageHelper.grantStageOnAdvancement("minecraft:story/enter_the_end", (player, ad
 ## Give Stage on Crafting
 The following helpers will grant a stage when the player crafts an item that matches your specified predicate. The item must be crafted by an actual player in a crafting grid like the crafting table. You can optionally specify more than one stage to grant. You can also specify a hook that allows additional logic to be chained on when the stage(s) are granted to the player. 
 
-```zs
+```zenscript
 // Grants a stage when a player crafts a specific item with any size, nbt, etc.
 // In this case the player must craft sticks with any recipe.
 StageHelper.grantStageWhenCrafting(<item:minecraft:stick>, "craft_example_one");
@@ -80,7 +80,7 @@ StageHelper.grantStageWhenCrafting(<item:minecraft:stick>, (player, output) => {
 ## Give Stage on Dimension
 The following helpers will grant a stage when the player enters a dimension that matches your specified predicate. You can optionally specify more than one stage to grant to the player. You can also specify a hook that allows additional logic to be chained on when the stage(s) are granted.
 
-```zs
+```zenscript
 // Grants a stage to the player when they enter the specified dimension. More
 // than one stage can be specified at the end. In this case we are granting 
 // the stage when they enter the Nether.
@@ -103,7 +103,7 @@ StageHelper.grantStageOnDimension((player, to, from) => {
 ## Give Stage on Join - Default Stages
 The following helpers will grant a stage when a player joins the game. More than one stage can be granted by optionally defining them at the end. You can also optionally specify a condition for the stage to be given. You can also optionally specify a hook that allows additional logic to be chained on when the stage(s) are granted.
 
-```zs
+```zenscript
 // Grants a stage to the player when they join the game. More than one stage
 // can be specified at the end if you need to grant multiple stages.
 StageHelper.grantStageOnJoin("join_example_one");
@@ -144,7 +144,7 @@ StageHelper.grantStageOnJoin(player => player.isCreative(), player => {
 ## Give Stage on Mob Kill
 The following helpers will grant a stage when a player kills an entity that matches a predicate that you specify. You can optionally specify more than one stage to grant to the player. You can also specify a hook that allows additional logic to be chained on when the stage(s) are granted. 
 
-```zs
+```zenscript
 // Grants a stage to a player when they kill a mob. In this case we grant the
 // stage when a player kills kills a creeper.
 StageHelper.grantStageOnKill(<entitytype:minecraft:creeper>, "kill_example_one");
@@ -179,7 +179,7 @@ StageHelper.grantStageOnKill(<entitytype:minecraft:witch>, (player, target) => {
 ## Give Stage on EXP Level Change
 The following helpers will grant a stage when the player's EXP level changes to a value that matches your specified predicate. You can optionally specify more than one stage to grant. You can also specify a hook that allows additional logic to be chained on when the stage(s) are granted. The hook is not run if the player already has all of the stages granted.
 
-```zs
+```zenscript
 // Grants a stage when a player reaches a specific EXP level. In this case they
 // get the stage when they reach level 4.
 StageHelper.grantStageOnExactLevel(4, "level_example_one");

@@ -6,7 +6,7 @@ CraftTweaker allows you to register event listeners which are parts of scripts t
 ## On GameStage Added
 This event occurs every time a stage is granted to a player. You are given access to the player who unlocked the stage and the name of the stage that was unlocked.
 
-```zs
+```zenscript
 import crafttweaker.api.events.CTEventManager;
 import mods.gamestages.events.GameStageAdded;
 
@@ -32,7 +32,7 @@ CTEventManager.register<GameStageAdded>((event) => {
 ## On GameStage Removed
 This event occurs every time a stage is removed from a player. You are given access to the player who lost the stage and the name of the stage that was lost.
 
-```zs
+```zenscript
 import crafttweaker.api.events.CTEventManager;
 import mods.gamestages.events.GameStageRemoved;
 
@@ -58,7 +58,7 @@ CTEventManager.register<GameStageRemoved>((event) => {
 ## On GameStage Cleared
 This event occurs when a player has their stages cleared. You are given access to the player who lost all of their stages.
 
-```zs
+```zenscript
 import crafttweaker.api.events.CTEventManager;
 import mods.gamestages.events.GameStageCleared;
 
