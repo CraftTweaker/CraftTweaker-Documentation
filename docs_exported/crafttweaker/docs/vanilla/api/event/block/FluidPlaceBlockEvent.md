@@ -76,7 +76,9 @@ Sets the new BlockState that will be placed.
 Return Type: void
 
 ```zenscript
-FluidPlaceBlockEvent.setNewState(state as MCBlockState) as void
+// FluidPlaceBlockEvent.setNewState(state as MCBlockState) as void
+
+myFluidPlaceBlockEvent.setNewState(<blockstate:minecraft:dirt>);
 ```
 
 | Parameter | Type | Description |
