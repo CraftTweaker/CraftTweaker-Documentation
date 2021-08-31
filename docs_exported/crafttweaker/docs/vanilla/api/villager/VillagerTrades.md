@@ -141,7 +141,9 @@ Removes all the trades for the given profession and villagerLevel
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeAllTrades(profession as MCVillagerProfession, villagerLevel as int) as void
+// VillagerTrades.removeAllTrades(profession as MCVillagerProfession, villagerLevel as int) as void
+
+villagerTrades.removeAllTrades(<profession:minecraft:farmer>, 1);
 ```
 
 | Parameter | Type | Description |
@@ -395,6 +397,113 @@ villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>
 |-----------|------|-------------|
 | profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for. |
 | villagerLevel | int | The level the Villager needs to be. |
+
+
+:::
+
+:::group{name=removeTrade}
+
+Removes the specified trade for the given profession and villagerLevel.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeTrade(profession as MCVillagerProfession, villagerLevel as int, buying as IIngredient, selling as IIngredient, secondBuying as IIngredient) as void
+
+villagerTrades.removeTrade(<profession:minecraft:farmer>, 1, <item:minecraft:potato>, <item:minecraft:emerald>, <item:minecraft:air>);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | That profession to remove from. | false |  |
+| villagerLevel | int | The level the Villager needs to be. | false |  |
+| buying | [IIngredient](/vanilla/api/items/IIngredient) | The first item that you are giving to the villager. | false |  |
+| selling | [IIngredient](/vanilla/api/items/IIngredient) | The item that the villager is selling to you. | false |  |
+| secondBuying | [IIngredient](/vanilla/api/items/IIngredient) | The second item that you are giving to the villager. Will default to air if not provided. | true | <item:minecraft:air> |
+
+
+:::
+
+:::group{name=removeTradesBuying}
+
+Removes all trades that have the specified item as the buying item for the given profession and villagerLevel.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeTradesBuying(profession as MCVillagerProfession, villagerLevel as int, buying as IIngredient) as void
+
+villagerTrades.removeTradesBuying(<profession:minecraft:farmer>, 1, <item:minecraft:potato>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | That profession to remove from. |
+| villagerLevel | int | The level the Villager needs to be. |
+| buying | [IIngredient](/vanilla/api/items/IIngredient) | The first item that you are giving to the villager. |
+
+
+:::
+
+:::group{name=removeTradesBuying}
+
+Removes all trades that have the specified items as the buying items for the given profession and villagerLevel.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeTradesBuying(profession as MCVillagerProfession, villagerLevel as int, buying as IIngredient, secondBuying as IIngredient) as void
+
+villagerTrades.removeTradesBuying(<profession:minecraft:farmer>, 1, <item:minecraft:potato>, <item:minecraft:air>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | That profession to remove from. |
+| villagerLevel | int | The level the Villager needs to be. |
+| buying | [IIngredient](/vanilla/api/items/IIngredient) | The first item that you are giving to the villager. |
+| secondBuying | [IIngredient](/vanilla/api/items/IIngredient) | The second item that you are giving to the villager. Will default to air if not provided. |
+
+
+:::
+
+:::group{name=removeTradesSelling}
+
+Removes all trades that sell the specified item for the given profession and villagerLevel.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeTradesSelling(profession as MCVillagerProfession, villagerLevel as int, selling as IIngredient) as void
+
+villagerTrades.removeTradesSelling(<profession:minecraft:farmer>, 1, <item:minecraft:emerald>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | That profession to remove from. |
+| villagerLevel | int | The level the Villager needs to be. |
+| selling | [IIngredient](/vanilla/api/items/IIngredient) | The item that the villager is selling to you. |
+
+
+:::
+
+:::group{name=removeWanderingTrade}
+
+Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader 2 Emeralds for an Arrow.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IIngredient) as void
+
+villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| tradeFor | [IIngredient](/vanilla/api/items/IIngredient) | What ItemStack is being sold (by the Villager). |
 
 
 :::
