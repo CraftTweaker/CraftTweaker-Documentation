@@ -50,9 +50,9 @@ Usage:
 
 Description:
 
-Activa y desactiva el lector de bloques In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+Activa y desactiva el lector de bloques En este modo, hacer clic derecho en un bloque te dira el nombre, la metadata y si existe información de TileEntity
 
-## Blocks
+## Bloques
 
 Usage:
 
@@ -62,7 +62,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+Devuelve una lista de todos los bloques en el juego
 
 ## Bugs
 
@@ -70,11 +70,12 @@ Usage:
 
 `/crafttweaker bugs`
 
-`/ct bugs`
+`/ct bugs
+`
 
 Description:
 
-Opens your browser with the GitHub bug tracker.
+Abre la página de errores de Github en tu navegador
 
 ## Conflict
 
