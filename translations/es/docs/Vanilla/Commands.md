@@ -384,13 +384,14 @@ También se puede ejecutar desde una consola que en su lugar imprime la ruta abs
 
 Usage:
 
-`/crafttweaker seeds`
+`/crafttweaker seeds
+`
 
 `/ct seeds`
 
 Description:
 
-Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+Devuelve una lista de todos las semillas registradas en el juego
 
 ## Syntax
 
@@ -402,7 +403,7 @@ Usage:
 
 Description:
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+Lee a través de todos tus scripts y mostrará todos los errores que encuentra en tus sintaxis.</br> Esto te avisa de cosas como paréntesis, puntos y comas, objetos que no existan pero fallará con cosas de ejecución (eventos, funcionalidad avanzada de contenttweaker, y funciones personalizadas). Esto no aplica tus cambios, deberás reiniciar el juego para verlos en efecto.
 
 ## Wiki
 
@@ -414,7 +415,7 @@ Usage:
 
 Description:
 
-Opens your browser to this wiki page (same as `/ct docs`).
+Abre esta misma página en tu navegador. Lo mismo que `/ct docs`.
 
 ## ZsLint
 
