@@ -1,6 +1,6 @@
 # Funciones Globales
 
-Las funciones globales son funciones que no necesitan importes. </br> La lista es la siguiente:
+Las funciones globales son funciones que no necesitan [importes](/AdvancedFunctions/Import/). </br> La lista es la siguiente:
 
 ## print
 
@@ -20,7 +20,7 @@ Returns nothing
 totalActions();
 ```
 
-Returns an int that shows how many global functions are registered.
+Devuelve un int que muestra cuantas funciones globales existen.
 
 ## enableDebug
 
