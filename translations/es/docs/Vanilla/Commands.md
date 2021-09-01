@@ -77,7 +77,7 @@ Description:
 
 Abre la página de errores de Github en tu navegador
 
-## Conflict
+## Conflictos
 
 Usage:
 
@@ -87,10 +87,10 @@ Usage:
 
 Description:
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+Devuelve una lista de recetas de la mesa de crafteo que estan conflictiendo.  
+Esto solo funciona con JEI instalado.
 
-## Discord
+## Discord 
 
 Usage:
 
@@ -100,9 +100,9 @@ Usage:
 
 Description:
 
-Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
+Abre tu navegador con un link al `servidor de Discord`, donde ofrecemos ayuda.
 
-## Docs
+## Documentación
 
 Usage:
 
@@ -112,7 +112,7 @@ Usage:
 
 Description:
 
-Opens your browser to this docs page (same as `/ct wiki`).
+Abre esta misma página en tu navegador. Lo mismo que `/ct wiki`.
 
 ## DumpZs
 
@@ -120,7 +120,8 @@ Usage:
 
 `/crafttweaker dumpzs`
 
-`/ct dumpzs`
+`/ct dumpzs
+`
 
 Description:
 
