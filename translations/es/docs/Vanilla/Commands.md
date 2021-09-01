@@ -172,7 +172,7 @@ Devuelve el nombre del objeto en tu mano. También lo añade en el chat.
 
 Además, copia el nombra al portapapales y indica las entradas oredict.
 
-## Inventory
+## Inventario
 
 Usage:
 
@@ -182,9 +182,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+Devuelve una lista de objetos en tu inventario.
 
-## JeiCategories
+## CategoriasJEI
 
 Usage:
 
@@ -194,10 +194,9 @@ Usage:
 
 Description:
 
-Outputs a list of all registered jei categories to the crafttweaker.log file.  
-Requires JEI to be installed (surprise)!
+Devuelve una lista de todas las categorias del mod JEI registradas. Requiere que el mod este instalado.
 
-## Json
+## JSON
 
 Usage:
 
@@ -207,12 +206,12 @@ Usage:
 
 Description:
 
-Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting CraftTweaker uses.  
-You can click it to be copied to your clipboard.  
-You can also privide the `escaped` argumetn to automatically escape the resulting string.
+Añade al chat el NBT del objeto que tienes en la mano en formato JSON.  
+Este formato es ligeramente diferente al IData de Crafttweaker.  
+Si clicas en él, también se copiará a tu portapapeles.  
+También puedes proveer el argumento `escaped` para automaticamente formatear el string final.
 
-## Liquids
+## Liquidos
 
 Usage:
 
@@ -222,7 +221,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+Devuelve una lista de los liquidos en el juego
 
 ## Log
 
@@ -234,7 +233,7 @@ Usage:
 
 Description:
 
-Sends a clickable link to open the crafttweaker.log.
+Envía un enlace clicable para abrir el crafttweaker.log.
 
 ## Mods
 
