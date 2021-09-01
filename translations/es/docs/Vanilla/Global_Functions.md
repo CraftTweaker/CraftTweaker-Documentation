@@ -1,15 +1,14 @@
-# Global Functions
+# Funciones Globales
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
-Here's the list:
+Las funciones globales son funciones que no necesitan importes. </br> La lista es la siguiente:
 
 ## print
 
-Prints the string to the crafttweaker log as information.
+Muestra el string en el `crafttweaker.log`
 
 ```zenscript
-//print(String message);
-print("Hello World!");
+//print(String mensaje);
+print("Hola Mundo");
 ```
 
 Returns nothing
