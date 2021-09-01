@@ -245,40 +245,40 @@ Usage:
 
 Description:
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+Devuelve una lista de mods y sus versiones
 
 ## Names
 
 Usage:
 
-`/crafttweaker names [category]`
+`/crafttweaker names [categoria]`
 
-`/ct names [category]`
+`/ct names [categoria]`
 
 Description:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+Devuelve una lista de todos los objetos en el juego.  
+El argumento `categoria` es opcional y permite extender la lista con la siguiente información:
 
-* burntime
-* creativetabs
-* damageable
-* display
+* burntime - tiempo de cocción
+* creativetabs - pestañas de modo creativo
+* damageable - es el objeto dañable
+* display - aspecto
 * enchantability
-* foodvalue
-* maxdamage
-* maxstack
-* maxuse
-* modid
+* foodvalue - valor de comida
+* maxdamage - durabilidad maxima
+* maxstack - tamaño máximo
+* maxuse 
+* modid - mod que lo añade
 * rarity
-* repairable
-* repaircost
-* saturationvalue
-* unloc
+* repairable - reparable
+* repaircost - coste de reparación
+* saturationvalue - valor de saturación
+* unloc - nombre deslocalizado
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+También puedes ver todos los parámetros disponibles usando la función de autocompletado (tabulador).
 
-## Nbt
+## NBT
 
 Usage:
 
@@ -288,23 +288,23 @@ Usage:
 
 Description:
 
-Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
+Devuelve el NBT del bloque que estas mirando o el objeto que estas aguantado
 
 ## OreDict
 
 Usage:
 
-`/crafttweaker oredict <name>`
+`/crafttweaker oredict [nombre]`
 
-`/ct oredict <name>`
+`/ct oredict [nombre]`
 
 Description:
 
-Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
+Devuelve una lista de todas las entradas OreDict en el juego
 
-If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
+Si se provee un nombre, se devolverá la lista de objetos en esa entrada.
 
-## Potions
+## Pociones
 
 Usage:
 
@@ -314,9 +314,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the potions in the game to the crafttweaker.log file.
+Devuelve una lista de las pociones en el juego
 
-## RecipeNames
+## Nombres de receta
 
 Usage:
 
@@ -328,8 +328,7 @@ Usage:
 
 Description:
 
-Outputs a list of all recipe names in the game to the crafttweaker.log file.  
-A modid can be provided to filter results.
+Devuelve una lista de todos los nombres de las recetas en el juego. Un modid se puede proporcionar para filtrar resultados.
 
 ## Recipes
 
@@ -341,9 +340,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+Devuelve una lista de todas las recetas de crafteo en el juego en formato de un script.
 
-## Recipes (Hand)
+## Recetas (Mano)
 
 Usage:
 
@@ -353,19 +352,20 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+Devuelve una lista de todas las recetas de crafteo en el juego para el objeto que tengas en la mano.
 
-## Recipes (Furnace)
+## Recipes (Horno)
 
 Usage:
 
-`/crafttweaker recipes furnace`
+`/crafttweaker recipes furnace
+`
 
 `/ct recipes furnace`
 
 Description:
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+Devuelve una lista de todas las recetas de horno en el juego
 
 ## Archivos
 
@@ -377,8 +377,8 @@ Usage:
 
 Description:
 
-Sends a clickable link to open the scripts directory.  
-Can also be executed from a command line which instead prints the absolute path to the directory to the log.
+Envía un enlace clicable para abrir el directorio de scripts.  
+También se puede ejecutar desde una consola que en su lugar imprime la ruta absoluta al directorio del registro.
 
 ## Seeds
 
