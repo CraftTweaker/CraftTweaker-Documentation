@@ -125,14 +125,14 @@ Usage:
 
 Description:
 
-Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
-The targets can be found using auto-complete (tab key).  
-By default `log`, `html` and `json` are registered as targets.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+Devuelve un archivo HTML en tu directorio de minecraft, dentro de una carpeta llamada crafttweaker_dump, que contiene un dump ZenScript.  
+Puedes usar uno o mas objetivos que seran ejecutados consecutivamente. Repetir el uso de un objetivo lo duplicará.  
+Los objetivos se pueden encontrar usando el autocompletado (tabulador).  
+Por defecto se incluyen: ` log, html y json` como objetivos.  
+Esto incluirá todos los Parentesis especiales, ZenTipos, Funciones Global y ZenExpansiones, así como todos los paquetes registrados con sus métodos.  
+No todos ellos se pueden usar desde los scripts, algunos son únicamente aplicables en Java.
 
-## Entities
+## Entidades
 
 Usage:
 
@@ -142,9 +142,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+Devuelve una lista de las entidades en el juego
 
-## Give Item
+## Dar objeto
 
 Usage:
 
@@ -154,9 +154,9 @@ Usage:
 
 Description:
 
-Gives the player the item using CrT's Bracket handler syntax.  
-You can also apply tags by appending a `.withTag()` call.  
-Note that this is a pretty simple parser and may not work for every case!
+Da al jugador el objeto usando la sintaxis de los Parentesis Especialies de Crafttweaker.  
+También puedes aplicar tags usando `withTag()`.  
+Este comando es muy simple y puede fallar.
 
 ## Hand
 
@@ -168,9 +168,9 @@ Usage:
 
 Description:
 
-Prints the name of the item in your hand to the chat.
+Devuelve el nombre del objeto en tu mano. También lo añade en el chat.
 
-Also copies the name to clipboard and prints oredict entries.
+Además, copia el nombra al portapapales y indica las entradas oredict.
 
 ## Inventory
 
