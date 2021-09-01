@@ -1,22 +1,22 @@
 # Commands
 
-CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+Crafttweaker añade comandos que te ayudarán a crear tus archivos. Su objetivo es reducir el tiempo que estarás escribiendo uno.
 
-The prefix for commands are: `/crafttweaker` or `/ct`
+El prefijo para los comandos son `crafttweaker` y `ct<code></p>
 
-You can also use one of these aliases: `/minetweaker` or `/mt`
+<p>También puedes usar <code>minetweaker` y `mt` 
 
-All the commands can be found ingame by doing:
+Todos los comandos se pueden encontrar dentro del juego ejecutando:
 
 `/crafttweaker help`
 
-or
+o
 
 `/ct help`
 
-# List of commands
+# Lista de comandos
 
-## Biomes
+## Biomas
 
 Usage:
 
@@ -26,9 +26,9 @@ Usage:
 
 Description:
 
-Lists all of the biomes that are in the game.
+Devuelve la lista de los biomas en el juego
 
-## BiomeTypes
+## Tipos de biomas
 
 Usage:
 
@@ -38,9 +38,9 @@ Usage:
 
 Description:
 
-Lists all of the biomeTypes that are in the game.
+Devuelve la lista de los tipos de bioma en el juego
 
-## BlockInfo
+## Información de Bloques
 
 Usage:
 
@@ -50,7 +50,7 @@ Usage:
 
 Description:
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+Activa y desactiva el lector de bloques In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
 
 ## Blocks
 
