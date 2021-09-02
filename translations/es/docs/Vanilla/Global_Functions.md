@@ -24,8 +24,7 @@ Devuelve un int que muestra cuantas funciones globales existen.
 
 ## enableDebug
 
-Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
+Activa el modo de depuración.</br> Se recomienda el uso del [Preprocesador de depuración](/AdvancedFunctions/Preprocessors/DebugPreprocessor/)
 
 ```zenscript
 //enableDebug();
@@ -36,32 +35,33 @@ Returns nothing
 
 ## isNull
 
-Checks if a given object is null.  
-Doesn't work on primitives!
+Comprueba si un objeto es nulo.</br> No funciona en tipos primitivos.
 
 ```zenscript
-//isNull(Object o);
+//isNull(Objeto o);
 isNull(<minecraft:dirt>);
+Se usa frequentemente en eventos o funciones avanzadas.
 ```
 
-Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+Devuelve un boolean.</br> Si esto no funciona, prueba a castear el objecto a bool `<minecraft:dirt> as bool`
 
 ## instanceof
 
 ```zenscript
-entity instanceof IEntity;
+entitidad instanceof IEntity;
 ```
 
-Returns a boolean
+Devuelve un boolean que representa si el objeto es del tipo de la clase.
 
 ## max
 
 ```zenscript
 //max(int number1, int number2);
 max(10, 11);
+
 ```
 
-Returns the larger number
+Devuelve el número mayor
 
 ## min
 
@@ -70,31 +70,31 @@ Returns the larger number
 min(10, 11);
 ```
 
-Returns the lower number
+Devuelve el número menor
 
 ## pow
 
 ```zenscript
-//pow(double number1, double number2);
+//pow(double numero1 double numero2);
 pow(2.0, 4.0);
 ```
 
-Returns a double
+Devuelve un double
 
-## Global Fields
+## Campos globales
 
-| Field      | Description                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |
+| Field      | Description                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| brewing    | Accede al [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/) (pociones)                 |
+| client     | Acceda a los métodos [del cliente](/Vanilla/Game/IClient/)                                      |
+| events     | Accede al [Event Handler](/Vanilla/Events/IEventManager/) (eventos)                             |
+| format     | Accede al [Formatting Handler](/Vanilla/Utils/IFormatter/) (formato)                            |
+| furnace    | Accede al [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/) (horno)                  |
+| game       | Acceda a los métodos [del Juego](/Vanilla/Game/IGame/)                                          |
+| itemUtils  | Accede al [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                       |
+| loadedMods | Accede a la [lista de Mods cargados](/Vanilla/Game/Mods/)                                       |
+| logger     | Accede al [logger](/Vanilla/Utils/Logger/)                                                      |
+| oreDict    | Accede al [oreDictionary Handler](/Vanilla/OreDict/IOreDict/) (entradas oreDict)                |
+| recipes    | Accede al [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)(Mesas de crafteo) |
+| server     | Acceda a los métodos [del servidor](/Vanilla/Game/IServer/)                                     |
+| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available)  |
