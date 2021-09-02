@@ -1,17 +1,17 @@
-# Foreword
+# Prólogo
 
-This section will contain Tips and Tricks from experienced Tweakers.  
-Remember that these are really individual and some can also hinder you from achieving your aims instead of facilitating it.
+Esta sección contiene consejos y trucos de scripters más experimentados.  
+Estas son individuales y condicionales, no estas obligado a usarlas, pueden ser de ayuda o pueden molestar. Aunque simplificar cosas en funciones o loops es útil y hace que tus scripts sean más legibles y menos tediosos de leer, nada te impide hacerlo todo a fuerza bruta con mucho trabajo manual.
 
-## What this section is for
+## Esta sección es para:
 
-- Show you strategies on how to minimize your scripts.
-- Show you strategies on how to save time writing the scripts.
-- Show you strategies on how to make your scripts easier to read.
-- Show you strategies on how to make your scripts easier to debug.
-- Show you some often occuring mistakes, so you can spot them more easily in your scripts.
+- Enseñarte estrategias en como reducir el tamaño de tus scripts
+- Enseñarte estrategias en como reducir el tiempo que invertes escribiendo scripts.
+- Enseñarte estrategias sobre como hacer tus scripts más fáciles de leer.
+- Enseñarte estrategias sobre cómo hacer tus scrips más fáciles de depurar.
+- Enseñarte errores que occuren a menudo, para que los identifiques en tus scripts.
 
-## What this section is NOT for
+## Esta sección NO es para:
 
-- This section is not to be understood as kind of Tutorial for the novice Tweaker.
-- These tips are just tips, you don't need to implement them in your scripts and some might even be inappropriate for what you are trying to achieve.
+- Convertirse en un tutorial para el scripter novato.
+- Obligarte a usar estos consejos, no estas obligado a usarlos y a veces pueden incluso no ser lo mejor para lo que estas tratando de conseguir.
