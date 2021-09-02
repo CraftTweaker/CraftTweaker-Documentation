@@ -1,27 +1,20 @@
-# Global and Static Variables
+# Variables globales y estáticas
 
-Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
-"Why is there no way to make them available in every script?" Is what went through your head at such times.
+Alguna vez has estado en una situación en la que has declarado la misma variable de la misma forma en cada script una y otra vez.</br> "¿No hay ninguna manera de hacer una variable disponible en todos los scripts?" es lo que te habrás preguntado seguramente.
 
-Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
-They cannot be changed, though.
+Para esto mismo sirve esta forma de declarar y acceder a variables globales y estáticas.</br> No pueden ser alteradas.
 
-## Difference between statics and globals
+## La diferencia entre estática y global
 
-Both, statics and globals are scriptbound and instantiated before the script is executed.  
-Both cannot be changed.  
-The difference is how they are called:  
-Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
+Ambas son creadas antes de que se ejecute el script.</br> Ambas son immutables.</br> La diferencia es como se acceden:</br> Las globales se pueden acceder en cualquier parte con solo usar el nombre, a no ser que tengas una variable con el mismo nombre en ese script.</br> Las estáticas deben usar [Referencia A Través de Scripts](/AdvancedFunctions/Cross-Script_Reference/).
 
-Globals are created using the `global` keyword.  
-Statics are created using the `static` keyword.
+Las Globales se crean con la palabra clave `global`.</br> Las Estáticas con `static`
 
-Aside from that, they are identical!
+Aparte de eso, ¡son idénticas!
 
-## Declaring a global value
+## Declarando un valor global
 
-Declaring a global value is as simple as declaring a local value:
+Declarar una variable global es tan simple como declarar una variable local:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
