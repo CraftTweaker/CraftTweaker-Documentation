@@ -1,4 +1,4 @@
-# CTGUI No tocar. Para más información: </br>https://discord.com/channels/136877912698650625/354745056743260172/828464760139415592
+# CTGUI No tocar.
 
 You can run a command and edit recipes from ingame using a GUI. It will generate a file on your local scripts folder called recipes.zs .
 
