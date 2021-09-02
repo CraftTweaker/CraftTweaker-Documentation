@@ -1,18 +1,16 @@
 # Prepocesador de Cargado 
 
-The loader preprocessor will set the script's loaders.
+El Preprocesador de cargado establecerá el cargador que leerá tu archivo. 
 
 ## Uso
 
-You call the loader Preprocessor by adding `#loader loaderNames...` to your script file with `loaderNames...` being the names of the loaders you want to assign the script to, seperated by spaces.  
-Example 1: `#loader contenttweaker`  
-Example 2: `#loader preinit crafttweaker gregtech`
+Puedes usar el Preprocesador de cargado añadiendo `#loader nombreDeCargador` a tu archivo. nombreDeCargador debería de ser el cargador que debería leer tu archivo. Un ejemplo es ` #loader contenttweaker` que preparará tu archivo para ser leído como un archivo de ContentTweaker.
 
 ## Lo que hace:
 
-Scripts with the loader Preprocessor will only be loaded by the loaders specified.  
-In the first example above, crafttweaker's loader won't touch the file, instead the loader called "contenttweaker" will execute that script.  
-In the second example, the loaders called "preinit", "crafttweaker" and "gregtech" will each execute that script.  
-If you don't specify that preprocessor, it will default to being just "crafttweaker".  
-Is is highly recommended that you define only a single loader for a script running any code, as executing it multiple times with different loaders will usually lead to errors or undefined behaviour.  
-Defining multiple loaders is useful for declaring [static variables](/AdvancedFunctions/Global_Static_Variables/) and [custom functions](/AdvancedFunctions/Custom_Functions/) in utility scripts which are available during multiple loaders' execution via [cross-script references](/AdvancedFunctions/Cross-Script_Reference/).
+Los scripts con el preprocesador del cargador sólo serán cargados por los cargadores especificados.  
+En el primer ejemplo anterior, el cargador de crafttweaker no tocará el archivo, en su lugar el cargador llamado "contenttweaker" ejecutará ese script.  
+En el segundo ejemplo, los cargadores llamados "preinit", "crafttweaker" y "gregtech" ejecutarán cada uno ese script.  
+Si no especifica ese preprocesador, por defecto será sólo "crafttweaker".  
+Es altamente recomendable que defina solo un cargador para un script ejecutando cualquier código, como ejecutarlo varias veces con diferentes cargadores normalmente provocará errores o comportamientos indefinidos.  
+Definir múltiples cargadores es útil para declarar [variables estáticas](/AdvancedFunctions/Global_Static_Variables/) y [funciones personalizadas](/AdvancedFunctions/Custom_Functions/) en scripts de utilidad que están disponibles durante la ejecución de múltiples cargadores mediante [referencias de guiones cruzados](/AdvancedFunctions/Cross-Script_Reference/).
