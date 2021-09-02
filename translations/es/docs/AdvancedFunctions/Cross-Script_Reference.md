@@ -1,32 +1,36 @@
-# Cross-Script Reference
+# Referencia a través de Scripts
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Todos los scripts tienen [variables estáticas](/AdvancedFunctions/Global_Static_Variables/) o [funciones personalizadas](/AdvancedFunctions/Custom_Functions/) que se pueden acceder a través de scripts. </br> Esto te permite acceder a ellos mediante la notación de puntos.
 
-## Specifications
+## Especificaciones
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Las referencias a través de Scripts empiezan con `scripts`.
+- Tienes que especificar la ruta a la carpeta del script (`scripts.crafttweaker.hola.zs`)
+- Puedes usar la notación de puntos en un [import](/AdvancedFunctions/Import/) si quieres.
+- ZS primero mira los directorios y después los archivos coincidentes
 
 ## Ejemplo 
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Vamos a decir que tenemos dos scripts: `a.zs` y `b.zs`. Es muy importante el momento en el que se cargan los scripts. No podemos referenciar desde el script `a.zs` el script `b.zs` ya que sin <a href= "/AdvancedFunctions/Preprocessors/LoaderPreprocessor/"> Prioridad</a> el primero carga antes que el segundo por defecto. 
 
-a.zs:
+a.zs
 
 ```zenscript
-static myVal as string = "myVal";
-
-function makeLine() {
-    print("---------------");
+static miVariable as string = "miVariable";
+function hacerLinea(){
+   print("---------------");
 }
+
 ```
 
 b.zs
 
 ```zenscript
-print(scripts.a.myVal);
-scripts.a.makeLine();
+import scripts.a.zs;
+
+a.hacerLinea();
+print(scripts.a.miVariable);
+print(a.miVariable);
+a.hacerLinea();
+
 ```
