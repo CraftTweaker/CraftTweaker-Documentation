@@ -1,75 +1,74 @@
-# Custom Functions
+# Funciones personalizadas
 
-Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
+A veces las funciones que Crafttweaker te proporciona no son suficiente. Aquí te enseñamos como escribir tus propias funciones. Puedes nestear funciones dentro de otras
 
-## Basic Syntax
+## Sintaxis básica
 
-Generally, you declare a static using:
+Generalmente, declaras una funcion usando:
 
 ```zenscript
-function NAME ([arguments[as type]]) [as returnType]{
-    [Statements]
-    [return VALUE;]
+function Nombre ([argumentos[as tipo]]) [as tipoDeDevolucion]{
+    [Código]
+    [return VALOR;]
 }
 ```
 
-The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
+Las cosas entre claudators son opcionales, dependiendo de lo que quieras conseguir. Vamos a mirar funciones más específicas
 
-## Static Functions
+## Funciones estáticas
 
-Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
+Funciones estáticas se crean antes de que el script se ejecute y se pueden acceder desde el mismo script en cualquier parte.</br> Para usarlas en otro script debes usar [Referencia A Través de Scripts](/AdvancedFunctions/Cross-Script_Reference).
 
-### Void functions
+### Funciones Void
 
-Void functions are functions that will not return any value.
+Funciones void son aquellas que no devuelven un valor
 
 ```zenscript
-//calls the function tens() without arguments
-tens();
+//ejecuta la función uno sin argumentos
+uno();
 
-//calls the function realTens() with the String "Hello World!" as argument
-realTens("Hello World!");
+//llama la funcion dos() con el String "Hola Mundo" como argumento
+dos("Hola Mundo");
 
 
-//crates function tens() with no required arguments
-function tens(){
-    //Calls function realTens() with "" as argument
-    realTens("");
+//crea la funcion uno() sin argumentos requeridos
+function uno() as void{
+   //llama la función dos() con "" como argumento
+    dos()("");
 }
 
 
-//creates function realTens() with one string required as argument
-function realTens(a as string){
-    //prints the argument 10 times
-    for i in 1 to 11{
+//crea la funcion dos() con un String requerido como argumento
+function dos()(a as string){
+    //printea el argumento 10 veces
+    for i in 0 to 10{
         print(a);
     }
 }
 ```
 
-### Return functions
+### Funciones que Devuelven Valores
 
-You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
+También puedes especificar un valor que devuelve la función. Se recomendia usar la palabra clave `as` para definir el tipo que debe ser devuelto.
 
 ```zenscript
-//calls add function with 1 and 99 as parameters
-val result = add(1,99);
-print(result);
+//ejecuta sumar() con 1 y 99 como argumentos
+val resultado = sumar(1,99);
+print(resultado);
 
-//you can place the add function inside the print function as well
-print(add(2,64));
+//También puedes eliminar la necesidad de una variable
+print(sumar(2,64));
 
-//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
-function add(a as int,b as int) as int{
-    //returns the sum of a and b
-    return a+b;
-}
+//crea la funcion sumar con dos parametros (Integers) y configura el tipo de devolucion a Integer.
+function sumar(a as int, b as int) as int {
+// suma los dos valores
+return a + b;
+} 
 ```
 
-## Functions as variables
+## Funciones como variables
 
-You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+Puedes usar funciones como variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
 You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
 If you need to cast the method (as you do for globals) you can use this:
