@@ -125,13 +125,13 @@ Puedes usar estos operadores Todos los ejemplos acaban con un valor de true o ve
 `     | Comprueba si el primer valor es menor o igual que el segundo                                                                                                                 | 1 <= 1            |
 | Y Lógico          | `&&` | Comprueba si los dos booleans a cada lado del operador son ciertos.                                                                                                          | true && true      |
 | O Lógico          | `\|\|`     | Comprueba que uno de los dos booleans a cada lado sea cierto                                                                                                                 | false \|\| true |
-| Bitwise XOR       | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
-| Bitwise AND       | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
-| Bitwise OR        | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
+| XOR de bits       | `^`          | Comprueba si uno de los dos valores es verdadero, devuelve falso si los dos o ninguno de los son verdaderos                                                                  | true ^ false      |
+| AND de bits       | `&`      | Realiza una operacion AND de bits en los dos valores Ver [esto](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) para mas informacion | true && true      |
+| OR de bits        | `\|`        | Realiza una operacion OR de bits en los dos valores Ver [esto](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) para mas informacion  | false \|\| true |
 
-### Difference between `|` and `||` (and `&` and `&&`)
+### Diferencia entre `|` y `||` (y `&am` y `&&`)
 
-The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
+La diferencia entre el individual y el doble, sin contar semántica, es que el doble ejecuta comprueba antes y despues de cada condicion que todo vaya bien, y puede acabar antes - a esto se le llama cortocircuito. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
 
 ```zenscript
 var a = 5;
