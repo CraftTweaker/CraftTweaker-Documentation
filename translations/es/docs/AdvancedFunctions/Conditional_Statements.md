@@ -160,26 +160,25 @@ if (!isNull(item) & item.amount == 1) {
 
 ## El operador in/has 
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+El operador `in` y el `has` comprueban si un elemento esta dentro de otro.</br> Primero necesitas una lista, después el operador, y después el valor que quieres mirar `in` y `has` son la misma palabra clave en ZS, pero en la mayoria de los casos la gente usa `has` para comprobar si una lista contiene un objeto y `in` en loops, ya que esto representa la gramática en ingles.
 
-### in/has loadedMods
+### in/has + loadedMods
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+Puedes comprobar si un mod esta instalado comprobando si esta en la lista de loadedMods
 
 ```zenscript
-//While contains checks can use in
+//Aunque comprobaciones pueden usar in
 if (loadedMods in "mcp") {
-    print("Minecraft Coder Pack loaded");
+    print("Minecraft Coder Pack instalado");
+}
+//La mayoría de la gente prefiere usar has
+if (loadedMods has "mcp") {
+    print("Minecraft Coder Pack instalado");
 }
 
-//Most people prefer using has
-if (loadedMods has "mcp") {
-    print("Minecraft Coder Pack loaded");
-}
 ```
 
-### in/has IIngredient
+### IIngredient in/has
 
 You can also check if an item matches a definition by comparing two IIngredients.  
 With this one you need to be a bit careful as not to confuse the two entries:  
