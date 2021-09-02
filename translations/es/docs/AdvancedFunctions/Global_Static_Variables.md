@@ -20,20 +20,20 @@ Declarar una variable global es tan simple como declarar una variable local:
 import crafttweaker.item.IItemStack;
 
 
-global myGlobalValue as IItemStack = <minecraft:dirt>;
-static myStaticValue as IItemStack = <minecraft:sand>;
+global miValorGlobal as IItemStack = <minecraft:dirt>;
+static miValorEstatico as IItemStack = <minecraft:sand>;
 ```
 
-Okay, let's break it down, shall we?
+Vamos a analizar esto:
 
-1. `global` keyword that indicates the declaration of a global value
-2. `myGlobalValue` the name of the value
-3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global` nos indica que la variable es global
+2. `miValorGlobal` el nombre de la variable
+3. `as IItemStack` el tipo de la variable (se recomienda [importarlo](/AdvancedFunctions/Import/))
+4. `= <minecraft:dirt>;` inicialización de la variable. Como los valores globales son finales, se deben inicializar en su declaración
 
-## Words of advice
+## Consejo rápido
 
-- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
-- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
-- Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!
+- Solo puedes acceder a globales que ya han sido declaradas Usa la [Prioridad](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) para asegurarte de que los scripts que contienen las variables globales se ejecutan en primer lugar.
+- Las globales no pueden estar en scripts que se encuentran en subcarpetas. Se compilará pero quedará con un enorme Error.
+- Aunque técnicamente se puede omitir el cast, se recomienda dejarlo ya que puede causar errores. Además, hace tu declaración más clara para quien lee tu script.
+- Variables locales pueden sobreescribir variables globales El script usará la más local antes que la global cuando intente usar las variables.
