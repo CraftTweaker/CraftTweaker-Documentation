@@ -97,4 +97,4 @@ Devuelve un double
 | oreDict    | Accede al [oreDictionary Handler](/Vanilla/OreDict/IOreDict/) (entradas oreDict)                |
 | recipes    | Accede al [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)(Mesas de crafteo) |
 | server     | Acceda a los métodos [del servidor](/Vanilla/Game/IServer/)                                     |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available)  |
+| vanilla    | Accede a la funcion de vanilla de [las semillas](/Vanilla/Recipes/Seeds/)                       |
