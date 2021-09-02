@@ -129,36 +129,36 @@ Puedes usar estos operadores Todos los ejemplos acaban con un valor de true o ve
 | AND de bits       | `&`      | Realiza una operacion AND de bits en los dos valores Ver [esto](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) para mas informacion | true && true      |
 | OR de bits        | `\|`        | Realiza una operacion OR de bits en los dos valores Ver [esto](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) para mas informacion  | false \|\| true |
 
-### Diferencia entre `|` y `||` (y `&am` y `&&`)
+### Diferencia entre `|` y `||` (y `&` y `&&`)
 
-La diferencia entre el individual y el doble, sin contar semántica, es que el doble ejecuta comprueba antes y despues de cada condicion que todo vaya bien, y puede acabar antes - a esto se le llama cortocircuito. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
+La diferencia entre el individual y el doble, sin contar semántica, es que el doble ejecuta comprueba antes y despues de cada condicion que todo vaya bien, y puede acabar antes - a esto se le llama cortocircuito. Sin embargo, el individual pasa por toda la cadena de condiciones, incluso si la primera cancelaría la cadena entera. Esto no solo ahorra recursos, pero también permite hacer scripts de forma más facil y ejecutar **null checks** y condiciones encadenadas.
 
 ```zenscript
 var a = 5;
 var item = ... as IItemStack;
 
-// Even though a is 5, it still goes through all of the conditions listed
+// Aunque a es 5, continua y comprueba todas las condiciones
 if (a == 5 | a == 3 | a == 10 | a == -1) {
     ...
 }
 
-// Even though a is 5 and the condition is impossible (a variable can't be both 3 and 5), it still goes through all of the conditions listed
+//Aunque a es 5 y la condicion es imposible (la variable a no puede ser 3 y 5 a la vez), continua y comprueba todas las condiciones.
 if (a == 3 & a < 2 & a > 8 & a == 5) {
     ... 
 }
 
-// Checks if item is not null before accessing variables from item
+// Comprueba que el objeto no sea nulo antes de acceder a una variable del objeto
 if (!isNull(item) && item.amount == 1) {
     ...
 }
 
-// Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
+// Comprueba si el objeto es nulo al mismo momento que accede a una variable del objeto, y en caso de ser nulo obtendríamos un error.
 if (!isNull(item) & item.amount == 1) {
     ...
 }
 ```
 
-## The in/has Operator
+## El operador in/has 
 
 The `in` and the `has` operator check if something is in something.  
 First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
