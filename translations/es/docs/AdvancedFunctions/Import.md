@@ -13,7 +13,7 @@ Si alguna vez tienes errores de importación con scripts de esta wiki, comprueba
 Los importes deben estar en la parte de arriba de un script. Cada script tiene sus propios importes, se declaran por separado. Cuidado de no tener dos funciones con el mismo nombre, en caso de tener eso, hay que renombrar una de ellas con el Importe As
 
 ```zenscript
-//Esto importará la función de ocultar objetos de JEI
+//Esto importará la función de ocultar y remover objetos de JEI
 import mods.jei.JEI.removeAndHide;
 
 //Esto importa el paquete de JEI entero 
@@ -28,13 +28,13 @@ JEI.hide(<minecraft:diamond>);
 
 ## Import As
 
-A veces quieres importar dos funciones con el mismo nombre (Suele pasar con Crusher) o a veces quieres que tus scripts se vean mejor usando nombres personalizados. When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
+A veces quieres importar dos funciones con el mismo nombre (Suele pasar con Crusher) o a veces quieres que tus scripts se vean mejor usando nombres personalizados. Añadiendo AS al final del importe, puedes especificar el nombre al que ese importe se referie (en vez de ser el nombre de la Clase o del Paquete)
 
 ```zenscript
-//This will import the hide function from JEI and make it available under the name "h"
+//Esto importa la función de ocultar de JEI y le cambiará el nombre a h
 import mods.jei.JEI.hide as h;
 
-//And this will import the removeAndHide function from JEI and make it available under the name "rh"
+//Y esto importa la función de ocultar y remover de JEI y le cambiará el nombre a rh
 import mods.jei.JEI.removeAndHide as rh;
 
 h(<minecraft:dirt>);
