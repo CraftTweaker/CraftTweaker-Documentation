@@ -180,38 +180,33 @@ if (loadedMods has "mcp") {
 
 ### IIngredient in/has
 
-You can also check if an item matches a definition by comparing two IIngredients.  
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only true when the IIngredient AFTER the `in` can also be found completely in the one BEFORE the `in`.  
-In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
+También puedes comprobar si un objeto coincide con una definition comparando dos IIngredients.</br> Con este debes tener más cuidado con no confundir las dos entradas: </br> Este operador solo devuelve true cuando el IIngredient DESPUES del operador se encuentra COMPLETAMENTE en el que se encuentra antes del operador.</br> Otra vez, se recomienda usar el operador `has` porque es más clarificador.
 
 ```zenscript
-// Checks if the iron ingot is in the oreDict "ingotIron"
+//Comprueba si el lingote de hierro esta en el oreDict "ingotIron"
 if (<ore:ingotIron> in <minecraft:iron_ingot>) {
-    print("Iron ingots are in the right oreDict");
+    print("Los lingotes de hierro están en el oreDict apropriado");
 }
-
-// Preferred, same function as previous
+// Lo mismo que arriba
 if (<ore:ingotIron> has <minecraft:iron_ingot>) { 
-    print("Iron ingots are in the right oreDict");
+    print("Los lingotes de hierro están en el oreDict apropriado");
 }
 ```
 
-This is only true when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+Este operador solo devuelve true cuando el IIngredient DESPUES del operador se encuentra COMPLETAMENTE en el que se encuentra antes del operador.</br> Digamos que tenemos un IIngredient que contiene todos los polvos (redstone y glowstone).
 
 ```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>;
-val allDusts = <ore:dustAll>;
-allDusts.add(redstone, glowstone);
+val todosPolvos = <ore:dustAll>;
+todosPolvos.add(redstone, glowstone);
 
-//True as redstone is a part of alldusts
-if (allDusts has redstone) {
-
+//Cierto porque redstone se encuentra dentro de todosPolvos
+if (todosPolvos has redstone) {
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
-if (redstone has allDusts) {
+//Falso porque todosPolvos contiene redstone y glowstone, y la variable redstone solo contiene redstone.
+if (redstone has todosPolvos) {
 
 }
 ```
