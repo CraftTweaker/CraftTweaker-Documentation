@@ -68,13 +68,10 @@ return a + b;
 
 ## Funciones como variables
 
-Puedes usar funciones como variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
-You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
+Puedes usar funciones como variables. En este caso, se crean como clases separadas. Aparte de eso, funcionan de la misma manera que las funciones estáticas, las puedes ejecutar con su nombre de variable.</br> También las puedes usar como [variables globales](/AdvancedFunctions/Global_Static_Variables/). 
 
-If you need to cast the method (as you do for globals) you can use this:
+Si necesitas hacer la funcion global, el cast debe ir así:
 
-    global addition as function(int, int)int = function (a as int, b as int) as int {
-        return a + b;
+    global sumar as function(int, int)int = function (a as int, b as int) as int {
+       return a + b;
     };
-    
-    print(addition(1,2));
