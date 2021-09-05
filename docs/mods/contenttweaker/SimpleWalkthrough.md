@@ -1,7 +1,7 @@
 # Simple Walkthrough
 
 Hey there, kindlich here.
-So you're trying out ContentTweaker for 1.15, huh?
+So you're trying out ContentTweaker for 1.16, huh?
 
 Sometimes I'll usually abbreviate ContentTweaker with CoT to spare me a few letters (it's more an automatism from Discord already), so stay with me, okay?
 Then, first I recommend you also install a resource manager mod, so that the blocks/items that you have a way of adding textures and models for blocks and items later on.
@@ -119,6 +119,33 @@ new ItemBuilder()
     .build("my_mace");
 
 ```
+
+
+## Fluids
+
+Fluids are like items, but made using a [FluidBuilder](/mods/contenttweaker/API/fluid/FluidBuilder).
+Fluids have two or four parameters, depending on whether you want to include default textures for their still and flowing versions.
+Like other builders, they required you to use `build(name)` at the end of the builder chain for the fluid to be registered.
+
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.fluid.FluidBuilder;
+
+//Simplest call
+new FluidBuilder(false, 000000)
+    .build("black_water");
+
+
+//With some other properties
+new FluidBuilder(false, 000000, <resource:contenttweaker:fluid/liquid>, <resource:contenttweaker:fluid/liquid_flowing>)
+    .density(1600)
+    .temperature(360)
+    .viscosity(1300)
+    .build("black_water");
+
+```
+
 
 ## Names
 So, how would you go about giving items proper names?  
