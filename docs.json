@@ -36,6 +36,7 @@
       }
     },
     "Mods": {
+      "Generic JSON Recipes": "mods/other_mods.md",
       "Applied Energistics 2": {
         "Grinder": "mods/AppliedEnergistics2/Grinder.md",
         "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
@@ -212,8 +213,8 @@
       },
       "Zen Summoning": {
         "Examples": "mods/zensummoning/examples.md"
-      },
-      "Other Mods": "mods/other_mods.md"
+      }
+      
     }
   }
 }
