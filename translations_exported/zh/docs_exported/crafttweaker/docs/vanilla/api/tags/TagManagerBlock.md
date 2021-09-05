@@ -11,7 +11,7 @@ import crafttweaker.api.tag.TagManagerBlock;
 ## 已实现的接口
 TagManagerBlock implements the following interfaces. That means all methods defined in these interfaces are also available in TagManagerBlock
 
-- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt;
+- [TagManager](/vanilla/api/tags/TagManager)&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt;
 
 ## 方法
 
@@ -19,6 +19,7 @@ TagManagerBlock implements the following interfaces. That means all methods defi
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -36,6 +37,7 @@ TagManagerBlock.exists(location as MCResourceLocation) as boolean
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
+Returns: Whether or not this tag already exists  
 Return Type: boolean
 
 ```zenscript
@@ -56,7 +58,8 @@ Retrieves a list of all tags currently registered.
 Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+// TagManagerBlock.getAllTags() as stdlib.List<MCTag<T>>
+
 myTagManagerBlock.getAllTags();
 ```
 
@@ -64,8 +67,11 @@ myTagManagerBlock.getAllTags();
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -81,8 +87,11 @@ TagManagerBlock.getTag(location as MCResourceLocation) as MCTag<T>
 
 :::group{name=getTag}
 
-Retrieves a tag by its name. Will also be called by the BEP. <p> Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+Retrieves a tag by its name. Will also be called by the BEP.
 
+ Note that this method does _not_ yet create the tag if it does not exist. Adding something to the object created by this tag will create it for the game.
+
+Returns: A Tag object.  
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
@@ -112,7 +121,7 @@ name as string in myTagManagerBlock
 
 ## 参数
 
-| 名称  | 类型                                                                                   | 可获得  | 可设置   |
-| --- | ------------------------------------------------------------------------------------ | ---- | ----- |
-| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false |
+| 名称  | 类型                                                                                   | 可获得  | 可设置   | 描述                                                 |
+| --- | ------------------------------------------------------------------------------------ | ---- | ----- | -------------------------------------------------- |
+| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false | Retrieves a list of all tags currently registered. |
 

@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
-
 | Parameter | Type                                                                                                                                                          | Description             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | fun       | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
@@ -23,13 +22,13 @@ new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) 
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### apply
+:::group{name=apply}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -42,7 +41,9 @@ MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 | context   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -55,33 +56,41 @@ MCSingleRedirectModifier.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCSingleRedirectModifier.hashCode() as int
+// MCSingleRedirectModifier.hashCode() as int
+
 myMCSingleRedirectModifier.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCSingleRedirectModifier.toString() as string
+// MCSingleRedirectModifier.toString() as string
+
 myMCSingleRedirectModifier.toString();
 ```
+
+:::
 
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCSingleRedirectModifier == o as Object
 ```
 
-
+:::
 
 

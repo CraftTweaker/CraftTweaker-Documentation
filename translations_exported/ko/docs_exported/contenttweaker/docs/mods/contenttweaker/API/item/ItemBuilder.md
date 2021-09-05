@@ -16,83 +16,159 @@ import mods.contenttweaker.item.ItemBuilder;
 ItemBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in ItemBuilder
 
 - [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+
 ## Constructors
 
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [this](.)#build(String) for that.
+Creates a new ItemBuilder. <br />  Remember that this will _not_ create a new block in the game, you need to call [this](.)#build(String) for that.
 ```zenscript
 new ItemBuilder() as ItemBuilder
 new ItemBuilder();
 ```
 
+
 ## Methods
 
-### withItemGroup
+:::group{name=build}
+
+CoT에게 이 제작기가 빌드해야 하는 모든 블록을 실제로 빌드하도록 지시합니다.
+
+Return Type: void
+
+```zenscript
+// ItemBuilder.build(resourceLocation as string) as void
+
+new ItemBuilder().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Description   |
+| ---------------- | ------ | ------------- |
+| resourceLocation | string | 해당 블록의 리소스 경로 |
+
+
+:::
+
+:::group{name=isImmuneToFire}
+
+Sets that this item is immune to fire
+
+Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+
+```zenscript
+// ItemBuilder.isImmuneToFire() as ItemBuilder
+
+new ItemBuilder().isImmuneToFire();
+```
+
+:::
+
+:::group{name=withFood}
+
+Sets that this item is a food
+
+Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+
+```zenscript
+ItemBuilder.withFood(food as MCFood) as ItemBuilder
+```
+
+| Parameter | Type                               | Description |
+| --------- | ---------------------------------- | ----------- |
+| food      | [MCFood](/vanilla/api/food/MCFood) | the food    |
+
+
+:::
+
+:::group{name=withItemGroup}
 
 Allows you to set the item group that this item will appear in. By default, items will land in `misc`
 
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-ItemBuilder.withItemGroup(itemGroup as MCItemGroup) as ItemBuilder
+// ItemBuilder.withItemGroup(itemGroup as MCItemGroup) as ItemBuilder
+
 new ItemBuilder().withItemGroup(<itemGroup:misc>);
 ```
+
 | Parameter | Type                                                     | Description                               |
 | --------- | -------------------------------------------------------- | ----------------------------------------- |
 | itemGroup | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
 
-### withMaxDamage
+
+:::
+
+:::group{name=withMaxDamage}
 
 Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [this](.)#withMaxStackSize!
 
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-ItemBuilder.withMaxDamage(maxDamage as int) as ItemBuilder
+// ItemBuilder.withMaxDamage(maxDamage as int) as ItemBuilder
+
 new ItemBuilder().withMaxDamage(250);
 ```
+
 | Parameter | Type | Description            |
 | --------- | ---- | ---------------------- |
 | maxDamage | int  | The maximum stack size |
 
-### withMaxStackSize
+
+:::
+
+:::group{name=withMaxStackSize}
 
 Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [this](.)#withMaxDamage!
 
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-ItemBuilder.withMaxStackSize(maxStackSize as int) as ItemBuilder
+// ItemBuilder.withMaxStackSize(maxStackSize as int) as ItemBuilder
+
 new ItemBuilder().withMaxStackSize(16);
 ```
+
 | Parameter    | Type | Description            |
 | ------------ | ---- | ---------------------- |
 | maxStackSize | int  | The maximum stack size |
 
-### withNoRepair
+
+:::
+
+:::group{name=withNoRepair}
 
 Sets that this item may not be repaired in an anvil
 
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-ItemBuilder.withNoRepair() as ItemBuilder
+// ItemBuilder.withNoRepair() as ItemBuilder
+
 new ItemBuilder().withNoRepair();
 ```
-### withRarity
+
+:::
+
+:::group{name=withRarity}
 
 Allows you to set the item's rarity
 
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-ItemBuilder.withRarity(rarity as string) as ItemBuilder
+// ItemBuilder.withRarity(rarity as string) as ItemBuilder
+
 new ItemBuilder().withRarity("EPIC");
 ```
+
 | Parameter | Type   | Description |
 | --------- | ------ | ----------- |
 | rarity    | string | The rarity  |
 
-### withType
+
+:::
+
+:::group{name=withType}
 
 Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
 
@@ -101,8 +177,12 @@ Return Type: T
 ```zenscript
 ItemBuilder.withType<T : ItemTypeBuilder>() as T
 ```
+
 | Parameter | Type                                                             | Description                              |
 | --------- | ---------------------------------------------------------------- | ---------------------------------------- |
 | T         | [ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) | The Type of item that this should become |
+
+
+:::
 
 

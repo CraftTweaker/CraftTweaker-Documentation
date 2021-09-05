@@ -26,7 +26,7 @@ MCEntityTravelToDimensionEvent extends [MCEntityEvent](/vanilla/api/event/entity
 
 ## Свойства
 
-| Название  | Тип                                                                      | Имеет Getter | Имеет Setter |
-| --------- | ------------------------------------------------------------------------ | ------------ | ------------ |
-| dimension | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation) | true         | false        |
+| Название  | Тип                                                                      | Имеет Getter | Имеет Setter | Description             |
+| --------- | ------------------------------------------------------------------------ | ------------ | ------------ | ----------------------- |
+| dimension | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation) | true         | false        | No Description Provided |
 

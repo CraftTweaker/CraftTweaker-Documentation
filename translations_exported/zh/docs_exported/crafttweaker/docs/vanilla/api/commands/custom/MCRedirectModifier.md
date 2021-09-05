@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSource>>) as MCRedirectModifier
 ```
-
 | 参数  | 类型                                                                                                                                                                                          | 描述                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No Description Provided |
@@ -29,7 +28,7 @@ new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSour
 
 ## 方法
 
-### 应用
+:::group{name=apply}
 
 Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -42,7 +41,9 @@ MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSou
 | 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### equals #等于
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -55,33 +56,41 @@ MCRedirectModifier.equals(o as Object) as boolean
 | o  | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCRedirectModifier.hashCode() as int
+// MCRedirectModifier.hashCode() as int
+
 myMCRedirectModifier.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCRedirectModifier.toString() as string
+// MCRedirectModifier.toString() as string
+
 myMCRedirectModifier.toString();
 ```
+
+:::
 
 
 ## 运算符
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCRedctModifier == o 为对象
 ```
 
-
+:::
 
 

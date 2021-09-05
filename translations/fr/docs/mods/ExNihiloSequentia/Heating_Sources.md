@@ -1,12 +1,14 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Heating Sources
 
 ## Package
 `import mods.exnihilosequentia.ZenHeatRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setBlock(MCBlock input)** the block to add as a heat source
-- **setAmount(int amount)** the heat source strenght
+- **create(String nom)**
+- **setBlock(MCBlock input)** Le bloc à ajouter comme source de chaleur.
+- **setAmount(int amount)** La force de la source de chaleur.
 
 
 

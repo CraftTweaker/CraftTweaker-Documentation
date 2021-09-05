@@ -1,13 +1,15 @@
-# Fluid Item Transformation
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
+# Transformation d'objet dans fluide
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidItemRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
-- **setInputItem(IIngredient inputItem)** the input
-- **setResult(IItemStack result)** the result of the recipe
+- **create(String nom)**
+- **setFluidInTank(IFluidStack fluidInTank)** Le fluide dans le réservoir.
+- **setInputItem(IIngredient inputItem)** L'ingédient à insérer dans le réservoire.
+- **setResult(IItemStack resultat)** Le résultat de la recette.
 
 
 ## Addition

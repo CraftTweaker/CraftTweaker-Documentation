@@ -38,18 +38,19 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 
 
-### El archivo ` crafttweaker.log </0></h3>
+### El archivo ` crafttweaker.log `
 
-<p spaces-before="0">El archivo <code> crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:</p>
+El archivo ` crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
+Mirando el ejemplo de arriba, nuestra salida para el fichero `hola.zs` sería:
 
-<pre><code>[14:58:06.697][DONE][SERVER][INFO] Hello world!
-`</pre>
+```
+[14:58:06.697][DONE][SERVER][INFO] Hello world!
+```
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
 

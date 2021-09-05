@@ -8,7 +8,7 @@ import crafttweaker.api.commands.custom.MCStringRange;
 ```
 
 
-## Methoden
+## Static Methods
 
 :::group{name=at}
 
@@ -79,7 +79,8 @@ MCStringRange.equals(o as Object) as boolean
 Return Type: int
 
 ```zenscript
-MCStringRange.getEnd() as int
+// MCStringRange.getEnd() as int
+
 myMCStringRange.getEnd();
 ```
 
@@ -120,7 +121,8 @@ MCStringRange.getFrom(string as string) as string
 Return Type: int
 
 ```zenscript
-MCStringRange.getLength() as int
+// MCStringRange.getLength() as int
+
 myMCStringRange.getLength();
 ```
 
@@ -131,7 +133,8 @@ myMCStringRange.getLength();
 Return Type: int
 
 ```zenscript
-MCStringRange.getStart() as int
+// MCStringRange.getStart() as int
+
 myMCStringRange.getStart();
 ```
 
@@ -142,7 +145,8 @@ myMCStringRange.getStart();
 Return Type: int
 
 ```zenscript
-MCStringRange.hashCode() as int
+// MCStringRange.hashCode() as int
+
 myMCStringRange.hashCode();
 ```
 
@@ -153,7 +157,8 @@ myMCStringRange.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCStringRange.isEmpty() as boolean
+// MCStringRange.isEmpty() as boolean
+
 myMCStringRange.isEmpty();
 ```
 
@@ -164,7 +169,8 @@ myMCStringRange.isEmpty();
 Return Type: string
 
 ```zenscript
-MCStringRange.toString() as string
+// MCStringRange.toString() as string
+
 myMCStringRange.toString();
 ```
 

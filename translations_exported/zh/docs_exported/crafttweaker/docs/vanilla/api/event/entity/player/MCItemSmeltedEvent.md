@@ -18,21 +18,24 @@ MCItemSmeltedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## 方法
 
-### getSmelted
+:::group{name=getSmelted}
 
 Gets the smelted item (the output stack)
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemSmeltedEvent.getSmelted() as IItemStack
+// MCItemSmeltedEvent.getSmelted() as IItemStack
+
 myMCItemSmeltedEvent.getSmelted();
 ```
+
+:::
 
 
 ## 参数
 
-| 名称      | 类型                                          | 可获得  | 可设置   |
-| ------- | ------------------------------------------- | ---- | ----- |
-| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称      | 类型                                          | 可获得  | 可设置   | 描述                                       |
+| ------- | ------------------------------------------- | ---- | ----- | ---------------------------------------- |
+| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true | false | Gets the smelted item (the output stack) |
 

@@ -18,7 +18,7 @@ Das folgende Skript fügt einen Mix hinzu, der mit einer Chance von 50% Weiße W
 
 #### Remove Recipes
 
-Das Folgeskript entfernt einen Mix mit dem Namen `"immersiveengineering:mineral/ancient_debris"`.
+The following script will remove a Mix with the name `"immersiveengineering:mineral/ancient_debris"`.
 
 ```zenscript
 // <recipetype:immersiveengineering:mineral_mix>.removeByName(string name)

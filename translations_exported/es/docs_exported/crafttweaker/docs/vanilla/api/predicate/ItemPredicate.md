@@ -26,6 +26,7 @@ Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStac
 
  Additional properties such as damage, count, or NBT data are ignored.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -45,6 +46,7 @@ Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStac
 
  Additional properties such as count or NBT data are ignored.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -65,6 +67,7 @@ Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStac
 
  Additional properties such as NBT data are ignored.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -84,6 +87,7 @@ ItemPredicate.matching(stack as IItemStack, matchDamage as boolean, matchCount a
 
 Sets this predicate to match the given [IItemStack](/vanilla/api/items/IItemStack) as closely as possible, optionally considering damage, count, and NBT data.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -106,6 +110,7 @@ Creates and sets the [NBTPredicate](/vanilla/api/predicate/NBTPredicate) that wi
 
  Any changes that have already been made to the NBT predicate will be overwritten, effectively replacing the previous one, if any.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -125,6 +130,7 @@ Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/Enchantment
 
  The added predicate is simply added to the list. No validity checks are performed, meaning that there may be multiple predicates that target a single enchantment. In this case, they all need to match, thus they have to have compatible bounds.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -146,6 +152,7 @@ Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/Enchantment
 
  The added predicate is simply added to the list. No validity checks are performed, meaning that there may be multiple predicates that target a single enchantment. In this case, they all need to match, thus they have to have compatible bounds.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -166,6 +173,7 @@ Sets the amount to exactly match the given <code>value</code>.
 
  If the amount had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -185,6 +193,7 @@ Sets the damage to exactly match the given <code>value</code>.
 
  If the damage had already some bounds specified, then they will be overwritten with the new value.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -204,6 +213,7 @@ Sets the [MCItemDefinition](/vanilla/api/item/MCItemDefinition) that this predic
 
  If a tag to match against has already been set, then the tag check will take precedence over this check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -223,6 +233,7 @@ Sets the [MCItemDefinition](/vanilla/api/item/MCItemDefinition) that this predic
 
  If a tag to match against has already been set, then the tag check will take precedence over this check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -244,6 +255,7 @@ Sets the maximum amount of items to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -265,6 +277,7 @@ Sets the maximum damage of the item to <code>max</code>.
 
  The maximum value is inclusive, meaning that a value that is equal to <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -286,6 +299,7 @@ Sets the minimum amount of items to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -307,6 +321,7 @@ Sets the minimum damage of the item to <code>min</code>.
 
  The minimum value is inclusive, meaning that a value that is equal to <code>min</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -324,6 +339,7 @@ ItemPredicate.withMinimumDamage(min as int) as ItemPredicate
 
 Sets the potion effect that should be present on the target item.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -346,6 +362,7 @@ Sets both the minimum and maximum amount of items to <code>min</code> and <code>
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -369,6 +386,7 @@ Sets both the minimum and maximum damage of the item to <code>min</code> and <co
  Both minimum and maximum values are inclusive, meaning that a value that is equal to either <code>min</code> or
  <code>max</code> will pass the check.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -389,6 +407,7 @@ Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/Enchantment
 
  The added predicate is simply added to the list. No validity checks are performed, meaning that there may be multiple predicates that target a single enchantment. In this case, they all need to match, thus they have to have compatible bounds.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -410,6 +429,7 @@ Creates and adds a new [EnchantmentPredicate](/vanilla/api/predicate/Enchantment
 
  The added predicate is simply added to the list. No validity checks are performed, meaning that there may be multiple predicates that target a single enchantment. In this case, they all need to match, thus they have to have compatible bounds.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript
@@ -432,6 +452,7 @@ Sets the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; that this predicate should us
 
  Specifying both a tag and an item to match against will make the tag take precedence over the item.
 
+Returns: This predicate for chaining.  
 Return Type: [ItemPredicate](/vanilla/api/predicate/ItemPredicate)
 
 ```zenscript

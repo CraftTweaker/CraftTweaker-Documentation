@@ -20,30 +20,38 @@ FishingPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pr
 
 ## Methoden
 
-### withClosedWaters
+:::group{name=withClosedWaters}
 
 Indicates that the fishing hook has been used in not open waters, such as a pond.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 
 ```zenscript
-FishingPredicate.withClosedWaters() as FishingPredicate
+// FishingPredicate.withClosedWaters() as FishingPredicate
+
 myFishingPredicate.withClosedWaters();
 ```
 
-### withOpenWaters
+:::
+
+:::group{name=withOpenWaters}
 
 Indicates that the fishing hook has been used in open waters.
 
  If the predicate had already been set to check the opposite condition, the setting will be overwritten.
 
+Returns: This predicate for chaining.  
 Return Type: [FishingPredicate](/vanilla/api/predicate/FishingPredicate)
 
 ```zenscript
-FishingPredicate.withOpenWaters() as FishingPredicate
+// FishingPredicate.withOpenWaters() as FishingPredicate
+
 myFishingPredicate.withOpenWaters();
 ```
+
+:::
 
 

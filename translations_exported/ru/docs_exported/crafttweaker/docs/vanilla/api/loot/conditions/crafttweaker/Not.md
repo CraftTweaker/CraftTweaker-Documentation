@@ -29,6 +29,7 @@ Sets the negated condition to the one created with the given [LootConditionBuild
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Not](/vanilla/api/loot/conditions/crafttweaker/Not)
 
 ```zenscript
@@ -48,6 +49,7 @@ Sets the loot condition to negate.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [Not](/vanilla/api/loot/conditions/crafttweaker/Not)
 
 ```zenscript
@@ -65,6 +67,7 @@ Not.withCondition(condition as ILootCondition) as Not
 
 Creates and builds the sub-condition that will then be negated.
 
+Returns: This builder for chaining.  
 Return Type: [Not](/vanilla/api/loot/conditions/crafttweaker/Not)
 
 ```zenscript

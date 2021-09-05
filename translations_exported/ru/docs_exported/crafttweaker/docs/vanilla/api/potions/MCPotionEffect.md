@@ -10,7 +10,7 @@ import crafttweaker.api.potion.MCPotionEffect;
 
 ## Methods
 
-### isReady
+:::group{name=isReady}
 
 Return Type: boolean
 
@@ -24,7 +24,9 @@ MCPotionEffect.isReady(duration as int, amplifier as int) as boolean
 | amplifier | int | No Description Provided |
 
 
-### newInstance
+:::
+
+:::group{name=newInstance}
 
 Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
@@ -38,15 +40,18 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 | amplifier | int | No Description Provided | true     | 0            |
 
 
+:::
+
+
 ## Свойства
 
-| Название      | Тип                                                                        | Имеет Getter | Имеет Setter |
-| ------------- | -------------------------------------------------------------------------- | ------------ | ------------ |
-| commandString | string                                                                     | true         | false        |
-| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true         | false        |
-| displayName   | string                                                                     | true         | false        |
-| isBeneficial  | boolean                                                                    | true         | false        |
-| isInstant     | boolean                                                                    | true         | false        |
-| liquidColor   | int                                                                        | true         | false        |
-| name          | string                                                                     | true         | false        |
+| Название      | Тип                                                                        | Имеет Getter | Имеет Setter | Description             |
+| ------------- | -------------------------------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| commandString | string                                                                     | true         | false        | No Description Provided |
+| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true         | false        | No Description Provided |
+| displayName   | string                                                                     | true         | false        | No Description Provided |
+| isBeneficial  | boolean                                                                    | true         | false        | No Description Provided |
+| isInstant     | boolean                                                                    | true         | false        | No Description Provided |
+| liquidColor   | int                                                                        | true         | false        | No Description Provided |
+| name          | string                                                                     | true         | false        | No Description Provided |
 

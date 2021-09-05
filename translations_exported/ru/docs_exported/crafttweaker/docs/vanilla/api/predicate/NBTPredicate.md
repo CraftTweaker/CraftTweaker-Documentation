@@ -20,7 +20,7 @@ NBTPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/predic
 
 ## Methods
 
-### withData
+:::group{name=withData}
 
 Sets the NBT data that should be matched by this predicate.
 
@@ -28,6 +28,7 @@ Sets the NBT data that should be matched by this predicate.
 
  If the NBT data had already been set, then the data is replaced with the new instance.
 
+Returns: This predicate for chaining.  
 Return Type: [NBTPredicate](/vanilla/api/predicate/NBTPredicate)
 
 ```zenscript
@@ -38,5 +39,7 @@ NBTPredicate.withData(data as IData) as NBTPredicate
 | -------- | -------------------------------- | --------------------------------------------------------------------- |
 | data     | [IData](/vanilla/api/data/IData) | A [MapData](/vanilla/api/data/MapData) representing the NBT to match. |
 
+
+:::
 
 

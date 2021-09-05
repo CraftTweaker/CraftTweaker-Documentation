@@ -1,4 +1,4 @@
-# CropGrowPostEvent
+# MCCropGrowPostEvent
 
 
 
@@ -10,25 +10,32 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.event.block.CropGrowPostEvent;
+import crafttweaker.api.event.block.MCCropGrowPostEvent;
 ```
 
+
+## Extending MCCropGrowEvent
+
+MCCropGrowPostEvent extends [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent). That means all methods available in [MCCropGrowEvent](/vanilla/api/event/block/MCCropGrowEvent) are also available in MCCropGrowPostEvent
 
 ## Methods
 
-### getOriginState
+:::group{name=getOriginState}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-CropGrowPostEvent.getOriginState() as MCBlockState
-myCropGrowPostEvent.getOriginState();
+// MCCropGrowPostEvent.getOriginState() as MCBlockState
+
+myMCCropGrowPostEvent.getOriginState();
 ```
+
+:::
 
 
 ## Properties
 
-| Name        | Type                                             | Ha Getter | Ha Setter |
-| ----------- | ------------------------------------------------ | --------- | --------- |
-| originState | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true      | false     |
+| Name        | Type                                            | Ha Getter | Ha Setter | Description             |
+| ----------- | ----------------------------------------------- | --------- | --------- | ----------------------- |
+| originState | [MCBlockState](/vanilla/api/block/MCBlockState) | true      | false     | No Description Provided |
 

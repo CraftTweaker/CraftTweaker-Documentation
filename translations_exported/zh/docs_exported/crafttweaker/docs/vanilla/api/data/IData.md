@@ -14,70 +14,119 @@ import crafttweaker.api.data.IData;
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
 
-### asCollection
-
-Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
-
-```zenscript
-IData.asCollection() as ICollectionData
-{Display: {lore: ["Hello", "World"]}}.asCollection();
-```
-
-### asList #作为列表
-
-获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
-
-Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
-
-```zenscript
-IData.asList() as stdlib.List<IData>
-{Display: {lore: ["Hello", "World"]}}.asList();
-```
-
-### asMap #作为地图数据
-
-Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
-
-Return Type: [IData](/vanilla/api/data/IData)[string]
-
-```zenscript
-IData.asMap() as IData[string]
-{Display: {lore: ["Hello", "World"]}}.asMap();
-```
-
-### asNumber
-
-Return Type: [INumberData](/vanilla/api/data/INumberData)
-
-```zenscript
-IData.asNumber() as INumberData
-{Display: {lore: ["Hello", "World"]}}.asNumber();
-```
-
-### asString #作为字符串
-
-获取此IData的字符串表示形式
-
-Return Type: string
-
-```zenscript
-IData.asString() as string
-{Display: {lore: ["Hello", "World"]}}.asString();
-```
-
-### contains #容器
-
-Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+:::group{name=asBoolean}
 
 Return Type: boolean
 
 ```zenscript
-IData.contains(data as IData) as boolean
+// IData.asBoolean() as boolean
+
+{Display: {lore: ["Hello", "World"]}}.asBoolean();
+```
+
+:::
+
+:::group{name=asCollection}
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+// IData.asCollection() as ICollectionData
+
+{Display: {lore: ["Hello", "World"]}}.asCollection();
+```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+IData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
+:::group{name=asList}
+
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Returns: null if this IData is not a list.  
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+// IData.asList() as stdlib.List<IData>
+
+{Display: {lore: ["Hello", "World"]}}.asList();
+```
+
+:::
+
+:::group{name=asMap}
+
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
+
+Returns: null if this IData is not a map.  
+Return Type: [IData](/vanilla/api/data/IData)[string]
+
+```zenscript
+// IData.asMap() as IData[string]
+
+{Display: {lore: ["Hello", "World"]}}.asMap();
+```
+
+:::
+
+:::group{name=asNumber}
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+// IData.asNumber() as INumberData
+
+{Display: {lore: ["Hello", "World"]}}.asNumber();
+```
+
+:::
+
+:::group{name=asString}
+
+获取此IData的字符串表示形式
+
+Returns: String that represents this IData (value and type).  
+Return Type: string
+
+```zenscript
+// IData.asString() as string
+
+{Display: {lore: ["Hello", "World"]}}.asString();
+```
+
+:::
+
+:::group{name=contains}
+
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+
+Returns: true if the given IData is contained in this IData  
+Return Type: boolean
+
+```zenscript
+// IData.contains(data as IData) as boolean
+
 {Display: {lore: ["Hello", "World"]}}.contains("Display");
 ```
 
@@ -86,41 +135,55 @@ IData.contains(data as IData) as boolean
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### copy #复制
+:::
+
+:::group{name=copy}
 
 制作此IData的副本。
 
  IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
+Returns: a copy of this IData.  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-IData.copy() as IData
+// IData.copy() as IData
+
 {Display: {lore: ["Hello", "World"]}}.copy();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-IData.getId() as byte
+// IData.getId() as byte
+
 {Display: {lore: ["Hello", "World"]}}.getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-IData.getString() as string
+// IData.getString() as string
+
 {Display: {lore: ["Hello", "World"]}}.getString();
 ```
+
+:::
 
 

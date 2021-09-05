@@ -28,7 +28,7 @@ Das folgende Skript fügt dem Blast Furnace einen Brennstoff hinzu, der ein gold
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte aus dem Blast Furnace entfernen, die Holzkohle ausgeben.
+The following script will remove all recipes from the Blast Furnace that outputs Charcoal.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace>.removeRecipe(IItemStack output)
@@ -38,7 +38,7 @@ Das folgende Skript wird alle Rezepte aus dem Blast Furnace entfernen, die Holzk
 
 #### Brennstoffe entfernen
 
-Das folgende Skript wird Holzkohle als Brennstoff für den Blast Furnace entfernen.
+The following script will remove Charcoal as a Fuel for the Blast Furnace.
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.removeRecipe(IItemStack fuel)

@@ -18,19 +18,22 @@ MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). 
 
 ## Methoden
 
-### getEntityLiving
+:::group{name=getEntityLiving}
 
 Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
-MCLivingEvent.getEntityLiving() as MCLivingEntity
+// MCLivingEvent.getEntityLiving() as MCLivingEntity
+
 myMCLivingEvent.getEntityLiving();
 ```
+
+:::
 
 
 ## Properties
 
-| Name         | Type                                                 | Has Getter | Has Setter |
-| ------------ | ---------------------------------------------------- | ---------- | ---------- |
-| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true       | false      |
+| Name         | Type                                                 | Has Getter | Has Setter | Beschreibung            |
+| ------------ | ---------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| entityLiving | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | true       | false      | No Description Provided |
 

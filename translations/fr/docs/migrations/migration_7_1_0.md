@@ -1,4 +1,4 @@
-# Migrating Scripts to CraftTweaker 7.1
+# Migration des scripts vers CraftTweaker 7.1
 
 CraftTweaker version 7.1 has some changes that break backwards compatibility.  
 These breaking changes are in the API that addons use as well as in the types that scripts use.  

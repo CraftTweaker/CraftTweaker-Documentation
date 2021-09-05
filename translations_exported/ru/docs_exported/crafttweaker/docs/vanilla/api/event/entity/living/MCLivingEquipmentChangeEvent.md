@@ -18,9 +18,9 @@ MCLivingEquipmentChangeEvent extends [MCLivingEvent](/vanilla/api/event/entity/M
 
 ## Свойства
 
-| Название | Тип                                                          | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------------------------------ | ------------ | ------------ |
-| from     | [IItemStack](/vanilla/api/items/IItemStack)                  | true         | false        |
-| slot     | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true         | false        |
-| to       | [IItemStack](/vanilla/api/items/IItemStack)                  | true         | false        |
+| Название | Тип                                                          | Имеет Getter | Имеет Setter | Description             |
+| -------- | ------------------------------------------------------------ | ------------ | ------------ | ----------------------- |
+| from     | [IItemStack](/vanilla/api/items/IItemStack)                  | true         | false        | No Description Provided |
+| slot     | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true         | false        | No Description Provided |
+| to       | [IItemStack](/vanilla/api/items/IItemStack)                  | true         | false        | No Description Provided |
 

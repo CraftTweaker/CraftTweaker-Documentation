@@ -10,14 +10,16 @@ import crafttweaker.api.fluid.MCFluid;
 
 ## 方法
 
-### 堆栈体
+:::group{name=makeStack}
 
 Creates a new [IFluidStack](/vanilla/api/fluid/IFluidStack) with the given amount of fluid.
 
+Returns: a new (immutable) [IFluidStack](/vanilla/api/fluid/IFluidStack)  
 Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-MCFluid.makeStack(amount as int) as IFluidStack
+// MCFluid.makeStack(amount as int) as IFluidStack
+
 myMCFluid.makeStack(1000);
 ```
 
@@ -26,10 +28,12 @@ myMCFluid.makeStack(1000);
 | amount | int | No Description Provided |
 
 
+:::
+
 
 ## 参数
 
-| 名称            | 类型     | 可获得  | 可设置   |
-| ------------- | ------ | ---- | ----- |
-| commandString | string | true | false |
+| 名称            | 类型     | 可获得  | 可设置   | 描述                      |
+| ------------- | ------ | ---- | ----- | ----------------------- |
+| commandString | string | true | false | No Description Provided |
 

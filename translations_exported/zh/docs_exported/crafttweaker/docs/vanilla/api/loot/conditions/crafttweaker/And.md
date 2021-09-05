@@ -21,12 +21,13 @@ And implements the following interfaces. That means all methods defined in these
 
 ## 方法
 
-### add
+:::group{name=add}
 
 Adds a new condition to the list of sub-conditions that will get merged together into an 'AND' condition.
 
  At least two sub-conditions should be added to obtain a well-built and well-behaved 'And' loot condition.
 
+Returns: This condition for chaining.  
 Return Type: [And](/vanilla/api/loot/conditions/crafttweaker/And)
 
 ```zenscript
@@ -38,5 +39,7 @@ And.add<T : ILootConditionTypeBuilder>(lender as Consumer<T>) as And
 | lender | Consumer&lt;T&gt;                                                       | A consumer that allows configuration of the given condition. |
 | T      | [ILootConditionTypeBuilder](/vanilla/api/loot/conditions/ILootConditionTypeBuilder) | The known type of the condition itself.                      |
 
+
+:::
 
 

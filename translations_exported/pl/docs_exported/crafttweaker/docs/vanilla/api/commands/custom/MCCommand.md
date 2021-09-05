@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
-
 | Parameter | Type                                                                                                  | Description             |
 | --------- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
 | zabawa    | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
@@ -29,7 +28,7 @@ new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -42,16 +41,21 @@ MCCommand.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCCommand.hashCode() as int
+// MCCommand.hashCode() as int
+
 myMCCommand.hashCode();
 ```
 
-### uruchom
+:::
+
+:::group{name=run}
 
 Return Type: int
 
@@ -64,24 +68,29 @@ MCCommand.run(context as MCCommandContext) as int
 | kontekst  | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCCommand.toString() as string
+// MCCommand.toString() as string
+
 myMCCommand.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCCommand == o jako obiekt
 ```
 
-
+:::
 
 

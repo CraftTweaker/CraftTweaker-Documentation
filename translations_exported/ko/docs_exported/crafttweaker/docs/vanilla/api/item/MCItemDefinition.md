@@ -10,26 +10,29 @@ import crafttweaker.api.item.MCItemDefinition;
 
 ## Casters
 
-| Result type                                 | Is Implicit |
-| ------------------------------------------- | ----------- |
-| [IItemStack](/vanilla/api/items/IItemStack) | true        |
+| 반환 자료형                                      | 암묵적  |
+| ------------------------------------------- | ---- |
+| [IItemStack](/vanilla/api/items/IItemStack) | true |
 
 ## Methods
 
-### getDefaultInstance
+:::group{name=getDefaultInstance}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemDefinition.getDefaultInstance() as IItemStack
+// MCItemDefinition.getDefaultInstance() as IItemStack
+
 myMCItemDefinition.getDefaultInstance();
 ```
+
+:::
 
 
 ## Properties
 
-| 이름              | Type                                        | Has Getter | Has Setter |
-| --------------- | ------------------------------------------- | ---------- | ---------- |
-| commandString   | string                                      | true       | false      |
-| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| 이름              | Type                                        | Has Getter | Has Setter | Description             |
+| --------------- | ------------------------------------------- | ---------- | ---------- | ----------------------- |
+| commandString   | string                                      | true       | false      | No Description Provided |
+| defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | No Description Provided |
 

@@ -24,10 +24,10 @@ MCEnderTeleportEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingE
 
 ## Properties
 
-| Name         | Type   | Ha Getter | Ha Setter |
-| ------------ | ------ | --------- | --------- |
-| attackDamage | float  | true      | true      |
-| targetX      | double | true      | true      |
-| targetY      | double | true      | true      |
-| targetZ      | double | true      | true      |
+| Name         | Type   | Ha Getter | Ha Setter | Description             |
+| ------------ | ------ | --------- | --------- | ----------------------- |
+| attackDamage | float  | true      | true      | No Description Provided |
+| targetX      | double | true      | true      | No Description Provided |
+| targetY      | double | true      | true      | No Description Provided |
+| targetZ      | double | true      | true      | No Description Provided |
 

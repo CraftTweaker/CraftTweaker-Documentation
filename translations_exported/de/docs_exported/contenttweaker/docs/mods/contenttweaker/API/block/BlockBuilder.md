@@ -16,169 +16,275 @@ import mods.contenttweaker.block.BlockBuilder;
 BlockBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in BlockBuilder
 
 - [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+
 ## Constructors
 
-Creates a new BlockBuilder. Remember that this will _not_ create a new block in the game, you need to call [this](.)#build(String) for that.
+Creates a new BlockBuilder. <br />  Remember that this will _not_ create a new block in the game, you need to call [this](.)#build(String) for that.
 ```zenscript
 new BlockBuilder(material as MCMaterial) as BlockBuilder
 new BlockBuilder(<blockmaterial:earth>);
 ```
+
 | Parameter | Type                                                 | Beschreibung                      | Optional | DefaultValue         |
 | --------- | ---------------------------------------------------- | --------------------------------- | -------- | -------------------- |
 | material  | [MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true     | <blockmaterial:iron> |
 
+
 ## Methoden
 
-### notSolid
+:::group{name=notSolid}
 
 Instructs CoT that this block is not solid. <p> This is required if your model is not a full block (16x16x16). It is also required if your model is see-through (like glass). Set this if your block creates some X-Ray effects when it's placed.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.notSolid() as BlockBuilder
+// BlockBuilder.notSolid() as BlockBuilder
+
 myBlockBuilder.notSolid();
 ```
-### withHardnessAndResistance
+
+:::
+
+:::group{name=setRequiresTool}
+
+Sets that the block needs a tool to harvest.
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.setRequiresTool() as BlockBuilder
+
+myBlockBuilder.setRequiresTool();
+```
+
+:::
+
+:::group{name=withHardnessAndResistance}
 
 Sets the block's hardness and resistance levels. Unlike the other method, this one only accepts one parameter and will use that value for both properties.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withHardnessAndResistance(hardnessAndResistance as float) as BlockBuilder
+// BlockBuilder.withHardnessAndResistance(hardnessAndResistance as float) as BlockBuilder
+
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
+
 | Parameter             | Type  | Beschreibung                                      |
 | --------------------- | ----- | ------------------------------------------------- |
 | hardnessAndResistance | float | The value to set for hardness and for resistance. |
+
+
+:::
+
+:::group{name=withHardnessAndResistance}
 
 Sets the block's hardness and resistance levels. Unlike the other method, this one allows you to set each property one to a separate value.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float) as BlockBuilder
+// BlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float) as BlockBuilder
+
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
+
 | Parameter    | Type  | Beschreibung                     |
 | ------------ | ----- | -------------------------------- |
 | hardnessIn   | float | The value to set for hardness    |
 | resistanceIn | float | The value to set for resistance. |
 
-### withHarvestLevel
+
+:::
+
+:::group{name=withHarvestLevel}
 
 Sets the mining level required to mine this block
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withHarvestLevel(harvestLevel as int) as BlockBuilder
+// BlockBuilder.withHarvestLevel(harvestLevel as int) as BlockBuilder
+
 myBlockBuilder.withHarvestLevel(3);
 ```
+
 | Parameter    | Type | Beschreibung               |
 | ------------ | ---- | -------------------------- |
 | harvestLevel | int  | The harvest level requried |
 
-### withHarvestTool
+
+:::
+
+:::group{name=withHarvestTool}
 
 Sets the tool required to harvest this block
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withHarvestTool(harvestTool as MCToolType) as BlockBuilder
+// BlockBuilder.withHarvestTool(harvestTool as ToolType) as BlockBuilder
+
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
-| Parameter   | Type                                                   | Beschreibung  |
-| ----------- | ------------------------------------------------------ | ------------- |
-| harvestTool | [MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
-### withItemGroup
+| Parameter   | Type                                   | Beschreibung  |
+| ----------- | -------------------------------------- | ------------- |
+| harvestTool | [ToolType](/vanilla/api/tool/ToolType) | The tool type |
+
+
+:::
+
+:::group{name=withItemGroup}
 
 Sets the item group in which this block will appear
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withItemGroup(group as MCItemGroup) as BlockBuilder
+// BlockBuilder.withItemGroup(group as MCItemGroup) as BlockBuilder
+
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
+
 | Parameter | Type                                                     | Beschreibung     |
 | --------- | -------------------------------------------------------- | ---------------- |
 | group     | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
-### withLightValue
+
+:::
+
+:::group{name=withLightValue}
 
 Sets the block's light value.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withLightValue(lightValueIn as int) as BlockBuilder
+// BlockBuilder.withLightValue(lightValueIn as int) as BlockBuilder
+
 myBlockBuilder.withLightValue(15);
 ```
+
 | Parameter    | Type | Beschreibung           |
 | ------------ | ---- | ---------------------- |
 | lightValueIn | int  | The light level to set |
 
-### withLootFrom
+
+:::
+
+:::group{name=withLootFrom}
 
 Will instruct CoT to override this block's loot table with the one of the block Provided. Currently this will still create a loot table entry, though it will be ignored by the game.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withLootFrom(blockIn as MCBlock) as BlockBuilder
+// BlockBuilder.withLootFrom(blockIn as MCBlock) as BlockBuilder
+
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
-| Parameter | Type                                   | Beschreibung                                 |
-| --------- | -------------------------------------- | -------------------------------------------- |
-| blockIn   | [MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
-### withMaxStackSize
+| Parameter | Type                                  | Beschreibung                                 |
+| --------- | ------------------------------------- | -------------------------------------------- |
+| blockIn   | [MCBlock](/vanilla/api/block/MCBlock) | The block whose loot table should be applied |
+
+
+:::
+
+:::group{name=withMaxStackSize}
 
 Sets the maximum Stack size that this block can have when in your inventory. Will be 64 if unchanged.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withMaxStackSize(size as int) as BlockBuilder
+// BlockBuilder.withMaxStackSize(size as int) as BlockBuilder
+
 myBlockBuilder.withMaxStackSize(16);
 ```
+
 | Parameter | Type | Beschreibung     |
 | --------- | ---- | ---------------- |
 | size      | int  | The size to set. |
 
-### withRarity
+
+:::
+
+:::group{name=withRarity}
 
 Allows you to set the rarity of this block.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withRarity(rarity as string) as BlockBuilder
+// BlockBuilder.withRarity(rarity as string) as BlockBuilder
+
 myBlockBuilder.withRarity("UNCOMMON");
 ```
+
 | Parameter | Type   | Beschreibung |
 | --------- | ------ | ------------ |
 | rarity    | string | The rarity   |
 
-### withSlipperiness
+
+:::
+
+:::group{name=withRenderType}
+
+Sets the block's render type. Will also set the block as [this](.)#notSolid() if the argument is not solid
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withRenderType(renderType as BlockRenderType) as BlockBuilder
+
+myBlockBuilder.withRenderType(BlockRenderType.TRANSLUCENT);
+```
+
+| Parameter  | Type                                                              | Beschreibung            |
+| ---------- | ----------------------------------------------------------------- | ----------------------- |
+| renderType | [BlockRenderType](/mods/contenttweaker/API/block/BlockRenderType) | No Description Provided |
+
+
+:::
+
+:::group{name=withSlipperiness}
 
 Sets the slipperiness.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withSlipperiness(slipperinessIn as float) as BlockBuilder
+// BlockBuilder.withSlipperiness(slipperinessIn as float) as BlockBuilder
+
 myBlockBuilder.withSlipperiness(0.5f);
 ```
+
 | Parameter      | Type  | Beschreibung     |
 | -------------- | ----- | ---------------- |
 | slipperinessIn | float | The value to set |
 
-### withType
+
+:::
+
+:::group{name=withTickRandomly}
+
+Sets that the block should be ticked randomly.
+
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withTickRandomly() as BlockBuilder
+
+myBlockBuilder.withTickRandomly();
+```
+
+:::
+
+:::group{name=withType}
 
 Sets the specific type of this block. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
 
@@ -187,28 +293,40 @@ Return Type: T
 ```zenscript
 BlockBuilder.withType<T : BlockTypeBuilder>() as T
 ```
+
 | Parameter | Type                                                                | Beschreibung                              |
 | --------- | ------------------------------------------------------------------- | ----------------------------------------- |
 | T         | [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) | The Type of block that this should become |
 
-### withoutDrops
+
+:::
+
+:::group{name=withoutDrops}
 
 Will instruct CoT that this block will not have any loot entries. Currently this will still create a loot table entry, though it will be ignored by the game.
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withoutDrops() as BlockBuilder
+// BlockBuilder.withoutDrops() as BlockBuilder
+
 myBlockBuilder.withoutDrops();
 ```
-### withoutMovementBlocking
+
+:::
+
+:::group{name=withoutMovementBlocking}
 
 Instructs CoT that this block will does not block movement. Will also set the block as [this](.)#notSolid()
 
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-BlockBuilder.withoutMovementBlocking() as BlockBuilder
+// BlockBuilder.withoutMovementBlocking() as BlockBuilder
+
 myBlockBuilder.withoutMovementBlocking();
 ```
+
+:::
+
 

@@ -18,21 +18,24 @@ MCItemSmeltedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## Methods
 
-### getSmelted
+:::group{name=getSmelted}
 
 Gets the smelted item (the output stack)
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemSmeltedEvent.getSmelted() as IItemStack
+// MCItemSmeltedEvent.getSmelted() as IItemStack
+
 myMCItemSmeltedEvent.getSmelted();
 ```
+
+:::
 
 
 ## Properties
 
-| Name    | Type                                        | Has Getter | Has Setter |
-| ------- | ------------------------------------------- | ---------- | ---------- |
-| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Nombre  | Type                                        | Has Getter | Has Setter | Description                              |
+| ------- | ------------------------------------------- | ---------- | ---------- | ---------------------------------------- |
+| smelted | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the smelted item (the output stack) |
 

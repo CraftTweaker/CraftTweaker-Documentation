@@ -18,7 +18,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn 3 
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte des Mechanical Cratfter entfernen, die ein Flywheel ausgeben.
+The following script will remove all Mechanical Crafter recipes that output a Flywheel.
 
 ```zenscript
 // <recipetype:create:mechanical_crafting>.removeRecipe(IItemStack output)

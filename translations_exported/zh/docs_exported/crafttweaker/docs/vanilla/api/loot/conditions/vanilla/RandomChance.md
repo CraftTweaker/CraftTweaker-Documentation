@@ -21,7 +21,7 @@ RandomChance implements the following interfaces. That means all methods defined
 
 ## 方法
 
-### withChance
+:::group{name=withChance}
 
 Sets the chance of the loot condition successfully passing the check.
 
@@ -29,6 +29,7 @@ Sets the chance of the loot condition successfully passing the check.
 
  This parameter is <strong>required</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [RandomChance](/vanilla/api/loot/conditions/vanilla/RandomChance)
 
 ```zenscript
@@ -39,5 +40,7 @@ RandomChance.withChance(chance as float) as RandomChance
 | ------ | ----- | ---------------------------------- |
 | chance | float | The success rate of the condition. |
 
+
+:::
 
 

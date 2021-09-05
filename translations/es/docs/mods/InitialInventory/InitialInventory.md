@@ -1,3 +1,5 @@
+::requiredMod[Initial Inventory]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/initial-inventory}
+
 # InitialInventory
 
 ## Description
@@ -49,7 +51,7 @@ Optional integer to define where the item will be given, can be used to put an i
 If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
 
-## Example
+## Ejemplo
 
 ```zenscript
 //mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);

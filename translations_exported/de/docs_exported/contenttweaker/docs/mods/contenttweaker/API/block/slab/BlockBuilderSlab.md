@@ -20,82 +20,137 @@ BlockBuilderSlab extends [BlockTypeBuilder](/mods/contenttweaker/API/block/Block
 
 ## Methoden
 
-### withBottomTexture
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockBuilderSlab.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<BlockBuilderSlab>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Beschreibung                         |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+:::group{name=withBottomTexture}
 
 Allows you to override the path of the texture that the bottom should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the bottom texture for it.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withBottomTexture(bottomTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+// BlockBuilderSlab.withBottomTexture(bottomTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withBottomTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_top"));
 ```
+
 | Parameter     | Type                                                                                                                                              | Beschreibung        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | bottomTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withBottomTexture}
 
 Allows you to override the path of the texture that the bottom should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withBottomTexture(bottomTexture as MCResourceLocation) as BlockBuilderSlab
+// BlockBuilderSlab.withBottomTexture(bottomTexture as MCResourceLocation) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withBottomTexture(<resource:contenttweaker:my_awesome_slab_bottom>);
 ```
+
 | Parameter     | Type                                                        | Beschreibung                          |
 | ------------- | ----------------------------------------------------------- | ------------------------------------- |
 | bottomTexture | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
 
-### withSideTexture
+
+:::
+
+:::group{name=withSideTexture}
 
 Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the sides texture for it.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withSideTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+// BlockBuilderSlab.withSideTexture(sidesTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withSideTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
+
 | Parameter    | Type                                                                                                                                              | Beschreibung        |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withSideTexture}
 
 Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withSideTexture(sidesTexture as MCResourceLocation) as BlockBuilderSlab
+// BlockBuilderSlab.withSideTexture(sidesTexture as MCResourceLocation) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withSideTexture(<resource:contenttweaker:my_awesome_slab_side>);
 ```
+
 | Parameter    | Type                                                        | Beschreibung                          |
 | ------------ | ----------------------------------------------------------- | ------------------------------------- |
 | sidesTexture | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
 
-### withTopTexture
+
+:::
+
+:::group{name=withTopTexture}
 
 Allows you to override the path of the texture that the top should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the top texture for it.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withTopTexture(topTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+// BlockBuilderSlab.withTopTexture(topTexture as Function<MCResourceLocation,MCResourceLocation>) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withTopTexture((blockName as ResourceLocation) => new ResourceLocation(blockName.namespace, blockName.path + "_top"));
 ```
+
 | Parameter  | Type                                                                                                                                              | Beschreibung        |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | topTexture | Function&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation),[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+
+
+:::
+
+:::group{name=withTopTexture}
 
 Allows you to override the path of the texture that the top should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
-BlockBuilderSlab.withTopTexture(topTexture as MCResourceLocation) as BlockBuilderSlab
+// BlockBuilderSlab.withTopTexture(topTexture as MCResourceLocation) as BlockBuilderSlab
+
 new BlockBuilder().withType<BlockBuilderSlab>().withTopTexture(<resource:contenttweaker:my_awesome_slab_top>);
 ```
+
 | Parameter  | Type                                                        | Beschreibung                          |
 | ---------- | ----------------------------------------------------------- | ------------------------------------- |
 | topTexture | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+
+
+:::
 
 

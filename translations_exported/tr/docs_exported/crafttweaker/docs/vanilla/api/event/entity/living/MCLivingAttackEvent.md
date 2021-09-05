@@ -24,8 +24,8 @@ MCLivingAttackEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEv
 
 ## Properties
 
-| Name   | Type                                           | Has Getter | Has Setter |
-| ------ | ---------------------------------------------- | ---------- | ---------- |
-| amount | float                                          | true       | false      |
-| source | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      |
+| Name   | Type                                           | Has Getter | Has Setter | Description             |
+| ------ | ---------------------------------------------- | ---------- | ---------- | ----------------------- |
+| amount | float                                          | true       | false      | No Description Provided |
+| source | [DamageSource](/vanilla/api/util/DamageSource) | true       | false      | No Description Provided |
 

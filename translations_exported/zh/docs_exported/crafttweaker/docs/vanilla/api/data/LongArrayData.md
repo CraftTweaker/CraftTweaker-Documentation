@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new LongArrayData(internal as long[]) as LongArrayData
 ```
-
 | 参数       | 类型     | 描述                      |
 | -------- | ------ | ----------------------- |
 | internal | long[] | No Description Provided |
@@ -32,48 +31,89 @@ new LongArrayData(internal as long[]) as LongArrayData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
 
-### asCollection
-
-Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
-
-```zenscript
-LongArrayData.asCollection() as ICollectionData
-[100000, 800000, 50000].asCollection();
-```
-
-### asMap #作为地图数据
-
-Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
-
-Return Type: [IData](/vanilla/api/data/IData)[string]
-
-```zenscript
-LongArrayData.asMap() as IData[string]
-[100000, 800000, 50000].asMap();
-```
-
-### asNumber
-
-Return Type: [INumberData](/vanilla/api/data/INumberData)
-
-```zenscript
-LongArrayData.asNumber() as INumberData
-[100000, 800000, 50000].asNumber();
-```
-
-### contains #容器
-
-Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+:::group{name=asBoolean}
 
 Return Type: boolean
 
 ```zenscript
-LongArrayData.contains(data as IData) as boolean
+// LongArrayData.asBoolean() as boolean
+
+[100000, 800000, 50000].asBoolean();
+```
+
+:::
+
+:::group{name=asCollection}
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+// LongArrayData.asCollection() as ICollectionData
+
+[100000, 800000, 50000].asCollection();
+```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+LongArrayData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
+:::group{name=asMap}
+
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
+
+Returns: null if this IData is not a map.  
+Return Type: [IData](/vanilla/api/data/IData)[string]
+
+```zenscript
+// LongArrayData.asMap() as IData[string]
+
+[100000, 800000, 50000].asMap();
+```
+
+:::
+
+:::group{name=asNumber}
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+// LongArrayData.asNumber() as INumberData
+
+[100000, 800000, 50000].asNumber();
+```
+
+:::
+
+:::group{name=contains}
+
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+
+Returns: true if the given IData is contained in this IData  
+Return Type: boolean
+
+```zenscript
+// LongArrayData.contains(data as IData) as boolean
+
 [100000, 800000, 50000].contains("Display");
 ```
 
@@ -82,28 +122,38 @@ LongArrayData.contains(data as IData) as boolean
 | data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-LongArrayData.getId() as byte
+// LongArrayData.getId() as byte
+
 [100000, 800000, 50000].getId();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-LongArrayData.getString() as string
+// LongArrayData.getString() as string
+
 [100000, 800000, 50000].getString();
 ```
+
+:::
 
 

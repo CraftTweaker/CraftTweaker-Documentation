@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "Mods": {
+      "Farmersdelight": {
+        "CookingPot": "mods/farmersdelight/CookingPot.md",
+        "CuttingBoard": "mods/farmersdelight/CuttingBoard.md",
+        "ToolIngredient": "mods/farmersdelight/ToolIngredient.md"
+      }
+    }
+  }
+}

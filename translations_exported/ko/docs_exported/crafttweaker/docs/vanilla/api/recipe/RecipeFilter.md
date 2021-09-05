@@ -10,7 +10,7 @@ import crafttweaker.api.recipe.RecipeFilter;
 
 ## Methods
 
-### test
+:::group{name=test}
 
 Return Type: boolean
 
@@ -22,5 +22,7 @@ RecipeFilter.test(name as string) as boolean
 | --------- | ------ | ----------------------- |
 | name      | string | No Description Provided |
 
+
+:::
 
 

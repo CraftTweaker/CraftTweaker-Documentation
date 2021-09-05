@@ -20,21 +20,25 @@ MCAdvancementEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## Methoden
 
-### getId
+:::group{name=getId}
 
 Gets the ID of the advancement being unlocked.
 
+Returns: The ID of the advancement being unlocked by the player.  
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-MCAdvancementEvent.getId() as MCResourceLocation
+// MCAdvancementEvent.getId() as MCResourceLocation
+
 event.getId();
 ```
+
+:::
 
 
 ## Properties
 
-| Name | Type                                                        | Has Getter | Has Setter |
-| ---- | ----------------------------------------------------------- | ---------- | ---------- |
-| id   | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| Name | Type                                                        | Has Getter | Has Setter | Beschreibung                                   |
+| ---- | ----------------------------------------------------------- | ---------- | ---------- | ---------------------------------------------- |
+| id   | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | true       | false      | Gets the ID of the advancement being unlocked. |
 

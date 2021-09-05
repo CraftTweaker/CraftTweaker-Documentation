@@ -1,8 +1,8 @@
 # Examples
 
-You can use the `/ct examples` command to get some commented scripts in your scripts/examples  directory
+Vous pouvez utiliser la commande `/ct exemples` pour obtenir des scripts commentés dans votre répertoire scripts/exemples
 
-More script examples can be found here:
+Plus d'exemples de scripts peuvent être trouvés ici:
 
 [Examples](https://github.com/CraftTweaker/CraftTweaker/tree/1.16/src/main/resources/data/crafttweaker/scripts)
 

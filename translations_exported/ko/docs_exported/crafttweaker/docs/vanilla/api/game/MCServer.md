@@ -19,7 +19,9 @@ MCServer implements the following interfaces. That means all methods defined in 
 
 Runs a command.
 
- Returns The success value of the command, or 0 if an exception occurred. <p> Note: Some commands' success value is 0
+ Returns The success value of the command, or 0 if an exception occurred.
+
+ Note: Some commands' success value is 0
 
 Return Type: int
 
@@ -38,7 +40,9 @@ MCServer.executeCommand(command as string) as int
 
 let a player send a command
 
- Returns The success value of the command, or 0 if an exception occurred. <p> Note: Some commands' success value is 0
+ Returns The success value of the command, or 0 if an exception occurred.
+
+ Note: Some commands' success value is 0
 
 Return Type: int
 
@@ -61,7 +65,8 @@ Get a server world instance based on resource location Throws an exception if th
 Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 
 ```zenscript
-MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+// MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
+
 myMCServer.getWorld(<resource:minecraft:the_end>);
 ```
 
@@ -75,7 +80,7 @@ myMCServer.getWorld(<resource:minecraft:the_end>);
 
 ## Properties
 
-| 이름     | Type                                                                            | Has Getter | Has Setter |
-| ------ | ------------------------------------------------------------------------------- | ---------- | ---------- |
-| worlds | Collection&lt;[MCServerWorld](/vanilla/api/world/MCServerWorld)&gt; | true       | false      |
+| 이름     | Type                                                                            | Has Getter | Has Setter | Description             |
+| ------ | ------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| worlds | Collection&lt;[MCServerWorld](/vanilla/api/world/MCServerWorld)&gt; | true       | false      | No Description Provided |
 

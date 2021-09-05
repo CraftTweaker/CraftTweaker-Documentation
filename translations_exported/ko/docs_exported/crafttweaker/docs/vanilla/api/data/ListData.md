@@ -22,12 +22,10 @@ No Description Provided
 new ListData() as ListData
 new ListData();
 ```
-
 No Description Provided
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
-
 | Parameter | Type                                                            | Description             |
 | --------- | --------------------------------------------------------------- | ----------------------- |
 | list      | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
@@ -36,65 +34,112 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 ## Casters
 
-| Result type                                                     | Is Implicit |
-| --------------------------------------------------------------- | ----------- |
-| [ICollectionData](/vanilla/api/data/ICollectionData)            | false       |
-| [INumberData](/vanilla/api/data/INumberData)                    | false       |
-| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true        |
+| 반환 자료형                                                          | 암묵적   |
+| --------------------------------------------------------------- | ----- |
+| boolean                                                         | false |
+| [ICollectionData](/vanilla/api/data/ICollectionData)            | false |
+| [INumberData](/vanilla/api/data/INumberData)                    | false |
+| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true  |
 
 ## Methods
 
-### asCollection
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ListData.asBoolean() as boolean
+
+["Hello", "World", "!"].asBoolean();
+```
+
+:::
+
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-ListData.asCollection() as ICollectionData
+// ListData.asCollection() as ICollectionData
+
 ["Hello", "World", "!"].asCollection();
 ```
 
-### asMap
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ListData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter   | Type   | Description             |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-ListData.asMap() as IData[string]
+// ListData.asMap() as IData[string]
+
 ["Hello", "World", "!"].asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-ListData.asNumber() as INumberData
+// ListData.asNumber() as INumberData
+
 ["Hello", "World", "!"].asNumber();
 ```
 
-### getId
+:::
+
+:::group{name=getId}
 
 Gets the ID of the internal NBT tag.
 
  Used to determine what NBT type is stored (in a list for example)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-ListData.getId() as byte
+// ListData.getId() as byte
+
 ["Hello", "World", "!"].getId();
 ```
 
-### getString
+:::
+
+:::group{name=getString}
 
 Gets the String representation of the internal INBT tag
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-ListData.getString() as string
+// ListData.getString() as string
+
 ["Hello", "World", "!"].getString();
 ```
+
+:::
 
 

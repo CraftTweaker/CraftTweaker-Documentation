@@ -1,5 +1,7 @@
 # CraftTweaker
 
+**[Es gibt einen neue Migrationsleitfaden für Version 7.1.0, klicke hier, um ihn zu lesen](/migrations/migration_7_1_0)**
+
 CraftTweaker is a Minecraft mod that allows modpack authors to customize the game, allowing for new recipes to be added, old ones to be removed and just general modpack customization!
 
 CraftTweaker uses a custom scripting language called ZenScript, which is a fairly easy to learn language that fits CraftTweaker's needs more than an already existing language would (such as JavaScript).

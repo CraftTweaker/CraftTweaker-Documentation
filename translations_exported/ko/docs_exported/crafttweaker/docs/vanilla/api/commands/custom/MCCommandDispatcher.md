@@ -10,9 +10,9 @@ import crafttweaker.api.commands.custom.MCCommandDispatcher;
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
@@ -160,7 +160,8 @@ MCCommandDispatcher.getPath(target as MCCommandNode) as Collection<string>
 Return Type: [MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
 
 ```zenscript
-MCCommandDispatcher.getRoot() as MCRootCommandNode
+// MCCommandDispatcher.getRoot() as MCRootCommandNode
+
 myMCCommandDispatcher.getRoot();
 ```
 
@@ -187,7 +188,8 @@ MCCommandDispatcher.getSmartUsage(node as MCCommandNode, source as MCCommandSour
 Return Type: int
 
 ```zenscript
-MCCommandDispatcher.hashCode() as int
+// MCCommandDispatcher.hashCode() as int
+
 myMCCommandDispatcher.hashCode();
 ```
 
@@ -244,7 +246,8 @@ MCCommandDispatcher.setConsumer(consumer as MCResultConsumer) as void
 Return Type: string
 
 ```zenscript
-MCCommandDispatcher.toString() as string
+// MCCommandDispatcher.toString() as string
+
 myMCCommandDispatcher.toString();
 ```
 

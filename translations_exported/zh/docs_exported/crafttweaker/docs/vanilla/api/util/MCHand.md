@@ -12,6 +12,13 @@ import crafttweaker.api.util.MCHand;
 
 MCHand extends Enum&lt;[MCHand](/vanilla/api/util/MCHand)&gt;. That means all methods available in Enum&lt;[MCHand](/vanilla/api/util/MCHand)&gt; are also available in MCHand
 
+## Static Properties
+
+| 名称        | 类型                                 | 可获得  | 可设置   | 描述                      |
+| --------- | ---------------------------------- | ---- | ----- | ----------------------- |
+| MAIN_HAND | [MCHand](/vanilla/api/util/MCHand) | true | false | No Description Provided |
+| OFF_HAND  | [MCHand](/vanilla/api/util/MCHand) | true | false | No Description Provided |
+
 ## Casters
 
 | 结果类型                                                         | 是否隐藏 |

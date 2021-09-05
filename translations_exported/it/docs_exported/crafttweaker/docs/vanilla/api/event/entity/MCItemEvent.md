@@ -18,7 +18,7 @@ MCItemEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). Th
 
 ## Properties
 
-| Name       | Type                                             | Ha Getter | Ha Setter |
-| ---------- | ------------------------------------------------ | --------- | --------- |
-| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true      | false     |
+| Name       | Type                                             | Ha Getter | Ha Setter | Description             |
+| ---------- | ------------------------------------------------ | --------- | --------- | ----------------------- |
+| entityItem | [MCItemEntity](/vanilla/api/entity/MCItemEntity) | true      | false     | No Description Provided |
 

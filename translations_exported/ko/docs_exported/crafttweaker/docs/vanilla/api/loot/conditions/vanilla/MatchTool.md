@@ -35,6 +35,7 @@ Sets the tool that should be matched by this loot condition.
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [MatchTool](/vanilla/api/loot/conditions/vanilla/MatchTool)
 
 ```zenscript
@@ -60,6 +61,7 @@ Sets the tool that should be matched by this loot condition, optionally ignoring
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [MatchTool](/vanilla/api/loot/conditions/vanilla/MatchTool)
 
 ```zenscript
@@ -86,6 +88,7 @@ Sets the tool that should be matched by this loot condition, optionally ignoring
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [MatchTool](/vanilla/api/loot/conditions/vanilla/MatchTool)
 
 ```zenscript
@@ -111,6 +114,7 @@ Sets the tool that should be matched by this loot condition, optionally ignoring
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [MatchTool](/vanilla/api/loot/conditions/vanilla/MatchTool)
 
 ```zenscript
@@ -135,6 +139,7 @@ Creates and sets the [ItemPredicate](/vanilla/api/predicate/ItemPredicate) that 
 
  This parameter is <strong>optional</strong>.
 
+Returns: This builder for chaining.  
 Return Type: [MatchTool](/vanilla/api/loot/conditions/vanilla/MatchTool)
 
 ```zenscript

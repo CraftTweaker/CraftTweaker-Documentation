@@ -15,25 +15,31 @@ MCTagWithAmount implements the following interfaces. That means all methods defi
 
 ## Methods
 
-### getAmount
+:::group{name=getAmount}
 
 Return Type: int
 
 ```zenscript
-MCTagWithAmount.getAmount() as int
+// MCTagWithAmount.getAmount() as int
+
 myMCTagWithAmount.getAmount();
 ```
 
-### getTag
+:::
+
+:::group{name=getTag}
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
-MCTagWithAmount.getTag() as MCTag<T>
+// MCTagWithAmount.getTag() as MCTag<T>
+
 myMCTagWithAmount.getTag();
 ```
 
-### setAmount
+:::
+
+:::group{name=setAmount}
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
@@ -46,11 +52,13 @@ MCTagWithAmount.setAmount(amount as int) as MCTagWithAmount<T>
 | amount   | int | No Description Provided |
 
 
+:::
+
 
 ## Свойства
 
-| Название | Тип                                                   | Имеет Getter | Имеет Setter |
-| -------- | ----------------------------------------------------- | ------------ | ------------ |
-| amount   | int                                                   | true         | true         |
-| tag      | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | true         | false        |
+| Название | Тип                                                   | Имеет Getter | Имеет Setter | Description             |
+| -------- | ----------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| amount   | int                                                   | true         | true         | No Description Provided |
+| tag      | [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt; | true         | false        | No Description Provided |
 

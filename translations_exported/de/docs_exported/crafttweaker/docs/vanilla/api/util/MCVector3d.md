@@ -14,13 +14,17 @@ import crafttweaker.api.util.MCVector3d;
 ```
 
 
+## Implemented Interfaces
+MCVector3d implements the following interfaces. That means all methods defined in these interfaces are also available in MCVector3d
+
+- [IPosition](/vanilla/api/dispenser/IPosition)
+
 ## Constructors
 
 
 ```zenscript
 new MCVector3d(x as double, y as double, z as double) as MCVector3d
 ```
-
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
 | x         | double | No description provided |
@@ -29,12 +33,31 @@ new MCVector3d(x as double, y as double, z as double) as MCVector3d
 
 
 
+## Casters
+
+| Result type                                | Is Implicit |
+| ------------------------------------------ | ----------- |
+| [MCVector3i](/vanilla/api/util/MCVector3i) | false       |
+
 ## Methoden
+
+:::group{name=asVector3i}
+
+Return Type: [MCVector3i](/vanilla/api/util/MCVector3i)
+
+```zenscript
+// MCVector3d.asVector3i() as MCVector3i
+
+myMCVector3d.asVector3i();
+```
+
+:::
 
 :::group{name=cross}
 
 Performs the cross product between this vector and <code>other</code>.
 
+Returns: The cross product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -52,6 +75,7 @@ MCVector3d.cross(other as MCVector3d) as MCVector3d
 
 Computes the Euclidean distance between this vector and the other vector.
 
+Returns: The Euclidean distance between them.  
 Return Type: double
 
 ```zenscript
@@ -69,6 +93,7 @@ MCVector3d.distanceTo(other as MCVector3d) as double
 
 Performs a dot product between this vector and <code>other</code>.
 
+Returns: The dot product.  
 Return Type: double
 
 ```zenscript
@@ -86,6 +111,7 @@ MCVector3d.dot(other as MCVector3d) as double
 
 Gets the coordinate of this vector that corresponds to the given [DirectionAxis](/vanilla/api/util/DirectionAxis).
 
+Returns: The value of the corresponding coordinate.  
 Return Type: double
 
 ```zenscript
@@ -105,6 +131,7 @@ Gets the coordinate of this vector identified by the specified index.
 
  Namely, 0 corresponds to the X coordinate, 1 to Y, and 2 to Z.
 
+Returns: The value of the corresponding coordinate.  
 Return Type: double
 
 ```zenscript
@@ -122,6 +149,7 @@ MCVector3d.getCoordinate(index as int) as double
 
 Subtracts <code>other</code> from this vector.
 
+Returns: The subtraction result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -139,6 +167,7 @@ MCVector3d.minus(other as MCVector3d) as MCVector3d
 
 Subtracts the vector <code>(x, y, z)</code> from this vector.
 
+Returns: The subtraction result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -158,10 +187,12 @@ MCVector3d.minus(x as double, y as double, z as double) as MCVector3d
 
 Normalizes the current vector, making it of unit length.
 
+Returns: The normalized vector.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
-MCVector3d.normalize() as MCVector3d
+// MCVector3d.normalize() as MCVector3d
+
 myMCVector3d.normalize();
 ```
 
@@ -171,6 +202,7 @@ myMCVector3d.normalize();
 
 Adds this vector to the <code>other</code> vector, computing their sum member by member.
 
+Returns: The sum.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -188,6 +220,7 @@ MCVector3d.plus(other as MCVector3d) as MCVector3d
 
 Adds this vector to the vector <code>(x, y, z)</code>, computing their sum member by member.
 
+Returns: The sum.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -207,6 +240,7 @@ MCVector3d.plus(x as double, y as double, z as double) as MCVector3d
 
 Scales the current vector by the given <code>factor</code>.
 
+Returns: The scaled vector.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -226,6 +260,7 @@ Computes the squared Euclidean distance between this vector and the other vector
 
  This method is faster and less error-prone than calling <code>distanceTo</code> and squaring the result.
 
+Returns: The squared Euclidean distance between them.  
 Return Type: double
 
 ```zenscript
@@ -243,6 +278,7 @@ MCVector3d.squareDistanceTo(other as MCVector3d) as double
 
 Subtracts this vector from the <code>other</code> vector and returns the result.
 
+Returns: The result.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -260,6 +296,7 @@ MCVector3d.subtractReverse(other as MCVector3d) as MCVector3d
 
 Multiplies the two vectors member by member, computing what is known as the Hadamard product.
 
+Returns: The Hadamard product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -277,6 +314,7 @@ MCVector3d.times(other as MCVector3d) as MCVector3d
 
 Multiplies this vector with the vector <code>(x, y, z)</code>, computing what is known as the Hadamard product.
 
+Returns: The Hadamard product.  
 Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
 
 ```zenscript
@@ -295,12 +333,12 @@ MCVector3d.times(x as double, y as double, z as double) as MCVector3d
 
 ## Properties
 
-| Name             | Type                                       | Has Getter | Has Setter |
-| ---------------- | ------------------------------------------ | ---------- | ---------- |
-| inverse          | [MCVector3d](/vanilla/api/util/MCVector3d) | true       | false      |
-| magnitude        | double                                     | true       | false      |
-| magnitudeSquared | double                                     | true       | false      |
-| x                | double                                     | true       | false      |
-| y                | double                                     | true       | false      |
-| z                | double                                     | true       | false      |
+| Name             | Type                                       | Has Getter | Has Setter | Beschreibung                                                                                                                                                                                                   |
+| ---------------- | ------------------------------------------ | ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| inverse          | [MCVector3d](/vanilla/api/util/MCVector3d) | true       | false      | Inverts the vector, effectively flipping it. <br />  <br />  This is equivalent to a scale by -1, or a rotation of pi radians around the origin.                                                   |
+| magnitude        | double                                     | true       | false      | Gets the length, also known as magnitude, of the vector.                                                                                                                                                       |
+| magnitudeSquared | double                                     | true       | false      | Gets the squared length, also known as squared magnitude, of the vector. <br />  <br />  This method is faster and less error-prone than calling <code>magnitude</code> and squaring the result. |
+| x                | double                                     | true       | false      | Gets the X coordinate of this vector.                                                                                                                                                                          |
+| y                | double                                     | true       | false      | Gets the Y coordinate of this vector.                                                                                                                                                                          |
+| z                | double                                     | true       | false      | Gets the Z coordinate of this vector.                                                                                                                                                                          |
 

@@ -11,7 +11,12 @@
           },
           "Block": {
             "BlockBuilder": "mods/contenttweaker/API/block/BlockBuilder.md",
+            "BlockRenderType": "mods/contenttweaker/API/block/BlockRenderType.md",
             "BlockTypeBuilder": "mods/contenttweaker/API/block/BlockTypeBuilder.md",
+            "Advance": {
+              "BlockBuilderAdvanced": "mods/contenttweaker/API/block/advance/BlockBuilderAdvanced.md",
+              "CoTBlockAdvanced": "mods/contenttweaker/API/block/advance/CoTBlockAdvanced.md"
+            },
             "Basic": {
               "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md"
             },
@@ -25,11 +30,32 @@
               "BlockBuilderStairs": "mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md"
             }
           },
+          "Fluid": {
+            "FluidBuilder": "mods/contenttweaker/API/fluid/FluidBuilder.md"
+          },
+          "Functions": {
+            "IBlockActivated": "mods/contenttweaker/API/functions/IBlockActivated.md",
+            "IBlockAdded": "mods/contenttweaker/API/functions/IBlockAdded.md",
+            "IBlockColorSupplier": "mods/contenttweaker/API/functions/IBlockColorSupplier.md",
+            "IBlockNeighborChanged": "mods/contenttweaker/API/functions/IBlockNeighborChanged.md",
+            "IBlockRandomTick": "mods/contenttweaker/API/functions/IBlockRandomTick.md",
+            "IBlockReplaced": "mods/contenttweaker/API/functions/IBlockReplaced.md",
+            "IItemColorSupplier": "mods/contenttweaker/API/functions/IItemColorSupplier.md",
+            "IItemHitEntity": "mods/contenttweaker/API/functions/IItemHitEntity.md",
+            "IItemInteractWithEntity": "mods/contenttweaker/API/functions/IItemInteractWithEntity.md",
+            "IItemInventoryTick": "mods/contenttweaker/API/functions/IItemInventoryTick.md",
+            "IItemRightClick": "mods/contenttweaker/API/functions/IItemRightClick.md",
+            "IItemUse": "mods/contenttweaker/API/functions/IItemUse.md",
+            "IItemUsingTick": "mods/contenttweaker/API/functions/IItemUsingTick.md"
+          },
           "Item": {
             "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
             "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
             "MCItemGroup": "mods/contenttweaker/API/item/MCItemGroup.md",
-            "MCToolType": "mods/contenttweaker/API/item/MCToolType.md",
+            "Advance": {
+              "CoTItemAdvanced": "mods/contenttweaker/API/item/advance/CoTItemAdvanced.md",
+              "ItemBuilderAdvanced": "mods/contenttweaker/API/item/advance/ItemBuilderAdvanced.md"
+            },
             "Basic": {
               "ItemBuilderBasic": "mods/contenttweaker/API/item/basic/ItemBuilderBasic.md"
             },

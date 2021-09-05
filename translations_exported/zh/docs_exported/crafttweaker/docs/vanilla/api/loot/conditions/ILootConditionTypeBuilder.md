@@ -14,7 +14,7 @@ import crafttweaker.api.loot.conditions.ILootConditionTypeBuilder;
 
 ## 方法
 
-### finish
+:::group{name=finish}
 
 Terminates the configuration of the loot condition and uses the current status to create a specific instance of [ILootCondition](/vanilla/api/loot/conditions/ILootCondition) that matches the parameters.
 
@@ -24,11 +24,15 @@ Terminates the configuration of the loot condition and uses the current status t
 
  You should never need to call this method. Refer to [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) for more information.
 
+Returns: The built [ILootCondition](/vanilla/api/loot/conditions/ILootCondition).  
 Return Type: [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)
 
 ```zenscript
-ILootConditionTypeBuilder.finish() as ILootCondition
+// ILootConditionTypeBuilder.finish() as ILootCondition
+
 myILootConditionTypeBuilder.finish();
 ```
+
+:::
 
 

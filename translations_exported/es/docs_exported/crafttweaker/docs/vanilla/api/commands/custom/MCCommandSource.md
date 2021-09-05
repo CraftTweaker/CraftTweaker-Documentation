@@ -10,52 +10,67 @@ import crafttweaker.api.commands.custom.MCCommandSource;
 
 ## Methods
 
-### getName
+:::group{name=getName}
 
 Return Type: string
 
 ```zenscript
-MCCommandSource.getName() as string
+// MCCommandSource.getName() as string
+
 myMCCommandSource.getName();
 ```
 
-### getPlayer
+:::
+
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)?
 
 ```zenscript
-MCCommandSource.getPlayer() as MCPlayerEntity?
+// MCCommandSource.getPlayer() as MCPlayerEntity?
+
 myMCCommandSource.getPlayer();
 ```
 
-### Nombre del jugador
+:::
+
+:::group{name=getPlayerNames}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getPlayerNames() as Collection<string>
+// MCCommandSource.getPlayerNames() as Collection<string>
+
 myMCCommandSource.getPlayerNames();
 ```
 
-### Entidad objetivo
+:::
+
+:::group{name=getTargetedEntity}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTargetedEntity() as Collection<string>
+// MCCommandSource.getTargetedEntity() as Collection<string>
+
 myMCCommandSource.getTargetedEntity();
 ```
 
-### obtener nombres de equipo
+:::
+
+:::group{name=getTeamNames}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTeamNames() as Collection<string>
+// MCCommandSource.getTeamNames() as Collection<string>
+
 myMCCommandSource.getTeamNames();
 ```
 
-### hasPermissionLevel
+:::
+
+:::group{name=hasPermissionLevel}
 
 Return Type: boolean
 
@@ -68,16 +83,21 @@ MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 | y 197034_1_ | int  | No Description Provided |
 
 
-### isPlayer
+:::
+
+:::group{name=isPlayer}
 
 Return Type: boolean
 
 ```zenscript
-MCCommandSource.isPlayer() as boolean
+// MCCommandSource.isPlayer() as boolean
+
 myMCCommandSource.isPlayer();
 ```
 
-### enviar mensaje de error
+:::
+
+:::group{name=sendErrorMessage}
 
 Return Type: void
 
@@ -90,7 +110,9 @@ MCCommandSource.sendErrorMessage(message as string) as void
 | message   | string | No Description Provided |
 
 
-### sendFeedback
+:::
+
+:::group{name=sendFeedback}
 
 Return Type: void
 
@@ -104,16 +126,21 @@ MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as voi
 | allowLogging | boolean | No Description Provided |
 
 
-### con FeedbackDeshabilitado
+:::
+
+:::group{name=withFeedbackDisabled}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-MCCommandSource.withFeedbackDisabled() as MCCommandSource
+// MCCommandSource.withFeedbackDisabled() as MCCommandSource
+
 myMCCommandSource.withFeedbackDisabled();
 ```
 
-### con nivel de MinPermiso
+:::
+
+:::group{name=withMinPermissionLevel}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -126,7 +153,9 @@ MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 | 1_        | int  | No Description Provided |
 
 
-### sin nivel de permiso
+:::
+
+:::group{name=withPermissionLevel}
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
@@ -138,5 +167,7 @@ MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 | ------------- | ---- | ----------------------- |
 | a 197033_1_ | int  | No Description Provided |
 
+
+:::
 
 

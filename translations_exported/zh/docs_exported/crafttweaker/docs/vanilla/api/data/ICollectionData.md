@@ -15,13 +15,11 @@ ICollectionData实现了以下接口。 That means all methods defined in these 
 
 - [IData](/vanilla/api/data/IData)
 
-## 方法
+## Static Methods
 
 :::group{name=getFromMembers}
 
-Creates the most specific ICollectionData form possible for the provided members.
-
- Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+Creates the most specific ICollectionData form possible for the provided members. <br />  <br />  Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
@@ -40,6 +38,7 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
 | [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
@@ -52,7 +51,8 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 Return Type: void
 
 ```zenscript
-ICollectionData.add(value as IData) as void
+// ICollectionData.add(value as IData) as void
+
 new ListData(["Hello", "World"]).add("today");
 ```
 
@@ -70,7 +70,8 @@ new ListData(["Hello", "World"]).add("today");
 Return Type: void
 
 ```zenscript
-ICollectionData.add(index as int, value as IData) as void
+// ICollectionData.add(index as int, value as IData) as void
+
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
@@ -82,14 +83,43 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 
 :::
 
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ICollectionData.asBoolean() as boolean
+
+new ListData(["Hello", "World"]).asBoolean();
+```
+
+:::
+
 :::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-ICollectionData.asCollection() as ICollectionData
+// ICollectionData.asCollection() as ICollectionData
+
 new ListData(["Hello", "World"]).asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ICollectionData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
 
 :::
 
@@ -97,10 +127,12 @@ new ListData(["Hello", "World"]).asCollection();
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-ICollectionData.asList() as stdlib.List<IData>
+// ICollectionData.asList() as stdlib.List<IData>
+
 new ListData(["Hello", "World"]).asList();
 ```
 
@@ -110,10 +142,12 @@ new ListData(["Hello", "World"]).asList();
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-ICollectionData.asMap() as IData[string]
+// ICollectionData.asMap() as IData[string]
+
 new ListData(["Hello", "World"]).asMap();
 ```
 
@@ -124,7 +158,8 @@ new ListData(["Hello", "World"]).asMap();
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-ICollectionData.asNumber() as INumberData
+// ICollectionData.asNumber() as INumberData
+
 new ListData(["Hello", "World"]).asNumber();
 ```
 
@@ -134,10 +169,12 @@ new ListData(["Hello", "World"]).asNumber();
 
 获取此IData的字符串表示形式
 
+Returns: String that represents this IData (value and type).  
 Return Type: string
 
 ```zenscript
-ICollectionData.asString() as string
+// ICollectionData.asString() as string
+
 new ListData(["Hello", "World"]).asString();
 ```
 
@@ -150,7 +187,8 @@ new ListData(["Hello", "World"]).asString();
 Return Type: void
 
 ```zenscript
-ICollectionData.clear() as void
+// ICollectionData.clear() as void
+
 new ListData(["Hello", "World"]).clear();
 ```
 
@@ -160,10 +198,12 @@ new ListData(["Hello", "World"]).clear();
 
 Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
+Returns: true if the given IData is contained in this IData  
 Return Type: boolean
 
 ```zenscript
-ICollectionData.contains(data as IData) as boolean
+// ICollectionData.contains(data as IData) as boolean
+
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
@@ -180,10 +220,12 @@ new ListData(["Hello", "World"]).contains("Display");
 
  IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
+Returns: a copy of this IData.  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.copy() as IData
+// ICollectionData.copy() as IData
+
 new ListData(["Hello", "World"]).copy();
 ```
 
@@ -193,10 +235,12 @@ new ListData(["Hello", "World"]).copy();
 
 Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
 
+Returns: The [IData](/vanilla/api/data/IData)  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.getAt(index as int) as IData
+// ICollectionData.getAt(index as int) as IData
+
 new ListData(["Hello", "World"]).getAt(0);
 ```
 
@@ -213,10 +257,12 @@ new ListData(["Hello", "World"]).getAt(0);
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-ICollectionData.getId() as byte
+// ICollectionData.getId() as byte
+
 new ListData(["Hello", "World"]).getId();
 ```
 
@@ -226,11 +272,25 @@ new ListData(["Hello", "World"]).getId();
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-ICollectionData.getString() as string
+// ICollectionData.getString() as string
+
 new ListData(["Hello", "World"]).getString();
+```
+
+:::
+
+:::group{name=isEmpty}
+
+Return Type: boolean
+
+```zenscript
+// ICollectionData.isEmpty() as boolean
+
+new ListData(["Hello", "World"]).isEmpty();
 ```
 
 :::
@@ -239,10 +299,12 @@ new ListData(["Hello", "World"]).getString();
 
 Removes the [IData](/vanilla/api/data/IData) stored at the given index.
 
+Returns: The [IData](/vanilla/api/data/IData) that was removed  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.remove(index as int) as IData
+// ICollectionData.remove(index as int) as IData
+
 new ListData(["Hello", "World"]).remove(0);
 ```
 
@@ -257,10 +319,12 @@ new ListData(["Hello", "World"]).remove(0);
 
 在给定值的索引处设置项目
 
+Returns: The replaced value  
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-ICollectionData.setAt(index as int, value as IData) as IData
+// ICollectionData.setAt(index as int, value as IData) as IData
+
 new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
 
@@ -275,7 +339,8 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 
 ## 参数
 
-| 名称   | 类型  | 可获得  | 可设置   |
-| ---- | --- | ---- | ----- |
-| size | int | true | false |
+| 名称    | 类型      | 可获得  | 可设置   | 描述                      |
+| ----- | ------- | ---- | ----- | ----------------------- |
+| empty | boolean | true | false | No Description Provided |
+| size  | int     | true | false | No Description Provided |
 

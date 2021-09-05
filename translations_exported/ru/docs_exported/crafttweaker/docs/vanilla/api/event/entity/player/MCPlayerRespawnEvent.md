@@ -20,21 +20,24 @@ MCPlayerRespawnEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MC
 
 ## Methods
 
-### isEndConquered
+:::group{name=isEndConquered}
 
 Was this event caused by the player entering the portal in the end?
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerRespawnEvent.isEndConquered() as boolean
+// MCPlayerRespawnEvent.isEndConquered() as boolean
+
 myMCPlayerRespawnEvent.isEndConquered();
 ```
+
+:::
 
 
 ## Свойства
 
-| Название     | Тип     | Имеет Getter | Имеет Setter |
-| ------------ | ------- | ------------ | ------------ |
-| endConquered | boolean | true         | false        |
+| Название     | Тип     | Имеет Getter | Имеет Setter | Description                                                         |
+| ------------ | ------- | ------------ | ------------ | ------------------------------------------------------------------- |
+| endConquered | boolean | true         | false        | Was this event caused by the player entering the portal in the end? |
 

@@ -1,3 +1,5 @@
+::requiredMod[Yanny's Stone Age]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/stone-age-by-yanny}
+
 # Drying Rack
 
 ## Package
@@ -10,7 +12,7 @@
 - **int dryingTime** Drying time in ticks
 - **String group** Recipe group
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:stone_age:drying_rack>.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString String group)

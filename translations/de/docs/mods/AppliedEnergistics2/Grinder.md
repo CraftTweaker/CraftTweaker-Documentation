@@ -1,19 +1,19 @@
 ::requiredMod[Applied Energistics 2]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2 requiredMod=AppliedEnergisticsTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/appliedenergisticstweaker}
 
-# Applied Energistics 2 Grinder
+# Applied Energistics 2 Quarzmühlstein
 
-The Grinder is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Quarzmühlstein ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie beispielsweise `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezepte hinzufügen
 
-The following script will add two recipes to the Grinder that will do the following:
+Das folgende Skript fügt dem Grinder zwei Rezepte hinzu, die Folgendes tun:
 
-1) Output an Apple after Grinding 4 Arrows and turning the Crank 5 times. 2) Output an Arrow and 50% of the time will also output a Diamond, after Grinding an Apple and turning the Crank 2 times.
+1) Nach dem Zermahlen von 4 Pfeilen durch fünfmaliges Drehen der Kurbel wird ein Apfel ausgeben. 2) Nach dem Zermahlen eines Apfels durch zweimaliges Drehen der Kurbel wird ein Pfeil und mit einer  Wahrscheinlichkeit von 50% zusätzlich ein Diamant ausgeben.
 
 ```zenscript
-// <recipetype:appliedenergistics2:grinder>.addRecipe(String name, IItemStack output, IIngredientWithAmount ingredient, int turns, MCWeightedItemStack... optionalOutputs)
+// <recipetype:appliedenergistics2:grinder>.addRecipe(name as string, output as IItemStack, ingredient as IIngredientWithAmount, turns as int, optionalOutputs as MCWeightedItemStack...)
 
 <recipetype:appliedenergistics2:grinder>.addRecipe("grinder_test", <item:minecraft:apple>, <item:minecraft:arrow> * 4, 5);
 <recipetype:appliedenergistics2:grinder>.addRecipe("grinder_test_optional_outputs", <item:minecraft:arrow>, <item:minecraft:apple>, 2, [<item:minecraft:diamond> % 50]);
@@ -21,10 +21,10 @@ The following script will add two recipes to the Grinder that will do the follow
 
 #### Remove Recipes
 
-The follow script will remove all Grinder recipes that output Flint.
+Das folgende Skript entfernt alle Grinder-Rezepte, die Feuerstein ausgeben.
 
 ```zenscript
-// <recipetype:appliedenergistics2:grinder>.removeRecipe(IItemStack output)
+// <recipetype:appliedenergistics2:grinder>.removeRecipe(output as IItemStack)
 
 <recipetype:appliedenergistics2:grinder>.removeRecipe(<item:minecraft:flint>);
 ```

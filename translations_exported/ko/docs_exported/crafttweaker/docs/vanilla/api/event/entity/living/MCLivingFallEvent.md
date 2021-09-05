@@ -24,8 +24,8 @@ MCLivingFallEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Properties
 
-| 이름               | Type  | Has Getter | Has Setter |
-| ---------------- | ----- | ---------- | ---------- |
-| damageMultiplier | float | true       | true       |
-| distance         | float | true       | true       |
+| 이름               | Type  | Has Getter | Has Setter | Description             |
+| ---------------- | ----- | ---------- | ---------- | ----------------------- |
+| damageMultiplier | float | true       | true       | No Description Provided |
+| distance         | float | true       | true       | No Description Provided |
 

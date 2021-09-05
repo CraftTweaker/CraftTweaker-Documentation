@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Fluid Item Transformation
 
 ## Package
@@ -10,7 +12,7 @@
 - **setResult(IItemStack result)** the result of the recipe
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:fluid_item>.create("fluid_item_test").setFluidInTank(<fluid:minecraft:water>).setInputItem(<item:minecraft:diamond>).setResult(<item:minecraft:dirt>);

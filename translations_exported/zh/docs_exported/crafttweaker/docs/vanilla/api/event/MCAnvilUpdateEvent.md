@@ -26,12 +26,12 @@ MCAnvilUpdateEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all
 
 ## 参数
 
-| 名称         | 类型                                                    | 可获得  | 可设置   |
-| ---------- | ----------------------------------------------------- | ---- | ----- |
-| left       | [IItemStack](/vanilla/api/items/IItemStack)           | true | false |
-| levelCost  | int                                                   | true | true  |
-| 材料成本       | int                                                   | true | true  |
-| output（输出） | [IItemStack](/vanilla/api/items/IItemStack)           | true | true  |
-| player     | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true | false |
-| right      | [IItemStack](/vanilla/api/items/IItemStack)           | true | false |
+| 名称         | 类型                                                    | 可获得  | 可设置   | 描述                      |
+| ---------- | ----------------------------------------------------- | ---- | ----- | ----------------------- |
+| left       | [IItemStack](/vanilla/api/items/IItemStack)           | true | false | No Description Provided |
+| levelCost  | int                                                   | true | true  | No Description Provided |
+| 材料成本       | int                                                   | true | true  | No Description Provided |
+| output（输出） | [IItemStack](/vanilla/api/items/IItemStack)           | true | true  | No Description Provided |
+| player     | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true | false | No Description Provided |
+| right      | [IItemStack](/vanilla/api/items/IItemStack)           | true | false | No Description Provided |
 

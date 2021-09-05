@@ -20,12 +20,13 @@ FluidPredicate extends [AnyDefaultingVanillaWrappingPredicate](/vanilla/api/pred
 
 ## 方法
 
-### withFluid
+:::group{name=withFluid}
 
 Sets the fluid that this predicate should match.
 
  If a tag to match against has already been set, then the tag check will take precedence over this check.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript
@@ -37,7 +38,9 @@ FluidPredicate.withFluid(fluid as MCFluid) as FluidPredicate
 | fluid | [MCFluid](/vanilla/api/fluid/MCFluid) | The fluid the predicate should match. |
 
 
-### withFluidTag
+:::
+
+:::group{name=withFluidTag}
 
 Sets the tag that this predicate should use for matching.
 
@@ -45,6 +48,7 @@ Sets the tag that this predicate should use for matching.
 
  Specifying both a tag and a fluid to match against will make the tag take precedence over the fluid.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript
@@ -56,12 +60,15 @@ FluidPredicate.withFluidTag(fluidTag as MCTag<MCFluid>) as FluidPredicate
 | fluidTag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | The tag the predicate should use for matching. |
 
 
-### withStatePropertiesPredicate
+:::
+
+:::group{name=withStatePropertiesPredicate}
 
 Creates and sets the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) that will be matched against the fluid state's properties.
 
  Any changes that have already been made to the state properties predicate will be overwritten, effectively replacing the previous one, if any.
 
+Returns: This predicate for chaining.  
 Return Type: [FluidPredicate](/vanilla/api/predicate/FluidPredicate)
 
 ```zenscript
@@ -72,5 +79,7 @@ FluidPredicate.withStatePropertiesPredicate(builder as Consumer<StatePropertiesP
 | --- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | 生成器 | Consumer&lt;[StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate)&gt; | A consumer that will be used to configure the [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate). |
 
+
+:::
 
 

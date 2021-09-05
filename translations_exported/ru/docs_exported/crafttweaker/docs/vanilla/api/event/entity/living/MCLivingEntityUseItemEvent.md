@@ -18,8 +18,8 @@ MCLivingEntityUseItemEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCL
 
 ## Свойства
 
-| Название | Тип                                         | Имеет Getter | Имеет Setter |
-| -------- | ------------------------------------------- | ------------ | ------------ |
-| duration | int                                         | true         | true         |
-| item     | [IItemStack](/vanilla/api/items/IItemStack) | true         | false        |
+| Название | Тип                                         | Имеет Getter | Имеет Setter | Description             |
+| -------- | ------------------------------------------- | ------------ | ------------ | ----------------------- |
+| duration | int                                         | true         | true         | No Description Provided |
+| item     | [IItemStack](/vanilla/api/items/IItemStack) | true         | false        | No Description Provided |
 

@@ -16,3 +16,26 @@ import mods.contenttweaker.item.ItemTypeBuilder;
 ItemTypeBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in ItemTypeBuilder
 
 - [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+
+## 方法
+
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// ItemTypeBuilder.build(resourceLocation as string) as void
+
+new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
+```
+
+| 参数               | 类型     | 描述                                   |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+

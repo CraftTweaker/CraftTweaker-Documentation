@@ -15,7 +15,7 @@ MCPotionEffectInstance implements the following interfaces. That means all metho
 
 ## Methoden
 
-### addCurativeItem
+:::group{name=addCurativeItem}
 
 Return Type: void
 
@@ -28,7 +28,9 @@ MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### combine
+:::
+
+:::group{name=combine}
 
 Return Type: boolean
 
@@ -41,16 +43,21 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 | effect    | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 
 
-### getCurativeItems
+:::
+
+:::group{name=getCurativeItems}
 
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
-MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+// MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
+
 myMCPotionEffectInstance.getCurativeItems();
 ```
 
-### isCurativeItem
+:::
+
+:::group{name=isCurativeItem}
 
 Return Type: boolean
 
@@ -63,7 +70,9 @@ MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### setCurativeItems
+:::
+
+:::group{name=setCurativeItems}
 
 Return Type: void
 
@@ -76,16 +85,18 @@ MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 | items     | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 
 
+:::
+
 
 ## Properties
 
-| Name          | Type                                                  | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------- | ---------- | ---------- |
-| ambient       | boolean                                               | true       | false      |
-| amplifier     | int                                                   | true       | false      |
-| duration      | int                                                   | true       | false      |
-| effectName    | string                                                | true       | false      |
-| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
-| showIcon      | boolean                                               | true       | false      |
-| showParticles | boolean                                               | true       | false      |
+| Name          | Type                                                  | Has Getter | Has Setter | Beschreibung            |
+| ------------- | ----------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| ambient       | boolean                                               | true       | false      | No Description Provided |
+| amplifier     | int                                                   | true       | false      | No Description Provided |
+| duration      | int                                                   | true       | false      | No Description Provided |
+| effectName    | string                                                | true       | false      | No Description Provided |
+| potion        | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      | No Description Provided |
+| showIcon      | boolean                                               | true       | false      | No Description Provided |
+| showParticles | boolean                                               | true       | false      | No Description Provided |
 

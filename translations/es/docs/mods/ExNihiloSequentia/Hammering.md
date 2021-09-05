@@ -1,3 +1,5 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Hammering
 
 ## Package
@@ -10,7 +12,7 @@
 - **addOutput(IItemStack drop, float chance)** the other item the blocks drops when broken and its chance to drop
 
 
-## Addition
+## Suma
 
 ```zenscript
 <recipetype:exnihilosequentia:hammer>.create("hammer_test").setInput(<item:minecraft:cobblestone>).addOutput(<item:minecraft:gravel>).addOutput(<item:minecraft:diamond>, 0.01);

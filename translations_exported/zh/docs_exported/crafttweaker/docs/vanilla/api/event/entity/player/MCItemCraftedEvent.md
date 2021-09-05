@@ -18,19 +18,35 @@ MCItemCraftedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPl
 
 ## 方法
 
-### getCrafting
+:::group{name=getCrafting}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCItemCraftedEvent.getCrafting() as IItemStack
+// MCItemCraftedEvent.getCrafting() as IItemStack
+
 myMCItemCraftedEvent.getCrafting();
 ```
+
+:::
+
+:::group{name=getCraftingMatrix}
+
+Return Type: [IInventory](/vanilla/api/inventory/IInventory)
+
+```zenscript
+// MCItemCraftedEvent.getCraftingMatrix() as IInventory
+
+myMCItemCraftedEvent.getCraftingMatrix();
+```
+
+:::
 
 
 ## 参数
 
-| 名称       | 类型                                          | 可获得  | 可设置   |
-| -------- | ------------------------------------------- | ---- | ----- |
-| crafting | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| 名称             | 类型                                              | 可获得  | 可设置   | 描述                      |
+| -------------- | ----------------------------------------------- | ---- | ----- | ----------------------- |
+| crafting       | [IItemStack](/vanilla/api/items/IItemStack)     | true | false | No Description Provided |
+| craftingMatrix | [IInventory](/vanilla/api/inventory/IInventory) | true | false | No Description Provided |
 

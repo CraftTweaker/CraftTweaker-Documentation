@@ -53,7 +53,7 @@ The reason that not all Recipe Managers are given Global Variables is that there
 
 ## Methods
 
-### getRecipeByName
+:::group{name=getRecipeByName}
 
 This method gets a recipe by it's name, and returns a [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -68,8 +68,9 @@ for ingredient in craftingTable.getRecipeByName("minecraft:arrow").ingredients {
     println(ingredient.commandString);
 }
 ```
+:::
 
-### getRecipesByFrom
+:::group{name=getRecipesByOutput}
 
 This method gets a list of recipes based on their outputs, and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -80,15 +81,16 @@ getRecipesByOutput(IIngredient name);
 You could use this method to get the `ingredients` of all the recipes that output a certain item and print the `commandString` of each ingredient of each recipe.
 
 ```zenscript
-for recipe in craftingTable.getRecipeByName(<item:minecraft:stick>) {
+for recipe in craftingTable.getRecipesByOutput(<item:minecraft:stick>) {
     println("> " + recipe.id);
     for ingredient in recipe.ingredients {
         println(ingredient.commandString);
     }
 }
 ```
+:::
 
-### getAllRecipes
+:::group{name=getAllRecipes}
 
 This method gets a list of all the recipes for the Recipe Manager and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
 
@@ -106,8 +108,9 @@ for recipe in furnace.getAllRecipes() {
     }
 }
 ```
+:::
 
-### removeRecipe
+:::group{name=removeRecipe}
 
 This method allows you to remove recipes from this Recipe Manager by the recipe's output item.
 
@@ -126,8 +129,9 @@ Another example of this method would be removing the Diamond Ore to Diamond reci
 ```zenscript
 furnace.removeRecipe(<item:minecraft:diamond>);
 ```
+:::
 
-### removeByName
+:::group{name=removeByName}
 
 This method allows you to remove recipes from this Recipe Manager by the recipe's name.
 
@@ -140,8 +144,9 @@ An example use case for this method is removing the recipe for an Arrow from the
 ```zenscript
 craftingTable.removeByName("minecraft:arrow");
 ```
+:::
 
-### removeByModid
+:::group{name=removeByModid}
 
 This method allows you to remove recipes from this Recipe Manager based on the the recipe name's modid.  
 There is an optional parameter that is used to exclude recipes from being removed.   
@@ -169,8 +174,9 @@ craftingTable.removeByModid("minecraft", (name as string) => {
     return name == "orange_wool";
 });
 ```
+:::
 
-### removeByRegex
+:::group{name=removeByRegex}
 
 This method allows you to remove recipes from this Recipe Manager by testing the recipe's id against a regex pattern.
 
@@ -183,8 +189,9 @@ An example use case for this method is removing all recipes who's id matches `.*
 ```zenscript
 craftingTable.removeByRegex(".*wool.*");
 ```
+:::
 
-### removeAll
+:::group{name=removeAll}
 
 This method allows you to remove all the recipes from the Recipe Manager.
 
@@ -197,3 +204,4 @@ An example use case for this method is removing all the Blast Furnace recipes.
 ```zenscript
 blastFurnace.removeAll();
 ```
+:::

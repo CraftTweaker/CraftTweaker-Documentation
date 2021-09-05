@@ -18,7 +18,7 @@ Das folgende Skript wird dem Crusher ein Rezept hinzufügen, das TNT annimmt, ve
 
 #### Remove Recipes
 
-Das folgende Skript wird alle Rezepte vom Crusher entfernen, wo eine der Ausgaben (primär oder sekundär) Eisenstaub ist.
+The following script will remove all recipes from the Crusher where either of the outputs (primary or secondary) is Iron Dust.
 
 ```zenscript
 // <recipetype:immersiveengineering:crusher>.removeRecipe(IIngredient output)

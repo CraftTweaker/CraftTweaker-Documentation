@@ -20,45 +20,67 @@ MCPlayerInteractEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/M
 
 ## Methoden
 
-### getBlockPos
+:::group{name=getBlockPos}
 
 If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player.
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-MCPlayerInteractEvent.getBlockPos() as BlockPos
+// MCPlayerInteractEvent.getBlockPos() as BlockPos
+
 myMCPlayerInteractEvent.getBlockPos();
 ```
 
-### getFace
+:::
+
+:::group{name=getFace}
 
 The face involved in this interaction. For all non-block interactions, this will return null
 
 Return Type: [Direction](/vanilla/api/util/Direction)?
 
 ```zenscript
-MCPlayerInteractEvent.getFace() as Direction?
+// MCPlayerInteractEvent.getFace() as Direction?
+
 myMCPlayerInteractEvent.getFace();
 ```
 
-### getItemStack
+:::
+
+:::group{name=getHand}
+
+Return Type: [MCHand](/vanilla/api/util/MCHand)
+
+```zenscript
+// MCPlayerInteractEvent.getHand() as MCHand
+
+myMCPlayerInteractEvent.getHand();
+```
+
+:::
+
+:::group{name=getItemStack}
 
 The stack involved in this interaction. May be empty, but will never be null.
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerInteractEvent.getItemStack() as IItemStack
+// MCPlayerInteractEvent.getItemStack() as IItemStack
+
 myMCPlayerInteractEvent.getItemStack();
 ```
+
+:::
 
 
 ## Properties
 
-| Name      | Type                                        | Has Getter | Has Setter |
-| --------- | ------------------------------------------- | ---------- | ---------- |
-| blockPos  | [BlockPos](/vanilla/api/util/BlockPos)      | true       | false      |
-| face      | [Direction](/vanilla/api/util/Direction)?   | true       | false      |
-| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| Name      | Type                                        | Has Getter | Has Setter | Beschreibung                                                                                                                                                                                                                             |
+| --------- | ------------------------------------------- | ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| blockPos  | [BlockPos](/vanilla/api/util/BlockPos)      | true       | false      | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
+| face      | [Direction](/vanilla/api/util/Direction)?   | true       | false      | The face involved in this interaction. <br />  For all non-block interactions, this will return null                                                                                                                               |
+| hand      | [MCHand](/vanilla/api/util/MCHand)          | true       | false      | No Description Provided                                                                                                                                                                                                                  |
+| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | The stack involved in this interaction. <br />  May be empty, but will never be null.                                                                                                                                              |
 

@@ -24,8 +24,8 @@ MCLivingFallEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEven
 
 ## Properties
 
-| Name             | Type  | Ha Getter | Ha Setter |
-| ---------------- | ----- | --------- | --------- |
-| damageMultiplier | float | true      | true      |
-| distance         | float | true      | true      |
+| Name             | Type  | Ha Getter | Ha Setter | Description             |
+| ---------------- | ----- | --------- | --------- | ----------------------- |
+| damageMultiplier | float | true      | true      | No Description Provided |
+| distance         | float | true      | true      | No Description Provided |
 

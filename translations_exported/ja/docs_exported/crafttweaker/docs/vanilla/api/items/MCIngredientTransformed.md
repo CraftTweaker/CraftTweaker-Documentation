@@ -22,6 +22,59 @@ MCIngredientTransformed implements the following interfaces. That means all meth
 
 ## Methods
 
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to have the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
+// MCIngredientTransformed.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as void
+
+myMCIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| Parameter | Type                                                           | Description                           |
+| --------- | -------------------------------------------------------------- | ------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.        |
+| name      | string                                                         | The name of the modifier.             |
+| value     | double                                                         | The value of the modifier.            |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.        |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+
+
+:::
+
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier. You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to have the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
+// MCIngredientTransformed.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as void
+
+myMCIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+```
+
+| Parameter | Type                                                           | Description                                       |
+| --------- | -------------------------------------------------------------- | ------------------------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The Attribute of the modifier.                    |
+| uuid      | string                                                         | The unique identifier of the modifier to replace. |
+| name      | string                                                         | The name of the modifier.                         |
+| value     | double                                                         | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation)   | The operation of the modifier.                    |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for.             |
+
+
+:::
+
 :::group{name=addShiftTooltip}
 
 Return Type: void
@@ -34,6 +87,7 @@ MCIngredientTransformed.addShiftTooltip(content as MCTextComponent, showMessage 
 | ----------- | --------------------------------------------------------- | ----------------------- | -------- | ------------ |
 | コンテンツ       | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
+
 
 :::
 
@@ -57,7 +111,8 @@ MCIngredientTransformed.addTooltip(content as MCTextComponent) as void
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+// MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientTransformed.anyDamage();
 ```
 
@@ -68,7 +123,8 @@ myMCIngredientTransformed.anyDamage();
 Return Type: void
 
 ```zenscript
-MCIngredientTransformed.clearTooltip() as void
+// MCIngredientTransformed.clearTooltip() as void
+
 myMCIngredientTransformed.clearTooltip();
 ```
 
@@ -81,7 +137,8 @@ Does the ingredient contain the given ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+// MCIngredientTransformed.contains(ingredient as IIngredient) as boolean
+
 myMCIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
@@ -99,7 +156,8 @@ Does the given stack match the ingredient?
 Return Type: boolean
 
 ```zenscript
-MCIngredientTransformed.matches(stack as IItemStack) as boolean
+// MCIngredientTransformed.matches(stack as IItemStack) as boolean
+
 myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 ```
 
@@ -122,6 +180,22 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | ------------ | ------------------------------------------- | ----------------------- |
 | stack        | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | ignoreDamage | boolean型                                    | No Description Provided |
+
+
+:::
+
+:::group{name=modifyShiftTooltip}
+
+Return Type: void
+
+```zenscript
+MCIngredientTransformed.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+```
+
+| Parameter         | Type                                                    | Description             | Optional | DefaultValue |
+| ----------------- | ------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | false    |              |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided | true     |              |
 
 
 :::
@@ -163,7 +237,8 @@ MCIngredientTransformed.only(condition as IIngredientCondition<IIngredient>) as 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+// MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+
 myMCIngredientTransformed.onlyDamaged();
 ```
 
@@ -181,6 +256,51 @@ MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>)
 | --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
+
+:::
+
+:::group{name=removeGlobalAttribute}
+
+Removes all AttributeModifiers that use the given Attribute from this IIngredient.
+
+ Attributes removed with this method are removed from ItemStacks that match this IIngredient, regardless of how or when the ItemStack was made, if you want to remove the attribute on a single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use IItemStack#withoutAttribute.
+
+ This method can only remove default Attributes from an ItemStack, it is still possible that an ItemStack can override it.
+
+Return Type: void
+
+```zenscript
+// MCIngredientTransformed.removeGlobalAttribute(attribute as Attribute, slotTypes as MCEquipmentSlotType[]) as void
+
+myMCIngredientTransformed.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<equipmentslottype:chest>]);
+```
+
+| Parameter | Type                                                           | Description                       |
+| --------- | -------------------------------------------------------------- | --------------------------------- |
+| attribute | [Attribute](/vanilla/api/entity/Attribute)                     | The attribute to remove.          |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | The slot types to remove it from. |
+
+
+:::
+
+:::group{name=removeGlobalAttributeModifier}
+
+Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+
+Return Type: void
+
+```zenscript
+// MCIngredientTransformed.removeGlobalAttributeModifier(uuid as string, slotTypes as MCEquipmentSlotType[]) as void
+
+myMCIngredientTransformed.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<equipmentslottype:chest>]);
+```
+
+| Parameter | Type                                                           | Description                                       |
+| --------- | -------------------------------------------------------------- | ------------------------------------------------- |
+| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | The slot types to remove it from.                 |
+
 
 :::
 
@@ -224,10 +344,10 @@ myMCIngredientTransformed | other as IIngredient
 
 ## Properties
 
-| 名称             | Type                                                                                     | Has Getter | Has Setter |
-| -------------- | ---------------------------------------------------------------------------------------- | ---------- | ---------- |
-| baseIngredient | T                                                                                        | true       | false      |
-| burnTime       | void                                                                                     | false      | true       |
-| items          | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true       | false      |
-| トランス           | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true       | false      |
+| 名称             | Type                                                                                     | Has Getter | Has Setter | Description                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------- | ---------- | ---------- | -------------------------------------------------------------------------------- |
+| baseIngredient | T                                                                                        | true       | false      | No Description Provided                                                          |
+| burnTime       | void                                                                                     | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| items          | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true       | false      | No Description Provided                                                          |
+| トランス           | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true       | false      | No Description Provided                                                          |
 

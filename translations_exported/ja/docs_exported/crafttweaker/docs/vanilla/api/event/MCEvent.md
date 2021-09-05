@@ -14,56 +14,71 @@ import crafttweaker.api.event.MCEvent;
 
 ## Methods
 
-### cancel
+:::group{name=cancel}
 
 Cancels the event. Same as `setCanceled(true)`
 
 Return Type: void
 
 ```zenscript
-MCEvent.cancel() as void
+// MCEvent.cancel() as void
+
 myMCEvent.cancel();
 ```
 
-### hasResult
+:::
+
+:::group{name=hasResult}
 
 Return Type: boolean
 
 ```zenscript
-MCEvent.hasResult() as boolean
+// MCEvent.hasResult() as boolean
+
 myMCEvent.hasResult();
 ```
 
-### isCancelable
+:::
+
+:::group{name=isCancelable}
 
 Return Type: boolean
 
 ```zenscript
-MCEvent.isCancelable() as boolean
+// MCEvent.isCancelable() as boolean
+
 myMCEvent.isCancelable();
 ```
 
-### isCanceled
+:::
+
+:::group{name=isCanceled}
 
 Return Type: boolean
 
 ```zenscript
-MCEvent.isCanceled() as boolean
+// MCEvent.isCanceled() as boolean
+
 myMCEvent.isCanceled();
 ```
 
-### setAllow
+:::
+
+:::group{name=setAllow}
 
 sets the event's result to `allow`
 
 Return Type: void
 
 ```zenscript
-MCEvent.setAllow() as void
+// MCEvent.setAllow() as void
+
 myMCEvent.setAllow();
 ```
 
-### setCanceled
+:::
+
+:::group{name=setCanceled}
 
 Return Type: void
 
@@ -76,34 +91,42 @@ MCEvent.setCanceled(cancel as boolean) as void
 | cancel    | boolean型 | No Description Provided |
 
 
-### setDefault
+:::
+
+:::group{name=setDefault}
 
 sets the event's result to `default`
 
 Return Type: void
 
 ```zenscript
-MCEvent.setDefault() as void
+// MCEvent.setDefault() as void
+
 myMCEvent.setDefault();
 ```
 
-### setDeny
+:::
+
+:::group{name=setDeny}
 
 sets the event's result to `deny`
 
 Return Type: void
 
 ```zenscript
-MCEvent.setDeny() as void
+// MCEvent.setDeny() as void
+
 myMCEvent.setDeny();
 ```
+
+:::
 
 
 ## Properties
 
-| 名称         | Type     | Has Getter | Has Setter |
-| ---------- | -------- | ---------- | ---------- |
-| cancelable | boolean型 | true       | false      |
-| canceled   | boolean型 | true       | true       |
-| hasResult  | boolean型 | true       | false      |
+| 名称         | Type     | Has Getter | Has Setter | Description             |
+| ---------- | -------- | ---------- | ---------- | ----------------------- |
+| cancelable | boolean型 | true       | false      | No Description Provided |
+| canceled   | boolean型 | true       | true       | No Description Provided |
+| hasResult  | boolean型 | true       | false      | No Description Provided |
 

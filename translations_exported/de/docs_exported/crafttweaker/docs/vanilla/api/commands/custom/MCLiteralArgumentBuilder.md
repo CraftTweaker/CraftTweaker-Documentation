@@ -25,7 +25,8 @@ MCLiteralArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custo
 Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
 ```zenscript
-MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
+// MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
+
 myMCLiteralArgumentBuilder.build();
 ```
 
@@ -99,7 +100,8 @@ MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirect
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
+// MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
+
 myMCLiteralArgumentBuilder.getArguments();
 ```
 
@@ -110,7 +112,8 @@ myMCLiteralArgumentBuilder.getArguments();
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCLiteralArgumentBuilder.getCommand() as MCCommand
+// MCLiteralArgumentBuilder.getCommand() as MCCommand
+
 myMCLiteralArgumentBuilder.getCommand();
 ```
 
@@ -121,7 +124,8 @@ myMCLiteralArgumentBuilder.getCommand();
 Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.getLiteral() as string
+// MCLiteralArgumentBuilder.getLiteral() as string
+
 myMCLiteralArgumentBuilder.getLiteral();
 ```
 
@@ -132,7 +136,8 @@ myMCLiteralArgumentBuilder.getLiteral();
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
+// MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
+
 myMCLiteralArgumentBuilder.getRedirect();
 ```
 
@@ -143,7 +148,8 @@ myMCLiteralArgumentBuilder.getRedirect();
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+// MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+
 myMCLiteralArgumentBuilder.getRedirectModifier();
 ```
 
@@ -154,7 +160,8 @@ myMCLiteralArgumentBuilder.getRedirectModifier();
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+// MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+
 myMCLiteralArgumentBuilder.getRequirement();
 ```
 
@@ -165,7 +172,8 @@ myMCLiteralArgumentBuilder.getRequirement();
 Return Type: int
 
 ```zenscript
-MCLiteralArgumentBuilder.hashCode() as int
+// MCLiteralArgumentBuilder.hashCode() as int
+
 myMCLiteralArgumentBuilder.hashCode();
 ```
 
@@ -176,7 +184,8 @@ myMCLiteralArgumentBuilder.hashCode();
 Return Type: boolean
 
 ```zenscript
-MCLiteralArgumentBuilder.isFork() as boolean
+// MCLiteralArgumentBuilder.isFork() as boolean
+
 myMCLiteralArgumentBuilder.isFork();
 ```
 
@@ -263,7 +272,8 @@ MCLiteralArgumentBuilder.then(argument as MCCommandNode) as MCLiteralArgumentBui
 Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.toString() as string
+// MCLiteralArgumentBuilder.toString() as string
+
 myMCLiteralArgumentBuilder.toString();
 ```
 

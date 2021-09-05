@@ -24,36 +24,45 @@ MCItemFishedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPla
 
 ## 方法
 
-### getDrops
+:::group{name=getDrops}
 
 Gets the list of items being fished up by the player.
 
+Returns: The list of items being fished up by the player.  
 Return Type: stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 
 ```zenscript
-MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
+// MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
+
 event.getDrops();
 ```
 
-### getItemDamage
+:::
+
+:::group{name=getItemDamage}
 
 Gets the amount of durability damage to inflict on the fishing rod.
 
+Returns: The amount of durability damage to inflict on the fishing rod.  
 Return Type: int
 
 ```zenscript
-MCItemFishedEvent.getItemDamage() as int
+// MCItemFishedEvent.getItemDamage() as int
+
 event.getItemDamage();
 ```
 
-### setItemDamage
+:::
+
+:::group{name=setItemDamage}
 
 Sets the amount of durability damage to inflict on the fishing rod.
 
 Return Type: void
 
 ```zenscript
-MCItemFishedEvent.setItemDamage(damage as int) as void
+// MCItemFishedEvent.setItemDamage(damage as int) as void
+
 event.setItemDamage(5);
 ```
 
@@ -62,11 +71,13 @@ event.setItemDamage(5);
 | damage | int | The amount of durability damage. |
 
 
+:::
+
 
 ## 参数
 
-| 名称         | 类型                                                                      | 可获得  | 可设置   |
-| ---------- | ----------------------------------------------------------------------- | ---- | ----- |
-| drops      | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false |
-| itemDamage | int                                                                     | true | true  |
+| 名称         | 类型                                                                      | 可获得  | 可设置   | 描述                                                                  |
+| ---------- | ----------------------------------------------------------------------- | ---- | ----- | ------------------------------------------------------------------- |
+| drops      | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | Gets the list of items being fished up by the player.               |
+| itemDamage | int                                                                     | true | true  | Gets the amount of durability damage to inflict on the fishing rod. |
 

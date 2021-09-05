@@ -16,7 +16,7 @@ import crafttweaker.api.commands.custom.MCParsedCommandNode;
 
 ## Methods
 
-### equals
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -29,51 +29,65 @@ MCParsedCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### getNode
+:::
+
+:::group{name=getNode}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCParsedCommandNode.getNode() as MCCommandNode
+// MCParsedCommandNode.getNode() as MCCommandNode
+
 myMCParsedCommandNode.getNode();
 ```
 
-### getRange
+:::
+
+:::group{name=getRange}
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-MCParsedCommandNode.getRange() as MCStringRange
+// MCParsedCommandNode.getRange() as MCStringRange
+
 myMCParsedCommandNode.getRange();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCParsedCommandNode.hashCode() as int
+// MCParsedCommandNode.hashCode() as int
+
 myMCParsedCommandNode.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCParsedCommandNode.toString() as string
+// MCParsedCommandNode.toString() as string
+
 myMCParsedCommandNode.toString();
 ```
 
+:::
 
-## Operators
 
-### EQUALS
+## Operadores
+
+:::group{name=EQUALS}
 
 ```zenscript
 myMCParsedCommandNode == o como objeto
 ```
 
-
+:::
 
 

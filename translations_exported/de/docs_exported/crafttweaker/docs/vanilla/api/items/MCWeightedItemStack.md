@@ -1,6 +1,8 @@
 # MCWeightedItemStack
 
-Ein ItemStack mit einer Chance, in der Regel für die Rezeptausgabe. <p> Vorsichtig, wenn der Stapel verwendet wurde, um den WeightedStack zu erstellen war veränderbar, dann wird der Größensatz auch den ursprünglichen Stapel mutieren!
+Ein ItemStack mit einer Chance, in der Regel für die Rezeptausgabe.
+
+ Vorsichtig, wenn der Stapel verwendet wurde, um den WeightedStack zu erstellen war veränderbar, dann wird der Größensatz auch den ursprünglichen Stapel mutieren!
 
 ## Diese Klasse importieren
 
@@ -17,12 +19,11 @@ MCWeightedItemStack implements the following interfaces. That means all methods 
 
 ## Constructors
 
-Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
+Manually creates the weightedItemStack. <br />  Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-
 | Parameter | Type                                        | Beschreibung                             |
 | --------- | ------------------------------------------- | ---------------------------------------- |
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | Der Stapel                               |
@@ -32,14 +33,16 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ## Methoden
 
-### weight
+:::group{name=weight}
 
 Creates a new Weighted Stack with the given weight
 
+Returns: A new WeightedItemStack  
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+// MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
+
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 
@@ -48,10 +51,12 @@ MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 | neues Gewicht | double | Der Prozentsatz |
 
 
+:::
+
 
 ## Operatoren
 
-### MOD
+:::group{name=MOD}
 
 Creates a new Weighted Stack with the given percentage
 
@@ -60,24 +65,24 @@ myMCWeightedItemStack % newWeight as int
 <item:minecraft:bedrock>.weight(0.5D) % 75
 ```
 
+:::
 
+:::group{name=MUL}
 
-### MUL
-
-Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
+Sets the itemStack's amount. <br />   <br />  If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
 
-
+:::
 
 
 ## Properties
 
-| Name   | Type                                        | Has Getter | Has Setter |
-| ------ | ------------------------------------------- | ---------- | ---------- |
-| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
-| weight | double                                      | true       | false      |
+| Name   | Type                                        | Has Getter | Has Setter | Beschreibung                              |
+| ------ | ------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true       | false      | Gets the original (unweighted) stack      |
+| weight | double                                      | true       | false      | Gets the weight (usually between 0 and 1) |
 

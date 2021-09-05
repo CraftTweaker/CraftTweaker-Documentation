@@ -20,38 +20,44 @@ import crafttweaker.api.event.entity.player.xp.MCXpChangeEvent;
 
 ## Methods
 
-### getXp
+:::group{name=getXp}
 
 Gets the amount of xp that the player's xp counter is being changed by.
 
+Returns: The amount of xp that the player's xp counter is being changed by.  
 Return Type: int
 
 ```zenscript
-MCXpChangeEvent.getXp() as int
+// MCXpChangeEvent.getXp() as int
+
 event.getXp();
 ```
 
-### setXp
+:::
+
+:::group{name=setXp}
 
 Sets the amount of xp to change the player's xp counter by.
 
 Return Type: void
 
 ```zenscript
-MCXpChangeEvent.setXp(amount as int) as void
+// MCXpChangeEvent.setXp(amount as int) as void
+
 event.setXp(15);
 ```
 
-| Параметр | Тип | Description                                             |
-| -------- | --- | ------------------------------------------------------- |
-| amount   | int | The amount of xp that the player's xp counter should be |
- changed by. |
+| Параметр | Тип | Description                                                                              |
+| -------- | --- | ---------------------------------------------------------------------------------------- |
+| amount   | int | The amount of xp that the player's xp counter should be <br />         changed by. |
 
+
+:::
 
 
 ## Свойства
 
-| Название | Тип | Имеет Getter | Имеет Setter |
-| -------- | --- | ------------ | ------------ |
-| xp       | int | true         | true         |
+| Название | Тип | Имеет Getter | Имеет Setter | Description                                                             |
+| -------- | --- | ------------ | ------------ | ----------------------------------------------------------------------- |
+| xp       | int | true         | true         | Gets the amount of xp that the player's xp counter is being changed by. |
 

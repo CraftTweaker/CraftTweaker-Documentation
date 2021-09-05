@@ -1,14 +1,16 @@
+::requiredMod[Ex Nihilo: Sequentia]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/ex-nihilo-sequentia}
+
 # Crucible
 
 ## Package
 `import mods.exnihilosequentia.ZenCrucibleRecipe;`
 
 ## Methods
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **setAmount(int amount)** the amount of fluid produced
-- **setCrucibleType(String crucibleType)** the crucible type
-- **setResultFluid(IFluidStack fluid)** the resulting fluid
+- **create(String nom)**
+- **setInput(IIngredient input)** L'ingédient à insérer dans le compost.
+- **setAmount(int amount)** La quantité de liquide produite.
+- **setCrucibleType(String crucibleType)** le type de crucible.
+- **setResultFluid(IFluidStack fluide)** Le fluide obtenu.
 
 
 ## Addition

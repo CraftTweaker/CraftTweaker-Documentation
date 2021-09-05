@@ -12,16 +12,17 @@ import crafttweaker.api.events.CTEventManager;
 ```
 
 
-## Methoden
+## Static Methods
 
-### registrieren
+:::group{name=register}
 
 Registers a new Event listener.
 
 Return Type: void
 
 ```zenscript
-CTEventManager.register<T : MCEvent>(consumer as Consumer<T>) as void
+// CTEventManager.register<T : MCEvent>(consumer as Consumer<T>) as void
+
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -38,4 +39,31 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
 | konsumenten | Consumer&lt;T&gt;         | The event handler as consumer |
 | T           | [MCEvent](/vanilla/api/event/MCEvent) | The type of the event         |
 
+
+:::
+
+:::group{name=register}
+
+Registers a new Event listener with a specific priority.
+
+Return Type: void
+
+```zenscript
+// CTEventManager.register<T : MCEvent>(priority as EventPriority, consumer as Consumer<T>) as void
+
+CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>(EventPriority.HIGHEST, (event) => {
+     var player = event.player;
+     var result = event.itemResult;
+     println("Player '" + player.name + "' crafted " + result.commandString);
+ });
+```
+
+| Parameter   | Type                                              | Beschreibung                  |
+| ----------- | ------------------------------------------------- | ----------------------------- |
+| priority    | [EventPriority](/vanilla/api/event/EventPriority) | priority for this listener    |
+| konsumenten | Consumer&lt;T&gt;                     | The event handler as consumer |
+| T           | [MCEvent](/vanilla/api/event/MCEvent)             | The type of the event         |
+
+
+:::
 

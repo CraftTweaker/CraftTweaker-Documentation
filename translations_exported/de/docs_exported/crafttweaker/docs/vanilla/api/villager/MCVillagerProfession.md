@@ -12,19 +12,22 @@ import crafttweaker.api.villager.MCVillagerProfession;
 
 ## Methoden
 
-### getName
+:::group{name=getName}
 
 Return Type: string
 
 ```zenscript
-MCVillagerProfession.getName() as string
+// MCVillagerProfession.getName() as string
+
 <profession:minecraft:fletcher>.getName();
 ```
+
+:::
 
 
 ## Properties
 
-| Name | Type   | Has Getter | Has Setter |
-| ---- | ------ | ---------- | ---------- |
-| name | string | true       | false      |
+| Name | Type   | Has Getter | Has Setter | Beschreibung            |
+| ---- | ------ | ---------- | ---------- | ----------------------- |
+| name | string | true       | false      | No Description Provided |
 

@@ -18,39 +18,48 @@ MCBlockEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all metho
 
 ## Methods
 
-### getBlockState
+:::group{name=getBlockState}
 
-Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 
 ```zenscript
-MCBlockEvent.getBlockState() as MCBlockState
+// MCBlockEvent.getBlockState() as MCBlockState
+
 myMCBlockEvent.getBlockState();
 ```
 
-### getPos
+:::
+
+:::group{name=getPos}
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-MCBlockEvent.getPos() as BlockPos
+// MCBlockEvent.getPos() as BlockPos
+
 myMCBlockEvent.getPos();
 ```
 
-### getWorld
+:::
+
+:::group{name=getWorld}
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 
 ```zenscript
-MCBlockEvent.getWorld() as MCWorld
+// MCBlockEvent.getWorld() as MCWorld
+
 myMCBlockEvent.getWorld();
 ```
+
+:::
 
 
 ## Properties
 
-| Name  | Type                                             | Ha Getter | Ha Setter |
-| ----- | ------------------------------------------------ | --------- | --------- |
-| pos   | [BlockPos](/vanilla/api/util/BlockPos)           | true      | false     |
-| state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | true      | false     |
-| world | [MCWorld](/vanilla/api/world/MCWorld)            | true      | false     |
+| Name  | Type                                            | Ha Getter | Ha Setter | Description             |
+| ----- | ----------------------------------------------- | --------- | --------- | ----------------------- |
+| pos   | [BlockPos](/vanilla/api/util/BlockPos)          | true      | false     | No Description Provided |
+| state | [MCBlockState](/vanilla/api/block/MCBlockState) | true      | false     | No Description Provided |
+| world | [MCWorld](/vanilla/api/world/MCWorld)           | true      | false     | No Description Provided |
 

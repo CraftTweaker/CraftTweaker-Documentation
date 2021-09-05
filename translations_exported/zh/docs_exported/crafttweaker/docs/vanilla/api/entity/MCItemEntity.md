@@ -1,5 +1,7 @@
 # MCItemEntity
 
+
+
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -18,7 +20,6 @@ MCItemEntity extends [MCEntity](/vanilla/api/entity/MCEntity). That means all me
 ```zenscript
 new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack as ItemStack) as MCItemEntity
 ```
-
 | 参数    | 类型                                    | 描述                      |
 | ----- | ------------------------------------- | ----------------------- |
 | world | [MCWorld](/vanilla/api/world/MCWorld) | No description provided |
@@ -29,9 +30,46 @@ new MCItemEntity(world as MCWorld, x as double, y as double, z as double, stack 
 
 
 
+## 方法
+
+:::group{name=getItem}
+
+Gets the IItemStack inside this ItemEntity.
+
+Returns: The IItemStack inside this ItemEntity.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// MCItemEntity.getItem() as IItemStack
+
+itemEntity.getItem();
+```
+
+:::
+
+:::group{name=setItem}
+
+Sets the IItemStack inside this ItemEntity.
+
+Return Type: void
+
+```zenscript
+// MCItemEntity.setItem(stack as IItemStack) as void
+
+itemEntity.setItem(<item:minecraft:diamond>);
+```
+
+| 参数    | 类型                                          | 描述                  |
+| ----- | ------------------------------------------- | ------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The new IItemStack. |
+
+
+:::
+
+
 ## 参数
 
-| 名称   | 类型                                          | 可获得  | 可设置  |
-| ---- | ------------------------------------------- | ---- | ---- |
-| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true |
+| 名称   | 类型                                          | 可获得  | 可设置  | 描述                                          |
+| ---- | ------------------------------------------- | ---- | ---- | ------------------------------------------- |
+| item | [IItemStack](/vanilla/api/items/IItemStack) | true | true | Gets the IItemStack inside this ItemEntity. |
 

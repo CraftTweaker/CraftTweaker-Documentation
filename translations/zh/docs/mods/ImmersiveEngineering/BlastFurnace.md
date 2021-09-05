@@ -1,6 +1,6 @@
 ::requiredMod[Immersive Engineering]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-engineering}
 
-# Immersive Engineering Blast Furnace
+# 沉浸工程 高炉
 
 The Blast Furnace is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`. Along with the Blast Furnace is the Blast Furnace Fuel, which is also a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
 
@@ -8,17 +8,17 @@ The Blast Furnace is a type of [IRecipeManager](/vanilla/api/managers/IRecipeMan
 
 #### 添加配方
 
-The following script will add a recipe that will output Charcoal, and a piece of String (as Slag), after 1000 ticks when any Item from the Wool Tag is given to the Blast Furnace.
+写入以下脚本将添加一个配方，将羊毛提供给高炉，在 1000 ticks 后输出木炭和线（作为炉渣）
 
 ```zenscript
-// <recipetype:immersiveengineering:blast_furnace>.addRecipe(string recipePath, IIngredient ingredient, int time, IItemStack output, @Optional(<item:minecraft:air>) IItemStack slag)
+// <recipetype:immersiveengineering:blast_furnace>.addRecipe(配方类型, 材料, 所需ticks, 输出物品,炉渣);
 
 <recipetype:immersiveengineering:blast_furnace>.addRecipe("wool_to_charcoal", <tag:items:minecraft:wool>, 1000, <item:minecraft:charcoal>, <item:minecraft:string>);
 ```
 
 #### Add Fuel
 
-The following script will add a Fuel to the Blast Furnace that will take a Golden Sword with the name "Sword of the Sungod" and will burn for 100000 ticks.
+写入以下脚本将向高炉中添加一种燃料，该燃料将使用名为“Sword of the Sungod”的金剑并燃烧 100000 ticks。
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.addFuel(string name, IIngredient fuel, int burnTime)
@@ -28,7 +28,7 @@ The following script will add a Fuel to the Blast Furnace that will take a Golde
 
 #### Remove Recipes
 
-The following script will remove all recipes from the Blast Furnace that outputs Charcoal.
+写入以下脚本将把高炉中输出木炭的配方全部删除。
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace>.removeRecipe(IItemStack output)
@@ -38,7 +38,7 @@ The following script will remove all recipes from the Blast Furnace that outputs
 
 #### Remove Fuels
 
-The following script will remove Charcoal as a Fuel for the Blast Furnace.
+写入以下脚本将使木炭不再作为一种燃料
 
 ```zenscript
 // <recipetype:immersiveengineering:blast_furnace_fuel>.removeRecipe(IItemStack fuel)

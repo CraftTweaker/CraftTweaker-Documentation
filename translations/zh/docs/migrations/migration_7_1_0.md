@@ -1,21 +1,21 @@
-# Migrating Scripts to CraftTweaker 7.1
+# 将脚本迁移至CraftTweaker 7.1
 
-CraftTweaker version 7.1 has some changes that break backwards compatibility.  
-These breaking changes are in the API that addons use as well as in the types that scripts use.  
-This document should give an overview of the most important changes and how pack developers can get their scripts working again.
+CraftTweaker 7.1 版本的一些改动破坏了向后兼容性。  
+这些破坏性的改变在模组所使用的API和脚本使用的类型中。  
+此文档应当概述了最重要的变化，以及开发者应该如何让他们的脚本重新工作起来。
 
 
-## MCTag becomes MCTag&LT;T&GT;
+## MCTag 变为 MCTag&LT;T&GT;
 
 We replaced Tags with a generic system that is more extensible and will work better with future updates.  
 That change will break existing scripts in two ways:
 
-1) The specialized addition and removal methods have been removed. <br>You now use `add` and `remove` instead of `addItems`, `addFluids` and the like. 2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:items:forge:gems>`
+1) The specialized addition and removal methods have been removed. <br>现在使用`add`、`remove`，而不是`addItems`、`addFluid`等之类的方法。 2）括号处理程序的语法现在要求标签类型作为一个额外的参数。 <br>因此`<tag:forge:gems>`应变为`<tag:items:forge:gems>`
 
-The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
-If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
+`/ct dump tags`和`/ct hand`指令已更新来表现此改变。  
+如果需要从item标签使用IIngredient的任何扩展方法，则需要首先调用` .asIIngredient()`。
 
-Migration example
+迁移示例
 ```zenscript
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.MCItemDefinition;
@@ -43,12 +43,12 @@ var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
 
 
-## Wrapper types become vanilla types
+## 封装类型变为原版类型
 
-We changed some internals workings of CraftTweaker to directly use minecraft types.  
-This change should not affect your existing scripts directly, but will break some of the integrations added by other mods.
+我们改变了一些CraftTweaker内部的工作方式来直接使用Minecraft的类型。  
+这一变化应该不会直接影响你现有的脚本，但会破坏其他模组添加的一些集成。
 
-The broken classes will be logged in the crafttweaker log. If you find some of your scripts breaking, check if they use one of the broken classes.
+损坏的类将被记录在crafttweaker的日志中。 如果你发现你的一些脚本损坏了，请检查它们是否使用了其中某个被损坏的类。
 
 
 ## Method to register EventHandlers changed signature
@@ -56,12 +56,12 @@ The broken classes will be logged in the crafttweaker log. If you find some of y
 Event listeners no longer have the consumer in a custom constructor.  
 Instead, the registitration method was changed to be generic.
 
-Migration example:
+迁移示例：
 ```zenscript
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCAnvilRepairEvent;
 
-//Old way:
+//旧方法
 CTEventManager.register(new MCAnvilRepairEvent((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -69,7 +69,7 @@ CTEventManager.register(new MCAnvilRepairEvent((event) => {
  }));
 
 
-//New way
+//新方法
 CTEventManager.register<MCAnvilRepairEvent>((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -78,13 +78,13 @@ CTEventManager.register<MCAnvilRepairEvent>((event) => {
 ```
 
 
-## ZenCode: Storage tags are gone
+## ZenCode：移除了Storage标签
 
 We removed Storage tags from the ZenCode language Specifications for now.  
 They are not required for CraftTweaker and made debugging harder.  
 Most people did not need to use storage tags so we don't expect you to need to pursue this migration step.
 
-Migration example:
+迁移示例：
 ```zenscript
 var before = {} as string`static[string`static]`unique
 

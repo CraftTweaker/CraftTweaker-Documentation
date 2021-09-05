@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new DoubleData(internal as double) as DoubleData
 ```
-
 | 参数       | 类型     | 描述                      |
 | -------- | ------ | ----------------------- |
 | internal | double | No Description Provided |
@@ -32,6 +31,7 @@ new DoubleData(internal as double) as DoubleData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -43,134 +43,208 @@ new DoubleData(internal as double) as DoubleData
 
 ## 方法
 
-### asCollection
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// DoubleData.asBoolean() as boolean
+
+3.25.asBoolean();
+```
+
+:::
+
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-DoubleData.asCollection() as ICollectionData
+// DoubleData.asCollection() as ICollectionData
+
 3.25.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+DoubleData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-DoubleData.asList() as stdlib.List<IData>
+// DoubleData.asList() as stdlib.List<IData>
+
 3.25.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-DoubleData.asMap() as IData[string]
+// DoubleData.asMap() as IData[string]
+
 3.25.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-DoubleData.asNumber() as INumberData
+// DoubleData.asNumber() as INumberData
+
 3.25.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
+Returns: the byte value of this [IData](/vanilla/api/data/IData)  
 Return Type: byte
 
 ```zenscript
-DoubleData.getByte() as byte
+// DoubleData.getByte() as byte
+
 3.25.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
+Returns: the double value of this [IData](/vanilla/api/data/IData)  
 Return Type: double
 
 ```zenscript
-DoubleData.getDouble() as double
+// DoubleData.getDouble() as double
+
 3.25.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
+Returns: the float value of this [IData](/vanilla/api/data/IData)  
 Return Type: float
 
 ```zenscript
-DoubleData.getFloat() as float
+// DoubleData.getFloat() as float
+
 3.25.getFloat();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-DoubleData.getId() as byte
+// DoubleData.getId() as byte
+
 3.25.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
+Returns: the int value of this [IData](/vanilla/api/data/IData)  
 Return Type: int
 
 ```zenscript
-DoubleData.getInt() as int
+// DoubleData.getInt() as int
+
 3.25.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
+Returns: the long value of this [IData](/vanilla/api/data/IData)  
 Return Type: long
 
 ```zenscript
-DoubleData.getLong() as long
+// DoubleData.getLong() as long
+
 3.25.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
+Returns: the short value of this [IData](/vanilla/api/data/IData)  
 Return Type: short
 
 ```zenscript
-DoubleData.getShort() as short
+// DoubleData.getShort() as short
+
 3.25.getShort();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-DoubleData.getString() as string
+// DoubleData.getString() as string
+
 3.25.getString();
 ```
+
+:::
 
 

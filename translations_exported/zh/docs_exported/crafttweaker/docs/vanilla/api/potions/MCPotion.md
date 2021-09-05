@@ -10,7 +10,7 @@ import crafttweaker.api.potion.MCPotion;
 
 ## 方法
 
-### getNamePrefixed
+:::group{name=getNamePrefixed}
 
 Return Type: string
 
@@ -23,12 +23,14 @@ MCPotion.getNamePrefixed(name as string) as string
 | name | string | No Description Provided |
 
 
+:::
+
 
 ## 参数
 
-| 名称               | 类型                                                                                                   | 可获得  | 可设置   |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ---- | ----- |
-| commandString    | string                                                                                               | true | false |
-| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true | false |
-| hasInstantEffect | boolean                                                                                              | true | false |
+| 名称               | 类型                                                                                                   | 可获得  | 可设置   | 描述                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ---- | ----- | ----------------------- |
+| commandString    | string                                                                                               | true | false | No Description Provided |
+| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true | false | No Description Provided |
+| hasInstantEffect | boolean                                                                                              | true | false | No Description Provided |
 

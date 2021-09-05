@@ -15,16 +15,17 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 ## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| string | true |
+| 结果类型                                   | 是否隐藏 |
+| -------------------------------------- | ---- |
+| [MC样式](/vanilla/api/util/text/MCStyle) | true |
+| string                                 | true |
 
 ## 参数
 
-| 名称           | 类型      | 可获得  | 可设置   |
-| ------------ | ------- | ---- | ----- |
-| colorIndex   | int     | true | false |
-| fancyStyling | boolean | true | false |
-| friendlyName | string  | true | false |
-| isColor      | boolean | true | false |
+| 名称           | 类型      | 可获得  | 可设置   | 描述                      |
+| ------------ | ------- | ---- | ----- | ----------------------- |
+| colorIndex   | int     | true | false | No Description Provided |
+| fancyStyling | boolean | true | false | No Description Provided |
+| friendlyName | string  | true | false | No Description Provided |
+| isColor      | boolean | true | false | No Description Provided |
 

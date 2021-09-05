@@ -12,7 +12,7 @@ The default type is "generic".
 
 The following are valid types:
 
-| Name     | Description                                                       |
+| Nombre   | Description                                                       |
 | -------- | ----------------------------------------------------------------- |
 | crop     | Can be used for any 1-block crops with an age property like Wheat |
 | stacking | Can be used for stacking plants like Sugar Cane or Cactus         |

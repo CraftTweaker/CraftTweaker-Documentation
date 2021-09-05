@@ -16,3 +16,25 @@ import mods.contenttweaker.block.basic.BlockBuilderBasic;
 
 BlockBuilderBasic extends [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder). That means all methods available in [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) are also available in BlockBuilderBasic
 
+## Methoden
+
+:::group{name=build}
+
+Instructs CoT to actually build whatever this builder is supposed to be building.
+
+Return Type: void
+
+```zenscript
+// BlockBuilderBasic.build(resourceLocation as string) as void
+
+new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
+```
+
+| Parameter        | Type   | Beschreibung                         |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | string | The resource path to give this block |
+
+
+:::
+
+

@@ -14,7 +14,6 @@ No Description Provided
 ```zenscript
 new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSource>>) as MCRedirectModifier
 ```
-
 | Parameter | Type                                                                                                                                                                                        | Description             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | fun       | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No Description Provided |
@@ -23,13 +22,13 @@ new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSour
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| string      | true        |
+| 반환 자료형 | 암묵적  |
+| ------ | ---- |
+| string | true |
 
 ## Methods
 
-### apply
+:::group{name=apply}
 
 Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
@@ -42,7 +41,9 @@ MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSou
 | context   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -55,33 +56,41 @@ MCRedirectModifier.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCRedirectModifier.hashCode() as int
+// MCRedirectModifier.hashCode() as int
+
 myMCRedirectModifier.hashCode();
 ```
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCRedirectModifier.toString() as string
+// MCRedirectModifier.toString() as string
+
 myMCRedirectModifier.toString();
 ```
+
+:::
 
 
 ## 연산자
 
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCRedirectModifier == o as Object
 ```
 
-
+:::
 
 

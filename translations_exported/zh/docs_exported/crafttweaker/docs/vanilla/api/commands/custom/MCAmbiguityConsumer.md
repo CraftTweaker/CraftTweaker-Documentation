@@ -10,7 +10,7 @@ import crafttweaker.api.commands.custom.MCAmbiguityConsumer;
 
 ## 方法
 
-### 含糊不清的
+:::group{name=ambiguous}
 
 Return Type: void
 
@@ -25,5 +25,7 @@ MCAmbiguityConsumer.ambiguous(parent as MCCommandNode, child as MCCommandNode, s
 | 兄弟姐妹的  | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | inputs | Collection&lt;string&gt;                      | No Description Provided |
 
+
+:::
 
 

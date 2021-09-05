@@ -12,14 +12,16 @@ import crafttweaker.api.mods.Mods;
 
 ## Methods
 
-### getMod
+:::group{name=getMod}
 
 Gets a specific mod
 
+Returns: a specific MCModInfo  
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-Mods.getMod(modid as string) as ModInfo
+// Mods.getMod(modid as string) as ModInfo
+
 loadedMods.getMod("minecraft");
 ```
 
@@ -28,14 +30,18 @@ loadedMods.getMod("minecraft");
 | modid     | string | No Description Provided |
 
 
-### isModLoaded
+:::
+
+:::group{name=isModLoaded}
 
 Checks if a mod is laoded
 
+Returns: true if the mod is loaded  
 Return Type: boolean
 
 ```zenscript
-Mods.isModLoaded(modid as string) as boolean
+// Mods.isModLoaded(modid as string) as boolean
+
 loadedMods.isModLoaded("minecraft");
 ```
 
@@ -44,11 +50,13 @@ loadedMods.isModLoaded("minecraft");
 | modid     | string | modid to check |
 
 
+:::
+
 
 ## Properties
 
-| 이름   | Type                                                                | Has Getter | Has Setter |
-| ---- | ------------------------------------------------------------------- | ---------- | ---------- |
-| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
-| size | int                                                                 | true       | false      |
+| 이름   | Type                                                                | Has Getter | Has Setter | Description                         |
+| ---- | ------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------- |
+| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      | Gets a list of all mods in the game |
+| size | int                                                                 | true       | false      | Gets the amount of mods loaded      |
 

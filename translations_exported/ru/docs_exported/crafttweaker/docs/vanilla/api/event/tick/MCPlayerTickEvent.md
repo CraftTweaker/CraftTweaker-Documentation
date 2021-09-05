@@ -18,19 +18,22 @@ MCPlayerTickEvent extends [MCTickEvent](/vanilla/api/event/tick/MCTickEvent). Th
 
 ## Methods
 
-### getPlayer
+:::group{name=getPlayer}
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-MCPlayerTickEvent.getPlayer() as MCPlayerEntity
+// MCPlayerTickEvent.getPlayer() as MCPlayerEntity
+
 myMCPlayerTickEvent.getPlayer();
 ```
+
+:::
 
 
 ## Свойства
 
-| Название | Тип                                                  | Имеет Getter | Имеет Setter |
-| -------- | ---------------------------------------------------- | ------------ | ------------ |
-| player   | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true         | false        |
+| Название | Тип                                                  | Имеет Getter | Имеет Setter | Description             |
+| -------- | ---------------------------------------------------- | ------------ | ------------ | ----------------------- |
+| player   | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true         | false        | No Description Provided |
 

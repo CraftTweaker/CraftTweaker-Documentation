@@ -23,7 +23,7 @@ TableBonus implements the following interfaces. That means all methods defined i
 
 ## Methods
 
-### withChances
+:::group{name=withChances}
 
 Sets the array of chances, which will be queried according to the level.
 
@@ -31,8 +31,9 @@ Sets the array of chances, which will be queried according to the level.
 
  A well-formed condition also requires that at least one of the values of the array be between 0.0 and 1.0, excluding extremes, to ensure at least one level has a chance to match.
 
- This parameter is <p>required</p>.
+ This parameter is required.
 
+Returns: This builder for chaining.  
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
 ```zenscript
@@ -44,12 +45,15 @@ TableBonus.withChances(chances as float[]) as TableBonus
 | chances  | float[] | The chances to use depending on level. |
 
 
-### withEnchantment
+:::
+
+:::group{name=withEnchantment}
 
 Sets the enchantment that should be checked on the tool.
 
- This parameter is <p>required</p>.
+ This parameter is required.
 
+Returns: This builder for chaining.  
 Return Type: [TableBonus](/vanilla/api/loot/conditions/vanilla/TableBonus)
 
 ```zenscript
@@ -60,5 +64,7 @@ TableBonus.withEnchantment(enchantment as MCEnchantment) as TableBonus
 | ----------- | ------------------------------------------------------- | ------------------------- |
 | enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to check. |
 
+
+:::
 
 

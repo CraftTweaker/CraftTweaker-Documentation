@@ -20,7 +20,7 @@ MCRootCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommand
 
 ## Methods
 
-### addChild
+:::group{name=addChild}
 
 Return Type: void
 
@@ -33,7 +33,9 @@ MCRootCommandNode.addChild(node as MCCommandNode) as void
 | node      | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-### canUse
+:::
+
+:::group{name=canUse}
 
 Return Type: boolean
 
@@ -46,16 +48,21 @@ MCRootCommandNode.canUse(source as MCCommandSource) as boolean
 | source    | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
-### createBuilder
+:::
+
+:::group{name=createBuilder}
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-MCRootCommandNode.createBuilder() as MCArgumentBuilder
+// MCRootCommandNode.createBuilder() as MCArgumentBuilder
+
 myMCRootCommandNode.createBuilder();
 ```
 
-### equals
+:::
+
+:::group{name=equals}
 
 Return Type: boolean
 
@@ -68,7 +75,9 @@ MCRootCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
-### findAmbiguities
+:::
+
+:::group{name=findAmbiguities}
 
 Return Type: void
 
@@ -81,7 +90,9 @@ MCRootCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | consumer  | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
-### getChild
+:::
+
+:::group{name=getChild}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -94,61 +105,81 @@ MCRootCommandNode.getChild(name as string) as MCCommandNode
 | name      | string | No Description Provided |
 
 
-### getChildren
+:::
+
+:::group{name=getChildren}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCRootCommandNode.getChildren() as Collection<MCCommandNode>
+// MCRootCommandNode.getChildren() as Collection<MCCommandNode>
+
 myMCRootCommandNode.getChildren();
 ```
 
-### getCommand
+:::
+
+:::group{name=getCommand}
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
-MCRootCommandNode.getCommand() as MCCommand
+// MCRootCommandNode.getCommand() as MCCommand
+
 myMCRootCommandNode.getCommand();
 ```
 
-### getExamples
+:::
+
+:::group{name=getExamples}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCRootCommandNode.getExamples() as Collection<string>
+// MCRootCommandNode.getExamples() as Collection<string>
+
 myMCRootCommandNode.getExamples();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: string
 
 ```zenscript
-MCRootCommandNode.getName() as string
+// MCRootCommandNode.getName() as string
+
 myMCRootCommandNode.getName();
 ```
 
-### getRedirect
+:::
+
+:::group{name=getRedirect}
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCRootCommandNode.getRedirect() as MCCommandNode
+// MCRootCommandNode.getRedirect() as MCCommandNode
+
 myMCRootCommandNode.getRedirect();
 ```
 
-### getRedirectModifier
+:::
+
+:::group{name=getRedirectModifier}
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
-MCRootCommandNode.getRedirectModifier() as MCRedirectModifier
+// MCRootCommandNode.getRedirectModifier() as MCRedirectModifier
+
 myMCRootCommandNode.getRedirectModifier();
 ```
 
-### getRelevantNodes
+:::
+
+:::group{name=getRelevantNodes}
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
@@ -161,43 +192,57 @@ MCRootCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 | input     | string | No Description Provided |
 
 
-### getRequirement
+:::
+
+:::group{name=getRequirement}
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCRootCommandNode.getRequirement() as Predicate<MCCommandSource>
+// MCRootCommandNode.getRequirement() as Predicate<MCCommandSource>
+
 myMCRootCommandNode.getRequirement();
 ```
 
-### getUsageText
+:::
+
+:::group{name=getUsageText}
 
 Return Type: string
 
 ```zenscript
-MCRootCommandNode.getUsageText() as string
+// MCRootCommandNode.getUsageText() as string
+
 myMCRootCommandNode.getUsageText();
 ```
 
-### hashCode
+:::
+
+:::group{name=hashCode}
 
 Return Type: int
 
 ```zenscript
-MCRootCommandNode.hashCode() as int
+// MCRootCommandNode.hashCode() as int
+
 myMCRootCommandNode.hashCode();
 ```
 
-### isFork
+:::
+
+:::group{name=isFork}
 
 Return Type: boolean
 
 ```zenscript
-MCRootCommandNode.isFork() as boolean
+// MCRootCommandNode.isFork() as boolean
+
 myMCRootCommandNode.isFork();
 ```
 
-### isValidInput
+:::
+
+:::group{name=isValidInput}
 
 Return Type: boolean
 
@@ -210,7 +255,9 @@ MCRootCommandNode.isValidInput(input as string) as boolean
 | input     | string | No Description Provided |
 
 
-### listSuggestions
+:::
+
+:::group{name=listSuggestions}
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -224,7 +271,9 @@ MCRootCommandNode.listSuggestions(context as MCCommandContext, builder as MCSugg
 | builder   | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
-### parse
+:::
+
+:::group{name=parse}
 
 Return Type: void
 
@@ -238,32 +287,37 @@ MCRootCommandNode.parse(input as string, contextBuilder as MCCommandContextBuild
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
-### toString
+:::
+
+:::group{name=toString}
 
 Return Type: string
 
 ```zenscript
-MCRootCommandNode.toString() as string
+// MCRootCommandNode.toString() as string
+
 myMCRootCommandNode.toString();
 ```
+
+:::
 
 
 ## Operators
 
-### COMPARE
+:::group{name=COMPARE}
 
 ```zenscript
 myMCRootCommandNode < o as MCCommandNode
 ```
 
+:::
 
-
-### EQUALS
+:::group{name=EQUALS}
 
 ```zenscript
 myMCRootCommandNode == o as Object
 ```
 
-
+:::
 
 

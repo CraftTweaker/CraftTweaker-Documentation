@@ -18,19 +18,22 @@ MCPlayerEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivingEvent). 
 
 ## Methods
 
-### getPlayer
+:::group{name=getPlayer}
 
-Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
+Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)?
 
 ```zenscript
-MCPlayerEvent.getPlayer() as MCPlayerEntity
+// MCPlayerEvent.getPlayer() as MCPlayerEntity?
+
 myMCPlayerEvent.getPlayer();
 ```
+
+:::
 
 
 ## Properties
 
-| Name   | Type                                                 | Ha Getter | Ha Setter |
-| ------ | ---------------------------------------------------- | --------- | --------- |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | true      | false     |
+| Name   | Type                                                  | Ha Getter | Ha Setter | Description             |
+| ------ | ----------------------------------------------------- | --------- | --------- | ----------------------- |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true      | false     | No Description Provided |
 

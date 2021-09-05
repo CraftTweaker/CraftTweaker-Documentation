@@ -1,3 +1,5 @@
+::requiredMod[Thermal Expansion]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/thermal-expansion}
+
 # Magmatic Dynamo / Magmatic Fuel
 
 ## Methods

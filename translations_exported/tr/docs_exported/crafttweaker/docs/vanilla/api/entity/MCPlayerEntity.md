@@ -14,7 +14,7 @@ MCPlayerEntity extends [MCLivingEntity](/vanilla/api/entity/MCLivingEntity). Tha
 
 ## Methods
 
-### addExhaustion
+:::group{name=addExhaustion}
 
 Return Type: void
 
@@ -27,16 +27,21 @@ MCPlayerEntity.addExhaustion(exhaustion as float) as void
 | exhaustion | float | No Description Provided |
 
 
-### canUseCommandBlock
+:::
+
+:::group{name=canUseCommandBlock}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.canUseCommandBlock() as boolean
+// MCPlayerEntity.canUseCommandBlock() as boolean
+
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### drop
+:::
+
+:::group{name=drop}
 
 Return Type: boolean
 
@@ -49,25 +54,45 @@ MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 | p_225609_1_ | boolean | No Description Provided |
 
 
-### getCurrentItem
+:::
+
+:::group{name=getCurrentItem}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCPlayerEntity.getCurrentItem() as IItemStack
+// MCPlayerEntity.getCurrentItem() as IItemStack
+
 myMCPlayerEntity.getCurrentItem();
 ```
 
-### getFoodLevel
+:::
+
+:::group{name=getFoodLevel}
 
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getFoodLevel() as int
+// MCPlayerEntity.getFoodLevel() as int
+
 myMCPlayerEntity.getFoodLevel();
 ```
 
-### getInventoryItemStack
+:::
+
+:::group{name=getInventory}
+
+Return Type: [PlayerInventory](/vanilla/api/inventory/PlayerInventory)
+
+```zenscript
+// MCPlayerEntity.getInventory() as PlayerInventory
+
+myMCPlayerEntity.getInventory();
+```
+
+:::
+
+:::group{name=getInventoryItemStack}
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
@@ -80,72 +105,95 @@ MCPlayerEntity.getInventoryItemStack(slotIndex as int) as IItemStack
 | slotIndex | int  | No Description Provided |
 
 
-### getLuck
+:::
+
+:::group{name=getLuck}
 
 Return Type: float
 
 ```zenscript
-MCPlayerEntity.getLuck() as float
+// MCPlayerEntity.getLuck() as float
+
 myMCPlayerEntity.getLuck();
 ```
 
-### getMaxInPortalTime
+:::
+
+:::group{name=getMaxInPortalTime}
 
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getMaxInPortalTime() as int
+// MCPlayerEntity.getMaxInPortalTime() as int
+
 myMCPlayerEntity.getMaxInPortalTime();
 ```
 
-### getName
+:::
+
+:::group{name=getName}
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCPlayerEntity.getName() as MCTextComponent
+// MCPlayerEntity.getName() as MCTextComponent
+
 myMCPlayerEntity.getName();
 ```
 
-### getPersistentData
+:::
+
+:::group{name=getPersistentData}
 
 Gets the persisted NBT tag that is saved between deaths. Many mods use this to keep track of if they have given the player an item or not.
 
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MCPlayerEntity.getPersistentData() as MapData
+// MCPlayerEntity.getPersistentData() as MapData
+
 myMCPlayerEntity.getPersistentData();
 ```
 
-### getPortalCooldown
+:::
+
+:::group{name=getPortalCooldown}
 
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getPortalCooldown() as int
+// MCPlayerEntity.getPortalCooldown() as int
+
 myMCPlayerEntity.getPortalCooldown();
 ```
 
-### getSaturationLevel
+:::
+
+:::group{name=getSaturationLevel}
 
 Return Type: float
 
 ```zenscript
-MCPlayerEntity.getSaturationLevel() as float
+// MCPlayerEntity.getSaturationLevel() as float
+
 myMCPlayerEntity.getSaturationLevel();
 ```
 
-### getSleepTimer
+:::
+
+:::group{name=getSleepTimer}
 
 Return Type: int
 
 ```zenscript
-MCPlayerEntity.getSleepTimer() as int
+// MCPlayerEntity.getSleepTimer() as int
+
 myMCPlayerEntity.getSleepTimer();
 ```
 
-### give
+:::
+
+:::group{name=give}
 
 Return Type: void
 
@@ -158,79 +206,105 @@ MCPlayerEntity.give(stack as IItemStack) as void
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
-### isCreative
+:::
+
+:::group{name=isCreative}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isCreative() as boolean
+// MCPlayerEntity.isCreative() as boolean
+
 myMCPlayerEntity.isCreative();
 ```
 
-### isFake
+:::
+
+:::group{name=isFake}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isFake() as boolean
+// MCPlayerEntity.isFake() as boolean
+
 myMCPlayerEntity.isFake();
 ```
 
-### isPushedByWater
+:::
+
+:::group{name=isPushedByWater}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isPushedByWater() as boolean
+// MCPlayerEntity.isPushedByWater() as boolean
+
 myMCPlayerEntity.isPushedByWater();
 ```
 
-### isSecondaryUseActive
+:::
+
+:::group{name=isSecondaryUseActive}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSecondaryUseActive() as boolean
+// MCPlayerEntity.isSecondaryUseActive() as boolean
+
 myMCPlayerEntity.isSecondaryUseActive();
 ```
 
-### isSpectator
+:::
+
+:::group{name=isSpectator}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSpectator() as boolean
+// MCPlayerEntity.isSpectator() as boolean
+
 myMCPlayerEntity.isSpectator();
 ```
 
-### isSwimming
+:::
+
+:::group{name=isSwimming}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isSwimming() as boolean
+// MCPlayerEntity.isSwimming() as boolean
+
 myMCPlayerEntity.isSwimming();
 ```
 
-### isUser
+:::
+
+:::group{name=isUser}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.isUser() as boolean
+// MCPlayerEntity.isUser() as boolean
+
 myMCPlayerEntity.isUser();
 ```
 
-### needFood
+:::
+
+:::group{name=needFood}
 
 Return Type: boolean
 
 ```zenscript
-MCPlayerEntity.needFood() as boolean
+// MCPlayerEntity.needFood() as boolean
+
 myMCPlayerEntity.needFood();
 ```
 
-### sendMessage
+:::
+
+:::group{name=sendMessage}
 
 Return Type: void
 
@@ -243,7 +317,9 @@ MCPlayerEntity.sendMessage(text as MCTextComponent) as void
 | text      | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
-### sendStatusMessage
+:::
+
+:::group{name=sendStatusMessage}
 
 Return Type: void
 
@@ -257,7 +333,9 @@ MCPlayerEntity.sendStatusMessage(text as MCTextComponent, actionBar as boolean) 
 | actionBar | boolean                                                   | No Description Provided |
 
 
-### setFoodLevel
+:::
+
+:::group{name=setFoodLevel}
 
 Return Type: void
 
@@ -270,7 +348,9 @@ MCPlayerEntity.setFoodLevel(value as int) as void
 | value     | int  | No Description Provided |
 
 
-### unlockRecipes
+:::
+
+:::group{name=unlockRecipes}
 
 Return Type: void
 
@@ -283,7 +363,9 @@ MCPlayerEntity.unlockRecipes(p_193102_1_ as MCResourceLocation[]) as void
 | p_193102_1_ | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)[] | No Description Provided |
 
 
-### updatePersistentData
+:::
+
+:::group{name=updatePersistentData}
 
 Updates the player's persisted data that is saved between deaths.
 
@@ -298,22 +380,28 @@ MCPlayerEntity.updatePersistentData(data as MapData) as void
 | data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
 
 
-### wakeUp
+:::
+
+:::group{name=wakeUp}
 
 Return Type: void
 
 ```zenscript
-MCPlayerEntity.wakeUp() as void
+// MCPlayerEntity.wakeUp() as void
+
 myMCPlayerEntity.wakeUp();
 ```
+
+:::
 
 
 ## Properties
 
-| Name            | Type                                                      | Has Getter | Has Setter |
-| --------------- | --------------------------------------------------------- | ---------- | ---------- |
-| fake            | boolean                                                   | true       | false      |
-| foodLevel       | int                                                       | true       | true       |
-| name            | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true       | false      |
-| saturationLevel | float                                                     | true       | false      |
+| Name            | Type                                                      | Has Getter | Has Setter | Description             |
+| --------------- | --------------------------------------------------------- | ---------- | ---------- | ----------------------- |
+| fake            | boolean                                                   | true       | false      | No Description Provided |
+| foodLevel       | int                                                       | true       | true       | No Description Provided |
+| inventory       | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true       | false      | No Description Provided |
+| name            | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | true       | false      | No Description Provided |
+| saturationLevel | float                                                     | true       | false      | No Description Provided |
 

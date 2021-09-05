@@ -24,7 +24,7 @@ MCEntityJoinWorldEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntit
 
 ## 参数
 
-| 名称    | 类型                                    | 可获得  | 可设置   |
-| ----- | ------------------------------------- | ---- | ----- |
-| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false |
+| 名称    | 类型                                    | 可获得  | 可设置   | 描述                      |
+| ----- | ------------------------------------- | ---- | ----- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true | false | No Description Provided |
 

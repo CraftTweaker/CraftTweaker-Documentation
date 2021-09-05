@@ -10,9 +10,9 @@ import crafttweaker.api.util.DamageSourceHelper;
 ```
 
 
-## Methods
+## Static Methods
 
-### causeBeeStingDamage
+:::group{name=causeBeeStingDamage}
 
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
@@ -25,7 +25,9 @@ DamageSourceHelper.causeBeeStingDamage(bee as MCLivingEntity) as DamageSource
 | bee       | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
 
 
-### causeIndirectDamage
+:::
+
+:::group{name=causeIndirectDamage}
 
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
@@ -39,7 +41,9 @@ DamageSourceHelper.causeIndirectDamage(source as MCEntity, indirectEntityIn as M
 | indirectEntityIn | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
 
 
-### causeMobDamage
+:::
+
+:::group{name=causeMobDamage}
 
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
@@ -52,7 +56,9 @@ DamageSourceHelper.causeMobDamage(mob as MCLivingEntity) as DamageSource
 | mob       | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
 
 
-### causePlayerDamage
+:::
+
+:::group{name=causePlayerDamage}
 
 Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 
@@ -64,4 +70,6 @@ DamageSourceHelper.causePlayerDamage(player as MCPlayerEntity) as DamageSource
 | --------- | ---------------------------------------------------- | ----------------------- |
 | player    | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
 
+
+:::
 

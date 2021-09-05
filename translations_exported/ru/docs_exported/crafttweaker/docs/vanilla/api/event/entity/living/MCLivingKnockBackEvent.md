@@ -24,12 +24,12 @@ MCLivingKnockBackEvent extends [MCLivingEvent](/vanilla/api/event/entity/MCLivin
 
 ## Свойства
 
-| Название       | Тип    | Имеет Getter | Имеет Setter |
-| -------------- | ------ | ------------ | ------------ |
-| originRatioX   | double | true         | false        |
-| originRatioZ   | double | true         | false        |
-| originStrength | float  | true         | false        |
-| ratioX         | double | true         | true         |
-| ratioZ         | double | true         | true         |
-| strength       | float  | true         | true         |
+| Название       | Тип    | Имеет Getter | Имеет Setter | Description             |
+| -------------- | ------ | ------------ | ------------ | ----------------------- |
+| originRatioX   | double | true         | false        | No Description Provided |
+| originRatioZ   | double | true         | false        | No Description Provided |
+| originStrength | float  | true         | false        | No Description Provided |
+| ratioX         | double | true         | true         | No Description Provided |
+| ratioZ         | double | true         | true         | No Description Provided |
+| strength       | float  | true         | true         | No Description Provided |
 

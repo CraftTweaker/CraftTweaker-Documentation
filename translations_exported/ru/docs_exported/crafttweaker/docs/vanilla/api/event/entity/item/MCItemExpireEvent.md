@@ -24,7 +24,7 @@ MCItemExpireEvent extends [MCItemEvent](/vanilla/api/event/entity/MCItemEvent). 
 
 ## Свойства
 
-| Название  | Тип | Имеет Getter | Имеет Setter |
-| --------- | --- | ------------ | ------------ |
-| extraLife | int | true         | true         |
+| Название  | Тип | Имеет Getter | Имеет Setter | Description             |
+| --------- | --- | ------------ | ------------ | ----------------------- |
+| extraLife | int | true         | true         | No Description Provided |
 

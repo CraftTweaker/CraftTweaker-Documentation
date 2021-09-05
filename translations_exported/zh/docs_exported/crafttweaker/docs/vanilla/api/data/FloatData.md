@@ -21,7 +21,6 @@ No Description Provided
 ```zenscript
 new FloatData(internal as float) as FloatData
 ```
-
 | 参数       | 类型    | 描述                      |
 | -------- | ----- | ----------------------- |
 | internal | float | No Description Provided |
@@ -32,6 +31,7 @@ new FloatData(internal as float) as FloatData
 
 | 结果类型                                                        | 是否隐藏  |
 | ----------------------------------------------------------- | ----- |
+| boolean                                                     | false |
 | byte                                                        | false |
 | double                                                      | false |
 | float                                                       | false |
@@ -43,134 +43,208 @@ new FloatData(internal as float) as FloatData
 
 ## 方法
 
-### asCollection
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// FloatData.asBoolean() as boolean
+
+8.5.asBoolean();
+```
+
+:::
+
+:::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ```zenscript
-FloatData.asCollection() as ICollectionData
+// FloatData.asCollection() as ICollectionData
+
 8.5.asCollection();
 ```
 
-### asList #作为列表
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+FloatData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| 参数          | 类型     | 描述                      |
+| ----------- | ------ | ----------------------- |
+| indentation | string | No Description Provided |
+| indentDepth | int    | No Description Provided |
+
+
+:::
+
+:::group{name=asList}
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
+Returns: null if this IData is not a list.  
 Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-FloatData.asList() as stdlib.List<IData>
+// FloatData.asList() as stdlib.List<IData>
+
 8.5.asList();
 ```
 
-### asMap #作为地图数据
+:::
+
+:::group{name=asMap}
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
+Returns: null if this IData is not a map.  
 Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-FloatData.asMap() as IData[string]
+// FloatData.asMap() as IData[string]
+
 8.5.asMap();
 ```
 
-### asNumber
+:::
+
+:::group{name=asNumber}
 
 Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 ```zenscript
-FloatData.asNumber() as INumberData
+// FloatData.asNumber() as INumberData
+
 8.5.asNumber();
 ```
 
-### getByte
+:::
+
+:::group{name=getByte}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a byte
 
+Returns: the byte value of this [IData](/vanilla/api/data/IData)  
 Return Type: byte
 
 ```zenscript
-FloatData.getByte() as byte
+// FloatData.getByte() as byte
+
 8.5.getByte();
 ```
 
-### getDouble
+:::
+
+:::group{name=getDouble}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
 
+Returns: the double value of this [IData](/vanilla/api/data/IData)  
 Return Type: double
 
 ```zenscript
-FloatData.getDouble() as double
+// FloatData.getDouble() as double
+
 8.5.getDouble();
 ```
 
-### getFloat
+:::
+
+:::group{name=getFloat}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
 
+Returns: the float value of this [IData](/vanilla/api/data/IData)  
 Return Type: float
 
 ```zenscript
-FloatData.getFloat() as float
+// FloatData.getFloat() as float
+
 8.5.getFloat();
 ```
 
-### getId #获取id
+:::
+
+:::group{name=getId}
 
 获取内部NBT标签的 ID。
 
  用来确定哪些NBT类型被存储(例如在列表中)
 
+Returns: ID of the NBT tag that this data represents.  
 Return Type: byte
 
 ```zenscript
-FloatData.getId() as byte
+// FloatData.getId() as byte
+
 8.5.getId();
 ```
 
-### getInt
+:::
+
+:::group{name=getInt}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
 
+Returns: the int value of this [IData](/vanilla/api/data/IData)  
 Return Type: int
 
 ```zenscript
-FloatData.getInt() as int
+// FloatData.getInt() as int
+
 8.5.getInt();
 ```
 
-### getLong
+:::
+
+:::group{name=getLong}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
 
+Returns: the long value of this [IData](/vanilla/api/data/IData)  
 Return Type: long
 
 ```zenscript
-FloatData.getLong() as long
+// FloatData.getLong() as long
+
 8.5.getLong();
 ```
 
-### getShort
+:::
+
+:::group{name=getShort}
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
 
+Returns: the short value of this [IData](/vanilla/api/data/IData)  
 Return Type: short
 
 ```zenscript
-FloatData.getShort() as short
+// FloatData.getShort() as short
+
 8.5.getShort();
 ```
 
-### getString #获取字符串
+:::
+
+:::group{name=getString}
 
 获取内部INBT标记的字符串表示形式
 
+Returns: String that represents the internal INBT of this IData.  
 Return Type: string
 
 ```zenscript
-FloatData.getString() as string
+// FloatData.getString() as string
+
 8.5.getString();
 ```
+
+:::
 
 
