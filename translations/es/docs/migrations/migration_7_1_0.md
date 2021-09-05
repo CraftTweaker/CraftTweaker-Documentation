@@ -1,100 +1,102 @@
-# Migrating Scripts to CraftTweaker 7.1
+# Migrando Scripts a Crafttweaker 7.1 
 
-CraftTweaker version 7.1 has some changes that break backwards compatibility.  
-These breaking changes are in the API that addons use as well as in the types that scripts use.  
-This document should give an overview of the most important changes and how pack developers can get their scripts working again.
+La versión 7.1 contiene unos cambios que impiden retrocompatibilidad.  
+Estos cambios estan en la API que los addons usan además de en los tipos que los scripts requieren.
+Este documento debería ayudarte a darte una idea general de cuales son los cambios más importantes y cómo los desarrolladores de modpacks pueden tener scripts que funcionen otra vez.
+Si tu versión es superior a 7.1, puedes ignorar esta página.
 
 
-## MCTag becomes MCTag&LT;T&GT;
+## MCTag se convertiene en MCTag&LT;T&GT;
 
-We replaced Tags with a generic system that is more extensible and will work better with future updates.  
-That change will break existing scripts in two ways:
+Hemos reemplazado las Tags con un sistema genérico que es más extensible y que funcionará mejor con futuras actualizaciones.
+Este cambio inutiliza los scripts existentes de dos formas:a
 
-1) The specialized addition and removal methods have been removed. <br>You now use `add` and `remove` instead of `addItems`, `addFluids` and the like. 2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:items:forge:gems>`
+1) Los métodos de añadir y removal especializados han sido eliminados. <br>Ahora puedes usar `add` y `remove` en vez de `addItems`, `addFluids`, y similares. 2) La sintaxis de Paréntesis ahora requiere el tipo de la tag como un parámetro adicional. <br>Ahora, `<tag:forge:gems` se convierte en `<tag:items:forge:gems>`
 
-The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
-If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
+Los comandos `/ct dump tags` y `/ct hand` han sido actualizados para reflectir estos cambios.
+Si necesitas usar una tag con cualquiera de los métodos IIngredient, deberás usar `.asIIngredient()` primero.
 
-Migration example
+Ejemplo de migración
 ```zenscript
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.MCItemDefinition;
 import crafttweaker.api.fluid.MCFluid;
 
-var fluidTagOld = <tag:minecraft:water> as MCTag;
-var itemTagOld = <tag:forge:gems> as MCTag;
+var tagFluidoAntigua = <tag:minecraft:water> as MCTag;
+var tagObjetoAntigua = <tag:forge:gems> as MCTag;
 
-var fluidTagNew = <tag:fluids:minecraft:water> as MCTag<MCFluid>;
-var itemTagNew = <tag:items:forge:gems> as MCTag<MCItemDefinition>;
+var tagFluidoNueva = <tag:fluids:minecraft:water> as MCTag<MCFluid>;
+var tagObjetoNueva = <tag:items:forge:gems> as MCTag<MCItemDefinition>;
 
-//How to interact
-var myGemTagOld = <tag:forge:gems>;
-myGemTagOld.addItems(<item:minecraft:bedrock>);
-myGemTagOld.removeItems(<item:minecraft:diamond>);
+//Como interactuar
+var tagGemaAntigua = <tag:forge:gems>;
+tagGemaAntigua.addItems(<item:minecraft:bedrock>);
+tagGemaAntigua.removeItems(<item:minecraft:diamond>);
 
-var myGemTagNew = <tag:items:forge:gems>;
-myGemTagNew.add(<item:minecraft:bedrock>);
-myGemTagNew.remove(<item:minecraft:diamond>);
+var tagGemaNueva = <tag:items:forge:gems>;
+tagGemaNueva.add(<item:minecraft:bedrock>);
+tagGemaNueva.remove(<item:minecraft:diamond>);
 
 
-//IIngredient expansins
-var reuseOld = <tag:forge:gems>.reuse();
-var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
+//Expansiones de IIngredient
+var reusarAntigua = <tag:forge:gems>.reuse();
+var reusarNuevo = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
 
 
-## Wrapper types become vanilla types
+## Los tipos wrapper se convierten directamente en tipos de Vanilla
 
-We changed some internals workings of CraftTweaker to directly use minecraft types.  
-This change should not affect your existing scripts directly, but will break some of the integrations added by other mods.
+Hemos cambiado un part de cosas internas sobre como funciona Crafttweaker, y ahora usa tipos de Minecraft directamente.
+Esto no debería influenciar tus scripts, pero si que inutilizará compatibilidad con otros mods.
 
-The broken classes will be logged in the crafttweaker log. If you find some of your scripts breaking, check if they use one of the broken classes.
+Las clases inutilizadas apareceran en el crafttweaker log. Se alguno de tus scripts deja de funcionar, comprueba si tienen alguna de las clases que no funciona.
 
 
-## Method to register EventHandlers changed signature
+## El método para registrar eventos ha cambiado
 
-Event listeners no longer have the consumer in a custom constructor.  
-Instead, the registitration method was changed to be generic.
+Los event listeners ya no tienen el consumer en un constructor personalizado.
+En su lugar, el método de registracion se ha cambiado para ser genérico.
 
-Migration example:
+
+Ejemplo de migración:
 ```zenscript
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCAnvilRepairEvent;
 
-//Old way:
-CTEventManager.register(new MCAnvilRepairEvent((event) => {
-     var player = event.player;
-     var result = event.itemResult;
-     println("Player '" + player.name + "' crafted " + result.commandString);
+//Forma antigua:
+CTEventManager.register(new MCAnvilRepairEvent((evento) => {
+     var jugador = evento.player;
+     var resultado = evento.itemResult;
+     println("El Jugador '" + jugador.name + "' crafteo " + resultado.commandString);
  }));
 
 
-//New way
-CTEventManager.register<MCAnvilRepairEvent>((event) => {
-     var player = event.player;
-     var result = event.itemResult;
-     println("Player '" + player.name + "' crafted " + result.commandString);
+//Nueva forma
+CTEventManager.register<MCAnvilRepairEvent>((evento) => {
+     var jugador = evento.player;
+     var resultado = evento.itemResult;
+     println("El Jugador  '" + jugador.name + "' crafteo " + resultado.commandString);
  });
 ```
 
 
-## ZenCode: Storage tags are gone
+## ZenCode: Las tags de almacenamiento ya no existen
 
-We removed Storage tags from the ZenCode language Specifications for now.  
-They are not required for CraftTweaker and made debugging harder.  
-Most people did not need to use storage tags so we don't expect you to need to pursue this migration step.
+Hemos eliminado las tags de almacenamiento de ZenCode por ahora.
+No eran requeridas por crafttweaker y complicaban la depuración más de lo que debía ser.
+Como la mayoría de usuarios no las usaba esperamos que no tengas que migrar este apartado.
 
-Migration example:
+Ejemplo de migración:
 ```zenscript
-var before = {} as string`static[string`static]`unique
+var antes = {} as string`static[string`static]`unique
 
-var after = {} as string[string];
+var despues = {} as string[string];
 
-function funcBefore(argument as string`borrow) as string`unique {
-    return argument + "!";
+function funcantes(argumento as string`borrow) as string`unique {
+    return argumento + "!";
 }
 
-function funcAfter(argument as string) as string {
-    return argument + "!";
+function funcdespues(argumento as string) as string {
+    return argumento + "!";
 }
 ```

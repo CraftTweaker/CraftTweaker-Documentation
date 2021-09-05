@@ -1,57 +1,53 @@
-# Empezando con tus archivos
+# Empezando con tus archivos 
 
-CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder, if you aren't sure where this folder is, just run `/ct scripts` when in the game and the folder will open.
+CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este lenguaje de programación lee archivos ` .zs ` que se encontrarán en la carpeta ` scripts ` dentro de tu instalación o instancia de ` minecraft. `
 
-ZenScript es un lenguaje de programación que va de arriba a abajo, lo que quiere decir que las ` declaraciones de Variables ` y las ` Importaciones ` deberían encontrarse como más arribo del fichero, mejor. Esto no quiere decir que no puedas declarar ` Variables ` en cualquier parte, solo que esa variable no existirá a los ojos de las líneas que estén por delante de la declaración.
+ZenScript es un lenguaje de programación que va de arriba a abajo, lo que quiere decir que las ` declaraciones de Variables ` y las ` Importaciones ` deberían encontrarse como más arribo del fichero, mejor. Esto no quiere decir que no puedas declarar ` Variables ` en cualquier parte, solo que esa variable no existirá a los ojos de las líneas que estén por delante de la declaración. 
+
+Los scripts tienen que ser ficheros `.zs`, cuidado que no sean `.zs.txt`
+
+## Que son scripts
+
+Los scripts se almacenan`<directoriodeljuego>/scripts` y se cargan cuando un jugador entra en el mundo. A diferencia de otras versiones de Crafttweaker (mayoritariamente 1.12.2), los scripts se pueden recargar con el comando `/reload`.
+
+Los scripts se cargan dos veces cuando se entra a un mundo en un mundo de un jugador, una vez en el Servidor y otra en el Cliente, asi que si tienes un `println()` en tu scripts, lo verás dos veces, ya que se carga dos veces.
+
+Esto no quiere decir que los cambios se apliquen dos veces, los cambios pueden aplicarse en un único lado, como por ejemplo añadir una descripción emergente, las recetas solo se añaden en el servidor.
+
+Cuando te unes a un servidor, el servidor envía sus scripts al cliente, y el cliente los ejecuta. Esto significa que si un cliente sin scripts pero con el mod se une a un servidor recibirá los cambios. Esto es útil cuando quieres eliminar la necesidad de descargar archivos adicionales a tus jugadores.
 
 
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
+#### Escribiendo tu primer archivo.
 
-## What are scripts
-
-Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
-
-Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
-
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
-
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
-
-
-### Escribiendo tu primer archivo.
-
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+Para empezar con tus archivos, crearemos un archivo muy básico, llamado ` hola.zs ` en el directorio ` /scripts `. Si no sabes donde está, usa `/ct scripts`.
 
 Dentro de ` hola.zs ` pon la siguiente línea:
 
 ```zenscript
-println("Hello world!");
+println("Hola Mundo");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+Ahora carga Minecraft y abre el archivo ` crafttweaker.log`. Si no sabes donde está, usa `/ct log`
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+El archivo ` crafttweaker.log ` debería estar dentro de tu directorio de Minecraft y puede ser leído por cualquier programa que pueda leer archivos de texto (VSC, Notepad ++ , Bloc de Notas).
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+Se recomienda usar Notepad ++ o Sublime Text para editar tus archivos, pero cualquiera valdrá.
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+Cuando elijas un programa para editar scripts, comprueba que Resaltadores de Sintaxis existen, la mayoría tendrán la opción de Zenscript con un plugin, aunque es posible que estén hechos para la versión 1.12.2
 
+### El archivo crafttweaker.log
 
-
-### El archivo ` crafttweaker.log </0></h3>
-
-<p spaces-before="0">El archivo <code> crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:</p>
+<p spaces-before="0">El archivo crafttweaker.log usa una sintaxis muy specifica en la salida de información, que es:</p>
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
+Mirando el ejemplo de arriba, nuestra salida para el fichero `hola.zs` sería: </p>
 
-<pre><code>[14:58:06.697][DONE][SERVER][INFO] Hello world!
-`</pre>
+<pre><code>[14:58:06.697][DONE][SERVER][INFO] Hola Mundo</pre>
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+La sintaxis se usa para depuración y la única vez en la que no sea usa es durante líneas que salen al archivo a causa de un comando, para que sea más fácil copiar y pegar la información que haya sido añadida al archivo como puede ser por ejemplo una lista de objetos. 
 
 ### Comentarios
 
@@ -65,8 +61,10 @@ Comentario de una línea alternativo: ` #Yo también `
 
 Comentario de más de una línea
 ```
-/*  Soy <br/> un comentario <br/> multilinear!
+/*  Soy 
+ un comentario 
+ multilinear!
  */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Los comentarios `#` también pueden ser usados para llamar preprocesadores, así que hay que ir con cuidado cuando se usan estos de no tener una palabra clave en ellos.

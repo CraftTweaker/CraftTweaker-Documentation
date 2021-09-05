@@ -1,4 +1,4 @@
-# Commands
+# Comandos
 
 Here are the commands that matter:
 ```plaintext

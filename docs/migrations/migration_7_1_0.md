@@ -38,7 +38,7 @@ myGemTagNew.add(<item:minecraft:bedrock>);
 myGemTagNew.remove(<item:minecraft:diamond>);
 
 
-//IIngredient expansins
+//IIngredient expansions
 var reuseOld = <tag:forge:gems>.reuse();
 var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
@@ -56,7 +56,7 @@ If you find some of your scripts breaking, check if they use one of the broken c
 ## Method to register EventHandlers changed signature
 
 Event listeners no longer have the consumer in a custom constructor.  
-Instead, the registitration method was changed to be generic.
+Instead, the registration method was changed to be generic.
 
 Migration example:
 ```zenscript
