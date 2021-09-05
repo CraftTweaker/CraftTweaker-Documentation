@@ -1,6 +1,6 @@
 # Adding Support to other Mods
 
-As long as mods implement [IRecipeManager](/vanilla/API/managers/IRecipeManager) (a Java Class), adding recipes to them is doable, even when native support does not exist.
+As long as a mod's recipes use the vanilla IRecipe Datapack system, and therefore work with [IRecipeManagers](/vanilla/API/managers/IRecipeManager), then you are able to add new recipes regardless of if the mod has native support or not.
 This is still a bit tricky, but doable nonetheless. There are a couple steps to doing this:
 
 The first one is finding the recipetype we want to add a recipe to. This should be done using `/ct dump recipetypes`. Once you've got it, you should find a `.json` recipe that belongs to that recipetype in the mods source. Only can generally be found under the datagen path of the mod, which generally is: `src/main/resources/data/recipetype/recipes` in the mods source and `data/modid/recipes` in the mod's jar. The path might change depending on the mod though.
