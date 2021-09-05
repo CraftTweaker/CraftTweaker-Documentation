@@ -18,6 +18,24 @@ new MCStyle();
 
 ## Methods
 
+:::group{name=applyFormatting}
+
+Applies the formatting characteristics (Bold, Italic, Obfucated, etc) of the given MCTExtFormatting as well as the colour of the formatting.
+
+Returns: A new MCStyle with the given Formatting.  
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+MCStyle.applyFormatting(formatting as TextFormatting) as MCStyle
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | The formatting to set. |
+
+
+:::
+
 :::group{name=equals}
 
 Return Type: boolean
@@ -41,6 +59,18 @@ Return Type: boolean
 // MCStyle.getBold() as boolean
 
 myMCStyle.getBold();
+```
+
+:::
+
+:::group{name=getColor}
+
+Return Type: int
+
+```zenscript
+// MCStyle.getColor() as int
+
+myMCStyle.getColor();
 ```
 
 :::
@@ -220,6 +250,12 @@ MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 
 :::group{name=setFormatting}
 
+Sets the formatting of the style.
+
+ This will only take the colour of the text formatting, so using `<formatting:obfuscated>` would not do anything as it does not have a colour.
+ If you want to take the actual characteristics of the MCTextFormatting, use [MCStyle](/vanilla/api/util/text/MCStyle)#applyFormatting(MCTextFormatting)
+
+Returns: A new MCStyle with the given Formatting.  
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
@@ -228,7 +264,7 @@ MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
+| formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | The formatting to set. |
 
 
 :::

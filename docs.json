@@ -36,6 +36,7 @@
       }
     },
     "Mods": {
+      "Generic JSON Recipes": "mods/other_mods.md",
       "Applied Energistics 2": {
         "Grinder": "mods/AppliedEnergistics2/Grinder.md",
         "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
@@ -77,9 +78,16 @@
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
       "Create": {
+        "Util": {
+          "Heat Condition": "mods/Create/util/HeatCondition.md",
+          "Processing Recipe Builder": "mods/Create/util/ProcessingRecipeBuilder.md",
+          "Processing Recipe Factory": "mods/Create/util/ProcessingRecipeFactory.md",
+          "Sequenced Asembly Recipe Builder": "mods/Create/util/SequencedAssemblyRecipeBuilder.md"
+        },
         "Compacting": "mods/Create/Compacting.md",
         "Crushing": "mods/Create/Crushing.md",
         "Cutting": "mods/Create/Cutting.md",
+        "Deployer Application": "mods/Create/DeployerApplication.md",
         "Emptying": "mods/Create/Emptying.md",
         "Filling": "mods/Create/Filling.md",
         "Mechanical Crafter": "mods/Create/MechanicalCrafter.md",
@@ -87,7 +95,15 @@
         "Mixing": "mods/Create/Mixing.md",
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
+        "Sequenced Assembly": "mods/Create/SequencedAssembly.md",
         "Splashing": "mods/Create/Splashing.md"
+      },
+      "Create Automated": {
+        "Extracting Recipes": "mods/CreateAutomated/ExtractingRecipes.md",
+        "Picking Recipes": "mods/CreateAutomated/PickingRecipes.md",
+        "ContentTweaker": {
+          "Drill Heads": "mods/CreateAutomated/DrillHeads.md"
+        }
       },
       "Cyclic": {
         "Melter": "mods/Cyclic/Melter.md",
@@ -103,6 +119,13 @@
         "Hammering": "mods/ExNihiloSequentia/Hammering.md",
         "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
         "Sieving": "mods/ExNihiloSequentia/Sieving.md"
+      },
+      "Farmersdelight": {},
+      "Game Stages": {
+        "Introduction": "mods/GameStages/Introduction.md",
+        "Expanded Player": "mods/GameStages/PlayerStages.md",
+        "The StageHelper": "mods/GameStages/StageHelper.md",
+        "GameStage Events": "mods/GameStages/GameStageEvents.md"
       },
       "Immersive Engineering": {
         "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
@@ -191,6 +214,7 @@
       "Zen Summoning": {
         "Examples": "mods/zensummoning/examples.md"
       }
+      
     }
   }
 }

@@ -16,10 +16,23 @@ import crafttweaker.api.data.IData;
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// IData.asBoolean() as boolean
+
+{Display: {lore: ["Hello", "World"]}}.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -30,6 +43,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 {Display: {lore: ["Hello", "World"]}}.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+IData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

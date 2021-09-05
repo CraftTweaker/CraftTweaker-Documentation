@@ -33,10 +33,23 @@ new BoolData(internal as boolean) as BoolData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ByteData](/vanilla/api/data/ByteData) | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// BoolData.asBoolean() as boolean
+
+true.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -47,6 +60,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 true.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+BoolData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

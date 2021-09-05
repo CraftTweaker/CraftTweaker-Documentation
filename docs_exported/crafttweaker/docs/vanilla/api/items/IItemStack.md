@@ -18,6 +18,12 @@ IItemStack implements the following interfaces. That means all methods defined i
 - [IIngredient](/vanilla/api/items/IIngredient)
 - [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -281,6 +287,18 @@ IItemStack.getEnchantmentLevel(enchantment as MCEnchantment) as int
 
 :::
 
+:::group{name=getEnchantments}
+
+Return Type: Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+
+```zenscript
+// IItemStack.getEnchantments() as Integer[MCEnchantment]
+
+<item:minecraft:dirt>.getEnchantments();
+```
+
+:::
+
 :::group{name=getImmutableInternal}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -355,6 +373,26 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
+
+:::
+
+:::group{name=grow}
+
+Grows this IItemStack's stack size by the given amount, or 1 if no amount is given.
+
+Returns: This IItemStack if mutable, a new one with the new amount otherwise.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.grow(amount as int) as IItemStack
+
+<item:minecraft:dirt>.grow(2);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| amount | int | The amount to grow by. | true | 1 |
 
 
 :::
@@ -505,6 +543,26 @@ IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredi
 
 :::
 
+:::group{name=removeEnchantment}
+
+Removes the given enchantment from this IItemStack.
+
+Returns: This itemStack if it is mutable, a new one with the enchantment removed otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.removeEnchantment(enchantment as MCEnchantment) as IItemStack
+
+<item:minecraft:dirt>.removeEnchantment(<enchantment:minecraft:riptide>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to remove. |
+
+
+:::
+
 :::group{name=removeGlobalAttribute}
 
 Removes all AttributeModifiers that use the given Attribute from this IIngredient.
@@ -587,6 +645,24 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 :::
 
+:::group{name=setEnchantments}
+
+Sets the enchantments on this IItemStack.
+
+Returns: This itemStack if it is mutable, a new one with the enchantments otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.setEnchantments(enchantments as Integer[MCEnchantment]) as IItemStack
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | The new enchantments |
+
+
+:::
+
 :::group{name=setImmuneToFire}
 
 Sets if this IItemStack is immune to fire / lava.
@@ -646,6 +722,26 @@ Return Type: void
 
 :::
 
+:::group{name=shrink}
+
+Shrinks this IItemStack's stack size by the given amount, or 1 if no amount is given.
+
+Returns: This IItemStack if mutable, a new one with the new amount otherwise.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.shrink(amount as int) as IItemStack
+
+<item:minecraft:dirt>.shrink(2);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| amount | int | The amount to shrink by. | true | 1 |
+
+
+:::
+
 :::group{name=weight}
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
@@ -670,21 +766,26 @@ Adds an AttributeModifier to this IItemStack.
 
  Attributes added with this method will only appear on this specific IItemStack.
 
+ By defaults, adding a modifier will remove the default Attribute Modifiers on the Item, like the Diamond Chestplate's Armor and Toughness values.
+ When `preserveDefaults` is set to true (by default it is false.), the default Attribute Modifiers will be preserved when adding this modifier.
+ This means that if you were adding the `forge:nametag_distance` attribute to an Item, it would keep its default attributes (like Armor and Toughness values).
+
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-// IItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+// IItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[], preserveDefaults as boolean) as IItemStack
 
-<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>], true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. | false |  |
+| name | string | The name of the modifier. | false |  |
+| value | double | The value of the modifier. | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. | false |  |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. | false |  |
+| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
 
 
 :::
@@ -698,22 +799,27 @@ Adds an AttributeModifier to this IItemStack using a specific UUID.
 
  Attributes added with this method will only appear on this specific IItemStack.
 
+ By defaults, adding a modifier will remove the default Attribute Modifiers on the Item, like the Diamond Chestplate's Armor and Toughness values.
+ When `preserveDefaults` is set to true (by default it is false.), the default Attribute Modifiers will be preserved when adding this modifier.
+ This means that if you were adding the `forge:nametag_distance` attribute to an Item, it would keep its default attributes (like Armor and Toughness values).
+
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-// IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[]) as IItemStack
+// IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as MCEquipmentSlotType[], preserveDefaults as boolean) as IItemStack
 
-<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:dirt>.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslottype:chest>], true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. |
-| uuid | string | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| attribute | [Attribute](/vanilla/api/entity/Attribute) | The Attribute of the modifier. | false |  |
+| uuid | string | The unique identifier of the modifier to replace. | false |  |
+| name | string | The name of the modifier. | false |  |
+| value | double | The value of the modifier. | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | The operation of the modifier. | false |  |
+| slotTypes | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)[] | What slots the modifier is valid for. | false |  |
+| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
 
 
 :::
@@ -750,6 +856,27 @@ IItemStack.withDisplayName(text as MCTextComponent) as IItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | text | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | New name of the stack. |
+
+
+:::
+
+:::group{name=withEnchantment}
+
+Enchants this IItemStack with the given Enchantment.
+
+Returns: This itemStack if it is mutable, a new one with the enchantment added otherwise  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// IItemStack.withEnchantment(enchantment as MCEnchantment, level as int) as IItemStack
+
+<item:minecraft:dirt>.withEnchantment(<enchantment:minecraft:riptide>, 2);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | The enchantment to add. | false |  |
+| level | int | The level of the enchantment | true | 1 |
 
 
 :::
@@ -844,7 +971,7 @@ myIItemStack | other as IIngredient
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
 | displayName | string | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
-| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | false | No Description Provided |
+| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | true | No Description Provided |
 | food | [MCFood](/vanilla/api/food/MCFood)? | true | true | No Description Provided |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | getRepairCost | int | true | false | Gets the repair cost of the ItemStack, or 0 if no repair is defined. |

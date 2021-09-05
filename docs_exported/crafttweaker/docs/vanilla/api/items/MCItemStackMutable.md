@@ -19,6 +19,12 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 
 - [IItemStack](/vanilla/api/items/IItemStack)
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -237,6 +243,18 @@ MCItemStackMutable.getEnchantmentLevel(enchantment as MCEnchantment) as int
 |-----------|------|-------------|
 | enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | No Description Provided |
 
+
+:::
+
+:::group{name=getEnchantments}
+
+Return Type: Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+
+```zenscript
+// MCItemStackMutable.getEnchantments() as Integer[MCEnchantment]
+
+<item:minecraft:dirt>.mutable().getEnchantments();
+```
 
 :::
 

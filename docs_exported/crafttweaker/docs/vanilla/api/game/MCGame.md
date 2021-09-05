@@ -49,4 +49,5 @@ game.localize("gui.up");
 | items | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false | No Description Provided |
 | potions | Collection&lt;[MCPotion](/vanilla/api/potions/MCPotion)&gt; | true | false | No Description Provided |
 | recipeTypes | Collection&lt;[IRecipeManager](/vanilla/api/managers/IRecipeManager)&gt; | true | false | No Description Provided |
+| villagerProfessions | Collection&lt;[MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)&gt; | true | false | No Description Provided |
 

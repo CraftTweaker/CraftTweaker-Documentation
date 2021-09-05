@@ -376,10 +376,10 @@ Return Type: int
 Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState.
 
 Returns: The [ToolType](/vanilla/api/tool/ToolType) of this BlockState.  
-Return Type: [ToolType](/vanilla/api/tool/ToolType)
+Return Type: [ToolType](/vanilla/api/tool/ToolType)?
 
 ```zenscript
-// MCBlockState.getHarvestTool() as ToolType
+// MCBlockState.getHarvestTool() as ToolType?
 
 <blockstate:minecraft:grass>.getHarvestTool();
 ```
@@ -861,7 +861,7 @@ Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 | canProvidePower | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
 | commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  <code> <br />  <blockstate:minecraft:grass:snowy=true> <br />  </code> |
 | harvestLevel | int | true | false | Gets the harvest level of this BlockState. |
-| harvestTool | [ToolType](/vanilla/api/tool/ToolType) | true | false | Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState. |
+| harvestTool | [ToolType](/vanilla/api/tool/ToolType)? | true | false | Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState. |
 | hasTileEntity | boolean | true | false | Checks whether this BlockState has a [MCTileEntity](/vanilla/api/tileentity/MCTileEntity). |
 | isSlime | boolean | true | false | Checks if this BlockState is a Slime Block. |
 | isSolid | boolean | true | false | Checks whether this BlockState is solid. |

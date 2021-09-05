@@ -111,6 +111,18 @@ myMCEntity.changeDimension(world);
 
 :::
 
+:::group{name=dismount}
+
+Return Type: void
+
+```zenscript
+// MCEntity.dismount() as void
+
+myMCEntity.dismount();
+```
+
+:::
+
 :::group{name=extinguish}
 
 Extinguishes the Entity if it is on fire.
@@ -350,6 +362,20 @@ myMCEntity.getName();
 
 :::
 
+:::group{name=getPersistentData}
+
+Gets the persisted NBT tag.
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// MCEntity.getPersistentData() as MapData
+
+myMCEntity.getPersistentData();
+```
+
+:::
+
 :::group{name=getPosition}
 
 Gets this Entity's position in the world.
@@ -361,6 +387,18 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 // MCEntity.getPosition() as BlockPos
 
 myMCEntity.getPosition();
+```
+
+:::
+
+:::group{name=getPositionVec}
+
+Return Type: [MCVector3d](/vanilla/api/util/MCVector3d)
+
+```zenscript
+// MCEntity.getPositionVec() as MCVector3d
+
+myMCEntity.getPositionVec();
 ```
 
 :::
@@ -719,6 +757,32 @@ myMCEntity.onLivingFall(5, 5);
 
 :::
 
+:::group{name=remove}
+
+Removes the entity from the world.
+
+Return Type: void
+
+```zenscript
+// MCEntity.remove() as void
+
+myMCEntity.remove();
+```
+
+:::
+
+:::group{name=removePassengers}
+
+Return Type: void
+
+```zenscript
+// MCEntity.removePassengers() as void
+
+myMCEntity.removePassengers();
+```
+
+:::
+
 :::group{name=removeTag}
 
 Removes a tag from the Entity.
@@ -805,6 +869,29 @@ myMCEntity.setFire(5);
 
 :::
 
+:::group{name=setLocationAndAngles}
+
+Sets the location and looking angles of the entity.
+
+Return Type: void
+
+```zenscript
+// MCEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float) as void
+
+myMCEntity.setLocationAndAngles(5, 1, 9, 90, 120);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | The new x position. |
+| y | double | The new y position. |
+| z | double | The new z position. |
+| yaw | float | The new yaw value. |
+| pitch | float | The new pitch value. |
+
+
+:::
+
 :::group{name=setNoGravity}
 
 Sets this Entity to have no gravity.
@@ -862,6 +949,23 @@ myMCEntity.setPosition(5, 2, 59);
 
 :::
 
+:::group{name=setPositionAndUpdate}
+
+Return Type: void
+
+```zenscript
+MCEntity.setPositionAndUpdate(x as double, y as double, z as double) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | No Description Provided |
+| y | double | No Description Provided |
+| z | double | No Description Provided |
+
+
+:::
+
 :::group{name=setSilent}
 
 Sets if this Entity is silent or not.
@@ -898,6 +1002,22 @@ myMCEntity.setSneaking(true);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | value | boolean | The new sneaking value |
+
+
+:::
+
+:::group{name=startRiding}
+
+Return Type: boolean
+
+```zenscript
+MCEntity.startRiding(other as MCEntity, forced as boolean) as boolean
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| other | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | false |  |
+| forced | boolean | No Description Provided | true | false |
 
 
 :::
@@ -942,6 +1062,23 @@ myMCEntity.updateData({key: "value"});
 
 :::
 
+:::group{name=updatePersistentData}
+
+Updates the persisted data.
+
+Return Type: void
+
+```zenscript
+MCEntity.updatePersistentData(data as MapData) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
+:::
+
 
 ## Properties
 
@@ -957,7 +1094,9 @@ myMCEntity.updateData({key: "value"});
 | isWet | boolean | true | false | Checks if this Entity is wet. |
 | name | string | true | false | Gets the name of the Entity. |
 | onGround | [MCEntity](/vanilla/api/entity/MCEntity) | true | true | Sets if the Entity should be considered on the ground or not. |
+| persistedData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the persisted NBT tag. |
 | position | [BlockPos](/vanilla/api/util/BlockPos) | true | false | Gets this Entity's position in the world. |
+| positionVec | [MCVector3d](/vanilla/api/util/MCVector3d) | true | false | No Description Provided |
 | silent | boolean | true | true | Checks if this Entity is silent. <br />  <br />  Silent Entities do not play sounds. |
 | sneaking | boolean | true | true | Checks if this Entity is sneaking or not. |
 | spectator | boolean | true | false | Checks if this Entity is in spectator mode. |
