@@ -55,9 +55,9 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.fluid.IFluidStack;
 
 function addBarrelRecipe(itemIn as IItemStack, inputFluid as IFluidStack, outputFluid as IFluidStack, flags as int, time as int) as void {
-<recipetype:charcoal_pit:barrel>.addJSONRecipe("crafttweaker_barrelcustom_ + itemIn.registryName.path + time + inputFluid.registryName.path", {
+<recipetype:charcoal_pit:barrel>.addJSONRecipe("crafttweaker_barrelcustom_" + itemIn.registryName.path + time + inputFluid.registryName.path, {
   "item_in":{
-  	"item":" itemIn
+  	"item":" itemIn"
   },
   "fluid_in":{
   	"fluid": inputFluid.registryName,
