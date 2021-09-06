@@ -130,9 +130,9 @@ Return Type: void
 ElvenTrade.removeByModid(modid as string) as void
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| modid     | string | No Description Provided |
+| Parameter                | Type   | Description             |
+| ------------------------ | ------ | ----------------------- |
+| modid - mod que lo añade | string | No Description Provided |
 
 
 :::
@@ -145,10 +145,10 @@ Return Type: void
 ElvenTrade.removeByModid(modid as string, exclude as RecipeFilter) as void
 ```
 
-| Parameter | Type                                             | Description             |
-| --------- | ------------------------------------------------ | ----------------------- |
-| modid     | string                                           | No Description Provided |
-| excluir   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
+| Parameter                | Type                                             | Description             |
+| ------------------------ | ------------------------------------------------ | ----------------------- |
+| modid - mod que lo añade | string                                           | No Description Provided |
+| excluir                  | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::
