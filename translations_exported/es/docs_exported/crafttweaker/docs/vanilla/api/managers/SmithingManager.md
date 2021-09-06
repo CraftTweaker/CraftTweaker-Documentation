@@ -142,9 +142,9 @@ Return Type: void
 smithing.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | string | modid of the recipes to remove |
+| Parameter                | Type   | Description                    |
+| ------------------------ | ------ | ------------------------------ |
+| modid - mod que lo añade | string | modid of the recipes to remove |
 
 
 :::
@@ -161,10 +161,10 @@ Return Type: void
 smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type                                             | Description                            |
-| --------- | ------------------------------------------------ | -------------------------------------- |
-| modid     | string                                           | modid of the recipes to remove         |
-| excluir   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recetas para exluir de ser eliminadas. |
+| Parameter                | Type                                             | Description                            |
+| ------------------------ | ------------------------------------------------ | -------------------------------------- |
+| modid - mod que lo añade | string                                           | modid of the recipes to remove         |
+| excluir                  | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recetas para exluir de ser eliminadas. |
 
 
 :::
