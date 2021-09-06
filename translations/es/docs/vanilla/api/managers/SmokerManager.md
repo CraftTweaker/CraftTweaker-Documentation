@@ -65,9 +65,9 @@ smoker.removeByModid(modid as String);
 smoker.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| Parameter                | Type   | Description                    |
+| ------------------------ | ------ | ------------------------------ |
+| modid - mod que lo añade | String | modid of the recipes to remove |
 
 
 ### removeByName
