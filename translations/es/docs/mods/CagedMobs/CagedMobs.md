@@ -8,7 +8,7 @@ This mod adds the Mob Cages in which you can now imprison all entities and kill 
 
 With the use of the amazing CraftTweaker without much work you can add new recipes or modify already existing ones.
 
-## Entities
+## Entidades
 
 
 ### Importing the manager:
