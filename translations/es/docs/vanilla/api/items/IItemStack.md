@@ -106,32 +106,32 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ## Properties
 
-| Nombre         | Type                                                                | Has Getter | Has Setter |
-| -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
-| burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
-| damaged        | boolean                                                             | true       | false      |
-| displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
-| food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
-| getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| getRepairCost  | int                                                                 | true       | false      |
-| hasDisplayName | boolean                                                             | true       | false      |
-| hasEffect      | boolean                                                             | true       | false      |
-| hasTag         | boolean                                                             | true       | false      |
-| isCrossbow     | boolean                                                             | true       | false      |
-| isEnchantable  | boolean                                                             | true       | false      |
-| isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
-| maxDamage      | int                                                                 | true       | false      |
-| maxStackSize   | int                                                                 | true       | false      |
-| registryName   | String                                                              | true       | false      |
-| stackable      | boolean                                                             | true       | false      |
-| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| translationKey | String                                                              | true       | false      |
-| useDuration    | int                                                                 | true       | false      |
+| Nombre                            | Type                                                                | Has Getter | Has Setter |
+| --------------------------------- | ------------------------------------------------------------------- | ---------- | ---------- |
+| amount                            | int                                                                 | true       | false      |
+| burnTime                          | int                                                                 | true       | true       |
+| commandString                     | String                                                              | true       | false      |
+| damageable - es el objeto dañable | boolean                                                             | true       | false      |
+| damaged                           | boolean                                                             | true       | false      |
+| displayName                       | String                                                              | true       | false      |
+| empty                             | boolean                                                             | true       | false      |
+| food                              | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
+| getOrCreate                       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
+| getRepairCost                     | int                                                                 | true       | false      |
+| hasDisplayName                    | boolean                                                             | true       | false      |
+| hasEffect                         | boolean                                                             | true       | false      |
+| hasTag                            | boolean                                                             | true       | false      |
+| isCrossbow                        | boolean                                                             | true       | false      |
+| isEnchantable                     | boolean                                                             | true       | false      |
+| isEnchanted                       | boolean                                                             | true       | false      |
+| items                             | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| maxDamage                         | int                                                                 | true       | false      |
+| maxStackSize                      | int                                                                 | true       | false      |
+| registryName                      | String                                                              | true       | false      |
+| stackable                         | boolean                                                             | true       | false      |
+| tag                               | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
+| translationKey                    | String                                                              | true       | false      |
+| useDuration                       | int                                                                 | true       | false      |
 
 ## Operadores
 ### MUL
