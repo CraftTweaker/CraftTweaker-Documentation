@@ -1,4 +1,4 @@
-# Json
+# JSON
 
 Builder to create an arbitrary loot condition through a JSON-based structure.
 
