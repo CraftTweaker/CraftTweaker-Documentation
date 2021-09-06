@@ -25,9 +25,9 @@ Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 loadedMods.getMod("minecraft");
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| modid     | string | No Description Provided |
+| Parameter                | Type   | Description             |
+| ------------------------ | ------ | ----------------------- |
+| modid - mod que lo añade | string | No Description Provided |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: boolean
 loadedMods.isModLoaded("minecraft");
 ```
 
-| Parameter | Type   | Description              |
-| --------- | ------ | ------------------------ |
-| modid     | string | modificar para comprobar |
+| Parameter                | Type   | Description              |
+| ------------------------ | ------ | ------------------------ |
+| modid - mod que lo añade | string | modificar para comprobar |
 
 
 :::
