@@ -17,7 +17,7 @@ Simply put it somewhere in (preferable the top of) your file and you're set to g
 Remember **no crafttweaker scripts are allowed** in `#loader contenttweaker`as they run at different phases of the laod cycle!
 
 
-## Blocks
+## Bloques
 
 For creating blocks you need to create a [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder) object.  
 Once you have that you can set most simple properties in a builder pattern.
