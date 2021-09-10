@@ -18,16 +18,15 @@ This process needs to be repeated 2 times.
 When the whole process is complete, the recipe will create a Diamond and an Apple.
 
 ```zenscript
-<recipetype:create:sequenced_assembly>.registerRecipe("seq_test", (rb) => {
-    rb.transitionTo(<item:minecraft:glass>);
-    rb.require(<item:minecraft:arrow>);
-    rb.loops(2);
-    rb.addOutput(<item:minecraft:diamond>, 1);
-    rb.addOutput(<item:minecraft:apple>, 1);
-    rb.addStep(<recipetype:create:cutting>.factory(), (rb1) => rb1.duration(50));
-    rb.addStep(<recipetype:create:pressing>.factory(), (rb1) => rb1.duration(500));
-    rb.addStep(<recipetype:create:deploying>.factory(), (rb1) => rb1.require(<item:minecraft:dirt>));
-});
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_test")
+    .transitionTo(<item:minecraft:glass>)
+    .require(<item:minecraft:arrow>)
+    .loops(2)
+    .addOutput(<item:minecraft:diamond>, 1)
+    .addOutput(<item:minecraft:apple>, 1)
+    .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(50))
+    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(500))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:minecraft:dirt>)));
 ```
 
 #### Remove Recipe
