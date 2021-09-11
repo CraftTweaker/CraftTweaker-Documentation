@@ -55,13 +55,3 @@ The following script will remove all Compacting recipes that output Builders Tea
 
 <recipetype:create:mixing>.removeRecipe(<fluid:create:tea>);
 ```
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:mixing>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:mixing>.factory()
-```

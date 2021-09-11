@@ -25,13 +25,3 @@ The following script will remove all Crushing recipes that output a Crushed Zinc
 
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
 ```
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:crushing>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:crushing>.factory()
-```

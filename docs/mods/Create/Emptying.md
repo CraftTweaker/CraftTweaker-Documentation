@@ -35,13 +35,3 @@ The following script will remove all Compacting recipes that output Honey (Fluid
 
 <recipetype:create:emptying>.removeRecipe(<fluid:create:honey>);
 ```
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:emptying>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:emptying>.factory()
-```
