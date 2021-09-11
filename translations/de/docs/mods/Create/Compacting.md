@@ -6,6 +6,7 @@ Die Compacting Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IReci
 
 ## Methoden
 
+
 ### Wärmetypen
 
 Create hat drei verschiedene "Wärme"-Typen, die in Rezepten verwendet werden können. Das wären wie folgt:
