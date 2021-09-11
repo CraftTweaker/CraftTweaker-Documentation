@@ -25,4 +25,3 @@ The following script will remove all Splashing recipes that output Yellow Concre
 
 <recipetype:create:splashing>.removeRecipe(<item:minecraft:yellow_concrete>);
 ```
-
