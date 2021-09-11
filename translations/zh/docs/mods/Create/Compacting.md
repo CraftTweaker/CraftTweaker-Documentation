@@ -6,6 +6,7 @@ The Compacting mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRec
 
 ## 方法
 
+
 ### Heat Types
 
 Create has three different "heat" types that are used in recipes. which are the following:
