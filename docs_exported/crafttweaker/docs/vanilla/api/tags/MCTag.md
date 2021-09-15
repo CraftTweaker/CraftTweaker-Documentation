@@ -85,6 +85,25 @@ Return Type: void
 
 :::
 
+:::group{name=addTags}
+
+Adds the given tags to this tag. Creates the tag if it does not exist.
+
+Return Type: void
+
+```zenscript
+// MCTag.addTags(tags as stdlib.List<MCTag<T>>) as void
+
+<tag:items:forge:gems>.addTags(<tag:items:forge:rods>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | The tags to add. |
+
+
+:::
+
 :::group{name=asTagWithAmount}
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
