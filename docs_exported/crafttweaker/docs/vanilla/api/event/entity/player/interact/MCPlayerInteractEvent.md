@@ -37,6 +37,23 @@ myMCPlayerInteractEvent.getBlockPos();
 
 :::
 
+:::group{name=getCancellationResult}
+
+
+
+Returns: The EnumActionResult that will be returned to vanilla if the event is cancelled, instead of calling the relevant
+ method of the event. By default, this is PASS, meaning cancelled events will cause
+ the client to keep trying more interactions until something works.  
+Return Type: [ActionResultType](/vanilla/api/util/ActionResultType)
+
+```zenscript
+// MCPlayerInteractEvent.getCancellationResult() as ActionResultType
+
+myMCPlayerInteractEvent.getCancellationResult();
+```
+
+:::
+
 :::group{name=getFace}
 
 The face involved in this interaction.
@@ -79,12 +96,32 @@ myMCPlayerInteractEvent.getItemStack();
 
 :::
 
+:::group{name=setCancellationResult}
+
+Set the EnumActionResult that will be returned to vanilla if the event is cancelled, instead of calling the relevant method of the event.
+
+ Note that this only has an effect on RightClickBlockEvent, RightClickItemEvent, EntityInteractEvent.
+
+Return Type: void
+
+```zenscript
+MCPlayerInteractEvent.setCancellationResult(result as ActionResultType) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| result | [ActionResultType](/vanilla/api/util/ActionResultType) | No Description Provided |
+
+
+:::
+
 
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | blockPos | [BlockPos](/vanilla/api/util/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
+| cancellationResult | [ActionResultType](/vanilla/api/util/ActionResultType) | true | true |  |
 | face | [Direction](/vanilla/api/util/Direction)? | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
 | hand | [MCHand](/vanilla/api/util/MCHand) | true | false | No Description Provided |
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | true | false | The stack involved in this interaction. <br />  May be empty, but will never be null. |
