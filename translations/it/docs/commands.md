@@ -23,8 +23,11 @@ Questi sono i comandi più importanti:
 /ct dump recipeTypes
 ```
 ```plaintext
-/ct dumpBrackets
+/ct dump_brackets
 ```
 ```plaintext
 /ct help
+```
+```plaintext
+/ct recipes
 ```
