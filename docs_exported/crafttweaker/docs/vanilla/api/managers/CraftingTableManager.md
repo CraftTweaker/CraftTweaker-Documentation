@@ -81,6 +81,32 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:mi
 
 :::
 
+:::group{name=addShapedMirrored}
+
+Adds a mirrored shaped recipe to the crafting table.
+
+ This method lets you provide a [MirrorAxis](/vanilla/api/recipe/MirrorAxis), which can be used to set which axis the recipe is mirrored on.
+ Use cases are making a recipe only be mirrored vertically or only horizontally.
+
+Return Type: void
+
+```zenscript
+// CraftingTableManager.addShapedMirrored(recipeName as string, mirrorAxis as MirrorAxis, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+
+craftingTable.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| recipeName | string | name of the recipe to add. | false |  |
+| mirrorAxis | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | The axis that this recipe mirrored on. | false |  |
+| output | [IItemStack](/vanilla/api/items/IItemStack) | output [IItemStack](/vanilla/api/items/IItemStack) | false |  |
+| ingredients | [IIngredient](/vanilla/api/items/IIngredient)[][] | array of an array of [IIngredient](/vanilla/api/items/IIngredient) for inputs | false |  |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) for more advanced conditions | true |  |
+
+
+:::
+
 :::group{name=addShapeless}
 
 Adds a shapeless recipe to the crafting table

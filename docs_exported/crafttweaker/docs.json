@@ -341,6 +341,7 @@
           "TriState": "vanilla/api/predicate/TriState.md"
         },
         "Recipe": {
+          "MirrorAxis": "vanilla/api/recipe/MirrorAxis.md",
           "RecipeFilter": "vanilla/api/recipe/RecipeFilter.md",
           "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
