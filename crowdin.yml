@@ -5,8 +5,9 @@ files:
       - '*.sh'
       - '*.js'
       - '*.css'
+      - 'docs.json'
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
-  - source: ./docs.json
+  - source: ./docs/**/docs.json
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
     type: txt
   - source: /docs_exported
@@ -14,7 +15,7 @@ files:
       - '*.js'
       - '*.css'
       - '*.sh'
-      - /**/docs.json
+      - 'docs.json'
     translation: >-
       /translations_exported/%two_letters_code%/%original_path%/%original_file_name%
   - source: /docs_exported/**/docs.json
