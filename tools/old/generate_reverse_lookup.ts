@@ -1,16 +1,16 @@
 import {walk} from "./util";
 
-let result = require('dotenv').config();
-if (result.error) {
-    throw result.error;
-}
+// let result = require('dotenv').config();
+// if (result.error) {
+//     throw result.error;
+// }
 let fs = require("fs-extra");
 let path = require("path");
 
 
 
 const generate = async () => {
-    let reversed = walk(JSON.parse(fs.readFileSync(path.join(process.cwd(), "docs.json"), "utf-8"))["nav"], {}, [])
+    let reversed = walk(JSON.parse(fs.readFileSync(path.join(process.cwd(), "docs", "1.16", "en", "docs.json"), "utf-8"))["nav"], {}, [])
     fs.writeJSONSync(path.join(process.cwd(), "docs_reverse_lookup.json"), reversed);
     console.log(`Done building a reverse lookup`);
 };

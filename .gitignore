@@ -25,4 +25,6 @@ yarn-error.log*
 
 .idea
 
-docs_reverse_lookup.json
+docs/1.16/en/docs_reverse_lookup.json
+.vscode/
+.env

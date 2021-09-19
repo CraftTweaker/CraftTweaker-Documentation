@@ -59,7 +59,7 @@ export const walk = function (doc: object[], done: any, parents: string[]) {
         if (typeof val === "object") {
             done = walk(val, done, [...parents, docKey]);
         } else {
-            done[val] = parents
+            done[path.join(...val.split("/"))] = parents
         }
     }
     return done;
