@@ -1,4 +1,0 @@
-# Events
-
-Events are small announcements sent through minecraft whenever something happens (e.g. when a player crafted something).  
-You can use the [Event Manager](/Vanilla/Events/IEventManager/) to hook into these and let CraftTweaker execute code upon them.
