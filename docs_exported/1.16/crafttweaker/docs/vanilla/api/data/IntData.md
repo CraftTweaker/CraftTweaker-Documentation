@@ -31,6 +31,7 @@ new IntData(internal as int) as IntData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -42,6 +43,18 @@ new IntData(internal as int) as IntData
 
 ## Methods
 
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// IntData.asBoolean() as boolean
+
+8192.asBoolean();
+```
+
+:::
+
 :::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 8192.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+IntData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

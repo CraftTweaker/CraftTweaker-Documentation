@@ -19,6 +19,12 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 
 - [IItemStack](/vanilla/api/items/IItemStack)
 
+## Static Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -237,6 +243,18 @@ MCItemStackMutable.getEnchantmentLevel(enchantment as MCEnchantment) as int
 |-----------|------|-------------|
 | enchantment | [MCEnchantment](/vanilla/api/enchantment/MCEnchantment) | No Description Provided |
 
+
+:::
+
+:::group{name=getEnchantments}
+
+Return Type: int?[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+
+```zenscript
+// MCItemStackMutable.getEnchantments() as int?[MCEnchantment]
+
+<item:minecraft:dirt>.mutable().getEnchantments();
+```
 
 :::
 
@@ -600,7 +618,7 @@ myMCItemStackMutable | other as IIngredient
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
 | displayName | string | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
-| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | false | No Description Provided |
+| enchantments | int?[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | false | No Description Provided |
 | food | [MCFood](/vanilla/api/food/MCFood)? | true | true | No Description Provided |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | getRepairCost | int | true | false | Gets the repair cost of the ItemStack, or 0 if no repair is defined. |

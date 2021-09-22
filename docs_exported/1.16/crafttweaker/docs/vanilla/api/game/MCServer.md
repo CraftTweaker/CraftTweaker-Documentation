@@ -1,5 +1,7 @@
 # MCServer
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -26,7 +28,9 @@ Runs a command.
 Return Type: int
 
 ```zenscript
-MCServer.executeCommand(command as string) as int
+// MCServer.executeCommand(command as string) as int
+
+world.asServerWorld().server.executeCommand("time set day");
 ```
 
 | Parameter | Type | Description |
@@ -47,7 +51,9 @@ let a player send a command
 Return Type: int
 
 ```zenscript
-MCServer.executeCommand(command as string, player as MCPlayerEntity) as int
+// MCServer.executeCommand(command as string, player as MCPlayerEntity) as int
+
+world.asServerWorld().server.executeCommand("time set day", player);
 ```
 
 | Parameter | Type | Description |
@@ -68,7 +74,7 @@ Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 ```zenscript
 // MCServer.getWorld(location as MCResourceLocation) as MCServerWorld
 
-myMCServer.getWorld(<resource:minecraft:the_end>);
+world.asServerWorld().server.getWorld(<resource:minecraft:the_end>);
 ```
 
 | Parameter | Type | Description |

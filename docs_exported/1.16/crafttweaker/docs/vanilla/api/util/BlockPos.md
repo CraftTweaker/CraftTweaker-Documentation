@@ -10,6 +10,10 @@ import crafttweaker.api.util.BlockPos;
 ```
 
 
+## Extending MCVector3i
+
+BlockPos extends [MCVector3i](/vanilla/api/util/MCVector3i). That means all methods available in [MCVector3i](/vanilla/api/util/MCVector3i) are also available in BlockPos
+
 ## Static Methods
 
 :::group{name=getAllInBox}

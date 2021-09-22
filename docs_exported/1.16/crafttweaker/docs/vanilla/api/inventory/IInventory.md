@@ -66,6 +66,26 @@ myIInventory.count(<item:minecraft:dirt>);
 
 :::
 
+:::group{name=count}
+
+Counts how many ItemStacks in this inventory match the given predicate.
+
+Returns: The amount of ItemStacks in this inventory that match the predicate.  
+Return Type: int
+
+```zenscript
+// IInventory.count(predicate as Predicate<IItemStack>) as int
+
+myIInventory.count((stack) => stack.amount == 2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| predicate | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | The predicate to test against |
+
+
+:::
+
 :::group{name=decrStackSize}
 
 Decreases the stack size of the stack in the given slot by the given count.
@@ -138,6 +158,26 @@ myIInventory.getStackInSlot(2);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | index | int | The index to get the stack from. |
+
+
+:::
+
+:::group{name=getStacks}
+
+Gets the ItemStacks in this inventory that match the given predicate.
+
+Returns: A list of IItemStacks that match the given predicate.  
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
+
+```zenscript
+// IInventory.getStacks(predicate as Predicate<IItemStack>) as stdlib.List<IItemStack>
+
+myIInventory.getStacks((stack) => stack.amount == 2;);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| predicate | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | The predicate to test against. |
 
 
 :::

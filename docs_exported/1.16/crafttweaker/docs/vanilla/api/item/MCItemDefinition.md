@@ -28,6 +28,38 @@ myMCItemDefinition.getDefaultInstance();
 
 :::
 
+:::group{name=getTags}
+
+Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt;&gt;
+
+```zenscript
+// MCItemDefinition.getTags() as stdlib.List<MCTag<MCItemDefinition>>
+
+myMCItemDefinition.getTags();
+```
+
+:::
+
+:::group{name=isIn}
+
+Checks if this item is in the Given tag.
+
+Returns: True if the tag contains this item.  
+Return Type: boolean
+
+```zenscript
+// MCItemDefinition.isIn(tag as MCTag<MCItemDefinition>) as boolean
+
+myMCItemDefinition.isIn(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tag | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt; | The tag to check against. |
+
+
+:::
+
 
 ## Properties
 

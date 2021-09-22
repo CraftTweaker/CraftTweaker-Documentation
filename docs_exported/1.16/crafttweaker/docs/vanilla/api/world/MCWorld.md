@@ -1,6 +1,6 @@
 # MCWorld
 
-Worlds represent a dimension within the game. They are used to interact with 
+Worlds represent a dimension within the game. They are used to interact with
  the blocks, mobs, and other variables within that dimension.
 
 ## Importing the class

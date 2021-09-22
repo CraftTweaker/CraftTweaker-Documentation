@@ -31,6 +31,7 @@ new LongData(internal as long) as LongData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -42,6 +43,18 @@ new LongData(internal as long) as LongData
 
 ## Methods
 
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongData.asBoolean() as boolean
+
+800000000.asBoolean();
+```
+
+:::
+
 :::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 800000000.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+LongData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

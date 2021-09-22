@@ -36,11 +36,24 @@ new MapData(map as IData[string]) as MapData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [IData](/vanilla/api/data/IData)[string] | true |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// MapData.asBoolean() as boolean
+
+{Hello : "World", Somewhere: "Over the rainbow"}.asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 {Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MapData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 
@@ -106,10 +135,10 @@ Return Type: boolean
 Retrieves the value associated with the key
 
 Returns: The value if present, null otherwise  
-Return Type: [IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)?
 
 ```zenscript
-// MapData.getAt(key as string) as IData
+// MapData.getAt(key as string) as IData?
 
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
@@ -180,10 +209,10 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 Adds sets the value for the given key or creates a new entry if it did not exist before.
 
 Returns: The previous value if present, null otherwise  
-Return Type: [IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)?
 
 ```zenscript
-// MapData.put(key as string, value as IData) as IData
+// MapData.put(key as string, value as IData) as IData?
 
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```

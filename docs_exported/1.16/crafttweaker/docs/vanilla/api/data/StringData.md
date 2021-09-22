@@ -31,10 +31,23 @@ new StringData(internal as string) as StringData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// StringData.asBoolean() as boolean
+
+new StringData("Hello").asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -45,6 +58,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 new StringData("Hello").asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+StringData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

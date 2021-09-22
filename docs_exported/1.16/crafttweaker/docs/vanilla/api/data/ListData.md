@@ -36,11 +36,24 @@ new ListData(list as stdlib.List<IData>) as ListData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ListData.asBoolean() as boolean
+
+["Hello", "World", "!"].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 ["Hello", "World", "!"].asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ListData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

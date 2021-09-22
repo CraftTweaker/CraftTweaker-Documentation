@@ -31,10 +31,23 @@ new LongArrayData(internal as long[]) as LongArrayData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// LongArrayData.asBoolean() as boolean
+
+[100000, 800000, 50000].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -45,6 +58,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 [100000, 800000, 50000].asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+LongArrayData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

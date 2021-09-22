@@ -31,10 +31,23 @@ new ByteArrayData(internal as byte[]) as ByteArrayData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ByteArrayData.asBoolean() as boolean
+
+[4, 1, 2].asBoolean();
+```
+
+:::
 
 :::group{name=asCollection}
 
@@ -45,6 +58,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 [4, 1, 2].asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ByteArrayData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

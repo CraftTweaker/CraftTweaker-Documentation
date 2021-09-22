@@ -29,5 +29,6 @@ Return Type: string
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
 | name | string | true | false | No Description Provided |
 

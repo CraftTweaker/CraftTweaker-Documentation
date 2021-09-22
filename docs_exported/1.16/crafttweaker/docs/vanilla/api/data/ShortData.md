@@ -31,6 +31,7 @@ new ShortData(internal as short) as ShortData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -42,6 +43,18 @@ new ShortData(internal as short) as ShortData
 
 ## Methods
 
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ShortData.asBoolean() as boolean
+
+1058.asBoolean();
+```
+
+:::
+
 :::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 1058.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ShortData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

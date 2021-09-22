@@ -31,6 +31,7 @@ new ByteData(internal as byte) as ByteData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| boolean | false |
 | byte | false |
 | double | false |
 | float | false |
@@ -42,6 +43,18 @@ new ByteData(internal as byte) as ByteData
 
 ## Methods
 
+:::group{name=asBoolean}
+
+Return Type: boolean
+
+```zenscript
+// ByteData.asBoolean() as boolean
+
+4.asBoolean();
+```
+
+:::
+
 :::group{name=asCollection}
 
 Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
@@ -51,6 +64,22 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 
 4.asCollection();
 ```
+
+:::
+
+:::group{name=asFormattedText}
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+ByteData.asFormattedText(indentation as string, indentDepth as int) as MCTextComponent
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| indentation | string | No Description Provided |
+| indentDepth | int | No Description Provided |
+
 
 :::
 

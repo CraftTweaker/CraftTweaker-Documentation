@@ -32,6 +32,7 @@ MCAnvilUpdateEvent extends [MCEvent](/vanilla/api/event/MCEvent). That means all
 | left | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
 | levelCost | int | true | true | No Description Provided |
 | materialCost | int | true | true | No Description Provided |
+| name | string? | true | false | No Description Provided |
 | output | [IItemStack](/vanilla/api/items/IItemStack) | true | true | No Description Provided |
 | player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)? | true | false | No Description Provided |
 | right | [IItemStack](/vanilla/api/items/IItemStack) | true | false | No Description Provided |
