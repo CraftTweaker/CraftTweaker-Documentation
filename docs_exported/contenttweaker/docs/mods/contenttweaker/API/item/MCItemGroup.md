@@ -38,6 +38,7 @@ Return Type: string
 
 Sets the image name of the Background that is used for this tab in the creative menu
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
@@ -55,6 +56,7 @@ MCItemGroup.setBackgroundImageName(texture as string) as MCItemGroup
 
 Removes the scrollbar of the item Group in the creative inventory
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
@@ -69,6 +71,7 @@ Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 Removes the title of the item Group in the creative inventory
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript

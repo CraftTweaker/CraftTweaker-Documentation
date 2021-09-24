@@ -2,7 +2,7 @@
 
 The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br>
  Once you created it you can set various properties which will be outlined by the separate methods.
- <p>
+ 
  You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can).
  To tell CoT that you want the block to appear ingame you need to call [this](.)#build(String) and specify a valid resource location path.
 
@@ -28,10 +28,10 @@ Creates a new BlockBuilder. <br />  Remember that this will _not_ create a new b
 new BlockBuilder(material as MCMaterial) as BlockBuilder
 new BlockBuilder(<blockmaterial:earth>);
 ```
-
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | material | [MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true | <blockmaterial:iron> |
+
 
 
 ## Methods
@@ -39,11 +39,12 @@ new BlockBuilder(<blockmaterial:earth>);
 :::group{name=notSolid}
 
 Instructs CoT that this block is not solid.
- <p>
+ 
  This is required if your model is not a full block (16x16x16).
  It is also required if your model is see-through (like glass).
  Set this if your block creates some X-Ray effects when it's placed.
 
+Returns: This builder, used for chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -58,6 +59,7 @@ myBlockBuilder.notSolid();
 
 Sets that the block needs a tool to harvest.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -73,6 +75,7 @@ myBlockBuilder.setRequiresTool();
 Sets the block's hardness and resistance levels.
  Unlike the other method, this one only accepts one parameter and will use that value for both properties.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -93,6 +96,7 @@ myBlockBuilder.withHardnessAndResistance(0.5f);
 Sets the block's hardness and resistance levels.
  Unlike the other method, this one allows you to set each property one to a separate value.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -113,6 +117,7 @@ myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 
 Sets the mining level required to mine this block
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -132,6 +137,7 @@ myBlockBuilder.withHarvestLevel(3);
 
 Sets the tool required to harvest this block
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -151,6 +157,7 @@ myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 
 Sets the item group in which this block will appear
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -170,6 +177,7 @@ myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 
 Sets the block's light value.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -190,6 +198,7 @@ myBlockBuilder.withLightValue(15);
 Will instruct CoT to override this block's loot table with the one of the block Provided.
  Currently this will still create a loot table entry, though it will be ignored by the game.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -210,6 +219,7 @@ myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 Sets the maximum Stack size that this block can have when in your inventory.
  Will be 64 if unchanged.
 
+Returns: This builder, used for chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -229,6 +239,7 @@ myBlockBuilder.withMaxStackSize(16);
 
 Allows you to set the rarity of this block.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -249,6 +260,7 @@ myBlockBuilder.withRarity("UNCOMMON");
 Sets the block's render type.
  Will also set the block as [this](.)#notSolid() if the argument is not solid
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -268,6 +280,7 @@ myBlockBuilder.withRenderType(BlockRenderType.TRANSLUCENT);
 
 Sets the slipperiness.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -287,6 +300,7 @@ myBlockBuilder.withSlipperiness(0.5f);
 
 Sets that the block should be ticked randomly.
 
+Returns: The builder, used for method chaining.  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -303,6 +317,7 @@ Sets the specific type of this block.
  After this method is called the builder's context will switch to the more provided type builder.
  That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
 
+Returns: A builder with the given block.  
 Return Type: T
 
 ```zenscript
@@ -321,6 +336,7 @@ BlockBuilder.withType<T : BlockTypeBuilder>() as T
 Will instruct CoT that this block will not have any loot entries.
  Currently this will still create a loot table entry, though it will be ignored by the game.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
@@ -336,6 +352,7 @@ myBlockBuilder.withoutDrops();
 Instructs CoT that this block will does not block movement.
  Will also set the block as [this](.)#notSolid()
 
+Returns: This builder, used for chaining  
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
