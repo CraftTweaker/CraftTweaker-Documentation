@@ -83,6 +83,7 @@
         },
         "Entity": {
           "Attribute": "vanilla/api/entity/Attribute.md",
+          "AttributeInstance": "vanilla/api/entity/AttributeInstance.md",
           "AttributeModifier": "vanilla/api/entity/AttributeModifier.md",
           "AttributeOperation": "vanilla/api/entity/AttributeOperation.md",
           "EntityIngredient": "vanilla/api/entity/EntityIngredient.md",
