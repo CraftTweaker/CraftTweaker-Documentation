@@ -173,6 +173,26 @@ myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 
 :::
 
+:::group{name=withJumpFactor}
+
+Sets the jump factor.
+
+Returns: This builder, used for method chaining  
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withJumpFactor(jumpFactorIn as float) as BlockBuilder
+
+myBlockBuilder.withJumpFactor(2.5f);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| jumpFactorIn | float | The value to set |
+
+
+:::
+
 :::group{name=withLightValue}
 
 Sets the block's light value.
@@ -296,6 +316,26 @@ myBlockBuilder.withSlipperiness(0.5f);
 
 :::
 
+:::group{name=withSpeedFactor}
+
+Sets the speed factor.
+
+Returns: This builder, used for method chaining  
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withSpeedFactor(speedFactorIn as float) as BlockBuilder
+
+myBlockBuilder.withSpeedFactor(2.5f);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| speedFactorIn | float | The value to set |
+
+
+:::
+
 :::group{name=withTickRandomly}
 
 Sets that the block should be ticked randomly.
@@ -328,6 +368,21 @@ BlockBuilder.withType<T : BlockTypeBuilder>() as T
 |-----------|------|-------------|
 | T | [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) | The Type of block that this should become |
 
+
+:::
+
+:::group{name=withVariableOpacity}
+
+Sets that the block has variable opacity.
+
+Returns: The builder, used for method chaining.  
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.withVariableOpacity() as BlockBuilder
+
+myBlockBuilder.withVariableOpacity();
+```
 
 :::
 
