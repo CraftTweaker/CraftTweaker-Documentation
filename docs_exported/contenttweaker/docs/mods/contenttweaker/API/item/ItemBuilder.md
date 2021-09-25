@@ -93,14 +93,14 @@ Returns: This builder, used for method chaining
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-// ItemBuilder.withItemGroup(itemGroup as MCItemGroup) as ItemBuilder
+// ItemBuilder.withItemGroup(itemGroup as ItemGroup) as ItemBuilder
 
 new ItemBuilder().withItemGroup(<itemGroup:misc>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| itemGroup | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| itemGroup | [ItemGroup](/vanilla/api/item/ItemGroup) | The item group this item should appear in |
 
 
 :::

@@ -48,7 +48,7 @@ Return Type: [BlockBuilderFalling](/mods/contenttweaker/API/block/basic/BlockBui
 ```zenscript
 // BlockBuilderFalling.withDustColor(dustFunc as IFallingBlockDustColorSupplier) as BlockBuilderFalling
 
-new BlockBuilder().withType<BlockBuilderFalling>().withDustColor(((thisBlock, state, reader, pos) => 0xFF55FF));
+new BlockBuilder().withType<BlockBuilderFalling>().withDustColor((thisBlock, state, reader, pos) => 0xFF55FF);
 ```
 
 | Parameter | Type | Description |

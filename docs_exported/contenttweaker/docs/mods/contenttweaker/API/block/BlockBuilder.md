@@ -161,14 +161,14 @@ Returns: This builder, used for method chaining
 Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-// BlockBuilder.withItemGroup(group as MCItemGroup) as BlockBuilder
+// BlockBuilder.withItemGroup(group as ItemGroup) as BlockBuilder
 
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| group | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| group | [ItemGroup](/vanilla/api/item/ItemGroup) | The group to set |
 
 
 :::
