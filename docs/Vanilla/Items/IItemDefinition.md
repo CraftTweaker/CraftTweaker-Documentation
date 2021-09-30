@@ -22,18 +22,18 @@ val itemDefinitionList = game.items;
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                             |
-|--------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| id                 | Returns the item ID                                                                                  | string                                                  |
-| name               | Returns the unlocalized item Name                                                                    | string                                                  |
-| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\> |
-| owner              | Returns the mod name that this item belongs to.                                                      | string                                                  |
-| defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                                |
-| creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)      |
-| creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)    |
-| canItemEditBlocks  |                                                                                                      | bool                                                    |
-| itemEnchantability |                                                                                                      | int                                                     |
-| subItems           |                                                                                                      | List<[IItemStack](/Vanilla/Items/IItemStack/)\>                         |
+| ZenGetter          | What does it do                                                                                                                                                              | Return Type                                             |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| id                 | Returns the item ID                                                                                                                                                          | string                                                  |
+| name               | Returns the unlocalized item Name                                                                                                                                            | string                                                  |
+| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item.                                                                         | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\> |
+| owner              | Returns the mod name that this item belongs to.                                                                                                                              | string                                                  |
+| defaultInstance    |                                                                                                                                                                              | [IItemStack](/Vanilla/Items/IItemStack/)                                |
+| creativeTab        |                                                                                                                                                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)      |
+| creativeTabs       |                                                                                                                                                                              | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)    |
+| canItemEditBlocks  |                                                                                                                                                                              | bool                                                    |
+| itemEnchantability |                                                                                                                                                                              | int                                                     |
+| subItems           | Returns a list of all subitems that are registered to this item. (like how potions have other items). This is not guaranteed to return the correct list for mods on a server.| List<[IItemStack](/Vanilla/Items/IItemStack/)\>                         |
 
 
 ### ZenSetters and other void-Methods
@@ -48,5 +48,5 @@ val itemDefinitionList = game.items;
 
 - `def.makeStack(meta);` Creates an [IItemStack](/Vanilla/Items/IItemStack/) with the given metadata. Metadata is an int and OPTIONAL.
 - `def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level
-- `def.getSubItems(creativeTab);` Returns a List<[IItemStack](/Vanilla/Items/IItemStack/)\> with all subitems for the given [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/).
+- `def.getSubItems(creativeTab);` Returns a List<[IItemStack](/Vanilla/Items/IItemStack/)\> with all subitems for the given [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/). This is not guaranteed to return the correct list for mods on a server.
 - `def.getItemBurntime(item);` Returns an int representing either -1 (Vanilla logic will apply), 0 (Not smeltable) or the items burntime
