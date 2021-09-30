@@ -268,6 +268,36 @@ myIngredientList.onlyDamaged();
 
 :::
 
+:::group{name=onlyDamagedAtLeast}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.onlyDamagedAtLeast(minDamage as int) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| minDamage | int | No Description Provided |
+
+
+:::
+
+:::group{name=onlyDamagedAtMost}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.onlyDamagedAtMost(maxDamage as int) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| maxDamage | int | No Description Provided |
+
+
+:::
+
 :::group{name=onlyIf}
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
