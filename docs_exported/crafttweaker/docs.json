@@ -217,6 +217,14 @@
           },
           "Block": {
             "BlockItem": "vanilla/api/item/block/BlockItem.md"
+          },
+          "Sword": {
+            "SwordItem": "vanilla/api/item/sword/SwordItem.md"
+          },
+          "Tiered": {
+            "IItemTier": "vanilla/api/item/tiered/IItemTier.md",
+            "ItemTier": "vanilla/api/item/tiered/ItemTier.md",
+            "TieredItem": "vanilla/api/item/tiered/TieredItem.md"
           }
         },
         "Items": {
