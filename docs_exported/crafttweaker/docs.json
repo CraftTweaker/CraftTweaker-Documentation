@@ -395,6 +395,12 @@
           "MCVector3i": "vanilla/api/util/MCVector3i.md",
           "NameUtils": "vanilla/api/util/NameUtils.md",
           "Random": "vanilla/api/util/Random.md",
+          "Math": {
+            "BlockRayTraceResult": "vanilla/api/util/math/BlockRayTraceResult.md",
+            "EntityRayTraceResult": "vanilla/api/util/math/EntityRayTraceResult.md",
+            "RayTraceResult": "vanilla/api/util/math/RayTraceResult.md",
+            "RayTraceResultType": "vanilla/api/util/math/RayTraceResultType.md"
+          },
           "Text": {
             "MCStyle": "vanilla/api/util/text/MCStyle.md",
             "MCTextComponent": "vanilla/api/util/text/MCTextComponent.md",
