@@ -115,7 +115,7 @@ ItemStages.restrict(<item:minecraft:gold_ingot>, "adv_one").preventUsing(false);
 ```
 
 ### Allowing in JEI
-By default restricted items are hidden in JEI if JEI is installed. This can be disabled by setting hiddenInJEI to false.
+By default restricted items are hidden in JEI, if JEI is installed. This can be disabled by setting hiddenInJEI to false.
 
 ```zenscript
 ItemStages.restrict(<item:minecraft:gold_ingot>, "adv_one").setHiddenInJEI(false);
