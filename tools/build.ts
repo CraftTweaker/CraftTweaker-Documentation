@@ -4,6 +4,7 @@ import path from "path";
 import {GeneratedDocsMeta} from "./types";
 import merge from "deepmerge";
 import download_translations from "./download_translations.js";
+import {generateIndex} from "./search_index.js";
 
 async function prepareBuildFolders(): Promise<void> {
     fs.mkdirSync(getOutDir(), {recursive: true});
@@ -98,12 +99,21 @@ async function finalize(): Promise<void> {
         versions.forEach(version => {
             const verlangDir = path.join(docsOutDir, version, language);
             fs.mkdirsSync(verlangDir)
-            fs.copySync(path.join(outDir, language,version), verlangDir);
+            fs.copySync(path.join(outDir, language, version), verlangDir);
         })
     })
     const finalDir = path.join(process.cwd(), "site", "docs")
     clearDirectory(finalDir);
     fs.copySync(docsOutDir, finalDir)
+}
+
+async function generateIndexes(): Promise<void> {
+    getLanguages(getOutDir()).forEach(language => {
+
+        getVersionsInDir(path.join(getOutDir(), language)).forEach(version => {
+            generateIndex(path.join(getOutDir(), language, version, "content"))
+        })
+    })
 }
 
 await clearDirectory("build");
@@ -116,5 +126,7 @@ if (getCrowdinToken().length > 0) {
 }
 await mergeExported();
 await supplementDocsMeta();
+
+await generateIndexes();
 
 await finalize();

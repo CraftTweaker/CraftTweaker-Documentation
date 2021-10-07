@@ -23,9 +23,7 @@ export function clearDirectory(dir: string): void {
 export async function downloadFile(fileUrl: string, outputLocationPath: string): Promise<unknown> {
     fs.mkdirSync(path.dirname(outputLocationPath), {recursive: true});
     const writer = createWriteStream(outputLocationPath);
-    return axios({
-        method: 'get',
-        url: fileUrl,
+    return axios.get<stream>(fileUrl, {
         responseType: 'stream',
     }).then(async response => {
         response.data.pipe(writer);
@@ -204,14 +202,22 @@ export function checkForDuplicates(src: string, dst: string, recursive: boolean)
     return dupes;
 }
 
-export function listFiles(dir: string, fileList: string[], recursive: boolean): string[] {
+
+export function listFiles(dir: string, fileList: string[], recursive: boolean, extensionFilters: string[] = []): string[] {
+    const shouldFilter = extensionFilters.length > 0;
     const files = fs.readdirSync(dir);
     fileList = fileList || [];
     files.forEach(function (file: string) {
         if (recursive && fs.statSync(path.join(dir, file)).isDirectory()) {
-            fileList = listFiles(path.join(dir, file) + '/', fileList, recursive);
+            fileList = listFiles(path.join(dir, file) + '/', fileList, recursive, extensionFilters);
         } else {
-            fileList.push(path.join(dir, file));
+            if (!shouldFilter) {
+                fileList.push(path.join(dir, file));
+            } else {
+                for (const filter of extensionFilters) {
+                    if (file.endsWith("." + filter)) fileList.push(path.join(dir, file))
+                }
+            }
         }
     });
     return fileList;

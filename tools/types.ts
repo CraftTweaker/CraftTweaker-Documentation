@@ -10,7 +10,7 @@ export type Nav = { [key: string]: Nav };
  */
 export interface DocsMeta {
     ownerModId: string;
-    path?: string;
+    path: string;
     searchTerms: string[];
     shortDescription?: string;
     since?: string;

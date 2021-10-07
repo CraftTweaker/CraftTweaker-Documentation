@@ -8,6 +8,31 @@ import crafttweaker.api.entity.AttributeModifier;
 ```
 
 
+## Static Methods
+
+:::group{name=create}
+
+Creates a new AttributeModifier
+
+Returns: the new attribute modifier  
+Return Type: [AttributeModifier](/vanilla/api/entity/AttributeModifier)
+
+```zenscript
+// AttributeModifier.create(name as string, amount as double, operation as AttributeOperation, uuid as string) as AttributeModifier
+
+AttributeModifier.create("My New Attribute Modifier", 11.4, AttributeOperation.ADDITION, "6d79f9c1-a4ab-4e72-a0ab-71870b89b4c6");
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| name | string | the name of this attribute modifier | false |  |
+| amount | double | the amount of this attribute modifier | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | the operation of this attribute modifier. | false |  |
+| uuid | string | the uuid of this attribute modifier, if omitted, it will use a random one. | true |  |
+
+
+:::
+
 ## Methods
 
 :::group{name=getAmount}

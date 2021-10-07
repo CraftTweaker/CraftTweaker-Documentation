@@ -317,6 +317,28 @@ BracketHandlers.getItem("minecraft:dirt");
 
 :::
 
+:::group{name=getItemGroup}
+
+Gets an ItemGroup by name. <br />  Will throw an error if the group could not be found!
+
+Returns: The found ItemGroup  
+Return Type: [ItemGroup](/vanilla/api/item/ItemGroup)
+
+```zenscript
+<itemgroup:misc>
+
+// BracketHandlers.getItemGroup(tokens as string) as ItemGroup
+
+BracketHandlers.getItemGroup(misc);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The ItemGroup's name. |
+
+
+:::
+
 :::group{name=getPotion}
 
 Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
