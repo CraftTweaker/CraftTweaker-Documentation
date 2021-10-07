@@ -124,7 +124,7 @@ ItemStages.restrict(<item:minecraft:gold_ingot>, "adv_one").setHiddenInJEI(false
 ## Tips
 
 ### Improve performance by lowering restrictions.
-Every restriction you create will have a minor performance impact. The game can easily handle dozens or even hundreds of restrictions however the less you have the smoother the game will run and the more you can do elsewhere. For example imagine you have 100 items that you want to restrict to stage one. A simple way to do this would be to create 100 new restrictions using a loop however this is not very performant. The better way to do this would be to create a new Item tag and add these items to that tag. You can then stage the entire tag. Alternatively you can create one restriction and add additional items to it directly using the restrict method.
+Every restriction you create will have a minor performance impact. The game can easily handle dozens or even hundreds of restrictions however the less you have the smoother the game will run and the more you can do elsewhere. For example imagine you have 100 items that you want to restrict to stage one. A simple way to do this would be to create 100 new restrictions using a loop, however this is not very performant. The better way to do this would be to create a new Item tag and add these items to that tag. You can then stage the entire tag. Alternatively you can create one restriction and add additional items to it directly using the restrict method.
 
 ```zenscript
 ItemStages.restrict(<item:minecraft:gold_ingot>, "adv_one").restrict(<item:minecraft:stick>).restrict(<item:minecraft:diamond>);
