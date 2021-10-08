@@ -1,6 +1,6 @@
 ::requiredMod[ItemStages]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/item-stages}
 
-ItemStages is an addon for [GameStages]() that allows you to create custom restrictions for items as part of a GameStages progression system. It is highly recommended to read the [Introduction to GameStages](mods/GameStages/Introduction/) page before you try to use this mod.
+ItemStages is an addon for [GameStages](https://www.curseforge.com/minecraft/mc-mods/game-stages) that allows you to create custom restrictions for items as part of a GameStages progression system. It is highly recommended to read the [Introduction to GameStages](mods/GameStages/Introduction/) page before you try to use this mod.
 
 To use ItemStages in your script you must import the ItemStages class in your script.
 
