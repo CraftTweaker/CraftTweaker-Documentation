@@ -127,9 +127,6 @@
         "The StageHelper": "mods/GameStages/StageHelper.md",
         "GameStage Events": "mods/GameStages/GameStageEvents.md"
       },
-      "Item Stages": {
-        "Item Stages": "mods/ItemStages/ItemStages.md"
-      },
       "Immersive Engineering": {
         "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
         "Arc Furnace": "mods/ImmersiveEngineering/ArcFurnace.md",
@@ -149,6 +146,9 @@
       },
       "InitialInventory": {
         "InitialInventory": "mods/InitialInventory/InitialInventory.md"
+      },
+      "Item Stages": {
+        "Item Stages": "mods/ItemStages/ItemStages.md"
       },
       "JEITweaker": {
         "JEITweaker": "mods/JEITweaker/JEITweaker.md"
