@@ -54,8 +54,9 @@ Return Type: void
 | input | [IIngredient](/vanilla/api/items/IIngredient) | Input item | false |  |
 | mana | int | Required mana | false |  |
 | catalyst | [StateIngredient](/mods/Botania/StateIngredient) | Optional catalyst required under the mana pool for this recipe to craft | true |  |
-| group | string | Optional recipe group, use if you want to replace a grouped recipe in the lexicon | true | test |
+| group | string | Optional recipe group, use if you want to replace a grouped recipe in the lexicon | true |  |
 | function | [RecipeFunctionSingle](/vanilla/api/recipe/RecipeFunctionSingle) | Optional function modifying the output | true |  |
+
 
 :::
 
@@ -182,6 +183,22 @@ ManaInfusion.removeByRegex(regex as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | No Description Provided |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Return Type: void
+
+```zenscript
+ManaInfusion.removeByRegex(regex as string, exclude as RecipeFilter) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| regex | string | No Description Provided |
+| exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::
