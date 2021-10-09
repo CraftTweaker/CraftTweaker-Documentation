@@ -1,4 +1,4 @@
-# TerraPlate
+# PetalApothecary
 
 
 
@@ -8,12 +8,12 @@ This class was added by a mod with mod-id `botania`. So you need to have this mo
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.botania.TerraPlate;
+import mods.botania.PetalApothecary;
 ```
 
 
 ## Implemented Interfaces
-TerraPlate implements the following interfaces. That means all methods defined in these interfaces are also available in TerraPlate
+PetalApothecary implements the following interfaces. That means all methods defined in these interfaces are also available in PetalApothecary
 
 - [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
@@ -24,7 +24,7 @@ TerraPlate implements the following interfaces. That means all methods defined i
 Return Type: void
 
 ```zenscript
-TerraPlate.addJSONRecipe(name as string, data as IData) as void
+PetalApothecary.addJSONRecipe(name as string, data as IData) as void
 ```
 
 | Parameter | Type | Description |
@@ -37,21 +37,20 @@ TerraPlate.addJSONRecipe(name as string, data as IData) as void
 
 :::group{name=addRecipe}
 
-Adds a terra plate recipe
+Adds the specified petal apothecary recipe.
 
 Return Type: void
 
 ```zenscript
-// TerraPlate.addRecipe(name as string, output as IItemStack, mana as int, inputs as IIngredient[]) as void
+// PetalApothecary.addRecipe(name as string, output as IItemStack, inputs as IIngredient[]) as void
 
-<recipetype:botania:terra_plate>.addRecipe("terra_plate_test", <item:minecraft:diamond>, 20000, <item:minecraft:dirt>, <item:minecraft:cobblestone>, <item:minecraft:gravel>);
+<recipetype:botania:petal_apothecary>.addRecipe("rune_altar_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:apple>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | Name of the recipe to add |
 | output | [IItemStack](/vanilla/api/items/IItemStack) | Output item |
-| mana | int | Recipe mana cost |
 | inputs | [IIngredient](/vanilla/api/items/IIngredient)[] | Input items |
 
 
@@ -62,9 +61,9 @@ Return Type: void
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-// TerraPlate.getAllRecipes() as stdlib.List<WrapperRecipe>
+// PetalApothecary.getAllRecipes() as stdlib.List<WrapperRecipe>
 
-<recipetype:botania:terra_plate>.getAllRecipes();
+<recipetype:botania:petal_apothecary>.getAllRecipes();
 ```
 
 :::
@@ -74,7 +73,7 @@ Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&g
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
-TerraPlate.getRecipeByName(name as string) as WrapperRecipe
+PetalApothecary.getRecipeByName(name as string) as WrapperRecipe
 ```
 
 | Parameter | Type | Description |
@@ -89,9 +88,9 @@ TerraPlate.getRecipeByName(name as string) as WrapperRecipe
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
 
 ```zenscript
-// TerraPlate.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+// PetalApothecary.getRecipeMap() as WrapperRecipe[MCResourceLocation]
 
-<recipetype:botania:terra_plate>.getRecipeMap();
+<recipetype:botania:petal_apothecary>.getRecipeMap();
 ```
 
 :::
@@ -101,7 +100,7 @@ Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocat
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-TerraPlate.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
+PetalApothecary.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
 ```
 
 | Parameter | Type | Description |
@@ -116,9 +115,9 @@ TerraPlate.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecip
 Return Type: void
 
 ```zenscript
-// TerraPlate.removeAll() as void
+// PetalApothecary.removeAll() as void
 
-<recipetype:botania:terra_plate>.removeAll();
+<recipetype:botania:petal_apothecary>.removeAll();
 ```
 
 :::
@@ -128,7 +127,7 @@ Return Type: void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeByModid(modid as string) as void
+PetalApothecary.removeByModid(modid as string) as void
 ```
 
 | Parameter | Type | Description |
@@ -143,7 +142,7 @@ TerraPlate.removeByModid(modid as string) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeByModid(modid as string, exclude as RecipeFilter) as void
+PetalApothecary.removeByModid(modid as string, exclude as RecipeFilter) as void
 ```
 
 | Parameter | Type | Description |
@@ -159,7 +158,7 @@ TerraPlate.removeByModid(modid as string, exclude as RecipeFilter) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeByName(name as string) as void
+PetalApothecary.removeByName(name as string) as void
 ```
 
 | Parameter | Type | Description |
@@ -174,7 +173,7 @@ TerraPlate.removeByName(name as string) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeByRegex(regex as string) as void
+PetalApothecary.removeByRegex(regex as string) as void
 ```
 
 | Parameter | Type | Description |
@@ -189,7 +188,7 @@ TerraPlate.removeByRegex(regex as string) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeByRegex(regex as string, exclude as RecipeFilter) as void
+PetalApothecary.removeByRegex(regex as string, exclude as RecipeFilter) as void
 ```
 
 | Parameter | Type | Description |
@@ -205,7 +204,7 @@ TerraPlate.removeByRegex(regex as string, exclude as RecipeFilter) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeRecipe(output as IIngredient) as void
+PetalApothecary.removeRecipe(output as IIngredient) as void
 ```
 
 | Parameter | Type | Description |
@@ -220,7 +219,7 @@ TerraPlate.removeRecipe(output as IIngredient) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeRecipe(output as IItemStack) as void
+PetalApothecary.removeRecipe(output as IItemStack) as void
 ```
 
 | Parameter | Type | Description |
@@ -235,7 +234,7 @@ TerraPlate.removeRecipe(output as IItemStack) as void
 Return Type: void
 
 ```zenscript
-TerraPlate.removeRecipeByInput(input as IItemStack) as void
+PetalApothecary.removeRecipeByInput(input as IItemStack) as void
 ```
 
 | Parameter | Type | Description |
