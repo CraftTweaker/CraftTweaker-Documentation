@@ -6,7 +6,7 @@
 * Adds a Mill Recipe  
 ```zenscript
 mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+// Examples
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
@@ -26,25 +26,29 @@ mods.betterwithmods.Mill.removeAll();
 ## Builder 
 
 The Mill has a recipe builder that allows more precise control over the recipes.
-All previous methods are simply short cuts to using the builder.
+All previous methods are simply shortcuts to using the builder.
 
-* To create a new Mill builder.
-`mods.betterwithmods.Mill.builder()`
+* To create a new Mill builder:
+  `mods.betterwithmods.Mill.builder()`
 
 * Mill builder methods
-     * Sets up the inputs and outputs of the recipe    
+     * Setup the inputs and outputs of the recipe    
        ```zenscript
        buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
        ```
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.    
+     * Set the priority of the recipe - the lower the priority, the sooner it will be crafted. Default is 0
        ```zenscript
        setPriority(int priority)
        ```
-     * Set the sound of a Mill Recipe.   
+     * Set the sound emitted by the mill during the recipe
        ```zenscript
-       setSound(String soundLocation)
+       setGrindType(String soundLocation)
        ```
-     * Finalize the recipe and add it to the game    
+     * Set the tick duration of the recipe (how long the recipe takes to complete)
+       ```zenscript
+       setTicks(int ticks)
+       ```
+     * Finalize the recipe and add it to the game
        ```zenscript
        build()
        ```
@@ -52,8 +56,8 @@ All previous methods are simply short cuts to using the builder.
 ### Example builder usage
 ```zenscript
 mods.betterwithmods.Mill.builder()
-.buildRecipe([<minecraft:stone>], [<minecraft:stone>])
-.setGrindType("minecraft:entity.ghast.scream")
-.build();
+  .buildRecipe([<minecraft:stone>], [<minecraft:stone>])
+  .setGrindType("minecraft:entity.ghast.scream")
+  .build();
 ```
     
