@@ -7,7 +7,7 @@ The HeatRegistry allows assigning an integer value to a block that interacts wit
 import mods.betterwithmods.HeatRegistry;
 ```
 
-## Default Values:
+## Default Values
  * `Vanilla fire | 1`
  * `Stoked fire  | 2`
     
