@@ -24,6 +24,7 @@ export interface DocsMeta {
 export interface GeneratedDocsMeta extends DocsMeta {
     folders: string[],
     previous?: Page,
+    current: Page,
     next?: Page
 }
 

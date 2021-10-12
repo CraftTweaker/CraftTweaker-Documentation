@@ -65,6 +65,7 @@ async function supplementDocsMeta(): Promise<void> {
                     ownerModId: "",
                     searchTerms: [],
                     zenCodeName: "",
+                    current: obj,
                     path: obj.path
                 };
                 const docsMetaJsonPath = obj.path.replace(/\.md/, ".json")
