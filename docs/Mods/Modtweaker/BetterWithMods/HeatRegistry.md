@@ -2,11 +2,16 @@
 
 The HeatRegistry allows assigning an integer value to a block that interacts with the Cauldron, Crucible and Kiln.
 
-* Default Values:
-  * `Vanilla fire | 1`
-  * `Stoked fire  | 2`
+## Import
+```zenscript
+import mods.betterwithmods.HeatRegistry;
+```
+
+## Default Values:
+ * `Vanilla fire | 1`
+ * `Stoked fire  | 2`
     
-# Adding a Heat Source
+## Adding a Heat Source
 
 ```zenscript
 // stack must have an asssociated block state.
