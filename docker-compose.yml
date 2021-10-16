@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nextjs:
+    build: ./site
+    ports:
+      - 2904:3000
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    container_name: crafttweaker_docs

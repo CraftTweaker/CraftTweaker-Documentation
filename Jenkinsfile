@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying docker container'
-                sh "cd site && docker-compose up -d --build"
+                sh "docker-compose up -d --build"
             }
         }
     }
