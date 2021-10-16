@@ -11,21 +11,19 @@ pipeline {
             steps {
                 echo 'Setting up npm'
                 sh 'npm ci'
-                sh 'cd site'
-                sh 'npm ci'
+                sh 'cd site && npm ci'
             }
         }
         stage('Build') {
             steps {
-                echo 'Building wiki files'
+                echo 'Building files'
                 sh 'npm run-script build'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying docker container'
-                sh 'cd site'
-                sh "docker-compose up -d --build"
+                sh "cd site && docker-compose up -d --build"
             }
         }
     }
