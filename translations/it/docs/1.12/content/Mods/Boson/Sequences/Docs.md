@@ -8,7 +8,7 @@ Being part of the ZenScriptX Project, the fully qualified name for the class is 
 ## Creating a New Instance
 Refer to the [Obtaining Sequences](/Mods/Boson/Sequences/Obtaining/) page.
 
-## Methods
+## Metodi
 The various methods available in a sequence can be divided into four categories:
 
 - Terminal methods
