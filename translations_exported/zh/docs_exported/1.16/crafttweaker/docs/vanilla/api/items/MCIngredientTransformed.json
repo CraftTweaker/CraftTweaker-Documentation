@@ -1,0 +1,29 @@
+{
+    "path": "vanilla/api/items/MCIngredientTransformed.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.item.MCIngredientTransformed",
+    "searchTerms": [
+        "modifyShiftTooltip",
+        "onlyIf",
+        "removeGlobalAttribute",
+        "addShiftTooltip",
+        "变压器",
+        "onlyDamaged",
+        "addTooltip",
+        "matches",
+        "anyDamage",
+        "addGlobalAttributeModifier",
+        "crafttweaker.api.item.IIngredient",
+        "contains #容器",
+        "removeTooltip",
+        "onlyDamagedAtLeast",
+        "onlyDamagedAtMost",
+        "removeGlobalAttributeModifier",
+        "modifyTooltip",
+        "burnTime",
+        "clearTooltip",
+        "only",
+        "基本属性",
+        "items"
+    ]
+}
