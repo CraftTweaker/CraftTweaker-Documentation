@@ -3,7 +3,7 @@
 ## Package
 `mods.alchemistry.Dissolver`
 
-## Methods
+## Методы
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 - **boolean relativeProbability** - Probability Calculation Boolean
 - **int rolls** -  Possibilty of Roles
