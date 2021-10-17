@@ -8,7 +8,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
 <table spaces-before="0">
   <tr>
     <th>
-      Type
+      Tipo
     </th>
     
     <th>
@@ -16,7 +16,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Examples
+      Esempi
     </th>
   </tr>
   
