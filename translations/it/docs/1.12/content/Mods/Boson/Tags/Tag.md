@@ -8,16 +8,16 @@ The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making
 ## Creating a New Instance
 Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 
-## Properties
+## Proprietà
 A `Tag` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name | Type                                     | Description                                           |
+| Property Name | Tipo                                     | Descrizione                                           |
 | ------------- | ---------------------------------------- | ----------------------------------------------------- |
-| `name`        | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
+| `nome`        | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
 | `type`        | [`TagType`](/Mods/Boson/Tags/TagType/)   | The type of this tag                                  |
 | `elements`    | `[T]` (where `T` is a generic type)      | A read-only list of the elements currently in the tag |
 
-## Methods
+## Metodi
 
 ### Addition
 Adding elements to a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
