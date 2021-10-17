@@ -15,6 +15,7 @@ void addRecipe(
 );
 ```
 
+Adds a Pyre crafting recipe that produces output after the standard amount of time, with the specified input ingredients (with potential transformers).
 
 ---
 
@@ -28,6 +29,7 @@ void addRecipe(
 );
 ```
 
+Adds a Pyre crafting recipe that produces output after the standard amount of time, with the specified input ingredients (with potential transformers). Allows for the specification of an amount of experience to be generated once the craft is finished.
 
 ---
 
@@ -38,6 +40,7 @@ void removeRecipe(
 );
 ```
 
+Removes a Pyre crafting recipe based on its output.
 
 ---
 
@@ -53,10 +56,10 @@ Pyre.removeRecipe(<roots:stalicripe>);
 
 // Re-adds the stalicripe using an addition recipe that grants no XP,
 // but with considerably greater output
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
+Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1), <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
 
 // As above, but rewarding 30 levels of experience (calculated from level 0)
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
+Pyre.addRecipe("stalicripe2", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
 ```
 
 ### Notes

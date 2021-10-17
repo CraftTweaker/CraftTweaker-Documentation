@@ -15,6 +15,7 @@ void addRecipe(
 );
 ```
 
+Adds a recipe that converts a block (in the form of an item stack) into another item stack. Log input *must* be an itemblock.
 
 ---
 
@@ -25,6 +26,7 @@ void removeRecipe(
 );
 ```
 
+Removes a bark recipe via output from the list.
 
 ---
 

@@ -15,7 +15,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Event interface extensions
 EntityTravelToDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
