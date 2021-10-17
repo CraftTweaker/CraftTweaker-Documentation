@@ -1,7 +1,7 @@
 # Create Compound
 Custom Alchemistry Compound Generation
 
-# 所属包名
+# 所属包
 ```zenscript
 mods.alchemistry.Util.createCompound
 ```
@@ -9,7 +9,7 @@ mods.alchemistry.Util.createCompound
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
-## 方法
+## 使用方式
 - **int meta** meta for new Compund
 - **String Name** Name for New Compund
 - **int red** compound red shade, RGB
