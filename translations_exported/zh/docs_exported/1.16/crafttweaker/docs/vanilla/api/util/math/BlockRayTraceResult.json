@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/util/math/BlockRayTraceResult.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.math.RayTraceResult",
+    "searchTerms": [
+        "face",
+        "withFace",
+        "点",
+        "getPos",
+        "isInside",
+        "inside",
+        "getFace",
+        "withPosition",
+        "crafttweaker.api.util.math.RayTraceResult"
+    ]
+}
