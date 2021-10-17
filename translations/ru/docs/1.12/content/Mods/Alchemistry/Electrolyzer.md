@@ -5,7 +5,7 @@
 `mods.alchemistry.Electrolyzer`
 ```
 
-## Methods
+## Методы
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The liquid input of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The electrolyte input of the recipe.
 - **int electrolyteConsumptionChance** - Chance of Electrolye being consumed
