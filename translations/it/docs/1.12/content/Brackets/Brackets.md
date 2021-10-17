@@ -8,7 +8,7 @@ Brackets in ZenScript are defined using the `<` and `>` characters, anything ins
 
 An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
 
-## Examples
+## Esempi
 
 An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
 
