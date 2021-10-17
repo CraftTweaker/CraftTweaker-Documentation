@@ -5,7 +5,7 @@
 import mods.calculator.conductorMast;
 ```
 
-## Methods
+## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
