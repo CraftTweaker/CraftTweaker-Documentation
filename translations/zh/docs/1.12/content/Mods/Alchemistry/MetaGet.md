@@ -1,12 +1,12 @@
 # Meta Get
 Get is an convenient alternative to looking up the meta value for all elements and compounds, but the conventional way i.e. <alchemistry:compound:17> still works fine
 
-## 所属包名
+## 所属包
 ```zenscript
 mods.alchemistry.Util.get`
 ```
 
-## 方法
+## 使用方式
 
 - **String Name** Element Name
 
