@@ -5,7 +5,7 @@
 import mods.calculator.basic;
 ```
 
-## Methods
+## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
