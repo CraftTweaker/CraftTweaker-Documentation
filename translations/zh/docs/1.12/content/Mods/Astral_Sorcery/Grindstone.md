@@ -15,7 +15,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 
-## 加
+## 添加配方
 ```zenscript
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);
 //input 输入
