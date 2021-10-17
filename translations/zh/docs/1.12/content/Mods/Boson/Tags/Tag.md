@@ -13,13 +13,13 @@ A `Tag` provides read-only access to a certain set of properties, as outlined in
 
 | Property Name | 类型                                       | 描述                                                    |
 | ------------- | ---------------------------------------- | ----------------------------------------------------- |
-| `name`        | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
+| `name（名称）`    | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
 | `类型`          | [`TagType`](/Mods/Boson/Tags/TagType/)   | The type of this tag                                  |
 | `elements`    | `[T]` (where `T` is a generic type)      | A read-only list of the elements currently in the tag |
 
-## 方法
+## 使用方式
 
-### 加
+### 添加配方
 Adding elements to a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
 
 ```zenscript
@@ -182,19 +182,19 @@ tag = tag & [<minecraft:iron_ingot>] as IItemStack[];
 | ------- | ---------------------------------------- | ---------------- | ----------------- | --------------------------------------------------------------------- |
 | `+`     | `Tag`                                    | `TAG + ARG1`     | `addFrom`         | \-                                                                   |
 | `+`     | `any[]`                                  | `TAG + ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
-| `+`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG + ARG1`     | `add`             | The overload only accepts one argument                                |
+| `+`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG + ARG1`     | `add #添加`         | The overload only accepts one argument                                |
 | `+`     | `any`                                    | `TAG + ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `~`     | `Tag`                                    | `TAG ~ ARG1`     | `addFrom`         | \-                                                                   |
 | `~`     | `any[]`                                  | `TAG ~ ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
-| `~`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG ~ ARG1`     | `add`             | The overload only accepts one argument                                |
+| `~`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG ~ ARG1`     | `add #添加`         | The overload only accepts one argument                                |
 | `~`     | `any`                                    | `TAG ~ ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `&` | `Tag`                                    | `TAG & ARG1` | `addFrom`         | \-                                                                   |
 | `&` | `any[]`                                  | `TAG & ARG1` | `addAll`          | The array type must be the same as the tag's contents                 |
-| `&` | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG & ARG1` | `add`             | The overload only accepts one argument                                |
+| `&` | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG & ARG1` | `add #添加`         | The overload only accepts one argument                                |
 | `&` | `any`                                    | `TAG & ARG1` | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `-`     | `Tag`                                    | `TAG - ARG1`     | `removeFrom`      | \-                                                                   |
 | `-`     | `any[]`                                  | `TAG - ARG1`     | `removeAll`       | The array type must be the same as the tag's contents                 |
-| `-`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG - ARG1`     | `remove`          | The overload only accepts one argument                                |
+| `-`     | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG - ARG1`     | `remove #移除`      | The overload only accepts one argument                                |
 | `-`     | `any`                                    | `TAG - ARG1`     | `removeAll`       | Shorthand for a single element: same rules as the array version apply |
 | `==`    | `Tag`                                    | `TAG == ARG1`    | \-               | Acts as an equality check, matching contents; does not mutate `TAG`   |
 | `()`    | \-                                      | `TAG()`          | `elements`        | \-                                                                   |
