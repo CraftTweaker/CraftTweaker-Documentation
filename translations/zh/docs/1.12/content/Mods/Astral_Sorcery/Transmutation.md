@@ -17,7 +17,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 ```
 
-## 加
+## 添加配方
 ```zenscript
 //mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
 //stackIn 输入
