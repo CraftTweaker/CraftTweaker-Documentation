@@ -8,7 +8,7 @@ Being part of the ZenScriptX Project, the fully qualified name for the class is 
 ## Creating a New Instance
 Since this class is just a holder of mathematical functions, it is impossible to create a new instance. Rather, all methods should be invoked on the class itself.
 
-## Methods
+## Metodi
 To save up on space, the methods will be presented in a single snippet, grouped according to the kind of operation they perform with a comment above outlining what the method is supposed to do and any other conditions that should be kept into consideration when using the method. Moreover, multiple methods may be grouped together if they're close overloads of one another (i.e. they do the same thing, but they have different argument or return types).
 
 ```zenscript
