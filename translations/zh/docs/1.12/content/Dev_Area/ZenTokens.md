@@ -58,8 +58,8 @@
 | 102       | T_SHORT             | `short`                                                     |
 | 103       | T_INT               | `int`                                                       |
 | 104       | T_LONG              | `long`                                                      |
-| 105       | T_FLOAT             | `float`                                                     |
-| 106       | T_DOUBLE            | `double`                                                    |
+| 105       | T_FLOAT             | `浮点数`                                                       |
+| 106       | T_DOUBLE            | `双精度`                                                       |
 | 107       | T_STRING            | `string`                                                    |
 | 108       | T_FUNCTION          | `function`                                                  |
 | 109       | T_IN                | `in`                                                        |
