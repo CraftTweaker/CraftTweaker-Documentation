@@ -1,17 +1,17 @@
 # Chemical Combiner
 
-# 所属包名
+# 所属包
 ```zenscript
 mods.alchemistry.Combiner
 ```
 
-## 方法
+## 使用方式
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
 
 
-## 加
+## 添加配方
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
