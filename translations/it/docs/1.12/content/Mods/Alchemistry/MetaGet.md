@@ -6,7 +6,7 @@ Get is an convenient alternative to looking up the meta value for all elements a
 mods.alchemistry.Util.get`
 ```
 
-## Methods
+## Metodi
 
 - **String Name** Element Name
 
