@@ -31,7 +31,7 @@ A `Class` provides read-only access to a certain set of properties, as outlined 
 | `simpleName`    | `string` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.item.IItemStack`, `string` for `string`) |
 | `qualifiedName` | `string` | Full name that uniquely identifies this class in the ZenScript environment (i.e. `crafttweaker.item.IItemStack` or `string`)         |
 
-## 方法
+## 使用方式
 `Class` also provides access to a single method that allows conversion to the "native" equivalent (refer to [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) for more information). The signature of the method is as follows:
 
 ```zenscript
