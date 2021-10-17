@@ -1,12 +1,12 @@
 # Create Element
 Custom Element Creation for Alchemistry
 
-# 所属包名
+# 所属包
 `mods.alchemistry.Util.createElement`
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
-## 方法
+## 使用方式
 - **int atomicNumber** ID for new Element
 - **String Name** New Elements Name
 - **String Abbrebiation** New Elements Abbrebiation
