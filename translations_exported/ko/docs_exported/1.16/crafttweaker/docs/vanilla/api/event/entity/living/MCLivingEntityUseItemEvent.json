@@ -1,0 +1,10 @@
+{
+    "path": "vanilla/api/event/entity/living/MCLivingEntityUseItemEvent.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.event.entity.MCLivingEvent",
+    "searchTerms": [
+        "duration",
+        "crafttweaker.api.event.entity.MCLivingEvent",
+        "item"
+    ]
+}
