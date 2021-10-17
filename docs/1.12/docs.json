@@ -85,6 +85,11 @@
       "Damage": {
         "IDamageSource": "Vanilla/Damage/IDamageSource.md"
       },
+      "Dispenser": {
+        "BehaviorSupport": "Vanilla/Dispenser/BehaviorSupport.md",
+        "DispenserSound": "Vanilla/Dispenser/DispenserSound.md",
+        "IBlockSource": "Vanilla/Dispenser/IBlockSource.md"
+      },
       "Enchantments": {
         "IEnchantment": "Vanilla/Enchantments/IEnchantment.md",
         "IEnchantmentDefinition": "Vanilla/Enchantments/IEnchantmentDefinition.md"
@@ -321,11 +326,12 @@
           "Cauldron": "Mods/Modtweaker/BetterWithMods/Cauldron.md",
           "Crucible": "Mods/Modtweaker/BetterWithMods/Crucible.md",
           "Filtered Hopper": "Mods/Modtweaker/BetterWithMods/FilteredHopper.md",
-          "HeatRegistry": "Mods/Modtweaker/BetterWithMods/HeatRegistry.md",
+          "Heat Registry": "Mods/Modtweaker/BetterWithMods/HeatRegistry.md",
           "HCFurnace": "Mods/Modtweaker/BetterWithMods/HCFurnace.md",
           "HCMovement": "Mods/Modtweaker/BetterWithMods/HCMovement.md",
           "Kiln": "Mods/Modtweaker/BetterWithMods/Kiln.md",
           "Mill": "Mods/Modtweaker/BetterWithMods/Mill.md",
+          "Pulley Manager": "Mods/Modtweaker/BetterWithMods/PulleyManager.md",
           "Saw": "Mods/Modtweaker/BetterWithMods/Saw.md",
           "Turntable": "Mods/Modtweaker/BetterWithMods/Turntable.md",
           "MiniBlocks": "Mods/Modtweaker/BetterWithMods/MiniBlocks.md"
@@ -1126,15 +1132,34 @@
       "Roots 3": {
         "Animal Harvest Ritual": "Mods/Roots_3/animalharvest.md",
         "Bark Creation": "Mods/Roots_3/bark.md",
+        "Chrysopoeia Spell": "Mods/Roots_3/chrysopoeia.md",
         "Fey Crafter": "Mods/Roots_3/fey.md",
         "Flower Growth Ritual": "Mods/Roots_3/flowergrowth.md",
+        "Herbs": "Mods/Roots_3/herbs.md",
+        "Modifiers": "Mods/Roots_3/modifiers.md",
         "Mortar": "Mods/Roots_3/mortar.md",
         "Untrue Pacifist Creatures": "Mods/Roots_3/pacifist.md",
         "Pyre Crafting": "Mods/Roots_3/pyre.md",
         "Pyre Ritual Recipes": "Mods/Roots_3/ritual.md",
+        "Rituals": {
+          "Rituals": "Mods/Roots_3/rituals.md",
+          "Ritual": "Mods/Roots_3/ritual.md"
+        },
         "Runic Shears Recipes": "Mods/Roots_3/runicshears.md",
+        "Spells": {
+          "Spells": "Mods/Roots_3/spells.md",
+          "Spell": "Mods/Roots_3/spell.md",
+          "Costs": "Mods/Roots_3/costs.md"
+        },
         "Summon Creatures Ritual": "Mods/Roots_3/summoncreatures.md",
-        "Transmutation Ritual": "Mods/Roots_3/transmutation.md"
+        "Transmutation Ritual": "Mods/Roots_3/transmutation.md",
+        "Predicates": {
+          "Predicates": "Mods/Roots_3/predicates.md",
+          "StatePredicate": "Mods/Roots_3/statepredicate.md",
+          "PropertyPredicate": "Mods/Roots_3/propertypredicate.md",
+          "BlockStateAbove": "Mods/Roots_3/blockstateabove.md",
+          "BlockStateBelow": "Mods/Roots_3/blockstatebelow.md"
+        }
       },
       "Sky Resources 2": {
         "Sky Resources 2": "Mods/Sky_Resources_2/Sky_Resources_2.md",
