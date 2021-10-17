@@ -1,0 +1,17 @@
+{
+    "path": "vanilla/api/util/MCResourceLocation.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.MCResourceLocation",
+    "searchTerms": [
+        "path",
+        "getNamespace",
+        "hashCode",
+        "asData",
+        "equals",
+        "名前空間",
+        "getPath",
+        "toString",
+        "compareTo",
+        "commandString"
+    ]
+}
