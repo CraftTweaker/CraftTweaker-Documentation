@@ -1,17 +1,17 @@
 # Electrolyzer
 
-# 所属包名
+# 所属包
 ```zenscript
 `mods.alchemistry.Electrolyzer`
 ```
 
-## 方法
+## 使用方式
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The liquid input of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The electrolyte input of the recipe.
 - **int electrolyteConsumptionChance** - Chance of Electrolye being consumed
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** - Output for the recipe
 
-## 加
+## 添加配方
 ```zenscript
 mods.alchemistry.Electrolyzer.addRecipe(ILiquidStack input, IItemStack input, int electrolyteConsumptionChance, IItemStack output, IItemStack output2, @Nullable IItemStack output3, @Nullable int output3Chance, @Nullable IItemStack output4, @Nullable int output4Chance);
 mods.alchemistry.Electrolyzer.addRecipe(<liquid:water>*400,<minecraft:stone>,10,<minecraft:ender_pearl>*2,<minecraft:sand>,null,0,null,0);
