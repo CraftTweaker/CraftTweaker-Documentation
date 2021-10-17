@@ -1,0 +1,30 @@
+{
+    "path": "vanilla/api/util/text/MCStyle.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.text.MCStyle",
+    "searchTerms": [
+        "getObfuscated",
+        "getUnderlined",
+        "applyFormatting",
+        "getBold",
+        "setFontId",
+        "setFormatting",
+        "isEmpty #是否为空",
+        "getColor #获取颜色",
+        "setUnderlined",
+        "setBold",
+        "setStrikethrough",
+        "getItalic",
+        "setColor",
+        "getFontId",
+        "getStrikethrough",
+        "hashCode",
+        "equals #等于",
+        "mergeStyle",
+        "setObfuscated",
+        "getInsertion",
+        "toString",
+        "setInsertion",
+        "setItalic"
+    ]
+}
