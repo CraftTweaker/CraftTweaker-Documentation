@@ -9,7 +9,7 @@ mods.alchemistry.Util.createCompound
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
-## Methods
+## Методы
 - **int meta** meta for new Compund
 - **String Name** Name for New Compund
 - **int red** compound red shade, RGB
