@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/managers/IRecipeManager.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.registries.IRecipeManager",
+    "searchTerms": [
+        "crafttweaker.api.brackets.CommandStringDisplayable",
+        "删除合成表",
+        "getRecipeByName",
+        "allRecipes",
+        "removeByModid",
+        "addJSONRecipe #添加JSON配方",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeRecipeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
