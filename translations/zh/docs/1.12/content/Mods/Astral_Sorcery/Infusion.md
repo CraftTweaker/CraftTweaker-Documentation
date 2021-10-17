@@ -13,7 +13,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## 加
+## 添加配方
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
 //input 输入
