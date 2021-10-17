@@ -20,7 +20,7 @@ Boson by default already creates a certain set of tag types, which can be used i
 ## Свойства
 A `TagType` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name       | Тип                                                                    | Description                                                               |
+| Property Name       | Тип                                                                    | Описание                                                                  |
 | ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
 | `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
