@@ -5,7 +5,7 @@
 mods.alchemistry.Liquifier
 ```
 
-## Methods
+## Методы
 **[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
 
 **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
