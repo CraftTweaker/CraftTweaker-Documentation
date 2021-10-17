@@ -5,7 +5,7 @@
 mods.alchemistry.Atomizer
 ```
 
-## Methods
+## Metodi
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
