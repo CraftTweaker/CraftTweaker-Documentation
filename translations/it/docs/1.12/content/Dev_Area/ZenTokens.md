@@ -76,8 +76,8 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 127         | T_WHILE             | `while`                                                     |
 | 127         | T_BREAK             | `break`                                                     |
 | 140         | T_NULL              | `null`                                                      |
-| 141         | T_TRUE              | `true`                                                      |
-| 142         | T_FALSE             | `false`                                                     |
+| 141         | T_TRUE              | `sì`                                                        |
+| 142         | T_FALSE             | `no`                                                        |
 | 160         | T_IMPORT            | `import`                                                    |
 | 666         | T_GLOBAL            | `global`                                                    |
 | 667         | T_STATIC            | `static`                                                    |
