@@ -43,7 +43,7 @@ If you do use those methods, however, you will need to add `@ZenMethod` should y
 
 
 
-## 例子
+## 示例
 ### ZenGetters 的例子
 
 [CraftTweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
