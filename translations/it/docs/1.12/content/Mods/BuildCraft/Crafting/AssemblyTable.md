@@ -4,7 +4,7 @@
 
 Class path: `mods.buildcraft.AssemblyTable`
 
-## Use
+## Uso
 
 To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
