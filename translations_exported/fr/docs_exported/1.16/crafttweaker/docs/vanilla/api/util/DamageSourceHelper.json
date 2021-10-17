@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/util/DamageSourceHelper.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.DamageSourceHelper",
+    "searchTerms": [
+        "causePlayerDamage",
+        "causeIndirectDamage",
+        "causeBeeStingDamage",
+        "causeMobDamage"
+    ]
+}
