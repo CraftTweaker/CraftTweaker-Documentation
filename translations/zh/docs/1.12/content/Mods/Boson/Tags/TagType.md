@@ -23,6 +23,6 @@ A `TagType` provides read-only access to a certain set of properties, as outline
 | Property Name       | 类型                                                                     | 描述                                                                        |
 | ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
-| `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
+| `name（名称）`          | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
 | `classType`         | [`类`](/Mods/Boson/Reflection/Class/)                                   | Type of objects stored in the tag                                         |
 | `converterFunction` | [`Function<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converts names into tag elements                                          |
