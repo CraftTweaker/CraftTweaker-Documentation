@@ -40,7 +40,7 @@ All Objects will be `null`
 
 | 成员          | 类型              | 默认值              |
 | ----------- | --------------- | ---------------- |
-| value       | string          | `""`             |
+| 值           | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
 | methodName  | string          | `"getValue"`     |
 
