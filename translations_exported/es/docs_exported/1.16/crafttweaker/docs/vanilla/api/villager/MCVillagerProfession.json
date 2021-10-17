@@ -1,0 +1,10 @@
+{
+    "path": "vanilla/api/villager/MCVillagerProfession.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.villager.MCVillagerProfession",
+    "searchTerms": [
+        "getName",
+        "name",
+        "commandString"
+    ]
+}
