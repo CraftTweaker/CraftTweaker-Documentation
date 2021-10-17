@@ -24,8 +24,8 @@ These annotations can be given to Method Parameters
 
 | Annotation                                                   | Target    | Information                                                                                   |
 | ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------- |
-| `@NotNull`                                                   | Parameter | Does nothing (NYI)                                                                            |
-| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
+| `@NotNull`                                                   | Parametro | Does nothing (NYI)                                                                            |
+| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parametro | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
 
 
 ## Method annotations
