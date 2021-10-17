@@ -38,9 +38,9 @@ All Objects will be `null`
 
 ### Using annotation members
 
-| Member      | Type            | Default value    |
+| Member      | Tipo            | Default value    |
 | ----------- | --------------- | ---------------- |
-| value       | string          | `""`             |
+| valore      | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
 | methodName  | string          | `"getValue"`     |
 
