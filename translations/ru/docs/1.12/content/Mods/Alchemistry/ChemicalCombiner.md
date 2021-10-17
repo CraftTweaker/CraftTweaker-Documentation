@@ -5,7 +5,7 @@
 mods.alchemistry.Combiner
 ```
 
-## Methods
+## Методы
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
