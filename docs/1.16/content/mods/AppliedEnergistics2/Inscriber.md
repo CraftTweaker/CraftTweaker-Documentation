@@ -8,6 +8,8 @@ The Inscriber is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager
 
 #### Add Inscribe Recipes
 
+Inscribe recipes are recipes that only consume the middle input, the other inputs are not consumed.
+
 The following script will add four recipes to the Inscriber that will do the following:
 
 1) Output a Diamond when Inscribing Dirt in the middle slot.
@@ -25,6 +27,8 @@ The following script will add four recipes to the Inscriber that will do the fol
 ```
 
 #### Add Press Recipes
+
+Press recipes are recipes that consume all the inputs.
 
 The following script will add four recipes to the Inscriber that will do the following:
 

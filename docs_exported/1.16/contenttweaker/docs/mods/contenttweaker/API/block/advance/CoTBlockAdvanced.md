@@ -1,7 +1,7 @@
 # CoTBlockAdvanced
 
 A registered CoT Block. Used for advanced functionality. like onRandomTick, onReplaced etc.
- <p>
+ 
  These functions should be run in CraftTweaker scripts, instead of ContentTweaker ones. And they are reloadable.
  You can get it via advanced block BEP.
 
@@ -21,6 +21,7 @@ import mods.contenttweaker.block.advance.CoTBlockAdvanced;
 
 The block's color
 
+Returns: the CoTBlockAdvanced, used for method chaining.  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript
@@ -34,10 +35,26 @@ CoTBlockAdvanced.setBlockColorSupplier(func as IBlockColorSupplier) as CoTBlockA
 
 :::
 
+:::group{name=setIsSideInvisible}
+
+Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
+
+```zenscript
+CoTBlockAdvanced.setIsSideInvisible(func as IBlockIsSideInvisible) as CoTBlockAdvanced
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| func | [IBlockIsSideInvisible](/mods/contenttweaker/API/functions/IBlockIsSideInvisible) | No Description Provided |
+
+
+:::
+
 :::group{name=setOnActivated}
 
 Sets what will happen when a player right-clicks the block
 
+Returns: the CoTBlockAdvanced, used for method chaining  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript
@@ -55,6 +72,7 @@ CoTBlockAdvanced.setOnActivated(func as IBlockActivated) as CoTBlockAdvanced
 
 Sets what will happen when the block is added.
 
+Returns: the CoTBlockAdvanced, used for method chaining  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript
@@ -72,6 +90,7 @@ CoTBlockAdvanced.setOnAdded(func as IBlockAdded) as CoTBlockAdvanced
 
 Sets what will happen when a neighbour of the block is changed
 
+Returns: the CoTBlockAdvanced, used for method chaining  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript
@@ -89,6 +108,7 @@ CoTBlockAdvanced.setOnNeighborChanged(func as IBlockNeighborChanged) as CoTBlock
 
 Sets what will happen when the block receive a random tick. Throws an exception if the block does not tick randomly.
 
+Returns: the CoTBlockAdvanced, used for method chaining  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript
@@ -106,6 +126,7 @@ CoTBlockAdvanced.setOnRandomTick(func as IBlockRandomTick) as CoTBlockAdvanced
 
 Sets what will happen when the block is replaced. (Note. destroy means replace with air)
 
+Returns: the CoTBlockAdvanced, used for method chaining  
 Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
 
 ```zenscript

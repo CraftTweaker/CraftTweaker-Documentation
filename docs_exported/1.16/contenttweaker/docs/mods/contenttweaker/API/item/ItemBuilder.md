@@ -1,10 +1,10 @@
 # ItemBuilder
 
 The item builder is to... build items (surprise!)
- <p>
+ 
  It allows you to set various properties that will change how the item behaves and what it can do.
  You can also use [this](.)#withType to switch to a more specialized builder, if there exist any.
- <p>
+ 
  To tell CoT that you want the item to appear in-game you need to call [this](.)#build(String) and specify a valid resource location path.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
@@ -29,7 +29,6 @@ Creates a new ItemBuilder. <br />  Remember that this will _not_ create a new bl
 new ItemBuilder() as ItemBuilder
 new ItemBuilder();
 ```
-
 
 ## Methods
 
@@ -56,6 +55,7 @@ new ItemBuilder().build("my_awesome_block");
 
 Sets that this item is immune to fire
 
+Returns: The builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -70,6 +70,7 @@ new ItemBuilder().isImmuneToFire();
 
 Sets that this item is a food
 
+Returns: The builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -88,17 +89,18 @@ ItemBuilder.withFood(food as MCFood) as ItemBuilder
 Allows you to set the item group that this item will appear in.
  By default, items will land in `misc`
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-// ItemBuilder.withItemGroup(itemGroup as MCItemGroup) as ItemBuilder
+// ItemBuilder.withItemGroup(itemGroup as ItemGroup) as ItemBuilder
 
 new ItemBuilder().withItemGroup(<itemGroup:misc>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| itemGroup | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| itemGroup | [ItemGroup](/vanilla/api/item/ItemGroup) | The item group this item should appear in |
 
 
 :::
@@ -108,6 +110,7 @@ new ItemBuilder().withItemGroup(<itemGroup:misc>);
 Allows you to set the maximum damage for this item.<br/>
  Be warned that this cannot be used in combination with [this](.)#withMaxStackSize!
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -128,6 +131,7 @@ new ItemBuilder().withMaxDamage(250);
 Allows you to set the maximum stack size for this item.<br/>
  Be warned that this cannot be used in combination with [this](.)#withMaxDamage!
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -147,6 +151,7 @@ new ItemBuilder().withMaxStackSize(16);
 
 Sets that this item may not be repaired in an anvil
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -161,6 +166,7 @@ new ItemBuilder().withNoRepair();
 
 Allows you to set the item's rarity
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
@@ -182,6 +188,7 @@ Sets the specific type of this item.
  After this method is called the builder's context will switch to the more provided type builder.
  That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
 
+Returns: A builder with the given item.  
 Return Type: T
 
 ```zenscript

@@ -2,7 +2,7 @@
 
 A special builder that allows you to create slabs.
 
- <p>
+ 
  By default, this has 3 textures, one for the top, bottom and the sides.
  As with most things here, sample images are generated for you by default, though.
 
@@ -47,6 +47,7 @@ Allows you to override the path of the texture that the bottom should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the bottom texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
@@ -67,6 +68,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withBottomTexture((blockName as 
 Allows you to override the path of the texture that the bottom should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
@@ -88,6 +90,7 @@ Allows you to override the path of the texture that the sides (everything but to
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the sides texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
@@ -108,6 +111,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withSideTexture((blockName as Re
 Allows you to override the path of the texture that the sides (everything but top/bottom) should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
@@ -129,6 +133,7 @@ Allows you to override the path of the texture that the top should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the top texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript
@@ -149,6 +154,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withTopTexture((blockName as Res
 Allows you to override the path of the texture that the top should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
 ```zenscript

@@ -10,20 +10,3 @@ import mods.contenttweaker.api.BracketValidators;
 ```
 
 
-## Static Methods
-
-:::group{name=validateItemGroupBracket}
-
-Return Type: boolean
-
-```zenscript
-BracketValidators.validateItemGroupBracket(tokens as string) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
-
-
-:::
-

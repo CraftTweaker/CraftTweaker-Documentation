@@ -26,4 +26,12 @@ The following script will remove all Cutting recipes that output a Stripped Jung
 <recipetype:create:cutting>.removeRecipe(<item:minecraft:stripped_jungle_wood>);
 ```
 
+#### Get a Processing Recipe Factory
 
+You can get a ProcessingRecipeFactory of this recipe type like so:
+
+```zenscript
+// <recipetype:create:cutting>.factory() as ProcessingRecipeFactory
+
+<recipetype:create:cutting>.factory()
+```

@@ -18,7 +18,8 @@
               "CoTBlockAdvanced": "mods/contenttweaker/API/block/advance/CoTBlockAdvanced.md"
             },
             "Basic": {
-              "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md"
+              "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md",
+              "BlockBuilderFalling": "mods/contenttweaker/API/block/basic/BlockBuilderFalling.md"
             },
             "Pillar": {
               "BlockBuilderPillarRotatable": "mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md"
@@ -37,9 +38,11 @@
             "IBlockActivated": "mods/contenttweaker/API/functions/IBlockActivated.md",
             "IBlockAdded": "mods/contenttweaker/API/functions/IBlockAdded.md",
             "IBlockColorSupplier": "mods/contenttweaker/API/functions/IBlockColorSupplier.md",
+            "IBlockIsSideInvisible": "mods/contenttweaker/API/functions/IBlockIsSideInvisible.md",
             "IBlockNeighborChanged": "mods/contenttweaker/API/functions/IBlockNeighborChanged.md",
             "IBlockRandomTick": "mods/contenttweaker/API/functions/IBlockRandomTick.md",
             "IBlockReplaced": "mods/contenttweaker/API/functions/IBlockReplaced.md",
+            "IFallingBlockDustColorSupplier": "mods/contenttweaker/API/functions/IFallingBlockDustColorSupplier.md",
             "IItemColorSupplier": "mods/contenttweaker/API/functions/IItemColorSupplier.md",
             "IItemHitEntity": "mods/contenttweaker/API/functions/IItemHitEntity.md",
             "IItemInteractWithEntity": "mods/contenttweaker/API/functions/IItemInteractWithEntity.md",

@@ -25,5 +25,3 @@ The following script will remove all Sand Paper Polishing recipes that output Po
 
 <recipetype:create:sandpaper_polishing>.removeRecipe(<item:create:polished_rose_quartz>);
 ```
-
-

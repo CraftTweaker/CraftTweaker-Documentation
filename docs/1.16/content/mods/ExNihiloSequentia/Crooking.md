@@ -17,7 +17,7 @@
 <recipetype:exnihilosequentia:crook>.create("crook_test").setInput(<item:minecraft:oak_leaves>).addDrop(<item:minecraft:nether_star>, 1);
 ```
 
-## Addition
+## Removal
 
 ```zenscript
 <recipetype:exnihilosequentia:crook>.removeRecipe(<item:exnihilosequentia:silkworm>);

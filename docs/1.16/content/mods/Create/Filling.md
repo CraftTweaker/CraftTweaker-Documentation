@@ -25,3 +25,13 @@ The following script will remove all Filling recipes that output Redstone.
 
 <recipetype:create:filling>.removeRecipe(<item:minecraft:redstone>);
 ```
+
+#### Get a Processing Recipe Factory
+
+You can get a ProcessingRecipeFactory of this recipe type like so:
+
+```zenscript
+// <recipetype:create:filling>.factory() as ProcessingRecipeFactory
+
+<recipetype:create:filling>.factory()
+```

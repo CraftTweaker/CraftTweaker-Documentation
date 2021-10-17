@@ -2,7 +2,7 @@
 
 A special builder that allows you to create items that can be used as tools.
  You should have set the item's max damage before changing to this builder.
- <p>
+ 
  Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
@@ -44,6 +44,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_aweso
 
 Allows you to set the attack damage bonus that you get when holding this item
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
@@ -63,6 +64,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 
 Allows you to set the attack speed bonus that you get when holding this item.
 
+Returns: This builder, used for method chaining.  
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
@@ -83,6 +85,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 Allows you to set the amount of damage that this item will receive when hitting enemies.
  By default this is `0`
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
@@ -103,6 +106,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 Allows you to set the amount of damage that this item will receive when mining blocks.
  By default this is `0`
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
@@ -123,6 +127,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 Allows you to add a tool type to this tool.
  You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
 
+Returns: This builder, used for method chaining  
 Return Type: [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
@@ -136,6 +141,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 | toolType | [ToolType](/vanilla/api/tool/ToolType) | The type of the tool | false |  |
 | miningLevel | int | The mining level for this tool type | false |  |
 | miningSpeed | float | How fast this tool can mine blocks of the given type | true | 1.0 |
+
 
 :::
 

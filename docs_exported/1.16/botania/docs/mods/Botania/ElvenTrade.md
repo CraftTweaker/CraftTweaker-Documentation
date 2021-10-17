@@ -183,6 +183,22 @@ ElvenTrade.removeByRegex(regex as string) as void
 
 :::
 
+:::group{name=removeByRegex}
+
+Return Type: void
+
+```zenscript
+ElvenTrade.removeByRegex(regex as string, exclude as RecipeFilter) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| regex | string | No Description Provided |
+| exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
+
+
+:::
+
 :::group{name=removeRecipe}
 
 Return Type: void
@@ -200,6 +216,25 @@ ElvenTrade.removeRecipe(output as IIngredient) as void
 
 :::group{name=removeRecipe}
 
+Removes a single-output recipe.
+
+Return Type: void
+
+```zenscript
+// ElvenTrade.removeRecipe(output as IItemStack) as void
+
+<recipetype:botania:elven_trade>.removeRecipe(<item:botania:dragonstone>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| output | [IItemStack](/vanilla/api/items/IItemStack) | Recipe output |
+
+
+:::
+
+:::group{name=removeRecipe}
+
 Removes a recipe with multiple outputs.
 
  Note that as Botania does not come with any multiple-output recipes, this example will not work out of the box.
@@ -207,7 +242,9 @@ Removes a recipe with multiple outputs.
 Return Type: void
 
 ```zenscript
-ElvenTrade.removeRecipe(outputs as IItemStack[]) as void
+// ElvenTrade.removeRecipe(outputs as IItemStack[]) as void
+
+<recipetype:botania:elven_trade>.removeRecipe([<item:botania:dragonstone>, <item:minecraft:diamond>]);
 ```
 
 | Parameter | Type | Description |
