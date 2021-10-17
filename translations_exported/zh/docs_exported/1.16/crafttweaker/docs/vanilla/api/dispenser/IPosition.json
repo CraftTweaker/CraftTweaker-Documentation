@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/dispenser/IPosition.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.dispenser.IPosition",
+    "searchTerms": [
+        "getX",
+        "getY",
+        "getZ",
+        "x",
+        "y",
+        "z"
+    ]
+}
