@@ -1,17 +1,17 @@
 # Atomizer
 
-# 所属包名
+# 所属包
 ```zenscript
 mods.alchemistry.Atomizer
 ```
 
-## 方法
+## 使用方式
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## 加
+## 添加配方
 ```zenscript
 mods.alchemistry.Atomizer.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Atomizer.addRecipe(<minecraft:redstone>,<liquid:beryllium>*500);
