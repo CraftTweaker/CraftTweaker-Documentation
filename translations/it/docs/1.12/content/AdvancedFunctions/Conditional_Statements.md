@@ -105,7 +105,7 @@ switchy ? print("Bye") : print("Hello");
 You can use these operators. All the examples given evaluate to true.
 
 
-| Name             | token        | Explanation                                                                                                                                                                  | Example           |
+| Nome             | token        | Explanation                                                                                                                                                                  | Example           |
 | ---------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | Not              | `!`          | Inverts a boolean                                                                                                                                                            | !false            |
 | Not Equal        | `!=`         | Checks if the value before and after are not equal                                                                                                                           | 1 != 2            |
