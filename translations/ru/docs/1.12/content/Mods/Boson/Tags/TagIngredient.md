@@ -14,7 +14,7 @@ Since `TagIngredient` is an `IIngredient`, it provides access to all the propert
 ## Свойства
 A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| Property Name | Тип                                      | Description                                                     |
+| Property Name | Тип                                      | Описание                                                        |
 | ------------- | ---------------------------------------- | --------------------------------------------------------------- |
 | `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
