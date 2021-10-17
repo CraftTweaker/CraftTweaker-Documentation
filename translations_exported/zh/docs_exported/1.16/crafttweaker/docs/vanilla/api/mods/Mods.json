@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/mods/Mods.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.mods.Mods",
+    "searchTerms": [
+        "isModLoaded",
+        "模组",
+        "size #大小",
+        "getMod"
+    ]
+}
