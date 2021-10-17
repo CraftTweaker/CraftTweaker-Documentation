@@ -60,7 +60,7 @@ You cannot simply save the file, you need to provide a summary of what you did (
 如果你的 GitHub 帐户关联了多个电子邮件地址，你可以选择你做出修改的电子邮件地址。 This will not have any real impact for contributing, though.  
 You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. 在大多数情况下，你只需要提交到 master branch 上即可。
 
-填写完毕的示例类似于下图所示： ![填写完的提交框](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+填写完毕的示例类似于下图所示： ![提交框已填充](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
 
 ## 下一步该做什么
