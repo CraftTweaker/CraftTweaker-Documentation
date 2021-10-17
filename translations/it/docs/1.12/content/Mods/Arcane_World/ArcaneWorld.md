@@ -7,7 +7,7 @@ Arcane World is a mod that allows for the addition of rituals using ingredients 
 import mods.ArcaneWorld;
 ```
 
-## Methods
+## Metodi
 ```zenscript
 // Creates a summoning ritual
 ArcaneWorld.createRitualSummon(string name, string displayName, string entityID, IIngredient... inputs);
