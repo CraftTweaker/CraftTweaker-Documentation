@@ -213,7 +213,7 @@ async function finalize(): Promise<void> {
             console.time("finalize-public")
             console.log(`Copying files ${language}/${version}`)
             for (const file of files) {
-                const newFilePath = path.relative(path.join(outDir, language, version), file).replaceAll("content" + path.sep, "");
+                const newFilePath = path.relative(path.join(outDir, language, version), file).replace("content" + path.sep, "");
                 const dest = path.join(publicDir, version, language, newFilePath);
                 fs.mkdirSync(path.dirname(dest), {recursive: true});
                 fs.copyFileSync(file, dest)
