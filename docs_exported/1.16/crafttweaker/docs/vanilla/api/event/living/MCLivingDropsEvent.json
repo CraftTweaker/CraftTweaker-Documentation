@@ -1,1 +1,1 @@
-{"path":"vanilla/api/event/living/MCLivingDropsEvent.md","ownerModId":"crafttweaker","zenCodeName":"crafttweaker.api.event.entity.MCLivingEvent","searchTerms":["crafttweaker.api.event.entity.MCLivingEvent","drops","recentlyHit","lootingLevel","source"]}
+{"path":"vanilla/api/event/living/MCLivingDropsEvent.md","ownerModId":"crafttweaker","zenCodeName":"crafttweaker.api.event.entity.MCLivingEvent","searchTerms":["removeDrop","crafttweaker.api.event.entity.MCLivingEvent","drops","addDrop","recentlyHit","lootingLevel","source"]}

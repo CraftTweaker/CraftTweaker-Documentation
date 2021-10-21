@@ -398,6 +398,8 @@
           "Math": {
             "BlockRayTraceResult": "vanilla/api/util/math/BlockRayTraceResult.md",
             "EntityRayTraceResult": "vanilla/api/util/math/EntityRayTraceResult.md",
+            "RayTraceBlockMode": "vanilla/api/util/math/RayTraceBlockMode.md",
+            "RayTraceFluidMode": "vanilla/api/util/math/RayTraceFluidMode.md",
             "RayTraceResult": "vanilla/api/util/math/RayTraceResult.md",
             "RayTraceResultType": "vanilla/api/util/math/RayTraceResultType.md"
           },

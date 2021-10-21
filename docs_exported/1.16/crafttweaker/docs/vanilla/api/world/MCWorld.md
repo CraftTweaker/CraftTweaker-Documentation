@@ -469,6 +469,30 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 
 :::
 
+:::group{name=rayTraceBlocks}
+
+Creates a ray trace from one vector to the other vector, which will stop at a block or a fluid.
+
+Returns: a [BlockRayTraceResult](/vanilla/api/util/math/BlockRayTraceResult) holding the result, the position and facing the ray stops.  
+Return Type: [BlockRayTraceResult](/vanilla/api/util/math/BlockRayTraceResult)
+
+```zenscript
+// MCWorld.rayTraceBlocks(startVec as MCVector3d, endVec as MCVector3d, blockMode as RayTraceBlockMode, fluidMode as RayTraceFluidMode, entity as MCEntity) as BlockRayTraceResult
+
+world.rayTraceBlocks(new MCVector3d(0.0, 0.0, 0.0), new MCVector3d(1.1, 4.5, 1.4), RayTraceBlockMode.OUTLINE, RayTraceFluidMode.NONE, entity);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| startVec | [MCVector3d](/vanilla/api/util/MCVector3d) | a vector which describes the starting point | false |  |
+| endVec | [MCVector3d](/vanilla/api/util/MCVector3d) | a vector which describes the direction and length we are searching in | false |  |
+| blockMode | [RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode) | the type of block that the ray trace would stop at. | false |  |
+| fluidMode | [RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode) | the type of fluid that the ray trace would stop at. | false |  |
+| entity | [MCEntity](/vanilla/api/entity/MCEntity) | the entity for selection context | true |  |
+
+
+:::
+
 :::group{name=setBlockState}
 
 Sets the block and it's state at a given position.
