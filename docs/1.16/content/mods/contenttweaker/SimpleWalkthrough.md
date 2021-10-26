@@ -133,12 +133,12 @@ Like other builders, they required you to use `build(name)` at the end of the bu
 import mods.contenttweaker.fluid.FluidBuilder;
 
 //Simplest call
-new FluidBuilder(false, 000000)
+new FluidBuilder(false, 0xff0000)
     .build("black_water");
 
 
 //With some other properties
-new FluidBuilder(false, 000000, <resource:contenttweaker:fluid/liquid>, <resource:contenttweaker:fluid/liquid_flowing>)
+new FluidBuilder(false, 0xff0000, <resource:contenttweaker:fluid/liquid>, <resource:contenttweaker:fluid/liquid_flowing>)
     .density(1600)
     .temperature(360)
     .viscosity(1300)
