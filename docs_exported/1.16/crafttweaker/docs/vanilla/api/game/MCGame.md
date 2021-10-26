@@ -42,6 +42,7 @@ game.localize("gui.up");
 | blocks | Collection&lt;[MCBlock](/vanilla/api/block/MCBlock)&gt; | true | false | No Description Provided |
 | directionAxises | Collection&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; | true | false | No Description Provided |
 | effects | Collection&lt;[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)&gt; | true | false | No Description Provided |
+| enchantments | Collection&lt;[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)&gt; | true | false | No Description Provided |
 | entityClassifications | Collection&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; | true | false | No Description Provided |
 | entityTypes | Collection&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false | No Description Provided |
 | fluids | Collection&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false | No Description Provided |
