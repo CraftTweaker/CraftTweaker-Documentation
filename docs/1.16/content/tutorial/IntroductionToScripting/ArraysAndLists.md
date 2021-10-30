@@ -12,7 +12,7 @@ In this page, we will look at the way `Lists` and `Arrays` can be used from with
 For the terminology, we will call the items inside a List or an Array as `Elements` of that structure.
 For example, in the array below, `"A"`, `"B"` and `"C"` would be the elements of the array `arr`.
 
-```zencode
+```zenscript
 var arr = ["A", "B", "C"] as string[];
 ```
 
@@ -21,7 +21,7 @@ These are the arrays that you will most likely encounter when working with mods.
 
 The other sort of arrays are *rectangular* Arrays, which take more than one index at a time, like below.
 They will be covered in another wiki page eventually, though some of their properties are not yet implemented properly.
-```zencode
+```zenscript
 var rectangularArray = new string[,](3, 3, "X"); //creates a 3x3 Grid which is filled with "X" on every slot.
 println(rectangularArray[0,0]); //Accessing elements here requires 2 indices
 ```
@@ -51,7 +51,7 @@ However, note that these operations will always create **new** objects and not m
 
 Below you can see such an example:
 
-```zencode
+```zenscript
 
 var oldArray = ["A", "B", "C"] as string[];
 
@@ -77,7 +77,7 @@ More sophisticated ways include using functions to specify which element belongs
 In the examples, you need to fill `ELEMENT_TYPE` with the proper type, e.g. `string` or `IItemStack`.  
 See further below for working examples
 
-```zencode
+```zenscript
 // Creates an empty list and fill it using .add() calls
 var list = new List<ELEMENT_TYPE>();
 list.add(ELEMENT);
@@ -117,7 +117,7 @@ var array = new ELEMENT_TYPE[]<SOME_TYPE>(oldArray, projection_function_indexed)
 You can access elements in Lists and Arrays using the Getter and Setter syntax.
 Here, each element has a number starting from 0.
 
-```zencode
+```zenscript
 var array = ["A", "B", "C"] as string[];
 
 // Retrieving Values
@@ -170,7 +170,7 @@ println(list.remove(0)); //Removes the "_" element and prints it to the console.
 
 Many times you create Lists or arrays in order to shorten your code.
 For this you can use for-loops.
-```
+```zenscript
 var array = ["A", "B", "C"] as string[];
 
 // Works for both Arrays and Lists:
@@ -194,7 +194,7 @@ for index, element in array {
 
 At some times you may need to get the length of an array, or whether or not it is empty or contains a given element.  
 These methods exist on both Lists and Arrays.
-```
+```zenscript
 var array = [""] as string[];
 
 println(array.length); //prints "1"
