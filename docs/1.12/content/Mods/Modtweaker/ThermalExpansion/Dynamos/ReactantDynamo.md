@@ -17,8 +17,8 @@ mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:wa
 ## Add Elemental Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack liquid, int energy);
-mods.thermalexpansion.ReactantDynamo.addElementalReaction(<minecraft:bedrock>, <liquid:water>, 13);
+//mods.thermalexpansion.ReactantDynamo.addReactionElemental(IItemStack item, ILiquidStack liquid, int energy);
+mods.thermalexpansion.ReactantDynamo.addReactionElemental(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
 ## Remove Reaction
@@ -32,6 +32,6 @@ mods.thermalexpansion.ReactantDynamo.removeReaction(<minecraft:bedrock>, <liquid
 ## Remove Elemental Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack item, ILiquidStack liquid);
-mods.thermalexpansion.ReactantDynamo.removeElementalReaction(<minecraft:bedrock>, <liquid:water>);
+//mods.thermalexpansion.ReactantDynamo.removeReactionElemental(IItemStack item, ILiquidStack liquid);
+mods.thermalexpansion.ReactantDynamo.removeReactionElemental(<minecraft:bedrock>, <liquid:water>);
 ```
