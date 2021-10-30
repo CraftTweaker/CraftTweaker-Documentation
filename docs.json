@@ -218,6 +218,9 @@
         "Examples": "mods/zensummoning/examples.md"
       }
       
+    },
+    "ZenCode": {
+      "Arrays and Lists": "zencode/arrays_and_lists.md"
     }
   }
 }
