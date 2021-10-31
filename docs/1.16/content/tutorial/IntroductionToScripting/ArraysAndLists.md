@@ -55,7 +55,7 @@ Below you can see such an example:
 
 var oldArray = ["A", "B", "C"] as string[];
 
-var list = oldArray stdlib.List<string>;
+var list = oldArray as stdlib.List<string>;
 list.add("D");
 
 var newArray = oldArray as string[];
@@ -84,7 +84,7 @@ list.add(ELEMENT);
 
 
 // Create an Array and provide its elements directly
-var array = [ELEMENTS] as ELEMENT_TYPE;
+var array = [ELEMENT, ELEMENT, ...] as ELEMENT_TYPE[];
 
 // Creates a new array that can hold SIZE elements
 // All elements will be the default value of the provided type
