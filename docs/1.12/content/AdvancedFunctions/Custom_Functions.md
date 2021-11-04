@@ -71,6 +71,22 @@ function add(a as int,b as int) as int{
 }
 ```
 
+## Default arguments
+
+You can also set some parameters default value. These parameters can be ignored and use default value when you call the function.
+
+```zenscript
+function name(a as int, b as int = 2, c as int = 3) as void {
+    print(a + b + c);
+}
+
+name(1); // print 6 [1 + 2 (default) + 3 (default)] 
+name(1, 3); // print 7 [1 + 3 + 3 (default)] 
+name(1, 1, 4); // print 6 [1 + 1 + 4] 
+```
+
+* You can use bracket handlers and functions for default arguments. But variables are not allowed.
+* Once a parameter has a default argument, the parameters after it also require a default argument.
 
 ## Functions as variables
 You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
