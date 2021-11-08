@@ -43,7 +43,7 @@
       }
       },
       "Aquaculture 2": {
-      "Fish Data": "mods/Aquaculture2/FishData.md"
+          "Fish Data": "mods/Aquaculture2/FishData.md"
       },
       "ArmoreableMobs": {
         "ArmoreableMobs" : "mods/ArmoreableMobs/ArmoreableMobs.md"
