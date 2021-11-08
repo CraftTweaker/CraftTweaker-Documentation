@@ -52,6 +52,9 @@
         "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
         "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
       },
+      "Artisan Worktables" : {
+        "Artisan Worktables" : "mods/ArtisanWorktables/ArtisanWorktables.md"
+      },
       "Astral Sorcery": {
         "Altar": "mods/AstralSorcery/Altar.md",
         "Block Transmutation": "mods/AstralSorcery/BlockTransmutation.md",
