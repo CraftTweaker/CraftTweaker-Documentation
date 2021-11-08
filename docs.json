@@ -40,14 +40,13 @@
       "Applied Energistics 2": {
         "Grinder": "mods/AppliedEnergistics2/Grinder.md",
         "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
-      },
-      "Atum 2": {
-        "Kiln": "mods/Atum2/Kiln.md",
-        "Quern": "mods/Atum2/Quern.md",
-        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
+      }
       },
       "Aquaculture 2": {
-        "Fish Data": "mods/Aquaculture2/FishData.md"
+      "Fish Data": "mods/Aquaculture2/FishData.md"
+      },
+      "ArmoreableMobs": {
+        "ArmoreableMobs" : "mods/ArmoreableMobs/ArmoreableMobs.md"
       },
       "Ars-Nouveau": {
         "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
@@ -59,6 +58,11 @@
         "Infusion": "mods/AstralSorcery/Infusion.md",
         "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
         "Well": "mods/AstralSorcery/Well.md"
+      },
+      "Atum 2": {
+        "Kiln": "mods/Atum2/Kiln.md",
+        "Quern": "mods/Atum2/Quern.md",
+        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
       },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
@@ -217,4 +221,3 @@
       
     }
   }
-}
