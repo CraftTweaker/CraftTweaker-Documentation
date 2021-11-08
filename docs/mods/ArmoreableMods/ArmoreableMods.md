@@ -1,3 +1,5 @@
+::requiredMod[Armoreable Mobs]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/armoreablemobs}
+
 #Armoreable Mobs
 
 A mod that allows you to give armor on spawn to living mobs.
