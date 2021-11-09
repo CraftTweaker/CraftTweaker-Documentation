@@ -3,7 +3,6 @@
 #Armoreable Mobs
 
 A mod that allows you to give armor on spawn to living mobs.
-Methods can be found in the Crafttweaker documentation page(LINK).
 
 #ArmorGroup methods
 `new ArmorGroup(name as string) as ArmorGroup` -> Returns a new ArmorGroup with the specified name.
@@ -13,10 +12,12 @@ Methods can be found in the Crafttweaker documentation page(LINK).
 
 `MyArmorGroup.inSlot(slot as EquipmentSlotType, stack as IItemStack) as ArmorGroup` -> Returns a new ArmorGroup with the specified stack in the specified [slot](https://docs.blamejared.com/1.16/en/vanilla/api/util/MCEquipmentSlotType).
 
-`MyArmorGroup.overrideExistingArmor(type as MCEntityType) as void` -> In the event that the mob spawns with armor, overrides that with a possible ArmorGroup.
 
 `MyArmorGroup.register(entitytype as MCEntityType) as void` -> Adds the ArmorGroup to that entity's armor list.
 
+#Static methods
+
+`MyArmorGroup.overrideExistingArmor(type as MCEntityType, map as IItemStack[MCEquipmentSlotType], blockstate as @Optional MCBlockState) as void` -> In the event that the mob spawns with armor, overrides that with a possible ArmorGroup.
 
 
 #Optional Methods
@@ -56,4 +57,11 @@ new ArmorGroup("zombie_test_2")
 .addStages("start")
 .setWeight(1.0)
 .register(<entitytype:minecraft:zombie>);
+
+val myMap as IItemStack[MCEquipmentSlotType] = {
+    <equipmentslottype:head> : <item:minecraft:leather_helmet>,
+    <equipmentslottype:mainhand> : <item:minecraft:wooden_sword>
+};
+ArmorGroup.overrideExistingArmor(<entitytype:minecraft:zombie>, <blockstate:minecraft:sand>, myMap);
+
 ```
