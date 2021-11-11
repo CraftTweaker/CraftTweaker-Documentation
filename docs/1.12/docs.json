@@ -1055,7 +1055,7 @@
           "Supercooler": "Mods/NuclearCraft/Machine_Recipes/Supercooler.md"
         }
       },
-      "NuclearCraft&#58; Overhauled": {
+      "NuclearCraft: Overhauled": {
         "Important Info": "Mods/NuclearCraft_Overhauled/Important_Info.md",
         "Radiation": "Mods/NuclearCraft_Overhauled/Radiation.md",
         "Recipe Info": "Mods/NuclearCraft_Overhauled/Recipe_Info.md",
@@ -1093,8 +1093,8 @@
         "Preprocessor": "Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md",
         "Command": "Mods/Pack_Mode/Commands/Packmode_Command.md"
       },
-      "PneumaticCraft&#58; Repressurized": {
-        "About PneumaticCraft&#58; Repressurized": "Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md",
+      "PneumaticCraft: Repressurized": {
+        "About PneumaticCraft: Repressurized": "Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md",
         "Crafting": {
           "Assembly System": "Mods/PneumaticCraft_Repressurized/Assembly.md",
           "Explosion Crafting": "Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md",
@@ -1216,7 +1216,7 @@
         "Vacuum Freezer": "Mods/Tech_Reborn/Vacuum_Freezer.md",
         "Wire Mill": "Mods/Tech_Reborn/Wire_Mill.md"
       },
-      "TerraFirmaCraft&#58; The Next Generation": {
+      "TerraFirmaCraft: The Next Generation": {
         "Terrafirmacraft": "Mods/Terrafirmacraft/Terrafirmacraft.md",
         "Heating": "Mods/Terrafirmacraft/Heating.md",
         "HeatingTemperatures": "Mods/Terrafirmacraft/HeatingTemperatures.md",
@@ -1253,8 +1253,8 @@
         "Death Chest Spawning": "Mods/VanillaDeathChest/Death_Chest_Spawning.md",
         "VanillaDeathChest": "Mods/VanillaDeathChest/VanillaDeathChest.md"
       },
-      "Zen&#58; Foundry": {
-        "Zen&#58; Foundry": "Mods/Zen_Foundry/ZenFoundry.md",
+      "Zen: Foundry": {
+        "Zen: Foundry": "Mods/Zen_Foundry/ZenFoundry.md",
         "Machines": {
           "Alloying Crucible": "Mods/Zen_Foundry/Machines/AlloyingCrucible.md",
           "Alloy Mixer": "Mods/Zen_Foundry/Machines/AlloyMixer.md",
