@@ -16,7 +16,7 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 #Instance Methods: 
 
-`MyArmorSetEffect.inSlot(slot as MCEquipmentSlotType, item as IItemStack) as ArmorSetEffect` -> Checks for a certain [IItemStack](https://docs.blamejared.com/1.16/en/vanilla/api/items/IItemStack) in the specified [slot](https://docs.blamejared.com/1.16/en/vanilla/api/util/MCEquipmentSlotType).
+`MyArmorSetEffect.inSlot(slot as MCEquipmentSlotType, item as IItemStack) as ArmorSetEffect` -> Checks for a certain [IItemStack](/vanilla/api/items/IItemStack) in the specified [slot](/vanilla/api/util/MCEquipmentSlotType).
 
 `MyArmorSetEffect.setIgnoreNBT() as ArmorSetEffect` -> Ignores NBT data for the specified Items in the ArmorSetEffect.
 
@@ -30,13 +30,13 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 `MyArmorSetEffect.addParticleWithDefaultSpread(particleName as string) as ArmorSetEffect` -> Adds a non customisable particle spread with the specified particle.
 
-`MyArmorSetEffect.addImmunity(effect as MCPotionEffect) as ArmorSetEffect` -> Makes the player wearing the set immune to that [effect](https://docs.blamejared.com/1.16/en/vanilla/api/potions/MCPotionEffect).
+`MyArmorSetEffect.addImmunity(effect as MCPotionEffect) as ArmorSetEffect` -> Makes the player wearing the set immune to that [effect](/vanilla/api/potions/MCPotionEffect).
 
-`MyArmorSetEffect.addEffect(effect as MCPotionEffectInstance) as ArmorSetEffect` -> Makes the player wearing the set receive that [effect](https://docs.blamejared.com/1.16/en/vanilla/api/potions/MCPotionEffectInstance).
+`MyArmorSetEffect.addEffect(effect as MCPotionEffectInstance) as ArmorSetEffect` -> Makes the player wearing the set receive that [effect](/vanilla/api/potions/MCPotionEffectInstance).
 
-`MyArmorSetEffect.addAttributeEffect(attribute as Attribute, modifier as AttributeModifier) as ArmorSetEffect` -> Adds the [attribute](https://docs.blamejared.com/1.16/en/vanilla/api/entity/Attribute) and it's [modifier](https://docs.blamejared.com/1.16/en/vanilla/api/entity/AttributeModifier) to all armor pieces when worn.
+`MyArmorSetEffect.addAttributeEffect(attribute as Attribute, modifier as AttributeModifier) as ArmorSetEffect` -> Adds the [attribute](/vanilla/api/entity/Attribute) and it's [modifier](/vanilla/api/entity/AttributeModifier) to all armor pieces when worn.
 
-`MyArmorSetEffect.addAttackerEffect(effect as MCPotionEffectInstance) as ArmorSetEffect` -> Makes the entity that attacks the player wearing this set receive an [effect](https://docs.blamejared.com/1.16/en/vanilla/api/potions/MCPotionEffectInstance).
+`MyArmorSetEffect.addAttackerEffect(effect as MCPotionEffectInstance) as ArmorSetEffect` -> Makes the entity that attacks the player wearing this set receive an [effect](/vanilla/api/potions/MCPotionEffectInstance).
 
 `MyArmorSetEffect.register() as void  ` -> Registers our ArmorSetEffect.
 
