@@ -1,5 +1,7 @@
 # MCItemGroup
 
+::deprecated[This class has been replaced by `crafttweaker.api.item.ItemGroup`]
+
 An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
@@ -17,9 +19,17 @@ MCItemGroup implements the following interfaces. That means all methods defined 
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| [ItemGroup](/vanilla/api/item/ItemGroup) | true |
+
 ## Methods
 
 :::group{name=getPath}
+
+::deprecated[This class has been replaced by `crafttweaker.api.item.ItemGroup`]
 
 Gets the path of the item group.
  The path is what you use in the Bracket Expression after the `<itemGroup:` part.
@@ -36,8 +46,11 @@ Return Type: string
 
 :::group{name=setBackgroundImageName}
 
+::deprecated[This class has been replaced by `crafttweaker.api.item.ItemGroup`]
+
 Sets the image name of the Background that is used for this tab in the creative menu
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
@@ -53,8 +66,11 @@ MCItemGroup.setBackgroundImageName(texture as string) as MCItemGroup
 
 :::group{name=setNoScrollbar}
 
+::deprecated[This class has been replaced by `crafttweaker.api.item.ItemGroup`]
+
 Removes the scrollbar of the item Group in the creative inventory
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
@@ -67,8 +83,11 @@ Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 :::group{name=setNoTitle}
 
+::deprecated[This class has been replaced by `crafttweaker.api.item.ItemGroup`]
+
 Removes the title of the item Group in the creative inventory
 
+Returns: This object for chaining  
 Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript

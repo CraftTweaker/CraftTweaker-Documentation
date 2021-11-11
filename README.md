@@ -1,3 +1,6 @@
+# This branch is deprecated!
+Please target https://github.com/CraftTweaker/CraftTweaker-Documentation/tree/main instead
+
 # CraftTweaker-Documentation
 Documentation for CraftTweaker
 

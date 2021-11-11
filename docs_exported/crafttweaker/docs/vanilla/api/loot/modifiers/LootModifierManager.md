@@ -91,8 +91,8 @@ LootModifierManager.register(name as string, builder as LootConditionBuilder, mo
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons. |
-| builder | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | A [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) representing a list of conditions that should be merged together <br />                 via 'AND'. |
+| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />                  colons. |
+| builder | [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) | A [LootConditionBuilder](/vanilla/api/loot/conditions/LootConditionBuilder) representing a list of conditions that should be merged together <br />                  via 'AND'. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 
@@ -118,7 +118,7 @@ LootModifierManager.register(name as string, conditions as ILootCondition?[], mo
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons. |
+| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />                    colons. |
 | conditions | [ILootCondition](/vanilla/api/loot/conditions/ILootCondition)?[] | A set of conditions that restrict the context in which the loot modifier applies. It can be <br />                    empty or <code>null</code>, which indicates a lack of conditions. The conditions are all merged <br />                    together with an 'AND' connector. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
@@ -140,7 +140,7 @@ LootModifierManager.registerUnconditional(name as string, modifier as ILootModif
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />              colons. |
+| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />                  colons. |
 | modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifiers/CommonLootModifiers). |
 
 

@@ -10,17 +10,3 @@ import mods.contenttweaker.api.BracketDumpers;
 ```
 
 
-## Static Methods
-
-:::group{name=getItemGroupBracketDump}
-
-Return Type: Collection&lt;string&gt;
-
-```zenscript
-// BracketDumpers.getItemGroupBracketDump() as Collection<string>
-
-BracketDumpers.getItemGroupBracketDump();
-```
-
-:::
-

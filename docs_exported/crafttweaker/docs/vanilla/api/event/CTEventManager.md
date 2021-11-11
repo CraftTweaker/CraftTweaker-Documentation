@@ -25,13 +25,13 @@ Return Type: void
 // CTEventManager.register<T : MCEvent>(consumer as Consumer<T>) as void
 
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>((event) => {
-     var player = event.player;
-     var result = event.itemResult;
-     println("Player '" + player.name + "' crafted " + result.commandString);
+ var player = event.player;
+ var result = event.itemResult;
+ println("Player '" + player.name + "' crafted " + result.commandString);
  });
 CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
-     //Don't actually register a consumer for every event
-     println("Some Event was captured");
+ //Don't actually register a consumer for every event
+ println("Some Event was captured");
  });
 ```
 
@@ -53,9 +53,9 @@ Return Type: void
 // CTEventManager.register<T : MCEvent>(priority as EventPriority, consumer as Consumer<T>) as void
 
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>(EventPriority.HIGHEST, (event) => {
-     var player = event.player;
-     var result = event.itemResult;
-     println("Player '" + player.name + "' crafted " + result.commandString);
+ var player = event.player;
+ var result = event.itemResult;
+ println("Player '" + player.name + "' crafted " + result.commandString);
  });
 ```
 

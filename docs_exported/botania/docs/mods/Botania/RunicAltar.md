@@ -42,7 +42,9 @@ Adds the specified runic altar recipe.
 Return Type: void
 
 ```zenscript
-RuneAltar.addRecipe(name as string, output as IItemStack, mana as int, inputs as IIngredient[]) as void
+// RuneAltar.addRecipe(name as string, output as IItemStack, mana as int, inputs as IIngredient[]) as void
+
+<recipetype:botania:runic_altar>.addRecipe("rune_altar_test", <item:minecraft:diamond>, 5000, <item:botania:rune_air>, <item:botania:orange_petal>, <item:botania:red_petal>);
 ```
 
 | Parameter | Type | Description |
@@ -178,6 +180,22 @@ RuneAltar.removeByRegex(regex as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | No Description Provided |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Return Type: void
+
+```zenscript
+RuneAltar.removeByRegex(regex as string, exclude as RecipeFilter) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| regex | string | No Description Provided |
+| exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::

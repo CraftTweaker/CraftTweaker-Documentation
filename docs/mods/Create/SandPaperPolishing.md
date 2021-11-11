@@ -25,14 +25,3 @@ The following script will remove all Sand Paper Polishing recipes that output Po
 
 <recipetype:create:sandpaper_polishing>.removeRecipe(<item:create:polished_rose_quartz>);
 ```
-
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:sandpaper_polishing>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:sandpaper_polishing>.factory()
-```

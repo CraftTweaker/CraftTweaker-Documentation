@@ -1,6 +1,6 @@
 # MCWorld
 
-Worlds represent a dimension within the game. They are used to interact with 
+Worlds represent a dimension within the game. They are used to interact with
  the blocks, mobs, and other variables within that dimension.
 
 ## Importing the class
@@ -441,7 +441,7 @@ world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 |-----------|------|-------------|
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />         is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This <br />                 is generally unused. |
 
 
 :::
@@ -464,7 +464,7 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 | excluded | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | An excluded player who will not receive the event. |
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />         is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This <br />                  is generally unused. |
 
 
 :::

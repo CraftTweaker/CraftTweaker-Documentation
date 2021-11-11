@@ -1,7 +1,7 @@
 # BlockBuilderStairs
 
 A special Block Builder that allows you to create stairs.
- <p>
+ 
  Stairs will have not one but three textures that you will need to supply:
  One for the top, one for the bottom and one for the sides.
  By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`.
@@ -48,6 +48,7 @@ Allows you to override the path of the texture that the bottom side should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the end texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
@@ -68,6 +69,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName a
 Allows you to override the path of the texture that the bottom side should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
@@ -87,6 +89,7 @@ Allows you to override the path of the texture that the sides should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the end texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
@@ -107,6 +110,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as
 Allows you to override the path of the texture that the sides should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
@@ -126,6 +130,7 @@ Allows you to override the path of the texture that the top side should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
  Uses a function that takes the block's name as input and returns the end texture for it.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
@@ -144,6 +149,7 @@ BlockBuilderStairs.withTopTexture(topTexture as Function<MCResourceLocation,MCRe
 Allows you to override the path of the texture that the top side should use.
  If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
 
+Returns: This builder, used for method chaining  
 Return Type: [BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript

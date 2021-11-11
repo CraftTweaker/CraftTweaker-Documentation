@@ -21,6 +21,7 @@ import mods.contenttweaker.item.advance.CoTItemAdvanced;
 
 Sets what will happen when the item is ticked in an inventory.
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -38,6 +39,7 @@ CoTItemAdvanced.setInventoryTick(func as IItemInventoryTick) as CoTItemAdvanced
 
 The item's color.
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -55,6 +57,7 @@ CoTItemAdvanced.setItemColorSupplier(func as IItemColorSupplier) as CoTItemAdvan
 
 Sets what will happen when a living entity attacks other entities with this item.
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -72,6 +75,7 @@ CoTItemAdvanced.setOnHitEntity(func as IItemHitEntity) as CoTItemAdvanced
 
 Sets what will happen when a player interacts (right-clicks) an entity with this item.
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -89,6 +93,7 @@ CoTItemAdvanced.setOnInteractWithEntity(func as IItemInteractWithEntity) as CoTI
 
 Sets what will happen when the player right clicks with the item. If the item is food, then you cannot use this method as the food mechanics also use this method.
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -106,6 +111,7 @@ CoTItemAdvanced.setOnItemRightClick(func as IItemRightClick) as CoTItemAdvanced
 
 Sets what will happen when the player uses this item on a block
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript
@@ -123,6 +129,7 @@ CoTItemAdvanced.setOnItemUse(func as IItemUse) as CoTItemAdvanced
 
 The Set function will be called each tick while using the item
 
+Returns: the CoTItemAdvanced, used for method chaining  
 Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
 
 ```zenscript

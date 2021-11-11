@@ -184,6 +184,22 @@ TerraPlate.removeByRegex(regex as string) as void
 
 :::
 
+:::group{name=removeByRegex}
+
+Return Type: void
+
+```zenscript
+TerraPlate.removeByRegex(regex as string, exclude as RecipeFilter) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| regex | string | No Description Provided |
+| exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
+
+
+:::
+
 :::group{name=removeRecipe}
 
 Return Type: void

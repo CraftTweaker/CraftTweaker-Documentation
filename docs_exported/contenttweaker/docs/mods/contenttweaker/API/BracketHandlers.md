@@ -63,25 +63,3 @@ BracketHandlers.getCoTItem("test_item");
 
 :::
 
-:::group{name=getItemGroup}
-
-Gets the itemGroup. Will throw an error if the group could not be found
-
-Returns: The found MCItemGroup  
-Return Type: [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
-
-```zenscript
-<itemgroup:misc>
-
-// BracketHandlers.getItemGroup(tokens as string) as MCItemGroup
-
-BracketHandlers.getItemGroup("misc");
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | What you createDataCompound in the BEP call |
-
-
-:::
-

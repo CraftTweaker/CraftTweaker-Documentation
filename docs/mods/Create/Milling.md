@@ -25,13 +25,3 @@ The following script will remove all Milling recipes that output Limesand.
 
 <recipetype:create:milling>.removeRecipe(<item:create:limesand>);
 ```
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:milling>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:milling>.factory()
-```

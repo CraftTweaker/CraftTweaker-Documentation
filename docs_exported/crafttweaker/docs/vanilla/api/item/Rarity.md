@@ -24,7 +24,7 @@ Return Type: [Rarity](/vanilla/api/item/Rarity)
 ```zenscript
 // Rarity.create(name as string, formatting as TextFormatting) as Rarity
 
-Rarity.create("insanely epic", <formatting:obfucated>);
+Rarity.create("insanely_epic", <formatting:obfucated>);
 ```
 
 | Parameter | Type | Description |
