@@ -48,6 +48,9 @@
       "ArmoreableMobs": {
         "ArmoreableMobs" : "mods/ArmoreableMobs/ArmoreableMobs.md"
       },
+      "ArmorSetEffects": {
+        "Armor Set Effects" : "mods/ArmorSetEffects/ArmorSetEffects.md"
+      },
       "Ars-Nouveau": {
         "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
         "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
