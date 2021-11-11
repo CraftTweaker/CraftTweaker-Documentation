@@ -10,7 +10,7 @@ A mod that allows you to give armor on spawn to living mobs.
 `MyArmorGroup.setWeight(weight as double) as ArmorGroup` -> Returns a new ArmorGroup with the specified weight. Weight affects how common that armor is given to mobs that spawn with it.
 
 
-`MyArmorGroup.inSlot(slot as EquipmentSlotType, stack as IItemStack) as ArmorGroup` -> Returns a new ArmorGroup with the specified stack in the specified [slot](https://docs.blamejared.com/1.16/en/vanilla/api/util/MCEquipmentSlotType).
+`MyArmorGroup.inSlot(slot as EquipmentSlotType, stack as IItemStack) as ArmorGroup` -> Returns a new ArmorGroup with the specified stack in the specified [slot](/vanilla/api/util/MCEquipmentSlotType).
 
 
 `MyArmorGroup.register(entitytype as MCEntityType) as void` -> Adds the ArmorGroup to that entity's armor list.
