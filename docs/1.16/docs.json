@@ -42,23 +42,21 @@
         "Grinder": "mods/AppliedEnergistics2/Grinder.md",
         "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
       },
-      "Atum 2": {
-        "Kiln": "mods/Atum2/Kiln.md",
-        "Quern": "mods/Atum2/Quern.md",
-        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
-      },
       "Aquaculture 2": {
         "Fish Data": "mods/Aquaculture2/FishData.md"
       },
-      "ArmoreableMobs": {
-        "ArmoreableMobs": "mods/ArmoreableMobs/ArmoreableMobs.md"
+      "Armoreable Mobs": {
+        "Armoreable Mobs": "mods/ArmoreableMobs/ArmoreableMobs.md"
       },
-      "ArmorSetEffects": {
+      "Armor Set Effects": {
         "Armor Set Effects": "mods/ArmorSetEffects/ArmorSetEffects.md"
       },
       "Ars-Nouveau": {
         "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
         "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
+      },
+      "Artisan Worktables" : {
+        "Artisan Worktables" : "mods/ArtisanWorktables/ArtisanWorktables.md"
       },
       "Astral Sorcery": {
         "Altar": "mods/AstralSorcery/Altar.md",
@@ -66,6 +64,11 @@
         "Infusion": "mods/AstralSorcery/Infusion.md",
         "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
         "Well": "mods/AstralSorcery/Well.md"
+      },
+      "Atum 2": {
+        "Kiln": "mods/Atum2/Kiln.md",
+        "Quern": "mods/Atum2/Quern.md",
+        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
       },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
