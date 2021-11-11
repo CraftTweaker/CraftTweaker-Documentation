@@ -1,6 +1,6 @@
 ::requiredMod[Armor Set Effects]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/armor-set-effects}
 
-#SetEffects
+# SetEffects
 
 1.16 port of SetEffects, a mod that gives some customisable effects to the entities that are wearing certain, crafttweaker customisable, armor sets.
 
@@ -8,13 +8,13 @@ Includes most methods from the original mod: https://github.com/Lemonszz/SetEffe
 
 Package: `import mods.seteffect.ArmorSetEffect`
 
-#Static Methods:
+# Static Methods:
 
 `new ArmorSetEffect(String name) as ArmorSetEffect` -> Creates a new ArmorSetEffect with the specified name. Standard name rules apply `[a-z0-9/._-]`.
 
 `ArmorSetEffect.dumpParticleNames() as void` -> Prints a list of particle names to the crafttweaker.log file.
 
-#Instance Methods: 
+# Instance Methods: 
 
 `MyArmorSetEffect.inSlot(slot as MCEquipmentSlotType, item as IItemStack) as ArmorSetEffect` -> Checks for a certain [IItemStack](/vanilla/api/items/IItemStack) in the specified [slot](/vanilla/api/util/MCEquipmentSlotType).
 
@@ -42,7 +42,7 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 
 
-#Example Set:
+# Example Set:
 ```zenscript
 import mods.SetEffect.ArmorSetEffect;
 
@@ -74,6 +74,6 @@ iron_set.register();
 
 `````
 
-#Expanding MCPotionEffectInstance
+# Expanding MCPotionEffectInstance
 
 `MCPotionEffectInstance.hideParticles()` -> Makes the particles invisible
