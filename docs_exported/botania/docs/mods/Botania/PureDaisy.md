@@ -54,6 +54,7 @@ Return Type: void
 | input | [StateIngredient](/mods/Botania/StateIngredient) | Input ingredient | false |  |
 | time | int | Optional conversion time (note that the real time is multiplied by 8) | true | 150 |
 
+
 :::
 
 :::group{name=getAllRecipes}
@@ -179,6 +180,22 @@ PureDaisy.removeByRegex(regex as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | No Description Provided |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Return Type: void
+
+```zenscript
+PureDaisy.removeByRegex(regex as string, exclude as RecipeFilter) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| regex | string | No Description Provided |
+| exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
 
 
 :::

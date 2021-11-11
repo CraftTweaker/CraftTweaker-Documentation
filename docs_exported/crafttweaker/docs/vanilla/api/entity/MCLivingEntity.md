@@ -240,6 +240,25 @@ myMCLivingEntity.getAttackingEntity();
 
 :::
 
+:::group{name=getAttribute}
+
+
+
+Return Type: [AttributeInstance](/vanilla/api/entity/AttributeInstance)?
+
+```zenscript
+// MCLivingEntity.getAttribute(attribute as Attribute) as AttributeInstance?
+
+myMCLivingEntity.getAttribute(<attribute:minecraft:generic.attack_damage>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| attribute | [Attribute](/vanilla/api/entity/Attribute) | No Description Provided |
+
+
+:::
+
 :::group{name=getBeeStingCount}
 
 Return Type: int

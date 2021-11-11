@@ -193,12 +193,12 @@ MCStyle.mergeStyle(style as MCStyle) as MCStyle
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setBold(boldIn as Boolean) as MCStyle
+MCStyle.setBold(boldIn as bool?) as MCStyle
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| boldIn | Boolean | No Description Provided |
+| boldIn | bool? | No Description Provided |
 
 
 :::
@@ -291,12 +291,12 @@ MCStyle.setInsertion(insertion as string) as MCStyle
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setItalic(italic as Boolean) as MCStyle
+MCStyle.setItalic(italic as bool?) as MCStyle
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| italic | Boolean | No Description Provided |
+| italic | bool? | No Description Provided |
 
 
 :::
@@ -306,12 +306,12 @@ MCStyle.setItalic(italic as Boolean) as MCStyle
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
+MCStyle.setObfuscated(obfuscated as bool?) as MCStyle
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| obfuscated | Boolean | No Description Provided |
+| obfuscated | bool? | No Description Provided |
 
 
 :::
@@ -321,12 +321,12 @@ MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
+MCStyle.setStrikethrough(strikethrough as bool?) as MCStyle
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| strikethrough | Boolean | No Description Provided |
+| strikethrough | bool? | No Description Provided |
 
 
 :::
@@ -336,12 +336,27 @@ MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setUnderlined(underlined as Boolean) as MCStyle
+MCStyle.setUnderlined(underlined as bool?) as MCStyle
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| underlined | Boolean | No Description Provided |
+| underlined | bool? | No Description Provided |
+
+
+:::
+
+:::group{name=setUnderlined}
+
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+MCStyle.setUnderlined(underlined as boolean) as MCStyle
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| underlined | boolean | No Description Provided |
 
 
 :::

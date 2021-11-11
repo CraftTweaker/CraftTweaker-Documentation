@@ -25,13 +25,3 @@ The following script will remove all Splashing recipes that output Yellow Concre
 
 <recipetype:create:splashing>.removeRecipe(<item:minecraft:yellow_concrete>);
 ```
-
-#### Get a Processing Recipe Factory
-
-You can get a ProcessingRecipeFactory of this recipe type like so:
-
-```zenscript
-// <recipetype:create:splashing>.factory() as ProcessingRecipeFactory
-
-<recipetype:create:splashing>.factory()
-```

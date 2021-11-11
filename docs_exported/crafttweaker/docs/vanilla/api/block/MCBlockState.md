@@ -356,6 +356,21 @@ Return Type: int
 
 :::
 
+:::group{name=getHardness}
+
+Gets the hardness of this BlockState.
+
+Returns: The hardness of this BlockState.  
+Return Type: float
+
+```zenscript
+// MCBlockState.getHardness() as float
+
+<blockstate:minecraft:grass>.getHardness();
+```
+
+:::
+
 :::group{name=getHarvestLevel}
 
 Gets the harvest level of this BlockState.
@@ -816,6 +831,25 @@ Return Type: void
 
 :::
 
+:::group{name=setHardness}
+
+Sets the hardness of this BlockState.
+
+Return Type: void
+
+```zenscript
+// MCBlockState.setHardness(hardness as float) as void
+
+<blockstate:minecraft:grass>.setHardness(2.4f);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hardness | float | the new hardness of this BlockState |
+
+
+:::
+
 :::group{name=ticksRandomly}
 
 Checks whether this BlockState ticks randomly.
@@ -860,6 +894,7 @@ Return Type: [MCBlockState](/vanilla/api/block/MCBlockState)
 | block | [MCBlock](/vanilla/api/block/MCBlock) | true | false | Gets the base [MCBlock](/vanilla/api/block/MCBlock) of this BlockState. <br />  <br />  The [MCBlock](/vanilla/api/block/MCBlock) will not contain any of the properties of this BlockState. |
 | canProvidePower | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
 | commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  <code> <br />  <blockstate:minecraft:grass:snowy=true> <br />  </code> |
+| hardness | float | true | true | Gets the hardness of this BlockState. |
 | harvestLevel | int | true | false | Gets the harvest level of this BlockState. |
 | harvestTool | [ToolType](/vanilla/api/tool/ToolType)? | true | false | Gets the [ToolType](/vanilla/api/tool/ToolType) of this BlockState. |
 | hasTileEntity | boolean | true | false | Checks whether this BlockState has a [MCTileEntity](/vanilla/api/tileentity/MCTileEntity). |

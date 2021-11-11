@@ -72,6 +72,7 @@
         },
         "Enchantment": {
           "EnchantmentRarity": "vanilla/api/enchantment/EnchantmentRarity.md",
+          "EnchantmentType": "vanilla/api/enchantment/EnchantmentType.md",
           "IArmorVanishable": "vanilla/api/enchantment/IArmorVanishable.md",
           "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md",
           "Vanishing": {
@@ -83,6 +84,7 @@
         },
         "Entity": {
           "Attribute": "vanilla/api/entity/Attribute.md",
+          "AttributeInstance": "vanilla/api/entity/AttributeInstance.md",
           "AttributeModifier": "vanilla/api/entity/AttributeModifier.md",
           "AttributeOperation": "vanilla/api/entity/AttributeOperation.md",
           "EntityIngredient": "vanilla/api/entity/EntityIngredient.md",
@@ -162,6 +164,7 @@
               "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/MCPlayerRespawnEvent.md",
               "Interact": {
                 "MCEntityInteractEvent": "vanilla/api/event/entity/player/interact/MCEntityInteractEvent.md",
+                "MCLeftClickBlockEvent": "vanilla/api/event/entity/player/interact/MCLeftClickBlockEvent.md",
                 "MCPlayerInteractEvent": "vanilla/api/event/entity/player/interact/MCPlayerInteractEvent.md",
                 "MCRightClickBlockEvent": "vanilla/api/event/entity/player/interact/MCRightClickBlockEvent.md",
                 "MCRightClickEmptyEvent": "vanilla/api/event/entity/player/interact/MCRightClickEmptyEvent.md",
@@ -202,6 +205,7 @@
         },
         "Item": {
           "Ingredient": "vanilla/api/item/Ingredient.md",
+          "ItemGroup": "vanilla/api/item/ItemGroup.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
           "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
@@ -213,6 +217,14 @@
           },
           "Block": {
             "BlockItem": "vanilla/api/item/block/BlockItem.md"
+          },
+          "Sword": {
+            "SwordItem": "vanilla/api/item/sword/SwordItem.md"
+          },
+          "Tiered": {
+            "IItemTier": "vanilla/api/item/tiered/IItemTier.md",
+            "ItemTier": "vanilla/api/item/tiered/ItemTier.md",
+            "TieredItem": "vanilla/api/item/tiered/TieredItem.md"
           }
         },
         "Items": {
@@ -340,6 +352,7 @@
           "TriState": "vanilla/api/predicate/TriState.md"
         },
         "Recipe": {
+          "MirrorAxis": "vanilla/api/recipe/MirrorAxis.md",
           "RecipeFilter": "vanilla/api/recipe/RecipeFilter.md",
           "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
           "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
@@ -382,6 +395,12 @@
           "MCVector3i": "vanilla/api/util/MCVector3i.md",
           "NameUtils": "vanilla/api/util/NameUtils.md",
           "Random": "vanilla/api/util/Random.md",
+          "Math": {
+            "BlockRayTraceResult": "vanilla/api/util/math/BlockRayTraceResult.md",
+            "EntityRayTraceResult": "vanilla/api/util/math/EntityRayTraceResult.md",
+            "RayTraceResult": "vanilla/api/util/math/RayTraceResult.md",
+            "RayTraceResultType": "vanilla/api/util/math/RayTraceResultType.md"
+          },
           "Text": {
             "MCStyle": "vanilla/api/util/text/MCStyle.md",
             "MCTextComponent": "vanilla/api/util/text/MCTextComponent.md",

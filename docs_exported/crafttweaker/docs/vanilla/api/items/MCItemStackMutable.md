@@ -248,10 +248,10 @@ MCItemStackMutable.getEnchantmentLevel(enchantment as MCEnchantment) as int
 
 :::group{name=getEnchantments}
 
-Return Type: Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
+Return Type: int?[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)]
 
 ```zenscript
-// MCItemStackMutable.getEnchantments() as Integer[MCEnchantment]
+// MCItemStackMutable.getEnchantments() as int?[MCEnchantment]
 
 <item:minecraft:dirt>.mutable().getEnchantments();
 ```
@@ -412,6 +412,36 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 
 <item:minecraft:dirt>.mutable().onlyDamaged();
 ```
+
+:::
+
+:::group{name=onlyDamagedAtLeast}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCItemStackMutable.onlyDamagedAtLeast(minDamage as int) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| minDamage | int | No Description Provided |
+
+
+:::
+
+:::group{name=onlyDamagedAtMost}
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCItemStackMutable.onlyDamagedAtMost(maxDamage as int) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| maxDamage | int | No Description Provided |
+
 
 :::
 
@@ -618,7 +648,7 @@ myMCItemStackMutable | other as IIngredient
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false | No Description Provided |
 | displayName | string | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
-| enchantments | Integer[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | false | No Description Provided |
+| enchantments | int?[[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)] | true | false | No Description Provided |
 | food | [MCFood](/vanilla/api/food/MCFood)? | true | true | No Description Provided |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | getRepairCost | int | true | false | Gets the repair cost of the ItemStack, or 0 if no repair is defined. |

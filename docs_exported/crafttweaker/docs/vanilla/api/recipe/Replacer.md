@@ -271,6 +271,26 @@ Replacer.forEverything().excluding(<resource:minecraft:comparator>);
 
 :::
 
+:::group{name=excludingMods}
+
+Excludes all recipes that are under the given modids from undergoing replacement.
+
+Returns: A Replacer that excludes the given set of modids.  
+Return Type: [Replacer](/vanilla/api/recipe/Replacer)
+
+```zenscript
+// Replacer.excludingMods(modids as string[]) as Replacer
+
+Replacer.forEverything().excludingMods("mekanism");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| modids | string[] | The list of modids that should be excluded. |
+
+
+:::
+
 :::group{name=execute}
 
 Executes all replacements that have been queued on this replacer, if any.

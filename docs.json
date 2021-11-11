@@ -157,6 +157,9 @@
       "InitialInventory": {
         "InitialInventory": "mods/InitialInventory/InitialInventory.md"
       },
+      "Item Stages": {
+        "Item Stages": "mods/ItemStages/ItemStages.md"
+      },
       "JEITweaker": {
         "JEITweaker": "mods/JEITweaker/JEITweaker.md"
       },

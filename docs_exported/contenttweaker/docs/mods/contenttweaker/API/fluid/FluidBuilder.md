@@ -22,7 +22,6 @@ Creates a new FluidBuilder with default colorized textures
 new FluidBuilder(isMolten as boolean, color as int) as FluidBuilder
 new FluidBuilder(true, 0xff66ccff);
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | isMolten | boolean | if the fluid is molten |
@@ -34,7 +33,6 @@ Creates a new FluidBuilder with two textures
 new FluidBuilder(isMolten as boolean, color as int, stillTexture as MCResourceLocation, flowTexture as MCResourceLocation) as FluidBuilder
 new FluidBuilder(true, 0xff66ccff, <resource:contenttweaker:fluid/liquid>, <resource:contenttweaker:fluid/liquid_flowing>);
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | isMolten | boolean | if the fluid is molten |
