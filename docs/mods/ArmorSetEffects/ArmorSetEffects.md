@@ -43,7 +43,7 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 
 #Example Set:
-`````
+```zenscript
 import mods.SetEffect.ArmorSetEffect;
 
 ArmorSetEffect.dumpParticleNames(); 
