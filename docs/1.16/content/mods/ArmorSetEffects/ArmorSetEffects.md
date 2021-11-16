@@ -26,6 +26,8 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 `MyArmorSetEffect.setStrict() as ArmorSetEffect` -> Sets the comparing type of the NBT to strict.
 
+`MyArmorSetEffect.applyFlight() as ArmorSetEffect` -> Allows the player wearing the set to fly.
+
 `MyArmorSetEffect.addParticle(particleName as string, minx as float, miny as float, minz as float, maxx as float, maxy as float,  maxz as float,  minxoffset as float,  minyoffset as float,minzoffset as float, float maxxoffset,  maxyoffset as float,  maxzoffset as float,  minspeed as float,  maxspeed as float,  amount as int) as ArmorSetEffect` -> Adds a particle that appears when the player is wearing the full set.
 
 `MyArmorSetEffect.addParticleWithDefaultSpread(particleName as string) as ArmorSetEffect` -> Adds a non customisable particle spread with the specified particle.
