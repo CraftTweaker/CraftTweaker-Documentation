@@ -7,7 +7,7 @@ This allows you to execute code that can adapt to conditions in the world, the p
 
 # If Statement
 
-An if statement executed the piece of code if the `boolean` inside of its bracket evaluates to `true`.
+An if statement executes the piece of code if the `boolean` inside of its bracket evaluates to `true`.
 
 ```zenscript
 val test = 0;
