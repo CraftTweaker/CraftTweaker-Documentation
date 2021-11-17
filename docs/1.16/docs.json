@@ -1,232 +1,229 @@
 {
-  "nav": {
-    "Home": "index.md",
-    "Migration Guide": "migration_guide.md",
-    "Getting Started With Scripts": "getting_started.md",
-    "Commands": "commands.md",
-    "Examples": "examples.md",
-    "Tutorials": {
-      "Introduction To Scripting": {
-        "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
-        "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
-        "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
-        "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
-        "Arrays and Lists": "tutorial/IntroductionToScripting/ArraysAndLists.md"
-      },
-      "Recipes": {
-        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
-        "Crafting": {
-          "Add Recipes": {
-            "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
-            "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
-            "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
-          }
-        }
-      },
-      "Software": "tutorial/Software.md"
-    },
-    "Migrations": {
-      "7.1.0": "migrations/migration_7_1_0.md"
-    },
-    "Recipes": {
-      "Recipe Managers": "recipes/recipe_managers.md"
-    },
-    "Vanilla": {
-      "How to": {
-        "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
-      }
-    },
-    "Mods": {
-      "Generic JSON Recipes": "mods/other_mods.md",
-      "Applied Energistics 2": {
-        "Grinder": "mods/AppliedEnergistics2/Grinder.md",
-        "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
-      },
-      "Aquaculture 2": {
-        "Fish Data": "mods/Aquaculture2/FishData.md"
-      },
-      "Armoreable Mobs": {
-        "Armoreable Mobs": "mods/ArmoreableMobs/ArmoreableMobs.md"
-      },
-      "Armor Set Effects": {
-        "Armor Set Effects": "mods/ArmorSetEffects/ArmorSetEffects.md"
-      },
-      "Ars-Nouveau": {
-        "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
-        "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
-      },
-      "Artisan Worktables" : {
-        "Artisan Worktables" : "mods/ArtisanWorktables/ArtisanWorktables.md"
-      },
-      "Astral Sorcery": {
-        "Altar": "mods/AstralSorcery/Altar.md",
-        "Block Transmutation": "mods/AstralSorcery/BlockTransmutation.md",
-        "Infusion": "mods/AstralSorcery/Infusion.md",
-        "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
-        "Well": "mods/AstralSorcery/Well.md"
-      },
-      "Atum 2": {
-        "Kiln": "mods/Atum2/Kiln.md",
-        "Quern": "mods/Atum2/Quern.md",
-        "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
-      },
-      "Blood Magic": {
-        "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
-        "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
-        "Alchemy Table": "mods/BloodMagic/AlchemyTable.md",
-        "Blood Altar": "mods/BloodMagic/BloodAltar.md",
-        "Tartaric Forge": "mods/BloodMagic/TartaricForge.md"
-      },
-      "Botania": {},
-      "Botany Pots": {
-        "Botany Pots": "mods/BotanyPots/BotanyPots.md"
-      },
-      "Caged Mobs": {
-        "Caged Mobs": "mods/CagedMobs/CagedMobs.md"
-      },
-      "Contenttweaker": {
-        "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
-      },
-      "Create": {
-        "Util": {
-          "Heat Condition": "mods/Create/util/HeatCondition.md",
-          "Processing Recipe Builder": "mods/Create/util/ProcessingRecipeBuilder.md",
-          "Processing Recipe Factory": "mods/Create/util/ProcessingRecipeFactory.md",
-          "Sequenced Asembly Recipe Builder": "mods/Create/util/SequencedAssemblyRecipeBuilder.md"
+    "nav": {
+        "Home": "index.md",
+        "Migration Guide": "migration_guide.md",
+        "Getting Started With Scripts": "getting_started.md",
+        "Commands": "commands.md",
+        "Examples": "examples.md",
+        "Tutorials": {
+            "Introduction To Scripting": {
+                "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+                "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+                "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+                "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
+                "Arrays and Lists": "tutorial/IntroductionToScripting/ArraysAndLists.md"
+            },
+            "Recipes": {
+                "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
+                "Crafting": {
+                    "Add Recipes": {
+                        "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+                        "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+                        "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+                    }
+                }
+            },
+            "Software": "tutorial/Software.md"
         },
-        "Compacting": "mods/Create/Compacting.md",
-        "Crushing": "mods/Create/Crushing.md",
-        "Cutting": "mods/Create/Cutting.md",
-        "Deployer Application": "mods/Create/DeployerApplication.md",
-        "Emptying": "mods/Create/Emptying.md",
-        "Filling": "mods/Create/Filling.md",
-        "Mechanical Crafter": "mods/Create/MechanicalCrafter.md",
-        "Milling": "mods/Create/Milling.md",
-        "Mixing": "mods/Create/Mixing.md",
-        "Pressing": "mods/Create/Pressing.md",
-        "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
-        "Sequenced Assembly": "mods/Create/SequencedAssembly.md",
-        "Splashing": "mods/Create/Splashing.md"
-      },
-      "Create Automated": {
-        "Extracting Recipes": "mods/CreateAutomated/ExtractingRecipes.md",
-        "Picking Recipes": "mods/CreateAutomated/PickingRecipes.md",
-        "ContentTweaker": {
-          "Drill Heads": "mods/CreateAutomated/DrillHeads.md"
-        }
-      },
-      "Cyclic": {
-        "Melter": "mods/Cyclic/Melter.md",
-        "Solidifier": "mods/Cyclic/Solidifier.md"
-      },
-      "Ex Nihilo Sequentia": {
-        "Composting": "mods/ExNihiloSequentia/Composting.md",
-        "Crooking": "mods/ExNihiloSequentia/Crooking.md",
-        "Crucible": "mods/ExNihiloSequentia/Crucible.md",
-        "Fluid Item Transformation": "mods/ExNihiloSequentia/Fluid_Item_Transformation.md",
-        "Fluid On Top": "mods/ExNihiloSequentia/Fluid_On_Top.md",
-        "Fluid Transform": "mods/ExNihiloSequentia/Fluid_Transform.md",
-        "Hammering": "mods/ExNihiloSequentia/Hammering.md",
-        "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
-        "Sieving": "mods/ExNihiloSequentia/Sieving.md"
-      },
-      "Farmersdelight": {},
-      "Game Stages": {
-        "Introduction": "mods/GameStages/Introduction.md",
-        "Expanded Player": "mods/GameStages/PlayerStages.md",
-        "The StageHelper": "mods/GameStages/StageHelper.md",
-        "GameStage Events": "mods/GameStages/GameStageEvents.md"
-      },
-      "Immersive Engineering": {
-        "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
-        "Arc Furnace": "mods/ImmersiveEngineering/ArcFurnace.md",
-        "Blast Furnace": "mods/ImmersiveEngineering/BlastFurnace.md",
-        "Blueprint": "mods/ImmersiveEngineering/Blueprint.md",
-        "Bottling Machine": "mods/ImmersiveEngineering/BottlingMachine.md",
-        "Cloche": "mods/ImmersiveEngineering/Cloche.md",
-        "Coke Oven": "mods/ImmersiveEngineering/CokeOven.md",
-        "Crusher": "mods/ImmersiveEngineering/Crusher.md",
-        "Fermenter": "mods/ImmersiveEngineering/Fermenter.md",
-        "Metal Press": "mods/ImmersiveEngineering/MetalPress.md",
-        "Mineral Mix": "mods/ImmersiveEngineering/MineralMix.md",
-        "Mixer": "mods/ImmersiveEngineering/Mixer.md",
-        "Refinery": "mods/ImmersiveEngineering/Refinery.md",
-        "Sawmill": "mods/ImmersiveEngineering/Sawmill.md",
-        "Squeezer": "mods/ImmersiveEngineering/Squeezer.md"
-      },
-      "InitialInventory": {
-        "InitialInventory": "mods/InitialInventory/InitialInventory.md"
-      },
-      "Item Stages": {
-        "Item Stages": "mods/ItemStages/ItemStages.md"
-      },
-      "JEITweaker": {
-        "JEITweaker": "mods/JEITweaker/JEITweaker.md"
-      },
-      "Mystical Agriculture": {
-        "Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
-        "Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
-      },
-      "PneumaticCraft: Repressurized": {
-        "Assembly System": "mods/PneumaticCraft-Repressurized/AssemblySystem.md",
-        "Block Heat Properties": "mods/PneumaticCraft-Repressurized/BlockHeatProperties.md",
-        "Fluid Mixer": "mods/PneumaticCraft-Repressurized/FluidMixer.md",
-        "Explosion Crafting": "mods/PneumaticCraft-Repressurized/ExplosionCrafting.md",
-        "Experience Fluids": "mods/PneumaticCraft-Repressurized/XPFluids.md",
-        "Fuel Quality": "mods/PneumaticCraft-Repressurized/FuelQuality.md",
-        "Heat Frame Cooling": "mods/PneumaticCraft-Repressurized/HeatFrameCooling.md",
-        "Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
-        "Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
-        "Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
-      },
-      "RecipeStages": {
-        "RecipeStages": "mods/RecipeStages/RecipeStages.md"
-      },
-      "StoneAge": {
-        "Drying Rack": "mods/StoneAge/DryingRackManager.md",
-        "Flint Workbench": "mods/StoneAge/FlintWorkbenchManager.md",
-        "Millstone": "mods/StoneAge/MillstoneManager.md",
-        "Tanning Rack": "mods/StoneAge/TanningRackManager.md",
-        "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
-      },
-      "Thermal Series": {
-        "Dynamos": {
-          "Compression Dynamo": "mods/ThermalSeries/Dynamos/Compression_Dynamo.md",
-          "Lapidary Dynamo": "mods/ThermalSeries/Dynamos/Lapidary_Dynamo.md",
-          "Magmatic Dynamo": "mods/ThermalSeries/Dynamos/Magmatic_Dynamo.md",
-          "Numismatic Dynamo": "mods/ThermalSeries/Dynamos/Numismatic_Dynamo.md",
-          "Stirling Dynamo": "mods/ThermalSeries/Dynamos/Stirling_Dynamo.md"
+        "Migrations": {
+            "7.1.0": "migrations/migration_7_1_0.md"
         },
-        "Alchemical Imbuer": "mods/ThermalSeries/Alchemical_Imbuer.md",
-        "Blast Chiller": "mods/ThermalSeries/Blast_Chiller.md",
-        "Centrifugal Separator": "mods/ThermalSeries/Centrifugal_Separator.md",
-        "Fluid Encapsulator": "mods/ThermalSeries/Fluid_Encapsulator.md",
-        "Fractionating Still": "mods/ThermalSeries/Fractionating_Still.md",
-        "Induction Smelter": "mods/ThermalSeries/Induction_Smelter.md",
-        "Magma Crucible": "mods/ThermalSeries/Magma_Crucible.md",
-        "Multiservo Press": "mods/ThermalSeries/Multiservo_Press.md",
-        "Phytogenic Insolator": "mods/ThermalSeries/Phytogenic_Insolator.md",
-        "Pulverizer": "mods/ThermalSeries/Pulverizer.md",
-        "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
-        "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
-        "Sawmill": "mods/ThermalSeries/Sawmill.md"
-      },
-      "Tinkers' Construct": {
-        "Alloying": "mods/TinkersConstruct/Alloying.md",
-        "Casting Basin": "mods/TinkersConstruct/CastingBasin.md",
-        "Casting Table": "mods/TinkersConstruct/CastingTable.md",
-        "Entity Melting": "mods/TinkersConstruct/EntityMelting.md",
-        "Material Recipe": "mods/TinkersConstruct/MaterialRecipe.md",
-        "Melting": "mods/TinkersConstruct/Melting.md",
-        "Molding Basin": "mods/TinkersConstruct/MoldingBasin.md",
-        "Molding Table": "mods/TinkersConstruct/MoldingTable.md",
-        "Part builder": "mods/TinkersConstruct/PartBuilder.md",
-        "Severing": "mods/TinkersConstruct/Severing.md",
-        "Tinker station": "mods/TinkersConstruct/TinkerStation.md"
-      },
-      "Zen Summoning": {
-        "Examples": "mods/zensummoning/examples.md"
-      }
+        "Vanilla": {
+            "How to": {
+                "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
+            }
+        },
+        "Mods": {
+            "Generic JSON Recipes": "mods/other_mods.md",
+            "Applied Energistics 2": {
+                "Grinder": "mods/AppliedEnergistics2/Grinder.md",
+                "Inscriber": "mods/AppliedEnergistics2/Inscriber.md"
+            },
+            "Aquaculture 2": {
+                "Fish Data": "mods/Aquaculture2/FishData.md"
+            },
+            "Armoreable Mobs": {
+                "Armoreable Mobs": "mods/ArmoreableMobs/ArmoreableMobs.md"
+            },
+            "Armor Set Effects": {
+                "Armor Set Effects": "mods/ArmorSetEffects/ArmorSetEffects.md"
+            },
+            "Ars-Nouveau": {
+                "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
+                "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
+            },
+            "Artisan Worktables": {
+                "Artisan Worktables": "mods/ArtisanWorktables/ArtisanWorktables.md"
+            },
+            "Astral Sorcery": {
+                "Altar": "mods/AstralSorcery/Altar.md",
+                "Block Transmutation": "mods/AstralSorcery/BlockTransmutation.md",
+                "Infusion": "mods/AstralSorcery/Infusion.md",
+                "Liquid Interaction": "mods/AstralSorcery/LiquidInteraction.md",
+                "Well": "mods/AstralSorcery/Well.md"
+            },
+            "Atum 2": {
+                "Kiln": "mods/Atum2/Kiln.md",
+                "Quern": "mods/Atum2/Quern.md",
+                "Spinning Wheel": "mods/Atum2/SpinningWheel.md"
+            },
+            "Blood Magic": {
+                "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
+                "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
+                "Alchemy Table": "mods/BloodMagic/AlchemyTable.md",
+                "Blood Altar": "mods/BloodMagic/BloodAltar.md",
+                "Tartaric Forge": "mods/BloodMagic/TartaricForge.md"
+            },
+            "Botania": {},
+            "Botany Pots": {
+                "Botany Pots": "mods/BotanyPots/BotanyPots.md"
+            },
+            "Caged Mobs": {
+                "Caged Mobs": "mods/CagedMobs/CagedMobs.md"
+            },
+            "Contenttweaker": {
+                "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
+            },
+            "Create": {
+                "Util": {
+                    "Heat Condition": "mods/Create/util/HeatCondition.md",
+                    "Processing Recipe Builder": "mods/Create/util/ProcessingRecipeBuilder.md",
+                    "Processing Recipe Factory": "mods/Create/util/ProcessingRecipeFactory.md",
+                    "Sequenced Asembly Recipe Builder": "mods/Create/util/SequencedAssemblyRecipeBuilder.md"
+                },
+                "Compacting": "mods/Create/Compacting.md",
+                "Crushing": "mods/Create/Crushing.md",
+                "Cutting": "mods/Create/Cutting.md",
+                "Deployer Application": "mods/Create/DeployerApplication.md",
+                "Emptying": "mods/Create/Emptying.md",
+                "Filling": "mods/Create/Filling.md",
+                "Mechanical Crafter": "mods/Create/MechanicalCrafter.md",
+                "Milling": "mods/Create/Milling.md",
+                "Mixing": "mods/Create/Mixing.md",
+                "Pressing": "mods/Create/Pressing.md",
+                "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
+                "Sequenced Assembly": "mods/Create/SequencedAssembly.md",
+                "Splashing": "mods/Create/Splashing.md"
+            },
+            "Create Automated": {
+                "Extracting Recipes": "mods/CreateAutomated/ExtractingRecipes.md",
+                "Picking Recipes": "mods/CreateAutomated/PickingRecipes.md",
+                "ContentTweaker": {
+                    "Drill Heads": "mods/CreateAutomated/DrillHeads.md"
+                }
+            },
+            "Cyclic": {
+                "Melter": "mods/Cyclic/Melter.md",
+                "Solidifier": "mods/Cyclic/Solidifier.md"
+            },
+            "Ex Nihilo Sequentia": {
+                "Composting": "mods/ExNihiloSequentia/Composting.md",
+                "Crooking": "mods/ExNihiloSequentia/Crooking.md",
+                "Crucible": "mods/ExNihiloSequentia/Crucible.md",
+                "Fluid Item Transformation": "mods/ExNihiloSequentia/Fluid_Item_Transformation.md",
+                "Fluid On Top": "mods/ExNihiloSequentia/Fluid_On_Top.md",
+                "Fluid Transform": "mods/ExNihiloSequentia/Fluid_Transform.md",
+                "Hammering": "mods/ExNihiloSequentia/Hammering.md",
+                "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
+                "Sieving": "mods/ExNihiloSequentia/Sieving.md"
+            },
+            "Farmersdelight": {},
+            "Game Stages": {
+                "Introduction": "mods/GameStages/Introduction.md",
+                "Expanded Player": "mods/GameStages/PlayerStages.md",
+                "The StageHelper": "mods/GameStages/StageHelper.md",
+                "GameStage Events": "mods/GameStages/GameStageEvents.md"
+            },
+            "Immersive Engineering": {
+                "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
+                "Arc Furnace": "mods/ImmersiveEngineering/ArcFurnace.md",
+                "Blast Furnace": "mods/ImmersiveEngineering/BlastFurnace.md",
+                "Blueprint": "mods/ImmersiveEngineering/Blueprint.md",
+                "Bottling Machine": "mods/ImmersiveEngineering/BottlingMachine.md",
+                "Cloche": "mods/ImmersiveEngineering/Cloche.md",
+                "Coke Oven": "mods/ImmersiveEngineering/CokeOven.md",
+                "Crusher": "mods/ImmersiveEngineering/Crusher.md",
+                "Fermenter": "mods/ImmersiveEngineering/Fermenter.md",
+                "Metal Press": "mods/ImmersiveEngineering/MetalPress.md",
+                "Mineral Mix": "mods/ImmersiveEngineering/MineralMix.md",
+                "Mixer": "mods/ImmersiveEngineering/Mixer.md",
+                "Refinery": "mods/ImmersiveEngineering/Refinery.md",
+                "Sawmill": "mods/ImmersiveEngineering/Sawmill.md",
+                "Squeezer": "mods/ImmersiveEngineering/Squeezer.md"
+            },
+            "InitialInventory": {
+                "InitialInventory": "mods/InitialInventory/InitialInventory.md"
+            },
+            "Item Stages": {
+                "Item Stages": "mods/ItemStages/ItemStages.md"
+            },
+            "JEITweaker": {
+                "JEITweaker": "mods/JEITweaker/JEITweaker.md"
+            },
+            "Mystical Agriculture": {
+                "Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
+                "Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
+            },
+            "PneumaticCraft: Repressurized": {
+                "Assembly System": "mods/PneumaticCraft-Repressurized/AssemblySystem.md",
+                "Block Heat Properties": "mods/PneumaticCraft-Repressurized/BlockHeatProperties.md",
+                "Fluid Mixer": "mods/PneumaticCraft-Repressurized/FluidMixer.md",
+                "Explosion Crafting": "mods/PneumaticCraft-Repressurized/ExplosionCrafting.md",
+                "Experience Fluids": "mods/PneumaticCraft-Repressurized/XPFluids.md",
+                "Fuel Quality": "mods/PneumaticCraft-Repressurized/FuelQuality.md",
+                "Heat Frame Cooling": "mods/PneumaticCraft-Repressurized/HeatFrameCooling.md",
+                "Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
+                "Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
+                "Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
+            },
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
+            "StoneAge": {
+                "Drying Rack": "mods/StoneAge/DryingRackManager.md",
+                "Flint Workbench": "mods/StoneAge/FlintWorkbenchManager.md",
+                "Millstone": "mods/StoneAge/MillstoneManager.md",
+                "Tanning Rack": "mods/StoneAge/TanningRackManager.md",
+                "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
+            },
+            "Thermal Series": {
+                "Dynamos": {
+                    "Compression Dynamo": "mods/ThermalSeries/Dynamos/Compression_Dynamo.md",
+                    "Lapidary Dynamo": "mods/ThermalSeries/Dynamos/Lapidary_Dynamo.md",
+                    "Magmatic Dynamo": "mods/ThermalSeries/Dynamos/Magmatic_Dynamo.md",
+                    "Numismatic Dynamo": "mods/ThermalSeries/Dynamos/Numismatic_Dynamo.md",
+                    "Stirling Dynamo": "mods/ThermalSeries/Dynamos/Stirling_Dynamo.md"
+                },
+                "Alchemical Imbuer": "mods/ThermalSeries/Alchemical_Imbuer.md",
+                "Blast Chiller": "mods/ThermalSeries/Blast_Chiller.md",
+                "Centrifugal Separator": "mods/ThermalSeries/Centrifugal_Separator.md",
+                "Fluid Encapsulator": "mods/ThermalSeries/Fluid_Encapsulator.md",
+                "Fractionating Still": "mods/ThermalSeries/Fractionating_Still.md",
+                "Induction Smelter": "mods/ThermalSeries/Induction_Smelter.md",
+                "Magma Crucible": "mods/ThermalSeries/Magma_Crucible.md",
+                "Multiservo Press": "mods/ThermalSeries/Multiservo_Press.md",
+                "Phytogenic Insolator": "mods/ThermalSeries/Phytogenic_Insolator.md",
+                "Pulverizer": "mods/ThermalSeries/Pulverizer.md",
+                "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
+                "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
+                "Sawmill": "mods/ThermalSeries/Sawmill.md"
+            },
+            "Tinkers' Construct": {
+                "Alloying": "mods/TinkersConstruct/Alloying.md",
+                "Casting Basin": "mods/TinkersConstruct/CastingBasin.md",
+                "Casting Table": "mods/TinkersConstruct/CastingTable.md",
+                "Entity Melting": "mods/TinkersConstruct/EntityMelting.md",
+                "Material Recipe": "mods/TinkersConstruct/MaterialRecipe.md",
+                "Melting": "mods/TinkersConstruct/Melting.md",
+                "Molding Basin": "mods/TinkersConstruct/MoldingBasin.md",
+                "Molding Table": "mods/TinkersConstruct/MoldingTable.md",
+                "Part builder": "mods/TinkersConstruct/PartBuilder.md",
+                "Severing": "mods/TinkersConstruct/Severing.md",
+                "Tinker station": "mods/TinkersConstruct/TinkerStation.md"
+            },
+            "Zen Summoning": {
+                "Examples": "mods/zensummoning/examples.md"
+            }
+        }
     }
-  }
 }
