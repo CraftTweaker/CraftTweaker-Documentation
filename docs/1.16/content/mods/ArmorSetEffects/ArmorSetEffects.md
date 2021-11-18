@@ -46,7 +46,7 @@ Package: `import mods.seteffect.ArmorSetEffect`
 
 # Example Set:
 ```zenscript
-import mods.SetEffect.ArmorSetEffect;
+import mods.seteffect.ArmorSetEffect;
 
 ArmorSetEffect.dumpParticleNames(); 
 //Can be commented out after getting the right name for what you want.
