@@ -260,6 +260,7 @@
               "Delegate": "vanilla/api/loot/conditions/crafttweaker/Delegate.md",
               "False": "vanilla/api/loot/conditions/crafttweaker/False.md",
               "Json": "vanilla/api/loot/conditions/crafttweaker/Json.md",
+              "LootTableIdRegex": "vanilla/api/loot/conditions/crafttweaker/LootTableIdRegex.md",
               "Not": "vanilla/api/loot/conditions/crafttweaker/Not.md",
               "Or": "vanilla/api/loot/conditions/crafttweaker/Or.md",
               "ToolType": "vanilla/api/loot/conditions/crafttweaker/ToolType.md",
