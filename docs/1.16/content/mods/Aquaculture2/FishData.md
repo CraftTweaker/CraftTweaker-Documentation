@@ -28,7 +28,7 @@ mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ```zenscript
 // mods.aquaculture.FishData.remove(fishStack as Item);
 
-mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>);
+mods.aquaculture.FishData.remove(<item:aquuaculture:atlantic_cod>);
 ```
 
 - `fishStack` [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
