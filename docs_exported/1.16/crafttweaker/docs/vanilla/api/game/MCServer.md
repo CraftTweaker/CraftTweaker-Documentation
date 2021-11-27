@@ -19,7 +19,7 @@ MCServer implements the following interfaces. That means all methods defined in 
 
 :::group{name=executeCommand}
 
-Runs a command.
+Runs a command, if silent is true, the output is hidden.
 
  Returns The success value of the command, or 0 if an exception occurred.
  
@@ -28,21 +28,22 @@ Runs a command.
 Return Type: int
 
 ```zenscript
-// MCServer.executeCommand(command as string) as int
+// MCServer.executeCommand(command as string, silent as boolean) as int
 
-world.asServerWorld().server.executeCommand("time set day");
+world.asServerWorld().server.executeCommand("time set day", true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| command | string | No Description Provided |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| command | string | No Description Provided | false |  |
+| silent | boolean | No Description Provided | true | false |
 
 
 :::
 
 :::group{name=executeCommand}
 
-let a player send a command
+let a player send a command, if silent is true, the output is hidden.
 
  Returns The success value of the command, or 0 if an exception occurred.
  
@@ -51,15 +52,16 @@ let a player send a command
 Return Type: int
 
 ```zenscript
-// MCServer.executeCommand(command as string, player as MCPlayerEntity) as int
+// MCServer.executeCommand(command as string, player as MCPlayerEntity, silent as boolean) as int
 
-world.asServerWorld().server.executeCommand("time set day", player);
+world.asServerWorld().server.executeCommand("time set day", player, true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| command | string | No Description Provided |
-| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| command | string | No Description Provided | false |  |
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided | false |  |
+| silent | boolean | No Description Provided | true | false |
 
 
 :::
