@@ -6,10 +6,11 @@ This section aims to appeal to the more experienced coder that aims to dive into
 This is not to say that the novice scripter has no place here, but keep in mind that the usages of features in this section go further than adding and removing recipes.
 
 Currently documented features:
-    -[Arrays And Lists](/zencode/ArraysAndLists)
-    -[Preprocessors](/zencode/Preprocessors/Preprocessors)
+ - [Arrays And Lists](/zencode/ArraysAndLists)
+
+ - [Preprocessors](/zencode/Preprocessors/Preprocessors)
 
 Other concepts:
 
-    -[Conditional Code](/zencode/ConditionalCode)
+- [Conditional Code](/zencode/ConditionalCode)
 
