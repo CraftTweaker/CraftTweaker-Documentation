@@ -8,15 +8,12 @@ import crafttweaker.api.world.ExplosionMode;
 ```
 
 
-## Extending Enum&lt;ExplosionMode&gt;
+## Enum Constants
 
-ExplosionMode extends Enum&lt;[ExplosionMode](/vanilla/api/world/ExplosionMode)&gt;. That means all methods available in Enum&lt;[ExplosionMode](/vanilla/api/world/ExplosionMode)&gt; are also available in ExplosionMode
+ExplosionMode is an enum. It has 3 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| BREAK | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
-| DESTROY | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
-| NONE | [ExplosionMode](/vanilla/api/world/ExplosionMode) | true | false | No Description Provided |
-
+```zenscript
+ExplosionMode.NONE
+ExplosionMode.BREAK
+ExplosionMode.DESTROY
+```

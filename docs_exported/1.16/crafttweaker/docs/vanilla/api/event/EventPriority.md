@@ -12,17 +12,14 @@ import crafttweaker.api.events.EventPriority;
 ```
 
 
-## Extending Enum&lt;EventPriority&gt;
+## Enum Constants
 
-EventPriority extends Enum&lt;[EventPriority](/vanilla/api/event/EventPriority)&gt;. That means all methods available in Enum&lt;[EventPriority](/vanilla/api/event/EventPriority)&gt; are also available in EventPriority
+EventPriority is an enum. It has 5 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| HIGH | [EventPriority](/vanilla/api/event/EventPriority) | true | false | No Description Provided |
-| HIGHEST | [EventPriority](/vanilla/api/event/EventPriority) | true | false | No Description Provided |
-| LOW | [EventPriority](/vanilla/api/event/EventPriority) | true | false | No Description Provided |
-| LOWEST | [EventPriority](/vanilla/api/event/EventPriority) | true | false | No Description Provided |
-| NORMAL | [EventPriority](/vanilla/api/event/EventPriority) | true | false | No Description Provided |
-
+```zenscript
+EventPriority.HIGHEST
+EventPriority.HIGH
+EventPriority.NORMAL
+EventPriority.LOW
+EventPriority.LOWEST
+```

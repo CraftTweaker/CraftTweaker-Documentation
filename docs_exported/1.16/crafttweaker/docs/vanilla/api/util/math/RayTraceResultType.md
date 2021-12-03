@@ -8,15 +8,12 @@ import crafttweaker.api.util.math.RayTraceResultType;
 ```
 
 
-## Extending Enum&lt;RayTraceResultType&gt;
+## Enum Constants
 
-RayTraceResultType extends Enum&lt;[RayTraceResultType](/vanilla/api/util/math/RayTraceResultType)&gt;. That means all methods available in Enum&lt;[RayTraceResultType](/vanilla/api/util/math/RayTraceResultType)&gt; are also available in RayTraceResultType
+RayTraceResultType is an enum. It has 3 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| BLOCK | [RayTraceResultType](/vanilla/api/util/math/RayTraceResultType) | true | false | No Description Provided |
-| ENTITY | [RayTraceResultType](/vanilla/api/util/math/RayTraceResultType) | true | false | No Description Provided |
-| MISS | [RayTraceResultType](/vanilla/api/util/math/RayTraceResultType) | true | false | No Description Provided |
-
+```zenscript
+RayTraceResultType.MISS
+RayTraceResultType.BLOCK
+RayTraceResultType.ENTITY
+```

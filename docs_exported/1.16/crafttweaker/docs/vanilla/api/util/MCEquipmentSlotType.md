@@ -8,21 +8,18 @@ import crafttweaker.api.util.MCEquipmentSlotType;
 ```
 
 
-## Extending Enum&lt;MCEquipmentSlotType&gt;
+## Enum Constants
 
-MCEquipmentSlotType extends Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)&gt;. That means all methods available in Enum&lt;[MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType)&gt; are also available in MCEquipmentSlotType
+MCEquipmentSlotType is an enum. It has 6 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| CHEST | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-| FEET | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-| HEAD | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-| LEGS | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-| MAINHAND | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-| OFFHAND | [MCEquipmentSlotType](/vanilla/api/util/MCEquipmentSlotType) | true | false | No Description Provided |
-
+```zenscript
+MCEquipmentSlotType.MAINHAND
+MCEquipmentSlotType.OFFHAND
+MCEquipmentSlotType.FEET
+MCEquipmentSlotType.LEGS
+MCEquipmentSlotType.CHEST
+MCEquipmentSlotType.HEAD
+```
 ## Methods
 
 :::group{name=isArmor}

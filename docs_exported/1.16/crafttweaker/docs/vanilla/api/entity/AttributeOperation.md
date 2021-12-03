@@ -8,18 +8,15 @@ import crafttweaker.api.entity.AttributeOperation;
 ```
 
 
-## Extending Enum&lt;AttributeOperation&gt;
+## Enum Constants
 
-AttributeOperation extends Enum&lt;[AttributeOperation](/vanilla/api/entity/AttributeOperation)&gt;. That means all methods available in Enum&lt;[AttributeOperation](/vanilla/api/entity/AttributeOperation)&gt; are also available in AttributeOperation
+AttributeOperation is an enum. It has 3 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ADDITION | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | true | false | No Description Provided |
-| MULTIPLY_BASE | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | true | false | No Description Provided |
-| MULTIPLY_TOTAL | [AttributeOperation](/vanilla/api/entity/AttributeOperation) | true | false | No Description Provided |
-
+```zenscript
+AttributeOperation.ADDITION
+AttributeOperation.MULTIPLY_BASE
+AttributeOperation.MULTIPLY_TOTAL
+```
 ## Methods
 
 :::group{name=getId}

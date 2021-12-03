@@ -10,19 +10,16 @@ import crafttweaker.api.enchantment.EnchantmentRarity;
 ```
 
 
-## Extending Enum&lt;EnchantmentRarity&gt;
+## Enum Constants
 
-EnchantmentRarity extends Enum&lt;[EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity)&gt;. That means all methods available in Enum&lt;[EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity)&gt; are also available in EnchantmentRarity
+EnchantmentRarity is an enum. It has 4 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| COMMON | [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity) | true | false | No Description Provided |
-| RARE | [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity) | true | false | No Description Provided |
-| UNCOMMON | [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity) | true | false | No Description Provided |
-| VERY_RARE | [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity) | true | false | No Description Provided |
-
+```zenscript
+EnchantmentRarity.COMMON
+EnchantmentRarity.UNCOMMON
+EnchantmentRarity.RARE
+EnchantmentRarity.VERY_RARE
+```
 ## Methods
 
 :::group{name=getWeight}

@@ -12,16 +12,32 @@ import crafttweaker.api.predicate.TargetedEntity;
 ```
 
 
-## Extending Enum&lt;TargetedEntity&gt;
+## Enum Constants
 
-TargetedEntity extends Enum&lt;[TargetedEntity](/vanilla/api/predicate/TargetedEntity)&gt;. That means all methods available in Enum&lt;[TargetedEntity](/vanilla/api/predicate/TargetedEntity)&gt; are also available in TargetedEntity
+TargetedEntity is an enum. It has 4 enum constants. They are accessible using the code below.
 
-## Static Properties
+```zenscript
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ACTOR | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false | The actor that caused the loot table roll or otherwise acted. <br />  <br />  Examples of an actor can be the creeper that exploded or the player that gained an advancement. |
-| DIRECT_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false | The entity that directly caused the death of the actor. <br />  <br />  The entity is the entity that dealt the final blow to the actor, rather than its actual killer. As an example, <br />  if a skeleton killed a creeper by shooting an arrow, the direct killer will be the arrow. |
-| KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false | The entity that caused the death of the actor. <br />  <br />  This entity is the actual killer, instead of the entity that actually dealt the final blow to the actor. As an <br />  example, if a skeleton killed a creeper by shooting an arrow, the killer will be the skeleton. |
-| PLAYER_KILLER | [TargetedEntity](/vanilla/api/predicate/TargetedEntity) | true | false | The player that caused the death of the actor, if applicable. <br />  <br />  This entity is exactly the same as the killer, except it is only available if the final blow was dealt by a <br />  player. |
+// The actor that caused the loot table roll or otherwise acted.
+// 
+// Examples of an actor can be the creeper that exploded or the player that gained an advancement.
+TargetedEntity.ACTOR
 
+// The entity that caused the death of the actor.
+// 
+// This entity is the actual killer, instead of the entity that actually dealt the final blow to the actor. As an
+// example, if a skeleton killed a creeper by shooting an arrow, the killer will be the skeleton.
+TargetedEntity.KILLER
+
+// The entity that directly caused the death of the actor.
+// 
+// The entity is the entity that dealt the final blow to the actor, rather than its actual killer. As an example,
+// if a skeleton killed a creeper by shooting an arrow, the direct killer will be the arrow.
+TargetedEntity.DIRECT_KILLER
+
+// The player that caused the death of the actor, if applicable.
+// 
+// This entity is exactly the same as the killer, except it is only available if the final blow was dealt by a
+// player.
+TargetedEntity.PLAYER_KILLER
+```

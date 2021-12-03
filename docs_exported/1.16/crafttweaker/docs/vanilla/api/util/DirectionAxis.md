@@ -10,23 +10,20 @@ import crafttweaker.api.util.DirectionAxis;
 ```
 
 
-## Extending Enum&lt;DirectionAxis&gt;
-
-DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;. That means all methods available in Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; are also available in DirectionAxis
-
 ## Implemented Interfaces
 DirectionAxis implements the following interfaces. That means all methods defined in these interfaces are also available in DirectionAxis
 
 - Predicate
 
-## Static Properties
+## Enum Constants
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| X | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
-| Y | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
-| Z | [DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false | No Description Provided |
+DirectionAxis is an enum. It has 3 enum constants. They are accessible using the code below.
 
+```zenscript
+DirectionAxis.X
+DirectionAxis.Y
+DirectionAxis.Z
+```
 ## Methods
 
 :::group{name=equals}

@@ -8,10 +8,16 @@ import crafttweaker.api.item.Rarity;
 ```
 
 
-## Extending Enum&lt;Rarity&gt;
+## Enum Constants
 
-Rarity extends Enum&lt;[Rarity](/vanilla/api/item/Rarity)&gt;. That means all methods available in Enum&lt;[Rarity](/vanilla/api/item/Rarity)&gt; are also available in Rarity
+Rarity is an enum. It has 4 enum constants. They are accessible using the code below.
 
+```zenscript
+Rarity.COMMON
+Rarity.UNCOMMON
+Rarity.RARE
+Rarity.EPIC
+```
 ## Static Methods
 
 :::group{name=create}
@@ -34,15 +40,6 @@ Rarity.create("insanely_epic", <formatting:obfucated>);
 
 
 :::
-
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| COMMON | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
-| EPIC | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
-| RARE | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
-| UNCOMMON | [Rarity](/vanilla/api/item/Rarity) | true | false | No Description Provided |
 
 ## Methods
 

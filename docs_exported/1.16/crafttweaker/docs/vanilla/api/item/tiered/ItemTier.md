@@ -8,23 +8,20 @@ import crafttweaker.api.item.tiered.ItemTier;
 ```
 
 
-## Extending Enum&lt;ItemTier&gt;
-
-ItemTier extends Enum&lt;[ItemTier](/vanilla/api/item/tiered/ItemTier)&gt;. That means all methods available in Enum&lt;[ItemTier](/vanilla/api/item/tiered/ItemTier)&gt; are also available in ItemTier
-
 ## Implemented Interfaces
 ItemTier implements the following interfaces. That means all methods defined in these interfaces are also available in ItemTier
 
 - [IItemTier](/vanilla/api/item/tiered/IItemTier)
 
-## Static Properties
+## Enum Constants
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| DIAMOND | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
-| GOLD | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
-| IRON | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
-| NETHERITE | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
-| STONE | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
-| WOOD | [ItemTier](/vanilla/api/item/tiered/ItemTier) | true | false | No Description Provided |
+ItemTier is an enum. It has 6 enum constants. They are accessible using the code below.
 
+```zenscript
+ItemTier.WOOD
+ItemTier.STONE
+ItemTier.IRON
+ItemTier.DIAMOND
+ItemTier.GOLD
+ItemTier.NETHERITE
+```

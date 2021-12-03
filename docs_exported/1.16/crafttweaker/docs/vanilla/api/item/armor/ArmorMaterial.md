@@ -8,24 +8,21 @@ import crafttweaker.api.item.armor.ArmorMaterial;
 ```
 
 
-## Extending Enum&lt;ArmorMaterial&gt;
-
-ArmorMaterial extends Enum&lt;[ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial)&gt;. That means all methods available in Enum&lt;[ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial)&gt; are also available in ArmorMaterial
-
 ## Implemented Interfaces
 ArmorMaterial implements the following interfaces. That means all methods defined in these interfaces are also available in ArmorMaterial
 
 - [IArmorMaterial](/vanilla/api/item/armor/IArmorMaterial)
 
-## Static Properties
+## Enum Constants
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| CHAIN | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| DIAMOND | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| GOLD | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| IRON | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| LEATHER | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| NETHERITE | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
-| TURTLE | [ArmorMaterial](/vanilla/api/item/armor/ArmorMaterial) | true | false | No Description Provided |
+ArmorMaterial is an enum. It has 7 enum constants. They are accessible using the code below.
 
+```zenscript
+ArmorMaterial.LEATHER
+ArmorMaterial.CHAIN
+ArmorMaterial.IRON
+ArmorMaterial.GOLD
+ArmorMaterial.DIAMOND
+ArmorMaterial.TURTLE
+ArmorMaterial.NETHERITE
+```

@@ -8,16 +8,13 @@ import crafttweaker.api.util.ActionResultType;
 ```
 
 
-## Extending Enum&lt;ActionResultType&gt;
+## Enum Constants
 
-ActionResultType extends Enum&lt;[ActionResultType](/vanilla/api/util/ActionResultType)&gt;. That means all methods available in Enum&lt;[ActionResultType](/vanilla/api/util/ActionResultType)&gt; are also available in ActionResultType
+ActionResultType is an enum. It has 4 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| CONSUME | [ActionResultType](/vanilla/api/util/ActionResultType) | true | false | No Description Provided |
-| FAIL | [ActionResultType](/vanilla/api/util/ActionResultType) | true | false | No Description Provided |
-| PASS | [ActionResultType](/vanilla/api/util/ActionResultType) | true | false | No Description Provided |
-| SUCCESS | [ActionResultType](/vanilla/api/util/ActionResultType) | true | false | No Description Provided |
-
+```zenscript
+ActionResultType.SUCCESS
+ActionResultType.CONSUME
+ActionResultType.PASS
+ActionResultType.FAIL
+```

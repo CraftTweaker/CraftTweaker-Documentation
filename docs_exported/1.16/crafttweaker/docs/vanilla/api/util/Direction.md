@@ -10,10 +10,18 @@ import crafttweaker.api.util.Direction;
 ```
 
 
-## Extending Enum&lt;Direction&gt;
+## Enum Constants
 
-Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That means all methods available in Enum&lt;[Direction](/vanilla/api/util/Direction)&gt; are also available in Direction
+Direction is an enum. It has 6 enum constants. They are accessible using the code below.
 
+```zenscript
+Direction.north
+Direction.south
+Direction.east
+Direction.west
+Direction.up
+Direction.down
+```
 ## Static Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

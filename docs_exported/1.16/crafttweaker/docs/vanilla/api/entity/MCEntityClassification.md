@@ -10,21 +10,18 @@ import crafttweaker.api.entity.MCEntityClassification;
 ```
 
 
-## Extending Enum&lt;MCEntityClassification&gt;
+## Enum Constants
 
-MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt;. That means all methods available in Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; are also available in MCEntityClassification
+MCEntityClassification is an enum. It has 6 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| AMBIENT | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-| CREATURE | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-| MISC | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-| MONSTER | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-| WATER_AMBIENT | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-| WATER_CREATURE | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false | No Description Provided |
-
+```zenscript
+MCEntityClassification.MONSTER
+MCEntityClassification.CREATURE
+MCEntityClassification.AMBIENT
+MCEntityClassification.WATER_CREATURE
+MCEntityClassification.WATER_AMBIENT
+MCEntityClassification.MISC
+```
 ## Methods
 
 :::group{name=getCommandString}

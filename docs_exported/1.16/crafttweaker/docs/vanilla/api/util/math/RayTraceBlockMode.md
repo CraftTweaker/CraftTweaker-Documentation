@@ -8,15 +8,12 @@ import crafttweaker.api.util.math.RayTraceBlockMode;
 ```
 
 
-## Extending Enum&lt;RayTraceBlockMode&gt;
+## Enum Constants
 
-RayTraceBlockMode extends Enum&lt;[RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode)&gt;. That means all methods available in Enum&lt;[RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode)&gt; are also available in RayTraceBlockMode
+RayTraceBlockMode is an enum. It has 3 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| COLLIDER | [RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode) | true | false | No Description Provided |
-| OUTLINE | [RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode) | true | false | No Description Provided |
-| VISUAL | [RayTraceBlockMode](/vanilla/api/util/math/RayTraceBlockMode) | true | false | No Description Provided |
-
+```zenscript
+RayTraceBlockMode.COLLIDER
+RayTraceBlockMode.OUTLINE
+RayTraceBlockMode.VISUAL
+```

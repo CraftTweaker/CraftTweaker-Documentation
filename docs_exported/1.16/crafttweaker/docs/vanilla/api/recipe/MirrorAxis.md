@@ -10,10 +10,27 @@ import crafttweaker.api.recipe.MirrorAxis;
 ```
 
 
-## Extending Enum&lt;MirrorAxis&gt;
+## Enum Constants
 
-MirrorAxis extends Enum&lt;[MirrorAxis](/vanilla/api/recipe/MirrorAxis)&gt;. That means all methods available in Enum&lt;[MirrorAxis](/vanilla/api/recipe/MirrorAxis)&gt; are also available in MirrorAxis
+MirrorAxis is an enum. It has 5 enum constants. They are accessible using the code below.
 
+```zenscript
+
+// Mirror the recipe on all axes.
+MirrorAxis.ALL
+
+// Mirror the recipe diagonally.
+MirrorAxis.DIAGONAL
+
+// Mirror the recipe horizontally.
+MirrorAxis.HORIZONTAL
+
+// Do not mirror the recipe.
+MirrorAxis.NONE
+
+// Mirror the recipe vertically.
+MirrorAxis.VERTICAL
+```
 ## Static Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

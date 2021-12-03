@@ -10,10 +10,26 @@ import crafttweaker.api.enchantment.EnchantmentType;
 ```
 
 
-## Extending Enum&lt;EnchantmentType&gt;
+## Enum Constants
 
-EnchantmentType extends Enum&lt;[EnchantmentType](/vanilla/api/enchantment/EnchantmentType)&gt;. That means all methods available in Enum&lt;[EnchantmentType](/vanilla/api/enchantment/EnchantmentType)&gt; are also available in EnchantmentType
+EnchantmentType is an enum. It has 14 enum constants. They are accessible using the code below.
 
+```zenscript
+EnchantmentType.ARMOR
+EnchantmentType.ARMOR_FEET
+EnchantmentType.ARMOR_LEGS
+EnchantmentType.ARMOR_CHEST
+EnchantmentType.ARMOR_HEAD
+EnchantmentType.WEAPON
+EnchantmentType.DIGGER
+EnchantmentType.FISHING_ROD
+EnchantmentType.TRIDENT
+EnchantmentType.BREAKABLE
+EnchantmentType.BOW
+EnchantmentType.WEARABLE
+EnchantmentType.CROSSBOW
+EnchantmentType.VANISHABLE
+```
 ## Static Methods
 
 :::group{name=create}
@@ -34,25 +50,6 @@ EnchantmentType.create(name as string, canEnchantPredicate as Predicate<MCItemDe
 
 
 :::
-
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ARMOR | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| ARMOR_CHEST | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| ARMOR_FEET | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| ARMOR_HEAD | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| ARMOR_LEGS | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| BOW | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| BREAKABLE | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| CROSSBOW | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| DIGGER | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| FISHING_ROD | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| TRIDENT | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| VANISHABLE | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| WEAPON | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
-| WEARABLE | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | No Description Provided |
 
 ## Methods
 

@@ -8,19 +8,16 @@ import crafttweaker.api.entity.PlacementType;
 ```
 
 
-## Extending Enum&lt;PlacementType&gt;
+## Enum Constants
 
-PlacementType extends Enum&lt;[PlacementType](/vanilla/api/entity/PlacementType)&gt;. That means all methods available in Enum&lt;[PlacementType](/vanilla/api/entity/PlacementType)&gt; are also available in PlacementType
+PlacementType is an enum. It has 4 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| IN_LAVA | [PlacementType](/vanilla/api/entity/PlacementType) | true | false | No Description Provided |
-| IN_WATER | [PlacementType](/vanilla/api/entity/PlacementType) | true | false | No Description Provided |
-| NO_RESTRICTIONS | [PlacementType](/vanilla/api/entity/PlacementType) | true | false | No Description Provided |
-| ON_GROUND | [PlacementType](/vanilla/api/entity/PlacementType) | true | false | No Description Provided |
-
+```zenscript
+PlacementType.ON_GROUND
+PlacementType.IN_WATER
+PlacementType.NO_RESTRICTIONS
+PlacementType.IN_LAVA
+```
 ## Methods
 
 :::group{name=canSpawnAt}

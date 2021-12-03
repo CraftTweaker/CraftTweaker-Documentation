@@ -8,15 +8,12 @@ import crafttweaker.api.util.math.RayTraceFluidMode;
 ```
 
 
-## Extending Enum&lt;RayTraceFluidMode&gt;
+## Enum Constants
 
-RayTraceFluidMode extends Enum&lt;[RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode)&gt;. That means all methods available in Enum&lt;[RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode)&gt; are also available in RayTraceFluidMode
+RayTraceFluidMode is an enum. It has 3 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ANY | [RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode) | true | false | No Description Provided |
-| NONE | [RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode) | true | false | No Description Provided |
-| SOURCE_ONLY | [RayTraceFluidMode](/vanilla/api/util/math/RayTraceFluidMode) | true | false | No Description Provided |
-
+```zenscript
+RayTraceFluidMode.NONE
+RayTraceFluidMode.SOURCE_ONLY
+RayTraceFluidMode.ANY
+```

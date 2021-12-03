@@ -8,17 +8,14 @@ import crafttweaker.api.block.material.PushReaction;
 ```
 
 
-## Extending Enum&lt;PushReaction&gt;
+## Enum Constants
 
-PushReaction extends Enum&lt;[PushReaction](/vanilla/api/block/material/PushReaction)&gt;. That means all methods available in Enum&lt;[PushReaction](/vanilla/api/block/material/PushReaction)&gt; are also available in PushReaction
+PushReaction is an enum. It has 5 enum constants. They are accessible using the code below.
 
-## Static Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| BLOCK | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-| DESTROY | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-| IGNORE | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-| NORMAL | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-| PUSH_ONLY | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-
+```zenscript
+PushReaction.NORMAL
+PushReaction.DESTROY
+PushReaction.BLOCK
+PushReaction.IGNORE
+PushReaction.PUSH_ONLY
+```
