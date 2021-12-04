@@ -158,7 +158,22 @@
 				"Item Stages": "mods/ItemStages/ItemStages.md"
 			},
 			"JEITweaker": {
-				"JEITweaker": "mods/JEITweaker/JEITweaker.md"
+				"JEITweaker": "mods/JEITweaker/JEITweaker.md",
+				"JeiCategories" : "mods/JEITweaker/JEICategories.md",
+				"JeiIngredient" : "mods/JEITweaker/JeiIngredient.md",
+				"Categories": {
+					"JeiCategory" : "mods/JEITweaker/Categories/JeiCategory.md",
+					"CatalystRequiringRecipe": "mods/JEITweaker/Categories/CatalystRequiringRecipe.md",
+					"Custom": "mods/JEITweaker/Categories/Custom.md",
+					"InputConsuming": "mods/JEITweaker/Categories/InputConsuming.md",
+					"OutputList": "mods/JEITweaker/Categories/OutputList.md",
+					"SimpleInputOutput": "mods/JEITweaker/Categories/SimpleInputOutput.md"
+				},
+				"Graphics": {
+					"JeiDrawable" : "mods/JEITweaker/Graphics/JeiDrawable.md",
+					"JeiDrawableAnimation" : "mods/JEITweaker/Graphics/JeiDrawableAnimation.md",
+					"JeiRecipeGraphics" : "mods/JEITweaker/Graphics/JeiRecipeGraphics.md"
+				}
 			},
 			"Mystical Agriculture": {
 				"Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
