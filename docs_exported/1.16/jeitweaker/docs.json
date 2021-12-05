@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "Mods": {
+      "JEI": {
+        "API": {
+          "JEI": "mods/JEI/API/JEI.md",
+          "Category": {
+            "CatalystRequiringRecipe": "mods/JEI/API/Category/CatalystRequiringRecipe.md",
+            "Custom": "mods/JEI/API/Category/Custom.md",
+            "InputConsuming": "mods/JEI/API/Category/InputConsuming.md",
+            "JeiCategory": "mods/JEI/API/Category/JeiCategory.md",
+            "OutputList": "mods/JEI/API/Category/OutputList.md",
+            "SimpleInputOutput": "mods/JEI/API/Category/SimpleInputOutput.md",
+            "SimpleJeiCategory": "mods/JEI/API/Category/SimpleJeiCategory.md"
+          },
+          "Component": {
+            "IFluidStackExpansions": "mods/JEI/API/Component/IFluidStackExpansions.md",
+            "IIngredientExpansions": "mods/JEI/API/Component/IIngredientExpansions.md",
+            "IItemStackExpansions": "mods/JEI/API/Component/IItemStackExpansions.md",
+            "ItemTagExpansions": "mods/JEI/API/Component/ItemTagExpansions.md",
+            "JeiDrawable": "mods/JEI/API/Component/JeiDrawable.md",
+            "JeiDrawableAnimation": "mods/JEI/API/Component/JeiDrawableAnimation.md",
+            "JeiIngredient": "mods/JEI/API/Component/JeiIngredient.md",
+            "JeiIngredientExpansions": "mods/JEI/API/Component/JeiIngredientExpansions.md"
+          },
+          "Recipe": {
+            "JeiCategoryRecipeExpansion": "mods/JEI/API/Recipe/JeiCategoryRecipeExpansion.md",
+            "JeiRecipe": "mods/JEI/API/Recipe/JeiRecipe.md",
+            "JeiRecipeGraphics": "mods/JEI/API/Recipe/JeiRecipeGraphics.md"
+          }
+        }
+      }
+    }
+  }
+}
