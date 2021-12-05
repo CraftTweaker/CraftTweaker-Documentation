@@ -66,4 +66,34 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 
 :::
 
+:::group{name=or}
+
+Return Type: [IngredientList](/vanilla/api/items/IngredientList)
+
+```zenscript
+MCTag.or(other as IIngredient) as IngredientList
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| other | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
+
+:::
+
+:::group{name=or}
+
+Return Type: [IngredientList](/vanilla/api/items/IngredientList)
+
+```zenscript
+MCTag.or(other as MCTag<MCItemDefinition>) as IngredientList
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| other | [MCTag](/vanilla/api/tags/MCTag)&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt; | No Description Provided |
+
+
+:::
+
 
