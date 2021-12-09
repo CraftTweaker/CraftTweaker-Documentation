@@ -34,6 +34,6 @@ pipeline {
         retry(2)
     }
     triggers {
-        cron('0 */3 * * *')
+        cron('0 */24 * * *')
     }
 }
