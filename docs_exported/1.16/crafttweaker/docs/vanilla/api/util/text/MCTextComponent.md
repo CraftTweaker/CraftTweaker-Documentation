@@ -1,5 +1,7 @@
 # MCTextComponent
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -101,7 +103,7 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 ```zenscript
 // MCTextComponent.copyRaw() as MCTextComponent
 
-myMCTextComponent.copyRaw();
+MCTextComponent.createStringTextComponent("Hello World!").copyRaw();
 ```
 
 :::
@@ -113,7 +115,7 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 ```zenscript
 // MCTextComponent.deepCopy() as MCTextComponent
 
-myMCTextComponent.deepCopy();
+MCTextComponent.createStringTextComponent("Hello World!").deepCopy();
 ```
 
 :::
@@ -125,7 +127,7 @@ Return Type: string
 ```zenscript
 // MCTextComponent.getString() as string
 
-myMCTextComponent.getString();
+MCTextComponent.createStringTextComponent("Hello World!").getString();
 ```
 
 :::
@@ -152,7 +154,7 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 // MCTextComponent.getStyle() as MCStyle
 
-myMCTextComponent.getStyle();
+MCTextComponent.createStringTextComponent("Hello World!").getStyle();
 ```
 
 :::
@@ -164,7 +166,7 @@ Return Type: string
 ```zenscript
 // MCTextComponent.getUnformattedComponentText() as string
 
-myMCTextComponent.getUnformattedComponentText();
+MCTextComponent.createStringTextComponent("Hello World!").getUnformattedComponentText();
 ```
 
 :::

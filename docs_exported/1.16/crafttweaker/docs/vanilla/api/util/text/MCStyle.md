@@ -1,5 +1,7 @@
 # MCStyle
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -58,7 +60,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.getBold() as boolean
 
-myMCStyle.getBold();
+new MCStyle().getBold();
 ```
 
 :::
@@ -70,7 +72,7 @@ Return Type: int
 ```zenscript
 // MCStyle.getColor() as int
 
-myMCStyle.getColor();
+new MCStyle().getColor();
 ```
 
 :::
@@ -82,7 +84,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 ```zenscript
 // MCStyle.getFontId() as MCResourceLocation
 
-myMCStyle.getFontId();
+new MCStyle().getFontId();
 ```
 
 :::
@@ -94,7 +96,7 @@ Return Type: string
 ```zenscript
 // MCStyle.getInsertion() as string
 
-myMCStyle.getInsertion();
+new MCStyle().getInsertion();
 ```
 
 :::
@@ -106,7 +108,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.getItalic() as boolean
 
-myMCStyle.getItalic();
+new MCStyle().getItalic();
 ```
 
 :::
@@ -118,7 +120,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.getObfuscated() as boolean
 
-myMCStyle.getObfuscated();
+new MCStyle().getObfuscated();
 ```
 
 :::
@@ -130,7 +132,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.getStrikethrough() as boolean
 
-myMCStyle.getStrikethrough();
+new MCStyle().getStrikethrough();
 ```
 
 :::
@@ -142,7 +144,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.getUnderlined() as boolean
 
-myMCStyle.getUnderlined();
+new MCStyle().getUnderlined();
 ```
 
 :::
@@ -154,7 +156,7 @@ Return Type: int
 ```zenscript
 // MCStyle.hashCode() as int
 
-myMCStyle.hashCode();
+new MCStyle().hashCode();
 ```
 
 :::
@@ -168,7 +170,7 @@ Return Type: boolean
 ```zenscript
 // MCStyle.isEmpty() as boolean
 
-myMCStyle.isEmpty();
+new MCStyle().isEmpty();
 ```
 
 :::
@@ -368,7 +370,7 @@ Return Type: string
 ```zenscript
 // MCStyle.toString() as string
 
-myMCStyle.toString();
+new MCStyle().toString();
 ```
 
 :::
