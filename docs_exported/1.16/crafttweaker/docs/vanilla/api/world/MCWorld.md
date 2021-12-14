@@ -20,6 +20,7 @@ MCWorld implements the following interfaces. That means all methods defined in t
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [MCBlockDisplayReader](/vanilla/api/world/MCBlockDisplayReader) | true |
 | [MCServerWorld](/vanilla/api/world/MCServerWorld) | false |
 
 ## Methods
@@ -38,6 +39,18 @@ MCWorld.addEntity(entity as MCEntity) as boolean
 |-----------|------|-------------|
 | entity | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 
+
+:::
+
+:::group{name=asBlockDisplayReader}
+
+Return Type: [MCBlockDisplayReader](/vanilla/api/world/MCBlockDisplayReader)
+
+```zenscript
+// MCWorld.asBlockDisplayReader() as MCBlockDisplayReader
+
+world.asBlockDisplayReader();
+```
 
 :::
 
