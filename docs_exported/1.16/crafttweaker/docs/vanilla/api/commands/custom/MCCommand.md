@@ -12,11 +12,11 @@ import crafttweaker.api.commands.custom.MCCommand;
 
 No Description Provided
 ```zenscript
-new MCCommand(fun as Function<MCCommandContext,int?>) as MCCommand
+new MCCommand(fun as ToIntFunction<MCCommandContext>) as MCCommand
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),int?&gt; | No Description Provided |
+| fun | ToIntFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)&gt; | No Description Provided |
 
 
 
