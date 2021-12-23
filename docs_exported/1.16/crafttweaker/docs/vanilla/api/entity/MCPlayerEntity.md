@@ -80,6 +80,21 @@ myMCPlayerEntity.getFoodLevel();
 
 :::
 
+:::group{name=getHeldItem}
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+MCPlayerEntity.getHeldItem(hand as MCHand) as IItemStack
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+
+
+:::
+
 :::group{name=getInventory}
 
 Return Type: [PlayerInventory](/vanilla/api/inventory/PlayerInventory)
