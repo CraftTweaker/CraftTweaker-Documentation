@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackToEnergy/EnergyConversion.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackToEnergy",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "mods.mekanism.recipe.ItemStackToEnergy",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

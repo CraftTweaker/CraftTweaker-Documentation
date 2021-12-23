@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/GasToGas/Activating.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.GasToGas",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "mods.mekanism.recipe.GasToGas",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

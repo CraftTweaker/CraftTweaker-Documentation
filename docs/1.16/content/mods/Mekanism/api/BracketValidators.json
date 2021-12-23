@@ -1,0 +1,13 @@
+{
+  "path": "mods/Mekanism/api/BracketValidators.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.BracketValidators",
+  "searchTerms": [
+    "validateGasStack",
+    "validateInfusionStack",
+    "validateRobitSkin",
+    "validateSlurryStack",
+    "validateModuleData",
+    "validatePigmentStack"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/gear/ModuleHelper.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.gear.ModuleHelper",
+  "searchTerms": [
+    "load",
+    "loadAllTypes",
+    "getSupported",
+    "isEnabled",
+    "loadAll"
+  ]
+}

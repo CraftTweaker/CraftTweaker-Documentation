@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/tag/InfuseTypeTagManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.tag.InfuseTypeTagManager",
+  "searchTerms": [
+    "all",
+    "getAllTagsFor",
+    "exists",
+    "getAllTags",
+    "getTag"
+  ]
+}

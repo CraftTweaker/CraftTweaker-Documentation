@@ -1,0 +1,10 @@
+{
+  "path": "mods/Mekanism/api/entity/robit/Robit.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.entity.robit.Robit",
+  "searchTerms": [
+    "getSkin",
+    "skin",
+    "setSkin"
+  ]
+}

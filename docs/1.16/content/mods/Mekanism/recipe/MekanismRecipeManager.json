@@ -1,0 +1,20 @@
+{
+  "path": "mods/Mekanism/recipe/MekanismRecipeManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.MekanismRecipeManager",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "removeAll",
+    "removeByName",
+    "crafttweaker.api.registries.IRecipeManager",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

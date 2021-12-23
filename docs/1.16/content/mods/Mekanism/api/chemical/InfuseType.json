@@ -1,0 +1,9 @@
+{
+  "path": "mods/Mekanism/api/chemical/InfuseType.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.chemical.InfuseType",
+  "searchTerms": [
+    "mods.mekanism.api.chemical.Chemical",
+    "makeStack"
+  ]
+}

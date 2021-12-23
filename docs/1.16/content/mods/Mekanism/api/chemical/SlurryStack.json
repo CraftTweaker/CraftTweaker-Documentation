@@ -1,0 +1,26 @@
+{
+  "path": "mods/Mekanism/api/chemical/SlurryStack.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.chemical.SlurryStack",
+  "searchTerms": [
+    "amount",
+    "grow",
+    "shrink",
+    "isEqual",
+    "isEmpty",
+    "getRegistryName",
+    "commandString",
+    "registryName",
+    "type",
+    "empty",
+    "mods.mekanism.api.chemical.ChemicalStack",
+    "isTypeEqual",
+    "containsOther",
+    "getType",
+    "asImmutable",
+    "asMutable",
+    "copy",
+    "setAmount",
+    "getAmount"
+  ]
+}

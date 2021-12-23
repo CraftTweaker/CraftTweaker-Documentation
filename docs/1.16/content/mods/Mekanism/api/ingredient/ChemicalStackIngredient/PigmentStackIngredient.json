@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/PigmentStackIngredient.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.ingredient.ChemicalStackIngredient.PigmentStackIngredient",
+  "searchTerms": [
+    "or",
+    "mods.mekanism.api.ingredient.ChemicalStackIngredient",
+    "createMulti",
+    "from",
+    "asIData"
+  ]
+}

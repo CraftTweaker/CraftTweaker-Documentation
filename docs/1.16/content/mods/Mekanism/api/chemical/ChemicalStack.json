@@ -1,0 +1,26 @@
+{
+  "path": "mods/Mekanism/api/chemical/ChemicalStack.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.chemical.ChemicalStack",
+  "searchTerms": [
+    "crafttweaker.api.brackets.CommandStringDisplayable",
+    "amount",
+    "grow",
+    "shrink",
+    "isEqual",
+    "isEmpty",
+    "getRegistryName",
+    "commandString",
+    "registryName",
+    "type",
+    "empty",
+    "isTypeEqual",
+    "containsOther",
+    "getType",
+    "asImmutable",
+    "asMutable",
+    "copy",
+    "setAmount",
+    "getAmount"
+  ]
+}

@@ -159,6 +159,137 @@
 			"JEITweaker": {
 				"JEITweaker": "mods/JEITweaker/JEITweaker.md"
 			},
+			"Mekanism": {
+				"Api": {
+				  "BracketDumpers": "mods/Mekanism/api/BracketDumpers.md",
+				  "BracketHandlers": "mods/Mekanism/api/BracketHandlers.md",
+				  "BracketValidators": "mods/Mekanism/api/BracketValidators.md",
+				  "FloatingLong": "mods/Mekanism/api/FloatingLong.md",
+				  "Chemical": {
+						"Chemical": "mods/Mekanism/api/chemical/Chemical.md",
+						"ChemicalStack": "mods/Mekanism/api/chemical/ChemicalStack.md",
+						"Gas": "mods/Mekanism/api/chemical/Gas.md",
+						"GasStack": "mods/Mekanism/api/chemical/GasStack.md",
+						"InfuseType": "mods/Mekanism/api/chemical/InfuseType.md",
+						"InfusionStack": "mods/Mekanism/api/chemical/InfusionStack.md",
+						"Pigment": "mods/Mekanism/api/chemical/Pigment.md",
+						"PigmentStack": "mods/Mekanism/api/chemical/PigmentStack.md",
+						"Slurry": "mods/Mekanism/api/chemical/Slurry.md",
+						"SlurryStack": "mods/Mekanism/api/chemical/SlurryStack.md"
+				  },
+				  "Entity": {
+						"Robit": {
+							"Robit": "mods/Mekanism/api/entity/robit/Robit.md",
+							"RobitSkin": "mods/Mekanism/api/entity/robit/RobitSkin.md"
+						}
+				  },
+				  "Gear": {
+						"Module": "mods/Mekanism/api/gear/Module.md",
+						"ModuleData": "mods/Mekanism/api/gear/ModuleData.md",
+						"ModuleHelper": "mods/Mekanism/api/gear/ModuleHelper.md"
+				  },
+				  "Ingredient": {
+						"ChemicalStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient.md",
+						"FluidStackIngredient": "mods/Mekanism/api/ingredient/FluidStackIngredient.md",
+						"ItemStackIngredient": "mods/Mekanism/api/ingredient/ItemStackIngredient.md",
+						"ChemicalStackIngredient": {
+							"GasStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient.md",
+							"InfusionStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/InfusionStackIngredient.md",
+							"PigmentStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/PigmentStackIngredient.md",
+							"SlurryStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/SlurryStackIngredient.md"
+						}
+				  },
+				  "Tag": {
+						"ChemicalTagManager": "mods/Mekanism/api/tag/ChemicalTagManager.md",
+						"GasTagManager": "mods/Mekanism/api/tag/GasTagManager.md",
+						"InfuseTypeTagManager": "mods/Mekanism/api/tag/InfuseTypeTagManager.md",
+						"PigmentTagManager": "mods/Mekanism/api/tag/PigmentTagManager.md",
+						"SlurryTagManager": "mods/Mekanism/api/tag/SlurryTagManager.md"
+				  },
+				  "Text": {
+						"HasTranslation": "mods/Mekanism/api/text/HasTranslation.md"
+				  }
+				},
+				"Content": {
+				  "Attribute": {
+					"ChemicalAttribute": "mods/Mekanism/content/attribute/ChemicalAttribute.md",
+					"GasAttribute": "mods/Mekanism/content/attribute/GasAttribute.md",
+					"InfuseTypeAttribute": "mods/Mekanism/content/attribute/InfuseTypeAttribute.md",
+					"PigmentAttribute": "mods/Mekanism/content/attribute/PigmentAttribute.md",
+					"SlurryAttribute": "mods/Mekanism/content/attribute/SlurryAttribute.md",
+					"Gas": {
+					  "CoolantAttribute": "mods/Mekanism/content/attribute/gas/CoolantAttribute.md",
+					  "FuelAttribute": "mods/Mekanism/content/attribute/gas/FuelAttribute.md",
+					  "RadiationAttribute": "mods/Mekanism/content/attribute/gas/RadiationAttribute.md"
+					}
+				  },
+				  "Builder": {
+						"ChemicalBuilder": "mods/Mekanism/content/builder/ChemicalBuilder.md",
+						"GasBuilder": "mods/Mekanism/content/builder/GasBuilder.md",
+						"InfuseTypeBuilder": "mods/Mekanism/content/builder/InfuseTypeBuilder.md",
+						"PigmentBuilder": "mods/Mekanism/content/builder/PigmentBuilder.md",
+						"RobitSkinBuilder": "mods/Mekanism/content/builder/RobitSkinBuilder.md",
+						"SlurryBuilder": "mods/Mekanism/content/builder/SlurryBuilder.md"
+				  }
+				},
+				"Recipe": {
+				  "ChemicalInfusing": "mods/Mekanism/recipe/ChemicalInfusing.md",
+				  "Combining": "mods/Mekanism/recipe/Combining.md",
+				  "Crystallizing": "mods/Mekanism/recipe/Crystallizing.md",
+				  "Dissolution": "mods/Mekanism/recipe/Dissolution.md",
+				  "FluidSlurryToSlurry": "mods/Mekanism/recipe/FluidSlurryToSlurry.md",
+				  "FluidToFluid": "mods/Mekanism/recipe/FluidToFluid.md",
+				  "GasToGas": "mods/Mekanism/recipe/GasToGas.md",
+				  "ItemStackChemicalToItemStack": "mods/Mekanism/recipe/ItemStackChemicalToItemStack.md",
+				  "ItemStackToEnergy": "mods/Mekanism/recipe/ItemStackToEnergy.md",
+				  "ItemStackToGas": "mods/Mekanism/recipe/ItemStackToGas.md",
+				  "ItemStackToInfuseType": "mods/Mekanism/recipe/ItemStackToInfuseType.md",
+				  "ItemStackToItemStack": "mods/Mekanism/recipe/ItemStackToItemStack.md",
+				  "ItemStackToPigment": "mods/Mekanism/recipe/ItemStackToPigment.md",
+				  "MekanismRecipeManager": "mods/Mekanism/recipe/MekanismRecipeManager.md",
+				  "Nucleosynthesizing": "mods/Mekanism/recipe/Nucleosynthesizing.md",
+				  "PigmentMixing": "mods/Mekanism/recipe/PigmentMixing.md",
+				  "Reaction": "mods/Mekanism/recipe/Reaction.md",
+				  "Rotary": "mods/Mekanism/recipe/Rotary.md",
+				  "Sawing": "mods/Mekanism/recipe/Sawing.md",
+				  "Separating": "mods/Mekanism/recipe/Separating.md",
+				  "FluidSlurryToSlurry": {
+						"Washing": "mods/Mekanism/recipe/FluidSlurryToSlurry/Washing.md"
+				  },
+				  "FluidToFluid": {
+						"Evaporating": "mods/Mekanism/recipe/FluidToFluid/Evaporating.md"
+				  },
+				  "GasToGas": {
+						"Activating": "mods/Mekanism/recipe/GasToGas/Activating.md",
+						"Centrifuging": "mods/Mekanism/recipe/GasToGas/Centrifuging.md"
+				  },
+				  "ItemStackChemicalToItemStack": {
+						"Compressing": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Compressing.md",
+						"Injecting": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Injecting.md",
+						"MetallurgicInfusing": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/MetallurgicInfusing.md",
+						"Painting": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Painting.md",
+						"Purifying": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Purifying.md"
+				  },
+				  "ItemStackToEnergy": {
+						"EnergyConversion": "mods/Mekanism/recipe/ItemStackToEnergy/EnergyConversion.md"
+				  },
+				  "ItemStackToGas": {
+						"GasConversion": "mods/Mekanism/recipe/ItemStackToGas/GasConversion.md",
+						"Oxidizing": "mods/Mekanism/recipe/ItemStackToGas/Oxidizing.md"
+				  },
+				  "ItemStackToInfuseType": {
+						"InfusionConversion": "mods/Mekanism/recipe/ItemStackToInfuseType/InfusionConversion.md"
+				  },
+				  "ItemStackToItemStack": {
+						"Crushing": "mods/Mekanism/recipe/ItemStackToItemStack/Crushing.md",
+						"Enriching": "mods/Mekanism/recipe/ItemStackToItemStack/Enriching.md",
+						"Smelting": "mods/Mekanism/recipe/ItemStackToItemStack/Smelting.md"
+				  },
+				  "ItemStackToPigment": {
+						"PigmentExtracting": "mods/Mekanism/recipe/ItemStackToPigment/PigmentExtracting.md"
+				  }
+				}
+			},
 			"Mystical Agriculture": {
 				"Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
 				"Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"
@@ -174,6 +305,13 @@
 				"Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
 				"Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
 				"Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
+			},
+			"ProjectE": {
+				"CustomConversion": "mods/ProjectE/CustomConversion.md",
+				"CustomEMC": "mods/ProjectE/CustomEMC.md",
+				"NSSResolver": "mods/ProjectE/NSSResolver.md",
+				"NormalizedSimpleStack": "mods/ProjectE/NormalizedSimpleStack.md",
+				"WorldTransmutation": "mods/ProjectE/WorldTransmutation.md"
 			},
 			"RecipeStages": {
 				"RecipeStages": "mods/RecipeStages/RecipeStages.md"

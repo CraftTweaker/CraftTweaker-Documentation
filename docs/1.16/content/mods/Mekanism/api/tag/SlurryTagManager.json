@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/tag/SlurryTagManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.tag.SlurryTagManager",
+  "searchTerms": [
+    "all",
+    "getAllTagsFor",
+    "exists",
+    "getAllTags",
+    "getTag"
+  ]
+}

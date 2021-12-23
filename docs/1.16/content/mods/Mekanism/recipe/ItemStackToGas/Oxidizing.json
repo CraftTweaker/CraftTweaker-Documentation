@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackToGas/Oxidizing.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackToGas",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex",
+    "mods.mekanism.recipe.ItemStackToGas"
+  ]
+}

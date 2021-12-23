@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/MetallurgicInfusing.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackChemicalToItemStack",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex",
+    "mods.mekanism.recipe.ItemStackChemicalToItemStack"
+  ]
+}

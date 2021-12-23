@@ -1,0 +1,10 @@
+{
+  "path": "mods/Mekanism/content/attribute/gas/CoolantAttribute.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.content.attribute.gas.CoolantAttribute",
+  "searchTerms": [
+    "mods.mekanism.content.attribute.GasAttribute",
+    "cooled",
+    "heated"
+  ]
+}

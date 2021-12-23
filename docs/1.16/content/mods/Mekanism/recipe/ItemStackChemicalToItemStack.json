@@ -1,0 +1,20 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackChemicalToItemStack.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackChemicalToItemStack",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}
