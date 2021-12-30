@@ -55,6 +55,21 @@ myBlockBuilder.notSolid();
 
 :::
 
+:::group{name=opaque}
+
+Sets that the block is opaque, like vanilla glass.
+
+Returns: The builder, used for method chaining.  
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+
+```zenscript
+// BlockBuilder.opaque() as BlockBuilder
+
+myBlockBuilder.opaque();
+```
+
+:::
+
 :::group{name=setRequiresTool}
 
 Sets that the block needs a tool to harvest.
