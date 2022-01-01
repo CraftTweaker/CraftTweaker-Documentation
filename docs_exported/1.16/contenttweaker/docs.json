@@ -19,7 +19,8 @@
             },
             "Basic": {
               "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md",
-              "BlockBuilderFalling": "mods/contenttweaker/API/block/basic/BlockBuilderFalling.md"
+              "BlockBuilderFalling": "mods/contenttweaker/API/block/basic/BlockBuilderFalling.md",
+              "BlockBuilderGlass": "mods/contenttweaker/API/block/basic/BlockBuilderGlass.md"
             },
             "Pillar": {
               "BlockBuilderPillarRotatable": "mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md"
