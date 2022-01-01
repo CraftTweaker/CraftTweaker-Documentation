@@ -40,6 +40,7 @@
             "IBlockAdded": "mods/contenttweaker/API/functions/IBlockAdded.md",
             "IBlockColorSupplier": "mods/contenttweaker/API/functions/IBlockColorSupplier.md",
             "IBlockIsSideInvisible": "mods/contenttweaker/API/functions/IBlockIsSideInvisible.md",
+            "IBlockIsTransparent": "mods/contenttweaker/API/functions/IBlockIsTransparent.md",
             "IBlockNeighborChanged": "mods/contenttweaker/API/functions/IBlockNeighborChanged.md",
             "IBlockRandomTick": "mods/contenttweaker/API/functions/IBlockRandomTick.md",
             "IBlockReplaced": "mods/contenttweaker/API/functions/IBlockReplaced.md",
