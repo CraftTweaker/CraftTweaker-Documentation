@@ -43,6 +43,7 @@
             "IBlockRandomTick": "mods/contenttweaker/API/functions/IBlockRandomTick.md",
             "IBlockReplaced": "mods/contenttweaker/API/functions/IBlockReplaced.md",
             "IFallingBlockDustColorSupplier": "mods/contenttweaker/API/functions/IFallingBlockDustColorSupplier.md",
+            "IIconSupplier": "mods/contenttweaker/API/functions/IIconSupplier.md",
             "IItemColorSupplier": "mods/contenttweaker/API/functions/IItemColorSupplier.md",
             "IItemHitEntity": "mods/contenttweaker/API/functions/IItemHitEntity.md",
             "IItemInteractWithEntity": "mods/contenttweaker/API/functions/IItemInteractWithEntity.md",
@@ -52,9 +53,9 @@
             "IItemUsingTick": "mods/contenttweaker/API/functions/IItemUsingTick.md"
           },
           "Item": {
+            "CustomItemGroup": "mods/contenttweaker/API/item/CustomItemGroup.md",
             "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
             "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
-            "MCItemGroup": "mods/contenttweaker/API/item/MCItemGroup.md",
             "Advance": {
               "CoTItemAdvanced": "mods/contenttweaker/API/item/advance/CoTItemAdvanced.md",
               "ItemBuilderAdvanced": "mods/contenttweaker/API/item/advance/ItemBuilderAdvanced.md"
