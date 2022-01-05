@@ -159,6 +159,22 @@ MCTextComponent.createStringTextComponent("Hello World!").getStyle();
 
 :::
 
+:::group{name=getTranslationKey}
+
+If this is a Translation Text Component, return the actual translation key used for localization.
+ If this is not a Translation Text Component, returns an empty string.
+
+Returns: the translation key or an empty string.  
+Return Type: string
+
+```zenscript
+// MCTextComponent.getTranslationKey() as string
+
+MCTextComponent.createStringTextComponent("Hello World!").getTranslationKey();
+```
+
+:::
+
 :::group{name=getUnformattedComponentText}
 
 Return Type: string
@@ -221,5 +237,6 @@ myMCTextComponent << component as MCTextComponent
 | formattedText | string | true | false | No Description Provided |
 | siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false | No Description Provided |
 | style | [MCStyle](/vanilla/api/util/text/MCStyle) | true | false | No Description Provided |
+| translationKey | string | true | false | If this is a Translation Text Component, return the actual translation key used for localization. <br />  If this is not a Translation Text Component, returns an empty string. |
 | unformattedComponentText | string | true | false | No Description Provided |
 
