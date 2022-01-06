@@ -366,6 +366,22 @@ MCPlayerEntity.setFoodLevel(value as int) as void
 
 :::
 
+:::group{name=swing}
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.swing(hand as MCHand, updateSelf as boolean) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+| updateSelf | boolean | No Description Provided |
+
+
+:::
+
 :::group{name=unlockRecipes}
 
 Return Type: void
