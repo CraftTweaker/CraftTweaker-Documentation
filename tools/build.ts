@@ -231,11 +231,11 @@ console.time("Total")
 await clearDirectory("build");
 await prepareBuildFolders();
 await prepareExportedBuildFolders();
-if (getCrowdinToken().length > 0) {
-    await download_translations();
-    await copyTranslations()
-    await copyExportedTranslations()
-}
+// if (getCrowdinToken().length > 0) {
+//     await download_translations();
+//     await copyTranslations()
+//     await copyExportedTranslations()
+// }
 await mergeExported();
 await supplementDocsMeta();
 
