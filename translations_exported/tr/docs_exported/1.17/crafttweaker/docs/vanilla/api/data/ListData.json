@@ -1,0 +1,14 @@
+{
+    "path": "vanilla/api/data/ListData.md",
+    "zenCodeName": "crafttweaker.api.data.ListData",
+    "searchTerms": [
+        "asCollection",
+        "asMap",
+        "asNumber",
+        "getId",
+        "asString",
+        "getString",
+        "crafttweaker.api.data.ICollectionData",
+        "asBoolean"
+    ]
+}
