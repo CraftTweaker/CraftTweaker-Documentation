@@ -1,0 +1,11 @@
+{
+    "path": "forge/api/event/tick/Type.md",
+    "zenCodeName": "crafttweaker.api.event.tick.Type",
+    "searchTerms": [
+        "PLAYER",
+        "SERVER",
+        "RENDER",
+        "WORLD",
+        "CLIENT"
+    ]
+}
