@@ -1,0 +1,12 @@
+{
+    "path": "vanilla/api/entity/RemovalReason.md",
+    "zenCodeName": "crafttweaker.api.entity.RemovalReason",
+    "searchTerms": [
+        "UNLOADED_TO_CHUNK",
+        "UNLOADED_WITH_PLAYER",
+        "shouldDestroy",
+        "DISCARDED",
+        "CHANGED_DIMENSION",
+        "KILLED"
+    ]
+}
