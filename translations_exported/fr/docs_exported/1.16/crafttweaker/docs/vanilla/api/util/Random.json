@@ -1,0 +1,12 @@
+{
+    "path": "vanilla/api/util/Random.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.Random",
+    "searchTerms": [
+        "nextFloat",
+        "getRandomUUID",
+        "nextBoolean",
+        "nextInt",
+        "nextDouble"
+    ]
+}
