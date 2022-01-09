@@ -1,0 +1,14 @@
+{
+    "path": "mods/JEITweaker/API/Category/JeiCategory.md",
+    "ownerModId": "jeitweaker",
+    "zenCodeName": "mods.jei.category.JeiCategory",
+    "since": "1.1.0",
+    "searchTerms": [
+        "background",
+        "catalysts",
+        "icon",
+        "name",
+        "create",
+        "id"
+    ]
+}
