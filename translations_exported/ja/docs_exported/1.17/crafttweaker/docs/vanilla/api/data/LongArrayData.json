@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/data/LongArrayData.md",
+    "zenCodeName": "crafttweaker.api.data.LongArrayData",
+    "searchTerms": [
+        "contains",
+        "asCollection",
+        "asMap",
+        "asNumber",
+        "getId",
+        "asString",
+        "getString",
+        "crafttweaker.api.data.ICollectionData",
+        "asBoolean"
+    ]
+}
