@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/entity/living/teleport/EnderEntityTeleportEvent.md",
+    "zenCodeName": "crafttweaker.api.event.living.teleport.EntityTeleportEvent",
+    "searchTerms": [
+        "entityLiving",
+        "crafttweaker.api.event.living.teleport.EntityTeleportEvent",
+        "getEntityLiving"
+    ]
+}
