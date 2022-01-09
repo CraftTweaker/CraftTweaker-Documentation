@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/block/crop/CropGrowPostEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.crop.CropGrowEvent",
+    "searchTerms": [
+        "originState",
+        "crafttweaker.api.event.block.crop.CropGrowEvent",
+        "getOriginState"
+    ]
+}
