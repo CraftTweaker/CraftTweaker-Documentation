@@ -1,0 +1,18 @@
+{
+    "path": "vanilla/api/data/IData.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.data.IData",
+    "searchTerms": [
+        "asFormattedText",
+        "contains",
+        "asCollection",
+        "asMap",
+        "asNumber",
+        "getId",
+        "asString",
+        "copy",
+        "getString",
+        "asList",
+        "asBoolean"
+    ]
+}
