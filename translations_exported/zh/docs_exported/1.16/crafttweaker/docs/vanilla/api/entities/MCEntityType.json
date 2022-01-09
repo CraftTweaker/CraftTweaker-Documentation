@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/entities/MCEntityType.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.entity.MCEntityType",
+    "searchTerms": [
+        "crafttweaker.api.brackets.CommandStringDisplayable",
+        "immuneToFire #免疫火焰",
+        "translationKey",
+        "getRegistryName",
+        "summonable #可召唤的",
+        "setNameplateHandler",
+        "classification #类别",
+        "commandString #命令字符串",
+        "registryName",
+        "serializable #可序列化",
+        "setNameplate",
+        "lootTable",
+        "name（名称）",
+        "width #宽度",
+        "create",
+        "height #实体高度"
+    ]
+}
