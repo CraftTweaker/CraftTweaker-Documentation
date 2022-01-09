@@ -1,0 +1,16 @@
+{
+    "path": "forge/api/event/block/BlockToolInteractEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "getPlayer",
+        "getToolType",
+        "heldItemStack",
+        "toolAction",
+        "crafttweaker.api.event.block.BlockEvent",
+        "getFinalState",
+        "setFinalState",
+        "finalState",
+        "player",
+        "getHeldItemStack"
+    ]
+}
