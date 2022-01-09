@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/block/entity/BlockEntity.md",
+    "zenCodeName": "crafttweaker.api.block.entity.BlockEntity",
+    "searchTerms": [
+        "getBlockPos",
+        "blockState",
+        "getLevel",
+        "blockPos",
+        "data",
+        "level",
+        "updateData",
+        "hasLevel",
+        "getBlockState"
+    ]
+}
