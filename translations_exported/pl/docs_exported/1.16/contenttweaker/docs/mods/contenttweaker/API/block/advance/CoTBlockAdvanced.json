@@ -1,0 +1,15 @@
+{
+    "path": "mods/contenttweaker/API/block/advance/CoTBlockAdvanced.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "mods.contenttweaker.block.advance.CoTBlockAdvanced",
+    "searchTerms": [
+        "setIsTransparent",
+        "setOnActivated",
+        "setOnAdded",
+        "setOnReplaced",
+        "setIsSideInvisible",
+        "setOnNeighborChanged",
+        "setOnRandomTick",
+        "setBlockColorSupplier"
+    ]
+}
