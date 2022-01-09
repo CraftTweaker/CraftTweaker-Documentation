@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/commands/custom/MCParseResults.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.commands.custom.MCParseResults",
+    "searchTerms": [
+        "getExceptions",
+        "getReader",
+        "hashCode",
+        "equals #等于",
+        "toString",
+        "getContext"
+    ]
+}
