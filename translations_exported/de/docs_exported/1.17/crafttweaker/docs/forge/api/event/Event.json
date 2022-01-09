@@ -1,0 +1,20 @@
+{
+    "path": "forge/api/event/Event.md",
+    "zenCodeName": "crafttweaker.api.event.Event",
+    "searchTerms": [
+        "",
+        "cancel",
+        "setCanceled",
+        "cancelable",
+        "isCanceled",
+        "setResult",
+        "setDeny",
+        "hasResult",
+        "setDefault",
+        "result",
+        "canceled",
+        "setAllow",
+        "getResult",
+        "isCancelable"
+    ]
+}
