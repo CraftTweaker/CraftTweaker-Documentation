@@ -1,0 +1,11 @@
+{
+    "path": "forge/api/event/EventPriority.md",
+    "zenCodeName": "crafttweaker.api.events.EventPriority",
+    "searchTerms": [
+        "LOWEST",
+        "HIGH",
+        "LOW",
+        "HIGHEST",
+        "NORMAL"
+    ]
+}
