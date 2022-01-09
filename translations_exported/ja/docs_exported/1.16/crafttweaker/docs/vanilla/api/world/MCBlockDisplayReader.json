@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/world/MCBlockDisplayReader.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.world.MCBlockDisplayReader",
+    "searchTerms": [
+        "getTileEntity",
+        "canSeeSky",
+        "getLightValue",
+        "getBlockState"
+    ]
+}
