@@ -1,0 +1,19 @@
+{
+    "path": "forge/api/event/ItemAttributeModifierEvent.md",
+    "zenCodeName": "crafttweaker.api.event.Event",
+    "searchTerms": [
+        "originalModifiers",
+        "slotType",
+        "addModifier",
+        "modifiers",
+        "itemstack",
+        "clearModifiers",
+        "crafttweaker.api.event.Event",
+        "getOriginalModifiers",
+        "getSlotType",
+        "getItemStack",
+        "getModifiers",
+        "removeAttribute",
+        "removeModifier"
+    ]
+}
