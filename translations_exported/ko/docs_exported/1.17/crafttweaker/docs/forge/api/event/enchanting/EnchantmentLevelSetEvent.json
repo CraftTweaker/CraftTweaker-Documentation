@@ -1,0 +1,22 @@
+{
+    "path": "forge/api/event/enchanting/EnchantmentLevelSetEvent.md",
+    "zenCodeName": "crafttweaker.api.event.Event",
+    "searchTerms": [
+        "item",
+        "getWorld",
+        "getOriginalLevel",
+        "level",
+        "enchantRow",
+        "getItem",
+        "originalLevel",
+        "setLevel",
+        "getLevel",
+        "world",
+        "getPower",
+        "crafttweaker.api.event.Event",
+        "pos",
+        "getPos",
+        "power",
+        "getEnchantRow"
+    ]
+}
