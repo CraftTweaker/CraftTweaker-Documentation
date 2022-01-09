@@ -1,13 +1,151 @@
 {
   "nav": {
+    "Fabric": {
+      "Api": {
+        "Item": {
+          "FabricItemStack": "fabric/api/item/FabricItemStack.md",
+          "MCItemStack": "fabric/api/item/MCItemStack.md",
+          "MCItemStackMutable": "fabric/api/item/MCItemStackMutable.md"
+        }
+      }
+    },
     "Forge": {
       "Api": {
         "BracketHandlers": "forge/api/BracketHandlers.md",
         "ForgeBracketDumpers": "forge/api/ForgeBracketDumpers.md",
         "ForgeBracketValidators": "forge/api/ForgeBracketValidators.md",
         "Event": {
+          "AnvilUpdateEvent": "forge/api/event/AnvilUpdateEvent.md",
+          "CTEventManager": "forge/api/event/CTEventManager.md",
           "Event": "forge/api/event/Event.md",
-          "EventResult": "forge/api/event/EventResult.md"
+          "EventPriority": "forge/api/event/EventPriority.md",
+          "EventResult": "forge/api/event/EventResult.md",
+          "ItemAttributeModifierEvent": "forge/api/event/ItemAttributeModifierEvent.md",
+          "Block": {
+            "BlockBreakEvent": "forge/api/event/block/BlockBreakEvent.md",
+            "BlockEvent": "forge/api/event/block/BlockEvent.md",
+            "BlockNeighborNotifyEvent": "forge/api/event/block/BlockNeighborNotifyEvent.md",
+            "BlockPlaceEvent": "forge/api/event/block/BlockPlaceEvent.md",
+            "BlockToolInteractEvent": "forge/api/event/block/BlockToolInteractEvent.md",
+            "FarmlandTrampleEvent": "forge/api/event/block/FarmlandTrampleEvent.md",
+            "FluidPlaceBlockEvent": "forge/api/event/block/FluidPlaceBlockEvent.md",
+            "PortalSpawnEvent": "forge/api/event/block/PortalSpawnEvent.md",
+            "Crop": {
+              "CropGrowEvent": "forge/api/event/block/crop/CropGrowEvent.md",
+              "CropGrowPostEvent": "forge/api/event/block/crop/CropGrowPostEvent.md",
+              "CropGrowPreEvent": "forge/api/event/block/crop/CropGrowPreEvent.md"
+            }
+          },
+          "Enchanting": {
+            "EnchantmentLevelSetEvent": "forge/api/event/enchanting/EnchantmentLevelSetEvent.md"
+          },
+          "Entity": {
+            "EntityEvent": "forge/api/event/entity/EntityEvent.md",
+            "EntityJoinWorldEvent": "forge/api/event/entity/EntityJoinWorldEvent.md",
+            "EntityStruckByLightningEvent": "forge/api/event/entity/EntityStruckByLightningEvent.md",
+            "EntityTravelToDimensionEvent": "forge/api/event/entity/EntityTravelToDimensionEvent.md",
+            "ItemEvent": "forge/api/event/entity/ItemEvent.md",
+            "LivingEvent": "forge/api/event/entity/LivingEvent.md",
+            "Item": {
+              "ItemExpireEvent": "forge/api/event/entity/item/ItemExpireEvent.md",
+              "ItemTossEvent": "forge/api/event/entity/item/ItemTossEvent.md"
+            },
+            "Living": {
+              "LivingAttackEvent": "forge/api/event/entity/living/LivingAttackEvent.md",
+              "LivingDeathEvent": "forge/api/event/entity/living/LivingDeathEvent.md",
+              "LivingEquipmentChangeEvent": "forge/api/event/entity/living/LivingEquipmentChangeEvent.md",
+              "LivingExperienceDropEvent": "forge/api/event/entity/living/LivingExperienceDropEvent.md",
+              "LivingFallEvent": "forge/api/event/entity/living/LivingFallEvent.md",
+              "LivingHealEvent": "forge/api/event/entity/living/LivingHealEvent.md",
+              "LivingHurtEvent": "forge/api/event/entity/living/LivingHurtEvent.md",
+              "LivingKnockBackEvent": "forge/api/event/entity/living/LivingKnockBackEvent.md",
+              "LivingUpdateEvent": "forge/api/event/entity/living/LivingUpdateEvent.md",
+              "Conversion": {
+                "LivingConversionEvent": "forge/api/event/entity/living/conversion/LivingConversionEvent.md",
+                "LivingConversionPostEvent": "forge/api/event/entity/living/conversion/LivingConversionPostEvent.md",
+                "LivingConversionPreEvent": "forge/api/event/entity/living/conversion/LivingConversionPreEvent.md"
+              },
+              "Spawn": {
+                "AllowDespawnEvent": "forge/api/event/entity/living/spawn/AllowDespawnEvent.md",
+                "CheckSpawnEvent": "forge/api/event/entity/living/spawn/CheckSpawnEvent.md",
+                "LivingSpawnEvent": "forge/api/event/entity/living/spawn/LivingSpawnEvent.md",
+                "SpecialSpawnEvent": "forge/api/event/entity/living/spawn/SpecialSpawnEvent.md"
+              },
+              "Teleport": {
+                "ChorusFruitTeleportEvent": "forge/api/event/entity/living/teleport/ChorusFruitTeleportEvent.md",
+                "EnderEntityTeleportEvent": "forge/api/event/entity/living/teleport/EnderEntityTeleportEvent.md",
+                "EnderPearlTeleportEvent": "forge/api/event/entity/living/teleport/EnderPearlTeleportEvent.md",
+                "EntityTeleportEvent": "forge/api/event/entity/living/teleport/EntityTeleportEvent.md",
+                "SpreadPlayersCommandTeleportEvent": "forge/api/event/entity/living/teleport/SpreadPlayersCommandTeleportEvent.md",
+                "TeleportCommandTeleportEvent": "forge/api/event/entity/living/teleport/TeleportCommandTeleportEvent.md"
+              },
+              "Use": {
+                "LivingEntityUseItemEvent": "forge/api/event/entity/living/use/LivingEntityUseItemEvent.md",
+                "LivingEntityUseItemFinishEvent": "forge/api/event/entity/living/use/LivingEntityUseItemFinishEvent.md",
+                "LivingEntityUseItemStartEvent": "forge/api/event/entity/living/use/LivingEntityUseItemStartEvent.md",
+                "LivingEntityUseItemStopEvent": "forge/api/event/entity/living/use/LivingEntityUseItemStopEvent.md",
+                "LivingEntityUseItemTickEvent": "forge/api/event/entity/living/use/LivingEntityUseItemTickEvent.md"
+              }
+            },
+            "Player": {
+              "AdvancementEvent": "forge/api/event/entity/player/AdvancementEvent.md",
+              "AnvilRepairEvent": "forge/api/event/entity/player/AnvilRepairEvent.md",
+              "ItemCraftedEvent": "forge/api/event/entity/player/ItemCraftedEvent.md",
+              "ItemFishedEvent": "forge/api/event/entity/player/ItemFishedEvent.md",
+              "ItemPickupEvent": "forge/api/event/entity/player/ItemPickupEvent.md",
+              "ItemSmeltedEvent": "forge/api/event/entity/player/ItemSmeltedEvent.md",
+              "PlayerDestroyItemEvent": "forge/api/event/entity/player/PlayerDestroyItemEvent.md",
+              "PlayerEvent": "forge/api/event/entity/player/PlayerEvent.md",
+              "PlayerLoggedInEvent": "forge/api/event/entity/player/PlayerLoggedInEvent.md",
+              "PlayerLoggedOutEvent": "forge/api/event/entity/player/PlayerLoggedOutEvent.md",
+              "PlayerRespawnEvent": "forge/api/event/entity/player/PlayerRespawnEvent.md",
+              "Interact": {
+                "EntityInteractEvent": "forge/api/event/entity/player/interact/EntityInteractEvent.md",
+                "LeftClickBlockEvent": "forge/api/event/entity/player/interact/LeftClickBlockEvent.md",
+                "LeftClickEmptyEvent": "forge/api/event/entity/player/interact/LeftClickEmptyEvent.md",
+                "PlayerInteractEvent": "forge/api/event/entity/player/interact/PlayerInteractEvent.md",
+                "RightClickBlockEvent": "forge/api/event/entity/player/interact/RightClickBlockEvent.md",
+                "RightClickEmptyEvent": "forge/api/event/entity/player/interact/RightClickEmptyEvent.md",
+                "RightClickItemEvent": "forge/api/event/entity/player/interact/RightClickItemEvent.md"
+              },
+              "Xp": {
+                "LevelChangeEvent": "forge/api/event/entity/player/xp/LevelChangeEvent.md",
+                "PickupXpEvent": "forge/api/event/entity/player/xp/PickupXpEvent.md",
+                "PlayerXpEvent": "forge/api/event/entity/player/xp/PlayerXpEvent.md",
+                "XpChangeEvent": "forge/api/event/entity/player/xp/XpChangeEvent.md"
+              }
+            }
+          },
+          "Living": {
+            "LivingDamageEvent": "forge/api/event/living/LivingDamageEvent.md",
+            "LivingDestroyBlockEvent": "forge/api/event/living/LivingDestroyBlockEvent.md",
+            "LivingDropsEvent": "forge/api/event/living/LivingDropsEvent.md"
+          },
+          "Tick": {
+            "Phase": "forge/api/event/tick/Phase.md",
+            "PlayerTickEvent": "forge/api/event/tick/PlayerTickEvent.md",
+            "TickEvent": "forge/api/event/tick/TickEvent.md",
+            "Type": "forge/api/event/tick/Type.md",
+            "WorldTickEvent": "forge/api/event/tick/WorldTickEvent.md"
+          }
+        },
+        "Fluid": {
+          "FluidIngredient": "forge/api/fluid/FluidIngredient.md",
+          "IFluidStack": "forge/api/fluid/IFluidStack.md"
+        },
+        "Item": {
+          "ForgeItemStack": "forge/api/item/ForgeItemStack.md",
+          "MCItemStack": "forge/api/item/MCItemStack.md",
+          "MCItemStackMutable": "forge/api/item/MCItemStackMutable.md"
+        },
+        "Loot": {
+          "Condition": {
+            "LootTableIdLootCondition": "forge/api/loot/condition/LootTableIdLootCondition.md",
+            "LootTableIdRegexLootCondition": "forge/api/loot/condition/LootTableIdRegexLootCondition.md",
+            "Builder": {
+              "LootTableIdLootConditionBuilder": "forge/api/loot/condition/builder/LootTableIdLootConditionBuilder.md"
+            }
+          }
         },
         "Recipe": {
           "Brewing": {
@@ -121,123 +259,8 @@
             }
           }
         },
-        "Event": {
-          "AnvilUpdateEvent": "vanilla/api/event/AnvilUpdateEvent.md",
-          "CTEventManager": "vanilla/api/event/CTEventManager.md",
-          "EventPriority": "vanilla/api/event/EventPriority.md",
-          "ItemAttributeModifierEvent": "vanilla/api/event/ItemAttributeModifierEvent.md",
-          "Block": {
-            "BlockBreakEvent": "vanilla/api/event/block/BlockBreakEvent.md",
-            "BlockEvent": "vanilla/api/event/block/BlockEvent.md",
-            "BlockNeighborNotifyEvent": "vanilla/api/event/block/BlockNeighborNotifyEvent.md",
-            "BlockPlaceEvent": "vanilla/api/event/block/BlockPlaceEvent.md",
-            "BlockToolInteractEvent": "vanilla/api/event/block/BlockToolInteractEvent.md",
-            "FarmlandTrampleEvent": "vanilla/api/event/block/FarmlandTrampleEvent.md",
-            "FluidPlaceBlockEvent": "vanilla/api/event/block/FluidPlaceBlockEvent.md",
-            "PortalSpawnEvent": "vanilla/api/event/block/PortalSpawnEvent.md",
-            "Crop": {
-              "CropGrowEvent": "vanilla/api/event/block/crop/CropGrowEvent.md",
-              "CropGrowPostEvent": "vanilla/api/event/block/crop/CropGrowPostEvent.md",
-              "CropGrowPreEvent": "vanilla/api/event/block/crop/CropGrowPreEvent.md"
-            }
-          },
-          "Enchanting": {
-            "EnchantmentLevelSetEvent": "vanilla/api/event/enchanting/EnchantmentLevelSetEvent.md"
-          },
-          "Entity": {
-            "EntityEvent": "vanilla/api/event/entity/EntityEvent.md",
-            "EntityJoinWorldEvent": "vanilla/api/event/entity/EntityJoinWorldEvent.md",
-            "EntityStruckByLightningEvent": "vanilla/api/event/entity/EntityStruckByLightningEvent.md",
-            "EntityTravelToDimensionEvent": "vanilla/api/event/entity/EntityTravelToDimensionEvent.md",
-            "ItemEvent": "vanilla/api/event/entity/ItemEvent.md",
-            "LivingEvent": "vanilla/api/event/entity/LivingEvent.md",
-            "Item": {
-              "ItemExpireEvent": "vanilla/api/event/entity/item/ItemExpireEvent.md",
-              "ItemTossEvent": "vanilla/api/event/entity/item/ItemTossEvent.md"
-            },
-            "Living": {
-              "LivingAttackEvent": "vanilla/api/event/entity/living/LivingAttackEvent.md",
-              "LivingDeathEvent": "vanilla/api/event/entity/living/LivingDeathEvent.md",
-              "LivingEquipmentChangeEvent": "vanilla/api/event/entity/living/LivingEquipmentChangeEvent.md",
-              "LivingExperienceDropEvent": "vanilla/api/event/entity/living/LivingExperienceDropEvent.md",
-              "LivingFallEvent": "vanilla/api/event/entity/living/LivingFallEvent.md",
-              "LivingHealEvent": "vanilla/api/event/entity/living/LivingHealEvent.md",
-              "LivingHurtEvent": "vanilla/api/event/entity/living/LivingHurtEvent.md",
-              "LivingKnockBackEvent": "vanilla/api/event/entity/living/LivingKnockBackEvent.md",
-              "LivingUpdateEvent": "vanilla/api/event/entity/living/LivingUpdateEvent.md",
-              "Conversion": {
-                "LivingConversionEvent": "vanilla/api/event/entity/living/conversion/LivingConversionEvent.md",
-                "LivingConversionPostEvent": "vanilla/api/event/entity/living/conversion/LivingConversionPostEvent.md",
-                "LivingConversionPreEvent": "vanilla/api/event/entity/living/conversion/LivingConversionPreEvent.md"
-              },
-              "Spawn": {
-                "AllowDespawnEvent": "vanilla/api/event/entity/living/spawn/AllowDespawnEvent.md",
-                "CheckSpawnEvent": "vanilla/api/event/entity/living/spawn/CheckSpawnEvent.md",
-                "LivingSpawnEvent": "vanilla/api/event/entity/living/spawn/LivingSpawnEvent.md",
-                "SpecialSpawnEvent": "vanilla/api/event/entity/living/spawn/SpecialSpawnEvent.md"
-              },
-              "Teleport": {
-                "ChorusFruitTeleportEvent": "vanilla/api/event/entity/living/teleport/ChorusFruitTeleportEvent.md",
-                "EnderEntityTeleportEvent": "vanilla/api/event/entity/living/teleport/EnderEntityTeleportEvent.md",
-                "EnderPearlTeleportEvent": "vanilla/api/event/entity/living/teleport/EnderPearlTeleportEvent.md",
-                "EntityTeleportEvent": "vanilla/api/event/entity/living/teleport/EntityTeleportEvent.md",
-                "SpreadPlayersCommandTeleportEvent": "vanilla/api/event/entity/living/teleport/SpreadPlayersCommandTeleportEvent.md",
-                "TeleportCommandTeleportEvent": "vanilla/api/event/entity/living/teleport/TeleportCommandTeleportEvent.md"
-              },
-              "Use": {
-                "LivingEntityUseItemEvent": "vanilla/api/event/entity/living/use/LivingEntityUseItemEvent.md",
-                "LivingEntityUseItemFinishEvent": "vanilla/api/event/entity/living/use/LivingEntityUseItemFinishEvent.md",
-                "LivingEntityUseItemStartEvent": "vanilla/api/event/entity/living/use/LivingEntityUseItemStartEvent.md",
-                "LivingEntityUseItemStopEvent": "vanilla/api/event/entity/living/use/LivingEntityUseItemStopEvent.md",
-                "LivingEntityUseItemTickEvent": "vanilla/api/event/entity/living/use/LivingEntityUseItemTickEvent.md"
-              }
-            },
-            "Player": {
-              "AdvancementEvent": "vanilla/api/event/entity/player/AdvancementEvent.md",
-              "AnvilRepairEvent": "vanilla/api/event/entity/player/AnvilRepairEvent.md",
-              "ItemCraftedEvent": "vanilla/api/event/entity/player/ItemCraftedEvent.md",
-              "ItemFishedEvent": "vanilla/api/event/entity/player/ItemFishedEvent.md",
-              "ItemPickupEvent": "vanilla/api/event/entity/player/ItemPickupEvent.md",
-              "ItemSmeltedEvent": "vanilla/api/event/entity/player/ItemSmeltedEvent.md",
-              "PlayerDestroyItemEvent": "vanilla/api/event/entity/player/PlayerDestroyItemEvent.md",
-              "PlayerEvent": "vanilla/api/event/entity/player/PlayerEvent.md",
-              "PlayerLoggedInEvent": "vanilla/api/event/entity/player/PlayerLoggedInEvent.md",
-              "PlayerLoggedOutEvent": "vanilla/api/event/entity/player/PlayerLoggedOutEvent.md",
-              "PlayerRespawnEvent": "vanilla/api/event/entity/player/PlayerRespawnEvent.md",
-              "Interact": {
-                "EntityInteractEvent": "vanilla/api/event/entity/player/interact/EntityInteractEvent.md",
-                "LeftClickBlockEvent": "vanilla/api/event/entity/player/interact/LeftClickBlockEvent.md",
-                "LeftClickEmptyEvent": "vanilla/api/event/entity/player/interact/LeftClickEmptyEvent.md",
-                "PlayerInteractEvent": "vanilla/api/event/entity/player/interact/PlayerInteractEvent.md",
-                "RightClickBlockEvent": "vanilla/api/event/entity/player/interact/RightClickBlockEvent.md",
-                "RightClickEmptyEvent": "vanilla/api/event/entity/player/interact/RightClickEmptyEvent.md",
-                "RightClickItemEvent": "vanilla/api/event/entity/player/interact/RightClickItemEvent.md"
-              },
-              "Xp": {
-                "LevelChangeEvent": "vanilla/api/event/entity/player/xp/LevelChangeEvent.md",
-                "PickupXpEvent": "vanilla/api/event/entity/player/xp/PickupXpEvent.md",
-                "PlayerXpEvent": "vanilla/api/event/entity/player/xp/PlayerXpEvent.md",
-                "XpChangeEvent": "vanilla/api/event/entity/player/xp/XpChangeEvent.md"
-              }
-            }
-          },
-          "Living": {
-            "LivingDamageEvent": "vanilla/api/event/living/LivingDamageEvent.md",
-            "LivingDestroyBlockEvent": "vanilla/api/event/living/LivingDestroyBlockEvent.md",
-            "LivingDropsEvent": "vanilla/api/event/living/LivingDropsEvent.md"
-          },
-          "Tick": {
-            "Phase": "vanilla/api/event/tick/Phase.md",
-            "PlayerTickEvent": "vanilla/api/event/tick/PlayerTickEvent.md",
-            "TickEvent": "vanilla/api/event/tick/TickEvent.md",
-            "Type": "vanilla/api/event/tick/Type.md",
-            "WorldTickEvent": "vanilla/api/event/tick/WorldTickEvent.md"
-          }
-        },
         "Fluid": {
-          "Fluid": "vanilla/api/fluid/Fluid.md",
-          "FluidIngredient": "vanilla/api/fluid/FluidIngredient.md",
-          "IFluidStack": "vanilla/api/fluid/IFluidStack.md"
+          "Fluid": "vanilla/api/fluid/Fluid.md"
         },
         "Food": {
           "FoodData": "vanilla/api/food/FoodData.md",
@@ -281,14 +304,11 @@
         },
         "Item": {
           "CreativeModeTab": "vanilla/api/item/CreativeModeTab.md",
-          "ForgeItemStack": "vanilla/api/item/ForgeItemStack.md",
           "IItemStack": "vanilla/api/item/IItemStack.md",
           "Ingredient": "vanilla/api/item/Ingredient.md",
           "ItemCooldowns": "vanilla/api/item/ItemCooldowns.md",
           "ItemDefinition": "vanilla/api/item/ItemDefinition.md",
           "ItemStack": "vanilla/api/item/ItemStack.md",
-          "MCItemStack": "vanilla/api/item/MCItemStack.md",
-          "MCItemStackMutable": "vanilla/api/item/MCItemStackMutable.md",
           "UseOnContext": "vanilla/api/item/UseOnContext.md",
           "Vanishable": "vanilla/api/item/Vanishable.md",
           "Wearable": "vanilla/api/item/Wearable.md",
@@ -347,8 +367,6 @@
             "LocationCheckLootCondition": "vanilla/api/loot/condition/LocationCheckLootCondition.md",
             "LootCondition": "vanilla/api/loot/condition/LootCondition.md",
             "LootConditions": "vanilla/api/loot/condition/LootConditions.md",
-            "LootTableIdLootCondition": "vanilla/api/loot/condition/LootTableIdLootCondition.md",
-            "LootTableIdRegexLootCondition": "vanilla/api/loot/condition/LootTableIdRegexLootCondition.md",
             "MatchToolLootCondition": "vanilla/api/loot/condition/MatchToolLootCondition.md",
             "RandomChanceLootCondition": "vanilla/api/loot/condition/RandomChanceLootCondition.md",
             "RandomChanceWithLootingLootCondition": "vanilla/api/loot/condition/RandomChanceWithLootingLootCondition.md",
@@ -360,7 +378,6 @@
               "BlockStatePropertyLootConditionBuilder": "vanilla/api/loot/condition/builder/BlockStatePropertyLootConditionBuilder.md",
               "EntityHasScoreLootConditionBuilder": "vanilla/api/loot/condition/builder/EntityHasScoreLootConditionBuilder.md",
               "LootConditionBuilder": "vanilla/api/loot/condition/builder/LootConditionBuilder.md",
-              "LootTableIdLootConditionBuilder": "vanilla/api/loot/condition/builder/LootTableIdLootConditionBuilder.md",
               "TimeCheckLootConditionBuilder": "vanilla/api/loot/condition/builder/TimeCheckLootConditionBuilder.md",
               "WeatherCheckLootConditionBuilder": "vanilla/api/loot/condition/builder/WeatherCheckLootConditionBuilder.md"
             }

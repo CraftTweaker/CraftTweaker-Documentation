@@ -9,7 +9,7 @@ This class contains the "simple" Forge Bracket handlers from CraftTweaker.
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
 
 Returns: A stack of the liquid with amount == 1mb  
-Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 
 ```zenscript
 // BracketHandlers.getFluidStack(tokens as string) as IFluidStack
