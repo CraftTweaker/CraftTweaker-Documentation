@@ -1,0 +1,27 @@
+{
+    "path": "vanilla/api/items/IngredientList.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.item.IngredientList",
+    "searchTerms": [
+        "modifyShiftTooltip",
+        "onlyIf",
+        "removeGlobalAttribute",
+        "addShiftTooltip",
+        "onlyDamaged",
+        "addTooltip",
+        "matches",
+        "anyDamage",
+        "addGlobalAttributeModifier",
+        "crafttweaker.api.item.IIngredient",
+        "contains #容器",
+        "removeTooltip",
+        "onlyDamagedAtLeast",
+        "getRemainingItem",
+        "onlyDamagedAtMost",
+        "removeGlobalAttributeModifier",
+        "modifyTooltip",
+        "burnTime",
+        "clearTooltip",
+        "only"
+    ]
+}
