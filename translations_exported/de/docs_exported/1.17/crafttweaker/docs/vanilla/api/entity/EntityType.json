@@ -1,0 +1,29 @@
+{
+    "path": "vanilla/api/entity/EntityType.md",
+    "zenCodeName": "crafttweaker.api.entity.EntityType",
+    "searchTerms": [
+        "canSpawnFarFromPlayer",
+        "getDescriptionId",
+        "getCategory",
+        "description",
+        "getWidth",
+        "commandString",
+        "defaultLootTable",
+        "fireImmune",
+        "canSummon",
+        "getDescription",
+        "getDimensions",
+        "toShortString",
+        "getHeight",
+        "descriptionId",
+        "spawn",
+        "width",
+        "create",
+        "getDefaultLootTable",
+        "category",
+        "isIn",
+        "dimensions",
+        "height",
+        "isBlockDangerous"
+    ]
+}
