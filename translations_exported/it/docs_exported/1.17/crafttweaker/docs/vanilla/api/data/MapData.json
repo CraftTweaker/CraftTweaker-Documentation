@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/data/MapData.md",
+    "zenCodeName": "crafttweaker.api.data.MapData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "asNumber",
+        "isEmpty",
+        "getId",
+        "getString",
+        "asList",
+        "put",
+        "remove",
+        "contains",
+        "getAt",
+        "size",
+        "merge",
+        "putAll",
+        "asString",
+        "keySet",
+        "asBoolean"
+    ]
+}
