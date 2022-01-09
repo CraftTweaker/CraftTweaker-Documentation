@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/entity/HumanoidArm.md",
+    "zenCodeName": "crafttweaker.api.entity.HumanoidArm",
+    "searchTerms": [
+        "getName",
+        "LEFT",
+        "RIGHT",
+        "opposite",
+        "getOpposite"
+    ]
+}
