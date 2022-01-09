@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/items/ExpandIIngredientTransformers.md",
+    "ownerModId": "crafttweaker",
+    "searchTerms": [
+        "asIIngredientWithAmount",
+        "reuse",
+        "transform",
+        "transformCustom",
+        "mul",
+        "transformDamage",
+        "transformReplace"
+    ]
+}
