@@ -1,0 +1,13 @@
+{
+    "path": "forge/api/event/entity/living/LivingFallEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "getDistance",
+        "setDistance",
+        "distance",
+        "setDamageMultiplier",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "getDamageMultiplier",
+        "damageMultiplier"
+    ]
+}
