@@ -1,0 +1,20 @@
+{
+    "path": "vanilla/api/recipe/WrapperRecipe.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.recipes.WrapperRecipe",
+    "searchTerms": [
+        "crafttweaker.api.brackets.CommandStringDisplayable",
+        "icon",
+        "isShapelessCraftingRecipe",
+        "replace",
+        "isShapedCraftingRecipe",
+        "commandString #命令字符串",
+        "output（输出）",
+        "recipeManager",
+        "canFit",
+        "ingredients",
+        "dynamic",
+        "id",
+        "group"
+    ]
+}
