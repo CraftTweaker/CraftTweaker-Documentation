@@ -1,0 +1,17 @@
+{
+    "path": "vanilla/api/util/MCEquipmentSlotType.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.MCEquipmentSlotType",
+    "searchTerms": [
+        "CHEST",
+        "isArmor",
+        "HEAD",
+        "OFFHAND",
+        "MAINHAND",
+        "LEGS",
+        "name（名称）",
+        "isHand",
+        "commandString #命令字符串",
+        "FEET"
+    ]
+}
