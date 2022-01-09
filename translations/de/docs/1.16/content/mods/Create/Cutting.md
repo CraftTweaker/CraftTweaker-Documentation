@@ -1,0 +1,37 @@
+::requiredMod[Create]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create requiredMod=CreateTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/createtweaker}
+
+# Create Cutting
+
+Die Cutting Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
+
+## Methoden
+
+#### Rezept hinzufügen
+
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ein Glasstück mit einer Dauer von 100 Ticks geschnitten wird.
+
+```zenscript
+// <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration)
+
+<recipetype:create:cutting>.addRecipe("cutting_test", <item:minecraft:diamond>, <item:minecraft:glass>);
+```
+
+#### Remove Recipes
+
+The following script will remove all Cutting recipes that output a Stripped Jungle Wood.
+
+```zenscript
+// <recipetype:create:cutting>.removeRecipe(IItemStack output)
+
+<recipetype:create:cutting>.removeRecipe(<item:minecraft:stripped_jungle_wood>);
+```
+
+#### Get a Processing Recipe Factory
+
+You can get a ProcessingRecipeFactory of this recipe type like so:
+
+```zenscript
+// <recipetype:create:cutting>.factory() as ProcessingRecipeFactory
+
+<recipetype:create:cutting>.factory()
+```
