@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/entity/living/conversion/LivingConversionPreEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.living.conversion.LivingConversionEvent",
+    "searchTerms": [
+        "setConversionTimer",
+        "outcome",
+        "crafttweaker.api.event.entity.living.conversion.LivingConversionEvent"
+    ]
+}
