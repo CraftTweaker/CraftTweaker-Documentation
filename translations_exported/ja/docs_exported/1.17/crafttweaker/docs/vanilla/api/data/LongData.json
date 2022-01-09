@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/data/LongData.md",
+    "zenCodeName": "crafttweaker.api.data.LongData",
+    "searchTerms": [
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap",
+        "asNumber",
+        "getDouble",
+        "getId",
+        "getFloat",
+        "getString",
+        "asList",
+        "getLong",
+        "getInt",
+        "crafttweaker.api.data.INumberData",
+        "asString",
+        "asBoolean"
+    ]
+}
