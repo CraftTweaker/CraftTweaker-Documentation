@@ -1,0 +1,16 @@
+{
+    "path": "mods/JEITweaker/API/Component/JeiDrawableAnimation.md",
+    "ownerModId": "jeitweaker",
+    "zenCodeName": "mods.jei.component.JeiDrawableAnimation",
+    "since": "1.1.0",
+    "searchTerms": [
+        "SHOW_RIGHT_TO_LEFT",
+        "HIDE_RIGHT_TO_LEFT",
+        "HIDE_BOTTOM_TO_TOP",
+        "SHOW_BOTTOM_TO_TOP",
+        "SHOW_LEFT_TO_RIGHT",
+        "HIDE_TOP_TO_BOTTOM",
+        "HIDE_LEFT_TO_RIGHT",
+        "SHOW_TOP_TO_BOTTOM"
+    ]
+}
