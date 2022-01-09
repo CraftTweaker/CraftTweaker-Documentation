@@ -1,0 +1,10 @@
+{
+    "path": "forge/api/event/entity/living/use/LivingEntityUseItemFinishEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.living.use.LivingEntityUseItemEvent",
+    "searchTerms": [
+        "setResultStack",
+        "crafttweaker.api.event.entity.living.use.LivingEntityUseItemEvent",
+        "resultStack",
+        "getResultStack"
+    ]
+}
