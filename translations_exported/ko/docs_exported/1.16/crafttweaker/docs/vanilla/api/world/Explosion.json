@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/world/Explosion.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.world.Explosion",
+    "searchTerms": [
+        "",
+        "getExploder",
+        "damageSource",
+        "clearAffectedBlockPositions",
+        "getPlayerKnockbackMap",
+        "getAffectedBlockPositions",
+        "getPosition",
+        "doExplosionA",
+        "getDamageSource",
+        "getExplosivePlacedBy",
+        "playerKnockbackMap",
+        "affectedBlockPositions",
+        "explosivePlacedBy",
+        "create",
+        "doExplosionB",
+        "position"
+    ]
+}
