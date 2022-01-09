@@ -1,0 +1,27 @@
+{
+    "path": "vanilla/api/entity/type/player/Inventory.md",
+    "zenCodeName": "crafttweaker.api.entity.type.player.Inventory",
+    "searchTerms": [
+        "add #添加",
+        "removeItem",
+        "getArmor",
+        "freeSlot",
+        "crafttweaker.api.world.Container",
+        "getFreeSlot",
+        "hurtArmor",
+        "findSlotMatchingUnusedItem",
+        "crafttweaker.api.world.Nameable",
+        "findSlotMatchingItem",
+        "getTimesChanged",
+        "getSlotWithRemainingSpace",
+        "getSelected",
+        "setPickedItem",
+        "timesChanged",
+        "contains #容器",
+        "pickSlot",
+        "dropAll",
+        "suitableHotbarSlot",
+        "getSuitableHotbarSlot",
+        "selected"
+    ]
+}
