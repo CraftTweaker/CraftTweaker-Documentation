@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/data/ByteArrayData.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.data.ByteArrayData",
+    "searchTerms": [
+        "asFormattedText",
+        "contains #容器",
+        "asCollection",
+        "asMap #作为地图数据",
+        "asNumber",
+        "getId #获取id\n",
+        "getString #获取字符串",
+        "crafttweaker.api.data.ICollectionData",
+        "asBoolean"
+    ]
+}
