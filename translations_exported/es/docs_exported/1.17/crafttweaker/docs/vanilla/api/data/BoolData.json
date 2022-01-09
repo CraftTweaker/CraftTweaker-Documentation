@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/data/BoolData.md",
+    "zenCodeName": "crafttweaker.api.data.BoolData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "contains",
+        "asCollection",
+        "asMap",
+        "getByteData",
+        "getId",
+        "asString",
+        "getString",
+        "asList",
+        "asBoolean"
+    ]
+}
