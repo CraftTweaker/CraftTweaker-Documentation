@@ -1,0 +1,18 @@
+{
+    "path": "vanilla/api/commands/custom/MCSuggestionsBuilder.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.commands.custom.MCSuggestionsBuilder",
+    "searchTerms": [
+        "add #添加",
+        "createOffset",
+        "getStart",
+        "build",
+        "restart",
+        "getRemaining",
+        "hashCode",
+        "equals #等于",
+        "toString",
+        "suggest",
+        "getInput"
+    ]
+}
