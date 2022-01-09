@@ -1,0 +1,14 @@
+{
+    "path": "mods/contenttweaker/API/item/advance/CoTItemAdvanced.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "mods.contenttweaker.item.advance.CoTItemAdvanced",
+    "searchTerms": [
+        "setOnHitEntity",
+        "setOnInteractWithEntity",
+        "setItemColorSupplier",
+        "setOnItemUse",
+        "setUsingTick",
+        "setOnItemRightClick",
+        "setInventoryTick"
+    ]
+}
