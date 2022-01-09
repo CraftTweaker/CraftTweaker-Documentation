@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/loot/conditions/LootConditionBuilder.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.loot.conditions.LootConditionBuilder",
+    "searchTerms": [
+        "add #添加",
+        "createForSingle",
+        "createInOr",
+        "makeJson",
+        "build",
+        "makeSingle",
+        "create",
+        "createInAnd"
+    ]
+}
