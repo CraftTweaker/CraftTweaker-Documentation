@@ -1,0 +1,22 @@
+{
+    "path": "forge/api/event/entity/living/LivingKnockBackEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "strength",
+        "getStrength",
+        "getRatioZ",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "originStrength",
+        "setRatioX",
+        "getRatioX",
+        "setRatioZ",
+        "setStrength",
+        "getOriginRatioX",
+        "getOriginRatioZ",
+        "ratioX",
+        "originRatioX",
+        "ratioZ",
+        "originRatioZ",
+        "getOriginStrength"
+    ]
+}
