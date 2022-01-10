@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/event/entity/player/ItemFishedEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "itemDamage",
+        "drops",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "getDrops",
+        "getItemDamage",
+        "damageRodBy"
+    ]
+}
