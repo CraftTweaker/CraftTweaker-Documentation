@@ -1,0 +1,13 @@
+{
+    "path": "forge/api/event/entity/player/interact/LeftClickBlockEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.interact.PlayerInteractEvent",
+    "searchTerms": [
+        "getUseItem",
+        "useBlock",
+        "useItem",
+        "getUseBlock",
+        "crafttweaker.api.event.entity.player.interact.PlayerInteractEvent",
+        "setUseBlock",
+        "setUseItem"
+    ]
+}
