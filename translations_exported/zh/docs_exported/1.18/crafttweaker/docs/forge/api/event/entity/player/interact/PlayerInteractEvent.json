@@ -1,0 +1,18 @@
+{
+    "path": "forge/api/event/entity/player/interact/PlayerInteractEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "getBlockPos",
+        "getCancellationResult",
+        "setCancellationResult",
+        "face",
+        "物品应用",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "blockPos",
+        "getHand",
+        "cancellationResult",
+        "getItemStack",
+        "getFace",
+        "hand"
+    ]
+}
