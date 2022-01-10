@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/data/ByteData.md",
+    "zenCodeName": "crafttweaker.api.data.ByteData",
+    "searchTerms": [
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap",
+        "asNumber",
+        "getDouble",
+        "getId",
+        "getFloat",
+        "getString",
+        "asList",
+        "getLong",
+        "getInt",
+        "crafttweaker.api.data.INumberData",
+        "asString",
+        "asBoolean"
+    ]
+}
