@@ -1,0 +1,16 @@
+{
+    "path": "forge/api/event/entity/player/AnvilRepairEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "ingredientInput",
+        "itemInput",
+        "itemResult",
+        "getBreakChance",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "getItemInput",
+        "setBreakChance",
+        "getItemResult",
+        "getIngredientInput",
+        "breakChance"
+    ]
+}
