@@ -1,0 +1,17 @@
+{
+    "path": "forge/api/event/entity/player/interact/RightClickBlockEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.interact.PlayerInteractEvent",
+    "searchTerms": [
+        "getUseItem",
+        "face",
+        "useBlock",
+        "useItem",
+        "getUseBlock",
+        "hitVec",
+        "crafttweaker.api.event.entity.player.interact.PlayerInteractEvent",
+        "getHitVec",
+        "getFace",
+        "setUseBlock",
+        "setUseItem"
+    ]
+}
