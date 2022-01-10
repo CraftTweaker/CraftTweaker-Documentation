@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/data/MapData.md",
+    "zenCodeName": "craftminstrer.api.data.MapData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "asNumber",
+        "isEmpty #是否为空",
+        "getId #获取id\n",
+        "getString #获取字符串",
+        "asList #作为列表",
+        "put #放置",
+        "remove #移除",
+        "contains #容器",
+        "getAt",
+        "size #大小",
+        "merge #合并",
+        "putAll #放置全部",
+        "asString #作为字符串",
+        "keySet #设置键",
+        "asBoolean"
+    ]
+}
