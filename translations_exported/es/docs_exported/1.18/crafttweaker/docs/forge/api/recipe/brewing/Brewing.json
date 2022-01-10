@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/recipe/brewing/Brewing.md",
+    "zenCodeName": "crafttweaker.api.recipe/Brewing",
+    "searchTerms": [
+        "removeRecipe",
+        "addRecipe",
+        "removeRecipeByInputPotion",
+        "removeRecipeByInput",
+        "removeRecipeByOutputPotion",
+        "removeRecipeByReagent"
+    ]
+}
