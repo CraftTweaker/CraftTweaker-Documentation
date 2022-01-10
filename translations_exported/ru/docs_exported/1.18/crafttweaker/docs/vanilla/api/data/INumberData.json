@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/data/INumberData.md",
+    "zenCodeName": "crafttweaker.api.data.INumberData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap",
+        "asNumber",
+        "getDouble",
+        "getId",
+        "getFloat",
+        "getString",
+        "asList",
+        "getLong",
+        "getInt",
+        "contains",
+        "asString",
+        "asBoolean"
+    ]
+}
