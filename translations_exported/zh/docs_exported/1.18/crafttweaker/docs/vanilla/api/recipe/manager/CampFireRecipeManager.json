@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/recipe/manager/CampFireRecipeManager.md",
+    "zenCodeName": "crafttweaker.api.recipe.CampFireRecipeManager",
+    "searchTerms": [
+        "删除合成表",
+        "getRecipeByName",
+        "addJsonRecipe",
+        "INSTANCE",
+        "allRecipes",
+        "removeByModid",
+        "remove #移除",
+        "recipeMap",
+        "addRecipe #添加合成表",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
