@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/recipe/MirrorAxis.md",
+    "zenCodeName": "crafttweaker.api.recipe.MirrorAxis",
+    "searchTerms": [
+        "ALL",
+        "VERTICAL",
+        "DIAGONAL",
+        "HORIZONTAL",
+        "NONE"
+    ]
+}
