@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/fluid/Fluid.md",
+    "zenCodeName": "crafttweaker.api.fluid.Fluid",
+    "searchTerms": [
+        "bucket",
+        "getBucket",
+        "isSame",
+        "commandString #命令字符串",
+        "isIn"
+    ]
+}
