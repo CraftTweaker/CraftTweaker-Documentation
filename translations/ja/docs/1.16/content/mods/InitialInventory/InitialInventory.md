@@ -13,50 +13,35 @@
 
 これにより、プレイヤーがワールドに参加した際に、プレイヤーのインベントリにアイテムが追加されます。
 
-The parameters are:
+NOTES:
 
+The `key` is used to determine if an item should be given. キー(key)は任意の文字列に設定することができ、その取っ掛かりというのは、以前にそのプレイヤーにアイテムセットが与えられたかどうかの判定をすることです。
 
-Param: `key`
+これは、別のキーを使用することで、開始時のアイテムを、後からさらに追加するようなmodpackにおいて役に立ちます。すでにpackをプレイし始めているプレイヤーも、引き続きそれらのアイテムを受け取ることが可能になります。 An example would be:  
+1) Add a diamond as a starting item with key "1", join the world, the player will get the diamond.  
+2) Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.  
+3) Make a new world, the player will receive both an apple and a diamond.
 
-Type: `String`
+The `index` is used to set which slot the item will be put into, the default is `-1`, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
-Description:
-
-アイテムを与えるかどうかを決定する際に使用します。 キー(key)は任意の文字列に設定することができ、その取っ掛かりというのは、以前にそのプレイヤーにアイテムセットが与えられたかどうかの判定をすることです。
-
-これは、別のキーを使用することで、開始時のアイテムを、後からさらに追加するようなmodpackにおいて役に立ちます。すでにpackをプレイし始めているプレイヤーも、引き続きそれらのアイテムを受け取ることが可能になります。 例は、以下のようなものになります:
-
-開始時のアイテム, key"1"としてダイヤモンドを追加します。ワールドに参加したプレイヤーは、ダイヤモンドを受け取ることができます。
-
-開始時のアイテム, key"2"としてリンゴを追加します。ワールドに参加すると、プレイヤーはリンゴを受け取ることができますが、ダイヤモンドをもう一度受け取ることはありません。
-
-新たにワールドを作成した場合、プレイヤーはリンゴとダイヤモンドの両方を受け取ることができます。
-
-param: `item`
-
-Type `IItemStack`
-
-Description:
-
-プレイヤーが参加した際に、プレイヤーに与えられるアイテムです。
-
-Param: `index`
-
-Type: `int`
-
-Description:
-
-オプションであるこの整数は、アイテムが与えられる場所を定義するものです。与えるアイテムを防具スロットのようなインベントリスロットに配置する場合などに使用できます。
-
-省略した場合、デフォルトでは-1に設定されます。つまり、使用可能な最初のスロットに配置されるか、すでにインベントリにある別の同じアイテムと一緒にまとめられます。
+The `onGiven` function will run whenever the player is given that item, it can be used to randomize the item (like a random chance to have an enchantment), giving a random amount of items or even giving a player a different item based on what biome they spawned in.
 
 
 ## 例
 
 ```zenscript
-//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
+// mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, @Optional int index, @Optional BiFunction<IItemStack, MCPLayerEntity, IItemStack> onGiven);
+
+// Gives an Apple when joining a world.
 mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
+
+// Puts a Golden Apple in the 5th inventory slot, or the next available slot if already full, when joining a world.
 mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
+
+// Gives between 1 and 6 diamonds when joining a world.
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:diamond>, -1, (stack as IItemStack, player as MCPlayerEntity) as IItemStack => {
+    return stack * (player.world.random.nextInt(6) + 1);
+});
 ```
 
 
