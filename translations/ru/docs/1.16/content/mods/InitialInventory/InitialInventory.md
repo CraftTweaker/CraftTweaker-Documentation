@@ -13,50 +13,35 @@
 
 Это добавит предмет в инвентарь игроков, когда они присоединятся к миру.
 
-Параметры таковы:
+NOTES:
 
+The `key` is used to determine if an item should be given. key может быть любым string, смысл его заключается в том, чтобы определить, был ли игроку дан набор предметов ранее.
 
-Param: `key`
+Это полезно для модпаков, которые позже добавляют больше стартовых предметов, используя другой ключ, игроки которые уже начали играть c модпаком, всё ещё могут получить эти предметы. An example would be:  
+1) Add a diamond as a starting item with key "1", join the world, the player will get the diamond.  
+2) Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.  
+3) Make a new world, the player will receive both an apple and a diamond.
 
-Type: `String`
+The `index` is used to set which slot the item will be put into, the default is `-1`, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
-Описание:
-
-Используется для определения того, должен ли предмет быть дан. key может быть любым string, смысл его заключается в том, чтобы определить, был ли игроку дан набор предметов ранее.
-
-Это полезно для модпаков, которые позже добавляют больше стартовых предметов, используя другой ключ, игроки которые уже начали играть c модпаком, всё ещё могут получить эти предметы. В качестве примера можно привести:
-
-Добавьте алмаз в качестве стартового предмета с ключом "1", Присоединившись к миру, игрок получит алмаз.
-
-Добавьте яблоко в качестве стартового предмета с ключом "2", Присоединившись к миру, игрок получит яблоко, но не алмаз снова.
-
-Создав новый мир, игрок получит как яблоко, так и алмаз.
-
-param: `item`
-
-Type `IItemStack`
-
-Описание:
-
-Предмет, который нужно дать игроку, когда он присоединится.
-
-Param: `index`
-
-Type: `int`
-
-Описание:
-
-Необязательное целое число, определяющее где будет дан предмет, может быть использовано для размещения предмета в слоте инвентаря, например в слоте брони.
-
-Если не указано, то по умолчанию -1, что означает, что он поместит его в первый доступный слот, или объединит с другими предметами, которые возможно, уже находятся в инвентаре.
+The `onGiven` function will run whenever the player is given that item, it can be used to randomize the item (like a random chance to have an enchantment), giving a random amount of items or even giving a player a different item based on what biome they spawned in.
 
 
 ## Пример
 
 ```zenscript
-//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
+// mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, @Optional int index, @Optional BiFunction<IItemStack, MCPLayerEntity, IItemStack> onGiven);
+
+// Gives an Apple when joining a world.
 mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
+
+// Puts a Golden Apple in the 5th inventory slot, or the next available slot if already full, when joining a world.
 mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
+
+// Gives between 1 and 6 diamonds when joining a world.
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:diamond>, -1, (stack as IItemStack, player as MCPlayerEntity) as IItemStack => {
+    return stack * (player.world.random.nextInt(6) + 1);
+});
 ```
 
 
