@@ -1,0 +1,27 @@
+{
+    "path": "vanilla/api/game/Game.md",
+    "zenCodeName": "crafttweaker.api.game.Game",
+    "searchTerms": [
+        "getEntityTypes",
+        "localize",
+        "recipeTypes",
+        "blocks",
+        "getItemStacks",
+        "getBlocks",
+        "enchantments",
+        "getPotions",
+        "getEnchantments",
+        "getRecipeTypes",
+        "getFluids",
+        "effects",
+        "getProfessions",
+        "getBlockStates",
+        "villagerProfessions",
+        "getMobEffects",
+        "potions",
+        "blockStates",
+        "entityTypes",
+        "items",
+        "fluids"
+    ]
+}
