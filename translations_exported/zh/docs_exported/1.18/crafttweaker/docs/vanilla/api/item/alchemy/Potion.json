@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/item/alchemy/Potion.md",
+    "zenCodeName": "crafttweaker.api.item.alchemy.Potion",
+    "searchTerms": [
+        "getEffects",
+        "effects",
+        "getName",
+        "hasInstantEffects",
+        "commandString #命令字符串"
+    ]
+}
