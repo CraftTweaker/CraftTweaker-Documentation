@@ -1,0 +1,12 @@
+{
+    "path": "vanilla/api/item/enchantment/Rarity.md",
+    "zenCodeName": "crafttweaker.api.item.enchantment.Rarity",
+    "searchTerms": [
+        "RARE",
+        "VERY_RARE",
+        "getWeight",
+        "UNCOMMON",
+        "COMMON",
+        "weight"
+    ]
+}
