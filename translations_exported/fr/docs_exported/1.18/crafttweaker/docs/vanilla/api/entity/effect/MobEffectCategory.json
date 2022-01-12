@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/entity/effect/MobEffectCategory.md",
+    "zenCodeName": "crafttweaker.api.entity.effect.MobEffectCategory",
+    "searchTerms": [
+        "getTooltipFormatting",
+        "HARMFUL",
+        "tooltipFormatting",
+        "BENEFICIAL",
+        "NEUTRAL"
+    ]
+}
