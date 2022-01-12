@@ -1,0 +1,10 @@
+{
+    "path": "vanilla/api/item/ItemDefinition.md",
+    "zenCodeName": "crafttweaker.api.item.ItemDefinition",
+    "searchTerms": [
+        "getDefaultInstance",
+        "getCommandString",
+        "defaultInstance",
+        "commandString"
+    ]
+}
