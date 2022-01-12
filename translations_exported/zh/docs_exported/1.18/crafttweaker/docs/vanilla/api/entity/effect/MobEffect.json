@@ -1,0 +1,25 @@
+{
+    "path": "vanilla/api/entity/effect/MobEffect.md",
+    "zenCodeName": "crafttweaker.api.entity.effect.MobEffect",
+    "searchTerms": [
+        "getAttributeModifiers",
+        "applyEffectTick",
+        "color",
+        "getDescriptionId",
+        "displayName",
+        "getCategory",
+        "getAttributeModifierValue",
+        "getColor #获取颜色",
+        "isDurationEffectTick",
+        "commandString #命令字符串",
+        "addAttributeModifier",
+        "descriptionId",
+        "instantenous",
+        "getDisplayName",
+        "beneficial",
+        "isInstantenous",
+        "isBeneficial",
+        "category",
+        "applyInstantenousEffect"
+    ]
+}
