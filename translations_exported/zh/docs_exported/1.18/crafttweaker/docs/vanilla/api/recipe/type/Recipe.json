@@ -1,0 +1,19 @@
+{
+    "path": "vanilla/api/recipe/type/Recipe.md",
+    "zenCodeName": "crafttweaker.api.recipe.type.Recipe",
+    "searchTerms": [
+        "toastSymbol",
+        "getResultItem",
+        "getId #获取id\n",
+        "canCraftInDimensions",
+        "isSpecial",
+        "resultItem",
+        "getGroup",
+        "ingredients",
+        "id",
+        "getToastSymbol",
+        "getIngredients",
+        "group",
+        "isIncomplete"
+    ]
+}
