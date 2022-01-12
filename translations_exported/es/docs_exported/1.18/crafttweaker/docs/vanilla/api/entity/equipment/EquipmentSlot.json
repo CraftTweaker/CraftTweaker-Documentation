@@ -1,0 +1,20 @@
+{
+    "path": "vanilla/api/entity/equipment/EquipmentSlot.md",
+    "zenCodeName": "crafttweaker.api.entity.equipment.EquipmentSlot",
+    "searchTerms": [
+        "HEAD",
+        "getName",
+        "getIndex",
+        "OFFHAND",
+        "MAINHAND",
+        "LEGS",
+        "index",
+        "commandString",
+        "type",
+        "FEET",
+        "CHEST",
+        "getType",
+        "getCommandString",
+        "name"
+    ]
+}
