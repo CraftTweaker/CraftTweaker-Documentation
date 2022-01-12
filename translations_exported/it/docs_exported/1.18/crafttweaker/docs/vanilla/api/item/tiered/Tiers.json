@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/item/tiered/Tiers.md",
+    "zenCodeName": "crafttweaker.api.item.tiered.Tiers",
+    "searchTerms": [
+        "GOLD",
+        "NETHERITE",
+        "WOOD",
+        "DIAMOND",
+        "IRON",
+        "crafttweaker.api.item.type.tiered.Tier",
+        "STONE"
+    ]
+}
