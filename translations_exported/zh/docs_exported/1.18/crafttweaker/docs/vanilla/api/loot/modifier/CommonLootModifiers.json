@@ -1,0 +1,26 @@
+{
+    "path": "vanilla/api/loot/modifier/CommonLootModifiers.md",
+    "zenCodeName": "crafttweaker.api.loot.modifier.CommonLootModifiers",
+    "searchTerms": [
+        "add #添加",
+        "addWithBinomialBonus",
+        "addWithUniformBonus",
+        "addAllWithOreDropsBonus",
+        "replaceAllStacksWith",
+        "addWithChance",
+        "clearLoot",
+        "clearing",
+        "remove #移除",
+        "addWithRandomAmount",
+        "removeAll",
+        "addAllWithBinomialBonus",
+        "addAll",
+        "replaceAllWith",
+        "addWithOreDropsBonus",
+        "addAllWithChance",
+        "addAllWithUniformBonus",
+        "replaceStackWith",
+        "chaining",
+        "replaceWith"
+    ]
+}
