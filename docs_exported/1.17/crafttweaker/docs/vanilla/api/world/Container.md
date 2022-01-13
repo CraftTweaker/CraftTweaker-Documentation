@@ -46,6 +46,21 @@ Container.countItem(item as ItemDefinition) as int
 
 :::
 
+:::group{name=countStack}
+
+Return Type: int
+
+```zenscript
+Container.countStack(item as IItemStack) as int
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| item | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+
+
+:::
+
 :::group{name=getContainerSize}
 
 Gets the size (how many slots) of this Container
