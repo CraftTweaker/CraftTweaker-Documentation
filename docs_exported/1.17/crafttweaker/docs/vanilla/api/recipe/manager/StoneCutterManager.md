@@ -1,20 +1,27 @@
-# IRecipeManager&LT;T : Recipe&GT;
+# StoneCutterManager
 
-Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
+
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.recipe.IRecipeManager;
+import crafttweaker.api.recipe.StoneCutterManager;
 ```
 
 
 ## Implemented Interfaces
-IRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in IRecipeManager
+StoneCutterManager implements the following interfaces. That means all methods defined in these interfaces are also available in StoneCutterManager
 
-- [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[StonecutterRecipe](/vanilla/api/recipe/type/type/StonecutterRecipe)&gt;
 
+## Enum Constants
+
+StoneCutterManager is an enum. It has 1 enum constants. They are accessible using the code below.
+
+```zenscript
+StoneCutterManager.INSTANCE
+```
 ## Methods
 
 :::group{name=addJsonRecipe}
@@ -24,7 +31,7 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-IRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+StoneCutterManager.addJsonRecipe(name as string, mapData as MapData) as void
 ```
 
 | Parameter | Type | Description |
@@ -35,14 +42,35 @@ IRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
 
 :::
 
+:::group{name=addRecipe}
+
+Adds a recipe to the stone cutter
+
+Return Type: void
+
+```zenscript
+// StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
+
+stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| recipeName | string | name of the recipe |
+| output | [IItemStack](/vanilla/api/item/IItemStack) | output [IItemStack](/vanilla/api/item/IItemStack) |
+| input | [IIngredient](/vanilla/api/ingredient/IIngredient) | input [IIngredient](/vanilla/api/ingredient/IIngredient) |
+
+
+:::
+
 :::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// IRecipeManager.getAllRecipes() as stdlib.List<T>
+// StoneCutterManager.getAllRecipes() as stdlib.List<T>
 
-craftingTable.getAllRecipes();
+stoneCutter.getAllRecipes();
 ```
 
 :::
@@ -52,7 +80,7 @@ craftingTable.getAllRecipes();
 Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 
 ```zenscript
-IRecipeManager.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
+StoneCutterManager.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
 | Parameter | Type | Description |
@@ -70,9 +98,9 @@ Returns: A Map of recipe name to recipe of all known recipes.
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// IRecipeManager.getRecipeMap() as T[ResourceLocation]
+// StoneCutterManager.getRecipeMap() as T[ResourceLocation]
 
-craftingTable.getRecipeMap();
+stoneCutter.getRecipeMap();
 ```
 
 :::
@@ -82,7 +110,7 @@ craftingTable.getRecipeMap();
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter | Type | Description |
@@ -99,9 +127,9 @@ Remove a recipe based on it's output.
 Return Type: void
 
 ```zenscript
-// IRecipeManager.remove(output as IIngredient) as void
+// StoneCutterManager.remove(output as IIngredient) as void
 
-craftingTable.remove(<tag:items:minecraft:wool>);
+stoneCutter.remove(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -118,9 +146,9 @@ Remove all recipes in this registry
 Return Type: void
 
 ```zenscript
-// IRecipeManager.removeAll() as void
+// StoneCutterManager.removeAll() as void
 
-craftingTable.removeAll();
+stoneCutter.removeAll();
 ```
 
 :::
@@ -132,9 +160,9 @@ Removes all recipes where the input contains the given IItemStack.
 Return Type: void
 
 ```zenscript
-// IRecipeManager.removeByInput(input as IItemStack) as void
+// StoneCutterManager.removeByInput(input as IItemStack) as void
 
-craftingTable.removeByInput(<item:minecraft:iron_ingot>);
+stoneCutter.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -151,7 +179,7 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByModid(modid as string, exclude as Predicate<string>) as void
+StoneCutterManager.removeByModid(modid as string, exclude as Predicate<string>) as void
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -169,9 +197,9 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-// IRecipeManager.removeByName(name as string) as void
+// StoneCutterManager.removeByName(name as string) as void
 
-craftingTable.removeByName("minecraft:furnace");
+stoneCutter.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type | Description |
@@ -188,9 +216,9 @@ Remove recipe based on regex with an added exclusion check, so you can remove th
 Return Type: void
 
 ```zenscript
-// IRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
+// StoneCutterManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
 
-craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+stoneCutter.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |

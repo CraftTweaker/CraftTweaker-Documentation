@@ -8,6 +8,12 @@ import crafttweaker.api.entity.EntityType;
 ```
 
 
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true |
+
 ## Methods
 
 :::group{name=canSpawnFarFromPlayer}

@@ -11,7 +11,7 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 ## Implemented Interfaces
 SmithingRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in SmithingRecipeManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[CraftingRecipe](/vanilla/api/recipe/type/CraftingRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[UpgradeRecipe](/vanilla/api/recipe/type/type/UpgradeRecipe)&gt;
 
 ## Enum Constants
 
@@ -35,7 +35,7 @@ SmithingRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::

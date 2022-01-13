@@ -1,41 +1,12 @@
-# Expansion for BracketHandlers
+# ForgeBracketHandlers
 
 This class contains the "simple" Forge Bracket handlers from CraftTweaker.
 
-## Static Methods
+## Importing the class
 
-:::group{name=getFluidStack}
-
-Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
-
-Returns: A stack of the liquid with amount == 1mb  
-Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
-
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-// BracketHandlers.getFluidStack(tokens as string) as IFluidStack
-
-BracketHandlers.getFluidStack("minecraft:water");
+import crafttweaker.api.bracket.ForgeBracketHandlers;
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The Fluid's resource location |
-
-
-:::
-
-:::group{name=getToolType}
-
-Return Type: [ToolAction](/forge/api/tool/ToolAction)
-
-```zenscript
-BracketHandlers.getToolType(tokens as string) as ToolAction
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
-
-
-:::
 
