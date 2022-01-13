@@ -8,6 +8,20 @@ import crafttweaker.api.text.Style;
 ```
 
 
+## Static Methods
+
+:::group{name=empty}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.empty() as Style
+
+Style.empty();
+```
+
+:::
+
 ## Methods
 
 :::group{name=applyFormat}

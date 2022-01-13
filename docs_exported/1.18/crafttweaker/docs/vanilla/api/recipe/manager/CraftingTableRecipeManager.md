@@ -35,7 +35,7 @@ CraftingTableRecipeManager.addJsonRecipe(name as string, mapData as MapData) as 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::
