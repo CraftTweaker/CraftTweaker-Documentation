@@ -14,7 +14,7 @@ import mods.zensummoning.MobInfo;
 
 :::group{name=create}
 
-Creates a new MobInfo with default values. <br />  See other methods for adding more customization.
+Creates a new MobInfo with default values. <br />  See other methods for adding more customization. <br />  <br />  Same as constructor.
 
 Returns: new MobInfo  
 Return Type: [MobInfo](/mods/zensummoning/MobInfo)
@@ -26,6 +26,15 @@ MobInfo.create();
 ```
 
 :::
+
+## Constructors
+
+No Description Provided
+```zenscript
+new MobInfo() as MobInfo
+new MobInfo();
+```
+
 
 ## Methods
 
@@ -84,14 +93,14 @@ Sets the mob to be spawned.
 Return Type: [MobInfo](/mods/zensummoning/MobInfo)
 
 ```zenscript
-// MobInfo.setMob(mob as string) as MobInfo
+// MobInfo.setMob(mob as MCEntityType) as MobInfo
 
 myMobInfo.setMob("minecraft:zombie_villager");
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| mob | string | resource location |
+| mob | [MCEntityType](/vanilla/api/entities/MCEntityType) | resource location |
 
 
 :::
