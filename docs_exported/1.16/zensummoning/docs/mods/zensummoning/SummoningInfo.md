@@ -14,7 +14,7 @@ import mods.zensummoning.SummoningInfo;
 
 :::group{name=create}
 
-Creates a new SummoningInfo with default values. <br />  See other methods for adding more customization. <br />  <br />  Same as constructor.
+Creates a new SummoningInfo with default values. <br />  See other methods for adding more customization. <br />  <p> <br />  Same as constructor.
 
 Returns: new info  
 Return Type: [SummoningInfo](/mods/zensummoning/SummoningInfo)
@@ -159,6 +159,25 @@ mySummoningInfo.setReagents([<item:minecraft:stone>, <item:minecraft:egg>*12]);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | reagents | [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)[] | ingredient list |
+
+
+:::
+
+:::group{name=setSound}
+
+Sets the sound played when a summon completes.
+
+Return Type: [SummoningInfo](/mods/zensummoning/SummoningInfo)
+
+```zenscript
+// SummoningInfo.setSound(sound as string) as SummoningInfo
+
+mySummoningInfo.setSound("entity.evoker.prepare_wololo");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| sound | string | sound resource location |
 
 
 :::
