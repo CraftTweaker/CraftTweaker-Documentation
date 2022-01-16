@@ -243,14 +243,14 @@ craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 
 ### Remove Recipes by Output
 
-`craftingTable.removeRecipe(output);`
+`craftingTable.remove(output);`
 
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
-craftingTable.removeRecipe(<item:minecraft:stick>);
+craftingTable.remove(<item:minecraft:stick>);
 ```
 
 ### Remove Recipes by Mod ID

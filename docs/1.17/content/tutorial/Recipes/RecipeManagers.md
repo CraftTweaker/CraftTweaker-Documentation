@@ -110,24 +110,24 @@ for recipe in furnace.getAllRecipes() {
 ```
 :::
 
-:::group{name=removeRecipe}
+:::group{name=remove}
 
 This method allows you to remove recipes from this Recipe Manager by the recipe's output item.
 
 ```zenscript
-removeRecipe(IItemStack output);
+remove(IItemStack output);
 ```
 
 An example use case for this method is removing the recipe for Sticks from the Crafting Table:
 
 ```zenscript
-craftingTable.removeRecipe(<item:minecraft:stick>);
+craftingTable.remove(<item:minecraft:stick>);
 ```
 
 Another example of this method would be removing the Diamond Ore to Diamond recipe from the furnace:
 
 ```zenscript
-furnace.removeRecipe(<item:minecraft:diamond>);
+furnace.remove(<item:minecraft:diamond>);
 ```
 :::
 
