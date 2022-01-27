@@ -38,6 +38,21 @@ new MobInfo();
 
 ## Methods
 
+:::group{name=mergeData}
+
+Sets the data to be merged with default rather than overwriting the default.
+ Does NOT need to be called after setData.
+
+Return Type: [MobInfo](/mods/zensummoning/MobInfo)
+
+```zenscript
+// MobInfo.mergeData() as MobInfo
+
+myMobInfo.mergeData();
+```
+
+:::
+
 :::group{name=setCount}
 
 Sets the quantity of the mob to be spawned.
@@ -112,16 +127,16 @@ Sets the offset from the altar where the mobs will be spawned.
 Return Type: [MobInfo](/mods/zensummoning/MobInfo)
 
 ```zenscript
-// MobInfo.setOffset(x as int, y as int, z as int) as MobInfo
+// MobInfo.setOffset(x as float, y as float, z as float) as MobInfo
 
 myMobInfo.setOffset(1, 3, 1);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| x | int | x |
-| y | int | y |
-| z | int | z |
+| x | float | x |
+| y | float | y |
+| z | float | z |
 
 
 :::
@@ -134,16 +149,16 @@ Sets the random spread for spawning the mob.
 Return Type: [MobInfo](/mods/zensummoning/MobInfo)
 
 ```zenscript
-// MobInfo.setSpread(x as int, y as int, z as int) as MobInfo
+// MobInfo.setSpread(x as float, y as float, z as float) as MobInfo
 
 myMobInfo.setSpread(3, 3, 3);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| x | int | x spread |
-| y | int | y spread |
-| z | int | z spread |
+| x | float | x spread |
+| y | float | y spread |
+| z | float | z spread |
 
 
 :::
