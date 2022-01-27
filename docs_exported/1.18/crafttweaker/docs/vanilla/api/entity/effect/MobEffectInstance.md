@@ -193,13 +193,13 @@ myMobEffectInstance.showIcon();
 Return Type: boolean
 
 ```zenscript
-MobEffectInstance.tick(entity as LivingEntity, onFinish as Runnable) as boolean
+MobEffectInstance.tick(entity as LivingEntity, onFinish as invalid) as boolean
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided | false |  |
-| onFinish | Runnable | No Description Provided | true | () => {} |
+| onFinish | **invalid** | No Description Provided | true | null |
 
 
 :::

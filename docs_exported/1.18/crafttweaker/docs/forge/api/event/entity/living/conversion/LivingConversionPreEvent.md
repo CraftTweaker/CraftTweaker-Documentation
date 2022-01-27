@@ -25,6 +25,18 @@ LivingConversionPreEvent extends [LivingConversionEvent](/forge/api/event/entity
 
 ## Methods
 
+:::group{name=getOutcome}
+
+Return Type: [EntityType](/vanilla/api/entity/EntityType)
+
+```zenscript
+// LivingConversionPreEvent.getOutcome() as EntityType
+
+myLivingConversionPreEvent.getOutcome();
+```
+
+:::
+
 :::group{name=setConversionTimer}
 
 Sets the conversion timer, by changing this it prevents the

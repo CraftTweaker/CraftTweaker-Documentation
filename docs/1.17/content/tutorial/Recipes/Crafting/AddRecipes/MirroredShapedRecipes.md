@@ -1,12 +1,12 @@
-# Mirred Shaped Recipes
+# Mirrored Shaped Recipes
 
-Mirrored Shaped Recipes are recipes that are very similar to normal Shaped Recipes, except that the inputs can be mirrored on both axis, an example of a recipe like this in the Vanilla game would be tools, like the Axe recipe below.
+Mirrored Shaped Recipes are recipes that are very similar to normal Shaped Recipes, except that the inputs can be mirrored on specific axis (or all axis), an example of a recipe like this in the Vanilla game would be tools, like the Axe recipe below.
 
 ![Axe with Wooden Planks on the left](https://blamejared.com/docsImages/axe_left.png) 
 
 ![Axe with Wooden Planks on the right](https://blamejared.com/docsImages/axe_right.png)
 
-There is one difference between CraftTweaker mirrored recipes and Vanilla mirrored Recipes, by default CraftTweaker mirrored recipes can be mirrored on both axis, so not only are the left and right side of the Crafting Grid mirrored, but also the top and the bottom, as an example, the images below are from a single mirrored recipe.
+There is one difference between CraftTweaker mirrored recipes and Vanilla mirrored Recipes, CraftTweaker lets you define which axis the recipe is mirrored on, so not only can you mirror the recipe on the left and right side of the grid, but you can also mirror it on the top and bottom of the grid. As an example, the images below are from a single mirrored recipe that is set to mirror it on the diagonal axis.
 
 ![Recipe with items in the top left slots](https://blamejared.com/docsImages/mirrored_top_left.png) 
 
@@ -15,18 +15,19 @@ There is one difference between CraftTweaker mirrored recipes and Vanilla mirror
 
 ## Adding Mirrored Shaped Recipes
 
-Adding Mirrored Shaped Recipes is exactly the same as adding normal Shaped Recipes except it uses a different method.
+Adding Mirrored Shaped Recipes is exactly the same as adding normal Shaped Recipes except it uses a different method, and it asks for the axis it should be mirrored on.
 
 The basic syntax for a mirrored shaped recipe is:
 
 ```zenscript
 // craftingTable.addShapedMirrored(recipeName as string, 
+//      mirrorAxis as MirrorAxis
 //      output as IItemStack,
 //      ingredients as IIngredient[][], 
 //      recipeFunction as @optional RecipeFunctionMatrix);
 ```
 
-The optional RecipeFunctionMatrix at the end of the method is only needed for advanced recipe where the output changes depending on the input, an example being transfering NBT data from one of the input ingredients to the output item.
+The optional RecipeFunctionMatrix at the end of the method is only needed for advanced recipe where the output changes depending on the input, an example being transferring NBT data from one of the input ingredients to the output item.
 
 In general, most of your recipes are not going to be using the function, but it is there if you need it.
 
@@ -46,7 +47,7 @@ For a recipe like this, you don't need the recipe function, so it is simply left
 Since this is a mirrored recipe, the Apples can either be placed in the top left and right slots, or the bottom left and right slots.
 
 ```zenscript
-craftingTable.addShapedMirrored("mirrored_apples_to_arrows", <item:minecraft:arrow>, [
+craftingTable.addShapedMirrored("mirrored_apples_to_arrows", MirrorAxis.ALL, <item:minecraft:arrow>, [
     [<item:minecraft:apple>, <item:minecraft:air>, <item:minecraft:apple>], 
     [<item:minecraft:air>, <item:minecraft:apple>, <item:minecraft:air>]]);
 ```
