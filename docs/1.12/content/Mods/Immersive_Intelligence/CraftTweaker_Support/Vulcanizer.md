@@ -2,7 +2,7 @@
 
 # Vulcanizer
 
-The `Vulcanizer` package can be used to add/remove recipes to/from the II Vulcanizer.
+The `Vulcanizer` package can be used to modify the Immersive Intelligence Vulcanizer recipes.
 
 ## Importing the Package
 

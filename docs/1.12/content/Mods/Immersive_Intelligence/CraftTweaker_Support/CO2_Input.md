@@ -2,7 +2,7 @@
 
 # CO2 Input
 
-The `CO2Input` package can be used to add TileEntities, including Multiblocks to the II CO2 Collector sources list.
+The `CO2Input` package can be used to add TileEntities, including Multiblocks to the Immersive Intelligence CO2 Collector sources list.
 
 ## Importing the Package
 

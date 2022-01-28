@@ -2,7 +2,7 @@
 
 # Coagulator
 
-The `Coagulator` package can be used to add/remove recipes to/from the II Coagulator.
+The `Coagulator` package can be used to modify the Immersive Intelligence Coagulator recipes.
 
 ## Importing the Package
 

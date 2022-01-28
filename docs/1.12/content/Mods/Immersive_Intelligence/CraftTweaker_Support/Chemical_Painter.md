@@ -3,7 +3,7 @@ modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-intelligence}
 
 # Chemical Painter
 
-The `ChemicalPainter` package can be used to add/remove recipes to/from the II Chemical Painter.
+The `ChemicalPainter` package can be used to modify the Immersive Intelligence Chemical Painter recipes.
 
 ## Importing the Package
 
@@ -25,7 +25,7 @@ import mods.immersiveintelligence.ChemicalPainter;
 
 Paint amount is the total amount of ink in mB used for a single process.  
 Amounts of specific ink are based on their percentage in the [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model)
-color.
+color model.
 
 ### Syntax
 
@@ -35,9 +35,9 @@ mods.immersiveintelligence.ChemicalPainter.addRecipe(IIngredient itemInput, IChe
 
 ### IChemicalPainterFunction
 
-IChemicalPainterFunction is a function used to determine the item outputted by a recipe based on the stack and selected
+IChemicalPainterFunction is a function used to determine the output item of a recipe based on the stack and selected
 paint color.    
-It can be used i.e. to get core NBT tag or merge core and casing's NBT tags.
+For example, it can be used to get the core NBT tag or merge the core and casing's NBT tags.
 
 | Type                                     | Name          |
 |------------------------------------------|---------------|

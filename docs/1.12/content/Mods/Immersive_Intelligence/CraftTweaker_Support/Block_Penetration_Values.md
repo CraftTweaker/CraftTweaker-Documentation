@@ -24,7 +24,7 @@ import mods.immersiveintelligence.BlockPenetration;
 | String                                  | Penetration Type | Yes       |
 | String                                  | Sound            | Yes       |
 
-Integrity is the amount of hitpoints a block has. Damage is dealt in similar way it is done to entities.  
+Integrity is the amount of hitpoints a block has. Damage is dealt in a similar way it is done to entities.  
 Density is the modifier of speed loss after contact with the block. The higher the density, the more a bullet will be
 slowed down after penetration.
 

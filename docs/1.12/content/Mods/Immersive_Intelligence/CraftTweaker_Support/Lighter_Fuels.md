@@ -2,7 +2,7 @@
 
 # Lighter Fuels
 
-The `LighterFuels` package can be used to add/remove II Engineer's Lighter Fuels.
+The `LighterFuels` package can be used to modify the Immersive Intelligence Engineer's Lighter Fuels.
 
 ## Importing the Package
 

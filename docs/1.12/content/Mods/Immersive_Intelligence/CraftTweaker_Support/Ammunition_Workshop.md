@@ -3,7 +3,7 @@ modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-intelligence}
 
 # Ammunition Workshop
 
-The `AmmunitionWorkshop` package can be used to add/remove recipes to/from the II Ammunition Workshop.
+The `AmmunitionWorkshop` package can be used to modify the Immersive Intelligence Ammunition Workshop recipes.
 
 **Take note it is not limited to producing ammunition and can be used for any generic recipe involving 2 items.**
 
@@ -33,8 +33,8 @@ mods.immersiveintelligence.AmmunitionWorkshop.addRecipe(IIngredient coreInput, I
 
 ### IAmmunitionWorkshopFunction
 
-IAmmunitionWorkshopFunction is a function used to determine the item outputted by a recipe based on ingredients.    
-It can be used i.e. to get core NBT tag or merge core and casing's NBT tags.
+IAmmunitionWorkshopFunction is a function used to determine the output item of a recipe based on its ingredients.    
+For example, It can be used to get the core NBT tag or merge the core and casing's NBT tags.
 
 | Type                                     | Name         |
 |------------------------------------------|--------------|

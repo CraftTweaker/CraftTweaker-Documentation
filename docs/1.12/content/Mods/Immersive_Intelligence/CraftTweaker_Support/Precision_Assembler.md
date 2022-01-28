@@ -2,7 +2,7 @@
 
 # Precision Assembler
 
-The `PrecisionAssembler` package can be used to add/remove recipes to/from the II Precision Assembler.
+The `PrecisionAssembler` package can be used to modify the Immersive Intelligence Precision Assembler recipes.
 
 ## Importing the Package
 

@@ -2,7 +2,7 @@
 
 # Rotary Input
 
-The `RotaryInput` package can be used to make a Tile Entity supported by II Transmission Box.
+The `RotaryInput` package can be used to make a Tile Entity supported by the Immersive Intelligence Transmission Box.
 
 ## Importing the Package
 

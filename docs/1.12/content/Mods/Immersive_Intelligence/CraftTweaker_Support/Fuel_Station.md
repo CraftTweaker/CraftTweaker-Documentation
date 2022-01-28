@@ -2,7 +2,7 @@
 
 # Fuel Station
 
-The `FuelStation` package can be used to add/remove recipes to/from the II Fuel Station.
+The `FuelStation` package can be used to modify the Immersive Intelligence Fuel Station recipes.
 
 ## Importing the Package
 

@@ -2,7 +2,7 @@
 
 # Filler
 
-The `Filler` package can be used to add/remove recipes to/from the II Filler.
+The `Filler` package can be used to modify the Immersive Intelligence Filler recipes.
 
 ## Importing the Package
 

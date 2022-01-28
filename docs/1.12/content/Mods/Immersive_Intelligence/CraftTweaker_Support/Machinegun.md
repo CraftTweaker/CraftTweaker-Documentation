@@ -2,7 +2,7 @@
 
 # Machinegun
 
-The `Machinegun` package can be used to tweak coolant fluids accepted by the II Machinegun.
+The `Machinegun` package can be used to tweak coolant fluids accepted by the Immersive Intelligence Machinegun.
 
 ## Importing the Package
 
@@ -26,7 +26,7 @@ mods.immersiveintelligence.Machinegun.addCoolant(ILiquidStack fuelEntry, int amo
 mods.immersiveintelligence.Machinegun.setCoolAmount(ILiquidStack fuelEntry, int amountPerUse);
 ```
 
-The methods accept the same parameters, but they serve different purpose.  
+The methods accept the same parameters, but they serve different purposes.  
 To register a new Coolant use `addCoolant`, to change the value for an existing one use `setCoolAmount`.
 
 ### Example
