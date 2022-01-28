@@ -22,11 +22,6 @@ import mods.immersiveintelligence.Electrolyzer;
 | int                                            | Energy         | Yes      |
 | [ILiquidStack](/Vanilla/Liquids/ILiquidstack/) | Time           | No       |
 
-**Note: the first 3 ingredients don't have to be rubber, compound and sulfur.  It is just a slot name, any [IIngredient](/Vanilla/Variable_Types/IIngredient/) is allowed.**
-
-Latex and Rubber texture are texture path (resource location) strings, i.e. `"immersiveintelligence:textures/blocks/multiblock/Electrolyzer/latex_strip.png"`.  
-These are displayed on the rollers, during the first phase of the machine animation.
-
 ### Syntax
 
 ```zenscript

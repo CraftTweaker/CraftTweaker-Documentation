@@ -928,15 +928,6 @@
           "Thermoelectric": "Mods/Immersive_Engineering/CraftTweaker_Support/Thermoelectric.md"
         }
       },
-      "Immersive Petroleum": {
-        "Immersive Petroleum": "Mods/Immersive_Petroleum/Immersive_Petroleum.md",
-        "CraftTweaker Support": {
-          "Distillation": "Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
-          "Fuel Registration": "Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
-          "Lubricant": "Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
-          "Reservoir": "Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
-        }
-      },
       "Immersive Intelligence": {
         "Immersive Intelligence": "Mods/Immersive_Intelligence/CraftTweaker_Support/Ammunition_Workshop.md",
         "CraftTweaker Support": {
@@ -956,6 +947,15 @@
           "Rotary Input" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Rotary_Input.md",
           "Sawmill" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Sawmill.md",
           "Vulcanizer" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Vulcanizer.md"
+        }
+      },
+      "Immersive Petroleum": {
+        "Immersive Petroleum": "Mods/Immersive_Petroleum/Immersive_Petroleum.md",
+        "CraftTweaker Support": {
+          "Distillation": "Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md",
+          "Fuel Registration": "Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md",
+          "Lubricant": "Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md",
+          "Reservoir": "Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       },
       "Industrial Foregoing": {
