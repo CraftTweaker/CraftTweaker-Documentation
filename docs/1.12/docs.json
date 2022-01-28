@@ -937,6 +937,27 @@
           "Reservoir": "Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md"
         }
       },
+      "Immersive Intelligence": {
+        "Immersive Intelligence": "Mods/Immersive_Intelligence/CraftTweaker_Support/Ammunition_Workshop.md",
+        "CraftTweaker Support": {
+          "Ammunition Workshop" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Ammunition_Workshop.md",
+          "Block Penetration Values" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Block_Penetration_Values.md",
+          "Bullet System" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Bullet_System.md",
+          "Chemical Bath" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Chemical_Bath.md",
+          "Chemical Painter" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Chemical_Painter.md",
+          "CO2 Input" : "Mods/Immersive_Intelligence/CraftTweaker_Support/CO2_Input.md",
+          "Coagulator" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Coagulator.md",
+          "Electrolyzer" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Electrolyzer.md",
+          "Filler" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Filler.md",
+          "Fuel_Station" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Fuel_Station.md",
+          "Lighter Fuels" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Lighter_Fuels.md",
+          "Machinegun" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Machinegun.md",
+          "Precision_Assembler" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Precision_Assembler.md",
+          "Rotary Input" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Rotary_Input.md",
+          "Sawmill" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Sawmill.md",
+          "Vulcanizer" : "Mods/Immersive_Intelligence/CraftTweaker_Support/Vulcanizer.md"
+        }
+      },
       "Industrial Foregoing": {
         "Industrial Foregoing": "Mods/Industrial_Foregoing/IndustrialForegoing.md",
         "BioReactor": "Mods/Industrial_Foregoing/BioReactor.md",
