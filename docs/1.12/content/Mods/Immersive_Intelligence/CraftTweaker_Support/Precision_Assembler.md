@@ -54,7 +54,7 @@ A single animation consists of 3 parts - the in, work and out.
 | `welder`   | 160                 |
 | `hammer`   | 40                  |
 
-Note the work/pick/drop times are dependent on the tool itself. Tool use durations can be modified in `tools` section of `config/immersiveintelligence.cfg` file.  
+Note the work/pick/drop times are dependent on the tool itself. Tool use durations can be modified in `tools` section of the `config/immersiveintelligence.cfg` file.  
 The total recipe time is a sum of all action times for each animation multiplied by the `timeMultiplier` parameter.
 
 ### Slots
