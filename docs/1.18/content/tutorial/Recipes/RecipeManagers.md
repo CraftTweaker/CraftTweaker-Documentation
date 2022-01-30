@@ -55,7 +55,7 @@ The reason that not all Recipe Managers are given Global Variables is that there
 
 :::group{name=getRecipeByName}
 
-This method gets a recipe by it's name, and returns a [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+This method gets a recipe by it's name, and returns a [Recipe](/vanilla/api/recipe/type/Recipe).
 
 ```zenscript
 getRecipeByName(String name);
@@ -72,7 +72,7 @@ for ingredient in craftingTable.getRecipeByName("minecraft:arrow").ingredients {
 
 :::group{name=getRecipesByOutput}
 
-This method gets a list of recipes based on their outputs, and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+This method gets a list of recipes based on their outputs, and returns a list of [Recipe](/vanilla/api/recipe/type/Recipe).
 
 ```zenscript
 getRecipesByOutput(IIngredient name);
@@ -92,7 +92,7 @@ for recipe in craftingTable.getRecipesByOutput(<item:minecraft:stick>) {
 
 :::group{name=getAllRecipes}
 
-This method gets a list of all the recipes for the Recipe Manager and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+This method gets a list of all the recipes for the Recipe Manager and returns a list of [Recipe](/vanilla/api/recipe/type/Recipe).
 
 ```zenscript
 getAllRecipes();

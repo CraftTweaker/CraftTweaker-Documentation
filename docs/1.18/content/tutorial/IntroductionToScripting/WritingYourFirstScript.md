@@ -5,11 +5,13 @@ If you're unsure where that is, take a look at the [What Are Scripts](/tutorial/
 
 Now that we're in the scripts folder, lets make a new file called `script.zs`.
 
-Open `script.zs` in your favourite text editor and put the following piece of code:
+Open `script.zs` in your favourite text editor and put the following piece of code into the script:
 
 ```zenscript
 println("Hello World!");
 ```
+
+That code will simply print "Hello World!" to the `crafttweaker.log` file.
 
 Now load up Minecraft, or use the `/reload` command and take a look at the `crafttweaker.log` file (If you're unsure of where this is, take a look at [The CraftTweaker Log File](/tutorial/IntroductionToScripting/TheCraftTweakerLogFile) page).
 
@@ -19,8 +21,7 @@ You can ignore all the entries with `[DEBUG]`, what you're looking for is an ent
 [05:05:41.856][DONE][CLIENT][INFO] Hello World!
 ```
 
-If you can find the entry, then that's great!  
-Your script file has been loaded into the game and you are ready to start actually modifying the game and add new recipes!
+If you can find the entry, then that's great, your script file is being loaded into the game, and you are now ready to start modifying the game, adding new recipes and listening to events!
 
 If you can't find the entry, that could mean a few things, either your script didn't load or it is possible that you forgot to hit save when you were done writing your script (don't worry! it happens to the best of us!).
 

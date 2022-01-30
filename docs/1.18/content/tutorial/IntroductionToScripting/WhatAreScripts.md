@@ -2,7 +2,7 @@
 
 A script is simply a file with a `.zs` file extension, that is all that is needed to classify a file as a script file.
 
-#### Note
+### Note
 
 Windows hides the file extensions of "known" file types, this means that `text.txt` may show up as just `text` on your machine.
 
@@ -16,7 +16,7 @@ You can find out how to fix this [here](https://www.howtohaven.com/system/show-f
 
 Generally scripts go in the `scripts` folder of the install, it is on the same level as `mods`, `config` and `logs`.
 
-If you're having trouble finding it, you can run the `/ct scripts` command in game, and it should open the scripts folder.
+If you're having trouble finding it, you can run the `/ct scripts` command in game, and it should open the scripts folder (This only works in single player, as you can't open a folder to the server scripts folder).
 
 A tree view of how it should look is like so:
 

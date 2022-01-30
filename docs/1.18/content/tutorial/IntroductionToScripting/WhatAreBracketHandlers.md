@@ -46,9 +46,7 @@ In cases where a modid isn't needed to reference an object (Such as Text Formatt
 Some examples of this are:
 
 ```zenscript
-<blockmaterial:earth> // References the Earth Block Material.
-<directionaxis:x> // References the X Direction Axis.
-<entityclassification:monster> // References the Monster Entity Classification.
+<damagesource:inFire> // References the in fire damage source.
 ```
 
 ## Tag Format
@@ -74,9 +72,9 @@ Examples of this are:
 
 ## Other Formats
 
-At the end of the day, Bracket Handlers don't have a fully defined format, a mod could come along and add a Bracket Handler in a completely different format than listed here, the ones listed here are just the ones used in CraftTweaker itself and to listed to try and give an understanding of how Bracket Handlers look.
+At the end of the day, Bracket Handlers don't have a fully defined format, a mod could come along and add a Bracket Handler in a completely different format than listed here, the ones listed here are just the ones used in CraftTweaker itself and are listed to try and give an understanding of how Bracket Handlers look.
 
 
 ## Getting Bracket Handlers
 
-Since mods can add their own Bracket Handlers, it is impossible to list them all here, there is a command in-game that will output a list of all Bracket Handlers and their values though! Simply use `/ct dumpBrackets` and look in the newly created `ct_dumps` folder for them!
+Since mods can add their own Bracket Handlers, it is impossible to list them all here, there is a command in-game that will output a list of all Bracket Handlers and their values though! Simply use `/ct dump_brackets` and look in the newly created `ct_dumps` folder for them!
