@@ -1,5 +1,4 @@
-::requiredMod[Immersive Intelligence]{builtIn=true
-modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-intelligence}
+::requiredMod[Immersive Intelligence]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/immersive-intelligence}
 
 # Ammunition Workshop
 
