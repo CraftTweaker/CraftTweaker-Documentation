@@ -6,11 +6,11 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | Token Value | TokenName          | Token String                                              |
 |-------------|--------------------|-----------------------------------------------------------|
 | 1           | T_ID               | `[a-zA-Z_][a-zA-Z_0-9]*`                                  |
-| 2           | T_INTVALUE         | `\-?(0|[1-9][0-9]*)`                                      |
+| 2           | T_INTVALUE         | `\-?(0\|[1-9][0-9]*)`                                     |
 | 2           | T_INTVALUE         | `0x[a-fA-F0-9]*)`                                         |
-| 3           | T_FLOATVALUE       | `\-?(0|[1-9][0-9]*)\.[0-9]+([eE][\+\-]?[0-9]+)?[fFdD]?`   |
-| 4           | T_STRINGVALUE      | `'([^'\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*'`            |
-| 4           | T_STRINGVALUE      | `"([^"\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*"`            |
+| 3           | T_FLOATVALUE       | `\-?(0\|[1-9][0-9]*)\.[0-9]+([eE][\+\-]?[0-9]+)?[fFdD]?`  |
+| 4           | T_STRINGVALUE      | `'([^'\\]\|\\(['"\\/bfnrt]\|u[0-9a-fA-F]{4}))*'`          |
+| 4           | T_STRINGVALUE      | `"([^"\\]\|\\(['"\\/bfnrt]\|u[0-9a-fA-F]{4}))*"`          |
 | 5           | T_AOPEN            | `{`                                                       |
 | 6           | T_ACLOSE           | `}`                                                       |
 | 7           | T_SQBROPEN         | `[`                                                       |
@@ -28,9 +28,9 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 19          | T_DIV              | `/`                                                       |
 | 20          | T_MODASSIGN        | `%=`                                                      |
 | 21          | T_MOD              | `%`                                                       |
-| 22          | T_ORASSIGN         | `|=`                                                      |
-| 23          | T_OR               | `|`                                                       |
-| 40          | T_OR2              | `||`                                                      |
+| 22          | T_ORASSIGN         | `\|=`                                                     |
+| 23          | T_OR               | `\|`                                                      |
+| 40          | T_OR2              | `\|\|`                                                    |
 | 24          | T_ANDASSIGN        | `&=`                                                      |
 | 41          | T_AND2             | `&&`                                                      |
 | 25          | T_AND              | `&`                                                       |
