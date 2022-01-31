@@ -243,7 +243,7 @@ CraftingTableRecipeManager.removeByModid(modid as string, exclude as Predicate<s
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name) => false |
+| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
 
 
 :::
@@ -282,7 +282,7 @@ myCraftingTableRecipeManager.removeByRegex("\\d_\\d", (name as string) => {retur
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name) => false |
+| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
 
 
 :::

@@ -186,7 +186,7 @@ ICookingRecipeManager.removeByModid(modid as string, exclude as Predicate<string
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name) => false |
+| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
 
 
 :::
@@ -225,7 +225,7 @@ furnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_woo
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name) => false |
+| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
 
 
 :::
