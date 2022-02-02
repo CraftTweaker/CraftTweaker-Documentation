@@ -1,5 +1,7 @@
 # SmithingRecipeManager
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -49,7 +51,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
 
-mySmithingRecipeManager.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:items:forge:ingots/gold>);
+smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:items:forge:ingots/gold>);
 ```
 
 | Parameter | Type | Description |
@@ -69,7 +71,7 @@ Return Type: stdlib.List&lt;T&gt;
 ```zenscript
 // SmithingRecipeManager.getAllRecipes() as stdlib.List<T>
 
-mySmithingRecipeManager.getAllRecipes();
+smithing.getAllRecipes();
 ```
 
 :::
@@ -99,7 +101,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 ```zenscript
 // SmithingRecipeManager.getRecipeMap() as T[ResourceLocation]
 
-mySmithingRecipeManager.getRecipeMap();
+smithing.getRecipeMap();
 ```
 
 :::
@@ -128,7 +130,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.remove(output as IIngredient) as void
 
-mySmithingRecipeManager.remove(<tag:items:minecraft:wool>);
+smithing.remove(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -147,7 +149,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.removeAll() as void
 
-mySmithingRecipeManager.removeAll();
+smithing.removeAll();
 ```
 
 :::
@@ -161,7 +163,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.removeByInput(input as IItemStack) as void
 
-mySmithingRecipeManager.removeByInput(<item:minecraft:iron_ingot>);
+smithing.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -198,7 +200,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.removeByName(name as string) as void
 
-mySmithingRecipeManager.removeByName("minecraft:furnace");
+smithing.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type | Description |
@@ -217,7 +219,7 @@ Return Type: void
 ```zenscript
 // SmithingRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
 
-mySmithingRecipeManager.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+smithing.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |

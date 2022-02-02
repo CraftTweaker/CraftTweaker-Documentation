@@ -1,5 +1,7 @@
 # SmokerRecipeManager
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -55,7 +57,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
 
-mySmokerRecipeManager.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
+smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
 ```
 
 | Parameter | Type | Description |
@@ -76,7 +78,7 @@ Return Type: stdlib.List&lt;T&gt;
 ```zenscript
 // SmokerRecipeManager.getAllRecipes() as stdlib.List<T>
 
-mySmokerRecipeManager.getAllRecipes();
+smoker.getAllRecipes();
 ```
 
 :::
@@ -106,7 +108,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 ```zenscript
 // SmokerRecipeManager.getRecipeMap() as T[ResourceLocation]
 
-mySmokerRecipeManager.getRecipeMap();
+smoker.getRecipeMap();
 ```
 
 :::
@@ -135,7 +137,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.remove(output as IIngredient) as void
 
-mySmokerRecipeManager.remove(<tag:items:minecraft:wool>);
+smoker.remove(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -154,7 +156,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.removeAll() as void
 
-mySmokerRecipeManager.removeAll();
+smoker.removeAll();
 ```
 
 :::
@@ -168,7 +170,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.removeByInput(input as IItemStack) as void
 
-mySmokerRecipeManager.removeByInput(<item:minecraft:iron_ingot>);
+smoker.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -205,7 +207,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.removeByName(name as string) as void
 
-mySmokerRecipeManager.removeByName("minecraft:furnace");
+smoker.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type | Description |
@@ -224,7 +226,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
 
-mySmokerRecipeManager.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+smoker.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -244,7 +246,7 @@ Return Type: void
 ```zenscript
 // SmokerRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
 
-mySmokerRecipeManager.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
+smoker.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |

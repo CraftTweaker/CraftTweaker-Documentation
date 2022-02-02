@@ -1,5 +1,7 @@
 # CraftingTableRecipeManager
 
+
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -70,7 +72,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.addShapedMirrored(recipeName as string, mirrorAxis as MirrorAxis, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
 
-myCraftingTableRecipeManager.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
+craftingTable.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -128,7 +130,7 @@ Return Type: stdlib.List&lt;T&gt;
 ```zenscript
 // CraftingTableRecipeManager.getAllRecipes() as stdlib.List<T>
 
-myCraftingTableRecipeManager.getAllRecipes();
+craftingTable.getAllRecipes();
 ```
 
 :::
@@ -158,7 +160,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 ```zenscript
 // CraftingTableRecipeManager.getRecipeMap() as T[ResourceLocation]
 
-myCraftingTableRecipeManager.getRecipeMap();
+craftingTable.getRecipeMap();
 ```
 
 :::
@@ -187,7 +189,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.remove(output as IIngredient) as void
 
-myCraftingTableRecipeManager.remove(<tag:items:minecraft:wool>);
+craftingTable.remove(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -206,7 +208,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.removeAll() as void
 
-myCraftingTableRecipeManager.removeAll();
+craftingTable.removeAll();
 ```
 
 :::
@@ -220,7 +222,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.removeByInput(input as IItemStack) as void
 
-myCraftingTableRecipeManager.removeByInput(<item:minecraft:iron_ingot>);
+craftingTable.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -257,7 +259,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.removeByName(name as string) as void
 
-myCraftingTableRecipeManager.removeByName("minecraft:furnace");
+craftingTable.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type | Description |
@@ -276,7 +278,7 @@ Return Type: void
 ```zenscript
 // CraftingTableRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
 
-myCraftingTableRecipeManager.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |

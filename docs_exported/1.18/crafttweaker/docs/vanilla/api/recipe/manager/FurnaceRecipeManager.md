@@ -57,7 +57,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
 
-blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
+furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
 ```
 
 | Parameter | Type | Description |
@@ -78,7 +78,7 @@ Return Type: stdlib.List&lt;T&gt;
 ```zenscript
 // FurnaceRecipeManager.getAllRecipes() as stdlib.List<T>
 
-blastFurnace.getAllRecipes();
+furnace.getAllRecipes();
 ```
 
 :::
@@ -108,7 +108,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 ```zenscript
 // FurnaceRecipeManager.getRecipeMap() as T[ResourceLocation]
 
-blastFurnace.getRecipeMap();
+furnace.getRecipeMap();
 ```
 
 :::
@@ -137,7 +137,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.remove(output as IIngredient) as void
 
-blastFurnace.remove(<tag:items:minecraft:wool>);
+furnace.remove(<tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
@@ -156,7 +156,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.removeAll() as void
 
-blastFurnace.removeAll();
+furnace.removeAll();
 ```
 
 :::
@@ -170,7 +170,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.removeByInput(input as IItemStack) as void
 
-blastFurnace.removeByInput(<item:minecraft:iron_ingot>);
+furnace.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -207,7 +207,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.removeByName(name as string) as void
 
-blastFurnace.removeByName("minecraft:furnace");
+furnace.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type | Description |
@@ -226,7 +226,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
 
-blastFurnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+furnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -246,7 +246,7 @@ Return Type: void
 ```zenscript
 // FurnaceRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
 
-blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
+furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
