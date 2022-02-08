@@ -215,5 +215,7 @@ myItemAttributeModifierEvent.removeModifier(<attribute:minecraft:generic.attack_
 | itemstack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | Gets the ItemStack that this event is being ran for. |
 | modifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true | false | Gets the modifiers on the ItemStack |
 | originalModifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true | false | Gets the original modifiers on the ItemStack before being changed by any other event listener. |
-| slotType | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | Gets the EquipmentSlotType that this event is being ran for. <br />  <br />  If you only want to add / remove a modifier from a specific slot, you can use this to filter based on the slot. |
+| slotType | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | Gets the EquipmentSlotType that this event is being ran for.  
+  
+ If you only want to add / remove a modifier from a specific slot, you can use this to filter based on the slot. |
 

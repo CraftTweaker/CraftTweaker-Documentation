@@ -134,7 +134,9 @@ LivingDropsEvent.setDrops(drops as stdlib.List<IItemStack>) as void
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| drops | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | true | Returns the list of items will be dropped. The list is read-only, modifying this list does not change the drops. <br />  <br />  You should use the `drops` setter, `addDrop` or `removeDrop` method to change the drops. |
+| drops | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | true | Returns the list of items will be dropped. The list is read-only, modifying this list does not change the drops.  
+  
+ You should use the `drops` setter, `addDrop` or `removeDrop` method to change the drops. |
 | isRecentlyHit | boolean | true | false | Whether the Entity doing the drop has recently been damaged. |
 | lootingLevel | int | true | false | No Description Provided |
 | source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | No Description Provided |

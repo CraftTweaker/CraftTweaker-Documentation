@@ -238,7 +238,8 @@ recipes.removeRecipe(<item:minecraft:iron_ingot>);
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | true | false | Returns a list of all known recipe managers. <br />  This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
+| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | true | false | Returns a list of all known recipe managers.  
+ This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
 | allRecipes | stdlib.List&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&gt; | true | false | No Description Provided |
 | recipeMap | [Recipe](/vanilla/api/recipe/type/Recipe)[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
 

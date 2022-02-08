@@ -159,7 +159,21 @@ myExplosion.getToBlow();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | damageSource | [DamageSource](/vanilla/api/world/DamageSource) | true | false | Gets the damage source of this Explosion. |
-| playerKnockbackMap | [Vec3](/vanilla/api/util/math/Vec3)[[Player](/vanilla/api/entity/type/player/Player)] | true | false | Gets the player knockback map for this Explosion. <br />  <br />  This map is only populated in [Explosion](/vanilla/api/world/Explosion)#explode() so calling it before will return nothing. <br />  <br />  This map is used to calculate the vectors that players around the explosion will be pushed back by. |
-| sourceMob | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | Gets the LivingEntity that caused this Explosion. <br />  <br />  For example: <br />  If the Explosion was caused by TNT, it will return the PlayerEntity that placed it. <br />  If the Explosion was caused by a Creeper or another Entity directly, it will return that Entity. <br />  If the Explosion was caused by a Ghast fireball, it will return the Ghast. <br />  <br />  If no Entity caused this Explosion (for example, if the Explosion was caused by TNT in a Desert Temple that <br />  generated in the world), then `null` is returned. <br />  <br />  You may need to cast the returned LivingEntity to not be nullable. |
+| playerKnockbackMap | [Vec3](/vanilla/api/util/math/Vec3)[[Player](/vanilla/api/entity/type/player/Player)] | true | false | Gets the player knockback map for this Explosion.  
+  
+ This map is only populated in [Explosion](/vanilla/api/world/Explosion)#explode() so calling it before will return nothing.  
+  
+ This map is used to calculate the vectors that players around the explosion will be pushed back by. |
+| sourceMob | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | Gets the LivingEntity that caused this Explosion.  
+  
+ For example:  
+ If the Explosion was caused by TNT, it will return the PlayerEntity that placed it.  
+ If the Explosion was caused by a Creeper or another Entity directly, it will return that Entity.  
+ If the Explosion was caused by a Ghast fireball, it will return the Ghast.  
+  
+ If no Entity caused this Explosion (for example, if the Explosion was caused by TNT in a Desert Temple that  
+ generated in the world), then `null` is returned.  
+  
+ You may need to cast the returned LivingEntity to not be nullable. |
 | toBlow | stdlib.List&lt;[BlockPos](/vanilla/api/util/math/BlockPos)&gt; | true | false | No Description Provided |
 

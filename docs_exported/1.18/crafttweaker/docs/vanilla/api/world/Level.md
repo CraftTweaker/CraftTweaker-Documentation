@@ -363,7 +363,8 @@ myLevel.globalLevelEvent(2005, new BlockPos(0, 1, 2), 0);
 |-----------|------|-------------|
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />                 is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This  
+                is generally unused. |
 
 
 :::
@@ -503,7 +504,8 @@ myLevel.levelEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 | excluded | [Player](/vanilla/api/entity/type/player/Player) | An excluded player who will not receive the event. |
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />                  is generally unused. |
+| data | int | Four bytes of additional data encoded as an integer. This  
+                 is generally unused. |
 
 
 :::

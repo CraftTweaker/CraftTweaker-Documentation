@@ -86,6 +86,11 @@ myAttribute.sanitizeValue(4);
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | clientSyncable | boolean | true | false | Should this attribute be synced to the client. |
-| commandString | string | true | false | Gets the attribute bracket handler syntax for this Attribute. <br />  <br />  E.G. <br />  <code> <br />  <attribute:minecraft:generic.max_health> <br />  </code> |
+| commandString | string | true | false | Gets the attribute bracket handler syntax for this Attribute.  
+  
+ E.G.  
+ <code>  
+ <attribute:minecraft:generic.max_health>  
+ </code> |
 | defaultValue | double | true | false | Gets the default value for this Attribute. |
 

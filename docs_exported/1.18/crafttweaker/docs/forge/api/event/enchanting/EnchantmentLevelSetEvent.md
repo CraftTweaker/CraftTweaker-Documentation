@@ -160,7 +160,9 @@ myEnchantmentLevelSetEvent.setLevel(5);
 |------|------|------------|------------|-------------|
 | enchantRow | int | true | false | Gets the row in the Enchanting Table that this event is fired for. |
 | item | [IItemStack](/vanilla/api/item/IItemStack) | true | false | Gets the ItemStack that is being enchanted. |
-| level | int | true | true | Gets the current level of the enchantment for this row. <br />  <br />  This value can be changed by other mods. |
+| level | int | true | true | Gets the current level of the enchantment for this row.  
+  
+ This value can be changed by other mods. |
 | originalLevel | int | true | false | Gets the original level of the enchantment for this row. |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | Gets the position of the Enchanting Table firing this event. |
 | power | int | true | false | Gets the Enchanting Power of the Enchanting Table. |

@@ -14,7 +14,8 @@ import crafttweaker.util.NameUtil;
 
 :::group{name=fixing}
 
-Attempts to automatically fix the given `input` string, if possible, so that it can be used to build a <br />  well-formed [ResourceLocation](/vanilla/api/resource/ResourceLocation).
+Attempts to automatically fix the given `input` string, if possible, so that it can be used to build a  
+ well-formed [ResourceLocation](/vanilla/api/resource/ResourceLocation).
 
 Returns: The fixed string.  
 Return Type: string
@@ -32,7 +33,8 @@ NameUtil.fixing(input as string) as string
 
 :::group{name=fixing}
 
-Attempts to automatically fix the given `input` string, if possible, so that it can be used to build a <br />  well-formed [ResourceLocation](/vanilla/api/resource/ResourceLocation).
+Attempts to automatically fix the given `input` string, if possible, so that it can be used to build a  
+ well-formed [ResourceLocation](/vanilla/api/resource/ResourceLocation).
 
 Returns: The fixed string.  
 Return Type: string
@@ -44,14 +46,17 @@ NameUtil.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.List
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | The string that should be fixed to a [ResourceLocation](/vanilla/api/resource/ResourceLocation)-compatible format. |
-| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
+| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first  
+                       element is the fixed string, and the second is a list of strings containing explanations  
+                       for all the identified mistakes. |
 
 
 :::
 
 :::group{name=fromFixedName}
 
-Creates a [ResourceLocation](/vanilla/api/resource/ResourceLocation) from the given `input`, if possible, while fixing mistakes that <br />  may be present in the string.
+Creates a [ResourceLocation](/vanilla/api/resource/ResourceLocation) from the given `input`, if possible, while fixing mistakes that  
+ may be present in the string.
 
 Returns: A [ResourceLocation](/vanilla/api/resource/ResourceLocation) that represents the fixed input.  
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
@@ -69,7 +74,8 @@ NameUtil.fromFixedName(input as string) as ResourceLocation
 
 :::group{name=fromFixedName}
 
-Creates a [ResourceLocation](/vanilla/api/resource/ResourceLocation) from the given `input`, if possible, while fixing mistakes that <br />  may be present in the string.
+Creates a [ResourceLocation](/vanilla/api/resource/ResourceLocation) from the given `input`, if possible, while fixing mistakes that  
+ may be present in the string.
 
 Returns: A [ResourceLocation](/vanilla/api/resource/ResourceLocation) that represents the fixed input.  
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
@@ -81,7 +87,9 @@ NameUtil.fromFixedName(input as string, mistakeHandler as BiConsumer<string,stdl
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | The string that should be fixed and converted to a [ResourceLocation](/vanilla/api/resource/ResourceLocation). |
-| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
+| mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first  
+                       element is the fixed string, and the second is a list of strings containing explanations  
+                       for all the identified mistakes. |
 
 
 :::

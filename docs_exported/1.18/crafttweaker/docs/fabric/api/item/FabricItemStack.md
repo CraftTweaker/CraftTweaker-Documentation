@@ -1058,31 +1058,39 @@ myFabricItemStack | other as IIngredient
 | burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
 | commandString | string | true | false | Returns the BEP to get this stack |
 | damage | int | true | false | No Description Provided |
-| damageableItem | boolean | true | false | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not. |
-| damaged | boolean | true | false | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged. |
+| damageableItem | boolean | true | false | Returns if the ItemStack is damageable  
+ I.E Swords and tools are damageable, sticks are not. |
+| damaged | boolean | true | false | Returns if the ItemStack is damaged  
+ I.E a Swords that is no at full durability is damaged. |
 | definition | [ItemDefinition](/vanilla/api/item/ItemDefinition) | true | false | No Description Provided |
 | descriptionId | string | true | false | Returns the unlocalized Name of the Item in the ItemStack |
 | displayName | [Component](/vanilla/api/text/Component) | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
 | enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true | true | No Description Provided |
-| fireResistant | void | true | true | Sets if this IItemStack is immune to fire / lava. <br />  <br />  If true, the item will not burn when thrown into fire or lava. |
+| fireResistant | void | true | true | Sets if this IItemStack is immune to fire / lava.  
+  
+ If true, the item will not burn when thrown into fire or lava. |
 | food | [FoodProperties](/vanilla/api/food/FoodProperties) | true | true | No Description Provided |
 | getBaseRepairCost | int | true | false | Gets the base repair cost of the ItemStack, or 0 if no repair is defined. |
 | getOrCreate | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
-| hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
+| hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect.  
+  
+ Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
 | isImmutable | boolean | true | false | No Description Provided |
 | isMutable | boolean | true | false | No Description Provided |
 | items | [IItemStack](/vanilla/api/item/IItemStack)[] | true | false | No Description Provided |
-| maxDamage | int | true | true | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
+| maxDamage | int | true | true | Returns the max damage of the ItemStack  
+ This is the max durability of the ItemStack. |
 | maxStackSize | int | true | true | Returns the max stack size of the Item in the ItemStack |
 | owner | string | true | false | Gets owning mod for the Item in this IItemStack |
 | rarity | [Rarity](/vanilla/api/item/property/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
 | registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
-| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
+| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1  
+ I.E Swords and tools are not stackable, sticks are. |
 | tag | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this ItemStack. |
 | useDuration | int | true | false | Gets the use duration of the ItemStack |
 | useOnRelease | boolean | true | false | Returns true if this stack is considered a crossbow item |

@@ -56,7 +56,8 @@ event.setLevels(5);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| levels | int | The amount of levels that should be added to the player's <br />                level counter. |
+| levels | int | The amount of levels that should be added to the player's  
+               level counter. |
 
 
 :::
