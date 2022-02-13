@@ -57,18 +57,7 @@ CommonLootModifiers.addAll(<item:minecraft:iron_ingot>, <item:minecraft:iron_nug
 
 :::group{name=addAllWithBinomialBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#addAll(IItemStack...).  
-  
- The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack).  
-  
- The formula used is based on the `binomial_with_bonus_count` formula used by vanilla. In this case, the  
- value of `extra` is added to the current tool's enchantment level; that determines the amount of times the  
- randomness will roll. Every roll that is higher than `p` will add one element to the stack. This is the  
- formula used by potatoes and carrots to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#addAll(IItemStack...). <br />  <br />  The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  The formula used is based on the `binomial_with_bonus_count` formula used by vanilla. In this case, the <br />  value of `extra` is added to the current tool's enchantment level; that determines the amount of times the <br />  randomness will roll. Every roll that is higher than `p` will add one element to the stack. This is the <br />  formula used by potatoes and carrots to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -91,9 +80,7 @@ CommonLootModifiers.addAllWithBinomialBonus(<enchantment:minecraft:fortune>, 3, 
 
 :::group{name=addAllWithChance}
 
-Adds the given [Percentaged](/vanilla/api/util/random/Percentaged)&lt;T&gt; [IItemStack](/vanilla/api/item/IItemStack)s to the drops, according to the specified chances.  
-  
- The chance will be computed on each modifier roll, and independently for each of the given stacks.
+Adds the given [Percentaged](/vanilla/api/util/random/Percentaged)&lt;T&gt; [IItemStack](/vanilla/api/item/IItemStack)s to the drops, according to the specified chances. <br />  <br />  The chance will be computed on each modifier roll, and independently for each of the given stacks.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -113,17 +100,7 @@ CommonLootModifiers.addAllWithChance(<item:minecraft:honey_bottle> % 50, <item:m
 
 :::group{name=addAllWithOreDropsBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#addAll(IItemStack...).  
-  
- The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack).  
-  
- The formula used is based on the `ore_drops` formula used by vanilla, which multiplies the stack's  
- original count by a random number between 1 and the tool's enchantment level + 1. This is the formula used by  
- all vanilla ores to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#addAll(IItemStack...). <br />  <br />  The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  The formula used is based on the `ore_drops` formula used by vanilla, which multiplies the stack's <br />  original count by a random number between 1 and the tool's enchantment level + 1. This is the formula used by <br />  all vanilla ores to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -144,18 +121,7 @@ CommonLootModifiers.addAllWithOreDropsBonus(<enchantment:minecraft:fortune>, <it
 
 :::group{name=addAllWithUniformBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#addAll(IItemStack...).  
-  
- The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack).  
-  
- The formula used is based on the `uniform_bonus_count` formula used by vanilla. In this case, the  
- enchantment level is multiplied by `multiplier` and a random number is extracted between 0 and the result.  
- This number is then added to the original's stack count. This is the formula used by redstone ore and glowstone  
- to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack)s to the drops, modifying their count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#addAll(IItemStack...). <br />  <br />  The fortune modifier is applied separately for each [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  The formula used is based on the `uniform_bonus_count` formula used by vanilla. In this case, the <br />  enchantment level is multiplied by `multiplier` and a random number is extracted between 0 and the result. <br />  This number is then added to the original's stack count. This is the formula used by redstone ore and glowstone <br />  to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -177,16 +143,7 @@ CommonLootModifiers.addAllWithUniformBonus(<enchantment:minecraft:fortune>, 1, <
 
 :::group{name=addWithBinomialBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#add(IItemStack).  
-  
- The formula used is based on the `binomial_with_bonus_count` formula used by vanilla. In this case, the  
- value of `extra` is added to the current tool's enchantment level; that determines the amount of times the  
- randomness will roll. Every roll that is higher than `p` will add one element to the stack. This is the  
- formula used by potatoes and carrots to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#add(IItemStack). <br />  <br />  The formula used is based on the `binomial_with_bonus_count` formula used by vanilla. In this case, the <br />  value of `extra` is added to the current tool's enchantment level; that determines the amount of times the <br />  randomness will roll. Every roll that is higher than `p` will add one element to the stack. This is the <br />  formula used by potatoes and carrots to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -209,9 +166,7 @@ CommonLootModifiers.addWithBinomialBonus(<enchantment:minecraft:fortune>, 3, 0.5
 
 :::group{name=addWithChance}
 
-Adds the given [Percentaged](/vanilla/api/util/random/Percentaged)&lt;T&gt; [IItemStack](/vanilla/api/item/IItemStack) to the drops, according to the specified chances.  
-  
- The chance will be computed on each modifier roll.
+Adds the given [Percentaged](/vanilla/api/util/random/Percentaged)&lt;T&gt; [IItemStack](/vanilla/api/item/IItemStack) to the drops, according to the specified chances. <br />  <br />  The chance will be computed on each modifier roll.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -231,15 +186,7 @@ CommonLootModifiers.addWithChance(<item:minecraft:gilded_blackstone> % 50);
 
 :::group{name=addWithOreDropsBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#add(IItemStack).  
-  
- The formula used is based on the `ore_drops` formula used by vanilla, which multiplies the stack's  
- original count by a random number between 1 and the tool's enchantment level + 1. This is the formula used by  
- all vanilla ores to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#add(IItemStack). <br />  <br />  The formula used is based on the `ore_drops` formula used by vanilla, which multiplies the stack's <br />  original count by a random number between 1 and the tool's enchantment level + 1. This is the formula used by <br />  all vanilla ores to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -260,10 +207,7 @@ CommonLootModifiers.addWithOreDropsBonus(<enchantment:minecraft:fortune>, <item:
 
 :::group{name=addWithRandomAmount}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, with an amount chosen randomly between the given bounds.  
-  
- Any original stack size given to this method is ignored; if an addition behavior is desired (as in random  
- chance <em>on top</em> of the original stack size), a combining loot modifier should be used instead.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, with an amount chosen randomly between the given bounds. <br />  <br />  Any original stack size given to this method is ignored; if an addition behavior is desired (as in random <br />  chance <em>on top</em> of the original stack size), a combining loot modifier should be used instead.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -285,16 +229,7 @@ CommonLootModifiers.addWithRandomAmount(<item:minecraft:conduit>, 2, 9);
 
 :::group{name=addWithUniformBonus}
 
-Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given  
- [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available.  
-  
- In case no tool is used to obtain the stack, then this loot modifier behaves exactly like  
- [this](.)#add(IItemStack).  
-  
- The formula used is based on the `uniform_bonus_count` formula used by vanilla. In this case, the  
- enchantment level is multiplied by `multiplier` and a random number is extracted between 0 and the result.  
- This number is then added to the original's stack count. This is the formula used by redstone ore and glowstone  
- to determine their drop count.
+Adds the given [IItemStack](/vanilla/api/item/IItemStack) to the drops, modifying its count based on the level of the given <br />  [Enchantment](/vanilla/api/item/enchantment/Enchantment) on the tool used, if available. <br />  <br />  In case no tool is used to obtain the stack, then this loot modifier behaves exactly like <br />  [this](.)#add(IItemStack). <br />  <br />  The formula used is based on the `uniform_bonus_count` formula used by vanilla. In this case, the <br />  enchantment level is multiplied by `multiplier` and a random number is extracted between 0 and the result. <br />  This number is then added to the original's stack count. This is the formula used by redstone ore and glowstone <br />  to determine their drop count.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -411,14 +346,7 @@ CommonLootModifiers.removeAll(<item:minecraft:bell>, <tag:items:minecraft:rails>
 
 :::group{name=replaceAllStacksWith}
 
-Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack)s with the replacement [IItemStack](/vanilla/api/item/IItemStack)s,  
- proportionally.  
-  
- As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the key of a pair and 1  
- potato as the corresponding value, the loot will be modified to 2 potatoes and 1 carrot. This happens because  
- every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions.  
-  
- This loot modifier acts differently than [this](.)#replaceAllWith(Map), where a simpler approach is used.
+Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack)s with the replacement [IItemStack](/vanilla/api/item/IItemStack)s, <br />  proportionally. <br />  <br />  As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the key of a pair and 1 <br />  potato as the corresponding value, the loot will be modified to 2 potatoes and 1 carrot. This happens because <br />  every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions. <br />  <br />  This loot modifier acts differently than [this](.)#replaceAllWith(Map), where a simpler approach is used.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -438,12 +366,7 @@ CommonLootModifiers.replaceAllStacksWith({ <item:minecraft:carrots> * 2 : <item:
 
 :::group{name=replaceAllWith}
 
-Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient)s with their corresponding replacement  
- [IItemStack](/vanilla/api/item/IItemStack).  
-  
- In this case, a simple matching procedure is used, where every stack that matches the key of the pair is replaced  
- by the corresponding value, without considering stack size. If stack size is to be preserved, refer to  
- [this](.)#replaceAllStacksWith(Map).
+Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient)s with their corresponding replacement <br />  [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  In this case, a simple matching procedure is used, where every stack that matches the key of the pair is replaced <br />  by the corresponding value, without considering stack size. If stack size is to be preserved, refer to <br />  [this](.)#replaceAllStacksWith(Map).
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -463,15 +386,7 @@ CommonLootModifiers.replaceAllWith({ <tag:items:forge:gems/emerald> : <item:mine
 
 :::group{name=replaceStackWith}
 
-Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack) with the replacement [IItemStack](/vanilla/api/item/IItemStack),  
- proportionally.  
-  
- As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the <code>target</code>  
- and 1 potato as the <code>replacement</code>, the loot will be modified to 2 potatoes and 1 carrot. This happens  
- because every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions.  
-  
- This loot modifier acts differently than [this](.)#replaceWith(IIngredient, IItemStack), where a simpler approach  
- is used.
+Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack) with the replacement [IItemStack](/vanilla/api/item/IItemStack), <br />  proportionally. <br />  <br />  As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the <code>target</code> <br />  and 1 potato as the <code>replacement</code>, the loot will be modified to 2 potatoes and 1 carrot. This happens <br />  because every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions. <br />  <br />  This loot modifier acts differently than [this](.)#replaceWith(IIngredient, IItemStack), where a simpler approach <br />  is used.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -492,11 +407,7 @@ CommonLootModifiers.replaceStackWith(<item:minecraft:carrots> * 2, <item:minecra
 
 :::group{name=replaceWith}
 
-Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient) with the replacement [IItemStack](/vanilla/api/item/IItemStack).  
-  
- In this case, a simple matching procedure is used, where every stack that matches the given <code>target</code>  
- is replaced by the <code>replacement</code> without considering stack size. If stack size is to be preserved,  
- refer to [this](.)#replaceStackWith(IItemStack, IItemStack).
+Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient) with the replacement [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  In this case, a simple matching procedure is used, where every stack that matches the given <code>target</code> <br />  is replaced by the <code>replacement</code> without considering stack size. If stack size is to be preserved, <br />  refer to [this](.)#replaceStackWith(IItemStack, IItemStack).
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)

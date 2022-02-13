@@ -38,10 +38,7 @@ import crafttweaker.api.recipe.Replacer;
 
 ::deprecated[Use [this](.)#forEverything() instead.]
 
-Creates a `Replacer` that will perform replacements globally.  
-  
- In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in  
- the game, as long as it supports replacement.
+Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
 
 Returns: A new global `Replacer`.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -58,8 +55,7 @@ Replacer.forAllTypes();
 
 ::deprecated[Use [this](.)#forEverything() to create a replacer then use [this](.)#excluding(IRecipeManager...) to exclude the various unwanted managers.]
 
-Creates a `Replacer` that will perform replacements on all [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s except the ones  
- specified.
+Creates a `Replacer` that will perform replacements on all [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s except the ones <br />  specified.
 
 Returns: A new `Replacer` that targets all managers except the ones specified.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -79,16 +75,7 @@ Replacer.forAllTypesExcluding(stoneCutter);
 
 :::group{name=forCustomRecipeSet}
 
-Creates a `Replacer` that will perform replacements only on the recipes whitelisted by the given function.  
-  
- The first parameter of the predicate is a [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt; that indicates the recipe that is currently  
- being tested, whereas the second is the [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt; that is responsible for handling that particular  
- type of recipes. The function should then return a boolean that either whitelists the recipe for replacement  
- (`true`) or blacklists it (`false`).  
-  
- The given function must be a <strong>pure</strong> function, which means that the output must be the same  
- given the same set of inputs. In other words, you should not rely on external state for this function, since it  
- may be called multiple times on the same set of inputs in the same replacer run.
+Creates a `Replacer` that will perform replacements only on the recipes whitelisted by the given function. <br />  <br />  The first parameter of the predicate is a [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt; that indicates the recipe that is currently <br />  being tested, whereas the second is the [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt; that is responsible for handling that particular <br />  type of recipes. The function should then return a boolean that either whitelists the recipe for replacement <br />  (`true`) or blacklists it (`false`). <br />  <br />  The given function must be a <strong>pure</strong> function, which means that the output must be the same <br />  given the same set of inputs. In other words, you should not rely on external state for this function, since it <br />  may be called multiple times on the same set of inputs in the same replacer run.
 
 Returns: A new `Replacer` that uses the given function for whitelisting.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -108,10 +95,7 @@ Replacer.forCustomRecipeSet(myPredicate);
 
 :::group{name=forEverything}
 
-Creates a `Replacer` that will perform replacements globally.  
-  
- In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in  
- the game, as long as it supports replacement.
+Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
 
 Returns: A new global `Replacer`.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -126,10 +110,7 @@ Replacer.forEverything();
 
 :::group{name=forMods}
 
-Creates a `Replacer` that targets only the given mods.  
-  
- In other words, the replacer will perform ingredient replacement across <strong>all</strong>  
- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s, targeting <strong>only</strong> the recipes added by the specified mods.
+Creates a `Replacer` that targets only the given mods. <br />  <br />  In other words, the replacer will perform ingredient replacement across <strong>all</strong> <br />  [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s, targeting <strong>only</strong> the recipes added by the specified mods.
 
 Returns: A new `Replacer` that targets only the specified mods.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -149,12 +130,7 @@ Replacer.forMods("minecraft");
 
 :::group{name=forOutput}
 
-Creates a `Replacer` that will perform replacement only on recipes with the given output, optionally  
- restricted to a set of whitelisted managers.  
-  
- The passed in whitelist may also be empty, in which case it'll be treated as meaning every possible recipe  
- manager. If the whitelist is not empty, on the other hand, only the selected recipe managers will be considered  
- when replacing ingredients.
+Creates a `Replacer` that will perform replacement only on recipes with the given output, optionally <br />  restricted to a set of whitelisted managers. <br />  <br />  The passed in whitelist may also be empty, in which case it'll be treated as meaning every possible recipe <br />  manager. If the whitelist is not empty, on the other hand, only the selected recipe managers will be considered <br />  when replacing ingredients.
 
 Returns: A new `Replacer` for recipes with the given output and an optional whitelist.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -175,10 +151,7 @@ Replacer.forOutput(<tag:items:forge:rods/wooden>, stoneCutter);
 
 :::group{name=forRecipes}
 
-Creates a `Replacer` that targets only the specified [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt;s.  
-  
- In other words, the replacer will perform ingredient replacement <strong>only</strong> on the recipes that  
- are given in this list.
+Creates a `Replacer` that targets only the specified [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt;s. <br />  <br />  In other words, the replacer will perform ingredient replacement <strong>only</strong> on the recipes that <br />  are given in this list.
 
 Returns: A new `Replacer` that targets only the specified recipes.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -198,8 +171,7 @@ Replacer.forRecipes(craftingTable.getRecipeByName("minecraft:emerald_block"));
 
 :::group{name=forRegexRecipes}
 
-Creates a `Replacer` that will perform replacement on all recipes whose names match the given regular  
- expression.
+Creates a `Replacer` that will perform replacement on all recipes whose names match the given regular <br />  expression.
 
 Returns: A new `Replacer` for recipes that satisfy the given regular expression.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -219,12 +191,7 @@ Replacer.forRegexRecipes("\\d_\\d");
 
 :::group{name=forRegexTypes}
 
-Creates a `Replacer` that will perform replacement on all [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s that match the given  
- regular expression.  
-  
- The managers will be matched on their bracket identifier, which corresponds to their bracket expression  
- stripped of `<recipetype:` and `>`. E.g., a manager obtained in a script via  
- `<recipetype:minecraft:crafting>` will be matched on `minecraft:crafting` only.
+Creates a `Replacer` that will perform replacement on all [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s that match the given <br />  regular expression. <br />  <br />  The managers will be matched on their bracket identifier, which corresponds to their bracket expression <br />  stripped of `<recipetype:` and `>`. E.g., a manager obtained in a script via <br />  `<recipetype:minecraft:crafting>` will be matched on `minecraft:crafting` only.
 
 Returns: A new `Replacer` for managers that satisfy the given regular expression.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -244,10 +211,7 @@ Replacer.forRegexTypes("^minecraft:[a-z]*ing");
 
 :::group{name=forTypes}
 
-Creates a `Replacer` that targets only the specified [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s.  
-  
- In other words, the replacer will perform ingredient replacement <strong>only</strong> on the managers that  
- are given in this list.
+Creates a `Replacer` that targets only the specified [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt;s. <br />  <br />  In other words, the replacer will perform ingredient replacement <strong>only</strong> on the managers that <br />  are given in this list.
 
 Returns: A new `Replacer` that targets only the specified managers.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)

@@ -111,8 +111,7 @@ RightClickBlockEvent.setUseItem(triggerItem as EventResult) as void
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| face | [Direction](/vanilla/api/util/direction/Direction) | true | false | The face of the block that was clicked  
- Unlike in [PlayerInteractEvent](/forge/api/event/entity/player/interact/PlayerInteractEvent) this is known not to be null |
+| face | [Direction](/vanilla/api/util/direction/Direction) | true | false | The face of the block that was clicked <br />  Unlike in [PlayerInteractEvent](/forge/api/event/entity/player/interact/PlayerInteractEvent) this is known not to be null |
 | hitVec | [BlockHitResult](/vanilla/api/util/BlockHitResult) | true | false | No Description Provided |
 | useBlock | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |
 | useItem | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |

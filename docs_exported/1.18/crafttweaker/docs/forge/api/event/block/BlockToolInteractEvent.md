@@ -101,9 +101,7 @@ BlockToolInteractEvent.setFinalState(state as BlockState) as void
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| finalState | [BlockState](/vanilla/api/block/BlockState) | true | true | Gets the transformed state after tool use.  
- If setFinalState is not called, it will return the original state.  
- This will be bypassed if canceled, returning null instead. |
+| finalState | [BlockState](/vanilla/api/block/BlockState) | true | true | Gets the transformed state after tool use. <br />  If setFinalState is not called, it will return the original state. <br />  This will be bypassed if canceled, returning null instead. |
 | heldItemStack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
 | player | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
 | toolAction | [ToolAction](/forge/api/tool/ToolAction) | true | false | No Description Provided |

@@ -391,12 +391,7 @@ Return Type: void
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | canCollide | [Block](/vanilla/api/block/Block) | false | true | Sets whether entities can collide with this Block. |
-| commandString | string | true | false | Gets the block bracket handler syntax for this Block.  
-  
- E.G.  
- <code>  
- <block:minecraft:dirt>  
- </code> |
+| commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
 | defaultState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the default [BlockState](/vanilla/api/block/BlockState) of this Block. |
 | dynamicShape | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |
 | explosionResistance | float | true | true | Gets the blast resistance of this Block. |

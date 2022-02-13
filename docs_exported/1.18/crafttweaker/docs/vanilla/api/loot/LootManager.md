@@ -24,10 +24,6 @@ LootManager.INSTANCE
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| modifiers | [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) | true | false | Gets the loot modifiers manager.  
-  
- Refer to **invalid** for additional info. |
-| tables | [LootTableManager](/vanilla/api/loot/table/LootTableManager) | true | false | Gets the loot table manager.  
-  
- Refer to [LootTableManager](/vanilla/api/loot/table/LootTableManager) for additional info. |
+| modifiers | [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) | true | false | Gets the loot modifiers manager. <br />  <br />  Refer to **invalid** for additional info. |
+| tables | [LootTableManager](/vanilla/api/loot/table/LootTableManager) | true | false | Gets the loot table manager. <br />  <br />  Refer to [LootTableManager](/vanilla/api/loot/table/LootTableManager) for additional info. |
 
