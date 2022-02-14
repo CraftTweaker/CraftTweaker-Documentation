@@ -37,7 +37,7 @@ Return Type: void
 ```zenscript
 // IIngredientTransformed.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-myIIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+myIIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -68,7 +68,7 @@ Return Type: void
 ```zenscript
 // IIngredientTransformed.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-myIIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+myIIngredientTransformed.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -346,7 +346,7 @@ Return Type: void
 ```zenscript
 // IIngredientTransformed.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
 
-myIIngredientTransformed.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<equipmentslot:chest>]);
+myIIngredientTransformed.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -366,7 +366,7 @@ Return Type: void
 ```zenscript
 // IIngredientTransformed.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
 
-myIIngredientTransformed.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<equipmentslot:chest>]);
+myIIngredientTransformed.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |

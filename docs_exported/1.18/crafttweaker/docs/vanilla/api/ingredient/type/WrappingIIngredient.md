@@ -39,7 +39,7 @@ Return Type: void
 ```zenscript
 // WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+<tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -70,7 +70,7 @@ Return Type: void
 ```zenscript
 // WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+<tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -353,7 +353,7 @@ Return Type: void
 ```zenscript
 // WrappingIIngredient.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<equipmentslot:chest>]);
+<tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -373,7 +373,7 @@ Return Type: void
 ```zenscript
 // WrappingIIngredient.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<equipmentslot:chest>]);
+<tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |

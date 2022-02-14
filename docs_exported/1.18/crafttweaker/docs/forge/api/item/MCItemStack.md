@@ -45,7 +45,7 @@ Return Type: void
 ```zenscript
 // MCItemStack.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-myMCItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+myMCItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -76,7 +76,7 @@ Return Type: void
 ```zenscript
 // MCItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-myMCItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>]);
+myMCItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -187,7 +187,7 @@ Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/At
 ```zenscript
 // MCItemStack.getAttributes(slotType as EquipmentSlot) as stdlib.List<AttributeModifier>[Attribute]
 
-myMCItemStack.getAttributes(<equipmentslot:chest>);
+myMCItemStack.getAttributes(<constant:minecraft:equipmentslot:chest>);
 ```
 
 | Parameter | Type | Description |
@@ -554,7 +554,7 @@ Return Type: void
 ```zenscript
 // MCItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
 
-myMCItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<equipmentslot:chest>]);
+myMCItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -574,7 +574,7 @@ Return Type: void
 ```zenscript
 // MCItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
 
-myMCItemStack.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<equipmentslot:chest>]);
+myMCItemStack.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -802,7 +802,7 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 ```zenscript
 // MCItemStack.withAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
 
-myMCItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>], true);
+myMCItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -835,7 +835,7 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 ```zenscript
 // MCItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
 
-myMCItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<equipmentslot:chest>], true);
+myMCItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
