@@ -211,6 +211,7 @@
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
           "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
           "Rarity": "vanilla/api/item/Rarity.md",
+          "UseAction": "vanilla/api/item/UseAction.md",
           "Armor": {
             "ArmorItem": "vanilla/api/item/armor/ArmorItem.md",
             "ArmorMaterial": "vanilla/api/item/armor/ArmorMaterial.md",
