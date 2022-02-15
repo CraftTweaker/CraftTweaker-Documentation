@@ -53,6 +53,26 @@ CoTItemAdvanced.setItemColorSupplier(func as IItemColorSupplier) as CoTItemAdvan
 
 :::
 
+:::group{name=setItemUseAction}
+
+Sets the use action of this Item.
+
+ By default, if this item is a food, the use action will be "EAT".
+
+Returns: the CoTItemAdvanced, used for method chaining  
+Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
+
+```zenscript
+CoTItemAdvanced.setItemUseAction(func as IItemUseActionSupplier) as CoTItemAdvanced
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| func | [IItemUseActionSupplier](/mods/contenttweaker/API/functions/IItemUseActionSupplier) | an IItemUseFinish function, the function should return the new ItemStack |
+
+
+:::
+
 :::group{name=setOnHitEntity}
 
 Sets what will happen when a living entity attacks other entities with this item.
@@ -121,6 +141,26 @@ CoTItemAdvanced.setOnItemUse(func as IItemUse) as CoTItemAdvanced
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | func | [IItemUse](/mods/contenttweaker/API/functions/IItemUse) | an IItemUse function, the function should return an ActionResultType |
+
+
+:::
+
+:::group{name=setOnItemUseFinish}
+
+Sets what will happen when the player finishes using this Item (like when finishing eating).
+
+ Not called when the player stops using this Item before the action is complete
+
+Returns: the CoTItemAdvanced, used for method chaining  
+Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
+
+```zenscript
+CoTItemAdvanced.setOnItemUseFinish(func as IItemUseFinish) as CoTItemAdvanced
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| func | [IItemUseFinish](/mods/contenttweaker/API/functions/IItemUseFinish) | an IItemUseFinish function, the function should return the new ItemStack |
 
 
 :::
