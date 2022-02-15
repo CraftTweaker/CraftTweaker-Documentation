@@ -157,6 +157,7 @@
               "MCItemFishedEvent": "vanilla/api/event/entity/player/MCItemFishedEvent.md",
               "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
               "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerBrewedPotionEvent": "vanilla/api/event/entity/player/MCPlayerBrewedPotionEvent.md",
               "MCPlayerDestroyItemEvent": "vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md",
               "MCPlayerEvent": "vanilla/api/event/entity/player/MCPlayerEvent.md",
               "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
