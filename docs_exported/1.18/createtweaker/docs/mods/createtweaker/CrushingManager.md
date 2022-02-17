@@ -42,7 +42,7 @@ Return Type: void
 ```zenscript
 // CrushingManager.addRecipe(name as string, output as Percentaged<IItemStack>[], input as IIngredient, duration as int) as void
 
-<recipetype:create:compacting>.addRecipe("crushed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> % 12) * 2], <item:minecraft:glass>, 200);
+<recipetype:create:crushing>.addRecipe("crushed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> % 12) * 2], <item:minecraft:glass>, 200);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -62,7 +62,7 @@ Return Type: stdlib.List&lt;T&gt;
 ```zenscript
 // CrushingManager.getAllRecipes() as stdlib.List<T>
 
-<recipetype:create:compacting>.getAllRecipes();
+<recipetype:create:crushing>.getAllRecipes();
 ```
 
 :::
@@ -89,7 +89,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 ```zenscript
 // CrushingManager.getRecipeMap() as T[ResourceLocation]
 
-<recipetype:create:compacting>.getRecipeMap();
+<recipetype:create:crushing>.getRecipeMap();
 ```
 
 :::
@@ -149,7 +149,7 @@ Return Type: void
 ```zenscript
 // CrushingManager.removeAll() as void
 
-<recipetype:create:compacting>.removeAll();
+<recipetype:create:crushing>.removeAll();
 ```
 
 :::
