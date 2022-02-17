@@ -32,7 +32,7 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 ```zenscript
 //Example:
 mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
-mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
+mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>);
 ```
 
 
