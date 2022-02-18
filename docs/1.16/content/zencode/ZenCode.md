@@ -19,5 +19,4 @@ Scripting concepts :
 
 - [CraftingTable](/vanilla/how_to/crafting_table) - Graded D
 - [ContentTweaker](/mods/contenttweaker/SimpleWalkthrough) - Graded A
-- [JEITweakerCategories](/zencode/Features/JEITweaker/)
 
