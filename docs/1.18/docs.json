@@ -44,7 +44,8 @@
             }
         },
         "Mod Dev": {
-            "CraftTweaker in a development environment" : "integration/Introduction.md"
+            "CraftTweaker in a Development Environment" : "integration/Introduction.md",
+            "Exposing a ZenClass" : "integration/RecipeManager.md"
         }
     }
 }
