@@ -6,7 +6,7 @@ Additional methods for easier modification of block state-related loot tables.
 
 :::group{name=addBlockDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addBlockLootModifier(BlockState, String, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addBlockLootModifier(BlockState, String, ILootModifier)](#addBlockLootModifier(BlockState, String, ILootModifier)) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drop for this block, ignoring the current state.
 
@@ -26,7 +26,7 @@ MCBlockState.addBlockDrop(uniqueId as string, stack as IItemStack) as void
 
 :::group{name=addBlockDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addBlockLootModifier(BlockState, String, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addBlockLootModifier(BlockState, String, ILootModifier)](#addBlockLootModifier(BlockState, String, ILootModifier)) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops for this block, ignoring the current state.
 
@@ -64,7 +64,7 @@ MCBlockState.addBlockLootModifier(name as string, modifier as ILootModifier) as 
 
 :::group{name=addTargetedDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addTargetedLootModifier(BlockState, String, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addTargetedLootModifier(BlockState, String, ILootModifier)](#addTargetedLootModifier(BlockState, String, ILootModifier)) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of the current block, only if it matches the current block state
  precisely.
@@ -85,7 +85,7 @@ MCBlockState.addTargetedDrop(uniqueId as string, stack as IItemStack) as void
 
 :::group{name=addTargetedDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addTargetedLootModifier(BlockState, String, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addTargetedLootModifier(BlockState, String, ILootModifier)](#addTargetedLootModifier(BlockState, String, ILootModifier)) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of the current block, only if it matches the current block state
  precisely.
@@ -124,7 +124,7 @@ MCBlockState.addTargetedLootModifier(name as string, modifier as ILootModifier) 
 
 :::group{name=addToolDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addToolLootModifier(BlockState, String, IItemStack, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addToolLootModifier(BlockState, String, IItemStack, ILootModifier)](#addToolLootModifier(BlockState, String, IItemStack, ILootModifier)) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this block, if it gets broken with the given tool and matches the
  current block state precisely.
@@ -148,7 +148,7 @@ MCBlockState.addToolDrop(uniqueId as string, tool as IItemStack, stack as IItemS
 
 :::group{name=addToolDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this](.)#addToolLootModifier(BlockState, String, IItemStack, ILootModifier) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this#addToolLootModifier(BlockState, String, IItemStack, ILootModifier)](#addToolLootModifier(BlockState, String, IItemStack, ILootModifier)) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this block, if it gets broken with the given tool and matches
  the current block state precisely.

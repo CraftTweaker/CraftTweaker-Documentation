@@ -4,7 +4,7 @@ Handles the replacing of ingredients in recipes for various [IRecipeManager](/va
 
  Differently from various other mechanisms in CraftTweaker, each replacement that gets specified from within a
  `Replacer` doesn't get run immediately, rather it gets stored and all replacements are then applied together
- when the [this](.)#execute() method is called. This change is done so that multiple replacements can be performed at
+ when the [this#execute()](#execute()) method is called. This change is done so that multiple replacements can be performed at
  the same time, with a net gain on performance.
 
  <strong>Note</strong> that replacement must be explicitly supported by modded recipe types and managers, meaning
@@ -18,8 +18,8 @@ Handles the replacing of ingredients in recipes for various [IRecipeManager](/va
  you to specify what should be the replacements that need to be carried out by the `Replacer` itself.
 
  All recipes that get replaced by a `Replacer` get renamed according to a set naming scheme. You can modify
- completely by providing a lambda via [this](.)#useForRenaming(BiFunction), or just for a specific set of recipes via
- [this](.)#explicitlyRename(ResourceLocation, String).
+ completely by providing a lambda via [this#useForRenaming(BiFunction)](#useForRenaming(BiFunction)), or just for a specific set of recipes via
+ [this#explicitlyRename(ResourceLocation, String)](#explicitlyRename(ResourceLocation, String)).
 
  An example usage of a `Replacer` could be
  `Replacer.forTypes(craftingTable).replace(<item:minecraft:string>, <item:minecraft:diamond>).execute();`
@@ -36,7 +36,7 @@ import crafttweaker.api.recipe.Replacer;
 
 :::group{name=forAllTypes}
 
-::deprecated[Use [this](.)#forEverything() instead.]
+::deprecated[Use [this#forEverything()](#forEverything()) instead.]
 
 Creates a `Replacer` that will perform replacements globally. <br />  <br />  In other words, the replacer will perform ingredient replacement on <strong>every</strong> recipe manager in <br />  the game, as long as it supports replacement.
 
@@ -53,7 +53,7 @@ Replacer.forAllTypes();
 
 :::group{name=forAllTypesExcluding}
 
-::deprecated[Use [this](.)#forEverything() to create a replacer then use [this](.)#excluding(IRecipeManager...) to exclude the various unwanted managers.]
+::deprecated[Use [this#forEverything()](#forEverything()) to create a replacer then use [this#excluding(IRecipeManager...)](#excluding(IRecipeManager...)) to exclude the various unwanted managers.]
 
 Creates a `Replacer` that will perform replacements on all [IRecipeManager](/vanilla/api/managers/IRecipeManager)s except the ones <br />  specified.
 
@@ -338,9 +338,9 @@ Replaces every match of the `from` [IIngredient](/vanilla/api/items/IIngredient)
  `<item:minecraft:diamond>` will perform this replacement even in compound ingredients, such as `<item:minecraft:stone> | <item:minecraft:gold_ingot>` or `<tag:items:minecraft:stones>` (supposing that
  `minecraft:stones` is a tag that contains `minecraft:stone` among other items).
 
- If this behavior is not desired, refer to [this](.)#replaceFully(IIngredient, IIngredient) instead.
+ If this behavior is not desired, refer to [this#replaceFully(IIngredient, IIngredient)](#replaceFully(IIngredient, IIngredient)) instead.
 
- This method is a specialized by [this](.)#replace(IItemStack, IIngredient) for [IItemStack](/vanilla/api/items/IItemStack)s and should
+ This method is a specialized by [this#replace(IItemStack, IIngredient)](#replace(IItemStack, IIngredient)) for [IItemStack](/vanilla/api/items/IItemStack)s and should
  be preferred in these cases.
 
 Returns: A Replacer that will carry out the specified operation.  
@@ -369,9 +369,9 @@ Replaces every match of the `from` [IItemStack](/vanilla/api/items/IItemStack) w
  `<item:minecraft:diamond>` will perform this replacement even in compound ingredients, such as `<item:minecraft:stone> | <item:minecraft:gold_ingot>` or `<tag:items:minecraft:stones>` (supposing that
  `minecraft:stones` is a tag that contains `minecraft:stone` among other items).
 
- If this behavior is not desired, refer to [this](.)#replaceFully(IIngredient, IIngredient) instead.
+ If this behavior is not desired, refer to [this#replaceFully(IIngredient, IIngredient)](#replaceFully(IIngredient, IIngredient)) instead.
 
- This method is a specialization of [this](.)#replace(IIngredient, IIngredient) for [IItemStack](/vanilla/api/items/IItemStack)s and
+ This method is a specialization of [this#replace(IIngredient, IIngredient)](#replace(IIngredient, IIngredient)) for [IItemStack](/vanilla/api/items/IItemStack)s and
  should be preferred in these cases.
 
 Returns: A Replacer that will carry out the specified operation.  
@@ -400,7 +400,7 @@ Replaces every instance of the target `from` [IIngredient](/vanilla/api/items/II
  replace ingredients that explicitly specify `<item:minecraft:stone>` as an input, while compound
  ingredients such as `<item:minecraft:stone> | <item:minecraft:gold_ingot>` won't be replaced.
 
- If this behavior is not desired, refer to [this](.)#replace(IIngredient, IIngredient) instead.
+ If this behavior is not desired, refer to [this#replace(IIngredient, IIngredient)](#replace(IIngredient, IIngredient)) instead.
 
 Returns: A Replacer that will carry out the specified operation.  
 Return Type: [Replacer](/vanilla/api/recipe/Replacer)
@@ -424,7 +424,7 @@ Replacer.forEverything().replaceFully(<tag:items:minecraft:anvil>, <tag:items:mi
 Suppresses warnings that arise when trying to replace unsupported recipes.
 
  Additional warnings will not be suppressed. Note that it is suggested to keep this disabled while testing and
- enable it only if excluding the problematic recipes via [this](.)#excluding(ResourceLocation...) would prove to be
+ enable it only if excluding the problematic recipes via [this#excluding(ResourceLocation...)](#excluding(ResourceLocation...)) would prove to be
  too cumbersome.
 
 Returns: A Replacer with replacement warnings suppressed.  

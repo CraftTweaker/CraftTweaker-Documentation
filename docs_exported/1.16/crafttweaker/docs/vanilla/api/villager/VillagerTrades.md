@@ -156,7 +156,7 @@ villagerTrades.removeAllTrades(<profession:minecraft:farmer>, 1);
 
 :::group{name=removeAllWanderinTrades}
 
-::deprecated[Scheduled for removal next breaking change: use [this](.)#removeAllWanderingTrades(int) instead.]
+::deprecated[Scheduled for removal next breaking change: use [this#removeAllWanderingTrades(int)](#removeAllWanderingTrades(int)) instead.]
 
 Removes all wandering trades of the given rarity
 
