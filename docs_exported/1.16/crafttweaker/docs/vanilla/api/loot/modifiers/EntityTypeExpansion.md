@@ -6,7 +6,7 @@ Additional methods for easier modification of entity-related loot tables.
 
 :::group{name=addDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addLootModifier(MCEntityType, String, ILootModifier)](#addLootModifier(MCEntityType, String, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addLootModifier(MCEntityType, String, ILootModifier) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity.
 
@@ -26,7 +26,7 @@ MCEntityType.addDrop(uniqueId as string, stack as IItemStack) as void
 
 :::group{name=addDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addLootModifier(MCEntityType, String, ILootModifier)](#addLootModifier(MCEntityType, String, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addLootModifier(MCEntityType, String, ILootModifier) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity.
 
@@ -64,7 +64,7 @@ MCEntityType.addLootModifier(name as string, modifier as ILootModifier) as void
 
 :::group{name=addPlayerOnlyDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier)](#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed by a player.
 
@@ -84,7 +84,7 @@ MCEntityType.addPlayerOnlyDrop(uniqueId as string, stack as IItemStack) as void
 
 :::group{name=addPlayerOnlyDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier)](#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addPlayerOnlyLootModifier(MCEntityType, String, ILootModifier) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed by a player.
 
@@ -122,7 +122,7 @@ MCEntityType.addPlayerOnlyLootModifier(name as string, modifier as ILootModifier
 
 :::group{name=addWeaponAndPlayerOnlyDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)](#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed by a player with the
  given weapon.
@@ -146,7 +146,7 @@ MCEntityType.addWeaponAndPlayerOnlyDrop(uniqueId as string, weapon as IItemStack
 
 :::group{name=addWeaponAndPlayerOnlyDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)](#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addWeaponAndPlayerOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed by a player
  with the given weapon.
@@ -239,7 +239,7 @@ MCEntityType.addWeaponAndPlayerOnlyLootModifier(name as string, weapon as IItemS
 
 :::group{name=addWeaponOnlyDrop}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)](#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier) instead.]
 
 Adds an [IItemStack](/vanilla/api/items/IItemStack) to the drops of this entity, but only if the entity was killed with the given weapon.
 
@@ -262,7 +262,7 @@ MCEntityType.addWeaponOnlyDrop(uniqueId as string, weapon as IItemStack, stack a
 
 :::group{name=addWeaponOnlyDrops}
 
-::deprecated[Scheduled for removal in 1.17: use [this#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)](#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier)) instead.]
+::deprecated[Scheduled for removal in 1.17: use [this](.)#addWeaponOnlyLootModifier(MCEntityType, String, IItemStack, ILootModifier) instead.]
 
 Adds a list of [IItemStack](/vanilla/api/items/IItemStack)s to the drops of this entity, but only if the entity was killed with the given
  weapon.
