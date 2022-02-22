@@ -277,6 +277,17 @@ myMapData + data as IData
 
 :::
 
+:::group{name=CONTAINS}
+
+Checks if the Map contains the given key.
+
+```zenscript
+key as string in myMapData
+"Hello" in {Hello : "World", Somewhere: "Over the rainbow"}
+```
+
+:::
+
 :::group{name=MEMBERGETTER}
 
 Retrieves the value associated with the key
