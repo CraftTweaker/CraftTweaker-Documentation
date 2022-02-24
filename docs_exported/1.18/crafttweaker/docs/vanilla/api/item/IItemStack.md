@@ -18,6 +18,8 @@ IItemStack implements the following interfaces. That means all methods defined i
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| BASE_ATTACK_DAMAGE_UUID | **invalid** | true | false | No Description Provided |
+| BASE_ATTACK_SPEED_UUID | **invalid** | true | false | No Description Provided |
 | CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
 
 ## Casters
@@ -53,6 +55,38 @@ myIItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_dama
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
+| name | string | The name of the modifier. |
+| value | double | The value of the modifier. |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+
+
+:::
+
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier.
+ You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient,
+ regardless of how or when the ItemStack was made, if you want to have the attribute on a
+ single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
+ IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
+// IItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+
+myIItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
+| uuid | **invalid** | The unique identifier of the modifier to replace. |
 | name | string | The name of the modifier. |
 | value | double | The value of the modifier. |
 | operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
@@ -639,6 +673,26 @@ Removes all AttributeModifiers who's ID is the same as the given uuid from this 
 Return Type: void
 
 ```zenscript
+// IItemStack.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[]) as void
+
+myIItemStack.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| uuid | **invalid** | The unique id of the AttributeModifier to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+
+
+:::
+
+:::group{name=removeGlobalAttributeModifier}
+
+Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+
+Return Type: void
+
+```zenscript
 // IItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
 
 myIItemStack.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
@@ -900,6 +954,40 @@ Adds an AttributeModifier to this IItemStack using a specific UUID.
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
+// IItemStack.withAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
+
+myIItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. | false |  |
+| uuid | **invalid** | The unique identifier of the modifier to replace. | false |  |
+| name | string | The name of the modifier. | false |  |
+| value | double | The value of the modifier. | false |  |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. | false |  |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. | false |  |
+| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
+
+
+:::
+
+:::group{name=withAttributeModifier}
+
+Adds an AttributeModifier to this IItemStack using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier.
+ You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method will only appear on this specific IItemStack.
+
+ By defaults, adding a modifier will remove the default Attribute Modifiers on the Item, like the Diamond Chestplate's Armor and Toughness values.
+ When `preserveDefaults` is set to true (by default it is false.), the default Attribute Modifiers will be preserved when adding this modifier.
+ This means that if you were adding the `forge:nametag_distance` attribute to an Item, it would keep its default attributes (like Armor and Toughness values).
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
 // IItemStack.withAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
 
 myIItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
@@ -1066,7 +1154,7 @@ myIItemStack | other as IIngredient
 | displayName | [Component](/vanilla/api/text/Component) | true | false | Gets the display name of the ItemStack |
 | empty | boolean | true | false | Returns if the ItemStack is empty |
 | enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true | true | No Description Provided |
-| fireResistant | void | true | true | Sets if this IItemStack is immune to fire / lava. <br />  <br />  If true, the item will not burn when thrown into fire or lava. |
+| fireResistant | boolean | true | true | Checks if this IItemStack burns when thrown into fire / lava or damaged by fire. |
 | food | [FoodProperties](/vanilla/api/food/FoodProperties) | true | true | No Description Provided |
 | getBaseRepairCost | int | true | false | Gets the base repair cost of the ItemStack, or 0 if no repair is defined. |
 | getOrCreate | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |

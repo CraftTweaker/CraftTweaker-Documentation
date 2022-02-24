@@ -87,6 +87,38 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
 Return Type: void
 
 ```zenscript
+// IIngredientEmpty.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+
+myIIngredientEmpty.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
+| uuid | **invalid** | The unique identifier of the modifier to replace. |
+| name | string | The name of the modifier. |
+| value | double | The value of the modifier. |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+
+
+:::
+
+:::group{name=addGlobalAttributeModifier}
+
+Adds an AttributeModifier to this IIngredient using a specific UUID.
+
+ The UUID can be used to override an existing attribute on an ItemStack with this new modifier.
+ You can use `/ct hand attributes` to get the UUID of the attributes on an ItemStack.
+
+ Attributes added with this method appear on all ItemStacks that match this IIngredient,
+ regardless of how or when the ItemStack was made, if you want to have the attribute on a
+ single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
+ IItemStack#withAttributeModifier
+
+Return Type: void
+
+```zenscript
 // IIngredientEmpty.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
 myIIngredientEmpty.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
@@ -378,6 +410,26 @@ myIIngredientEmpty.removeGlobalAttribute(<attribute:minecraft:generic.attack_dam
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The attribute to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+
+
+:::
+
+:::group{name=removeGlobalAttributeModifier}
+
+Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+
+Return Type: void
+
+```zenscript
+// IIngredientEmpty.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[]) as void
+
+myIIngredientEmpty.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| uuid | **invalid** | The unique id of the AttributeModifier to remove. |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
 
 
