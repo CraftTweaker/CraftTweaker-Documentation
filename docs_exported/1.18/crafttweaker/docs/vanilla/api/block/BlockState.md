@@ -15,6 +15,7 @@ import crafttweaker.api.block.BlockState;
 | Result type | Is Implicit |
 |-------------|-------------|
 | [Block](/vanilla/api/block/Block) | true |
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
 | string | false |
 
 ## Methods

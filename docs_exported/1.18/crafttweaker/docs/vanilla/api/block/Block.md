@@ -14,6 +14,7 @@ import crafttweaker.api.block.Block;
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
 | [ItemDefinition](/vanilla/api/item/ItemDefinition) | false |
 | string | false |
 
