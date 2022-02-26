@@ -28,7 +28,7 @@ dependencies {
     compileOnly(ctDep)
     runtimeOnly(fg.deobf(ctDep))
     
-    //AnnotationProcessor is here for generating docs. Check "the Generating Docs" page for more information
+    //AnnotationProcessor is here for generating docs. Check the "Generating Docs" page for more information
     annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors-1.18.1:2.0.0.59'
     annotationProcessor minecraftVersion
     annotationProcessor ctDep

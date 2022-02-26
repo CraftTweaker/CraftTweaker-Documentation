@@ -44,7 +44,7 @@ val assocArray = {
 //array[index]
 print(assocArray[<minecraft:dirt>]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//You can also use variables here, as long as the variable is of the correct type
 print(assocArray[dirt]);
 ```
 

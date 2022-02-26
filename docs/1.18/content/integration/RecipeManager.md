@@ -7,10 +7,11 @@ This page will explain how to add CraftTweaker support to your custom recipetype
 The first step consists of creating the java class you will be exposing to ZenCode. The class should be public and be annotated with both `@ZenRegister` and `@ZenCodeType.Name(String name)`
 The name of the class is, by convention, `mods.modid.ClassName`.  Once your ZenClass exists, you will be able to use any of the available annotations on the `ZenCodeType` class.
 
-From here, it depends on your specific case, as you might be looking to either annotate a constructor with `@ZenCodeType.Constructor` or make static methods with `@ZenCodeType.Method`.
-Whatever the case, you should know that any method annotated with `@ZenCodeType.Method` needs to be public and calling it in a script will require the specified arguments in the java class. `static` methods will be treated as such, and other methods will be ignored.
+ZenCode annotations respect method access. If you want a method to be exposed it should have public access. Whether you make the method static or instance only depends on the semantics you want to provide and whether you want to give access to your custom object or not.
 
-Be aware that any code that executes code and is not applying an `IRuntimeAction` is untouched by ZenCode, meaning that if you register anything anywhere, you'll have to manually clear it by yourself. If your method puts objects in a Map, you should be clearing the Map with a reload listener every time the game is reloaded to avoid acumulating outdated or unwanted data.
+If your mechanic is similar to a recipe, in the sense that it's methods should only be run during game reloads, you should run your code by calling `CraftTweakerAPI#apply` passing an existing, or custom IAction parameter on it. Using this system ensures proper book-keeping for CraftTweaker and proper logging, allowing for easier debugging of scripts.
+
+Otherwise, directly running code in your exposed method's body is what you should do.
 
 ## RecipeType Support
 
@@ -21,7 +22,7 @@ Adding support to add and remove recipes from your mod is slightly more complica
 You need a class that implements `IRecipeHandler<CustomIRecipe>` and `IRecipeManager`. Annotate the class with `@IRecipeHandler.For(CustomIRecipe.class)`, `@ZenRegister`, and `@ZenCodeType.Name(String name)`.
 Now you need to override the java methods: `getRecipeType()` and `dumpToCommandString`. The first one should point to your registered RecipeType, while the second one should use the Manager and the IRecipe object, to create a String that will be printed when the recipe is processed by any of the recipe dumping commands.
 
-After this, you want to anotate an instance method with `@ZenCodeType.Method` with a name along the lines of `addRecipe`, that allows users to add a new recipe with your parameters. In the event that you need more methods, make those clear. It is possible you also want to Override some of the removal methods to cater better to your own IRecipe.
+After this, you want to anotate a method with `@ZenCodeType.Method` with a name along the lines of `addRecipe`, that allows users to add a new recipe with your parameters. In the event that you need more methods, make those clear. It is possible you also want to Override some of the removal methods to cater better to your own IRecipe.
 
 Adding and removing recipes should be done through the use of a class that implements `IRuntimeAction`, a whole package of premade actions already exist for you to extend, override and use. 
 
@@ -38,7 +39,7 @@ public class CustomIRecipeManager implements IRecipeManager, IRecipeHandler<Cust
     }
 
     @Override
-    public String dumpToCommandString(IRecipeManager manager, CookingPotRecipe recipe) {
+    public String dumpToCommandString(IRecipeManager manager, CustomIRecipe recipe) {
         return manager.getCommandString() + recipe.getName() + recipe.getOutput() + "[" + recipe.getInputs() + "]";
     }
     

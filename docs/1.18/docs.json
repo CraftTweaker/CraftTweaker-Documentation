@@ -35,6 +35,7 @@
         "ZenCode": {
             "About ZenCode": "zencode/ZenCode.md",
             "Arrays and Lists": "zencode/ArraysAndLists.md",
+            "Associative Arrays" : "zencode/AssociativeArrays.md",
             "Conditional Code": "zencode/ConditionalCode.md",
             "Objects": "zencode/Objects.md",
             "Preprocessors": {
