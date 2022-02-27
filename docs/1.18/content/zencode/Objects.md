@@ -1,7 +1,7 @@
 # Objects in Programming
 
-This page aims to orient the scripter that aims to work with features and concepts that require a bit more than just chaining crafting table calls. 
-It will help you understand a bit of how Java and ZenCode programming actually works, which is crucial to understand and manage concepts where logic is necessary, such as Loot Modifiers, Events, or JEI Categories. 
+This page aims to orient the scripter that is thinking of working with features and concepts that require a bit more than just chaining crafting table calls. 
+It will help you understand a bit of how Java and ZenCode programming actually works, which is crucial to understand and manage concepts where logic is necessary, such as Conditions in Loot Modifiers, Events, or JEI Categories. 
 Now, onto the explanation!
 
 ## What are Objects?
@@ -13,7 +13,6 @@ Kinds of objects you should have seen at this point:
 - Int (Stores a numerical, whole value), example : `42`
 - Double and Float (Store a numerical decimal value), examples:  `0.2` and `0.2f`
 - IItemStack (Stores an ItemStack, which is an Item plus it's data), example: `<item:minecraft:pumpkin>`
-- FluidStack (Stores a fluid with its amount), example: `<fluid:minecraft:water> * 100`
 
 Doubles and floats are mostly interchangeable and the difference is that you need the "f" character in case it is a float. In most cases ZC will cast them for you.
 

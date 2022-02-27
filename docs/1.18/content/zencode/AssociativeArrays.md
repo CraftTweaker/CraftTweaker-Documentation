@@ -34,16 +34,16 @@ Time to analyse this in depth.
 
 ## Accessing a value from a Map
 
-Getting a value from an Associative Array is done in a similar fashion to how you would acces a member in an array. However, instead of the position, you need to pass in a variable that is of the same type as the map's key type. Accesing a map with a key that isn't mapped will return a `null` object.
+Getting a value from an Associative Array is done in a similar fashion to how you would access a member in an array. However, instead of the position, you need to pass in a variable that is of the same type as the map's key type. Accessing a map with a key that isn't mapped will return a `null` object.
 
 ```zencode
-val dirt = <minecraft:dirt>;
+val dirt = <item:minecraft:dirt>;
 val assocArray = {
-	<minecraft:dirt> : "This is me"
+	<item:minecraft:dirt> : "This is me"
 } as string[IItemStack];
 
 //array[index]
-print(assocArray[<minecraft:dirt>]);
+print(assocArray[<item:minecraft:dirt>]);
 
 //You can also use variables here, as long as the variable is of the correct type
 print(assocArray[dirt]);
@@ -53,8 +53,8 @@ You can also directly set the value of something in an Associative Array by usin
 
 ```zencode
 val changingArray = {
-	<minecraft:dirt> : "this is me",
-	<minecraft:gold_ingot> : "and I hate it"
+	<item:minecraft:dirt> : "this is me",
+	<item:minecraft:gold_ingot> : "and I hate it"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
@@ -63,7 +63,7 @@ val gg = <minecraft:gold>;
 changingArray[gg] = "and I love it";
 
 //adds a new entry
-changingArray[<minecraft:grass>] = "Power!";
+changingArray[<item:minecraft:grass>] = "Power!";
 ```
 
 ## Looping over an Associative Array
@@ -99,7 +99,7 @@ val log_plank_map as IItemStack[IIngredient] = {
 //loops over left and right part of the map, which are the keys and values
 
 for log, plank in log_plank_map {
-    //removes the plank recipes
+    //removes the plank recipes in the crafting table.
    craftingTable.remove(plank);
    //Description
    println("Remaking logs and planks to half the original output");
@@ -107,3 +107,5 @@ for log, plank in log_plank_map {
    craftingTable.addShapeless("log_to_planks_" + plank.registryName, plank * 2, [log]);
 }
 ```
+
+Frequent examples of Associative Arrays also include mapping raw ores to arrays of chanced results, that are used to setup crushing recipes, or map dye sources to actual dyes. What you end up doing with them is up to you, really. Just keep in mind that sometimes, it might be better to use a simple array or a function, rather than a map.
