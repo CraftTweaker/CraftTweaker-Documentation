@@ -403,6 +403,30 @@ myMCEntity.getPositionVec();
 
 :::
 
+:::group{name=getRotationPitch}
+
+Return Type: float
+
+```zenscript
+// MCEntity.getRotationPitch() as float
+
+myMCEntity.getRotationPitch();
+```
+
+:::
+
+:::group{name=getRotationYaw}
+
+Return Type: float
+
+```zenscript
+// MCEntity.getRotationYaw() as float
+
+myMCEntity.getRotationYaw();
+```
+
+:::
+
 :::group{name=getTags}
 
 Gets all the tags that are attached to the entity.
@@ -966,6 +990,36 @@ MCEntity.setPositionAndUpdate(x as double, y as double, z as double) as void
 
 :::
 
+:::group{name=setRotationPitch}
+
+Return Type: void
+
+```zenscript
+MCEntity.setRotationPitch(newPitch as float) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newPitch | float | No Description Provided |
+
+
+:::
+
+:::group{name=setRotationYaw}
+
+Return Type: void
+
+```zenscript
+MCEntity.setRotationYaw(newYaw as float) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| newYaw | float | No Description Provided |
+
+
+:::
+
 :::group{name=setSilent}
 
 Sets if this Entity is silent or not.
@@ -1097,6 +1151,8 @@ MCEntity.updatePersistentData(data as MapData) as void
 | persistedData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the persisted NBT tag. |
 | position | [BlockPos](/vanilla/api/util/BlockPos) | true | false | Gets this Entity's position in the world. |
 | positionVec | [MCVector3d](/vanilla/api/util/MCVector3d) | true | false | No Description Provided |
+| rotationPitch | float | true | true | No Description Provided |
+| rotationYaw | float | true | true | No Description Provided |
 | silent | boolean | true | true | Checks if this Entity is silent. <br />  <br />  Silent Entities do not play sounds. |
 | sneaking | boolean | true | true | Checks if this Entity is sneaking or not. |
 | spectator | boolean | true | false | Checks if this Entity is in spectator mode. |
