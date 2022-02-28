@@ -120,6 +120,25 @@ GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<R
 
 :::
 
+:::group{name=remove}
+
+Removes recipes by output
+
+Return Type: void
+
+```zenscript
+// GenericRecipesManager.remove(output as IIngredient) as void
+
+recipes.remove(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | The recipe result |
+
+
+:::
+
 :::group{name=removeAll}
 
 Removes all recipes from all managers.
@@ -215,6 +234,8 @@ recipes.removeByRegex("\\d_\\d");
 :::
 
 :::group{name=removeRecipe}
+
+::deprecated[use remove(IIngredient output)]
 
 Removes recipes by output
 
