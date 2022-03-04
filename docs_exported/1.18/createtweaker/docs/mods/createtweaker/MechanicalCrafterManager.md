@@ -42,7 +42,7 @@ Return Type: void
 ```zenscript
 // MechanicalCrafterManager.addMirroredRecipe(name as string, output as IItemStack, ingredients as IIngredient[][]) as void
 
-<recipetype:create:mechanical_crafting>.addMirroredRecipe("mirrorized", <item:minecraft:glass>, [[<item:minecraft:diamond>, <item:minecraft:air>, <item:minecraft:diamond>], [<<item:minecraft:air>, <item:minecraft:diamond>, <item:minecraft:air>]]);
+<recipetype:create:mechanical_crafting>.addMirroredRecipe("mirrorized", <item:minecraft:glass>, [[<item:minecraft:diamond>, <item:minecraft:air>, <item:minecraft:diamond>], [<item:minecraft:air>, <item:minecraft:diamond>, <item:minecraft:air>]]);
 ```
 
 | Parameter | Type | Description |
@@ -63,7 +63,7 @@ Return Type: void
 ```zenscript
 // MechanicalCrafterManager.addRecipe(name as string, output as IItemStack, ingredients as IIngredient[][]) as void
 
-<recipetype:create:mechanical_crafting>.addRecipe("mechanized", <item:minecraft:diamond>, [[<item:minecraft:dirt>, <item:minecraft:air>, <item:minecraft:dirt>], [<<item:minecraft:air>, <item:minecraft:dirt>, <item:minecraft:air>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("mechanized", <item:minecraft:diamond>, [[<item:minecraft:dirt>, <item:minecraft:air>, <item:minecraft:dirt>], [<item:minecraft:air>, <item:minecraft:dirt>, <item:minecraft:air>]]);
 ```
 
 | Parameter | Type | Description |
