@@ -196,7 +196,7 @@ craftingTable.removeByRegex(".*wool.*");
 This method allows you to remove all the recipes from the Recipe Manager.
 
 ```zenscript
-removeAll(String regex);
+removeAll();
 ```
 
 An example use case for this method is removing all the Blast Furnace recipes.
