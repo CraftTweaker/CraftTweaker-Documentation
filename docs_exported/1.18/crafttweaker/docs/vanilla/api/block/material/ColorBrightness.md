@@ -13,8 +13,8 @@ import crafttweaker.api.block.material.ColorBrightness;
 ColorBrightness is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-ColorBrightness.LOW
-ColorBrightness.NORMAL
-ColorBrightness.HIGH
-ColorBrightness.LOWEST
+<constant:minecraft:material/color/brightness:low>
+<constant:minecraft:material/color/brightness:normal>
+<constant:minecraft:material/color/brightness:high>
+<constant:minecraft:material/color/brightness:lowest>
 ```

@@ -1,1 +1,1 @@
-{"path":"vanilla/api/entity/HumanoidArm.md","zenCodeName":"crafttweaker.api.entity.HumanoidArm","searchTerms":["getName","LEFT","RIGHT","opposite","getOpposite"]}
+{"path":"vanilla/api/entity/HumanoidArm.md","zenCodeName":"crafttweaker.api.entity.HumanoidArm","searchTerms":["<constant:minecraft:entity/humanoidarm:left>","<constant:minecraft:entity/humanoidarm:right>","getName","opposite","getOpposite"]}

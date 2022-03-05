@@ -19,8 +19,8 @@ Plane implements the following interfaces. That means all methods defined in the
 Plane is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-Plane.HORIZONTAL
-Plane.VERTICAL
+<constant:minecraft:direction/plane:horizontal>
+<constant:minecraft:direction/plane:vertical>
 ```
 ## Methods
 

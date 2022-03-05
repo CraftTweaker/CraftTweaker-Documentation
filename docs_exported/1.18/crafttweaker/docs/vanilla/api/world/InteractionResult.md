@@ -13,11 +13,11 @@ import crafttweaker.api.world.InteractionResult;
 InteractionResult is an enum. It has 5 enum constants. They are accessible using the code below.
 
 ```zenscript
-InteractionResult.SUCCESS
-InteractionResult.CONSUME
-InteractionResult.CONSUME_PARTIAL
-InteractionResult.PASS
-InteractionResult.FAIL
+<constant:minecraft:world/interactionresult:success>
+<constant:minecraft:world/interactionresult:consume>
+<constant:minecraft:world/interactionresult:consume_partial>
+<constant:minecraft:world/interactionresult:pass>
+<constant:minecraft:world/interactionresult:fail>
 ```
 ## Methods
 

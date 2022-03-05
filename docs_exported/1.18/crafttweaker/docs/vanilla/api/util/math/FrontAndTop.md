@@ -18,18 +18,18 @@ FrontAndTop implements the following interfaces. That means all methods defined 
 FrontAndTop is an enum. It has 12 enum constants. They are accessible using the code below.
 
 ```zenscript
-FrontAndTop.DOWN_EAST
-FrontAndTop.DOWN_NORTH
-FrontAndTop.DOWN_SOUTH
-FrontAndTop.DOWN_WEST
-FrontAndTop.UP_EAST
-FrontAndTop.UP_NORTH
-FrontAndTop.UP_SOUTH
-FrontAndTop.UP_WEST
-FrontAndTop.WEST_UP
-FrontAndTop.EAST_UP
-FrontAndTop.NORTH_UP
-FrontAndTop.SOUTH_UP
+<constant:minecraft:direction/frontandtop:down_east>
+<constant:minecraft:direction/frontandtop:down_north>
+<constant:minecraft:direction/frontandtop:down_south>
+<constant:minecraft:direction/frontandtop:down_west>
+<constant:minecraft:direction/frontandtop:up_east>
+<constant:minecraft:direction/frontandtop:up_north>
+<constant:minecraft:direction/frontandtop:up_south>
+<constant:minecraft:direction/frontandtop:up_west>
+<constant:minecraft:direction/frontandtop:west_up>
+<constant:minecraft:direction/frontandtop:east_up>
+<constant:minecraft:direction/frontandtop:north_up>
+<constant:minecraft:direction/frontandtop:south_up>
 ```
 ## Methods
 

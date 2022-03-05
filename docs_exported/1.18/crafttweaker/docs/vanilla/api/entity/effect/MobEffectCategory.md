@@ -13,9 +13,9 @@ import crafttweaker.api.entity.effect.MobEffectCategory;
 MobEffectCategory is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-MobEffectCategory.BENEFICIAL
-MobEffectCategory.HARMFUL
-MobEffectCategory.NEUTRAL
+<constant:minecraft:mobeffect/category:beneficial>
+<constant:minecraft:mobeffect/category:harmful>
+<constant:minecraft:mobeffect/category:neutral>
 ```
 ## Methods
 

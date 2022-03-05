@@ -13,6 +13,6 @@ import crafttweaker.api.util.InteractionHand;
 InteractionHand is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-InteractionHand.MAIN_HAND
-InteractionHand.OFF_HAND
+<constant:minecraft:interactionhand:main_hand>
+<constant:minecraft:interactionhand:off_hand>
 ```

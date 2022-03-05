@@ -13,8 +13,8 @@ import crafttweaker.api.entity.equipment.EquipmentSlotType;
 EquipmentSlotType is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-EquipmentSlotType.HAND
-EquipmentSlotType.ARMOR
+<constant:minecraft:equipmentslot/type:hand>
+<constant:minecraft:equipmentslot/type:armor>
 ```
 ## Methods
 

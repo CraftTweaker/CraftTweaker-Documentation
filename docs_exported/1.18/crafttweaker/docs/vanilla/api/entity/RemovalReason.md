@@ -13,11 +13,11 @@ import crafttweaker.api.entity.RemovalReason;
 RemovalReason is an enum. It has 5 enum constants. They are accessible using the code below.
 
 ```zenscript
-RemovalReason.KILLED
-RemovalReason.DISCARDED
-RemovalReason.UNLOADED_TO_CHUNK
-RemovalReason.UNLOADED_WITH_PLAYER
-RemovalReason.CHANGED_DIMENSION
+<constant:minecraft:entity/removalreason:killed>
+<constant:minecraft:entity/removalreason:discarded>
+<constant:minecraft:entity/removalreason:unloaded_to_chunk>
+<constant:minecraft:entity/removalreason:unloaded_with_player>
+<constant:minecraft:entity/removalreason:changed_dimension>
 ```
 ## Methods
 

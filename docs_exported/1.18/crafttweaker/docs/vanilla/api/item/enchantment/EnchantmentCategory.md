@@ -13,20 +13,20 @@ import crafttweaker.api.item.enchantment.EnchantmentCategory;
 EnchantmentCategory is an enum. It has 14 enum constants. They are accessible using the code below.
 
 ```zenscript
-EnchantmentCategory.ARMOR
-EnchantmentCategory.ARMOR_FEET
-EnchantmentCategory.ARMOR_LEGS
-EnchantmentCategory.ARMOR_CHEST
-EnchantmentCategory.ARMOR_HEAD
-EnchantmentCategory.WEAPON
-EnchantmentCategory.DIGGER
-EnchantmentCategory.FISHING_ROD
-EnchantmentCategory.TRIDENT
-EnchantmentCategory.BREAKABLE
-EnchantmentCategory.BOW
-EnchantmentCategory.WEARABLE
-EnchantmentCategory.CROSSBOW
-EnchantmentCategory.VANISHABLE
+<constant:minecraft:enchantment/category:armor>
+<constant:minecraft:enchantment/category:armor_feet>
+<constant:minecraft:enchantment/category:armor_legs>
+<constant:minecraft:enchantment/category:armor_chest>
+<constant:minecraft:enchantment/category:armor_head>
+<constant:minecraft:enchantment/category:weapon>
+<constant:minecraft:enchantment/category:digger>
+<constant:minecraft:enchantment/category:fishing_rod>
+<constant:minecraft:enchantment/category:trident>
+<constant:minecraft:enchantment/category:breakable>
+<constant:minecraft:enchantment/category:bow>
+<constant:minecraft:enchantment/category:wearable>
+<constant:minecraft:enchantment/category:crossbow>
+<constant:minecraft:enchantment/category:vanishable>
 ```
 ## Methods
 

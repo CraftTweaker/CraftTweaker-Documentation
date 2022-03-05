@@ -13,9 +13,9 @@ import crafttweaker.api.block.material.PushReaction;
 PushReaction is an enum. It has 5 enum constants. They are accessible using the code below.
 
 ```zenscript
-PushReaction.NORMAL
-PushReaction.DESTROY
-PushReaction.BLOCK
-PushReaction.IGNORE
-PushReaction.PUSH_ONLY
+<constant:minecraft:material/pushreaction:normal>
+<constant:minecraft:material/pushreaction:destroy>
+<constant:minecraft:material/pushreaction:block>
+<constant:minecraft:material/pushreaction:ignore>
+<constant:minecraft:material/pushreaction:push_only>
 ```

@@ -17,9 +17,9 @@ import crafttweaker.api.events.EventPriority;
 EventPriority is an enum. It has 5 enum constants. They are accessible using the code below.
 
 ```zenscript
-EventPriority.HIGHEST
-EventPriority.HIGH
-EventPriority.NORMAL
-EventPriority.LOW
-EventPriority.LOWEST
+<constant:forge:event/priority:highest>
+<constant:forge:event/priority:high>
+<constant:forge:event/priority:normal>
+<constant:forge:event/priority:low>
+<constant:forge:event/priority:lowest>
 ```

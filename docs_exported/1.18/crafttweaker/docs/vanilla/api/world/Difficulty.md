@@ -13,10 +13,10 @@ import crafttweaker.api.world.Difficulty;
 Difficulty is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-Difficulty.PEACEFUL
-Difficulty.EASY
-Difficulty.NORMAL
-Difficulty.HARD
+<constant:minecraft:world/difficulty:peaceful>
+<constant:minecraft:world/difficulty:easy>
+<constant:minecraft:world/difficulty:normal>
+<constant:minecraft:world/difficulty:hard>
 ```
 ## Methods
 

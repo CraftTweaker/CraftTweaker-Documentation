@@ -13,10 +13,10 @@ import crafttweaker.api.world.GameType;
 GameType is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-GameType.SURVIVAL
-GameType.CREATIVE
-GameType.ADVENTURE
-GameType.SPECTATOR
+<constant:minecraft:world/gametype:survival>
+<constant:minecraft:world/gametype:creative>
+<constant:minecraft:world/gametype:adventure>
+<constant:minecraft:world/gametype:spectator>
 ```
 ## Methods
 

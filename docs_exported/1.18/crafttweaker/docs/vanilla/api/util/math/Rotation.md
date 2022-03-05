@@ -13,10 +13,10 @@ import crafttweaker.api.util.math.Rotation;
 Rotation is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-Rotation.NONE
-Rotation.CLOCKWISE_90
-Rotation.CLOCKWISE_180
-Rotation.COUNTERCLOCKWISE_90
+<constant:minecraft:direction/rotation:none>
+<constant:minecraft:direction/rotation:clockwise_90>
+<constant:minecraft:direction/rotation:clockwise_180>
+<constant:minecraft:direction/rotation:counterclockwise_90>
 ```
 ## Methods
 

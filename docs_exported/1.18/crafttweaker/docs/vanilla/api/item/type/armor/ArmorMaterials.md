@@ -18,11 +18,11 @@ ArmorMaterials implements the following interfaces. That means all methods defin
 ArmorMaterials is an enum. It has 7 enum constants. They are accessible using the code below.
 
 ```zenscript
-ArmorMaterials.LEATHER
-ArmorMaterials.CHAIN
-ArmorMaterials.IRON
-ArmorMaterials.GOLD
-ArmorMaterials.DIAMOND
-ArmorMaterials.TURTLE
-ArmorMaterials.NETHERITE
+<constant:minecraft:armor/materials:leather>
+<constant:minecraft:armor/materials:chain>
+<constant:minecraft:armor/materials:iron>
+<constant:minecraft:armor/materials:gold>
+<constant:minecraft:armor/materials:diamond>
+<constant:minecraft:armor/materials:turtle>
+<constant:minecraft:armor/materials:netherite>
 ```

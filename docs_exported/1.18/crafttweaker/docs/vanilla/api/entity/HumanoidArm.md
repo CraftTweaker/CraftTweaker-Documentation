@@ -13,8 +13,8 @@ import crafttweaker.api.entity.HumanoidArm;
 HumanoidArm is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-HumanoidArm.LEFT
-HumanoidArm.RIGHT
+<constant:minecraft:entity/humanoidarm:left>
+<constant:minecraft:entity/humanoidarm:right>
 ```
 ## Methods
 

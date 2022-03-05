@@ -13,8 +13,8 @@ import crafttweaker.api.loot.EntityTarget;
 EntityTarget is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-EntityTarget.THIS
-EntityTarget.KILLER
-EntityTarget.DIRECT_KILLER
-EntityTarget.KILLER_PLAYER
+<constant:minecraft:entitytarget:this>
+<constant:minecraft:entitytarget:killer>
+<constant:minecraft:entitytarget:direct_killer>
+<constant:minecraft:entitytarget:killer_player>
 ```

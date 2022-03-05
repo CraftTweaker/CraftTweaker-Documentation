@@ -1,1 +1,1 @@
-{"path":"vanilla/api/world/clip/BlockClipContext.md","zenCodeName":"crafttweaker.api.world.BlockClipContext","searchTerms":["COLLIDER","OUTLINE","VISUAL"]}
+{"path":"vanilla/api/world/clip/BlockClipContext.md","zenCodeName":"crafttweaker.api.world.BlockClipContext","searchTerms":["<constant:minecraft:world/clip/blockcontext:outline>","<constant:minecraft:world/clip/blockcontext:visual>","<constant:minecraft:world/clip/blockcontext:collider>"]}

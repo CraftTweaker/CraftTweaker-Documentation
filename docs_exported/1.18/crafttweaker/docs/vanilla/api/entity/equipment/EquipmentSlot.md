@@ -13,12 +13,12 @@ import crafttweaker.api.entity.equipment.EquipmentSlot;
 EquipmentSlot is an enum. It has 6 enum constants. They are accessible using the code below.
 
 ```zenscript
-EquipmentSlot.MAINHAND
-EquipmentSlot.OFFHAND
-EquipmentSlot.FEET
-EquipmentSlot.LEGS
-EquipmentSlot.CHEST
-EquipmentSlot.HEAD
+<constant:minecraft:equipmentslot:mainhand>
+<constant:minecraft:equipmentslot:offhand>
+<constant:minecraft:equipmentslot:feet>
+<constant:minecraft:equipmentslot:legs>
+<constant:minecraft:equipmentslot:chest>
+<constant:minecraft:equipmentslot:head>
 ```
 ## Methods
 

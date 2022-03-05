@@ -13,10 +13,10 @@ import crafttweaker.api.item.enchantment.Rarity;
 Rarity is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
-Rarity.COMMON
-Rarity.UNCOMMON
-Rarity.RARE
-Rarity.VERY_RARE
+<constant:minecraft:enchantment/rarity:common>
+<constant:minecraft:enchantment/rarity:uncommon>
+<constant:minecraft:enchantment/rarity:rare>
+<constant:minecraft:enchantment/rarity:very_rare>
 ```
 ## Methods
 

@@ -18,12 +18,12 @@ Direction implements the following interfaces. That means all methods defined in
 Direction is an enum. It has 6 enum constants. They are accessible using the code below.
 
 ```zenscript
-Direction.DOWN
-Direction.UP
-Direction.NORTH
-Direction.SOUTH
-Direction.WEST
-Direction.EAST
+<constant:minecraft:direction:down>
+<constant:minecraft:direction:up>
+<constant:minecraft:direction:north>
+<constant:minecraft:direction:south>
+<constant:minecraft:direction:west>
+<constant:minecraft:direction:east>
 ```
 ## Methods
 

@@ -13,7 +13,7 @@ import crafttweaker.api.world.ExplosionBlockInteraction;
 ExplosionBlockInteraction is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-ExplosionBlockInteraction.NONE
-ExplosionBlockInteraction.BREAK
-ExplosionBlockInteraction.DESTROY
+<constant:minecraft:explosion/blockinteraction:none>
+<constant:minecraft:explosion/blockinteraction:break>
+<constant:minecraft:explosion/blockinteraction:destroy>
 ```

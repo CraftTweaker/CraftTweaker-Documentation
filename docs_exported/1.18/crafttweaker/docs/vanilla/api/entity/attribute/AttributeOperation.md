@@ -13,9 +13,9 @@ import crafttweaker.api.entity.attribute.AttributeOperation;
 AttributeOperation is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-AttributeOperation.ADDITION
-AttributeOperation.MULTIPLY_BASE
-AttributeOperation.MULTIPLY_TOTAL
+<constant:minecraft:attribute/operation:addition>
+<constant:minecraft:attribute/operation:multiply_base>
+<constant:minecraft:attribute/operation:multiply_total>
 ```
 ## Methods
 

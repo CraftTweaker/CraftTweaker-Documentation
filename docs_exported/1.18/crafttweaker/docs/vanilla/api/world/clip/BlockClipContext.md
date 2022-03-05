@@ -13,7 +13,7 @@ import crafttweaker.api.world.BlockClipContext;
 BlockClipContext is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-BlockClipContext.COLLIDER
-BlockClipContext.OUTLINE
-BlockClipContext.VISUAL
+<constant:minecraft:world/clip/blockcontext:collider>
+<constant:minecraft:world/clip/blockcontext:outline>
+<constant:minecraft:world/clip/blockcontext:visual>
 ```

@@ -13,9 +13,9 @@ import crafttweaker.api.advancement.FrameType;
 FrameType is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-FrameType.TASK
-FrameType.CHALLENGE
-FrameType.GOAL
+<constant:minecraft:advancement/frametype:task>
+<constant:minecraft:advancement/frametype:challenge>
+<constant:minecraft:advancement/frametype:goal>
 ```
 ## Methods
 

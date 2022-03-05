@@ -13,8 +13,8 @@ import crafttweaker.api.util.AxisDirection;
 AxisDirection is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-AxisDirection.POSITIVE
-AxisDirection.NEGATIVE
+<constant:minecraft:direction/axisdirection:positive>
+<constant:minecraft:direction/axisdirection:negative>
 ```
 ## Methods
 

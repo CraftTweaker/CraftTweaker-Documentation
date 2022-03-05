@@ -19,9 +19,9 @@ Axis implements the following interfaces. That means all methods defined in thes
 Axis is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-Axis.X
-Axis.Y
-Axis.Z
+<constant:minecraft:direction/axis:x>
+<constant:minecraft:direction/axis:y>
+<constant:minecraft:direction/axis:z>
 ```
 ## Methods
 

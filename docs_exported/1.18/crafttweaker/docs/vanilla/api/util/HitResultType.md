@@ -13,7 +13,7 @@ import crafttweaker.api.util.HitResultType;
 HitResultType is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-HitResultType.MISS
-HitResultType.BLOCK
-HitResultType.ENTITY
+<constant:minecraft:hitresult/type:miss>
+<constant:minecraft:hitresult/type:block>
+<constant:minecraft:hitresult/type:entity>
 ```

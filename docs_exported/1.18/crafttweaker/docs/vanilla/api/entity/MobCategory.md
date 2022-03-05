@@ -18,14 +18,14 @@ MobCategory implements the following interfaces. That means all methods defined 
 MobCategory is an enum. It has 8 enum constants. They are accessible using the code below.
 
 ```zenscript
-MobCategory.MONSTER
-MobCategory.CREATURE
-MobCategory.AMBIENT
-MobCategory.AXOLOTLS
-MobCategory.UNDERGROUND_WATER_CREATURE
-MobCategory.WATER_CREATURE
-MobCategory.WATER_AMBIENT
-MobCategory.MISC
+<constant:minecraft:mobcategory:monster>
+<constant:minecraft:mobcategory:creature>
+<constant:minecraft:mobcategory:ambient>
+<constant:minecraft:mobcategory:axolotls>
+<constant:minecraft:mobcategory:underground_water_creature>
+<constant:minecraft:mobcategory:water_creature>
+<constant:minecraft:mobcategory:water_ambient>
+<constant:minecraft:mobcategory:misc>
 ```
 ## Methods
 

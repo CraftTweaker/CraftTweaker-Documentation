@@ -13,28 +13,28 @@ import crafttweaker.api.text.ChatFormatting;
 ChatFormatting is an enum. It has 22 enum constants. They are accessible using the code below.
 
 ```zenscript
-ChatFormatting.BLACK
-ChatFormatting.DARK_BLUE
-ChatFormatting.DARK_GREEN
-ChatFormatting.DARK_AQUA
-ChatFormatting.DARK_RED
-ChatFormatting.DARK_PURPLE
-ChatFormatting.GOLD
-ChatFormatting.GRAY
-ChatFormatting.DARK_GRAY
-ChatFormatting.BLUE
-ChatFormatting.GREEN
-ChatFormatting.AQUA
-ChatFormatting.RED
-ChatFormatting.LIGHT_PURPLE
-ChatFormatting.YELLOW
-ChatFormatting.WHITE
-ChatFormatting.OBFUSCATED
-ChatFormatting.BOLD
-ChatFormatting.STRIKETHROUGH
-ChatFormatting.UNDERLINE
-ChatFormatting.ITALIC
-ChatFormatting.RESET
+<constant:minecraft:formatting:black>
+<constant:minecraft:formatting:dark_blue>
+<constant:minecraft:formatting:dark_green>
+<constant:minecraft:formatting:dark_aqua>
+<constant:minecraft:formatting:dark_red>
+<constant:minecraft:formatting:dark_purple>
+<constant:minecraft:formatting:gold>
+<constant:minecraft:formatting:gray>
+<constant:minecraft:formatting:dark_gray>
+<constant:minecraft:formatting:blue>
+<constant:minecraft:formatting:green>
+<constant:minecraft:formatting:aqua>
+<constant:minecraft:formatting:red>
+<constant:minecraft:formatting:light_purple>
+<constant:minecraft:formatting:yellow>
+<constant:minecraft:formatting:white>
+<constant:minecraft:formatting:obfuscated>
+<constant:minecraft:formatting:bold>
+<constant:minecraft:formatting:strikethrough>
+<constant:minecraft:formatting:underline>
+<constant:minecraft:formatting:italic>
+<constant:minecraft:formatting:reset>
 ```
 ## Casters
 

@@ -13,7 +13,7 @@ import crafttweaker.api.event.EventResult;
 EventResult is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-EventResult.DENY
-EventResult.DEFAULT
-EventResult.ALLOW
+<constant:forge:event/result:deny>
+<constant:forge:event/result:default>
+<constant:forge:event/result:allow>
 ```

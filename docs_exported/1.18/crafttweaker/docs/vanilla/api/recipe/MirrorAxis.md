@@ -17,19 +17,19 @@ MirrorAxis is an enum. It has 5 enum constants. They are accessible using the co
 ```zenscript
 
 // Mirror the recipe on all axes.
-MirrorAxis.ALL
+<constant:minecraft:mirroraxis:all>
 
 // Mirror the recipe diagonally.
-MirrorAxis.DIAGONAL
+<constant:minecraft:mirroraxis:diagonal>
 
 // Mirror the recipe horizontally.
-MirrorAxis.HORIZONTAL
+<constant:minecraft:mirroraxis:horizontal>
 
 // Do not mirror the recipe.
-MirrorAxis.NONE
+<constant:minecraft:mirroraxis:none>
 
 // Mirror the recipe vertically.
-MirrorAxis.VERTICAL
+<constant:minecraft:mirroraxis:vertical>
 ```
 ## Static Properties
 

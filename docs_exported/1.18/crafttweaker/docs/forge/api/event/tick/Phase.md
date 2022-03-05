@@ -13,6 +13,6 @@ import crafttweaker.api.event.tick.Phase;
 Phase is an enum. It has 2 enum constants. They are accessible using the code below.
 
 ```zenscript
-Phase.START
-Phase.END
+<constant:forge:event/tick/phase:start>
+<constant:forge:event/tick/phase:end>
 ```

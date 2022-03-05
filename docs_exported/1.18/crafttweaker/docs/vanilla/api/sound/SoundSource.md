@@ -13,16 +13,16 @@ import crafttweaker.api.sound.SoundSource;
 SoundSource is an enum. It has 10 enum constants. They are accessible using the code below.
 
 ```zenscript
-SoundSource.MASTER
-SoundSource.MUSIC
-SoundSource.RECORDS
-SoundSource.WEATHER
-SoundSource.BLOCKS
-SoundSource.HOSTILE
-SoundSource.NEUTRAL
-SoundSource.PLAYERS
-SoundSource.AMBIENT
-SoundSource.VOICE
+<constant:minecraft:sound/source:master>
+<constant:minecraft:sound/source:music>
+<constant:minecraft:sound/source:records>
+<constant:minecraft:sound/source:weather>
+<constant:minecraft:sound/source:blocks>
+<constant:minecraft:sound/source:hostile>
+<constant:minecraft:sound/source:neutral>
+<constant:minecraft:sound/source:players>
+<constant:minecraft:sound/source:ambient>
+<constant:minecraft:sound/source:voice>
 ```
 ## Methods
 

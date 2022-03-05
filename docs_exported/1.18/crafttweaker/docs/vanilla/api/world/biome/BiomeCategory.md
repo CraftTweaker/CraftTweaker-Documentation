@@ -18,25 +18,25 @@ BiomeCategory implements the following interfaces. That means all methods define
 BiomeCategory is an enum. It has 19 enum constants. They are accessible using the code below.
 
 ```zenscript
-BiomeCategory.NONE
-BiomeCategory.TAIGA
-BiomeCategory.EXTREME_HILLS
-BiomeCategory.JUNGLE
-BiomeCategory.MESA
-BiomeCategory.PLAINS
-BiomeCategory.SAVANNA
-BiomeCategory.ICY
-BiomeCategory.THEEND
-BiomeCategory.BEACH
-BiomeCategory.FOREST
-BiomeCategory.OCEAN
-BiomeCategory.DESERT
-BiomeCategory.RIVER
-BiomeCategory.SWAMP
-BiomeCategory.MUSHROOM
-BiomeCategory.NETHER
-BiomeCategory.UNDERGROUND
-BiomeCategory.MOUNTAIN
+<constant:minecraft:world/biome/category:none>
+<constant:minecraft:world/biome/category:taiga>
+<constant:minecraft:world/biome/category:extreme_hills>
+<constant:minecraft:world/biome/category:jungle>
+<constant:minecraft:world/biome/category:mesa>
+<constant:minecraft:world/biome/category:plains>
+<constant:minecraft:world/biome/category:savanna>
+<constant:minecraft:world/biome/category:icy>
+<constant:minecraft:world/biome/category:theend>
+<constant:minecraft:world/biome/category:beach>
+<constant:minecraft:world/biome/category:forest>
+<constant:minecraft:world/biome/category:ocean>
+<constant:minecraft:world/biome/category:desert>
+<constant:minecraft:world/biome/category:river>
+<constant:minecraft:world/biome/category:swamp>
+<constant:minecraft:world/biome/category:mushroom>
+<constant:minecraft:world/biome/category:nether>
+<constant:minecraft:world/biome/category:underground>
+<constant:minecraft:world/biome/category:mountain>
 ```
 ## Methods
 

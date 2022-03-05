@@ -13,9 +13,9 @@ import crafttweaker.api.event.tick.Type;
 Type is an enum. It has 5 enum constants. They are accessible using the code below.
 
 ```zenscript
-Type.WORLD
-Type.PLAYER
-Type.CLIENT
-Type.SERVER
-Type.RENDER
+<constant:forge:event/tick/type:world>
+<constant:forge:event/tick/type:player>
+<constant:forge:event/tick/type:client>
+<constant:forge:event/tick/type:server>
+<constant:forge:event/tick/type:render>
 ```

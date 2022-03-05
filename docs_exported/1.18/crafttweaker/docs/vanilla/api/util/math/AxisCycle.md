@@ -13,9 +13,9 @@ import crafttweaker.api.util.math.AxisCycle;
 AxisCycle is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-AxisCycle.NONE
-AxisCycle.FORWARD
-AxisCycle.BACKWARD
+<constant:minecraft:direction/axiscycle:none>
+<constant:minecraft:direction/axiscycle:forward>
+<constant:minecraft:direction/axiscycle:backward>
 ```
 ## Methods
 
