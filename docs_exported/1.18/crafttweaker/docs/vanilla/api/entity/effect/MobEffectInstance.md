@@ -30,6 +30,87 @@ MobEffectInstance.load(data as MapData) as MobEffectInstance
 
 :::
 
+## Constructors
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect, duration as int) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>, 100);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| duration | int | No description provided |
+
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| duration | int | No description provided |
+| amplifier | int | No description provided |
+
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| duration | int | No description provided |
+| amplifier | int | No description provided |
+| ambient | boolean | No description provided |
+| visible | boolean | No description provided |
+
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean, showIcon as boolean) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| duration | int | No description provided |
+| amplifier | int | No description provided |
+| ambient | boolean | No description provided |
+| visible | boolean | No description provided |
+| showIcon | boolean | No description provided |
+
+
+
+```zenscript
+new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean, showIcon as boolean, hiddenEffect as MobEffectInstance) as MobEffectInstance
+new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false, new MobEffectInstance(<mobeffect:minecraft:haste>, 200, 3));
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| duration | int | No description provided |
+| amplifier | int | No description provided |
+| ambient | boolean | No description provided |
+| visible | boolean | No description provided |
+| showIcon | boolean | No description provided |
+| hiddenEffect | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No description provided |
+
+
+
 ## Methods
 
 :::group{name=applyEffect}
