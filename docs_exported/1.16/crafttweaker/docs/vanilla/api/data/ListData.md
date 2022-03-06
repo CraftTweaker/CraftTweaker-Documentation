@@ -110,6 +110,22 @@ Return Type: [INumberData](/vanilla/api/data/INumberData)
 
 :::
 
+:::group{name=getData}
+
+Return Type: T
+
+```zenscript
+ListData.getData<T : IData>(index as int) as T
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| index | int | No Description Provided |
+| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+
+
+:::
+
 :::group{name=getId}
 
 Gets the ID of the internal NBT tag.
