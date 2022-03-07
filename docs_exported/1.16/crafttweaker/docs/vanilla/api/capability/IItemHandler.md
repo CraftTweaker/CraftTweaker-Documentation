@@ -18,11 +18,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemHandler.extractItem(slot as int, amount as int, simulate as boolean) as IItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | int | No Description Provided |
-| amount | int | No Description Provided |
-| simulate | boolean | No Description Provided |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| slot | int | No Description Provided | false |  |
+| amount | int | No Description Provided | false |  |
+| simulate | boolean | No Description Provided | true | false |
 
 
 :::
@@ -77,11 +77,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemHandler.insertItem(slot as int, stack as IItemStack, simulate as boolean) as IItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | int | No Description Provided |
-| stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
-| simulate | boolean | No Description Provided |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| slot | int | No Description Provided | false |  |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided | false |  |
+| simulate | boolean | No Description Provided | true | false |
 
 
 :::
