@@ -8,6 +8,10 @@ import crafttweaker.api.entity.MCEntity;
 ```
 
 
+## Extending CapabilityProvider&lt;MCEntity&gt;
+
+MCEntity extends [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt;. That means all methods available in [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCEntity](/vanilla/api/entity/MCEntity)&gt; are also available in MCEntity
+
 ## Methods
 
 :::group{name=addTag}

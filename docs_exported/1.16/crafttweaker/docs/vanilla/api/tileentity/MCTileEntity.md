@@ -10,6 +10,10 @@ import crafttweaker.api.tileentity.MCTileEntity;
 ```
 
 
+## Extending CapabilityProvider&lt;MCTileEntity&gt;
+
+MCTileEntity extends [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCTileEntity](/vanilla/api/tileentity/MCTileEntity)&gt;. That means all methods available in [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCTileEntity](/vanilla/api/tileentity/MCTileEntity)&gt; are also available in MCTileEntity
+
 ## Methods
 
 :::group{name=updateData}

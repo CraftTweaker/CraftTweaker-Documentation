@@ -18,6 +18,17 @@
         "Brewing": {
           "Brewing": "vanilla/api/brewing/Brewing.md"
         },
+        "Capability": {
+          "Capabilities": "vanilla/api/capability/Capabilities.md",
+          "Capability": "vanilla/api/capability/Capability.md",
+          "CapabilityProvider": "vanilla/api/capability/CapabilityProvider.md",
+          "ICapabilityProvider": "vanilla/api/capability/ICapabilityProvider.md",
+          "IEnergyStorage": "vanilla/api/capability/IEnergyStorage.md",
+          "IFluidHandler": "vanilla/api/capability/IFluidHandler.md",
+          "IFluidHandlerAction": "vanilla/api/capability/IFluidHandlerAction.md",
+          "IFluidHandlerItem": "vanilla/api/capability/IFluidHandlerItem.md",
+          "IItemHandler": "vanilla/api/capability/IItemHandler.md"
+        },
         "Commands": {
           "Custom": {
             "CustomCommands": "vanilla/api/commands/custom/CustomCommands.md",

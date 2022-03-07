@@ -11,6 +11,10 @@ import crafttweaker.api.world.MCWorld;
 ```
 
 
+## Extending CapabilityProvider&lt;MCWorld&gt;
+
+MCWorld extends [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCWorld](/vanilla/api/world/MCWorld)&gt;. That means all methods available in [CapabilityProvider](/vanilla/api/capability/CapabilityProvider)&lt;[MCWorld](/vanilla/api/world/MCWorld)&gt; are also available in MCWorld
+
 ## Implemented Interfaces
 MCWorld implements the following interfaces. That means all methods defined in these interfaces are also available in MCWorld
 
