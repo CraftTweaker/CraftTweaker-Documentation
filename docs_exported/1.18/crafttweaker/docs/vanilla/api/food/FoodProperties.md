@@ -193,10 +193,28 @@ FoodProperties.setNutrition(nutrition as int) as FoodProperties
 
 :::group{name=setNutrition}
 
+Replaced by `setSaturationModifier`, use that method instead of this.
+
+Returns: this object for chaining  
 Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 
 ```zenscript
 FoodProperties.setNutrition(saturationModifier as float) as FoodProperties
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| saturationModifier | float | the new saturation modifier |
+
+
+:::
+
+:::group{name=setSaturationModifier}
+
+Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
+
+```zenscript
+FoodProperties.setSaturationModifier(saturationModifier as float) as FoodProperties
 ```
 
 | Parameter | Type | Description |
