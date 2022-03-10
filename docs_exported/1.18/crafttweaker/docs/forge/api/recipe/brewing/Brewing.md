@@ -1,4 +1,4 @@
-# recipe/Brewing
+# Brewing
 
 
 
@@ -6,7 +6,7 @@
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.recipe/Brewing;
+import crafttweaker.api.recipe.Brewing;
 ```
 
 
@@ -19,7 +19,7 @@ Adds a new brewing recipe to the Brewing Stand.
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient) as void
+// Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient) as void
 
 brewing.addRecipe(<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft:arrow>);
 ```
@@ -40,7 +40,7 @@ Removes an ItemStack to ItemStack recipe from the Brewing Stand. These are mainl
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack) as void
+// Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack) as void
 
 brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:minecraft:stick>);
 ```
@@ -61,7 +61,7 @@ Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the d
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.removeRecipe(output as Potion, reagent as IItemStack, input as Potion) as void
+// Brewing.removeRecipe(output as Potion, reagent as IItemStack, input as Potion) as void
 
 brewing.removeRecipe(<potion:minecraft:thick>, <item:minecraft:glowstone_dust>, <potion:minecraft:water>);
 ```
@@ -82,7 +82,7 @@ Removes recipes from the Brewing Stand based on their Input (The ItemStack that 
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.removeRecipeByInput(input as IItemStack) as void
+// Brewing.removeRecipeByInput(input as IItemStack) as void
 
 brewing.removeRecipeByInput(<item:minecraft:glass>);
 ```
@@ -102,7 +102,7 @@ Removes recipes from the Brewing Stand based on their input Potion. These are ma
 Return Type: void
 
 ```zenscript
-recipe/Brewing.removeRecipeByInputPotion(input as Potion) as void
+Brewing.removeRecipeByInputPotion(input as Potion) as void
 ```
 
 | Parameter | Type | Description |
@@ -119,7 +119,7 @@ Removes recipes from the Brewing Stand based on their output Potion. These are m
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.removeRecipeByOutputPotion(output as Potion) as void
+// Brewing.removeRecipeByOutputPotion(output as Potion) as void
 
 brewing.removeRecipeByOutputPotion(<potion:minecraft:swiftness>);
 ```
@@ -138,7 +138,7 @@ Removes recipes from the Brewing Stand based on their Reagent (The item in the t
 Return Type: void
 
 ```zenscript
-// recipe/Brewing.removeRecipeByReagent(reagent as IItemStack) as void
+// Brewing.removeRecipeByReagent(reagent as IItemStack) as void
 
 brewing.removeRecipeByReagent(<item:minecraft:golden_carrot>);
 ```
