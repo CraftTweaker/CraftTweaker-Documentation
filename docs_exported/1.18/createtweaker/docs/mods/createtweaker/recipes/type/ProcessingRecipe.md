@@ -17,10 +17,10 @@ ProcessingRecipe implements the following interfaces. That means all methods def
 
 :::group{name=getFluidIngredients}
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[FluidIngredient](/mods/createtweaker/FluidIngredient)&gt;
 
 ```zenscript
-// ProcessingRecipe.getFluidIngredients() as stdlib.List
+// ProcessingRecipe.getFluidIngredients() as stdlib.List<FluidIngredient>
 
 myProcessingRecipe.getFluidIngredients();
 ```
@@ -29,10 +29,10 @@ myProcessingRecipe.getFluidIngredients();
 
 :::group{name=getFluidResults}
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[IFluidStack](/forge/api/fluid/IFluidStack)&gt;
 
 ```zenscript
-// ProcessingRecipe.getFluidResults() as stdlib.List
+// ProcessingRecipe.getFluidResults() as stdlib.List<IFluidStack>
 
 myProcessingRecipe.getFluidResults();
 ```
@@ -65,10 +65,10 @@ myProcessingRecipe.getRequiredHeat();
 
 :::group{name=getRollableResults}
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[ProcessingOutput](/mods/createtweaker/ProcessingOutput)&gt;
 
 ```zenscript
-// ProcessingRecipe.getRollableResults() as stdlib.List
+// ProcessingRecipe.getRollableResults() as stdlib.List<ProcessingOutput>
 
 myProcessingRecipe.getRollableResults();
 ```
@@ -77,10 +77,10 @@ myProcessingRecipe.getRollableResults();
 
 :::group{name=getRollableResultsAsItemStacks}
 
-Return Type: stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 
 ```zenscript
-// ProcessingRecipe.getRollableResultsAsItemStacks() as stdlib.List<ItemStack>
+// ProcessingRecipe.getRollableResultsAsItemStacks() as stdlib.List<IItemStack>
 
 myProcessingRecipe.getRollableResultsAsItemStacks();
 ```
@@ -89,10 +89,10 @@ myProcessingRecipe.getRollableResultsAsItemStacks();
 
 :::group{name=rollResults}
 
-Return Type: stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 
 ```zenscript
-// ProcessingRecipe.rollResults() as stdlib.List<ItemStack>
+// ProcessingRecipe.rollResults() as stdlib.List<IItemStack>
 
 myProcessingRecipe.rollResults();
 ```
@@ -104,10 +104,10 @@ myProcessingRecipe.rollResults();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| fluidIngredients | stdlib.List | true | false | No Description Provided |
-| fluidResults | stdlib.List | true | false | No Description Provided |
+| fluidIngredients | stdlib.List&lt;[FluidIngredient](/mods/createtweaker/FluidIngredient)&gt; | true | false | No Description Provided |
+| fluidResults | stdlib.List&lt;[IFluidStack](/forge/api/fluid/IFluidStack)&gt; | true | false | No Description Provided |
 | processingDuration | int | true | false | No Description Provided |
 | requiredHeat | [HeatCondition](/mods/createtweaker/recipes/HeatCondition) | true | false | No Description Provided |
-| rollableResults | stdlib.List | true | false | No Description Provided |
-| rollableResultsAsItemStacks | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | No Description Provided |
+| rollableResults | stdlib.List&lt;[ProcessingOutput](/mods/createtweaker/ProcessingOutput)&gt; | true | false | No Description Provided |
+| rollableResultsAsItemStacks | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | false | No Description Provided |
 

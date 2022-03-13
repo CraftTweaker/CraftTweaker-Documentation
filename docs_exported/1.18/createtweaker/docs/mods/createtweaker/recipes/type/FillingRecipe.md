@@ -17,3 +17,24 @@ FillingRecipe implements the following interfaces. That means all methods define
 
 - [IAssemblyRecipe](/mods/createtweaker/recipes/type/IAssemblyRecipe)
 
+## Methods
+
+:::group{name=getRequiredFluid}
+
+Return Type: [FluidIngredient](/mods/createtweaker/FluidIngredient)
+
+```zenscript
+// FillingRecipe.getRequiredFluid() as FluidIngredient
+
+myFillingRecipe.getRequiredFluid();
+```
+
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| requiredFluid | [FluidIngredient](/mods/createtweaker/FluidIngredient) | true | false | No Description Provided |
+
