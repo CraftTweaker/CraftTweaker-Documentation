@@ -38,6 +38,7 @@
             "Associative Arrays" : "zencode/AssociativeArrays.md",
             "Conditional Code": "zencode/ConditionalCode.md",
             "Objects": "zencode/Objects.md",
+            "Functions" : "zencode/Functions.md",
             "Preprocessors": {
                 "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
                 "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",

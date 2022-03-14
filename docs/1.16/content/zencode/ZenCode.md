@@ -13,7 +13,7 @@ Currently documented features:
 General programming concepts:
 
 - [Conditional Code](/zencode/ConditionalCode) - Graded B
-- [Objects](/zencode/Objects) - Graded B
+- [Objects](/zencode/Objects) - Graded C
 
 Scripting concepts :
 
