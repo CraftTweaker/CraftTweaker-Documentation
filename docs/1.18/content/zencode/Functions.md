@@ -59,7 +59,7 @@ function hide(item as crafttweaker.api.item.IItemStack) as void {
 
 public function printStartScript(scriptName as string) as void {
     println("=====================================================");
-    println("          "STARTING SCRIPT: "+scriptName+"                  ");
+    println("          STARTING SCRIPT: "+scriptName+"                  ");
     println("=====================================================");
 }
 
