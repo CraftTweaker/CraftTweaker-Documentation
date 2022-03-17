@@ -9,6 +9,7 @@ Here are the commands that matter:
 Prints information about the item you're holding to your chat. This is crucial to get Items, Tags and Block bracket handlers.
 
 ![Image](https://i.blamejared.com/JNpRk.png)
+
 The result of using `/ct hand` on the Sand item.
 
 ```plaintext
@@ -95,3 +96,5 @@ The recipes are given to you in their script form.
 Generates an `examples` folder under your `scripts` directory. These include example files for the version of CraftTweaker you are using, which run out of the box and showcase the various modifications you can apply through the use of CraftTweaker. It is recommended to move them out of the `scripts` folder to see them without having them execute.
 
 ![img_5.png](https://blamejared.com/docsImages/commands/examples.png)
+
+

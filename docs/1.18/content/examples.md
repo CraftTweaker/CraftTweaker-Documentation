@@ -6,4 +6,4 @@ More script examples can be found here:
 
 [Examples](https://github.com/CraftTweaker/CraftTweaker/tree/1.18/src/main/resources/data/crafttweaker/scripts)
 
-These are the scripts that have been used to test CraftTweaker in 1.14, they should all work and load just fine, you can use them to get familiarized with the new syntax
+Keep in mind that examples are, after all, scripts, and that the next time you reload the game, they will be loaded. Examples may include undesired changes or functionality, so be careful with that.
