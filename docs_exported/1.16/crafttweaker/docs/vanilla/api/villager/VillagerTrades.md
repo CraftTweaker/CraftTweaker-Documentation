@@ -163,7 +163,9 @@ Removes all wandering trades of the given rarity
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+// VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+
+villagerTrades.removeAllWanderinTrades(1);
 ```
 
 | Parameter | Type | Description |
@@ -180,7 +182,9 @@ Removes all wandering trades of the given rarity
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeAllWanderingTrades(rarity as int) as void
+// VillagerTrades.removeAllWanderingTrades(rarity as int) as void
+
+villagerTrades.removeAllWanderingTrades(1);
 ```
 
 | Parameter | Type | Description |
