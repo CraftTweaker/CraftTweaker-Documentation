@@ -6,7 +6,9 @@ It might be required for you to import the package if you encounter any issues (
 ```zenscript
 import crafttweaker.api.potion.MCPotionEffect;
 ```
+## Obtention
 
+You can get an Object of this type using the `<potion:` bracket expression parser. It is available through the dump commands.
 
 ## Methods
 
