@@ -101,7 +101,7 @@ JEI.hideIngredient(ingredient as JeiIngredient) as void
 
 :::group{name=hideMod since="1.0.0"}
 
-Hides all [JeiIngredient](/mods/JEITweaker/API/Component/JeiIngredient)s of a given mod, making sure that they do not show up in JEI. <br />  <br />  Optionally, some ingredients can be excluded based on their registry name from the hiding by making use of the <br />  Predicate<String>.
+Hides all [JeiIngredient](/mods/JEITweaker/API/Component/JeiIngredient)s of a given mod, making sure that they do not show up in JEI. <br />  <br />  Optionally, some ingredients can be excluded based on their registry name from the hiding by making use of the <br />  Predicate<String>. <br />  <br />  Note, the exclusion filter works on the full registry name, unlike recipe filters which work on the path without the modid.
 
 Return Type: void
 
