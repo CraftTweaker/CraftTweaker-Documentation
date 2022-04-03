@@ -1,7 +1,7 @@
 # FluidIngredient
 
-FluidIngredient that facilitates accepting either a single, or multiple [IFluidStack](/forge/api/fluid/IFluidStack)s, com.blamejared.crafttweaker.api.tag.MCTag<Fluid>s
- or Many<MCTag><Fluid>s.
+FluidIngredient that facilitates accepting either a single, or multiple [IFluidStack](/forge/api/fluid/IFluidStack)s, KnownTag <Fluid>s
+ or Many< KnownTag ><Fluid>s.
 
 ## Importing the class
 

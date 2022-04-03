@@ -72,12 +72,12 @@ FluidPredicateBuilder.properties(predicate as StatePropertiesPredicateBuilder) a
 Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredicateBuilder)
 
 ```zenscript
-FluidPredicateBuilder.tag(tag as MCTag<Fluid>) as FluidPredicateBuilder
+FluidPredicateBuilder.tag(tag as KnownTag<Fluid>) as FluidPredicateBuilder
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
 
 
 :::

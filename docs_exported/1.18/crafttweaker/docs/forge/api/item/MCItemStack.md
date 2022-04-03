@@ -185,10 +185,13 @@ myMCItemStack.asIIngredientWithAmount();
 Return Type: void
 
 ```zenscript
-// MCItemStack.clearTooltip() as void
-
-myMCItemStack.clearTooltip();
+MCItemStack.clearTooltip(leaveName as boolean) as void
 ```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| leaveName | boolean | No Description Provided | true | false |
+
 
 :::
 
@@ -227,6 +230,21 @@ myMCItemStack.getAttributes(<constant:minecraft:equipmentslot:chest>);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | slotType | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | The slot to get the Attributes for. |
+
+
+:::
+
+:::group{name=getBurnTime}
+
+Return Type: int
+
+```zenscript
+MCItemStack.getBurnTime(manager as IRecipeManager) as int
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| manager | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager) | No Description Provided |
 
 
 :::
@@ -299,6 +317,21 @@ myMCItemStack.getMaxStackSize();
 
 :::
 
+:::group{name=getOrCreateTag}
+
+Returns the NBT tag attached to this ItemStack or makes a new tag.
+
+Returns: MapData of the ItemStack NBT Tag, empty tag if it doesn't exist.  
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// MCItemStack.getOrCreateTag() as MapData
+
+myMCItemStack.getOrCreateTag();
+```
+
+:::
+
 :::group{name=getRarity}
 
 Returns the rarity of the Item in the ItemStack
@@ -311,27 +344,6 @@ Return Type: [Rarity](/vanilla/api/item/property/Rarity)
 
 myMCItemStack.getRarity();
 ```
-
-:::
-
-:::group{name=getRemainingItem}
-
-When this ingredient stack is crafted, what will remain in the grid?
- Does not check if the stack matches though!
- Used e.g. in Crafting Table recipes.
-
-Return Type: [IItemStack](/vanilla/api/item/IItemStack)
-
-```zenscript
-// MCItemStack.getRemainingItem(stack as IItemStack) as IItemStack
-
-myMCItemStack.getRemainingItem(<item:minecraft:iron_ingot>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to provide for this ingredient. |
-
 
 :::
 
@@ -677,6 +689,43 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 
 myMCItemStack.reuse();
 ```
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+// MCItemStack.setBurnTime(time as int) as void
+
+myMCItemStack.setBurnTime(500);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+MCItemStack.setBurnTime(time as int, manager as IRecipeManager) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+| manager | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager) | No Description Provided |
+
 
 :::
 
@@ -1085,6 +1134,7 @@ myMCItemStack | other as IIngredient
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | amount | int | true | false | Gets the amount of Items in the ItemStack |
+| baseRepairCost | int | true | false | Gets the base repair cost of the ItemStack, or 0 if no repair is defined. |
 | burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
 | damage | int | true | false | No Description Provided |
 | damageableItem | boolean | true | false | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not. |
@@ -1096,8 +1146,6 @@ myMCItemStack | other as IIngredient
 | enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true | true | No Description Provided |
 | fireResistant | boolean | true | true | Checks if this IItemStack burns when thrown into fire / lava or damaged by fire. |
 | food | [FoodProperties](/vanilla/api/food/FoodProperties) | true | true | No Description Provided |
-| getBaseRepairCost | int | true | false | Gets the base repair cost of the ItemStack, or 0 if no repair is defined. |
-| getOrCreate | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this ItemStack or makes a new tag. |
 | hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |

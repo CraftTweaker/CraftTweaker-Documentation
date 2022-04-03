@@ -1307,21 +1307,6 @@ myLivingEntity.shouldDiscardFriction();
 
 :::
 
-:::group{name=startAutoSpinAttack}
-
-Return Type: void
-
-```zenscript
-LivingEntity.startAutoSpinAttack(ticks as int) as void
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | int | No Description Provided |
-
-
-:::
-
 :::group{name=startSleeping}
 
 Return Type: void

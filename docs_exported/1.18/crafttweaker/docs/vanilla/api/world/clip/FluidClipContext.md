@@ -10,10 +10,11 @@ import crafttweaker.api.world.FluidClipContext;
 
 ## Enum Constants
 
-FluidClipContext is an enum. It has 3 enum constants. They are accessible using the code below.
+FluidClipContext is an enum. It has 4 enum constants. They are accessible using the code below.
 
 ```zenscript
 <constant:minecraft:world/clip/fluidcontext:none>
 <constant:minecraft:world/clip/fluidcontext:source_only>
 <constant:minecraft:world/clip/fluidcontext:any>
+<constant:minecraft:world/clip/fluidcontext:water>
 ```

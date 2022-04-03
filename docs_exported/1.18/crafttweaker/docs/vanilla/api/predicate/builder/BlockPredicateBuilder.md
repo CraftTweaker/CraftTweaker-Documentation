@@ -102,12 +102,12 @@ BlockPredicateBuilder.properties(predicate as StatePropertiesPredicateBuilder) a
 Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredicateBuilder)
 
 ```zenscript
-BlockPredicateBuilder.tag(tag as MCTag<Block>) as BlockPredicateBuilder
+BlockPredicateBuilder.tag(tag as KnownTag<Block>) as BlockPredicateBuilder
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
 
 
 :::

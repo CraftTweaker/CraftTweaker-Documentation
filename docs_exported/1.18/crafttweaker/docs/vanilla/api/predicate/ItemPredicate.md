@@ -69,12 +69,12 @@ ItemPredicate.create(items as ItemDefinition[]) as ItemPredicateBuilder
 Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder)
 
 ```zenscript
-ItemPredicate.create(tag as MCTag<ItemDefinition>) as ItemPredicateBuilder
+ItemPredicate.create(tag as KnownTag<ItemDefinition>) as ItemPredicateBuilder
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
 
 
 :::

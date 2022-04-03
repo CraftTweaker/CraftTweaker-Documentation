@@ -58,6 +58,21 @@ myBlockEntity.hasLevel();
 
 :::
 
+:::group{name=setData}
+
+Return Type: void
+
+```zenscript
+BlockEntity.setData(data as MapData) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+
+
+:::
+
 :::group{name=updateData}
 
 Return Type: void
@@ -80,7 +95,7 @@ BlockEntity.updateData(data as MapData) as void
 |------|------|------------|------------|-------------|
 | blockPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
 | blockState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData) | true | false | No Description Provided |
+| data | [MapData](/vanilla/api/data/MapData) | true | true | No Description Provided |
 | hasLevel | boolean | true | false | No Description Provided |
 | level | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
 

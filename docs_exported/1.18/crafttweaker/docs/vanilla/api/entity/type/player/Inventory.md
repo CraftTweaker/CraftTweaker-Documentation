@@ -67,12 +67,12 @@ Inventory.contains(stack as ItemStack) as boolean
 Return Type: boolean
 
 ```zenscript
-Inventory.contains(tag as MCTag<ItemDefinition>) as boolean
+Inventory.contains(tag as KnownTag<ItemDefinition>) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
 
 
 :::

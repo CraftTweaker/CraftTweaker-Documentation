@@ -10,6 +10,23 @@ import crafttweaker.api.bracket.CommandStringDisplayable;
 ```
 
 
+## Methods
+
+:::group{name=getCommandString}
+
+Returns the BEP to get this thingy
+
+Return Type: string
+
+```zenscript
+// CommandStringDisplayable.getCommandString() as string
+
+null.getCommandString();
+```
+
+:::
+
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

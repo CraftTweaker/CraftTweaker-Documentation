@@ -20,6 +20,18 @@ import crafttweaker.api.block.BlockState;
 
 ## Methods
 
+:::group{name=asString}
+
+Return Type: string
+
+```zenscript
+// BlockState.asString() as string
+
+<blockstate:minecraft:grass>.asString();
+```
+
+:::
+
 :::group{name=canOcclude}
 
 Checks whether this BlockState is solid.
@@ -245,16 +257,16 @@ BlockState.rotate(rotation as Rotation) as BlockState
 
 :::
 
-:::group{name=setHardness}
+:::group{name=setDestroySpeed}
 
 Sets the destroy speed of this BlockState.
 
 Return Type: void
 
 ```zenscript
-// BlockState.setHardness(destroySpeed as float) as void
+// BlockState.setDestroySpeed(destroySpeed as float) as void
 
-<blockstate:minecraft:grass>.setHardness(2.4f);
+<blockstate:minecraft:grass>.setDestroySpeed(2.4f);
 ```
 
 | Parameter | Type | Description |
@@ -295,9 +307,10 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 | commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  <code> <br />  <blockstate:minecraft:grass:snowy=true> <br />  </code> |
 | destroySpeed | float | true | true | Gets the hardness of this BlockState. |
 | hasBlockEntity | boolean | true | false | Checks whether this BlockState has a [BlockEntity](/vanilla/api/block/entity/BlockEntity). |
+| isRandomlyTicking | boolean | true | false | Checks whether this BlockState ticks randomly. |
+| isSignalSource | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
 | lightEmission | int | true | false | Gets the light level of this BlockState |
+| properties | string[string] | true | false | Gets the properties of this BlockState. |
 | propertyNames | stdlib.List&lt;string&gt; | true | false | Gets the names of the properties of this BlockState. |
-| randomlyTicking | boolean | true | false | Checks whether this BlockState ticks randomly. |
-| signalSource | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
 | soundType | [SoundType](/vanilla/api/sound/SoundType) | true | false | No Description Provided |
 

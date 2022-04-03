@@ -1,4 +1,4 @@
-# Expansion for MCTag&lt;Block&gt;
+# Expansion for KnownTag&lt;Block&gt;
 
 This expansion specifically targets BlockTags.
 
@@ -15,9 +15,9 @@ This expansion specifically targets BlockTags.
 Return Type: [BlockIngredient](/vanilla/api/block/BlockIngredient)
 
 ```zenscript
-// MCTag.asBlockIngredient() as BlockIngredient
+// KnownTag.asBlockIngredient() as BlockIngredient
 
-<tag:items:forge:gems>.asBlockIngredient();
+myKnownTag.asBlockIngredient();
 ```
 
 :::
@@ -27,7 +27,7 @@ Return Type: [BlockIngredient](/vanilla/api/block/BlockIngredient)
 Return Type: [BlockIngredient](/vanilla/api/block/BlockIngredient)
 
 ```zenscript
-MCTag.asList(other as BlockIngredient) as BlockIngredient
+KnownTag.asList(other as BlockIngredient) as BlockIngredient
 ```
 
 | Parameter | Type | Description |

@@ -1,4 +1,4 @@
-# Expansion for MCTag&lt;ItemDefinition&gt;
+# Expansion for KnownTag&lt;ItemDefinition&gt;
 
 This expansion specifically targets itemTags.
  It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient.
@@ -20,7 +20,7 @@ This expansion specifically targets itemTags.
 Return Type: void
 
 ```zenscript
-MCTag.add(items as stdlib.List<IItemStack>) as void
+KnownTag.add(items as stdlib.List<IItemStack>) as void
 ```
 
 | Parameter | Type | Description |
@@ -35,9 +35,9 @@ MCTag.add(items as stdlib.List<IItemStack>) as void
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-// MCTag.asIData() as IData
+// KnownTag.asIData() as IData
 
-<tag:items:forge:gems>.asIData();
+myKnownTag.asIData();
 ```
 
 :::
@@ -47,9 +47,9 @@ Return Type: [IData](/vanilla/api/data/IData)
 Return Type: [IIngredient](/vanilla/api/ingredient/IIngredient)
 
 ```zenscript
-// MCTag.asIIngredient() as IIngredient
+// KnownTag.asIIngredient() as IIngredient
 
-<tag:items:forge:gems>.asIIngredient();
+myKnownTag.asIIngredient();
 ```
 
 :::
@@ -59,9 +59,9 @@ Return Type: [IIngredient](/vanilla/api/ingredient/IIngredient)
 Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)
 
 ```zenscript
-// MCTag.asIIngredientWithAmount() as IIngredientWithAmount
+// KnownTag.asIIngredientWithAmount() as IIngredientWithAmount
 
-<tag:items:forge:gems>.asIIngredientWithAmount();
+myKnownTag.asIIngredientWithAmount();
 ```
 
 :::

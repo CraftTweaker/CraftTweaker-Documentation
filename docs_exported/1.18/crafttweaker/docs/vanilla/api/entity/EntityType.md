@@ -193,12 +193,12 @@ EntityType.isBlockDangerous(state as BlockState) as boolean
 Return Type: boolean
 
 ```zenscript
-EntityType.isIn(tag as MCTag<EntityType>) as boolean
+EntityType.isIn(tag as KnownTag<EntityType<Entity>>) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&lt;[Entity](/vanilla/api/entity/Entity)&gt;&gt; | No Description Provided |
 
 
 :::

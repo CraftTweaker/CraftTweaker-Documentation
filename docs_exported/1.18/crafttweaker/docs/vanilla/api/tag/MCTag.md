@@ -1,10 +1,6 @@
-# MCTag&LT;T : Object&GT;
+# MCTag
 
-A reference to a Tag object.
- Note that this tag may not exist in the game already, such as when you create new tags.
- See the [MCTag](/vanilla/api/tag/MCTag)&lt;T&gt;#exists() Method on whether this tag already exists.
- 
- A tag will be created as soon as you add
+
 
 ## Importing the class
 
@@ -18,224 +14,129 @@ import crafttweaker.api.tag.MCTag;
 MCTag implements the following interfaces. That means all methods defined in these interfaces are also available in MCTag
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
-- stdlib.Iterable&lt;T&gt;
-
-## Casters
-
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Many](/vanilla/api/util/Many)&lt;[MCTag](/vanilla/api/tag/MCTag)&lt;T&gt;&gt; | true |
-| string | true |
+- Comparable&lt;[MCTag](/vanilla/api/tag/MCTag)&gt;
 
 ## Methods
 
-:::group{name=add}
+:::group{name=addId}
 
-Adds the given items to the tag. Creates the tag if it does not exist.
-
-Return Type: void
-
-```zenscript
-MCTag.add(items as stdlib.List<T>) as void
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | stdlib.List&lt;T&gt; | The items to add. Provided as list. |
-
-
-:::
-
-:::group{name=add}
-
-Adds the given items to the tag. Creates the tag if it does not exist.
+Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag..
 
 Return Type: void
 
 ```zenscript
-// MCTag.add(items as T[]) as void
+// MCTag.addId(elements as ResourceLocation[]) as void
 
-<tag:items:forge:gems>.add(<item:minecraft:bedrock>);
-<tag:items:forge:gems>.add(<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>);
-<tag:items:forge:gems>.add([<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]);
+<tag:items:minecraft:wool>.addId(<resource:minecraft:diamond>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | T[] | The items to add. Can be one or more items. |
+| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
 
-
-:::
-
-:::group{name=add}
-
-Adds the given tag to this tag. Creates the tag if it does not exist.
-
-Return Type: void
-
-```zenscript
-// MCTag.add(tag as MCTag<T>) as void
-
-<tag:items:forge:gems>.add(<tag:items:forge:rods>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;T&gt; | The tag to add. |
-
-
-:::
-
-:::group{name=addTags}
-
-Adds the given tags to this tag. Creates the tag if it does not exist.
-
-Return Type: void
-
-```zenscript
-// MCTag.addTags(tags as stdlib.List<MCTag<T>>) as void
-
-<tag:items:forge:gems>.addTags(<tag:items:forge:rods>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | stdlib.List&lt;[MCTag](/vanilla/api/tag/MCTag)&lt;T&gt;&gt; | The tags to add. |
-
-
-:::
-
-:::group{name=asTagWithAmount}
-
-Return Type: [Many](/vanilla/api/util/Many)&lt;[MCTag](/vanilla/api/tag/MCTag)&lt;T&gt;&gt;
-
-```zenscript
-// MCTag.asTagWithAmount() as Many<MCTag<T>>
-
-<tag:items:forge:gems>.asTagWithAmount();
-```
 
 :::
 
 :::group{name=contains}
 
+Checks if this tag contains an element with the given id
+
+Returns: true if it contains the element, false otherwise.  
 Return Type: boolean
 
 ```zenscript
-MCTag.contains(element as T) as boolean
+// MCTag.contains(id as ResourceLocation) as boolean
+
+<tag:items:minecraft:wool>.contains(<resource:minecraft:white_wool>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| element | T | No Description Provided |
+| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
+
+
+:::
+
+:::group{name=equals}
+
+Checks if this tag equals the other tag.
+
+Returns: true if the tags are equal, false otherwise.  
+Return Type: boolean
+
+```zenscript
+// MCTag.equals(other as MCTag) as boolean
+
+<tag:items:minecraft:wool>.equals(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| other | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
 
 
 :::
 
 :::group{name=exists}
 
+Checks if this tag exists.
+
+Returns: true if this tag exists, false otherwise.  
 Return Type: boolean
 
 ```zenscript
 // MCTag.exists() as boolean
 
-<tag:items:forge:gems>.exists();
-```
-
-:::
-
-:::group{name=getElements}
-
-Return Type: stdlib.List&lt;T&gt;
-
-```zenscript
-// MCTag.getElements() as stdlib.List<T>
-
-<tag:items:forge:gems>.getElements();
+<tag:items:minecraft:wool>.exists();
 ```
 
 :::
 
 :::group{name=id}
 
+Gets the id of this tag.
+
+Returns: The id of this tag.  
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 
 ```zenscript
 // MCTag.id() as ResourceLocation
 
-<tag:items:forge:gems>.id();
+<tag:items:minecraft:wool>.id();
 ```
 
 :::
 
-:::group{name=manager}
+:::group{name=idElements}
 
-Return Type: [ITagManager](/vanilla/api/tag/ITagManager)&lt;T&gt;
+Gets the id's of the elements in this tag.
+
+Returns: The id's elements in this tag.  
+Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
 
 ```zenscript
-// MCTag.manager() as ITagManager<T>
+// MCTag.idElements() as stdlib.List<ResourceLocation>
 
-<tag:items:forge:gems>.manager();
+<tag:items:minecraft:wool>.idElements();
 ```
 
 :::
 
-:::group{name=remove}
+:::group{name=removeId}
+
+Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from this tag.
 
 Return Type: void
 
 ```zenscript
-MCTag.remove(items as stdlib.List<T>) as void
+// MCTag.removeId(elements as ResourceLocation[]) as void
+
+<tag:items:minecraft:wool>.removeId(<resource:minecraft:diamond>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | stdlib.List&lt;T&gt; | No Description Provided |
-
-
-:::
-
-:::group{name=remove}
-
-Return Type: void
-
-```zenscript
-MCTag.remove(items as T[]) as void
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | T[] | No Description Provided |
-
-
-:::
-
-:::group{name=remove}
-
-Return Type: void
-
-```zenscript
-MCTag.remove(tag as MCTag<T>) as void
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;T&gt; | No Description Provided |
-
-
-:::
-
-:::group{name=withAmount}
-
-Return Type: [Many](/vanilla/api/util/Many)&lt;[MCTag](/vanilla/api/tag/MCTag)&lt;T&gt;&gt;
-
-```zenscript
-MCTag.withAmount(amount as int) as Many<MCTag<T>>
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
 
 
 :::
@@ -245,24 +146,22 @@ MCTag.withAmount(amount as int) as Many<MCTag<T>>
 
 :::group{name=CONTAINS}
 
+Checks if this tag contains an element with the given id
+
 ```zenscript
-element as T in myMCTag
+id as ResourceLocation in myMCTag
+<resource:minecraft:white_wool> in <tag:items:minecraft:wool>
 ```
 
 :::
 
 :::group{name=EQUALS}
 
-```zenscript
-myMCTag == other as MCTag<T>
-```
-
-:::
-
-:::group{name=MUL}
+Checks if this tag equals the other tag.
 
 ```zenscript
-myMCTag * amount as int
+myMCTag == other as MCTag
+<tag:items:minecraft:wool> == <tag:items:minecraft:wool>
 ```
 
 :::
@@ -272,8 +171,7 @@ myMCTag * amount as int
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| elements | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| exists | boolean | true | false | No Description Provided |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| manager | [ITagManager](/vanilla/api/tag/ITagManager)&lt;T&gt; | true | false | No Description Provided |
+| exists | boolean | true | false | Checks if this tag exists. |
+| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the id of this tag. |
+| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the id's of the elements in this tag. |
 

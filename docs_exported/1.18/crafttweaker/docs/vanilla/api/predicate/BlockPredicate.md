@@ -54,12 +54,12 @@ BlockPredicate.create(blocks as Block[]) as BlockPredicateBuilder
 Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredicateBuilder)
 
 ```zenscript
-BlockPredicate.create(tag as MCTag<Block>) as BlockPredicateBuilder
+BlockPredicate.create(tag as KnownTag<Block>) as BlockPredicateBuilder
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
 
 
 :::

@@ -34,26 +34,14 @@ BracketDumpers.getBlockDump();
 
 :::
 
-:::group{name=getBlockMaterialDump}
+:::group{name=getCreativeModeTabBracketDump}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-// BracketDumpers.getBlockMaterialDump() as Collection<string>
+// BracketDumpers.getCreativeModeTabBracketDump() as Collection<string>
 
-BracketDumpers.getBlockMaterialDump();
-```
-
-:::
-
-:::group{name=getConstantDump}
-
-Return Type: Collection&lt;string&gt;
-
-```zenscript
-// BracketDumpers.getConstantDump() as Collection<string>
-
-BracketDumpers.getConstantDump();
+BracketDumpers.getCreativeModeTabBracketDump();
 ```
 
 :::
@@ -118,14 +106,14 @@ BracketDumpers.getItemBracketDump();
 
 :::
 
-:::group{name=getItemGroupBracketDump}
+:::group{name=getMaterialDump}
 
 Return Type: Collection&lt;string&gt;
 
 ```zenscript
-// BracketDumpers.getItemGroupBracketDump() as Collection<string>
+// BracketDumpers.getMaterialDump() as Collection<string>
 
-BracketDumpers.getItemGroupBracketDump();
+BracketDumpers.getMaterialDump();
 ```
 
 :::
@@ -150,30 +138,6 @@ Return Type: Collection&lt;string&gt;
 // BracketDumpers.getProfessionDump() as Collection<string>
 
 BracketDumpers.getProfessionDump();
-```
-
-:::
-
-:::group{name=getRecipeTypeDump}
-
-Return Type: Collection&lt;string&gt;
-
-```zenscript
-// BracketDumpers.getRecipeTypeDump() as Collection<string>
-
-BracketDumpers.getRecipeTypeDump();
-```
-
-:::
-
-:::group{name=getTagDump}
-
-Return Type: Collection&lt;string&gt;
-
-```zenscript
-// BracketDumpers.getTagDump() as Collection<string>
-
-BracketDumpers.getTagDump();
 ```
 
 :::

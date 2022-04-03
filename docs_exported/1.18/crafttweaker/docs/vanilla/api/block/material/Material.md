@@ -38,7 +38,7 @@ myMaterial.getColor();
 
 Gets the bracket syntax for this Material
 
-Returns: The `<blockmaterial>` Bracket Syntax for this material  
+Returns: The `<material>` Bracket Syntax for this material  
 Return Type: string
 
 ```zenscript

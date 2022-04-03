@@ -177,10 +177,13 @@ myIIngredientTransformed.asIIngredientWithAmount();
 Return Type: void
 
 ```zenscript
-// IIngredientTransformed.clearTooltip() as void
-
-myIIngredientTransformed.clearTooltip();
+IIngredientTransformed.clearTooltip(leaveName as boolean) as void
 ```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| leaveName | boolean | No Description Provided | true | false |
+
 
 :::
 
@@ -453,6 +456,25 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 
 myIIngredientTransformed.reuse();
 ```
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+// IIngredientTransformed.setBurnTime(time as int) as void
+
+myIIngredientTransformed.setBurnTime(500);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+
 
 :::
 

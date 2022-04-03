@@ -177,10 +177,13 @@ myIngredientConditioned.asIIngredientWithAmount();
 Return Type: void
 
 ```zenscript
-// IngredientConditioned.clearTooltip() as void
-
-myIngredientConditioned.clearTooltip();
+IngredientConditioned.clearTooltip(leaveName as boolean) as void
 ```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| leaveName | boolean | No Description Provided | true | false |
+
 
 :::
 
@@ -474,6 +477,25 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 
 myIngredientConditioned.reuse();
 ```
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+// IngredientConditioned.setBurnTime(time as int) as void
+
+myIngredientConditioned.setBurnTime(500);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+
 
 :::
 

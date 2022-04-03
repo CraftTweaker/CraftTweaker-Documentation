@@ -70,6 +70,26 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 
 :::
 
+:::group{name=getCreativeModeTab}
+
+Gets an CreativeModeTab by name. <br />  Will throw an error if the tab could not be found!
+
+Returns: The found ItemGroup  
+Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
+
+```zenscript
+// BracketHandlers.getCreativeModeTab(tokens as string) as CreativeModeTab
+
+BracketHandlers.getCreativeModeTab(misc);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The CreativeModeTab's name. |
+
+
+:::
+
 :::group{name=getDamageSource}
 
 Gets a damage source based on type. <br />  If the damage source is not pre-registered, it will create a new one with the given name
@@ -146,26 +166,6 @@ BracketHandlers.getItem("minecraft:dirt");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The item's resource location |
-
-
-:::
-
-:::group{name=getItemGroup}
-
-Gets an CreativeModeTab by name. <br />  Will throw an error if the tab could not be found!
-
-Returns: The found ItemGroup  
-Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
-
-```zenscript
-// BracketHandlers.getItemGroup(tokens as string) as CreativeModeTab
-
-BracketHandlers.getItemGroup(misc);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The CreativeModeTab's name. |
 
 
 :::

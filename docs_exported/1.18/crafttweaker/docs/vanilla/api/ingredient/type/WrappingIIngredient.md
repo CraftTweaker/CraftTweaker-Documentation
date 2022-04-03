@@ -179,10 +179,13 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 Return Type: void
 
 ```zenscript
-// WrappingIIngredient.clearTooltip() as void
-
-<tag:items:minecraft:wool>.asIIngredient();.clearTooltip();
+WrappingIIngredient.clearTooltip(leaveName as boolean) as void
 ```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| leaveName | boolean | No Description Provided | true | false |
+
 
 :::
 
@@ -460,6 +463,25 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 
 <tag:items:minecraft:wool>.asIIngredient();.reuse();
 ```
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+// WrappingIIngredient.setBurnTime(time as int) as void
+
+<tag:items:minecraft:wool>.asIIngredient();.setBurnTime(500);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+
 
 :::
 

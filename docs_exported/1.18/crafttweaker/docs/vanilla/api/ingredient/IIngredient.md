@@ -40,7 +40,7 @@ Return Type: void
 ```zenscript
 // IIngredient.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -71,7 +71,7 @@ Return Type: void
 ```zenscript
 // IIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -103,7 +103,7 @@ Return Type: void
 ```zenscript
 // IIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -156,7 +156,7 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 ```zenscript
 // IIngredient.anyDamage() as IngredientConditioned<IIngredient>
 
-<tag:items:forge:ingots>.anyDamage();
+<tag:items:minecraft:wool>.anyDamage();
 ```
 
 :::
@@ -170,7 +170,7 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 ```zenscript
 // IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
 
-<tag:items:forge:ingots>.asIIngredientWithAmount();
+<tag:items:minecraft:wool>.asIIngredientWithAmount();
 ```
 
 :::
@@ -184,7 +184,7 @@ Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 ```zenscript
 // IIngredient.asVanillaIngredient() as Ingredient
 
-<tag:items:forge:ingots>.asVanillaIngredient();
+<tag:items:minecraft:wool>.asVanillaIngredient();
 ```
 
 :::
@@ -194,10 +194,13 @@ Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 Return Type: void
 
 ```zenscript
-// IIngredient.clearTooltip() as void
-
-<tag:items:forge:ingots>.clearTooltip();
+IIngredient.clearTooltip(leaveName as boolean) as void
 ```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| leaveName | boolean | No Description Provided | true | false |
+
 
 :::
 
@@ -210,7 +213,7 @@ Return Type: boolean
 ```zenscript
 // IIngredient.contains(ingredient as IIngredient) as boolean
 
-<tag:items:forge:ingots>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
+<tag:items:minecraft:wool>.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
 | Parameter | Type | Description |
@@ -231,7 +234,7 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 ```zenscript
 // IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
 
-<tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>);
+<tag:items:minecraft:wool>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -250,7 +253,7 @@ Return Type: boolean
 ```zenscript
 // IIngredient.matches(stack as IItemStack) as boolean
 
-<tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>);
+<tag:items:minecraft:wool>.matches(<item:minecraft:iron_ingot>);
 ```
 
 | Parameter | Type | Description |
@@ -350,7 +353,7 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 ```zenscript
 // IIngredient.onlyDamaged() as IngredientConditioned<IIngredient>
 
-<tag:items:forge:ingots>.onlyDamaged();
+<tag:items:minecraft:wool>.onlyDamaged();
 ```
 
 :::
@@ -418,7 +421,7 @@ Return Type: void
 ```zenscript
 // IIngredient.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -438,7 +441,7 @@ Return Type: void
 ```zenscript
 // IIngredient.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -458,7 +461,7 @@ Return Type: void
 ```zenscript
 // IIngredient.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
 
-<tag:items:forge:ingots>.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
+<tag:items:minecraft:wool>.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter | Type | Description |
@@ -491,8 +494,27 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 ```zenscript
 // IIngredient.reuse() as IIngredientTransformed<IIngredient>
 
-<tag:items:forge:ingots>.reuse();
+<tag:items:minecraft:wool>.reuse();
 ```
+
+:::
+
+:::group{name=setBurnTime}
+
+Sets the burn time of this ingredient, for use in the furnace and other machines
+
+Return Type: void
+
+```zenscript
+// IIngredient.setBurnTime(time as int) as void
+
+<tag:items:minecraft:wool>.setBurnTime(500);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| time | int | the new burn time |
+
 
 :::
 
@@ -568,7 +590,7 @@ Does the ingredient contain the given ingredient?
 
 ```zenscript
 ingredient as IIngredient in myIIngredient
-(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <tag:items:forge:ingots>
+(<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>) in <tag:items:minecraft:wool>
 ```
 
 :::

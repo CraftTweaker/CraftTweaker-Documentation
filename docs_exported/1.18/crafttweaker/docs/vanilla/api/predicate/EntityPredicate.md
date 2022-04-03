@@ -69,12 +69,12 @@ EntityPredicate.create(catType as string) as EntityPredicateBuilder
 Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder)
 
 ```zenscript
-EntityPredicate.create(entityTag as MCTag<EntityType>) as EntityPredicateBuilder
+EntityPredicate.create(entityTag as KnownTag<EntityType>) as EntityPredicateBuilder
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| entityTag | [MCTag](/vanilla/api/tag/MCTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
+| entityTag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
 
 
 :::

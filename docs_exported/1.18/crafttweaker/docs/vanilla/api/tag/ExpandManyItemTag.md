@@ -1,4 +1,4 @@
-# Expansion for Many&lt;MCTag<ItemDefinition>&gt;
+# Expansion for Many&lt;KnownTag<ItemDefinition>&gt;
 
 This expansion specifically targets itemTags.
  It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient.

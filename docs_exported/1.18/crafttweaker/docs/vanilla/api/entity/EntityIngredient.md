@@ -1,7 +1,7 @@
 # EntityIngredient
 
-EntityIngredient that facilitates accepting either a single, or multiple [EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;s, MCTag<EntityType>s
- or Many<MCTag<EntityType>>s.
+EntityIngredient that facilitates accepting either a single, or multiple [EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;s, KnownTag <EntityType>s
+ or Many< KnownTag <EntityType>>s.
 
 ## Importing the class
 

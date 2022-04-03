@@ -55,6 +55,21 @@ BracketValidators.validateBlockStateMaterialBracket(tokens as string) as boolean
 
 :::
 
+:::group{name=validateCreativeModeTabBracket}
+
+Return Type: boolean
+
+```zenscript
+BracketValidators.validateCreativeModeTabBracket(tokens as string) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | No Description Provided |
+
+
+:::
+
 :::group{name=validateEffectBracket}
 
 Return Type: boolean
@@ -115,42 +130,12 @@ BracketValidators.validateItemBracket(tokens as string) as boolean
 
 :::
 
-:::group{name=validateItemGroupBracket}
-
-Return Type: boolean
-
-```zenscript
-BracketValidators.validateItemGroupBracket(tokens as string) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
-
-
-:::
-
 :::group{name=validateProfessionBracket}
 
 Return Type: boolean
 
 ```zenscript
 BracketValidators.validateProfessionBracket(tokens as string) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
-
-
-:::
-
-:::group{name=validateRecipeManagerBracket}
-
-Return Type: boolean
-
-```zenscript
-BracketValidators.validateRecipeManagerBracket(tokens as string) as boolean
 ```
 
 | Parameter | Type | Description |

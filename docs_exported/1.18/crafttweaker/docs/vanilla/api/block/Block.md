@@ -291,6 +291,25 @@ Return Type: void
 
 :::
 
+:::group{name=setFriction}
+
+Sets the friction of this Block.
+
+Return Type: void
+
+```zenscript
+// Block.setFriction(friction as float) as void
+
+<block:minecraft:grass_block>.setFriction(2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| friction | float | The new friction of this Block. |
+
+
+:::
+
 :::group{name=setHasCollision}
 
 Sets whether entities can collide with this Block.
@@ -338,31 +357,12 @@ Return Type: void
 ```zenscript
 // Block.setMaterial(material as Material) as void
 
-<block:minecraft:grass_block>.setMaterial(<blockmaterial:earth>);
+<block:minecraft:grass_block>.setMaterial(<material:earth>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | material | [Material](/vanilla/api/block/material/Material) | The new material of this Block. |
-
-
-:::
-
-:::group{name=setSlipperiness}
-
-Sets the friction of this Block.
-
-Return Type: void
-
-```zenscript
-// Block.setSlipperiness(friction as float) as void
-
-<block:minecraft:grass_block>.setSlipperiness(2);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| friction | float | The new friction of this Block. |
 
 
 :::
@@ -391,18 +391,18 @@ Return Type: void
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| canCollide | [Block](/vanilla/api/block/Block) | false | true | Sets whether entities can collide with this Block. |
 | commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
 | defaultState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the default [BlockState](/vanilla/api/block/BlockState) of this Block. |
+| descriptionId | string | true | false | Gets the translation key that is used to localize this Block. |
 | dynamicShape | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |
 | explosionResistance | float | true | true | Gets the blast resistance of this Block. |
 | friction | float | true | true | Gets the friction of this Block. |
-| hasCollision | boolean | true | false | Checks if entities can collide with this Block. |
+| hasCollision | boolean | true | true | Checks if entities can collide with this Block. |
+| isPossibleToRespawnInThis | boolean | true | false | Checks if an entity can be spawned inside this Block. <br />  <br />  This is used to find valid spawn locations for players. |
 | jumpFactor | float | true | true | Gets the jump factor of this Block. |
 | lootTable | string | true | false | Gets the loot table id for this Block. |
 | material | [Material](/vanilla/api/block/material/Material) | true | true | Gets the material of this Block. |
+| possibleStates | stdlib.List&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true | false | Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block. |
 | registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name of this block. |
 | speedFactor | float | true | true | Gets the speed factor of this Block. |
-| translationKey | string | true | false | Gets the translation key that is used to localize this Block. |
-| validStates | stdlib.List&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true | false | Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block. |
 

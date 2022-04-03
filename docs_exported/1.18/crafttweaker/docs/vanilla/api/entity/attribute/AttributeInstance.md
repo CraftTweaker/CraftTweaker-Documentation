@@ -40,6 +40,18 @@ AttributeInstance.addTransientModifier(modifier as AttributeModifier) as void
 
 :::
 
+:::group{name=getBaseValue}
+
+Return Type: double
+
+```zenscript
+// AttributeInstance.getBaseValue() as double
+
+myAttributeInstance.getBaseValue();
+```
+
+:::
+
 :::group{name=getModifier}
 
 Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)
@@ -52,6 +64,30 @@ AttributeInstance.getModifier(uuid as string) as AttributeModifier
 |-----------|------|-------------|
 | uuid | string | No Description Provided |
 
+
+:::
+
+:::group{name=getModifiers}
+
+Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;
+
+```zenscript
+// AttributeInstance.getModifiers() as stdlib.List<AttributeModifier>
+
+myAttributeInstance.getModifiers();
+```
+
+:::
+
+:::group{name=getValue}
+
+Return Type: double
+
+```zenscript
+// AttributeInstance.getValue() as double
+
+myAttributeInstance.getValue();
+```
 
 :::
 
@@ -96,6 +132,21 @@ AttributeInstance.removeModifier(uuid as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | uuid | string | No Description Provided |
+
+
+:::
+
+:::group{name=setBaseValue}
+
+Return Type: void
+
+```zenscript
+AttributeInstance.setBaseValue(value as double) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | double | No Description Provided |
 
 
 :::

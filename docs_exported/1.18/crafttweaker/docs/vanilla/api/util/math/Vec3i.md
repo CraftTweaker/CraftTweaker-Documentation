@@ -85,22 +85,6 @@ Vec3i.closerThan(other as Vec3i, maxDistance as double) as boolean
 
 :::
 
-:::group{name=closerThan}
-
-Return Type: boolean
-
-```zenscript
-Vec3i.closerThan(position as Position, maxDistance as double) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| position | [Position](/vanilla/api/util/Position) | No Description Provided |
-| maxDistance | double | No Description Provided |
-
-
-:::
-
 :::group{name=compareTo}
 
 Return Type: int
@@ -161,44 +145,27 @@ Vec3i.distSqr(other as Vec3i) as double
 
 :::
 
-:::group{name=distSqr}
+:::group{name=distToCenterSqr}
 
 Return Type: double
 
 ```zenscript
-Vec3i.distSqr(other as Vec3i, useCenter as boolean) as double
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| useCenter | boolean | No Description Provided |
-
-
-:::
-
-:::group{name=distSqr}
-
-Return Type: double
-
-```zenscript
-Vec3i.distSqr(position as Position, other as boolean) as double
+Vec3i.distToCenterSqr(position as Position) as double
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | position | [Position](/vanilla/api/util/Position) | No Description Provided |
-| other | boolean | No Description Provided |
 
 
 :::
 
-:::group{name=distSqr}
+:::group{name=distToCenterSqr}
 
 Return Type: double
 
 ```zenscript
-Vec3i.distSqr(x as double, y as double, z as double, useCenter as boolean) as double
+Vec3i.distToCenterSqr(x as double, y as double, z as double) as double
 ```
 
 | Parameter | Type | Description |
@@ -206,7 +173,6 @@ Vec3i.distSqr(x as double, y as double, z as double, useCenter as boolean) as do
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
-| useCenter | boolean | No Description Provided |
 
 
 :::

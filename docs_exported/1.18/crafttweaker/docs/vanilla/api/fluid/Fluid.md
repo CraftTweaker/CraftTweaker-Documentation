@@ -27,12 +27,12 @@ myFluid.getBucket();
 Return Type: boolean
 
 ```zenscript
-Fluid.isIn(tag as MCTag<Fluid>) as boolean
+Fluid.isIn(tag as KnownTag<Fluid>) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MCTag](/vanilla/api/tag/MCTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
+| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
 
 
 :::

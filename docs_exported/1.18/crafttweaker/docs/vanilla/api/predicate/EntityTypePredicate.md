@@ -42,12 +42,12 @@ EntityTypePredicate.create(type as EntityType) as EntityTypePredicate
 Return Type: [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)
 
 ```zenscript
-EntityTypePredicate.create(type as MCTag<EntityType>) as EntityTypePredicate
+EntityTypePredicate.create(type as KnownTag<EntityType>) as EntityTypePredicate
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| type | [MCTag](/vanilla/api/tag/MCTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
+| type | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
 
 
 :::

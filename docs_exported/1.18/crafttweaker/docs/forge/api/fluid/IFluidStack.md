@@ -67,6 +67,20 @@ myIFluidStack.copy();
 
 :::
 
+:::group{name=getCommandString}
+
+Returns the BEP to get this thingy
+
+Return Type: string
+
+```zenscript
+// IFluidStack.getCommandString() as string
+
+myIFluidStack.getCommandString();
+```
+
+:::
+
 :::group{name=getTag}
 
 Returns the NBT tag attached to this FluidStack.

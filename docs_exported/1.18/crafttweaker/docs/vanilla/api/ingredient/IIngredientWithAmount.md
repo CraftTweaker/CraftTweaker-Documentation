@@ -15,6 +15,23 @@ IIngredientWithAmount implements the following interfaces. That means all method
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
 
+## Methods
+
+:::group{name=getCommandString}
+
+Returns the BEP to get this thingy
+
+Return Type: string
+
+```zenscript
+// IIngredientWithAmount.getCommandString() as string
+
+myIIngredientWithAmount.getCommandString();
+```
+
+:::
+
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

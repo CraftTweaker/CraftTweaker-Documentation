@@ -8,6 +8,12 @@ import crafttweaker.api.entity.attribute.Attribute;
 ```
 
 
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| string | false |
+
 ## Methods
 
 :::group{name=getCommandString}

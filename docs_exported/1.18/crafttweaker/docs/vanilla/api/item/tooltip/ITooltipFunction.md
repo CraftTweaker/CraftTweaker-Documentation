@@ -15,14 +15,14 @@ import crafttweaker.api.item.tooltip.ITooltipFunction;
 Return Type: void
 
 ```zenscript
-ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<Component>, isAdvanced as invalid) as void
+ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<Component>, flag as invalid) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
 | tooltip | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | No Description Provided |
-| isAdvanced | **invalid** | No Description Provided |
+| flag | **invalid** | No Description Provided |
 
 
 :::
