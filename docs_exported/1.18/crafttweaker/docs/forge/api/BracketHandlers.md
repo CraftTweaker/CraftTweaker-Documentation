@@ -10,3 +10,40 @@ import crafttweaker.api.bracket.ForgeBracketHandlers;
 ```
 
 
+## Static Methods
+
+:::group{name=getFluidStack}
+
+Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
+
+Returns: A stack of the liquid with amount == 1mb  
+Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
+
+```zenscript
+// ForgeBracketHandlers.getFluidStack(tokens as string) as IFluidStack
+
+ForgeBracketHandlers.getFluidStack("minecraft:water");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The Fluid's resource location |
+
+
+:::
+
+:::group{name=getToolType}
+
+Return Type: [ToolAction](/forge/api/tool/ToolAction)
+
+```zenscript
+ForgeBracketHandlers.getToolType(tokens as string) as ToolAction
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | No Description Provided |
+
+
+:::
+
