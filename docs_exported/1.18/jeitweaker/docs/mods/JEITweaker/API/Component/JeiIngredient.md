@@ -13,7 +13,7 @@ Represents any ingredient used in JEI.
 
  Moreover, other types can automatically convert to an array of JEI ingredients, for even less boilerplate and ease
  of usage. Refer to **invalid**#asJeiIngredientArray(com.blamejared.crafttweaker.api.ingredient.IIngredient) and
- **invalid**#asJeiIngredientArray(com.blamejared.crafttweaker.api.tag.MCTag) for more information.
+ **invalid**#asJeiIngredientArray(KnownTag) for more information.
 
  <strong>For mod developers:</strong> do not use this class internally, use the generic version.
 
@@ -29,6 +29,21 @@ import mods.jei.component.JeiIngredient;
 JeiIngredient implements the following interfaces. That means all methods defined in these interfaces are also available in JeiIngredient
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
+
+## Methods
+
+:::group{name=getCommandString since="1.1.0"}
+
+Return Type: string
+
+```zenscript
+// JeiIngredient.getCommandString() as string
+
+myJeiIngredient.getCommandString();
+```
+
+:::
+
 
 ## Properties
 
