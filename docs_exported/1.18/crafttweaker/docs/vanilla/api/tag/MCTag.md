@@ -18,9 +18,28 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 ## Methods
 
+:::group{name=add}
+
+Adds the given tags to this tag.
+
+Return Type: void
+
+```zenscript
+// MCTag.add(tags as MCTag[]) as void
+
+<tag:items:minecraft:wool>.add(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+
+
+:::
+
 :::group{name=addId}
 
-Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag..
+Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
 Return Type: void
 
@@ -119,6 +138,25 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 
 <tag:items:minecraft:wool>.idElements();
 ```
+
+:::
+
+:::group{name=remove}
+
+Removes the given tags from this tag.
+
+Return Type: void
+
+```zenscript
+// MCTag.remove(tags as MCTag[]) as void
+
+<tag:items:minecraft:wool>.remove(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+
 
 :::
 

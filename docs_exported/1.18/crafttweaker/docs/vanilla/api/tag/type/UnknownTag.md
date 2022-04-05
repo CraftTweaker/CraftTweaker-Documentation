@@ -24,9 +24,28 @@ UnknownTag implements the following interfaces. That means all methods defined i
 
 ## Methods
 
+:::group{name=add}
+
+Adds the given tags to this tag.
+
+Return Type: void
+
+```zenscript
+// UnknownTag.add(tags as MCTag[]) as void
+
+myUnknownTag.add(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+
+
+:::
+
 :::group{name=addId}
 
-Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag..
+Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
 Return Type: void
 
@@ -146,6 +165,25 @@ Return Type: [UnknownTagManager](/vanilla/api/tag/manager/type/UnknownTagManager
 
 myUnknownTag.manager();
 ```
+
+:::
+
+:::group{name=remove}
+
+Removes the given tags from this tag.
+
+Return Type: void
+
+```zenscript
+// UnknownTag.remove(tags as MCTag[]) as void
+
+myUnknownTag.remove(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+
 
 :::
 

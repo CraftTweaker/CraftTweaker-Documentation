@@ -42,9 +42,28 @@ KnownTag.add(elements as T[]) as void
 
 :::
 
+:::group{name=add}
+
+Adds the given tags to this tag.
+
+Return Type: void
+
+```zenscript
+// KnownTag.add(tags as MCTag[]) as void
+
+myKnownTag.add(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+
+
+:::
+
 :::group{name=addId}
 
-Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag..
+Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
 Return Type: void
 
@@ -205,6 +224,25 @@ KnownTag.remove(elements as T[]) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | elements | T[] | No Description Provided |
+
+
+:::
+
+:::group{name=remove}
+
+Removes the given tags from this tag.
+
+Return Type: void
+
+```zenscript
+// KnownTag.remove(tags as MCTag[]) as void
+
+myKnownTag.remove(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
 
 
 :::
