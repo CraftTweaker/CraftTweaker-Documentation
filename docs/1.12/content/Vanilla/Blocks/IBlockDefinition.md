@@ -29,7 +29,7 @@ It might be required for you to import the package if you encounter any issues (
 | harvestTool     |                     | Returns the block's harvest tool                  | string                                              |
 | lightOpacity    | lightOpacity        |                                                   | int                                                 |
 | lightLevel      | lightLevel          |                                                   | int                                                 |
-| resisttance     | resistance          |                                                   | int                                                 |
+| resistance      | resistance          |                                                   | int                                                 |
 | unlocalizedName |                     | Returns the block's unlocalized Name              | string                                              |
 | tickRandomly    | tickRandomly        |                                                   | bool                                                |
 
