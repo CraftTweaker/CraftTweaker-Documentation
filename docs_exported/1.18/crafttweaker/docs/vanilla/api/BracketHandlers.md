@@ -285,3 +285,23 @@ BracketHandlers.getResourceLocation("minecraft:dirt");
 
 :::
 
+:::group{name=getSoundEvent}
+
+Gets a sound event based on registry name. Throws an exception if it can't find the sound event.
+
+Returns: The found sound event  
+Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)
+
+```zenscript
+// BracketHandlers.getSoundEvent(tokens as string) as SoundEvent
+
+BracketHandlers.getSoundEvent("minecraft:ambient.cave");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The sound event's resource location |
+
+
+:::
+

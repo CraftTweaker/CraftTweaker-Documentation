@@ -142,3 +142,15 @@ BracketDumpers.getProfessionDump();
 
 :::
 
+:::group{name=getSoundEventDump}
+
+Return Type: Collection&lt;string&gt;
+
+```zenscript
+// BracketDumpers.getSoundEventDump() as Collection<string>
+
+BracketDumpers.getSoundEventDump();
+```
+
+:::
+

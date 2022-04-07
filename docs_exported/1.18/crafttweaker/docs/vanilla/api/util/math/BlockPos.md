@@ -12,6 +12,31 @@ import crafttweaker.api.util.math.BlockPos;
 
 BlockPos extends [Vec3i](/vanilla/api/util/math/Vec3i). That means all methods available in [Vec3i](/vanilla/api/util/math/Vec3i) are also available in BlockPos
 
+## Constructors
+
+Creates a new BlockPos using the values of the given vector. Note, the values will be floored down, providing 0.85 is the same as providing 0.
+```zenscript
+new BlockPos(vector as Vec3) as BlockPos
+new BlockPos(new Vec3(0, 1, 2));
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| vector | [Vec3](/vanilla/api/util/math/Vec3) | The vector to copy the values of. |
+
+
+Creates a new BlockPos using the provided values.
+```zenscript
+new BlockPos(x as int, y as int, z as int) as BlockPos
+new BlockPos(0, 1, 2);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | int | The x value of the blockpos |
+| y | int | The y value of the blockpos |
+| z | int | The z value of the blockpos |
+
+
+
 ## Methods
 
 :::group{name=above}

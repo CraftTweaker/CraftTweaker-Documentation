@@ -14,6 +14,18 @@ import crafttweaker.api.sound.SoundEvent;
 
 ## Methods
 
+:::group{name=getCommandString}
+
+Return Type: string
+
+```zenscript
+// SoundEvent.getCommandString() as string
+
+mySoundEvent.getCommandString();
+```
+
+:::
+
 :::group{name=getLocation}
 
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
@@ -31,5 +43,6 @@ mySoundEvent.getLocation();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| commandString | string | true | false | No Description Provided |
 | location | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
 

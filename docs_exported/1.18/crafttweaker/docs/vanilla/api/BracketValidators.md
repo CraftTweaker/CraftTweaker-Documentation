@@ -160,3 +160,18 @@ BracketValidators.validateResourceBracket(tokens as string) as boolean
 
 :::
 
+:::group{name=validateSoundEvent}
+
+Return Type: boolean
+
+```zenscript
+BracketValidators.validateSoundEvent(tokens as string) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | No Description Provided |
+
+
+:::
+

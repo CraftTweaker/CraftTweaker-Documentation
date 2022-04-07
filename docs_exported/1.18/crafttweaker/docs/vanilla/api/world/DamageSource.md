@@ -8,6 +8,238 @@ import crafttweaker.api.world.DamageSource;
 ```
 
 
+## Static Methods
+
+:::group{name=arrow}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.arrow(arrow as Arrow, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| arrow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=badRespawnPointExplosion}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+// DamageSource.badRespawnPointExplosion() as DamageSource
+
+DamageSource.badRespawnPointExplosion();
+```
+
+:::
+
+:::group{name=explosion}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.explosion(explosion as Explosion) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| explosion | [Explosion](/vanilla/api/world/Explosion) | No Description Provided |
+
+
+:::
+
+:::group{name=explosion}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.explosion(owner as LivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| owner | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided | true |  |
+
+
+:::
+
+:::group{name=fireball}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.fireball(fireball as Fireball, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=fireworks}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=indirectMagic}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.indirectMagic(entity as Entity, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=indirectMobAttack}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=mobAttack}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.mobAttack(living as LivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| living | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=playerAttack}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.playerAttack(player as Player) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+
+
+:::
+
+:::group{name=string}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.string(living as LivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| living | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=thorns}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.thorns(entity as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=thrown}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.thrown(entity as Entity, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=trident}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.trident(entity as Entity, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
+:::group{name=witherSkull}
+
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+
+```zenscript
+DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+
+
+:::
+
 ## Methods
 
 :::group{name=getDirectEntity}
