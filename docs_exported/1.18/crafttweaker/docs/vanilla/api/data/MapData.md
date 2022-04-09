@@ -149,6 +149,25 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 :::
 
+:::group{name=getData}
+
+Retrieves the value associated with the key and returns it as the given type.
+
+Returns: The value if present, null otherwise.  
+Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
+
+```zenscript
+MapData.getData<T : IData>(key as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| key | string | The key to search for. |
+| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+
+
+:::
+
 :::group{name=getId}
 
 Gets the ID of the internal NBT tag.

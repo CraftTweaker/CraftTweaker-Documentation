@@ -28,10 +28,10 @@ myLightningBolt.getBlocksSetOnFire();
 
 :::group{name=getCause}
 
-Return Type: **invalid**
+Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)
 
 ```zenscript
-// LightningBolt.getCause() as invalid
+// LightningBolt.getCause() as ServerPlayer
 
 myLightningBolt.getCause();
 ```
@@ -71,6 +71,6 @@ LightningBolt.setVisualOnly(visualOnly as boolean) as void
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | blocksSetOnFire | int | true | false | No Description Provided |
-| cause | **invalid** | true | false | No Description Provided |
+| cause | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) | true | false | No Description Provided |
 | visualOnly | [LightningBolt](/vanilla/api/entity/type/misc/LightningBolt) | true | true | No Description Provided |
 

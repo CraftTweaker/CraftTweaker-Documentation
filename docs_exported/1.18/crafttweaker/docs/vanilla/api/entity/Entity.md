@@ -365,6 +365,21 @@ myEntity.getControllingPassenger();
 
 :::
 
+:::group{name=getCustomData}
+
+Gets the custom NBT data for this Entity.
+
+Returns: The custom data for this Entity.  
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// Entity.getCustomData() as MapData
+
+myEntity.getCustomData();
+```
+
+:::
+
 :::group{name=getCustomName}
 
 Return Type: [Component](/vanilla/api/text/Component)
@@ -2183,6 +2198,44 @@ myEntity.unRide();
 
 :::
 
+:::group{name=updateCustomDate}
+
+Updates the custom NBT data for this Entity.
+
+Return Type: void
+
+```zenscript
+// Entity.updateCustomDate(data as MapData) as void
+
+myEntity.updateCustomDate({custom: "data"});
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | The custom data to store. |
+
+
+:::
+
+:::group{name=updateData}
+
+Updates the NBT data of this Entity.
+
+Return Type: void
+
+```zenscript
+// Entity.updateData(data as MapData) as void
+
+myEntity.updateData({key: "value"});
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [MapData](/vanilla/api/data/MapData) | The new Data for this Entity |
+
+
+:::
+
 
 ## Properties
 
@@ -2203,6 +2256,7 @@ myEntity.unRide();
 | canFreeze | boolean | true | false | No Description Provided |
 | commandSenderWorld | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
 | controllingPassenger | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| customData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the custom NBT data for this Entity. |
 | customName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
 | data | [MapData](/vanilla/api/data/MapData) | true | false | Gets the NBT data of this Entity. |
 | dimensionChangingDelay | int | true | false | No Description Provided |

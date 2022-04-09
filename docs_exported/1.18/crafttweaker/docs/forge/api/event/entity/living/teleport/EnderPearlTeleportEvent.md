@@ -50,10 +50,10 @@ myEnderPearlTeleportEvent.getPearlEntity();
 
 :::group{name=getPlayer}
 
-Return Type: **invalid**
+Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)
 
 ```zenscript
-// EnderPearlTeleportEvent.getPlayer() as invalid
+// EnderPearlTeleportEvent.getPlayer() as ServerPlayer
 
 myEnderPearlTeleportEvent.getPlayer();
 ```
@@ -82,5 +82,5 @@ EnderPearlTeleportEvent.setAttackDamage(attackDamage as float) as void
 |------|------|------------|------------|-------------|
 | attackDamage | float | true | true | No Description Provided |
 | pearlEntity | [ThrownEnderpearl](/vanilla/api/entity/type/projectile/ThrownEnderpearl) | true | false | No Description Provided |
-| player | **invalid** | true | false | No Description Provided |
+| player | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) | true | false | No Description Provided |
 

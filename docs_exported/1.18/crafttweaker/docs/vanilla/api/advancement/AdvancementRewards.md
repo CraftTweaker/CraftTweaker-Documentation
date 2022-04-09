@@ -27,12 +27,12 @@ myAdvancementRewards.getRecipes();
 Return Type: void
 
 ```zenscript
-AdvancementRewards.grant(player as invalid) as void
+AdvancementRewards.grant(player as ServerPlayer) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| player | **invalid** | No Description Provided |
+| player | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) | No Description Provided |
 
 
 :::

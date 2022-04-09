@@ -109,6 +109,22 @@ Return Type: string
 
 :::
 
+:::group{name=getData}
+
+Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
+
+```zenscript
+ListData.getData<T : IData>(index as int) as @org.openzen.zencode.java.ZenCodeType.Nullable T
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| index | int | No Description Provided |
+| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+
+
+:::
+
 :::group{name=getId}
 
 Gets the ID of the internal NBT tag.
