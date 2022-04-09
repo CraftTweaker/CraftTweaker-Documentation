@@ -2198,16 +2198,16 @@ myEntity.unRide();
 
 :::
 
-:::group{name=updateCustomDate}
+:::group{name=updateCustomData}
 
 Updates the custom NBT data for this Entity.
 
 Return Type: void
 
 ```zenscript
-// Entity.updateCustomDate(data as MapData) as void
+// Entity.updateCustomData(data as MapData) as void
 
-myEntity.updateCustomDate({custom: "data"});
+myEntity.updateCustomData({custom: "data"});
 ```
 
 | Parameter | Type | Description |

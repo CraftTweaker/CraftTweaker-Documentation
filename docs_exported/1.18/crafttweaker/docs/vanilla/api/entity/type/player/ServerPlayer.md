@@ -31,7 +31,7 @@ myServerPlayer.getPersistentData();
 
 :::
 
-:::group{name=updatePersistentDate}
+:::group{name=updatePersistentData}
 
 Updates the persistent NBT data for this player.
 
@@ -40,9 +40,9 @@ Updates the persistent NBT data for this player.
 Return Type: void
 
 ```zenscript
-// ServerPlayer.updatePersistentDate(data as MapData) as void
+// ServerPlayer.updatePersistentData(data as MapData) as void
 
-myServerPlayer.updatePersistentDate({custom: "data"});
+myServerPlayer.updatePersistentData({custom: "data"});
 ```
 
 | Parameter | Type | Description |
