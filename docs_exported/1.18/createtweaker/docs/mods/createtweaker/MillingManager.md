@@ -13,7 +13,7 @@ import mods.create.MillingManager;
 ## Implemented Interfaces
 MillingManager implements the following interfaces. That means all methods defined in these interfaces are also available in MillingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[MillingRecipe](/mods/createtweaker/recipes/type/MillingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[MillingRecipe](/mods/createtweaker/recipe/type/MillingRecipe)&gt;
 
 ## Methods
 

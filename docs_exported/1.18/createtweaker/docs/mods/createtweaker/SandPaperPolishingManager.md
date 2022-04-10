@@ -13,7 +13,7 @@ import mods.create.SandPaperPolishingManager;
 ## Implemented Interfaces
 SandPaperPolishingManager implements the following interfaces. That means all methods defined in these interfaces are also available in SandPaperPolishingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[SandPaperPolishingRecipe](/mods/createtweaker/recipes/type/SandPaperPolishingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[SandPaperPolishingRecipe](/mods/createtweaker/recipe/type/SandPaperPolishingRecipe)&gt;
 
 ## Methods
 

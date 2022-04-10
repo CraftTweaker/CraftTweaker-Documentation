@@ -13,7 +13,7 @@ import mods.create.EmptyingManager;
 ## Implemented Interfaces
 EmptyingManager implements the following interfaces. That means all methods defined in these interfaces are also available in EmptyingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[EmptyingRecipe](/mods/createtweaker/recipes/type/EmptyingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[EmptyingRecipe](/mods/createtweaker/recipe/type/EmptyingRecipe)&gt;
 
 ## Methods
 

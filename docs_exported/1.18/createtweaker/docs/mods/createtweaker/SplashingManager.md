@@ -13,7 +13,7 @@ import mods.create.SplashingManager;
 ## Implemented Interfaces
 SplashingManager implements the following interfaces. That means all methods defined in these interfaces are also available in SplashingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[SplashingRecipe](/mods/createtweaker/recipes/type/SplashingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[SplashingRecipe](/mods/createtweaker/recipe/type/SplashingRecipe)&gt;
 
 ## Methods
 

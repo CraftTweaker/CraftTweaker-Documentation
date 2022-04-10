@@ -13,7 +13,7 @@ import mods.create.DeployerApplicationManager;
 ## Implemented Interfaces
 DeployerApplicationManager implements the following interfaces. That means all methods defined in these interfaces are also available in DeployerApplicationManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[DeployerApplicationRecipe](/mods/createtweaker/recipes/type/DeployerApplicationRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[DeployerApplicationRecipe](/mods/createtweaker/recipe/type/DeployerApplicationRecipe)&gt;
 
 ## Methods
 

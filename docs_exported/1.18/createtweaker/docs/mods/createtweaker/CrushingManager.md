@@ -13,7 +13,7 @@ import mods.create.CrushingManager;
 ## Implemented Interfaces
 CrushingManager implements the following interfaces. That means all methods defined in these interfaces are also available in CrushingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CrushingRecipe](/mods/createtweaker/recipes/type/CrushingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CrushingRecipe](/mods/createtweaker/recipe/type/CrushingRecipe)&gt;
 
 ## Methods
 

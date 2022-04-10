@@ -13,7 +13,7 @@ import mods.create.FillingManager;
 ## Implemented Interfaces
 FillingManager implements the following interfaces. That means all methods defined in these interfaces are also available in FillingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[FillingRecipe](/mods/createtweaker/recipes/type/FillingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[FillingRecipe](/mods/createtweaker/recipe/type/FillingRecipe)&gt;
 
 ## Methods
 

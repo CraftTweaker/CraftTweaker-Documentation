@@ -15,7 +15,7 @@ import mods.createtweaker.ProcessingRecipeBuilder;
 Sets the duration of the recipe to the average processing duration, which is 100 ticks.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 // ProcessingRecipeBuilder.averageProcessingDuration() as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -30,7 +30,7 @@ myProcessingRecipeBuilder.averageProcessingDuration();
 Sets the duration of the recipe in ticks.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.duration(ticks as int) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -48,7 +48,7 @@ ProcessingRecipeBuilder.duration(ticks as int) as ProcessingRecipeBuilder<Proces
 Sets the recipe to output the given **invalid**.
 
 Returns: This builder for futher chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.output(fluidStack as invalid) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -66,7 +66,7 @@ ProcessingRecipeBuilder.output(fluidStack as invalid) as ProcessingRecipeBuilder
 Sets the recipe to output the given [Percentaged](/vanilla/api/util/random/Percentaged)&lt;T&gt; item.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.output(item as Percentaged<IItemStack>) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -86,7 +86,7 @@ Sets the recipe to require the given fluid ingredient.
  This can be chained multiple times for multiple ingredients.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.require(ingredient as FluidIngredient) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -106,7 +106,7 @@ Sets the recipe to require the given item ingredient.
  This can be chained multiple times for multiple ingredients.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.require(ingredient as IIngredient) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -121,10 +121,10 @@ ProcessingRecipeBuilder.require(ingredient as IIngredient) as ProcessingRecipeBu
 
 :::group{name=requiresHeat}
 
-Sets the recipe to require the specific [HeatCondition](/mods/createtweaker/recipes/HeatCondition).
+Sets the recipe to require the specific [HeatCondition](/mods/createtweaker/recipe/HeatCondition).
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.requiresHeat(condition as HeatCondition) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -132,7 +132,7 @@ ProcessingRecipeBuilder.requiresHeat(condition as HeatCondition) as ProcessingRe
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| condition | [HeatCondition](/mods/createtweaker/recipes/HeatCondition) | The heat condition of the recipe. |
+| condition | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The heat condition of the recipe. |
 
 
 :::
@@ -142,7 +142,7 @@ ProcessingRecipeBuilder.requiresHeat(condition as HeatCondition) as ProcessingRe
 Sets the fluid ingredients of the recipe.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.withFluidIngredients(ingredients as FluidIngredient[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -160,7 +160,7 @@ ProcessingRecipeBuilder.withFluidIngredients(ingredients as FluidIngredient[]) a
 Sets the fluid outputs of the recipe.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.withFluidOutputs(outputs as invalid[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -178,7 +178,7 @@ ProcessingRecipeBuilder.withFluidOutputs(outputs as invalid[]) as ProcessingReci
 Sets the item ingredients of the recipe.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.withItemIngredients(ingredients as IIngredient[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -196,7 +196,7 @@ ProcessingRecipeBuilder.withItemIngredients(ingredients as IIngredient[]) as Pro
 Sets the item outputs of the recipe.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.withItemOutputs(outputs as Percentaged<IItemStack>[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
@@ -214,7 +214,7 @@ ProcessingRecipeBuilder.withItemOutputs(outputs as Percentaged<IItemStack>[]) as
 Sets the single item output of the recipe.
 
 Returns: This builder for further chaining.  
-Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
 ProcessingRecipeBuilder.withSingleItemOutput(output as IItemStack) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>

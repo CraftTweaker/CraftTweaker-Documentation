@@ -13,7 +13,7 @@ import mods.create.CompactingManager;
 ## Implemented Interfaces
 CompactingManager implements the following interfaces. That means all methods defined in these interfaces are also available in CompactingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CompactingRecipe](/mods/createtweaker/recipes/type/CompactingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CompactingRecipe](/mods/createtweaker/recipe/type/CompactingRecipe)&gt;
 
 ## Methods
 
@@ -48,7 +48,7 @@ Return Type: void
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | name | string | The name of the recipe. | false |  |
-| heat | [HeatCondition](/mods/createtweaker/recipes/HeatCondition) | The required heat of the recipe. | false |  |
+| heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The output FluidStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
 | fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |
@@ -72,7 +72,7 @@ Return Type: void
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | name | string | The name of the recipe. | false |  |
-| heat | [HeatCondition](/mods/createtweaker/recipes/HeatCondition) | The required heat of the recipe. | false |  |
+| heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The output ItemStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
 | fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |

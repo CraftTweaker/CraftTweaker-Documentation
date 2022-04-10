@@ -13,7 +13,7 @@ import mods.create.HauntingManager;
 ## Implemented Interfaces
 HauntingManager implements the following interfaces. That means all methods defined in these interfaces are also available in HauntingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[HauntingRecipe](/mods/createtweaker/recipes/type/HauntingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[HauntingRecipe](/mods/createtweaker/recipe/type/HauntingRecipe)&gt;
 
 ## Methods
 

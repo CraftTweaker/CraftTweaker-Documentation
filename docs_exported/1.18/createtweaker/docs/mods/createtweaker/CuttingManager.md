@@ -13,7 +13,7 @@ import mods.create.CuttingManager;
 ## Implemented Interfaces
 CuttingManager implements the following interfaces. That means all methods defined in these interfaces are also available in CuttingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CuttingRecipe](/mods/createtweaker/recipes/type/CuttingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[CuttingRecipe](/mods/createtweaker/recipe/type/CuttingRecipe)&gt;
 
 ## Methods
 

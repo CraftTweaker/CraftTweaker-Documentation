@@ -42,7 +42,7 @@ SequencedAssemblyRecipeBuilder.addStep<T : ProcessingRecipe>() as SequencedAssem
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| T | [ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe) | The type of recipe to add a step for. |
+| T | [ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe) | The type of recipe to add a step for. |
 
 
 :::
@@ -61,7 +61,7 @@ SequencedAssemblyRecipeBuilder.addStep<T : ProcessingRecipe>(builder as Function
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | builder | Function&lt;[ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;T&gt;,[ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;T&gt;&gt; | The recipe builder to allow configuration of the recipe. |
-| T | [ProcessingRecipe](/mods/createtweaker/recipes/type/ProcessingRecipe) | The type of recipe to add a step for. |
+| T | [ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe) | The type of recipe to add a step for. |
 
 
 :::

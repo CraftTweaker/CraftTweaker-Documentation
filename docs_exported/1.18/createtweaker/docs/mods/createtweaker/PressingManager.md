@@ -13,7 +13,7 @@ import mods.create.PressingManager;
 ## Implemented Interfaces
 PressingManager implements the following interfaces. That means all methods defined in these interfaces are also available in PressingManager
 
-- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[PressingRecipe](/mods/createtweaker/recipes/type/PressingRecipe)&gt;
+- [IProcessingRecipeManager](/mods/createtweaker/IProcessingRecipeManager)&lt;[PressingRecipe](/mods/createtweaker/recipe/type/PressingRecipe)&gt;
 
 ## Methods
 
