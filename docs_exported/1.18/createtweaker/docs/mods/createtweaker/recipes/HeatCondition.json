@@ -1,1 +1,1 @@
-{"path":"mods/createtweaker/recipes/HeatCondition.md","zenCodeName":"mods.create.HeatCondition","searchTerms":["color","translationKey","getCommandString","getTranslationKey","HEATED","SUPERHEATED","getColor","NONE","commandString"]}
+{"path":"mods/createtweaker/recipes/HeatCondition.md","zenCodeName":"mods.create.HeatCondition","searchTerms":["<constant:create:heat_condition:none>","color","translationKey","getCommandString","getTranslationKey","getColor","<constant:create:heat_condition:superheated>","commandString","<constant:create:heat_condition:heated>"]}

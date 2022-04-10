@@ -13,9 +13,9 @@ import mods.create.HeatCondition;
 HeatCondition is an enum. It has 3 enum constants. They are accessible using the code below.
 
 ```zenscript
-HeatCondition.NONE
-HeatCondition.HEATED
-HeatCondition.SUPERHEATED
+<constant:create:heat_condition:none>
+<constant:create:heat_condition:heated>
+<constant:create:heat_condition:superheated>
 ```
 ## Methods
 
