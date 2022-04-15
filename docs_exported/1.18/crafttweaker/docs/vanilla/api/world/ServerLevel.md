@@ -14,6 +14,23 @@ ServerLevel extends [Level](/vanilla/api/world/Level). That means all methods av
 
 ## Methods
 
+:::group{name=getCustomData}
+
+Gets the custom data that is saved/loaded to/from disk when the level is saved/loaded to/from disk.
+
+ This lets you store data on this specific level, so data stored in the Overworld will not be accessible from the Nether.
+
+Returns: The custom data for this world.  
+Return Type: [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData)
+
+```zenscript
+// ServerLevel.getCustomData() as CraftTweakerSavedData
+
+myServerLevel.getCustomData();
+```
+
+:::
+
 :::group{name=getEntities}
 
 Gets entities in the world that match the given Predicate and the given MCEntityType (if provided).
@@ -160,6 +177,7 @@ myServerLevel.setTimeToNoon();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| customData | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData) | true | false | Gets the custom data that is saved/loaded to/from disk when the level is saved/loaded to/from disk. <br />  <br />  This lets you store data on this specific level, so data stored in the Overworld will not be accessible from the Nether. |
 | dayTime | [ServerLevel](/vanilla/api/world/ServerLevel) | false | true | Sets the time of the Minecraft day. |
 | seed | long | true | false | Gets the random seed of the world. |
 | server | [Server](/vanilla/api/game/Server) | true | false | No Description Provided |

@@ -200,6 +200,23 @@ myServer.getOperatorUserPermissionLevel();
 
 :::
 
+:::group{name=getOverworldData}
+
+Gets the custom data of the overworld.
+
+ The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in.
+
+Returns: The overworld's custom data.  
+Return Type: [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData)
+
+```zenscript
+// Server.getOverworldData() as CraftTweakerSavedData
+
+myServer.getOverworldData();
+```
+
+:::
+
 :::group{name=getPlayerCount}
 
 Return Type: int
@@ -633,6 +650,7 @@ Server.setPvpAllowed(pvpAllowed as boolean) as void
 | motd | string | true | false | No Description Provided |
 | operatorUserPermissionLevel | int | true | false | No Description Provided |
 | overworld | [ServerLevel](/vanilla/api/world/ServerLevel) | true | false | No Description Provided |
+| overworldData | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData) | true | false | Gets the custom data of the overworld. <br />  <br />  The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in. |
 | playerCount | int | true | false | No Description Provided |
 | playerNames | string[] | true | false | No Description Provided |
 | serverModName | string | true | false | No Description Provided |
