@@ -12,59 +12,60 @@ import crafttweaker.api.villager.MerchantOffer;
 
 
 ```zenscript
-new MerchantOffer(baseCostA as ItemStack, result as ItemStack, uses as int?, maxUses as int?) as MerchantOffer
+new MerchantOffer(baseCostA as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | baseCostA | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | result | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
-| uses | int? | No description provided |
-| maxUses | int? | No description provided |
+| maxUses | int | No description provided |
+| xp | int | No description provided |
+| priceMultiplier | float | No description provided |
 
 
 
 ```zenscript
-new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, maxUses as int?, xp as int?, priceMultiplier as float?) as MerchantOffer
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | baseCostA | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | costB | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | result | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
-| maxUses | int? | No description provided |
-| xp | int? | No description provided |
-| priceMultiplier | float? | No description provided |
+| maxUses | int | No description provided |
+| xp | int | No description provided |
+| priceMultiplier | float | No description provided |
 
 
 
 ```zenscript
-new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int?, maxUses as int?, xp as int?, priceMultiplier as float?) as MerchantOffer
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | baseCostA | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | costB | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | result | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
-| uses | int? | No description provided |
-| maxUses | int? | No description provided |
-| xp | int? | No description provided |
-| priceMultiplier | float? | No description provided |
+| uses | int | No description provided |
+| maxUses | int | No description provided |
+| xp | int | No description provided |
+| priceMultiplier | float | No description provided |
 
 
 
 ```zenscript
-new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int?, maxUses as int?, xp as int?, priceMultiplier as float?, demand as int?) as MerchantOffer
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float, demand as int) as MerchantOffer
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | baseCostA | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | costB | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
 | result | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
-| uses | int? | No description provided |
-| maxUses | int? | No description provided |
-| xp | int? | No description provided |
-| priceMultiplier | float? | No description provided |
-| demand | int? | No description provided |
+| uses | int | No description provided |
+| maxUses | int | No description provided |
+| xp | int | No description provided |
+| priceMultiplier | float | No description provided |
+| demand | int | No description provided |
 
 
 
