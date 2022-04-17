@@ -144,7 +144,7 @@ val stickFertilizer = fertilizers.create("examplepack:test", <item:minecraft:sti
 To modify a fertilizer you will need to get a ZenFertilizer value. This is provided when you create the fertilizer but can also be retrieved using `fertilizers.getFertilizer("fertilizerId");`.
 
 ```zenscript
-val bonemeal = soils.getFertilizer("botanypots:fertilizers/bone_meal");
+val bonemeal = fertilizers.getFertilizer("botanypots:fertilizers/bone_meal");
 
 // Set the input of the fertilizer.
 // setInput(input);
