@@ -65,7 +65,7 @@ Examples of this are:
 
 ```zenscript
 <tag:items:minecraft:white_wool> // References the White Wool Item Tag.
-<tag:blocks:minecraft:white_wool> // References the White Wool Item Tag.
+<tag:blocks:minecraft:white_wool> // References the White Wool Block Tag.
 <tag:fluids:minecraft:water> // References the Water Fluid Tag.
 ```
 
