@@ -192,6 +192,66 @@ myStyle.isUnderlined();
 
 :::
 
+:::group{name=setBold}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.setBold() as Style
+
+myStyle.setBold();
+```
+
+:::
+
+:::group{name=setItalic}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.setItalic() as Style
+
+myStyle.setItalic();
+```
+
+:::
+
+:::group{name=setObfuscated}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.setObfuscated() as Style
+
+myStyle.setObfuscated();
+```
+
+:::
+
+:::group{name=setStrikethrough}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.setStrikethrough() as Style
+
+myStyle.setStrikethrough();
+```
+
+:::
+
+:::group{name=setUnderlined}
+
+Return Type: [Style](/vanilla/api/text/Style)
+
+```zenscript
+// Style.setUnderlined() as Style
+
+myStyle.setUnderlined();
+```
+
+:::
+
 :::group{name=withBold}
 
 Return Type: [Style](/vanilla/api/text/Style)
@@ -287,12 +347,12 @@ Style.withInsertion(content as invalid) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withItalic(value as bool?) as Style
+Style.withItalic(value as invalid) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | bool? | No Description Provided |
+| value | **invalid** | No Description Provided |
 
 
 :::
