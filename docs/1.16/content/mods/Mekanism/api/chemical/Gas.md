@@ -26,6 +26,7 @@ are also available in Gas
 Creates a new [GasStack](/mods/Mekanism/api/chemical/GasStack) with the given amount of gas.
 
 Returns: a new (immutable) [GasStack](/mods/Mekanism/api/chemical/GasStack)  
+
 Return Type: [GasStack](/mods/Mekanism/api/chemical/GasStack)
 
 ```zenscript

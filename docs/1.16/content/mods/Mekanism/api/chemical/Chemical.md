@@ -12,6 +12,8 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.chemical.Chemical;
 ```
 
+A Chemical is the abstract representation of a mekanism chemical substance.
+
 ## Implemented Interfaces
 
 Chemical implements the following interfaces. That means all methods defined in these interfaces are
@@ -26,6 +28,7 @@ also available in Chemical
 Gets whether this chemical is the empty instance.
 
 Returns: `true` if the chemical is the empty instance, `false` otherwise.  
+
 Return Type: boolean
 
 ```zenscript
@@ -41,6 +44,7 @@ myChemical.isEmptyType();
 Gets whether this chemical is hidden.
 
 Returns: `true` if the chemical is hidden, `false` otherwise.  
+
 Return Type: boolean
 
 ```zenscript
@@ -56,6 +60,7 @@ myChemical.isHidden();
 Gets the tags that this chemical is a part of.
 
 Returns: All the tags this chemical is a part of.
+
 Return Type: Set&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt;
 
 ```zenscript

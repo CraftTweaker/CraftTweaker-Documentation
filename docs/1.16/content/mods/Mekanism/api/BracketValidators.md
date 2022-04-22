@@ -6,11 +6,15 @@ want to use this feature.
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an
-Array), so better be safe than sorry and add the import at the very top of the file.
+Array), so better be safe than sorry and add the import at the very top of the file. 
 
 ```zenscript
 import mods.mekanism.api.BracketValidators;
 ```
+
+This class allows you to check whether a certain Object exists or not before using the [BracketHandlers](/mods/Mekanism/api/BracketHandlers) class. All methods return a boolean that represents whether the passed in registry name or location has an Object associated to it.
+
+Just like with the [BracketHandlers](/mods/Mekanism/api/BracketHandlers), most of these are accessible through the `/ct dump` subcommands added by Mekanism or through their in-game names. Make sure to remove the prefix from the bracket you get, because that is handled by the static, specific method you use in this class.
 
 ## Static Methods
 

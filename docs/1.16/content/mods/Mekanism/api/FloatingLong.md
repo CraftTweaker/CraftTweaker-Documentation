@@ -102,12 +102,15 @@ FloatingLong.createFromUnsigned(value as long) as FloatingLong
 :::group{name=add}
 
 Adds the given [FloatingLong](/mods/Mekanism/api/FloatingLong) to
-this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
-gets clamped at the upper bound of {
+this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. 
+
+This
+gets clamped at the upper bound of `18,446,744,073,709,551,615.9999` instead of overflowing.
 
 Returns: The [FloatingLong](/mods/Mekanism/api/FloatingLong) representing the value of adding the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong) to
 this [FloatingLong](/mods/Mekanism/api/FloatingLong).  
+
 Return Type: [FloatingLong](/mods/Mekanism/api/FloatingLong)
 
 ```zenscript
@@ -139,11 +142,11 @@ myFloatingLong.asString();
 Compares this [FloatingLong](/mods/Mekanism/api/FloatingLong) to the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong).
 
-Returns: zero if equal to toCompare
-<br>
-less than zero if smaller than toCompare
-<br>
-greater than zero if bigger than toCompare  
+Returns: `0` if equal to toCompare
+
+An integer`< 0` if smaller than toCompare
+An integer `> 0` if bigger than toCompare  
+
 Return Type: int
 
 ```zenscript
@@ -160,11 +163,12 @@ FloatingLong.compareTo(toCompare as FloatingLong) as int
 
 Divides this [FloatingLong](/mods/Mekanism/api/FloatingLong) by the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
-gets clamped at the upper bound of {
+gets clamped at the upper bound of `18,446,744,073,709,551,615.9999` instead of overflowing.
 
 Returns: The [FloatingLong](/mods/Mekanism/api/FloatingLong) representing the value of dividing
 this [FloatingLong](/mods/Mekanism/api/FloatingLong) by the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong).  
+
 Return Type: [FloatingLong](/mods/Mekanism/api/FloatingLong)
 
 ```zenscript
@@ -183,7 +187,8 @@ Checks if this [FloatingLong](/mods/Mekanism/api/FloatingLong) is equal to the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong).
 
 Returns: `true` if this [FloatingLong](/mods/Mekanism/api/FloatingLong) is equal to the
-given [FloatingLong](/mods/Mekanism/api/FloatingLong), `false` otherwise.  
+given [FloatingLong](/mods/Mekanism/api/FloatingLong), `false` otherwise.
+
 Return Type: boolean
 
 ```zenscript
@@ -200,11 +205,12 @@ FloatingLong.isEqual(toCompare as FloatingLong) as boolean
 
 Multiplies the given [FloatingLong](/mods/Mekanism/api/FloatingLong) with
 this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
-gets clamped at the upper bound of {
+gets clamped at the upper bound of `18,446,744,073,709,551,615.9999` instead of overflowing.
 
 Returns: The [FloatingLong](/mods/Mekanism/api/FloatingLong) representing the value of multiplying
 the given [FloatingLong](/mods/Mekanism/api/FloatingLong) with
 this [FloatingLong](/mods/Mekanism/api/FloatingLong).  
+
 Return Type: [FloatingLong](/mods/Mekanism/api/FloatingLong)
 
 ```zenscript
@@ -220,12 +226,12 @@ FloatingLong.multiply(toMultiply as FloatingLong) as FloatingLong
 :::group{name=subtract}
 
 Subtracts the given [FloatingLong](/mods/Mekanism/api/FloatingLong) from
-this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
-gets clamped at the lower bound of {
+this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This gets clamped at the lower bound of 0 rather than becoming negative.
 
 Returns: The [FloatingLong](/mods/Mekanism/api/FloatingLong) representing the value of subtracting
 the given [FloatingLong](/mods/Mekanism/api/FloatingLong) from
 this [FloatingLong](/mods/Mekanism/api/FloatingLong).  
+
 Return Type: [FloatingLong](/mods/Mekanism/api/FloatingLong)
 
 ```zenscript

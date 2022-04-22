@@ -1,4 +1,4 @@
-# ChemicalStack&LT;CHEMICAL : Chemical<CHEMICAL>, STACK, CRT_STACK : ChemicalStack<CHEMICAL,STACK,CRT_STACK>&GT;
+# ChemicalStack
 
 This class was added by a mod with mod-id `mekanism`. So you need to have this mod installed if you
 want to use this feature.
@@ -11,6 +11,8 @@ Array), so better be safe than sorry and add the import at the very top of the f
 ```zenscript
 import mods.mekanism.api.chemical.ChemicalStack;
 ```
+
+A ChemicalStack is the concrete representation of a [Chemical](/mods/mekanism/api/chemical/Chemical), with defined characteristics, such as the amount, 
 
 ## Implemented Interfaces
 
@@ -34,6 +36,7 @@ Makes this stack immutable
 
 Returns: An immutable Stack. This is either a new stack if the current stack is mutable, or the same
 stack if it is already immutable.  
+
 Return Type: CRT_STACK
 
 ```zenscript
@@ -49,6 +52,7 @@ myChemicalStack.asImmutable();
 Makes this stack mutable
 
 Returns: A new Stack, that is mutable.  
+
 Return Type: CRT_STACK
 
 ```zenscript
@@ -65,6 +69,7 @@ Checks if this chemical stack, contains the given chemical stack by checking if 
 the same, and if this stack's amount is bigger than the given stack's amount
 
 Returns: `true` if this stack contains the other stack  
+
 Return Type: boolean
 
 ```zenscript
@@ -82,6 +87,7 @@ ChemicalStack.containsOther(stack as CRT_STACK) as boolean
 Copies the stack. Only needed when mutable stacks are involved.
 
 Returns: A new stack, that contains the same info as this one  
+
 Return Type: CRT_STACK
 
 ```zenscript
@@ -97,6 +103,7 @@ myChemicalStack.copy();
 Gets the size of this chemical stack.
 
 Returns: The size of this chemical stack or zero if it is empty  
+
 Return Type: long
 
 ```zenscript
@@ -112,6 +119,7 @@ myChemicalStack.getAmount();
 Gets the registry name for the chemical this stack is representing.
 
 Returns: A MCResourceLocation representing the registry name.  
+
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
@@ -127,6 +135,7 @@ myChemicalStack.getRegistryName();
 Retrieves this fluid stack's fluid.
 
 Returns: The fluid.  
+
 Return Type: CHEMICAL
 
 ```zenscript
@@ -159,6 +168,7 @@ ChemicalStack.grow(amount as long) as CRT_STACK
 Whether this chemical stack is empty.
 
 Returns: `true` if this stack is empty, `false` otherwise.  
+
 Return Type: boolean
 
 ```zenscript
@@ -174,6 +184,7 @@ myChemicalStack.isEmpty();
 Checks if this chemical stack is equal another chemical stack.
 
 Returns: `true` if the chemicals stacks are equal, `false` otherwise.  
+
 Return Type: boolean
 
 ```zenscript
@@ -191,6 +202,7 @@ ChemicalStack.isEqual(other as CRT_STACK) as boolean
 Whether this ChemicalStack's chemical type is equal to the other defined ChemicalStack.
 
 Returns: if the ChemicalStacks contain the same chemical type  
+
 Return Type: boolean
 
 ```zenscript
@@ -208,6 +220,7 @@ ChemicalStack.isTypeEqual(stack as CRT_STACK) as boolean
 Sets the chemical's amount in MilliBuckets (MB)
 
 Returns: A new stack, or this stack, depending on if this stack is mutable  
+
 Return Type: CRT_STACK
 
 ```zenscript
@@ -225,6 +238,7 @@ ChemicalStack.setAmount(amount as long) as CRT_STACK
 Shrinks the stack's amount by the given amount in MilliBuckets (MB)
 
 Returns: A new stack, or this stack, depending on if this stack is mutable  
+
 Return Type: CRT_STACK
 
 ```zenscript
@@ -280,3 +294,16 @@ myChemicalStack * amount as long
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false | Gets the registry name for the chemical this stack is representing. |
 | type | CHEMICAL | true | false | Retrieves this chemical stack's chemical. |
 
+
+## Small note
+
+It is worth nothing that for each Chemical type, there's a ChemicalStack:
+
+```
+GasStack
+InfusionStack
+PigmentStack
+SlurryStack
+```
+
+exist and are something you can interact with.

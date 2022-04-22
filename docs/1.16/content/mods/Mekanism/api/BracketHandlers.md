@@ -12,6 +12,9 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.BracketHandlers;
 ```
 
+This class allows you to get any of the Objects in the following methods by providing their registry name.
+Some of these are collected through a dump command, while others can be found in game. Make sure to remove the prefix from the dump Bracket, as that is handled by the static method you are using here.
+
 ## Static Methods
 
 :::group{name=getGasStack}
