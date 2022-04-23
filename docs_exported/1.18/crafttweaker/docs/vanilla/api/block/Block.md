@@ -42,9 +42,7 @@ Return Type: [ItemDefinition](/vanilla/api/item/ItemDefinition)
 Gets the block bracket handler syntax for this Block.
 
  E.G.
- <code>
- <block:minecraft:dirt>
- </code>
+ `<block:minecraft:dirt>`
 
 Returns: The block bracket handler syntax for this Block.  
 Return Type: string
@@ -391,7 +389,7 @@ Return Type: void
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  <code> <br />  <block:minecraft:dirt> <br />  </code> |
+| commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  `<block:minecraft:dirt>` |
 | defaultState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the default [BlockState](/vanilla/api/block/BlockState) of this Block. |
 | descriptionId | string | true | false | Gets the translation key that is used to localize this Block. |
 | dynamicShape | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |

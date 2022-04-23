@@ -388,6 +388,18 @@ myLevel.hasNeighborSignal(new BlockPos(0, 1, 2));
 
 :::
 
+:::group{name=isClientSide}
+
+Return Type: boolean
+
+```zenscript
+// Level.isClientSide() as boolean
+
+myLevel.isClientSide();
+```
+
+:::
+
 :::group{name=isDay}
 
 Return Type: boolean

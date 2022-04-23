@@ -386,7 +386,7 @@ CommonLootModifiers.replaceAllWith({ <tag:items:forge:gems/emerald> : <item:mine
 
 :::group{name=replaceStackWith}
 
-Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack) with the replacement [IItemStack](/vanilla/api/item/IItemStack), <br />  proportionally. <br />  <br />  As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the <code>target</code> <br />  and 1 potato as the <code>replacement</code>, the loot will be modified to 2 potatoes and 1 carrot. This happens <br />  because every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions. <br />  <br />  This loot modifier acts differently than [this](.)#replaceWith(IIngredient, IItemStack), where a simpler approach <br />  is used.
+Replaces every instance of the targeted [IItemStack](/vanilla/api/item/IItemStack) with the replacement [IItemStack](/vanilla/api/item/IItemStack), <br />  proportionally. <br />  <br />  As an example, if the loot drops 5 carrots and this loot modifier runs with 2 carrots as the `target` <br />  and 1 potato as the `replacement`, the loot will be modified to 2 potatoes and 1 carrot. This happens <br />  because every 2-carrot stack will be actively replaced by a 1-potato stack, without exceptions. <br />  <br />  This loot modifier acts differently than [this](.)#replaceWith(IIngredient, IItemStack), where a simpler approach <br />  is used.
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
@@ -407,7 +407,7 @@ CommonLootModifiers.replaceStackWith(<item:minecraft:carrots> * 2, <item:minecra
 
 :::group{name=replaceWith}
 
-Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient) with the replacement [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  In this case, a simple matching procedure is used, where every stack that matches the given <code>target</code> <br />  is replaced by the <code>replacement</code> without considering stack size. If stack size is to be preserved, <br />  refer to [this](.)#replaceStackWith(IItemStack, IItemStack).
+Replaces every instance of the targeted [IIngredient](/vanilla/api/ingredient/IIngredient) with the replacement [IItemStack](/vanilla/api/item/IItemStack). <br />  <br />  In this case, a simple matching procedure is used, where every stack that matches the given `target` <br />  is replaced by the `replacement` without considering stack size. If stack size is to be preserved, <br />  refer to [this](.)#replaceStackWith(IItemStack, IItemStack).
 
 Returns: An [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that carries out the operation.  
 Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)

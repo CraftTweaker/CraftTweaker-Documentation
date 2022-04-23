@@ -72,9 +72,7 @@ Return Type: stdlib.List&lt;string&gt;
 Gets the blockstate bracket handler syntax for this BlockState.
 
  E.G.
- <code>
- <blockstate:minecraft:grass:snowy=true>
- </code>
+ `<blockstate:minecraft:grass:snowy=true>`
 
 Returns: The blockstate bracket handler syntax for this BlockState.  
 Return Type: string
@@ -304,7 +302,7 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 |------|------|------------|------------|-------------|
 | block | [Block](/vanilla/api/block/Block) | true | false | Gets the base [Block](/vanilla/api/block/Block) of this BlockState. <br />  <br />  The [Block](/vanilla/api/block/Block) will not contain any of the properties of this BlockState. |
 | canOcclude | boolean | true | false | Checks whether this BlockState is solid. |
-| commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  <code> <br />  <blockstate:minecraft:grass:snowy=true> <br />  </code> |
+| commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  `<blockstate:minecraft:grass:snowy=true>` |
 | destroySpeed | float | true | true | Gets the hardness of this BlockState. |
 | hasBlockEntity | boolean | true | false | Checks whether this BlockState has a [BlockEntity](/vanilla/api/block/entity/BlockEntity). |
 | isRandomlyTicking | boolean | true | false | Checks whether this BlockState ticks randomly. |
