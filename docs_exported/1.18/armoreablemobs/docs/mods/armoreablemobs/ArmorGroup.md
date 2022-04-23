@@ -56,6 +56,7 @@ new ArmorGroup(name as string) as ArmorGroup
 Gets the name of the ArmorGroup
 
 Returns: The name of the group as a string.  
+
 Return Type: string
 
 ```zenscript
@@ -89,6 +90,7 @@ ArmorGroup.inSlot(slot as EquipmentSlot, stack as IItemStack) as ArmorGroup
 Sets the weight at which the armor group can spawn. The chance a group has to spawn on an entity is determined using a pseudo random number and the total weight of ArmorGroups that entity can have.
 
 Returns: The ArmorGroup that has been modified.  
+
 Return Type: [ArmorGroup](/mods/armoreablemobs/ArmorGroup)
 
 ```zenscript
@@ -123,6 +125,7 @@ ArmorGroup.register(type as EntityType) as void
 Returns the AssociativeArray that corresponds to the internal `EquipmentSlot[IItemStack]`
 
 Returns: The internal map as `EquipmentSlot[IItemStack]`  
+
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)[[EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)]
 
 ```zenscript
@@ -138,6 +141,7 @@ myArmorGroup.getMap();
 Gets the ItemStack the group will give in a selected slot. Can be null. Would be the same as using [ArmorGroup](/mods/armoreablemobs/ArmorGroup)#getMap() and passing the [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) as a key.
 
 Returns: The ItemStack at the selected location. Can be null.  
+
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
@@ -156,6 +160,7 @@ ArmorGroup.getStackinSlot(slot as EquipmentSlot) as ItemStack
 Gets the weight of the ArmorGroup
 
 Returns: The weight of the group as a double.  
+
 Return Type: double
 
 ```zenscript
