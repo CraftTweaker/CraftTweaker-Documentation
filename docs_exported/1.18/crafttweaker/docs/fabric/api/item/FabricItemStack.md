@@ -314,6 +314,18 @@ myFabricItemStack.getEnchantments();
 
 :::
 
+:::group{name=getFood}
+
+Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
+
+```zenscript
+// FabricItemStack.getFood() as FoodProperties
+
+myFabricItemStack.getFood();
+```
+
+:::
+
 :::group{name=getImmutableInternal}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -820,6 +832,21 @@ FabricItemStack.setFireResistant(fireResistant as boolean) as void
 
 :::
 
+:::group{name=setFood}
+
+Return Type: void
+
+```zenscript
+FabricItemStack.setFood(food as FoodProperties) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| food | [FoodProperties](/vanilla/api/food/FoodProperties) | No Description Provided |
+
+
+:::
+
 :::group{name=setMaxStackSize}
 
 Sets the max stacksize of the Item.
@@ -1196,6 +1223,7 @@ myFabricItemStack | other as IIngredient
 | hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
+| isEdible | boolean | true | false | No Description Provided |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
 | isImmutable | boolean | true | false | No Description Provided |
