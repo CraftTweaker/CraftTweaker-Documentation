@@ -19,6 +19,8 @@ Return Type: void
 
 ```zenscript
 ArmorGroup.overrideExistingArmor(type as EntityType, map as IItemStack[EquipmentSlot], state as BlockState) as void
+
+ArmorGroup.overrideExistingArmor(<entitytype:minecraft:zombie>, {<constant:minecraft:equipmentslot:chest> : <item:minecraft:netherite_chestplate>, <constant:minecraft:equipmentslot:mainhand> : <item:minecraft:netherite_sword>}, <blockstate:minecraft:sand>);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
@@ -75,6 +77,8 @@ Return Type: [ArmorGroup](/mods/armoreablemobs/ArmorGroup)
 
 ```zenscript
 ArmorGroup.inSlot(slot as EquipmentSlot, stack as IItemStack) as ArmorGroup
+
+myArmorGroup.inSlot(<constant:minecraft:equipmentslot:feet>, <item:minecraft:iron_boots>);
 ```
 
 | Parameter | Type | Description |
@@ -95,6 +99,8 @@ Return Type: [ArmorGroup](/mods/armoreablemobs/ArmorGroup)
 
 ```zenscript
 ArmorGroup.setWeight(weight as double) as ArmorGroup
+
+myArmorGroup.setWeight(3.0);
 ```
 
 | Parameter | Type | Description |
@@ -111,6 +117,8 @@ Return Type: void
 
 ```zenscript
 ArmorGroup.register(type as EntityType) as void
+
+myArmorGroup.register(<entitytype:minecraft:zombie>);
 ```
 
 | Parameter | Type | Description |
@@ -146,6 +154,8 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
 ArmorGroup.getStackinSlot(slot as EquipmentSlot) as ItemStack
+
+myArmorGroup.getStackinSlot(<constant:minecraft:equipmentslot:head>);
 ```
 
 | Parameter | Type | Description |
