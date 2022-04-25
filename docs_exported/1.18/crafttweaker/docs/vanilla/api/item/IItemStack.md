@@ -327,6 +327,23 @@ myIItemStack.getFood();
 
 :::
 
+:::group{name=getHoverName}
+
+Gets the hover name of the ItemStack.
+
+ This will give the raw name without the formatting that 'displayName' applies.
+
+Returns: The hover name of the ItemStack.  
+Return Type: [Component](/vanilla/api/text/Component)
+
+```zenscript
+// IItemStack.getHoverName() as Component
+
+myIItemStack.getHoverName();
+```
+
+:::
+
 :::group{name=getImmutableInternal}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)
@@ -1224,6 +1241,7 @@ myIItemStack | other as IIngredient
 | hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
+| hoverName | [Component](/vanilla/api/text/Component) | true | false | Gets the hover name of the ItemStack. <br />  <br />  This will give the raw name without the formatting that 'displayName' applies. |
 | isEdible | boolean | true | false | No Description Provided |
 | isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
 | isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
