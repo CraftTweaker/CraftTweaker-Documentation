@@ -19,6 +19,28 @@ InteractionResult is an enum. It has 5 enum constants. They are accessible using
 <constant:minecraft:world/interactionresult:pass>
 <constant:minecraft:world/interactionresult:fail>
 ```
+## Static Methods
+
+:::group{name=sidedSuccess}
+
+Returns true if `successSide` is true, this can be used to return `SUCCESS` on the client, but `CONSUME` on the server.
+
+Returns: <constant:minecraft:world/interactionresult:success> if `successSide` is true, otherwise <constant:minecraft:world/interactionresult:consume>.  
+Return Type: [InteractionResult](/vanilla/api/world/InteractionResult)
+
+```zenscript
+// InteractionResult.sidedSuccess(successSide as boolean) as InteractionResult
+
+InteractionResult.sidedSuccess(true);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| successSide | boolean | Is the current side the success side. |
+
+
+:::
+
 ## Methods
 
 :::group{name=consumesAction}
