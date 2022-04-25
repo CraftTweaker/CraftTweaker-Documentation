@@ -2,12 +2,12 @@
 
 # Precision Assembler
 
-The `PrecisionAssembler` package can be used to modify the Immersive Intelligence Precision Assembler recipes.
+The `PrecissionAssembler` package can be used to modify the Immersive Intelligence Precision Assembler recipes.
 
 ## Importing the Package
 
 ```zenscript
-import mods.immersiveintelligence.PrecisionAssembler;
+import mods.immersiveintelligence.PrecissionAssembler;
 ```
 
 ## Adding Recipes
@@ -27,7 +27,7 @@ import mods.immersiveintelligence.PrecisionAssembler;
 ### Syntax
 
 ```zenscript
-mods.immersiveintelligence.PrecisionAssembler.addRecipe(IItemStack itemOutput, IItemStack trash, IIngredient[] itemInputs, String[] tools, String[] animations, int energy, float timeMultiplier);
+mods.immersiveintelligence.PrecissionAssembler.addRecipe(IItemStack itemOutput, IItemStack trash, IIngredient[] itemInputs, String[] tools, String[] animations, int energy, float timeMultiplier);
 ```
 
 ### Animations
@@ -69,7 +69,7 @@ The total recipe time is a sum of all action times for each animation multiplied
 ### Example
 
 ```zenscript
-mods.immersiveintelligence.PrecisionAssembler.addRecipe(<minecraft:diamond>,<minecraft:stone>,[<ore:oreGold>, <ore:oreIron>*2], ["drill","hammer","inserter"], ["inserter pick first","drill work main","inserter drop main","hammer work main"], 8000, 1);
+mods.immersiveintelligence.PrecissionAssembler.addRecipe(<minecraft:diamond>,<minecraft:stone>,[<ore:oreGold>, <ore:oreIron>*2], ["drill","hammer","inserter"], ["inserter pick first","drill work main","inserter drop main","hammer work main"], 8000, 1);
 ```
 
 ## Removing Recipes
@@ -83,11 +83,11 @@ mods.immersiveintelligence.PrecisionAssembler.addRecipe(<minecraft:diamond>,<min
 ### Syntax
 
 ```zenscript
-mods.immersiveintelligence.PrecisionAssembler.removeRecipe(IItemStack output);
+mods.immersiveintelligence.PrecissionAssembler.removeRecipe(IItemStack output);
 ```
 
 ### Example
 
 ```zenscript
-mods.immersiveintelligence.PrecisionAssembler.removeRecipe(<minecraft:diamond>);
+mods.immersiveintelligence.PrecissionAssembler.removeRecipe(<minecraft:diamond>);
 ```
