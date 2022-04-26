@@ -4,6 +4,7 @@
         "Commands" : "commands.md",
         "Examples": "examples.md",
         "Getting Started With Scripts": "getting_started.md",
+        "Global Keywords" : "globals.md",
         "Tutorials": {
             "Introduction To Scripting": {
                 "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
