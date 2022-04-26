@@ -38,7 +38,7 @@ var colour = "white" + "_";
 <tag:items:minecraft:${colour}wool>...
 ```
 
-This exists to ammend that, so you can do: 
+This exists to amend that, so you can do: 
 
 ```zenscript
 var colour = "white" + "_";

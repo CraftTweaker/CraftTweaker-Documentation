@@ -33,6 +33,11 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
+            "ArmoreableMobs" : {},
+            "Createtweaker" : {},
+            "Initialinventory" : {},
+            "JEITweaker" : {},
+            "SushiGoCrafting" : {},
             "Generic JSON Recipes": "mods/other_mods.md"
         },
         "ZenCode": {
