@@ -13,7 +13,7 @@ import mods.solarforge.SolarSmeltingManager;
 ## Implemented Interfaces
 SolarSmeltingManager implements the following interfaces. That means all methods defined in these interfaces are also available in SolarSmeltingManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[SolarSmeltingRecipe](/mods/SolarForge/Recipe/SolarSmeltingRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[SolarSmeltingRecipe](/mods/SolarCraft/Recipe/SolarSmeltingRecipe)&gt;
 
 ## Methods
 

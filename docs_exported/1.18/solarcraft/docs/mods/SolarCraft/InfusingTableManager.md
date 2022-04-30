@@ -13,7 +13,7 @@ import mods.solarforge.InfusingTableManager;
 ## Implemented Interfaces
 InfusingTableManager implements the following interfaces. That means all methods defined in these interfaces are also available in InfusingTableManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[InfusingTableRecipe](/mods/SolarForge/Recipe/InfusingTableRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[InfusingTableRecipe](/mods/SolarCraft/Recipe/InfusingTableRecipe)&gt;
 
 ## Methods
 

@@ -21,6 +21,7 @@ RunicEnergyType is an enum. It has 9 enum constants. They are accessible using t
 <constant:solarforge:energytype:tera>
 <constant:solarforge:energytype:giro>
 <constant:solarforge:energytype:ultima>
+<constant:solarforge:energytype:none>
 ```
 ## Methods
 
@@ -28,7 +29,7 @@ RunicEnergyType is an enum. It has 9 enum constants. They are accessible using t
 
 
 
-Returns: A Usable RunicEnergyType to use in [RunicEnergyCost](/mods/SolarForge/Type/RunicEnergyCost) to set up a requirement.  
+Returns: A Usable RunicEnergyType to use in [RunicEnergyCost](/mods/SolarCraft/Type/RunicEnergyCost) to set up a requirement.  
 Return Type: string
 
 ```zenscript

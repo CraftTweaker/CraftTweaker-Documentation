@@ -13,7 +13,7 @@ import mods.solarforge.InfuserManager;
 ## Implemented Interfaces
 InfuserManager implements the following interfaces. That means all methods defined in these interfaces are also available in InfuserManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[InfusingRecipe](/mods/SolarForge/Recipe/InfusingRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[InfusingRecipe](/mods/SolarCraft/Recipe/InfusingRecipe)&gt;
 
 ## Methods
 
@@ -119,7 +119,7 @@ Return Type: void
 | solarEnergy | int | Required solar energy for recipe. |
 | processingTime | int | The amount of time it should take the recipe to craft. |
 | fragment | string | The id of the fragment to use. |
-| costs | [RunicEnergyCost](/mods/SolarForge/Type/RunicEnergyCost) | The RunicEnergyCost this recipe has. <br />  <br />  Recipe will automatically assign itself the structure tier it needs. (If Runic energy cost > 0 tier will be Runic Energy, if solar energy > 0 tier will be Solar Energy. <br />  Solar Energy tier overrides Runic Energy tier. If both of the costs are 0, the tier will be First.). |
+| costs | [RunicEnergyCost](/mods/SolarCraft/Type/RunicEnergyCost) | The RunicEnergyCost this recipe has. <br />  <br />  Recipe will automatically assign itself the structure tier it needs. (If Runic energy cost > 0 tier will be Runic Energy, if solar energy > 0 tier will be Solar Energy. <br />  Solar Energy tier overrides Runic Energy tier. If both of the costs are 0, the tier will be First.). |
 
 
 :::

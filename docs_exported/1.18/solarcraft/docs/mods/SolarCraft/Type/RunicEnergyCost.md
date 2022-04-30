@@ -15,7 +15,7 @@ import mods.solarforge.RunicEnergyCost;
 
 
 Returns: An empty RunicEnergyCost with no requirements.  
-Return Type: [RunicEnergyCost](/mods/SolarForge/Type/RunicEnergyCost)
+Return Type: [RunicEnergyCost](/mods/SolarCraft/Type/RunicEnergyCost)
 
 ```zenscript
 // RunicEnergyCost.EMPTY() as RunicEnergyCost
@@ -32,7 +32,7 @@ RunicEnergyCost.EMPTY();
 
 
 Returns: A copy of the internal RunicEnergyTypes and the necessary amount needed for each one.  
-Return Type: float?[[RunicEnergyType](/mods/SolarForge/Type/RunicEnergyType)]
+Return Type: float?[[RunicEnergyType](/mods/SolarCraft/Type/RunicEnergyType)]
 
 ```zenscript
 // RunicEnergyCost.getType() as float?[RunicEnergyType]
@@ -59,10 +59,10 @@ Sets a certain RunicEnergyType to the passed in amount.
 
  ```
 
- `customEnergyCost` is now usable as a variable in an [InfuserManager](/mods/SolarForge/InfuserManager)
+ `customEnergyCost` is now usable as a variable in an [InfuserManager](/mods/SolarCraft/InfuserManager)
 
 Returns: The modified RunicEnergyCost.  
-Return Type: [RunicEnergyCost](/mods/SolarForge/Type/RunicEnergyCost)
+Return Type: [RunicEnergyCost](/mods/SolarCraft/Type/RunicEnergyCost)
 
 ```zenscript
 // RunicEnergyCost.setTypeOfMap(type as RunicEnergyType, amount as int) as RunicEnergyCost
@@ -72,7 +72,7 @@ myRunicEnergyCost.setTypeOfMap(<constant:solarforge:energytype:ultima>, 10);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| type | [RunicEnergyType](/mods/SolarForge/Type/RunicEnergyType) | The type to set |
+| type | [RunicEnergyType](/mods/SolarCraft/Type/RunicEnergyType) | The type to set |
 | amount | int | The amount to set the type to |
 
 
@@ -83,5 +83,5 @@ myRunicEnergyCost.setTypeOfMap(<constant:solarforge:energytype:ultima>, 10);
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| types | float?[[RunicEnergyType](/mods/SolarForge/Type/RunicEnergyType)] | true | false |  |
+| types | float?[[RunicEnergyType](/mods/SolarCraft/Type/RunicEnergyType)] | true | false |  |
 
