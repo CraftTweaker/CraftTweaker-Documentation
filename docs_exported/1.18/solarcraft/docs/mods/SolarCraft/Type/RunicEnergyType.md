@@ -21,7 +21,6 @@ RunicEnergyType is an enum. It has 9 enum constants. They are accessible using t
 <constant:solarforge:energytype:tera>
 <constant:solarforge:energytype:giro>
 <constant:solarforge:energytype:ultima>
-<constant:solarforge:energytype:none>
 ```
 ## Methods
 
