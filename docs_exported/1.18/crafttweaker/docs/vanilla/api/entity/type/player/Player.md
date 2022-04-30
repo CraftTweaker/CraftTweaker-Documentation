@@ -257,6 +257,18 @@ myPlayer.getEnchantmentSeed();
 
 :::
 
+:::group{name=getExperienceLevel}
+
+Return Type: int
+
+```zenscript
+// Player.getExperienceLevel() as int
+
+myPlayer.getExperienceLevel();
+```
+
+:::
+
 :::group{name=getFoodData}
 
 Return Type: [FoodData](/vanilla/api/food/FoodData)
@@ -624,6 +636,21 @@ Player.setEntityOnShoulder(entityData as MapData) as boolean
 
 :::
 
+:::group{name=setExperienceLevel}
+
+Return Type: void
+
+```zenscript
+Player.setExperienceLevel(level as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| level | int | No Description Provided |
+
+
+:::
+
 :::group{name=setMainArm}
 
 Return Type: void
@@ -703,6 +730,7 @@ myPlayer.sweepAttack();
 | cooldowns | [ItemCooldowns](/vanilla/api/item/ItemCooldowns) | true | false | No Description Provided |
 | currentItemAttackStrengthDelay | float | true | false | No Description Provided |
 | enchantmentSeed | int | true | false | No Description Provided |
+| experienceLevel | int | true | true | No Description Provided |
 | foodData | [FoodData](/vanilla/api/food/FoodData) | true | false | No Description Provided |
 | inventory | [Inventory](/vanilla/api/entity/type/player/Inventory) | true | false | No Description Provided |
 | isCreative | boolean | true | false | No Description Provided |
