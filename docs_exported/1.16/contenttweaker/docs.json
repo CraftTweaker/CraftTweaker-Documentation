@@ -53,6 +53,7 @@
             "IItemRightClick": "mods/contenttweaker/API/functions/IItemRightClick.md",
             "IItemUse": "mods/contenttweaker/API/functions/IItemUse.md",
             "IItemUseActionSupplier": "mods/contenttweaker/API/functions/IItemUseActionSupplier.md",
+            "IItemUseDurationSupplier": "mods/contenttweaker/API/functions/IItemUseDurationSupplier.md",
             "IItemUseFinish": "mods/contenttweaker/API/functions/IItemUseFinish.md",
             "IItemUsingTick": "mods/contenttweaker/API/functions/IItemUsingTick.md"
           },

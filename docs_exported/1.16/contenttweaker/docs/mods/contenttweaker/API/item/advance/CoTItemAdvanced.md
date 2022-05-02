@@ -1,7 +1,7 @@
 # CoTItemAdvanced
 
 A registered CoT Item. Used for advanced functionality. like onItemUse, onItemRightClick etc.
-
+ 
  These functions should be run in CraftTweaker scripts, instead of ContentTweaker ones. And they are reloadable.
  You can get it via advanced item BEP.
 
@@ -69,6 +69,26 @@ CoTItemAdvanced.setItemUseAction(func as IItemUseActionSupplier) as CoTItemAdvan
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | func | [IItemUseActionSupplier](/mods/contenttweaker/API/functions/IItemUseActionSupplier) | an IItemUseFinish function, the function should return the new ItemStack |
+
+
+:::
+
+:::group{name=setItemUseDuration}
+
+How long it takes to use or consume an item.
+
+ By default, if the use finish function is defined or the item is a food, it will be 32.
+
+Returns: the CoTItemAdvanced, used for method chaining  
+Return Type: [CoTItemAdvanced](/mods/contenttweaker/API/item/advance/CoTItemAdvanced)
+
+```zenscript
+CoTItemAdvanced.setItemUseDuration(func as IItemUseDurationSupplier) as CoTItemAdvanced
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| func | [IItemUseDurationSupplier](/mods/contenttweaker/API/functions/IItemUseDurationSupplier) | an IItemUseDurationSupplier function |
 
 
 :::
