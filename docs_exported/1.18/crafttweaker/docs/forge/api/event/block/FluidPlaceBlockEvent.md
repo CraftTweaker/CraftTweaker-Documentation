@@ -56,9 +56,9 @@ myFluidPlaceBlockEvent.getNewState();
 
 :::group{name=getOriginalState}
 
-Gets the original BlockState that would have been placed before the event fired.
+Gets the original BlockState in the world before the event was fired.
 
-Returns: The original BlockState that would have been placed.  
+Returns: The original BlockState in the world before the event was fired.  
 Return Type: [BlockState](/vanilla/api/block/BlockState)
 
 ```zenscript
@@ -95,5 +95,5 @@ myFluidPlaceBlockEvent.setNewState(<blockstate:minecraft:dirt>);
 |------|------|------------|------------|-------------|
 | fluidPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | Gets the position of the Fluid that fired this event. |
 | newState | [BlockState](/vanilla/api/block/BlockState) | true | true | Gets the new BlockState that will be placed. |
-| originalState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the original BlockState that would have been placed before the event fired. |
+| originalState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the original BlockState in the world before the event was fired. |
 
