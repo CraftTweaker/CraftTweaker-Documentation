@@ -38,6 +38,25 @@ Return Type: void
 
 :::
 
+:::group{name=clear}
+
+Clears all values of the given tag.
+
+Return Type: void
+
+```zenscript
+// ITagManager.clear(from as T) as void
+
+<tagmanager:items>.clear(<tag:items:minecraft:wool>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| from | T | The tag to clear. |
+
+
+:::
+
 :::group{name=exists}
 
 Checks if a tag with the given id exists and is registered.

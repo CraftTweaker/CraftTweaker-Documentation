@@ -92,6 +92,20 @@ myKnownTag.asTagWithAmount();
 
 :::
 
+:::group{name=clear}
+
+Removes all elements in this tag.
+
+Return Type: void
+
+```zenscript
+// KnownTag.clear() as void
+
+myKnownTag.clear();
+```
+
+:::
+
 :::group{name=contains}
 
 Return Type: boolean

@@ -56,6 +56,20 @@ Return Type: void
 
 :::
 
+:::group{name=clear}
+
+Removes all elements in this tag.
+
+Return Type: void
+
+```zenscript
+// MCTag.clear() as void
+
+<tag:items:minecraft:wool>.clear();
+```
+
+:::
+
 :::group{name=contains}
 
 Checks if this tag contains an element with the given id

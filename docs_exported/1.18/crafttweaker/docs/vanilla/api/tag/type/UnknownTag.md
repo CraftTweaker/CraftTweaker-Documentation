@@ -74,6 +74,20 @@ myUnknownTag.asTagWithAmount();
 
 :::
 
+:::group{name=clear}
+
+Removes all elements in this tag.
+
+Return Type: void
+
+```zenscript
+// UnknownTag.clear() as void
+
+myUnknownTag.clear();
+```
+
+:::
+
 :::group{name=contains}
 
 Checks if this tag contains an element with the given id
