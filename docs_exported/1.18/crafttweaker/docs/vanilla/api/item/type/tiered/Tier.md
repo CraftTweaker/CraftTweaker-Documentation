@@ -91,6 +91,6 @@ myTier.getUses();
 | enchantmentValue | int | true | false | No Description Provided |
 | level | int | true | false | No Description Provided |
 | repairIngredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | true | false | No Description Provided |
-| speec | float | true | false | No Description Provided |
+| speed | float | true | false | No Description Provided |
 | uses | int | true | false | No Description Provided |
 
