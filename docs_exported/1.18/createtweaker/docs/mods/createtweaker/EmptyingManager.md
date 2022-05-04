@@ -40,7 +40,7 @@ Adds an emptying recipe.
 Return Type: void
 
 ```zenscript
-// EmptyingManager.addRecipe(name as string, outputItem as IItemStack, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int) as void
+// EmptyingManager.addRecipe(name as string, outputItem as Percentaged<IItemStack>, outputFluid as IFluidStack, inputContainer as IIngredient, duration as int) as void
 
 <recipetype:create:emptying>.addRecipe("emptier", <item:minecraft:diamond>, <fluid:minecraft:water>, <item:minecraft:dirt>, 200);
 ```
@@ -48,7 +48,7 @@ Return Type: void
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | name | string | The name of the recipe. | false |  |
-| outputItem | [IItemStack](/vanilla/api/item/IItemStack) | The output item of the recipe. | false |  |
+| outputItem | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The output item of the recipe. | false |  |
 | outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack) | The output fluid of the recipe. | false |  |
 | inputContainer | [IIngredient](/vanilla/api/ingredient/IIngredient) | The input container of the recipe (what is being filled). | false |  |
 | duration | int | The duration of the recipe in ticks (defaults to 100). | true | 100 |
