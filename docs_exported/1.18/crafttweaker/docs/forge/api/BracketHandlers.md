@@ -20,6 +20,8 @@ Returns: A stack of the liquid with amount == 1mb
 Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 
 ```zenscript
+<fluid:minecraft:water>
+
 // ForgeBracketHandlers.getFluidStack(tokens as string) as IFluidStack
 
 ForgeBracketHandlers.getFluidStack("minecraft:water");

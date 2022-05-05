@@ -37,6 +37,8 @@ Returns: The found [Block](/vanilla/api/block/Block)
 Return Type: [Block](/vanilla/api/block/Block)
 
 ```zenscript
+<block:minecraft:dirt>
+
 // BracketHandlers.getBlock(tokens as string) as Block
 
 BracketHandlers.getBlock("minecraft:dirt");
@@ -57,6 +59,9 @@ Returns: The found BlockState
 Return Type: [BlockState](/vanilla/api/block/BlockState)
 
 ```zenscript
+<blockstate:minecraft:acacia_planks>
+<blockstate:minecraft:furnace:facing=north,lit=false>
+
 // BracketHandlers.getBlockState(tokens as string) as BlockState
 
 BracketHandlers.getBlockState("minecraft:acacia_planks");
@@ -78,6 +83,8 @@ Returns: The found ItemGroup
 Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
 
 ```zenscript
+<creativemodetab:misc>
+
 // BracketHandlers.getCreativeModeTab(tokens as string) as CreativeModeTab
 
 BracketHandlers.getCreativeModeTab(misc);
@@ -98,6 +105,8 @@ Returns: The found pre-registered damage source or a new one
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
+<damagesource:magic>
+
 // BracketHandlers.getDamageSource(tokens as string) as DamageSource
 
 BracketHandlers.getDamageSource("magic");
@@ -118,6 +127,8 @@ Returns: The found enchantment
 Return Type: [Enchantment](/vanilla/api/item/enchantment/Enchantment)
 
 ```zenscript
+<enchantment:minecraft:riptide>
+
 // BracketHandlers.getEnchantment(tokens as string) as Enchantment
 
 BracketHandlers.getEnchantment("minecraft:riptide");
@@ -138,6 +149,8 @@ Returns: The found entityType
 Return Type: [EntityType](/vanilla/api/entity/EntityType)
 
 ```zenscript
+<entitytype:minecraft:pig>
+
 // BracketHandlers.getEntityType(tokens as string) as EntityType
 
 BracketHandlers.getEntityType("minecraft:pig");
@@ -158,6 +171,8 @@ Returns: The found item
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
+<item:minecraft:dirt>
+
 // BracketHandlers.getItem(tokens as string) as IItemStack
 
 BracketHandlers.getItem("minecraft:dirt");
@@ -178,6 +193,8 @@ Returns: The found [Material](/vanilla/api/block/material/Material)
 Return Type: [Material](/vanilla/api/block/material/Material)
 
 ```zenscript
+<material:earth>
+
 // BracketHandlers.getMaterial(tokens as string) as Material
 
 BracketHandlers.getMaterial("earth");
@@ -198,6 +215,8 @@ Returns: The found mobeffect
 Return Type: [MobEffect](/vanilla/api/entity/effect/MobEffect)
 
 ```zenscript
+<mobeffect:minecraft:haste>
+
 // BracketHandlers.getMobEffect(tokens as string) as MobEffect
 
 BracketHandlers.getMobEffect("minecraft:haste");
@@ -233,6 +252,8 @@ Returns: The found profession
 Return Type: [VillagerProfession](/vanilla/api/villager/VillagerProfession)
 
 ```zenscript
+<profession:minecraft:armorer>
+
 // BracketHandlers.getProfession(tokens as string) as VillagerProfession
 
 BracketHandlers.getProfession("minecraft:armorer");
@@ -273,6 +294,8 @@ Returns: The location
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 
 ```zenscript
+<resource:minecraft:dirt>
+
 // BracketHandlers.getResourceLocation(tokens as string) as ResourceLocation
 
 BracketHandlers.getResourceLocation("minecraft:dirt");
@@ -293,6 +316,8 @@ Returns: The found sound event
 Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)
 
 ```zenscript
+<soundevent:minecraft:ambient.cave>
+
 // BracketHandlers.getSoundEvent(tokens as string) as SoundEvent
 
 BracketHandlers.getSoundEvent("minecraft:ambient.cave");

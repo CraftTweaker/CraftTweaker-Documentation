@@ -23,9 +23,3 @@ myMessage.getString();
 :::
 
 
-## Properties
-
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| string | string | true | false | No Description Provided |
-
