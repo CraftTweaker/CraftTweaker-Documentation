@@ -37,6 +37,9 @@
             "Createtweaker" : {},
             "Initialinventory" : {},
             "JEITweaker" : {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
             "SolarCraft" : {},
             "SushiGoCrafting" : {},
             "Generic JSON Recipes": "mods/other_mods.md"
