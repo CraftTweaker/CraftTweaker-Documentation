@@ -257,12 +257,12 @@ myStyle.setUnderlined();
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withBold(value as invalid) as Style
+Style.withBold(value as bool?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | **invalid** | No Description Provided |
+| value | bool? | No Description Provided |
 
 
 :::
@@ -347,12 +347,12 @@ Style.withInsertion(content as invalid) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withItalic(value as invalid) as Style
+Style.withItalic(value as bool?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | **invalid** | No Description Provided |
+| value | bool? | No Description Provided |
 
 
 :::
@@ -362,12 +362,12 @@ Style.withItalic(value as invalid) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withObfuscated(value as invalid) as Style
+Style.withObfuscated(value as bool?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | **invalid** | No Description Provided |
+| value | bool? | No Description Provided |
 
 
 :::
@@ -377,12 +377,12 @@ Style.withObfuscated(value as invalid) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withStrikethrough(value as invalid) as Style
+Style.withStrikethrough(value as bool?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | **invalid** | No Description Provided |
+| value | bool? | No Description Provided |
 
 
 :::
@@ -392,12 +392,12 @@ Style.withStrikethrough(value as invalid) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withUnderlined(value as invalid) as Style
+Style.withUnderlined(value as bool?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| value | **invalid** | No Description Provided |
+| value | bool? | No Description Provided |
 
 
 :::
