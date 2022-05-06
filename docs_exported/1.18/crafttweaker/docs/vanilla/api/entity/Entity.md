@@ -407,6 +407,18 @@ myEntity.getData();
 
 :::
 
+:::group{name=getDeltaMovement}
+
+Return Type: [Vec3](/vanilla/api/util/math/Vec3)
+
+```zenscript
+// Entity.getDeltaMovement() as Vec3
+
+myEntity.getDeltaMovement();
+```
+
+:::
+
 :::group{name=getDimensionChangingDelay}
 
 Return Type: int
@@ -1802,6 +1814,38 @@ Entity.setCustomNameVisible(visible as boolean) as void
 
 :::
 
+:::group{name=setDeltaMovement}
+
+Return Type: void
+
+```zenscript
+Entity.setDeltaMovement(deltaMovement as Vec3) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+
+
+:::
+
+:::group{name=setDeltaMovement}
+
+Return Type: void
+
+```zenscript
+Entity.setDeltaMovement(xDelta as double, yDelta as double, zDelta as double) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| xDelta | double | No Description Provided |
+| yDelta | double | No Description Provided |
+| zDelta | double | No Description Provided |
+
+
+:::
+
 :::group{name=setGlowingTag}
 
 Return Type: void
@@ -2259,6 +2303,7 @@ myEntity.updateData({key: "value"});
 | customData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the custom NBT data for this Entity. |
 | customName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
 | data | [MapData](/vanilla/api/data/MapData) | true | false | Gets the NBT data of this Entity. |
+| deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) | true | true | No Description Provided |
 | dimensionChangingDelay | int | true | false | No Description Provided |
 | direction | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
 | displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
