@@ -37,4 +37,38 @@ Pigment.makeStack(amount as long) as PigmentStack
 
 :::
 
+:::
+
+:::group{name=getTags()}
+
+Gets the tags that this pigment is a part of.
+
+Returns: All the tags this pigment is a part of.  
+Return Type: stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[Pigment](/mods/Mekanism/api/chemical/Pigment)&gt;>
+
+```zenscript
+Pigment.getTags() as stdlib.List<MCTag<Pigment>
+```
+
+:::
+
+
+## Operators
+
+:::group{name=MUL}
+
+Sets the amount of the Pigment
+
+```zenscript
+myPigment * amount as int
+<pigment:mekanism:cyan> * 3
+```
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| tags | stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[Pigment](/mods/Mekanism/api/chemical/Pigment)&gt;> | true | false | Gets the tags that this pigment is a part of. |
 

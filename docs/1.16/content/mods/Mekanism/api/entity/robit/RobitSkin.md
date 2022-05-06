@@ -12,6 +12,8 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.entity.robit.RobitSkin;
 ```
 
+You can get a RobitSkin using the `/ct dump robitSkins` command.
+
 ## Implemented Interfaces
 
 RobitSkin implements the following interfaces. That means all methods defined in these interfaces

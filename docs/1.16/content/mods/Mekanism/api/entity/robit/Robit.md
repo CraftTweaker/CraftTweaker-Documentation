@@ -34,7 +34,7 @@ myRobit.getSkin();
 Tries to set this Robit's skin to the given skin.
 
 Returns: `true` if the Robit's skin was set, or false if the player does not have security clearance
-or doesn't have the skin unlocked ({  
+or doesn't have the skin unlocked. 
 Return Type: boolean
 
 ```zenscript

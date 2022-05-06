@@ -12,7 +12,7 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.chemical.ChemicalStack;
 ```
 
-A ChemicalStack is the concrete representation of a [Chemical](/mods/mekanism/api/chemical/Chemical), with defined characteristics, such as the amount, 
+A ChemicalStack is the concrete representation of a [Chemical](/mods/mekanism/api/chemical/Chemical), with defined characteristics, such as the amount, the type, and other data.
 
 ## Implemented Interfaces
 

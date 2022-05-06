@@ -37,4 +37,36 @@ Slurry.makeStack(amount as long) as SlurryStack
 
 :::
 
+:::group{name=getTags()}
+
+Gets the tags that this slurry is a part of.
+
+Returns: All the tags this slurry is a part of.  
+Return Type: stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[Slurry](/mods/Mekanism/api/chemical/Slurry)&gt;>
+
+```zenscript
+Slurry.getTags() as stdlib.List<MCTag<Slurry>>
+```
+
+:::
+
+## Operators
+
+:::group{name=MUL}
+
+Sets the amount of the Slurry
+
+```zenscript
+mySlurry * amount as int
+<slurry:mekanism:dirty_iron> * 3
+```
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| tags | stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[Slurry](/mods/Mekanism/api/chemical/Slurry)&gt;> | true | false | Gets the tags that this slurry is a part of. |
+
 

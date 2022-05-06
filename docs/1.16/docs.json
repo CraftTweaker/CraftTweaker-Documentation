@@ -166,16 +166,19 @@
 				  "BracketValidators": "mods/Mekanism/api/BracketValidators.md",
 				  "FloatingLong": "mods/Mekanism/api/FloatingLong.md",
 				  "Chemical": {
+					  "ChemicalStacks": {
+						  "ChemicalStack": "mods/Mekanism/api/chemical/ChemicalStack.md",
+						  "GasStack": "mods/Mekanism/api/chemical/GasStack.md",
+						  "InfusionStack": "mods/Mekanism/api/chemical/InfusionStack.md",
+						  "PigmentStack": "mods/Mekanism/api/chemical/PigmentStack.md",
+						  "SlurryStack": "mods/Mekanism/api/chemical/SlurryStack.md"
+					  },
 						"Chemical": "mods/Mekanism/api/chemical/Chemical.md",
-						"ChemicalStack": "mods/Mekanism/api/chemical/ChemicalStack.md",
 						"Gas": "mods/Mekanism/api/chemical/Gas.md",
-						"GasStack": "mods/Mekanism/api/chemical/GasStack.md",
 						"InfuseType": "mods/Mekanism/api/chemical/InfuseType.md",
-						"InfusionStack": "mods/Mekanism/api/chemical/InfusionStack.md",
 						"Pigment": "mods/Mekanism/api/chemical/Pigment.md",
-						"PigmentStack": "mods/Mekanism/api/chemical/PigmentStack.md",
-						"Slurry": "mods/Mekanism/api/chemical/Slurry.md",
-						"SlurryStack": "mods/Mekanism/api/chemical/SlurryStack.md"
+						"Slurry": "mods/Mekanism/api/chemical/Slurry.md"
+
 				  },
 				  "Entity": {
 						"Robit": {
@@ -288,7 +291,8 @@
 				  "ItemStackToPigment": {
 						"PigmentExtracting": "mods/Mekanism/recipe/ItemStackToPigment/PigmentExtracting.md"
 				  }
-				}
+				},
+				"About Mekanism" : "mods/Mekanism/AboutMekanism.md"
 			},
 			"Mystical Agriculture": {
 				"Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",

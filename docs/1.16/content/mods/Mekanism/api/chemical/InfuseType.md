@@ -37,4 +37,35 @@ InfuseType.makeStack(amount as long) as InfusionStack
 
 :::
 
+:::group{name=getTags()}
 
+Gets the tags that this infuse type is a part of.
+
+Returns: All the tags this infuse type is a part of.  
+Return Type: stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[InfuseType](/mods/Mekanism/api/chemical/InfuseType)&gt;>
+
+```zenscript
+InfuseType.getTags() as stdlib.List<MCTag<InfuseType>>
+```
+
+:::
+
+
+## Operators
+
+:::group{name=MUL}
+
+Sets the amount of the InfuseType
+
+```zenscript
+myInfuseType * amount as int
+<infuse_type:mekanism:refined_obsidian> * 3
+```
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| tags | stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[InfuseType](/mods/Mekanism/api/chemical/InfuseType)&gt;> | true | false | Gets the tags that this infuse type is a part of. |

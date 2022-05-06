@@ -1,9 +1,8 @@
 {
-  "path": "mods/Mekanism/api/chemical/ChemicalStack.md",
+  "path": "mods/Mekanism/api/chemical/stack/InfusionStack.md",
   "ownerModId": "mekanism",
-  "zenCodeName": "mods.mekanism.api.chemical.ChemicalStack",
+  "zenCodeName": "mods.mekanism.api.chemical.InfusionStack",
   "searchTerms": [
-    "crafttweaker.api.brackets.CommandStringDisplayable",
     "amount",
     "grow",
     "shrink",
@@ -14,6 +13,7 @@
     "registryName",
     "type",
     "empty",
+    "mods.mekanism.api.chemical.ChemicalStack",
     "isTypeEqual",
     "containsOther",
     "getType",

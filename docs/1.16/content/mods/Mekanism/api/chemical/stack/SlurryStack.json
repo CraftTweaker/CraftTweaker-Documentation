@@ -1,7 +1,7 @@
 {
-  "path": "mods/Mekanism/api/chemical/GasStack.md",
+  "path": "mods/Mekanism/api/chemical/stack/SlurryStack.md",
   "ownerModId": "mekanism",
-  "zenCodeName": "mods.mekanism.api.chemical.GasStack",
+  "zenCodeName": "mods.mekanism.api.chemical.SlurryStack",
   "searchTerms": [
     "amount",
     "grow",
