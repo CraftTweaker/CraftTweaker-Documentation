@@ -12,6 +12,9 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.text.HasTranslation;
 ```
 
+Any objects implementing this interface have a translation key you can get and use.
+
+
 ## Methods
 
 :::group{name=getTranslationKey}
@@ -28,4 +31,9 @@ myHasTranslation.getTranslationKey();
 
 :::
 
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| translationKey | string | true | false | Gets the translation key for this object |
 
