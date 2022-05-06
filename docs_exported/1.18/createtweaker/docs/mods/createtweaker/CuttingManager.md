@@ -64,7 +64,7 @@ Return Type: void
 ```zenscript
 // CuttingManager.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredient, duration as int) as void
 
-<recipetype:create:cutting>.addRecipe("crushed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> % 12) * 2], <item:minecraft:glass>, 200);
+<recipetype:create:cutting>.addRecipe("crushed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> * 2) % 12], <item:minecraft:glass>, 200);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |

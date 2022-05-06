@@ -42,7 +42,7 @@ Return Type: void
 ```zenscript
 // PressingManager.addRecipe(name as string, outputs as Percentaged<IItemStack>[], input as IIngredientWithAmount, duration as int) as void
 
-<recipetype:create:pressing>.addRecipe("pressed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> % 12) * 2], <item:minecraft:dirt>, 200);
+<recipetype:create:pressing>.addRecipe("pressed", [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> * 2) % 12], <item:minecraft:dirt>, 200);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |

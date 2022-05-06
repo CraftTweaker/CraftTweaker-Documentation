@@ -66,7 +66,7 @@ Return Type: void
 ```zenscript
 // MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as IFluidStack[], duration as int) as void
 
-<recipetype:create:mixing>.addRecipe("mixed", <constant:create:heat_condition:heated>, [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> % 12) * 2], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
+<recipetype:create:mixing>.addRecipe("mixed", <constant:create:heat_condition:heated>, [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> * 2) % 12], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
