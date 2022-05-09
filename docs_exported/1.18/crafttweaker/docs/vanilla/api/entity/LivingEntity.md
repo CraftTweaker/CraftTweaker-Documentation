@@ -313,6 +313,8 @@ myLivingEntity.getArrowCount();
 
 :::group{name=getAttribute}
 
+Nullable. Returns the AttributeInstance if present on the LivingEntity.
+
 Return Type: [AttributeInstance](/vanilla/api/entity/attribute/AttributeInstance)
 
 ```zenscript
