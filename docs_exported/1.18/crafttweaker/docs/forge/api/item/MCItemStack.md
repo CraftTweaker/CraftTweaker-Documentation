@@ -1058,12 +1058,14 @@ Sets the display name of the ItemStack
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-MCItemStack.withDisplayName(text as Component) as IItemStack
+// MCItemStack.withDisplayName(name as Component) as IItemStack
+
+myMCItemStack.withDisplayName("totally not dirt");
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | [Component](/vanilla/api/text/Component) | New name of the stack. |
+| name | [Component](/vanilla/api/text/Component) | New name of the stack. |
 
 
 :::
@@ -1085,6 +1087,25 @@ myMCItemStack.withEnchantment(<enchantment:minecraft:riptide>, 2);
 |-----------|------|-------------|----------|--------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to add. | false |  |
 | level | int | The level of the enchantment | true | 1 |
+
+
+:::
+
+:::group{name=withLore}
+
+Sets the lore of the ItemStack
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MCItemStack.withLore(text as Component) as IItemStack
+
+myMCItemStack.withLore(new crafttweaker.api.text.TextComponent("I am the lore I speak for the trees"););
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| text | [Component](/vanilla/api/text/Component) | the new Lore of the ItemStack. |
 
 
 :::
