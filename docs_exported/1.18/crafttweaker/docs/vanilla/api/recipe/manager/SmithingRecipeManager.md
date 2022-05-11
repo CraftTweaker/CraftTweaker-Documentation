@@ -13,7 +13,7 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 ## Implemented Interfaces
 SmithingRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in SmithingRecipeManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[UpgradeRecipe](/vanilla/api/recipe/type/type/UpgradeRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[UpgradeRecipe](/vanilla/api/recipe/type/UpgradeRecipe)&gt;
 
 ## Enum Constants
 

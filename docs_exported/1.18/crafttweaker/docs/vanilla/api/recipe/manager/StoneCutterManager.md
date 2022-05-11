@@ -13,7 +13,7 @@ import crafttweaker.api.recipe.StoneCutterManager;
 ## Implemented Interfaces
 StoneCutterManager implements the following interfaces. That means all methods defined in these interfaces are also available in StoneCutterManager
 
-- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[StonecutterRecipe](/vanilla/api/recipe/type/type/StonecutterRecipe)&gt;
+- [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[StonecutterRecipe](/vanilla/api/recipe/type/StonecutterRecipe)&gt;
 
 ## Enum Constants
 
