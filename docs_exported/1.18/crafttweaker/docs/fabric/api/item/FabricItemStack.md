@@ -1152,14 +1152,14 @@ Sets the lore of the ItemStack
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-// FabricItemStack.withLore(text as Component) as IItemStack
+// FabricItemStack.withLore(lore as Component[]) as IItemStack
 
 myFabricItemStack.withLore(new crafttweaker.api.text.TextComponent("I am the lore I speak for the trees"););
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | [Component](/vanilla/api/text/Component) | the new Lore of the ItemStack. |
+| lore | [Component](/vanilla/api/text/Component)[] | the new Lore of the ItemStack. |
 
 
 :::
