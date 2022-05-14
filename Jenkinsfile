@@ -31,7 +31,7 @@ pipeline {
         stage('Clean') {
             steps {
                 echo 'Cleaning output dirs'
-                cleanWs deleteDirs: true, notFailBuild: true, patterns: [[pattern: 'build/**', type: 'INCLUDE'], [pattern: 'site/docs/**', type: 'INCLUDE'], [pattern: 'site/public/**', type: 'INCLUDE']]
+                cleanWs deleteDirs: true, notFailBuild: true, patterns: [[pattern: 'build/**', type: 'INCLUDE'], [pattern: 'site/docs/**', type: 'INCLUDE']]
             }
         }
     }
