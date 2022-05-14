@@ -31,7 +31,14 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-FurnaceRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+// FurnaceRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+
+furnace.addJsonRecipe("recipe_name", {
+     ingredient: <item:minecraft:gold_ore>,
+     result: <item:minecraft:cooked_porkchop>.registryName,
+     experience: 0.35 as float,
+     cookingtime:100
+ });
 ```
 
 | Parameter | Type | Description |
@@ -200,19 +207,17 @@ FurnaceRecipeManager.removeByModid(modid as string, exclude as Predicate<string>
 
 :::group{name=removeByName}
 
-Remove recipe based on Registry name
+Remove recipes based on Registry names
 
 Return Type: void
 
 ```zenscript
-// FurnaceRecipeManager.removeByName(name as string) as void
-
-furnace.removeByName("minecraft:furnace");
+FurnaceRecipeManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | registry name of recipe to remove |
+| names | string[] | registry names of recipes to remove |
 
 
 :::
