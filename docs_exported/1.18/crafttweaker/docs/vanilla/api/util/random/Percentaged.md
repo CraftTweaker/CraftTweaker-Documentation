@@ -15,3 +15,37 @@ Percentaged implements the following interfaces. That means all methods defined 
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
 
+## Methods
+
+:::group{name=getData}
+
+Return Type: T
+
+```zenscript
+// Percentaged.getData() as T
+
+myPercentaged.getData();
+```
+
+:::
+
+:::group{name=getPercentage}
+
+Return Type: double
+
+```zenscript
+// Percentaged.getPercentage() as double
+
+myPercentaged.getPercentage();
+```
+
+:::
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter | Description |
+|------|------|------------|------------|-------------|
+| data | T | true | false | No Description Provided |
+| percentage | double | true | false | No Description Provided |
+
