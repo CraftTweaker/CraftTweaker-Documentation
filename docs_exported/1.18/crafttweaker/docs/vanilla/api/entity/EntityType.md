@@ -60,17 +60,17 @@ EntityType.create(level as Level) as Entity
 Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
-EntityType.create(param0 as ServerLevel, param1 as MapData, param2 as Component, param3 as Player, param4 as BlockPos, param5 as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity
+EntityType.create(level as ServerLevel, data as MapData, displayName as Component, spawningPlayer as Player, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| param0 | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| param1 | [MapData](/vanilla/api/data/MapData) | No Description Provided |
-| param2 | [Component](/vanilla/api/text/Component) | No Description Provided |
-| param3 | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
-| param4 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| param5 | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
+| level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| displayName | [Component](/vanilla/api/text/Component) | No Description Provided |
+| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| spawnType | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
 | alignPosition | boolean | No Description Provided |
 | invertY | boolean | No Description Provided |
 

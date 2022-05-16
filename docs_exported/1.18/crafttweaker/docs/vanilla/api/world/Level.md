@@ -13,12 +13,6 @@ Level implements the following interfaces. That means all methods defined in the
 
 - AutoCloseable
 
-## Casters
-
-| Result type | Is Implicit |
-|-------------|-------------|
-| [ServerLevel](/vanilla/api/world/ServerLevel) | false |
-
 ## Methods
 
 :::group{name=addFreshEntity}
@@ -35,18 +29,6 @@ Level.addFreshEntity(entity as Entity) as boolean
 |-----------|------|-------------|
 | entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
 
-
-:::
-
-:::group{name=asServerLevel}
-
-Return Type: [ServerLevel](/vanilla/api/world/ServerLevel)
-
-```zenscript
-// Level.asServerLevel() as ServerLevel
-
-myLevel.asServerLevel();
-```
 
 :::
 
@@ -485,18 +467,6 @@ myLevel.isRainingAt(new BlockPos(0, 1, 2));
 
 :::
 
-:::group{name=isRemote}
-
-Return Type: boolean
-
-```zenscript
-// Level.isRemote() as boolean
-
-myLevel.isRemote();
-```
-
-:::
-
 :::group{name=levelEvent}
 
 Triggers a predetermined event on the client. Using this on a server
@@ -544,6 +514,51 @@ myLevel.rayTraceBlocks(new Vec3(0.0, 0.0, 0.0), new Vec3(1.1, 4.5, 1.4), RayTrac
 
 :::
 
+:::group{name=sequence}
+
+Creates a new [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt; for this level.
+
+ [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt;'s let you compose scripted events such as waiting 5 ticks, then setting the weather to rain.
+
+Returns: A new [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt; for this level.  
+Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;[Level](/vanilla/api/world/Level),[MapData](/vanilla/api/data/MapData)&gt;
+
+```zenscript
+// Level.sequence(data as MapData) as SequenceBuilder<Level,MapData>
+
+myLevel.sequence({version: "1.0.0"});
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| data | [MapData](/vanilla/api/data/MapData) | No Description Provided | true | new crafttweaker.api.data.MapData() |
+
+
+:::
+
+:::group{name=sequence}
+
+Creates a new [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt; for this level.
+
+ [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt;'s let you compose scripted events such as waiting 5 ticks, then setting the weather to rain.
+
+Returns: A new [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,U&gt; for this level.  
+Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;[Level](/vanilla/api/world/Level),T&gt;
+
+```zenscript
+// Level.sequence<T : Object>(data as T) as SequenceBuilder<Level,T>
+
+myLevel.sequence<crafttweaker.api.data.MapData>({version: "1.0.0"});
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | T | No Description Provided |
+| T | Object | No Description Provided |
+
+
+:::
+
 :::group{name=setBlockAndUpdate}
 
 Sets the block and it's state at a given position.
@@ -565,6 +580,25 @@ myLevel.setBlockAndUpdate(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_bloc
 
 :::
 
+:::group{name=setRainingLevel}
+
+Sets the current rain level.
+
+Return Type: void
+
+```zenscript
+// Level.setRainingLevel(level as float) as void
+
+myLevel.setRainingLevel(0.5);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| level | float | The new rain level between 0 and 1 |
+
+
+:::
+
 
 ## Properties
 
@@ -579,6 +613,7 @@ myLevel.setBlockAndUpdate(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_bloc
 | isClientSide | boolean | true | false | No Description Provided |
 | isDay | boolean | true | false | No Description Provided |
 | isNight | boolean | true | false | No Description Provided |
+| rainLevel | [Level](/vanilla/api/world/Level) | false | true | Sets the current rain level. |
 | raining | boolean | true | false | Checks if it is raining. |
 | random | [Random](/vanilla/api/util/math/Random) | true | false | No Description Provided |
 | seaLevel | int | true | false | Gets the height of the sea level. |
