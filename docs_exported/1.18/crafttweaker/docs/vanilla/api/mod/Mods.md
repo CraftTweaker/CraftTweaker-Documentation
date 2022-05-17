@@ -86,6 +86,14 @@ loadedMods.isModLoaded("minecraft");
 
 ## Operators
 
+:::group{name=INDEXGET}
+
+```zenscript
+[myMods]
+```
+
+:::
+
 :::group{name=MEMBERGETTER}
 
 Gets a specific mod
