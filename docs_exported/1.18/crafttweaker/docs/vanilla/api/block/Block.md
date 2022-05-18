@@ -160,6 +160,21 @@ Return Type: [Material](/vanilla/api/block/material/Material)
 
 :::
 
+:::group{name=getName}
+
+Gets the name of this Block
+
+Returns: The name of this block.  
+Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
+
+```zenscript
+// Block.getName() as MutableComponent
+
+<block:minecraft:grass_block>.getName();
+```
+
+:::
+
 :::group{name=getPossibleStates}
 
 Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block.
@@ -400,6 +415,7 @@ Return Type: void
 | jumpFactor | float | true | true | Gets the jump factor of this Block. |
 | lootTable | string | true | false | Gets the loot table id for this Block. |
 | material | [Material](/vanilla/api/block/material/Material) | true | true | Gets the material of this Block. |
+| name | [MutableComponent](/vanilla/api/text/MutableComponent) | true | false | Gets the name of this Block |
 | possibleStates | stdlib.List&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true | false | Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block. |
 | registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name of this block. |
 | speedFactor | float | true | true | Gets the speed factor of this Block. |
