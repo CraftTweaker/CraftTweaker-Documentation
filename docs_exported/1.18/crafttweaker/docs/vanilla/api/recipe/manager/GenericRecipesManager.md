@@ -199,17 +199,17 @@ recipes.removeByModid("minecraft", (recipeName as string) => recipeName == "whit
 
 :::group{name=removeByName}
 
-Removes all recipes with this name.
+Remove recipes based on Registry names
 
 Return Type: void
 
 ```zenscript
-GenericRecipesManager.removeByName(name as string) as void
+GenericRecipesManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | The recipe name to remove |
+| names | string[] | registry names of recipes to remove |
 
 
 :::
