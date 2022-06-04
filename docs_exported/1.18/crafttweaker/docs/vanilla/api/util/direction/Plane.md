@@ -71,12 +71,12 @@ myPlane.iterator();
 Return Type: boolean
 
 ```zenscript
-Plane.test(direction as Direction) as boolean
+Plane.test(direction as Direction?) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
 
 
 :::

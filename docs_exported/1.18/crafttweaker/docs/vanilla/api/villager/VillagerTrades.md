@@ -21,7 +21,7 @@ Adds a new custom trade with the selling and buying items determined by the cust
 Return Type: void
 
 ```zenscript
-// VillagerTrades.addTrade(profession as VillagerProfession, villagerLevel as int, offerGenerator as BiFunction<Entity,Random,MerchantOffer>) as void
+// VillagerTrades.addTrade(profession as VillagerProfession, villagerLevel as int, offerGenerator as BiFunction<Entity,Random,MerchantOffer?>) as void
 
 villagerTrades.addTrade(<profession:minecraft:farmer>, 1, (entity, random) => {
  return new MerchantOffer(<item:minecraft:dirt>, <item:minecraft:diamond>, 0, 5);
@@ -32,7 +32,7 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, (entity, random) => {
 |-----------|------|-------------|
 | profession | [VillagerProfession](/vanilla/api/villager/VillagerProfession) | What profession this trade should be for. |
 | villagerLevel | int | The level the Villager needs to be. |
-| offerGenerator | BiFunction&lt;[Entity](/vanilla/api/entity/Entity),[Random](/vanilla/api/util/math/Random),[MerchantOffer](/vanilla/api/villager/MerchantOffer)&gt; | A generator method to make a new MerchantOffer. |
+| offerGenerator | BiFunction&lt;[Entity](/vanilla/api/entity/Entity),[Random](/vanilla/api/util/math/Random),[MerchantOffer](/vanilla/api/villager/MerchantOffer)?&gt; | A generator method to make a new MerchantOffer. |
 
 
 :::

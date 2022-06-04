@@ -96,10 +96,10 @@ myUseOnContext.getLevel();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/vanilla/api/entity/type/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)?
 
 ```zenscript
-// UseOnContext.getPlayer() as Player
+// UseOnContext.getPlayer() as Player?
 
 myUseOnContext.getPlayer();
 ```
@@ -156,6 +156,6 @@ myUseOnContext.isSecondaryUseActive();
 | isSecondaryUseActive | boolean | true | false | No Description Provided |
 | itemInHand | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
 | level | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| player | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
+| player | [Player](/vanilla/api/entity/type/player/Player)? | true | false | No Description Provided |
 | rotation | float | true | false | No Description Provided |
 

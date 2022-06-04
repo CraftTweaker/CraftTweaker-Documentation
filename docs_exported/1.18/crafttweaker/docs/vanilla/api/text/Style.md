@@ -86,10 +86,10 @@ Style.applyTo(style as Style) as Style
 
 :::group{name=getColor}
 
-Return Type: [TextColor](/vanilla/api/text/TextColor)
+Return Type: [TextColor](/vanilla/api/text/TextColor)?
 
 ```zenscript
-// Style.getColor() as TextColor
+// Style.getColor() as TextColor?
 
 myStyle.getColor();
 ```
@@ -110,10 +110,10 @@ myStyle.getFont();
 
 :::group{name=getInsertion}
 
-Return Type: **invalid**
+Return Type: string?
 
 ```zenscript
-// Style.getInsertion() as invalid
+// Style.getInsertion() as string?
 
 myStyle.getInsertion();
 ```
@@ -287,12 +287,12 @@ Style.withColor(color as int) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withColor(formatting as ChatFormatting) as Style
+Style.withColor(formatting as ChatFormatting?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting) | No Description Provided |
+| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting)? | No Description Provided |
 
 
 :::
@@ -302,12 +302,12 @@ Style.withColor(formatting as ChatFormatting) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withColor(textColor as TextColor) as Style
+Style.withColor(textColor as TextColor?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| textColor | [TextColor](/vanilla/api/text/TextColor) | No Description Provided |
+| textColor | [TextColor](/vanilla/api/text/TextColor)? | No Description Provided |
 
 
 :::
@@ -317,12 +317,12 @@ Style.withColor(textColor as TextColor) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withFont(fontId as ResourceLocation) as Style
+Style.withFont(fontId as ResourceLocation?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| fontId | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| fontId | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | No Description Provided |
 
 
 :::
@@ -332,12 +332,12 @@ Style.withFont(fontId as ResourceLocation) as Style
 Return Type: [Style](/vanilla/api/text/Style)
 
 ```zenscript
-Style.withInsertion(content as invalid) as Style
+Style.withInsertion(content as string?) as Style
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| content | **invalid** | No Description Provided |
+| content | string? | No Description Provided |
 
 
 :::
@@ -408,10 +408,10 @@ Style.withUnderlined(value as bool?) as Style
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | bold | boolean | true | false | No Description Provided |
-| color | [TextColor](/vanilla/api/text/TextColor) | true | false | No Description Provided |
+| color | [TextColor](/vanilla/api/text/TextColor)? | true | false | No Description Provided |
 | empty | boolean | true | false | No Description Provided |
 | font | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| insertion | **invalid** | true | false | No Description Provided |
+| insertion | string? | true | false | No Description Provided |
 | italic | boolean | true | false | No Description Provided |
 | obfucated | boolean | true | false | No Description Provided |
 | strikethrough | boolean | true | false | No Description Provided |

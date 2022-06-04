@@ -12,10 +12,10 @@ import crafttweaker.api.util.math.AABB;
 
 :::group{name=clip}
 
-Return Type: [Vec3](/vanilla/api/util/math/Vec3)
+Return Type: [Vec3](/vanilla/api/util/math/Vec3)?
 
 ```zenscript
-AABB.clip(minVec as Vec3, maxVec as Vec3) as Vec3
+AABB.clip(minVec as Vec3, maxVec as Vec3) as Vec3?
 ```
 
 | Parameter | Type | Description |

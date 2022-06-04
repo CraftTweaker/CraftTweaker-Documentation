@@ -12,10 +12,10 @@ import crafttweaker.api.advancement.DisplayInfo;
 
 :::group{name=getBackground}
 
-Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)?
 
 ```zenscript
-// DisplayInfo.getBackground() as ResourceLocation
+// DisplayInfo.getBackground() as ResourceLocation?
 
 myDisplayInfo.getBackground();
 ```
@@ -151,7 +151,7 @@ myDisplayInfo.shouldShowToast();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| background | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
+| background | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | true | false | No Description Provided |
 | description | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
 | frame | [FrameType](/vanilla/api/advancement/FrameType) | true | false | No Description Provided |
 | icon | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |

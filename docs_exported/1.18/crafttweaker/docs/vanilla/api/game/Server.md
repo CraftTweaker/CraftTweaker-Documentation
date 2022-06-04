@@ -127,10 +127,10 @@ myServer.getDefaultGameType();
 
 :::group{name=getForcedGameType}
 
-Return Type: [GameType](/vanilla/api/world/GameType)
+Return Type: [GameType](/vanilla/api/world/GameType)?
 
 ```zenscript
-// Server.getForcedGameType() as GameType
+// Server.getForcedGameType() as GameType?
 
 myServer.getForcedGameType();
 ```
@@ -139,10 +139,10 @@ myServer.getForcedGameType();
 
 :::group{name=getLevel}
 
-Return Type: [ServerLevel](/vanilla/api/world/ServerLevel)
+Return Type: [ServerLevel](/vanilla/api/world/ServerLevel)?
 
 ```zenscript
-Server.getLevel(location as ResourceLocation) as ServerLevel
+Server.getLevel(location as ResourceLocation) as ServerLevel?
 ```
 
 | Parameter | Type | Description |
@@ -166,10 +166,10 @@ myServer.getMaxPlayers();
 
 :::group{name=getModdedStatus}
 
-Return Type: **invalid**
+Return Type: string?
 
 ```zenscript
-// Server.getModdedStatus() as invalid
+// Server.getModdedStatus() as string?
 
 myServer.getModdedStatus();
 ```
@@ -282,12 +282,12 @@ myServer.getSpawnProtectionRadius();
 Return Type: int
 
 ```zenscript
-Server.getSpawnRadius(level as ServerLevel) as int
+Server.getSpawnRadius(level as ServerLevel?) as int
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
+| level | [ServerLevel](/vanilla/api/world/ServerLevel)? | No Description Provided |
 
 
 :::
@@ -629,7 +629,7 @@ Server.setPvpAllowed(pvpAllowed as boolean) as void
 | areNpcsEnabled | boolean | true | false | No Description Provided |
 | averageTickTime | float | true | false | No Description Provided |
 | defaultGameTime | [GameType](/vanilla/api/world/GameType) | true | false | No Description Provided |
-| forcedGameType | [GameType](/vanilla/api/world/GameType) | true | false | No Description Provided |
+| forcedGameType | [GameType](/vanilla/api/world/GameType)? | true | false | No Description Provided |
 | isCommandBlockEnabled | boolean | true | false | No Description Provided |
 | isDedicatedServer | boolean | true | false | No Description Provided |
 | isEnforceWhitelist | boolean | true | false | No Description Provided |
@@ -646,7 +646,7 @@ Server.setPvpAllowed(pvpAllowed as boolean) as void
 | isStopped | boolean | true | false | No Description Provided |
 | levelKeys | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | No Description Provided |
 | maxPlayer | int | true | false | No Description Provided |
-| moddeStatus | **invalid** | true | false | No Description Provided |
+| moddeStatus | string? | true | false | No Description Provided |
 | motd | string | true | false | No Description Provided |
 | operatorUserPermissionLevel | int | true | false | No Description Provided |
 | overworld | [ServerLevel](/vanilla/api/world/ServerLevel) | true | false | No Description Provided |

@@ -151,14 +151,14 @@ Returns: This FluidStack if it is mutable, a new one with the changed property o
 Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 
 ```zenscript
-// IFluidStack.withTag(tag as MapData) as IFluidStack
+// IFluidStack.withTag(tag as MapData?) as IFluidStack
 
 myIFluidStack.withTag({Display: {lore: ["Hello"]}});
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | [MapData](/vanilla/api/data/MapData) | The tag to set. |
+| tag | [MapData](/vanilla/api/data/MapData)? | The tag to set. |
 
 
 :::

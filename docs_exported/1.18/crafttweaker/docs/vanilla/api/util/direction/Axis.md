@@ -112,12 +112,12 @@ myAxis.isVertical();
 Return Type: boolean
 
 ```zenscript
-Axis.test(direction as Direction) as boolean
+Axis.test(direction as Direction?) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
 
 
 :::

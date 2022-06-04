@@ -54,10 +54,10 @@ myAttributeInstance.getBaseValue();
 
 :::group{name=getModifier}
 
-Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)
+Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)?
 
 ```zenscript
-AttributeInstance.getModifier(uuid as string) as AttributeModifier
+AttributeInstance.getModifier(uuid as string) as AttributeModifier?
 ```
 
 | Parameter | Type | Description |

@@ -12,10 +12,10 @@ import crafttweaker.api.world.BaseSpawner;
 
 :::group{name=getOrCreateDisplayEntity}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity
+BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity?
 ```
 
 | Parameter | Type | Description |

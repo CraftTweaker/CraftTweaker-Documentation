@@ -36,10 +36,10 @@ mySpecialSpawnEvent.getSpawnReason();
 
 :::group{name=getSpawner}
 
-Return Type: [BaseSpawner](/vanilla/api/world/BaseSpawner)
+Return Type: [BaseSpawner](/vanilla/api/world/BaseSpawner)?
 
 ```zenscript
-// SpecialSpawnEvent.getSpawner() as BaseSpawner
+// SpecialSpawnEvent.getSpawner() as BaseSpawner?
 
 mySpecialSpawnEvent.getSpawner();
 ```
@@ -52,5 +52,5 @@ mySpecialSpawnEvent.getSpawner();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | spawnReason | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | true | false | No Description Provided |
-| spawner | [BaseSpawner](/vanilla/api/world/BaseSpawner) | true | false | No Description Provided |
+| spawner | [BaseSpawner](/vanilla/api/world/BaseSpawner)? | true | false | No Description Provided |
 

@@ -38,10 +38,10 @@ myLivingAttackEvent.getAmount();
 
 :::group{name=getSource}
 
-Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)?
 
 ```zenscript
-// LivingAttackEvent.getSource() as DamageSource
+// LivingAttackEvent.getSource() as DamageSource?
 
 myLivingAttackEvent.getSource();
 ```
@@ -54,5 +54,5 @@ myLivingAttackEvent.getSource();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | amount | float | true | false | No Description Provided |
-| source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | No Description Provided |
+| source | [DamageSource](/vanilla/api/world/DamageSource)? | true | false | No Description Provided |
 

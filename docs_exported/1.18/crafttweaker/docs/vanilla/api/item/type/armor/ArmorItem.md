@@ -33,10 +33,10 @@ myArmorItem.getDefense();
 
 :::group{name=getEquipSound}
 
-Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)
+Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)?
 
 ```zenscript
-// ArmorItem.getEquipSound() as SoundEvent
+// ArmorItem.getEquipSound() as SoundEvent?
 
 myArmorItem.getEquipSound();
 ```
@@ -85,7 +85,7 @@ myArmorItem.getToughness();
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
 | defense | int | true | false | No Description Provided |
-| equipSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
+| equipSound | [SoundEvent](/vanilla/api/sound/SoundEvent)? | true | false | No Description Provided |
 | material | [ArmorMaterial](/vanilla/api/item/type/armor/ArmorMaterial) | true | false | No Description Provided |
 | slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | No Description Provided |
 | toughness | float | true | false | No Description Provided |

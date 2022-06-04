@@ -32,8 +32,8 @@ AnvilUpdateEvent extends [Event](/forge/api/event/Event). That means all methods
 | left | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
 | levelCost | int | true | true | No Description Provided |
 | materialCost | int | true | true | No Description Provided |
-| name | **invalid** | true | false | No Description Provided |
+| name | string? | true | false | No Description Provided |
 | output | [IItemStack](/vanilla/api/item/IItemStack) | true | true | No Description Provided |
-| player | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
+| player | [Player](/vanilla/api/entity/type/player/Player)? | true | false | No Description Provided |
 | right | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
 

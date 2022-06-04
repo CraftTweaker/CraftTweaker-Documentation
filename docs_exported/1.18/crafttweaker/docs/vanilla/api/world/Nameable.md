@@ -12,10 +12,10 @@ import crafttweaker.api.world.Nameable;
 
 :::group{name=getCustomName}
 
-Return Type: [Component](/vanilla/api/text/Component)
+Return Type: [Component](/vanilla/api/text/Component)?
 
 ```zenscript
-// Nameable.getCustomName() as Component
+// Nameable.getCustomName() as Component?
 
 myNameable.getCustomName();
 ```
@@ -63,7 +63,7 @@ myNameable.hasCustomName();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| customName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
+| customName | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
 | displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
 | hasCustomName | boolean | true | false | No Description Provided |
 | name | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |

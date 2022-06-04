@@ -42,10 +42,10 @@ myEntityType.canSummon();
 
 :::group{name=create}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-EntityType.create(level as Level) as Entity
+EntityType.create(level as Level) as Entity?
 ```
 
 | Parameter | Type | Description |
@@ -57,18 +57,18 @@ EntityType.create(level as Level) as Entity
 
 :::group{name=create}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-EntityType.create(level as ServerLevel, data as MapData, displayName as Component, spawningPlayer as Player, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity
+EntityType.create(level as ServerLevel, data as MapData?, displayName as Component?, spawningPlayer as Player?, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity?
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | No Description Provided |
-| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided |
+| displayName | [Component](/vanilla/api/text/Component)? | No Description Provided |
+| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
 | spawnType | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
 | alignPosition | boolean | No Description Provided |
@@ -205,18 +205,18 @@ EntityType.isIn(tag as KnownTag<EntityType<Entity>>) as boolean
 
 :::group{name=spawn}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-EntityType.spawn(level as ServerLevel, data as MapData, displayName as Component, spawningPlayer as Player, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity
+EntityType.spawn(level as ServerLevel, data as MapData?, displayName as Component?, spawningPlayer as Player?, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity?
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | No Description Provided |
-| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided |
+| displayName | [Component](/vanilla/api/text/Component)? | No Description Provided |
+| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
 | spawnType | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
 | alignPosition | boolean | No Description Provided |

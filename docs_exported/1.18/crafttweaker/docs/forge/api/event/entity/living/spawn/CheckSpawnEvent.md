@@ -39,10 +39,10 @@ myCheckSpawnEvent.getSpawnReason();
 
 :::group{name=getSpawner}
 
-Return Type: [BaseSpawner](/vanilla/api/world/BaseSpawner)
+Return Type: [BaseSpawner](/vanilla/api/world/BaseSpawner)?
 
 ```zenscript
-// CheckSpawnEvent.getSpawner() as BaseSpawner
+// CheckSpawnEvent.getSpawner() as BaseSpawner?
 
 myCheckSpawnEvent.getSpawner();
 ```
@@ -68,5 +68,5 @@ myCheckSpawnEvent.isSpawner();
 |------|------|------------|------------|-------------|
 | isSpawner | boolean | true | false | No Description Provided |
 | spawnReason | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | true | false | No Description Provided |
-| spawner | [BaseSpawner](/vanilla/api/world/BaseSpawner) | true | false | No Description Provided |
+| spawner | [BaseSpawner](/vanilla/api/world/BaseSpawner)? | true | false | No Description Provided |
 

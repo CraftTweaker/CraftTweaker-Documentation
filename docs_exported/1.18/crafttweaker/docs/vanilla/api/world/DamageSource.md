@@ -15,13 +15,13 @@ import crafttweaker.api.world.DamageSource;
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.arrow(arrow as Arrow, owner as Entity) as DamageSource
+DamageSource.arrow(arrow as Arrow, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | arrow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -43,12 +43,12 @@ DamageSource.badRespawnPointExplosion();
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.explosion(explosion as Explosion) as DamageSource
+DamageSource.explosion(explosion as Explosion?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| explosion | [Explosion](/vanilla/api/world/Explosion) | No Description Provided |
+| explosion | [Explosion](/vanilla/api/world/Explosion)? | No Description Provided |
 
 
 :::
@@ -58,12 +58,12 @@ DamageSource.explosion(explosion as Explosion) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.explosion(owner as LivingEntity) as DamageSource
+DamageSource.explosion(owner as LivingEntity?) as DamageSource
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| owner | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided | true |  |
+| owner | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided | true |  |
 
 
 :::
@@ -73,13 +73,13 @@ DamageSource.explosion(owner as LivingEntity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.fireball(fireball as Fireball, owner as Entity) as DamageSource
+DamageSource.fireball(fireball as Fireball, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -89,13 +89,13 @@ DamageSource.fireball(fireball as Fireball, owner as Entity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity) as DamageSource
+DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entity | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -105,13 +105,13 @@ DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity) as Damag
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.indirectMagic(entity as Entity, owner as Entity) as DamageSource
+DamageSource.indirectMagic(entity as Entity, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -121,13 +121,13 @@ DamageSource.indirectMagic(entity as Entity, owner as Entity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity) as DamageSource
+DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| owner | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| owner | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
 
 
 :::
@@ -197,13 +197,13 @@ DamageSource.thorns(entity as Entity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.thrown(entity as Entity, owner as Entity) as DamageSource
+DamageSource.thrown(entity as Entity, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -213,13 +213,13 @@ DamageSource.thrown(entity as Entity, owner as Entity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.trident(entity as Entity, owner as Entity) as DamageSource
+DamageSource.trident(entity as Entity, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -229,13 +229,13 @@ DamageSource.trident(entity as Entity, owner as Entity) as DamageSource
 Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 
 ```zenscript
-DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity) as DamageSource
+DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity?) as DamageSource
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| owner | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -244,10 +244,10 @@ DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity) as DamageS
 
 :::group{name=getDirectEntity}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// DamageSource.getDirectEntity() as Entity
+// DamageSource.getDirectEntity() as Entity?
 
 myDamageSource.getDirectEntity();
 ```
@@ -256,10 +256,10 @@ myDamageSource.getDirectEntity();
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// DamageSource.getEntity() as Entity
+// DamageSource.getEntity() as Entity?
 
 myDamageSource.getEntity();
 ```
@@ -307,10 +307,10 @@ myDamageSource.getMsgId();
 
 :::group{name=getSourcePosition}
 
-Return Type: [Vec3](/vanilla/api/util/math/Vec3)
+Return Type: [Vec3](/vanilla/api/util/math/Vec3)?
 
 ```zenscript
-// DamageSource.getSourcePosition() as Vec3
+// DamageSource.getSourcePosition() as Vec3?
 
 myDamageSource.getSourcePosition();
 ```
@@ -538,12 +538,12 @@ myDamageSource.setScalesWithDifficulty();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| directEntity | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| directEntity | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
 | doesBypassArmor | boolean | true | false | No Description Provided |
 | doesBypassInvul | boolean | true | false | No Description Provided |
 | doesBypassMagic | boolean | true | false | No Description Provided |
 | doesDamageHelmet | boolean | true | false | No Description Provided |
-| entity | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| entity | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
 | foodExhaustion | float | true | false | No Description Provided |
 | isCreativePlayer | boolean | true | false | No Description Provided |
 | isExplosion | boolean | true | false | No Description Provided |
@@ -554,5 +554,5 @@ myDamageSource.setScalesWithDifficulty();
 | isProjectile | boolean | true | false | No Description Provided |
 | msgId | string | true | false | No Description Provided |
 | scalesWithDifficulty | boolean | true | false | No Description Provided |
-| source | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
+| source | [Vec3](/vanilla/api/util/math/Vec3)? | true | false | No Description Provided |
 

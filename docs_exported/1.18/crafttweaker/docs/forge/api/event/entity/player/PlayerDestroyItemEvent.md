@@ -24,10 +24,10 @@ PlayerDestroyItemEvent extends [PlayerEvent](/forge/api/event/entity/player/Play
 
 :::group{name=getHand}
 
-Return Type: [InteractionHand](/vanilla/api/util/InteractionHand)
+Return Type: [InteractionHand](/vanilla/api/util/InteractionHand)?
 
 ```zenscript
-// PlayerDestroyItemEvent.getHand() as InteractionHand
+// PlayerDestroyItemEvent.getHand() as InteractionHand?
 
 event.getHand();
 ```
@@ -55,6 +55,6 @@ event.getOriginal();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | true | false | No Description Provided |
+| hand | [InteractionHand](/vanilla/api/util/InteractionHand)? | true | false | No Description Provided |
 | original | [IItemStack](/vanilla/api/item/IItemStack) | true | false | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
 

@@ -20,10 +20,10 @@ PlayerEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That mea
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/vanilla/api/entity/type/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)?
 
 ```zenscript
-// PlayerEvent.getPlayer() as Player
+// PlayerEvent.getPlayer() as Player?
 
 myPlayerEvent.getPlayer();
 ```
@@ -35,5 +35,5 @@ myPlayerEvent.getPlayer();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
+| player | [Player](/vanilla/api/entity/type/player/Player)? | true | false | No Description Provided |
 

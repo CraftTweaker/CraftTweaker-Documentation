@@ -12,10 +12,10 @@ import crafttweaker.api.advancement.Advancement;
 
 :::group{name=getChatComponent}
 
-Return Type: [Component](/vanilla/api/text/Component)
+Return Type: [Component](/vanilla/api/text/Component)?
 
 ```zenscript
-// Advancement.getChatComponent() as Component
+// Advancement.getChatComponent() as Component?
 
 myAdvancement.getChatComponent();
 ```
@@ -24,10 +24,10 @@ myAdvancement.getChatComponent();
 
 :::group{name=getChildren}
 
-Return Type: stdlib.Iterable&lt;[Advancement](/vanilla/api/advancement/Advancement)&gt;
+Return Type: stdlib.Iterable&lt;T&gt;?
 
 ```zenscript
-// Advancement.getChildren() as stdlib.Iterable<Advancement>
+// Advancement.getChildren() as stdlib.Iterable<T>?
 
 myAdvancement.getChildren();
 ```
@@ -36,10 +36,10 @@ myAdvancement.getChildren();
 
 :::group{name=getCriteria}
 
-Return Type: [Criterion](/vanilla/api/advancement/Criterion)[string]
+Return Type: V[K]?
 
 ```zenscript
-// Advancement.getCriteria() as Criterion[string]
+// Advancement.getCriteria() as V[K]?
 
 myAdvancement.getCriteria();
 ```
@@ -48,10 +48,10 @@ myAdvancement.getCriteria();
 
 :::group{name=getDisplay}
 
-Return Type: [DisplayInfo](/vanilla/api/advancement/DisplayInfo)
+Return Type: [DisplayInfo](/vanilla/api/advancement/DisplayInfo)?
 
 ```zenscript
-// Advancement.getDisplay() as DisplayInfo
+// Advancement.getDisplay() as DisplayInfo?
 
 myAdvancement.getDisplay();
 ```
@@ -60,10 +60,10 @@ myAdvancement.getDisplay();
 
 :::group{name=getId}
 
-Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)?
 
 ```zenscript
-// Advancement.getId() as ResourceLocation
+// Advancement.getId() as ResourceLocation?
 
 myAdvancement.getId();
 ```
@@ -84,10 +84,10 @@ myAdvancement.getMaxCriteriaRequired();
 
 :::group{name=getParent}
 
-Return Type: [Advancement](/vanilla/api/advancement/Advancement)
+Return Type: [Advancement](/vanilla/api/advancement/Advancement)?
 
 ```zenscript
-// Advancement.getParent() as Advancement
+// Advancement.getParent() as Advancement?
 
 myAdvancement.getParent();
 ```
@@ -96,10 +96,10 @@ myAdvancement.getParent();
 
 :::group{name=getRequirements}
 
-Return Type: **invalid**[][]
+Return Type: string?[][]
 
 ```zenscript
-// Advancement.getRequirements() as invalid[][]
+// Advancement.getRequirements() as string?[][]
 
 myAdvancement.getRequirements();
 ```
@@ -108,10 +108,10 @@ myAdvancement.getRequirements();
 
 :::group{name=getRewards}
 
-Return Type: [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards)
+Return Type: [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards)?
 
 ```zenscript
-// Advancement.getRewards() as AdvancementRewards
+// Advancement.getRewards() as AdvancementRewards?
 
 myAdvancement.getRewards();
 ```
@@ -123,13 +123,13 @@ myAdvancement.getRewards();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| chatComponent | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| children | stdlib.Iterable&lt;[Advancement](/vanilla/api/advancement/Advancement)&gt; | true | false | No Description Provided |
-| criteria | [Criterion](/vanilla/api/advancement/Criterion)[string] | true | false | No Description Provided |
-| display | [DisplayInfo](/vanilla/api/advancement/DisplayInfo) | true | false | No Description Provided |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
+| chatComponent | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
+| children | stdlib.Iterable&lt;T&gt;? | true | false | No Description Provided |
+| criteria | V[K]? | true | false | No Description Provided |
+| display | [DisplayInfo](/vanilla/api/advancement/DisplayInfo)? | true | false | No Description Provided |
+| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | true | false | No Description Provided |
 | maxCriteriaRequired | int | true | false | No Description Provided |
-| parent | [Advancement](/vanilla/api/advancement/Advancement) | true | false | No Description Provided |
-| requirements | **invalid**[][] | true | false | No Description Provided |
-| rewards | [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards) | true | false | No Description Provided |
+| parent | [Advancement](/vanilla/api/advancement/Advancement)? | true | false | No Description Provided |
+| requirements | string?[][] | true | false | No Description Provided |
+| rewards | [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards)? | true | false | No Description Provided |
 

@@ -36,10 +36,10 @@ myBlockEntity.getBlockState();
 
 :::group{name=getLevel}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/vanilla/api/world/Level)?
 
 ```zenscript
-// BlockEntity.getLevel() as Level
+// BlockEntity.getLevel() as Level?
 
 myBlockEntity.getLevel();
 ```
@@ -97,5 +97,5 @@ BlockEntity.updateData(data as MapData) as void
 | blockState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
 | data | [MapData](/vanilla/api/data/MapData) | true | true | No Description Provided |
 | hasLevel | boolean | true | false | No Description Provided |
-| level | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
+| level | [Level](/vanilla/api/world/Level)? | true | false | No Description Provided |
 

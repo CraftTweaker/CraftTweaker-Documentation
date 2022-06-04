@@ -16,16 +16,16 @@ BlockItem extends [ItemDefinition](/vanilla/api/item/ItemDefinition). That means
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| [Block](/vanilla/api/block/Block) | false |
+| [Block](/vanilla/api/block/Block)? | false |
 
 ## Methods
 
 :::group{name=getBlock}
 
-Return Type: [Block](/vanilla/api/block/Block)
+Return Type: [Block](/vanilla/api/block/Block)?
 
 ```zenscript
-// BlockItem.getBlock() as Block
+// BlockItem.getBlock() as Block?
 
 myBlockItem.getBlock();
 ```
@@ -37,5 +37,5 @@ myBlockItem.getBlock();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| block | [Block](/vanilla/api/block/Block) | true | false | No Description Provided |
+| block | [Block](/vanilla/api/block/Block)? | true | false | No Description Provided |
 

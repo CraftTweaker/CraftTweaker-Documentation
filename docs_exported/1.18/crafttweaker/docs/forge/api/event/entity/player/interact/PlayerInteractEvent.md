@@ -59,10 +59,10 @@ myPlayerInteractEvent.getCancellationResult();
 The face involved in this interaction.
  For all non-block interactions, this will return null
 
-Return Type: [Direction](/vanilla/api/util/direction/Direction)
+Return Type: [Direction](/vanilla/api/util/direction/Direction)?
 
 ```zenscript
-// PlayerInteractEvent.getFace() as Direction
+// PlayerInteractEvent.getFace() as Direction?
 
 myPlayerInteractEvent.getFace();
 ```
@@ -122,7 +122,7 @@ PlayerInteractEvent.setCancellationResult(result as InteractionResult) as void
 |------|------|------------|------------|-------------|
 | blockPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
 | cancellationResult | [InteractionResult](/vanilla/api/world/InteractionResult) | true | true |  |
-| face | [Direction](/vanilla/api/util/direction/Direction) | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
+| face | [Direction](/vanilla/api/util/direction/Direction)? | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
 | hand | [InteractionHand](/vanilla/api/util/InteractionHand) | true | false | No Description Provided |
 | itemStack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | The stack involved in this interaction. <br />  May be empty, but will never be null. |
 

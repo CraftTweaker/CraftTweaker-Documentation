@@ -355,10 +355,10 @@ myEntity.getCommandSenderWorld();
 
 :::group{name=getControllingPassenger}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// Entity.getControllingPassenger() as Entity
+// Entity.getControllingPassenger() as Entity?
 
 myEntity.getControllingPassenger();
 ```
@@ -382,10 +382,10 @@ myEntity.getCustomData();
 
 :::group{name=getCustomName}
 
-Return Type: [Component](/vanilla/api/text/Component)
+Return Type: [Component](/vanilla/api/text/Component)?
 
 ```zenscript
-// Entity.getCustomName() as Component
+// Entity.getCustomName() as Component?
 
 myEntity.getCustomName();
 ```
@@ -520,10 +520,10 @@ myEntity.getFeetBlockState();
 
 :::group{name=getFirstPassenger}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// Entity.getFirstPassenger() as Entity
+// Entity.getFirstPassenger() as Entity?
 
 myEntity.getFirstPassenger();
 ```
@@ -838,10 +838,10 @@ Entity.getUpVector(partialTicks as float) as Vec3
 
 :::group{name=getVehicle}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// Entity.getVehicle() as Entity
+// Entity.getVehicle() as Entity?
 
 myEntity.getVehicle();
 ```
@@ -1789,12 +1789,12 @@ Entity.setAirSupply(air as int) as void
 Return Type: void
 
 ```zenscript
-Entity.setCustomName(name as Component) as void
+Entity.setCustomName(name as Component?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | [Component](/vanilla/api/text/Component) | No Description Provided |
+| name | [Component](/vanilla/api/text/Component)? | No Description Provided |
 
 
 :::
@@ -2299,9 +2299,9 @@ myEntity.updateData({key: "value"});
 | canBeCollidedWith | boolean | true | false | No Description Provided |
 | canFreeze | boolean | true | false | No Description Provided |
 | commandSenderWorld | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| controllingPassenger | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| controllingPassenger | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
 | customData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the custom NBT data for this Entity. |
-| customName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
+| customName | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
 | data | [MapData](/vanilla/api/data/MapData) | true | false | Gets the NBT data of this Entity. |
 | deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) | true | true | No Description Provided |
 | dimensionChangingDelay | int | true | false | No Description Provided |
@@ -2313,7 +2313,7 @@ myEntity.updateData({key: "value"});
 | eyeY | double | true | false | No Description Provided |
 | feetBlockState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
 | fireImmune | boolean | true | false | No Description Provided |
-| firstPassenger | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| firstPassenger | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
 | fluidJumpThreshold | double | true | false | No Description Provided |
 | forward | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
 | handSlots | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | No Description Provided |
@@ -2381,7 +2381,7 @@ myEntity.updateData({key: "value"});
 | ticksFrozen | int | true | false | No Description Provided |
 | ticksRequiredToFreeze | int | true | false | No Description Provided |
 | type | [EntityType](/vanilla/api/entity/EntityType) | true | false | No Description Provided |
-| vehicle | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| vehicle | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
 | x | double | true | false | No Description Provided |
 | y | double | true | false | No Description Provided |
 | z | double | true | false | No Description Provided |

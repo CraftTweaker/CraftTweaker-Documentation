@@ -71,10 +71,10 @@ myChatFormatting.getChar();
 
 :::group{name=getColor}
 
-Return Type: **invalid**
+Return Type: int??
 
 ```zenscript
-// ChatFormatting.getColor() as invalid
+// ChatFormatting.getColor() as int??
 
 myChatFormatting.getColor();
 ```

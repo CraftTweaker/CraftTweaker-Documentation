@@ -123,12 +123,12 @@ myCreativeModeTab.getRecipeFolderName();
 Return Type: boolean
 
 ```zenscript
-CreativeModeTab.hasEnchantmentCategory(category as EnchantmentCategory) as boolean
+CreativeModeTab.hasEnchantmentCategory(category as EnchantmentCategory?) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| category | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory) | No Description Provided |
+| category | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)? | No Description Provided |
 
 
 :::

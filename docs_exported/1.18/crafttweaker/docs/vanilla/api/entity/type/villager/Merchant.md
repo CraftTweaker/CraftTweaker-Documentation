@@ -48,10 +48,10 @@ myMerchant.getOffers();
 
 :::group{name=getTradingPlayer}
 
-Return Type: [Player](/vanilla/api/entity/type/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)?
 
 ```zenscript
-// Merchant.getTradingPlayer() as Player
+// Merchant.getTradingPlayer() as Player?
 
 myMerchant.getTradingPlayer();
 ```
@@ -134,12 +134,12 @@ Merchant.openTradingScreen(player as Player, displayName as Component, level as 
 Return Type: void
 
 ```zenscript
-Merchant.setTradingPlayer(player as Player) as void
+Merchant.setTradingPlayer(player as Player?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| player | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
 
 
 :::

@@ -292,10 +292,10 @@ myMCItemStack.getEnchantments();
 
 :::group{name=getFood}
 
-Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
+Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)?
 
 ```zenscript
-// MCItemStack.getFood() as FoodProperties
+// MCItemStack.getFood() as FoodProperties?
 
 myMCItemStack.getFood();
 ```
@@ -800,12 +800,12 @@ MCItemStack.setFireResistant(fireResistant as boolean) as void
 Return Type: void
 
 ```zenscript
-MCItemStack.setFood(food as FoodProperties) as void
+MCItemStack.setFood(food as FoodProperties?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| food | [FoodProperties](/vanilla/api/food/FoodProperties) | No Description Provided |
+| food | [FoodProperties](/vanilla/api/food/FoodProperties)? | No Description Provided |
 
 
 :::
@@ -1098,14 +1098,14 @@ Sets the lore of the ItemStack
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-// MCItemStack.withLore(lore as Component[]) as IItemStack
+// MCItemStack.withLore(lore as Component?[]) as IItemStack
 
 myMCItemStack.withLore(new crafttweaker.api.text.TextComponent("I am the lore I speak for the trees"););
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| lore | [Component](/vanilla/api/text/Component)[] | the new Lore of the ItemStack. |
+| lore | [Component](/vanilla/api/text/Component)?[] | the new Lore of the ItemStack. |
 
 
 :::
@@ -1210,7 +1210,7 @@ myMCItemStack | other as IIngredient
 | empty | boolean | true | false | Returns if the ItemStack is empty |
 | enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true | true | No Description Provided |
 | fireResistant | boolean | true | true | Checks if this IItemStack burns when thrown into fire / lava or damaged by fire. |
-| food | [FoodProperties](/vanilla/api/food/FoodProperties) | true | true | No Description Provided |
+| food | [FoodProperties](/vanilla/api/food/FoodProperties)? | true | true | No Description Provided |
 | hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
 | hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
 | hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
@@ -1225,7 +1225,7 @@ myMCItemStack | other as IIngredient
 | rarity | [Rarity](/vanilla/api/item/property/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
 | registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
 | stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
-| tag | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this ItemStack. |
+| tag | [MapData](/vanilla/api/data/MapData)? | true | false | Returns the NBT tag attached to this ItemStack. |
 | useDuration | int | true | false | Gets the use duration of the ItemStack |
 | useOnRelease | boolean | true | false | Returns true if this stack is considered a crossbow item |
 

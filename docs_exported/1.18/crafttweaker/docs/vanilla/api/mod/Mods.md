@@ -18,10 +18,10 @@ import crafttweaker.api.mod.Mods;
 Gets a specific mod
 
 Returns: a specific Mod  
-Return Type: [Mod](/vanilla/api/mod/Mod)
+Return Type: [Mod](/vanilla/api/mod/Mod)?
 
 ```zenscript
-// Mods.getMod(modid as string) as Mod
+// Mods.getMod(modid as string) as Mod?
 
 loadedMods.getMod("minecraft");
 ```

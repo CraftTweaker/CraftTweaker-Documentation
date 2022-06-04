@@ -34,13 +34,13 @@ LivingEntity.addEffect(effectInstance as MobEffectInstance) as boolean
 Return Type: boolean
 
 ```zenscript
-LivingEntity.addEffect(effectInstance as MobEffectInstance, entity as Entity) as boolean
+LivingEntity.addEffect(effectInstance as MobEffectInstance, entity as Entity?) as boolean
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -228,13 +228,13 @@ LivingEntity.eat(level as Level, stack as ItemStack) as ItemStack
 Return Type: void
 
 ```zenscript
-LivingEntity.forceAddEffect(effectInstance as MobEffectInstance, entity as Entity) as void
+LivingEntity.forceAddEffect(effectInstance as MobEffectInstance, entity as Entity?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -313,10 +313,10 @@ myLivingEntity.getArrowCount();
 
 :::group{name=getAttribute}
 
-Return Type: [AttributeInstance](/vanilla/api/entity/attribute/AttributeInstance)
+Return Type: [AttributeInstance](/vanilla/api/entity/attribute/AttributeInstance)?
 
 ```zenscript
-LivingEntity.getAttribute(attribute as Attribute) as AttributeInstance
+LivingEntity.getAttribute(attribute as Attribute) as AttributeInstance?
 ```
 
 | Parameter | Type | Description |
@@ -358,10 +358,10 @@ LivingEntity.getAttributeValue(attribute as Attribute) as double
 
 :::group{name=getBedOrientation}
 
-Return Type: [Direction](/vanilla/api/util/direction/Direction)
+Return Type: [Direction](/vanilla/api/util/direction/Direction)?
 
 ```zenscript
-// LivingEntity.getBedOrientation() as Direction
+// LivingEntity.getBedOrientation() as Direction?
 
 myLivingEntity.getBedOrientation();
 ```
@@ -370,10 +370,10 @@ myLivingEntity.getBedOrientation();
 
 :::group{name=getEffect}
 
-Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)
+Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)?
 
 ```zenscript
-LivingEntity.getEffect(effect as MobEffect) as MobEffectInstance
+LivingEntity.getEffect(effect as MobEffect) as MobEffectInstance?
 ```
 
 | Parameter | Type | Description |
@@ -451,10 +451,10 @@ myLivingEntity.getJumpBoostPower();
 
 :::group{name=getKillCredit}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)?
 
 ```zenscript
-// LivingEntity.getKillCredit() as LivingEntity
+// LivingEntity.getKillCredit() as LivingEntity?
 
 myLivingEntity.getKillCredit();
 ```
@@ -463,10 +463,10 @@ myLivingEntity.getKillCredit();
 
 :::group{name=getLastClimbablePos}
 
-Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
+Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)?
 
 ```zenscript
-// LivingEntity.getLastClimbablePos() as BlockPos
+// LivingEntity.getLastClimbablePos() as BlockPos?
 
 myLivingEntity.getLastClimbablePos();
 ```
@@ -475,10 +475,10 @@ myLivingEntity.getLastClimbablePos();
 
 :::group{name=getLastDamageSource}
 
-Return Type: [DamageSource](/vanilla/api/world/DamageSource)
+Return Type: [DamageSource](/vanilla/api/world/DamageSource)?
 
 ```zenscript
-// LivingEntity.getLastDamageSource() as DamageSource
+// LivingEntity.getLastDamageSource() as DamageSource?
 
 myLivingEntity.getLastDamageSource();
 ```
@@ -487,10 +487,10 @@ myLivingEntity.getLastDamageSource();
 
 :::group{name=getLastHurtByMob}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)?
 
 ```zenscript
-// LivingEntity.getLastHurtByMob() as LivingEntity
+// LivingEntity.getLastHurtByMob() as LivingEntity?
 
 myLivingEntity.getLastHurtByMob();
 ```
@@ -643,10 +643,10 @@ myLivingEntity.getScale();
 
 :::group{name=getSleepingPos}
 
-Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
+Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)?
 
 ```zenscript
-// LivingEntity.getSleepingPos() as BlockPos
+// LivingEntity.getSleepingPos() as BlockPos?
 
 myLivingEntity.getSleepingPos();
 ```
@@ -745,12 +745,12 @@ myLivingEntity.getUsedItemHand();
 Return Type: double
 
 ```zenscript
-LivingEntity.getVisibilityPercent(lookingEntity as Entity) as double
+LivingEntity.getVisibilityPercent(lookingEntity as Entity?) as double
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| lookingEntity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| lookingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::
@@ -1086,15 +1086,15 @@ LivingEntity.removeEffect(effect as MobEffect) as boolean
 
 :::group{name=removeEffectNoUpdate}
 
-Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)
+Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)?
 
 ```zenscript
-LivingEntity.removeEffectNoUpdate(effect as MobEffect) as MobEffectInstance
+LivingEntity.removeEffectNoUpdate(effect as MobEffect?) as MobEffectInstance?
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect)? | No Description Provided |
 
 
 :::
@@ -1195,12 +1195,12 @@ LivingEntity.setJumping(jumping as boolean) as void
 Return Type: void
 
 ```zenscript
-LivingEntity.setLastHurtByMob(entity as LivingEntity) as void
+LivingEntity.setLastHurtByMob(entity as LivingEntity?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| entity | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
 
 
 :::
@@ -1210,12 +1210,12 @@ LivingEntity.setLastHurtByMob(entity as LivingEntity) as void
 Return Type: void
 
 ```zenscript
-LivingEntity.setLastHurtByPlayer(player as Player) as void
+LivingEntity.setLastHurtByPlayer(player as Player?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| player | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
 
 
 :::
@@ -1419,7 +1419,7 @@ LivingEntity.travel(vec as Vec3) as void
 | armorValue | int | true | false | No Description Provided |
 | arrowCount | int | true | false | No Description Provided |
 | attackable | boolean | true | false | No Description Provided |
-| bedOrientation | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
+| bedOrientation | [Direction](/vanilla/api/util/direction/Direction)? | true | false | No Description Provided |
 | canBeSeenAsEnemy | boolean | true | false | No Description Provided |
 | canBeSeenByAnyone | boolean | true | false | No Description Provided |
 | canBreatheUnderwater | boolean | true | false | No Description Provided |
@@ -1439,10 +1439,10 @@ LivingEntity.travel(vec as Vec3) as void
 | isUsingItem | boolean | true | false | No Description Provided |
 | isVisuallySwimming | boolean | true | false | No Description Provided |
 | jumpBoostPower | double | true | false | No Description Provided |
-| killCredit | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
-| lastClimbablePos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| lastDamageSource | [DamageSource](/vanilla/api/world/DamageSource) | true | false | No Description Provided |
-| lastHurtByMob | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
+| killCredit | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true | false | No Description Provided |
+| lastClimbablePos | [BlockPos](/vanilla/api/util/math/BlockPos)? | true | false | No Description Provided |
+| lastDamageSource | [DamageSource](/vanilla/api/world/DamageSource)? | true | false | No Description Provided |
+| lastHurtByMob | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true | false | No Description Provided |
 | lastHurtByMobTimestamp | int | true | false | No Description Provided |
 | lastHurtMob | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
 | lastHurtMobTimestamp | int | true | false | No Description Provided |
@@ -1456,7 +1456,7 @@ LivingEntity.travel(vec as Vec3) as void
 | random | [Random](/vanilla/api/util/math/Random) | true | false | No Description Provided |
 | scale | float | true | false | No Description Provided |
 | shouldDiscardFriction | boolean | true | false | No Description Provided |
-| sleepingPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
+| sleepingPos | [BlockPos](/vanilla/api/util/math/BlockPos)? | true | false | No Description Provided |
 | speed | float | true | false | No Description Provided |
 | stingerCount | int | true | false | No Description Provided |
 | ticksUsingItem | int | true | false | No Description Provided |

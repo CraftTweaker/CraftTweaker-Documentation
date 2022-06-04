@@ -28,10 +28,10 @@ myProjectile.getEffectSource();
 
 :::group{name=getOwner}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/vanilla/api/entity/Entity)?
 
 ```zenscript
-// Projectile.getOwner() as Entity
+// Projectile.getOwner() as Entity?
 
 myProjectile.getOwner();
 ```
@@ -43,12 +43,12 @@ myProjectile.getOwner();
 Return Type: void
 
 ```zenscript
-Projectile.setOwner(entity as Entity) as void
+Projectile.setOwner(entity as Entity?) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 
 
 :::

@@ -180,10 +180,10 @@ Player.displayClientMessage(component as Component, actionBar as boolean) as voi
 
 :::group{name=drop}
 
-Return Type: [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)
+Return Type: [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)?
 
 ```zenscript
-Player.drop(stack as ItemStack, traceItem as boolean) as ItemEntity
+Player.drop(stack as ItemStack, traceItem as boolean) as ItemEntity?
 ```
 
 | Parameter | Type | Description |

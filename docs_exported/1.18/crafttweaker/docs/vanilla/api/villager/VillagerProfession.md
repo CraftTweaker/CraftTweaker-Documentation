@@ -48,10 +48,10 @@ myVillagerProfession.getSecondaryPoi();
 
 :::group{name=getWorkSound}
 
-Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)
+Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)?
 
 ```zenscript
-// VillagerProfession.getWorkSound() as SoundEvent
+// VillagerProfession.getWorkSound() as SoundEvent?
 
 myVillagerProfession.getWorkSound();
 ```
@@ -67,5 +67,5 @@ myVillagerProfession.getWorkSound();
 | name | string | true | false | No Description Provided |
 | requestedItems | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true | false | No Description Provided |
 | secondaryPoi | Set&lt;[Block](/vanilla/api/block/Block)&gt; | true | false | No Description Provided |
-| workSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
+| workSound | [SoundEvent](/vanilla/api/sound/SoundEvent)? | true | false | No Description Provided |
 

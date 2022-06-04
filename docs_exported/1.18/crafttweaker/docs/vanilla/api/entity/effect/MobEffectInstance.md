@@ -232,12 +232,12 @@ myMobEffectInstance.isVisible();
 Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-MobEffectInstance.save(data as MapData) as MapData
+MobEffectInstance.save(data as MapData?) as MapData
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided | true |  |
+| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided | true |  |
 
 
 :::
@@ -274,13 +274,13 @@ myMobEffectInstance.showIcon();
 Return Type: boolean
 
 ```zenscript
-MobEffectInstance.tick(entity as LivingEntity, onFinish as invalid) as boolean
+MobEffectInstance.tick(entity as LivingEntity, onFinish as Runnable?) as boolean
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided | false |  |
-| onFinish | **invalid** | No Description Provided | true | null |
+| onFinish | Runnable? | No Description Provided | true | null |
 
 
 :::

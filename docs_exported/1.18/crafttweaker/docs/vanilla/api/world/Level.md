@@ -61,7 +61,7 @@ Returns: Whether the block was changed.
 Return Type: boolean
 
 ```zenscript
-// Level.destroyBlock(pos as BlockPos, doDrops as boolean, breaker as Entity) as boolean
+// Level.destroyBlock(pos as BlockPos, doDrops as boolean, breaker as Entity?) as boolean
 
 myLevel.destroyBlock(new BlockPos(0, 1, 2), true, player);
 ```
@@ -70,7 +70,7 @@ myLevel.destroyBlock(new BlockPos(0, 1, 2), true, player);
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the block. |
 | doDrops | boolean | Whether the block drops itself and it's loot. |
-| breaker | [Entity](/vanilla/api/entity/Entity) | The entity to break the block. |
+| breaker | [Entity](/vanilla/api/entity/Entity)? | The entity to break the block. |
 
 
 :::
@@ -117,10 +117,10 @@ myLevel.getBiome(new BlockPos(0, 1, 2));
 
 :::group{name=getBlockEntity}
 
-Return Type: [BlockEntity](/vanilla/api/block/entity/BlockEntity)
+Return Type: [BlockEntity](/vanilla/api/block/entity/BlockEntity)?
 
 ```zenscript
-Level.getBlockEntity(pos as BlockPos) as BlockEntity
+Level.getBlockEntity(pos as BlockPos) as BlockEntity?
 ```
 
 | Parameter | Type | Description |
@@ -209,14 +209,14 @@ Gets all entities in given area, excluding the one passed into it.
 Return Type: stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 
 ```zenscript
-// Level.getEntities(excludingEntity as Entity, x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double, predicate as Predicate<Entity>) as stdlib.List<Entity>
+// Level.getEntities(excludingEntity as Entity?, x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double, predicate as Predicate<Entity>) as stdlib.List<Entity>
 
 myLevel.getEntities(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entityIn) => entityIn.isInWater());
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| excludingEntity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| excludingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
 | x1 | double | No Description Provided |
 | y1 | double | No Description Provided |
 | z1 | double | No Description Provided |
@@ -256,14 +256,14 @@ Level.getEntitiesInArea<T : Entity>(pos1 as BlockPos, pos2 as BlockPos) as stdli
 Return Type: stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 
 ```zenscript
-// Level.getEntitiesInAreaExcluding(excludingEntity as Entity, predicate as Predicate<Entity>, pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<Entity>
+// Level.getEntitiesInAreaExcluding(excludingEntity as Entity?, predicate as Predicate<Entity>, pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<Entity>
 
 myLevel.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| excludingEntity | [Entity](/vanilla/api/entity/Entity) | No Description Provided | false |  |
+| excludingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided | false |  |
 | predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | No Description Provided | false |  |
 | pos1 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | false |  |
 | pos2 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | true |  |
@@ -475,14 +475,14 @@ Triggers a predetermined event on the client. Using this on a server
 Return Type: void
 
 ```zenscript
-// Level.levelEvent(excluded as Player, eventId as int, pos as BlockPos, data as int) as void
+// Level.levelEvent(excluded as Player?, eventId as int, pos as BlockPos, data as int) as void
 
 myLevel.levelEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| excluded | [Player](/vanilla/api/entity/type/player/Player) | An excluded player who will not receive the event. |
+| excluded | [Player](/vanilla/api/entity/type/player/Player)? | An excluded player who will not receive the event. |
 | eventId | int | The ID of the event to play. |
 | pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event. |
 | data | int | Four bytes of additional data encoded as an integer. This <br />                  is generally unused. |
