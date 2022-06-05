@@ -48,7 +48,7 @@ Return Type: void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | Name of the recipe to add |
-| output | [Brew](/mods/botania/Brew) | Output brew |
+| output | [Brew](/mods/Botania/Brew) | Output brew |
 | inputs | [IIngredient](/vanilla/api/ingredient/IIngredient)[] | Input items |
 
 
@@ -110,7 +110,7 @@ BrewRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 
 :::group{name=remove}
 
-Removes recipes that output the given [Brew](/mods/botania/Brew)
+Removes recipes that output the given [Brew](/mods/Botania/Brew)
 
 Return Type: void
 
@@ -122,7 +122,7 @@ Return Type: void
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| output | [Brew](/mods/botania/Brew) | The output to remove. |
+| output | [Brew](/mods/Botania/Brew) | The output to remove. |
 
 
 :::

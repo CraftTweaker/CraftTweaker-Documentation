@@ -15,7 +15,7 @@ import mods.botania.BracketHandlers;
 Gets a brew from its registry name
 
 Returns: The Brew from the name if found.  
-Return Type: [Brew](/mods/botania/Brew)
+Return Type: [Brew](/mods/Botania/Brew)
 
 ```zenscript
 // BracketHandlers.getBrew(tokens as string) as Brew
