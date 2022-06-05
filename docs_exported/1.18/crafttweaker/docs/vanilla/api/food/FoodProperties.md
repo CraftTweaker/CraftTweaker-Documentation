@@ -121,6 +121,21 @@ myFoodProperties.isMeat();
 Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 
 ```zenscript
+FoodProperties.removeEffect(effect as MobEffect) as FoodProperties
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+
+
+:::
+
+:::group{name=removeEffect}
+
+Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
+
+```zenscript
 FoodProperties.removeEffect(effect as MobEffectInstance) as FoodProperties
 ```
 
