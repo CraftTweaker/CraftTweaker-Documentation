@@ -512,24 +512,4 @@ villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
 
 :::
 
-:::group{name=removeWanderingTrade}
-
-Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader 2 Emeralds for an Arrow.
-
-Return Type: void
-
-```zenscript
-// VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
-
-villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
-| tradeFor | [IItemStack](/vanilla/api/items/IItemStack) | What ItemStack is being sold (by the Villager). |
-
-
-:::
-
 
