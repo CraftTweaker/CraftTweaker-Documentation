@@ -16,11 +16,11 @@ ItemEntity extends [Entity](/vanilla/api/entity/Entity). That means all methods 
 
 
 ```zenscript
-new ItemEntity(level as invalid, x as double, y as double, z as double, stack as ItemStack) as ItemEntity
+new ItemEntity(level as Level, x as double, y as double, z as double, stack as ItemStack) as ItemEntity
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| level | **invalid** | No description provided |
+| level | [Level](/vanilla/api/world/Level) | No description provided |
 | x | double | No description provided |
 | y | double | No description provided |
 | z | double | No description provided |
