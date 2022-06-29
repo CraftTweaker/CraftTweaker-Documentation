@@ -14,7 +14,7 @@ import mods.eidolon.Crucible;
 
 :::group{name=create}
 
-Return Type: [Crucible](/mods/eidolon/Crucible)
+Return Type: [Crucible](/mods/eidolontweaker/Crucible)
 
 ```zenscript
 Crucible.create(name as string, result as IItemStack) as Crucible
@@ -72,7 +72,7 @@ new Crucible(name as string, result as IItemStack) as Crucible
 
 :::group{name=addStep}
 
-Return Type: [Crucible](/mods/eidolon/Crucible)
+Return Type: [Crucible](/mods/eidolontweaker/Crucible)
 
 ```zenscript
 Crucible.addStep(stirs as int) as Crucible
@@ -87,7 +87,7 @@ Crucible.addStep(stirs as int) as Crucible
 
 :::group{name=addStep}
 
-Return Type: [Crucible](/mods/eidolon/Crucible)
+Return Type: [Crucible](/mods/eidolontweaker/Crucible)
 
 ```zenscript
 Crucible.addStep(input as IItemStack[], function as CrucibleRecipeFunction) as Crucible
@@ -96,14 +96,14 @@ Crucible.addStep(input as IItemStack[], function as CrucibleRecipeFunction) as C
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
-| function | [CrucibleRecipeFunction](/mods/eidolon/api/CrucibleRecipeFunction) | No Description Provided |
+| function | [CrucibleRecipeFunction](/mods/eidolontweaker/api/CrucibleRecipeFunction) | No Description Provided |
 
 
 :::
 
 :::group{name=addStirringStep}
 
-Return Type: [Crucible](/mods/eidolon/Crucible)
+Return Type: [Crucible](/mods/eidolontweaker/Crucible)
 
 ```zenscript
 Crucible.addStirringStep(stirs as int, input as IItemStack[], function as CrucibleRecipeFunction) as Crucible
@@ -113,7 +113,7 @@ Crucible.addStirringStep(stirs as int, input as IItemStack[], function as Crucib
 |-----------|------|-------------|
 | stirs | int | No Description Provided |
 | input | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
-| function | [CrucibleRecipeFunction](/mods/eidolon/api/CrucibleRecipeFunction) | No Description Provided |
+| function | [CrucibleRecipeFunction](/mods/eidolontweaker/api/CrucibleRecipeFunction) | No Description Provided |
 
 
 :::

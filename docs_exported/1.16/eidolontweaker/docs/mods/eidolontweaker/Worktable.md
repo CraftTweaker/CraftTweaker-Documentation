@@ -26,7 +26,7 @@ Worktable.register(name as string, core as IItemStack[], extra as IItemStack[], 
 | core | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 | extra | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 | result | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
-| matrix | [WorktableRecipeFunction](/mods/eidolon/api/WorktableRecipeFunction) | No Description Provided |
+| matrix | [WorktableRecipeFunction](/mods/eidolontweaker/api/WorktableRecipeFunction) | No Description Provided |
 
 
 :::
