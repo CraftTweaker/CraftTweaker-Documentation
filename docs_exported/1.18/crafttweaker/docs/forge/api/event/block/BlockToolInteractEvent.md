@@ -19,10 +19,6 @@ import crafttweaker.api.event.block.BlockToolInteractEvent;
 ```
 
 
-## Extending BlockEvent
-
-BlockToolInteractEvent extends [BlockEvent](/forge/api/event/block/BlockEvent). That means all methods available in [BlockEvent](/forge/api/event/block/BlockEvent) are also available in BlockToolInteractEvent
-
 ## Methods
 
 :::group{name=getFinalState}
