@@ -14,6 +14,7 @@ import crafttweaker.api.recipe.IRecipeManager;
 IRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in IRecipeManager
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
+- stdlib.Iterable&lt;T&gt;
 
 ## Methods
 
@@ -27,10 +28,10 @@ Return Type: void
 // IRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
 
 craftingTable.addJsonRecipe("recipe_name", {
-     ingredient: <item:minecraft:gold_ore>,
-     result: <item:minecraft:cooked_porkchop>.registryName,
-     experience: 0.35 as float,
-     cookingtime:100
+ ingredient: <item:minecraft:gold_ore>,
+ result: <item:minecraft:cooked_porkchop>.registryName,
+ experience: 0.35 as float,
+ cookingtime:100
  });
 ```
 

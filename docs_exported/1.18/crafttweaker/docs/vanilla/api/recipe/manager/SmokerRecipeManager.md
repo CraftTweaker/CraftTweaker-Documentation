@@ -34,10 +34,10 @@ Return Type: void
 // SmokerRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
 
 smoker.addJsonRecipe("recipe_name", {
-     ingredient: <item:minecraft:gold_ore>,
-     result: <item:minecraft:cooked_porkchop>.registryName,
-     experience: 0.35 as float,
-     cookingtime:100
+ ingredient: <item:minecraft:gold_ore>,
+ result: <item:minecraft:cooked_porkchop>.registryName,
+ experience: 0.35 as float,
+ cookingtime:100
  });
 ```
 
