@@ -40,17 +40,18 @@ Adds a new item application recipe.
 Return Type: void
 
 ```zenscript
-// ItemApplicationManager.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block as IIngredient, heldItem as IIngredient) as void
+// ItemApplicationManager.addRecipe(name as string, outputs as Percentaged<IItemStack>[], block as IIngredient, heldItem as IIngredient, keepHeldItem as boolean) as void
 
-<recipetype:create:item_application>.addRecipe("name", [<item:minecraft:dirt> % 50, <item:minecraft:diamond>], <item:minecraft:diamond_block>, <item:minecraft:emerald>);
+<recipetype:create:item_application>.addRecipe("name", [<item:minecraft:dirt> % 50, <item:minecraft:diamond>], <item:minecraft:diamond_block>, <item:minecraft:emerald>, true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the recipe. |
-| outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The recipe outputs |
-| block | [IIngredient](/vanilla/api/ingredient/IIngredient) | The block to be applied on |
-| heldItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item that needs to be held |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| name | string | The name of the recipe. | false |  |
+| outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The recipe outputs | false |  |
+| block | [IIngredient](/vanilla/api/ingredient/IIngredient) | The block to be applied on | false |  |
+| heldItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item that needs to be held | false |  |
+| keepHeldItem | boolean | Should the item be consumed or not | true | false |
 
 
 :::

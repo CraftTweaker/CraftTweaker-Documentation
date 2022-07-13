@@ -35,18 +35,23 @@ DeployerApplicationManager.addJsonRecipe(name as string, mapData as MapData) as 
 
 :::group{name=addRecipe}
 
+Adds a new deployer application recipe.
+
 Return Type: void
 
 ```zenscript
-DeployerApplicationManager.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[]) as void
+// DeployerApplicationManager.addRecipe(name as string, processedItem as IIngredient, heldItem as IIngredient, outputs as Percentaged<IItemStack>[], keepHeldItem as boolean) as void
+
+<recipetype:create:deploying>.addRecipe("name", <item:minecraft:air>, <item:minecraft:diamond>, [<item:minecraft:dirt> % 50], true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| processedItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
-| heldItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
-| outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | No Description Provided |
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| name | string | The name of the recipe | false |  |
+| processedItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item to be deployed onto | false |  |
+| heldItem | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item to deploy with | false |  |
+| outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The output of the recipe | false |  |
+| keepHeldItem | boolean | Should the held item be consumed | true | false |
 
 
 :::
