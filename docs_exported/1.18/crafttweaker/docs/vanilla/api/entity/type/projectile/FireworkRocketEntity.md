@@ -24,13 +24,13 @@ FireworkRocketEntity implements the following interfaces. That means all methods
 new FireworkRocketEntity(level as Level, x as double, y as double, z as double, stack as ItemStack) as FireworkRocketEntity
 new FireworkRocketEntity(level, 0, 0, 0, <item:minecraft:air>);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | The level the entity is in. |
-| x | double | The x position of the entity. |
-| y | double | The y position of the entity. |
-| z | double | The z position of the entity. |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | The optional firework stack. |
+| Parameter |                   Type                   |          Description          |
+|-----------|------------------------------------------|-------------------------------|
+| level     | [Level](/vanilla/api/world/Level)        | The level the entity is in.   |
+| x         | double                                   | The x position of the entity. |
+| y         | double                                   | The y position of the entity. |
+| z         | double                                   | The z position of the entity. |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) | The optional firework stack.  |
 
 
 
@@ -54,7 +54,7 @@ myFireworkRocketEntity.isShotAtAngle();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| isShotAtAngle | boolean | true | false | Checks whether this firework rocket was shot at an angle or not. |
+|     Name      |  Type   | Has Getter | Has Setter |                           Description                            |
+|---------------|---------|------------|------------|------------------------------------------------------------------|
+| isShotAtAngle | boolean | true       | false      | Checks whether this firework rocket was shot at an angle or not. |
 

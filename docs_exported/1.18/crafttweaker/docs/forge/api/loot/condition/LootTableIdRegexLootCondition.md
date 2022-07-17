@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 LootTableIdRegexLootCondition.create(pattern as string) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pattern | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| pattern   | string |
 
 
 :::

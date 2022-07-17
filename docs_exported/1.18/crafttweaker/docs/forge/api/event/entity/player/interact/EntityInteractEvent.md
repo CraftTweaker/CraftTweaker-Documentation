@@ -39,7 +39,7 @@ myEntityInteractEvent.getTarget();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| target | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+|  Name  |                 Type                 | Has Getter | Has Setter |
+|--------|--------------------------------------|------------|------------|
+| target | [Entity](/vanilla/api/entity/Entity) | true       | false      |
 

@@ -66,9 +66,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forAllTypesExcluding(stoneCutter);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| managers | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The managers to exclude from the replacer. |
+| Parameter |                              Type                              |                Description                 |
+|-----------|----------------------------------------------------------------|--------------------------------------------|
+| managers  | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The managers to exclude from the replacer. |
 
 
 :::
@@ -86,9 +86,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forCustomRecipeSet(myPredicate);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | BiPredicate&lt;[Recipe](/vanilla/api/recipe/type/Recipe),[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | The custom whitelisting function. |
+| Parameter |                                                           Type                                                            |            Description            |
+|-----------|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| function  | BiPredicate&lt;[Recipe](/vanilla/api/recipe/type/Recipe),[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | The custom whitelisting function. |
 
 
 :::
@@ -121,9 +121,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forMods("minecraft");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mods | string[] | The mods whose recipes should be targeted by the replacer. It must be at least one. |
+| Parameter |   Type   |                                     Description                                     |
+|-----------|----------|-------------------------------------------------------------------------------------|
+| mods      | string[] | The mods whose recipes should be targeted by the replacer. It must be at least one. |
 
 
 :::
@@ -141,9 +141,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forOutput(<tag:items:forge:rods/wooden>, stoneCutter);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | The output that should be matched. |
+| Parameter |                              Type                              |                                 Description                                 |
+|-----------|----------------------------------------------------------------|-----------------------------------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient)             | The output that should be matched.                                          |
 | whitelist | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | An optional list of managers that should be whitelisted in the replacement. |
 
 
@@ -162,9 +162,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forRecipes(craftingTable.getRecipeByName("minecraft:emerald_block"));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| recipes | [Recipe](/vanilla/api/recipe/type/Recipe)[] | The recipes that should be targeted by the replacer. It must be at least one. |
+| Parameter |                    Type                     |                                  Description                                  |
+|-----------|---------------------------------------------|-------------------------------------------------------------------------------|
+| recipes   | [Recipe](/vanilla/api/recipe/type/Recipe)[] | The recipes that should be targeted by the replacer. It must be at least one. |
 
 
 :::
@@ -182,9 +182,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forRegexRecipes("\\d_\\d");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | The regular expression that should be used for matching. |
+| Parameter |  Type  |                       Description                        |
+|-----------|--------|----------------------------------------------------------|
+| regex     | string | The regular expression that should be used for matching. |
 
 
 :::
@@ -202,9 +202,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forRegexTypes("^minecraft:[a-z]*ing");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | The regular expression that should be used for matching. |
+| Parameter |  Type  |                       Description                        |
+|-----------|--------|----------------------------------------------------------|
+| regex     | string | The regular expression that should be used for matching. |
 
 
 :::
@@ -222,9 +222,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forTypes(smithing);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| managers | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The managers that will be targeted by the replacer. It must be at least one. |
+| Parameter |                              Type                              |                                 Description                                  |
+|-----------|----------------------------------------------------------------|------------------------------------------------------------------------------|
+| managers  | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The managers that will be targeted by the replacer. It must be at least one. |
 
 
 :::
@@ -244,9 +244,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().excluding(stoneCutter);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| managers | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The list of managers that should be excluded. |
+| Parameter |                              Type                              |                  Description                  |
+|-----------|----------------------------------------------------------------|-----------------------------------------------|
+| managers  | [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)[] | The list of managers that should be excluded. |
 
 
 :::
@@ -264,9 +264,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().excluding(<resource:minecraft:comparator>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| recipes | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The list of recipes that should be excluded. |
+| Parameter |                             Type                             |                 Description                  |
+|-----------|--------------------------------------------------------------|----------------------------------------------|
+| recipes   | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The list of recipes that should be excluded. |
 
 
 :::
@@ -284,9 +284,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().excludingMods("mekanism");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modids | string[] | The list of modids that should be excluded. |
+| Parameter |   Type   |                 Description                 |
+|-----------|----------|---------------------------------------------|
+| modids    | string[] | The list of modids that should be excluded. |
 
 
 :::
@@ -295,10 +295,8 @@ Replacer.forEverything().excludingMods("mekanism");
 
 Executes all replacements that have been queued on this replacer, if any.
 
-Return Type: void
-
 ```zenscript
-// Replacer.execute() as void
+// Replacer.execute()
 
 Replacer.forEverything().execute();
 ```
@@ -321,10 +319,10 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().explicitlyRename(<resource:minecraft:birch_sign>, "damn_hard_birch_sign");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| oldName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The [ResourceLocation](/vanilla/api/resource/ResourceLocation) of the name of the recipe that should be renamed. |
-| newName | string | The new name of the recipe. |
+| Parameter |                            Type                            |                                                   Description                                                    |
+|-----------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| oldName   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The [ResourceLocation](/vanilla/api/resource/ResourceLocation) of the name of the recipe that should be renamed. |
+| newName   | string                                                     | The new name of the recipe.                                                                                      |
 
 
 :::
@@ -352,10 +350,10 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().replace(<tag:items:forge:storage_blocks/redstone>, <item:minecraft:diamond_block>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | [IIngredient](/vanilla/api/ingredient/IIngredient) | An [IIngredient](/vanilla/api/ingredient/IIngredient) that will be used to match stacks that need to be replaced. |
-| to | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient). |
+| Parameter |                        Type                        |                                                    Description                                                    |
+|-----------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| from      | [IIngredient](/vanilla/api/ingredient/IIngredient) | An [IIngredient](/vanilla/api/ingredient/IIngredient) that will be used to match stacks that need to be replaced. |
+| to        | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient).                                               |
 
 
 :::
@@ -383,10 +381,10 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().replace(<item:minecraft:coal_block>, <item:minecraft:diamond_block>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | [IItemStack](/vanilla/api/item/IItemStack) | An [IItemStack](/vanilla/api/item/IItemStack) that will be used to match stacks that need to be replaced. |
-| to | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient). |
+| Parameter |                        Type                        |                                                Description                                                |
+|-----------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| from      | [IItemStack](/vanilla/api/item/IItemStack)         | An [IItemStack](/vanilla/api/item/IItemStack) that will be used to match stacks that need to be replaced. |
+| to        | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient).                                       |
 
 
 :::
@@ -411,10 +409,10 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().replaceFully(<tag:items:minecraft:anvil>, <tag:items:minecraft:flowers>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | [IIngredient](/vanilla/api/ingredient/IIngredient) | An [IIngredient](/vanilla/api/ingredient/IIngredient) that will be used to match to specify the ingredient to replace. |
-| to | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient). |
+| Parameter |                        Type                        |                                                      Description                                                       |
+|-----------|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| from      | [IIngredient](/vanilla/api/ingredient/IIngredient) | An [IIngredient](/vanilla/api/ingredient/IIngredient) that will be used to match to specify the ingredient to replace. |
+| to        | [IIngredient](/vanilla/api/ingredient/IIngredient) | The replacement [IIngredient](/vanilla/api/ingredient/IIngredient).                                                    |
 
 
 :::
@@ -455,9 +453,9 @@ Return Type: [Replacer](/vanilla/api/recipe/Replacer)
 Replacer.forEverything().useForRenaming(myFunction);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | BiFunction&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation),string,string&gt; | The renaming function. |
+| Parameter |                                            Type                                            |      Description       |
+|-----------|--------------------------------------------------------------------------------------------|------------------------|
+| function  | BiFunction&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation),string,string&gt; | The renaming function. |
 
 
 :::

@@ -30,9 +30,9 @@ Return Type: [NbtPredicate](/vanilla/api/predicate/NbtPredicate)
 NbtPredicate.create(data as IData) as NbtPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [NbtPredicate](/vanilla/api/predicate/NbtPredicate)
 NbtPredicate.create(data as MapData) as NbtPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::

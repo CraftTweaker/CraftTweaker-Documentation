@@ -38,9 +38,9 @@ Return Type: boolean
 EnchantmentCategory.canEnchant(item as ItemDefinition) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::

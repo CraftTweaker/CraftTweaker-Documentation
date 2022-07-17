@@ -38,10 +38,10 @@ ChatFormatting is an enum. It has 22 enum constants. They are accessible using t
 ```
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| string | true |
-| [Style](/vanilla/api/text/Style) | true |
+|           Result Type            | Is Implicit |
+|----------------------------------|-------------|
+| string                           | true        |
+| [Style](/vanilla/api/text/Style) | true        |
 
 ## Methods
 
@@ -144,9 +144,9 @@ myChatFormatting.toString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| id | int | true | false | No Description Provided |
-| isColor | boolean | true | false | No Description Provided |
-| isFormat | boolean | true | false | No Description Provided |
+|   Name   |  Type   | Has Getter | Has Setter |
+|----------|---------|------------|------------|
+| id       | int     | true       | false      |
+| isColor  | boolean | true       | false      |
+| isFormat | boolean | true       | false      |
 

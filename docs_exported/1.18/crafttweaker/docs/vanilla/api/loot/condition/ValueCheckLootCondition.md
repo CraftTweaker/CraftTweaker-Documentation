@@ -23,10 +23,10 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 ValueCheckLootCondition.create(provider as NumberProvider, range as IntRange) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| provider | [NumberProvider](/vanilla/api/loot/NumberProvider) | No Description Provided |
-| range | [IntRange](/vanilla/api/loot/IntRange) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| provider  | [NumberProvider](/vanilla/api/loot/NumberProvider) |
+| range     | [IntRange](/vanilla/api/loot/IntRange)             |
 
 
 :::

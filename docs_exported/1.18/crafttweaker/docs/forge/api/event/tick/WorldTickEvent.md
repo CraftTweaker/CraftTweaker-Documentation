@@ -33,7 +33,7 @@ myWorldTickEvent.getWorld();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| world | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
+| Name  |               Type                | Has Getter | Has Setter |
+|-------|-----------------------------------|------------|------------|
+| world | [Level](/vanilla/api/world/Level) | true       | false      |
 

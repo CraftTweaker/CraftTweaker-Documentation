@@ -19,19 +19,19 @@ ResourceLocation implements the following interfaces. That means all methods def
 ```zenscript
 new ResourceLocation(namespace as string, path as string) as ResourceLocation
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| namespace | string | Usually a ModId |
-| path | string | May only contain lower-cased alphanumeric values, as well as / and _ |
+| Parameter |  Type  |                             Description                              |
+|-----------|--------|----------------------------------------------------------------------|
+| namespace | string | Usually a ModId                                                      |
+| path      | string | May only contain lower-cased alphanumeric values, as well as / and _ |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IData](/vanilla/api/data/IData) | true |
-| string | true |
+|           Result Type            | Is Implicit |
+|----------------------------------|-------------|
+| [IData](/vanilla/api/data/IData) | true        |
+| string                           | true        |
 
 ## Methods
 
@@ -55,9 +55,9 @@ Return Type: int
 ResourceLocation.compareTo(other as ResourceLocation) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| other     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -70,9 +70,9 @@ Return Type: boolean
 ResourceLocation.equals(other as Object) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | Object | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| other     | Object |
 
 
 :::
@@ -128,9 +128,9 @@ myResourceLocation.toString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| namespace | string | true | false | No Description Provided |
-| path | string | true | false | No Description Provided |
+|     Name      |  Type  | Has Getter | Has Setter |
+|---------------|--------|------------|------------|
+| commandString | string | true       | false      |
+| namespace     | string | true       | false      |
+| path          | string | true       | false      |
 

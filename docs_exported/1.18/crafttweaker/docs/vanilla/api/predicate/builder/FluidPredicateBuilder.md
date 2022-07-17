@@ -18,9 +18,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicateBuilder.blocks(fluid as Fluid) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fluid | [Fluid](/vanilla/api/fluid/Fluid) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| fluid     | [Fluid](/vanilla/api/fluid/Fluid) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicateBuilder.properties(predicate as StatePropertiesPredicate) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicateBuilder.properties(predicate as StatePropertiesPredicateBuilder) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) | No Description Provided |
+| Parameter |                                               Type                                                |
+|-----------|---------------------------------------------------------------------------------------------------|
+| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicateBuilder.tag(tag as KnownTag<Fluid>) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; |
 
 
 :::

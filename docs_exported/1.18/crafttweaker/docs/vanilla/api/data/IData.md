@@ -14,11 +14,11 @@ import crafttweaker.api.data.IData;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 
@@ -116,9 +116,9 @@ Return Type: boolean
 {Display: {lore: ["Hello", "World"]}}.contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::

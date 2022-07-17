@@ -24,7 +24,7 @@ ItemExpireEvent extends [ItemEvent](/forge/api/event/entity/ItemEvent). That mea
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| extraLife | int | true | true | No Description Provided |
+|   Name    | Type | Has Getter | Has Setter |
+|-----------|------|------------|------------|
+| extraLife | int  | true       | true       |
 

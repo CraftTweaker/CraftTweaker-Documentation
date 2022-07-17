@@ -56,30 +56,26 @@ myLeftClickBlockEvent.getUseItem();
 
 :::group{name=setUseBlock}
 
-Return Type: void
-
 ```zenscript
-LeftClickBlockEvent.setUseBlock(triggerBlock as EventResult) as void
+LeftClickBlockEvent.setUseBlock(triggerBlock as EventResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| triggerBlock | [EventResult](/forge/api/event/EventResult) | No Description Provided |
+|  Parameter   |                    Type                     |
+|--------------|---------------------------------------------|
+| triggerBlock | [EventResult](/forge/api/event/EventResult) |
 
 
 :::
 
 :::group{name=setUseItem}
 
-Return Type: void
-
 ```zenscript
-LeftClickBlockEvent.setUseItem(triggerItem as EventResult) as void
+LeftClickBlockEvent.setUseItem(triggerItem as EventResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| triggerItem | [EventResult](/forge/api/event/EventResult) | No Description Provided |
+|  Parameter  |                    Type                     |
+|-------------|---------------------------------------------|
+| triggerItem | [EventResult](/forge/api/event/EventResult) |
 
 
 :::
@@ -87,8 +83,8 @@ LeftClickBlockEvent.setUseItem(triggerItem as EventResult) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| useBlock | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |
-| useItem | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |
+|   Name   |                    Type                     | Has Getter | Has Setter |
+|----------|---------------------------------------------|------------|------------|
+| useBlock | [EventResult](/forge/api/event/EventResult) | true       | true       |
+| useItem  | [EventResult](/forge/api/event/EventResult) | true       | true       |
 

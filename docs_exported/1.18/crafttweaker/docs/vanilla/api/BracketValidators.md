@@ -18,9 +18,9 @@ Return Type: boolean
 BracketValidators.validateBlockBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -33,9 +33,9 @@ Return Type: boolean
 BracketValidators.validateBlockMaterialBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -48,9 +48,9 @@ Return Type: boolean
 BracketValidators.validateBlockStateMaterialBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -63,9 +63,9 @@ Return Type: boolean
 BracketValidators.validateCreativeModeTabBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -78,9 +78,9 @@ Return Type: boolean
 BracketValidators.validateEffectBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -93,9 +93,9 @@ Return Type: boolean
 BracketValidators.validateEnchantment(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -108,9 +108,9 @@ Return Type: boolean
 BracketValidators.validateEntityType(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -123,9 +123,9 @@ Return Type: boolean
 BracketValidators.validateItemBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -138,9 +138,9 @@ Return Type: boolean
 BracketValidators.validateProfessionBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -153,9 +153,9 @@ Return Type: boolean
 BracketValidators.validateResourceBracket(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -168,9 +168,9 @@ Return Type: boolean
 BracketValidators.validateSoundEvent(tokens as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::

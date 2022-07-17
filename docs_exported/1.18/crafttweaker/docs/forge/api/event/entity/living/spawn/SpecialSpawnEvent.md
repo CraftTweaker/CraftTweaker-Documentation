@@ -49,8 +49,8 @@ mySpecialSpawnEvent.getSpawner();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| spawnReason | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | true | false | No Description Provided |
-| spawner | [BaseSpawner](/vanilla/api/world/BaseSpawner)? | true | false | No Description Provided |
+|    Name     |                       Type                       | Has Getter | Has Setter |
+|-------------|--------------------------------------------------|------------|------------|
+| spawnReason | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | true       | false      |
+| spawner     | [BaseSpawner](/vanilla/api/world/BaseSpawner)?   | true       | false      |
 

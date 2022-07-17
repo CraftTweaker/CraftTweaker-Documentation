@@ -30,9 +30,9 @@ Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 EnchantmentPredicate.create(enchantment as Enchantment) as EnchantmentPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | No Description Provided |
+|  Parameter  |                           Type                           |
+|-------------|----------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 EnchantmentPredicate.create(level as IntMinMaxBoundsPredicate) as EnchantmentPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| level     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -60,10 +60,10 @@ Return Type: [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate)
 EnchantmentPredicate.create(enchantment as Enchantment, level as IntMinMaxBoundsPredicate) as EnchantmentPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | No Description Provided |
-| level | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+|  Parameter  |                                    Type                                     |
+|-------------|-----------------------------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment)                    |
+| level       | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::

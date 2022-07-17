@@ -48,16 +48,14 @@ myCommandSource.alwaysAccepts();
 
 :::group{name=sendMessage}
 
-Return Type: void
-
 ```zenscript
-CommandSource.sendMessage(component as Component, senderUUID as invalid) as void
+CommandSource.sendMessage(component as Component, senderUUID as invalid)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| component | [Component](/vanilla/api/text/Component) | No Description Provided |
-| senderUUID | **invalid** | No Description Provided |
+| Parameter  |                   Type                   |
+|------------|------------------------------------------|
+| component  | [Component](/vanilla/api/text/Component) |
+| senderUUID | **invalid**                              |
 
 
 :::
@@ -77,10 +75,10 @@ myCommandSource.shouldInformAdmins();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| acceptsFailure | boolean | true | false | No Description Provided |
-| acceptsSuccess | boolean | true | false | No Description Provided |
-| alwaysAccepts | boolean | true | false | No Description Provided |
-| shouldInformAdmins | boolean | true | false | No Description Provided |
+|        Name        |  Type   | Has Getter | Has Setter |
+|--------------------|---------|------------|------------|
+| acceptsFailure     | boolean | true       | false      |
+| acceptsSuccess     | boolean | true       | false      |
+| alwaysAccepts      | boolean | true       | false      |
+| shouldInformAdmins | boolean | true       | false      |
 

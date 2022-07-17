@@ -45,8 +45,8 @@ myItemCraftedEvent.getCraftingMatrix();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| crafting | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| inventory | [Container](/vanilla/api/world/Container) | true | false | No Description Provided |
+|   Name    |                    Type                    | Has Getter | Has Setter |
+|-----------|--------------------------------------------|------------|------------|
+| crafting  | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
+| inventory | [Container](/vanilla/api/world/Container)  | true       | false      |
 

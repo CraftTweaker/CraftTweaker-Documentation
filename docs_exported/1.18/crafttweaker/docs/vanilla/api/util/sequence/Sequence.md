@@ -63,10 +63,8 @@ mySequence.isStopped();
 
 Stops this sequence, subsequent tasks will not be ran.
 
-Return Type: void
-
 ```zenscript
-// Sequence.stop() as void
+// Sequence.stop()
 
 mySequence.stop();
 ```
@@ -77,10 +75,8 @@ mySequence.stop();
 
 Ticks this sequence.
 
-Return Type: void
-
 ```zenscript
-// Sequence.tick() as void
+// Sequence.tick()
 
 mySequence.tick();
 ```
@@ -90,9 +86,9 @@ mySequence.tick();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| context | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | true | false | Gets the context for this sequence. |
-| isComplete | boolean | true | false | Checks if this sequence is complete. |
-| stopped | boolean | true | false | Checks if this sequence is stopped or not. |
+|    Name    |                                   Type                                   | Has Getter | Has Setter |                Description                 |
+|------------|--------------------------------------------------------------------------|------------|------------|--------------------------------------------|
+| context    | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | true       | false      | Gets the context for this sequence.        |
+| isComplete | boolean                                                                  | true       | false      | Checks if this sequence is complete.       |
+| stopped    | boolean                                                                  | true       | false      | Checks if this sequence is stopped or not. |
 

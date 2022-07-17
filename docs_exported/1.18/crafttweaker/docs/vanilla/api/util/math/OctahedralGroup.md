@@ -77,9 +77,9 @@ Return Type: [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup)
 OctahedralGroup.compose(group as OctahedralGroup) as OctahedralGroup
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| group | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| group     | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) |
 
 
 :::
@@ -104,9 +104,9 @@ Return Type: boolean
 OctahedralGroup.inverts(axis as Axis) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| axis | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -119,9 +119,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 OctahedralGroup.rotate(direction as Direction) as Direction
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [FrontAndTop](/vanilla/api/util/math/FrontAndTop)
 OctahedralGroup.rotate(frontAndTop as FrontAndTop) as FrontAndTop
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) | No Description Provided |
+|  Parameter  |                       Type                        |
+|-------------|---------------------------------------------------|
+| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) |
 
 
 :::
@@ -156,7 +156,7 @@ myOctahedralGroup.transformation();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true | false | No Description Provided |
+|      Name      |                    Type                     | Has Getter | Has Setter |
+|----------------|---------------------------------------------|------------|------------|
+| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true       | false      |
 

@@ -50,15 +50,13 @@ myLivingDamageEvent.getSource();
 
 :::group{name=setAmount}
 
-Return Type: void
-
 ```zenscript
-LivingDamageEvent.setAmount(amount as float) as void
+LivingDamageEvent.setAmount(amount as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| amount    | float |
 
 
 :::
@@ -66,8 +64,8 @@ LivingDamageEvent.setAmount(amount as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | float | true | true | No Description Provided |
-| source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | No Description Provided |
+|  Name  |                      Type                       | Has Getter | Has Setter |
+|--------|-------------------------------------------------|------------|------------|
+| amount | float                                           | true       | true       |
+| source | [DamageSource](/vanilla/api/world/DamageSource) | true       | false      |
 

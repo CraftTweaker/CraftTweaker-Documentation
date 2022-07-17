@@ -38,7 +38,7 @@ myRarity.getWeight();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| weight | int | true | false | Gets the weight of this Rarity |
+|  Name  | Type | Has Getter | Has Setter |          Description           |
+|--------|------|------------|------------|--------------------------------|
+| weight | int  | true       | false      | Gets the weight of this Rarity |
 

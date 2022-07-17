@@ -18,9 +18,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.amount(amount as IntMinMaxBoundsPredicate) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| amount    | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.durability(durability as IntMinMaxBoundsPredicate) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| durability | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter  |                                    Type                                     |
+|------------|-----------------------------------------------------------------------------|
+| durability | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.enchantedWith(predicate as EnchantmentPredicate) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) | No Description Provided |
+| Parameter |                                Type                                 |
+|-----------|---------------------------------------------------------------------|
+| predicate | [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.items(items as IItemStack[]) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | [IItemStack](/vanilla/api/item/IItemStack)[] | No Description Provided |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| items     | [IItemStack](/vanilla/api/item/IItemStack)[] |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.items(items as ItemDefinition[]) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | [ItemDefinition](/vanilla/api/item/ItemDefinition)[] | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| items     | [ItemDefinition](/vanilla/api/item/ItemDefinition)[] |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.nbt(nbt as IData) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| nbt | [IData](/vanilla/api/data/IData) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| nbt       | [IData](/vanilla/api/data/IData) |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.nbt(nbt as MapData) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| nbt | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| nbt       | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.potion(potion as Potion) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| potion | [Potion](/vanilla/api/item/alchemy/Potion) | No Description Provided |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| potion    | [Potion](/vanilla/api/item/alchemy/Potion) |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.storingEnchantment(predicate as EnchantmentPredicate) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) | No Description Provided |
+| Parameter |                                Type                                 |
+|-----------|---------------------------------------------------------------------|
+| predicate | [EnchantmentPredicate](/vanilla/api/predicate/EnchantmentPredicate) |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicateBuilder.tag(tag as KnownTag<ItemDefinition>) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| Parameter |                                                 Type                                                 |
+|-----------|------------------------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; |
 
 
 :::

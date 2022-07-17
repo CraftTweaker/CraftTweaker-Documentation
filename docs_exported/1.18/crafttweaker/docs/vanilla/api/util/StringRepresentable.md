@@ -28,7 +28,7 @@ myStringRepresentable.getSerializedName();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| serializedName | string | true | false | Gets the serialized name. |
+|      Name      |  Type  | Has Getter | Has Setter |        Description        |
+|----------------|--------|------------|------------|---------------------------|
+| serializedName | string | true       | false      | Gets the serialized name. |
 

@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 MatchToolLootCondition.create(predicate as ItemPredicateBuilder) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::

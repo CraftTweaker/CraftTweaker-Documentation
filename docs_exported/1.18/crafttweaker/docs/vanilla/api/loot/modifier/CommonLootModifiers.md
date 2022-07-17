@@ -28,9 +28,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.add(<item:minecraft:cobblestone>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add |
+| Parameter |                    Type                    |   Description    |
+|-----------|--------------------------------------------|------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add |
 
 
 :::
@@ -48,9 +48,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addAll(<item:minecraft:iron_ingot>, <item:minecraft:iron_nugget> * 5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stacks | [IItemStack](/vanilla/api/item/IItemStack)[] | The stacks to add |
+| Parameter |                     Type                     |    Description    |
+|-----------|----------------------------------------------|-------------------|
+| stacks    | [IItemStack](/vanilla/api/item/IItemStack)[] | The stacks to add |
 
 
 :::
@@ -68,12 +68,12 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addAllWithBinomialBonus(<enchantment:minecraft:fortune>, 3, 0.5714286, <item:minecraft:wheat_seeds>, <item:minecraft:carrot> * 9);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| extra | int | An extra value that will be added to the tool's enchantment level. |
-| p | float | The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive). |
-| stacks | [IItemStack](/vanilla/api/item/IItemStack)[] | The stacks to add. |
+|  Parameter  |                           Type                           |                                     Description                                     |
+|-------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for.                                                       |
+| extra       | int                                                      | An extra value that will be added to the tool's enchantment level.                  |
+| p           | float                                                    | The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive). |
+| stacks      | [IItemStack](/vanilla/api/item/IItemStack)[]             | The stacks to add.                                                                  |
 
 
 :::
@@ -91,9 +91,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addAllWithChance(<item:minecraft:honey_bottle> % 50, <item:minecraft:dried_kelp> % 13);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stacks | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The stacks to add. |
+| Parameter |                                                  Type                                                   |    Description     |
+|-----------|---------------------------------------------------------------------------------------------------------|--------------------|
+| stacks    | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The stacks to add. |
 
 
 :::
@@ -111,10 +111,10 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addAllWithOreDropsBonus(<enchantment:minecraft:fortune>, <item:minecraft:coal>, <item:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter  |                           Type                           |          Description          |
+|-------------|----------------------------------------------------------|-------------------------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| stacks | [IItemStack](/vanilla/api/item/IItemStack)[] | The stacks to add. |
+| stacks      | [IItemStack](/vanilla/api/item/IItemStack)[]             | The stacks to add.            |
 
 
 :::
@@ -132,11 +132,11 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addAllWithUniformBonus(<enchantment:minecraft:fortune>, 1, <item:minecraft:glowstone_dust>, <item:minecraft:prismarine_crystals>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| multiplier | int | A multiplier that will be used in conjunction with the enchantment's level. |
-| stacks | [IItemStack](/vanilla/api/item/IItemStack)[] | The stacks to add. |
+|  Parameter  |                           Type                           |                                 Description                                 |
+|-------------|----------------------------------------------------------|-----------------------------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for.                                               |
+| multiplier  | int                                                      | A multiplier that will be used in conjunction with the enchantment's level. |
+| stacks      | [IItemStack](/vanilla/api/item/IItemStack)[]             | The stacks to add.                                                          |
 
 
 :::
@@ -154,12 +154,12 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addWithBinomialBonus(<enchantment:minecraft:fortune>, 3, 0.5714286, <item:minecraft:wheat_seeds>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| extra | int | An extra value that will be added to the tool's enchantment level. |
-| p | float | The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive). |
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add. |
+|  Parameter  |                           Type                           |                                     Description                                     |
+|-------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for.                                                       |
+| extra       | int                                                      | An extra value that will be added to the tool's enchantment level.                  |
+| p           | float                                                    | The probability of the binomial distribution, between 0.0 and 1.0 (both exclusive). |
+| stack       | [IItemStack](/vanilla/api/item/IItemStack)               | The stack to add.                                                                   |
 
 
 :::
@@ -177,9 +177,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addWithChance(<item:minecraft:gilded_blackstone> % 50);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The stack to add. |
+| Parameter |                                                 Type                                                  |    Description    |
+|-----------|-------------------------------------------------------------------------------------------------------|-------------------|
+| stack     | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The stack to add. |
 
 
 :::
@@ -197,10 +197,10 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addWithOreDropsBonus(<enchantment:minecraft:fortune>, <item:minecraft:coal>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter  |                           Type                           |          Description          |
+|-------------|----------------------------------------------------------|-------------------------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add. |
+| stack       | [IItemStack](/vanilla/api/item/IItemStack)               | The stack to add.             |
 
 
 :::
@@ -218,11 +218,11 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addWithRandomAmount(<item:minecraft:conduit>, 2, 9);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add. |
-| min | int | The minimum amount that this stack can be. |
-| max | int | The maximum amount that this stack can be. |
+| Parameter |                    Type                    |                Description                 |
+|-----------|--------------------------------------------|--------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add.                          |
+| min       | int                                        | The minimum amount that this stack can be. |
+| max       | int                                        | The maximum amount that this stack can be. |
 
 
 :::
@@ -240,11 +240,11 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.addWithUniformBonus(<enchantment:minecraft:fortune>, 1, <item:minecraft:glowstone_dust>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for. |
-| multiplier | int | A multiplier that will be used in conjunction with the enchantment's level. |
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to add. |
+|  Parameter  |                           Type                           |                                 Description                                 |
+|-------------|----------------------------------------------------------|-----------------------------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to check for.                                               |
+| multiplier  | int                                                      | A multiplier that will be used in conjunction with the enchantment's level. |
+| stack       | [IItemStack](/vanilla/api/item/IItemStack)               | The stack to add.                                                           |
 
 
 :::
@@ -262,8 +262,8 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.chaining(CommonLootModifiers.clearLoot(), CommonLootModifiers.add(<item:minecraft:warped_hyphae>));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |                            Type                             |    Description     |
+|-----------|-------------------------------------------------------------|--------------------|
 | modifiers | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)[] | The modifier list. |
 
 
@@ -297,8 +297,8 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.clearing(CommonLootModifiers.add(<item:minecraft:warped_hyphae>));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |                            Type                             |    Description     |
+|-----------|-------------------------------------------------------------|--------------------|
 | modifiers | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)[] | The modifier list. |
 
 
@@ -317,9 +317,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.remove(<tag:items:minecraft:creeper_drop_music_discs>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [IIngredient](/vanilla/api/ingredient/IIngredient) | The [IIngredient](/vanilla/api/ingredient/IIngredient) to remove. |
+| Parameter |                        Type                        |                            Description                            |
+|-----------|----------------------------------------------------|-------------------------------------------------------------------|
+| target    | [IIngredient](/vanilla/api/ingredient/IIngredient) | The [IIngredient](/vanilla/api/ingredient/IIngredient) to remove. |
 
 
 :::
@@ -337,9 +337,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.removeAll(<item:minecraft:bell>, <tag:items:minecraft:rails>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| targets | [IIngredient](/vanilla/api/ingredient/IIngredient)[] | The [IIngredient](/vanilla/api/ingredient/IIngredient)s to remove. |
+| Parameter |                         Type                         |                            Description                             |
+|-----------|------------------------------------------------------|--------------------------------------------------------------------|
+| targets   | [IIngredient](/vanilla/api/ingredient/IIngredient)[] | The [IIngredient](/vanilla/api/ingredient/IIngredient)s to remove. |
 
 
 :::
@@ -357,8 +357,8 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.replaceAllStacksWith({ <item:minecraft:carrots> * 2 : <item:minecraft:potatoes> });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|   Parameter    |                                          Type                                          |                                      Description                                       |
+|----------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | replacementMap | [IItemStack](/vanilla/api/item/IItemStack)[[IItemStack](/vanilla/api/item/IItemStack)] | A map of key-value pairs dictating the target to replace along with their replacement. |
 
 
@@ -377,8 +377,8 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.replaceAllWith({ <tag:items:forge:gems/emerald> : <item:minecraft:emerald> });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|   Parameter    |                                              Type                                              |                                      Description                                       |
+|----------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | replacementMap | [IItemStack](/vanilla/api/item/IItemStack)[[IIngredient](/vanilla/api/ingredient/IIngredient)] | A map of key-value pairs dictating the target to replace along with their replacement. |
 
 
@@ -397,9 +397,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.replaceStackWith(<item:minecraft:carrots> * 2, <item:minecraft:potatoes>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [IItemStack](/vanilla/api/item/IItemStack) | The target to replace. |
+|  Parameter  |                    Type                    |       Description       |
+|-------------|--------------------------------------------|-------------------------|
+| target      | [IItemStack](/vanilla/api/item/IItemStack) | The target to replace.  |
 | replacement | [IItemStack](/vanilla/api/item/IItemStack) | The replacement to use. |
 
 
@@ -418,10 +418,10 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 CommonLootModifiers.replaceWith(<tag:items:forge:ingots/iron>, <item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [IIngredient](/vanilla/api/ingredient/IIngredient) | The target to replace. |
-| replacement | [IItemStack](/vanilla/api/item/IItemStack) | The replacement to use. |
+|  Parameter  |                        Type                        |       Description       |
+|-------------|----------------------------------------------------|-------------------------|
+| target      | [IIngredient](/vanilla/api/ingredient/IIngredient) | The target to replace.  |
+| replacement | [IItemStack](/vanilla/api/item/IItemStack)         | The replacement to use. |
 
 
 :::

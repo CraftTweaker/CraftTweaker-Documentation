@@ -19,23 +19,23 @@ BoolData implements the following interfaces. That means all methods defined in 
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new BoolData(internal as boolean) as BoolData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| internal  | boolean |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ByteData](/vanilla/api/data/ByteData) | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ByteData](/vanilla/api/data/ByteData)               | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
 
 ## Methods
 
@@ -121,9 +121,9 @@ Return Type: boolean
 true.contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::

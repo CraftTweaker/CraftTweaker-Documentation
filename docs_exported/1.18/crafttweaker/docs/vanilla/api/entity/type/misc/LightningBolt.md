@@ -52,15 +52,13 @@ myLightningBolt.isVisualOnly();
 
 :::group{name=setVisualOnly}
 
-Return Type: void
-
 ```zenscript
-LightningBolt.setVisualOnly(visualOnly as boolean) as void
+LightningBolt.setVisualOnly(visualOnly as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| visualOnly | boolean | No Description Provided |
+| Parameter  |  Type   |
+|------------|---------|
+| visualOnly | boolean |
 
 
 :::
@@ -68,9 +66,9 @@ LightningBolt.setVisualOnly(visualOnly as boolean) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blocksSetOnFire | int | true | false | No Description Provided |
-| cause | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)? | true | false | No Description Provided |
-| visualOnly | [LightningBolt](/vanilla/api/entity/type/misc/LightningBolt) | true | true | No Description Provided |
+|      Name       |                             Type                              | Has Getter | Has Setter |
+|-----------------|---------------------------------------------------------------|------------|------------|
+| blocksSetOnFire | int                                                           | true       | false      |
+| cause           | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)? | true       | false      |
+| visualOnly      | [LightningBolt](/vanilla/api/entity/type/misc/LightningBolt)  | true       | true       |
 

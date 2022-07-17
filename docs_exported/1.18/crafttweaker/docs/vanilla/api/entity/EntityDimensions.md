@@ -18,9 +18,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 EntityDimensions.makeBoundingBox(vec as Vec3) as AABB
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -33,11 +33,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 EntityDimensions.makeBoundingBox(x as double, y as double, z as double) as AABB
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -50,9 +50,9 @@ Return Type: [EntityDimensions](/vanilla/api/entity/EntityDimensions)
 EntityDimensions.scale(factor as float) as EntityDimensions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| factor | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| factor    | float |
 
 
 :::
@@ -65,10 +65,10 @@ Return Type: [EntityDimensions](/vanilla/api/entity/EntityDimensions)
 EntityDimensions.scale(widthFactor as float, heightFactor as float) as EntityDimensions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| widthFactor | float | No Description Provided |
-| heightFactor | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| widthFactor  | float |
+| heightFactor | float |
 
 
 :::

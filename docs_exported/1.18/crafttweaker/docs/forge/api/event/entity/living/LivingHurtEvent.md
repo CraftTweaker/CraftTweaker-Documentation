@@ -59,17 +59,15 @@ event.getSource();
 
 Sets the amount of damage.
 
-Return Type: void
-
 ```zenscript
-// LivingHurtEvent.setAmount(amount as float) as void
+// LivingHurtEvent.setAmount(amount as float)
 
 event.setAmount(0.5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | float | The amount of damage. |
+| Parameter | Type  |      Description      |
+|-----------|-------|-----------------------|
+| amount    | float | The amount of damage. |
 
 
 :::
@@ -77,8 +75,8 @@ event.setAmount(0.5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | float | true | true | Gets the amount of damage. |
-| source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | Gets the source of the damage. |
+|  Name  |                      Type                       | Has Getter | Has Setter |          Description           |
+|--------|-------------------------------------------------|------------|------------|--------------------------------|
+| amount | float                                           | true       | true       | Gets the amount of damage.     |
+| source | [DamageSource](/vanilla/api/world/DamageSource) | true       | false      | Gets the source of the damage. |
 

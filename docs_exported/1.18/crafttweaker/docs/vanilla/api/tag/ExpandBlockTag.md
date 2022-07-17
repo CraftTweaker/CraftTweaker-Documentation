@@ -4,9 +4,9 @@ This expansion specifically targets BlockTags.
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true        |
 
 ## Methods
 
@@ -30,9 +30,9 @@ Return Type: [BlockIngredient](/vanilla/api/block/BlockIngredient)
 KnownTag.asList(other as BlockIngredient) as BlockIngredient
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [BlockIngredient](/vanilla/api/block/BlockIngredient) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| other     | [BlockIngredient](/vanilla/api/block/BlockIngredient) |
 
 
 :::

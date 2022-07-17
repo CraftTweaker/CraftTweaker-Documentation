@@ -33,11 +33,11 @@ Return Type: double
 Axis.choose(x as double, y as double, z as double) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -50,11 +50,11 @@ Return Type: int
 Axis.choose(x as int, y as int, z as int) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: boolean
 Axis.test(direction as Direction?) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -125,10 +125,10 @@ Axis.test(direction as Direction?) as boolean
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| horizontal | boolean | true | false | No Description Provided |
-| name | string | true | false | No Description Provided |
-| plane | [Plane](/vanilla/api/util/direction/Plane) | true | false | No Description Provided |
-| vertical | boolean | true | false | No Description Provided |
+|    Name    |                    Type                    | Has Getter | Has Setter |
+|------------|--------------------------------------------|------------|------------|
+| horizontal | boolean                                    | true       | false      |
+| name       | string                                     | true       | false      |
+| plane      | [Plane](/vanilla/api/util/direction/Plane) | true       | false      |
+| vertical   | boolean                                    | true       | false      |
 

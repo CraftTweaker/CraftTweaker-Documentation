@@ -41,10 +41,8 @@ myAbstractVillager.isTrading();
 
 :::group{name=playCelebrateSound}
 
-Return Type: void
-
 ```zenscript
-// AbstractVillager.playCelebrateSound() as void
+// AbstractVillager.playCelebrateSound()
 
 myAbstractVillager.playCelebrateSound();
 ```
@@ -53,15 +51,13 @@ myAbstractVillager.playCelebrateSound();
 
 :::group{name=setUnhappyCounter}
 
-Return Type: void
-
 ```zenscript
-AbstractVillager.setUnhappyCounter(unhappyCounter as int) as void
+AbstractVillager.setUnhappyCounter(unhappyCounter as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| unhappyCounter | int | No Description Provided |
+|   Parameter    | Type |
+|----------------|------|
+| unhappyCounter | int  |
 
 
 :::
@@ -69,8 +65,8 @@ AbstractVillager.setUnhappyCounter(unhappyCounter as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| isTrading | boolean | true | false | No Description Provided |
-| unhappyCounter | int | true | true | No Description Provided |
+|      Name      |  Type   | Has Getter | Has Setter |
+|----------------|---------|------------|------------|
+| isTrading      | boolean | true       | false      |
+| unhappyCounter | int     | true       | true       |
 

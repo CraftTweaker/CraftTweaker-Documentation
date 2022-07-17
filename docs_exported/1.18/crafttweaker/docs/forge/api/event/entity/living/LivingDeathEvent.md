@@ -43,7 +43,7 @@ event.getSource();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | Gets the source of the damage that killed the entity. |
+|  Name  |                      Type                       | Has Getter | Has Setter |                      Description                      |
+|--------|-------------------------------------------------|------------|------------|-------------------------------------------------------|
+| source | [DamageSource](/vanilla/api/world/DamageSource) | true       | false      | Gets the source of the damage that killed the entity. |
 

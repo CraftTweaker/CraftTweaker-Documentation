@@ -33,11 +33,11 @@ MirrorAxis is an enum. It has 5 enum constants. They are accessible using the co
 ```
 ## Static Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ALL | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true | false | Mirror the recipe on all axes. |
-| DIAGONAL | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true | false | Mirror the recipe diagonally. |
-| HORIZONTAL | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true | false | Mirror the recipe horizontally. |
-| NONE | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true | false | Do not mirror the recipe. |
-| VERTICAL | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true | false | Mirror the recipe vertically. |
+|    Name    |                     Type                     | Has Getter | Has Setter |           Description           |
+|------------|----------------------------------------------|------------|------------|---------------------------------|
+| ALL        | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true       | false      | Mirror the recipe on all axes.  |
+| DIAGONAL   | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true       | false      | Mirror the recipe diagonally.   |
+| HORIZONTAL | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true       | false      | Mirror the recipe horizontally. |
+| NONE       | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true       | false      | Do not mirror the recipe.       |
+| VERTICAL   | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | true       | false      | Mirror the recipe vertically.   |
 

@@ -15,9 +15,9 @@ EntityHasScoreLootConditionBuilder implements the following interfaces. That mea
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -29,10 +29,10 @@ Return Type: [EntityHasScoreLootConditionBuilder](/vanilla/api/loot/condition/bu
 EntityHasScoreLootConditionBuilder.withScore(name as string, range as IntRange) as EntityHasScoreLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| range | [IntRange](/vanilla/api/loot/IntRange) | No Description Provided |
+| Parameter |                  Type                  |
+|-----------|----------------------------------------|
+| name      | string                                 |
+| range     | [IntRange](/vanilla/api/loot/IntRange) |
 
 
 :::

@@ -23,9 +23,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.append(component as Component) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| component | [Component](/vanilla/api/text/Component) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| component | [Component](/vanilla/api/text/Component) |
 
 
 :::
@@ -38,9 +38,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.append(content as string) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| content | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| content   | string |
 
 
 :::
@@ -53,9 +53,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.setStyle(style as Style) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| style | [Style](/vanilla/api/text/Style) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| style     | [Style](/vanilla/api/text/Style) |
 
 
 :::
@@ -68,9 +68,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.withStyle(formatting as ChatFormatting[]) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting)[] | No Description Provided |
+| Parameter  |                         Type                         |
+|------------|------------------------------------------------------|
+| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting)[] |
 
 
 :::
@@ -83,9 +83,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.withStyle(style as Style) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| style | [Style](/vanilla/api/text/Style) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| style     | [Style](/vanilla/api/text/Style) |
 
 
 :::
@@ -98,9 +98,9 @@ Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 MutableComponent.withStyle(styleOperator as Function<Style,Style>) as MutableComponent
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| styleOperator | Function&lt;[Style](/vanilla/api/text/Style),[Style](/vanilla/api/text/Style)&gt; | No Description Provided |
+|   Parameter   |                                       Type                                        |
+|---------------|-----------------------------------------------------------------------------------|
+| styleOperator | Function&lt;[Style](/vanilla/api/text/Style),[Style](/vanilla/api/text/Style)&gt; |
 
 
 :::

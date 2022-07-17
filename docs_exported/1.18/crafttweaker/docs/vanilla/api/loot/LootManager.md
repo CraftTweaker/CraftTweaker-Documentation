@@ -22,8 +22,8 @@ LootManager.INSTANCE
 ```
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| modifiers | [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) | true | false | Gets the loot modifiers manager. <br />  <br />  Refer to [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) for additional info. |
-| tables | [LootTableManager](/vanilla/api/loot/table/LootTableManager) | true | false | Gets the loot table manager. <br />  <br />  Refer to [LootTableManager](/vanilla/api/loot/table/LootTableManager) for additional info. |
+|   Name    |                                 Type                                  | Has Getter | Has Setter |                                                                     Description                                                                      |
+|-----------|-----------------------------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| modifiers | [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) | true       | false      | Gets the loot modifiers manager. <br />  <br />  Refer to [LootModifierManager](/vanilla/api/loot/modifier/LootModifierManager) for additional info. |
+| tables    | [LootTableManager](/vanilla/api/loot/table/LootTableManager)          | true       | false      | Gets the loot table manager. <br />  <br />  Refer to [LootTableManager](/vanilla/api/loot/table/LootTableManager) for additional info.              |
 

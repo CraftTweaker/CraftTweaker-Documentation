@@ -7,25 +7,23 @@ This expansion specifically targets itemTags.
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IData](/vanilla/api/data/IData) | true |
-| [IIngredient](/vanilla/api/ingredient/IIngredient) | true |
-| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true |
+|                              Result Type                               | Is Implicit |
+|------------------------------------------------------------------------|-------------|
+| [IData](/vanilla/api/data/IData)                                       | true        |
+| [IIngredient](/vanilla/api/ingredient/IIngredient)                     | true        |
+| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true        |
 
 ## Methods
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-KnownTag.add(items as stdlib.List<IItemStack>) as void
+KnownTag.add(items as stdlib.List<IItemStack>)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| items     | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; |
 
 
 :::

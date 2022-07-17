@@ -42,9 +42,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicate.create(blocks as Block[]) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| blocks | [Block](/vanilla/api/block/Block)[] | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| blocks    | [Block](/vanilla/api/block/Block)[] |
 
 
 :::
@@ -57,9 +57,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicate.create(tag as KnownTag<Block>) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; |
 
 
 :::

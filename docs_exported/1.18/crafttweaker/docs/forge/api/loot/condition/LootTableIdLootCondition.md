@@ -23,9 +23,9 @@ Return Type: [LootTableIdLootConditionBuilder](/forge/api/loot/condition/builder
 LootTableIdLootCondition.create(id as ResourceLocation) as LootTableIdLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -38,9 +38,9 @@ Return Type: [LootTableIdLootConditionBuilder](/forge/api/loot/condition/builder
 LootTableIdLootCondition.create(id as string) as LootTableIdLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| id        | string |
 
 
 :::

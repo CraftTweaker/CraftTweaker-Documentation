@@ -27,20 +27,20 @@ Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
 ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| members | [IData](/vanilla/api/data/IData)[] | No Description Provided |
+| Parameter |                Type                |
+|-----------|------------------------------------|
+| members   | [IData](/vanilla/api/data/IData)[] |
 
 
 :::
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 
@@ -48,17 +48,15 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 
 
 
-Return Type: void
-
 ```zenscript
-// ICollectionData.add(value as IData) as void
+// ICollectionData.add(value as IData)
 
 new ListData(["Hello", "World"]).add("today");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | [IData](/vanilla/api/data/IData) | The value to add to the list |
+| Parameter |               Type               |         Description          |
+|-----------|----------------------------------|------------------------------|
+| value     | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 :::
@@ -67,18 +65,16 @@ new ListData(["Hello", "World"]).add("today");
 
 
 
-Return Type: void
-
 ```zenscript
-// ICollectionData.add(index as int, value as IData) as void
+// ICollectionData.add(index as int, value as IData)
 
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | The index to add to. Subsequent items will be moved one index higher |
-| value | [IData](/vanilla/api/data/IData) | The value to add to the list |
+| Parameter |               Type               |                             Description                              |
+|-----------|----------------------------------|----------------------------------------------------------------------|
+| index     | int                              | The index to add to. Subsequent items will be moved one index higher |
+| value     | [IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 :::
@@ -168,10 +164,8 @@ new ListData(["Hello", "World"]).asString();
 
 Removes every element in the list
 
-Return Type: void
-
 ```zenscript
-// ICollectionData.clear() as void
+// ICollectionData.clear()
 
 new ListData(["Hello", "World"]).clear();
 ```
@@ -191,9 +185,9 @@ Return Type: boolean
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::
@@ -211,9 +205,9 @@ Return Type: [IData](/vanilla/api/data/IData)
 new ListData(["Hello", "World"]).getAt(0);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | The index (0-based) |
+| Parameter | Type |     Description     |
+|-----------|------|---------------------|
+| index     | int  | The index (0-based) |
 
 
 :::
@@ -275,9 +269,9 @@ Return Type: [IData](/vanilla/api/data/IData)
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | The index (0-based) |
+| Parameter | Type |     Description     |
+|-----------|------|---------------------|
+| index     | int  | The index (0-based) |
 
 
 :::
@@ -295,10 +289,10 @@ Return Type: [IData](/vanilla/api/data/IData)
 new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | The index to set (0-based) |
-| value | [IData](/vanilla/api/data/IData) | The new Value |
+| Parameter |               Type               |        Description         |
+|-----------|----------------------------------|----------------------------|
+| index     | int                              | The index to set (0-based) |
+| value     | [IData](/vanilla/api/data/IData) | The new Value              |
 
 
 :::
@@ -306,8 +300,8 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| empty | boolean | true | false | No Description Provided |
-| size | int | true | false | No Description Provided |
+| Name  |  Type   | Has Getter | Has Setter |
+|-------|---------|------------|------------|
+| empty | boolean | true       | false      |
+| size  | int     | true       | false      |
 

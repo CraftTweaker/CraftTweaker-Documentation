@@ -23,9 +23,9 @@ Return Type: [TimeCheckLootConditionBuilder](/vanilla/api/loot/condition/builder
 TimeCheckLootCondition.create(range as IntRange) as TimeCheckLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| range | [IntRange](/vanilla/api/loot/IntRange) | No Description Provided |
+| Parameter |                  Type                  |
+|-----------|----------------------------------------|
+| range     | [IntRange](/vanilla/api/loot/IntRange) |
 
 
 :::

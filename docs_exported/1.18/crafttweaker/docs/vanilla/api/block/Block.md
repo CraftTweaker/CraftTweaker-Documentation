@@ -12,11 +12,11 @@ import crafttweaker.api.block.Block;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
-| [ItemDefinition](/vanilla/api/item/ItemDefinition) | false |
-| string | false |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true        |
+| [ItemDefinition](/vanilla/api/item/ItemDefinition)    | false       |
+| string                                                | false       |
 
 ## Methods
 
@@ -278,9 +278,9 @@ Return Type: boolean
 Block.matches(other as Block) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Block](/vanilla/api/block/Block) | The other Block to check if this Block matches. |
+| Parameter |               Type                |                   Description                   |
+|-----------|-----------------------------------|-------------------------------------------------|
+| other     | [Block](/vanilla/api/block/Block) | The other Block to check if this Block matches. |
 
 
 :::
@@ -289,16 +289,14 @@ Block.matches(other as Block) as boolean
 
 Sets the blast resistance of this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setExplosionResistance(resistance as float) as void
+// Block.setExplosionResistance(resistance as float)
 
 <block:minecraft:grass_block>.setExplosionResistance(2);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  | Type  |               Description               |
+|------------|-------|-----------------------------------------|
 | resistance | float | The new blast resistance of this Block. |
 
 
@@ -308,17 +306,15 @@ Return Type: void
 
 Sets the friction of this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setFriction(friction as float) as void
+// Block.setFriction(friction as float)
 
 <block:minecraft:grass_block>.setFriction(2);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| friction | float | The new friction of this Block. |
+| Parameter | Type  |           Description           |
+|-----------|-------|---------------------------------|
+| friction  | float | The new friction of this Block. |
 
 
 :::
@@ -327,16 +323,14 @@ Return Type: void
 
 Sets whether entities can collide with this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setHasCollision(canCollide as boolean) as void
+// Block.setHasCollision(canCollide as boolean)
 
 <block:minecraft:grass_block>.setHasCollision(true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  |  Type   |              Description              |
+|------------|---------|---------------------------------------|
 | canCollide | boolean | Can entities collide with this Block. |
 
 
@@ -346,16 +340,14 @@ Return Type: void
 
 Sets the jump factor of this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setJumpFactor(jumpFactor as float) as void
+// Block.setJumpFactor(jumpFactor as float)
 
 <block:minecraft:grass_block>.setJumpFactor(2);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  | Type  |            Description             |
+|------------|-------|------------------------------------|
 | jumpFactor | float | The new jump factor of this Block. |
 
 
@@ -365,17 +357,15 @@ Return Type: void
 
 Sets the material of this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setMaterial(material as Material) as void
+// Block.setMaterial(material as Material)
 
 <block:minecraft:grass_block>.setMaterial(<material:earth>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| material | [Material](/vanilla/api/block/material/Material) | The new material of this Block. |
+| Parameter |                       Type                       |           Description           |
+|-----------|--------------------------------------------------|---------------------------------|
+| material  | [Material](/vanilla/api/block/material/Material) | The new material of this Block. |
 
 
 :::
@@ -384,16 +374,14 @@ Return Type: void
 
 Sets the speed factor of this Block.
 
-Return Type: void
-
 ```zenscript
-// Block.setSpeedFactor(speedFactor as float) as void
+// Block.setSpeedFactor(speedFactor as float)
 
 <block:minecraft:grass_block>.setSpeedFactor(2);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter  | Type  |             Description             |
+|-------------|-------|-------------------------------------|
 | speedFactor | float | The new speed factor of this Block. |
 
 
@@ -402,21 +390,21 @@ Return Type: void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  `<block:minecraft:dirt>` |
-| defaultState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the default [BlockState](/vanilla/api/block/BlockState) of this Block. |
-| descriptionId | string | true | false | Gets the translation key that is used to localize this Block. |
-| dynamicShape | boolean | true | false | Checks if the opacity of this block is different in different areas of the Block. |
-| explosionResistance | float | true | true | Gets the blast resistance of this Block. |
-| friction | float | true | true | Gets the friction of this Block. |
-| hasCollision | boolean | true | true | Checks if entities can collide with this Block. |
-| isPossibleToRespawnInThis | boolean | true | false | Checks if an entity can be spawned inside this Block. <br />  <br />  This is used to find valid spawn locations for players. |
-| jumpFactor | float | true | true | Gets the jump factor of this Block. |
-| lootTable | string | true | false | Gets the loot table id for this Block. |
-| material | [Material](/vanilla/api/block/material/Material) | true | true | Gets the material of this Block. |
-| name | [MutableComponent](/vanilla/api/text/MutableComponent) | true | false | Gets the name of this Block |
-| possibleStates | stdlib.List&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true | false | Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block. |
-| registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name of this block. |
-| speedFactor | float | true | true | Gets the speed factor of this Block. |
+|           Name            |                              Type                              | Has Getter | Has Setter |                                                          Description                                                          |
+|---------------------------|----------------------------------------------------------------|------------|------------|-------------------------------------------------------------------------------------------------------------------------------|
+| commandString             | string                                                         | true       | false      | Gets the block bracket handler syntax for this Block. <br />  <br />  E.G. <br />  `<block:minecraft:dirt>`                   |
+| defaultState              | [BlockState](/vanilla/api/block/BlockState)                    | true       | false      | Gets the default [BlockState](/vanilla/api/block/BlockState) of this Block.                                                   |
+| descriptionId             | string                                                         | true       | false      | Gets the translation key that is used to localize this Block.                                                                 |
+| dynamicShape              | boolean                                                        | true       | false      | Checks if the opacity of this block is different in different areas of the Block.                                             |
+| explosionResistance       | float                                                          | true       | true       | Gets the blast resistance of this Block.                                                                                      |
+| friction                  | float                                                          | true       | true       | Gets the friction of this Block.                                                                                              |
+| hasCollision              | boolean                                                        | true       | true       | Checks if entities can collide with this Block.                                                                               |
+| isPossibleToRespawnInThis | boolean                                                        | true       | false      | Checks if an entity can be spawned inside this Block. <br />  <br />  This is used to find valid spawn locations for players. |
+| jumpFactor                | float                                                          | true       | true       | Gets the jump factor of this Block.                                                                                           |
+| lootTable                 | string                                                         | true       | false      | Gets the loot table id for this Block.                                                                                        |
+| material                  | [Material](/vanilla/api/block/material/Material)               | true       | true       | Gets the material of this Block.                                                                                              |
+| name                      | [MutableComponent](/vanilla/api/text/MutableComponent)         | true       | false      | Gets the name of this Block                                                                                                   |
+| possibleStates            | stdlib.List&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true       | false      | Gets a list of valid [BlockState](/vanilla/api/block/BlockState)s for this Block.                                             |
+| registryName              | [ResourceLocation](/vanilla/api/resource/ResourceLocation)     | true       | false      | Gets the registry name of this block.                                                                                         |
+| speedFactor               | float                                                          | true       | true       | Gets the speed factor of this Block.                                                                                          |
 

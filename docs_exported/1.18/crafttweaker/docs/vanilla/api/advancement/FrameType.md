@@ -70,10 +70,10 @@ myFrameType.getTexture();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| chatColor | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true | false | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| name | string | true | false | No Description Provided |
-| texture | int | true | false | No Description Provided |
+|    Name     |                        Type                        | Has Getter | Has Setter |
+|-------------|----------------------------------------------------|------------|------------|
+| chatColor   | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true       | false      |
+| displayName | [Component](/vanilla/api/text/Component)           | true       | false      |
+| name        | string                                             | true       | false      |
+| texture     | int                                                | true       | false      |
 

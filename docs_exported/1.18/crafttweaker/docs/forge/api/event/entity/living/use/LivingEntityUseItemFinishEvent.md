@@ -40,15 +40,13 @@ myLivingEntityUseItemFinishEvent.getResultStack();
 
 :::group{name=setResultStack}
 
-Return Type: void
-
 ```zenscript
-LivingEntityUseItemFinishEvent.setResultStack(stack as IItemStack) as void
+LivingEntityUseItemFinishEvent.setResultStack(stack as IItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -56,7 +54,7 @@ LivingEntityUseItemFinishEvent.setResultStack(stack as IItemStack) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| resultStack | [IItemStack](/vanilla/api/item/IItemStack) | true | true | No Description Provided |
+|    Name     |                    Type                    | Has Getter | Has Setter |
+|-------------|--------------------------------------------|------------|------------|
+| resultStack | [IItemStack](/vanilla/api/item/IItemStack) | true       | true       |
 

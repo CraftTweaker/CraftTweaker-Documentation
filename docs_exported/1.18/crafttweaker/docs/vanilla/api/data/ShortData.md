@@ -17,29 +17,29 @@ ShortData implements the following interfaces. That means all methods defined in
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new ShortData(internal as short) as ShortData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | short | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| internal  | short |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| byte | false |
-| double | false |
-| float | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| int | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
-| long | false |
-| short | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| byte                                                 | false       |
+| double                                               | false       |
+| float                                                | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| int                                                  | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| long                                                 | false       |
+| short                                                | false       |
 
 ## Methods
 

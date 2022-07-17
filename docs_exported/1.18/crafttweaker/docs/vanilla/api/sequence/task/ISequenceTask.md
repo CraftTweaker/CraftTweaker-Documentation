@@ -22,10 +22,10 @@ Return Type: boolean
 ISequenceTask.isComplete(actor as T, context as SequenceContext<T,U>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| actor | T | The actor that is being sequenced. |
-| context | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | The context for the sequence. |
+| Parameter |                                   Type                                   |            Description             |
+|-----------|--------------------------------------------------------------------------|------------------------------------|
+| actor     | T                                                                        | The actor that is being sequenced. |
+| context   | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | The context for the sequence.      |
 
 
 :::
@@ -36,18 +36,16 @@ Ticks this task.
 
  A check to `isComplete` should be done before ticking!.
 
-Return Type: void
-
 ```zenscript
-// ISequenceTask.tick(actor as T, context as SequenceContext<T,U>) as void
+// ISequenceTask.tick(actor as T, context as SequenceContext<T,U>)
 
 new SleepTask(20).tick(level, new crafttweaker.api.util.sequence.SequenceContext(sequence, new crafttweaker.api.data.MapData()));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| actor | T | The actor that is being sequenced. |
-| context | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | The context for the sequence. |
+| Parameter |                                   Type                                   |            Description             |
+|-----------|--------------------------------------------------------------------------|------------------------------------|
+| actor     | T                                                                        | The actor that is being sequenced. |
+| context   | [SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt; | The context for the sequence.      |
 
 
 :::

@@ -33,7 +33,7 @@ myLivingEvent.getEntityLiving();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| entityLiving | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
+|     Name     |                       Type                       | Has Getter | Has Setter |
+|--------------|--------------------------------------------------|------------|------------|
+| entityLiving | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
 

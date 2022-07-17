@@ -126,9 +126,9 @@ Return Type: boolean
 CreativeModeTab.hasEnchantmentCategory(category as EnchantmentCategory?) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| category | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)? | No Description Provided |
+| Parameter |                                   Type                                    |
+|-----------|---------------------------------------------------------------------------|
+| category  | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)? |
 
 
 :::
@@ -189,9 +189,9 @@ Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
 CreativeModeTab.setBackgroundSuffix(prefix as string) as CreativeModeTab
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| prefix | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| prefix    | string |
 
 
 :::
@@ -204,9 +204,9 @@ Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
 CreativeModeTab.setEnchantmentCategories(categories as EnchantmentCategory[]) as CreativeModeTab
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| categories | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)[] | No Description Provided |
+| Parameter  |                                    Type                                    |
+|------------|----------------------------------------------------------------------------|
+| categories | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)[] |
 
 
 :::
@@ -219,9 +219,9 @@ Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
 CreativeModeTab.setRecipeFolderName(recipeFolderName as string) as CreativeModeTab
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| recipeFolderName | string | No Description Provided |
+|    Parameter     |  Type  |
+|------------------|--------|
+| recipeFolderName | string |
 
 
 :::
@@ -241,18 +241,18 @@ myCreativeModeTab.showTitle();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| backgroundSuffic | string | true | false | No Description Provided |
-| canScroll | boolean | true | false | No Description Provided |
-| column | int | true | false | No Description Provided |
-| commandString | string | true | false | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| enchantmentCategories | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)[] | true | false | No Description Provided |
-| iconItem | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| id | int | true | false | No Description Provided |
-| isAlignedRight | boolean | true | false | No Description Provided |
-| isTopRow | boolean | true | false | No Description Provided |
-| recipeFolderName | string | true | false | No Description Provided |
-| showTitle | boolean | true | false | No Description Provided |
+|         Name          |                                    Type                                    | Has Getter | Has Setter |
+|-----------------------|----------------------------------------------------------------------------|------------|------------|
+| backgroundSuffic      | string                                                                     | true       | false      |
+| canScroll             | boolean                                                                    | true       | false      |
+| column                | int                                                                        | true       | false      |
+| commandString         | string                                                                     | true       | false      |
+| displayName           | [Component](/vanilla/api/text/Component)                                   | true       | false      |
+| enchantmentCategories | [EnchantmentCategory](/vanilla/api/item/enchantment/EnchantmentCategory)[] | true       | false      |
+| iconItem              | [IItemStack](/vanilla/api/item/IItemStack)                                 | true       | false      |
+| id                    | int                                                                        | true       | false      |
+| isAlignedRight        | boolean                                                                    | true       | false      |
+| isTopRow              | boolean                                                                    | true       | false      |
+| recipeFolderName      | string                                                                     | true       | false      |
+| showTitle             | boolean                                                                    | true       | false      |
 

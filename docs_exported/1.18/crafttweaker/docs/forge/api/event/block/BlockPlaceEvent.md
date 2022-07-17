@@ -75,10 +75,10 @@ myBlockPlaceEvent.getReplacedBlock();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
-| placedAgainst | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
-| placedBlock | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
-| replacedBlock | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
+|     Name      |                    Type                     | Has Getter | Has Setter |
+|---------------|---------------------------------------------|------------|------------|
+| entity        | [Entity](/vanilla/api/entity/Entity)        | true       | false      |
+| placedAgainst | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
+| placedBlock   | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
+| replacedBlock | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
 

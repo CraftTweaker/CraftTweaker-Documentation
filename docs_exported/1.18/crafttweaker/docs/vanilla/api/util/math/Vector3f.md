@@ -12,64 +12,56 @@ import crafttweaker.api.util.math.Vector3f;
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-Vector3f.add(other as Vector3f) as void
+Vector3f.add(other as Vector3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| other     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-Vector3f.add(x as float, y as float, z as float) as void
+Vector3f.add(x as float, y as float, z as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | float | No Description Provided |
-| y | float | No Description Provided |
-| z | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| x         | float |
+| y         | float |
+| z         | float |
 
 
 :::
 
 :::group{name=clamp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.clamp(min as float, max as float) as void
+Vector3f.clamp(min as float, max as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | float | No Description Provided |
-| max | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| min       | float |
+| max       | float |
 
 
 :::
 
 :::group{name=clamp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.clamp(min as Vector3f, max as Vector3f) as void
+Vector3f.clamp(min as Vector3f, max as Vector3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
-| max | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| min       | [Vector3f](/vanilla/api/util/math/Vector3f) |
+| max       | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
@@ -88,15 +80,13 @@ myVector3f.copy();
 
 :::group{name=cross}
 
-Return Type: void
-
 ```zenscript
-Vector3f.cross(other as Vector3f) as void
+Vector3f.cross(other as Vector3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| other     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
@@ -109,72 +99,64 @@ Return Type: float
 Vector3f.dot(other as Vector3f) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| other     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=lerp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.lerp(max as Vector3f, value as float) as void
+Vector3f.lerp(max as Vector3f, value as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| max | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
-| value | float | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| max       | [Vector3f](/vanilla/api/util/math/Vector3f) |
+| value     | float                                       |
 
 
 :::
 
 :::group{name=load}
 
-Return Type: void
-
 ```zenscript
-Vector3f.load(other as Vector3f) as void
+Vector3f.load(other as Vector3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| other     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Vector3f.mul(scalar as float) as void
+Vector3f.mul(scalar as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| scalar | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| scalar    | float |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Vector3f.mul(x as float, y as float, z as float) as void
+Vector3f.mul(x as float, y as float, z as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | float | No Description Provided |
-| y | float | No Description Provided |
-| z | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| x         | float |
+| y         | float |
+| z         | float |
 
 
 :::
@@ -199,9 +181,9 @@ Return Type: [Quaternion](/vanilla/api/util/math/Quaternion)
 Vector3f.rotation(rads as float) as Quaternion
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| rads | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| rads      | float |
 
 
 :::
@@ -214,71 +196,63 @@ Return Type: [Quaternion](/vanilla/api/util/math/Quaternion)
 Vector3f.rotationDegrees(degrees as float) as Quaternion
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| degrees | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| degrees   | float |
 
 
 :::
 
 :::group{name=setValues}
 
-Return Type: void
-
 ```zenscript
-Vector3f.setValues(x as float, y as float, z as float) as void
+Vector3f.setValues(x as float, y as float, z as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | float | No Description Provided |
-| y | float | No Description Provided |
-| z | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| x         | float |
+| y         | float |
+| z         | float |
 
 
 :::
 
 :::group{name=sub}
 
-Return Type: void
-
 ```zenscript
-Vector3f.sub(other as Vector3f) as void
+Vector3f.sub(other as Vector3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| other     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=transform}
 
-Return Type: void
-
 ```zenscript
-Vector3f.transform(matrix as Matrix3f) as void
+Vector3f.transform(matrix as Matrix3f)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| matrix | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| matrix    | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
 
 :::group{name=transform}
 
-Return Type: void
-
 ```zenscript
-Vector3f.transform(quaternion as Quaternion) as void
+Vector3f.transform(quaternion as Quaternion)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
+| Parameter  |                      Type                       |
+|------------|-------------------------------------------------|
+| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) |
 
 
 :::
@@ -322,9 +296,9 @@ myVector3f.z();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| x | float | true | false | No Description Provided |
-| y | float | true | false | No Description Provided |
-| z | float | true | false | No Description Provided |
+| Name | Type  | Has Getter | Has Setter |
+|------|-------|------------|------------|
+| x    | float | true       | false      |
+| y    | float | true       | false      |
+| z    | float | true       | false      |
 

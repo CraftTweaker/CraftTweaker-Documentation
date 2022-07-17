@@ -19,9 +19,9 @@ Creates a new BlockPos using the values of the given vector. Note, the values wi
 new BlockPos(vector as Vec3) as BlockPos
 new BlockPos(new Vec3(0, 1, 2));
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| vector | [Vec3](/vanilla/api/util/math/Vec3) | The vector to copy the values of. |
+| Parameter |                Type                 |            Description            |
+|-----------|-------------------------------------|-----------------------------------|
+| vector    | [Vec3](/vanilla/api/util/math/Vec3) | The vector to copy the values of. |
 
 
 Creates a new BlockPos using the provided values.
@@ -29,11 +29,11 @@ Creates a new BlockPos using the provided values.
 new BlockPos(x as int, y as int, z as int) as BlockPos
 new BlockPos(0, 1, 2);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | The x value of the blockpos |
-| y | int | The y value of the blockpos |
-| z | int | The z value of the blockpos |
+| Parameter | Type |         Description         |
+|-----------|------|-----------------------------|
+| x         | int  | The x value of the blockpos |
+| y         | int  | The y value of the blockpos |
+| z         | int  | The z value of the blockpos |
 
 
 
@@ -59,9 +59,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.above(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::
@@ -110,9 +110,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.atY(value as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
 
 
 :::
@@ -137,9 +137,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.below(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::
@@ -152,9 +152,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.cross(other as Vec3i) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -179,9 +179,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.east(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::
@@ -194,9 +194,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.multiply(scalar as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| scalar | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| scalar    | int  |
 
 
 :::
@@ -221,9 +221,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.north(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::
@@ -236,9 +236,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(other as Vec3i) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -251,11 +251,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as double, y as double, z as double) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -268,11 +268,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as int, y as int, z as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -285,9 +285,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -300,10 +300,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(axis as Axis, distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| axis | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| distance | int | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
+| distance  | int                                      |
 
 
 :::
@@ -316,10 +316,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction, distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance | int | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -332,9 +332,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.rotate(rotation as Rotation) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| rotation  | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -359,9 +359,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.south(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::
@@ -374,9 +374,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.subtract(other as Vec3i) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -401,9 +401,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.west(distance as int) as BlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| distance | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| distance  | int  |
 
 
 :::

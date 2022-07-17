@@ -23,19 +23,19 @@ TranslatableComponent implements the following interfaces. That means all method
 ```zenscript
 new TranslatableComponent(key as string) as TranslatableComponent
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | No description provided |
+| Parameter |  Type  |
+|-----------|--------|
+| key       | string |
 
 
 
 ```zenscript
 new TranslatableComponent(key as string, args as Object[]) as TranslatableComponent
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | No description provided |
-| args | Object[] | No description provided |
+| Parameter |   Type   |
+|-----------|----------|
+| key       | string   |
+| args      | Object[] |
 
 
 

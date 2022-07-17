@@ -14,9 +14,9 @@ BlockItem extends [ItemDefinition](/vanilla/api/item/ItemDefinition). That means
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Block](/vanilla/api/block/Block)? | false |
+|            Result Type             | Is Implicit |
+|------------------------------------|-------------|
+| [Block](/vanilla/api/block/Block)? | false       |
 
 ## Methods
 
@@ -35,7 +35,7 @@ myBlockItem.getBlock();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| block | [Block](/vanilla/api/block/Block)? | true | false | No Description Provided |
+| Name  |                Type                | Has Getter | Has Setter |
+|-------|------------------------------------|------------|------------|
+| block | [Block](/vanilla/api/block/Block)? | true       | false      |
 

@@ -17,29 +17,29 @@ ListData implements the following interfaces. That means all methods defined in 
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new ListData() as ListData
 new ListData();
 ```
-No Description Provided
+
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| list | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| list      | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
-| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;  | true        |
 
 ## Methods
 
@@ -117,10 +117,10 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 ListData.getData<T : IData>(index as int) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
-| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| index     | int                              |
+| T         | [IData](/vanilla/api/data/IData) |
 
 
 :::

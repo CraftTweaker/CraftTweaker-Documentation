@@ -18,9 +18,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.blocks(blocks as Block[]) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| blocks | [Block](/vanilla/api/block/Block)[] | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| blocks    | [Block](/vanilla/api/block/Block)[] |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.nbt(tag as IData) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [IData](/vanilla/api/data/IData) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| tag       | [IData](/vanilla/api/data/IData) |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.nbt(tag as MapData) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| tag       | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.properties(predicate as StatePropertiesPredicate) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [StatePropertiesPredicate](/vanilla/api/predicate/StatePropertiesPredicate) |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.properties(predicate as StatePropertiesPredicateBuilder) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) | No Description Provided |
+| Parameter |                                               Type                                                |
+|-----------|---------------------------------------------------------------------------------------------------|
+| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredica
 BlockPredicateBuilder.tag(tag as KnownTag<Block>) as BlockPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; |
 
 
 :::

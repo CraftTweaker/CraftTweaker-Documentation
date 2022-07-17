@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 InvertedLootCondition.create(builder as LootConditionBuilder) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builder | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) | No Description Provided |
+| Parameter |                                       Type                                       |
+|-----------|----------------------------------------------------------------------------------|
+| builder   | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) |
 
 
 :::

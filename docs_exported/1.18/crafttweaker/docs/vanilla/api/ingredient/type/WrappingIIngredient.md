@@ -17,11 +17,11 @@ WrappingIIngredient implements the following interfaces. That means all methods 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IData](/vanilla/api/data/IData) | true |
-| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true |
-| [MapData](/vanilla/api/data/MapData) | true |
+|                              Result Type                               | Is Implicit |
+|------------------------------------------------------------------------|-------------|
+| [IData](/vanilla/api/data/IData)                                       | true        |
+| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true        |
+| [MapData](/vanilla/api/data/MapData)                                   | true        |
 
 ## Methods
 
@@ -34,21 +34,19 @@ Adds an AttributeModifier to this IIngredient.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |              Description              |
+|-----------|------------------------------------------------------------------------|---------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.        |
+| name      | string                                                                 | The name of the modifier.             |
+| value     | double                                                                 | The value of the modifier.            |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.        |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for. |
 
 
 :::
@@ -65,22 +63,20 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| uuid | **invalid** | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |                    Description                    |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
+| uuid      | **invalid**                                                            | The unique identifier of the modifier to replace. |
+| name      | string                                                                 | The name of the modifier.                         |
+| value     | double                                                                 | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.             |
 
 
 :::
@@ -97,53 +93,47 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| uuid | string | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |                    Description                    |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
+| uuid      | string                                                                 | The unique identifier of the modifier to replace. |
+| name      | string                                                                 | The name of the modifier.                         |
+| value     | double                                                                 | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.             |
 
 
 :::
 
 :::group{name=addShiftTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.addShiftTooltip(content as Component, showMessage as Component) as void
+WrappingIIngredient.addShiftTooltip(content as Component, showMessage as Component)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| content | [Component](/vanilla/api/text/Component) | No Description Provided | false |  |
-| showMessage | [Component](/vanilla/api/text/Component) | No Description Provided | true |  |
+|  Parameter  |                   Type                   | Optional |
+|-------------|------------------------------------------|----------|
+| content     | [Component](/vanilla/api/text/Component) | false    |
+| showMessage | [Component](/vanilla/api/text/Component) | true     |
 
 
 :::
 
 :::group{name=addTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.addTooltip(content as Component) as void
+WrappingIIngredient.addTooltip(content as Component)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| content | [Component](/vanilla/api/text/Component) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| content   | [Component](/vanilla/api/text/Component) |
 
 
 :::
@@ -176,15 +166,13 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 
 :::group{name=clearTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.clearTooltip(leaveName as boolean) as void
+WrappingIIngredient.clearTooltip(leaveName as boolean)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| leaveName | boolean | No Description Provided | true | false |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| leaveName | boolean | true     | false         |
 
 
 :::
@@ -201,8 +189,8 @@ Return Type: boolean
 <tag:items:minecraft:wool>.asIIngredient();.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  |                        Type                        |       Description       |
+|------------|----------------------------------------------------|-------------------------|
 | ingredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | The ingredient to check |
 
 
@@ -222,9 +210,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 <tag:items:minecraft:wool>.asIIngredient();.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to provide for this ingredient. |
+| Parameter |                    Type                    |                Description                |
+|-----------|--------------------------------------------|-------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to provide for this ingredient. |
 
 
 :::
@@ -241,40 +229,36 @@ Return Type: boolean
 <tag:items:minecraft:wool>.asIIngredient();.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to check |
+| Parameter |                    Type                    |    Description     |
+|-----------|--------------------------------------------|--------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to check |
 
 
 :::
 
 :::group{name=modifyShiftTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+WrappingIIngredient.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| shiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided | false |  |
-| unshiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided | true |  |
+|     Parameter     |                              Type                              | Optional |
+|-------------------|----------------------------------------------------------------|----------|
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | false    |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | true     |
 
 
 :::
 
 :::group{name=modifyTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.modifyTooltip(function as ITooltipFunction) as void
+WrappingIIngredient.modifyTooltip(function as ITooltipFunction)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| function  | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) |
 
 
 :::
@@ -289,9 +273,9 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 WrappingIIngredient.mul(amount as int) as IIngredientWithAmount
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -306,9 +290,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 WrappingIIngredient.only(condition as IIngredientCondition<IIngredient>) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| condition | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | No Description Provided |
+| Parameter |                                                                   Type                                                                   |
+|-----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| condition | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; |
 
 
 :::
@@ -333,9 +317,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 WrappingIIngredient.onlyDamagedAtLeast(minDamage as int) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| minDamage | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| minDamage | int  |
 
 
 :::
@@ -348,9 +332,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 WrappingIIngredient.onlyDamagedAtMost(maxDamage as int) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| maxDamage | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| maxDamage | int  |
 
 
 :::
@@ -363,10 +347,10 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 WrappingIIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| uid | string | No Description Provided | false |  |
-| function | Predicate&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided | true |  |
+| Parameter |                            Type                             | Optional |
+|-----------|-------------------------------------------------------------|----------|
+| uid       | string                                                      | false    |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true     |
 
 
 :::
@@ -383,17 +367,15 @@ Removes all AttributeModifiers that use the given Attribute from this IIngredien
  This method can only remove default Attributes from an ItemStack, it is still possible that
  an ItemStack can override it.
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The attribute to remove. |
+| Parameter |                              Type                              |            Description            |
+|-----------|----------------------------------------------------------------|-----------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           | The attribute to remove.          |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
 
 
@@ -403,18 +385,16 @@ Return Type: void
 
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | **invalid** | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |                    Description                    |
+|-----------|----------------------------------------------------------------|---------------------------------------------------|
+| uuid      | **invalid**                                                    | The unique id of the AttributeModifier to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
 :::
@@ -423,33 +403,29 @@ Return Type: void
 
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
+// WrappingIIngredient.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
 
 <tag:items:minecraft:wool>.asIIngredient();.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | string | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |                    Description                    |
+|-----------|----------------------------------------------------------------|---------------------------------------------------|
+| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
 :::
 
 :::group{name=removeTooltip}
 
-Return Type: void
-
 ```zenscript
-WrappingIIngredient.removeTooltip(regex as string) as void
+WrappingIIngredient.removeTooltip(regex as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| regex     | string |
 
 
 :::
@@ -470,17 +446,15 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 
 Sets the burn time of this ingredient, for use in the furnace and other machines
 
-Return Type: void
-
 ```zenscript
-// WrappingIIngredient.setBurnTime(time as int) as void
+// WrappingIIngredient.setBurnTime(time as int)
 
 <tag:items:minecraft:wool>.asIIngredient();.setBurnTime(500);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| time | int | the new burn time |
+| Parameter | Type |    Description    |
+|-----------|------|-------------------|
+| time      | int  | the new burn time |
 
 
 :::
@@ -495,9 +469,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 WrappingIIngredient.transform(transformer as IIngredientTransformer<IIngredient>) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| transformer | [IIngredientTransformer](/vanilla/api/ingredient/transform/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | No Description Provided |
+|  Parameter  |                                                                     Type                                                                     |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| transformer | [IIngredientTransformer](/vanilla/api/ingredient/transform/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; |
 
 
 :::
@@ -510,10 +484,10 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 WrappingIIngredient.transformCustom(uid as string, function as Function<IItemStack,IItemStack>) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| uid | string | No Description Provided | false |  |
-| function | Function&lt;[IItemStack](/vanilla/api/item/IItemStack),[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided | true |  |
+| Parameter |                                                 Type                                                  | Optional |
+|-----------|-------------------------------------------------------------------------------------------------------|----------|
+| uid       | string                                                                                                | false    |
+| function  | Function&lt;[IItemStack](/vanilla/api/item/IItemStack),[IItemStack](/vanilla/api/item/IItemStack)&gt; | true     |
 
 
 :::
@@ -526,9 +500,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 WrappingIIngredient.transformDamage(amount as int) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| amount | int | No Description Provided | true | 1 |
+| Parameter | Type | Optional | Default Value |
+|-----------|------|----------|---------------|
+| amount    | int  | true     | 1             |
 
 
 :::
@@ -541,9 +515,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 WrappingIIngredient.transformReplace(replaceWith as IItemStack) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| replaceWith | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+|  Parameter  |                    Type                    |
+|-------------|--------------------------------------------|
+| replaceWith | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -583,7 +557,7 @@ myWrappingIIngredient | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
+|   Name   | Type | Has Getter | Has Setter |                                   Description                                    |
+|----------|------|------------|------------|----------------------------------------------------------------------------------|
+| burnTime | void | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
 

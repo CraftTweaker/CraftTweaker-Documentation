@@ -28,15 +28,13 @@ LivingDropsEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). Tha
 
 Adds an item to the drops.
 
-Return Type: void
-
 ```zenscript
-LivingDropsEvent.addDrop(stack as IItemStack) as void
+LivingDropsEvent.addDrop(stack as IItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -99,15 +97,13 @@ myLivingDropsEvent.isRecentlyHit();
 
 Removes items that match the given ingredient from drops.
 
-Return Type: void
-
 ```zenscript
-LivingDropsEvent.removeDrop(ingredient as IIngredient) as void
+LivingDropsEvent.removeDrop(ingredient as IIngredient)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ingredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter  |                        Type                        |
+|------------|----------------------------------------------------|
+| ingredient | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -116,15 +112,13 @@ LivingDropsEvent.removeDrop(ingredient as IIngredient) as void
 
 Sets which items will be dropped.
 
-Return Type: void
-
 ```zenscript
-LivingDropsEvent.setDrops(drops as stdlib.List<IItemStack>) as void
+LivingDropsEvent.setDrops(drops as stdlib.List<IItemStack>)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| drops | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| drops     | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; |
 
 
 :::
@@ -132,10 +126,10 @@ LivingDropsEvent.setDrops(drops as stdlib.List<IItemStack>) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| drops | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | true | Returns the list of items will be dropped. The list is read-only, modifying this list does not change the drops. <br />  <br />  You should use the `drops` setter, `addDrop` or `removeDrop` method to change the drops. |
-| isRecentlyHit | boolean | true | false | Whether the Entity doing the drop has recently been damaged. |
-| lootingLevel | int | true | false | No Description Provided |
-| source | [DamageSource](/vanilla/api/world/DamageSource) | true | false | No Description Provided |
+|     Name      |                             Type                              | Has Getter | Has Setter |                                                                                                        Description                                                                                                        |
+|---------------|---------------------------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| drops         | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true       | true       | Returns the list of items will be dropped. The list is read-only, modifying this list does not change the drops. <br />  <br />  You should use the `drops` setter, `addDrop` or `removeDrop` method to change the drops. |
+| isRecentlyHit | boolean                                                       | true       | false      | Whether the Entity doing the drop has recently been damaged.                                                                                                                                                              |
+| lootingLevel  | int                                                           | true       | false      |                                                                                                                                                                                                                           |
+| source        | [DamageSource](/vanilla/api/world/DamageSource)               | true       | false      |                                                                                                                                                                                                                           |
 

@@ -57,9 +57,9 @@ myLivingEquipmentChangeEvent.getTo();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| from | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | No Description Provided |
-| to | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+| Name |                             Type                             | Has Getter | Has Setter |
+|------|--------------------------------------------------------------|------------|------------|
+| from | [IItemStack](/vanilla/api/item/IItemStack)                   | true       | false      |
+| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true       | false      |
+| to   | [IItemStack](/vanilla/api/item/IItemStack)                   | true       | false      |
 

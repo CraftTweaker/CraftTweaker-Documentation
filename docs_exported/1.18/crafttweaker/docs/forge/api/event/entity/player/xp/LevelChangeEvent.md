@@ -46,17 +46,15 @@ event.getLevels();
 
 Sets the amount of levels to change the player's level by.
 
-Return Type: void
-
 ```zenscript
-// LevelChangeEvent.setLevels(levels as int) as void
+// LevelChangeEvent.setLevels(levels as int)
 
 event.setLevels(5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| levels | int | The amount of levels that should be added to the player's <br />                level counter. |
+| Parameter | Type |                                          Description                                           |
+|-----------|------|------------------------------------------------------------------------------------------------|
+| levels    | int  | The amount of levels that should be added to the player's <br />                level counter. |
 
 
 :::
@@ -64,7 +62,7 @@ event.setLevels(5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| levels | int | true | true | Gets the amount of levels that the player's level is being changed by. |
+|  Name  | Type | Has Getter | Has Setter |                              Description                               |
+|--------|------|------------|------------|------------------------------------------------------------------------|
+| levels | int  | true       | true       | Gets the amount of levels that the player's level is being changed by. |
 

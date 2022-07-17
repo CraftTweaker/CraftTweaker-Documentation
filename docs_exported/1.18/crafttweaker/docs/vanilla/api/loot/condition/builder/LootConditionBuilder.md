@@ -10,9 +10,9 @@ import crafttweaker.api.loot.condition.builder.LootConditionBuilder;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -48,9 +48,9 @@ Return Type: [AlternativeLootConditionBuilder](/vanilla/api/loot/condition/build
 LootConditionBuilder.or(other as LootConditionBuilder) as AlternativeLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) | No Description Provided |
+| Parameter |                                       Type                                       |
+|-----------|----------------------------------------------------------------------------------|
+| other     | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) |
 
 
 :::

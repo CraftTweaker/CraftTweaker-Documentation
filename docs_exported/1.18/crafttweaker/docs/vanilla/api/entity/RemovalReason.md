@@ -36,7 +36,7 @@ myRemovalReason.shouldDestroy();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| shouldDestroy | boolean | true | false | No Description Provided |
+|     Name      |  Type   | Has Getter | Has Setter |
+|---------------|---------|------------|------------|
+| shouldDestroy | boolean | true       | false      |
 

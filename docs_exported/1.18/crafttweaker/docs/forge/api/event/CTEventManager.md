@@ -19,10 +19,8 @@ import crafttweaker.api.events.CTEventManager;
 
 Registers a new Event listener.
 
-Return Type: void
-
 ```zenscript
-// CTEventManager.register<T : Event>(consumer as Consumer<T>) as void
+// CTEventManager.register<T : Event>(consumer as Consumer<T>)
 
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>((event) => {
  var player = event.player;
@@ -35,10 +33,10 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| consumer | Consumer&lt;T&gt; | The event handler as consumer |
-| T | [Event](/forge/api/event/Event) | The type of the event |
+| Parameter |              Type               |          Description          |
+|-----------|---------------------------------|-------------------------------|
+| consumer  | Consumer&lt;T&gt;               | The event handler as consumer |
+| T         | [Event](/forge/api/event/Event) | The type of the event         |
 
 
 :::
@@ -47,10 +45,8 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
 
 Registers a new Event listener with a specific priority.
 
-Return Type: void
-
 ```zenscript
-// CTEventManager.register<T : Event>(priority as EventPriority, consumer as Consumer<T>) as void
+// CTEventManager.register<T : Event>(priority as EventPriority, consumer as Consumer<T>)
 
 CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>(EventPriority.HIGHEST, (event) => {
  var player = event.player;
@@ -59,11 +55,11 @@ CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| priority | [EventPriority](/forge/api/event/EventPriority) | priority for this listener |
-| consumer | Consumer&lt;T&gt; | The event handler as consumer |
-| T | [Event](/forge/api/event/Event) | The type of the event |
+| Parameter |                      Type                       |          Description          |
+|-----------|-------------------------------------------------|-------------------------------|
+| priority  | [EventPriority](/forge/api/event/EventPriority) | priority for this listener    |
+| consumer  | Consumer&lt;T&gt;                               | The event handler as consumer |
+| T         | [Event](/forge/api/event/Event)                 | The type of the event         |
 
 
 :::

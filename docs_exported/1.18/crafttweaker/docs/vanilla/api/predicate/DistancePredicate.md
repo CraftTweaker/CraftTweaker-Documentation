@@ -18,9 +18,9 @@ Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 DistancePredicate.absoluteDistance(bounds as DoubleMinMaxBoundsPredicate) as DistancePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| bounds | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| bounds    | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -45,13 +45,13 @@ Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 DistancePredicate.create(x as DoubleMinMaxBoundsPredicate, y as DoubleMinMaxBoundsPredicate, z as DoubleMinMaxBoundsPredicate, horizontal as DoubleMinMaxBoundsPredicate, absolute as DoubleMinMaxBoundsPredicate) as DistancePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| y | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| z | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| horizontal | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| absolute | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter  |                                       Type                                        |
+|------------|-----------------------------------------------------------------------------------|
+| x          | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| y          | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| z          | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| horizontal | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| absolute   | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -64,9 +64,9 @@ Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 DistancePredicate.horizontalDistance(bounds as DoubleMinMaxBoundsPredicate) as DistancePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| bounds | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| bounds    | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -79,9 +79,9 @@ Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 DistancePredicate.verticalDistance(bounds as DoubleMinMaxBoundsPredicate) as DistancePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| bounds | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| bounds    | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -94,11 +94,11 @@ Return Type: [DistancePredicate](/vanilla/api/predicate/DistancePredicate)
 DistancePredicate.xyz(x as DoubleMinMaxBoundsPredicate, y as DoubleMinMaxBoundsPredicate, z as DoubleMinMaxBoundsPredicate) as DistancePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| y | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| z | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| x         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| y         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| z         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::

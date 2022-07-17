@@ -13,9 +13,9 @@ Return Type: boolean
 IItemStack.canPerformAction(action as ToolAction) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| action | [ToolAction](/forge/api/tool/ToolAction) | The action to perform. |
+| Parameter |                   Type                   |      Description       |
+|-----------|------------------------------------------|------------------------|
+| action    | [ToolAction](/forge/api/tool/ToolAction) | The action to perform. |
 
 
 :::

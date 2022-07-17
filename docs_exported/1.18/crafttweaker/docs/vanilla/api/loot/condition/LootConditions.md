@@ -18,9 +18,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.allOf(builders as LootConditionBuilder[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builders | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] | No Description Provided |
+| Parameter |                                        Type                                        |
+|-----------|------------------------------------------------------------------------------------|
+| builders  | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] |
 
 
 :::
@@ -33,9 +33,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.allOf(conditions as LootCondition[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] | No Description Provided |
+| Parameter  |                             Type                             |
+|------------|--------------------------------------------------------------|
+| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] |
 
 
 :::
@@ -48,9 +48,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.anyOf(builders as LootConditionBuilder[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builders | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] | No Description Provided |
+| Parameter |                                        Type                                        |
+|-----------|------------------------------------------------------------------------------------|
+| builders  | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] |
 
 
 :::
@@ -63,9 +63,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.anyOf(conditions as LootCondition[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] | No Description Provided |
+| Parameter  |                             Type                             |
+|------------|--------------------------------------------------------------|
+| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.noneOf(builders as LootConditionBuilder[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builders | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] | No Description Provided |
+| Parameter |                                        Type                                        |
+|-----------|------------------------------------------------------------------------------------|
+| builders  | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.noneOf(conditions as LootCondition[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] | No Description Provided |
+| Parameter  |                             Type                             |
+|------------|--------------------------------------------------------------|
+| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.notAllOf(builders as LootConditionBuilder[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builders | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] | No Description Provided |
+| Parameter |                                        Type                                        |
+|-----------|------------------------------------------------------------------------------------|
+| builders  | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)[] |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.notAllOf(conditions as LootCondition[]) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] | No Description Provided |
+| Parameter  |                             Type                             |
+|------------|--------------------------------------------------------------|
+| conditions | [LootCondition](/vanilla/api/loot/condition/LootCondition)[] |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.only(builder as LootConditionBuilder) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| builder | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) | No Description Provided |
+| Parameter |                                       Type                                       |
+|-----------|----------------------------------------------------------------------------------|
+| builder   | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.only(condition as LootCondition) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| condition | [LootCondition](/vanilla/api/loot/condition/LootCondition) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| condition | [LootCondition](/vanilla/api/loot/condition/LootCondition) |
 
 
 :::
@@ -180,9 +180,9 @@ Return Type: [LootConditions](/vanilla/api/loot/condition/LootConditions)
 LootConditions.randomlyIn(percentageChance as double) as LootConditions
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| percentageChance | double | No Description Provided |
+|    Parameter     |  Type  |
+|------------------|--------|
+| percentageChance | double |
 
 
 :::

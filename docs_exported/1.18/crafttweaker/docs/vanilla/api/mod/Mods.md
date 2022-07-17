@@ -26,9 +26,9 @@ Return Type: [Mod](/vanilla/api/mod/Mod)?
 loadedMods.getMod("minecraft");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modid | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| modid     | string |
 
 
 :::
@@ -76,9 +76,9 @@ Return Type: boolean
 loadedMods.isModLoaded("minecraft");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modid | string | modid to check |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| modid     | string | modid to check |
 
 
 :::
@@ -108,8 +108,8 @@ loadedMods."minecraft"
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| mods | stdlib.List&lt;[Mod](/vanilla/api/mod/Mod)&gt; | true | false | Gets a list of all mods in the game |
-| size | int | true | false | Gets the amount of mods loaded |
+| Name |                      Type                      | Has Getter | Has Setter |             Description             |
+|------|------------------------------------------------|------------|------------|-------------------------------------|
+| mods | stdlib.List&lt;[Mod](/vanilla/api/mod/Mod)&gt; | true       | false      | Gets a list of all mods in the game |
+| size | int                                            | true       | false      | Gets the amount of mods loaded      |
 

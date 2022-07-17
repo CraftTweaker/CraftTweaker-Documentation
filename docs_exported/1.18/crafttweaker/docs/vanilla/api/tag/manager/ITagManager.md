@@ -22,18 +22,16 @@ ITagManager implements the following interfaces. That means all methods defined 
 
 Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to the given tag.
 
-Return Type: void
-
 ```zenscript
-// ITagManager.addId(to as T, values as ResourceLocation[]) as void
+// ITagManager.addId(to as T, values as ResourceLocation[])
 
 <tagmanager:items>.addId(<tag:items:minecraft:wool>, <resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| to | T | The tag to add to. |
-| values | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
+| Parameter |                             Type                             |               Description                |
+|-----------|--------------------------------------------------------------|------------------------------------------|
+| to        | T                                                            | The tag to add to.                       |
+| values    | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
 
 
 :::
@@ -42,17 +40,15 @@ Return Type: void
 
 Clears all values of the given tag.
 
-Return Type: void
-
 ```zenscript
-// ITagManager.clear(from as T) as void
+// ITagManager.clear(from as T)
 
 <tagmanager:items>.clear(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | T | The tag to clear. |
+| Parameter | Type |    Description    |
+|-----------|------|-------------------|
+| from      | T    | The tag to clear. |
 
 
 :::
@@ -70,9 +66,9 @@ Return Type: boolean
 <tagmanager:items>.exists(<resource:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag to check. |
+| Parameter |                            Type                            |         Description         |
+|-----------|------------------------------------------------------------|-----------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag to check. |
 
 
 :::
@@ -90,9 +86,9 @@ Return Type: boolean
 <tagmanager:items>.exists("minecraft:wool");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | string | The id of the tag to check. |
+| Parameter |  Type  |         Description         |
+|-----------|--------|-----------------------------|
+| id        | string | The id of the tag to check. |
 
 
 :::
@@ -110,9 +106,9 @@ Return Type: boolean
 <tagmanager:items>.exists(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | T | The tag to check. |
+| Parameter | Type |    Description    |
+|-----------|------|-------------------|
+| tag       | T    | The tag to check. |
 
 
 :::
@@ -128,9 +124,9 @@ Return Type: stdlib.List&lt;T&gt;
 ITagManager.getTagsFor(element as ResourceLocation) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| element | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| element   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -148,9 +144,9 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 <tagmanager:items>.idElements(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| of | T | The tag to get the elements of. |
+| Parameter | Type |           Description           |
+|-----------|------|---------------------------------|
+| of        | T    | The tag to get the elements of. |
 
 
 :::
@@ -159,18 +155,16 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 
 Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from the given tag.
 
-Return Type: void
-
 ```zenscript
-// ITagManager.removeId(from as T, values as ResourceLocation[]) as void
+// ITagManager.removeId(from as T, values as ResourceLocation[])
 
 <tagmanager:items>.removeId(<tag:items:minecraft:wool>, <resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | T | The tag to remove from. |
-| values | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
+| Parameter |                             Type                             |                 Description                 |
+|-----------|--------------------------------------------------------------|---------------------------------------------|
+| from      | T                                                            | The tag to remove from.                     |
+| values    | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
 
 
 :::
@@ -188,9 +182,9 @@ Return Type: T
 <tagmanager:items>.tag(<resource:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag. |
+| Parameter |                            Type                            |    Description     |
+|-----------|------------------------------------------------------------|--------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag. |
 
 
 :::
@@ -208,9 +202,9 @@ Return Type: T
 <tagmanager:items>.tag("minecraft:wool");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | string | The id of the tag. |
+| Parameter |  Type  |    Description     |
+|-----------|--------|--------------------|
+| id        | string | The id of the tag. |
 
 
 :::
@@ -301,10 +295,10 @@ id as string in myITagManager
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| tagFolder | string | true | false | Gets the tagFolder of this manager. <br />  <br />  The tag folder is usually the folder on disk without the `tags/` prefix. <br />  <br />  Examples: <br />  <ul> <br />  <li>`tags/items` turns into `items`</li> <br />  <li>`tags/potion` turns into `potion`</li> <br />  <li>`tags/worldgen/biome` turns into `worldgen/biome`</li> <br />  </ul> |
-| tagKeys | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the keys of the tags that this manager knows about. |
-| tagMap | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Gets a map of id to tag that this manager knows about. |
-| tags | stdlib.List&lt;T&gt; | true | false | Ges the tags that this manager knows about. |
+|   Name    |                                     Type                                      | Has Getter | Has Setter |                                                                                                                                                                       Description                                                                                                                                                                        |
+|-----------|-------------------------------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| tagFolder | string                                                                        | true       | false      | Gets the tagFolder of this manager. <br />  <br />  The tag folder is usually the folder on disk without the `tags/` prefix. <br />  <br />  Examples: <br />  <ul> <br />  <li>`tags/items` turns into `items`</li> <br />  <li>`tags/potion` turns into `potion`</li> <br />  <li>`tags/worldgen/biome` turns into `worldgen/biome`</li> <br />  </ul> |
+| tagKeys   | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      | Gets the keys of the tags that this manager knows about.                                                                                                                                                                                                                                                                                                 |
+| tagMap    | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]                 | true       | false      | Gets a map of id to tag that this manager knows about.                                                                                                                                                                                                                                                                                                   |
+| tags      | stdlib.List&lt;T&gt;                                                          | true       | false      | Ges the tags that this manager knows about.                                                                                                                                                                                                                                                                                                              |
 

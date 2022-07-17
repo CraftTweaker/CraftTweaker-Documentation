@@ -25,9 +25,9 @@ Return Type: boolean
 Level.addFreshEntity(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -45,10 +45,10 @@ Return Type: boolean
 myLevel.destroyBlock(new BlockPos(0, 1, 2), true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the block. |
-| doDrops | boolean | Whether the block drops itself and it's loot. |
+| Parameter |                    Type                     |                  Description                  |
+|-----------|---------------------------------------------|-----------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the block.                    |
+| doDrops   | boolean                                     | Whether the block drops itself and it's loot. |
 
 
 :::
@@ -66,11 +66,11 @@ Return Type: boolean
 myLevel.destroyBlock(new BlockPos(0, 1, 2), true, player);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the block. |
-| doDrops | boolean | Whether the block drops itself and it's loot. |
-| breaker | [Entity](/vanilla/api/entity/Entity)? | The entity to break the block. |
+| Parameter |                    Type                     |                  Description                  |
+|-----------|---------------------------------------------|-----------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the block.                    |
+| doDrops   | boolean                                     | Whether the block drops itself and it's loot. |
+| breaker   | [Entity](/vanilla/api/entity/Entity)?       | The entity to break the block.                |
 
 
 :::
@@ -88,9 +88,9 @@ Return Type: int
 myLevel.getBestNeighborSignal(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
+| Parameter |                    Type                     |      Description       |
+|-----------|---------------------------------------------|------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
 
 
 :::
@@ -108,9 +108,9 @@ Return Type: [Biome](/vanilla/api/world/biome/Biome)
 myLevel.getBiome(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
+| Parameter |                    Type                     |       Description        |
+|-----------|---------------------------------------------|--------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
 
 
 :::
@@ -123,9 +123,9 @@ Return Type: [BlockEntity](/vanilla/api/block/entity/BlockEntity)?
 Level.getBlockEntity(pos as BlockPos) as BlockEntity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -143,9 +143,9 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 myLevel.getBlockEntityData(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the tile entity. |
+| Parameter |                    Type                     |           Description            |
+|-----------|---------------------------------------------|----------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the tile entity. |
 
 
 :::
@@ -163,9 +163,9 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 myLevel.getBlockState(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
+| Parameter |                    Type                     |       Description        |
+|-----------|---------------------------------------------|--------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
 
 
 :::
@@ -195,9 +195,9 @@ Return Type: int
 myLevel.getDirectSignalTo(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
+| Parameter |                    Type                     |      Description       |
+|-----------|---------------------------------------------|------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
 
 
 :::
@@ -214,16 +214,16 @@ Return Type: stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 myLevel.getEntities(entity, 1.0, 1.0, 1.0, 11.4, 11.4, 11.4, (entityIn) => entityIn.isInWater());
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| excludingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
-| x1 | double | No Description Provided |
-| y1 | double | No Description Provided |
-| z1 | double | No Description Provided |
-| x2 | double | No Description Provided |
-| y2 | double | No Description Provided |
-| z2 | double | No Description Provided |
-| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | the entity filter |
+|    Parameter    |                         Type                          |    Description    |
+|-----------------|-------------------------------------------------------|-------------------|
+| excludingEntity | [Entity](/vanilla/api/entity/Entity)?                 |                   |
+| x1              | double                                                |                   |
+| y1              | double                                                |                   |
+| z1              | double                                                |                   |
+| x2              | double                                                |                   |
+| y2              | double                                                |                   |
+| z2              | double                                                |                   |
+| predicate       | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | the entity filter |
 
 
 :::
@@ -240,11 +240,11 @@ Return Type: stdlib.List&lt;T&gt;
 Level.getEntitiesInArea<T : Entity>(pos1 as BlockPos, pos2 as BlockPos) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| pos1 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | false |  |
-| pos2 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | true |  |
-| T | [Entity](/vanilla/api/entity/Entity) | No Description Provided | N/A | N/A |
+| Parameter |                    Type                     | Optional |
+|-----------|---------------------------------------------|----------|
+| pos1      | [BlockPos](/vanilla/api/util/math/BlockPos) | false    |
+| pos2      | [BlockPos](/vanilla/api/util/math/BlockPos) | true     |
+| T         | [Entity](/vanilla/api/entity/Entity)        |          |
 
 
 :::
@@ -261,12 +261,12 @@ Return Type: stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 myLevel.getEntitiesInAreaExcluding(entity, (entityIn) => entityIn.isInWater(), new BlockPos(0, 1, 2), new BlockPos(3, 4, 5));
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| excludingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided | false |  |
-| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | No Description Provided | false |  |
-| pos1 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | false |  |
-| pos2 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided | true |  |
+|    Parameter    |                         Type                          | Optional |
+|-----------------|-------------------------------------------------------|----------|
+| excludingEntity | [Entity](/vanilla/api/entity/Entity)?                 | false    |
+| predicate       | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | false    |
+| pos1            | [BlockPos](/vanilla/api/util/math/BlockPos)           | false    |
+| pos2            | [BlockPos](/vanilla/api/util/math/BlockPos)           | true     |
 
 
 :::
@@ -282,15 +282,15 @@ Return Type: stdlib.List&lt;T&gt;
 Level.getEntitiesOfClass<T : Entity>(x1 as double, y1 as double, z1 as double, x2 as double, y2 as double, z2 as double) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x1 | double | No Description Provided |
-| y1 | double | No Description Provided |
-| z1 | double | No Description Provided |
-| x2 | double | No Description Provided |
-| y2 | double | No Description Provided |
-| z2 | double | No Description Provided |
-| T | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| x1        | double                               |
+| y1        | double                               |
+| z1        | double                               |
+| x2        | double                               |
+| y2        | double                               |
+| z2        | double                               |
+| T         | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -320,9 +320,9 @@ Return Type: int
 myLevel.getSignal(new BlockPos(0, 1, 2), <direction:north>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
+| Parameter |                        Type                        |       Description       |
+|-----------|----------------------------------------------------|-------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)        | The position to check.  |
 | direction | [Direction](/vanilla/api/util/direction/Direction) | The direction to query. |
 
 
@@ -333,19 +333,17 @@ myLevel.getSignal(new BlockPos(0, 1, 2), <direction:north>);
 Triggers a predetermined event on the client. Using this on a server
  or integrated server will send the event to all nearby players.
 
-Return Type: void
-
 ```zenscript
-// Level.globalLevelEvent(eventId as int, pos as BlockPos, data as int) as void
+// Level.globalLevelEvent(eventId as int, pos as BlockPos, data as int)
 
 myLevel.globalLevelEvent(2005, new BlockPos(0, 1, 2), 0);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| eventId | int | The ID of the event to play. |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />                 is generally unused. |
+| Parameter |                    Type                     |                                              Description                                              |
+|-----------|---------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| eventId   | int                                         | The ID of the event to play.                                                                          |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event.                                                                            |
+| data      | int                                         | Four bytes of additional data encoded as an integer. This <br />                 is generally unused. |
 
 
 :::
@@ -363,9 +361,9 @@ Return Type: boolean
 myLevel.hasNeighborSignal(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
+| Parameter |                    Type                     |      Description       |
+|-----------|---------------------------------------------|------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
 
 
 :::
@@ -407,9 +405,9 @@ Return Type: boolean
 myLevel.isEmptyBlock(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
+| Parameter |                    Type                     |       Description        |
+|-----------|---------------------------------------------|--------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
 
 
 :::
@@ -427,9 +425,9 @@ Return Type: boolean
 myLevel.isLoaded(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
+| Parameter |                    Type                     |       Description        |
+|-----------|---------------------------------------------|--------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to look up. |
 
 
 :::
@@ -460,9 +458,9 @@ Return Type: boolean
 myLevel.isRainingAt(new BlockPos(0, 1, 2));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
+| Parameter |                    Type                     |      Description       |
+|-----------|---------------------------------------------|------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to check. |
 
 
 :::
@@ -472,20 +470,18 @@ myLevel.isRainingAt(new BlockPos(0, 1, 2));
 Triggers a predetermined event on the client. Using this on a server
  or integrated server will send the event to all nearby players.
 
-Return Type: void
-
 ```zenscript
-// Level.levelEvent(excluded as Player?, eventId as int, pos as BlockPos, data as int) as void
+// Level.levelEvent(excluded as Player?, eventId as int, pos as BlockPos, data as int)
 
 myLevel.levelEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| excluded | [Player](/vanilla/api/entity/type/player/Player)? | An excluded player who will not receive the event. |
-| eventId | int | The ID of the event to play. |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the event. |
-| data | int | Four bytes of additional data encoded as an integer. This <br />                  is generally unused. |
+| Parameter |                       Type                        |                                              Description                                               |
+|-----------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| excluded  | [Player](/vanilla/api/entity/type/player/Player)? | An excluded player who will not receive the event.                                                     |
+| eventId   | int                                               | The ID of the event to play.                                                                           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)       | The position of the event.                                                                             |
+| data      | int                                               | Four bytes of additional data encoded as an integer. This <br />                  is generally unused. |
 
 
 :::
@@ -503,13 +499,13 @@ Return Type: [BlockHitResult](/vanilla/api/util/BlockHitResult)
 myLevel.rayTraceBlocks(new Vec3(0.0, 0.0, 0.0), new Vec3(1.1, 4.5, 1.4), RayTraceBlockMode.OUTLINE, RayTraceFluidMode.NONE, entity);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| startVec | [Vec3](/vanilla/api/util/math/Vec3) | a vector which describes the starting point | false |  |
-| endVec | [Vec3](/vanilla/api/util/math/Vec3) | a vector which describes the direction and length we are searching in | false |  |
-| blockMode | [BlockClipContext](/vanilla/api/world/clip/BlockClipContext) | the type of block that the ray trace would stop at. | false |  |
-| fluidMode | [FluidClipContext](/vanilla/api/world/clip/FluidClipContext) | the type of fluid that the ray trace would stop at. | false |  |
-| entity | [Entity](/vanilla/api/entity/Entity) | the entity for selection context | true |  |
+| Parameter |                             Type                             |                              Description                              | Optional |
+|-----------|--------------------------------------------------------------|-----------------------------------------------------------------------|----------|
+| startVec  | [Vec3](/vanilla/api/util/math/Vec3)                          | a vector which describes the starting point                           | false    |
+| endVec    | [Vec3](/vanilla/api/util/math/Vec3)                          | a vector which describes the direction and length we are searching in | false    |
+| blockMode | [BlockClipContext](/vanilla/api/world/clip/BlockClipContext) | the type of block that the ray trace would stop at.                   | false    |
+| fluidMode | [FluidClipContext](/vanilla/api/world/clip/FluidClipContext) | the type of fluid that the ray trace would stop at.                   | false    |
+| entity    | [Entity](/vanilla/api/entity/Entity)                         | the entity for selection context                                      | true     |
 
 
 :::
@@ -529,9 +525,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;[L
 myLevel.sequence({version: "1.0.0"});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided | true | new crafttweaker.api.data.MapData() |
+| Parameter |                 Type                 | Optional |            Default Value            |
+|-----------|--------------------------------------|----------|-------------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) | true     | new crafttweaker.api.data.MapData() |
 
 
 :::
@@ -551,10 +547,10 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;[L
 myLevel.sequence<crafttweaker.api.data.MapData>({version: "1.0.0"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | T | No Description Provided |
-| T | Object | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| data      | T      |
+| T         | Object |
 
 
 :::
@@ -572,10 +568,10 @@ Return Type: boolean
 myLevel.setBlockAndUpdate(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to set the block at. |
-| state | [BlockState](/vanilla/api/block/BlockState) | The new state of the block. |
+| Parameter |                    Type                     |            Description            |
+|-----------|---------------------------------------------|-----------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to set the block at. |
+| state     | [BlockState](/vanilla/api/block/BlockState) | The new state of the block.       |
 
 
 :::
@@ -584,17 +580,15 @@ myLevel.setBlockAndUpdate(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_bloc
 
 Sets the current rain level.
 
-Return Type: void
-
 ```zenscript
-// Level.setRainingLevel(level as float) as void
+// Level.setRainingLevel(level as float)
 
 myLevel.setRainingLevel(0.5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | float | The new rain level between 0 and 1 |
+| Parameter | Type  |            Description             |
+|-----------|-------|------------------------------------|
+| level     | float | The new rain level between 0 and 1 |
 
 
 :::
@@ -602,20 +596,20 @@ myLevel.setRainingLevel(0.5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| daytime | long | true | false | No Description Provided |
-| difficulty | string | true | false | Gets the difficulty setting for the world. |
-| difficultyLocked | boolean | true | false | Checks if the difficulty of the world has been locked. |
-| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name of the dimension this world represents. |
-| gameTime | long | true | false | No Description Provided |
-| hardcore | boolean | true | false | Checks if hardcore mode is enabled. |
-| isClientSide | boolean | true | false | No Description Provided |
-| isDay | boolean | true | false | No Description Provided |
-| isNight | boolean | true | false | No Description Provided |
-| rainLevel | [Level](/vanilla/api/world/Level) | false | true | Sets the current rain level. |
-| raining | boolean | true | false | Checks if it is raining. |
-| random | [Random](/vanilla/api/util/math/Random) | true | false | No Description Provided |
-| seaLevel | int | true | false | Gets the height of the sea level. |
-| thundering | boolean | true | false | Checks if there is a thunder storm. |
+|       Name       |                            Type                            | Has Getter | Has Setter |                          Description                           |
+|------------------|------------------------------------------------------------|------------|------------|----------------------------------------------------------------|
+| daytime          | long                                                       | true       | false      |                                                                |
+| difficulty       | string                                                     | true       | false      | Gets the difficulty setting for the world.                     |
+| difficultyLocked | boolean                                                    | true       | false      | Checks if the difficulty of the world has been locked.         |
+| dimension        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      | Gets the registry name of the dimension this world represents. |
+| gameTime         | long                                                       | true       | false      |                                                                |
+| hardcore         | boolean                                                    | true       | false      | Checks if hardcore mode is enabled.                            |
+| isClientSide     | boolean                                                    | true       | false      |                                                                |
+| isDay            | boolean                                                    | true       | false      |                                                                |
+| isNight          | boolean                                                    | true       | false      |                                                                |
+| rainLevel        | [Level](/vanilla/api/world/Level)                          | false      | true       | Sets the current rain level.                                   |
+| raining          | boolean                                                    | true       | false      | Checks if it is raining.                                       |
+| random           | [Random](/vanilla/api/util/math/Random)                    | true       | false      |                                                                |
+| seaLevel         | int                                                        | true       | false      | Gets the height of the sea level.                              |
+| thundering       | boolean                                                    | true       | false      | Checks if there is a thunder storm.                            |
 

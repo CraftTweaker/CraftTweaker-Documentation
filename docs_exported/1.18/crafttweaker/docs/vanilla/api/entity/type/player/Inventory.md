@@ -24,9 +24,9 @@ Return Type: boolean
 Inventory.add(stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -39,10 +39,10 @@ Return Type: boolean
 Inventory.add(index as int, stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| index     | int                                      |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -55,9 +55,9 @@ Return Type: boolean
 Inventory.contains(stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -70,19 +70,17 @@ Return Type: boolean
 Inventory.contains(tag as KnownTag<ItemDefinition>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| Parameter |                                                 Type                                                 |
+|-----------|------------------------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; |
 
 
 :::
 
 :::group{name=dropAll}
 
-Return Type: void
-
 ```zenscript
-// Inventory.dropAll() as void
+// Inventory.dropAll()
 
 myInventory.dropAll();
 ```
@@ -97,9 +95,9 @@ Return Type: int
 Inventory.findSlotMatchingItem(stack as ItemStack) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -112,9 +110,9 @@ Return Type: int
 Inventory.findSlotMatchingUnusedItem(stack as ItemStack) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -127,9 +125,9 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Inventory.getArmor(armorIndex as int) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| armorIndex | int | No Description Provided |
+| Parameter  | Type |
+|------------|------|
+| armorIndex | int  |
 
 
 :::
@@ -166,9 +164,9 @@ Return Type: int
 Inventory.getSlotWithRemainingSpace(stack as ItemStack) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -199,62 +197,54 @@ myInventory.getTimesChanged();
 
 :::group{name=hurtArmor}
 
-Return Type: void
-
 ```zenscript
-Inventory.hurtArmor(source as DamageSource, damage as float, armorSlots as int[]) as void
+Inventory.hurtArmor(source as DamageSource, damage as float, armorSlots as int[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
-| damage | float | No Description Provided |
-| armorSlots | int[] | No Description Provided |
+| Parameter  |                      Type                       |
+|------------|-------------------------------------------------|
+| source     | [DamageSource](/vanilla/api/world/DamageSource) |
+| damage     | float                                           |
+| armorSlots | int[]                                           |
 
 
 :::
 
 :::group{name=pickSlot}
 
-Return Type: void
-
 ```zenscript
-Inventory.pickSlot(index as int) as void
+Inventory.pickSlot(index as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| index     | int  |
 
 
 :::
 
 :::group{name=removeItem}
 
-Return Type: void
-
 ```zenscript
-Inventory.removeItem(stack as ItemStack) as void
+Inventory.removeItem(stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=setPickedItem}
 
-Return Type: void
-
 ```zenscript
-Inventory.setPickedItem(stack as ItemStack) as void
+Inventory.setPickedItem(stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -262,10 +252,10 @@ Inventory.setPickedItem(stack as ItemStack) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| freeSlot | int | true | false | No Description Provided |
-| selected | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| suitableHotbarSlot | int | true | false | No Description Provided |
-| timesChanged | int | true | false | No Description Provided |
+|        Name        |                   Type                   | Has Getter | Has Setter |
+|--------------------|------------------------------------------|------------|------------|
+| freeSlot           | int                                      | true       | false      |
+| selected           | [ItemStack](/vanilla/api/item/ItemStack) | true       | false      |
+| suitableHotbarSlot | int                                      | true       | false      |
+| timesChanged       | int                                      | true       | false      |
 

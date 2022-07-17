@@ -42,9 +42,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicate.create(fluid as Fluid) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fluid | [Fluid](/vanilla/api/fluid/Fluid) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| fluid     | [Fluid](/vanilla/api/fluid/Fluid) |
 
 
 :::
@@ -57,9 +57,9 @@ Return Type: [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredica
 FluidPredicate.create(tag as KnownTag<Fluid>) as FluidPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; |
 
 
 :::

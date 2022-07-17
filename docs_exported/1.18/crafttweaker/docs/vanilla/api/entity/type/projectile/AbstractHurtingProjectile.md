@@ -63,17 +63,15 @@ myAbstractHurtingProjectile.getZPower();
 
 Sets the x power of this projectile.
 
-Return Type: void
-
 ```zenscript
-// AbstractHurtingProjectile.setXPower(xPower as double) as void
+// AbstractHurtingProjectile.setXPower(xPower as double)
 
 myAbstractHurtingProjectile.setXPower(4);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| xPower | double | The x power of this projectile. |
+| Parameter |  Type  |           Description           |
+|-----------|--------|---------------------------------|
+| xPower    | double | The x power of this projectile. |
 
 
 :::
@@ -82,17 +80,15 @@ myAbstractHurtingProjectile.setXPower(4);
 
 Sets the y power of this projectile.
 
-Return Type: void
-
 ```zenscript
-// AbstractHurtingProjectile.setYPower(yPower as double) as void
+// AbstractHurtingProjectile.setYPower(yPower as double)
 
 myAbstractHurtingProjectile.setYPower(4);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| yPower | double | The y power of this projectile. |
+| Parameter |  Type  |           Description           |
+|-----------|--------|---------------------------------|
+| yPower    | double | The y power of this projectile. |
 
 
 :::
@@ -101,17 +97,15 @@ myAbstractHurtingProjectile.setYPower(4);
 
 Sets the z power of this projectile.
 
-Return Type: void
-
 ```zenscript
-// AbstractHurtingProjectile.setZPower(zPower as double) as void
+// AbstractHurtingProjectile.setZPower(zPower as double)
 
 myAbstractHurtingProjectile.setZPower(4);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| zPower | double | The z power of this projectile. |
+| Parameter |  Type  |           Description           |
+|-----------|--------|---------------------------------|
+| zPower    | double | The z power of this projectile. |
 
 
 :::
@@ -119,9 +113,9 @@ myAbstractHurtingProjectile.setZPower(4);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| xPower | double | true | true | Gets the x power of this projectile. |
-| yPower | double | true | true | Gets the y power of this projectile. |
-| zPower | double | true | true | Gets the z power of this projectile. |
+|  Name  |  Type  | Has Getter | Has Setter |             Description              |
+|--------|--------|------------|------------|--------------------------------------|
+| xPower | double | true       | true       | Gets the x power of this projectile. |
+| yPower | double | true       | true       | Gets the y power of this projectile. |
+| zPower | double | true       | true       | Gets the z power of this projectile. |
 

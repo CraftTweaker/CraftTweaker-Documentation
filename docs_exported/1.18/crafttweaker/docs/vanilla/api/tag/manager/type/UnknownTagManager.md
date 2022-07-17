@@ -17,16 +17,14 @@ UnknownTagManager implements the following interfaces. That means all methods de
 
 :::group{name=addId}
 
-Return Type: void
-
 ```zenscript
-UnknownTagManager.addId(to as UnknownTag, values as ResourceLocation[]) as void
+UnknownTagManager.addId(to as UnknownTag, values as ResourceLocation[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| to | [UnknownTag](/vanilla/api/tag/type/UnknownTag) | No Description Provided |
-| values | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| to        | [UnknownTag](/vanilla/api/tag/type/UnknownTag)               |
+| values    | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] |
 
 
 :::
@@ -44,9 +42,9 @@ Return Type: boolean
 myUnknownTagManager.exists(<resource:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag to check. |
+| Parameter |                            Type                            |         Description         |
+|-----------|------------------------------------------------------------|-----------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The id of the tag to check. |
 
 
 :::
@@ -64,9 +62,9 @@ Return Type: boolean
 myUnknownTagManager.exists("minecraft:wool");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | string | The id of the tag to check. |
+| Parameter |  Type  |         Description         |
+|-----------|--------|-----------------------------|
+| id        | string | The id of the tag to check. |
 
 
 :::
@@ -84,9 +82,9 @@ Return Type: boolean
 myUnknownTagManager.exists(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | T | The tag to check. |
+| Parameter | Type |    Description    |
+|-----------|------|-------------------|
+| tag       | T    | The tag to check. |
 
 
 :::
@@ -102,9 +100,9 @@ Return Type: stdlib.List&lt;T&gt;
 UnknownTagManager.getTagsFor(element as ResourceLocation) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| element | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| element   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -122,25 +120,23 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 myUnknownTagManager.idElements(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| of | T | The tag to get the elements of. |
+| Parameter | Type |           Description           |
+|-----------|------|---------------------------------|
+| of        | T    | The tag to get the elements of. |
 
 
 :::
 
 :::group{name=removeId}
 
-Return Type: void
-
 ```zenscript
-UnknownTagManager.removeId(from as UnknownTag, values as ResourceLocation[]) as void
+UnknownTagManager.removeId(from as UnknownTag, values as ResourceLocation[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| from | [UnknownTag](/vanilla/api/tag/type/UnknownTag) | No Description Provided |
-| values | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| from      | [UnknownTag](/vanilla/api/tag/type/UnknownTag)               |
+| values    | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] |
 
 
 :::
@@ -153,9 +149,9 @@ Return Type: [UnknownTag](/vanilla/api/tag/type/UnknownTag)
 UnknownTagManager.tag(id as ResourceLocation) as UnknownTag
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -168,9 +164,9 @@ Return Type: [UnknownTag](/vanilla/api/tag/type/UnknownTag)
 UnknownTagManager.tag(id as string) as UnknownTag
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| id        | string |
 
 
 :::
@@ -243,9 +239,9 @@ id as string in myUnknownTagManager
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| tagFolder | string | true | false | Gets the tagFolder of this manager. <br />  <br />  The tag folder is usually the folder on disk without the `tags/` prefix. <br />  <br />  Examples: <br />  <ul> <br />  <li>`tags/items` turns into `items`</li> <br />  <li>`tags/potion` turns into `potion`</li> <br />  <li>`tags/worldgen/biome` turns into `worldgen/biome`</li> <br />  </ul> |
-| tagMap | [UnknownTag](/vanilla/api/tag/type/UnknownTag)[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | No Description Provided |
-| tags | stdlib.List&lt;T&gt; | true | false | Ges the tags that this manager knows about. |
+|   Name    |                                                    Type                                                    | Has Getter | Has Setter |                                                                                                                                                                       Description                                                                                                                                                                        |
+|-----------|------------------------------------------------------------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| tagFolder | string                                                                                                     | true       | false      | Gets the tagFolder of this manager. <br />  <br />  The tag folder is usually the folder on disk without the `tags/` prefix. <br />  <br />  Examples: <br />  <ul> <br />  <li>`tags/items` turns into `items`</li> <br />  <li>`tags/potion` turns into `potion`</li> <br />  <li>`tags/worldgen/biome` turns into `worldgen/biome`</li> <br />  </ul> |
+| tagMap    | [UnknownTag](/vanilla/api/tag/type/UnknownTag)[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      |                                                                                                                                                                                                                                                                                                                                                          |
+| tags      | stdlib.List&lt;T&gt;                                                                                       | true       | false      | Ges the tags that this manager knows about.                                                                                                                                                                                                                                                                                                              |
 

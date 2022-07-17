@@ -50,30 +50,26 @@ myLivingFallEvent.getDistance();
 
 :::group{name=setDamageMultiplier}
 
-Return Type: void
-
 ```zenscript
-LivingFallEvent.setDamageMultiplier(value as int) as void
+LivingFallEvent.setDamageMultiplier(value as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
 
 
 :::
 
 :::group{name=setDistance}
 
-Return Type: void
-
 ```zenscript
-LivingFallEvent.setDistance(value as int) as void
+LivingFallEvent.setDistance(value as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
 
 
 :::
@@ -81,8 +77,8 @@ LivingFallEvent.setDistance(value as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| damageMultiplier | float | true | true | No Description Provided |
-| distance | float | true | true | No Description Provided |
+|       Name       | Type  | Has Getter | Has Setter |
+|------------------|-------|------------|------------|
+| damageMultiplier | float | true       | true       |
+| distance         | float | true       | true       |
 

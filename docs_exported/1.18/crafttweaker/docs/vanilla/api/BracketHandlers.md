@@ -22,9 +22,9 @@ Return Type: [Attribute](/vanilla/api/entity/attribute/Attribute)
 BracketHandlers.getAttribute(tokens as string) as Attribute
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -44,9 +44,9 @@ Return Type: [Block](/vanilla/api/block/Block)
 BracketHandlers.getBlock("minecraft:dirt");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | What you would write in the BEP call. |
+| Parameter |  Type  |              Description              |
+|-----------|--------|---------------------------------------|
+| tokens    | string | What you would write in the BEP call. |
 
 
 :::
@@ -68,9 +68,9 @@ BracketHandlers.getBlockState("minecraft:acacia_planks");
 BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The block's resource location and variants |
+| Parameter |  Type  |                Description                 |
+|-----------|--------|--------------------------------------------|
+| tokens    | string | The block's resource location and variants |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [CreativeModeTab](/vanilla/api/item/CreativeModeTab)
 BracketHandlers.getCreativeModeTab(misc);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The CreativeModeTab's name. |
+| Parameter |  Type  |         Description         |
+|-----------|--------|-----------------------------|
+| tokens    | string | The CreativeModeTab's name. |
 
 
 :::
@@ -112,9 +112,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 BracketHandlers.getDamageSource("magic");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | the damage sources' type |
+| Parameter |  Type  |       Description        |
+|-----------|--------|--------------------------|
+| tokens    | string | the damage sources' type |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [Enchantment](/vanilla/api/item/enchantment/Enchantment)
 BracketHandlers.getEnchantment("minecraft:riptide");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The enchantment's registry name |
+| Parameter |  Type  |           Description           |
+|-----------|--------|---------------------------------|
+| tokens    | string | The enchantment's registry name |
 
 
 :::
@@ -156,9 +156,9 @@ Return Type: [EntityType](/vanilla/api/entity/EntityType)
 BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The entityType's resource location |
+| Parameter |  Type  |            Description             |
+|-----------|--------|------------------------------------|
+| tokens    | string | The entityType's resource location |
 
 
 :::
@@ -178,9 +178,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The item's resource location |
+| Parameter |  Type  |         Description          |
+|-----------|--------|------------------------------|
+| tokens    | string | The item's resource location |
 
 
 :::
@@ -200,9 +200,9 @@ Return Type: [Material](/vanilla/api/block/material/Material)
 BracketHandlers.getMaterial("earth");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | What you would write in the BEP call. |
+| Parameter |  Type  |              Description              |
+|-----------|--------|---------------------------------------|
+| tokens    | string | What you would write in the BEP call. |
 
 
 :::
@@ -222,9 +222,9 @@ Return Type: [MobEffect](/vanilla/api/entity/effect/MobEffect)
 BracketHandlers.getMobEffect("minecraft:haste");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The mobeffect's resource location |
+| Parameter |  Type  |            Description            |
+|-----------|--------|-----------------------------------|
+| tokens    | string | The mobeffect's resource location |
 
 
 :::
@@ -237,9 +237,9 @@ Return Type: [Potion](/vanilla/api/item/alchemy/Potion)
 BracketHandlers.getPotion(tokens as string) as Potion
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::
@@ -259,9 +259,9 @@ Return Type: [VillagerProfession](/vanilla/api/villager/VillagerProfession)
 BracketHandlers.getProfession("minecraft:armorer");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The profession's resource location |
+| Parameter |  Type  |            Description             |
+|-----------|--------|------------------------------------|
+| tokens    | string | The profession's resource location |
 
 
 :::
@@ -279,9 +279,9 @@ Return Type: [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The recipeManager's resource location |
+| Parameter |  Type  |              Description              |
+|-----------|--------|---------------------------------------|
+| tokens    | string | The recipeManager's resource location |
 
 
 :::
@@ -301,9 +301,9 @@ Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The resource location |
+| Parameter |  Type  |      Description      |
+|-----------|--------|-----------------------|
+| tokens    | string | The resource location |
 
 
 :::
@@ -323,9 +323,9 @@ Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)
 BracketHandlers.getSoundEvent("minecraft:ambient.cave");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The sound event's resource location |
+| Parameter |  Type  |             Description             |
+|-----------|--------|-------------------------------------|
+| tokens    | string | The sound event's resource location |
 
 
 :::

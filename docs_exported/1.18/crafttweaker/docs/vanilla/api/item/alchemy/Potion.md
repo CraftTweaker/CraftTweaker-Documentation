@@ -30,9 +30,9 @@ Return Type: string
 Potion.getName(prefix as string) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| prefix | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| prefix    | string |
 
 
 :::
@@ -52,9 +52,9 @@ myPotion.hasInstantEffects();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| effects | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | true | false | No Description Provided |
-| hasInstantEffects | boolean | true | false | No Description Provided |
+|       Name        |                                         Type                                         | Has Getter | Has Setter |
+|-------------------|--------------------------------------------------------------------------------------|------------|------------|
+| commandString     | string                                                                               | true       | false      |
+| effects           | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | true       | false      |
+| hasInstantEffects | boolean                                                                              | true       | false      |
 

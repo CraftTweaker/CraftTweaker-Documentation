@@ -19,10 +19,8 @@ RecipeManagerWrapper implements the following interfaces. That means all methods
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack json, this effectively allows you to register recipes for any DataPack supporting RecipeType systems.
 
-Return Type: void
-
 ```zenscript
-// RecipeManagerWrapper.addJsonRecipe(name as string, mapData as MapData) as void
+// RecipeManagerWrapper.addJsonRecipe(name as string, mapData as MapData)
 
 myRecipeManagerWrapper.addJsonRecipe("recipe_name", {
  ingredient: <item:minecraft:gold_ore>,
@@ -32,10 +30,10 @@ myRecipeManagerWrapper.addJsonRecipe("recipe_name", {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
+| Parameter |                 Type                 |           Description           |
+|-----------|--------------------------------------|---------------------------------|
+| name      | string                               | name of the recipe              |
+| mapData   | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::
@@ -60,9 +58,9 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 RecipeManagerWrapper.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
 
 
 :::
@@ -90,9 +88,9 @@ Return Type: stdlib.List&lt;T&gt;
 RecipeManagerWrapper.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -101,17 +99,15 @@ RecipeManagerWrapper.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 
 Remove a recipe based on it's output.
 
-Return Type: void
-
 ```zenscript
-// RecipeManagerWrapper.remove(output as IIngredient) as void
+// RecipeManagerWrapper.remove(output as IIngredient)
 
 myRecipeManagerWrapper.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
+| Parameter |                        Type                        |     Description      |
+|-----------|----------------------------------------------------|----------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
 
 
 :::
@@ -120,10 +116,8 @@ myRecipeManagerWrapper.remove(<tag:items:minecraft:wool>);
 
 Remove all recipes in this registry
 
-Return Type: void
-
 ```zenscript
-// RecipeManagerWrapper.removeAll() as void
+// RecipeManagerWrapper.removeAll()
 
 myRecipeManagerWrapper.removeAll();
 ```
@@ -134,17 +128,15 @@ myRecipeManagerWrapper.removeAll();
 
 Removes all recipes where the input contains the given IItemStack.
 
-Return Type: void
-
 ```zenscript
-// RecipeManagerWrapper.removeByInput(input as IItemStack) as void
+// RecipeManagerWrapper.removeByInput(input as IItemStack)
 
 myRecipeManagerWrapper.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
+| Parameter |                    Type                    |      Description      |
+|-----------|--------------------------------------------|-----------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
 
 
 :::
@@ -153,16 +145,14 @@ myRecipeManagerWrapper.removeByInput(<item:minecraft:iron_ingot>);
 
 Remove recipe based on Registry name modid
 
-Return Type: void
-
 ```zenscript
-RecipeManagerWrapper.removeByModid(modid as string, exclude as Predicate<string>) as void
+RecipeManagerWrapper.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |          Description           | Optional |           Default Value           |
+|-----------|-------------------------|--------------------------------|----------|-----------------------------------|
+| modid     | string                  | modid of the recipes to remove | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                                | true     | (name as string) as bool => false |
 
 
 :::
@@ -171,15 +161,13 @@ RecipeManagerWrapper.removeByModid(modid as string, exclude as Predicate<string>
 
 Remove recipes based on Registry names
 
-Return Type: void
-
 ```zenscript
-RecipeManagerWrapper.removeByName(names as string[]) as void
+RecipeManagerWrapper.removeByName(names as string[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| names | string[] | registry names of recipes to remove |
+| Parameter |   Type   |             Description             |
+|-----------|----------|-------------------------------------|
+| names     | string[] | registry names of recipes to remove |
 
 
 :::
@@ -188,18 +176,16 @@ RecipeManagerWrapper.removeByName(names as string[]) as void
 
 Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-Return Type: void
-
 ```zenscript
-// RecipeManagerWrapper.removeByRegex(regex as string, exclude as Predicate<string>) as void
+// RecipeManagerWrapper.removeByRegex(regex as string, exclude as Predicate<string>)
 
 myRecipeManagerWrapper.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |      Description       | Optional |           Default Value           |
+|-----------|-------------------------|------------------------|----------|-----------------------------------|
+| regex     | string                  | regex to match against | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                        | true     | (name as string) as bool => false |
 
 
 :::
@@ -207,8 +193,8 @@ myRecipeManagerWrapper.removeByRegex("\\d_\\d", (name as string) => {return name
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| allRecipes | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| recipeMap | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
+|    Name    |                             Type                              | Has Getter | Has Setter |             Description             |
+|------------|---------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;T&gt;                                          | true       | false      |                                     |
+| recipeMap  | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

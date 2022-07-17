@@ -18,9 +18,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.biome(biome as ResourceLocation) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| biome | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| biome     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -33,9 +33,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.biome(biome as string) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| biome | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| biome     | string |
 
 
 :::
@@ -48,9 +48,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.block(predicate as BlockPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [BlockPredicate](/vanilla/api/predicate/BlockPredicate) | No Description Provided |
+| Parameter |                          Type                           |
+|-----------|---------------------------------------------------------|
+| predicate | [BlockPredicate](/vanilla/api/predicate/BlockPredicate) |
 
 
 :::
@@ -63,9 +63,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.block(predicate as BlockPredicateBuilder) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredicateBuilder) | No Description Provided |
+| Parameter |                                     Type                                      |
+|-----------|-------------------------------------------------------------------------------|
+| predicate | [BlockPredicateBuilder](/vanilla/api/predicate/builder/BlockPredicateBuilder) |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.dimension(dimension as ResourceLocation) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.dimension(dimension as string) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| dimension | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| dimension | string |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.feature(feature as ResourceLocation) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| feature | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| feature   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.feature(feature as string) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| feature | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| feature   | string |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.fluid(predicate as FluidPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [FluidPredicate](/vanilla/api/predicate/FluidPredicate) | No Description Provided |
+| Parameter |                          Type                           |
+|-----------|---------------------------------------------------------|
+| predicate | [FluidPredicate](/vanilla/api/predicate/FluidPredicate) |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.fluid(predicate as FluidPredicateBuilder) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredicateBuilder) | No Description Provided |
+| Parameter |                                     Type                                      |
+|-----------|-------------------------------------------------------------------------------|
+| predicate | [FluidPredicateBuilder](/vanilla/api/predicate/builder/FluidPredicateBuilder) |
 
 
 :::
@@ -180,9 +180,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.light(predicate as LightPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LightPredicate](/vanilla/api/predicate/LightPredicate) | No Description Provided |
+| Parameter |                          Type                           |
+|-----------|---------------------------------------------------------|
+| predicate | [LightPredicate](/vanilla/api/predicate/LightPredicate) |
 
 
 :::
@@ -195,9 +195,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.light(predicate as LightPredicateBuilder) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LightPredicateBuilder](/vanilla/api/predicate/builder/LightPredicateBuilder) | No Description Provided |
+| Parameter |                                     Type                                      |
+|-----------|-------------------------------------------------------------------------------|
+| predicate | [LightPredicateBuilder](/vanilla/api/predicate/builder/LightPredicateBuilder) |
 
 
 :::
@@ -210,9 +210,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.smokey(smokey as bool?) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| smokey | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| smokey    | bool? | true     | true          |
 
 
 :::
@@ -225,9 +225,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.x(x as DoubleMinMaxBoundsPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| x         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -240,9 +240,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.y(y as DoubleMinMaxBoundsPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| y | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| y         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -255,9 +255,9 @@ Return Type: [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationP
 LocationPredicateBuilder.z(z as DoubleMinMaxBoundsPredicate) as LocationPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| z | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| z         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::

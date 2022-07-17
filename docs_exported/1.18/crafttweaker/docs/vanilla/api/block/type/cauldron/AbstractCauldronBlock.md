@@ -27,8 +27,8 @@ Return Type: boolean
 myAbstractCauldronBlock.isFull(<blockstate:minecraft:cauldron:level=3>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  |                    Type                     |               Description                |
+|------------|---------------------------------------------|------------------------------------------|
 | blockState | [BlockState](/vanilla/api/block/BlockState) | The current block state of the cauldron. |
 
 

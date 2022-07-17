@@ -15,10 +15,10 @@ import crafttweaker.api.item.ItemStack;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IIngredient](/vanilla/api/ingredient/IIngredient) | true |
-| [IItemStack](/vanilla/api/item/IItemStack) | true |
+|                    Result Type                     | Is Implicit |
+|----------------------------------------------------|-------------|
+| [IIngredient](/vanilla/api/ingredient/IIngredient) | true        |
+| [IItemStack](/vanilla/api/item/IItemStack)         | true        |
 
 ## Methods
 

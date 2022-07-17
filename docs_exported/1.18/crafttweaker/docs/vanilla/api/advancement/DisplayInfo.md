@@ -108,16 +108,14 @@ myDisplayInfo.isHidden();
 
 :::group{name=setLocation}
 
-Return Type: void
-
 ```zenscript
-DisplayInfo.setLocation(x as float, y as float) as void
+DisplayInfo.setLocation(x as float, y as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | float | No Description Provided |
-| y | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| x         | float |
+| y         | float |
 
 
 :::
@@ -149,16 +147,16 @@ myDisplayInfo.shouldShowToast();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| background | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | true | false | No Description Provided |
-| description | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| frame | [FrameType](/vanilla/api/advancement/FrameType) | true | false | No Description Provided |
-| icon | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| isHidden | boolean | true | false | No Description Provided |
-| shouldAnnounceChat | boolean | true | false | No Description Provided |
-| shouldShowToast | boolean | true | false | No Description Provided |
-| title | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| x | float | true | false | No Description Provided |
-| y | float | true | false | No Description Provided |
+|        Name        |                            Type                             | Has Getter | Has Setter |
+|--------------------|-------------------------------------------------------------|------------|------------|
+| background         | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | true       | false      |
+| description        | [Component](/vanilla/api/text/Component)                    | true       | false      |
+| frame              | [FrameType](/vanilla/api/advancement/FrameType)             | true       | false      |
+| icon               | [ItemStack](/vanilla/api/item/ItemStack)                    | true       | false      |
+| isHidden           | boolean                                                     | true       | false      |
+| shouldAnnounceChat | boolean                                                     | true       | false      |
+| shouldShowToast    | boolean                                                     | true       | false      |
+| title              | [Component](/vanilla/api/text/Component)                    | true       | false      |
+| x                  | float                                                       | true       | false      |
+| y                  | float                                                       | true       | false      |
 

@@ -18,43 +18,39 @@ Return Type: boolean
 Enchantment.canEnchant(stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=doPostAttack}
 
-Return Type: void
-
 ```zenscript
-Enchantment.doPostAttack(source as LivingEntity, target as Entity, level as int) as void
+Enchantment.doPostAttack(source as LivingEntity, target as Entity, level as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
-| target | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| level | int | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| source    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+| target    | [Entity](/vanilla/api/entity/Entity)             |
+| level     | int                                              |
 
 
 :::
 
 :::group{name=doPostHurt}
 
-Return Type: void
-
 ```zenscript
-Enchantment.doPostHurt(source as LivingEntity, target as Entity, level as int) as void
+Enchantment.doPostHurt(source as LivingEntity, target as Entity, level as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
-| target | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| level | int | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| source    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+| target    | [Entity](/vanilla/api/entity/Entity)             |
+| level     | int                                              |
 
 
 :::
@@ -67,10 +63,10 @@ Return Type: float
 Enchantment.getDamageBonus(level as int, mobType as MobType) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
-| mobType | [MobType](/vanilla/api/entity/MobType) | No Description Provided |
+| Parameter |                  Type                  |
+|-----------|----------------------------------------|
+| level     | int                                    |
+| mobType   | [MobType](/vanilla/api/entity/MobType) |
 
 
 :::
@@ -83,10 +79,10 @@ Return Type: int
 Enchantment.getDamageProtection(level as int, source as DamageSource) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| level     | int                                             |
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
 
 
 :::
@@ -111,9 +107,9 @@ Return Type: [Component](/vanilla/api/text/Component)
 Enchantment.getFullname(level as int) as Component
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| level     | int  |
 
 
 :::
@@ -126,9 +122,9 @@ Return Type: int
 Enchantment.getMaxCost(level as int) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| level     | int  |
 
 
 :::
@@ -153,9 +149,9 @@ Return Type: int
 Enchantment.getMinCost(level as int) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| level     | int  |
 
 
 :::
@@ -192,9 +188,9 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)[[EquipmentSlot](/vanilla/a
 Enchantment.getSlotItems(entity as LivingEntity) as ItemStack[EquipmentSlot]
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -207,9 +203,9 @@ Return Type: boolean
 Enchantment.isCompatibleWith(other as Enchantment) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | No Description Provided |
+| Parameter |                           Type                           |
+|-----------|----------------------------------------------------------|
+| other     | [Enchantment](/vanilla/api/item/enchantment/Enchantment) |
 
 
 :::
@@ -265,15 +261,15 @@ myEnchantment.isTreasureOnly();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| descriptionId | string | true | false | No Description Provided |
-| isCurse | boolean | true | false | No Description Provided |
-| isDiscoverable | boolean | true | false | No Description Provided |
-| isTradeable | boolean | true | false | No Description Provided |
-| isTreasureOnly | boolean | true | false | No Description Provided |
-| maxLevel | int | true | false | No Description Provided |
-| minLevel | int | true | false | No Description Provided |
-| rarity | [Rarity](/vanilla/api/item/enchantment/Rarity) | true | false | No Description Provided |
+|      Name      |                      Type                      | Has Getter | Has Setter |
+|----------------|------------------------------------------------|------------|------------|
+| commandString  | string                                         | true       | false      |
+| descriptionId  | string                                         | true       | false      |
+| isCurse        | boolean                                        | true       | false      |
+| isDiscoverable | boolean                                        | true       | false      |
+| isTradeable    | boolean                                        | true       | false      |
+| isTreasureOnly | boolean                                        | true       | false      |
+| maxLevel       | int                                            | true       | false      |
+| minLevel       | int                                            | true       | false      |
+| rarity         | [Rarity](/vanilla/api/item/enchantment/Rarity) | true       | false      |
 

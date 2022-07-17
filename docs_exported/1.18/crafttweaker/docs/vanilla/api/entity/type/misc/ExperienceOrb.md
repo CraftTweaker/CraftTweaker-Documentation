@@ -41,8 +41,8 @@ myExperienceOrb.getValue();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| icon | int | true | false | No Description Provided |
-| value | int | true | false | No Description Provided |
+| Name  | Type | Has Getter | Has Setter |
+|-------|------|------------|------------|
+| icon  | int  | true       | false      |
+| value | int  | true       | false      |
 

@@ -25,9 +25,9 @@ Return Type: boolean
 Entity.addTag(tagName as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tagName | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tagName   | string |
 
 
 :::
@@ -64,9 +64,9 @@ Return Type: boolean
 Entity.canCollideWith(other as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| other     | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -85,10 +85,8 @@ myEntity.canFreeze();
 
 :::group{name=clearFire}
 
-Return Type: void
-
 ```zenscript
-// Entity.clearFire() as void
+// Entity.clearFire()
 
 myEntity.clearFire();
 ```
@@ -103,20 +101,18 @@ Return Type: boolean
 Entity.closerThan(other as Entity, distance as double) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| distance | double | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| other     | [Entity](/vanilla/api/entity/Entity) |
+| distance  | double                               |
 
 
 :::
 
 :::group{name=discard}
 
-Return Type: void
-
 ```zenscript
-// Entity.discard() as void
+// Entity.discard()
 
 myEntity.discard();
 ```
@@ -131,9 +127,9 @@ Return Type: float
 Entity.distanceTo(entity as Entity) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -146,9 +142,9 @@ Return Type: double
 Entity.distanceToSqr(entity as Entity) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -161,9 +157,9 @@ Return Type: double
 Entity.distanceToSqr(vec as Vec3) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -176,21 +172,19 @@ Return Type: double
 Entity.distanceToSqr(x as double, y as double, z as double) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=ejectPassengers}
 
-Return Type: void
-
 ```zenscript
-// Entity.ejectPassengers() as void
+// Entity.ejectPassengers()
 
 myEntity.ejectPassengers();
 ```
@@ -487,9 +481,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Entity.getEyePosition(partialTicks as float) as Vec3
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| partialTicks | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| partialTicks | float |
 
 
 :::
@@ -706,9 +700,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Entity.getPosition(partialTicks as float) as Vec3
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| partialTicks | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| partialTicks | float |
 
 
 :::
@@ -829,9 +823,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Entity.getUpVector(partialTicks as float) as Vec3
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| partialTicks | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| partialTicks | float |
 
 
 :::
@@ -856,9 +850,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Entity.getViewVector(partialTicks as float) as Vec3
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| partialTicks | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| partialTicks | float |
 
 
 :::
@@ -883,9 +877,9 @@ Return Type: double
 Entity.getX(scale as double) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| scale | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| scale     | double |
 
 
 :::
@@ -910,9 +904,9 @@ Return Type: double
 Entity.getY(scale as double) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| scale | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| scale     | double |
 
 
 :::
@@ -937,9 +931,9 @@ Return Type: double
 Entity.getZ(scale as double) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| scale | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| scale     | double |
 
 
 :::
@@ -988,9 +982,9 @@ Return Type: boolean
 Entity.hasIndirectPassenger(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -1003,9 +997,9 @@ Return Type: boolean
 Entity.hasPassenger(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -1018,9 +1012,9 @@ Return Type: boolean
 Entity.hasPassenger(predicate as Predicate<Entity>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; |
 
 
 :::
@@ -1033,10 +1027,10 @@ Return Type: boolean
 Entity.hurt(source as DamageSource, amount as float) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
-| amount | float | No Description Provided |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
+| amount    | float                                           |
 
 
 :::
@@ -1073,10 +1067,10 @@ Return Type: boolean
 Entity.isColliding(pos as BlockPos, state as BlockState) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| state | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| state     | [BlockState](/vanilla/api/block/BlockState) |
 
 
 :::
@@ -1149,11 +1143,11 @@ Return Type: boolean
 Entity.isFree(x as double, y as double, z as double) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -1262,9 +1256,9 @@ Return Type: boolean
 Entity.isInvisibleTo(player as Player) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -1289,9 +1283,9 @@ Return Type: boolean
 Entity.isInvulnerableTo(source as DamageSource) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
 
 
 :::
@@ -1364,9 +1358,9 @@ Return Type: boolean
 Entity.isPassengerOfSameVehicle(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -1553,10 +1547,8 @@ myEntity.isVisuallySwimming();
 
 :::group{name=kill}
 
-Return Type: void
-
 ```zenscript
-// Entity.kill() as void
+// Entity.kill()
 
 myEntity.kill();
 ```
@@ -1565,10 +1557,8 @@ myEntity.kill();
 
 :::group{name=lavaHurt}
 
-Return Type: void
-
 ```zenscript
-// Entity.lavaHurt() as void
+// Entity.lavaHurt()
 
 myEntity.lavaHurt();
 ```
@@ -1577,84 +1567,74 @@ myEntity.lavaHurt();
 
 :::group{name=moveRelative}
 
-Return Type: void
-
 ```zenscript
-Entity.moveRelative(amount as float, relative as Vec3) as void
+Entity.moveRelative(amount as float, relative as Vec3)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | float | No Description Provided |
-| relative | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| amount    | float                               |
+| relative  | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
 
 :::group{name=moveTo}
 
-Return Type: void
-
 ```zenscript
-Entity.moveTo(vec as Vec3) as void
+Entity.moveTo(vec as Vec3)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
 
 :::group{name=moveTo}
 
-Return Type: void
-
 ```zenscript
-Entity.moveTo(pos as BlockPos, yaw as float, pitch as float) as void
+Entity.moveTo(pos as BlockPos, yaw as float, pitch as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| yaw | float | No Description Provided |
-| pitch | float | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| yaw       | float                                       |
+| pitch     | float                                       |
 
 
 :::
 
 :::group{name=moveTo}
 
-Return Type: void
-
 ```zenscript
-Entity.moveTo(x as double, y as double, z as double) as void
+Entity.moveTo(x as double, y as double, z as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=moveTo}
 
-Return Type: void
-
 ```zenscript
-Entity.moveTo(x as double, y as double, z as double, yaw as float, pitch as float) as void
+Entity.moveTo(x as double, y as double, z as double, yaw as float, pitch as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
-| yaw | float | No Description Provided |
-| pitch | float | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
+| yaw       | float  |
+| pitch     | float  |
 
 
 :::
@@ -1673,17 +1653,15 @@ myEntity.occludesVibrations();
 
 :::group{name=playSound}
 
-Return Type: void
-
 ```zenscript
-Entity.playSound(sound as SoundEvent, volume as float, pitch as float) as void
+Entity.playSound(sound as SoundEvent, volume as float, pitch as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| sound | [SoundEvent](/vanilla/api/sound/SoundEvent) | No Description Provided |
-| volume | float | No Description Provided |
-| pitch | float | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| sound     | [SoundEvent](/vanilla/api/sound/SoundEvent) |
+| volume    | float                                       |
+| pitch     | float                                       |
 
 
 :::
@@ -1702,15 +1680,13 @@ myEntity.position();
 
 :::group{name=positionRider}
 
-Return Type: void
-
 ```zenscript
-Entity.positionRider(entity as Entity) as void
+Entity.positionRider(entity as Entity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -1723,19 +1699,17 @@ Return Type: boolean
 Entity.removeTag(tagName as string) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tagName | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tagName   | string |
 
 
 :::
 
 :::group{name=removeVehicle}
 
-Return Type: void
-
 ```zenscript
-// Entity.removeVehicle() as void
+// Entity.removeVehicle()
 
 myEntity.removeVehicle();
 ```
@@ -1756,193 +1730,167 @@ myEntity.rideableUnderWater();
 
 :::group{name=sendMessage}
 
-Return Type: void
-
 ```zenscript
-Entity.sendMessage(message as Component) as void
+Entity.sendMessage(message as Component)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| message | [Component](/vanilla/api/text/Component) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| message   | [Component](/vanilla/api/text/Component) |
 
 
 :::
 
 :::group{name=setAirSupply}
 
-Return Type: void
-
 ```zenscript
-Entity.setAirSupply(air as int) as void
+Entity.setAirSupply(air as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| air | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| air       | int  |
 
 
 :::
 
 :::group{name=setCustomName}
 
-Return Type: void
-
 ```zenscript
-Entity.setCustomName(name as Component?) as void
+Entity.setCustomName(name as Component?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [Component](/vanilla/api/text/Component)? | No Description Provided |
+| Parameter |                   Type                    |
+|-----------|-------------------------------------------|
+| name      | [Component](/vanilla/api/text/Component)? |
 
 
 :::
 
 :::group{name=setCustomNameVisible}
 
-Return Type: void
-
 ```zenscript
-Entity.setCustomNameVisible(visible as boolean) as void
+Entity.setCustomNameVisible(visible as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| visible | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| visible   | boolean |
 
 
 :::
 
 :::group{name=setDeltaMovement}
 
-Return Type: void
-
 ```zenscript
-Entity.setDeltaMovement(deltaMovement as Vec3) as void
+Entity.setDeltaMovement(deltaMovement as Vec3)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+|   Parameter   |                Type                 |
+|---------------|-------------------------------------|
+| deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
 
 :::group{name=setDeltaMovement}
 
-Return Type: void
-
 ```zenscript
-Entity.setDeltaMovement(xDelta as double, yDelta as double, zDelta as double) as void
+Entity.setDeltaMovement(xDelta as double, yDelta as double, zDelta as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| xDelta | double | No Description Provided |
-| yDelta | double | No Description Provided |
-| zDelta | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| xDelta    | double |
+| yDelta    | double |
+| zDelta    | double |
 
 
 :::
 
 :::group{name=setGlowingTag}
 
-Return Type: void
-
 ```zenscript
-Entity.setGlowingTag(glowing as boolean) as void
+Entity.setGlowingTag(glowing as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| glowing | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| glowing   | boolean |
 
 
 :::
 
 :::group{name=setInvisible}
 
-Return Type: void
-
 ```zenscript
-Entity.setInvisible(invisible as boolean) as void
+Entity.setInvisible(invisible as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| invisible | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| invisible | boolean |
 
 
 :::
 
 :::group{name=setInvulnerable}
 
-Return Type: void
-
 ```zenscript
-Entity.setInvulnerable(invulnerable as boolean) as void
+Entity.setInvulnerable(invulnerable as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| invulnerable | boolean | No Description Provided |
+|  Parameter   |  Type   |
+|--------------|---------|
+| invulnerable | boolean |
 
 
 :::
 
 :::group{name=setIsInPowderSnow}
 
-Return Type: void
-
 ```zenscript
-Entity.setIsInPowderSnow(inPowderSnow as boolean) as void
+Entity.setIsInPowderSnow(inPowderSnow as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| inPowderSnow | boolean | No Description Provided |
+|  Parameter   |  Type   |
+|--------------|---------|
+| inPowderSnow | boolean |
 
 
 :::
 
 :::group{name=setItemSlot}
 
-Return Type: void
-
 ```zenscript
-Entity.setItemSlot(slot as EquipmentSlot, stack as ItemStack) as void
+Entity.setItemSlot(slot as EquipmentSlot, stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| slot      | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack)                     |
 
 
 :::
 
 :::group{name=setNoGravity}
 
-Return Type: void
-
 ```zenscript
-Entity.setNoGravity(noGravity as boolean) as void
+Entity.setNoGravity(noGravity as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| noGravity | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| noGravity | boolean |
 
 
 :::
 
 :::group{name=setOldPosAndRot}
 
-Return Type: void
-
 ```zenscript
-// Entity.setOldPosAndRot() as void
+// Entity.setOldPosAndRot()
 
 myEntity.setOldPosAndRot();
 ```
@@ -1951,25 +1899,21 @@ myEntity.setOldPosAndRot();
 
 :::group{name=setOnGround}
 
-Return Type: void
-
 ```zenscript
-Entity.setOnGround(onGround as boolean) as void
+Entity.setOnGround(onGround as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| onGround | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| onGround  | boolean |
 
 
 :::
 
 :::group{name=setPortalCooldown}
 
-Return Type: void
-
 ```zenscript
-// Entity.setPortalCooldown() as void
+// Entity.setPortalCooldown()
 
 myEntity.setPortalCooldown();
 ```
@@ -1978,154 +1922,134 @@ myEntity.setPortalCooldown();
 
 :::group{name=setPos}
 
-Return Type: void
-
 ```zenscript
-Entity.setPos(position as Vec3) as void
+Entity.setPos(position as Vec3)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| position | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| position  | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
 
 :::group{name=setPos}
 
-Return Type: void
-
 ```zenscript
-Entity.setPos(x as double, y as double, z as double) as void
+Entity.setPos(x as double, y as double, z as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=setPosRaw}
 
-Return Type: void
-
 ```zenscript
-Entity.setPosRaw(x as double, y as double, z as double) as void
+Entity.setPosRaw(x as double, y as double, z as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=setRemainingFireTicks}
 
-Return Type: void
-
 ```zenscript
-Entity.setRemainingFireTicks(ticks as int) as void
+Entity.setRemainingFireTicks(ticks as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| ticks     | int  |
 
 
 :::
 
 :::group{name=setSecondsOnFire}
 
-Return Type: void
-
 ```zenscript
-Entity.setSecondsOnFire(seconds as int) as void
+Entity.setSecondsOnFire(seconds as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| seconds | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| seconds   | int  |
 
 
 :::
 
 :::group{name=setShiftKeyDown}
 
-Return Type: void
-
 ```zenscript
-Entity.setShiftKeyDown(keyDown as boolean) as void
+Entity.setShiftKeyDown(keyDown as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| keyDown | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| keyDown   | boolean |
 
 
 :::
 
 :::group{name=setSilent}
 
-Return Type: void
-
 ```zenscript
-Entity.setSilent(silent as boolean) as void
+Entity.setSilent(silent as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| silent | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| silent    | boolean |
 
 
 :::
 
 :::group{name=setSprinting}
 
-Return Type: void
-
 ```zenscript
-Entity.setSprinting(sprinting as boolean) as void
+Entity.setSprinting(sprinting as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| sprinting | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| sprinting | boolean |
 
 
 :::
 
 :::group{name=setSwimming}
 
-Return Type: void
-
 ```zenscript
-Entity.setSwimming(swimming as boolean) as void
+Entity.setSwimming(swimming as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| swimming | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| swimming  | boolean |
 
 
 :::
 
 :::group{name=setTicksFrozen}
 
-Return Type: void
-
 ```zenscript
-Entity.setTicksFrozen(ticks as int) as void
+Entity.setTicksFrozen(ticks as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| ticks     | int  |
 
 
 :::
@@ -2162,9 +2086,9 @@ Return Type: boolean
 Entity.startRiding(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -2177,20 +2101,18 @@ Return Type: boolean
 Entity.startRiding(entity as Entity, force as boolean) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| force | boolean | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
+| force     | boolean                              |
 
 
 :::
 
 :::group{name=stopRiding}
 
-Return Type: void
-
 ```zenscript
-// Entity.stopRiding() as void
+// Entity.stopRiding()
 
 myEntity.stopRiding();
 ```
@@ -2199,43 +2121,37 @@ myEntity.stopRiding();
 
 :::group{name=teleportTo}
 
-Return Type: void
-
 ```zenscript
-Entity.teleportTo(x as double, y as double, z as double) as void
+Entity.teleportTo(x as double, y as double, z as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=turn}
 
-Return Type: void
-
 ```zenscript
-Entity.turn(yaw as double, pitch as double) as void
+Entity.turn(yaw as double, pitch as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| yaw | double | No Description Provided |
-| pitch | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| yaw       | double |
+| pitch     | double |
 
 
 :::
 
 :::group{name=unRide}
 
-Return Type: void
-
 ```zenscript
-// Entity.unRide() as void
+// Entity.unRide()
 
 myEntity.unRide();
 ```
@@ -2246,17 +2162,15 @@ myEntity.unRide();
 
 Updates the custom NBT data for this Entity.
 
-Return Type: void
-
 ```zenscript
-// Entity.updateCustomData(data as MapData) as void
+// Entity.updateCustomData(data as MapData)
 
 myEntity.updateCustomData({custom: "data"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | The custom data to store. |
+| Parameter |                 Type                 |        Description        |
+|-----------|--------------------------------------|---------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) | The custom data to store. |
 
 
 :::
@@ -2265,17 +2179,15 @@ myEntity.updateCustomData({custom: "data"});
 
 Updates the NBT data of this Entity.
 
-Return Type: void
-
 ```zenscript
-// Entity.updateData(data as MapData) as void
+// Entity.updateData(data as MapData)
 
 myEntity.updateData({key: "value"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | The new Data for this Entity |
+| Parameter |                 Type                 |         Description          |
+|-----------|--------------------------------------|------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) | The new Data for this Entity |
 
 
 :::
@@ -2283,106 +2195,106 @@ myEntity.updateData({key: "value"});
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| airSupply | int | true | false | No Description Provided |
-| allSlots | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | No Description Provided |
-| armorSlots | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | No Description Provided |
-| bbHeight | float | true | false | No Description Provided |
-| bbWidth | float | true | false | No Description Provided |
-| blockPosition | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| blockX | int | true | false | No Description Provided |
-| blockY | int | true | false | No Description Provided |
-| blockZ | int | true | false | No Description Provided |
-| boundingBoxForCulling | [AABB](/vanilla/api/util/math/AABB) | true | false | No Description Provided |
-| brightness | float | true | false | No Description Provided |
-| canBeCollidedWith | boolean | true | false | No Description Provided |
-| canFreeze | boolean | true | false | No Description Provided |
-| commandSenderWorld | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| controllingPassenger | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| customData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the custom NBT data for this Entity. |
-| customName | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData) | true | false | Gets the NBT data of this Entity. |
-| deltaMovement | [Vec3](/vanilla/api/util/math/Vec3) | true | true | No Description Provided |
-| dimensionChangingDelay | int | true | false | No Description Provided |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| eyeBlockPosition | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| eyeHeight | float | true | false | No Description Provided |
-| eyePosition | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| eyeY | double | true | false | No Description Provided |
-| feetBlockState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
-| fireImmune | boolean | true | false | No Description Provided |
-| firstPassenger | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| fluidJumpThreshold | double | true | false | No Description Provided |
-| forward | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| handSlots | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | No Description Provided |
-| hasCustomName | boolean | true | false | No Description Provided |
-| hasExactlyOnePlayerPassenger | boolean | true | false | No Description Provided |
-| hasGlowingTag | boolean | true | false | No Description Provided |
-| isAlive | boolean | true | false | No Description Provided |
-| isAttackable | boolean | true | false | No Description Provided |
-| isCrouching | boolean | true | false | No Description Provided |
-| isCurrentlyGlowing | boolean | true | false | No Description Provided |
-| isCustomNameVisible | boolean | true | false | No Description Provided |
-| isDescending | boolean | true | false | No Description Provided |
-| isDiscrete | boolean | true | false | No Description Provided |
-| isFullyFrozen | boolean | true | false | No Description Provided |
-| isInLava | boolean | true | false | No Description Provided |
-| isInWall | boolean | true | false | No Description Provided |
-| isInWater | boolean | true | false | No Description Provided |
-| isInWaterOrBubble | boolean | true | false | No Description Provided |
-| isInWaterOrRain | boolean | true | false | No Description Provided |
-| isInWaterRainOrBubble | boolean | true | false | No Description Provided |
-| isInvisible | boolean | true | false | No Description Provided |
-| isInvulnerable | boolean | true | false | No Description Provided |
-| isNoGravity | boolean | true | false | No Description Provided |
-| isOnFire | boolean | true | false | No Description Provided |
-| isOnGround | boolean | true | false | No Description Provided |
-| isOnPortalCooldown | boolean | true | false | No Description Provided |
-| isPassenger | boolean | true | false | No Description Provided |
-| isPickable | boolean | true | false | No Description Provided |
-| isPushable | boolean | true | false | No Description Provided |
-| isPushedByFluid | boolean | true | false | No Description Provided |
-| isRemoved | boolean | true | false | No Description Provided |
-| isShiftKeyDown | boolean | true | false | No Description Provided |
-| isSilent | boolean | true | false | No Description Provided |
-| isSpectator | boolean | true | false | No Description Provided |
-| isSprinting | boolean | true | false | No Description Provided |
-| isSteppingCarefully | boolean | true | false | No Description Provided |
-| isSuppressingBounce | boolean | true | false | No Description Provided |
-| isSwimming | boolean | true | false | No Description Provided |
-| isUnderWater | boolean | true | false | No Description Provided |
-| isVehicle | boolean | true | false | No Description Provided |
-| isVisuallyCrawling | boolean | true | false | No Description Provided |
-| isVisuallySwimming | boolean | true | false | No Description Provided |
-| level | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| lookAngle | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| maxAirSupply | int | true | false | No Description Provided |
-| maxFallDistance | int | true | false | No Description Provided |
-| motionDirection | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| name | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| occludesVibrations | boolean | true | false | No Description Provided |
-| onPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| passengers | stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt; | true | false | No Description Provided |
-| percentFrozen | float | true | false | No Description Provided |
-| pistonPushReaction | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
-| portalWaitTime | int | true | false | No Description Provided |
-| position | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| remainingFireTicks | int | true | false | No Description Provided |
-| rideableUnderWater | boolean | true | false | No Description Provided |
-| rootVehicle | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
-| shouldShowName | boolean | true | false | No Description Provided |
-| showVehicleHealth | boolean | true | false | No Description Provided |
-| soundSource | [SoundSource](/vanilla/api/sound/SoundSource) | true | false | No Description Provided |
-| stringUUID | string | true | false | No Description Provided |
-| tags | Set&lt;string&gt; | true | false | No Description Provided |
-| teamColor | int | true | false | No Description Provided |
-| ticksFrozen | int | true | false | No Description Provided |
-| ticksRequiredToFreeze | int | true | false | No Description Provided |
-| type | [EntityType](/vanilla/api/entity/EntityType) | true | false | No Description Provided |
-| vehicle | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| x | double | true | false | No Description Provided |
-| y | double | true | false | No Description Provided |
-| z | double | true | false | No Description Provided |
+|             Name             |                              Type                               | Has Getter | Has Setter |                Description                |
+|------------------------------|-----------------------------------------------------------------|------------|------------|-------------------------------------------|
+| airSupply                    | int                                                             | true       | false      |                                           |
+| allSlots                     | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true       | false      |                                           |
+| armorSlots                   | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true       | false      |                                           |
+| bbHeight                     | float                                                           | true       | false      |                                           |
+| bbWidth                      | float                                                           | true       | false      |                                           |
+| blockPosition                | [BlockPos](/vanilla/api/util/math/BlockPos)                     | true       | false      |                                           |
+| blockX                       | int                                                             | true       | false      |                                           |
+| blockY                       | int                                                             | true       | false      |                                           |
+| blockZ                       | int                                                             | true       | false      |                                           |
+| boundingBoxForCulling        | [AABB](/vanilla/api/util/math/AABB)                             | true       | false      |                                           |
+| brightness                   | float                                                           | true       | false      |                                           |
+| canBeCollidedWith            | boolean                                                         | true       | false      |                                           |
+| canFreeze                    | boolean                                                         | true       | false      |                                           |
+| commandSenderWorld           | [Level](/vanilla/api/world/Level)                               | true       | false      |                                           |
+| controllingPassenger         | [Entity](/vanilla/api/entity/Entity)?                           | true       | false      |                                           |
+| customData                   | [MapData](/vanilla/api/data/MapData)                            | true       | false      | Gets the custom NBT data for this Entity. |
+| customName                   | [Component](/vanilla/api/text/Component)?                       | true       | false      |                                           |
+| data                         | [MapData](/vanilla/api/data/MapData)                            | true       | false      | Gets the NBT data of this Entity.         |
+| deltaMovement                | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | true       |                                           |
+| dimensionChangingDelay       | int                                                             | true       | false      |                                           |
+| direction                    | [Direction](/vanilla/api/util/direction/Direction)              | true       | false      |                                           |
+| displayName                  | [Component](/vanilla/api/text/Component)                        | true       | false      |                                           |
+| eyeBlockPosition             | [BlockPos](/vanilla/api/util/math/BlockPos)                     | true       | false      |                                           |
+| eyeHeight                    | float                                                           | true       | false      |                                           |
+| eyePosition                  | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | false      |                                           |
+| eyeY                         | double                                                          | true       | false      |                                           |
+| feetBlockState               | [BlockState](/vanilla/api/block/BlockState)                     | true       | false      |                                           |
+| fireImmune                   | boolean                                                         | true       | false      |                                           |
+| firstPassenger               | [Entity](/vanilla/api/entity/Entity)?                           | true       | false      |                                           |
+| fluidJumpThreshold           | double                                                          | true       | false      |                                           |
+| forward                      | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | false      |                                           |
+| handSlots                    | stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true       | false      |                                           |
+| hasCustomName                | boolean                                                         | true       | false      |                                           |
+| hasExactlyOnePlayerPassenger | boolean                                                         | true       | false      |                                           |
+| hasGlowingTag                | boolean                                                         | true       | false      |                                           |
+| isAlive                      | boolean                                                         | true       | false      |                                           |
+| isAttackable                 | boolean                                                         | true       | false      |                                           |
+| isCrouching                  | boolean                                                         | true       | false      |                                           |
+| isCurrentlyGlowing           | boolean                                                         | true       | false      |                                           |
+| isCustomNameVisible          | boolean                                                         | true       | false      |                                           |
+| isDescending                 | boolean                                                         | true       | false      |                                           |
+| isDiscrete                   | boolean                                                         | true       | false      |                                           |
+| isFullyFrozen                | boolean                                                         | true       | false      |                                           |
+| isInLava                     | boolean                                                         | true       | false      |                                           |
+| isInWall                     | boolean                                                         | true       | false      |                                           |
+| isInWater                    | boolean                                                         | true       | false      |                                           |
+| isInWaterOrBubble            | boolean                                                         | true       | false      |                                           |
+| isInWaterOrRain              | boolean                                                         | true       | false      |                                           |
+| isInWaterRainOrBubble        | boolean                                                         | true       | false      |                                           |
+| isInvisible                  | boolean                                                         | true       | false      |                                           |
+| isInvulnerable               | boolean                                                         | true       | false      |                                           |
+| isNoGravity                  | boolean                                                         | true       | false      |                                           |
+| isOnFire                     | boolean                                                         | true       | false      |                                           |
+| isOnGround                   | boolean                                                         | true       | false      |                                           |
+| isOnPortalCooldown           | boolean                                                         | true       | false      |                                           |
+| isPassenger                  | boolean                                                         | true       | false      |                                           |
+| isPickable                   | boolean                                                         | true       | false      |                                           |
+| isPushable                   | boolean                                                         | true       | false      |                                           |
+| isPushedByFluid              | boolean                                                         | true       | false      |                                           |
+| isRemoved                    | boolean                                                         | true       | false      |                                           |
+| isShiftKeyDown               | boolean                                                         | true       | false      |                                           |
+| isSilent                     | boolean                                                         | true       | false      |                                           |
+| isSpectator                  | boolean                                                         | true       | false      |                                           |
+| isSprinting                  | boolean                                                         | true       | false      |                                           |
+| isSteppingCarefully          | boolean                                                         | true       | false      |                                           |
+| isSuppressingBounce          | boolean                                                         | true       | false      |                                           |
+| isSwimming                   | boolean                                                         | true       | false      |                                           |
+| isUnderWater                 | boolean                                                         | true       | false      |                                           |
+| isVehicle                    | boolean                                                         | true       | false      |                                           |
+| isVisuallyCrawling           | boolean                                                         | true       | false      |                                           |
+| isVisuallySwimming           | boolean                                                         | true       | false      |                                           |
+| level                        | [Level](/vanilla/api/world/Level)                               | true       | false      |                                           |
+| lookAngle                    | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | false      |                                           |
+| maxAirSupply                 | int                                                             | true       | false      |                                           |
+| maxFallDistance              | int                                                             | true       | false      |                                           |
+| motionDirection              | [Direction](/vanilla/api/util/direction/Direction)              | true       | false      |                                           |
+| name                         | [Component](/vanilla/api/text/Component)                        | true       | false      |                                           |
+| occludesVibrations           | boolean                                                         | true       | false      |                                           |
+| onPos                        | [BlockPos](/vanilla/api/util/math/BlockPos)                     | true       | false      |                                           |
+| passengers                   | stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;         | true       | false      |                                           |
+| percentFrozen                | float                                                           | true       | false      |                                           |
+| pistonPushReaction           | [PushReaction](/vanilla/api/block/material/PushReaction)        | true       | false      |                                           |
+| portalWaitTime               | int                                                             | true       | false      |                                           |
+| position                     | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | false      |                                           |
+| remainingFireTicks           | int                                                             | true       | false      |                                           |
+| rideableUnderWater           | boolean                                                         | true       | false      |                                           |
+| rootVehicle                  | [Entity](/vanilla/api/entity/Entity)                            | true       | false      |                                           |
+| shouldShowName               | boolean                                                         | true       | false      |                                           |
+| showVehicleHealth            | boolean                                                         | true       | false      |                                           |
+| soundSource                  | [SoundSource](/vanilla/api/sound/SoundSource)                   | true       | false      |                                           |
+| stringUUID                   | string                                                          | true       | false      |                                           |
+| tags                         | Set&lt;string&gt;                                               | true       | false      |                                           |
+| teamColor                    | int                                                             | true       | false      |                                           |
+| ticksFrozen                  | int                                                             | true       | false      |                                           |
+| ticksRequiredToFreeze        | int                                                             | true       | false      |                                           |
+| type                         | [EntityType](/vanilla/api/entity/EntityType)                    | true       | false      |                                           |
+| vehicle                      | [Entity](/vanilla/api/entity/Entity)?                           | true       | false      |                                           |
+| x                            | double                                                          | true       | false      |                                           |
+| y                            | double                                                          | true       | false      |                                           |
+| z                            | double                                                          | true       | false      |                                           |
 

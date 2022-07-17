@@ -14,10 +14,8 @@ import crafttweaker.api.entity.NamePlateResult;
 
 Forces the nameplate to be visible even when it would otherwise not be.
 
-Return Type: void
-
 ```zenscript
-// NamePlateResult.alwaysRender() as void
+// NamePlateResult.alwaysRender()
 
 myNamePlateResult.alwaysRender();
 ```
@@ -60,10 +58,8 @@ myNamePlateResult.getOriginalContent();
 
 Forces the display name to not render even when it should.
 
-Return Type: void
-
 ```zenscript
-// NamePlateResult.noRender() as void
+// NamePlateResult.noRender()
 
 myNamePlateResult.noRender();
 ```
@@ -74,15 +70,13 @@ myNamePlateResult.noRender();
 
 Sets the new content of the nameplate.
 
-Return Type: void
-
 ```zenscript
-NamePlateResult.setContent(content as Component) as void
+NamePlateResult.setContent(content as Component)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| content | [Component](/vanilla/api/text/Component) | The new nameplate contents. |
+| Parameter |                   Type                   |         Description         |
+|-----------|------------------------------------------|-----------------------------|
+| content   | [Component](/vanilla/api/text/Component) | The new nameplate contents. |
 
 
 :::
@@ -91,10 +85,8 @@ NamePlateResult.setContent(content as Component) as void
 
 Sets the default vanilla behaviour of rendering nameplates.
 
-Return Type: void
-
 ```zenscript
-// NamePlateResult.setDefault() as void
+// NamePlateResult.setDefault()
 
 myNamePlateResult.setDefault();
 ```
@@ -104,8 +96,8 @@ myNamePlateResult.setDefault();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| content | [Component](/vanilla/api/text/Component) | true | true | Gets the current content of the nameplate. <br />  This can be changed by mods. |
-| originalContent | [Component](/vanilla/api/text/Component) | true | false | Gets the original content of the nameplate. <br />  This can not be changed by mods. |
+|      Name       |                   Type                   | Has Getter | Has Setter |                                     Description                                      |
+|-----------------|------------------------------------------|------------|------------|--------------------------------------------------------------------------------------|
+| content         | [Component](/vanilla/api/text/Component) | true       | true       | Gets the current content of the nameplate. <br />  This can be changed by mods.      |
+| originalContent | [Component](/vanilla/api/text/Component) | true       | false      | Gets the original content of the nameplate. <br />  This can not be changed by mods. |
 

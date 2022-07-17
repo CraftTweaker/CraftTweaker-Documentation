@@ -49,15 +49,13 @@ myLivingEntityUseItemEvent.getItem();
 
 :::group{name=setDuration}
 
-Return Type: void
-
 ```zenscript
-LivingEntityUseItemEvent.setDuration(duration as int) as void
+LivingEntityUseItemEvent.setDuration(duration as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| duration | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| duration  | int  |
 
 
 :::
@@ -65,8 +63,8 @@ LivingEntityUseItemEvent.setDuration(duration as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| duration | int | true | true | No Description Provided |
-| item | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+|   Name   |                    Type                    | Has Getter | Has Setter |
+|----------|--------------------------------------------|------------|------------|
+| duration | int                                        | true       | true       |
+| item     | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
 

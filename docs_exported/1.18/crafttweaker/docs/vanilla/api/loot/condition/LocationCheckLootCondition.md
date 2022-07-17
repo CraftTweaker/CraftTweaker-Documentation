@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 LocationCheckLootCondition.create(predicate as LocationPredicateBuilder) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) |
 
 
 :::
@@ -38,10 +38,10 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 LocationCheckLootCondition.create(predicate as LocationPredicateBuilder, offset as BlockPos) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) | No Description Provided |
-| offset | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) |
+| offset    | [BlockPos](/vanilla/api/util/math/BlockPos)                                         |
 
 
 :::
@@ -54,12 +54,12 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 LocationCheckLootCondition.create(predicate as LocationPredicateBuilder, xOffset as int, yOffset as int, zOffset as int) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) | No Description Provided |
-| xOffset | int | No Description Provided |
-| yOffset | int | No Description Provided |
-| zOffset | int | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) |
+| xOffset   | int                                                                                 |
+| yOffset   | int                                                                                 |
+| zOffset   | int                                                                                 |
 
 
 :::

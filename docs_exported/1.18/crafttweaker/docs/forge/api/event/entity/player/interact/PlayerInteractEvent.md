@@ -102,15 +102,13 @@ Set the EnumActionResult that will be returned to vanilla if the event is cancel
 
  Note that this only has an effect on RightClickBlockEvent, RightClickItemEvent, EntityInteractEvent.
 
-Return Type: void
-
 ```zenscript
-PlayerInteractEvent.setCancellationResult(result as InteractionResult) as void
+PlayerInteractEvent.setCancellationResult(result as InteractionResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| result | [InteractionResult](/vanilla/api/world/InteractionResult) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| result    | [InteractionResult](/vanilla/api/world/InteractionResult) |
 
 
 :::
@@ -118,11 +116,11 @@ PlayerInteractEvent.setCancellationResult(result as InteractionResult) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
-| cancellationResult | [InteractionResult](/vanilla/api/world/InteractionResult) | true | true |  |
-| face | [Direction](/vanilla/api/util/direction/Direction)? | true | false | The face involved in this interaction. <br />  For all non-block interactions, this will return null |
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | true | false | No Description Provided |
-| itemStack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | The stack involved in this interaction. <br />  May be empty, but will never be null. |
+|        Name        |                           Type                            | Has Getter | Has Setter |                                                                                                         Description                                                                                                          |
+|--------------------|-----------------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| blockPos           | [BlockPos](/vanilla/api/util/math/BlockPos)               | true       | false      | If the interaction was on an entity, will be a BlockPos centered on the entity. <br />  If the interaction was on a block, will be the position of that block. <br />  Otherwise, will be a BlockPos centered on the player. |
+| cancellationResult | [InteractionResult](/vanilla/api/world/InteractionResult) | true       | true       |                                                                                                                                                                                                                              |
+| face               | [Direction](/vanilla/api/util/direction/Direction)?       | true       | false      | The face involved in this interaction. <br />  For all non-block interactions, this will return null                                                                                                                         |
+| hand               | [InteractionHand](/vanilla/api/util/InteractionHand)      | true       | false      |                                                                                                                                                                                                                              |
+| itemStack          | [IItemStack](/vanilla/api/item/IItemStack)                | true       | false      | The stack involved in this interaction. <br />  May be empty, but will never be null.                                                                                                                                        |
 

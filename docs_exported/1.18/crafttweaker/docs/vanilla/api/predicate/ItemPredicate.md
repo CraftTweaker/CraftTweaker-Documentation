@@ -42,9 +42,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicate.create(items as IItemStack[]) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | [IItemStack](/vanilla/api/item/IItemStack)[] | No Description Provided |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| items     | [IItemStack](/vanilla/api/item/IItemStack)[] |
 
 
 :::
@@ -57,9 +57,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicate.create(items as ItemDefinition[]) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | [ItemDefinition](/vanilla/api/item/ItemDefinition)[] | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| items     | [ItemDefinition](/vanilla/api/item/ItemDefinition)[] |
 
 
 :::
@@ -72,9 +72,9 @@ Return Type: [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicate
 ItemPredicate.create(tag as KnownTag<ItemDefinition>) as ItemPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| Parameter |                                                 Type                                                 |
+|-----------|------------------------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; |
 
 
 :::

@@ -42,8 +42,8 @@ myAbstractCookingRecipe.getExperience();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| cookingTime | int | true | false | No Description Provided |
-| experience | float | true | false | No Description Provided |
+|    Name     | Type  | Has Getter | Has Setter |
+|-------------|-------|------------|------------|
+| cookingTime | int   | true       | false      |
+| experience  | float | true       | false      |
 

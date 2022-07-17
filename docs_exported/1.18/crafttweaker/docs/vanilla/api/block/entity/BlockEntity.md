@@ -60,30 +60,26 @@ myBlockEntity.hasLevel();
 
 :::group{name=setData}
 
-Return Type: void
-
 ```zenscript
-BlockEntity.setData(data as MapData) as void
+BlockEntity.setData(data as MapData)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
 
 :::group{name=updateData}
 
-Return Type: void
-
 ```zenscript
-BlockEntity.updateData(data as MapData) as void
+BlockEntity.updateData(data as MapData)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -91,11 +87,11 @@ BlockEntity.updateData(data as MapData) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| blockState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData) | true | true | No Description Provided |
-| hasLevel | boolean | true | false | No Description Provided |
-| level | [Level](/vanilla/api/world/Level)? | true | false | No Description Provided |
+|    Name    |                    Type                     | Has Getter | Has Setter |
+|------------|---------------------------------------------|------------|------------|
+| blockPos   | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      |
+| blockState | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
+| data       | [MapData](/vanilla/api/data/MapData)        | true       | true       |
+| hasLevel   | boolean                                     | true       | false      |
+| level      | [Level](/vanilla/api/world/Level)?          | true       | false      |
 

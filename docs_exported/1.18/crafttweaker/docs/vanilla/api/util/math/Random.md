@@ -77,9 +77,9 @@ Return Type: int
 Random.nextInt(bound as int) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| bound | int | the upper bound (exclusive). Must be positive. |
+| Parameter | Type |                  Description                   |
+|-----------|------|------------------------------------------------|
+| bound     | int  | the upper bound (exclusive). Must be positive. |
 
 
 :::

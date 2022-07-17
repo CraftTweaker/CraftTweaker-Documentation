@@ -145,17 +145,17 @@ myUseOnContext.isSecondaryUseActive();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| clickLocation | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| clickedFace | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| clickedPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | true | false | No Description Provided |
-| horizontalDirection | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| isInside | boolean | true | false | No Description Provided |
-| isSecondaryUseActive | boolean | true | false | No Description Provided |
-| itemInHand | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| level | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| player | [Player](/vanilla/api/entity/type/player/Player)? | true | false | No Description Provided |
-| rotation | float | true | false | No Description Provided |
+|         Name         |                         Type                         | Has Getter | Has Setter |
+|----------------------|------------------------------------------------------|------------|------------|
+| clickLocation        | [Vec3](/vanilla/api/util/math/Vec3)                  | true       | false      |
+| clickedFace          | [Direction](/vanilla/api/util/direction/Direction)   | true       | false      |
+| clickedPos           | [BlockPos](/vanilla/api/util/math/BlockPos)          | true       | false      |
+| hand                 | [InteractionHand](/vanilla/api/util/InteractionHand) | true       | false      |
+| horizontalDirection  | [Direction](/vanilla/api/util/direction/Direction)   | true       | false      |
+| isInside             | boolean                                              | true       | false      |
+| isSecondaryUseActive | boolean                                              | true       | false      |
+| itemInHand           | [ItemStack](/vanilla/api/item/ItemStack)             | true       | false      |
+| level                | [Level](/vanilla/api/world/Level)                    | true       | false      |
+| player               | [Player](/vanilla/api/entity/type/player/Player)?    | true       | false      |
+| rotation             | float                                                | true       | false      |
 

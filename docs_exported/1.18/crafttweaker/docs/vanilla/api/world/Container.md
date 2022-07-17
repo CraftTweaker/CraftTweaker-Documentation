@@ -23,10 +23,10 @@ Return Type: boolean
 Container.canPlaceItem(index as int, stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| index     | int                                      |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -39,9 +39,9 @@ Return Type: int
 Container.countItem(item as ItemDefinition) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::
@@ -54,9 +54,9 @@ Return Type: int
 Container.countStack(item as IItemStack) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| item      | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -87,9 +87,9 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Container.getItem(index as int) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | The slot index to get. |
+| Parameter | Type |      Description       |
+|-----------|------|------------------------|
+| index     | int  | The slot index to get. |
 
 
 :::
@@ -114,9 +114,9 @@ Return Type: boolean
 Container.hasAnyOf(items as Set<ItemDefinition>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| items | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| items     | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; |
 
 
 :::
@@ -144,10 +144,10 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Container.removeItem(var1 as int, var2 as int) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| var1 | int | No Description Provided |
-| var2 | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| var1      | int  |
+| var2      | int  |
 
 
 :::
@@ -160,19 +160,17 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Container.removeItemNoUpdate(index as int) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| index     | int  |
 
 
 :::
 
 :::group{name=setChanged}
 
-Return Type: void
-
 ```zenscript
-// Container.setChanged() as void
+// Container.setChanged()
 
 myContainer.setChanged();
 ```
@@ -181,31 +179,27 @@ myContainer.setChanged();
 
 :::group{name=setItem}
 
-Return Type: void
-
 ```zenscript
-Container.setItem(index as int, stack as ItemStack) as void
+Container.setItem(index as int, stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| index | int | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| index     | int                                      |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=startOpen}
 
-Return Type: void
-
 ```zenscript
-Container.startOpen(player as Player) as void
+Container.startOpen(player as Player)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -218,24 +212,22 @@ Return Type: boolean
 Container.stillValid(player as Player) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
 
 :::group{name=stopOpen}
 
-Return Type: void
-
 ```zenscript
-Container.stopOpen(player as Player) as void
+Container.stopOpen(player as Player)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -243,10 +235,10 @@ Container.stopOpen(player as Player) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| changed | void | true | false | No Description Provided |
-| containerSize | int | true | false | Gets the size (how many slots) of this Container |
-| isEmpty | boolean | true | false | Checks if this Container is empty. |
-| maxStackSize | int | true | false | No Description Provided |
+|     Name      |  Type   | Has Getter | Has Setter |                   Description                    |
+|---------------|---------|------------|------------|--------------------------------------------------|
+| changed       | void    | true       | false      |                                                  |
+| containerSize | int     | true       | false      | Gets the size (how many slots) of this Container |
+| isEmpty       | boolean | true       | false      | Checks if this Container is empty.               |
+| maxStackSize  | int     | true       | false      |                                                  |
 

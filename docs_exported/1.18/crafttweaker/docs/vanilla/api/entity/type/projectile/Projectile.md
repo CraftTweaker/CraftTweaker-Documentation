@@ -40,15 +40,13 @@ myProjectile.getOwner();
 
 :::group{name=setOwner}
 
-Return Type: void
-
 ```zenscript
-Projectile.setOwner(entity as Entity?) as void
+Projectile.setOwner(entity as Entity?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -56,8 +54,8 @@ Projectile.setOwner(entity as Entity?) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| effectSource | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
-| owner | [Projectile](/vanilla/api/entity/type/projectile/Projectile) | true | true | No Description Provided |
+|     Name     |                             Type                             | Has Getter | Has Setter |
+|--------------|--------------------------------------------------------------|------------|------------|
+| effectSource | [Entity](/vanilla/api/entity/Entity)                         | true       | false      |
+| owner        | [Projectile](/vanilla/api/entity/type/projectile/Projectile) | true       | true       |
 

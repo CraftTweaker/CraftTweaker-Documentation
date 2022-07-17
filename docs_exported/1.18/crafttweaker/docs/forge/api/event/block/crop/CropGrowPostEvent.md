@@ -33,7 +33,7 @@ myCropGrowPostEvent.getOriginState();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| originState | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
+|    Name     |                    Type                     | Has Getter | Has Setter |
+|-------------|---------------------------------------------|------------|------------|
+| originState | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
 

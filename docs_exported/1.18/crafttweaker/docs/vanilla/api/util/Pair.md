@@ -18,12 +18,12 @@ Return Type: [Pair](/vanilla/api/util/Pair)&lt;F,S&gt;
 Pair.of<F : Object, S : Object>(first as F, second as S) as Pair<F,S>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| first | F | No Description Provided |
-| second | S | No Description Provided |
-| F | Object | No Description Provided |
-| S | Object | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| first     | F      |
+| second    | S      |
+| F         | Object |
+| S         | Object |
 
 
 :::

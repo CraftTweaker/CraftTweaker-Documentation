@@ -25,9 +25,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().addTask(new SleepTask(20));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| task | [ISequenceTask](/vanilla/api/sequence/task/ISequenceTask)&lt;T,U&gt; | The task to add. |
+| Parameter |                                 Type                                 |   Description    |
+|-----------|----------------------------------------------------------------------|------------------|
+| task      | [ISequenceTask](/vanilla/api/sequence/task/ISequenceTask)&lt;T,U&gt; | The task to add. |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().run((level, context) => level.setRainLevel(0.5));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | BiConsumer&lt;T,[SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt;&gt; | The function to run. |
+| Parameter |                                             Type                                             |     Description      |
+|-----------|----------------------------------------------------------------------------------------------|----------------------|
+| function  | BiConsumer&lt;T,[SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt;&gt; | The function to run. |
 
 
 :::
@@ -65,9 +65,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().run((level) => level.setRainLevel(0.5));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | Consumer&lt;T&gt; | The function to run. |
+| Parameter |       Type        |     Description      |
+|-----------|-------------------|----------------------|
+| function  | Consumer&lt;T&gt; | The function to run. |
 
 
 :::
@@ -85,9 +85,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().sleep(20);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | long | The amount of ticks to wait. |
+| Parameter | Type |         Description          |
+|-----------|------|------------------------------|
+| ticks     | long | The amount of ticks to wait. |
 
 
 :::
@@ -105,8 +105,8 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().sleepUntil((level, context) => level.isRaining);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |                                             Type                                              |        Description         |
+|-----------|-----------------------------------------------------------------------------------------------|----------------------------|
 | condition | BiPredicate&lt;T,[SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt;&gt; | The condition to wait for. |
 
 
@@ -125,8 +125,8 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().sleepUntil((level) => level.isRaining);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |        Type        |        Description         |
+|-----------|--------------------|----------------------------|
 | condition | Predicate&lt;T&gt; | The condition to wait for. |
 
 
@@ -162,9 +162,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().then((level, context) => level.setRainLevel(0.5));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | BiConsumer&lt;T,[SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt;&gt; | The function to run. |
+| Parameter |                                             Type                                             |     Description      |
+|-----------|----------------------------------------------------------------------------------------------|----------------------|
+| function  | BiConsumer&lt;T,[SequenceContext](/vanilla/api/util/sequence/SequenceContext)&lt;T,U&gt;&gt; | The function to run. |
 
 
 :::
@@ -184,9 +184,9 @@ Return Type: [SequenceBuilder](/vanilla/api/util/sequence/SequenceBuilder)&lt;T,
 level.sequence().then((level) => level.setRainLevel(0.5));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | Consumer&lt;T&gt; | The function to run. |
+| Parameter |       Type        |     Description      |
+|-----------|-------------------|----------------------|
+| function  | Consumer&lt;T&gt; | The function to run. |
 
 
 :::

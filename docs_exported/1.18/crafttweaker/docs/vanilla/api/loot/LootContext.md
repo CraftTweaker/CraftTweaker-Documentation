@@ -10,19 +10,19 @@ import crafttweaker.api.loot.LootContext;
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockEntity | [BlockEntity](/vanilla/api/block/entity/BlockEntity)? | true | false | No Description Provided |
-| blockState | [BlockState](/vanilla/api/block/BlockState)? | true | false | No Description Provided |
-| damageSource | [DamageSource](/vanilla/api/world/DamageSource)? | true | false | No Description Provided |
-| directKillerEntity | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| explosionRadius | float | true | false | No Description Provided |
-| killerEntity | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| lastDamagePlayer | [Player](/vanilla/api/entity/type/player/Player)? | true | false | No Description Provided |
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | true | false | No Description Provided |
-| luck | float | true | false | No Description Provided |
-| origin | [Vec3](/vanilla/api/util/math/Vec3)? | true | false | No Description Provided |
-| random | [Random](/vanilla/api/util/math/Random) | true | false | No Description Provided |
-| thisEntity | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| tool | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+|        Name        |                         Type                          | Has Getter | Has Setter |
+|--------------------|-------------------------------------------------------|------------|------------|
+| blockEntity        | [BlockEntity](/vanilla/api/block/entity/BlockEntity)? | true       | false      |
+| blockState         | [BlockState](/vanilla/api/block/BlockState)?          | true       | false      |
+| damageSource       | [DamageSource](/vanilla/api/world/DamageSource)?      | true       | false      |
+| directKillerEntity | [Entity](/vanilla/api/entity/Entity)?                 | true       | false      |
+| explosionRadius    | float                                                 | true       | false      |
+| killerEntity       | [Entity](/vanilla/api/entity/Entity)?                 | true       | false      |
+| lastDamagePlayer   | [Player](/vanilla/api/entity/type/player/Player)?     | true       | false      |
+| level              | [ServerLevel](/vanilla/api/world/ServerLevel)         | true       | false      |
+| luck               | float                                                 | true       | false      |
+| origin             | [Vec3](/vanilla/api/util/math/Vec3)?                  | true       | false      |
+| random             | [Random](/vanilla/api/util/math/Random)               | true       | false      |
+| thisEntity         | [Entity](/vanilla/api/entity/Entity)?                 | true       | false      |
+| tool               | [IItemStack](/vanilla/api/item/IItemStack)            | true       | false      |
 

@@ -60,8 +60,8 @@ myFrontAndTop.top();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| front | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| top | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
+| Name  |                        Type                        | Has Getter | Has Setter |
+|-------|----------------------------------------------------|------------|------------|
+| front | [Direction](/vanilla/api/util/direction/Direction) | true       | false      |
+| top   | [Direction](/vanilla/api/util/direction/Direction) | true       | false      |
 

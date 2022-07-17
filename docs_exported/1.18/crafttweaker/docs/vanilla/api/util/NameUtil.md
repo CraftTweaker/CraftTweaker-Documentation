@@ -23,9 +23,9 @@ Return Type: string
 NameUtil.fixing(input as string) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | string | The string that should be fixed to a [ResourceLocation](/vanilla/api/resource/ResourceLocation)-compatible format. |
+| Parameter |  Type  |                                                    Description                                                     |
+|-----------|--------|--------------------------------------------------------------------------------------------------------------------|
+| input     | string | The string that should be fixed to a [ResourceLocation](/vanilla/api/resource/ResourceLocation)-compatible format. |
 
 
 :::
@@ -41,9 +41,9 @@ Return Type: string
 NameUtil.fixing(input as string, mistakeHandler as BiConsumer<string,stdlib.List<string>>) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | string | The string that should be fixed to a [ResourceLocation](/vanilla/api/resource/ResourceLocation)-compatible format. |
+|   Parameter    |                        Type                        |                                                                                                                                    Description                                                                                                                                    |
+|----------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| input          | string                                             | The string that should be fixed to a [ResourceLocation](/vanilla/api/resource/ResourceLocation)-compatible format.                                                                                                                                                                |
 | mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
 
 
@@ -60,9 +60,9 @@ Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 NameUtil.fromFixedName(input as string) as ResourceLocation
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | string | The string that should be fixed and converted to a [ResourceLocation](/vanilla/api/resource/ResourceLocation). |
+| Parameter |  Type  |                                                  Description                                                   |
+|-----------|--------|----------------------------------------------------------------------------------------------------------------|
+| input     | string | The string that should be fixed and converted to a [ResourceLocation](/vanilla/api/resource/ResourceLocation). |
 
 
 :::
@@ -78,9 +78,9 @@ Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 NameUtil.fromFixedName(input as string, mistakeHandler as BiConsumer<string,stdlib.List<string>>) as ResourceLocation
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | string | The string that should be fixed and converted to a [ResourceLocation](/vanilla/api/resource/ResourceLocation). |
+|   Parameter    |                        Type                        |                                                                                                                                    Description                                                                                                                                    |
+|----------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| input          | string                                             | The string that should be fixed and converted to a [ResourceLocation](/vanilla/api/resource/ResourceLocation).                                                                                                                                                                    |
 | mistakeHandler | BiConsumer&lt;string,stdlib.List&lt;string&gt;&gt; | A bi-consumer that gets called if there were any mistakes in the original string. The first <br />                        element is the fixed string, and the second is a list of strings containing explanations <br />                        for all the identified mistakes. |
 
 
@@ -97,9 +97,9 @@ Return Type: boolean
 NameUtil.isAutogeneratedName(name as ResourceLocation) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name to verify. |
+| Parameter |                            Type                            |     Description     |
+|-----------|------------------------------------------------------------|---------------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name to verify. |
 
 
 :::

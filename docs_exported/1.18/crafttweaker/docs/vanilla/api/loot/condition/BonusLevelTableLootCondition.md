@@ -23,10 +23,10 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 BonusLevelTableLootCondition.create(enchantment as Enchantment, values as float[]) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | No Description Provided |
-| values | float[] | No Description Provided |
+|  Parameter  |                           Type                           |
+|-------------|----------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) |
+| values      | float[]                                                  |
 
 
 :::

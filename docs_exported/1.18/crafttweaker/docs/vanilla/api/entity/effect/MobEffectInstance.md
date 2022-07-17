@@ -23,9 +23,9 @@ Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)
 MobEffectInstance.load(data as MapData) as MobEffectInstance
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -37,9 +37,9 @@ MobEffectInstance.load(data as MapData) as MobEffectInstance
 new MobEffectInstance(mobEffect as MobEffect) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
 
 
 
@@ -47,10 +47,10 @@ new MobEffectInstance(<mobeffect:minecraft:haste>);
 new MobEffectInstance(mobEffect as MobEffect, duration as int) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>, 100);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
-| duration | int | No description provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
+| duration  | int                                               |
 
 
 
@@ -58,11 +58,11 @@ new MobEffectInstance(<mobeffect:minecraft:haste>, 100);
 new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
-| duration | int | No description provided |
-| amplifier | int | No description provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
+| duration  | int                                               |
+| amplifier | int                                               |
 
 
 
@@ -70,13 +70,13 @@ new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2);
 new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
-| duration | int | No description provided |
-| amplifier | int | No description provided |
-| ambient | boolean | No description provided |
-| visible | boolean | No description provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
+| duration  | int                                               |
+| amplifier | int                                               |
+| ambient   | boolean                                           |
+| visible   | boolean                                           |
 
 
 
@@ -84,14 +84,14 @@ new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false);
 new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean, showIcon as boolean) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
-| duration | int | No description provided |
-| amplifier | int | No description provided |
-| ambient | boolean | No description provided |
-| visible | boolean | No description provided |
-| showIcon | boolean | No description provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
+| duration  | int                                               |
+| amplifier | int                                               |
+| ambient   | boolean                                           |
+| visible   | boolean                                           |
+| showIcon  | boolean                                           |
 
 
 
@@ -99,15 +99,15 @@ new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false);
 new MobEffectInstance(mobEffect as MobEffect, duration as int, amplifier as int, ambient as boolean, visible as boolean, showIcon as boolean, hiddenEffect as MobEffectInstance) as MobEffectInstance
 new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false, new MobEffectInstance(<mobeffect:minecraft:haste>, 200, 3));
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| mobEffect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No description provided |
-| duration | int | No description provided |
-| amplifier | int | No description provided |
-| ambient | boolean | No description provided |
-| visible | boolean | No description provided |
-| showIcon | boolean | No description provided |
-| hiddenEffect | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No description provided |
+|  Parameter   |                               Type                                |
+|--------------|-------------------------------------------------------------------|
+| mobEffect    | [MobEffect](/vanilla/api/entity/effect/MobEffect)                 |
+| duration     | int                                                               |
+| amplifier    | int                                                               |
+| ambient      | boolean                                                           |
+| visible      | boolean                                                           |
+| showIcon     | boolean                                                           |
+| hiddenEffect | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 
@@ -115,15 +115,13 @@ new MobEffectInstance(<mobeffect:minecraft:haste>, 100, 2, true, false, false, n
 
 :::group{name=applyEffect}
 
-Return Type: void
-
 ```zenscript
-MobEffectInstance.applyEffect(entity as LivingEntity) as void
+MobEffectInstance.applyEffect(entity as LivingEntity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -136,9 +134,9 @@ Return Type: int
 MobEffectInstance.compareTo(other as MobEffectInstance) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
+| Parameter |                               Type                                |
+|-----------|-------------------------------------------------------------------|
+| other     | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 :::
@@ -235,24 +233,22 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 MobEffectInstance.save(data as MapData?) as MapData
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided | true |  |
+| Parameter |                 Type                  | Optional |
+|-----------|---------------------------------------|----------|
+| data      | [MapData](/vanilla/api/data/MapData)? | true     |
 
 
 :::
 
 :::group{name=setNoCounter}
 
-Return Type: void
-
 ```zenscript
-MobEffectInstance.setNoCounter(noCounter as boolean) as void
+MobEffectInstance.setNoCounter(noCounter as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| noCounter | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| noCounter | boolean |
 
 
 :::
@@ -277,10 +273,10 @@ Return Type: boolean
 MobEffectInstance.tick(entity as LivingEntity, onFinish as Runnable?) as boolean
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided | false |  |
-| onFinish | Runnable? | No Description Provided | true | null |
+| Parameter |                       Type                       | Optional | Default Value |
+|-----------|--------------------------------------------------|----------|---------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) | false    |               |
+| onFinish  | Runnable?                                        | true     | null          |
 
 
 :::
@@ -293,9 +289,9 @@ Return Type: boolean
 MobEffectInstance.update(instance as MobEffectInstance) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| instance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
+| Parameter |                               Type                                |
+|-----------|-------------------------------------------------------------------|
+| instance  | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 :::
@@ -303,14 +299,14 @@ MobEffectInstance.update(instance as MobEffectInstance) as boolean
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ambient | boolean | true | false | No Description Provided |
-| amplifier | int | true | false | No Description Provided |
-| descriptionId | string | true | false | No Description Provided |
-| duration | int | true | false | No Description Provided |
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | true | false | No Description Provided |
-| isNoCounter | boolean | true | false | No Description Provided |
-| showIcon | boolean | true | false | No Description Provided |
-| visible | boolean | true | false | No Description Provided |
+|     Name      |                       Type                        | Has Getter | Has Setter |
+|---------------|---------------------------------------------------|------------|------------|
+| ambient       | boolean                                           | true       | false      |
+| amplifier     | int                                               | true       | false      |
+| descriptionId | string                                            | true       | false      |
+| duration      | int                                               | true       | false      |
+| effect        | [MobEffect](/vanilla/api/entity/effect/MobEffect) | true       | false      |
+| isNoCounter   | boolean                                           | true       | false      |
+| showIcon      | boolean                                           | true       | false      |
+| visible       | boolean                                           | true       | false      |
 

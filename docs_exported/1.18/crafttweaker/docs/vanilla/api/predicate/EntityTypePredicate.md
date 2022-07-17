@@ -30,9 +30,9 @@ Return Type: [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)
 EntityTypePredicate.create(type as EntityType) as EntityTypePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| type      | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate)
 EntityTypePredicate.create(type as KnownTag<EntityType>) as EntityTypePredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
+| Parameter |                                              Type                                              |
+|-----------|------------------------------------------------------------------------------------------------|
+| type      | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; |
 
 
 :::

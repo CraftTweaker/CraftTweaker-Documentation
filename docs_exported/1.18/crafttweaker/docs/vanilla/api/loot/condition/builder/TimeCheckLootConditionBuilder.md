@@ -15,9 +15,9 @@ TimeCheckLootConditionBuilder implements the following interfaces. That means al
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -29,9 +29,9 @@ Return Type: [TimeCheckLootConditionBuilder](/vanilla/api/loot/condition/builder
 TimeCheckLootConditionBuilder.period(period as long) as TimeCheckLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| period | long | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| period    | long |
 
 
 :::

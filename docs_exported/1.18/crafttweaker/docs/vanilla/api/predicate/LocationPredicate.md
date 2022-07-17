@@ -30,11 +30,11 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.at(x as DoubleMinMaxBoundsPredicate, y as DoubleMinMaxBoundsPredicate, z as DoubleMinMaxBoundsPredicate) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| y | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
-| z | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| x         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| y         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
+| z         | [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBoundsPredicate) |
 
 
 :::
@@ -59,9 +59,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inBiome(biome as ResourceLocation) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| biome | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| biome     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -74,9 +74,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inBiome(biome as string) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| biome | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| biome     | string |
 
 
 :::
@@ -89,9 +89,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inDimension(dimension as ResourceLocation) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -104,9 +104,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inDimension(dimension as string) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| dimension | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| dimension | string |
 
 
 :::
@@ -119,9 +119,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inFeature(feature as ResourceLocation) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| feature | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| feature   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [LocationPredicate](/vanilla/api/predicate/LocationPredicate)
 LocationPredicate.inFeature(feature as string) as LocationPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| feature | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| feature   | string |
 
 
 :::

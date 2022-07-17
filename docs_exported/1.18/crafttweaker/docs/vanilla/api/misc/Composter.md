@@ -18,18 +18,16 @@ Sets the compost value of the given IItemStack.
 
  The amount should be between 0 and 1, anything above 1 would just be wasted.
 
-Return Type: void
-
 ```zenscript
-// Composter.setValue(stack as IItemStack, amount as float) as void
+// Composter.setValue(stack as IItemStack, amount as float)
 
 composter.setValue(<item:minecraft:diamond>, 0.85);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to be compostable |
-| amount | float | The amount of Compost that should be added when the item is put in a Composter. |
+| Parameter |                    Type                    |                                   Description                                   |
+|-----------|--------------------------------------------|---------------------------------------------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to be compostable                                                     |
+| amount    | float                                      | The amount of Compost that should be added when the item is put in a Composter. |
 
 
 :::

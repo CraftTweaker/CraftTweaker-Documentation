@@ -37,17 +37,15 @@ Updates the persistent NBT data for this player.
 
  Persistent data is kept through deaths
 
-Return Type: void
-
 ```zenscript
-// ServerPlayer.updatePersistentData(data as MapData) as void
+// ServerPlayer.updatePersistentData(data as MapData)
 
 myServerPlayer.updatePersistentData({custom: "data"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [MapData](/vanilla/api/data/MapData) | The custom data to store. |
+| Parameter |                 Type                 |        Description        |
+|-----------|--------------------------------------|---------------------------|
+| data      | [MapData](/vanilla/api/data/MapData) | The custom data to store. |
 
 
 :::
@@ -55,7 +53,7 @@ myServerPlayer.updatePersistentData({custom: "data"});
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| persistentData | [MapData](/vanilla/api/data/MapData) | true | false | Gets the persistent NBT data for this player. <br />  <br />  Persistent data is kept through deaths |
+|      Name      |                 Type                 | Has Getter | Has Setter |                                             Description                                              |
+|----------------|--------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------|
+| persistentData | [MapData](/vanilla/api/data/MapData) | true       | false      | Gets the persistent NBT data for this player. <br />  <br />  Persistent data is kept through deaths |
 

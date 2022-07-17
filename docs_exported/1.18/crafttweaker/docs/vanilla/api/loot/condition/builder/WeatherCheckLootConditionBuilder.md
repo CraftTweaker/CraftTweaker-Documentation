@@ -15,9 +15,9 @@ WeatherCheckLootConditionBuilder implements the following interfaces. That means
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -29,9 +29,9 @@ Return Type: [WeatherCheckLootConditionBuilder](/vanilla/api/loot/condition/buil
 WeatherCheckLootConditionBuilder.raining(raining as bool?) as WeatherCheckLootConditionBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| raining | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| raining   | bool? | true     | true          |
 
 
 :::
@@ -44,9 +44,9 @@ Return Type: [WeatherCheckLootConditionBuilder](/vanilla/api/loot/condition/buil
 WeatherCheckLootConditionBuilder.thundering(thundering as bool?) as WeatherCheckLootConditionBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| thundering | bool? | No Description Provided | true | true |
+| Parameter  | Type  | Optional | Default Value |
+|------------|-------|----------|---------------|
+| thundering | bool? | true     | true          |
 
 
 :::

@@ -45,8 +45,8 @@ myItemPickupEvent.getStack();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| originalEntity | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity) | true | false | No Description Provided |
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+|      Name      |                          Type                          | Has Getter | Has Setter |
+|----------------|--------------------------------------------------------|------------|------------|
+| originalEntity | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity) | true       | false      |
+| stack          | [IItemStack](/vanilla/api/item/IItemStack)             | true       | false      |
 

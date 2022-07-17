@@ -51,8 +51,8 @@ myLivingDestroyBlockEvent.getState();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| state | [BlockState](/vanilla/api/block/BlockState) | true | false | No Description Provided |
+| Name  |                    Type                     | Has Getter | Has Setter |
+|-------|---------------------------------------------|------------|------------|
+| pos   | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      |
+| state | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
 

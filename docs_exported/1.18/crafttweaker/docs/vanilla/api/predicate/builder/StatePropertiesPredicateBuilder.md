@@ -30,10 +30,10 @@ Return Type: [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/St
 StatePropertiesPredicateBuilder.property(name as string, value as boolean) as StatePropertiesPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| value | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| name      | string  |
+| value     | boolean |
 
 
 :::
@@ -46,10 +46,10 @@ Return Type: [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/St
 StatePropertiesPredicateBuilder.property(name as string, value as int) as StatePropertiesPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| value | int | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
+| value     | int    |
 
 
 :::
@@ -62,10 +62,10 @@ Return Type: [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/St
 StatePropertiesPredicateBuilder.property(name as string, value as IntMinMaxBoundsPredicate) as StatePropertiesPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| value | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| name      | string                                                                      |
+| value     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -78,10 +78,10 @@ Return Type: [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/St
 StatePropertiesPredicateBuilder.property(name as string, value as string) as StatePropertiesPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| value | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
+| value     | string |
 
 
 :::

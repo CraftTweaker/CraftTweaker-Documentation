@@ -19,13 +19,13 @@ WitherSkull extends [AbstractHurtingProjectile](/vanilla/api/entity/type/project
 new WitherSkull(level as Level, owner as LivingEntity, xPower as double, yPower as double, zPower as double) as WitherSkull
 new WitherSkull(level, entity, 9, 9, 9);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | The level the entity is in. |
-| owner | [LivingEntity](/vanilla/api/entity/LivingEntity) | The owner of the skull, used for position. |
-| xPower | double | The xPower of the entity. |
-| yPower | double | The yPower of the entity. |
-| zPower | double | The zPower of the entity. |
+| Parameter |                       Type                       |                Description                 |
+|-----------|--------------------------------------------------|--------------------------------------------|
+| level     | [Level](/vanilla/api/world/Level)                | The level the entity is in.                |
+| owner     | [LivingEntity](/vanilla/api/entity/LivingEntity) | The owner of the skull, used for position. |
+| xPower    | double                                           | The xPower of the entity.                  |
+| yPower    | double                                           | The yPower of the entity.                  |
+| zPower    | double                                           | The zPower of the entity.                  |
 
 
 
@@ -50,17 +50,15 @@ myWitherSkull.isDangerous();
 
 Sets whether this skull is dangerous or not.
 
-Return Type: void
-
 ```zenscript
-// WitherSkull.setDangerous(dangerous as boolean) as void
+// WitherSkull.setDangerous(dangerous as boolean)
 
 myWitherSkull.setDangerous(true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| dangerous | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| dangerous | boolean |
 
 
 :::
@@ -68,7 +66,7 @@ myWitherSkull.setDangerous(true);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| isDangerous | boolean | true | true | Gets whether this skull is dangerous or not. |
+|    Name     |  Type   | Has Getter | Has Setter |                 Description                  |
+|-------------|---------|------------|------------|----------------------------------------------|
+| isDangerous | boolean | true       | true       | Gets whether this skull is dangerous or not. |
 

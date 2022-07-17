@@ -19,13 +19,13 @@ LargeFireball extends [Fireball](/vanilla/api/entity/type/projectile/Fireball). 
 new LargeFireball(level as invalid, shooter as LivingEntity, xPower as double, yPower as double, zPower as double) as LargeFireball
 new LargeFireball(level, shooter, 0, 1, 2);
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | **invalid** | The level the entity is in. |
-| shooter | [LivingEntity](/vanilla/api/entity/LivingEntity) | The entity that created the fireball, used to get the position. |
-| xPower | double | The x power of the entity. |
-| yPower | double | The y power of the entity. |
-| zPower | double | The z power of the entity. |
+| Parameter |                       Type                       |                           Description                           |
+|-----------|--------------------------------------------------|-----------------------------------------------------------------|
+| level     | **invalid**                                      | The level the entity is in.                                     |
+| shooter   | [LivingEntity](/vanilla/api/entity/LivingEntity) | The entity that created the fireball, used to get the position. |
+| xPower    | double                                           | The x power of the entity.                                      |
+| yPower    | double                                           | The y power of the entity.                                      |
+| zPower    | double                                           | The z power of the entity.                                      |
 
 
 

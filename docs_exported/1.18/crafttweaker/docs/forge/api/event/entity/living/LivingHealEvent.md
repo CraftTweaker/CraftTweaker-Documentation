@@ -45,17 +45,15 @@ event.getAmount();
 
 Sets the amount of healing.
 
-Return Type: void
-
 ```zenscript
-// LivingHealEvent.setAmount(amount as float) as void
+// LivingHealEvent.setAmount(amount as float)
 
 event.setAmount(0.5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | float | The amount of damage to heal. |
+| Parameter | Type  |          Description          |
+|-----------|-------|-------------------------------|
+| amount    | float | The amount of damage to heal. |
 
 
 :::
@@ -63,7 +61,7 @@ event.setAmount(0.5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | float | true | true | Gets the amount of healing. |
+|  Name  | Type  | Has Getter | Has Setter |         Description         |
+|--------|-------|------------|------------|-----------------------------|
+| amount | float | true       | true       | Gets the amount of healing. |
 

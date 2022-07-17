@@ -34,9 +34,9 @@ myIIngredientWithAmount.getCommandString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | int | true | false | Gets the amount of Items in the ItemStack |
-| commandString | string | true | false | Returns the BEP to get this thingy |
-| ingredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | true | false | The backing ingredient |
+|     Name      |                        Type                        | Has Getter | Has Setter |                Description                |
+|---------------|----------------------------------------------------|------------|------------|-------------------------------------------|
+| amount        | int                                                | true       | false      | Gets the amount of Items in the ItemStack |
+| commandString | string                                             | true       | false      | Returns the BEP to get this thingy        |
+| ingredient    | [IIngredient](/vanilla/api/ingredient/IIngredient) | true       | false      | The backing ingredient                    |
 

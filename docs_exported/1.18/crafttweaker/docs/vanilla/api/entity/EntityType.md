@@ -10,9 +10,9 @@ import crafttweaker.api.entity.EntityType;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true |
+|                       Result Type                        | Is Implicit |
+|----------------------------------------------------------|-------------|
+| [EntityIngredient](/vanilla/api/entity/EntityIngredient) | true        |
 
 ## Methods
 
@@ -48,9 +48,9 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 EntityType.create(level as Level) as Entity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| level     | [Level](/vanilla/api/world/Level) |
 
 
 :::
@@ -63,16 +63,16 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 EntityType.create(level as ServerLevel, data as MapData?, displayName as Component?, spawningPlayer as Player?, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component)? | No Description Provided |
-| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| spawnType | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
-| alignPosition | boolean | No Description Provided |
-| invertY | boolean | No Description Provided |
+|   Parameter    |                       Type                        |
+|----------------|---------------------------------------------------|
+| level          | [ServerLevel](/vanilla/api/world/ServerLevel)     |
+| data           | [MapData](/vanilla/api/data/MapData)?             |
+| displayName    | [Component](/vanilla/api/text/Component)?         |
+| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? |
+| pos            | [BlockPos](/vanilla/api/util/math/BlockPos)       |
+| spawnType      | [MobSpawnType](/vanilla/api/entity/MobSpawnType)  |
+| alignPosition  | boolean                                           |
+| invertY        | boolean                                           |
 
 
 :::
@@ -181,9 +181,9 @@ Return Type: boolean
 EntityType.isBlockDangerous(state as BlockState) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
 
 
 :::
@@ -196,9 +196,9 @@ Return Type: boolean
 EntityType.isIn(tag as KnownTag<EntityType<Entity>>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&lt;[Entity](/vanilla/api/entity/Entity)&gt;&gt; | No Description Provided |
+| Parameter |                                                                    Type                                                                    |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&lt;[Entity](/vanilla/api/entity/Entity)&gt;&gt; |
 
 
 :::
@@ -211,16 +211,16 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 EntityType.spawn(level as ServerLevel, data as MapData?, displayName as Component?, spawningPlayer as Player?, pos as BlockPos, spawnType as MobSpawnType, alignPosition as boolean, invertY as boolean) as Entity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| data | [MapData](/vanilla/api/data/MapData)? | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component)? | No Description Provided |
-| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| spawnType | [MobSpawnType](/vanilla/api/entity/MobSpawnType) | No Description Provided |
-| alignPosition | boolean | No Description Provided |
-| invertY | boolean | No Description Provided |
+|   Parameter    |                       Type                        |
+|----------------|---------------------------------------------------|
+| level          | [ServerLevel](/vanilla/api/world/ServerLevel)     |
+| data           | [MapData](/vanilla/api/data/MapData)?             |
+| displayName    | [Component](/vanilla/api/text/Component)?         |
+| spawningPlayer | [Player](/vanilla/api/entity/type/player/Player)? |
+| pos            | [BlockPos](/vanilla/api/util/math/BlockPos)       |
+| spawnType      | [MobSpawnType](/vanilla/api/entity/MobSpawnType)  |
+| alignPosition  | boolean                                           |
+| invertY        | boolean                                           |
 
 
 :::
@@ -240,18 +240,18 @@ myEntityType.toShortString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| canSpawnFarFromPlayer | boolean | true | false | No Description Provided |
-| canSummon | boolean | true | false | No Description Provided |
-| category | [MobCategory](/vanilla/api/entity/MobCategory) | true | false | No Description Provided |
-| commandString | string | true | false | No Description Provided |
-| defaultLootTable | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| description | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| descriptionId | string | true | false | No Description Provided |
-| dimensions | [EntityDimensions](/vanilla/api/entity/EntityDimensions) | true | false | No Description Provided |
-| fireImmune | boolean | true | false | No Description Provided |
-| height | float | true | false | No Description Provided |
-| toShortString | string | true | false | No Description Provided |
-| width | float | true | false | No Description Provided |
+|         Name          |                            Type                            | Has Getter | Has Setter |
+|-----------------------|------------------------------------------------------------|------------|------------|
+| canSpawnFarFromPlayer | boolean                                                    | true       | false      |
+| canSummon             | boolean                                                    | true       | false      |
+| category              | [MobCategory](/vanilla/api/entity/MobCategory)             | true       | false      |
+| commandString         | string                                                     | true       | false      |
+| defaultLootTable      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
+| description           | [Component](/vanilla/api/text/Component)                   | true       | false      |
+| descriptionId         | string                                                     | true       | false      |
+| dimensions            | [EntityDimensions](/vanilla/api/entity/EntityDimensions)   | true       | false      |
+| fireImmune            | boolean                                                    | true       | false      |
+| height                | float                                                      | true       | false      |
+| toShortString         | string                                                     | true       | false      |
+| width                 | float                                                      | true       | false      |
 

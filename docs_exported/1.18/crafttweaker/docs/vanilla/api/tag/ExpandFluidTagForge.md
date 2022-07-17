@@ -4,9 +4,9 @@ This expansion specifically targets FluidTags on Forge.
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true |
+|                     Result Type                     | Is Implicit |
+|-----------------------------------------------------|-------------|
+| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
 
 ## Methods
 
@@ -30,9 +30,9 @@ Return Type: [FluidIngredient](/forge/api/fluid/FluidIngredient)
 KnownTag.asList(other as FluidIngredient) as FluidIngredient
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [FluidIngredient](/forge/api/fluid/FluidIngredient) | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| other     | [FluidIngredient](/forge/api/fluid/FluidIngredient) |
 
 
 :::

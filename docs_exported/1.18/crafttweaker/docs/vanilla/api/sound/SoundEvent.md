@@ -41,8 +41,8 @@ mySoundEvent.getLocation();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| location | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
+|     Name      |                            Type                            | Has Getter | Has Setter |
+|---------------|------------------------------------------------------------|------------|------------|
+| commandString | string                                                     | true       | false      |
+| location      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

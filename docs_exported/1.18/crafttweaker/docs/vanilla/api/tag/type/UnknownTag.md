@@ -17,10 +17,10 @@ UnknownTag implements the following interfaces. That means all methods defined i
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Many](/vanilla/api/util/Many)&lt;[UnknownTag](/vanilla/api/tag/type/UnknownTag)&gt; | true |
-| string | true |
+|                                     Result Type                                      | Is Implicit |
+|--------------------------------------------------------------------------------------|-------------|
+| [Many](/vanilla/api/util/Many)&lt;[UnknownTag](/vanilla/api/tag/type/UnknownTag)&gt; | true        |
+| string                                                                               | true        |
 
 ## Methods
 
@@ -28,17 +28,15 @@ UnknownTag implements the following interfaces. That means all methods defined i
 
 Adds the given tags to this tag.
 
-Return Type: void
-
 ```zenscript
-// UnknownTag.add(tags as MCTag[]) as void
+// UnknownTag.add(tags as MCTag[])
 
 myUnknownTag.add(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+| Parameter |               Type                |   Description    |
+|-----------|-----------------------------------|------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
 
 
 :::
@@ -47,17 +45,15 @@ myUnknownTag.add(<tag:items:minecraft:wool>);
 
 Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
-Return Type: void
-
 ```zenscript
-// UnknownTag.addId(elements as ResourceLocation[]) as void
+// UnknownTag.addId(elements as ResourceLocation[])
 
 myUnknownTag.addId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
+| Parameter |                             Type                             |               Description                |
+|-----------|--------------------------------------------------------------|------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
 
 
 :::
@@ -78,10 +74,8 @@ myUnknownTag.asTagWithAmount();
 
 Removes all elements in this tag.
 
-Return Type: void
-
 ```zenscript
-// UnknownTag.clear() as void
+// UnknownTag.clear()
 
 myUnknownTag.clear();
 ```
@@ -101,9 +95,9 @@ Return Type: boolean
 myUnknownTag.contains(<resource:minecraft:white_wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
+| Parameter |                            Type                            |           Description           |
+|-----------|------------------------------------------------------------|---------------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
 
 
 :::
@@ -121,9 +115,9 @@ Return Type: boolean
 myUnknownTag.equals(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
+| Parameter |              Type               |        Description        |
+|-----------|---------------------------------|---------------------------|
+| other     | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
 
 
 :::
@@ -186,17 +180,15 @@ myUnknownTag.manager();
 
 Removes the given tags from this tag.
 
-Return Type: void
-
 ```zenscript
-// UnknownTag.remove(tags as MCTag[]) as void
+// UnknownTag.remove(tags as MCTag[])
 
 myUnknownTag.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+| Parameter |               Type                |     Description     |
+|-----------|-----------------------------------|---------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
 
 
 :::
@@ -205,17 +197,15 @@ myUnknownTag.remove(<tag:items:minecraft:wool>);
 
 Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from this tag.
 
-Return Type: void
-
 ```zenscript
-// UnknownTag.removeId(elements as ResourceLocation[]) as void
+// UnknownTag.removeId(elements as ResourceLocation[])
 
 myUnknownTag.removeId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
+| Parameter |                             Type                             |                 Description                 |
+|-----------|--------------------------------------------------------------|---------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
 
 
 :::
@@ -228,9 +218,9 @@ Return Type: [Many](/vanilla/api/util/Many)&lt;[UnknownTag](/vanilla/api/tag/typ
 UnknownTag.withAmount(amount as int) as Many<UnknownTag>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -271,10 +261,10 @@ myUnknownTag * amount as int
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| exists | boolean | true | false | Checks if this tag exists. |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the id's of the elements in this tag. |
-| manager | [UnknownTagManager](/vanilla/api/tag/manager/type/UnknownTagManager) | true | false | No Description Provided |
+|    Name    |                                     Type                                      | Has Getter | Has Setter |                Description                 |
+|------------|-------------------------------------------------------------------------------|------------|------------|--------------------------------------------|
+| exists     | boolean                                                                       | true       | false      | Checks if this tag exists.                 |
+| id         | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                    | true       | false      |                                            |
+| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      | Gets the id's of the elements in this tag. |
+| manager    | [UnknownTagManager](/vanilla/api/tag/manager/type/UnknownTagManager)          | true       | false      |                                            |
 

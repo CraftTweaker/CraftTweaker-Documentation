@@ -104,11 +104,11 @@ myMobCategory.isPersistent();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| despawnDistance | int | true | false | No Description Provided |
-| friendly | boolean | true | false | No Description Provided |
-| maxInstancesPerChunk | int | true | false | No Description Provided |
-| noDespawnDistance | int | true | false | No Description Provided |
-| persistent | boolean | true | false | No Description Provided |
+|         Name         |  Type   | Has Getter | Has Setter |
+|----------------------|---------|------------|------------|
+| despawnDistance      | int     | true       | false      |
+| friendly             | boolean | true       | false      |
+| maxInstancesPerChunk | int     | true       | false      |
+| noDespawnDistance    | int     | true       | false      |
+| persistent           | boolean | true       | false      |
 

@@ -16,19 +16,17 @@ import crafttweaker.api.recipe.Brewing;
 
 Adds a new brewing recipe to the Brewing Stand.
 
-Return Type: void
-
 ```zenscript
-// Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient) as void
+// Brewing.addRecipe(output as IItemStack, reagent as IIngredient, input as IIngredient)
 
 brewing.addRecipe(<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft:arrow>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IItemStack](/vanilla/api/item/IItemStack) | The item that the recipe outputs. |
-| reagent | [IIngredient](/vanilla/api/ingredient/IIngredient) | The reagent that is put in the top slot of the Brewing Stand. |
-| input | [IIngredient](/vanilla/api/ingredient/IIngredient) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
+| Parameter |                        Type                        |                                               Description                                               |
+|-----------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| output    | [IItemStack](/vanilla/api/item/IItemStack)         | The item that the recipe outputs.                                                                       |
+| reagent   | [IIngredient](/vanilla/api/ingredient/IIngredient) | The reagent that is put in the top slot of the Brewing Stand.                                           |
+| input     | [IIngredient](/vanilla/api/ingredient/IIngredient) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
 :::
@@ -37,19 +35,17 @@ brewing.addRecipe(<item:minecraft:dirt>, <item:minecraft:apple>, <item:minecraft
 
 Removes an ItemStack to ItemStack recipe from the Brewing Stand. These are mainly potions added by mods.
 
-Return Type: void
-
 ```zenscript
-// Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack) as void
+// Brewing.removeRecipe(output as IItemStack, reagent as IItemStack, input as IItemStack)
 
 brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:minecraft:stick>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IItemStack](/vanilla/api/item/IItemStack) | The ItemStack that the recipe outputs. |
-| reagent | [IItemStack](/vanilla/api/item/IItemStack) | The reagent that is put in the top slot of the Brewing Stand. |
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
+| Parameter |                    Type                    |                                               Description                                               |
+|-----------|--------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| output    | [IItemStack](/vanilla/api/item/IItemStack) | The ItemStack that the recipe outputs.                                                                  |
+| reagent   | [IItemStack](/vanilla/api/item/IItemStack) | The reagent that is put in the top slot of the Brewing Stand.                                           |
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The Ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
 :::
@@ -58,19 +54,17 @@ brewing.removeRecipe(<item:minecraft:glass>, <item:minecraft:diamond>, <item:min
 
 Removes a Potion to Potion recipe from the Brewing Stand. These are mainly the default vanilla recipes.
 
-Return Type: void
-
 ```zenscript
-// Brewing.removeRecipe(output as Potion, reagent as IItemStack, input as Potion) as void
+// Brewing.removeRecipe(output as Potion, reagent as IItemStack, input as Potion)
 
 brewing.removeRecipe(<potion:minecraft:thick>, <item:minecraft:glowstone_dust>, <potion:minecraft:water>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [Potion](/vanilla/api/item/alchemy/Potion) | The Potion that the recipe outputs. |
-| reagent | [IItemStack](/vanilla/api/item/IItemStack) | The reagent that is put in the top slot of the Brewing Stand. |
-| input | [Potion](/vanilla/api/item/alchemy/Potion) | The Potion ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
+| Parameter |                    Type                    |                                                  Description                                                   |
+|-----------|--------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| output    | [Potion](/vanilla/api/item/alchemy/Potion) | The Potion that the recipe outputs.                                                                            |
+| reagent   | [IItemStack](/vanilla/api/item/IItemStack) | The reagent that is put in the top slot of the Brewing Stand.                                                  |
+| input     | [Potion](/vanilla/api/item/alchemy/Potion) | The Potion ingredient that get brewed into the output. E.G. a Water bottle getting brewed into a Thick Potion. |
 
 
 :::
@@ -79,17 +73,15 @@ brewing.removeRecipe(<potion:minecraft:thick>, <item:minecraft:glowstone_dust>, 
 
 Removes recipes from the Brewing Stand based on their Input (The ItemStack that goes in the bottom 3 slots). E.G. A water bottle in Vanilla brewing recipes
 
-Return Type: void
-
 ```zenscript
-// Brewing.removeRecipeByInput(input as IItemStack) as void
+// Brewing.removeRecipeByInput(input as IItemStack)
 
 brewing.removeRecipeByInput(<item:minecraft:glass>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The input of the recipes to remove. |
+| Parameter |                    Type                    |             Description             |
+|-----------|--------------------------------------------|-------------------------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input of the recipes to remove. |
 
 
 :::
@@ -99,15 +91,13 @@ brewing.removeRecipeByInput(<item:minecraft:glass>);
 Removes recipes from the Brewing Stand based on their input Potion. These are mainly the default vanilla recipes.
  The input potion is the potion that is in the top slot of the Brewing Stand.
 
-Return Type: void
-
 ```zenscript
-Brewing.removeRecipeByInputPotion(input as Potion) as void
+Brewing.removeRecipeByInputPotion(input as Potion)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [Potion](/vanilla/api/item/alchemy/Potion) | The input potion of the recipes to remove. |
+| Parameter |                    Type                    |                Description                 |
+|-----------|--------------------------------------------|--------------------------------------------|
+| input     | [Potion](/vanilla/api/item/alchemy/Potion) | The input potion of the recipes to remove. |
 
 
 :::
@@ -116,17 +106,15 @@ Brewing.removeRecipeByInputPotion(input as Potion) as void
 
 Removes recipes from the Brewing Stand based on their output Potion. These are mainly the default vanilla recipes.
 
-Return Type: void
-
 ```zenscript
-// Brewing.removeRecipeByOutputPotion(output as Potion) as void
+// Brewing.removeRecipeByOutputPotion(output as Potion)
 
 brewing.removeRecipeByOutputPotion(<potion:minecraft:swiftness>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [Potion](/vanilla/api/item/alchemy/Potion) | The potion of the recipes to remove. |
+| Parameter |                    Type                    |             Description              |
+|-----------|--------------------------------------------|--------------------------------------|
+| output    | [Potion](/vanilla/api/item/alchemy/Potion) | The potion of the recipes to remove. |
 
 
 :::
@@ -135,17 +123,15 @@ brewing.removeRecipeByOutputPotion(<potion:minecraft:swiftness>);
 
 Removes recipes from the Brewing Stand based on their Reagent (The item in the top slot).
 
-Return Type: void
-
 ```zenscript
-// Brewing.removeRecipeByReagent(reagent as IItemStack) as void
+// Brewing.removeRecipeByReagent(reagent as IItemStack)
 
 brewing.removeRecipeByReagent(<item:minecraft:golden_carrot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| reagent | [IItemStack](/vanilla/api/item/IItemStack) | The reagent of the recipes to remove. |
+| Parameter |                    Type                    |              Description              |
+|-----------|--------------------------------------------|---------------------------------------|
+| reagent   | [IItemStack](/vanilla/api/item/IItemStack) | The reagent of the recipes to remove. |
 
 
 :::

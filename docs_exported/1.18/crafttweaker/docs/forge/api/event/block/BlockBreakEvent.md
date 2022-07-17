@@ -52,15 +52,13 @@ myBlockBreakEvent.getPlayer();
 
 :::group{name=setExpToDrop}
 
-Return Type: void
-
 ```zenscript
-BlockBreakEvent.setExpToDrop(amount as int) as void
+BlockBreakEvent.setExpToDrop(amount as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -68,8 +66,8 @@ BlockBreakEvent.setExpToDrop(amount as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| expToDrop | int | true | true | No Description Provided |
-| player | [Player](/vanilla/api/entity/type/player/Player) | true | false | Gets the player who broke the block. If no player is available, use a fake player |
+|   Name    |                       Type                       | Has Getter | Has Setter |                                    Description                                    |
+|-----------|--------------------------------------------------|------------|------------|-----------------------------------------------------------------------------------|
+| expToDrop | int                                              | true       | true       |                                                                                   |
+| player    | [Player](/vanilla/api/entity/type/player/Player) | true       | false      | Gets the player who broke the block. If no player is available, use a fake player |
 

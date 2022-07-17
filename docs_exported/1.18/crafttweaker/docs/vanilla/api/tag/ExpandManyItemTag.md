@@ -7,9 +7,9 @@ This expansion specifically targets itemTags.
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true |
+|                              Result Type                               | Is Implicit |
+|------------------------------------------------------------------------|-------------|
+| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true        |
 
 ## Methods
 

@@ -17,13 +17,13 @@ InstantTask implements the following interfaces. That means all methods defined 
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new InstantTask<T,U>(actorConsumer as Consumer<T>) as InstantTask<T,U>
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| actorConsumer | Consumer&lt;T&gt; | No Description Provided |
+|   Parameter   |       Type        |
+|---------------|-------------------|
+| actorConsumer | Consumer&lt;T&gt; |
 
 
 

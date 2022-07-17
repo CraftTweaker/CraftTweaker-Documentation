@@ -39,7 +39,7 @@ myEntityStruckByLightningEvent.getLightning();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| lightning | [LightningBolt](/vanilla/api/entity/type/misc/LightningBolt) | true | false | No Description Provided |
+|   Name    |                             Type                             | Has Getter | Has Setter |
+|-----------|--------------------------------------------------------------|------------|------------|
+| lightning | [LightningBolt](/vanilla/api/entity/type/misc/LightningBolt) | true       | false      |
 

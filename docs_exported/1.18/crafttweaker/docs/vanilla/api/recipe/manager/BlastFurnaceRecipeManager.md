@@ -28,10 +28,8 @@ BlastFurnaceRecipeManager.INSTANCE
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack json, this effectively allows you to register recipes for any DataPack supporting RecipeType systems.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+// BlastFurnaceRecipeManager.addJsonRecipe(name as string, mapData as MapData)
 
 blastFurnace.addJsonRecipe("recipe_name", {
  ingredient: <item:minecraft:gold_ore>,
@@ -41,10 +39,10 @@ blastFurnace.addJsonRecipe("recipe_name", {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
+| Parameter |                 Type                 |           Description           |
+|-----------|--------------------------------------|---------------------------------|
+| name      | string                               | name of the recipe              |
+| mapData   | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::
@@ -59,21 +57,19 @@ Adds a recipe based on given params.
  (for example being able to give the player an infinitely burning furnace for whatever reason), you can
  still use a `cookTime` of `0`.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+// BlastFurnaceRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int)
 
 blastFurnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | Name of the new recipe |
-| output | [IItemStack](/vanilla/api/item/IItemStack) | IItemStack output of the recipe |
-| input | [IIngredient](/vanilla/api/ingredient/IIngredient) | IIngredient input of the recipe |
-| xp | float | how much xp the player gets |
-| cookTime | int | how long it takes to cook |
+| Parameter |                        Type                        |           Description           |
+|-----------|----------------------------------------------------|---------------------------------|
+| name      | string                                             | Name of the new recipe          |
+| output    | [IItemStack](/vanilla/api/item/IItemStack)         | IItemStack output of the recipe |
+| input     | [IIngredient](/vanilla/api/ingredient/IIngredient) | IIngredient input of the recipe |
+| xp        | float                                              | how much xp the player gets     |
+| cookTime  | int                                                | how long it takes to cook       |
 
 
 :::
@@ -98,9 +94,9 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 BlastFurnaceRecipeManager.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
 
 
 :::
@@ -128,9 +124,9 @@ Return Type: stdlib.List&lt;T&gt;
 BlastFurnaceRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -139,17 +135,15 @@ BlastFurnaceRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.Li
 
 Remove a recipe based on it's output.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.remove(output as IIngredient) as void
+// BlastFurnaceRecipeManager.remove(output as IIngredient)
 
 blastFurnace.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
+| Parameter |                        Type                        |     Description      |
+|-----------|----------------------------------------------------|----------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
 
 
 :::
@@ -158,10 +152,8 @@ blastFurnace.remove(<tag:items:minecraft:wool>);
 
 Remove all recipes in this registry
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.removeAll() as void
+// BlastFurnaceRecipeManager.removeAll()
 
 blastFurnace.removeAll();
 ```
@@ -172,17 +164,15 @@ blastFurnace.removeAll();
 
 Removes all recipes where the input contains the given IItemStack.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.removeByInput(input as IItemStack) as void
+// BlastFurnaceRecipeManager.removeByInput(input as IItemStack)
 
 blastFurnace.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
+| Parameter |                    Type                    |      Description      |
+|-----------|--------------------------------------------|-----------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
 
 
 :::
@@ -191,16 +181,14 @@ blastFurnace.removeByInput(<item:minecraft:iron_ingot>);
 
 Remove recipe based on Registry name modid
 
-Return Type: void
-
 ```zenscript
-BlastFurnaceRecipeManager.removeByModid(modid as string, exclude as Predicate<string>) as void
+BlastFurnaceRecipeManager.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |          Description           | Optional |           Default Value           |
+|-----------|-------------------------|--------------------------------|----------|-----------------------------------|
+| modid     | string                  | modid of the recipes to remove | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                                | true     | (name as string) as bool => false |
 
 
 :::
@@ -209,15 +197,13 @@ BlastFurnaceRecipeManager.removeByModid(modid as string, exclude as Predicate<st
 
 Remove recipes based on Registry names
 
-Return Type: void
-
 ```zenscript
-BlastFurnaceRecipeManager.removeByName(names as string[]) as void
+BlastFurnaceRecipeManager.removeByName(names as string[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| names | string[] | registry names of recipes to remove |
+| Parameter |   Type   |             Description             |
+|-----------|----------|-------------------------------------|
+| names     | string[] | registry names of recipes to remove |
 
 
 :::
@@ -226,18 +212,16 @@ BlastFurnaceRecipeManager.removeByName(names as string[]) as void
 
 Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
+// BlastFurnaceRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>)
 
 blastFurnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |      Description       | Optional |           Default Value           |
+|-----------|-------------------------|------------------------|----------|-----------------------------------|
+| regex     | string                  | regex to match against | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                        | true     | (name as string) as bool => false |
 
 
 :::
@@ -246,18 +230,16 @@ blastFurnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orang
 
 Removes a recipe based on it's output and input.
 
-Return Type: void
-
 ```zenscript
-// BlastFurnaceRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+// BlastFurnaceRecipeManager.removeRecipe(output as IItemStack, input as IIngredient)
 
 blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IItemStack](/vanilla/api/item/IItemStack) | IItemStack output of the recipe. |
-| input | [IIngredient](/vanilla/api/ingredient/IIngredient) | IIngredient of the recipe to remove. |
+| Parameter |                        Type                        |             Description              |
+|-----------|----------------------------------------------------|--------------------------------------|
+| output    | [IItemStack](/vanilla/api/item/IItemStack)         | IItemStack output of the recipe.     |
+| input     | [IIngredient](/vanilla/api/ingredient/IIngredient) | IIngredient of the recipe to remove. |
 
 
 :::
@@ -265,8 +247,8 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| allRecipes | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| recipeMap | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
+|    Name    |                             Type                              | Has Getter | Has Setter |             Description             |
+|------------|---------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;T&gt;                                          | true       | false      |                                     |
+| recipeMap  | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

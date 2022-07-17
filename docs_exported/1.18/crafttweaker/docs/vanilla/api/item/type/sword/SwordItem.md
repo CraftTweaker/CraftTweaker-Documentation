@@ -37,7 +37,7 @@ mySwordItem.getAttackDamage();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| attackDamage | float | true | false | Gets the attack damage of this sword. |
+|     Name     | Type  | Has Getter | Has Setter |              Description              |
+|--------------|-------|------------|------------|---------------------------------------|
+| attackDamage | float | true       | false      | Gets the attack damage of this sword. |
 

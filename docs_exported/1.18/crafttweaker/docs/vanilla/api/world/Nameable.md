@@ -61,10 +61,10 @@ myNameable.hasCustomName();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| customName | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| hasCustomName | boolean | true | false | No Description Provided |
-| name | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
+|     Name      |                   Type                    | Has Getter | Has Setter |
+|---------------|-------------------------------------------|------------|------------|
+| customName    | [Component](/vanilla/api/text/Component)? | true       | false      |
+| displayName   | [Component](/vanilla/api/text/Component)  | true       | false      |
+| hasCustomName | boolean                                   | true       | false      |
+| name          | [Component](/vanilla/api/text/Component)  | true       | false      |
 

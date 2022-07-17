@@ -138,17 +138,15 @@ Sets the level of the enchantment for this row.
 
  Setting this to `0` will make this row not have an enchantment.
 
-Return Type: void
-
 ```zenscript
-// EnchantmentLevelSetEvent.setLevel(level as int) as void
+// EnchantmentLevelSetEvent.setLevel(level as int)
 
 myEnchantmentLevelSetEvent.setLevel(5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | The new enchantment level. |
+| Parameter | Type |        Description         |
+|-----------|------|----------------------------|
+| level     | int  | The new enchantment level. |
 
 
 :::
@@ -156,13 +154,13 @@ myEnchantmentLevelSetEvent.setLevel(5);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| enchantRow | int | true | false | Gets the row in the Enchanting Table that this event is fired for. |
-| item | [IItemStack](/vanilla/api/item/IItemStack) | true | false | Gets the ItemStack that is being enchanted. |
-| level | int | true | true | Gets the current level of the enchantment for this row. <br />  <br />  This value can be changed by other mods. |
-| originalLevel | int | true | false | Gets the original level of the enchantment for this row. |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | Gets the position of the Enchanting Table firing this event. |
-| power | int | true | false | Gets the Enchanting Power of the Enchanting Table. |
-| world | [Level](/vanilla/api/world/Level) | true | false | Gets the Level where the Enchanting Table is. |
+|     Name      |                    Type                     | Has Getter | Has Setter |                                                   Description                                                    |
+|---------------|---------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------|
+| enchantRow    | int                                         | true       | false      | Gets the row in the Enchanting Table that this event is fired for.                                               |
+| item          | [IItemStack](/vanilla/api/item/IItemStack)  | true       | false      | Gets the ItemStack that is being enchanted.                                                                      |
+| level         | int                                         | true       | true       | Gets the current level of the enchantment for this row. <br />  <br />  This value can be changed by other mods. |
+| originalLevel | int                                         | true       | false      | Gets the original level of the enchantment for this row.                                                         |
+| pos           | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      | Gets the position of the Enchanting Table firing this event.                                                     |
+| power         | int                                         | true       | false      | Gets the Enchanting Power of the Enchanting Table.                                                               |
+| world         | [Level](/vanilla/api/world/Level)           | true       | false      | Gets the Level where the Enchanting Table is.                                                                    |
 

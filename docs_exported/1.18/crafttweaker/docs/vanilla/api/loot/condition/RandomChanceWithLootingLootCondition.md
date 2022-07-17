@@ -23,10 +23,10 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 RandomChanceWithLootingLootCondition.create(probability as float, lootingBoost as float) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| probability | float | No Description Provided |
-| lootingBoost | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| probability  | float |
+| lootingBoost | float |
 
 
 :::

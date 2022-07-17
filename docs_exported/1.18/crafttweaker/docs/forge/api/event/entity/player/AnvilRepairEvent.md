@@ -68,15 +68,13 @@ myAnvilRepairEvent.getItemResult();
 
 :::group{name=setBreakChance}
 
-Return Type: void
-
 ```zenscript
-AnvilRepairEvent.setBreakChance(breakChance as float) as void
+AnvilRepairEvent.setBreakChance(breakChance as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| breakChance | float | No Description Provided |
+|  Parameter  | Type  |
+|-------------|-------|
+| breakChance | float |
 
 
 :::
@@ -84,10 +82,10 @@ AnvilRepairEvent.setBreakChance(breakChance as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| breakChance | float | true | true | No Description Provided |
-| ingredientInput | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| itemInput | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| itemResult | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+|      Name       |                    Type                    | Has Getter | Has Setter |
+|-----------------|--------------------------------------------|------------|------------|
+| breakChance     | float                                      | true       | true       |
+| ingredientInput | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
+| itemInput       | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
+| itemResult      | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
 

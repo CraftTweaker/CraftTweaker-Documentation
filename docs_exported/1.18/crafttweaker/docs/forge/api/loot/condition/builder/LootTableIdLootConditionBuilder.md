@@ -15,7 +15,7 @@ LootTableIdLootConditionBuilder implements the following interfaces. That means 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 

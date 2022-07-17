@@ -37,7 +37,7 @@ myPlayerRespawnEvent.isEndConquered();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| isEndConquered | boolean | true | false | Was this event caused by the player entering the portal in the end? |
+|      Name      |  Type   | Has Getter | Has Setter |                             Description                             |
+|----------------|---------|------------|------------|---------------------------------------------------------------------|
+| isEndConquered | boolean | true       | false      | Was this event caused by the player entering the portal in the end? |
 

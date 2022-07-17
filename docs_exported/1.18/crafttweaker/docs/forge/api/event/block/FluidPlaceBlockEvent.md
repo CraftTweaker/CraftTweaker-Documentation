@@ -73,17 +73,15 @@ myFluidPlaceBlockEvent.getOriginalState();
 
 Sets the new BlockState that will be placed.
 
-Return Type: void
-
 ```zenscript
-// FluidPlaceBlockEvent.setNewState(state as BlockState) as void
+// FluidPlaceBlockEvent.setNewState(state as BlockState)
 
 myFluidPlaceBlockEvent.setNewState(<blockstate:minecraft:dirt>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | The new BlockState. |
+| Parameter |                    Type                     |     Description     |
+|-----------|---------------------------------------------|---------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) | The new BlockState. |
 
 
 :::
@@ -91,9 +89,9 @@ myFluidPlaceBlockEvent.setNewState(<blockstate:minecraft:dirt>);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| fluidPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | Gets the position of the Fluid that fired this event. |
-| newState | [BlockState](/vanilla/api/block/BlockState) | true | true | Gets the new BlockState that will be placed. |
-| originalState | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the original BlockState in the world before the event was fired. |
+|     Name      |                    Type                     | Has Getter | Has Setter |                              Description                              |
+|---------------|---------------------------------------------|------------|------------|-----------------------------------------------------------------------|
+| fluidPos      | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      | Gets the position of the Fluid that fired this event.                 |
+| newState      | [BlockState](/vanilla/api/block/BlockState) | true       | true       | Gets the new BlockState that will be placed.                          |
+| originalState | [BlockState](/vanilla/api/block/BlockState) | true       | false      | Gets the original BlockState in the world before the event was fired. |
 

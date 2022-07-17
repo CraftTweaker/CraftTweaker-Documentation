@@ -30,9 +30,9 @@ Return Type: [FishingHookPredicate](/vanilla/api/predicate/FishingHookPredicate)
 FishingHookPredicate.inOpenWaters(inOpenWaters as boolean) as FishingHookPredicate
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| inOpenWaters | boolean | No Description Provided | true | true |
+|  Parameter   |  Type   | Optional | Default Value |
+|--------------|---------|----------|---------------|
+| inOpenWaters | boolean | true     | true          |
 
 
 :::

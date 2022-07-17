@@ -2,9 +2,9 @@
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true |
+|                     Result Type                     | Is Implicit |
+|-----------------------------------------------------|-------------|
+| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
 
 ## Methods
 

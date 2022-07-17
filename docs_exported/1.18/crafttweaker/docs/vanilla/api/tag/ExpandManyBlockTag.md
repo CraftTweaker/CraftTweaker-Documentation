@@ -7,9 +7,9 @@ This expansion specifically targets itemTags.
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true        |
 
 ## Methods
 

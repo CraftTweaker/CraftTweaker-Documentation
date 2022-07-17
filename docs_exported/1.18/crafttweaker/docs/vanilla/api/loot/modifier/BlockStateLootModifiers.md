@@ -8,16 +8,14 @@ Additional methods for easier modification of block state-related loot tables.
 
 Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) to this block, ignoring the current state.
 
-Return Type: void
-
 ```zenscript
-BlockState.addBlockLootModifier(name as string, modifier as ILootModifier) as void
+BlockState.addBlockLootModifier(name as string, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add. |
+| Parameter |                           Type                            |          Description           |
+|-----------|-----------------------------------------------------------|--------------------------------|
+| name      | string                                                    | The name of the loot modifier. |
+| modifier  | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add.      |
 
 
 :::
@@ -26,16 +24,14 @@ BlockState.addBlockLootModifier(name as string, modifier as ILootModifier) as vo
 
 Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) to the current block, only if it matches the current block state precisely.
 
-Return Type: void
-
 ```zenscript
-BlockState.addTargetedLootModifier(name as string, modifier as ILootModifier) as void
+BlockState.addTargetedLootModifier(name as string, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
+| Parameter |                           Type                            |                 Description                  |
+|-----------|-----------------------------------------------------------|----------------------------------------------|
+| name      | string                                                    | The name of the loot modifier.               |
+| modifier  | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
 
 
 :::
@@ -46,17 +42,15 @@ Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that fires if 
 
  Parameters that may be attached to the tool such as count, damage, or NBT data are ignored.
 
-Return Type: void
-
 ```zenscript
-BlockState.addToolLootModifier(name as string, tool as IItemStack, modifier as ILootModifier) as void
+BlockState.addToolLootModifier(name as string, tool as IItemStack, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
-| tool | [IItemStack](/vanilla/api/item/IItemStack) | The tool the block state was broken with. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
+| Parameter |                           Type                            |                 Description                  |
+|-----------|-----------------------------------------------------------|----------------------------------------------|
+| name      | string                                                    | The name of the loot modifier.               |
+| tool      | [IItemStack](/vanilla/api/item/IItemStack)                | The tool the block state was broken with.    |
+| modifier  | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
 
 
 :::
@@ -68,18 +62,16 @@ Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that fires if 
 
  Additional parameters that may be attached to the tool, such as NBT or count, are ignored.
 
-Return Type: void
-
 ```zenscript
-BlockState.addToolLootModifier(name as string, tool as IItemStack, matchDamage as boolean, modifier as ILootModifier) as void
+BlockState.addToolLootModifier(name as string, tool as IItemStack, matchDamage as boolean, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
-| tool | [IItemStack](/vanilla/api/item/IItemStack) | The tool the block state was broken with. |
-| matchDamage | boolean | Whether to consider damage or not when trying to match the tool. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
+|  Parameter  |                           Type                            |                           Description                            |
+|-------------|-----------------------------------------------------------|------------------------------------------------------------------|
+| name        | string                                                    | The name of the loot modifier.                                   |
+| tool        | [IItemStack](/vanilla/api/item/IItemStack)                | The tool the block state was broken with.                        |
+| matchDamage | boolean                                                   | Whether to consider damage or not when trying to match the tool. |
+| modifier    | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state.                     |
 
 
 :::
@@ -91,19 +83,17 @@ Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) that fires if 
 
  Additional parameters that may be attached to the tool, such as count, are ignored.
 
-Return Type: void
-
 ```zenscript
-BlockState.addToolLootModifier(name as string, tool as IItemStack, matchDamage as boolean, matchNbt as boolean, modifier as ILootModifier) as void
+BlockState.addToolLootModifier(name as string, tool as IItemStack, matchDamage as boolean, matchNbt as boolean, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
-| tool | [IItemStack](/vanilla/api/item/IItemStack) | The tool the block state was broken with. |
-| matchDamage | boolean | Whether to consider damage or not when trying to match the tool. |
-| matchNbt | boolean | Whether to consider NBT data or not when trying to match the tool. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state. |
+|  Parameter  |                           Type                            |                            Description                             |
+|-------------|-----------------------------------------------------------|--------------------------------------------------------------------|
+| name        | string                                                    | The name of the loot modifier.                                     |
+| tool        | [IItemStack](/vanilla/api/item/IItemStack)                | The tool the block state was broken with.                          |
+| matchDamage | boolean                                                   | Whether to consider damage or not when trying to match the tool.   |
+| matchNbt    | boolean                                                   | Whether to consider NBT data or not when trying to match the tool. |
+| modifier    | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add to the block state.                       |
 
 
 :::

@@ -50,15 +50,13 @@ myLivingExperienceDropEvent.getDroppedExperience();
 
 :::group{name=getDroppedExperience}
 
-Return Type: void
-
 ```zenscript
-LivingExperienceDropEvent.getDroppedExperience(value as int) as void
+LivingExperienceDropEvent.getDroppedExperience(value as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
 
 
 :::
@@ -78,9 +76,9 @@ myLivingExperienceDropEvent.getOriginalExperiencePoints();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| attackingPlayer | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
-| droppedExperience | int | true | true | No Description Provided |
-| originalExperiencePoints | int | true | false | No Description Provided |
+|           Name           |                       Type                       | Has Getter | Has Setter |
+|--------------------------|--------------------------------------------------|------------|------------|
+| attackingPlayer          | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
+| droppedExperience        | int                                              | true       | true       |
+| originalExperiencePoints | int                                              | true       | false      |
 

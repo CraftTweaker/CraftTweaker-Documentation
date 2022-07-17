@@ -60,9 +60,9 @@ Return Type: string
 Component.getString(maxLength as int) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| maxLength | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| maxLength | int  |
 
 
 :::
@@ -94,9 +94,9 @@ myComponent.plainCopy();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| contents | string | true | false | No Description Provided |
-| siblings | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | true | false | No Description Provided |
-| style | [Style](/vanilla/api/text/Style) | true | false | No Description Provided |
+|   Name   |                            Type                             | Has Getter | Has Setter |
+|----------|-------------------------------------------------------------|------------|------------|
+| contents | string                                                      | true       | false      |
+| siblings | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | true       | false      |
+| style    | [Style](/vanilla/api/text/Style)                            | true       | false      |
 

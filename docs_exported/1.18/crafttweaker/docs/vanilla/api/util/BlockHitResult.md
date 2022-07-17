@@ -70,9 +70,9 @@ Return Type: [BlockHitResult](/vanilla/api/util/BlockHitResult)
 BlockHitResult.withDirection(param0 as Direction) as BlockHitResult
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| param0    | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -85,9 +85,9 @@ Return Type: [BlockHitResult](/vanilla/api/util/BlockHitResult)
 BlockHitResult.withPosition(param0 as BlockPos) as BlockHitResult
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| param0    | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -95,10 +95,10 @@ BlockHitResult.withPosition(param0 as BlockPos) as BlockHitResult
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockPos | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| isInside | boolean | true | false | No Description Provided |
-| type | [HitResultType](/vanilla/api/util/HitResultType) | true | false | No Description Provided |
+|   Name    |                        Type                        | Has Getter | Has Setter |
+|-----------|----------------------------------------------------|------------|------------|
+| blockPos  | [BlockPos](/vanilla/api/util/math/BlockPos)        | true       | false      |
+| direction | [Direction](/vanilla/api/util/direction/Direction) | true       | false      |
+| isInside  | boolean                                            | true       | false      |
+| type      | [HitResultType](/vanilla/api/util/HitResultType)   | true       | false      |
 

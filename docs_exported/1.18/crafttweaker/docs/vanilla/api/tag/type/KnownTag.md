@@ -20,24 +20,22 @@ KnownTag implements the following interfaces. That means all methods defined in 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Many](/vanilla/api/util/Many)&lt;[KnownTag](/vanilla/api/tag/type/KnownTag)&lt;T&gt;&gt; | true |
-| string | true |
+|                                        Result Type                                        | Is Implicit |
+|-------------------------------------------------------------------------------------------|-------------|
+| [Many](/vanilla/api/util/Many)&lt;[KnownTag](/vanilla/api/tag/type/KnownTag)&lt;T&gt;&gt; | true        |
+| string                                                                                    | true        |
 
 ## Methods
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-KnownTag.add(elements as T[]) as void
+KnownTag.add(elements as T[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | T[] | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| elements  | T[]  |
 
 
 :::
@@ -46,17 +44,15 @@ KnownTag.add(elements as T[]) as void
 
 Adds the given tags to this tag.
 
-Return Type: void
-
 ```zenscript
-// KnownTag.add(tags as MCTag[]) as void
+// KnownTag.add(tags as MCTag[])
 
 myKnownTag.add(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+| Parameter |               Type                |   Description    |
+|-----------|-----------------------------------|------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
 
 
 :::
@@ -65,17 +61,15 @@ myKnownTag.add(<tag:items:minecraft:wool>);
 
 Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
-Return Type: void
-
 ```zenscript
-// KnownTag.addId(elements as ResourceLocation[]) as void
+// KnownTag.addId(elements as ResourceLocation[])
 
 myKnownTag.addId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
+| Parameter |                             Type                             |               Description                |
+|-----------|--------------------------------------------------------------|------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
 
 
 :::
@@ -96,10 +90,8 @@ myKnownTag.asTagWithAmount();
 
 Removes all elements in this tag.
 
-Return Type: void
-
 ```zenscript
-// KnownTag.clear() as void
+// KnownTag.clear()
 
 myKnownTag.clear();
 ```
@@ -114,9 +106,9 @@ Return Type: boolean
 KnownTag.contains(element as T) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| element | T | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| element   | T    |
 
 
 :::
@@ -134,9 +126,9 @@ Return Type: boolean
 myKnownTag.contains(<resource:minecraft:white_wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
+| Parameter |                            Type                            |           Description           |
+|-----------|------------------------------------------------------------|---------------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
 
 
 :::
@@ -166,9 +158,9 @@ Return Type: boolean
 myKnownTag.equals(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
+| Parameter |              Type               |        Description        |
+|-----------|---------------------------------|---------------------------|
+| other     | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
 
 
 :::
@@ -229,15 +221,13 @@ myKnownTag.manager();
 
 :::group{name=remove}
 
-Return Type: void
-
 ```zenscript
-KnownTag.remove(elements as T[]) as void
+KnownTag.remove(elements as T[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | T[] | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| elements  | T[]  |
 
 
 :::
@@ -246,17 +236,15 @@ KnownTag.remove(elements as T[]) as void
 
 Removes the given tags from this tag.
 
-Return Type: void
-
 ```zenscript
-// KnownTag.remove(tags as MCTag[]) as void
+// KnownTag.remove(tags as MCTag[])
 
 myKnownTag.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+| Parameter |               Type                |     Description     |
+|-----------|-----------------------------------|---------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
 
 
 :::
@@ -265,17 +253,15 @@ myKnownTag.remove(<tag:items:minecraft:wool>);
 
 Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from this tag.
 
-Return Type: void
-
 ```zenscript
-// KnownTag.removeId(elements as ResourceLocation[]) as void
+// KnownTag.removeId(elements as ResourceLocation[])
 
 myKnownTag.removeId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
+| Parameter |                             Type                             |                 Description                 |
+|-----------|--------------------------------------------------------------|---------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
 
 
 :::
@@ -288,9 +274,9 @@ Return Type: [Many](/vanilla/api/util/Many)&lt;[KnownTag](/vanilla/api/tag/type/
 KnownTag.withAmount(amount as int) as Many<KnownTag<T>>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -331,11 +317,11 @@ myKnownTag * amount as int
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| elements | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| exists | boolean | true | false | Checks if this tag exists. |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the id's of the elements in this tag. |
-| manager | [KnownTagManager](/vanilla/api/tag/manager/type/KnownTagManager)&lt;T&gt; | true | false | No Description Provided |
+|    Name    |                                     Type                                      | Has Getter | Has Setter |                Description                 |
+|------------|-------------------------------------------------------------------------------|------------|------------|--------------------------------------------|
+| elements   | stdlib.List&lt;T&gt;                                                          | true       | false      |                                            |
+| exists     | boolean                                                                       | true       | false      | Checks if this tag exists.                 |
+| id         | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                    | true       | false      |                                            |
+| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      | Gets the id's of the elements in this tag. |
+| manager    | [KnownTagManager](/vanilla/api/tag/manager/type/KnownTagManager)&lt;T&gt;     | true       | false      |                                            |
 

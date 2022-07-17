@@ -15,9 +15,9 @@ AlternativeLootConditionBuilder implements the following interfaces. That means 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -29,9 +29,9 @@ Return Type: [AlternativeLootConditionBuilder](/vanilla/api/loot/condition/build
 AlternativeLootConditionBuilder.or(condition as LootConditionBuilder) as AlternativeLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| condition | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) | No Description Provided |
+| Parameter |                                       Type                                       |
+|-----------|----------------------------------------------------------------------------------|
+| condition | [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder) |
 
 
 :::

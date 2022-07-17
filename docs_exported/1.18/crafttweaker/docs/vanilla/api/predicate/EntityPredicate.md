@@ -42,9 +42,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicate.create(catType as ResourceLocation) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| catType | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| catType   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -57,9 +57,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicate.create(catType as string) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| catType | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| catType   | string |
 
 
 :::
@@ -72,9 +72,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicate.create(entityTag as KnownTag<EntityType>) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityTag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | No Description Provided |
+| Parameter |                                              Type                                              |
+|-----------|------------------------------------------------------------------------------------------------|
+| entityTag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; |
 
 
 :::
@@ -87,9 +87,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicate.create(entityType as EntityType) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityType | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| Parameter  |                     Type                     |
+|------------|----------------------------------------------|
+| entityType | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::

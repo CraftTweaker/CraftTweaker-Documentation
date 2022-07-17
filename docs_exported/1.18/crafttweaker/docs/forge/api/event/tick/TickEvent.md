@@ -105,13 +105,13 @@ myTickEvent.isStart();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| client | boolean | true | false | No Description Provided |
-| end | boolean | true | false | No Description Provided |
-| phase | [Phase](/forge/api/event/tick/Phase) | true | false | No Description Provided |
-| server | boolean | true | false | No Description Provided |
-| side | string | true | false | No Description Provided |
-| start | boolean | true | false | No Description Provided |
-| type | [Type](/forge/api/event/tick/Type) | true | false | No Description Provided |
+|  Name  |                 Type                 | Has Getter | Has Setter |
+|--------|--------------------------------------|------------|------------|
+| client | boolean                              | true       | false      |
+| end    | boolean                              | true       | false      |
+| phase  | [Phase](/forge/api/event/tick/Phase) | true       | false      |
+| server | boolean                              | true       | false      |
+| side   | string                               | true       | false      |
+| start  | boolean                              | true       | false      |
+| type   | [Type](/forge/api/event/tick/Type)   | true       | false      |
 

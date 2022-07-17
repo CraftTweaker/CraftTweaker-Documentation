@@ -18,47 +18,43 @@ Return Type: [MobEffect](/vanilla/api/entity/effect/MobEffect)
 MobEffect.addAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation) as MobEffect
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | No Description Provided |
-| name | string | No Description Provided |
-| value | double | No Description Provided |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | No Description Provided |
+| Parameter |                                  Type                                  |
+|-----------|------------------------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   |
+| name      | string                                                                 |
+| value     | double                                                                 |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) |
 
 
 :::
 
 :::group{name=applyEffectTick}
 
-Return Type: void
-
 ```zenscript
-MobEffect.applyEffectTick(entity as LivingEntity, amplifier as int) as void
+MobEffect.applyEffectTick(entity as LivingEntity, amplifier as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
-| amplifier | int | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+| amplifier | int                                              |
 
 
 :::
 
 :::group{name=applyInstantenousEffect}
 
-Return Type: void
-
 ```zenscript
-MobEffect.applyInstantenousEffect(source as Entity, indirectSource as Entity, target as LivingEntity, amplifier as int, effectiveness as double) as void
+MobEffect.applyInstantenousEffect(source as Entity, indirectSource as Entity, target as LivingEntity, amplifier as int, effectiveness as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| indirectSource | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| target | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
-| amplifier | int | No Description Provided |
-| effectiveness | double | No Description Provided |
+|   Parameter    |                       Type                       |
+|----------------|--------------------------------------------------|
+| source         | [Entity](/vanilla/api/entity/Entity)             |
+| indirectSource | [Entity](/vanilla/api/entity/Entity)             |
+| target         | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+| amplifier      | int                                              |
+| effectiveness  | double                                           |
 
 
 :::
@@ -71,10 +67,10 @@ Return Type: double
 MobEffect.getAttributeModifierValue(amplifier as int, modifier as AttributeModifier) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amplifier | int | No Description Provided |
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | No Description Provided |
+| Parameter |                                 Type                                 |
+|-----------|----------------------------------------------------------------------|
+| amplifier | int                                                                  |
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) |
 
 
 :::
@@ -159,10 +155,10 @@ Return Type: boolean
 MobEffect.isDurationEffectTick(duration as int, amplifier as int) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| duration | int | No Description Provided |
-| amplifier | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| duration  | int  |
+| amplifier | int  |
 
 
 :::
@@ -182,13 +178,13 @@ myMobEffect.isInstantenous();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| beneficial | boolean | true | false | No Description Provided |
-| category | [MobEffectCategory](/vanilla/api/entity/effect/MobEffectCategory) | true | false | No Description Provided |
-| color | int | true | false | No Description Provided |
-| commandString | string | true | false | No Description Provided |
-| descriptionId | string | true | false | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| instantenous | boolean | true | false | No Description Provided |
+|     Name      |                               Type                                | Has Getter | Has Setter |
+|---------------|-------------------------------------------------------------------|------------|------------|
+| beneficial    | boolean                                                           | true       | false      |
+| category      | [MobEffectCategory](/vanilla/api/entity/effect/MobEffectCategory) | true       | false      |
+| color         | int                                                               | true       | false      |
+| commandString | string                                                            | true       | false      |
+| descriptionId | string                                                            | true       | false      |
+| displayName   | [Component](/vanilla/api/text/Component)                          | true       | false      |
+| instantenous  | boolean                                                           | true       | false      |
 

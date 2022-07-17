@@ -51,8 +51,8 @@ myLivingAttackEvent.getSource();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | float | true | false | No Description Provided |
-| source | [DamageSource](/vanilla/api/world/DamageSource)? | true | false | No Description Provided |
+|  Name  |                       Type                       | Has Getter | Has Setter |
+|--------|--------------------------------------------------|------------|------------|
+| amount | float                                            | true       | false      |
+| source | [DamageSource](/vanilla/api/world/DamageSource)? | true       | false      |
 

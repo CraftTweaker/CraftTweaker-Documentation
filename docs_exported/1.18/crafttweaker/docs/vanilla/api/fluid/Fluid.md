@@ -30,9 +30,9 @@ Return Type: boolean
 Fluid.isIn(tag as KnownTag<Fluid>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: boolean
 Fluid.isSame(other as Fluid) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Fluid](/vanilla/api/fluid/Fluid) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| other     | [Fluid](/vanilla/api/fluid/Fluid) |
 
 
 :::
@@ -55,8 +55,8 @@ Fluid.isSame(other as Fluid) as boolean
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| bucket | [ItemDefinition](/vanilla/api/item/ItemDefinition) | true | false | No Description Provided |
-| commandString | string | true | false | No Description Provided |
+|     Name      |                        Type                        | Has Getter | Has Setter |
+|---------------|----------------------------------------------------|------------|------------|
+| bucket        | [ItemDefinition](/vanilla/api/item/ItemDefinition) | true       | false      |
+| commandString | string                                             | true       | false      |
 

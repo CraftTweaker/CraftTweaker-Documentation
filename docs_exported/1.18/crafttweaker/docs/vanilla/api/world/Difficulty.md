@@ -59,9 +59,9 @@ myDifficulty.getKey();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| id | int | true | false | No Description Provided |
-| key | string | true | false | No Description Provided |
+|    Name     |                   Type                   | Has Getter | Has Setter |
+|-------------|------------------------------------------|------------|------------|
+| displayName | [Component](/vanilla/api/text/Component) | true       | false      |
+| id          | int                                      | true       | false      |
+| key         | string                                   | true       | false      |
 

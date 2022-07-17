@@ -158,9 +158,9 @@ Return Type: [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet)
 LootContextParamSets.get(name as ResourceLocation) as LootContextParamSet
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the param. |
+| Parameter |                            Type                            |      Description       |
+|-----------|------------------------------------------------------------|------------------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the param. |
 
 
 :::

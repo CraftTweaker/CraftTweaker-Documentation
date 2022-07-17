@@ -72,15 +72,13 @@ myEntityAccess.isAlwaysTicking();
 
 :::group{name=setRemoved}
 
-Return Type: void
-
 ```zenscript
-EntityAccess.setRemoved(var1 as RemovalReason) as void
+EntityAccess.setRemoved(var1 as RemovalReason)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| var1 | [RemovalReason](/vanilla/api/entity/RemovalReason) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| var1      | [RemovalReason](/vanilla/api/entity/RemovalReason) |
 
 
 :::
@@ -100,12 +98,12 @@ myEntityAccess.shouldBeSaved();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockPosiion | [BlockPos](/vanilla/api/util/math/BlockPos) | true | false | No Description Provided |
-| boundingBox | [AABB](/vanilla/api/util/math/AABB) | true | false | No Description Provided |
-| id | int | true | false | No Description Provided |
-| isAlwaysTicking | boolean | true | false | No Description Provided |
-| shouldBeSaved | boolean | true | false | No Description Provided |
-| uuid | **invalid** | true | false | No Description Provided |
+|      Name       |                    Type                     | Has Getter | Has Setter |
+|-----------------|---------------------------------------------|------------|------------|
+| blockPosiion    | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      |
+| boundingBox     | [AABB](/vanilla/api/util/math/AABB)         | true       | false      |
+| id              | int                                         | true       | false      |
+| isAlwaysTicking | boolean                                     | true       | false      |
+| shouldBeSaved   | boolean                                     | true       | false      |
+| uuid            | **invalid**                                 | true       | false      |
 

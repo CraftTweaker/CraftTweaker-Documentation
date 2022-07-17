@@ -15,9 +15,9 @@ BlockStatePropertyLootConditionBuilder implements the following interfaces. That
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true |
+|                        Result Type                         | Is Implicit |
+|------------------------------------------------------------|-------------|
+| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
 
 ## Methods
 
@@ -29,9 +29,9 @@ Return Type: [BlockStatePropertyLootConditionBuilder](/vanilla/api/loot/conditio
 BlockStatePropertyLootConditionBuilder.properties(predicate as StatePropertiesPredicateBuilder) as BlockStatePropertyLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) | No Description Provided |
+| Parameter |                                               Type                                                |
+|-----------|---------------------------------------------------------------------------------------------------|
+| predicate | [StatePropertiesPredicateBuilder](/vanilla/api/predicate/builder/StatePropertiesPredicateBuilder) |
 
 
 :::

@@ -17,13 +17,13 @@ SleepUntilTask implements the following interfaces. That means all methods defin
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new SleepUntilTask<T,U>(condition as Predicate<T>) as SleepUntilTask<T,U>
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| condition | Predicate&lt;T&gt; | No Description Provided |
+| Parameter |        Type        |
+|-----------|--------------------|
+| condition | Predicate&lt;T&gt; |
 
 
 

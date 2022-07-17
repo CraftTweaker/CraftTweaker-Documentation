@@ -49,9 +49,9 @@ myPosition.z();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| x | double | true | false | No Description Provided |
-| y | double | true | false | No Description Provided |
-| z | double | true | false | No Description Provided |
+| Name |  Type  | Has Getter | Has Setter |
+|------|--------|------------|------------|
+| x    | double | true       | false      |
+| y    | double | true       | false      |
+| z    | double | true       | false      |
 

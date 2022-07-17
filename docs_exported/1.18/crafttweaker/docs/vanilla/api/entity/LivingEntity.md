@@ -22,9 +22,9 @@ Return Type: boolean
 LivingEntity.addEffect(effectInstance as MobEffectInstance) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
+|   Parameter    |                               Type                                |
+|----------------|-------------------------------------------------------------------|
+| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 :::
@@ -37,10 +37,10 @@ Return Type: boolean
 LivingEntity.addEffect(effectInstance as MobEffectInstance, entity as Entity?) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+|   Parameter    |                               Type                                |
+|----------------|-------------------------------------------------------------------|
+| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
+| entity         | [Entity](/vanilla/api/entity/Entity)?                             |
 
 
 :::
@@ -65,9 +65,9 @@ Return Type: boolean
 LivingEntity.canAttack(target as LivingEntity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| target    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -80,9 +80,9 @@ Return Type: boolean
 LivingEntity.canBeAffected(effectInstance as MobEffectInstance) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
+|   Parameter    |                               Type                                |
+|----------------|-------------------------------------------------------------------|
+| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 :::
@@ -143,9 +143,9 @@ Return Type: boolean
 LivingEntity.canStandOnFluid(fluid as Fluid) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fluid | [Fluid](/vanilla/api/fluid/Fluid) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| fluid     | [Fluid](/vanilla/api/fluid/Fluid) |
 
 
 :::
@@ -158,19 +158,17 @@ Return Type: boolean
 LivingEntity.canTakeItem(stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=clearSleepingPos}
 
-Return Type: void
-
 ```zenscript
-// LivingEntity.clearSleepingPos() as void
+// LivingEntity.clearSleepingPos()
 
 myLivingEntity.clearSleepingPos();
 ```
@@ -179,15 +177,13 @@ myLivingEntity.clearSleepingPos();
 
 :::group{name=die}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.die(source as DamageSource) as void
+LivingEntity.die(source as DamageSource)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
 
 
 :::
@@ -200,9 +196,9 @@ Return Type: boolean
 LivingEntity.doHurtTarget(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -215,26 +211,24 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 LivingEntity.eat(level as Level, stack as ItemStack) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| level     | [Level](/vanilla/api/world/Level)        |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=forceAddEffect}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.forceAddEffect(effectInstance as MobEffectInstance, entity as Entity?) as void
+LivingEntity.forceAddEffect(effectInstance as MobEffectInstance, entity as Entity?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| entity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+|   Parameter    |                               Type                                |
+|----------------|-------------------------------------------------------------------|
+| effectInstance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
+| entity         | [Entity](/vanilla/api/entity/Entity)?                             |
 
 
 :::
@@ -319,9 +313,9 @@ Return Type: [AttributeInstance](/vanilla/api/entity/attribute/AttributeInstance
 LivingEntity.getAttribute(attribute as Attribute) as AttributeInstance?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) |
 
 
 :::
@@ -334,9 +328,9 @@ Return Type: double
 LivingEntity.getAttributeBaseValue(attribute as Attribute) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) |
 
 
 :::
@@ -349,9 +343,9 @@ Return Type: double
 LivingEntity.getAttributeValue(attribute as Attribute) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) |
 
 
 :::
@@ -376,9 +370,9 @@ Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)?
 LivingEntity.getEffect(effect as MobEffect) as MobEffectInstance?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
 
 
 :::
@@ -415,9 +409,9 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 LivingEntity.getItemBySlot(slot as EquipmentSlot) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| slot      | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) |
 
 
 :::
@@ -430,9 +424,9 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 LivingEntity.getItemInHand(hand as InteractionHand) as ItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| hand      | [InteractionHand](/vanilla/api/util/InteractionHand) |
 
 
 :::
@@ -685,9 +679,9 @@ Return Type: float
 LivingEntity.getSwimAmount(partialTicks as float) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| partialTicks | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| partialTicks | float |
 
 
 :::
@@ -748,9 +742,9 @@ Return Type: double
 LivingEntity.getVisibilityPercent(lookingEntity as Entity?) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| lookingEntity | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+|   Parameter   |                 Type                  |
+|---------------|---------------------------------------|
+| lookingEntity | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -775,9 +769,9 @@ Return Type: boolean
 LivingEntity.hasEffect(effect as MobEffect) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
 
 
 :::
@@ -790,9 +784,9 @@ Return Type: boolean
 LivingEntity.hasItemInSlot(slot as EquipmentSlot) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| slot      | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) |
 
 
 :::
@@ -805,24 +799,22 @@ Return Type: boolean
 LivingEntity.hasLineOfSight(entity as Entity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
 
 :::group{name=heal}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.heal(amount as float) as void
+LivingEntity.heal(amount as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| amount    | float |
 
 
 :::
@@ -895,9 +887,9 @@ Return Type: boolean
 LivingEntity.isDamageSourceBlocked(source as DamageSource) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| source | [DamageSource](/vanilla/api/world/DamageSource) | No Description Provided |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
 
 
 :::
@@ -934,9 +926,9 @@ Return Type: boolean
 LivingEntity.isHolding(item as ItemDefinition) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::
@@ -949,9 +941,9 @@ Return Type: boolean
 LivingEntity.isHolding(predicate as Predicate<ItemStack>) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
 
 
 :::
@@ -1030,27 +1022,23 @@ myLivingEntity.isVisuallySwimming();
 
 :::group{name=knockback}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.knockback(x as double, y as double, z as double) as void
+LivingEntity.knockback(x as double, y as double, z as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
 
 :::group{name=releaseUsingItem}
 
-Return Type: void
-
 ```zenscript
-// LivingEntity.releaseUsingItem() as void
+// LivingEntity.releaseUsingItem()
 
 myLivingEntity.releaseUsingItem();
 ```
@@ -1077,9 +1065,9 @@ Return Type: boolean
 LivingEntity.removeEffect(effect as MobEffect) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
 
 
 :::
@@ -1092,205 +1080,179 @@ Return Type: [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)?
 LivingEntity.removeEffectNoUpdate(effect as MobEffect?) as MobEffectInstance?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect)? | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect)? |
 
 
 :::
 
 :::group{name=setAbsorptionAmount}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setAbsorptionAmount(absorption as float) as void
+LivingEntity.setAbsorptionAmount(absorption as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| absorption | float | No Description Provided |
+| Parameter  | Type  |
+|------------|-------|
+| absorption | float |
 
 
 :::
 
 :::group{name=setArrowCount}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setArrowCount(count as int) as void
+LivingEntity.setArrowCount(count as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| count | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| count     | int  |
 
 
 :::
 
 :::group{name=setDiscardFriction}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setDiscardFriction(discardFriction as boolean) as void
+LivingEntity.setDiscardFriction(discardFriction as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| discardFriction | boolean | No Description Provided |
+|    Parameter    |  Type   |
+|-----------------|---------|
+| discardFriction | boolean |
 
 
 :::
 
 :::group{name=setHealth}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setHealth(health as float) as void
+LivingEntity.setHealth(health as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| health | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| health    | float |
 
 
 :::
 
 :::group{name=setItemInHand}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setItemInHand(hand as InteractionHand, stack as ItemStack) as void
+LivingEntity.setItemInHand(hand as InteractionHand, stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | No Description Provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| hand      | [InteractionHand](/vanilla/api/util/InteractionHand) |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack)             |
 
 
 :::
 
 :::group{name=setJumping}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setJumping(jumping as boolean) as void
+LivingEntity.setJumping(jumping as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| jumping | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| jumping   | boolean |
 
 
 :::
 
 :::group{name=setLastHurtByMob}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setLastHurtByMob(entity as LivingEntity?) as void
+LivingEntity.setLastHurtByMob(entity as LivingEntity?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity)? |
 
 
 :::
 
 :::group{name=setLastHurtByPlayer}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setLastHurtByPlayer(player as Player?) as void
+LivingEntity.setLastHurtByPlayer(player as Player?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player)? |
 
 
 :::
 
 :::group{name=setLastHurtMob}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setLastHurtMob(entity as Entity) as void
+LivingEntity.setLastHurtMob(entity as Entity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
 
 :::group{name=setNoActionTime}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setNoActionTime(idleTime as int) as void
+LivingEntity.setNoActionTime(idleTime as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| idleTime | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| idleTime  | int  |
 
 
 :::
 
 :::group{name=setSleepingPos}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setSleepingPos(pos as BlockPos) as void
+LivingEntity.setSleepingPos(pos as BlockPos)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
 
 :::group{name=setSpeed}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setSpeed(speed as float) as void
+LivingEntity.setSpeed(speed as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| speed | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| speed     | float |
 
 
 :::
 
 :::group{name=setStingerCount}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.setStingerCount(count as int) as void
+LivingEntity.setStingerCount(count as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| count | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| count     | int  |
 
 
 :::
@@ -1309,40 +1271,34 @@ myLivingEntity.shouldDiscardFriction();
 
 :::group{name=startSleeping}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.startSleeping(pos as BlockPos) as void
+LivingEntity.startSleeping(pos as BlockPos)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
 
 :::group{name=startUsingItem}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.startUsingItem(param0 as InteractionHand) as void
+LivingEntity.startUsingItem(param0 as InteractionHand)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | [InteractionHand](/vanilla/api/util/InteractionHand) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| param0    | [InteractionHand](/vanilla/api/util/InteractionHand) |
 
 
 :::
 
 :::group{name=stopSleeping}
 
-Return Type: void
-
 ```zenscript
-// LivingEntity.stopSleeping() as void
+// LivingEntity.stopSleeping()
 
 myLivingEntity.stopSleeping();
 ```
@@ -1351,10 +1307,8 @@ myLivingEntity.stopSleeping();
 
 :::group{name=stopUsingItem}
 
-Return Type: void
-
 ```zenscript
-// LivingEntity.stopUsingItem() as void
+// LivingEntity.stopUsingItem()
 
 myLivingEntity.stopUsingItem();
 ```
@@ -1363,46 +1317,40 @@ myLivingEntity.stopUsingItem();
 
 :::group{name=swing}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.swing(hand as InteractionHand) as void
+LivingEntity.swing(hand as InteractionHand)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| hand      | [InteractionHand](/vanilla/api/util/InteractionHand) |
 
 
 :::
 
 :::group{name=swing}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.swing(hand as InteractionHand, updateSelf as boolean) as void
+LivingEntity.swing(hand as InteractionHand, updateSelf as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| hand | [InteractionHand](/vanilla/api/util/InteractionHand) | No Description Provided |
-| updateSelf | boolean | No Description Provided |
+| Parameter  |                         Type                         |
+|------------|------------------------------------------------------|
+| hand       | [InteractionHand](/vanilla/api/util/InteractionHand) |
+| updateSelf | boolean                                              |
 
 
 :::
 
 :::group{name=travel}
 
-Return Type: void
-
 ```zenscript
-LivingEntity.travel(vec as Vec3) as void
+LivingEntity.travel(vec as Vec3)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parameter |                Type                 |
+|-----------|-------------------------------------|
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -1410,58 +1358,58 @@ LivingEntity.travel(vec as Vec3) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| absorptionAmount | float | true | false | No Description Provided |
-| activeEFfectsMap | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)[[MobEffect](/vanilla/api/entity/effect/MobEffect)] | true | false | No Description Provided |
-| activeEffects | Collection&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | true | false | No Description Provided |
-| armorCoverPercentage | float | true | false | No Description Provided |
-| armorValue | int | true | false | No Description Provided |
-| arrowCount | int | true | false | No Description Provided |
-| attackable | boolean | true | false | No Description Provided |
-| bedOrientation | [Direction](/vanilla/api/util/direction/Direction)? | true | false | No Description Provided |
-| canBeSeenAsEnemy | boolean | true | false | No Description Provided |
-| canBeSeenByAnyone | boolean | true | false | No Description Provided |
-| canBreatheUnderwater | boolean | true | false | No Description Provided |
-| fallFlyingTicks | int | true | false | No Description Provided |
-| health | float | true | false | No Description Provided |
-| isAffectedByPotions | boolean | true | false | No Description Provided |
-| isAutoSpinAttack | boolean | true | false | No Description Provided |
-| isBaby | boolean | true | false | No Description Provided |
-| isBlocking | boolean | true | false | No Description Provided |
-| isCurrentlyGlowing | boolean | true | false | No Description Provided |
-| isDeadOrDying | boolean | true | false | No Description Provided |
-| isFallFlying | boolean | true | false | No Description Provided |
-| isInvertedHealAndHarm | boolean | true | false | No Description Provided |
-| isSensitiveToWater | boolean | true | false | No Description Provided |
-| isSleeping | boolean | true | false | No Description Provided |
-| isSuppressingSlidingDownLadder | boolean | true | false | No Description Provided |
-| isUsingItem | boolean | true | false | No Description Provided |
-| isVisuallySwimming | boolean | true | false | No Description Provided |
-| jumpBoostPower | double | true | false | No Description Provided |
-| killCredit | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true | false | No Description Provided |
-| lastClimbablePos | [BlockPos](/vanilla/api/util/math/BlockPos)? | true | false | No Description Provided |
-| lastDamageSource | [DamageSource](/vanilla/api/world/DamageSource)? | true | false | No Description Provided |
-| lastHurtByMob | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true | false | No Description Provided |
-| lastHurtByMobTimestamp | int | true | false | No Description Provided |
-| lastHurtMob | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
-| lastHurtMobTimestamp | int | true | false | No Description Provided |
-| lootTable | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| mainArm | [HumanoidArm](/vanilla/api/entity/HumanoidArm) | true | false | No Description Provided |
-| mainHandItem | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| maxHealth | float | true | false | No Description Provided |
-| mobType | [MobType](/vanilla/api/entity/MobType) | true | false | No Description Provided |
-| noActionTime | int | true | false | No Description Provided |
-| offHandItem | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| random | [Random](/vanilla/api/util/math/Random) | true | false | No Description Provided |
-| scale | float | true | false | No Description Provided |
-| shouldDiscardFriction | boolean | true | false | No Description Provided |
-| sleepingPos | [BlockPos](/vanilla/api/util/math/BlockPos)? | true | false | No Description Provided |
-| speed | float | true | false | No Description Provided |
-| stingerCount | int | true | false | No Description Provided |
-| ticksUsingItem | int | true | false | No Description Provided |
-| useItem | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
-| useItemRemainingTicks | int | true | false | No Description Provided |
-| usedItemHand | [InteractionHand](/vanilla/api/util/InteractionHand) | true | false | No Description Provided |
-| voicePitch | float | true | false | No Description Provided |
+|              Name              |                                                         Type                                                         | Has Getter | Has Setter |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------|------------|------------|
+| absorptionAmount               | float                                                                                                                | true       | false      |
+| activeEFfectsMap               | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)[[MobEffect](/vanilla/api/entity/effect/MobEffect)] | true       | false      |
+| activeEffects                  | Collection&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt;                                  | true       | false      |
+| armorCoverPercentage           | float                                                                                                                | true       | false      |
+| armorValue                     | int                                                                                                                  | true       | false      |
+| arrowCount                     | int                                                                                                                  | true       | false      |
+| attackable                     | boolean                                                                                                              | true       | false      |
+| bedOrientation                 | [Direction](/vanilla/api/util/direction/Direction)?                                                                  | true       | false      |
+| canBeSeenAsEnemy               | boolean                                                                                                              | true       | false      |
+| canBeSeenByAnyone              | boolean                                                                                                              | true       | false      |
+| canBreatheUnderwater           | boolean                                                                                                              | true       | false      |
+| fallFlyingTicks                | int                                                                                                                  | true       | false      |
+| health                         | float                                                                                                                | true       | false      |
+| isAffectedByPotions            | boolean                                                                                                              | true       | false      |
+| isAutoSpinAttack               | boolean                                                                                                              | true       | false      |
+| isBaby                         | boolean                                                                                                              | true       | false      |
+| isBlocking                     | boolean                                                                                                              | true       | false      |
+| isCurrentlyGlowing             | boolean                                                                                                              | true       | false      |
+| isDeadOrDying                  | boolean                                                                                                              | true       | false      |
+| isFallFlying                   | boolean                                                                                                              | true       | false      |
+| isInvertedHealAndHarm          | boolean                                                                                                              | true       | false      |
+| isSensitiveToWater             | boolean                                                                                                              | true       | false      |
+| isSleeping                     | boolean                                                                                                              | true       | false      |
+| isSuppressingSlidingDownLadder | boolean                                                                                                              | true       | false      |
+| isUsingItem                    | boolean                                                                                                              | true       | false      |
+| isVisuallySwimming             | boolean                                                                                                              | true       | false      |
+| jumpBoostPower                 | double                                                                                                               | true       | false      |
+| killCredit                     | [LivingEntity](/vanilla/api/entity/LivingEntity)?                                                                    | true       | false      |
+| lastClimbablePos               | [BlockPos](/vanilla/api/util/math/BlockPos)?                                                                         | true       | false      |
+| lastDamageSource               | [DamageSource](/vanilla/api/world/DamageSource)?                                                                     | true       | false      |
+| lastHurtByMob                  | [LivingEntity](/vanilla/api/entity/LivingEntity)?                                                                    | true       | false      |
+| lastHurtByMobTimestamp         | int                                                                                                                  | true       | false      |
+| lastHurtMob                    | [LivingEntity](/vanilla/api/entity/LivingEntity)                                                                     | true       | false      |
+| lastHurtMobTimestamp           | int                                                                                                                  | true       | false      |
+| lootTable                      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                                                           | true       | false      |
+| mainArm                        | [HumanoidArm](/vanilla/api/entity/HumanoidArm)                                                                       | true       | false      |
+| mainHandItem                   | [ItemStack](/vanilla/api/item/ItemStack)                                                                             | true       | false      |
+| maxHealth                      | float                                                                                                                | true       | false      |
+| mobType                        | [MobType](/vanilla/api/entity/MobType)                                                                               | true       | false      |
+| noActionTime                   | int                                                                                                                  | true       | false      |
+| offHandItem                    | [ItemStack](/vanilla/api/item/ItemStack)                                                                             | true       | false      |
+| random                         | [Random](/vanilla/api/util/math/Random)                                                                              | true       | false      |
+| scale                          | float                                                                                                                | true       | false      |
+| shouldDiscardFriction          | boolean                                                                                                              | true       | false      |
+| sleepingPos                    | [BlockPos](/vanilla/api/util/math/BlockPos)?                                                                         | true       | false      |
+| speed                          | float                                                                                                                | true       | false      |
+| stingerCount                   | int                                                                                                                  | true       | false      |
+| ticksUsingItem                 | int                                                                                                                  | true       | false      |
+| useItem                        | [ItemStack](/vanilla/api/item/ItemStack)                                                                             | true       | false      |
+| useItemRemainingTicks          | int                                                                                                                  | true       | false      |
+| usedItemHand                   | [InteractionHand](/vanilla/api/util/InteractionHand)                                                                 | true       | false      |
+| voicePitch                     | float                                                                                                                | true       | false      |
 

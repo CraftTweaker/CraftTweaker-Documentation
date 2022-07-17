@@ -12,16 +12,14 @@ import crafttweaker.api.item.ItemCooldowns;
 
 :::group{name=addCooldown}
 
-Return Type: void
-
 ```zenscript
-ItemCooldowns.addCooldown(item as ItemDefinition, ticks as int) as void
+ItemCooldowns.addCooldown(item as ItemDefinition, ticks as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
-| ticks | int | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
+| ticks     | int                                                |
 
 
 :::
@@ -34,10 +32,10 @@ Return Type: float
 ItemCooldowns.getCooldownPercent(item as ItemDefinition, partialTicks as float) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
-| partialTicks | float | No Description Provided |
+|  Parameter   |                        Type                        |
+|--------------|----------------------------------------------------|
+| item         | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
+| partialTicks | float                                              |
 
 
 :::
@@ -50,24 +48,22 @@ Return Type: boolean
 ItemCooldowns.isOnCooldown(item as ItemDefinition) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::
 
 :::group{name=removeCooldown}
 
-Return Type: void
-
 ```zenscript
-ItemCooldowns.removeCooldown(item as ItemDefinition) as void
+ItemCooldowns.removeCooldown(item as ItemDefinition)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::

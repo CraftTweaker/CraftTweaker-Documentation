@@ -30,9 +30,9 @@ Return Type: [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)
 MobEffectPredicate.amplifier(amplifier as IntMinMaxBoundsPredicate) as MobEffectPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -57,10 +57,10 @@ Return Type: [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)
 MobEffectPredicate.create(amplifier as IntMinMaxBoundsPredicate, duration as IntMinMaxBoundsPredicate) as MobEffectPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| duration | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| duration  | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -73,11 +73,11 @@ Return Type: [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)
 MobEffectPredicate.create(amplifier as IntMinMaxBoundsPredicate, duration as IntMinMaxBoundsPredicate, ambient as bool?) as MobEffectPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| duration | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| ambient | bool? | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| duration  | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| ambient   | bool?                                                                       |
 
 
 :::
@@ -90,12 +90,12 @@ Return Type: [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)
 MobEffectPredicate.create(amplifier as IntMinMaxBoundsPredicate, duration as IntMinMaxBoundsPredicate, ambient as bool?, visible as bool?) as MobEffectPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| duration | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| ambient | bool? | No Description Provided |
-| visible | bool? | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| amplifier | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| duration  | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| ambient   | bool?                                                                       |
+| visible   | bool?                                                                       |
 
 
 :::
@@ -108,9 +108,9 @@ Return Type: [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)
 MobEffectPredicate.duration(duration as IntMinMaxBoundsPredicate) as MobEffectPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| duration | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| duration  | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::

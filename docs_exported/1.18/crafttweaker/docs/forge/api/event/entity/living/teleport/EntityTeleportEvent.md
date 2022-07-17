@@ -125,45 +125,39 @@ myEntityTeleportEvent.getTargetZ();
 
 :::group{name=setTargetX}
 
-Return Type: void
-
 ```zenscript
-EntityTeleportEvent.setTargetX(targetX as double) as void
+EntityTeleportEvent.setTargetX(targetX as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| targetX | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| targetX   | double |
 
 
 :::
 
 :::group{name=setTargetY}
 
-Return Type: void
-
 ```zenscript
-EntityTeleportEvent.setTargetY(targetY as double) as void
+EntityTeleportEvent.setTargetY(targetY as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| targetY | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| targetY   | double |
 
 
 :::
 
 :::group{name=setTargetZ}
 
-Return Type: void
-
 ```zenscript
-EntityTeleportEvent.setTargetZ(targetZ as double) as void
+EntityTeleportEvent.setTargetZ(targetZ as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| targetZ | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| targetZ   | double |
 
 
 :::
@@ -171,14 +165,14 @@ EntityTeleportEvent.setTargetZ(targetZ as double) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| prev | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| prevX | double | true | false | No Description Provided |
-| prevY | double | true | false | No Description Provided |
-| prevZ | double | true | false | No Description Provided |
-| target | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| targetX | double | true | true | No Description Provided |
-| targetY | double | true | true | No Description Provided |
-| targetZ | double | true | true | No Description Provided |
+|  Name   |                Type                 | Has Getter | Has Setter |
+|---------|-------------------------------------|------------|------------|
+| prev    | [Vec3](/vanilla/api/util/math/Vec3) | true       | false      |
+| prevX   | double                              | true       | false      |
+| prevY   | double                              | true       | false      |
+| prevZ   | double                              | true       | false      |
+| target  | [Vec3](/vanilla/api/util/math/Vec3) | true       | false      |
+| targetX | double                              | true       | true       |
+| targetY | double                              | true       | true       |
+| targetZ | double                              | true       | true       |
 

@@ -20,9 +20,9 @@ Ingredient implements the following interfaces. That means all methods defined i
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IIngredient](/vanilla/api/ingredient/IIngredient) | true |
+|                    Result Type                     | Is Implicit |
+|----------------------------------------------------|-------------|
+| [IIngredient](/vanilla/api/ingredient/IIngredient) | true        |
 
 ## Methods
 

@@ -45,15 +45,13 @@ Sets the conversion timer, by changing this it prevents the
  some of them are decrements
  Not every conversion is applicable for this
 
-Return Type: void
-
 ```zenscript
-LivingConversionPreEvent.setConversionTimer(ticks as int) as void
+LivingConversionPreEvent.setConversionTimer(ticks as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| ticks     | int  |
 
 
 :::
@@ -61,7 +59,7 @@ LivingConversionPreEvent.setConversionTimer(ticks as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| outcome | [EntityType](/vanilla/api/entity/EntityType) | true | false | No Description Provided |
+|  Name   |                     Type                     | Has Getter | Has Setter |
+|---------|----------------------------------------------|------------|------------|
+| outcome | [EntityType](/vanilla/api/entity/EntityType) | true       | false      |
 

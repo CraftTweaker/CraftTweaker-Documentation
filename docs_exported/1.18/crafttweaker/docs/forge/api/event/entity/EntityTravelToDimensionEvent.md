@@ -26,7 +26,7 @@ EntityTravelToDimensionEvent extends [EntityEvent](/forge/api/event/entity/Entit
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
+|   Name    |                            Type                            | Has Getter | Has Setter |
+|-----------|------------------------------------------------------------|------------|------------|
+| dimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

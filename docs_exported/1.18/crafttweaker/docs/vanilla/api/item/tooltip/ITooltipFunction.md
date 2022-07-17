@@ -12,17 +12,15 @@ import crafttweaker.api.item.tooltip.ITooltipFunction;
 
 :::group{name=apply}
 
-Return Type: void
-
 ```zenscript
-ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<Component>, flag as TooltipFlag) as void
+ITooltipFunction.apply(stack as IItemStack, tooltip as stdlib.List<Component>, flag as TooltipFlag)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
-| tooltip | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | No Description Provided |
-| flag | [TooltipFlag](/vanilla/api/item/TooltipFlag) | No Description Provided |
+| Parameter |                            Type                             |
+|-----------|-------------------------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack)                  |
+| tooltip   | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; |
+| flag      | [TooltipFlag](/vanilla/api/item/TooltipFlag)                |
 
 
 :::

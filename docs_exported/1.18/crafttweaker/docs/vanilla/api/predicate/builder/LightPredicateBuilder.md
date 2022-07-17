@@ -30,9 +30,9 @@ Return Type: [LightPredicateBuilder](/vanilla/api/predicate/builder/LightPredica
 LightPredicateBuilder.composite(composite as IntMinMaxBoundsPredicate) as LightPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| composite | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| composite | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::

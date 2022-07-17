@@ -18,19 +18,17 @@ LayeredCauldronBlock extends [AbstractCauldronBlock](/vanilla/api/block/type/cau
 
 Lowers the fill level of the layered Cauldron at the given position.
 
-Return Type: void
-
 ```zenscript
-// LayeredCauldronBlock.lowerFillLevel(blockState as BlockState, level as Level, position as BlockPos) as void
+// LayeredCauldronBlock.lowerFillLevel(blockState as BlockState, level as Level, position as BlockPos)
 
 LayeredCauldronBlock.lowerFillLevel(<blockstate:minecraft:cauldron:level=3>, level, new BlockPos(1, 2, 3););
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  |                    Type                     |           Description           |
+|------------|---------------------------------------------|---------------------------------|
 | blockState | [BlockState](/vanilla/api/block/BlockState) | The blockstate of the cauldron. |
-| level | [Level](/vanilla/api/world/Level) | The current level. |
-| position | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the cauldron. |
+| level      | [Level](/vanilla/api/world/Level)           | The current level.              |
+| position   | [BlockPos](/vanilla/api/util/math/BlockPos) | The position of the cauldron.   |
 
 
 :::

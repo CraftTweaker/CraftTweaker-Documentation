@@ -33,7 +33,7 @@ myEntityEvent.getEntity();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+|  Name  |                 Type                 | Has Getter | Has Setter |
+|--------|--------------------------------------|------------|------------|
+| entity | [Entity](/vanilla/api/entity/Entity) | true       | false      |
 

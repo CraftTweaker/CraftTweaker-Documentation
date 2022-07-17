@@ -32,9 +32,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.applyFormat(format as ChatFormatting) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| format | [ChatFormatting](/vanilla/api/text/ChatFormatting) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| format    | [ChatFormatting](/vanilla/api/text/ChatFormatting) |
 
 
 :::
@@ -47,9 +47,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.applyFormats(formattings as ChatFormatting[]) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| formattings | [ChatFormatting](/vanilla/api/text/ChatFormatting)[] | No Description Provided |
+|  Parameter  |                         Type                         |
+|-------------|------------------------------------------------------|
+| formattings | [ChatFormatting](/vanilla/api/text/ChatFormatting)[] |
 
 
 :::
@@ -62,9 +62,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.applyLegacyFormat(format as ChatFormatting) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| format | [ChatFormatting](/vanilla/api/text/ChatFormatting) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| format    | [ChatFormatting](/vanilla/api/text/ChatFormatting) |
 
 
 :::
@@ -77,9 +77,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.applyTo(style as Style) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| style | [Style](/vanilla/api/text/Style) | No Description Provided |
+| Parameter |               Type               |
+|-----------|----------------------------------|
+| style     | [Style](/vanilla/api/text/Style) |
 
 
 :::
@@ -260,9 +260,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withBold(value as bool?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | bool? | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | bool? |
 
 
 :::
@@ -275,9 +275,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withColor(color as int) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| color | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| color     | int  |
 
 
 :::
@@ -290,9 +290,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withColor(formatting as ChatFormatting?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting)? | No Description Provided |
+| Parameter  |                        Type                         |
+|------------|-----------------------------------------------------|
+| formatting | [ChatFormatting](/vanilla/api/text/ChatFormatting)? |
 
 
 :::
@@ -305,9 +305,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withColor(textColor as TextColor?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| textColor | [TextColor](/vanilla/api/text/TextColor)? | No Description Provided |
+| Parameter |                   Type                    |
+|-----------|-------------------------------------------|
+| textColor | [TextColor](/vanilla/api/text/TextColor)? |
 
 
 :::
@@ -320,9 +320,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withFont(fontId as ResourceLocation?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fontId | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | No Description Provided |
+| Parameter |                            Type                             |
+|-----------|-------------------------------------------------------------|
+| fontId    | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? |
 
 
 :::
@@ -335,9 +335,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withInsertion(content as string?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| content | string? | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| content   | string? |
 
 
 :::
@@ -350,9 +350,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withItalic(value as bool?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | bool? | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | bool? |
 
 
 :::
@@ -365,9 +365,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withObfuscated(value as bool?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | bool? | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | bool? |
 
 
 :::
@@ -380,9 +380,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withStrikethrough(value as bool?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | bool? | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | bool? |
 
 
 :::
@@ -395,9 +395,9 @@ Return Type: [Style](/vanilla/api/text/Style)
 Style.withUnderlined(value as bool?) as Style
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | bool? | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | bool? |
 
 
 :::
@@ -405,15 +405,15 @@ Style.withUnderlined(value as bool?) as Style
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| bold | boolean | true | false | No Description Provided |
-| color | [TextColor](/vanilla/api/text/TextColor)? | true | false | No Description Provided |
-| empty | boolean | true | false | No Description Provided |
-| font | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| insertion | string? | true | false | No Description Provided |
-| italic | boolean | true | false | No Description Provided |
-| obfucated | boolean | true | false | No Description Provided |
-| strikethrough | boolean | true | false | No Description Provided |
-| underlined | boolean | true | false | No Description Provided |
+|     Name      |                            Type                            | Has Getter | Has Setter |
+|---------------|------------------------------------------------------------|------------|------------|
+| bold          | boolean                                                    | true       | false      |
+| color         | [TextColor](/vanilla/api/text/TextColor)?                  | true       | false      |
+| empty         | boolean                                                    | true       | false      |
+| font          | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
+| insertion     | string?                                                    | true       | false      |
+| italic        | boolean                                                    | true       | false      |
+| obfucated     | boolean                                                    | true       | false      |
+| strikethrough | boolean                                                    | true       | false      |
+| underlined    | boolean                                                    | true       | false      |
 

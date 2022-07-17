@@ -18,9 +18,9 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | [Level](/vanilla/api/world/Level) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| param0    | [Level](/vanilla/api/world/Level) |
 
 
 :::
@@ -51,15 +51,13 @@ myBaseSpawner.getoSpin();
 
 :::group{name=setEntityId}
 
-Return Type: void
-
 ```zenscript
-BaseSpawner.setEntityId(param0 as EntityType) as void
+BaseSpawner.setEntityId(param0 as EntityType)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| param0    | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::
@@ -67,9 +65,9 @@ BaseSpawner.setEntityId(param0 as EntityType) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false | true | No Description Provided |
-| oSpin | double | true | false | No Description Provided |
-| spin | double | true | false | No Description Provided |
+|   Name   |                     Type                      | Has Getter | Has Setter |
+|----------|-----------------------------------------------|------------|------------|
+| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false      | true       |
+| oSpin    | double                                        | true       | false      |
+| spin     | double                                        | true       | false      |
 

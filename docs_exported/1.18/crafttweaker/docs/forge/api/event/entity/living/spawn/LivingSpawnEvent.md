@@ -23,10 +23,10 @@ LivingSpawnEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). Tha
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| world | [Level](/vanilla/api/world/Level) | true | false | No Description Provided |
-| x | double | true | false | No Description Provided |
-| y | double | true | false | No Description Provided |
-| z | double | true | false | No Description Provided |
+| Name  |               Type                | Has Getter | Has Setter |
+|-------|-----------------------------------|------------|------------|
+| world | [Level](/vanilla/api/world/Level) | true       | false      |
+| x     | double                            | true       | false      |
+| y     | double                            | true       | false      |
+| z     | double                            | true       | false      |
 

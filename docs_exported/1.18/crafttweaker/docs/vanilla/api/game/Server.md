@@ -44,10 +44,10 @@ Return Type: int
 myServer.executeCommand("time set day", true);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| command | string | No Description Provided | false |  |
-| silent | boolean | No Description Provided | true | false |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| command   | string  | false    |               |
+| silent    | boolean | true     | false         |
 
 
 :::
@@ -68,11 +68,11 @@ Return Type: int
 myServer.executeCommand("time set day", player, true);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| command | string | No Description Provided | false |  |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided | false |  |
-| silent | boolean | No Description Provided | true | false |
+| Parameter |                       Type                       | Optional | Default Value |
+|-----------|--------------------------------------------------|----------|---------------|
+| command   | string                                           | false    |               |
+| player    | [Player](/vanilla/api/entity/type/player/Player) | false    |               |
+| silent    | boolean                                          | true     | false         |
 
 
 :::
@@ -145,9 +145,9 @@ Return Type: [ServerLevel](/vanilla/api/world/ServerLevel)?
 Server.getLevel(location as ResourceLocation) as ServerLevel?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| location | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| location  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -285,9 +285,9 @@ Return Type: int
 Server.getSpawnRadius(level as ServerLevel?) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel)? | No Description Provided |
+| Parameter |                      Type                      |
+|-----------|------------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel)? |
 
 
 :::
@@ -480,11 +480,11 @@ Return Type: boolean
 Server.isUnderSpawnProtection(level as ServerLevel, pos as BlockPos, player as Player) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel)    |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)      |
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -515,106 +515,92 @@ myServer.overworld();
 
 :::group{name=setDefaultGameType}
 
-Return Type: void
-
 ```zenscript
-Server.setDefaultGameType(gameType as GameType) as void
+Server.setDefaultGameType(gameType as GameType)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| gameType | [GameType](/vanilla/api/world/GameType) | No Description Provided |
+| Parameter |                  Type                   |
+|-----------|-----------------------------------------|
+| gameType  | [GameType](/vanilla/api/world/GameType) |
 
 
 :::
 
 :::group{name=setDifficulty}
 
-Return Type: void
-
 ```zenscript
-Server.setDifficulty(difficulty as Difficulty, force as boolean) as void
+Server.setDifficulty(difficulty as Difficulty, force as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| difficulty | [Difficulty](/vanilla/api/world/Difficulty) | No Description Provided |
-| force | boolean | No Description Provided |
+| Parameter  |                    Type                     |
+|------------|---------------------------------------------|
+| difficulty | [Difficulty](/vanilla/api/world/Difficulty) |
+| force      | boolean                                     |
 
 
 :::
 
 :::group{name=setDifficultyLocked}
 
-Return Type: void
-
 ```zenscript
-Server.setDifficultyLocked(locked as boolean) as void
+Server.setDifficultyLocked(locked as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| locked | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| locked    | boolean |
 
 
 :::
 
 :::group{name=setEnforceWhitelist}
 
-Return Type: void
-
 ```zenscript
-Server.setEnforceWhitelist(enforceWhitelist as boolean) as void
+Server.setEnforceWhitelist(enforceWhitelist as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enforceWhitelist | boolean | No Description Provided |
+|    Parameter     |  Type   |
+|------------------|---------|
+| enforceWhitelist | boolean |
 
 
 :::
 
 :::group{name=setFlightAllowed}
 
-Return Type: void
-
 ```zenscript
-Server.setFlightAllowed(flightAllowed as boolean) as void
+Server.setFlightAllowed(flightAllowed as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| flightAllowed | boolean | No Description Provided |
+|   Parameter   |  Type   |
+|---------------|---------|
+| flightAllowed | boolean |
 
 
 :::
 
 :::group{name=setMotd}
 
-Return Type: void
-
 ```zenscript
-Server.setMotd(motd as string) as void
+Server.setMotd(motd as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| motd | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| motd      | string |
 
 
 :::
 
 :::group{name=setPvpAllowed}
 
-Return Type: void
-
 ```zenscript
-Server.setPvpAllowed(pvpAllowed as boolean) as void
+Server.setPvpAllowed(pvpAllowed as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pvpAllowed | boolean | No Description Provided |
+| Parameter  |  Type   |
+|------------|---------|
+| pvpAllowed | boolean |
 
 
 :::
@@ -622,39 +608,39 @@ Server.setPvpAllowed(pvpAllowed as boolean) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| absoluteMaxWorldSize | int | true | false | No Description Provided |
-| allLevels | stdlib.Iterable&lt;[ServerLevel](/vanilla/api/world/ServerLevel)&gt; | true | false | No Description Provided |
-| areNpcsEnabled | boolean | true | false | No Description Provided |
-| averageTickTime | float | true | false | No Description Provided |
-| defaultGameTime | [GameType](/vanilla/api/world/GameType) | true | false | No Description Provided |
-| forcedGameType | [GameType](/vanilla/api/world/GameType)? | true | false | No Description Provided |
-| isCommandBlockEnabled | boolean | true | false | No Description Provided |
-| isDedicatedServer | boolean | true | false | No Description Provided |
-| isEnforceWhitelist | boolean | true | false | No Description Provided |
-| isFlightAllowed | boolean | true | false | No Description Provided |
-| isHardcore | boolean | true | false | No Description Provided |
-| isNetherEnabled | boolean | true | false | No Description Provided |
-| isPvpAllowed | boolean | true | false | No Description Provided |
-| isReady | boolean | true | false | No Description Provided |
-| isRunning | boolean | true | false | No Description Provided |
-| isShutdown | boolean | true | false | No Description Provided |
-| isSingleplayer | boolean | true | false | No Description Provided |
-| isSpawningAnimals | boolean | true | false | No Description Provided |
-| isSpawningMonsters | boolean | true | false | No Description Provided |
-| isStopped | boolean | true | false | No Description Provided |
-| levelKeys | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | No Description Provided |
-| maxPlayer | int | true | false | No Description Provided |
-| moddeStatus | string? | true | false | No Description Provided |
-| motd | string | true | false | No Description Provided |
-| operatorUserPermissionLevel | int | true | false | No Description Provided |
-| overworld | [ServerLevel](/vanilla/api/world/ServerLevel) | true | false | No Description Provided |
-| overworldData | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData) | true | false | Gets the custom data of the overworld. <br />  <br />  The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in. |
-| playerCount | int | true | false | No Description Provided |
-| playerNames | string[] | true | false | No Description Provided |
-| serverModName | string | true | false | No Description Provided |
-| serverVersion | string | true | false | No Description Provided |
-| spawnProtectionRadius | int | true | false | No Description Provided |
-| tickCount | int | true | false | No Description Provided |
+|            Name             |                                     Type                                      | Has Getter | Has Setter |                                                                                 Description                                                                                  |
+|-----------------------------|-------------------------------------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| absoluteMaxWorldSize        | int                                                                           | true       | false      |                                                                                                                                                                              |
+| allLevels                   | stdlib.Iterable&lt;[ServerLevel](/vanilla/api/world/ServerLevel)&gt;          | true       | false      |                                                                                                                                                                              |
+| areNpcsEnabled              | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| averageTickTime             | float                                                                         | true       | false      |                                                                                                                                                                              |
+| defaultGameTime             | [GameType](/vanilla/api/world/GameType)                                       | true       | false      |                                                                                                                                                                              |
+| forcedGameType              | [GameType](/vanilla/api/world/GameType)?                                      | true       | false      |                                                                                                                                                                              |
+| isCommandBlockEnabled       | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isDedicatedServer           | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isEnforceWhitelist          | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isFlightAllowed             | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isHardcore                  | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isNetherEnabled             | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isPvpAllowed                | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isReady                     | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isRunning                   | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isShutdown                  | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isSingleplayer              | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isSpawningAnimals           | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isSpawningMonsters          | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| isStopped                   | boolean                                                                       | true       | false      |                                                                                                                                                                              |
+| levelKeys                   | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      |                                                                                                                                                                              |
+| maxPlayer                   | int                                                                           | true       | false      |                                                                                                                                                                              |
+| moddeStatus                 | string?                                                                       | true       | false      |                                                                                                                                                                              |
+| motd                        | string                                                                        | true       | false      |                                                                                                                                                                              |
+| operatorUserPermissionLevel | int                                                                           | true       | false      |                                                                                                                                                                              |
+| overworld                   | [ServerLevel](/vanilla/api/world/ServerLevel)                                 | true       | false      |                                                                                                                                                                              |
+| overworldData               | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData)             | true       | false      | Gets the custom data of the overworld. <br />  <br />  The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in. |
+| playerCount                 | int                                                                           | true       | false      |                                                                                                                                                                              |
+| playerNames                 | string[]                                                                      | true       | false      |                                                                                                                                                                              |
+| serverModName               | string                                                                        | true       | false      |                                                                                                                                                                              |
+| serverVersion               | string                                                                        | true       | false      |                                                                                                                                                                              |
+| spawnProtectionRadius       | int                                                                           | true       | false      |                                                                                                                                                                              |
+| tickCount                   | int                                                                           | true       | false      |                                                                                                                                                                              |
 

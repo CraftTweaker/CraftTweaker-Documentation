@@ -98,45 +98,39 @@ event.getStrength();
 
 :::group{name=setRatioX}
 
-Return Type: void
-
 ```zenscript
-LivingKnockBackEvent.setRatioX(value as double) as void
+LivingKnockBackEvent.setRatioX(value as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
 
 
 :::
 
 :::group{name=setRatioZ}
 
-Return Type: void
-
 ```zenscript
-LivingKnockBackEvent.setRatioZ(value as double) as void
+LivingKnockBackEvent.setRatioZ(value as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
 
 
 :::
 
 :::group{name=setStrength}
 
-Return Type: void
-
 ```zenscript
-LivingKnockBackEvent.setStrength(value as float) as void
+LivingKnockBackEvent.setStrength(value as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | float |
 
 
 :::
@@ -144,12 +138,12 @@ LivingKnockBackEvent.setStrength(value as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| originRatioX | double | true | false | No Description Provided |
-| originRatioZ | double | true | false | No Description Provided |
-| originStrength | float | true | false | No Description Provided |
-| ratioX | double | true | true | No Description Provided |
-| ratioZ | double | true | true | No Description Provided |
-| strength | float | true | true | No Description Provided |
+|      Name      |  Type  | Has Getter | Has Setter |
+|----------------|--------|------------|------------|
+| originRatioX   | double | true       | false      |
+| originRatioZ   | double | true       | false      |
+| originStrength | float  | true       | false      |
+| ratioX         | double | true       | true       |
+| ratioZ         | double | true       | true       |
+| strength       | float  | true       | true       |
 

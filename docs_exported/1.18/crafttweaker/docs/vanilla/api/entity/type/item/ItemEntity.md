@@ -18,13 +18,13 @@ ItemEntity extends [Entity](/vanilla/api/entity/Entity). That means all methods 
 ```zenscript
 new ItemEntity(level as Level, x as double, y as double, z as double, stack as ItemStack) as ItemEntity
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | No description provided |
-| x | double | No description provided |
-| y | double | No description provided |
-| z | double | No description provided |
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No description provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| level     | [Level](/vanilla/api/world/Level)        |
+| x         | double                                   |
+| y         | double                                   |
+| z         | double                                   |
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 
@@ -59,10 +59,8 @@ myItemEntity.hasPickUpDelay();
 
 :::group{name=setDefaultPickUpDelay}
 
-Return Type: void
-
 ```zenscript
-// ItemEntity.setDefaultPickUpDelay() as void
+// ItemEntity.setDefaultPickUpDelay()
 
 myItemEntity.setDefaultPickUpDelay();
 ```
@@ -73,27 +71,23 @@ myItemEntity.setDefaultPickUpDelay();
 
 Sets the IItemStack inside this ItemEntity.
 
-Return Type: void
-
 ```zenscript
-// ItemEntity.setItem(stack as IItemStack) as void
+// ItemEntity.setItem(stack as IItemStack)
 
 myItemEntity.setItem(<item:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The new IItemStack. |
+| Parameter |                    Type                    |     Description     |
+|-----------|--------------------------------------------|---------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The new IItemStack. |
 
 
 :::
 
 :::group{name=setNeverPickUp}
 
-Return Type: void
-
 ```zenscript
-// ItemEntity.setNeverPickUp() as void
+// ItemEntity.setNeverPickUp()
 
 myItemEntity.setNeverPickUp();
 ```
@@ -102,10 +96,8 @@ myItemEntity.setNeverPickUp();
 
 :::group{name=setNoPickUpDelay}
 
-Return Type: void
-
 ```zenscript
-// ItemEntity.setNoPickUpDelay() as void
+// ItemEntity.setNoPickUpDelay()
 
 myItemEntity.setNoPickUpDelay();
 ```
@@ -114,15 +106,13 @@ myItemEntity.setNoPickUpDelay();
 
 :::group{name=setPickUpDelay}
 
-Return Type: void
-
 ```zenscript
-ItemEntity.setPickUpDelay(ticks as int) as void
+ItemEntity.setPickUpDelay(ticks as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ticks | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| ticks     | int  |
 
 
 :::
@@ -130,8 +120,8 @@ ItemEntity.setPickUpDelay(ticks as int) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| hasPickupDelay | boolean | true | false | No Description Provided |
-| item | [IItemStack](/vanilla/api/item/IItemStack) | true | true | Gets the IItemStack inside this ItemEntity. |
+|      Name      |                    Type                    | Has Getter | Has Setter |                 Description                 |
+|----------------|--------------------------------------------|------------|------------|---------------------------------------------|
+| hasPickupDelay | boolean                                    | true       | false      |                                             |
+| item           | [IItemStack](/vanilla/api/item/IItemStack) | true       | true       | Gets the IItemStack inside this ItemEntity. |
 

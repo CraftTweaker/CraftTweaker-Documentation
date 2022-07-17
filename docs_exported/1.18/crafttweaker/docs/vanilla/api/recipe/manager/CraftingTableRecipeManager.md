@@ -28,10 +28,8 @@ CraftingTableRecipeManager.INSTANCE
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack json, this effectively allows you to register recipes for any DataPack supporting RecipeType systems.
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+// CraftingTableRecipeManager.addJsonRecipe(name as string, mapData as MapData)
 
 craftingTable.addJsonRecipe("recipe_name", {
  ingredient: <item:minecraft:gold_ore>,
@@ -41,28 +39,26 @@ craftingTable.addJsonRecipe("recipe_name", {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
+| Parameter |                 Type                 |           Description           |
+|-----------|--------------------------------------|---------------------------------|
+| name      | string                               | name of the recipe              |
+| mapData   | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::
 
 :::group{name=addShaped}
 
-Return Type: void
-
 ```zenscript
-CraftingTableRecipeManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+CraftingTableRecipeManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| recipeName | string | No Description Provided | false |  |
-| output | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided | false |  |
-| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[][] | No Description Provided | false |  |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | No Description Provided | true |  |
+|   Parameter    |                                   Type                                    | Optional |
+|----------------|---------------------------------------------------------------------------|----------|
+| recipeName     | string                                                                    | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                    | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | true     |
 
 
 :::
@@ -74,58 +70,52 @@ Adds a mirrored shaped recipe to the crafting table.
  This method lets you provide a [MirrorAxis](/vanilla/api/recipe/MirrorAxis), which can be used to set which axis the recipe is mirrored on.
  Use cases are making a recipe only be mirrored vertically or only horizontally.
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.addShapedMirrored(recipeName as string, mirrorAxis as MirrorAxis, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix) as void
+// CraftingTableRecipeManager.addShapedMirrored(recipeName as string, mirrorAxis as MirrorAxis, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix)
 
 craftingTable.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| recipeName | string | name of the recipe to add. | false |  |
-| mirrorAxis | [MirrorAxis](/vanilla/api/recipe/MirrorAxis) | The axis that this recipe mirrored on. | false |  |
-| output | [IItemStack](/vanilla/api/item/IItemStack) | output [IItemStack](/vanilla/api/item/IItemStack) | false |  |
-| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[][] | array of an array of [IIngredient](/vanilla/api/ingredient/IIngredient) for inputs | false |  |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) for more advanced conditions | true |  |
+|   Parameter    |                                   Type                                    |                                                   Description                                                   | Optional |
+|----------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|----------|
+| recipeName     | string                                                                    | name of the recipe to add.                                                                                      | false    |
+| mirrorAxis     | [MirrorAxis](/vanilla/api/recipe/MirrorAxis)                              | The axis that this recipe mirrored on.                                                                          | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | output [IItemStack](/vanilla/api/item/IItemStack)                                                               | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                    | array of an array of [IIngredient](/vanilla/api/ingredient/IIngredient) for inputs                              | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) for more advanced conditions | true     |
 
 
 :::
 
 :::group{name=addShapedPattern}
 
-Return Type: void
-
 ```zenscript
-CraftingTableRecipeManager.addShapedPattern(recipeName as string, output as IItemStack, pattern as string[], keys as IIngredient[string], recipeFunction as RecipeFunctionMatrix) as void
+CraftingTableRecipeManager.addShapedPattern(recipeName as string, output as IItemStack, pattern as string[], keys as IIngredient[string], recipeFunction as RecipeFunctionMatrix)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| recipeName | string | No Description Provided | false |  |
-| output | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided | false |  |
-| pattern | string[] | No Description Provided | false |  |
-| keys | [IIngredient](/vanilla/api/ingredient/IIngredient)[string] | No Description Provided | false |  |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | No Description Provided | true |  |
+|   Parameter    |                                   Type                                    | Optional |
+|----------------|---------------------------------------------------------------------------|----------|
+| recipeName     | string                                                                    | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | false    |
+| pattern        | string[]                                                                  | false    |
+| keys           | [IIngredient](/vanilla/api/ingredient/IIngredient)[string]                | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | true     |
 
 
 :::
 
 :::group{name=addShapeless}
 
-Return Type: void
-
 ```zenscript
-CraftingTableRecipeManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray) as void
+CraftingTableRecipeManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| recipeName | string | No Description Provided | false |  |
-| output | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided | false |  |
-| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[] | No Description Provided | false |  |
-| recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/function/RecipeFunctionArray) | No Description Provided | true |  |
+|   Parameter    |                                  Type                                   | Optional |
+|----------------|-------------------------------------------------------------------------|----------|
+| recipeName     | string                                                                  | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                              | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | false    |
+| recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/function/RecipeFunctionArray) | true     |
 
 
 :::
@@ -150,9 +140,9 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 CraftingTableRecipeManager.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
 
 
 :::
@@ -180,9 +170,9 @@ Return Type: stdlib.List&lt;T&gt;
 CraftingTableRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -191,17 +181,15 @@ CraftingTableRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.L
 
 Remove a recipe based on it's output.
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.remove(output as IIngredient) as void
+// CraftingTableRecipeManager.remove(output as IIngredient)
 
 craftingTable.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
+| Parameter |                        Type                        |     Description      |
+|-----------|----------------------------------------------------|----------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
 
 
 :::
@@ -210,10 +198,8 @@ craftingTable.remove(<tag:items:minecraft:wool>);
 
 Remove all recipes in this registry
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.removeAll() as void
+// CraftingTableRecipeManager.removeAll()
 
 craftingTable.removeAll();
 ```
@@ -224,17 +210,15 @@ craftingTable.removeAll();
 
 Removes all recipes where the input contains the given IItemStack.
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.removeByInput(input as IItemStack) as void
+// CraftingTableRecipeManager.removeByInput(input as IItemStack)
 
 craftingTable.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
+| Parameter |                    Type                    |      Description      |
+|-----------|--------------------------------------------|-----------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
 
 
 :::
@@ -243,16 +227,14 @@ craftingTable.removeByInput(<item:minecraft:iron_ingot>);
 
 Remove recipe based on Registry name modid
 
-Return Type: void
-
 ```zenscript
-CraftingTableRecipeManager.removeByModid(modid as string, exclude as Predicate<string>) as void
+CraftingTableRecipeManager.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |          Description           | Optional |           Default Value           |
+|-----------|-------------------------|--------------------------------|----------|-----------------------------------|
+| modid     | string                  | modid of the recipes to remove | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                                | true     | (name as string) as bool => false |
 
 
 :::
@@ -261,15 +243,13 @@ CraftingTableRecipeManager.removeByModid(modid as string, exclude as Predicate<s
 
 Remove recipes based on Registry names
 
-Return Type: void
-
 ```zenscript
-CraftingTableRecipeManager.removeByName(names as string[]) as void
+CraftingTableRecipeManager.removeByName(names as string[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| names | string[] | registry names of recipes to remove |
+| Parameter |   Type   |             Description             |
+|-----------|----------|-------------------------------------|
+| names     | string[] | registry names of recipes to remove |
 
 
 :::
@@ -278,18 +258,16 @@ CraftingTableRecipeManager.removeByName(names as string[]) as void
 
 Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-Return Type: void
-
 ```zenscript
-// CraftingTableRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
+// CraftingTableRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>)
 
 craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |      Description       | Optional |           Default Value           |
+|-----------|-------------------------|------------------------|----------|-----------------------------------|
+| regex     | string                  | regex to match against | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                        | true     | (name as string) as bool => false |
 
 
 :::
@@ -297,8 +275,8 @@ craftingTable.removeByRegex("\\d_\\d", (name as string) => {return name == "oran
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| allRecipes | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| recipeMap | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
+|    Name    |                             Type                              | Has Getter | Has Setter |             Description             |
+|------------|---------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;T&gt;                                          | true       | false      |                                     |
+| recipeMap  | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

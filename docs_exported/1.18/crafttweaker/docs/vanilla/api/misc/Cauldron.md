@@ -16,10 +16,8 @@ import crafttweaker.api.misc.Cauldron;
 
 Adds an interaction that will fire when an empty Cauldron is interacted with the given item.
 
-Return Type: void
-
 ```zenscript
-// Cauldron.addEmptyInteraction(item as ItemDefinition, interaction as CTCauldronInteraction) as void
+// Cauldron.addEmptyInteraction(item as ItemDefinition, interaction as CTCauldronInteraction)
 
 cauldron.addEmptyInteraction(<item:minecraft:dirt>, (blockState, level, pos, player, hand, stack) => {
 
@@ -30,9 +28,9 @@ cauldron.addEmptyInteraction(<item:minecraft:dirt>, (blockState, level, pos, pla
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
+|  Parameter  |                               Type                               |                       Description                       |
+|-------------|------------------------------------------------------------------|---------------------------------------------------------|
+| item        | [ItemDefinition](/vanilla/api/item/ItemDefinition)               | The item to interact with.                              |
 | interaction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
 
 
@@ -44,10 +42,8 @@ Adds an interaction that will fire when the provided cauldron block is interacte
 
  This method is mainly provided to add support for non-vanilla cauldrons, thus the provided block needs to be a [AbstractCauldronBlock](/vanilla/api/block/type/cauldron/AbstractCauldronBlock).
 
-Return Type: void
-
 ```zenscript
-// Cauldron.addInteraction(cauldronBlock as Block, item as ItemDefinition, interaction as CTCauldronInteraction) as void
+// Cauldron.addInteraction(cauldronBlock as Block, item as ItemDefinition, interaction as CTCauldronInteraction)
 
 cauldron.addInteraction(<block:minecraft:lava_cauldron>, <item:minecraft:dirt>, (blockState, level, pos, player, hand, stack) => {
 
@@ -58,11 +54,11 @@ cauldron.addInteraction(<block:minecraft:lava_cauldron>, <item:minecraft:dirt>, 
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| cauldronBlock | [Block](/vanilla/api/block/Block) | The cauldron block to add an interaction to. |
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
-| interaction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
+|   Parameter   |                               Type                               |                       Description                       |
+|---------------|------------------------------------------------------------------|---------------------------------------------------------|
+| cauldronBlock | [Block](/vanilla/api/block/Block)                                | The cauldron block to add an interaction to.            |
+| item          | [ItemDefinition](/vanilla/api/item/ItemDefinition)               | The item to interact with.                              |
+| interaction   | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
 
 
 :::
@@ -71,10 +67,8 @@ cauldron.addInteraction(<block:minecraft:lava_cauldron>, <item:minecraft:dirt>, 
 
 Adds an interaction that will fire when a Cauldron with lava inside is interacted with the given item.
 
-Return Type: void
-
 ```zenscript
-// Cauldron.addLavaInteraction(item as ItemDefinition, interaction as CTCauldronInteraction) as void
+// Cauldron.addLavaInteraction(item as ItemDefinition, interaction as CTCauldronInteraction)
 
 cauldron.addLavaInteraction(<item:minecraft:dirt>, (blockState, level, pos, player, hand, stack) => {
 
@@ -85,9 +79,9 @@ cauldron.addLavaInteraction(<item:minecraft:dirt>, (blockState, level, pos, play
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
+|  Parameter  |                               Type                               |                       Description                       |
+|-------------|------------------------------------------------------------------|---------------------------------------------------------|
+| item        | [ItemDefinition](/vanilla/api/item/ItemDefinition)               | The item to interact with.                              |
 | interaction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
 
 
@@ -97,10 +91,8 @@ cauldron.addLavaInteraction(<item:minecraft:dirt>, (blockState, level, pos, play
 
 Adds an interaction that will fire when a Cauldron with powdered snow inside is interacted with the given item.
 
-Return Type: void
-
 ```zenscript
-// Cauldron.addPowderSnowInteraction(item as ItemDefinition, interaction as CTCauldronInteraction) as void
+// Cauldron.addPowderSnowInteraction(item as ItemDefinition, interaction as CTCauldronInteraction)
 
 cauldron.addPowderSnowInteraction(<item:minecraft:dirt>, (blockState, level, pos, player, hand, stack) => {
 
@@ -111,9 +103,9 @@ cauldron.addPowderSnowInteraction(<item:minecraft:dirt>, (blockState, level, pos
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
+|  Parameter  |                               Type                               |                       Description                       |
+|-------------|------------------------------------------------------------------|---------------------------------------------------------|
+| item        | [ItemDefinition](/vanilla/api/item/ItemDefinition)               | The item to interact with.                              |
 | interaction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
 
 
@@ -123,10 +115,8 @@ cauldron.addPowderSnowInteraction(<item:minecraft:dirt>, (blockState, level, pos
 
 Adds an interaction that will fire when a Cauldron with water inside is interacted with the given item.
 
-Return Type: void
-
 ```zenscript
-// Cauldron.addWaterInteraction(item as ItemDefinition, interaction as CTCauldronInteraction) as void
+// Cauldron.addWaterInteraction(item as ItemDefinition, interaction as CTCauldronInteraction)
 
 cauldron.addWaterInteraction(<item:minecraft:dirt>, (blockState, level, pos, player, hand, stack) => {
 
@@ -137,9 +127,9 @@ cauldron.addWaterInteraction(<item:minecraft:dirt>, (blockState, level, pos, pla
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
+|  Parameter  |                               Type                               |                       Description                       |
+|-------------|------------------------------------------------------------------|---------------------------------------------------------|
+| item        | [ItemDefinition](/vanilla/api/item/ItemDefinition)               | The item to interact with.                              |
 | interaction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | What happens when the item interacts with the cauldron. |
 
 
@@ -194,15 +184,13 @@ cauldron.getFillWaterInteraction();
 
 Removes the interaction for the given item from an empty Cauldron.
 
-Return Type: void
-
 ```zenscript
-Cauldron.removeEmptyInteraction(item as ItemDefinition) as void
+Cauldron.removeEmptyInteraction(item as ItemDefinition)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
+| Parameter |                        Type                        |               Description               |
+|-----------|----------------------------------------------------|-----------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
 
 
 :::
@@ -213,18 +201,16 @@ Removes the interaction that will fire when the provided cauldron block is inter
 
  This method is mainly provided to add support for non-vanilla cauldrons, thus the provided block needs to be a [AbstractCauldronBlock](/vanilla/api/block/type/cauldron/AbstractCauldronBlock).
 
-Return Type: void
-
 ```zenscript
-// Cauldron.removeInteraction(cauldronBlock as Block, item as ItemDefinition) as void
+// Cauldron.removeInteraction(cauldronBlock as Block, item as ItemDefinition)
 
 cauldron.removeInteraction(<block:minecraft:lava_cauldron>, <item:minecraft:dirt>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| cauldronBlock | [Block](/vanilla/api/block/Block) | The cauldron block to add an interaction to. |
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with. |
+|   Parameter   |                        Type                        |                 Description                  |
+|---------------|----------------------------------------------------|----------------------------------------------|
+| cauldronBlock | [Block](/vanilla/api/block/Block)                  | The cauldron block to add an interaction to. |
+| item          | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to interact with.                   |
 
 
 :::
@@ -233,15 +219,13 @@ cauldron.removeInteraction(<block:minecraft:lava_cauldron>, <item:minecraft:dirt
 
 Removes the interaction for the given item from a lava filled Cauldron.
 
-Return Type: void
-
 ```zenscript
-Cauldron.removeLavaInteraction(item as ItemDefinition) as void
+Cauldron.removeLavaInteraction(item as ItemDefinition)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
+| Parameter |                        Type                        |               Description               |
+|-----------|----------------------------------------------------|-----------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
 
 
 :::
@@ -250,15 +234,13 @@ Cauldron.removeLavaInteraction(item as ItemDefinition) as void
 
 Removes the interaction for the given item from a powdered snow filled Cauldron.
 
-Return Type: void
-
 ```zenscript
-Cauldron.removePowderSnowInteraction(item as ItemDefinition) as void
+Cauldron.removePowderSnowInteraction(item as ItemDefinition)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
+| Parameter |                        Type                        |               Description               |
+|-----------|----------------------------------------------------|-----------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
 
 
 :::
@@ -267,15 +249,13 @@ Cauldron.removePowderSnowInteraction(item as ItemDefinition) as void
 
 Removes the interaction for the given item from a water filled Cauldron.
 
-Return Type: void
-
 ```zenscript
-Cauldron.removeWaterInteraction(item as ItemDefinition) as void
+Cauldron.removeWaterInteraction(item as ItemDefinition)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
+| Parameter |                        Type                        |               Description               |
+|-----------|----------------------------------------------------|-----------------------------------------|
+| item      | [ItemDefinition](/vanilla/api/item/ItemDefinition) | The item to remove the interaction for. |
 
 
 :::
@@ -283,9 +263,9 @@ Cauldron.removeWaterInteraction(item as ItemDefinition) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| fillLavaInteraction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true | false | Gets an interaction that fills a Cauldron with lava. |
-| fillPowderSnowInteraction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true | false | Gets an interaction that fills a Cauldron with lava. |
-| fillWaterInteraction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true | false | Gets an interaction that fills a cauldron with water. |
+|           Name            |                               Type                               | Has Getter | Has Setter |                      Description                      |
+|---------------------------|------------------------------------------------------------------|------------|------------|-------------------------------------------------------|
+| fillLavaInteraction       | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true       | false      | Gets an interaction that fills a Cauldron with lava.  |
+| fillPowderSnowInteraction | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true       | false      | Gets an interaction that fills a Cauldron with lava.  |
+| fillWaterInteraction      | [CTCauldronInteraction](/vanilla/api/misc/CTCauldronInteraction) | true       | false      | Gets an interaction that fills a cauldron with water. |
 

@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 EntityPropertyLootCondition.create(target as EntityTarget) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [EntityTarget](/vanilla/api/loot/EntityTarget) | No Description Provided |
+| Parameter |                      Type                      |
+|-----------|------------------------------------------------|
+| target    | [EntityTarget](/vanilla/api/loot/EntityTarget) |
 
 
 :::
@@ -38,10 +38,10 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 EntityPropertyLootCondition.create(target as EntityTarget, predicate as EntityPredicateBuilder) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [EntityTarget](/vanilla/api/loot/EntityTarget) | No Description Provided |
-| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| target    | [EntityTarget](/vanilla/api/loot/EntityTarget)                                  |
+| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::

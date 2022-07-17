@@ -30,9 +30,9 @@ Return Type: [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate)
 MobEffectsPredicate.create(map as MobEffectPredicate[MobEffect]) as MobEffectsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| map | [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)[[MobEffect](/vanilla/api/entity/effect/MobEffect)] | No Description Provided |
+| Parameter |                                                        Type                                                        |
+|-----------|--------------------------------------------------------------------------------------------------------------------|
+| map       | [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate)[[MobEffect](/vanilla/api/entity/effect/MobEffect)] |
 
 
 :::
@@ -45,10 +45,10 @@ Return Type: [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate)
 MobEffectsPredicate.create(effect as MobEffect, predicate as MobEffectPredicate) as MobEffectsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
-| predicate | [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate) | No Description Provided |
+| Parameter |                              Type                               |
+|-----------|-----------------------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect)               |
+| predicate | [MobEffectPredicate](/vanilla/api/predicate/MobEffectPredicate) |
 
 
 :::

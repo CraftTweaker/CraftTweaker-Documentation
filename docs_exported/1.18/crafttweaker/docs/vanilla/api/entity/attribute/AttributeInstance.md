@@ -12,30 +12,26 @@ import crafttweaker.api.entity.attribute.AttributeInstance;
 
 :::group{name=addPermanentModifier}
 
-Return Type: void
-
 ```zenscript
-AttributeInstance.addPermanentModifier(modifier as AttributeModifier) as void
+AttributeInstance.addPermanentModifier(modifier as AttributeModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | No Description Provided |
+| Parameter |                                 Type                                 |
+|-----------|----------------------------------------------------------------------|
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) |
 
 
 :::
 
 :::group{name=addTransientModifier}
 
-Return Type: void
-
 ```zenscript
-AttributeInstance.addTransientModifier(modifier as AttributeModifier) as void
+AttributeInstance.addTransientModifier(modifier as AttributeModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | No Description Provided |
+| Parameter |                                 Type                                 |
+|-----------|----------------------------------------------------------------------|
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) |
 
 
 :::
@@ -60,9 +56,9 @@ Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier
 AttributeInstance.getModifier(uuid as string) as AttributeModifier?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| uuid      | string |
 
 
 :::
@@ -99,54 +95,48 @@ Return Type: boolean
 AttributeInstance.hasModifier(modifier as AttributeModifier) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | No Description Provided |
+| Parameter |                                 Type                                 |
+|-----------|----------------------------------------------------------------------|
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) |
 
 
 :::
 
 :::group{name=removeModifier}
 
-Return Type: void
-
 ```zenscript
-AttributeInstance.removeModifier(modifier as AttributeModifier) as void
+AttributeInstance.removeModifier(modifier as AttributeModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | No Description Provided |
+| Parameter |                                 Type                                 |
+|-----------|----------------------------------------------------------------------|
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) |
 
 
 :::
 
 :::group{name=removeModifier}
 
-Return Type: void
-
 ```zenscript
-AttributeInstance.removeModifier(uuid as string) as void
+AttributeInstance.removeModifier(uuid as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| uuid      | string |
 
 
 :::
 
 :::group{name=setBaseValue}
 
-Return Type: void
-
 ```zenscript
-AttributeInstance.setBaseValue(value as double) as void
+AttributeInstance.setBaseValue(value as double)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
 
 
 :::
@@ -154,9 +144,9 @@ AttributeInstance.setBaseValue(value as double) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| baseValue | double | true | true | No Description Provided |
-| modifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt; | true | false | No Description Provided |
-| value | double | true | false | No Description Provided |
+|   Name    |                                          Type                                           | Has Getter | Has Setter |
+|-----------|-----------------------------------------------------------------------------------------|------------|------------|
+| baseValue | double                                                                                  | true       | true       |
+| modifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt; | true       | false      |
+| value     | double                                                                                  | true       | false      |
 

@@ -18,10 +18,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancement(name as ResourceLocation, completed as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided | false |  |
-| completed | boolean | No Description Provided | true | true |
+| Parameter |                            Type                            | Optional | Default Value |
+|-----------|------------------------------------------------------------|----------|---------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | false    |               |
+| completed | boolean                                                    | true     | true          |
 
 
 :::
@@ -34,10 +34,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancement(name as string, completed as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | string | No Description Provided | false |  |
-| completed | boolean | No Description Provided | true | true |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| name      | string  | false    |               |
+| completed | boolean | true     | true          |
 
 
 :::
@@ -50,10 +50,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancementCriteria(name as ResourceLocation, criteria as bool?[string]) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| criteria | bool?[string] | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| criteria  | bool?[string]                                              |
 
 
 :::
@@ -66,10 +66,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancementCriteria(name as string, criteria as bool?[string]) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
-| criteria | bool?[string] | No Description Provided |
+| Parameter |     Type      |
+|-----------|---------------|
+| name      | string        |
+| criteria  | bool?[string] |
 
 
 :::
@@ -82,11 +82,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancementCriterion(name as ResourceLocation, criterion as string, completed as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided | false |  |
-| criterion | string | No Description Provided | false |  |
-| completed | boolean | No Description Provided | true | true |
+| Parameter |                            Type                            | Optional | Default Value |
+|-----------|------------------------------------------------------------|----------|---------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | false    |               |
+| criterion | string                                                     | false    |               |
+| completed | boolean                                                    | true     | true          |
 
 
 :::
@@ -99,11 +99,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.advancementCriterion(name as string, criterion as string, completed as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | string | No Description Provided | false |  |
-| criterion | string | No Description Provided | false |  |
-| completed | boolean | No Description Provided | true | true |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| name      | string  | false    |               |
+| criterion | string  | false    |               |
+| completed | boolean | true     | true          |
 
 
 :::
@@ -128,9 +128,9 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.gameType(type as GameType) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | [GameType](/vanilla/api/world/GameType) | No Description Provided |
+| Parameter |                  Type                   |
+|-----------|-----------------------------------------|
+| type      | [GameType](/vanilla/api/world/GameType) |
 
 
 :::
@@ -143,9 +143,9 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.level(level as IntMinMaxBoundsPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| level     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -158,9 +158,9 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.lookingAt(predicate as EntityPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -173,9 +173,9 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.lookingAt(predicate as EntityPredicateBuilder) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::
@@ -188,10 +188,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.recipe(name as ResourceLocation, unlocked as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided | false |  |
-| unlocked | boolean | No Description Provided | true | true |
+| Parameter |                            Type                            | Optional | Default Value |
+|-----------|------------------------------------------------------------|----------|---------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | false    |               |
+| unlocked  | boolean                                                    | true     | true          |
 
 
 :::
@@ -204,10 +204,10 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.recipe(name as string, unlocked as boolean) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | string | No Description Provided | false |  |
-| unlocked | boolean | No Description Provided | true | true |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| name      | string  | false    |               |
+| unlocked  | boolean | true     | true          |
 
 
 :::
@@ -220,11 +220,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.statistic(type as ResourceLocation, name as ResourceLocation, value as IntMinMaxBoundsPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| value | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| type      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                  |
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                  |
+| value     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -237,11 +237,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.statistic(type as ResourceLocation, name as string, value as IntMinMaxBoundsPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| name | string | No Description Provided |
-| value | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| type      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                  |
+| name      | string                                                                      |
+| value     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -254,11 +254,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.statistic(type as string, name as ResourceLocation, value as IntMinMaxBoundsPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | string | No Description Provided |
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| value | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| type      | string                                                                      |
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                  |
+| value     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -271,11 +271,11 @@ Return Type: [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredi
 PlayerPredicateBuilder.statistic(type as string, name as string, value as IntMinMaxBoundsPredicate) as PlayerPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| type | string | No Description Provided |
-| name | string | No Description Provided |
-| value | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| type      | string                                                                      |
+| name      | string                                                                      |
+| value     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::

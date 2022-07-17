@@ -18,9 +18,9 @@ TextComponent extends [BaseComponent](/vanilla/api/text/BaseComponent). That mea
 ```zenscript
 new TextComponent(text as string) as TextComponent
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| text | string | No description provided |
+| Parameter |  Type  |
+|-----------|--------|
+| text      | string |
 
 
 
@@ -41,7 +41,7 @@ myTextComponent.getText();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| text | string | true | false | No Description Provided |
+| Name |  Type  | Has Getter | Has Setter |
+|------|--------|------------|------------|
+| text | string | true       | false      |
 

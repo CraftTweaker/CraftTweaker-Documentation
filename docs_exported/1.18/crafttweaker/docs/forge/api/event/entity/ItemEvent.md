@@ -18,7 +18,7 @@ ItemEvent extends [EntityEvent](/forge/api/event/entity/EntityEvent). That means
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| entityItem | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity) | true | false | No Description Provided |
+|    Name    |                          Type                          | Has Getter | Has Setter |
+|------------|--------------------------------------------------------|------------|------------|
+| entityItem | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity) | true       | false      |
 

@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 RandomChanceLootCondition.create(probability as float) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| probability | float | No Description Provided |
+|  Parameter  | Type  |
+|-------------|-------|
+| probability | float |
 
 
 :::

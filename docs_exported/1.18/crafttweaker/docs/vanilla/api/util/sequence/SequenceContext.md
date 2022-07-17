@@ -12,14 +12,14 @@ import crafttweaker.api.util.sequence.SequenceContext;
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new SequenceContext<T,U>(sequence as Sequence<T,U>, data as U) as SequenceContext<T,U>
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| sequence | [Sequence](/vanilla/api/util/sequence/Sequence)&lt;T,U&gt; | No Description Provided |
-| data | U | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| sequence  | [Sequence](/vanilla/api/util/sequence/Sequence)&lt;T,U&gt; |
+| data      | U                                                          |
 
 
 
@@ -46,10 +46,8 @@ mySequenceContext.getData();
 
 Stop the sequence.
 
-Return Type: void
-
 ```zenscript
-// SequenceContext.stop() as void
+// SequenceContext.stop()
 
 mySequenceContext.stop();
 ```
@@ -59,7 +57,7 @@ mySequenceContext.stop();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| data | U | true | false | Gets the data provided to the sequence. <br />  <br />  Note, this can never return null, if the data is null then it will throw an error. |
+| Name | Type | Has Getter | Has Setter |                                                                Description                                                                 |
+|------|------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| data | U    | true       | false      | Gets the data provided to the sequence. <br />  <br />  Note, this can never return null, if the data is null then it will throw an error. |
 

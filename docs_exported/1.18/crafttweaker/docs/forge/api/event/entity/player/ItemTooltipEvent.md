@@ -87,10 +87,10 @@ event.getToolTip();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| flags | [TooltipFlag](/vanilla/api/item/TooltipFlag) | true | false | Gets the extra tooltip flags, such as if advanced tooltips should be displayed. |
-| itemStack | [ItemStack](/vanilla/api/item/ItemStack) | true | false | Gets the ItemStack that the tooltip is for. |
-| player | [Player](/vanilla/api/entity/type/player/Player)? | true | false | Gets the player that is viewing the tooltip. <br />  <br />  Note: The player can be null |
-| tooltip | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | true | false | Gets the list of [Component](/vanilla/api/text/Component)s that make up the tooltip. |
+|   Name    |                            Type                             | Has Getter | Has Setter |                                        Description                                        |
+|-----------|-------------------------------------------------------------|------------|------------|-------------------------------------------------------------------------------------------|
+| flags     | [TooltipFlag](/vanilla/api/item/TooltipFlag)                | true       | false      | Gets the extra tooltip flags, such as if advanced tooltips should be displayed.           |
+| itemStack | [ItemStack](/vanilla/api/item/ItemStack)                    | true       | false      | Gets the ItemStack that the tooltip is for.                                               |
+| player    | [Player](/vanilla/api/entity/type/player/Player)?           | true       | false      | Gets the player that is viewing the tooltip. <br />  <br />  Note: The player can be null |
+| tooltip   | stdlib.List&lt;[Component](/vanilla/api/text/Component)&gt; | true       | false      | Gets the list of [Component](/vanilla/api/text/Component)s that make up the tooltip.      |
 

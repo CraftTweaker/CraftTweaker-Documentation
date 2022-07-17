@@ -30,9 +30,9 @@ Return Type: [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBo
 DoubleMinMaxBoundsPredicate.atLeast(min as double) as DoubleMinMaxBoundsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| min       | double |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBo
 DoubleMinMaxBoundsPredicate.atMost(max as double) as DoubleMinMaxBoundsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| max | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| max       | double |
 
 
 :::
@@ -60,10 +60,10 @@ Return Type: [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBo
 DoubleMinMaxBoundsPredicate.between(min as double, max as double) as DoubleMinMaxBoundsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | double | No Description Provided |
-| max | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| min       | double |
+| max       | double |
 
 
 :::
@@ -76,9 +76,9 @@ Return Type: [DoubleMinMaxBoundsPredicate](/vanilla/api/predicate/DoubleMinMaxBo
 DoubleMinMaxBoundsPredicate.exactly(value as double) as DoubleMinMaxBoundsPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
 
 
 :::

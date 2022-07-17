@@ -25,7 +25,7 @@ ItemTossEvent extends [ItemEvent](/forge/api/event/entity/ItemEvent). That means
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | true | false | No Description Provided |
+|  Name  |                       Type                       | Has Getter | Has Setter |
+|--------|--------------------------------------------------|------------|------------|
+| player | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
 

@@ -17,29 +17,29 @@ MapData implements the following interfaces. That means all methods defined in t
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new MapData() as MapData
 new MapData();
 ```
-No Description Provided
+
 ```zenscript
 new MapData(map as IData[string]) as MapData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| map       | [IData](/vanilla/api/data/IData)[string] |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [IData](/vanilla/api/data/IData)[string] | true |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [IData](/vanilla/api/data/IData)[string]             | true        |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 
@@ -122,9 +122,9 @@ Return Type: boolean
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | The key to search for |
+| Parameter |  Type  |      Description      |
+|-----------|--------|-----------------------|
+| key       | string | The key to search for |
 
 
 :::
@@ -142,9 +142,9 @@ Return Type: [IData](/vanilla/api/data/IData)?
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | The key to search for |
+| Parameter |  Type  |      Description      |
+|-----------|--------|-----------------------|
+| key       | string | The key to search for |
 
 
 :::
@@ -160,10 +160,10 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 MapData.getData<T : IData>(key as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | The key to search for. |
-| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+| Parameter |               Type               |      Description       |
+|-----------|----------------------------------|------------------------|
+| key       | string                           | The key to search for. |
+| T         | [IData](/vanilla/api/data/IData) |                        |
 
 
 :::
@@ -215,9 +215,9 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 {Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [MapData](/vanilla/api/data/MapData) | The other map. |
+| Parameter |                 Type                 |  Description   |
+|-----------|--------------------------------------|----------------|
+| other     | [MapData](/vanilla/api/data/MapData) | The other map. |
 
 
 :::
@@ -235,10 +235,10 @@ Return Type: [IData](/vanilla/api/data/IData)?
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | The key to set the value for. |
-| value | [IData](/vanilla/api/data/IData) | The value to set. |
+| Parameter |               Type               |          Description          |
+|-----------|----------------------------------|-------------------------------|
+| key       | string                           | The key to set the value for. |
+| value     | [IData](/vanilla/api/data/IData) | The value to set.             |
 
 
 :::
@@ -248,17 +248,15 @@ Return Type: [IData](/vanilla/api/data/IData)?
 Adds all entries from the given map into this one.
  Can override existing keys.
 
-Return Type: void
-
 ```zenscript
-// MapData.putAll(map as IData[string]) as void
+// MapData.putAll(map as IData[string])
 
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| map | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
+| Parameter |                   Type                   |                Description                |
+|-----------|------------------------------------------|-------------------------------------------|
+| map       | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
 
 
 :::
@@ -267,17 +265,15 @@ Return Type: void
 
 Removes the entry with the given key from the Map
 
-Return Type: void
-
 ```zenscript
-// MapData.remove(key as string) as void
+// MapData.remove(key as string)
 
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| key | string | The key of the entry to remove |
+| Parameter |  Type  |          Description           |
+|-----------|--------|--------------------------------|
+| key       | string | The key of the entry to remove |
 
 
 :::
@@ -331,9 +327,9 @@ myMapData.key as string = value as IData
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| isEmpty | boolean | true | false | No Description Provided |
-| keySet | Set&lt;string&gt; | true | false | No Description Provided |
-| size | int | true | false | No Description Provided |
+|  Name   |       Type        | Has Getter | Has Setter |
+|---------|-------------------|------------|------------|
+| isEmpty | boolean           | true       | false      |
+| keySet  | Set&lt;string&gt; | true       | false      |
+| size    | int               | true       | false      |
 

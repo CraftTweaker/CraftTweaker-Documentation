@@ -22,11 +22,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.clamp(axis as Axis, min as int, max as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| axis | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| min | int | No Description Provided |
-| max | int | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
+| min       | int                                      |
+| max       | int                                      |
 
 
 :::
@@ -39,9 +39,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(direction as Direction) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -54,9 +54,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(other as Vec3i) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -69,10 +69,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(direction as Direction, distance as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance | int | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -85,11 +85,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -114,9 +114,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(value as long) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | long | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | long |
 
 
 :::
@@ -129,9 +129,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(value as Vec3i) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| value     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -144,11 +144,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(x as double, y as double, z as double) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | double | No Description Provided |
-| y | double | No Description Provided |
-| z | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -161,11 +161,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -178,12 +178,12 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(axisCycle as AxisCycle, x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| axisCycle | [AxisCycle](/vanilla/api/util/math/AxisCycle) | No Description Provided |
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| axisCycle | [AxisCycle](/vanilla/api/util/math/AxisCycle) |
+| x         | int                                           |
+| y         | int                                           |
+| z         | int                                           |
 
 
 :::
@@ -196,10 +196,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, direction as Direction) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i)              |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -212,10 +212,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, offset as Vec3i) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| offset | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| offset    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -228,12 +228,12 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| x | int | No Description Provided |
-| y | int | No Description Provided |
-| z | int | No Description Provided |
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| x         | int                                   |
+| y         | int                                   |
+| z         | int                                   |
 
 
 :::
@@ -246,9 +246,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setX(x as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| x | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| x         | int  |
 
 
 :::
@@ -261,9 +261,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setY(y as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| y | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| y         | int  |
 
 
 :::
@@ -276,9 +276,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setZ(z as int) as MutableBlockPos
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| z | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| z         | int  |
 
 
 :::

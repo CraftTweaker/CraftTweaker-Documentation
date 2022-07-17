@@ -143,9 +143,9 @@ Return Type: string
 myGame.localize("gui.up");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| translationKey | string | No Description Provided |
+|   Parameter    |  Type  |
+|----------------|--------|
+| translationKey | string |
 
 
 :::
@@ -153,16 +153,16 @@ myGame.localize("gui.up");
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockStates | Collection&lt;[BlockState](/vanilla/api/block/BlockState)&gt; | true | false | No Description Provided |
-| blocks | Collection&lt;[Block](/vanilla/api/block/Block)&gt; | true | false | No Description Provided |
-| effects | Collection&lt;[MobEffect](/vanilla/api/entity/effect/MobEffect)&gt; | true | false | No Description Provided |
-| enchantments | Collection&lt;[Enchantment](/vanilla/api/item/enchantment/Enchantment)&gt; | true | false | No Description Provided |
-| entityTypes | Collection&lt;[EntityType](/vanilla/api/entity/EntityType)&gt; | true | false | No Description Provided |
-| fluids | Collection&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | true | false | No Description Provided |
-| items | Collection&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | false | No Description Provided |
-| potions | Collection&lt;[Potion](/vanilla/api/item/alchemy/Potion)&gt; | true | false | No Description Provided |
-| recipeTypes | Collection&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | true | false | No Description Provided |
-| villagerProfessions | Collection&lt;[VillagerProfession](/vanilla/api/villager/VillagerProfession)&gt; | true | false | No Description Provided |
+|        Name         |                                       Type                                       | Has Getter | Has Setter |
+|---------------------|----------------------------------------------------------------------------------|------------|------------|
+| blockStates         | Collection&lt;[BlockState](/vanilla/api/block/BlockState)&gt;                    | true       | false      |
+| blocks              | Collection&lt;[Block](/vanilla/api/block/Block)&gt;                              | true       | false      |
+| effects             | Collection&lt;[MobEffect](/vanilla/api/entity/effect/MobEffect)&gt;              | true       | false      |
+| enchantments        | Collection&lt;[Enchantment](/vanilla/api/item/enchantment/Enchantment)&gt;       | true       | false      |
+| entityTypes         | Collection&lt;[EntityType](/vanilla/api/entity/EntityType)&gt;                   | true       | false      |
+| fluids              | Collection&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt;                              | true       | false      |
+| items               | Collection&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;                     | true       | false      |
+| potions             | Collection&lt;[Potion](/vanilla/api/item/alchemy/Potion)&gt;                     | true       | false      |
+| recipeTypes         | Collection&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt;   | true       | false      |
+| villagerProfessions | Collection&lt;[VillagerProfession](/vanilla/api/villager/VillagerProfession)&gt; | true       | false      |
 

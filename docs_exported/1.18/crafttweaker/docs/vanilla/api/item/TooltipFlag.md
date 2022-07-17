@@ -25,7 +25,7 @@ myTooltipFlag.isAdvanced();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| advanced | boolean | true | false | No Description Provided |
+|   Name   |  Type   | Has Getter | Has Setter |
+|----------|---------|------------|------------|
+| advanced | boolean | true       | false      |
 

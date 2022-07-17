@@ -23,9 +23,9 @@ Return Type: [EntityHasScoreLootConditionBuilder](/vanilla/api/loot/condition/bu
 EntityHasScoreLootCondition.create(target as EntityTarget) as EntityHasScoreLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [EntityTarget](/vanilla/api/loot/EntityTarget) | No Description Provided |
+| Parameter |                      Type                      |
+|-----------|------------------------------------------------|
+| target    | [EntityTarget](/vanilla/api/loot/EntityTarget) |
 
 
 :::

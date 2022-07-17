@@ -23,9 +23,9 @@ Return Type: [BlockStatePropertyLootConditionBuilder](/vanilla/api/loot/conditio
 BlockStatePropertyLootCondition.create(block as Block) as BlockStatePropertyLootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| block | [Block](/vanilla/api/block/Block) | No Description Provided |
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| block     | [Block](/vanilla/api/block/Block) |
 
 
 :::

@@ -37,7 +37,7 @@ myAttributeOperation.getValue();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| value | int | true | false | Gets the value of this operation. |
+| Name  | Type | Has Getter | Has Setter |            Description            |
+|-------|------|------------|------------|-----------------------------------|
+| value | int  | true       | false      | Gets the value of this operation. |
 

@@ -17,29 +17,29 @@ DoubleData implements the following interfaces. That means all methods defined i
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new DoubleData(internal as double) as DoubleData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | double | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| internal  | double |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| byte | false |
-| double | false |
-| float | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| int | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
-| long | false |
-| short | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| byte                                                 | false       |
+| double                                               | false       |
+| float                                                | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| int                                                  | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| long                                                 | false       |
+| short                                                | false       |
 
 ## Methods
 

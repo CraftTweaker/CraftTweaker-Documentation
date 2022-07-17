@@ -32,9 +32,9 @@ Return Type: [Axis](/vanilla/api/util/direction/Axis)
 Plane.getRandomAxis(random as Random) as Axis
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| random | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Parameter |                  Type                   |
+|-----------|-----------------------------------------|
+| random    | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -47,9 +47,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Plane.getRandomDirection(random as Random) as Direction
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| random | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Parameter |                  Type                   |
+|-----------|-----------------------------------------|
+| random    | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -74,9 +74,9 @@ Return Type: boolean
 Plane.test(direction as Direction?) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -84,7 +84,7 @@ Plane.test(direction as Direction?) as boolean
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true | false | No Description Provided |
+|   Name   |                                   Type                                    | Has Getter | Has Setter |
+|----------|---------------------------------------------------------------------------|------------|------------|
+| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true       | false      |
 

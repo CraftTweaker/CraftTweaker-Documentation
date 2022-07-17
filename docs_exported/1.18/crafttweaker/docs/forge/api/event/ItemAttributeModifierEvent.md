@@ -35,12 +35,12 @@ Return Type: boolean
 myItemAttributeModifierEvent.addModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to add. |
-| name | string | The name of the modifier to add |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
+| Parameter |                                  Type                                  |           Description           |
+|-----------|------------------------------------------------------------------------|---------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute to add.           |
+| name      | string                                                                 | The name of the modifier to add |
+| value     | double                                                                 | The value of the modifier.      |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.  |
 
 
 :::
@@ -58,12 +58,12 @@ Return Type: boolean
 myItemAttributeModifierEvent.addModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to add. |
-| uuid | string | The UUID of the modifier. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
+| Parameter |                                  Type                                  |          Description           |
+|-----------|------------------------------------------------------------------------|--------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute to add.          |
+| uuid      | string                                                                 | The UUID of the modifier.      |
+| name      | string                                                                 | The name of the modifier.      |
+| value     | double                                                                 | The value of the modifier.     |
 | operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
 
 
@@ -73,10 +73,8 @@ myItemAttributeModifierEvent.addModifier(<attribute:minecraft:generic.attack_dam
 
 Clears all AttributeModifiers from the ItemStack.
 
-Return Type: void
-
 ```zenscript
-// ItemAttributeModifierEvent.clearModifiers() as void
+// ItemAttributeModifierEvent.clearModifiers()
 
 myItemAttributeModifierEvent.clearModifiers();
 ```
@@ -158,8 +156,8 @@ Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/At
 myItemAttributeModifierEvent.removeAttribute(<attribute:minecraft:generic.attack_damage>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |                         Type                         |       Description        |
+|-----------|------------------------------------------------------|--------------------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to remove. |
 
 
@@ -178,10 +176,10 @@ Return Type: boolean
 myItemAttributeModifierEvent.removeModifier(<attribute:minecraft:generic.attack_damage>, modifier);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to remove. |
-| modifier | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | The modifier to remove. |
+| Parameter |                                 Type                                 |       Description        |
+|-----------|----------------------------------------------------------------------|--------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                 | The Attribute to remove. |
+| modifier  | [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier) | The modifier to remove.  |
 
 
 :::
@@ -199,10 +197,10 @@ Return Type: boolean
 myItemAttributeModifierEvent.removeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to remove. |
-| uuid | string | The UUID of the modifier. |
+| Parameter |                         Type                         |        Description        |
+|-----------|------------------------------------------------------|---------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute to remove.  |
+| uuid      | string                                               | The UUID of the modifier. |
 
 
 :::
@@ -210,10 +208,10 @@ myItemAttributeModifierEvent.removeModifier(<attribute:minecraft:generic.attack_
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| itemstack | [IItemStack](/vanilla/api/item/IItemStack) | true | false | Gets the ItemStack that this event is being ran for. |
-| modifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true | false | Gets the modifiers on the ItemStack |
-| originalModifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true | false | Gets the original modifiers on the ItemStack before being changed by any other event listener. |
-| slotType | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | Gets the EquipmentSlotType that this event is being ran for. <br />  <br />  If you only want to add / remove a modifier from a specific slot, you can use this to filter based on the slot. |
+|       Name        |                                                                     Type                                                                      | Has Getter | Has Setter |                                                                                         Description                                                                                          |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| itemstack         | [IItemStack](/vanilla/api/item/IItemStack)                                                                                                    | true       | false      | Gets the ItemStack that this event is being ran for.                                                                                                                                         |
+| modifiers         | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true       | false      | Gets the modifiers on the ItemStack                                                                                                                                                          |
+| originalModifiers | stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)&gt;[[Attribute](/vanilla/api/entity/attribute/Attribute)] | true       | false      | Gets the original modifiers on the ItemStack before being changed by any other event listener.                                                                                               |
+| slotType          | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)                                                                                  | true       | false      | Gets the EquipmentSlotType that this event is being ran for. <br />  <br />  If you only want to add / remove a modifier from a specific slot, you can use this to filter based on the slot. |
 

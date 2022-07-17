@@ -10,9 +10,9 @@ import crafttweaker.api.item.ItemDefinition;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IItemStack](/vanilla/api/item/IItemStack) | true |
+|                Result Type                 | Is Implicit |
+|--------------------------------------------|-------------|
+| [IItemStack](/vanilla/api/item/IItemStack) | true        |
 
 ## Methods
 
@@ -43,8 +43,8 @@ myItemDefinition.getDefaultInstance();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| defaultInstance | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+|      Name       |                    Type                    | Has Getter | Has Setter |
+|-----------------|--------------------------------------------|------------|------------|
+| commandString   | string                                     | true       | false      |
+| defaultInstance | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
 

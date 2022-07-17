@@ -18,10 +18,10 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 RecipeFunctionMatrix.process(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| usualOut | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
-| inputs | [IItemStack](/vanilla/api/item/IItemStack)[][] | No Description Provided |
+| Parameter |                      Type                      |
+|-----------|------------------------------------------------|
+| usualOut  | [IItemStack](/vanilla/api/item/IItemStack)     |
+| inputs    | [IItemStack](/vanilla/api/item/IItemStack)[][] |
 
 
 :::

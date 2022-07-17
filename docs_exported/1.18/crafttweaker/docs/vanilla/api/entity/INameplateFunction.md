@@ -12,16 +12,14 @@ import crafttweaker.api.entity.INameplateFunction;
 
 :::group{name=apply}
 
-Return Type: void
-
 ```zenscript
-INameplateFunction.apply(entity as Entity, result as NamePlateResult) as void
+INameplateFunction.apply(entity as Entity, result as NamePlateResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
-| result | [NamePlateResult](/vanilla/api/entity/NamePlateResult) | No Description Provided |
+| Parameter |                          Type                          |
+|-----------|--------------------------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity)                   |
+| result    | [NamePlateResult](/vanilla/api/entity/NamePlateResult) |
 
 
 :::

@@ -40,7 +40,7 @@ event.getOrb();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| orb | [ExperienceOrb](/vanilla/api/entity/type/misc/ExperienceOrb) | true | false | No Description Provided |
+| Name |                             Type                             | Has Getter | Has Setter |
+|------|--------------------------------------------------------------|------------|------------|
+| orb  | [ExperienceOrb](/vanilla/api/entity/type/misc/ExperienceOrb) | true       | false      |
 

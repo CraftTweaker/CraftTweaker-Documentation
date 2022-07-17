@@ -121,15 +121,15 @@ myAdvancement.getRewards();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| chatComponent | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
-| children | stdlib.Iterable&lt;T&gt;? | true | false | No Description Provided |
-| criteria | V[K]? | true | false | No Description Provided |
-| display | [DisplayInfo](/vanilla/api/advancement/DisplayInfo)? | true | false | No Description Provided |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation)? | true | false | No Description Provided |
-| maxCriteriaRequired | int | true | false | No Description Provided |
-| parent | [Advancement](/vanilla/api/advancement/Advancement)? | true | false | No Description Provided |
-| requirements | string?[][] | true | false | No Description Provided |
-| rewards | [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards)? | true | false | No Description Provided |
+|        Name         |                                Type                                | Has Getter | Has Setter |
+|---------------------|--------------------------------------------------------------------|------------|------------|
+| chatComponent       | [Component](/vanilla/api/text/Component)?                          | true       | false      |
+| children            | stdlib.Iterable&lt;T&gt;?                                          | true       | false      |
+| criteria            | V[K]?                                                              | true       | false      |
+| display             | [DisplayInfo](/vanilla/api/advancement/DisplayInfo)?               | true       | false      |
+| id                  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)?        | true       | false      |
+| maxCriteriaRequired | int                                                                | true       | false      |
+| parent              | [Advancement](/vanilla/api/advancement/Advancement)?               | true       | false      |
+| requirements        | string?[][]                                                        | true       | false      |
+| rewards             | [AdvancementRewards](/vanilla/api/advancement/AdvancementRewards)? | true       | false      |
 

@@ -100,11 +100,11 @@ Return Type: [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&g
 LootContextParams.getOrCreate<T : Object>(name as ResourceLocation, tClass as Class<T>) as LootContextParam<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the parameter. |
-| tClass | Class&lt;T&gt; | No Description Provided |
-| T | Object | The type that the parameter acts on. |
+| Parameter |                            Type                            |             Description              |
+|-----------|------------------------------------------------------------|--------------------------------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the parameter.           |
+| tClass    | Class&lt;T&gt;                                             |                                      |
+| T         | Object                                                     | The type that the parameter acts on. |
 
 
 :::

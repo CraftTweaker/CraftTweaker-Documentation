@@ -18,10 +18,10 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| world | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| world     | [Level](/vanilla/api/world/Level)           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -34,11 +34,11 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| world | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| mustBeAtEdge | boolean | No Description Provided |
+|  Parameter   |                    Type                     |
+|--------------|---------------------------------------------|
+| world        | [Level](/vanilla/api/world/Level)           |
+| pos          | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| mustBeAtEdge | boolean                                     |
 
 
 :::
@@ -51,10 +51,10 @@ Return Type: boolean
 Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| world | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| world     | [Level](/vanilla/api/world/Level)           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -62,16 +62,16 @@ Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| biomeCategory | string | true | false | No Description Provided |
-| commandString | string | true | false | No Description Provided |
-| doesRain | boolean | true | false | No Description Provided |
-| doesSnow | boolean | true | false | No Description Provided |
-| downfall | float | true | false | No Description Provided |
-| isHumid | boolean | true | false | No Description Provided |
-| rainType | string | true | false | No Description Provided |
-| registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| waterColor | int | true | false | No Description Provided |
-| waterFogColor | int | true | false | No Description Provided |
+|     Name      |                            Type                            | Has Getter | Has Setter |
+|---------------|------------------------------------------------------------|------------|------------|
+| biomeCategory | string                                                     | true       | false      |
+| commandString | string                                                     | true       | false      |
+| doesRain      | boolean                                                    | true       | false      |
+| doesSnow      | boolean                                                    | true       | false      |
+| downfall      | float                                                      | true       | false      |
+| isHumid       | boolean                                                    | true       | false      |
+| rainType      | string                                                     | true       | false      |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
+| waterColor    | int                                                        | true       | false      |
+| waterFogColor | int                                                        | true       | false      |
 

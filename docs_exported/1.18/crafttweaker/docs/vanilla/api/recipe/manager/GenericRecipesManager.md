@@ -26,10 +26,8 @@ Add a new recipe based on the given recipe in a valid DataPack JSON format.
 
  Unlike the addJSONRecipe method in [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;T&gt; you **must** set the type of the recipe within the JSON yourself.
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.addJsonRecipe(name as string, data as MapData) as void
+// GenericRecipesManager.addJsonRecipe(name as string, data as MapData)
 
 recipes.addJsonRecipe("recipe_name", {
  type: "minecraft:smoking",
@@ -40,10 +38,10 @@ recipes.addJsonRecipe("recipe_name", {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The recipe's resource path |
-| data | [MapData](/vanilla/api/data/MapData) | The recipe in JSON format |
+| Parameter |                 Type                 |        Description         |
+|-----------|--------------------------------------|----------------------------|
+| name      | string                               | The recipe's resource path |
+| data      | [MapData](/vanilla/api/data/MapData) | The recipe in JSON format  |
 
 
 :::
@@ -83,9 +81,9 @@ Return Type: [Recipe](/vanilla/api/recipe/type/Recipe)
 GenericRecipesManager.getRecipeByName(name as string) as Recipe
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
 
 
 :::
@@ -113,9 +111,9 @@ Return Type: stdlib.List&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&gt;
 GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Recipe>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -124,17 +122,15 @@ GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<R
 
 Removes recipes by output
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.remove(output as IIngredient) as void
+// GenericRecipesManager.remove(output as IIngredient)
 
 recipes.remove(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | The recipe result |
+| Parameter |                        Type                        |    Description    |
+|-----------|----------------------------------------------------|-------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | The recipe result |
 
 
 :::
@@ -143,10 +139,8 @@ recipes.remove(<item:minecraft:iron_ingot>);
 
 Removes all recipes from all managers.
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.removeAll() as void
+// GenericRecipesManager.removeAll()
 
 recipes.removeAll();
 ```
@@ -158,17 +152,15 @@ recipes.removeAll();
 Removes all recipes from the provided mod.
  Chooses the recipes based on their full recipe name, not based on output item!
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.removeByModid(modId as string) as void
+// GenericRecipesManager.removeByModid(modId as string)
 
 recipes.removeByModid("crafttweaker");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modId | string | The mod's modId |
+| Parameter |  Type  |   Description   |
+|-----------|--------|-----------------|
+| modId     | string | The mod's modId |
 
 
 :::
@@ -181,18 +173,16 @@ Removes all recipes from the provided mod.
  Since the recipe's namespace is already fixed based on the modId argument,
  the recipe filter will only check the resource path!
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.removeByModid(modId as string, exclude as Predicate<string>) as void
+// GenericRecipesManager.removeByModid(modId as string, exclude as Predicate<string>)
 
 recipes.removeByModid("minecraft", (recipeName as string) => recipeName == "white_bed");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modId | string | The mod's modid |
-| exclude | Predicate&lt;string&gt; | Function that returns `true` if the recipe should remain in the registry. |
+| Parameter |          Type           |                                Description                                |
+|-----------|-------------------------|---------------------------------------------------------------------------|
+| modId     | string                  | The mod's modid                                                           |
+| exclude   | Predicate&lt;string&gt; | Function that returns `true` if the recipe should remain in the registry. |
 
 
 :::
@@ -201,15 +191,13 @@ recipes.removeByModid("minecraft", (recipeName as string) => recipeName == "whit
 
 Remove recipes based on Registry names
 
-Return Type: void
-
 ```zenscript
-GenericRecipesManager.removeByName(names as string[]) as void
+GenericRecipesManager.removeByName(names as string[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| names | string[] | registry names of recipes to remove |
+| Parameter |   Type   |             Description             |
+|-----------|----------|-------------------------------------|
+| names     | string[] | registry names of recipes to remove |
 
 
 :::
@@ -218,17 +206,15 @@ GenericRecipesManager.removeByName(names as string[]) as void
 
 Remove recipe based on regex
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.removeByRegex(regex as string) as void
+// GenericRecipesManager.removeByRegex(regex as string)
 
 recipes.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | regex to match against |
+| Parameter |  Type  |      Description       |
+|-----------|--------|------------------------|
+| regex     | string | regex to match against |
 
 
 :::
@@ -239,17 +225,15 @@ recipes.removeByRegex("\\d_\\d");
 
 Removes recipes by output
 
-Return Type: void
-
 ```zenscript
-// GenericRecipesManager.removeRecipe(output as IIngredient) as void
+// GenericRecipesManager.removeRecipe(output as IIngredient)
 
 recipes.removeRecipe(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | The recipe result |
+| Parameter |                        Type                        |    Description    |
+|-----------|----------------------------------------------------|-------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | The recipe result |
 
 
 :::
@@ -257,9 +241,9 @@ recipes.removeRecipe(<item:minecraft:iron_ingot>);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt; | true | false | Returns a list of all known recipe managers. <br />  This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
-| allRecipes | stdlib.List&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&gt; | true | false | No Description Provided |
-| recipeMap | [Recipe](/vanilla/api/recipe/type/Recipe)[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
+|    Name     |                                                 Type                                                  | Has Getter | Has Setter |                                                                            Description                                                                             |
+|-------------|-------------------------------------------------------------------------------------------------------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt;                       | true       | false      | Returns a list of all known recipe managers. <br />  This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
+| allRecipes  | stdlib.List&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&gt;                                          | true       | false      |                                                                                                                                                                    |
+| recipeMap   | [Recipe](/vanilla/api/recipe/type/Recipe)[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes.                                                                                                                                |
 

@@ -17,23 +17,23 @@ StringData implements the following interfaces. That means all methods defined i
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new StringData(internal as string) as StringData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| internal  | string |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 

@@ -62,15 +62,13 @@ myEnderPearlTeleportEvent.getPlayer();
 
 :::group{name=setAttackDamage}
 
-Return Type: void
-
 ```zenscript
-EnderPearlTeleportEvent.setAttackDamage(attackDamage as float) as void
+EnderPearlTeleportEvent.setAttackDamage(attackDamage as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attackDamage | float | No Description Provided |
+|  Parameter   | Type  |
+|--------------|-------|
+| attackDamage | float |
 
 
 :::
@@ -78,9 +76,9 @@ EnderPearlTeleportEvent.setAttackDamage(attackDamage as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| attackDamage | float | true | true | No Description Provided |
-| pearlEntity | [ThrownEnderpearl](/vanilla/api/entity/type/projectile/ThrownEnderpearl) | true | false | No Description Provided |
-| player | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) | true | false | No Description Provided |
+|     Name     |                                   Type                                   | Has Getter | Has Setter |
+|--------------|--------------------------------------------------------------------------|------------|------------|
+| attackDamage | float                                                                    | true       | true       |
+| pearlEntity  | [ThrownEnderpearl](/vanilla/api/entity/type/projectile/ThrownEnderpearl) | true       | false      |
+| player       | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)             | true       | false      |
 

@@ -29,7 +29,7 @@ null.getCommandString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | Returns the BEP to get this thingy |
+|     Name      |  Type  | Has Getter | Has Setter |            Description             |
+|---------------|--------|------------|------------|------------------------------------|
+| commandString | string | true       | false      | Returns the BEP to get this thingy |
 

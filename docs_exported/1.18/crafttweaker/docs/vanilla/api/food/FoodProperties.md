@@ -18,10 +18,10 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.create(nutrition as int, saturationModifier as float) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| nutrition | int | No Description Provided |
-| saturationModifier | float | No Description Provided |
+|     Parameter      | Type  |
+|--------------------|-------|
+| nutrition          | int   |
+| saturationModifier | float |
 
 
 :::
@@ -36,10 +36,10 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.addEffect(effect as MobEffectInstance, probability as float) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| probability | float | No Description Provided |
+|  Parameter  |                               Type                                |
+|-------------|-------------------------------------------------------------------|
+| effect      | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
+| probability | float                                                             |
 
 
 :::
@@ -124,9 +124,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.removeEffect(effect as MobEffect) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffect](/vanilla/api/entity/effect/MobEffect) | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| effect    | [MobEffect](/vanilla/api/entity/effect/MobEffect) |
 
 
 :::
@@ -139,9 +139,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.removeEffect(effect as MobEffectInstance) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| effect | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
+| Parameter |                               Type                                |
+|-----------|-------------------------------------------------------------------|
+| effect    | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
 
 
 :::
@@ -154,9 +154,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.setCanAlwaysEat(canAlwaysEat as boolean) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| canAlwaysEat | boolean | No Description Provided |
+|  Parameter   |  Type   |
+|--------------|---------|
+| canAlwaysEat | boolean |
 
 
 :::
@@ -169,9 +169,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.setIsFastFood(fastFood as boolean) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fastFood | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| fastFood  | boolean |
 
 
 :::
@@ -184,9 +184,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.setIsMeat(isMeat as boolean) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| isMeat | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| isMeat    | boolean |
 
 
 :::
@@ -199,9 +199,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.setNutrition(nutrition as int) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| nutrition | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| nutrition | int  |
 
 
 :::
@@ -214,9 +214,9 @@ Return Type: [FoodProperties](/vanilla/api/food/FoodProperties)
 FoodProperties.setSaturationModifier(saturationModifier as float) as FoodProperties
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| saturationModifier | float | No Description Provided |
+|     Parameter      | Type  |
+|--------------------|-------|
+| saturationModifier | float |
 
 
 :::
@@ -224,12 +224,12 @@ FoodProperties.setSaturationModifier(saturationModifier as float) as FoodPropert
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| canAlwaysEat | boolean | true | true | No Description Provided |
-| effects | stdlib.List&lt;[Pair](/vanilla/api/util/Pair)&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance),float?&gt;&gt; | true | false | No Description Provided |
-| isFastFood | boolean | true | true | No Description Provided |
-| isMeat | boolean | true | true | No Description Provided |
-| nutrition | int | true | true | No Description Provided |
-| saturationModifier | float | true | true | No Description Provided |
+|        Name        |                                                               Type                                                                | Has Getter | Has Setter |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------|------------|
+| canAlwaysEat       | boolean                                                                                                                           | true       | true       |
+| effects            | stdlib.List&lt;[Pair](/vanilla/api/util/Pair)&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance),float?&gt;&gt; | true       | false      |
+| isFastFood         | boolean                                                                                                                           | true       | true       |
+| isMeat             | boolean                                                                                                                           | true       | true       |
+| nutrition          | int                                                                                                                               | true       | true       |
+| saturationModifier | float                                                                                                                             | true       | true       |
 

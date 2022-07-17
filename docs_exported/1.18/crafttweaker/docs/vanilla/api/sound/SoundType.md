@@ -97,13 +97,13 @@ mySoundType.getVolume();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| breakSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| fallSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| hitSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| pitch | float | true | false | No Description Provided |
-| placeSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| stepSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| volume | float | true | false | No Description Provided |
+|    Name    |                    Type                     | Has Getter | Has Setter |
+|------------|---------------------------------------------|------------|------------|
+| breakSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true       | false      |
+| fallSound  | [SoundEvent](/vanilla/api/sound/SoundEvent) | true       | false      |
+| hitSound   | [SoundEvent](/vanilla/api/sound/SoundEvent) | true       | false      |
+| pitch      | float                                       | true       | false      |
+| placeSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true       | false      |
+| stepSound  | [SoundEvent](/vanilla/api/sound/SoundEvent) | true       | false      |
+| volume     | float                                       | true       | false      |
 

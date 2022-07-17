@@ -18,9 +18,9 @@ Return Type: double
 HitResult.distanceTo(entity as Entity) as double
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -52,8 +52,8 @@ myHitResult.getType();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| location | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| type | [HitResultType](/vanilla/api/util/HitResultType) | true | false | No Description Provided |
+|   Name   |                       Type                       | Has Getter | Has Setter |
+|----------|--------------------------------------------------|------------|------------|
+| location | [Vec3](/vanilla/api/util/math/Vec3)              | true       | false      |
+| type     | [HitResultType](/vanilla/api/util/HitResultType) | true       | false      |
 

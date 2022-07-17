@@ -84,62 +84,54 @@ myMerchant.isClientSide();
 
 :::group{name=notifyTrade}
 
-Return Type: void
-
 ```zenscript
-Merchant.notifyTrade(offer as MerchantOffer) as void
+Merchant.notifyTrade(offer as MerchantOffer)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| offer | [MerchantOffer](/vanilla/api/villager/MerchantOffer) | No Description Provided |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| offer     | [MerchantOffer](/vanilla/api/villager/MerchantOffer) |
 
 
 :::
 
 :::group{name=notifyTradeUpdated}
 
-Return Type: void
-
 ```zenscript
-Merchant.notifyTradeUpdated(stack as ItemStack) as void
+Merchant.notifyTradeUpdated(stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=openTradingScreen}
 
-Return Type: void
-
 ```zenscript
-Merchant.openTradingScreen(player as Player, displayName as Component, level as int) as void
+Merchant.openTradingScreen(player as Player, displayName as Component, level as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
-| displayName | [Component](/vanilla/api/text/Component) | No Description Provided |
-| level | int | No Description Provided |
+|  Parameter  |                       Type                       |
+|-------------|--------------------------------------------------|
+| player      | [Player](/vanilla/api/entity/type/player/Player) |
+| displayName | [Component](/vanilla/api/text/Component)         |
+| level       | int                                              |
 
 
 :::
 
 :::group{name=setTradingPlayer}
 
-Return Type: void
-
 ```zenscript
-Merchant.setTradingPlayer(player as Player?) as void
+Merchant.setTradingPlayer(player as Player?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player)? | No Description Provided |
+| Parameter |                       Type                        |
+|-----------|---------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player)? |
 
 
 :::
@@ -159,13 +151,13 @@ myMerchant.showProgressBar();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| canRestock | boolean | true | false | No Description Provided |
-| isClientSide | boolean | true | false | No Description Provided |
-| notifyTradeSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| offers | [MerchantOffers](/vanilla/api/villager/MerchantOffers) | true | false | No Description Provided |
-| showProgressBar | boolean | true | false | No Description Provided |
-| tradingPlayer | [Merchant](/vanilla/api/entity/type/villager/Merchant) | true | true | No Description Provided |
-| villagerXp | int | true | false | No Description Provided |
+|       Name       |                          Type                          | Has Getter | Has Setter |
+|------------------|--------------------------------------------------------|------------|------------|
+| canRestock       | boolean                                                | true       | false      |
+| isClientSide     | boolean                                                | true       | false      |
+| notifyTradeSound | [SoundEvent](/vanilla/api/sound/SoundEvent)            | true       | false      |
+| offers           | [MerchantOffers](/vanilla/api/villager/MerchantOffers) | true       | false      |
+| showProgressBar  | boolean                                                | true       | false      |
+| tradingPlayer    | [Merchant](/vanilla/api/entity/type/villager/Merchant) | true       | true       |
+| villagerXp       | int                                                    | true       | false      |
 

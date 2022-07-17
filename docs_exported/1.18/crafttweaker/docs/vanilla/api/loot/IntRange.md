@@ -18,9 +18,9 @@ Return Type: [IntRange](/vanilla/api/loot/IntRange)
 IntRange.atLeast(min as int) as IntRange
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| min       | int  |
 
 
 :::
@@ -33,9 +33,9 @@ Return Type: [IntRange](/vanilla/api/loot/IntRange)
 IntRange.atMost(max as int) as IntRange
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| max | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| max       | int  |
 
 
 :::
@@ -48,10 +48,10 @@ Return Type: [IntRange](/vanilla/api/loot/IntRange)
 IntRange.between(min as int, max as int) as IntRange
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | int | No Description Provided |
-| max | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| min       | int  |
+| max       | int  |
 
 
 :::
@@ -64,9 +64,9 @@ Return Type: [IntRange](/vanilla/api/loot/IntRange)
 IntRange.exactly(value as int) as IntRange
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
 
 
 :::

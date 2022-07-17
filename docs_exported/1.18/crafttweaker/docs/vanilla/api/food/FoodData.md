@@ -12,46 +12,40 @@ import crafttweaker.api.food.FoodData;
 
 :::group{name=addExhaustion}
 
-Return Type: void
-
 ```zenscript
-FoodData.addExhaustion(exhaustion as float) as void
+FoodData.addExhaustion(exhaustion as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| exhaustion | float | No Description Provided |
+| Parameter  | Type  |
+|------------|-------|
+| exhaustion | float |
 
 
 :::
 
 :::group{name=eat}
 
-Return Type: void
-
 ```zenscript
-FoodData.eat(stack as IItemStack) as void
+FoodData.eat(stack as IItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
 
 :::group{name=eat}
 
-Return Type: void
-
 ```zenscript
-FoodData.eat(foodLevelModifier as int, saturationLevelModifier as float) as void
+FoodData.eat(foodLevelModifier as int, saturationLevelModifier as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| foodLevelModifier | int | No Description Provided |
-| saturationLevelModifier | float | No Description Provided |
+|        Parameter        | Type  |
+|-------------------------|-------|
+| foodLevelModifier       | int   |
+| saturationLevelModifier | float |
 
 
 :::
@@ -118,45 +112,39 @@ myFoodData.needsFood();
 
 :::group{name=setExhaustion}
 
-Return Type: void
-
 ```zenscript
-FoodData.setExhaustion(exhaustionLevel as float) as void
+FoodData.setExhaustion(exhaustionLevel as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| exhaustionLevel | float | No Description Provided |
+|    Parameter    | Type  |
+|-----------------|-------|
+| exhaustionLevel | float |
 
 
 :::
 
 :::group{name=setFoodLevel}
 
-Return Type: void
-
 ```zenscript
-FoodData.setFoodLevel(foodLevel as int) as void
+FoodData.setFoodLevel(foodLevel as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| foodLevel | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| foodLevel | int  |
 
 
 :::
 
 :::group{name=setSaturation}
 
-Return Type: void
-
 ```zenscript
-FoodData.setSaturation(saturationLevel as float) as void
+FoodData.setSaturation(saturationLevel as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| saturationLevel | float | No Description Provided |
+|    Parameter    | Type  |
+|-----------------|-------|
+| saturationLevel | float |
 
 
 :::

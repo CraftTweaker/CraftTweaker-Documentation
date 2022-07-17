@@ -41,7 +41,7 @@ mySoundSource.getName();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| name | string | true | false | No Description Provided |
+| Name |  Type  | Has Getter | Has Setter |
+|------|--------|------------|------------|
+| name | string | true       | false      |
 

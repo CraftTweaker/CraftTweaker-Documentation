@@ -18,10 +18,8 @@ import crafttweaker.api.event.Event;
 
 Cancels the event. Same as `setCanceled(true)`
 
-Return Type: void
-
 ```zenscript
-// Event.cancel() as void
+// Event.cancel()
 
 myEvent.cancel();
 ```
@@ -80,10 +78,8 @@ myEvent.isCanceled();
 
 sets the event's result to `allow`
 
-Return Type: void
-
 ```zenscript
-// Event.setAllow() as void
+// Event.setAllow()
 
 myEvent.setAllow();
 ```
@@ -92,15 +88,13 @@ myEvent.setAllow();
 
 :::group{name=setCanceled}
 
-Return Type: void
-
 ```zenscript
-Event.setCanceled(cancel as boolean) as void
+Event.setCanceled(cancel as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| cancel | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| cancel    | boolean |
 
 
 :::
@@ -109,10 +103,8 @@ Event.setCanceled(cancel as boolean) as void
 
 sets the event's result to `default`
 
-Return Type: void
-
 ```zenscript
-// Event.setDefault() as void
+// Event.setDefault()
 
 myEvent.setDefault();
 ```
@@ -123,10 +115,8 @@ myEvent.setDefault();
 
 sets the event's result to `deny`
 
-Return Type: void
-
 ```zenscript
-// Event.setDeny() as void
+// Event.setDeny()
 
 myEvent.setDeny();
 ```
@@ -135,15 +125,13 @@ myEvent.setDeny();
 
 :::group{name=setResult}
 
-Return Type: void
-
 ```zenscript
-Event.setResult(result as EventResult) as void
+Event.setResult(result as EventResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| result | [EventResult](/forge/api/event/EventResult) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| result    | [EventResult](/forge/api/event/EventResult) |
 
 
 :::
@@ -151,11 +139,11 @@ Event.setResult(result as EventResult) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-|  | [Event](/forge/api/event/Event) | false | true | No Description Provided |
-| cancelable | boolean | true | false | No Description Provided |
-| canceled | boolean | true | true | No Description Provided |
-| hasResult | boolean | true | false | No Description Provided |
-| result | [EventResult](/forge/api/event/EventResult) | true | false | No Description Provided |
+|    Name    |                    Type                     | Has Getter | Has Setter |
+|------------|---------------------------------------------|------------|------------|
+|            | [Event](/forge/api/event/Event)             | false      | true       |
+| cancelable | boolean                                     | true       | false      |
+| canceled   | boolean                                     | true       | true       |
+| hasResult  | boolean                                     | true       | false      |
+| result     | [EventResult](/forge/api/event/EventResult) | true       | false      |
 

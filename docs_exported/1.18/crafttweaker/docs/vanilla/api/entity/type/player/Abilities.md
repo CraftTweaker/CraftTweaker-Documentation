@@ -36,30 +36,26 @@ myAbilities.getWalkingSpeed();
 
 :::group{name=setFlyingSpeed}
 
-Return Type: void
-
 ```zenscript
-Abilities.setFlyingSpeed(param0 as float) as void
+Abilities.setFlyingSpeed(param0 as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| param0    | float |
 
 
 :::
 
 :::group{name=setWalkingSpeed}
 
-Return Type: void
-
 ```zenscript
-Abilities.setWalkingSpeed(param0 as float) as void
+Abilities.setWalkingSpeed(param0 as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| param0 | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| param0    | float |
 
 
 :::
@@ -67,8 +63,8 @@ Abilities.setWalkingSpeed(param0 as float) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| flyingSpeed | float | true | true | No Description Provided |
-| walkingSpeed | float | true | true | No Description Provided |
+|     Name     | Type  | Has Getter | Has Setter |
+|--------------|-------|------------|------------|
+| flyingSpeed  | float | true       | true       |
+| walkingSpeed | float | true       | true       |
 

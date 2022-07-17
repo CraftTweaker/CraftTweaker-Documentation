@@ -44,36 +44,32 @@ Return Type: Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 
 :::group{name=onBrokenAfterFall}
 
-Return Type: void
-
 ```zenscript
-Fallable.onBrokenAfterFall(level as Level, pos as BlockPos, fallingEntity as FallingBlockEntity) as void
+Fallable.onBrokenAfterFall(level as Level, pos as BlockPos, fallingEntity as FallingBlockEntity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| fallingEntity | [FallingBlockEntity](/vanilla/api/entity/type/misc/FallingBlockEntity) | No Description Provided |
+|   Parameter   |                                  Type                                  |
+|---------------|------------------------------------------------------------------------|
+| level         | [Level](/vanilla/api/world/Level)                                      |
+| pos           | [BlockPos](/vanilla/api/util/math/BlockPos)                            |
+| fallingEntity | [FallingBlockEntity](/vanilla/api/entity/type/misc/FallingBlockEntity) |
 
 
 :::
 
 :::group{name=onLand}
 
-Return Type: void
-
 ```zenscript
-Fallable.onLand(level as Level, pos as BlockPos, fallingState as BlockState, placeState as BlockState, fallingEntity as FallingBlockEntity) as void
+Fallable.onLand(level as Level, pos as BlockPos, fallingState as BlockState, placeState as BlockState, fallingEntity as FallingBlockEntity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| fallingState | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
-| placeState | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
-| fallingEntity | [FallingBlockEntity](/vanilla/api/entity/type/misc/FallingBlockEntity) | No Description Provided |
+|   Parameter   |                                  Type                                  |
+|---------------|------------------------------------------------------------------------|
+| level         | [Level](/vanilla/api/world/Level)                                      |
+| pos           | [BlockPos](/vanilla/api/util/math/BlockPos)                            |
+| fallingState  | [BlockState](/vanilla/api/block/BlockState)                            |
+| placeState    | [BlockState](/vanilla/api/block/BlockState)                            |
+| fallingEntity | [FallingBlockEntity](/vanilla/api/entity/type/misc/FallingBlockEntity) |
 
 
 :::
@@ -81,8 +77,8 @@ Fallable.onLand(level as Level, pos as BlockPos, fallingState as BlockState, pla
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| fallDamageSource | [DamageSource](/vanilla/api/world/DamageSource) | true | false | Gets the damage source used when this block falls on an entity. |
-| hurtsEntitySelector | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | true | false | Gets a predicate that determines if an entity should be damaged by this falling block. |
+|        Name         |                         Type                          | Has Getter | Has Setter |                                      Description                                       |
+|---------------------|-------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------------|
+| fallDamageSource    | [DamageSource](/vanilla/api/world/DamageSource)       | true       | false      | Gets the damage source used when this block falls on an entity.                        |
+| hurtsEntitySelector | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | true       | false      | Gets a predicate that determines if an entity should be damaged by this falling block. |
 

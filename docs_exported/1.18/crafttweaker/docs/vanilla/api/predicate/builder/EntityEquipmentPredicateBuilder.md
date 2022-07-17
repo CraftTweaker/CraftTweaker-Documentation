@@ -30,9 +30,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.chest(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.chest(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.feet(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.feet(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.head(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.head(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.legs(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.legs(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.mainHand(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.mainHand(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::
@@ -180,9 +180,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.offHand(predicate as ItemPredicate) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) | No Description Provided |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| predicate | [ItemPredicate](/vanilla/api/predicate/ItemPredicate) |
 
 
 :::
@@ -195,9 +195,9 @@ Return Type: [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/En
 EntityEquipmentPredicateBuilder.offHand(predicate as ItemPredicateBuilder) as EntityEquipmentPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [ItemPredicateBuilder](/vanilla/api/predicate/builder/ItemPredicateBuilder) |
 
 
 :::

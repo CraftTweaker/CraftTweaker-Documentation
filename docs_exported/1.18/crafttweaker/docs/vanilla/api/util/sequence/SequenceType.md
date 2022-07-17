@@ -16,10 +16,10 @@ import crafttweaker.api.util.sequence.SequenceType;
 
 ## Static Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| CLIENT_THREAD_LEVEL | [SequenceType](/vanilla/api/util/sequence/SequenceType) | true | false | The type of the CLIENT_THREAD_LEVEL sequence which is only ticked on the server thread. |
-| SERVER_THREAD_LEVEL | [SequenceType](/vanilla/api/util/sequence/SequenceType) | true | false | The type of the SERVER_THREAD_LEVEL sequence which is only ticked on the server thread. |
+|        Name         |                          Type                           | Has Getter | Has Setter |                                       Description                                       |
+|---------------------|---------------------------------------------------------|------------|------------|-----------------------------------------------------------------------------------------|
+| CLIENT_THREAD_LEVEL | [SequenceType](/vanilla/api/util/sequence/SequenceType) | true       | false      | The type of the CLIENT_THREAD_LEVEL sequence which is only ticked on the server thread. |
+| SERVER_THREAD_LEVEL | [SequenceType](/vanilla/api/util/sequence/SequenceType) | true       | false      | The type of the SERVER_THREAD_LEVEL sequence which is only ticked on the server thread. |
 
 ## Methods
 
@@ -41,7 +41,7 @@ SequenceType.SERVER_THREAD_LEVEL.name();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-|  | string | true | false | Gets the name of the sequence type. |
+|  Type  | Has Getter | Has Setter |             Description             |
+|--------|------------|------------|-------------------------------------|
+| string | true       | false      | Gets the name of the sequence type. |
 

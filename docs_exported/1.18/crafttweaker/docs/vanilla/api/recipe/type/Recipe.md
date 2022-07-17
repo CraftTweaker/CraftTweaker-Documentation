@@ -18,10 +18,10 @@ Return Type: boolean
 Recipe.canCraftInDimensions(var1 as int, var2 as int) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| var1 | int | No Description Provided |
-| var2 | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| var1      | int  |
+| var2      | int  |
 
 
 :::
@@ -113,13 +113,13 @@ myRecipe.isSpecial();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| group | string | true | false | No Description Provided |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | true | false | No Description Provided |
-| isIncomplete | boolean | true | false | No Description Provided |
-| isSpecial | boolean | true | false | No Description Provided |
-| resultItem | [IItemStack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| toastSymbol | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
+|     Name     |                                 Type                                  | Has Getter | Has Setter |
+|--------------|-----------------------------------------------------------------------|------------|------------|
+| group        | string                                                                | true       | false      |
+| id           | [ResourceLocation](/vanilla/api/resource/ResourceLocation)            | true       | false      |
+| ingredients  | stdlib.List&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | true       | false      |
+| isIncomplete | boolean                                                               | true       | false      |
+| isSpecial    | boolean                                                               | true       | false      |
+| resultItem   | [IItemStack](/vanilla/api/item/IItemStack)                            | true       | false      |
+| toastSymbol  | [ItemStack](/vanilla/api/item/ItemStack)                              | true       | false      |
 

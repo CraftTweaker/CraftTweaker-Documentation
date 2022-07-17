@@ -18,10 +18,10 @@ Return Type: [NumberProvider](/vanilla/api/loot/NumberProvider)
 NumberProvider.between(min as float, max as float) as NumberProvider
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| min | float | No Description Provided |
-| max | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| min       | float |
+| max       | float |
 
 
 :::
@@ -34,10 +34,10 @@ Return Type: [NumberProvider](/vanilla/api/loot/NumberProvider)
 NumberProvider.binomial(n as int, p as int) as NumberProvider
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| n | int | No Description Provided |
-| p | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| n         | int  |
+| p         | int  |
 
 
 :::
@@ -50,9 +50,9 @@ Return Type: [NumberProvider](/vanilla/api/loot/NumberProvider)
 NumberProvider.exactly(value as float) as NumberProvider
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| value     | float |
 
 
 :::
@@ -65,11 +65,11 @@ Return Type: [NumberProvider](/vanilla/api/loot/NumberProvider)
 NumberProvider.scoreboard(target as EntityTarget, score as string, scale as float) as NumberProvider
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| target | [EntityTarget](/vanilla/api/loot/EntityTarget) | No Description Provided | false |  |
-| score | string | No Description Provided | false |  |
-| scale | float | No Description Provided | true | 1.0 |
+| Parameter |                      Type                      | Optional | Default Value |
+|-----------|------------------------------------------------|----------|---------------|
+| target    | [EntityTarget](/vanilla/api/loot/EntityTarget) | false    |               |
+| score     | string                                         | false    |               |
+| scale     | float                                          | true     | 1.0           |
 
 
 :::

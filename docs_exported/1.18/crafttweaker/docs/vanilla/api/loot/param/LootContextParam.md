@@ -32,7 +32,7 @@ LootContextParams.thisEntity().getName();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the name of this parameter. |
+| Name |                            Type                            | Has Getter | Has Setter |           Description            |
+|------|------------------------------------------------------------|------------|------------|----------------------------------|
+| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      | Gets the name of this parameter. |
 

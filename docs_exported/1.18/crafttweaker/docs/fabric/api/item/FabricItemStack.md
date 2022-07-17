@@ -15,22 +15,22 @@ FabricItemStack implements the following interfaces. That means all methods defi
 
 ## Static Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| BASE_ATTACK_DAMAGE_UUID | **invalid** | true | false | No Description Provided |
-| BASE_ATTACK_SPEED_UUID | **invalid** | true | false | No Description Provided |
-| CRAFTTWEAKER_DATA_KEY | string | true | false | No Description Provided |
+|          Name           |    Type     | Has Getter | Has Setter |
+|-------------------------|-------------|------------|------------|
+| BASE_ATTACK_DAMAGE_UUID | **invalid** | true       | false      |
+| BASE_ATTACK_SPEED_UUID  | **invalid** | true       | false      |
+| CRAFTTWEAKER_DATA_KEY   | string      | true       | false      |
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [IData](/vanilla/api/data/IData) | true |
-| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true |
-| [ItemDefinition](/vanilla/api/item/ItemDefinition) | true |
-| [ItemStack](/vanilla/api/item/ItemStack) | true |
-| [MapData](/vanilla/api/data/MapData) | true |
-| [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true |
+|                                              Result Type                                              | Is Implicit |
+|-------------------------------------------------------------------------------------------------------|-------------|
+| [IData](/vanilla/api/data/IData)                                                                      | true        |
+| [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)                                | true        |
+| [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                    | true        |
+| [ItemStack](/vanilla/api/item/ItemStack)                                                              | true        |
+| [MapData](/vanilla/api/data/MapData)                                                                  | true        |
+| [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true        |
 
 ## Methods
 
@@ -43,21 +43,19 @@ Adds an AttributeModifier to this IIngredient.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |              Description              |
+|-----------|------------------------------------------------------------------------|---------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.        |
+| name      | string                                                                 | The name of the modifier.             |
+| value     | double                                                                 | The value of the modifier.            |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.        |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for. |
 
 
 :::
@@ -74,22 +72,20 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| uuid | **invalid** | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |                    Description                    |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
+| uuid      | **invalid**                                                            | The unique identifier of the modifier to replace. |
+| name      | string                                                                 | The name of the modifier.                         |
+| value     | double                                                                 | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.             |
 
 
 :::
@@ -106,53 +102,47 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
  IItemStack#withAttributeModifier
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as string, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. |
-| uuid | string | The unique identifier of the modifier to replace. |
-| name | string | The name of the modifier. |
-| value | double | The value of the modifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |                    Description                    |
+|-----------|------------------------------------------------------------------------|---------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
+| uuid      | string                                                                 | The unique identifier of the modifier to replace. |
+| name      | string                                                                 | The name of the modifier.                         |
+| value     | double                                                                 | The value of the modifier.                        |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.             |
 
 
 :::
 
 :::group{name=addShiftTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.addShiftTooltip(content as Component, showMessage as Component) as void
+FabricItemStack.addShiftTooltip(content as Component, showMessage as Component)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| content | [Component](/vanilla/api/text/Component) | No Description Provided | false |  |
-| showMessage | [Component](/vanilla/api/text/Component) | No Description Provided | true |  |
+|  Parameter  |                   Type                   | Optional |
+|-------------|------------------------------------------|----------|
+| content     | [Component](/vanilla/api/text/Component) | false    |
+| showMessage | [Component](/vanilla/api/text/Component) | true     |
 
 
 :::
 
 :::group{name=addTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.addTooltip(content as Component) as void
+FabricItemStack.addTooltip(content as Component)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| content | [Component](/vanilla/api/text/Component) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| content   | [Component](/vanilla/api/text/Component) |
 
 
 :::
@@ -207,15 +197,13 @@ myFabricItemStack.asMutable();
 
 :::group{name=clearTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.clearTooltip(leaveName as boolean) as void
+FabricItemStack.clearTooltip(leaveName as boolean)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| leaveName | boolean | No Description Provided | true | false |
+| Parameter |  Type   | Optional | Default Value |
+|-----------|---------|----------|---------------|
+| leaveName | boolean | true     | false         |
 
 
 :::
@@ -232,8 +220,8 @@ Return Type: boolean
 myFabricItemStack.contains((<item:minecraft:iron_ingot> | <item:minecraft:gold_ingot>));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  |                        Type                        |       Description       |
+|------------|----------------------------------------------------|-------------------------|
 | ingredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | The ingredient to check |
 
 
@@ -266,9 +254,9 @@ Return Type: stdlib.List&lt;[AttributeModifier](/vanilla/api/entity/attribute/At
 myFabricItemStack.getAttributes(<constant:minecraft:equipmentslot:chest>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slotType | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | The slot to get the Attributes for. |
+| Parameter |                             Type                             |             Description             |
+|-----------|--------------------------------------------------------------|-------------------------------------|
+| slotType  | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | The slot to get the Attributes for. |
 
 
 :::
@@ -295,9 +283,9 @@ Return Type: int
 FabricItemStack.getEnchantmentLevel(enchantment as Enchantment) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | No Description Provided |
+|  Parameter  |                           Type                           |
+|-------------|----------------------------------------------------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) |
 
 
 :::
@@ -429,9 +417,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to provide for this ingredient. |
+| Parameter |                    Type                    |                Description                |
+|-----------|--------------------------------------------|-------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to provide for this ingredient. |
 
 
 :::
@@ -449,9 +437,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.grow(2);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| amount | int | The amount to grow by. | true | 1 |
+| Parameter | Type |      Description       | Optional | Default Value |
+|-----------|------|------------------------|----------|---------------|
+| amount    | int  | The amount to grow by. | true     | 1             |
 
 
 :::
@@ -519,40 +507,36 @@ Return Type: boolean
 myFabricItemStack.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | The stack to check |
+| Parameter |                    Type                    |    Description     |
+|-----------|--------------------------------------------|--------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | The stack to check |
 
 
 :::
 
 :::group{name=modifyShiftTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction) as void
+FabricItemStack.modifyShiftTooltip(shiftedFunction as ITooltipFunction, unshiftedFunction as ITooltipFunction)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| shiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided | false |  |
-| unshiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided | true |  |
+|     Parameter     |                              Type                              | Optional |
+|-------------------|----------------------------------------------------------------|----------|
+| shiftedFunction   | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | false    |
+| unshiftedFunction | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | true     |
 
 
 :::
 
 :::group{name=modifyTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.modifyTooltip(function as ITooltipFunction) as void
+FabricItemStack.modifyTooltip(function as ITooltipFunction)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| function | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) | No Description Provided |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| function  | [ITooltipFunction](/vanilla/api/item/tooltip/ITooltipFunction) |
 
 
 :::
@@ -567,9 +551,9 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 FabricItemStack.mul(amount as int) as IIngredientWithAmount
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -584,9 +568,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 FabricItemStack.only(condition as IIngredientCondition<IIngredient>) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| condition | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | No Description Provided |
+| Parameter |                                                                   Type                                                                   |
+|-----------|------------------------------------------------------------------------------------------------------------------------------------------|
+| condition | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; |
 
 
 :::
@@ -611,9 +595,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 FabricItemStack.onlyDamagedAtLeast(minDamage as int) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| minDamage | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| minDamage | int  |
 
 
 :::
@@ -626,9 +610,9 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 FabricItemStack.onlyDamagedAtMost(maxDamage as int) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| maxDamage | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| maxDamage | int  |
 
 
 :::
@@ -641,10 +625,10 @@ Return Type: [IngredientConditioned](/vanilla/api/ingredient/type/IngredientCond
 FabricItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as IngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| uid | string | No Description Provided | false |  |
-| function | Predicate&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided | true |  |
+| Parameter |                            Type                             | Optional |
+|-----------|-------------------------------------------------------------|----------|
+| uid       | string                                                      | false    |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true     |
 
 
 :::
@@ -657,9 +641,9 @@ Return Type: [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack]
 FabricItemStack.percent(percentage as double) as Percentaged<IItemStack>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| percentage | double | No Description Provided |
+| Parameter  |  Type  |
+|------------|--------|
+| percentage | double |
 
 
 :::
@@ -677,8 +661,8 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.removeEnchantment(<enchantment:minecraft:riptide>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter  |                           Type                           |        Description         |
+|-------------|----------------------------------------------------------|----------------------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to remove. |
 
 
@@ -696,17 +680,15 @@ Removes all AttributeModifiers that use the given Attribute from this IIngredien
  This method can only remove default Attributes from an ItemStack, it is still possible that
  an ItemStack can override it.
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The attribute to remove. |
+| Parameter |                              Type                              |            Description            |
+|-----------|----------------------------------------------------------------|-----------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           | The attribute to remove.          |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
 
 
@@ -716,18 +698,16 @@ myFabricItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_dama
 
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | **invalid** | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |                    Description                    |
+|-----------|----------------------------------------------------------------|---------------------------------------------------|
+| uuid      | **invalid**                                                    | The unique id of the AttributeModifier to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
 :::
@@ -736,33 +716,29 @@ myFabricItemStack.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UU
 
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[]) as void
+// FabricItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| uuid | string | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |                    Description                    |
+|-----------|----------------------------------------------------------------|---------------------------------------------------|
+| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
 :::
 
 :::group{name=removeTooltip}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.removeTooltip(regex as string) as void
+FabricItemStack.removeTooltip(regex as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| regex     | string |
 
 
 :::
@@ -771,10 +747,8 @@ FabricItemStack.removeTooltip(regex as string) as void
 
 Clears any custom name set for this ItemStack
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.resetHoverName() as void
+// FabricItemStack.resetHoverName()
 
 myFabricItemStack.resetHoverName();
 ```
@@ -797,17 +771,15 @@ myFabricItemStack.reuse();
 
 Sets the burn time of this ingredient, for use in the furnace and other machines
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.setBurnTime(time as int) as void
+// FabricItemStack.setBurnTime(time as int)
 
 myFabricItemStack.setBurnTime(500);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| time | int | the new burn time |
+| Parameter | Type |    Description    |
+|-----------|------|-------------------|
+| time      | int  | the new burn time |
 
 
 :::
@@ -823,8 +795,8 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 FabricItemStack.setEnchantments(enchantments as int?[Enchantment]) as IItemStack
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter   |                              Type                              |     Description      |
+|--------------|----------------------------------------------------------------|----------------------|
 | enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | The new enchantments |
 
 
@@ -836,14 +808,12 @@ Sets if this IItemStack is immune to fire / lava.
 
  If true, the item will not burn when thrown into fire or lava.
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.setFireResistant(fireResistant as boolean) as void
+FabricItemStack.setFireResistant(fireResistant as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|   Parameter   |  Type   |            Description             |
+|---------------|---------|------------------------------------|
 | fireResistant | boolean | Should the item be immune to fire. |
 
 
@@ -851,15 +821,13 @@ FabricItemStack.setFireResistant(fireResistant as boolean) as void
 
 :::group{name=setFood}
 
-Return Type: void
-
 ```zenscript
-FabricItemStack.setFood(food as FoodProperties?) as void
+FabricItemStack.setFood(food as FoodProperties?)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| food | [FoodProperties](/vanilla/api/food/FoodProperties)? | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| food      | [FoodProperties](/vanilla/api/food/FoodProperties)? |
 
 
 :::
@@ -868,17 +836,15 @@ FabricItemStack.setFood(food as FoodProperties?) as void
 
 Sets the max stacksize of the Item.
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.setMaxStackSize(newMaxStackSize as int) as void
+// FabricItemStack.setMaxStackSize(newMaxStackSize as int)
 
 myFabricItemStack.setMaxStackSize(16);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| newMaxStackSize | int | The new max stack size of the Item. |
+|    Parameter    | Type |             Description             |
+|-----------------|------|-------------------------------------|
+| newMaxStackSize | int  | The new max stack size of the Item. |
 
 
 :::
@@ -887,16 +853,14 @@ myFabricItemStack.setMaxStackSize(16);
 
 Sets the rarity of the Item.
 
-Return Type: void
-
 ```zenscript
-// FabricItemStack.setRarity(newRarity as Rarity) as void
+// FabricItemStack.setRarity(newRarity as Rarity)
 
 myFabricItemStack.setRarity(Rarity.UNCOMMON);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |                    Type                     |         Description         |
+|-----------|---------------------------------------------|-----------------------------|
 | newRarity | [Rarity](/vanilla/api/item/property/Rarity) | The new rarity of the Item. |
 
 
@@ -915,9 +879,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.shrink(2);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| amount | int | The amount to shrink by. | true | 1 |
+| Parameter | Type |       Description        | Optional | Default Value |
+|-----------|------|--------------------------|----------|---------------|
+| amount    | int  | The amount to shrink by. | true     | 1             |
 
 
 :::
@@ -932,9 +896,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 FabricItemStack.transform(transformer as IIngredientTransformer<IIngredient>) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| transformer | [IIngredientTransformer](/vanilla/api/ingredient/transform/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; | No Description Provided |
+|  Parameter  |                                                                     Type                                                                     |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| transformer | [IIngredientTransformer](/vanilla/api/ingredient/transform/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/ingredient/IIngredient)&gt; |
 
 
 :::
@@ -947,10 +911,10 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 FabricItemStack.transformCustom(uid as string, function as Function<IItemStack,IItemStack>) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| uid | string | No Description Provided | false |  |
-| function | Function&lt;[IItemStack](/vanilla/api/item/IItemStack),[IItemStack](/vanilla/api/item/IItemStack)&gt; | No Description Provided | true |  |
+| Parameter |                                                 Type                                                  | Optional |
+|-----------|-------------------------------------------------------------------------------------------------------|----------|
+| uid       | string                                                                                                | false    |
+| function  | Function&lt;[IItemStack](/vanilla/api/item/IItemStack),[IItemStack](/vanilla/api/item/IItemStack)&gt; | true     |
 
 
 :::
@@ -963,9 +927,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 FabricItemStack.transformDamage(amount as int) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| amount | int | No Description Provided | true | 1 |
+| Parameter | Type | Optional | Default Value |
+|-----------|------|----------|---------------|
+| amount    | int  | true     | 1             |
 
 
 :::
@@ -978,9 +942,9 @@ Return Type: [IIngredientTransformed](/vanilla/api/ingredient/type/IIngredientTr
 FabricItemStack.transformReplace(replaceWith as IItemStack) as IIngredientTransformed<IIngredient>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| replaceWith | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+|  Parameter  |                    Type                    |
+|-------------|--------------------------------------------|
+| replaceWith | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -1006,14 +970,14 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. | false |  |
-| name | string | The name of the modifier. | false |  |
-| value | double | The value of the modifier. | false |  |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. | false |  |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. | false |  |
-| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
+|    Parameter     |                                  Type                                  |                                     Description                                     | Optional | Default Value |
+|------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------|---------------|
+| attribute        | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                                                      | false    |               |
+| name             | string                                                                 | The name of the modifier.                                                           | false    |               |
+| value            | double                                                                 | The value of the modifier.                                                          | false    |               |
+| operation        | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                                                      | false    |               |
+| slotTypes        | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.                                               | false    |               |
+| preserveDefaults | boolean                                                                | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true     | false         |
 
 
 :::
@@ -1039,15 +1003,15 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. | false |  |
-| uuid | **invalid** | The unique identifier of the modifier to replace. | false |  |
-| name | string | The name of the modifier. | false |  |
-| value | double | The value of the modifier. | false |  |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. | false |  |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. | false |  |
-| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
+|    Parameter     |                                  Type                                  |                                     Description                                     | Optional | Default Value |
+|------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------|---------------|
+| attribute        | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                                                      | false    |               |
+| uuid             | **invalid**                                                            | The unique identifier of the modifier to replace.                                   | false    |               |
+| name             | string                                                                 | The name of the modifier.                                                           | false    |               |
+| value            | double                                                                 | The value of the modifier.                                                          | false    |               |
+| operation        | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                                                      | false    |               |
+| slotTypes        | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.                                               | false    |               |
+| preserveDefaults | boolean                                                                | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true     | false         |
 
 
 :::
@@ -1073,15 +1037,15 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute) | The Attribute of the modifier. | false |  |
-| uuid | string | The unique identifier of the modifier to replace. | false |  |
-| name | string | The name of the modifier. | false |  |
-| value | double | The value of the modifier. | false |  |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier. | false |  |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | What slots the modifier is valid for. | false |  |
-| preserveDefaults | boolean | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true | false |
+|    Parameter     |                                  Type                                  |                                     Description                                     | Optional | Default Value |
+|------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------|---------------|
+| attribute        | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                                                      | false    |               |
+| uuid             | string                                                                 | The unique identifier of the modifier to replace.                                   | false    |               |
+| name             | string                                                                 | The name of the modifier.                                                           | false    |               |
+| value            | double                                                                 | The value of the modifier.                                                          | false    |               |
+| operation        | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                                                      | false    |               |
+| slotTypes        | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for.                                               | false    |               |
+| preserveDefaults | boolean                                                                | Should the default Item Attribute Modifiers be preserved when adding this modifier. | true     | false         |
 
 
 :::
@@ -1098,9 +1062,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withDamage(10);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| damage | int | the new damage value |
+| Parameter | Type |     Description      |
+|-----------|------|----------------------|
+| damage    | int  | the new damage value |
 
 
 :::
@@ -1117,9 +1081,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withDisplayName("totally not dirt");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [Component](/vanilla/api/text/Component) | New name of the stack. |
+| Parameter |                   Type                   |      Description       |
+|-----------|------------------------------------------|------------------------|
+| name      | [Component](/vanilla/api/text/Component) | New name of the stack. |
 
 
 :::
@@ -1137,10 +1101,10 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withEnchantment(<enchantment:minecraft:riptide>, 2);
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to add. | false |  |
-| level | int | The level of the enchantment | true | 1 |
+|  Parameter  |                           Type                           |         Description          | Optional | Default Value |
+|-------------|----------------------------------------------------------|------------------------------|----------|---------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | The enchantment to add.      | false    |               |
+| level       | int                                                      | The level of the enchantment | true     | 1             |
 
 
 :::
@@ -1157,9 +1121,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withLore(new crafttweaker.api.text.TextComponent("I am the lore I speak for the trees"););
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| lore | [Component](/vanilla/api/text/Component)?[] | the new Lore of the ItemStack. |
+| Parameter |                    Type                     |          Description           |
+|-----------|---------------------------------------------|--------------------------------|
+| lore      | [Component](/vanilla/api/text/Component)?[] | the new Lore of the ItemStack. |
 
 
 :::
@@ -1177,9 +1141,9 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 myFabricItemStack.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [MapData](/vanilla/api/data/MapData) | The tag to set. |
+| Parameter |                 Type                 |   Description   |
+|-----------|--------------------------------------|-----------------|
+| tag       | [MapData](/vanilla/api/data/MapData) | The tag to set. |
 
 
 :::
@@ -1242,39 +1206,39 @@ myFabricItemStack | other as IIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | int | true | false | Gets the amount of Items in the ItemStack |
-| baseRepairCost | int | true | false | Gets the base repair cost of the ItemStack, or 0 if no repair is defined. |
-| burnTime | void | false | true | Sets the burn time of this ingredient, for use in the furnace and other machines |
-| commandString | string | true | false | Returns the BEP to get this stack |
-| damage | int | true | false | No Description Provided |
-| damageableItem | boolean | true | false | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not. |
-| damaged | boolean | true | false | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged. |
-| definition | [ItemDefinition](/vanilla/api/item/ItemDefinition) | true | false | No Description Provided |
-| descriptionId | string | true | false | Returns the unlocalized Name of the Item in the ItemStack |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | Gets the display name of the ItemStack |
-| empty | boolean | true | false | Returns if the ItemStack is empty |
-| enchantments | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true | true | No Description Provided |
-| fireResistant | boolean | true | true | Checks if this IItemStack burns when thrown into fire / lava or damaged by fire. |
-| food | [FoodProperties](/vanilla/api/food/FoodProperties)? | true | true | No Description Provided |
-| hasCustomHoverName | boolean | true | false | Returns true if the ItemStack has a display name. |
-| hasFoil | boolean | true | false | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
-| hasTag | boolean | true | false | Returns true if this ItemStack has a Tag |
-| hoverName | [Component](/vanilla/api/text/Component) | true | false | Gets the hover name of the ItemStack. <br />  <br />  This will give the raw name without the formatting that 'displayName' applies. |
-| isEdible | boolean | true | false | No Description Provided |
-| isEnchantable | boolean | true | false | Can this ItemStack be enchanted? |
-| isEnchanted | boolean | true | false | Is this ItemStack enchanted? |
-| isImmutable | boolean | true | false | No Description Provided |
-| isMutable | boolean | true | false | No Description Provided |
-| items | [IItemStack](/vanilla/api/item/IItemStack)[] | true | false | No Description Provided |
-| maxDamage | int | true | true | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack. |
-| maxStackSize | int | true | true | Returns the max stack size of the Item in the ItemStack |
-| owner | string | true | false | Gets owning mod for the Item in this IItemStack |
-| rarity | [Rarity](/vanilla/api/item/property/Rarity) | true | true | Returns the rarity of the Item in the ItemStack |
-| registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name for the Item in this IItemStack |
-| stackable | boolean | true | false | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are. |
-| tag | [MapData](/vanilla/api/data/MapData)? | true | false | Returns the NBT tag attached to this ItemStack. |
-| useDuration | int | true | false | Gets the use duration of the ItemStack |
-| useOnRelease | boolean | true | false | Returns true if this stack is considered a crossbow item |
+|        Name        |                              Type                              | Has Getter | Has Setter |                                                                      Description                                                                      |
+|--------------------|----------------------------------------------------------------|------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| amount             | int                                                            | true       | false      | Gets the amount of Items in the ItemStack                                                                                                             |
+| baseRepairCost     | int                                                            | true       | false      | Gets the base repair cost of the ItemStack, or 0 if no repair is defined.                                                                             |
+| burnTime           | void                                                           | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines                                                                      |
+| commandString      | string                                                         | true       | false      | Returns the BEP to get this stack                                                                                                                     |
+| damage             | int                                                            | true       | false      |                                                                                                                                                       |
+| damageableItem     | boolean                                                        | true       | false      | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not.                                                   |
+| damaged            | boolean                                                        | true       | false      | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged.                                                    |
+| definition         | [ItemDefinition](/vanilla/api/item/ItemDefinition)             | true       | false      |                                                                                                                                                       |
+| descriptionId      | string                                                         | true       | false      | Returns the unlocalized Name of the Item in the ItemStack                                                                                             |
+| displayName        | [Component](/vanilla/api/text/Component)                       | true       | false      | Gets the display name of the ItemStack                                                                                                                |
+| empty              | boolean                                                        | true       | false      | Returns if the ItemStack is empty                                                                                                                     |
+| enchantments       | int?[[Enchantment](/vanilla/api/item/enchantment/Enchantment)] | true       | true       |                                                                                                                                                       |
+| fireResistant      | boolean                                                        | true       | true       | Checks if this IItemStack burns when thrown into fire / lava or damaged by fire.                                                                      |
+| food               | [FoodProperties](/vanilla/api/food/FoodProperties)?            | true       | true       |                                                                                                                                                       |
+| hasCustomHoverName | boolean                                                        | true       | false      | Returns true if the ItemStack has a display name.                                                                                                     |
+| hasFoil            | boolean                                                        | true       | false      | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items). |
+| hasTag             | boolean                                                        | true       | false      | Returns true if this ItemStack has a Tag                                                                                                              |
+| hoverName          | [Component](/vanilla/api/text/Component)                       | true       | false      | Gets the hover name of the ItemStack. <br />  <br />  This will give the raw name without the formatting that 'displayName' applies.                  |
+| isEdible           | boolean                                                        | true       | false      |                                                                                                                                                       |
+| isEnchantable      | boolean                                                        | true       | false      | Can this ItemStack be enchanted?                                                                                                                      |
+| isEnchanted        | boolean                                                        | true       | false      | Is this ItemStack enchanted?                                                                                                                          |
+| isImmutable        | boolean                                                        | true       | false      |                                                                                                                                                       |
+| isMutable          | boolean                                                        | true       | false      |                                                                                                                                                       |
+| items              | [IItemStack](/vanilla/api/item/IItemStack)[]                   | true       | false      |                                                                                                                                                       |
+| maxDamage          | int                                                            | true       | true       | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack.                                                          |
+| maxStackSize       | int                                                            | true       | true       | Returns the max stack size of the Item in the ItemStack                                                                                               |
+| owner              | string                                                         | true       | false      | Gets owning mod for the Item in this IItemStack                                                                                                       |
+| rarity             | [Rarity](/vanilla/api/item/property/Rarity)                    | true       | true       | Returns the rarity of the Item in the ItemStack                                                                                                       |
+| registryName       | [ResourceLocation](/vanilla/api/resource/ResourceLocation)     | true       | false      | Gets the registry name for the Item in this IItemStack                                                                                                |
+| stackable          | boolean                                                        | true       | false      | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are.                                |
+| tag                | [MapData](/vanilla/api/data/MapData)?                          | true       | false      | Returns the NBT tag attached to this ItemStack.                                                                                                       |
+| useDuration        | int                                                            | true       | false      | Gets the use duration of the ItemStack                                                                                                                |
+| useOnRelease       | boolean                                                        | true       | false      | Returns true if this stack is considered a crossbow item                                                                                              |
 

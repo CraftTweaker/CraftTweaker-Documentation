@@ -93,17 +93,15 @@ myArrow.isNoPhysics();
 
 Sets the base damage that this arrow does.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setBaseDamage(damage as double) as void
+// Arrow.setBaseDamage(damage as double)
 
 myArrow.setBaseDamage(0.5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| damage | double | The base damage. |
+| Parameter |  Type  |   Description    |
+|-----------|--------|------------------|
+| damage    | double | The base damage. |
 
 
 :::
@@ -112,17 +110,15 @@ myArrow.setBaseDamage(0.5);
 
 Sets this the crit value of this arrow.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setCritArrow(crit as boolean) as void
+// Arrow.setCritArrow(crit as boolean)
 
 myArrow.setCritArrow(true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| crit | boolean | The crit value to set. |
+| Parameter |  Type   |      Description       |
+|-----------|---------|------------------------|
+| crit      | boolean | The crit value to set. |
 
 
 :::
@@ -131,18 +127,16 @@ myArrow.setCritArrow(true);
 
 Sets the values of this arrow based on the enchantments the given entity has. This handles setting the knockback if the bow has a knockback enchantment.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setEnchantmentEffectsFromEntity(entity as LivingEntity, distanceFactor as float) as void
+// Arrow.setEnchantmentEffectsFromEntity(entity as LivingEntity, distanceFactor as float)
 
 myArrow.setEnchantmentEffectsFromEntity(entity, 1);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | The entity that fired the arrow |
-| distanceFactor | float | How charged is the bow. |
+|   Parameter    |                       Type                       |           Description           |
+|----------------|--------------------------------------------------|---------------------------------|
+| entity         | [LivingEntity](/vanilla/api/entity/LivingEntity) | The entity that fired the arrow |
+| distanceFactor | float                                            | How charged is the bow.         |
 
 
 :::
@@ -151,17 +145,15 @@ myArrow.setEnchantmentEffectsFromEntity(entity, 1);
 
 Sets the knockback of this arrow.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setKnockback(knockback as int) as void
+// Arrow.setKnockback(knockback as int)
 
 myArrow.setKnockback(5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| knockback | int | The knockback value. |
+| Parameter | Type |     Description      |
+|-----------|------|----------------------|
+| knockback | int  | The knockback value. |
 
 
 :::
@@ -170,16 +162,14 @@ myArrow.setKnockback(5);
 
 Sets if this arrow has physics or not.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setNoPhysics(noPhysics as boolean) as void
+// Arrow.setNoPhysics(noPhysics as boolean)
 
 myArrow.setNoPhysics(true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter |  Type   |            Description            |
+|-----------|---------|-----------------------------------|
 | noPhysics | boolean | If this arrow has physics or not. |
 
 
@@ -189,14 +179,12 @@ myArrow.setNoPhysics(true);
 
 Sets the pierce level of this arrow.
 
-Return Type: void
-
 ```zenscript
-Arrow.setPierceLevel(pieceLevel as byte) as void
+Arrow.setPierceLevel(pieceLevel as byte)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  | Type |           Description           |
+|------------|------|---------------------------------|
 | pieceLevel | byte | The pierce level of this arrow. |
 
 
@@ -206,16 +194,14 @@ Arrow.setPierceLevel(pieceLevel as byte) as void
 
 Sets if this arrow was shot from a crossbow or not.
 
-Return Type: void
-
 ```zenscript
-// Arrow.setShotFromCrossbow(shotFromCrossbow as boolean) as void
+// Arrow.setShotFromCrossbow(shotFromCrossbow as boolean)
 
 myArrow.setShotFromCrossbow(true);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|    Parameter     |  Type   |                  Description                   |
+|------------------|---------|------------------------------------------------|
 | shotFromCrossbow | boolean | If this arrow was shot from a crossbow or not. |
 
 
@@ -225,15 +211,13 @@ myArrow.setShotFromCrossbow(true);
 
 Sets the sound event that this arrow plays when it hits an entity or block.
 
-Return Type: void
-
 ```zenscript
-Arrow.setSoundEvent(event as SoundEvent) as void
+Arrow.setSoundEvent(event as SoundEvent)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| event | [SoundEvent](/vanilla/api/sound/SoundEvent) | The sound event to play when |
+| Parameter |                    Type                     |         Description          |
+|-----------|---------------------------------------------|------------------------------|
+| event     | [SoundEvent](/vanilla/api/sound/SoundEvent) | The sound event to play when |
 
 
 :::
@@ -256,13 +240,13 @@ myArrow.shotFromCrossbow();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| baseDamage | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true | true | Sets the base damage that this arrow does. |
-| isCritArrow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true | true | Sets this the crit value of this arrow. |
-| isNoPhysics | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true | true | Sets if this arrow has physics or not. |
-| knockback | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true | true | Sets the knockback of this arrow. |
-| pierceLevel | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true | true | Sets the pierce level of this arrow. |
-| shotFromCrossbow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | false | true | Sets if this arrow was shot from a crossbow or not. |
-| soundEvent | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | false | true | Sets the sound event that this arrow plays when it hits an entity or block. |
+|       Name       |                           Type                           | Has Getter | Has Setter |                                 Description                                 |
+|------------------|----------------------------------------------------------|------------|------------|-----------------------------------------------------------------------------|
+| baseDamage       | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true       | true       | Sets the base damage that this arrow does.                                  |
+| isCritArrow      | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true       | true       | Sets this the crit value of this arrow.                                     |
+| isNoPhysics      | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true       | true       | Sets if this arrow has physics or not.                                      |
+| knockback        | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true       | true       | Sets the knockback of this arrow.                                           |
+| pierceLevel      | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | true       | true       | Sets the pierce level of this arrow.                                        |
+| shotFromCrossbow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | false      | true       | Sets if this arrow was shot from a crossbow or not.                         |
+| soundEvent       | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | false      | true       | Sets the sound event that this arrow plays when it hits an entity or block. |
 

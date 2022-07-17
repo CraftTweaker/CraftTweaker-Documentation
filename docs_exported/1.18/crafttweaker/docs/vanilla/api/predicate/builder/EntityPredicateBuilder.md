@@ -30,9 +30,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.catType(catType as ResourceLocation) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| catType | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| catType   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.catType(catType as string) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| catType | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| catType   | string |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.distance(predicate as DistancePredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [DistancePredicate](/vanilla/api/predicate/DistancePredicate) | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| predicate | [DistancePredicate](/vanilla/api/predicate/DistancePredicate) |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.effects(predicate as MobEffectsPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate) | No Description Provided |
+| Parameter |                               Type                                |
+|-----------|-------------------------------------------------------------------|
+| predicate | [MobEffectsPredicate](/vanilla/api/predicate/MobEffectsPredicate) |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.entityType(predicate as EntityTypePredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate) | No Description Provided |
+| Parameter |                               Type                                |
+|-----------|-------------------------------------------------------------------|
+| predicate | [EntityTypePredicate](/vanilla/api/predicate/EntityTypePredicate) |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.equipment(predicate as EntityEquipmentPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| predicate | [EntityEquipmentPredicate](/vanilla/api/predicate/EntityEquipmentPredicate) |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.equipment(predicate as EntityEquipmentPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/EntityEquipmentPredicateBuilder) | No Description Provided |
+| Parameter |                                               Type                                                |
+|-----------|---------------------------------------------------------------------------------------------------|
+| predicate | [EntityEquipmentPredicateBuilder](/vanilla/api/predicate/builder/EntityEquipmentPredicateBuilder) |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.fishingHook(predicate as FishingHookPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [FishingHookPredicate](/vanilla/api/predicate/FishingHookPredicate) | No Description Provided |
+| Parameter |                                Type                                 |
+|-----------|---------------------------------------------------------------------|
+| predicate | [FishingHookPredicate](/vanilla/api/predicate/FishingHookPredicate) |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.flags(predicate as EntityFlagsPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate) | No Description Provided |
+| Parameter |                                Type                                 |
+|-----------|---------------------------------------------------------------------|
+| predicate | [EntityFlagsPredicate](/vanilla/api/predicate/EntityFlagsPredicate) |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.flags(predicate as EntityFlagsPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/EntityFlagsPredicateBuilder) | No Description Provided |
+| Parameter |                                           Type                                            |
+|-----------|-------------------------------------------------------------------------------------------|
+| predicate | [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/EntityFlagsPredicateBuilder) |
 
 
 :::
@@ -180,9 +180,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.lightningBolt(predicate as LightningBoltPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredicate) | No Description Provided |
+| Parameter |                                  Type                                   |
+|-----------|-------------------------------------------------------------------------|
+| predicate | [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredicate) |
 
 
 :::
@@ -195,9 +195,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.located(predicate as LocationPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicate](/vanilla/api/predicate/LocationPredicate) | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| predicate | [LocationPredicate](/vanilla/api/predicate/LocationPredicate) |
 
 
 :::
@@ -210,9 +210,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.located(predicate as LocationPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) |
 
 
 :::
@@ -225,9 +225,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.nbt(predicate as NbtPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [NbtPredicate](/vanilla/api/predicate/NbtPredicate) | No Description Provided |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| predicate | [NbtPredicate](/vanilla/api/predicate/NbtPredicate) |
 
 
 :::
@@ -240,9 +240,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.passenger(predicate as EntityPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -255,9 +255,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.passenger(predicate as EntityPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::
@@ -270,9 +270,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.player(predicate as PlayerPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | [PlayerPredicate](/vanilla/api/predicate/PlayerPredicate) |
 
 
 :::
@@ -285,9 +285,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.player(predicate as PlayerPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | [PlayerPredicateBuilder](/vanilla/api/predicate/builder/PlayerPredicateBuilder) |
 
 
 :::
@@ -300,9 +300,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.steppingOn(predicate as LocationPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicate](/vanilla/api/predicate/LocationPredicate) | No Description Provided |
+| Parameter |                             Type                              |
+|-----------|---------------------------------------------------------------|
+| predicate | [LocationPredicate](/vanilla/api/predicate/LocationPredicate) |
 
 
 :::
@@ -315,9 +315,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.steppingOn(predicate as LocationPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) | No Description Provided |
+| Parameter |                                        Type                                         |
+|-----------|-------------------------------------------------------------------------------------|
+| predicate | [LocationPredicateBuilder](/vanilla/api/predicate/builder/LocationPredicateBuilder) |
 
 
 :::
@@ -330,9 +330,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.target(predicate as EntityPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -345,9 +345,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.target(predicate as EntityPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::
@@ -360,9 +360,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.team(team as string) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| team | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| team      | string |
 
 
 :::
@@ -375,9 +375,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.vehicle(predicate as EntityPredicate) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+| Parameter |                           Type                            |
+|-----------|-----------------------------------------------------------|
+| predicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -390,9 +390,9 @@ Return Type: [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredi
 EntityPredicateBuilder.vehicle(predicate as EntityPredicateBuilder) as EntityPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::

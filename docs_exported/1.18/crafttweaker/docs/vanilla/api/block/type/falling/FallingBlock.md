@@ -34,9 +34,9 @@ Return Type: boolean
 FallingBlock.isFree(<blockstate:minecraft:dirt>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | The state the check. |
+| Parameter |                    Type                     |     Description      |
+|-----------|---------------------------------------------|----------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) | The state the check. |
 
 
 :::
@@ -51,11 +51,11 @@ Return Type: int
 FallingBlock.getDustColor(state as BlockState, level as Level, pos as BlockPos) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
-| level | [Level](/vanilla/api/world/Level) | No Description Provided |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
+| level     | [Level](/vanilla/api/world/Level)           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::

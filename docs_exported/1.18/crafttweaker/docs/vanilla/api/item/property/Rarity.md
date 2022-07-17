@@ -38,7 +38,7 @@ myRarity.color();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| color | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true | false | Gets the color of this Rarity |
+| Name  |                        Type                        | Has Getter | Has Setter |          Description          |
+|-------|----------------------------------------------------|------------|------------|-------------------------------|
+| color | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true       | false      | Gets the color of this Rarity |
 

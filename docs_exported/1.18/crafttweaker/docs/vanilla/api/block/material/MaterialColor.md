@@ -18,9 +18,9 @@ Return Type: int
 MaterialColor.calculateRGBColor(brightness as ColorBrightness) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| brightness | [ColorBrightness](/vanilla/api/block/material/ColorBrightness) | No Description Provided |
+| Parameter  |                              Type                              |
+|------------|----------------------------------------------------------------|
+| brightness | [ColorBrightness](/vanilla/api/block/material/ColorBrightness) |
 
 
 :::

@@ -20,9 +20,9 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 LootContextBuilder.copy(context as LootContext) as LootContextBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| context | [LootContext](/vanilla/api/loot/LootContext) | No Description Provided |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| context   | [LootContext](/vanilla/api/loot/LootContext) |
 
 
 :::
@@ -38,9 +38,9 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 LootContextBuilder.create(level as ServerLevel) as LootContextBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | The level the loot will be rolled in. |
+| Parameter |                     Type                      |              Description              |
+|-----------|-----------------------------------------------|---------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) | The level the loot will be rolled in. |
 
 
 :::
@@ -62,8 +62,8 @@ Return Type: [LootContext](/vanilla/api/loot/LootContext)
 new LootContextBuilder(level).create(LootContextParamSets.gift());
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|    Parameter    |                                Type                                |                                  Description                                   |
+|-----------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | contextParamSet | [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) | The [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) to use. |
 
 
@@ -95,10 +95,10 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 LootContextBuilder.getOptionalParameter<T : Object>(contextParam as LootContextParam<T>) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter   |                                 Type                                  |                                          Description                                           |
+|--------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; to get the value of. |
-| T | Object | The type that the [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; uses |
+| T            | Object                                                                | The type that the [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; uses   |
 
 
 :::
@@ -114,10 +114,10 @@ Return Type: T
 LootContextBuilder.getParameter<T : Object>(contextParam as LootContextParam<T>) as T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter   |                                 Type                                  |                                          Description                                           |
+|--------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; to get the value of. |
-| T | Object | The type that the [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; uses |
+| T            | Object                                                                | The type that the [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; uses   |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 new LootContextBuilder(level).withLuck(0.5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| luck | float | The luck value to use. |
+| Parameter | Type  |      Description       |
+|-----------|-------|------------------------|
+| luck      | float | The luck value to use. |
 
 
 :::
@@ -153,11 +153,11 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 LootContextBuilder.withOptionalParameter<T : Object>(contextParam as LootContextParam<T>, actor as @org.openzen.zencode.java.ZenCodeType.Nullable T) as LootContextBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The param to add. |
-| actor | @org.openzen.zencode.java.ZenCodeType.Nullable T | The optional actor used by the param. |
-| T | Object | The type of actor that the param uses. |
+|  Parameter   |                                 Type                                  |              Description               |
+|--------------|-----------------------------------------------------------------------|----------------------------------------|
+| contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The param to add.                      |
+| actor        | @org.openzen.zencode.java.ZenCodeType.Nullable T                      | The optional actor used by the param.  |
+| T            | Object                                                                | The type of actor that the param uses. |
 
 
 :::
@@ -175,9 +175,9 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 new LootContextBuilder(level).withOptionalRandomSeed(0);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| seed | long | The seed to use. |
+| Parameter | Type |   Description    |
+|-----------|------|------------------|
+| seed      | long | The seed to use. |
 
 
 :::
@@ -195,10 +195,10 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 new LootContextBuilder(level).withOptionalRandomSeed(1, level.random);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| seed | long | The seed to use. |
-| random | [Random](/vanilla/api/util/math/Random) | The random source to provide. |
+| Parameter |                  Type                   |          Description          |
+|-----------|-----------------------------------------|-------------------------------|
+| seed      | long                                    | The seed to use.              |
+| random    | [Random](/vanilla/api/util/math/Random) | The random source to provide. |
 
 
 :::
@@ -214,11 +214,11 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 LootContextBuilder.withParameter<T : Object>(contextParam as LootContextParam<T>, actor as T) as LootContextBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The param to add. |
-| actor | T | The actor used by the param. |
-| T | Object | The type of actor that the param uses. |
+|  Parameter   |                                 Type                                  |              Description               |
+|--------------|-----------------------------------------------------------------------|----------------------------------------|
+| contextParam | [LootContextParam](/vanilla/api/loot/param/LootContextParam)&lt;T&gt; | The param to add.                      |
+| actor        | T                                                                     | The actor used by the param.           |
+| T            | Object                                                                | The type of actor that the param uses. |
 
 
 :::
@@ -236,9 +236,9 @@ Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
 new LootContextBuilder(level).withRandom(level.random);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| random | [Random](/vanilla/api/util/math/Random) | The random source to provide. |
+| Parameter |                  Type                   |          Description          |
+|-----------|-----------------------------------------|-------------------------------|
+| random    | [Random](/vanilla/api/util/math/Random) | The random source to provide. |
 
 
 :::
@@ -246,7 +246,7 @@ new LootContextBuilder(level).withRandom(level.random);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| level | [ServerLevel](/vanilla/api/world/ServerLevel) | true | false | Gets the level that this builder uses. |
+| Name  |                     Type                      | Has Getter | Has Setter |              Description               |
+|-------|-----------------------------------------------|------------|------------|----------------------------------------|
+| level | [ServerLevel](/vanilla/api/world/ServerLevel) | true       | false      | Gets the level that this builder uses. |
 

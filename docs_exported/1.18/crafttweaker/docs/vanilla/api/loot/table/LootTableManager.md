@@ -53,9 +53,9 @@ Return Type: [LootTable](/vanilla/api/loot/LootTable)
 loot.tables.getTable(<resource:minecraft:gameplay/cat_morning_gift>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the table to get. |
+| Parameter |                            Type                            |          Description          |
+|-----------|------------------------------------------------------------|-------------------------------|
+| name      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The name of the table to get. |
 
 
 :::
@@ -63,7 +63,7 @@ loot.tables.getTable(<resource:minecraft:gameplay/cat_morning_gift>);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| ids | Set&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the ids of all registered loot tables. |
+| Name |                                 Type                                  | Has Getter | Has Setter |                 Description                 |
+|------|-----------------------------------------------------------------------|------------|------------|---------------------------------------------|
+| ids  | Set&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      | Gets the ids of all registered loot tables. |
 

@@ -17,23 +17,23 @@ ByteArrayData implements the following interfaces. That means all methods define
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new ByteArrayData(internal as byte[]) as ByteArrayData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | byte[] | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| internal  | byte[] |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 
@@ -116,9 +116,9 @@ Return Type: boolean
 [4, 1, 2].contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::

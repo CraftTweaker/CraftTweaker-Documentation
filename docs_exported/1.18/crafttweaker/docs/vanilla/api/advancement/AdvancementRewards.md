@@ -24,15 +24,13 @@ myAdvancementRewards.getRecipes();
 
 :::group{name=grant}
 
-Return Type: void
-
 ```zenscript
-AdvancementRewards.grant(player as ServerPlayer) as void
+AdvancementRewards.grant(player as ServerPlayer)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| player    | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) |
 
 
 :::
@@ -40,7 +38,7 @@ AdvancementRewards.grant(player as ServerPlayer) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| recipes | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | true | false | No Description Provided |
+|  Name   |                             Type                             | Has Getter | Has Setter |
+|---------|--------------------------------------------------------------|------------|------------|
+| recipes | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | true       | false      |
 

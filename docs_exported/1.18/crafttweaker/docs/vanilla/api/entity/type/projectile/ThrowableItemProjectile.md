@@ -21,15 +21,13 @@ ThrowableItemProjectile implements the following interfaces. That means all meth
 
 :::group{name=setItem}
 
-Return Type: void
-
 ```zenscript
-ThrowableItemProjectile.setItem(stack as ItemStack) as void
+ThrowableItemProjectile.setItem(stack as ItemStack)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -37,7 +35,7 @@ ThrowableItemProjectile.setItem(stack as ItemStack) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| item | [ThrowableItemProjectile](/vanilla/api/entity/type/projectile/ThrowableItemProjectile) | false | true | No Description Provided |
+| Name |                                          Type                                          | Has Getter | Has Setter |
+|------|----------------------------------------------------------------------------------------|------------|------------|
+| item | [ThrowableItemProjectile](/vanilla/api/entity/type/projectile/ThrowableItemProjectile) | false      | true       |
 

@@ -30,17 +30,15 @@ ItemFishedEvent extends [PlayerEvent](/forge/api/event/entity/player/PlayerEvent
 
 Sets the amount of durability damage to inflict on the fishing rod.
 
-Return Type: void
-
 ```zenscript
-// ItemFishedEvent.damageRodBy(damage as int) as void
+// ItemFishedEvent.damageRodBy(damage as int)
 
 event.damageRodBy(5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| damage | int | The amount of durability damage. |
+| Parameter | Type |           Description            |
+|-----------|------|----------------------------------|
+| damage    | int  | The amount of durability damage. |
 
 
 :::
@@ -78,9 +76,9 @@ event.getItemDamage();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| damageRodBy | [ItemFishedEvent](/forge/api/event/entity/player/ItemFishedEvent) | false | true | Sets the amount of durability damage to inflict on the fishing rod. |
-| drops | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; | true | false | Gets the list of items being fished up by the player. |
-| itemDamage | int | true | false | Gets the amount of durability damage to inflict on the fishing rod. |
+|    Name     |                               Type                                | Has Getter | Has Setter |                             Description                             |
+|-------------|-------------------------------------------------------------------|------------|------------|---------------------------------------------------------------------|
+| damageRodBy | [ItemFishedEvent](/forge/api/event/entity/player/ItemFishedEvent) | false      | true       | Sets the amount of durability damage to inflict on the fishing rod. |
+| drops       | stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;       | true       | false      | Gets the list of items being fished up by the player.               |
+| itemDamage  | int                                                               | true       | false      | Gets the amount of durability damage to inflict on the fishing rod. |
 

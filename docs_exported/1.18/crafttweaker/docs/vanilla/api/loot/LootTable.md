@@ -16,16 +16,14 @@ import crafttweaker.api.loot.LootTable;
 
 Fills the given container with loot rolled by this table.
 
-Return Type: void
-
 ```zenscript
-LootTable.fill(container as Container, context as LootContext) as void
+LootTable.fill(container as Container, context as LootContext)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| container | [Container](/vanilla/api/world/Container) | The container to fill. |
-| context | [LootContext](/vanilla/api/loot/LootContext) | The context that will generate the loot. |
+| Parameter |                     Type                     |               Description                |
+|-----------|----------------------------------------------|------------------------------------------|
+| container | [Container](/vanilla/api/world/Container)    | The container to fill.                   |
+| context   | [LootContext](/vanilla/api/loot/LootContext) | The context that will generate the loot. |
 
 
 :::
@@ -60,9 +58,9 @@ Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| context | [LootContext](/vanilla/api/loot/LootContext) | The context that this loot was generated. |
+| Parameter |                     Type                     |                Description                |
+|-----------|----------------------------------------------|-------------------------------------------|
+| context   | [LootContext](/vanilla/api/loot/LootContext) | The context that this loot was generated. |
 
 
 :::
@@ -74,10 +72,8 @@ Rolls this table and passes all the rolled items to the given `Consumer<[IItemSt
  NOTE: This method does respect max stack sizes
  NOTE: The provided [LootContext](/vanilla/api/loot/LootContext) should not be reused from a loot modifier, if you want to reuse a context, look at **invalid**#copy(LootContext).
 
-Return Type: void
-
 ```zenscript
-// LootTable.getRandomItems(context as LootContext, stackConsumer as Consumer<IItemStack>) as void
+// LootTable.getRandomItems(context as LootContext, stackConsumer as Consumer<IItemStack>)
 
 lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()), (stack) => {
 
@@ -85,10 +81,10 @@ lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomIte
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| context | [LootContext](/vanilla/api/loot/LootContext) | The context that will generate the loot. |
-| stackConsumer | Consumer&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | A consumer to act on the rolled stacks. |
+|   Parameter   |                            Type                            |               Description                |
+|---------------|------------------------------------------------------------|------------------------------------------|
+| context       | [LootContext](/vanilla/api/loot/LootContext)               | The context that will generate the loot. |
+| stackConsumer | Consumer&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | A consumer to act on the rolled stacks.  |
 
 
 :::
@@ -100,10 +96,8 @@ Rolls this table and passes all the rolled items to the given `Consumer<[IItemSt
  NOTE: This method does not respect max stack sizes!
  NOTE: The provided [LootContext](/vanilla/api/loot/LootContext) should not be reused from a loot modifier, if you want to reuse a context, look at **invalid**#copy(LootContext).
 
-Return Type: void
-
 ```zenscript
-// LootTable.getRandomItemsRaw(context as LootContext, stackConsumer as Consumer<IItemStack>) as void
+// LootTable.getRandomItemsRaw(context as LootContext, stackConsumer as Consumer<IItemStack>)
 
 lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItemsRaw(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()), (stack) => {
 
@@ -111,10 +105,10 @@ lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomIte
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| context | [LootContext](/vanilla/api/loot/LootContext) | The context that will generate the loot. |
-| stackConsumer | Consumer&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | A consumer to act on the rolled stacks. |
+|   Parameter   |                            Type                            |               Description                |
+|---------------|------------------------------------------------------------|------------------------------------------|
+| context       | [LootContext](/vanilla/api/loot/LootContext)               | The context that will generate the loot. |
+| stackConsumer | Consumer&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | A consumer to act on the rolled stacks.  |
 
 
 :::
@@ -122,7 +116,7 @@ lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomIte
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| paramSet | [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) | true | false | Gets the param set that this table uses. |
+|   Name   |                                Type                                | Has Getter | Has Setter |               Description                |
+|----------|--------------------------------------------------------------------|------------|------------|------------------------------------------|
+| paramSet | [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) | true       | false      | Gets the param set that this table uses. |
 

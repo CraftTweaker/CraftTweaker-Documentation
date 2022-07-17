@@ -18,9 +18,9 @@ Return Type: int
 ArmorMaterial.getDefenseForSlot(slot as EquipmentSlot) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| slot      | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) |
 
 
 :::
@@ -33,9 +33,9 @@ Return Type: int
 ArmorMaterial.getDurabilityForSlot(slot as EquipmentSlot) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | No Description Provided |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| slot      | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) |
 
 
 :::
@@ -115,12 +115,12 @@ myArmorMaterial.getToughness();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| enchantmentValue | int | true | false | No Description Provided |
-| equipSound | [SoundEvent](/vanilla/api/sound/SoundEvent) | true | false | No Description Provided |
-| knockbackResistance | float | true | false | No Description Provided |
-| name | string | true | false | No Description Provided |
-| repairIngredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | true | false | No Description Provided |
-| toughness | float | true | false | No Description Provided |
+|        Name         |                        Type                        | Has Getter | Has Setter |
+|---------------------|----------------------------------------------------|------------|------------|
+| enchantmentValue    | int                                                | true       | false      |
+| equipSound          | [SoundEvent](/vanilla/api/sound/SoundEvent)        | true       | false      |
+| knockbackResistance | float                                              | true       | false      |
+| name                | string                                             | true       | false      |
+| repairIngredient    | [IIngredient](/vanilla/api/ingredient/IIngredient) | true       | false      |
+| toughness           | float                                              | true       | false      |
 

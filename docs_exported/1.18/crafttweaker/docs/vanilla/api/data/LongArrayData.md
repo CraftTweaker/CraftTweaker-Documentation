@@ -17,23 +17,23 @@ LongArrayData implements the following interfaces. That means all methods define
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new LongArrayData(internal as long[]) as LongArrayData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | long[] | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| internal  | long[] |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
 
 ## Methods
 
@@ -116,9 +116,9 @@ Return Type: boolean
 [100000, 800000, 50000].contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::

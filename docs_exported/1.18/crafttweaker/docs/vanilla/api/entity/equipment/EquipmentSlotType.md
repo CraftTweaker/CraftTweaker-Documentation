@@ -33,7 +33,7 @@ myEquipmentSlotType.getCommandString();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
+|     Name      |  Type  | Has Getter | Has Setter |
+|---------------|--------|------------|------------|
+| commandString | string | true       | false      |
 

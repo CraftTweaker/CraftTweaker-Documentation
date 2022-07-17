@@ -39,7 +39,7 @@ event.getAdvancement();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| advancement | [Advancement](/vanilla/api/advancement/Advancement) | true | false | Gets the advancement being unlocked. |
+|    Name     |                        Type                         | Has Getter | Has Setter |             Description              |
+|-------------|-----------------------------------------------------|------------|------------|--------------------------------------|
+| advancement | [Advancement](/vanilla/api/advancement/Advancement) | true       | false      | Gets the advancement being unlocked. |
 

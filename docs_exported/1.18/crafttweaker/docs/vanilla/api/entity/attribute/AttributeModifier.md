@@ -23,12 +23,12 @@ Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier
 AttributeModifier.create("My New Attribute Modifier", 11.4, AttributeOperation.ADDITION, "6d79f9c1-a4ab-4e72-a0ab-71870b89b4c6");
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| name | string | the name of this attribute modifier | false |  |
-| amount | double | the amount of this attribute modifier | false |  |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | the operation of this attribute modifier. | false |  |
-| uuid | string | the uuid of this attribute modifier, if omitted, it will use a random one. | true |  |
+| Parameter |                                  Type                                  |                                Description                                 | Optional |
+|-----------|------------------------------------------------------------------------|----------------------------------------------------------------------------|----------|
+| name      | string                                                                 | the name of this attribute modifier                                        | false    |
+| amount    | double                                                                 | the amount of this attribute modifier                                      | false    |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | the operation of this attribute modifier.                                  | false    |
+| uuid      | string                                                                 | the uuid of this attribute modifier, if omitted, it will use a random one. | true     |
 
 
 :::
@@ -98,10 +98,10 @@ myAttributeModifier.getOperation();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | double | true | false | Gets the amount of this AttributeModifier. |
-| id | string | true | false | Gets the ID of this AttributeModifier. |
-| name | string | true | false | Gets the name of this AttributeModifier. |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | true | false | Gets the operation of this AttributeModifier. |
+|   Name    |                                  Type                                  | Has Getter | Has Setter |                  Description                  |
+|-----------|------------------------------------------------------------------------|------------|------------|-----------------------------------------------|
+| amount    | double                                                                 | true       | false      | Gets the amount of this AttributeModifier.    |
+| id        | string                                                                 | true       | false      | Gets the ID of this AttributeModifier.        |
+| name      | string                                                                 | true       | false      | Gets the name of this AttributeModifier.      |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | true       | false      | Gets the operation of this AttributeModifier. |
 

@@ -25,7 +25,7 @@ myItemSupplier.getItem();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| item | [ItemStack](/vanilla/api/item/ItemStack) | true | false | No Description Provided |
+| Name |                   Type                   | Has Getter | Has Setter |
+|------|------------------------------------------|------------|------------|
+| item | [ItemStack](/vanilla/api/item/ItemStack) | true       | false      |
 

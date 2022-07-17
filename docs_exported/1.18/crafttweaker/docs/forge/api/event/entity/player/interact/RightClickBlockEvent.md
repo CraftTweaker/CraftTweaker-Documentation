@@ -78,30 +78,26 @@ myRightClickBlockEvent.getUseItem();
 
 :::group{name=setUseBlock}
 
-Return Type: void
-
 ```zenscript
-RightClickBlockEvent.setUseBlock(triggerBlock as EventResult) as void
+RightClickBlockEvent.setUseBlock(triggerBlock as EventResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| triggerBlock | [EventResult](/forge/api/event/EventResult) | No Description Provided |
+|  Parameter   |                    Type                     |
+|--------------|---------------------------------------------|
+| triggerBlock | [EventResult](/forge/api/event/EventResult) |
 
 
 :::
 
 :::group{name=setUseItem}
 
-Return Type: void
-
 ```zenscript
-RightClickBlockEvent.setUseItem(triggerItem as EventResult) as void
+RightClickBlockEvent.setUseItem(triggerItem as EventResult)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| triggerItem | [EventResult](/forge/api/event/EventResult) | No Description Provided |
+|  Parameter  |                    Type                     |
+|-------------|---------------------------------------------|
+| triggerItem | [EventResult](/forge/api/event/EventResult) |
 
 
 :::
@@ -109,10 +105,10 @@ RightClickBlockEvent.setUseItem(triggerItem as EventResult) as void
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| face | [Direction](/vanilla/api/util/direction/Direction) | true | false | The face of the block that was clicked <br />  Unlike in [PlayerInteractEvent](/forge/api/event/entity/player/interact/PlayerInteractEvent) this is known not to be null |
-| hitVec | [BlockHitResult](/vanilla/api/util/BlockHitResult) | true | false | No Description Provided |
-| useBlock | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |
-| useItem | [EventResult](/forge/api/event/EventResult) | true | true | No Description Provided |
+|   Name   |                        Type                        | Has Getter | Has Setter |                                                                               Description                                                                                |
+|----------|----------------------------------------------------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| face     | [Direction](/vanilla/api/util/direction/Direction) | true       | false      | The face of the block that was clicked <br />  Unlike in [PlayerInteractEvent](/forge/api/event/entity/player/interact/PlayerInteractEvent) this is known not to be null |
+| hitVec   | [BlockHitResult](/vanilla/api/util/BlockHitResult) | true       | false      |                                                                                                                                                                          |
+| useBlock | [EventResult](/forge/api/event/EventResult)        | true       | true       |                                                                                                                                                                          |
+| useItem  | [EventResult](/forge/api/event/EventResult)        | true       | true       |                                                                                                                                                                          |
 

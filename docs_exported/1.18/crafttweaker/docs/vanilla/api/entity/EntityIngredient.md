@@ -1,7 +1,7 @@
 # EntityIngredient
 
-EntityIngredient that facilitates accepting either a single, or multiple [EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;s, KnownTag <EntityType>s
- or Many< KnownTag <EntityType>>s.
+EntityIngredient that facilitates accepting either a single, or multiple [EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;s, [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;&gt;s
+ or [Many](/vanilla/api/util/Many)&lt;[KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[EntityType](/vanilla/api/entity/EntityType)&lt;T&gt;&gt;&gt;s.
 
 ## Importing the class
 

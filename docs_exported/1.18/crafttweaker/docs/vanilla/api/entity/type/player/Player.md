@@ -22,55 +22,49 @@ Return Type: boolean
 Player.addItem(stack as ItemStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=attack}
 
-Return Type: void
-
 ```zenscript
-Player.attack(entity as Entity) as void
+Player.attack(entity as Entity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
 
 :::group{name=awardStat}
 
-Return Type: void
-
 ```zenscript
-Player.awardStat(stat as ResourceLocation) as void
+Player.awardStat(stat as ResourceLocation)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stat | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| stat      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 
 
 :::
 
 :::group{name=awardStat}
 
-Return Type: void
-
 ```zenscript
-Player.awardStat(stat as ResourceLocation, amount as int) as void
+Player.awardStat(stat as ResourceLocation, amount as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stat | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | No Description Provided |
-| amount | int | No Description Provided |
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| stat      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| amount    | int                                                        |
 
 
 :::
@@ -83,9 +77,9 @@ Return Type: boolean
 Player.canEat(ignoreHunger as boolean) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| ignoreHunger | boolean | No Description Provided |
+|  Parameter   |  Type   |
+|--------------|---------|
+| ignoreHunger | boolean |
 
 
 :::
@@ -98,9 +92,9 @@ Return Type: boolean
 Player.canHarmPlayer(player as Player) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -119,61 +113,53 @@ myPlayer.canUseGameMasterBlocks();
 
 :::group{name=causeFoodExhaustion}
 
-Return Type: void
-
 ```zenscript
-Player.causeFoodExhaustion(exhaustion as float) as void
+Player.causeFoodExhaustion(exhaustion as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| exhaustion | float | No Description Provided |
+| Parameter  | Type  |
+|------------|-------|
+| exhaustion | float |
 
 
 :::
 
 :::group{name=crit}
 
-Return Type: void
-
 ```zenscript
-Player.crit(entity as Entity) as void
+Player.crit(entity as Entity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
 
 :::group{name=disableShield}
 
-Return Type: void
-
 ```zenscript
-Player.disableShield(usingAxe as boolean) as void
+Player.disableShield(usingAxe as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| usingAxe | boolean | No Description Provided |
+| Parameter |  Type   |
+|-----------|---------|
+| usingAxe  | boolean |
 
 
 :::
 
 :::group{name=displayClientMessage}
 
-Return Type: void
-
 ```zenscript
-Player.displayClientMessage(component as Component, actionBar as boolean) as void
+Player.displayClientMessage(component as Component, actionBar as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| component | [Component](/vanilla/api/text/Component) | No Description Provided |
-| actionBar | boolean | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| component | [Component](/vanilla/api/text/Component) |
+| actionBar | boolean                                  |
 
 
 :::
@@ -186,10 +172,10 @@ Return Type: [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)?
 Player.drop(stack as ItemStack, traceItem as boolean) as ItemEntity?
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| stack | [ItemStack](/vanilla/api/item/ItemStack) | No Description Provided |
-| traceItem | boolean | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
+| traceItem | boolean                                  |
 
 
 :::
@@ -238,9 +224,9 @@ Return Type: float
 Player.getDestroySpeed(state as BlockState) as float
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
 
 
 :::
@@ -379,46 +365,40 @@ myPlayer.getXpNeededForNextLevel();
 
 :::group{name=give}
 
-Return Type: void
-
 ```zenscript
-Player.give(stack as IItemStack, slot as int) as void
+Player.give(stack as IItemStack, slot as int)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| stack | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided | false |  |
-| slot | int | No Description Provided | true | -1 |
+| Parameter |                    Type                    | Optional | Default Value |
+|-----------|--------------------------------------------|----------|---------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) | false    |               |
+| slot      | int                                        | true     | -1            |
 
 
 :::
 
 :::group{name=giveExperienceLevels}
 
-Return Type: void
-
 ```zenscript
-Player.giveExperienceLevels(levels as int) as void
+Player.giveExperienceLevels(levels as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| levels | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| levels    | int  |
 
 
 :::
 
 :::group{name=giveExperiencePoints}
 
-Return Type: void
-
 ```zenscript
-Player.giveExperiencePoints(amount as int) as void
+Player.giveExperiencePoints(amount as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
 
 
 :::
@@ -431,24 +411,22 @@ Return Type: boolean
 Player.hasCorrectToolForDrops(state as BlockState) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| state | [BlockState](/vanilla/api/block/BlockState) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
 
 
 :::
 
 :::group{name=increaseScore}
 
-Return Type: void
-
 ```zenscript
-Player.increaseScore(score as int) as void
+Player.increaseScore(score as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| score | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| score     | int  |
 
 
 :::
@@ -539,10 +517,8 @@ myPlayer.isSleepingLongEnough();
 
 :::group{name=jumpFromGround}
 
-Return Type: void
-
 ```zenscript
-// Player.jumpFromGround() as void
+// Player.jumpFromGround()
 
 myPlayer.jumpFromGround();
 ```
@@ -551,15 +527,13 @@ myPlayer.jumpFromGround();
 
 :::group{name=magicCrit}
 
-Return Type: void
-
 ```zenscript
-Player.magicCrit(entity as Entity) as void
+Player.magicCrit(entity as Entity)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -578,28 +552,24 @@ myPlayer.mayBuild();
 
 :::group{name=playNotifySound}
 
-Return Type: void
-
 ```zenscript
-Player.playNotifySound(event as SoundEvent, source as SoundSource, volume as float, pitch as float) as void
+Player.playNotifySound(event as SoundEvent, source as SoundSource, volume as float, pitch as float)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| event | [SoundEvent](/vanilla/api/sound/SoundEvent) | No Description Provided |
-| source | [SoundSource](/vanilla/api/sound/SoundSource) | No Description Provided |
-| volume | float | No Description Provided |
-| pitch | float | No Description Provided |
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| event     | [SoundEvent](/vanilla/api/sound/SoundEvent)   |
+| source    | [SoundSource](/vanilla/api/sound/SoundSource) |
+| volume    | float                                         |
+| pitch     | float                                         |
 
 
 :::
 
 :::group{name=respawn}
 
-Return Type: void
-
 ```zenscript
-// Player.respawn() as void
+// Player.respawn()
 
 myPlayer.respawn();
 ```
@@ -608,15 +578,13 @@ myPlayer.respawn();
 
 :::group{name=sendMessage}
 
-Return Type: void
-
 ```zenscript
-Player.sendMessage(text as Component) as void
+Player.sendMessage(text as Component)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| text | [Component](/vanilla/api/text/Component) | No Description Provided |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| text      | [Component](/vanilla/api/text/Component) |
 
 
 :::
@@ -629,79 +597,69 @@ Return Type: boolean
 Player.setEntityOnShoulder(entityData as MapData) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityData | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parameter  |                 Type                 |
+|------------|--------------------------------------|
+| entityData | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
 
 :::group{name=setExperienceLevel}
 
-Return Type: void
-
 ```zenscript
-Player.setExperienceLevel(level as int) as void
+Player.setExperienceLevel(level as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| level     | int  |
 
 
 :::
 
 :::group{name=setMainArm}
 
-Return Type: void
-
 ```zenscript
-Player.setMainArm(arm as HumanoidArm) as void
+Player.setMainArm(arm as HumanoidArm)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| arm | [HumanoidArm](/vanilla/api/entity/HumanoidArm) | No Description Provided |
+| Parameter |                      Type                      |
+|-----------|------------------------------------------------|
+| arm       | [HumanoidArm](/vanilla/api/entity/HumanoidArm) |
 
 
 :::
 
 :::group{name=setReducedDebugInfo}
 
-Return Type: void
-
 ```zenscript
-Player.setReducedDebugInfo(reducedDebugInfo as boolean) as void
+Player.setReducedDebugInfo(reducedDebugInfo as boolean)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| reducedDebugInfo | boolean | No Description Provided |
+|    Parameter     |  Type   |
+|------------------|---------|
+| reducedDebugInfo | boolean |
 
 
 :::
 
 :::group{name=setScore}
 
-Return Type: void
-
 ```zenscript
-Player.setScore(score as int) as void
+Player.setScore(score as int)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| score | int | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| score     | int  |
 
 
 :::
 
 :::group{name=stopSleeping}
 
-Return Type: void
-
 ```zenscript
-// Player.stopSleeping() as void
+// Player.stopSleeping()
 
 myPlayer.stopSleeping();
 ```
@@ -710,10 +668,8 @@ myPlayer.stopSleeping();
 
 :::group{name=sweepAttack}
 
-Return Type: void
-
 ```zenscript
-// Player.sweepAttack() as void
+// Player.sweepAttack()
 
 myPlayer.sweepAttack();
 ```
@@ -723,29 +679,29 @@ myPlayer.sweepAttack();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) | true | false | No Description Provided |
-| canUseGameMasterBlocks | boolean | true | false | No Description Provided |
-| cooldowns | [ItemCooldowns](/vanilla/api/item/ItemCooldowns) | true | false | No Description Provided |
-| currentItemAttackStrengthDelay | float | true | false | No Description Provided |
-| enchantmentSeed | int | true | false | No Description Provided |
-| experienceLevel | int | true | true | No Description Provided |
-| foodData | [FoodData](/vanilla/api/food/FoodData) | true | false | No Description Provided |
-| inventory | [Inventory](/vanilla/api/entity/type/player/Inventory) | true | false | No Description Provided |
-| isCreative | boolean | true | false | No Description Provided |
-| isHurt | boolean | true | false | No Description Provided |
-| isLocalPlayer | boolean | true | false | No Description Provided |
-| isReducedDebugInfo | boolean | true | false | No Description Provided |
-| isScoping | boolean | true | false | No Description Provided |
-| isSecondaryUseActive | boolean | true | false | No Description Provided |
-| isSleepingLongEnough | boolean | true | false | No Description Provided |
-| luck | float | true | false | No Description Provided |
-| mainArm | [HumanoidArm](/vanilla/api/entity/HumanoidArm) | true | false | No Description Provided |
-| mayBuild | boolean | true | false | No Description Provided |
-| score | int | true | false | No Description Provided |
-| shoulderEntityLeft | [MapData](/vanilla/api/data/MapData) | true | false | No Description Provided |
-| shoulderEntityRight | [MapData](/vanilla/api/data/MapData) | true | false | No Description Provided |
-| sleepTimer | int | true | false | No Description Provided |
-| xpNeededForNextLevel | int | true | false | No Description Provided |
+|              Name              |                          Type                          | Has Getter | Has Setter |
+|--------------------------------|--------------------------------------------------------|------------|------------|
+| abilities                      | [Abilities](/vanilla/api/entity/type/player/Abilities) | true       | false      |
+| canUseGameMasterBlocks         | boolean                                                | true       | false      |
+| cooldowns                      | [ItemCooldowns](/vanilla/api/item/ItemCooldowns)       | true       | false      |
+| currentItemAttackStrengthDelay | float                                                  | true       | false      |
+| enchantmentSeed                | int                                                    | true       | false      |
+| experienceLevel                | int                                                    | true       | true       |
+| foodData                       | [FoodData](/vanilla/api/food/FoodData)                 | true       | false      |
+| inventory                      | [Inventory](/vanilla/api/entity/type/player/Inventory) | true       | false      |
+| isCreative                     | boolean                                                | true       | false      |
+| isHurt                         | boolean                                                | true       | false      |
+| isLocalPlayer                  | boolean                                                | true       | false      |
+| isReducedDebugInfo             | boolean                                                | true       | false      |
+| isScoping                      | boolean                                                | true       | false      |
+| isSecondaryUseActive           | boolean                                                | true       | false      |
+| isSleepingLongEnough           | boolean                                                | true       | false      |
+| luck                           | float                                                  | true       | false      |
+| mainArm                        | [HumanoidArm](/vanilla/api/entity/HumanoidArm)         | true       | false      |
+| mayBuild                       | boolean                                                | true       | false      |
+| score                          | int                                                    | true       | false      |
+| shoulderEntityLeft             | [MapData](/vanilla/api/data/MapData)                   | true       | false      |
+| shoulderEntityRight            | [MapData](/vanilla/api/data/MapData)                   | true       | false      |
+| sleepTimer                     | int                                                    | true       | false      |
+| xpNeededForNextLevel           | int                                                    | true       | false      |
 

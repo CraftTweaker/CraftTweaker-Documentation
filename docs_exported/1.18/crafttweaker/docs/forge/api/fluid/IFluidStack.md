@@ -15,10 +15,10 @@ IFluidStack implements the following interfaces. That means all methods defined 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Fluid](/vanilla/api/fluid/Fluid) | true |
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true |
+|                     Result Type                     | Is Implicit |
+|-----------------------------------------------------|-------------|
+| [Fluid](/vanilla/api/fluid/Fluid)                   | true        |
+| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
 
 ## Methods
 
@@ -45,9 +45,9 @@ Return Type: boolean
 IFluidStack.containsOther(other as IFluidStack) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [IFluidStack](/forge/api/fluid/IFluidStack) | other IFluidStack to compare against |
+| Parameter |                    Type                     |             Description              |
+|-----------|---------------------------------------------|--------------------------------------|
+| other     | [IFluidStack](/forge/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
 
 :::
@@ -136,9 +136,9 @@ Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 myIFluidStack.setAmount(1000);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | The amount to multiply this stack |
+| Parameter | Type |            Description            |
+|-----------|------|-----------------------------------|
+| amount    | int  | The amount to multiply this stack |
 
 
 :::
@@ -156,9 +156,9 @@ Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 myIFluidStack.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tag | [MapData](/vanilla/api/data/MapData)? | The tag to set. |
+| Parameter |                 Type                  |   Description   |
+|-----------|---------------------------------------|-----------------|
+| tag       | [MapData](/vanilla/api/data/MapData)? | The tag to set. |
 
 
 :::
@@ -198,14 +198,14 @@ myIFluidStack | other as FluidIngredient
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| amount | int | true | false | Gets the fluid amount in MilliBuckets (mB). |
-| commandString | string | true | false | Returns the BEP to get this thingy |
-| empty | boolean | true | false | Gets whether or not this fluid stack is empty. |
-| fluid | [Fluid](/vanilla/api/fluid/Fluid) | true | false | Retrieves this fluid stack's fluid. |
-| hasTag | boolean | true | false | Returns true if this FluidStack has a Tag |
-| isImmutable | boolean | true | false | No Description Provided |
-| registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the registry name for the fluid this stack is representing. |
-| tag | [MapData](/vanilla/api/data/MapData) | true | false | Returns the NBT tag attached to this FluidStack. |
+|     Name      |                            Type                            | Has Getter | Has Setter |                           Description                            |
+|---------------|------------------------------------------------------------|------------|------------|------------------------------------------------------------------|
+| amount        | int                                                        | true       | false      | Gets the fluid amount in MilliBuckets (mB).                      |
+| commandString | string                                                     | true       | false      | Returns the BEP to get this thingy                               |
+| empty         | boolean                                                    | true       | false      | Gets whether or not this fluid stack is empty.                   |
+| fluid         | [Fluid](/vanilla/api/fluid/Fluid)                          | true       | false      | Retrieves this fluid stack's fluid.                              |
+| hasTag        | boolean                                                    | true       | false      | Returns true if this FluidStack has a Tag                        |
+| isImmutable   | boolean                                                    | true       | false      |                                                                  |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      | Gets the registry name for the fluid this stack is representing. |
+| tag           | [MapData](/vanilla/api/data/MapData)                       | true       | false      | Returns the NBT tag attached to this FluidStack.                 |
 

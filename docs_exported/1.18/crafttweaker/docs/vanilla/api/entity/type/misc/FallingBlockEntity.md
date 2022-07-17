@@ -29,11 +29,11 @@ Return Type: [FallingBlockEntity](/vanilla/api/entity/type/misc/FallingBlockEnti
 FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [Level](/vanilla/api/world/Level) | The level to spawn the entity in. |
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to spawn the entity at. |
-| state | [BlockState](/vanilla/api/block/BlockState) | The blockstate of the falling block. |
+| Parameter |                    Type                     |             Description              |
+|-----------|---------------------------------------------|--------------------------------------|
+| level     | [Level](/vanilla/api/world/Level)           | The level to spawn the entity in.    |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | The position to spawn the entity at. |
+| state     | [BlockState](/vanilla/api/block/BlockState) | The blockstate of the falling block. |
 
 
 :::
@@ -44,18 +44,16 @@ FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt
 
 Triggers the given [Fallable](/vanilla/api/block/type/falling/Fallable)'s `onBrokenAfterFall` method using this entity.
 
-Return Type: void
-
 ```zenscript
-// FallingBlockEntity.callOnBrokenAfterFall(fallableBlock as Block, position as BlockPos) as void
+// FallingBlockEntity.callOnBrokenAfterFall(fallableBlock as Block, position as BlockPos)
 
 FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt>).callOnBrokenAfterFall(<block:minecraft:sand>, new BlockPos(1, 2, 3));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| fallableBlock | [Block](/vanilla/api/block/Block) | The fallable block. |
-| position | [BlockPos](/vanilla/api/util/math/BlockPos) | The position that the block fell at. |
+|   Parameter   |                    Type                     |             Description              |
+|---------------|---------------------------------------------|--------------------------------------|
+| fallableBlock | [Block](/vanilla/api/block/Block)           | The fallable block.                  |
+| position      | [BlockPos](/vanilla/api/util/math/BlockPos) | The position that the block fell at. |
 
 
 :::
@@ -94,18 +92,16 @@ FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt
 
 Sets that entities should be hurt by this block, as well as setting how much damage is done.
 
-Return Type: void
-
 ```zenscript
-// FallingBlockEntity.setHurtsEntities(damagePerDistance as float, maxDamage as int) as void
+// FallingBlockEntity.setHurtsEntities(damagePerDistance as float, maxDamage as int)
 
 FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt>).setHurtsEntities(0.5, 5);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| damagePerDistance | float | The damage done per distance fell. |
-| maxDamage | int | The max amount of damage that can be caused by this entity. |
+|     Parameter     | Type  |                         Description                         |
+|-------------------|-------|-------------------------------------------------------------|
+| damagePerDistance | float | The damage done per distance fell.                          |
+| maxDamage         | int   | The max amount of damage that can be caused by this entity. |
 
 
 :::
@@ -116,17 +112,15 @@ Sets the position that this entity was spawned at.
 
  this is mainly used for the rendering of the entity
 
-Return Type: void
-
 ```zenscript
-// FallingBlockEntity.setStartPos(pos as BlockPos) as void
+// FallingBlockEntity.setStartPos(pos as BlockPos)
 
 FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt>).setStartPos(new BlockPos(1, 2, 3));
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| pos | [BlockPos](/vanilla/api/util/math/BlockPos) | the position that the entity was spawned at. |
+| Parameter |                    Type                     |                 Description                  |
+|-----------|---------------------------------------------|----------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | the position that the entity was spawned at. |
 
 
 :::
@@ -134,7 +128,7 @@ FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blockstate | [BlockState](/vanilla/api/block/BlockState) | true | false | Gets the BlockState of this falling entity. |
+|    Name    |                    Type                     | Has Getter | Has Setter |                 Description                 |
+|------------|---------------------------------------------|------------|------------|---------------------------------------------|
+| blockstate | [BlockState](/vanilla/api/block/BlockState) | true       | false      | Gets the BlockState of this falling entity. |
 

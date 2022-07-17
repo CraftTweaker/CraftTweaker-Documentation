@@ -82,11 +82,11 @@ myArmorItem.getToughness();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| defense | int | true | false | No Description Provided |
-| equipSound | [SoundEvent](/vanilla/api/sound/SoundEvent)? | true | false | No Description Provided |
-| material | [ArmorMaterial](/vanilla/api/item/type/armor/ArmorMaterial) | true | false | No Description Provided |
-| slot | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true | false | No Description Provided |
-| toughness | float | true | false | No Description Provided |
+|    Name    |                             Type                             | Has Getter | Has Setter |
+|------------|--------------------------------------------------------------|------------|------------|
+| defense    | int                                                          | true       | false      |
+| equipSound | [SoundEvent](/vanilla/api/sound/SoundEvent)?                 | true       | false      |
+| material   | [ArmorMaterial](/vanilla/api/item/type/armor/ArmorMaterial)  | true       | false      |
+| slot       | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot) | true       | false      |
+| toughness  | float                                                        | true       | false      |
 

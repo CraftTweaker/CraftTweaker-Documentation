@@ -12,11 +12,11 @@ import crafttweaker.api.block.BlockState;
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| [Block](/vanilla/api/block/Block) | true |
-| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true |
-| string | false |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [Block](/vanilla/api/block/Block)                     | true        |
+| [BlockIngredient](/vanilla/api/block/BlockIngredient) | true        |
+| string                                                | false       |
 
 ## Methods
 
@@ -60,9 +60,9 @@ Return Type: stdlib.List&lt;string&gt;
 <blockstate:minecraft:grass>.getAllowedValuesForProperty("snowy");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the property to find the allowed values for. |
+| Parameter |  Type  |                       Description                        |
+|-----------|--------|----------------------------------------------------------|
+| name      | string | The name of the property to find the allowed values for. |
 
 
 :::
@@ -156,9 +156,9 @@ Return Type: string
 BlockState.getPropertyValue(name as string) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | "snowy" |
+| Parameter |  Type  | Description |
+|-----------|--------|-------------|
+| name      | string | "snowy"     |
 
 
 :::
@@ -203,9 +203,9 @@ Return Type: boolean
 <blockstate:minecraft:grass>.hasProperty("snowy");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | the name of the property to check. |
+| Parameter |  Type  |            Description             |
+|-----------|--------|------------------------------------|
+| name      | string | the name of the property to check. |
 
 
 :::
@@ -248,9 +248,9 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 BlockState.rotate(rotation as Rotation) as BlockState
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| rotation  | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -259,16 +259,14 @@ BlockState.rotate(rotation as Rotation) as BlockState
 
 Sets the destroy speed of this BlockState.
 
-Return Type: void
-
 ```zenscript
-// BlockState.setDestroySpeed(destroySpeed as float) as void
+// BlockState.setDestroySpeed(destroySpeed as float)
 
 <blockstate:minecraft:grass>.setDestroySpeed(2.4f);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+|  Parameter   | Type  |               Description                |
+|--------------|-------|------------------------------------------|
 | destroySpeed | float | the new destroy speed of this BlockState |
 
 
@@ -287,10 +285,10 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 <blockstate:minecraft:grass>.withProperty("snowy", "true");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the property to set. |
-| value | string | The new value of the property. |
+| Parameter |  Type  |           Description            |
+|-----------|--------|----------------------------------|
+| name      | string | The name of the property to set. |
+| value     | string | The new value of the property.   |
 
 
 :::
@@ -298,17 +296,17 @@ Return Type: [BlockState](/vanilla/api/block/BlockState)
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| block | [Block](/vanilla/api/block/Block) | true | false | Gets the base [Block](/vanilla/api/block/Block) of this BlockState. <br />  <br />  The [Block](/vanilla/api/block/Block) will not contain any of the properties of this BlockState. |
-| canOcclude | boolean | true | false | Checks whether this BlockState is solid. |
-| commandString | string | true | false | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  `<blockstate:minecraft:grass:snowy=true>` |
-| destroySpeed | float | true | true | Gets the hardness of this BlockState. |
-| hasBlockEntity | boolean | true | false | Checks whether this BlockState has a [BlockEntity](/vanilla/api/block/entity/BlockEntity). |
-| isRandomlyTicking | boolean | true | false | Checks whether this BlockState ticks randomly. |
-| isSignalSource | boolean | true | false | Checks whether this BlockState can provide Redstone Power |
-| lightEmission | int | true | false | Gets the light level of this BlockState |
-| properties | string[string] | true | false | Gets the properties of this BlockState. |
-| propertyNames | stdlib.List&lt;string&gt; | true | false | Gets the names of the properties of this BlockState. |
-| soundType | [SoundType](/vanilla/api/sound/SoundType) | true | false | No Description Provided |
+|       Name        |                   Type                    | Has Getter | Has Setter |                                                                                     Description                                                                                      |
+|-------------------|-------------------------------------------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| block             | [Block](/vanilla/api/block/Block)         | true       | false      | Gets the base [Block](/vanilla/api/block/Block) of this BlockState. <br />  <br />  The [Block](/vanilla/api/block/Block) will not contain any of the properties of this BlockState. |
+| canOcclude        | boolean                                   | true       | false      | Checks whether this BlockState is solid.                                                                                                                                             |
+| commandString     | string                                    | true       | false      | Gets the blockstate bracket handler syntax for this BlockState. <br />  <br />  E.G. <br />  `<blockstate:minecraft:grass:snowy=true>`                                               |
+| destroySpeed      | float                                     | true       | true       | Gets the hardness of this BlockState.                                                                                                                                                |
+| hasBlockEntity    | boolean                                   | true       | false      | Checks whether this BlockState has a [BlockEntity](/vanilla/api/block/entity/BlockEntity).                                                                                           |
+| isRandomlyTicking | boolean                                   | true       | false      | Checks whether this BlockState ticks randomly.                                                                                                                                       |
+| isSignalSource    | boolean                                   | true       | false      | Checks whether this BlockState can provide Redstone Power                                                                                                                            |
+| lightEmission     | int                                       | true       | false      | Gets the light level of this BlockState                                                                                                                                              |
+| properties        | string[string]                            | true       | false      | Gets the properties of this BlockState.                                                                                                                                              |
+| propertyNames     | stdlib.List&lt;string&gt;                 | true       | false      | Gets the names of the properties of this BlockState.                                                                                                                                 |
+| soundType         | [SoundType](/vanilla/api/sound/SoundType) | true       | false      |                                                                                                                                                                                      |
 

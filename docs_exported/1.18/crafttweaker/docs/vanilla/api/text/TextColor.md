@@ -37,7 +37,7 @@ myTextColor.serialize();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| value | int | true | false | No Description Provided |
+| Name  | Type | Has Getter | Has Setter |
+|-------|------|------------|------------|
+| value | int  | true       | false      |
 

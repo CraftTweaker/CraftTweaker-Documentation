@@ -212,19 +212,19 @@ loadedMods.botania.version();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| attributes | Collection&lt;[Attribute](/vanilla/api/entity/attribute/Attribute)&gt; | true | false | Gets the attributes that are registered under this mod's ID. |
-| blocks | Collection&lt;[Block](/vanilla/api/block/Block)&gt; | true | false | Gets the blocks that are registered under this mod's ID. |
-| displayName | string | true | false | Gets the display name of this mod. |
-| enchantments | Collection&lt;[Enchantment](/vanilla/api/item/enchantment/Enchantment)&gt; | true | false | Gets the enchantments that are registered under this mod's ID. |
-| fluids | Collection&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt; | true | false | Gets the fluids that are registered under this mod's ID. |
-| id | string | true | false | Gets the id (namespace) of this mod. |
-| itemStacks | Collection&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true | false | Gets the ItemStacks that are registered under this mod's ID. |
-| items | Collection&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true | false | Gets the items that are registered under this mod's ID. |
-| mobEffects | Collection&lt;[MobEffect](/vanilla/api/entity/effect/MobEffect)&gt; | true | false | Gets the mob effects that are registered under this mod's ID. |
-| potions | Collection&lt;[Potion](/vanilla/api/item/alchemy/Potion)&gt; | true | false | Gets the potions that are registered under this mod's ID. |
-| soundEvents | Collection&lt;[SoundEvent](/vanilla/api/sound/SoundEvent)&gt; | true | false | Gets the sound events that are registered under this mod's ID. |
-| version | string | true | false | Gets the version of this mod. |
-| villagerProfessions | Collection&lt;[VillagerProfession](/vanilla/api/villager/VillagerProfession)&gt; | true | false | Gets the villager professions that are registered under this mod's ID. |
+|        Name         |                                       Type                                       | Has Getter | Has Setter |                              Description                               |
+|---------------------|----------------------------------------------------------------------------------|------------|------------|------------------------------------------------------------------------|
+| attributes          | Collection&lt;[Attribute](/vanilla/api/entity/attribute/Attribute)&gt;           | true       | false      | Gets the attributes that are registered under this mod's ID.           |
+| blocks              | Collection&lt;[Block](/vanilla/api/block/Block)&gt;                              | true       | false      | Gets the blocks that are registered under this mod's ID.               |
+| displayName         | string                                                                           | true       | false      | Gets the display name of this mod.                                     |
+| enchantments        | Collection&lt;[Enchantment](/vanilla/api/item/enchantment/Enchantment)&gt;       | true       | false      | Gets the enchantments that are registered under this mod's ID.         |
+| fluids              | Collection&lt;[Fluid](/vanilla/api/fluid/Fluid)&gt;                              | true       | false      | Gets the fluids that are registered under this mod's ID.               |
+| id                  | string                                                                           | true       | false      | Gets the id (namespace) of this mod.                                   |
+| itemStacks          | Collection&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;                     | true       | false      | Gets the ItemStacks that are registered under this mod's ID.           |
+| items               | Collection&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt;             | true       | false      | Gets the items that are registered under this mod's ID.                |
+| mobEffects          | Collection&lt;[MobEffect](/vanilla/api/entity/effect/MobEffect)&gt;              | true       | false      | Gets the mob effects that are registered under this mod's ID.          |
+| potions             | Collection&lt;[Potion](/vanilla/api/item/alchemy/Potion)&gt;                     | true       | false      | Gets the potions that are registered under this mod's ID.              |
+| soundEvents         | Collection&lt;[SoundEvent](/vanilla/api/sound/SoundEvent)&gt;                    | true       | false      | Gets the sound events that are registered under this mod's ID.         |
+| version             | string                                                                           | true       | false      | Gets the version of this mod.                                          |
+| villagerProfessions | Collection&lt;[VillagerProfession](/vanilla/api/villager/VillagerProfession)&gt; | true       | false      | Gets the villager professions that are registered under this mod's ID. |
 

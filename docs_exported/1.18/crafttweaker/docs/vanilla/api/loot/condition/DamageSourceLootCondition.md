@@ -23,9 +23,9 @@ Return Type: [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootCond
 DamageSourceLootCondition.create(predicate as DamageSourcePredicateBuilder) as LootConditionBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| predicate | [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/DamageSourcePredicateBuilder) | No Description Provided |
+| Parameter |                                            Type                                             |
+|-----------|---------------------------------------------------------------------------------------------|
+| predicate | [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/DamageSourcePredicateBuilder) |
 
 
 :::

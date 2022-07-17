@@ -37,8 +37,8 @@ myToolAction.name();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| name | string | true | false | No Description Provided |
+|     Name      |  Type  | Has Getter | Has Setter |
+|---------------|--------|------------|------------|
+| commandString | string | true       | false      |
+| name          | string | true       | false      |
 

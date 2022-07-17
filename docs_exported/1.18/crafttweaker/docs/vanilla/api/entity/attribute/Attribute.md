@@ -10,9 +10,9 @@ import crafttweaker.api.entity.attribute.Attribute;
 
 ## Casters
 
-| Result type | Is Implicit |
+| Result Type | Is Implicit |
 |-------------|-------------|
-| string | false |
+| string      | false       |
 
 ## Methods
 
@@ -77,9 +77,9 @@ Return Type: double
 myAttribute.sanitizeValue(4);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| value | double | The given value to sanitized. |
+| Parameter |  Type  |          Description          |
+|-----------|--------|-------------------------------|
+| value     | double | The given value to sanitized. |
 
 
 :::
@@ -87,9 +87,9 @@ myAttribute.sanitizeValue(4);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| clientSyncable | boolean | true | false | Should this attribute be synced to the client. |
-| commandString | string | true | false | Gets the attribute bracket handler syntax for this Attribute. <br />  <br />  E.G. <br />  `<attribute:minecraft:generic.max_health>` |
-| defaultValue | double | true | false | Gets the default value for this Attribute. |
+|      Name      |  Type   | Has Getter | Has Setter |                                                              Description                                                              |
+|----------------|---------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| clientSyncable | boolean | true       | false      | Should this attribute be synced to the client.                                                                                        |
+| commandString  | string  | true       | false      | Gets the attribute bracket handler syntax for this Attribute. <br />  <br />  E.G. <br />  `<attribute:minecraft:generic.max_health>` |
+| defaultValue   | double  | true       | false      | Gets the default value for this Attribute.                                                                                            |
 

@@ -73,10 +73,10 @@ myEquipmentSlot.getType();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| commandString | string | true | false | No Description Provided |
-| index | int | true | false | No Description Provided |
-| name | string | true | false | No Description Provided |
-| type | [EquipmentSlotType](/vanilla/api/entity/equipment/EquipmentSlotType) | true | false | No Description Provided |
+|     Name      |                                 Type                                 | Has Getter | Has Setter |
+|---------------|----------------------------------------------------------------------|------------|------------|
+| commandString | string                                                               | true       | false      |
+| index         | int                                                                  | true       | false      |
+| name          | string                                                               | true       | false      |
+| type          | [EquipmentSlotType](/vanilla/api/entity/equipment/EquipmentSlotType) | true       | false      |
 

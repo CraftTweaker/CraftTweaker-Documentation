@@ -17,17 +17,17 @@ INumberData implements the following interfaces. That means all methods defined 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| byte | false |
-| double | false |
-| float | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| int | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
-| long | false |
-| short | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| byte                                                 | false       |
+| double                                               | false       |
+| float                                                | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| int                                                  | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| long                                                 | false       |
+| short                                                | false       |
 
 ## Methods
 
@@ -125,9 +125,9 @@ Return Type: boolean
 1.contains("Display");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter |               Type               |           Description            |
+|-----------|----------------------------------|----------------------------------|
+| data      | [IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 :::

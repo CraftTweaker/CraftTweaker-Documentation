@@ -27,9 +27,9 @@ Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 ForgeBracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The Fluid's resource location |
+| Parameter |  Type  |          Description          |
+|-----------|--------|-------------------------------|
+| tokens    | string | The Fluid's resource location |
 
 
 :::
@@ -42,9 +42,9 @@ Return Type: [ToolAction](/forge/api/tool/ToolAction)
 ForgeBracketHandlers.getToolType(tokens as string) as ToolAction
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
 
 
 :::

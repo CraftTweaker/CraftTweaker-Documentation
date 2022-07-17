@@ -18,7 +18,7 @@ LivingConversionPostEvent extends [LivingConversionEvent](/forge/api/event/entit
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| outcome | [LivingEntity](/vanilla/api/entity/LivingEntity) | true | false | No Description Provided |
+|  Name   |                       Type                       | Has Getter | Has Setter |
+|---------|--------------------------------------------------|------------|------------|
+| outcome | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
 

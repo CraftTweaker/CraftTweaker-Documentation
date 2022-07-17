@@ -45,7 +45,7 @@ myHumanoidArm.getOpposite();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| opposite | [HumanoidArm](/vanilla/api/entity/HumanoidArm) | true | false | No Description Provided |
+|   Name   |                      Type                      | Has Getter | Has Setter |
+|----------|------------------------------------------------|------------|------------|
+| opposite | [HumanoidArm](/vanilla/api/entity/HumanoidArm) | true       | false      |
 

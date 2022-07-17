@@ -124,15 +124,15 @@ myMaterial.isSolidBlocking();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| blocksMotion | boolean | true | false | No Description Provided |
-| color | [MaterialColor](/vanilla/api/block/material/MaterialColor) | true | false | No Description Provided |
-| commandString | string | true | false | Gets the bracket syntax for this Material |
-| isFlammable | boolean | true | false | No Description Provided |
-| isLiquid | boolean | true | false | No Description Provided |
-| isReplaceable | boolean | true | false | No Description Provided |
-| isSolid | boolean | true | false | No Description Provided |
-| isSolidBlocking | boolean | true | false | No Description Provided |
-| pushReaction | [PushReaction](/vanilla/api/block/material/PushReaction) | true | false | No Description Provided |
+|      Name       |                            Type                            | Has Getter | Has Setter |                Description                |
+|-----------------|------------------------------------------------------------|------------|------------|-------------------------------------------|
+| blocksMotion    | boolean                                                    | true       | false      |                                           |
+| color           | [MaterialColor](/vanilla/api/block/material/MaterialColor) | true       | false      |                                           |
+| commandString   | string                                                     | true       | false      | Gets the bracket syntax for this Material |
+| isFlammable     | boolean                                                    | true       | false      |                                           |
+| isLiquid        | boolean                                                    | true       | false      |                                           |
+| isReplaceable   | boolean                                                    | true       | false      |                                           |
+| isSolid         | boolean                                                    | true       | false      |                                           |
+| isSolidBlocking | boolean                                                    | true       | false      |                                           |
+| pushReaction    | [PushReaction](/vanilla/api/block/material/PushReaction)   | true       | false      |                                           |
 

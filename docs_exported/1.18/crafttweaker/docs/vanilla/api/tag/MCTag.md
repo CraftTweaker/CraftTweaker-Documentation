@@ -22,17 +22,15 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 Adds the given tags to this tag.
 
-Return Type: void
-
 ```zenscript
-// MCTag.add(tags as MCTag[]) as void
+// MCTag.add(tags as MCTag[])
 
 <tag:items:minecraft:wool>.add(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+| Parameter |               Type                |   Description    |
+|-----------|-----------------------------------|------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
 
 
 :::
@@ -41,17 +39,15 @@ Return Type: void
 
 Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
 
-Return Type: void
-
 ```zenscript
-// MCTag.addId(elements as ResourceLocation[]) as void
+// MCTag.addId(elements as ResourceLocation[])
 
 <tag:items:minecraft:wool>.addId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
+| Parameter |                             Type                             |               Description                |
+|-----------|--------------------------------------------------------------|------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
 
 
 :::
@@ -60,10 +56,8 @@ Return Type: void
 
 Removes all elements in this tag.
 
-Return Type: void
-
 ```zenscript
-// MCTag.clear() as void
+// MCTag.clear()
 
 <tag:items:minecraft:wool>.clear();
 ```
@@ -83,9 +77,9 @@ Return Type: boolean
 <tag:items:minecraft:wool>.contains(<resource:minecraft:white_wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
+| Parameter |                            Type                            |           Description           |
+|-----------|------------------------------------------------------------|---------------------------------|
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
 
 
 :::
@@ -103,9 +97,9 @@ Return Type: boolean
 <tag:items:minecraft:wool>.equals(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| other | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
+| Parameter |              Type               |        Description        |
+|-----------|---------------------------------|---------------------------|
+| other     | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
 
 
 :::
@@ -159,17 +153,15 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 
 Removes the given tags from this tag.
 
-Return Type: void
-
 ```zenscript
-// MCTag.remove(tags as MCTag[]) as void
+// MCTag.remove(tags as MCTag[])
 
 <tag:items:minecraft:wool>.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+| Parameter |               Type                |     Description     |
+|-----------|-----------------------------------|---------------------|
+| tags      | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
 
 
 :::
@@ -178,17 +170,15 @@ Return Type: void
 
 Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from this tag.
 
-Return Type: void
-
 ```zenscript
-// MCTag.removeId(elements as ResourceLocation[]) as void
+// MCTag.removeId(elements as ResourceLocation[])
 
 <tag:items:minecraft:wool>.removeId(<resource:minecraft:diamond>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
+| Parameter |                             Type                             |                 Description                 |
+|-----------|--------------------------------------------------------------|---------------------------------------------|
+| elements  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
 
 
 :::
@@ -221,9 +211,9 @@ myMCTag == other as MCTag
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| exists | boolean | true | false | Checks if this tag exists. |
-| id | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true | false | Gets the id of this tag. |
-| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the id's of the elements in this tag. |
+|    Name    |                                     Type                                      | Has Getter | Has Setter |                Description                 |
+|------------|-------------------------------------------------------------------------------|------------|------------|--------------------------------------------|
+| exists     | boolean                                                                       | true       | false      | Checks if this tag exists.                 |
+| id         | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                    | true       | false      | Gets the id of this tag.                   |
+| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true       | false      | Gets the id's of the elements in this tag. |
 

@@ -18,10 +18,10 @@ Return Type: string
 MobEffectUtil.formatDuration(instance as MobEffectInstance, durationFactor as float) as string
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| instance | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) | No Description Provided |
-| durationFactor | float | No Description Provided |
+|   Parameter    |                               Type                                |
+|----------------|-------------------------------------------------------------------|
+| instance       | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) |
+| durationFactor | float                                                             |
 
 
 :::
@@ -34,9 +34,9 @@ Return Type: int
 MobEffectUtil.getDigSpeedAmplification(entity as LivingEntity) as int
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -49,9 +49,9 @@ Return Type: boolean
 MobEffectUtil.hasDigSpeed(entity as LivingEntity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -64,9 +64,9 @@ Return Type: boolean
 MobEffectUtil.hasWaterBreathing(entity as LivingEntity) as boolean
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::

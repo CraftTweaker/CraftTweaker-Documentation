@@ -18,9 +18,9 @@ Return Type: [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/Entity
 EntityFlagsPredicateBuilder.baby(baby as bool?) as EntityFlagsPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| baby | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| baby      | bool? | true     | true          |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/Entity
 EntityFlagsPredicateBuilder.crouching(crouching as bool?) as EntityFlagsPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| crouching | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| crouching | bool? | true     | true          |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/Entity
 EntityFlagsPredicateBuilder.onFire(onFire as bool?) as EntityFlagsPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| onFire | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| onFire    | bool? | true     | true          |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/Entity
 EntityFlagsPredicateBuilder.sprinting(sprinting as bool?) as EntityFlagsPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| sprinting | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| sprinting | bool? | true     | true          |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [EntityFlagsPredicateBuilder](/vanilla/api/predicate/builder/Entity
 EntityFlagsPredicateBuilder.swimming(swimming as bool?) as EntityFlagsPredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| swimming | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| swimming  | bool? | true     | true          |
 
 
 :::

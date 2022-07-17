@@ -85,12 +85,12 @@ myTier.getUses();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| attackDamageBonus | float | true | false | No Description Provided |
-| enchantmentValue | int | true | false | No Description Provided |
-| level | int | true | false | No Description Provided |
-| repairIngredient | [IIngredient](/vanilla/api/ingredient/IIngredient) | true | false | No Description Provided |
-| speed | float | true | false | No Description Provided |
-| uses | int | true | false | No Description Provided |
+|       Name        |                        Type                        | Has Getter | Has Setter |
+|-------------------|----------------------------------------------------|------------|------------|
+| attackDamageBonus | float                                              | true       | false      |
+| enchantmentValue  | int                                                | true       | false      |
+| level             | int                                                | true       | false      |
+| repairIngredient  | [IIngredient](/vanilla/api/ingredient/IIngredient) | true       | false      |
+| speed             | float                                              | true       | false      |
+| uses              | int                                                | true       | false      |
 

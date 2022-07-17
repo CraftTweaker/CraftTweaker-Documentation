@@ -30,9 +30,9 @@ Return Type: [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredic
 LightningBoltPredicate.create(blocksSetOnFire as IntMinMaxBoundsPredicate) as LightningBoltPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| blocksSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+|    Parameter    |                                    Type                                     |
+|-----------------|-----------------------------------------------------------------------------|
+| blocksSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredic
 LightningBoltPredicate.create(struckEntity as EntityPredicate) as LightningBoltPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| struckEntity | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+|  Parameter   |                           Type                            |
+|--------------|-----------------------------------------------------------|
+| struckEntity | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -60,10 +60,10 @@ Return Type: [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredic
 LightningBoltPredicate.create(blockSetOnFire as IntMinMaxBoundsPredicate, struckEntity as EntityPredicateBuilder) as LightningBoltPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| blockSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| struckEntity | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+|   Parameter    |                                      Type                                       |
+|----------------|---------------------------------------------------------------------------------|
+| blockSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate)     |
+| struckEntity   | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::
@@ -76,10 +76,10 @@ Return Type: [LightningBoltPredicate](/vanilla/api/predicate/LightningBoltPredic
 LightningBoltPredicate.create(blocksSetOnFire as IntMinMaxBoundsPredicate, struckEntity as EntityPredicate) as LightningBoltPredicate
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| blocksSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
-| struckEntity | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+|    Parameter    |                                    Type                                     |
+|-----------------|-----------------------------------------------------------------------------|
+| blocksSetOnFire | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
+| struckEntity    | [EntityPredicate](/vanilla/api/predicate/EntityPredicate)                   |
 
 
 :::

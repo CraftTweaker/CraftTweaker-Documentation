@@ -71,9 +71,9 @@ Return Type: [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)
 LootModifierManager.getByName(name as string) as ILootModifier
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier. |
+| Parameter |  Type  |          Description           |
+|-----------|--------|--------------------------------|
+| name      | string | The name of the loot modifier. |
 
 
 :::
@@ -84,17 +84,15 @@ Registers a new global loot modifier with the given name.
 
  The loot modifier will be run only when the given set of conditions is satisfied.
 
-Return Type: void
-
 ```zenscript
-LootModifierManager.register(name as string, conditions as LootConditions, modifier as ILootModifier) as void
+LootModifierManager.register(name as string, conditions as LootConditions, modifier as ILootModifier)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />                    colons. |
-| conditions | [LootConditions](/vanilla/api/loot/condition/LootConditions) | A set of conditions that restrict the context in which the loot modifier applies. |
-| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifier/CommonLootModifiers). |
+| Parameter  |                             Type                             |                                                              Description                                                              |
+|------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| name       | string                                                       | The unique identifier for the loot modifier. It must be all lowercase and devoid of both spaces and <br />                    colons. |
+| conditions | [LootConditions](/vanilla/api/loot/condition/LootConditions) | A set of conditions that restrict the context in which the loot modifier applies.                                                     |
+| modifier   | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier)    | The loot modifier itself. It may be created via [CommonLootModifiers](/vanilla/api/loot/modifier/CommonLootModifiers).                |
 
 
 :::
@@ -103,10 +101,8 @@ LootModifierManager.register(name as string, conditions as LootConditions, modif
 
 Removes all loot modifiers that have been registered up to this point.
 
-Return Type: void
-
 ```zenscript
-// LootModifierManager.removeAll() as void
+// LootModifierManager.removeAll()
 
 loot.modifiers.removeAll();
 ```
@@ -117,15 +113,13 @@ loot.modifiers.removeAll();
 
 Removes all loot modifiers that have been registered by the mod with the given ID.
 
-Return Type: void
-
 ```zenscript
-LootModifierManager.removeByModId(modId as string) as void
+LootModifierManager.removeByModId(modId as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| modId | string | The mod ID. |
+| Parameter |  Type  | Description |
+|-----------|--------|-------------|
+| modId     | string | The mod ID. |
 
 
 :::
@@ -137,15 +131,13 @@ Removes the loot modifier with the given name.
  The name may either contain a colon or not. If no colon is present, it is assumed that the loot modifier name
  is one of the modifiers that have been already registered in a script.
 
-Return Type: void
-
 ```zenscript
-LootModifierManager.removeByName(name as string) as void
+LootModifierManager.removeByName(name as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | The name of the loot modifier to remove. |
+| Parameter |  Type  |               Description                |
+|-----------|--------|------------------------------------------|
+| name      | string | The name of the loot modifier to remove. |
 
 
 :::
@@ -157,15 +149,13 @@ Removes all loot modifiers whose name matches the given regular expression.
  The entire name is taken into consideration for the match, effectively matching the format of a
  [ResourceLocation](/vanilla/api/resource/ResourceLocation).
 
-Return Type: void
-
 ```zenscript
-LootModifierManager.removeByRegex(regex as string) as void
+LootModifierManager.removeByRegex(regex as string)
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| regex | string | The regular expression to match. |
+| Parameter |  Type  |           Description            |
+|-----------|--------|----------------------------------|
+| regex     | string | The regular expression to match. |
 
 
 :::

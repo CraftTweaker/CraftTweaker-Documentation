@@ -17,13 +17,13 @@ SleepTask implements the following interfaces. That means all methods defined in
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new SleepTask<T,U>(sleepTime as long) as SleepTask<T,U>
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| sleepTime | long | No Description Provided |
+| Parameter | Type |
+|-----------|------|
+| sleepTime | long |
 
 
 

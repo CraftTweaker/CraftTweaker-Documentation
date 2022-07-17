@@ -28,10 +28,8 @@ SmithingRecipeManager.INSTANCE
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack json, this effectively allows you to register recipes for any DataPack supporting RecipeType systems.
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.addJsonRecipe(name as string, mapData as MapData) as void
+// SmithingRecipeManager.addJsonRecipe(name as string, mapData as MapData)
 
 smithing.addJsonRecipe("recipe_name", {
  ingredient: <item:minecraft:gold_ore>,
@@ -41,10 +39,10 @@ smithing.addJsonRecipe("recipe_name", {
  });
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | name of the recipe |
-| mapData | [MapData](/vanilla/api/data/MapData) | data representing the json file |
+| Parameter |                 Type                 |           Description           |
+|-----------|--------------------------------------|---------------------------------|
+| name      | string                               | name of the recipe              |
+| mapData   | [MapData](/vanilla/api/data/MapData) | data representing the json file |
 
 
 :::
@@ -53,20 +51,18 @@ smithing.addJsonRecipe("recipe_name", {
 
 Adds a recipe to the smithing table.
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
+// SmithingRecipeManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient)
 
 smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:items:forge:ingots/gold>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| recipeName | string | Name of the recipe. |
-| result | [IItemStack](/vanilla/api/item/IItemStack) | The item created by the recipe. |
-| base | [IIngredient](/vanilla/api/ingredient/IIngredient) | The initial ingredient for the recipe. |
-| addition | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item added to the base item. |
+| Parameter  |                        Type                        |              Description               |
+|------------|----------------------------------------------------|----------------------------------------|
+| recipeName | string                                             | Name of the recipe.                    |
+| result     | [IItemStack](/vanilla/api/item/IItemStack)         | The item created by the recipe.        |
+| base       | [IIngredient](/vanilla/api/ingredient/IIngredient) | The initial ingredient for the recipe. |
+| addition   | [IIngredient](/vanilla/api/ingredient/IIngredient) | The item added to the base item.       |
 
 
 :::
@@ -91,9 +87,9 @@ Return Type: @org.openzen.zencode.java.ZenCodeType.Nullable T
 SmithingRecipeManager.getRecipeByName(name as string) as @org.openzen.zencode.java.ZenCodeType.Nullable T
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | No Description Provided |
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
 
 
 :::
@@ -121,9 +117,9 @@ Return Type: stdlib.List&lt;T&gt;
 SmithingRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | No Description Provided |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) |
 
 
 :::
@@ -132,17 +128,15 @@ SmithingRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<T
 
 Remove a recipe based on it's output.
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.remove(output as IIngredient) as void
+// SmithingRecipeManager.remove(output as IIngredient)
 
 smithing.remove(<tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| output | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
+| Parameter |                        Type                        |     Description      |
+|-----------|----------------------------------------------------|----------------------|
+| output    | [IIngredient](/vanilla/api/ingredient/IIngredient) | output of the recipe |
 
 
 :::
@@ -151,10 +145,8 @@ smithing.remove(<tag:items:minecraft:wool>);
 
 Remove all recipes in this registry
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.removeAll() as void
+// SmithingRecipeManager.removeAll()
 
 smithing.removeAll();
 ```
@@ -165,17 +157,15 @@ smithing.removeAll();
 
 Removes all recipes where the input contains the given IItemStack.
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.removeByInput(input as IItemStack) as void
+// SmithingRecipeManager.removeByInput(input as IItemStack)
 
 smithing.removeByInput(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
+| Parameter |                    Type                    |      Description      |
+|-----------|--------------------------------------------|-----------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
 
 
 :::
@@ -184,16 +174,14 @@ smithing.removeByInput(<item:minecraft:iron_ingot>);
 
 Remove recipe based on Registry name modid
 
-Return Type: void
-
 ```zenscript
-SmithingRecipeManager.removeByModid(modid as string, exclude as Predicate<string>) as void
+SmithingRecipeManager.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| modid | string | modid of the recipes to remove | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |          Description           | Optional |           Default Value           |
+|-----------|-------------------------|--------------------------------|----------|-----------------------------------|
+| modid     | string                  | modid of the recipes to remove | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                                | true     | (name as string) as bool => false |
 
 
 :::
@@ -202,15 +190,13 @@ SmithingRecipeManager.removeByModid(modid as string, exclude as Predicate<string
 
 Remove recipes based on Registry names
 
-Return Type: void
-
 ```zenscript
-SmithingRecipeManager.removeByName(names as string[]) as void
+SmithingRecipeManager.removeByName(names as string[])
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| names | string[] | registry names of recipes to remove |
+| Parameter |   Type   |             Description             |
+|-----------|----------|-------------------------------------|
+| names     | string[] | registry names of recipes to remove |
 
 
 :::
@@ -219,18 +205,16 @@ SmithingRecipeManager.removeByName(names as string[]) as void
 
 Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-Return Type: void
-
 ```zenscript
-// SmithingRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>) as void
+// SmithingRecipeManager.removeByRegex(regex as string, exclude as Predicate<string>)
 
 smithing.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| regex | string | regex to match against | false |  |
-| exclude | Predicate&lt;string&gt; | No Description Provided | true | (name as string) as bool => false |
+| Parameter |          Type           |      Description       | Optional |           Default Value           |
+|-----------|-------------------------|------------------------|----------|-----------------------------------|
+| regex     | string                  | regex to match against | false    |                                   |
+| exclude   | Predicate&lt;string&gt; |                        | true     | (name as string) as bool => false |
 
 
 :::
@@ -238,8 +222,8 @@ smithing.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wo
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| allRecipes | stdlib.List&lt;T&gt; | true | false | No Description Provided |
-| recipeMap | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true | false | Returns a map of all known recipes. |
+|    Name    |                             Type                              | Has Getter | Has Setter |             Description             |
+|------------|---------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;T&gt;                                          | true       | false      |                                     |
+| recipeMap  | T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

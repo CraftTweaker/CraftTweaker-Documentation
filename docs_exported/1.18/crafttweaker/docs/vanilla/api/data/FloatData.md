@@ -17,29 +17,29 @@ FloatData implements the following interfaces. That means all methods defined in
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new FloatData(internal as float) as FloatData
 ```
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| internal | float | No Description Provided |
+| Parameter | Type  |
+|-----------|-------|
+| internal  | float |
 
 
 
 ## Casters
 
-| Result type | Is Implicit |
-|-------------|-------------|
-| boolean | false |
-| byte | false |
-| double | false |
-| float | false |
-| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
-| int | false |
-| [INumberData](/vanilla/api/data/INumberData) | false |
-| long | false |
-| short | false |
+|                     Result Type                      | Is Implicit |
+|------------------------------------------------------|-------------|
+| boolean                                              | false       |
+| byte                                                 | false       |
+| double                                               | false       |
+| float                                                | false       |
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false       |
+| int                                                  | false       |
+| [INumberData](/vanilla/api/data/INumberData)         | false       |
+| long                                                 | false       |
+| short                                                | false       |
 
 ## Methods
 

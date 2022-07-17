@@ -30,9 +30,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.bypassesArmor(bypassesArmor as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| bypassesArmor | bool? | No Description Provided | true | true |
+|   Parameter   | Type  | Optional | Default Value |
+|---------------|-------|----------|---------------|
+| bypassesArmor | bool? | true     | true          |
 
 
 :::
@@ -45,9 +45,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.bypassesInvulnerability(bypassesInvulnerability as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| bypassesInvulnerability | bool? | No Description Provided | true | true |
+|        Parameter        | Type  | Optional | Default Value |
+|-------------------------|-------|----------|---------------|
+| bypassesInvulnerability | bool? | true     | true          |
 
 
 :::
@@ -60,9 +60,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.bypassesMagic(bypassesMagic as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| bypassesMagic | bool? | No Description Provided | true | true |
+|   Parameter   | Type  | Optional | Default Value |
+|---------------|-------|----------|---------------|
+| bypassesMagic | bool? | true     | true          |
 
 
 :::
@@ -75,9 +75,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.direct(entityPredicate as EntityPredicate) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityPredicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+|    Parameter    |                           Type                            |
+|-----------------|-----------------------------------------------------------|
+| entityPredicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -90,9 +90,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.direct(entityPredicate as EntityPredicateBuilder) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityPredicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+|    Parameter    |                                      Type                                       |
+|-----------------|---------------------------------------------------------------------------------|
+| entityPredicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::
@@ -105,9 +105,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.isExplosion(isExplosion as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| isExplosion | bool? | No Description Provided | true | true |
+|  Parameter  | Type  | Optional | Default Value |
+|-------------|-------|----------|---------------|
+| isExplosion | bool? | true     | true          |
 
 
 :::
@@ -120,9 +120,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.isFire(isFire as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| isFire | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| isFire    | bool? | true     | true          |
 
 
 :::
@@ -135,9 +135,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.isLightning(isLightning as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| isLightning | bool? | No Description Provided | true | true |
+|  Parameter  | Type  | Optional | Default Value |
+|-------------|-------|----------|---------------|
+| isLightning | bool? | true     | true          |
 
 
 :::
@@ -150,9 +150,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.isMagic(isMagic as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| isMagic | bool? | No Description Provided | true | true |
+| Parameter | Type  | Optional | Default Value |
+|-----------|-------|----------|---------------|
+| isMagic   | bool? | true     | true          |
 
 
 :::
@@ -165,9 +165,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.isProjectile(isProjectile as bool?) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| isProjectile | bool? | No Description Provided | true | true |
+|  Parameter   | Type  | Optional | Default Value |
+|--------------|-------|----------|---------------|
+| isProjectile | bool? | true     | true          |
 
 
 :::
@@ -180,9 +180,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.source(entityPredicate as EntityPredicate) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityPredicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) | No Description Provided |
+|    Parameter    |                           Type                            |
+|-----------------|-----------------------------------------------------------|
+| entityPredicate | [EntityPredicate](/vanilla/api/predicate/EntityPredicate) |
 
 
 :::
@@ -195,9 +195,9 @@ Return Type: [DamageSourcePredicateBuilder](/vanilla/api/predicate/builder/Damag
 DamageSourcePredicateBuilder.source(entityPredicate as EntityPredicateBuilder) as DamageSourcePredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| entityPredicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) | No Description Provided |
+|    Parameter    |                                      Type                                       |
+|-----------------|---------------------------------------------------------------------------------|
+| entityPredicate | [EntityPredicateBuilder](/vanilla/api/predicate/builder/EntityPredicateBuilder) |
 
 
 :::

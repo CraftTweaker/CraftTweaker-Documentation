@@ -42,9 +42,9 @@ Return Type: [LightPredicateBuilder](/vanilla/api/predicate/builder/LightPredica
 LightPredicate.create(level as IntMinMaxBoundsPredicate) as LightPredicateBuilder
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| level | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) | No Description Provided |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| level     | [IntMinMaxBoundsPredicate](/vanilla/api/predicate/IntMinMaxBoundsPredicate) |
 
 
 :::

@@ -47,17 +47,15 @@ event.getXp();
 
 Sets the amount of xp to change the player's xp counter by.
 
-Return Type: void
-
 ```zenscript
-// XpChangeEvent.setXp(amount as int) as void
+// XpChangeEvent.setXp(amount as int)
 
 event.setXp(15);
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| amount | int | The amount of xp that the player's xp counter should be <br />                changed by. |
+| Parameter | Type |                                        Description                                        |
+|-----------|------|-------------------------------------------------------------------------------------------|
+| amount    | int  | The amount of xp that the player's xp counter should be <br />                changed by. |
 
 
 :::
@@ -65,7 +63,7 @@ event.setXp(15);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| xp | int | true | true | Gets the amount of xp that the player's xp counter is being changed by. |
+| Name | Type | Has Getter | Has Setter |                               Description                               |
+|------|------|------------|------------|-------------------------------------------------------------------------|
+| xp   | int  | true       | true       | Gets the amount of xp that the player's xp counter is being changed by. |
 

@@ -26,10 +26,10 @@ Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 ILootModifier.modify(loot as stdlib.List<IItemStack>, context as LootContext) as stdlib.List<IItemStack>
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| loot | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The loot dropped by a loot table. |
-| context | [LootContext](/vanilla/api/loot/LootContext) | The context that caused the loot table to drop the loot. |
+| Parameter |                             Type                              |                       Description                        |
+|-----------|---------------------------------------------------------------|----------------------------------------------------------|
+| loot      | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The loot dropped by a loot table.                        |
+| context   | [LootContext](/vanilla/api/loot/LootContext)                  | The context that caused the loot table to drop the loot. |
 
 
 :::

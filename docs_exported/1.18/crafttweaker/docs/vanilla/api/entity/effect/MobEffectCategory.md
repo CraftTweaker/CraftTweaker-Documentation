@@ -34,7 +34,7 @@ myMobEffectCategory.getTooltipFormatting();
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter | Description |
-|------|------|------------|------------|-------------|
-| tooltipFormatting | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true | false | No Description Provided |
+|       Name        |                        Type                        | Has Getter | Has Setter |
+|-------------------|----------------------------------------------------|------------|------------|
+| tooltipFormatting | [ChatFormatting](/vanilla/api/text/ChatFormatting) | true       | false      |
 
