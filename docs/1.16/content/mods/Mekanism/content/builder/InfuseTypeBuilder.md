@@ -31,9 +31,9 @@ Return Type: [InfuseTypeBuilder](/mods/Mekanism/content/builder/InfuseTypeBuilde
 InfuseTypeBuilder.builder(textureLocation as MCResourceLocation) as InfuseTypeBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| textureLocation | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | If present the [MCResourceLocation](/vanilla/api/util/MCResourceLocation) representing the texture this [InfuseType](/mods/Mekanism/api/chemical/InfuseType) will use, otherwise defaults to our default { | true |  |
+| Parameter | Type | Description                                                                                                                                                                                                                  | Optional | DefaultValue |
+|-----------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------|
+| textureLocation | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | If present the [MCResourceLocation](/vanilla/api/util/MCResourceLocation) representing the texture this [InfuseType](/mods/Mekanism/api/chemical/InfuseType) will use, otherwise defaults to our default InfuseType texture. | true |  |
 
 :::
 

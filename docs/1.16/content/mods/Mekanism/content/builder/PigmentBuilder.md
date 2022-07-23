@@ -31,9 +31,9 @@ Return Type: [PigmentBuilder](/mods/Mekanism/content/builder/PigmentBuilder)
 PigmentBuilder.builder(textureLocation as MCResourceLocation) as PigmentBuilder
 ```
 
-| Parameter | Type | Description | Optional | DefaultValue |
-|-----------|------|-------------|----------|--------------|
-| textureLocation | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | If present the [MCResourceLocation](/vanilla/api/util/MCResourceLocation) representing the texture this [Pigment](/mods/Mekanism/api/chemical/Pigment) will use, otherwise defaults to our default { | true |  |
+| Parameter | Type | Description                                                                                                                                                                                                        | Optional | DefaultValue |
+|-----------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------|
+| textureLocation | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | If present the [MCResourceLocation](/vanilla/api/util/MCResourceLocation) representing the texture this [Pigment](/mods/Mekanism/api/chemical/Pigment) will use, otherwise defaults to our default Pigment texture | true |  |
 
 :::
 
