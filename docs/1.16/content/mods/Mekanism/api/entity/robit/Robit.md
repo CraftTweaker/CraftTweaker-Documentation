@@ -12,6 +12,9 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.entity.robit.Robit;
 ```
 
+
+You can obtain a Robit by using the `is` with a LivingEntity object and then casting it.
+
 ## Methods
 
 :::group{name=getSkin}
