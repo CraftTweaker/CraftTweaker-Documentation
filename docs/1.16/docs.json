@@ -195,7 +195,7 @@
 						"ChemicalStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient.md",
 						"FluidStackIngredient": "mods/Mekanism/api/ingredient/FluidStackIngredient.md",
 						"ItemStackIngredient": "mods/Mekanism/api/ingredient/ItemStackIngredient.md",
-						"ChemicalStackIngredient": {
+						"ChemicalStackIngredients": {
 							"GasStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient.md",
 							"InfusionStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/InfusionStackIngredient.md",
 							"PigmentStackIngredient": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/PigmentStackIngredient.md",
@@ -214,6 +214,7 @@
 				  }
 				},
 				"Content": {
+					"ExpandingMekanism" : "mods/Mekanism/content/ExpandingMekanism.md",
 				  "Attribute": {
 					"ChemicalAttribute": "mods/Mekanism/content/attribute/ChemicalAttribute.md",
 					"GasAttribute": "mods/Mekanism/content/attribute/GasAttribute.md",
@@ -291,6 +292,11 @@
 				  "ItemStackToPigment": {
 						"PigmentExtracting": "mods/Mekanism/recipe/ItemStackToPigment/PigmentExtracting.md"
 				  }
+				},
+				"Examples" : {
+					"MekanismIngredients" : "mods/Mekanism/examples/MekanismIngredients.md",
+					"OtherExamples" : "mods/Mekanism/examples/OtherExamples.md",
+					"RecipeExamples" : "mods/Mekanism/examples/RecipeExamples.md"
 				},
 				"About Mekanism" : "mods/Mekanism/AboutMekanism.md"
 			},
