@@ -557,7 +557,7 @@ myLevel.sequence<crafttweaker.api.data.MapData>({version: "1.0.0"});
 
 :::group{name=setBlockAndUpdate}
 
-Sets the block and it's state at a given position.
+Sets the block and its state at a given position.
 
 Returns: Whether the block was changed.  
 Return Type: boolean
