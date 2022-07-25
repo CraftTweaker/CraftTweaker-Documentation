@@ -77,12 +77,11 @@ Mirroring an IOreDictEntry means that all items in the other oreDictEntry will b
 val iron = <ore:ingotIron>;
 val copper = <ore:ingotCopper>;
 
-//adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
-iron.addAll(copper); 
+//adds all entries from copper into iron so that the iron oreDictEntry contains both the iron and copper ingots
+iron.addAll(copper);
 
-
-//mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
-//In this case that means by all iron and copper oreDictEntries
+//mirrors iron to copper, so all items in copper will be replaced by all the ones in iron.
+//In this case that means by all iron and copper ingots, so copper and iron will have the same entries
 copper.mirror(iron);
 ```
 
