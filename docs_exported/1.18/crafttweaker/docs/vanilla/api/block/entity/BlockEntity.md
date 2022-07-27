@@ -8,6 +8,10 @@ import crafttweaker.api.block.entity.BlockEntity;
 ```
 
 
+## Extending CapabilityProvider&lt;BlockEntity&gt;
+
+BlockEntity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/vanilla/api/block/entity/BlockEntity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/vanilla/api/block/entity/BlockEntity)&gt; are also available in BlockEntity
+
 ## Methods
 
 :::group{name=getBlockPos}
