@@ -194,6 +194,21 @@ myIIngredientTransformed.contains((<item:minecraft:iron_ingot> | <item:minecraft
 
 :::
 
+:::group{name=isEmpty}
+
+Checks if this ingredient is empty.
+
+Returns: true if empty, false otherwise  
+Return Type: boolean
+
+```zenscript
+// IIngredientTransformed.isEmpty() as boolean
+
+myIIngredientTransformed.isEmpty();
+```
+
+:::
+
 :::group{name=matches}
 
 Does the given stack match the ingredient?
@@ -554,6 +569,7 @@ myIIngredientTransformed | other as IIngredient
 |----------------|---------------------------------------------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------|
 | baseIngredient | T                                                                                           | true       | false      |                                                                                  |
 | burnTime       | void                                                                                        | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
+| empty          | boolean                                                                                     | true       | false      | Checks if this ingredient is empty.                                              |
 | items          | [IItemStack](/vanilla/api/item/IItemStack)[]                                                | true       | false      |                                                                                  |
 | transformer    | [IIngredientTransformer](/vanilla/api/ingredient/transform/IIngredientTransformer)&lt;T&gt; | true       | false      |                                                                                  |
 

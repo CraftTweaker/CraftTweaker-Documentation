@@ -215,6 +215,21 @@ myIngredientConditioned.getRemainingItem(<item:minecraft:iron_ingot>);
 
 :::
 
+:::group{name=isEmpty}
+
+Checks if this ingredient is empty.
+
+Returns: true if empty, false otherwise  
+Return Type: boolean
+
+```zenscript
+// IngredientConditioned.isEmpty() as boolean
+
+myIngredientConditioned.isEmpty();
+```
+
+:::
+
 :::group{name=matches}
 
 Does the given stack match the ingredient?
@@ -576,5 +591,6 @@ myIngredientConditioned | other as IIngredient
 | baseIngredient | T                                                                                       | true       | false      |                                                                                  |
 | burnTime       | void                                                                                    | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
 | condition      | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition)&lt;T&gt; | true       | false      |                                                                                  |
+| empty          | boolean                                                                                 | true       | false      | Checks if this ingredient is empty.                                              |
 | items          | [IItemStack](/vanilla/api/item/IItemStack)[]                                            | true       | false      |                                                                                  |
 

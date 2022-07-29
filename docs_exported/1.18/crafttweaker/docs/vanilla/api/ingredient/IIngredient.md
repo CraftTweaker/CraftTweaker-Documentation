@@ -232,6 +232,21 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 :::
 
+:::group{name=isEmpty}
+
+Checks if this ingredient is empty.
+
+Returns: true if empty, false otherwise  
+Return Type: boolean
+
+```zenscript
+// IIngredient.isEmpty() as boolean
+
+<tag:items:minecraft:wool>.isEmpty();
+```
+
+:::
+
 :::group{name=matches}
 
 Does the given stack match the ingredient?
@@ -594,5 +609,6 @@ myIIngredient | other as IIngredient
 |---------------|----------------------------------------------|------------|------------|----------------------------------------------------------------------------------|
 | burnTime      | void                                         | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines |
 | commandString | string                                       | true       | false      | Returns the BEP to get this stack                                                |
+| empty         | boolean                                      | true       | false      | Checks if this ingredient is empty.                                              |
 | items         | [IItemStack](/vanilla/api/item/IItemStack)[] | true       | false      |                                                                                  |
 
