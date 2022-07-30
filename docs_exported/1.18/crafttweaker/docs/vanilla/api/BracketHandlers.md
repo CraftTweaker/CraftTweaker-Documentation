@@ -288,14 +288,14 @@ BracketHandlers.getRecipeManager("minecraft:crafting");
 
 :::group{name=getResourceLocation}
 
+::deprecated[Use [ResourceLocationBracketHandler](/vanilla/api/ResourceLocationBracketHandler)#getResourceLocation(String) instead.]
+
 Creates a Resource location based on the tokens. <br />  Throws an error if the tokens are not a valid location.
 
 Returns: The location  
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 
 ```zenscript
-<resource:minecraft:dirt>
-
 // BracketHandlers.getResourceLocation(tokens as string) as ResourceLocation
 
 BracketHandlers.getResourceLocation("minecraft:dirt");
