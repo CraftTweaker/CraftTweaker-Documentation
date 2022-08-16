@@ -42,7 +42,7 @@ Return Type: void
 ```zenscript
 // ManaInfusionRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, mana as int, catalyst as BlockIngredient, group as string, function as RecipeFunctionSingle) as void
 
-<recipetype:botania:mana_infusion>.addRecipe("mana_infusion_test_catalyst", <item:minecraft:diamond>, <item:minecraft:apple>, 200, <block:botania:alchemy_catalyst>, null, (usualOut as IItemStack, input as IItemStack) => { return usualOut.withTag(input.tag); });
+<recipetype:botania:mana_infusion>.addRecipe("mana_infusion_test_catalyst", <item:minecraft:diamond>, <item:minecraft:apple>, 200, <block:botania:alchemy_catalyst>, "", (usualOut as IItemStack, input as IItemStack) => { return usualOut.withTag(input.tag); });
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
