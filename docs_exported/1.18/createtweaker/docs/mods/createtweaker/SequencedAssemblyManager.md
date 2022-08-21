@@ -55,7 +55,7 @@ Return Type: void
                                                       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<tag:items:minecraft:planks>))
                                                       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<tag:items:minecraft:wooden_buttons>))
                                                       .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(50))
-                                                      .addStep<mods.createtweaker.CuttingRecipe>());
+                                                      .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:minecraft:water> * 50)));
 ```
 
 | Parameter | Type | Description |
@@ -157,6 +157,7 @@ Return Type: void
  rb.addStep<mods.createtweaker.CuttingRecipe>((rb1) => rb1.duration(50));
  rb.addStep<mods.createtweaker.PressingRecipe>((rb1) => rb1.duration(500));
  rb.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb1) => rb1.require(<item:minecraft:dirt>));
+ rb.addStep<mods.createtweaker.FillingRecipe>((rb1) => rb.require(<fluid:minecraft:water> * 50))
  });
 ```
 
