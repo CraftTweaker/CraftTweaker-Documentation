@@ -51,12 +51,12 @@ craftingTable.addJsonRecipe("recipe_name", {
 CraftingTableRecipeManager.addShaped(recipeName as string, output as IItemStack, ingredients as IIngredient[][], recipeFunction as RecipeFunctionMatrix)
 ```
 
-|   Parameter    |                                   Type                                    | Optional |
-|----------------|---------------------------------------------------------------------------|----------|
-| recipeName     | string                                                                    | false    |
-| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | false    |
-| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                    | false    |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | true     |
+|   Parameter    |                                 Type                                  | Optional |
+|----------------|-----------------------------------------------------------------------|----------|
+| recipeName     | string                                                                | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                            | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/func/RecipeFunctionMatrix) | true     |
 
 
 :::
@@ -74,13 +74,13 @@ Adds a mirrored shaped recipe to the crafting table.
 craftingTable.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:items:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-|   Parameter    |                                   Type                                    |                                                   Description                                                   | Optional |
-|----------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|----------|
-| recipeName     | string                                                                    | name of the recipe to add.                                                                                      | false    |
-| mirrorAxis     | [MirrorAxis](/vanilla/api/recipe/MirrorAxis)                              | The axis that this recipe mirrored on.                                                                          | false    |
-| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | output [IItemStack](/vanilla/api/item/IItemStack)                                                               | false    |
-| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                    | array of an array of [IIngredient](/vanilla/api/ingredient/IIngredient) for inputs                              | false    |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) for more advanced conditions | true     |
+|   Parameter    |                                 Type                                  |                                                 Description                                                 | Optional |
+|----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------|
+| recipeName     | string                                                                | name of the recipe to add.                                                                                  | false    |
+| mirrorAxis     | [MirrorAxis](/vanilla/api/recipe/MirrorAxis)                          | The axis that this recipe mirrored on.                                                                      | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                            | output [IItemStack](/vanilla/api/item/IItemStack)                                                           | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[][]                | array of an array of [IIngredient](/vanilla/api/ingredient/IIngredient) for inputs                          | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/func/RecipeFunctionMatrix) | optional [RecipeFunctionMatrix](/vanilla/api/recipe/func/RecipeFunctionMatrix) for more advanced conditions | true     |
 
 
 :::
@@ -91,13 +91,13 @@ craftingTable.addShapedMirrored("recipe_name", MirrorAxis.DIAGONAL, <item:minecr
 CraftingTableRecipeManager.addShapedPattern(recipeName as string, output as IItemStack, pattern as string[], keys as IIngredient[string], recipeFunction as RecipeFunctionMatrix)
 ```
 
-|   Parameter    |                                   Type                                    | Optional |
-|----------------|---------------------------------------------------------------------------|----------|
-| recipeName     | string                                                                    | false    |
-| output         | [IItemStack](/vanilla/api/item/IItemStack)                                | false    |
-| pattern        | string[]                                                                  | false    |
-| keys           | [IIngredient](/vanilla/api/ingredient/IIngredient)[string]                | false    |
-| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/function/RecipeFunctionMatrix) | true     |
+|   Parameter    |                                 Type                                  | Optional |
+|----------------|-----------------------------------------------------------------------|----------|
+| recipeName     | string                                                                | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                            | false    |
+| pattern        | string[]                                                              | false    |
+| keys           | [IIngredient](/vanilla/api/ingredient/IIngredient)[string]            | false    |
+| recipeFunction | [RecipeFunctionMatrix](/vanilla/api/recipe/func/RecipeFunctionMatrix) | true     |
 
 
 :::
@@ -108,12 +108,12 @@ CraftingTableRecipeManager.addShapedPattern(recipeName as string, output as IIte
 CraftingTableRecipeManager.addShapeless(recipeName as string, output as IItemStack, ingredients as IIngredient[], recipeFunction as RecipeFunctionArray)
 ```
 
-|   Parameter    |                                  Type                                   | Optional |
-|----------------|-------------------------------------------------------------------------|----------|
-| recipeName     | string                                                                  | false    |
-| output         | [IItemStack](/vanilla/api/item/IItemStack)                              | false    |
-| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | false    |
-| recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/function/RecipeFunctionArray) | true     |
+|   Parameter    |                                Type                                 | Optional |
+|----------------|---------------------------------------------------------------------|----------|
+| recipeName     | string                                                              | false    |
+| output         | [IItemStack](/vanilla/api/item/IItemStack)                          | false    |
+| ingredients    | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                | false    |
+| recipeFunction | [RecipeFunctionArray](/vanilla/api/recipe/func/RecipeFunctionArray) | true     |
 
 
 :::
