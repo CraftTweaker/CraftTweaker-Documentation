@@ -184,6 +184,7 @@
               },
               "Xp": {
                 "MCLevelChangeEvent": "vanilla/api/event/entity/player/xp/MCLevelChangeEvent.md",
+                "MCPlayerXPEvent": "vanilla/api/event/entity/player/xp/MCPlayerXPEvent.md",
                 "MCXpChangeEvent": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md"
               }
             }

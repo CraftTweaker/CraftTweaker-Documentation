@@ -21,6 +21,10 @@ import crafttweaker.api.event.entity.player.xp.MCXpChangeEvent;
 ```
 
 
+## Extending MCPlayerXPEvent
+
+MCXpChangeEvent extends [MCPlayerXPEvent](/vanilla/api/event/entity/player/xp/MCPlayerXPEvent). That means all methods available in [MCPlayerXPEvent](/vanilla/api/event/entity/player/xp/MCPlayerXPEvent) are also available in MCXpChangeEvent
+
 ## Methods
 
 :::group{name=getXp}
