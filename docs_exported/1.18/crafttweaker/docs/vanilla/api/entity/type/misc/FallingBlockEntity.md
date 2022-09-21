@@ -86,6 +86,21 @@ FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt
 
 :::
 
+:::group{name=setBlockState}
+
+Sets the BlockState of this falling entity.
+
+```zenscript
+FallingBlockEntity.setBlockState(state as BlockState)
+```
+
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
+
+
+:::
+
 :::group{name=setHurtsEntities}
 
 Sets that entities should be hurt by this block, as well as setting how much damage is done.
@@ -128,5 +143,5 @@ FallingBlockEntity.fall(level, new BlockPos(1, 2, 3), <blockstate:minecraft:dirt
 
 |    Name    |                    Type                     | Has Getter | Has Setter |                 Description                 |
 |------------|---------------------------------------------|------------|------------|---------------------------------------------|
-| blockstate | [BlockState](/vanilla/api/block/BlockState) | true       | false      | Gets the BlockState of this falling entity. |
+| blockstate | [BlockState](/vanilla/api/block/BlockState) | true       | true       | Gets the BlockState of this falling entity. |
 
