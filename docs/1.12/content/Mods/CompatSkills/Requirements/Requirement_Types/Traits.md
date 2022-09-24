@@ -4,10 +4,10 @@ Traits are similar to Skills in the way that we've moved them over to a Resource
 The Trait Syntax is as follows:
 ```
 Example:
-unlockable|ResourceLocation
+trait|ResourceLocation
 
 Working Example:
-unlockable|reskillable:battle_spirit
+trait|reskillable:battle_spirit
 ```
 
 You can find the Traits's ResourceLocations under:
