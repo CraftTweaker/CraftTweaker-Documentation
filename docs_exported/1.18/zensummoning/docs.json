@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "Mods": {
+      "Zen Summoning": {
+        "MobInfo": "mods/zensummoning/MobInfo.md",
+        "SummoningAttempt": "mods/zensummoning/SummoningAttempt.md",
+        "SummoningDirector": "mods/zensummoning/SummoningDirector.md",
+        "SummoningInfo": "mods/zensummoning/SummoningInfo.md"
+      }
+    }
+  }
+}
