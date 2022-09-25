@@ -16,9 +16,12 @@ Simply append `#loader name` to the top of the script.
 ```zenscript
 #loader contenttweaker
 
-import mods.contenttweaker.fluid.FluidBuilder;
+import contenttweaker.builder.vanilla.block.Basic;
+import contenttweaker.object.vanilla.property.StandardBlockProperties;
 
-new FluidBuilder(false, 0xff0000)
-    .build("black_water");
-
+val veryBasicBlock = <factory:block>.typed<Basic>()
+    .material(<material:minecraft:metal>)
+    .lightLevel(14) 
+    .tab(<tab:examplesTab>)
+    .build("very_basic_block"); 
 ```
