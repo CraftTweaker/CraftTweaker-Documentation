@@ -18,7 +18,7 @@ _When adding a recipe, ensure that your recipe names are unique!_
 
 - `recipeName` &lt;string>
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
+- `ingredients` <[IIngredient](/vanilla/api/ingredient/IIngredient)[]>
 - `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
 Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
