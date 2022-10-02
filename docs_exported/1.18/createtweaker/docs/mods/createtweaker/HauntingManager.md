@@ -190,12 +190,12 @@ HauntingManager.removeByModid(modid as string, exclude as Predicate<string>) as 
 Return Type: void
 
 ```zenscript
-HauntingManager.removeByName(name as string) as void
+HauntingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

@@ -190,12 +190,12 @@ MillingManager.removeByModid(modid as string, exclude as Predicate<string>) as v
 Return Type: void
 
 ```zenscript
-MillingManager.removeByName(name as string) as void
+MillingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

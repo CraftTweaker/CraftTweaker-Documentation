@@ -168,12 +168,12 @@ IProcessingRecipeManager.removeByModid(modid as string, exclude as Predicate<str
 Return Type: void
 
 ```zenscript
-IProcessingRecipeManager.removeByName(name as string) as void
+IProcessingRecipeManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

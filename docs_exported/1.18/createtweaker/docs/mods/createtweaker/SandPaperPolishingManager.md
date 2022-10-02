@@ -190,12 +190,12 @@ SandPaperPolishingManager.removeByModid(modid as string, exclude as Predicate<st
 Return Type: void
 
 ```zenscript
-SandPaperPolishingManager.removeByName(name as string) as void
+SandPaperPolishingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

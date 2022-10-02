@@ -192,12 +192,12 @@ MechanicalCrafterManager.removeByModid(modid as string, exclude as Predicate<str
 Return Type: void
 
 ```zenscript
-MechanicalCrafterManager.removeByName(name as string) as void
+MechanicalCrafterManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

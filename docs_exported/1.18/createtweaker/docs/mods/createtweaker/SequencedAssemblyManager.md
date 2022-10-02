@@ -232,12 +232,12 @@ SequencedAssemblyManager.removeByModid(modid as string, exclude as Predicate<str
 Return Type: void
 
 ```zenscript
-SequencedAssemblyManager.removeByName(name as string) as void
+SequencedAssemblyManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

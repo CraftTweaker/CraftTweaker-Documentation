@@ -135,14 +135,14 @@ Removes emptying recipes based on the output FluidStack.
 Return Type: void
 
 ```zenscript
-// EmptyingManager.remove(output as IFluidStack) as void
+// EmptyingManager.remove(output as FluidIngredient) as void
 
 <recipetype:create:emptying>.remove(<fluid:minecraft:water>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| output | [IFluidStack](/forge/api/fluid/IFluidStack) | The output FluidStack of the recipe. |
+| output | [FluidIngredient](/forge/api/fluid/FluidIngredient) | The output FluidStack of the recipe. |
 
 
 :::
@@ -210,12 +210,12 @@ EmptyingManager.removeByModid(modid as string, exclude as Predicate<string>) as 
 Return Type: void
 
 ```zenscript
-EmptyingManager.removeByName(name as string) as void
+EmptyingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

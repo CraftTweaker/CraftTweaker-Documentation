@@ -40,7 +40,7 @@ Adds a mixing recipe that outputs FluidStacks.
 Return Type: void
 
 ```zenscript
-// MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as IFluidStack[], duration as int) as void
+// MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int) as void
 
 <recipetype:create:mixing>.addRecipe("fluid_mixed", <constant:create:heat_condition:none>, [<fluid:minecraft:water> * 200], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
 ```
@@ -51,7 +51,7 @@ Return Type: void
 | heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The output FluidStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
-| fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |
+| fluidInputs | [FluidIngredient](/forge/api/fluid/FluidIngredient)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.FluidIngredient[] |
 | duration | int | The duration of the recipe in ticks. | true | 100 |
 
 
@@ -64,7 +64,7 @@ Adds a mixing recipe that outputs ItemStacks.
 Return Type: void
 
 ```zenscript
-// MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as IFluidStack[], duration as int) as void
+// MixingManager.addRecipe(name as string, heat as HeatCondition, outputs as Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int) as void
 
 <recipetype:create:mixing>.addRecipe("mixed", <constant:create:heat_condition:heated>, [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> * 2) % 12], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
 ```
@@ -75,7 +75,7 @@ Return Type: void
 | heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The output ItemStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
-| fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |
+| fluidInputs | [FluidIngredient](/forge/api/fluid/FluidIngredient)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.FluidIngredient[] |
 | duration | int | The duration of the recipe in ticks. | true | 100 |
 
 
@@ -160,14 +160,14 @@ Removes recipes based on the output fluid.
 Return Type: void
 
 ```zenscript
-// MixingManager.remove(output as IFluidStack) as void
+// MixingManager.remove(output as FluidIngredient) as void
 
 <recipetype:create:mixing>.remove(<fluid:minecraft:water>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| output | [IFluidStack](/forge/api/fluid/IFluidStack) | The output fluid of the recipes to remove. |
+| output | [FluidIngredient](/forge/api/fluid/FluidIngredient) | The output fluid of the recipes to remove. |
 
 
 :::
@@ -235,12 +235,12 @@ MixingManager.removeByModid(modid as string, exclude as Predicate<string>) as vo
 Return Type: void
 
 ```zenscript
-MixingManager.removeByName(name as string) as void
+MixingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

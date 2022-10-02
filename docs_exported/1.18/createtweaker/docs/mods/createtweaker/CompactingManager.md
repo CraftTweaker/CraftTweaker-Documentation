@@ -40,7 +40,7 @@ Adds a recipe to the Compactor that outputs FluidStacks.
 Return Type: void
 
 ```zenscript
-// CompactingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as IFluidStack[], duration as int) as void
+// CompactingManager.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int) as void
 
 <recipetype:create:compacting>.addRecipe("fluid_compacted", <constant:create:heat_condition:none>, [<fluid:minecraft:water> * 200], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
 ```
@@ -51,7 +51,7 @@ Return Type: void
 | heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The output FluidStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
-| fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |
+| fluidInputs | [FluidIngredient](/forge/api/fluid/FluidIngredient)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.FluidIngredient[] |
 | duration | int | The duration of the recipe in ticks. | true | 100 |
 
 
@@ -64,7 +64,7 @@ Adds a recipe to the Compactor that outputs ItemStacks.
 Return Type: void
 
 ```zenscript
-// CompactingManager.addRecipe(name as string, heat as HeatCondition, outputs as Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as IFluidStack[], duration as int) as void
+// CompactingManager.addRecipe(name as string, heat as HeatCondition, outputs as Percentaged<IItemStack>[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int) as void
 
 <recipetype:create:compacting>.addRecipe("compacted", <constant:create:heat_condition:heated>, [<item:minecraft:diamond> % 50, <item:minecraft:apple>, (<item:minecraft:dirt> * 2) % 12], [<item:minecraft:glass> * 2], [<fluid:minecraft:water> * 250], 200);
 ```
@@ -75,7 +75,7 @@ Return Type: void
 | heat | [HeatCondition](/mods/createtweaker/recipe/HeatCondition) | The required heat of the recipe. | false |  |
 | outputs | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | The output ItemStacks of the recipe. | false |  |
 | itemInputs | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)[] | The item inputs of the recipe. | false |  |
-| fluidInputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.IFluidStack[] |
+| fluidInputs | [FluidIngredient](/forge/api/fluid/FluidIngredient)[] | The optional fluid inputs of the recipe. | true | [] as crafttweaker.api.fluid.FluidIngredient[] |
 | duration | int | The duration of the recipe in ticks. | true | 100 |
 
 
@@ -160,14 +160,14 @@ Removes a recipe based on the output [IFluidStack](/forge/api/fluid/IFluidStack)
 Return Type: void
 
 ```zenscript
-// CompactingManager.remove(output as IFluidStack) as void
+// CompactingManager.remove(output as FluidIngredient) as void
 
 <recipetype:create:compacting>.remove(<fluid:minecraft:water>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| output | [IFluidStack](/forge/api/fluid/IFluidStack) | The output FluidStack |
+| output | [FluidIngredient](/forge/api/fluid/FluidIngredient) | The output FluidStack |
 
 
 :::
@@ -235,12 +235,12 @@ CompactingManager.removeByModid(modid as string, exclude as Predicate<string>) a
 Return Type: void
 
 ```zenscript
-CompactingManager.removeByName(name as string) as void
+CompactingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

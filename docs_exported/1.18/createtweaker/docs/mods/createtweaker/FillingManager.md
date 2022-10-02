@@ -40,7 +40,7 @@ Adds a filling recipe.
 Return Type: void
 
 ```zenscript
-// FillingManager.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as IFluidStack, duration as int) as void
+// FillingManager.addRecipe(name as string, output as Percentaged<IItemStack>, inputContainer as IIngredient, inputFluid as FluidIngredient, duration as int) as void
 
 <recipetype:create:filling>.addRecipe("emptier", <item:minecraft:diamond>, <item:minecraft:dirt>, <fluid:minecraft:water>, 200);
 ```
@@ -50,7 +50,7 @@ Return Type: void
 | name | string | The name of the recipe. | false |  |
 | output | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The output item of the recipe. | false |  |
 | inputContainer | [IIngredient](/vanilla/api/ingredient/IIngredient) | The input container of the recipe (what is being filled). | false |  |
-| inputFluid | [IFluidStack](/forge/api/fluid/IFluidStack) | The input fluid of the recipe. | false |  |
+| inputFluid | [FluidIngredient](/forge/api/fluid/FluidIngredient) | The input fluid of the recipe. | false |  |
 | duration | int | The duration of the recipe in ticks (defaults to 100). | true | 100 |
 
 
@@ -191,12 +191,12 @@ FillingManager.removeByModid(modid as string, exclude as Predicate<string>) as v
 Return Type: void
 
 ```zenscript
-FillingManager.removeByName(name as string) as void
+FillingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

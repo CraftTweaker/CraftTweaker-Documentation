@@ -190,12 +190,12 @@ PressingManager.removeByModid(modid as string, exclude as Predicate<string>) as 
 Return Type: void
 
 ```zenscript
-PressingManager.removeByName(name as string) as void
+PressingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

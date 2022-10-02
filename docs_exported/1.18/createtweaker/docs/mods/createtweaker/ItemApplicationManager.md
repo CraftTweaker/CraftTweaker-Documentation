@@ -191,12 +191,12 @@ ItemApplicationManager.removeByModid(modid as string, exclude as Predicate<strin
 Return Type: void
 
 ```zenscript
-ItemApplicationManager.removeByName(name as string) as void
+ItemApplicationManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

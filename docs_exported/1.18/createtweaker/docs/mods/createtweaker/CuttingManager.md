@@ -212,12 +212,12 @@ CuttingManager.removeByModid(modid as string, exclude as Predicate<string>) as v
 Return Type: void
 
 ```zenscript
-CuttingManager.removeByName(name as string) as void
+CuttingManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::

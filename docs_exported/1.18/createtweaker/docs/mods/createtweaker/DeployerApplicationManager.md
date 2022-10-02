@@ -191,12 +191,12 @@ DeployerApplicationManager.removeByModid(modid as string, exclude as Predicate<s
 Return Type: void
 
 ```zenscript
-DeployerApplicationManager.removeByName(name as string) as void
+DeployerApplicationManager.removeByName(names as string[]) as void
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| names | string[] | No Description Provided |
 
 
 :::
