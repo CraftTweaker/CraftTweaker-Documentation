@@ -48,7 +48,7 @@ Modifying the `ins` here is a bad idea, this function triggers for each change i
 
 But CraftTweaker goes beyond simply calculating your outputs using functions.  
 With an IRecipeAction Function, you can also determine what should happen when a user crafts the item.  
-An IRecipeAction object comes after an IRecipeFunction!
+An IRecipeAction object comes after an IRecipeFunction! This function only fires if the result is exactly the same as the recipe output 
 
 ```zenscript
 val stone = <minecraft:stone>;
@@ -68,4 +68,4 @@ This gives the player who performs the recipe 1 level each time the crafting is 
 Again, we have a function with 3 Parameters:  
 `out` is the recipe's output and an IItemStack object.  
 `cInfo` is an ICraftingInfo Object  
-`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object.
+`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object. **Can be** `null`
