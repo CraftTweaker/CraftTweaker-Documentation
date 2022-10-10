@@ -11,15 +11,19 @@ import mods.thermalexpansion.NumisticDynamo;
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack stack, int energy);
-mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 13);
+mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `2000` and `200000000`.
 
 ## Add Gem Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addGemFuel(IItemStack stack, int energy);
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 13);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `2000` and `200000000`.
 
 ## Remove Fuel
 

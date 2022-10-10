@@ -11,8 +11,10 @@ import mods.thermalexpansion.CompressionDynamo;
 
 ```zenscript
 //mods.thermalexpansion.CompressionDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:water>, 13);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:water>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `10000` and `200000000`.
 
 ## Remove Fuel
 
