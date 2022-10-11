@@ -1,0 +1,68 @@
+{
+    "nav": {
+        "Home": "index.md",
+        "Commands" : "commands.md",
+        "Examples": "examples.md",
+        "Getting Started With Scripts": "getting_started.md",
+        "Global Keywords" : "globals.md",
+        "Tutorials": {
+            "Introduction To Scripting": {
+                "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+                "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+                "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+                "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
+                "Advanced Scripting": "tutorial/IntroductionToScripting/AdvancedScripting.md"
+            },
+            "Recipes": {
+                "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
+                "Crafting": {
+                    "Add Recipes": {
+                        "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+                        "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+                        "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+                    }
+                }
+            },
+            "Software": "tutorial/Software.md"
+        },
+        "Vanilla": {
+            "How to": {
+                "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
+            }
+        },
+        "Fabric": {},
+        "Forge": {},
+        "Mods": {
+            "ArmoreableMobs" : {},
+            "Botania" : {},
+            "Createtweaker" : {},
+            "Immersiveengineering" : {},
+            "Initialinventory" : {},
+            "JEITweaker" : {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
+            "SolarCraft" : {},
+            "SushiGoCrafting" : {},
+            "Zen Summoning": {},
+            "Generic JSON Recipes": "mods/other_mods.md"
+        },
+        "ZenCode": {
+            "About ZenCode": "zencode/ZenCode.md",
+            "Arrays and Lists": "zencode/ArraysAndLists.md",
+            "Associative Arrays" : "zencode/AssociativeArrays.md",
+            "Conditional Code": "zencode/ConditionalCode.md",
+            "Objects": "zencode/Objects.md",
+            "Functions" : "zencode/Functions.md",
+            "Preprocessors": {
+                "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
+                "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
+                "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
+            }
+        },
+        "Mod Dev": {
+            "CraftTweaker in a Development Environment" : "integration/Introduction.md",
+            "Exposing a ZenClass" : "integration/RecipeManager.md"
+        }
+    }
+}
