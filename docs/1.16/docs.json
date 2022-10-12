@@ -80,6 +80,8 @@
 			"Caged Mobs": {
 				"Caged Mobs": "mods/CagedMobs/CagedMobs.md"
 			},
+			"CinematicTransitions": {
+			},
 			"Contenttweaker": {
 				"Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
 			},
@@ -159,6 +161,9 @@
 			},
 			"JEITweaker": {
 				"JEITweaker": "mods/JEITweaker/JEITweaker.md"
+			},
+			"Meme in a Bottle" : {
+
 			},
 			"Mystical Agriculture": {
 				"Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",

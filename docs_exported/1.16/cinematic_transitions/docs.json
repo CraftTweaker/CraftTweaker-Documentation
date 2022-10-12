@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "Mods": {
+      "CinematicTransitions": {
+        "PlayManager": "mods/CinematicTransitions/PlayManager.md",
+        "PopUpManager": "mods/CinematicTransitions/PopUpManager.md",
+        "TransitionManager": "mods/CinematicTransitions/TransitionManager.md"
+      }
+    }
+  }
+}
