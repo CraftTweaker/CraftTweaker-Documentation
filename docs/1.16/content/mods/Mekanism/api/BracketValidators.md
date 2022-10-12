@@ -54,24 +54,6 @@ BracketValidators.validateInfusionStack(tokens as string) as boolean
 
 :::
 
-:::group{name=validateModuleData}
-
-Validates if there is a [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt; with the
-given registry name.
-
-Returns: `true` if valid, `false` otherwise.  
-Return Type: boolean
-
-```zenscript
-BracketValidators.validateModuleData(tokens as string) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The resource location to validate. |
-
-:::
-
 :::group{name=validatePigmentStack}
 
 Validates if there is a [Pigment](/mods/Mekanism/api/chemical/Pigment) with the given registry name.
@@ -81,24 +63,6 @@ Return Type: boolean
 
 ```zenscript
 BracketValidators.validatePigmentStack(tokens as string) as boolean
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The resource location to validate. |
-
-:::
-
-:::group{name=validateRobitSkin}
-
-Validates if there is a [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin) with the given
-registry name.
-
-Returns: `true` if valid, `false` otherwise.  
-Return Type: boolean
-
-```zenscript
-BracketValidators.validateRobitSkin(tokens as string) as boolean
 ```
 
 | Parameter | Type | Description |
@@ -124,3 +88,38 @@ BracketValidators.validateSlurryStack(tokens as string) as boolean
 
 :::
 
+:::group{name=validateModuleData}
+
+Validates if there is a [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt; with the
+given registry name.
+
+Returns: `true` if valid, `false` otherwise.  
+Return Type: boolean
+
+```zenscript
+BracketValidators.validateModuleData(tokens as string) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The resource location to validate. |
+
+:::
+
+:::group{name=validateRobitSkin}
+
+Validates if there is a [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin) with the given
+registry name.
+
+Returns: `true` if valid, `false` otherwise.  
+Return Type: boolean
+
+```zenscript
+BracketValidators.validateRobitSkin(tokens as string) as boolean
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The resource location to validate. |
+
+:::

@@ -1,6 +1,6 @@
 # About Mekanism
 
-Mekanism is a complex, tech mod,  with explicit CraftTweaker support!
+Mekanism is a complex, tech mod, with built-in support for CraftTweaker as of version 10.1.0!
 
 Some things you want to be aware when handling Mekanism's ZenClasses and RecipeTypes.
 

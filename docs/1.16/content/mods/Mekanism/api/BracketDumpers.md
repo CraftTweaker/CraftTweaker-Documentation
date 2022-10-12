@@ -12,7 +12,7 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.BracketDumpers;
 ```
 
-This class registers a couple of BracketDumpers to the `/ct dumps` command.
+This class registers a couple of BracketDumpers to the `/ct dump` command.
 
 The list of mekanism-added dumps is the following:
 

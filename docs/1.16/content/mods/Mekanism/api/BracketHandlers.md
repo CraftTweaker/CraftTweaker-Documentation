@@ -54,24 +54,6 @@ BracketHandlers.getInfusionStack(tokens as string) as InfusionStack
 
 :::
 
-:::group{name=getModuleData}
-
-Gets the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt; based on registry name.
-Throws an error if it can't find the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;.
-
-Returns: A reference to the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;.  
-Return Type: [ModuleData](/mods/Mekanism/api/gear/ModuleData)
-
-```zenscript
-BracketHandlers.getModuleData(tokens as string) as ModuleData
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;'s resource location. |
-
-:::
-
 :::group{name=getPigmentStack}
 
 Gets the [PigmentStack](/mods/Mekanism/api/chemical/PigmentStack) based on registry name. Throws an
@@ -87,24 +69,6 @@ BracketHandlers.getPigmentStack(tokens as string) as PigmentStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The [Pigment](/mods/Mekanism/api/chemical/Pigment)'s resource location. |
-
-:::
-
-:::group{name=getRobitSkin}
-
-Gets the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin) based on registry name. Throws an
-error if it can't find the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin).
-
-Returns: A reference to the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin).  
-Return Type: [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin)
-
-```zenscript
-BracketHandlers.getRobitSkin(tokens as string) as RobitSkin
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| tokens | string | The [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin)'s resource location. |
 
 :::
 
@@ -126,3 +90,38 @@ BracketHandlers.getSlurryStack(tokens as string) as SlurryStack
 
 :::
 
+:::group{name=getModuleData}
+
+Gets the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt; based on registry name.
+Throws an error if it can't find the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;.
+
+Returns: A reference to the [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;.  
+Return Type: [ModuleData](/mods/Mekanism/api/gear/ModuleData)
+
+```zenscript
+BracketHandlers.getModuleData(tokens as string) as ModuleData
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The [ModuleData](/mods/Mekanism/api/gear/ModuleData)&lt;MODULE&gt;'s resource location. |
+
+:::
+
+:::group{name=getRobitSkin}
+
+Gets the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin) based on registry name. Throws an
+error if it can't find the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin).
+
+Returns: A reference to the [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin).  
+Return Type: [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin)
+
+```zenscript
+BracketHandlers.getRobitSkin(tokens as string) as RobitSkin
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | string | The [RobitSkin](/mods/Mekanism/api/entity/robit/RobitSkin)'s resource location. |
+
+:::
