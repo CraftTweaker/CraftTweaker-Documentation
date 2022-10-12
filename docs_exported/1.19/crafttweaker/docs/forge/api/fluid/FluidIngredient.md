@@ -16,6 +16,24 @@ FluidIngredient implements the following interfaces. That means all methods defi
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+FluidIngredient.matches(fluid as Fluid) as boolean
+```
+
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| fluid     | [Fluid](/vanilla/api/fluid/Fluid) |
+
+
+:::
+
+
 ## Operators
 
 :::group{name=OR}
