@@ -12,18 +12,6 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.mekanism.api.FloatingLong;
 ```
 
-## Extending Number
-
-FloatingLong extends Number. That means all methods available in Number are also available in
-FloatingLong
-
-## Implemented Interfaces
-
-FloatingLong implements the following interfaces. That means all methods defined in these interfaces
-are also available in FloatingLong
-
-- Comparable&lt;[FloatingLong](/mods/Mekanism/api/FloatingLong)&gt;
-
 ## Static Methods
 
 :::group{name=create}
@@ -243,5 +231,9 @@ FloatingLong.subtract(toSubtract as FloatingLong) as FloatingLong
 | toSubtract | [FloatingLong](/mods/Mekanism/api/FloatingLong) | The [FloatingLong](/mods/Mekanism/api/FloatingLong) to subtract. |
 
 :::
+
+# Operators
+
+
 
 

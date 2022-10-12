@@ -46,12 +46,12 @@ Return Type: void
 Dissolution.addRecipe(name as string, itemInput as ItemStackIngredient, gasInput as GasStackIngredient, output as ChemicalStack) as void
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| name | string | Name of the new recipe. |
-| itemInput | [ItemStackIngredient](/mods/Mekanism/api/ingredient/ItemStackIngredient) | [ItemStackIngredient](/mods/Mekanism/api/ingredient/ItemStackIngredient) representing the item input of the recipe. |
+| Parameter | Type                                                                                          | Description                                                                                                                             |
+|-----------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| name | string                                                                                        | Name of the new recipe.                                                                                                                 |
+| itemInput | [ItemStackIngredient](/mods/Mekanism/api/ingredient/ItemStackIngredient)                      | [ItemStackIngredient](/mods/Mekanism/api/ingredient/ItemStackIngredient) representing the item input of the recipe.                     |
 | gasInput | [GasStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient) | [GasStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient) representing the gas input of the recipe. |
-| output | [ChemicalStack](/mods/Mekanism/api/chemical/ChemicalStack) | [ChemicalStack](/mods/Mekanism/api/chemical/ChemicalStack)&lt;CHEMICAL,STACK,CRT_STACK&gt; representing the output of the recipe. |
+| output | [ChemicalStack](/mods/Mekanism/api/chemical/stack/ChemicalStack)                              | [ChemicalStack](/mods/Mekanism/api/chemical/stack/ChemicalStack)&lt;CHEMICAL,STACK,CRT_STACK&gt; representing the output of the recipe. |
 
 :::
 

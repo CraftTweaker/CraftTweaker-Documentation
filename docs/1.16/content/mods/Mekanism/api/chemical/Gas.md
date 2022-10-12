@@ -39,4 +39,22 @@ Gas.makeStack(amount as long) as GasStack
 
 :::
 
+## Operators
+
+:::group{name=MUL}
+
+Sets the amount of the Gas
+
+```zenscript
+Gas * amount as int
+<gas:mekanism:oxygen> * 3
+```
+:::
+
+
+## Properties
+
+| Name | Type                                                                                        | Has Getter | Has Setter | Description                               |
+|------|---------------------------------------------------------------------------------------------|------------|------------|-------------------------------------------|
+| tags | stdlib.List<[MCTag](/vanilla/api/tags/MCTag)&lt;[Gas](/mods/Mekanism/api/chemical/Gas)&gt;> | true | false | Gets the tags that this Gas is a part of. |
 

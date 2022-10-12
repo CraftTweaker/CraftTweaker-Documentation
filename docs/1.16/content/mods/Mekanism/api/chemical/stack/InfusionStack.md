@@ -17,7 +17,7 @@ import mods.mekanism.api.chemical.InfusionStack;
 InfusionStack implements the following interfaces. That means all methods defined in these
 interfaces are also available in InfusionStack
 
-- [ChemicalStack](/mods/Mekanism/api/chemical/ChemicalStack)
+- [ChemicalStack](/mods/Mekanism/api/chemical/stack/ChemicalStack)
 
 ## Casters
 

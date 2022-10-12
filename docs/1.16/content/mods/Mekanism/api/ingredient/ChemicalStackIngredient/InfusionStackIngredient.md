@@ -190,4 +190,15 @@ InfusionStackIngredient.or(other as InfusionStackIngredient) as InfusionStackIng
 
 :::
 
+## Operators
+
+:::group{name=OR}
+
+Returns a new [InfusionStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/InfusionStackIngredient) using the two [InfusionStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/InfusionStackIngredient) as a base.
+
+```zenscript
+(ing1 as InfusionStackIngredient) | (ing2 as InfusionStackIngredient);
+```
+:::
+
 

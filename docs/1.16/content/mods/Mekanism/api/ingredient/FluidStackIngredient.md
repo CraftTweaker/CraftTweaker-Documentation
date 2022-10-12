@@ -156,4 +156,14 @@ FluidStackIngredient.or(other as FluidStackIngredient) as FluidStackIngredient
 
 :::
 
+## Operators
+
+:::group{name=OR}
+
+Returns a new [FluidStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/FluidStackIngredient) using the two [FluidStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/FluidStackIngredient) as a base.
+
+```zenscript
+(ing1 as FluidStackIngredient) | (ing2 as FluidStackIngredient);
+```
+:::
 

@@ -17,7 +17,7 @@ import mods.mekanism.api.chemical.PigmentStack;
 PigmentStack implements the following interfaces. That means all methods defined in these interfaces
 are also available in PigmentStack
 
-- [ChemicalStack](/mods/Mekanism/api/chemical/ChemicalStack)
+- [ChemicalStack](/mods/Mekanism/api/chemical/stack/ChemicalStack)
 
 ## Casters
 

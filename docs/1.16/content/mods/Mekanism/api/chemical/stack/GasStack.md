@@ -17,7 +17,7 @@ import mods.mekanism.api.chemical.GasStack;
 GasStack implements the following interfaces. That means all methods defined in these interfaces are
 also available in GasStack
 
-- [ChemicalStack](/mods/Mekanism/api/chemical/ChemicalStack)
+- [ChemicalStack](/mods/Mekanism/api/chemical/stack/ChemicalStack)
 
 ## Casters
 

@@ -271,4 +271,15 @@ ItemStackIngredient.or(other as ItemStackIngredient) as ItemStackIngredient
 
 :::
 
+## Operators
+
+:::group{name=OR}
+
+Returns a new [ItemStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/ItemStackIngredient) using the two [ItemStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/ItemStackIngredient) as a base.
+
+```zenscript
+(ing1 as ItemStackIngredient) | (ing2 as ItemStackIngredient);
+```
+:::
+
 

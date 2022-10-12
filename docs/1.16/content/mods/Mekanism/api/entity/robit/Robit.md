@@ -13,7 +13,7 @@ import mods.mekanism.api.entity.robit.Robit;
 ```
 
 
-You can obtain a Robit by using the `is` with a LivingEntity object and then casting it.
+You can obtain a Robit by using the `is` keyword with a LivingEntity object and then casting it.
 
 ## Methods
 

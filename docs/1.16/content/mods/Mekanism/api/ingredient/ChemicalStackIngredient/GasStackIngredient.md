@@ -190,4 +190,14 @@ GasStackIngredient.or(other as GasStackIngredient) as GasStackIngredient
 
 :::
 
+## Operators
+
+:::group{name=OR}
+
+Returns a new [GasStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient) using the two [GasStackIngredient](/mods/Mekanism/api/ingredient/ChemicalStackIngredient/GasStackIngredient) as a base.
+
+```zenscript
+(ing1 as GasStackIngredient) | (ing2 as GasStackIngredient);
+```
+:::
 
