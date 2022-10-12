@@ -32,11 +32,11 @@ Return Type: [CoolantAttribute](/mods/Mekanism/content/attribute/gas/CoolantAttr
 CoolantAttribute.cooled(heatedGas as Supplier<Gas>, thermalEnthalpy as double, conductivity as double) as CoolantAttribute
 ```
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| heatedGas | Supplier&lt;[Gas](/mods/Mekanism/api/chemical/Gas)&gt; | Supplier to the heated variant of this chemical. |
-| thermalEnthalpy | double | Defines how much energy one mB of the chemical can store; lower values will cause reactors to require more of the chemical to stay cool. <br />                         Must be greater than zero. |
-| conductivity | double | Defines the proportion of a reactor's available heat that can be used at an instant to convert this coolant's cool variant to its heated <br />                         variant. This value should be greater than zero, and at most one. |
+| Parameter | Type | Description                                                                                                                                                                                                                              |
+|-----------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| heatedGas | Supplier&lt;[Gas](/mods/Mekanism/api/chemical/Gas)&gt; | Supplier to the heated variant of this chemical.                                                                                                                                                                                         |
+| thermalEnthalpy | double | Defines how much energy one mB of the chemical can store; lower values will cause reactors to require more of the chemical to stay cool. Must be greater than zero.                                                                      |
+| conductivity | double | Defines the proportion of a reactor's available heat that can be used at an instant to convert this coolant's cool variant to its heated variant. This value should be greater than zero, and at most one. |
 
 :::
 
@@ -54,8 +54,8 @@ CoolantAttribute.heated(cooledGas as Supplier<Gas>, thermalEnthalpy as double, c
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | cooledGas | Supplier&lt;[Gas](/mods/Mekanism/api/chemical/Gas)&gt; | Supplier to the cooled variant of this chemical. |
-| thermalEnthalpy | double | Defines how much energy one mB of the chemical can store; lower values will cause reactors to require more of the chemical to stay cool. <br />                         Must be greater than zero. |
-| conductivity | double | Defines the proportion of a reactor's available heat that can be used at an instant to convert this coolant's cool variant to its heated <br />                         variant. This value should be greater than zero, and at most one. |
+| thermalEnthalpy | double | Defines how much energy one mB of the chemical can store; lower values will cause reactors to require more of the chemical to stay cool. Must be greater than zero. |
+| conductivity | double | Defines the proportion of a reactor's available heat that can be used at an instant to convert this coolant's cool variant to its heated variant. This value should be greater than zero, and at most one. |
 
 :::
 

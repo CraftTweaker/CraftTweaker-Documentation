@@ -2,11 +2,11 @@
 
 ## "MekaTweaker"
 
-Mekanism adds it's fair share of chemicals, which you must have encoutered while playing with it: 
-Gases, pigments, slurries and infusion types.
+Mekanism adds it's fair share of chemicals, which you must have encoutered while playing with it:
+Gases, Infuse Types, Pigments, and Slurries.
 
 In the old age of 1.12.2, adding custom gases was only a thing MekaTweaker, an addon mod could do.
-However, after some time, Mekanism now adds a proper system to add custom chemicals through CraftTweaker and it's own CraftTweaker [loader](/zencode/Preprocessors/LoaderPreprocessor).
+However, as of Mekanism V10.1, Mekanism now has native support for adding custom chemicals through CraftTweaker and it's own [CraftTweaker loader](/zencode/Preprocessors/LoaderPreprocessor).
 
 The name of this custom loader is: `mekanismcontent`, don't forget it at the top of the file!
 
@@ -15,7 +15,6 @@ The name of this custom loader is: `mekanismcontent`, don't forget it at the top
 The most basic functions you have access to can be found in the [ChemicalBuilder](/mods/Mekanism/content/builder/ChemicalBuilder) class.
 
 ```zenscript
-
 #loader mekanismcontent
 
 import mods.mekanism.content.builder.GasBuilder;
@@ -54,7 +53,7 @@ It is worth knowing that all Builders that refer to a Chemical extend [ChemicalB
 
 ### Attribute Lists
 
-The list of Attributes you can use right now in your custom Mekanism is the following:
+The list of Attributes you can use right now in your custom Mekanism chemicals is the following:
 
 - Gas Attributes:
   - [CoolantAttribute](/mods/Mekanism/content/attribute/gas/CoolantAttribute)

@@ -24,7 +24,7 @@ interfaces are also available in RadiationAttribute
 :::group{name=create}
 
 Creates an attribute representing the radioactivity of a chemical. This attribute <i>requires
-validation</i>, meaning chemical containers won't be able to accept <br />  chemicals with this
+validation</i>, meaning chemical containers won't be able to accept chemicals with this
 attribute by default.
 
 Returns: Attribute representing the radioactivity of a substance.  

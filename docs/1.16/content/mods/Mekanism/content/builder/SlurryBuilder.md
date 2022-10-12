@@ -94,7 +94,7 @@ Sets the tint to apply to this chemical when rendering.
 Return Type: CRT_BUILDER
 
 ```zenscript
-SlurryBuilder.color(color as int) as CRT_BUILDER
+SlurryBuilder.color(color as int) 
 ```
 
 | Parameter | Type | Description |
@@ -111,7 +111,7 @@ Mostly for use in combination with custom textures that are not tinted.
 Return Type: CRT_BUILDER
 
 ```zenscript
-SlurryBuilder.colorRepresentation(color as int) as CRT_BUILDER
+SlurryBuilder.colorRepresentation(color as int) 
 ```
 
 | Parameter | Type | Description |
@@ -128,7 +128,7 @@ tanks.
 Return Type: CRT_BUILDER
 
 ```zenscript
-// SlurryBuilder.hidden() as CRT_BUILDER
+// SlurryBuilder.hidden() 
 
 mySlurryBuilder.hidden();
 ```
@@ -176,7 +176,7 @@ Adds an attribute to the set of attributes this chemical has.
 Return Type: CRT_BUILDER
 
 ```zenscript
-SlurryBuilder.with(attribute as ATTRIBUTE) as CRT_BUILDER
+SlurryBuilder.with(attribute as ATTRIBUTE) 
 ```
 
 | Parameter | Type | Description |

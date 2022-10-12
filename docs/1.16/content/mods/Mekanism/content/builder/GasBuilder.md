@@ -62,7 +62,7 @@ Sets the tint to apply to this chemical when rendering.
 Return Type: CRT_BUILDER
 
 ```zenscript
-GasBuilder.color(color as int) as CRT_BUILDER
+GasBuilder.color(color as int) 
 ```
 
 | Parameter | Type | Description |
@@ -79,7 +79,7 @@ Mostly for use in combination with custom textures that are not tinted.
 Return Type: CRT_BUILDER
 
 ```zenscript
-GasBuilder.colorRepresentation(color as int) as CRT_BUILDER
+GasBuilder.colorRepresentation(color as int) 
 ```
 
 | Parameter | Type | Description |
@@ -96,7 +96,7 @@ tanks.
 Return Type: CRT_BUILDER
 
 ```zenscript
-// GasBuilder.hidden() as CRT_BUILDER
+// GasBuilder.hidden() 
 
 myGasBuilder.hidden();
 ```
@@ -110,7 +110,7 @@ Adds an attribute to the set of attributes this chemical has.
 Return Type: CRT_BUILDER
 
 ```zenscript
-GasBuilder.with(attribute as ATTRIBUTE) as CRT_BUILDER
+GasBuilder.with(attribute as ATTRIBUTE) 
 ```
 
 | Parameter | Type | Description |
