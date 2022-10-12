@@ -33,18 +33,6 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
-            "ArmoreableMobs" : {},
-            "Botania" : {},
-            "Createtweaker" : {},
-            "Immersiveengineering" : {},
-            "Initialinventory" : {},
-            "JEITweaker" : {},
-            "RecipeStages": {
-                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
-            },
-            "SolarCraft" : {},
-            "SushiGoCrafting" : {},
-            "Zen Summoning": {},
             "Generic JSON Recipes": "mods/other_mods.md"
         },
         "ZenCode": {
