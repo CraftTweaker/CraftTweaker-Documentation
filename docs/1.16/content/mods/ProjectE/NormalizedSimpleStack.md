@@ -14,6 +14,10 @@ Array), so better be safe than sorry and add the import at the very top of the f
 import mods.projecte.NormalizedSimpleStack;
 ```
 
+## Obtaining a NormalizedSimpleStack
+
+You can implicitly cast an IItemStack, an MCFluid, an MCTag<MCItemDefinition>, an MCItemTagDefinition, an MCTag<MCFluid> or an IFluidStack to NormalizedSimpleStack.
+
 ## Casters
 
 | Result type | Is Implicit |

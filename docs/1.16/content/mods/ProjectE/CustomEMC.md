@@ -39,6 +39,8 @@ Return Type: void
 
 ```zenscript
 CustomEMC.setEMCValue(stack as NormalizedSimpleStack, emc as long) as void
+
+CustomEMC.setEMCValue(<item:mekanism:ingot_refined_obsidian>, 1500);
 ```
 
 | Parameter | Type | Description |
@@ -47,4 +49,6 @@ CustomEMC.setEMCValue(stack as NormalizedSimpleStack, emc as long) as void
 | emc | long | EMC value, must not be negative. |
 
 :::
+
+![](/mods/ProjectE/customemc.png)
 
