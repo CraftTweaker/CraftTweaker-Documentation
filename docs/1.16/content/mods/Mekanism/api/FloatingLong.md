@@ -232,8 +232,70 @@ FloatingLong.subtract(toSubtract as FloatingLong) as FloatingLong
 
 :::
 
-# Operators
+## Operators
 
+:::group{name=SUB}
+
+Subtracts the given [FloatingLong](/mods/Mekanism/api/FloatingLong) from
+this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This gets clamped at the lower bound of 0 rather than becoming negative.
+
+```zenscript
+floatingLongOne - floatingLongTwo
+```
+
+:::
+
+:::group{name=ADD}
+
+Adds the given [FloatingLong](/mods/Mekanism/api/FloatingLong) to
+this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. 
+
+```zenscript
+floatingLongOne + floatingLongTwo
+```
+:::
+
+:::group{name=MUL}
+
+Multiplies the given [FloatingLong](/mods/Mekanism/api/FloatingLong) with
+this [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
+gets clamped at the upper bound of `18,446,744,073,709,551,615.9999` instead of overflowing.
+
+```zenscript
+floatingLongOne * floatingLongTwo
+```
+
+:::
+
+:::group{name=divide}
+
+Divides this [FloatingLong](/mods/Mekanism/api/FloatingLong) by the
+given [FloatingLong](/mods/Mekanism/api/FloatingLong) and returns the result in a new object. This
+gets clamped at the upper bound of `18,446,744,073,709,551,615.9999` instead of overflowing.
+
+```zenscript
+floatingLongOne / floatingLongTwo
+```
+
+:::
+
+:::group{name=isEqual}
+
+Checks if this [FloatingLong](/mods/Mekanism/api/FloatingLong) is equal to the
+given [FloatingLong](/mods/Mekanism/api/FloatingLong).
+
+```zenscript
+floatingLongOne == floatingLongTwo
+```
+
+:::
+
+:::group{COMPARE}
+
+Compares this [FloatingLong](/mods/Mekanism/api/FloatingLong) to the
+given [FloatingLong](/mods/Mekanism/api/FloatingLong).
+
+:::
 
 
 
