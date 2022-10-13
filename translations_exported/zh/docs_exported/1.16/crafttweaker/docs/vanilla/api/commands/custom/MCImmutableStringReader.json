@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/commands/custom/MCImmutableStringReader.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.commands.custom.MCImmutableStringReader",
+    "searchTerms": [
+        "getCursor",
+        "getRemainingLength",
+        "getTotalLength",
+        "canRead",
+        "getRemaining",
+        "getRead",
+        "getString #获取字符串",
+        "peek"
+    ]
+}
