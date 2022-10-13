@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/data/LongArrayData.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "craftminstrer.api.data.LongArrayData",
+    "searchTerms": [
+        "asFormattedText",
+        "contains #容器",
+        "asCollection",
+        "asMap #作为地图数据",
+        "asNumber",
+        "getId #获取id\n",
+        "getString #获取字符串",
+        "crafttweaker.api.data.ICollectionData",
+        "asBoolean"
+    ]
+}
