@@ -1,0 +1,26 @@
+{
+    "path": "vanilla/api/villager/VillagerTrades.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.villagers.VillagerTrades",
+    "searchTerms": [
+        "addWanderingTrade",
+        "removeBasicTrade",
+        "removeTradesSelling",
+        "removeSuspiciousStewForEmeraldTrade",
+        "removeEmeraldForItemsTrade",
+        "removeTrade",
+        "removeAllWanderingTrades",
+        "removeEmeraldForMapTrade",
+        "removeItemsForEmeraldsAndItemsTrade",
+        "removeTradesBuying",
+        "removeWanderingTrade",
+        "removeDyedArmorForEmeraldsTrade",
+        "removeEnchantedBookForEmeraldsTrade",
+        "removeItemsForEmeraldsTrade",
+        "removeAllWanderinTrades",
+        "removeItemWithPotionForEmeraldsAndItemsTrade",
+        "addTrade",
+        "removeAllTrades",
+        "removeEnchantedItemForEmeraldsTrade"
+    ]
+}
