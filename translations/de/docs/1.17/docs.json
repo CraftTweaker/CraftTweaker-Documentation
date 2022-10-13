@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "Home": "index.md",
+    "Getting Started With Scripts": "getting_started.md",
+    "Commands": "commands.md",
+    "Examples": "examples.md",
+    "Einführungen": {
+      "Einführung ins Skripten": {
+        "Was sind Skripte": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+        "Die CraftTweaker Protokolldatei": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+        "Schreib dein erstes Skript": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+        "Was sind Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
+      },
+      "Recipes": {
+        "Rezept-Manager": "tutorial/Recipes/RecipeManagers.md",
+        "Crafting": {
+          "Rezepte hinzufügen": {
+            "Feste gespiegelte Rezepte": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+            "Feste Rezepte": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+            "Formlose Rezepte": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+          }
+        }
+      },
+      "Software": "tutorial/Software.md"
+    },
+    "Vanilla": {
+      "How to": {
+        "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
+      }
+    },
+    "Fabric": {},
+    "Forge": {},
+    "Mods": {
+      "Generic JSON Recipes": "mods/other_mods.md"
+    },
+    "ZenCode": {
+      "Über ZenCode": "zencode/ZenCode.md",
+      "Arrays und Listen": "zencode/ArraysAndLists.md",
+      "Bedingter Code": "zencode/ConditionalCode.md",
+      "Preprocessors": {
+        "Präprozessoren": "zencode/Preprocessors/Preprocessors.md",
+        "Loader Präprozessoren": "zencode/Preprocessors/LoaderPreprocessor.md",
+        "Prioritäts-Präprozessor": "zencode/Preprocessors/PriorityPreprocessor.md"
+      }
+    }
+  }
+}
