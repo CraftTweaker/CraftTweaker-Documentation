@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/items/IIngredientWithAmount.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.item.IIngredientWithAmount",
+    "searchTerms": [
+        "crafttweaker.api.brackets.CommandStringDisplayable",
+        "amount",
+        "ingredient",
+        "commandString #命令字符串"
+    ]
+}
