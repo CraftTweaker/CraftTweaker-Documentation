@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/tags/ExpandItemTag.md",
+    "ownerModId": "crafttweaker",
+    "searchTerms": [
+        "add",
+        "asIIngredientWithAmount",
+        "or",
+        "asIIngredient",
+        "asIData"
+    ]
+}
