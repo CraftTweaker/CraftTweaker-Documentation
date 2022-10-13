@@ -1,0 +1,25 @@
+{
+    "path": "vanilla/api/util/BlockPos.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.MCVector3i",
+    "searchTerms": [
+        "add",
+        "crossProduct",
+        "offset",
+        "south",
+        "crafttweaker.api.util.MCVector3i",
+        "north",
+        "subtract",
+        "getAllInBox",
+        "distanceSq",
+        "down",
+        "withinDistance",
+        "east",
+        "manhattanDistance",
+        "x",
+        "west",
+        "y",
+        "z",
+        "up"
+    ]
+}
