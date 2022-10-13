@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/data/ListData.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "craftbiner.api.data.ListData",
+    "searchTerms": [
+        "asFormattedText",
+        "asCollection",
+        "asMap #作为地图数据",
+        "asNumber",
+        "getId #获取id\n",
+        "getString #获取字符串",
+        "crafttweaker.api.data.ICollectionData",
+        "getData",
+        "asBoolean"
+    ]
+}
