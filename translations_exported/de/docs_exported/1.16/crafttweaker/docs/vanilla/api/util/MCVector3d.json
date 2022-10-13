@@ -1,0 +1,26 @@
+{
+    "path": "vanilla/api/util/MCVector3d.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.MCVector3d",
+    "searchTerms": [
+        "inverse",
+        "minus",
+        "squareDistanceTo",
+        "magnitudeSquared",
+        "cross",
+        "dot",
+        "subtractReverse",
+        "scale",
+        "distanceTo",
+        "plus",
+        "crafttweaker.api.dispenser.IPosition",
+        "getCoordinate",
+        "times",
+        "normalize",
+        "x",
+        "y",
+        "asVector3i",
+        "magnitude",
+        "z"
+    ]
+}
