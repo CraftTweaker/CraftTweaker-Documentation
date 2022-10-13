@@ -1,0 +1,30 @@
+{
+    "path": "vanilla/api/enchantment/MCEnchantment.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.enchantment.MCEnchantment",
+    "searchTerms": [
+        "maxLevel",
+        "getName",
+        "canVillagerTrade",
+        "getMinEnchantability",
+        "getRarity",
+        "isAllowedOnBooks",
+        "allowedOnBook",
+        "getMaxLevel",
+        "isCompatibleWith",
+        "minLevel",
+        "canApply",
+        "getMaxEnchantability",
+        "getMinLevel",
+        "getDisplayName",
+        "canGenerateInLoot",
+        "curse",
+        "name（名称）",
+        "getEntityEquipment",
+        "treasure",
+        "isCurse",
+        "canApplyAtEnchantingTable",
+        "isTreasureEnchantment",
+        "rarity"
+    ]
+}
