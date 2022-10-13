@@ -1,0 +1,11 @@
+{
+    "path": "forge/api/event/block/BlockNeighborNotifyEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "notifiedSides",
+        "crafttweaker.api.event.block.BlockEvent",
+        "forceRedstoneUpdate",
+        "getForceRedstoneUpdate",
+        "getNotifiedSides"
+    ]
+}
