@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/data/DoubleData.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.data.DoubleData",
+    "searchTerms": [
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap #作为地图数据",
+        "asNumber",
+        "getDouble",
+        "getId #获取id\n",
+        "getFloat",
+        "getString #获取字符串",
+        "asList #作为列表",
+        "asFormattedText",
+        "getLong",
+        "getInt",
+        "crafttweaker.api.data.INumberData",
+        "asBoolean"
+    ]
+}
