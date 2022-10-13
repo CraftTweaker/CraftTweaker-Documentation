@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/world/MCBiome.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.world.MCBiome",
+    "searchTerms": [
+        "doesSnow",
+        "waterFogColor",
+        "doesWaterFreeze",
+        "scale",
+        "downfall",
+        "isHighHumidity",
+        "rainType",
+        "commandString #命令字符串",
+        "registryName",
+        "doesRain",
+        "waterColor",
+        "depth",
+        "category",
+        "getTemperature",
+        "doesSnowFreeze"
+    ]
+}
