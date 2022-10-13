@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/inventory/PlayerInventory.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.inventory.PlayerInventory",
+    "searchTerms": [
+        "add #添加",
+        "getFirstEmptyStack",
+        "物品应用",
+        "setIItemStack",
+        "deleteStack",
+        "canStoreIItemStack",
+        "hasIItemStack",
+        "addIItemStackToInventory",
+        "getIItemStack",
+        "remove #移除",
+        "getCurrentItem",
+        "dropAllItems",
+        "crafttweaker.api.inventory.IInventory",
+        "firstEmptyStack",
+        "currentItem"
+    ]
+}
