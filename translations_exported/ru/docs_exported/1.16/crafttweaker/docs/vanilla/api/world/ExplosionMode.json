@@ -1,0 +1,10 @@
+{
+    "path": "vanilla/api/world/ExplosionMode.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.world.ExplosionMode",
+    "searchTerms": [
+        "DESTROY",
+        "BREAK",
+        "NONE"
+    ]
+}
