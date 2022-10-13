@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/fluid/IFluidStack.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.fluid.IFluidStack",
+    "searchTerms": [
+        "crafttweaker.api.brackets.CommandStringDisplayable",
+        "amount",
+        "hasTag",
+        "commandString #命令字符串",
+        "registryName",
+        "getTag",
+        "empty",
+        "withTag",
+        "containsOther",
+        "isImmutable",
+        "asImmutable",
+        "mutable",
+        "fluid",
+        "tag #标签",
+        "copy #复制",
+        "setAmount"
+    ]
+}
