@@ -1,0 +1,11 @@
+{
+    "path": "mods/JEITweaker/API/Category/InputConsuming.md",
+    "ownerModId": "jeitweaker",
+    "zenCodeName": "mods.jei.category.SimpleJeiCategory",
+    "since": "1.1.0",
+    "searchTerms": [
+        "setOutputDrawables",
+        "mods.jei.category.SimpleJeiCategory",
+        "baseResultText"
+    ]
+}
