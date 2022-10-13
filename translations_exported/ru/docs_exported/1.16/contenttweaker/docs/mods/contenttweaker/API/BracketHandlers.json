@@ -1,0 +1,9 @@
+{
+    "path": "mods/contenttweaker/API/BracketHandlers.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "mods.contenttweaker.BracketHandlers",
+    "searchTerms": [
+        "getCoTBlock",
+        "getCoTItem"
+    ]
+}
