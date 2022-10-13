@@ -1,0 +1,44 @@
+# MCPlayerDestroyItemEvent
+
+This event is fired when a player destroys a tool or item. This happens after the tool has been destroyed and can not be used to prevent the destruction directly.
+
+The event is not cancelable.
+
+The event does not have a result.
+
+## 导入类
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent;
+```
+
+
+## Extending MCPlayerEvent
+
+MCPlayerDestroyItemEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent) are also available in MCPlayerDestroyItemEvent
+
+## 使用方式
+
+:::group{name=getDestroyedItem}
+
+Gets a snapshot of the item from before it broke. Modifying this item will have no effect and it should be treated as unmodifiable.
+
+Returns: The original item from before it was broken.  
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+// MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
+
+event.getDestroyedItem();
+```
+
+:::
+
+
+## 参数
+
+| 名称            | 类型                                          | 可获得  | 可设置   | 描述                                                                                                                                                |
+| ------------- | ------------------------------------------- | ---- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| destroyedItem | [IItemstack](/vanilla/api/items/IItemStack) | true | false | Gets a snapshot of the item from before it broke. Modifying this item <br />  will have no effect and it should be treated as unmodifiable. |
+
