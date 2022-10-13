@@ -1,0 +1,28 @@
+{
+    "path": "vanilla/api/BracketHandlers.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.BracketHandlers",
+    "searchTerms": [
+        "getPotion",
+        "getRecipeManager",
+        "getBlock",
+        "getEquipmentSlotType",
+        "getEntityType",
+        "getItem",
+        "getDirectionAxis",
+        "getBlockMaterial",
+        "getItemGroup",
+        "getProfession",
+        "getResourceLocation",
+        "getFluidStack",
+        "getToolType",
+        "getAttribute",
+        "getTextFormatting",
+        "getDamageSource",
+        "getEnchantment",
+        "getEffect",
+        "getBlockState",
+        "getBiome",
+        "getEntityClassification"
+    ]
+}
