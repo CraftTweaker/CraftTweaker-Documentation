@@ -1,0 +1,14 @@
+{
+    "path": "mods/contenttweaker/API/item/tool/ItemBuilderTool.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "format@@0 mods.contenttweaker.item.ItemTypeBuilder",
+    "searchTerms": [
+        "build",
+        "withAttackDamage",
+        "withToolType",
+        "format@@0 mods.contenttweaker.item.ItemTypeBuilder",
+        "withAttackSpeed",
+        "withDurabilityCostMining",
+        "withDurabilityCostAttack"
+    ]
+}
