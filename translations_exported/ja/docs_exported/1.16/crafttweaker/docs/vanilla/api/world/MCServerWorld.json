@@ -1,0 +1,19 @@
+{
+    "path": "vanilla/api/world/MCServerWorld.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.world.MCWorld",
+    "searchTerms": [
+        "setTimeToDay",
+        "server",
+        "setTimeToMidnight",
+        "setTimeToNoon",
+        "isVillage",
+        "seed",
+        "getEntities",
+        "setTimeToNight",
+        "isSlimeChunk",
+        "isRaid",
+        "crafttweaker.api.world.MCWorld",
+        "timeOfDay"
+    ]
+}
