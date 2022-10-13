@@ -1,0 +1,23 @@
+{
+    "path": "vanilla/api/util/MCVector3i.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.MCVector3i",
+    "searchTerms": [
+        "crossProduct",
+        "offset",
+        "distanceSq",
+        "down",
+        "getCoordinatesAsString",
+        "withinDistance",
+        "getX",
+        "manhattanDistance",
+        "getY",
+        "getZ",
+        "x",
+        "y",
+        "asVector3i",
+        "z",
+        "up",
+        "coordinateString"
+    ]
+}
