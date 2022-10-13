@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/managers/SmithingManager.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.SmithingManager",
+    "searchTerms": [
+        "removeRecipe",
+        "getRecipeByName",
+        "allRecipes",
+        "Retirer par Modid",
+        "addJSONRecipe",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "crafttweaker.api.registries.IRecipeManager",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeRecipeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
