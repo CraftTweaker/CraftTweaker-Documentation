@@ -1,0 +1,24 @@
+{
+    "path": "vanilla/api/util/text/MCTextComponent.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.util.text.MCTextComponent",
+    "searchTerms": [
+        "siblings",
+        "translationKey",
+        "appendSibling",
+        "copyRaw",
+        "getTranslationKey",
+        "createStringTextComponent",
+        "formattedText",
+        "getString #获取字符串",
+        "createTranslationTextComponent",
+        "deepCopy",
+        "getStyle",
+        "getStringTruncated",
+        "getUnformattedComponentText",
+        "unformattedComponentText",
+        "setStyle",
+        "样式",
+        "appendText"
+    ]
+}
