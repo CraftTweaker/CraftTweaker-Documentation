@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/tags/TagManagerEntityType.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.tag.TagManagerEntityType",
+    "searchTerms": [
+        "all",
+        "exists",
+        "getAllTags",
+        "getTag"
+    ]
+}
