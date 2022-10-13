@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.event.entity.player.xp.MCPlayerXPEvent",
+    "searchTerms": [
+        "getXp",
+        "xp (经验值)",
+        "crafttweaker.api.event.entity.player.xp.MCPlayerXPEvent",
+        "setXp"
+    ]
+}
