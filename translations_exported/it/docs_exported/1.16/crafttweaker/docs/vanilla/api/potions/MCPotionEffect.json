@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/potions/MCPotionEffect.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.potion.MCPotionEffect",
+    "searchTerms": [
+        "curativeItems",
+        "displayName",
+        "liquidColor",
+        "isReady",
+        "isInstant",
+        "nome",
+        "newInstance",
+        "isBeneficial",
+        "commandString"
+    ]
+}
