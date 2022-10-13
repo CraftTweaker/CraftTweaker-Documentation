@@ -1,0 +1,32 @@
+# ZenExpansion
+
+ZenExpansion 类似于 [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)，用于注解在 ZenScript 中能被使用的类。  
+不同的是，ZenExpansions 是用于扩展已经存在的 ZenClass 的功能。
+
+## 例子
+
+```java
+@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenRegister
+public class Expansion {
+    @ZenMethod
+    public static void print(IItemStack stack) {
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
+    }
+}
+```
+
+这样人们就能：
+```zenscript
+<minecraft:iron_ingot>.print();
+```
+
+由于其为扩展，首个参数应为类示例！  
+该参数在 ZenScript 中不可用。
+
+## 什么类可以被注解 || 额外信息
+
+- 所有方法都需要以一个表示扩展 Class 实例的参数开始。 此外，扩展中的所有方法都必须静态（……并公开）
+- 你可以注解所有的 Java 类
+- 你必须给注解传入一个 String 值（如 `crafttweaker.item.IItemStack`） 此 String 值必须表示已存在的 ZenClass 类名。
+- 在定义一个 ZenExpansion 类后，你仍然需要注册它。 建议你使用 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)。
