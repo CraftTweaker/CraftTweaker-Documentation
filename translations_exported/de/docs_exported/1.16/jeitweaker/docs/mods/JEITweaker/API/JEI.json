@@ -1,0 +1,20 @@
+{
+    "path": "mods/JEITweaker/API/JEI.md",
+    "ownerModId": "jeitweaker",
+    "zenCodeName": "mods.jei.JEI",
+    "since": "1.0.0",
+    "searchTerms": [
+        "addDescription",
+        "addItem",
+        "hideRegex",
+        "hideCategory",
+        "hideMod",
+        "addIngredient",
+        "hideFluid",
+        "hideIngredient",
+        "addInfo",
+        "hideItem",
+        "hideRecipe",
+        "addCategory"
+    ]
+}
