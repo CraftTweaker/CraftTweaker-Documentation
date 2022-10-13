@@ -1,0 +1,14 @@
+{
+    "path": "mods/CinematicTransitions/PlayManager.md",
+    "ownerModId": "cinematic_transitions",
+    "zenCodeName": "mods.cinematic_transitions.PlayManager",
+    "searchTerms": [
+        "registerEntityPopUpListener",
+        "setHideInventory",
+        "playPopUp",
+        "registerStructurePopUpListener",
+        "playTransition",
+        "registerBiomePopUpListener",
+        "registerDimensionPopUpListener"
+    ]
+}
