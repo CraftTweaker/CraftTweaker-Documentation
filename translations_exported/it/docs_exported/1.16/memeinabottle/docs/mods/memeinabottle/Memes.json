@@ -1,0 +1,13 @@
+{
+    "path": "mods/memeinabottle/Memes.md",
+    "ownerModId": "memeinabottle",
+    "zenCodeName": "mods.memeinabottle.Memes",
+    "searchTerms": [
+        "addItemSoundMeme",
+        "enableMeme",
+        "addItemSoundAndMessageMeme",
+        "addItemMeme",
+        "addItemMessageMeme",
+        "disableMeme"
+    ]
+}
