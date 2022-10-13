@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "Оглавление": "index.md",
+    "Начало работы со скриптами:": "getting_started.md",
+    "Команды": "commands.md",
+    "Примеры": "examples.md",
+    "Руководства": {
+      "Введение в работу со скриптами": {
+        "Что такое скрипты": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+        "Файл лога CraftTweaker": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+        "Написание первого скрипта": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+        "Что такое обработчики скобок": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
+      },
+      "Рецепты": {
+        "Менеджеры рецептов": "tutorial/Recipes/RecipeManagers.md",
+        "Крафт": {
+          "Добавление рецептов": {
+            "Отраженные рецепты с формой": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+            "Рецепты с формой": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+            "Рецепты без формы": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+          }
+        }
+      },
+      "Программное обеспечение": "tutorial/Software.md"
+    },
+    "Обычная игра": {
+      "Инструкции": {
+        "Рецепты верстака": "vanilla/how_to/crafting_table.md"
+      }
+    },
+    "Fabric": {},
+    "Forge": {},
+    "Моды": {
+      "Обобщенные рецепты на JSON": "mods/other_mods.md"
+    },
+    "ZenCode": {
+      "Про ZenCode": "zencode/ZenCode.md",
+      "Массивы и списки": "zencode/ArraysAndLists.md",
+      "Ветвления": "zencode/ConditionalCode.md",
+      "Препроцессоры": {
+        "Препроцессоры": "zencode/Preprocessors/Preprocessors.md",
+        "Препроцессор загрузчика": "zencode/Preprocessors/LoaderPreprocessor.md",
+        "Препроцессор приоритета": "zencode/Preprocessors/PriorityPreprocessor.md"
+      }
+    }
+  }
+}
