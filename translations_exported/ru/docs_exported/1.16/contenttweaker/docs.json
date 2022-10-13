@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "Mods": {
+      "Contenttweaker": {
+        "API": {
+          "BracketDumpers": "mods/contenttweaker/API/BracketDumpers.md",
+          "Обработчики скобок": "mods/contenttweaker/API/BracketHandlers.md",
+          "BracketValidators": "mods/contenttweaker/API/BracketValidators.md",
+          "API": {
+            "IIsBuilder": "mods/contenttweaker/API/api/IIsBuilder.md"
+          },
+          "Block": {
+            "BlockBuilder": "mods/contenttweaker/API/block/BlockBuilder.md",
+            "BlockRenderType": "mods/contenttweaker/API/block/BlockRenderType.md",
+            "BlockTypeBuilder": "mods/contenttweaker/API/block/BlockTypeBuilder.md",
+            "Advance": {
+              "BlockBuilderAdvanced": "mods/contenttweaker/API/block/advance/BlockBuilderAdvanced.md",
+              "CoTBlockAdvanced": "mods/contenttweaker/API/block/advance/CoTBlockAdvanced.md"
+            },
+            "Базовый": {
+              "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md",
+              "BlockBuilderFalling": "mods/contenttweaker/API/block/basic/BlockBuilderFalling.md",
+              "BlockBuilderGlass": "mods/contenttweaker/API/block/basic/BlockBuilderGlass.md"
+            },
+            "Колонны": {
+              "BlockBuilderPillarRotatable": "mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md"
+            },
+            "Slab": {
+              "BlockBuilderSlab": "mods/contenttweaker/API/block/slab/BlockBuilderSlab.md"
+            },
+            "Ступеньки": {
+              "BlockBuilderStairs": "mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md"
+            }
+          },
+          "Fluid": {
+            "FluidBuilder": "mods/contenttweaker/API/fluid/FluidBuilder.md"
+          },
+          "Functions": {
+            "IBlockActivated": "mods/contenttweaker/API/functions/IBlockActivated.md",
+            "IBlockAdded": "mods/contenttweaker/API/functions/IBlockAdded.md",
+            "IBlockColorSupplier": "mods/contenttweaker/API/functions/IBlockColorSupplier.md",
+            "IBlockIsSideInvisible": "mods/contenttweaker/API/functions/IBlockIsSideInvisible.md",
+            "IBlockIsTransparent": "mods/contenttweaker/API/functions/IBlockIsTransparent.md",
+            "IBlockNeighborChanged": "mods/contenttweaker/API/functions/IBlockNeighborChanged.md",
+            "IBlockRandomTick": "mods/contenttweaker/API/functions/IBlockRandomTick.md",
+            "IBlockReplaced": "mods/contenttweaker/API/functions/IBlockReplaced.md",
+            "IFallingBlockDustColorSupplier": "mods/contenttweaker/API/functions/IFallingBlockDustColorSupplier.md",
+            "IIconSupplier": "mods/contenttweaker/API/functions/IIconSupplier.md",
+            "IItemColorSupplier": "mods/contenttweaker/API/functions/IItemColorSupplier.md",
+            "IItemHitEntity": "mods/contenttweaker/API/functions/IItemHitEntity.md",
+            "IItemInteractWithEntity": "mods/contenttweaker/API/functions/IItemInteractWithEntity.md",
+            "IItemInventoryTick": "mods/contenttweaker/API/functions/IItemInventoryTick.md",
+            "IItemRightClick": "mods/contenttweaker/API/functions/IItemRightClick.md",
+            "IItemUse": "mods/contenttweaker/API/functions/IItemUse.md",
+            "IItemUseActionSupplier": "mods/contenttweaker/API/functions/IItemUseActionSupplier.md",
+            "IItemUseDurationSupplier": "mods/contenttweaker/API/functions/IItemUseDurationSupplier.md",
+            "IItemUseFinish": "mods/contenttweaker/API/functions/IItemUseFinish.md",
+            "IItemUsingTick": "mods/contenttweaker/API/functions/IItemUsingTick.md"
+          },
+          "Item": {
+            "CustomItemGroup": "mods/contenttweaker/API/item/CustomItemGroup.md",
+            "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
+            "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
+            "Advance": {
+              "CoTItemAdvanced": "mods/contenttweaker/API/item/advance/CoTItemAdvanced.md",
+              "ItemBuilderAdvanced": "mods/contenttweaker/API/item/advance/ItemBuilderAdvanced.md"
+            },
+            "Базовый": {
+              "ItemBuilderBasic": "mods/contenttweaker/API/item/basic/ItemBuilderBasic.md"
+            },
+            "Инструмент": {
+              "ItemBuilderTool": "mods/contenttweaker/API/item/tool/ItemBuilderTool.md"
+            }
+          }
+        }
+      }
+    }
+  }
+}
