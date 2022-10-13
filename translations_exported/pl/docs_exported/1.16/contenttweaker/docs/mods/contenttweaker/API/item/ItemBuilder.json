@@ -1,0 +1,17 @@
+{
+    "path": "mods/contenttweaker/API/item/ItemBuilder.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "Edytor elementów",
+    "searchTerms": [
+        "withNoRepair",
+        "withMaxStackSize",
+        "withFood",
+        "build",
+        "mods.contenttweaker.api.IIsBuilder",
+        "isImmuneToFire",
+        "withItemGroup",
+        "withType",
+        "withRarity",
+        "withMaxDamage"
+    ]
+}
