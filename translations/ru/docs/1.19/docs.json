@@ -1,0 +1,56 @@
+{
+    "nav": {
+        "Оглавление": "index.md",
+        "Commands" : "commands.md",
+        "Примеры": "examples.md",
+        "Начало работы со скриптами:": "getting_started.md",
+        "Global Keywords" : "globals.md",
+        "Руководства": {
+            "Введение в работу со скриптами": {
+                "Что такое скрипты": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+                "Файл лога CraftTweaker": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+                "Написание первого скрипта": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+                "Что такое обработчики скобок": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
+                "Продвинутая работа со скриптами": "tutorial/IntroductionToScripting/AdvancedScripting.md"
+            },
+            "Рецепты": {
+                "Менеджеры рецептов": "tutorial/Recipes/RecipeManagers.md",
+                "Crafting": {
+                    "Добавление рецептов": {
+                        "Отраженные рецепты с формой": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
+                        "Рецепты с формой": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
+                        "Рецепты без формы": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
+                    }
+                }
+            },
+            "Программное обеспечение": "tutorial/Software.md"
+        },
+        "Обычная игра": {
+            "Инструкции": {
+                "Рецепты верстака": "vanilla/how_to/crafting_table.md"
+            }
+        },
+        "Fabric": {},
+        "Forge": {},
+        "Mods": {
+            "Обобщенные рецепты на JSON": "mods/other_mods.md"
+        },
+        "ZenCode": {
+            "Про ZenCode": "zencode/ZenCode.md",
+            "Массивы и списки": "zencode/ArraysAndLists.md",
+            "Associative Arrays" : "zencode/AssociativeArrays.md",
+            "Ветвления": "zencode/ConditionalCode.md",
+            "Objects": "zencode/Objects.md",
+            "Functions" : "zencode/Functions.md",
+            "Препроцессоры": {
+                "Препроцессоры": "zencode/Preprocessors/Preprocessors.md",
+                "Препроцессор загрузчика": "zencode/Preprocessors/LoaderPreprocessor.md",
+                "Препроцессор приоритета": "zencode/Preprocessors/PriorityPreprocessor.md"
+            }
+        },
+        "Mod Dev": {
+            "CraftTweaker in a Development Environment" : "integration/Introduction.md",
+            "Exposing a ZenClass" : "integration/RecipeManager.md"
+        }
+    }
+}
