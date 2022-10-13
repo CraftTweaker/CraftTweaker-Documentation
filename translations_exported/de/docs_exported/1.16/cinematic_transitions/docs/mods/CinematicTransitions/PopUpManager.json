@@ -1,0 +1,17 @@
+{
+    "path": "mods/CinematicTransitions/PopUpManager.md",
+    "ownerModId": "cinematic_transitions",
+    "zenCodeName": "mods.cinematic_transitions.PopUpManager",
+    "searchTerms": [
+        "disableColorModifier",
+        "setPostRenderModification",
+        "setPopUpLength",
+        "setPopUpWaitDuration",
+        "setColorModifier",
+        "disableScaleModifier",
+        "disableTranslateModifier",
+        "setScaleModifier",
+        "setTranslateModifier",
+        "setPreRenderModification"
+    ]
+}
