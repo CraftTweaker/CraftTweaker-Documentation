@@ -1,0 +1,24 @@
+{
+    "path": "vanilla/api/block/material/MCMaterial.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.block.material.MCMaterial\n#导入方式为 import crafttweaker.api.block.material.MCMaterial",
+    "searchTerms": [
+        "isFlammable #是否为可燃物",
+        "opaque",
+        "solid",
+        "color",
+        "isOpaque #是否为不透明方块",
+        "replaceable",
+        "getColor #获取颜色",
+        "commandString #命令字符串",
+        "pushReaction",
+        "isSolid #是否为固体",
+        "isLiquid #是否为液体",
+        "liquid",
+        "getCommandString",
+        "blocksMovement #是否可移动",
+        "flammable",
+        "getPushReaction",
+        "isReplaceable #是否可替换"
+    ]
+}
