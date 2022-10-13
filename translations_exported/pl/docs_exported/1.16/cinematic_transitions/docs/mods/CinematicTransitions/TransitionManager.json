@@ -1,0 +1,10 @@
+{
+    "path": "mods/CinematicTransitions/TransitionManager.md",
+    "ownerModId": "cinematic_transitions",
+    "zenCodeName": "mods.cinematic_transitions.TransitionManager",
+    "searchTerms": [
+        "setTransitionLength",
+        "setTransitionHeight",
+        "setTransitionWaitDuration"
+    ]
+}
