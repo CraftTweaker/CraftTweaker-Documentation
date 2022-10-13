@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "Mods": {
+      "JEITweaker": {
+        "API": {
+          "JEI": "mods/JEITweaker/API/JEI.md",
+          "Category": {
+            "CatalystRequiringRecipe": "mods/JEITweaker/API/Category/CatalystRequiringRecipe.md",
+            "Custom": "mods/JEITweaker/API/Category/Custom.md",
+            "InputConsuming": "mods/JEITweaker/API/Category/InputConsuming.md",
+            "JeiCategory": "mods/JEITweaker/API/Category/JeiCategory.md",
+            "OutputList": "mods/JEITweaker/API/Category/OutputList.md",
+            "SimpleInputOutput": "mods/JEITweaker/API/Category/SimpleInputOutput.md",
+            "SimpleJeiCategory": "mods/JEITweaker/API/Category/SimpleJeiCategory.md"
+          },
+          "Component": {
+            "IFluidStackExpansions": "mods/JEITweaker/API/Component/IFluidStackExpansions.md",
+            "IIngredientExpansions": "mods/JEITweaker/API/Component/IIngredientExpansions.md",
+            "IItemStackExpansions": "mods/JEITweaker/API/Component/IItemStackExpansions.md",
+            "ItemTagExpansions": "mods/JEITweaker/API/Component/ItemTagExpansions.md",
+            "JeiDrawable": "mods/JEITweaker/API/Component/JeiDrawable.md",
+            "JeiDrawableAnimation": "mods/JEITweaker/API/Component/JeiDrawableAnimation.md",
+            "JeiIngredient": "mods/JEITweaker/API/Component/JeiIngredient.md",
+            "JeiIngredientExpansions": "mods/JEITweaker/API/Component/JeiIngredientExpansions.md"
+          },
+          "Recipe": {
+            "JeiCategoryRecipeExpansion": "mods/JEITweaker/API/Recipe/JeiCategoryRecipeExpansion.md",
+            "JeiRecipe": "mods/JEITweaker/API/Recipe/JeiRecipe.md",
+            "JeiRecipeGraphics": "mods/JEITweaker/API/Recipe/JeiRecipeGraphics.md"
+          }
+        }
+      }
+    }
+  }
+}
