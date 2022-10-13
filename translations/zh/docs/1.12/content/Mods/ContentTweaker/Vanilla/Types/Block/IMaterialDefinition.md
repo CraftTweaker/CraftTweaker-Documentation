@@ -1,0 +1,37 @@
+# IMaterialDefinition
+
+An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
+
+# 导入相关包
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockMaterial;`
+
+
+## Calling an IMaterialDefinition object
+You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
+`<blockmaterial:wood>`
+
+## 不带参数的 ZenGetters/ZenMethods
+
+| ZenGetter             | ZenMethod           | 返回值类型                                                                  |
+| --------------------- | ------------------- | ---------------------------------------------------------------------- |
+| blocksLight           | blocksLight()       | bool                                                                   |
+| blocksMovement #是否可移动 | blocksMovement()    | bool                                                                   |
+| canBurn               | getCanBurn()        | bool                                                                   |
+| mobilityFlag          | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
+| liquid                | isLiquid()          | bool                                                                   |
+| opaque                | isOpaque()          | bool                                                                   |
+| replaceable           | isReplaceable()     | bool                                                                   |
+| solid                 | isSolid()           | bool                                                                   |
+| toolNotRequired       | isToolNotRequired() | bool                                                                   |
+
+
+
+## Compare two BlockMaterials
+
+You can use the `==` operator to see if two MaterialDefinitions are equal
+
+```zenscript
+if(materialA == materialB)
+    print("success!");
+```
