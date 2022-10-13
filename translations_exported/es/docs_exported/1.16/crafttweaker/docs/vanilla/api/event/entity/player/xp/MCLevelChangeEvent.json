@@ -1,0 +1,9 @@
+{
+    "path": "vanilla/api/event/entity/player/xp/MCLevelChangeEvent.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.event.entity.player.xp.MCPlayerXPEvent",
+    "searchTerms": [
+        "crafttweaker.api.event.entity.player.xp.MCPlayerXPEvent",
+        "levels"
+    ]
+}
