@@ -1,0 +1,10 @@
+{
+    "path": "mods/JEITweaker/API/Category/OutputList.md",
+    "ownerModId": "jeitweaker",
+    "zenCodeName": "mods.jei.category.SimpleJeiCategory",
+    "since": "1.1.0",
+    "searchTerms": [
+        "mods.jei.category.SimpleJeiCategory",
+        "rows"
+    ]
+}
