@@ -1,0 +1,12 @@
+{
+    "path": "mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md",
+    "ownerModId": "contenttweaker",
+    "zenCodeName": "Mods.contenttweaker.block.BlockTypeBuilder",
+    "searchTerms": [
+        "withTopTexture",
+        "withBottomTexture",
+        "build",
+        "Mods.contenttweaker.block.BlockTypeBuilder",
+        "withSidesTexture"
+    ]
+}
