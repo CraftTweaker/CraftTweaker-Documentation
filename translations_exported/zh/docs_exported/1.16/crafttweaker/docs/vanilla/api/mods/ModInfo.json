@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/mods/ModInfo.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.mods.ModInfo",
+    "searchTerms": [
+        "blocks",
+        "displayName",
+        "命名空间",
+        "实体类型",
+        "items",
+        "version",
+        "modid",
+        "fluids"
+    ]
+}
