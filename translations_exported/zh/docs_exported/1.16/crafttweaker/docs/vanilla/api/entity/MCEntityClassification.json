@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/entity/MCEntityClassification.md",
+    "ownerModId": "crafttweaker",
+    "zenCodeName": "crafttweaker.api.entity.MCEntityClassification",
+    "searchTerms": [
+        "isPeaceful #友好生物",
+        "WATER_CREATURE",
+        "WATER_AMBIENT",
+        "maxNumberOfEntity #实体最大值",
+        "getName",
+        "AMBIENT",
+        "getMaxNumberOfCreature",
+        "MISC",
+        "commandString #命令字符串",
+        "isAnimal #识别为动物",
+        "getCommandString",
+        "CREATURE",
+        "name（名称）",
+        "isPeacefulCreature",
+        "MONSTER"
+    ]
+}
