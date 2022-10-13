@@ -1,0 +1,35 @@
+# Heat Frame Cooling
+
+Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
+
+## 导入
+
+You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
+
+## 移除配方
+
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
+
+```zenscript
+mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
+// Example
+mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
+```
+
+This function removes *all* Heat Frame Cooling recipes:
+
+```zenscript
+mods.pneumaticcraft.heatframecooling.removeAllRecipes();
+```
+
+## 添加
+
+These functions are used to add new recipes for the Heat Frame Cooling system:
+
+```zenscript
+mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);
+mods.pneumaticcraft.heatframecooling.addRecipe(IOreDictEntry input, IItemStack output);
+
+// Example
+mods.pneumaticcraft.heatframecooling.addRecipe(<minecraft:slime_ball>, <minecraft:snow_ball>);
+```
