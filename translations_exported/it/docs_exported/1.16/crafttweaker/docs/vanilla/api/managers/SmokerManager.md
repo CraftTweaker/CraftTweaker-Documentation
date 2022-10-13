@@ -1,0 +1,319 @@
+# SmokerManager
+
+
+
+## Importare la Classe
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.SmokerManager;
+```
+
+
+## Interfacce Implementate
+SmokerManager implements the following interfaces. That means all methods defined in these interfaces are also available in SmokerManager
+
+- [ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
+
+## Metodi
+
+:::group{name=addJSONRecipe}
+
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.addJSONRecipe(name as string, data as IData) as void
+
+smoker.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+```
+
+| Parametro | Tipo                             | Descrizione                     |
+| --------- | -------------------------------- | ------------------------------- |
+| nome      | string                           | name of the recipe              |
+| data      | [IData](/vanilla/api/data/IData) | data representing the json file |
+
+
+:::
+
+:::group{name=addRecipe}
+
+Adds a recipe based on given params.
+
+ Note: A `cookTime` of `0` will cause the recipe to never complete, it will burn and use fuel, but no progress will be made on the recipe, it needs to be at-least `1` or more.
+
+ Saying that, if you would like to make a recipe that will never complete (for example being able to give the player an infinitely burning furnace for whatever reason), you can still use a `cookTime` of `0`.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+
+smoker.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:items:minecraft:wool>, 1.0, 30);
+```
+
+| Parametro | Tipo                                          | Descrizione                     |
+| --------- | --------------------------------------------- | ------------------------------- |
+| nome      | string                                        | Name of the new recipe          |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
+| xp        | float                                         | how much xp the player gets     |
+| cookTime  | int                                           | how long it takes to cook       |
+
+
+:::
+
+:::group{name=getAllRecipes}
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+// SmokerManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+
+smoker.getAllRecipes();
+```
+
+:::
+
+:::group{name=getRecipeByName}
+
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+SmokerManager.getRecipeByName(name as string) as WrapperRecipe
+```
+
+| Parametro | Tipo   | Descrizione             |
+| --------- | ------ | ----------------------- |
+| nome      | string | No Description Provided |
+
+
+:::
+
+:::group{name=getRecipeMap}
+
+Returns a map of all known recipes.
+
+Returns: A Map of recipe name to recipe of all known recipes.  
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)]
+
+```zenscript
+// SmokerManager.getRecipeMap() as WrapperRecipe[MCResourceLocation]
+
+smoker.getRecipeMap();
+```
+
+:::
+
+:::group{name=getRecipesByOutput}
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+SmokerManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
+```
+
+| Parametro | Tipo                                          | Descrizione             |
+| --------- | --------------------------------------------- | ----------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
+
+:::
+
+:::group{name=removeAll}
+
+Remove all recipes in this registry
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeAll() as void
+
+smoker.removeAll();
+```
+
+:::
+
+:::group{name=removeByModid}
+
+Remove recipe based on Registry name modid
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeByModid(modid as string) as void
+
+smoker.removeByModid("minecraft");
+```
+
+| Parametro | Tipo   | Descrizione                    |
+| --------- | ------ | ------------------------------ |
+| modid     | string | modid of the recipes to remove |
+
+
+:::
+
+:::group{name=removeByModid}
+
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+
+smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
+```
+
+| Parametro | Tipo                                             | Descrizione                           |
+| --------- | ------------------------------------------------ | ------------------------------------- |
+| modid     | string                                           | modid of the recipes to remove        |
+| esclude   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
+
+
+:::
+
+:::group{name=removeByName}
+
+Remove recipe based on Registry name
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeByName(name as string) as void
+
+smoker.removeByName("minecraft:furnace");
+```
+
+| Parametro | Tipo   | Descrizione                       |
+| --------- | ------ | --------------------------------- |
+| nome      | string | registry name of recipe to remove |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Remove recipe based on regex.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeByRegex(regex as string) as void
+
+smoker.removeByRegex("\\d_\\d");
+```
+
+| Parametro | Tipo   | Descrizione            |
+| --------- | ------ | ---------------------- |
+| regex     | string | regex to match against |
+
+
+:::
+
+:::group{name=removeByRegex}
+
+Remove recipe based on regex with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeByRegex(regex as string, exclude as RecipeFilter) as void
+
+smoker.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wool";});
+```
+
+| Parametro | Tipo                                             | Descrizione             |
+| --------- | ------------------------------------------------ | ----------------------- |
+| regex     | string                                           | regex to match against  |
+| esclude   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | No Description Provided |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Remove a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeRecipe(output as IIngredient) as void
+
+smoker.removeRecipe(<tag:items:minecraft:wool>);
+```
+
+| Parametro | Tipo                                          | Descrizione          |
+| --------- | --------------------------------------------- | -------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeRecipe(output as IItemStack) as void
+
+smoker.removeRecipe(<item:minecraft:glass>);
+```
+
+| Parametro | Tipo                                        | Descrizione          |
+| --------- | ------------------------------------------- | -------------------- |
+| output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+
+
+:::
+
+:::group{name=removeRecipe}
+
+Removes a recipe based on it's output and input.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+
+smoker.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
+```
+
+| Parametro | Tipo                                          | Descrizione                          |
+| --------- | --------------------------------------------- | ------------------------------------ |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+
+
+:::
+
+:::group{name=removeRecipeByInput}
+
+Removes all recipes who's input contains the given IItemStack.
+
+Return Type: void
+
+```zenscript
+// SmokerManager.removeRecipeByInput(input as IItemStack) as void
+
+smoker.removeRecipeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Parametro | Tipo                                        | Descrizione           |
+| --------- | ------------------------------------------- | --------------------- |
+| input     | [IItemStack](/vanilla/api/items/IItemStack) | The input IItemStack. |
+
+
+:::
+
+
+## Proprietà
+
+| Nome       | Tipo                                                                                                           | Ha Getter | Ha Setter | Descrizione                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------- | --------- | --------- | ----------------------------------- |
+| allRecipes | stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;                              | sì        | no        | No Description Provided             |
+| recipeMap  | [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)[[MCResourceLocation](/vanilla/api/util/MCResourceLocation)] | sì        | no        | Returns a map of all known recipes. |
+
