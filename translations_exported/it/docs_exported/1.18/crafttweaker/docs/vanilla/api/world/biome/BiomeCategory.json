@@ -1,0 +1,28 @@
+{
+    "path": "vanilla/api/world/biome/BiomeCategory.md",
+    "zenCodeName": "crafttweaker.api.world.biome.BiomeCategory",
+    "searchTerms": [
+        "<constant:minecraft:world/biome/category:theend>",
+        "<constant:minecraft:world/biome/category:plains>",
+        "<constant:minecraft:world/biome/category:jungle>",
+        "<constant:minecraft:world/biome/category:icy>",
+        "getName",
+        "<constant:minecraft:world/biome/category:forest>",
+        "<constant:minecraft:world/biome/category:nether>",
+        "<constant:minecraft:world/biome/category:underground>",
+        "<constant:minecraft:world/biome/category:desert>",
+        "<constant:minecraft:world/biome/category:taiga>",
+        "<constant:minecraft:world/biome/category:savanna>",
+        "<constant:minecraft:world/biome/category:river>",
+        "<constant:minecraft:world/biome/category:mountain>",
+        "nome",
+        "<constant:minecraft:world/biome/category:ocean>",
+        "<constant:minecraft:world/biome/category:extreme_hills>",
+        "<constant:minecraft:world/biome/category:none>",
+        "<constant:minecraft:world/biome/category:swamp>",
+        "<constant:minecraft:world/biome/category:mesa>",
+        "<constant:minecraft:world/biome/category:mushroom>",
+        "crafttweaker.api.util.StringRepresentable",
+        "<constant:minecraft:world/biome/category:beach>"
+    ]
+}
