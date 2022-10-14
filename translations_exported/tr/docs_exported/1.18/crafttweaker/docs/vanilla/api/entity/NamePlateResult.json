@@ -1,0 +1,14 @@
+{
+    "path": "vanilla/api/entity/NamePlateResult.md",
+    "zenCodeName": "crafttweaker.api.entity.NamePlateResult",
+    "searchTerms": [
+        "alwaysRender",
+        "noRender",
+        "setContent",
+        "getContent",
+        "getOriginalContent",
+        "setDefault",
+        "content",
+        "originalContent"
+    ]
+}
