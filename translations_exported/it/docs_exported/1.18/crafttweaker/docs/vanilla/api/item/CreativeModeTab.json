@@ -1,0 +1,32 @@
+{
+    "path": "vanilla/api/item/CreativeModeTab.md",
+    "zenCodeName": "crafttweaker.api.item.CreativeModeTab",
+    "searchTerms": [
+        "fillItemList",
+        "enchantmentCategories",
+        "displayName",
+        "getId",
+        "commandString",
+        "setRecipeFolderName",
+        "hideScroll",
+        "iconItem",
+        "getColumn",
+        "setBackgroundSuffix",
+        "id",
+        "setEnchantmentCategories",
+        "isAlignedRight",
+        "isTopRow",
+        "getEnchantmentCategories",
+        "column",
+        "recipeFolderName",
+        "getBackgroundSuffix",
+        "backgroundSuffic",
+        "hideTitle",
+        "getDisplayName",
+        "showTitle",
+        "getRecipeFolderName",
+        "getIconItem",
+        "canScroll",
+        "hasEnchantmentCategory"
+    ]
+}
