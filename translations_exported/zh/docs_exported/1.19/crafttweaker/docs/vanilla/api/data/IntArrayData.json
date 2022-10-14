@@ -1,0 +1,26 @@
+{
+    "path": "vanilla/api/data/IntArrayData.md",
+    "zenCodeName": "craftminstruer.api.data.IntArrayData",
+    "searchTerms": [
+        "add #添加",
+        "asByte",
+        "crafttweaker.api.data.IData",
+        "keys",
+        "asBool",
+        "asMap #作为地图数据",
+        "isEmpty #是否为空",
+        "getAsString",
+        "getId #获取id\n",
+        "getKeys",
+        "asFloat",
+        "remove #移除",
+        "asLong",
+        "asInt",
+        "setAt",
+        "asShort",
+        "merge #合并",
+        "asDouble",
+        "asString #作为字符串",
+        "map"
+    ]
+}
