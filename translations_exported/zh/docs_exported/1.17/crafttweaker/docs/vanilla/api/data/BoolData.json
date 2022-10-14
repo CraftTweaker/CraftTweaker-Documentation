@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/data/BoolData.md",
+    "zenCodeName": "crafttweaker.api.data.BoolData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "contains #容器",
+        "asCollection",
+        "asMap #作为地图数据",
+        "getByteData",
+        "getId #获取id\n",
+        "asString #作为字符串",
+        "getString #获取字符串",
+        "asList #作为列表",
+        "asBoolean"
+    ]
+}
