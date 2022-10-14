@@ -1,0 +1,25 @@
+{
+    "path": "vanilla/api/data/ICollectionData.md",
+    "zenCodeName": "crafttweaker.api.data.ICollectionData",
+    "searchTerms": [
+        "add",
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "getFromMembers",
+        "asMap",
+        "asNumber",
+        "clear",
+        "isEmpty",
+        "getId",
+        "getString",
+        "asList",
+        "remove",
+        "empty",
+        "setAt",
+        "contains",
+        "getAt",
+        "size",
+        "asString",
+        "asBoolean"
+    ]
+}
