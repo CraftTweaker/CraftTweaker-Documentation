@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/loot/LootTable.md",
+    "zenCodeName": "crafttweaker.api.loot.LootTable",
+    "searchTerms": [
+        "paramSet",
+        "getParamSet",
+        "getRandomItems",
+        "fill",
+        "getRandomItemsRaw"
+    ]
+}
