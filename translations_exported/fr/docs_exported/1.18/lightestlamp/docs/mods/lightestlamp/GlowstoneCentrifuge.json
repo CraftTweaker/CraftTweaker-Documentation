@@ -1,0 +1,21 @@
+{
+    "path": "mods/lightestlamp/GlowstoneCentrifuge.md",
+    "zenCodeName": "lightestlamp.GlowstoneCentrifuge",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "addCentrifugable",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
