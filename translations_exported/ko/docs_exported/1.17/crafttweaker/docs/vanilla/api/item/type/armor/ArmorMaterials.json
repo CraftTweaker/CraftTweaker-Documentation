@@ -1,0 +1,14 @@
+{
+    "path": "vanilla/api/item/type/armor/ArmorMaterials.md",
+    "zenCodeName": "crafttweaker.api.item.type.armor.ArmorMaterials",
+    "searchTerms": [
+        "CHAIN",
+        "GOLD",
+        "NETHERITE",
+        "DIAMOND",
+        "TURTLE",
+        "LEATHER",
+        "IRON",
+        "crafttweaker.api.item.type.armor.ArmorMaterial"
+    ]
+}
