@@ -1,0 +1,24 @@
+{
+    "path": "vanilla/api/advancement/Advancement.md",
+    "zenCodeName": "crafttweaker.api.advancement.Advancement",
+    "searchTerms": [
+        "parent",
+        "getCriteria",
+        "requirements",
+        "getParent",
+        "chatComponent",
+        "getRequirements",
+        "criteria",
+        "display",
+        "getChatComponent",
+        "getRewards",
+        "getId #获取id\n",
+        "getMaxCriteriaRequired",
+        "maxCriteriaRequired",
+        "getChildren",
+        "children",
+        "id",
+        "rewards",
+        "getDisplay"
+    ]
+}
