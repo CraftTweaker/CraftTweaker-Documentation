@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/world/BaseSpawner.md",
+    "zenCodeName": "crafttweaker.api.world.BaseSpawner",
+    "searchTerms": [
+        "oSpin",
+        "getOrCreateDisplayEntity",
+        "spin",
+        "setEntityId",
+        "entityId",
+        "getSpin",
+        "getoSpin"
+    ]
+}
