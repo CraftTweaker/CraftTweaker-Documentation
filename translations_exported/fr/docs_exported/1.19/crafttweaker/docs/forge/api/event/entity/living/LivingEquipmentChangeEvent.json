@@ -1,0 +1,13 @@
+{
+    "path": "forge/api/event/entity/living/LivingEquipmentChangeEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "getSlot",
+        "from",
+        "getTo",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "slot",
+        "to",
+        "getFrom"
+    ]
+}
