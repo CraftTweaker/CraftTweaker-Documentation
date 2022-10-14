@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/world/biome/Biome.md",
+    "zenCodeName": "crafttweaker.api.world.biome.Biome",
+    "searchTerms": [
+        "shouldFreeze",
+        "doesSnow",
+        "waterFogColor",
+        "isHumid",
+        "scale",
+        "downfall",
+        "rainType",
+        "commandString #命令字符串",
+        "registryName",
+        "shouldSnow",
+        "biomeCategory",
+        "doesRain",
+        "waterColor",
+        "depth",
+        "getTemperature"
+    ]
+}
