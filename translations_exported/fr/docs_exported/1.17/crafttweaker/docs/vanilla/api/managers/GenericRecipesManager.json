@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/managers/GenericRecipesManager.md",
+    "zenCodeName": "crafttweaker.api.GenericRecipesManager",
+    "searchTerms": [
+        "removeRecipe",
+        "getRecipeByName",
+        "addJsonRecipe",
+        "INSTANCE",
+        "allRecipes",
+        "Retirer par Modid",
+        "recipeMap",
+        "allManagers",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "getAllManagers",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
