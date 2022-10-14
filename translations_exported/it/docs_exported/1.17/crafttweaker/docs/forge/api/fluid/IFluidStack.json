@@ -1,0 +1,22 @@
+{
+    "path": "forge/api/fluid/IFluidStack.md",
+    "zenCodeName": "crafttweaker.api.fluid.IFluidStack",
+    "searchTerms": [
+        "amount",
+        "hasTag",
+        "commandString",
+        "registryName",
+        "getTag",
+        "empty",
+        "withTag",
+        "containsOther",
+        "crafttweaker.api.bracket.CommandStringDisplayable",
+        "isImmutable",
+        "asImmutable",
+        "mutable",
+        "fluid",
+        "tag",
+        "copy",
+        "setAmount"
+    ]
+}
