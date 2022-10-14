@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/event/entity/living/use/LivingEntityUseItemEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "duration",
+        "setDuration",
+        "item",
+        "getDuration",
+        "getItem",
+        "crafttweaker.api.event.entity.LivingEvent"
+    ]
+}
