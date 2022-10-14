@@ -1,0 +1,9 @@
+{
+    "path": "vanilla/api/world/ExplosionBlockInteraction.md",
+    "zenCodeName": "crafttweaker.api.world.ExplosionBlockInteraction",
+    "searchTerms": [
+        "<constant:minecraft:explosion/blockinteraction:destroy>",
+        "<constant:minecraft:explosion/blockinteraction:none>",
+        "<constant:minecraft:explosion/blockinteraction:break>"
+    ]
+}
