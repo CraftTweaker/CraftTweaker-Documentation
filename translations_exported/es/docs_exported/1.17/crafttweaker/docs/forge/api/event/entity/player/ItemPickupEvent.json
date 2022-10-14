@@ -1,0 +1,11 @@
+{
+    "path": "forge/api/event/entity/player/ItemPickupEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "stack",
+        "getOriginalEntity",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "originalEntity",
+        "getStack"
+    ]
+}
