@@ -1,0 +1,16 @@
+{
+    "path": "vanilla/api/resource/ResourceLocation.md",
+    "zenCodeName": "crafttweaker.api.resource.ResourceLocation",
+    "searchTerms": [
+        "path",
+        "getNamespace",
+        "hashCode",
+        "asData",
+        "equals",
+        "名前空間",
+        "getPath",
+        "toString",
+        "compareTo",
+        "commandString"
+    ]
+}
