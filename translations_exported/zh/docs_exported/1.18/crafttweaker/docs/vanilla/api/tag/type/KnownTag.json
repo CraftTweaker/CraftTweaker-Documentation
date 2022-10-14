@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/tag/type/KnownTag.md",
+    "zenCodeName": "crafttweaker.api.tag.type.KnownTag",
+    "searchTerms": [
+        "add #添加",
+        "manager",
+        "idElements",
+        "clear #清除",
+        "asTagWithAmount",
+        "remove #移除",
+        "removeId",
+        "contains #容器",
+        "crafttweaker.api.tag.MCTag",
+        "elements",
+        "equals #等于",
+        "exists",
+        "addId",
+        "withAmount",
+        "id"
+    ]
+}
