@@ -1,0 +1,21 @@
+{
+    "path": "mods/immersiveengineering/Fertilizer.md",
+    "zenCodeName": "mods.immersiveengineering.Fertilizer",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "removeByModid",
+        "remove #移除",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeFertilizer",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex",
+        "addFertilizer"
+    ]
+}
