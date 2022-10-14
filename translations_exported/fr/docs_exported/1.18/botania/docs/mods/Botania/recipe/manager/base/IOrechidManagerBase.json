@@ -1,0 +1,20 @@
+{
+    "path": "mods/Botania/recipe/manager/base/IOrechidManagerBase.md",
+    "zenCodeName": "mods.botania.recipe.manager.base.IOrechidManagerBase",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "registerOreWeight",
+        "removeByRegex"
+    ]
+}
