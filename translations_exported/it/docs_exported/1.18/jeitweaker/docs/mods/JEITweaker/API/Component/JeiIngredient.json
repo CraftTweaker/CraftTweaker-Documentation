@@ -1,0 +1,10 @@
+{
+    "path": "mods/JEITweaker/API/Component/JeiIngredient.md",
+    "zenCodeName": "mods.jei.component.JeiIngredient",
+    "since": "1.1.0",
+    "searchTerms": [
+        "crafttweaker.api.bracket.CommandStringDisplayable",
+        "getCommandString",
+        "commandString"
+    ]
+}
