@@ -1,0 +1,11 @@
+{
+    "path": "mods/createtweaker/FluidIngredient.md",
+    "zenCodeName": "mods.createtweaker.FluidIngredient",
+    "searchTerms": [
+        "test",
+        "matchingFluidStacks",
+        "requiredAmount",
+        "getRequiredAmount",
+        "getMatchingFluidStacks"
+    ]
+}
