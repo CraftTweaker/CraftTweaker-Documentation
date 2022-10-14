@@ -1,0 +1,18 @@
+{
+    "path": "vanilla/api/tag/MCTag.md",
+    "zenCodeName": "crafttweaker.api.tag.MCTag",
+    "searchTerms": [
+        "add #添加",
+        "contains #容器",
+        "addTags",
+        "manager",
+        "crafttweaker.api.bracket.CommandStringDisplayable",
+        "elements",
+        "getElements",
+        "exists",
+        "withAmount",
+        "id",
+        "asTagWithAmount",
+        "remove #移除"
+    ]
+}
