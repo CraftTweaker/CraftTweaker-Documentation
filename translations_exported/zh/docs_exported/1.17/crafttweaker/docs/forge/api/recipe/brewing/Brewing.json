@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/recipe/brewing/Brewing.md",
+    "zenCodeName": "crafttweaker.api.recipe/Brewing",
+    "searchTerms": [
+        "删除合成表",
+        "addRecipe #添加合成表",
+        "removeRecipeByInputPotion",
+        "removeRecipeByInput",
+        "removeRecipeByOutputPotion",
+        "removeRecipeByReagent"
+    ]
+}
