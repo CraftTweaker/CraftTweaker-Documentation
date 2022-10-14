@@ -1,0 +1,32 @@
+# EntityHasScoreLootCondition
+
+## Importare la Classe
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.loot.condition.EntityHasScoreLootCondition;
+```
+
+
+## Interfacce Implementate
+EntityHasScoreLootCondition implements the following interfaces. That means all methods defined in these interfaces are also available in EntityHasScoreLootCondition
+
+- [LootCondition](/vanilla/api/loot/condition/LootCondition)
+
+## Static Methods
+
+:::group{name=create}
+
+Return Type: [EntityHasScoreLootConditionBuilder](/vanilla/api/loot/condition/builder/EntityHasScoreLootConditionBuilder)
+
+```zenscript
+EntityHasScoreLootCondition.create(target as EntityTarget) as EntityHasScoreLootConditionBuilder
+```
+
+| Parametro | Tipo                                           | Descrizione             |
+| --------- | ---------------------------------------------- | ----------------------- |
+| target    | [EntityTarget](/vanilla/api/loot/EntityTarget) | No Description Provided |
+
+
+:::
+
