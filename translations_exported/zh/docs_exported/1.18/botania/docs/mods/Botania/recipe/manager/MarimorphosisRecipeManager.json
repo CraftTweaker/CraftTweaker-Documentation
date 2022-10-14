@@ -1,0 +1,21 @@
+{
+    "path": "mods/Botania/recipe/manager/MarimorphosisRecipeManager.md",
+    "zenCodeName": "mods.botania.recipe.manager.MarimorphosisRecipeManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "removeByModid",
+        "remove #移除",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "registerOreWeight",
+        "removeByRegex"
+    ]
+}
