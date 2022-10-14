@@ -1,0 +1,24 @@
+{
+    "path": "vanilla/api/recipe/Replacer.md",
+    "zenCodeName": "crafttweaker.api.recipe.Replacer",
+    "searchTerms": [
+        "forAllTypes",
+        "forRegexRecipes",
+        "useForRenaming",
+        "replace",
+        "forEverything",
+        "suppressWarnings",
+        "forOutput",
+        "replaceFully",
+        "forMods",
+        "execute",
+        "forRecipes",
+        "forAllTypesExcluding",
+        "excluding",
+        "explicitlyRename",
+        "excludingMods",
+        "forCustomRecipeSet",
+        "forTypes",
+        "forRegexTypes"
+    ]
+}
