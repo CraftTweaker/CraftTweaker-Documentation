@@ -1,0 +1,14 @@
+{
+    "path": "vanilla/api/entity/attribute/AttributeInstance.md",
+    "zenCodeName": "crafttweaker.api.entity.attribute.AttributeInstance",
+    "searchTerms": [
+        "baseValue",
+        "hasModifier",
+        "addPermanentModifier",
+        "getModifier",
+        "modifiers",
+        "addTransientModifier",
+        "valore",
+        "removeModifier"
+    ]
+}
