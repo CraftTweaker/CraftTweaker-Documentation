@@ -1,0 +1,13 @@
+{
+    "path": "mods/zensummoning/MobInfo.md",
+    "zenCodeName": "mods.zensummoning.MobInfo",
+    "searchTerms": [
+        "mergeData",
+        "setData",
+        "setOffset",
+        "create",
+        "setMob",
+        "setSpread",
+        "setCount"
+    ]
+}
