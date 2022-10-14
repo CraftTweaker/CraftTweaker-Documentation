@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/villager/VillagerProfession.md",
+    "zenCodeName": "crafttweaker.api.villager.VillagerProfession",
+    "searchTerms": [
+        "getName",
+        "name（名称）",
+        "secondaryPoi",
+        "getRequestedItems",
+        "workSound",
+        "getWorkSound",
+        "requestedItems",
+        "commandString #命令字符串",
+        "getSecondaryPoi"
+    ]
+}
