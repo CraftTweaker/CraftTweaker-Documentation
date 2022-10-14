@@ -1,0 +1,22 @@
+{
+    "path": "mods/immersiveengineering/BlastFurnaceFuel.md",
+    "zenCodeName": "mods.immersiveengineering.BlastFurnaceFuel",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "removeFuel",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "addFuel",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
