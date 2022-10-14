@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/entity/EntityStruckByLightningEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.EntityEvent",
+    "searchTerms": [
+        "lightning",
+        "crafttweaker.api.event.entity.EntityEvent",
+        "getLightning"
+    ]
+}
