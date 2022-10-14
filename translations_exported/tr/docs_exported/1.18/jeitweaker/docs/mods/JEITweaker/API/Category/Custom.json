@@ -1,0 +1,14 @@
+{
+    "path": "mods/JEITweaker/API/Category/Custom.md",
+    "zenCodeName": "mods.jei.category.SimpleJeiCategory",
+    "since": "1.1.0",
+    "searchTerms": [
+        "mods.jei.category.SimpleJeiCategory",
+        "addDrawable",
+        "background",
+        "addSlot",
+        "addText",
+        "canHaveShapelessMarker",
+        "addTooltip"
+    ]
+}
