@@ -1,0 +1,21 @@
+{
+    "path": "mods/immersiveengineering/CokeOven.md",
+    "zenCodeName": "mods.immersiveengineering.CokeOven",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
