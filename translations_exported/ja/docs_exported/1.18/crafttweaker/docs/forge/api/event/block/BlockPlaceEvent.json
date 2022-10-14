@@ -1,0 +1,15 @@
+{
+    "path": "forge/api/event/block/BlockPlaceEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "crafttweaker.api.event.block.BlockEvent",
+        "getPlacedAgainst",
+        "replacedBlock",
+        "placedBlock",
+        "getPlacedBlock",
+        "placedAgainst",
+        "getEntity",
+        "getReplacedBlock",
+        "entity"
+    ]
+}
