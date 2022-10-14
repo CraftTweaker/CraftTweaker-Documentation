@@ -1,0 +1,25 @@
+{
+    "path": "vanilla/api/entity/MobCategory.md",
+    "zenCodeName": "crafttweaker.api.entity.MobCategory",
+    "searchTerms": [
+        "WATER_CREATURE",
+        "WATER_AMBIENT",
+        "getName",
+        "AMBIENT",
+        "despawnDistance",
+        "friendly",
+        "MISC",
+        "maxInstancesPerChunk",
+        "UNDERGROUND_WATER_CREATURE",
+        "isFriendly",
+        "getDespawnDistance",
+        "getMaxInstancesPerChunk",
+        "getNoDespawnDistance",
+        "noDespawnDistance",
+        "isPersistent",
+        "CREATURE",
+        "MONSTER",
+        "persistent",
+        "crafttweaker.api.util.StringRepresentable"
+    ]
+}
