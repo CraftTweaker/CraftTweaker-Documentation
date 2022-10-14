@@ -1,0 +1,17 @@
+{
+    "path": "forge/api/event/living/LivingDropsEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "removeDrop",
+        "setDrops",
+        "drops",
+        "addDrop",
+        "getLootingLevel",
+        "getSource",
+        "lootingLevel",
+        "getDrops",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "来源",
+        "isRecentlyHit"
+    ]
+}
