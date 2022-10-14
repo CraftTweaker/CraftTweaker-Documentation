@@ -1,0 +1,19 @@
+{
+    "path": "vanilla/api/recipe/manager/RecipeManagerWrapper.md",
+    "zenCodeName": "crafttweaker.api.recipe.RecipeManagerWrapper",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "removeByModid",
+        "remove #移除",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
