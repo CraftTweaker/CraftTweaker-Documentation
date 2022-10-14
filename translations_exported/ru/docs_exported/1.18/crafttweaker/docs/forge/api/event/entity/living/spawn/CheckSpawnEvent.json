@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/event/entity/living/spawn/CheckSpawnEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.living.spawn.LivingSpawnEvent",
+    "searchTerms": [
+        "spawnReason",
+        "crafttweaker.api.event.entity.living.spawn.LivingSpawnEvent",
+        "spawner",
+        "isSpawner",
+        "getSpawner",
+        "getSpawnReason"
+    ]
+}
