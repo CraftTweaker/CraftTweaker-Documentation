@@ -1,0 +1,23 @@
+{
+    "path": "mods/createtweaker/SequencedAssemblyManager.md",
+    "zenCodeName": "mods.create.SequencedAssemblyManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "registerRecipe",
+        "constructeur",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
