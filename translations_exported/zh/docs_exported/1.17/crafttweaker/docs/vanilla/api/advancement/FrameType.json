@@ -1,0 +1,17 @@
+{
+    "path": "vanilla/api/advancement/FrameType.md",
+    "zenCodeName": "crafttweaker.api.advancement.FrameType",
+    "searchTerms": [
+        "CHALLENGE",
+        "TASK",
+        "GOAL",
+        "getName",
+        "getChatColor",
+        "getDisplayName",
+        "displayName",
+        "texture",
+        "name（名称）",
+        "getTexture",
+        "chatColor"
+    ]
+}
