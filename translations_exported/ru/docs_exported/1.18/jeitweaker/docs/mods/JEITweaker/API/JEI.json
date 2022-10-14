@@ -1,0 +1,15 @@
+{
+    "path": "mods/JEITweaker/API/JEI.md",
+    "zenCodeName": "mods.jei.JEI",
+    "since": "1.0.0",
+    "searchTerms": [
+        "addDescription",
+        "hideRegex",
+        "hideCategory",
+        "hideMod",
+        "addIngredient",
+        "hideIngredient",
+        "hideRecipe",
+        "addCategory"
+    ]
+}
