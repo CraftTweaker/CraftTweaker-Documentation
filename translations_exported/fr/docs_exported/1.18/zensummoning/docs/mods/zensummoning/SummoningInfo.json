@@ -1,0 +1,15 @@
+{
+    "path": "mods/zensummoning/SummoningInfo.md",
+    "zenCodeName": "mods.zensummoning.SummoningInfo",
+    "searchTerms": [
+        "setCatalyst",
+        "setWeight",
+        "setSound",
+        "create",
+        "addMob",
+        "addCondition",
+        "setConsumeCatalyst",
+        "setReagents",
+        "setMutator"
+    ]
+}
