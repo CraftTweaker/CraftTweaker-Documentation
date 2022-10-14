@@ -1,0 +1,15 @@
+{
+    "path": "mods/Botania/Brew.md",
+    "zenCodeName": "mods.botania.Brew",
+    "searchTerms": [
+        "canInfuseBloodPendant",
+        "translationKey",
+        "getCommandString",
+        "getTranslationKey",
+        "getManaCost",
+        "getColor #获取颜色",
+        "getPotionEffects",
+        "manaCost",
+        "canInfuseIncense"
+    ]
+}
