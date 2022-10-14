@@ -1,0 +1,18 @@
+{
+    "path": "vanilla/api/block/material/Material.md",
+    "zenCodeName": "crafttweaker.api.block.material.Material",
+    "searchTerms": [
+        "isSolid #是否为固体",
+        "blocksMotion",
+        "isFlammable #是否为可燃物",
+        "isLiquid #是否为液体",
+        "isSolidBlocking",
+        "color",
+        "getCommandString",
+        "getColor #获取颜色",
+        "getPushReaction",
+        "isReplaceable #是否可替换",
+        "commandString #命令字符串",
+        "pushReaction"
+    ]
+}
