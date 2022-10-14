@@ -1,0 +1,21 @@
+{
+    "path": "mods/createtweaker/EmptyingManager.md",
+    "zenCodeName": "mods.create.EmptyingManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "registerRecipe",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
