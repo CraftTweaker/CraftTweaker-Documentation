@@ -1,0 +1,13 @@
+{
+    "path": "forge/api/event/entity/living/LivingExperienceDropEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "getOriginalExperiencePoints",
+        "getDroppedExperience",
+        "originalExperiencePoints",
+        "attackingPlayer",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "droppedExperience",
+        "getAttackingPlayer"
+    ]
+}
