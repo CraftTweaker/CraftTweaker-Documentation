@@ -1,0 +1,11 @@
+{
+    "path": "vanilla/api/block/material/PushReaction.md",
+    "zenCodeName": "crafttweaker.api.block.material.PushReaction",
+    "searchTerms": [
+        "DESTROY",
+        "BLOCK",
+        "PUSH_ONLY",
+        "IGNORE",
+        "NORMAL"
+    ]
+}
