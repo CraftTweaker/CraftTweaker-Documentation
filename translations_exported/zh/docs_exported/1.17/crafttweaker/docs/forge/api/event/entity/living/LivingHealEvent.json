@@ -1,0 +1,10 @@
+{
+    "path": "forge/api/event/entity/living/LivingHealEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "amount",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "setAmount",
+        "getAmount"
+    ]
+}
