@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/recipe/manager/StoneCutterManager.md",
+    "zenCodeName": "crafttweaker.api.recipe.StoneCutterManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "INSTANCE",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
