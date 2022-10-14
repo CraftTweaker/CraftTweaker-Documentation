@@ -1,0 +1,21 @@
+{
+    "path": "mods/Botania/recipe/manager/OrechidRecipeManager.md",
+    "zenCodeName": "mods.botania.recipe.manager.OrechidRecipeManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "removeByModid",
+        "remove",
+        "mods.botania.recipe.manager.base.IOrechidManagerBase",
+        "recipeMap",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "registerOreWeight",
+        "removeByRegex"
+    ]
+}
