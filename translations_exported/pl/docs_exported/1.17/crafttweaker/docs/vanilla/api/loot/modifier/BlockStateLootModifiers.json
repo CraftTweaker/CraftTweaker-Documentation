@@ -1,0 +1,8 @@
+{
+    "path": "vanilla/api/loot/modifier/BlockStateLootModifiers.md",
+    "searchTerms": [
+        "addBlockLootModifier",
+        "addTargetedLootModifier",
+        "addToolLootModifier"
+    ]
+}
