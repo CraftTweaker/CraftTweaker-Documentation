@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/entity/LivingEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.EntityEvent",
+    "searchTerms": [
+        "entityLiving",
+        "crafttweaker.api.event.entity.EntityEvent",
+        "getEntityLiving"
+    ]
+}
