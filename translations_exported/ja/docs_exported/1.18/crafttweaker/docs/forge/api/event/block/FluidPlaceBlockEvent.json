@@ -1,0 +1,14 @@
+{
+    "path": "forge/api/event/block/FluidPlaceBlockEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "getFluidPos",
+        "setNewState",
+        "crafttweaker.api.event.block.BlockEvent",
+        "originalState",
+        "fluidPos",
+        "getOriginalState",
+        "newState",
+        "getNewState"
+    ]
+}
