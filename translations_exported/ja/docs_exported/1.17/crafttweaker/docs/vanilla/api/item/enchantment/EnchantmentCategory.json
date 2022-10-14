@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/item/enchantment/EnchantmentCategory.md",
+    "zenCodeName": "crafttweaker.api.item.enchantment.EnchantmentCategory",
+    "searchTerms": [
+        "ARMOR_HEAD",
+        "BREAKABLE",
+        "ARMOR",
+        "ARMOR_LEGS",
+        "FISHING_ROD",
+        "BOW",
+        "ARMOR_FEET",
+        "TRIDENT",
+        "VANISHABLE",
+        "canEnchant",
+        "ARMOR_CHEST",
+        "WEARABLE",
+        "WEAPON",
+        "DIGGER",
+        "CROSSBOW"
+    ]
+}
