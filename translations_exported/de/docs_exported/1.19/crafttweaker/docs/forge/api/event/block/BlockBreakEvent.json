@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/event/block/BlockBreakEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "getPlayer",
+        "crafttweaker.api.event.block.BlockEvent",
+        "getExpToDrop",
+        "expToDrop",
+        "setExpToDrop",
+        "player"
+    ]
+}
