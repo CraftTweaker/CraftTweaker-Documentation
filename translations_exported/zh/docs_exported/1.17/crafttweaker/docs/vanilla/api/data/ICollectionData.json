@@ -1,0 +1,25 @@
+{
+    "path": "vanilla/api/data/ICollectionData.md",
+    "zenCodeName": "crafttweaker.api.data.ICollectionData",
+    "searchTerms": [
+        "add #添加",
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "getFromMembers",
+        "asMap #作为地图数据",
+        "asNumber",
+        "clear #清除",
+        "isEmpty #是否为空",
+        "getId #获取id\n",
+        "getString #获取字符串",
+        "asList #作为列表",
+        "remove #移除",
+        "empty",
+        "setAt",
+        "contains #容器",
+        "getAt",
+        "size #大小",
+        "asString #作为字符串",
+        "asBoolean"
+    ]
+}
