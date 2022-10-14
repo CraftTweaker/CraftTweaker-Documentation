@@ -1,0 +1,10 @@
+{
+    "path": "vanilla/api/entity/equipment/EquipmentSlotType.md",
+    "zenCodeName": "crafttweaker.api.entity.equipment.EquipmentSlotType",
+    "searchTerms": [
+        "<constant:minecraft:equipmentslot/type:armor>",
+        "getCommandString",
+        "<constant:minecraft:equipmentslot/type:hand>",
+        "commandString #命令字符串"
+    ]
+}
