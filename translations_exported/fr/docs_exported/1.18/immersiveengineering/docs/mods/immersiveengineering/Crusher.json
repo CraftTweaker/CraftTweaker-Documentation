@@ -1,0 +1,21 @@
+{
+    "path": "mods/immersiveengineering/Crusher.md",
+    "zenCodeName": "mods.immersiveengineering.Crusher",
+    "searchTerms": [
+        "removeRecipe",
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
