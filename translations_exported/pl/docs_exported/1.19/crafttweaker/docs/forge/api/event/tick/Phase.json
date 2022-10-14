@@ -1,0 +1,8 @@
+{
+    "path": "forge/api/event/tick/Phase.md",
+    "zenCodeName": "crafttweaker.api.event.tick.Phase",
+    "searchTerms": [
+        "<constant:forge:event/tick/phase:start>",
+        "<constant:forge:event/tick/phase:end>"
+    ]
+}
