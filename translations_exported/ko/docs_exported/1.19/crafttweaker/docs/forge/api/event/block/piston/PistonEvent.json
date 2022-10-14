@@ -1,0 +1,15 @@
+{
+    "path": "forge/api/event/block/piston/PistonEvent.md",
+    "zenCodeName": "crafttweaker.api.event.block.BlockEvent",
+    "searchTerms": [
+        "pistonMoveType",
+        "structureHelper",
+        "getDirection",
+        "crafttweaker.api.event.block.BlockEvent",
+        "faceOffsetPos",
+        "getPistonMoveType",
+        "getFaceOffsetPos",
+        "direction",
+        "getStructureHelper"
+    ]
+}
