@@ -1,0 +1,18 @@
+{
+    "path": "vanilla/api/BracketDumpers.md",
+    "zenCodeName": "crafttweaker.api.BracketDumpers",
+    "searchTerms": [
+        "getCreativeModeTabBracketDump",
+        "getMaterialDump",
+        "getProfessionDump",
+        "getAttributeDump",
+        "getEntityTypeDump",
+        "getEffectDump",
+        "getPotionTypeDump",
+        "getEnchantmentDump",
+        "getItemBracketDump",
+        "getSoundEventDump",
+        "getBlockDump",
+        "getDamageSourceDump"
+    ]
+}
