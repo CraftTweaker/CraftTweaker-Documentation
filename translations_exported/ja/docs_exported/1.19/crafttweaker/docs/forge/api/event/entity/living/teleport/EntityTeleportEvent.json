@@ -1,0 +1,26 @@
+{
+    "path": "forge/api/event/entity/living/teleport/EntityTeleportEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.EntityEvent",
+    "searchTerms": [
+        "crafttweaker.api.event.entity.EntityEvent",
+        "targetZ",
+        "prev",
+        "targetY",
+        "targetX",
+        "setTargetY",
+        "setTargetZ",
+        "setTargetX",
+        "getPrevZ",
+        "getPrev",
+        "getPrevY",
+        "getTargetX",
+        "getTargetY",
+        "target",
+        "getTargetZ",
+        "getPrevX",
+        "getTarget",
+        "prevZ",
+        "prevY",
+        "prevX"
+    ]
+}
