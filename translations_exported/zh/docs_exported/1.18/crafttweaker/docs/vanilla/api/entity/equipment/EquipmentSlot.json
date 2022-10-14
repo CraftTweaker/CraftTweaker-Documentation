@@ -1,0 +1,20 @@
+{
+    "path": "vanilla/api/entity/equipment/EquipmentSlot.md",
+    "zenCodeName": "crafttweaker.api.entity.equipment.EquipmentSlot",
+    "searchTerms": [
+        "<constant:minecraft:equipmentslot:offhand>",
+        "<constant:minecraft:equipmentslot:legs>",
+        "getName",
+        "getIndex",
+        "<constant:minecraft:equipmentslot:head>",
+        "<constant:minecraft:equipmentslot:feet>",
+        "index",
+        "commandString #命令字符串",
+        "类型",
+        "getType",
+        "<constant:minecraft:equipmentslot:chest>",
+        "getCommandString",
+        "name（名称）",
+        "<constant:minecraft:equipmentslot:mainhand>"
+    ]
+}
