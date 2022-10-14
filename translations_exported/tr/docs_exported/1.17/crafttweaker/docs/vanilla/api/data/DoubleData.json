@@ -1,0 +1,21 @@
+{
+    "path": "vanilla/api/data/DoubleData.md",
+    "zenCodeName": "crafttweaker.api.data.DoubleData",
+    "searchTerms": [
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap",
+        "asNumber",
+        "getDouble",
+        "getId",
+        "getFloat",
+        "getString",
+        "asList",
+        "getLong",
+        "getInt",
+        "crafttweaker.api.data.INumberData",
+        "asString",
+        "asBoolean"
+    ]
+}
