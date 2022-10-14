@@ -1,0 +1,9 @@
+{
+    "path": "forge/api/event/entity/player/ItemSmeltedEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "getSmelted",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "smelted"
+    ]
+}
