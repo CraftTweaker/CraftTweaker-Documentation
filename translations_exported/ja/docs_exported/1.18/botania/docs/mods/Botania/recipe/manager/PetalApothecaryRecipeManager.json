@@ -1,0 +1,21 @@
+{
+    "path": "mods/Botania/recipe/manager/PetalApothecaryRecipeManager.md",
+    "zenCodeName": "mods.botania.recipe.manager.PetalApothecaryRecipeManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "removeByModid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "crafttweaker.api.recipe.IRecipeManager",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
