@@ -1,0 +1,30 @@
+{
+    "path": "vanilla/api/block/BlockState.md",
+    "zenCodeName": "crafttweaker.api.block.BlockState",
+    "searchTerms": [
+        "rotate",
+        "setHardness",
+        "isRandomlyTicking",
+        "withProperty",
+        "getProperties",
+        "getAllowedValuesForProperty",
+        "getDestroySpeed",
+        "getLightEmission",
+        "hasBlockEntity",
+        "commandString",
+        "hasProperty",
+        "canOcclude",
+        "lightEmission",
+        "getPropertyValue",
+        "destroySpeed",
+        "signalSource",
+        "propertyNames",
+        "getCommandString",
+        "getSoundType",
+        "getPropertyNames",
+        "block",
+        "isSignalSource",
+        "randomlyTicking",
+        "soundType"
+    ]
+}
