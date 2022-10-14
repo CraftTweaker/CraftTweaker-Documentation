@@ -1,0 +1,15 @@
+{
+    "path": "forge/api/event/entity/player/ItemTooltipEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.player.PlayerEvent",
+    "searchTerms": [
+        "itemStack",
+        "getPlayer",
+        "crafttweaker.api.event.entity.player.PlayerEvent",
+        "getToolTip",
+        "flags",
+        "tooltip",
+        "getItemStack",
+        "getFlags",
+        "player"
+    ]
+}
