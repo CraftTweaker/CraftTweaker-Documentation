@@ -1,0 +1,10 @@
+{
+    "path": "mods/JEITweaker/API/Recipe/JeiRecipeGraphics.md",
+    "zenCodeName": "mods.jei.recipe.JeiRecipeGraphics",
+    "since": "1.1.0",
+    "searchTerms": [
+        "setExtraComponent",
+        "addTooltip",
+        "showShapelessMarker"
+    ]
+}
