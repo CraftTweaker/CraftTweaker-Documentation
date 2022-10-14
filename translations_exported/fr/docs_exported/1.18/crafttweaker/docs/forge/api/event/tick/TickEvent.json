@@ -1,0 +1,21 @@
+{
+    "path": "forge/api/event/tick/TickEvent.md",
+    "zenCodeName": "crafttweaker.api.event.Event",
+    "searchTerms": [
+        "phase",
+        "server",
+        "side",
+        "isServer",
+        "Début",
+        "getSide",
+        "isClient",
+        "isStart",
+        "type",
+        "isEnd",
+        "crafttweaker.api.event.Event",
+        "getType",
+        "client",
+        "fin",
+        "getPhase"
+    ]
+}
