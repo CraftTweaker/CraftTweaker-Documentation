@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/data/INumberData.md",
+    "zenCodeName": "crafttweaker.api.data.INumberData",
+    "searchTerms": [
+        "crafttweaker.api.data.IData",
+        "asCollection",
+        "getByte",
+        "getShort",
+        "asMap #作为地图数据",
+        "asNumber",
+        "getDouble",
+        "getId #获取id\n",
+        "getFloat",
+        "getString #获取字符串",
+        "asList #作为列表",
+        "getLong",
+        "getInt",
+        "contains #容器",
+        "asString #作为字符串",
+        "asBoolean"
+    ]
+}
