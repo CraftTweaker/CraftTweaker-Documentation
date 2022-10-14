@@ -1,0 +1,15 @@
+{
+    "path": "vanilla/api/data/IntArrayData.md",
+    "zenCodeName": "crafttweaker.api.data.IntArrayData",
+    "searchTerms": [
+        "contains",
+        "asCollection",
+        "asMap",
+        "asNumber",
+        "getId",
+        "asString",
+        "getString",
+        "crafttweaker.api.data.ICollectionData",
+        "asBoolean"
+    ]
+}
