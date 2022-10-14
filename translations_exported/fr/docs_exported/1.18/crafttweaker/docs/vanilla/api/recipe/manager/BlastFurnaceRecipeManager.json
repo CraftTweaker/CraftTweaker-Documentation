@@ -1,0 +1,22 @@
+{
+    "path": "vanilla/api/recipe/manager/BlastFurnaceRecipeManager.md",
+    "zenCodeName": "crafttweaker.api.recipe.BlastFurnaceRecipeManager",
+    "searchTerms": [
+        "removeRecipe",
+        "getRecipeByName",
+        "addJsonRecipe",
+        "INSTANCE",
+        "allRecipes",
+        "Retirer par Modid",
+        "remove",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
