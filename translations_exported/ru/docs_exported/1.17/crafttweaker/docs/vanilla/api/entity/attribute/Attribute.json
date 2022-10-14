@@ -1,0 +1,13 @@
+{
+    "path": "vanilla/api/entity/attribute/Attribute.md",
+    "zenCodeName": "crafttweaker.api.entity.attribute.Attribute",
+    "searchTerms": [
+        "sanitizeValue",
+        "isClientSyncable",
+        "defaultValue",
+        "getCommandString",
+        "commandString",
+        "clientSyncable",
+        "getDefaultValue"
+    ]
+}
