@@ -1,0 +1,15 @@
+{
+    "path": "mods/createtweaker/recipe/HeatCondition.md",
+    "zenCodeName": "mods.create.HeatCondition",
+    "searchTerms": [
+        "<constant:create:heat_condition:none>",
+        "color",
+        "translationKey",
+        "getCommandString",
+        "getTranslationKey",
+        "getColor #获取颜色",
+        "<constant:create:heat_condition:superheated>",
+        "commandString #命令字符串",
+        "<constant:create:heat_condition:heated>"
+    ]
+}
