@@ -1,0 +1,388 @@
+# MerchantOffer
+
+## 导入类
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.villager.MerchantOffer;
+```
+
+
+## Constructor #构造函数
+
+
+```zenscript
+new MerchantOffer(baseCostA as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
+```
+| 参数              | 类型                                  | 描述                      |
+| --------------- | ----------------------------------- | ----------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| maxUses         | int                                 | No description provided |
+| xp (经验值)        | int                                 | No description provided |
+| priceMultiplier | float                               | No description provided |
+
+```zenscript
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
+```
+| 参数              | 类型                                  | 描述                      |
+| --------------- | ----------------------------------- | ----------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| maxUses         | int                                 | No description provided |
+| xp (经验值)        | int                                 | No description provided |
+| priceMultiplier | float                               | No description provided |
+
+```zenscript
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
+```
+| 参数              | 类型                                  | 描述                      |
+| --------------- | ----------------------------------- | ----------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| uses            | int                                 | No description provided |
+| maxUses         | int                                 | No description provided |
+| xp (经验值)        | int                                 | No description provided |
+| priceMultiplier | float                               | No description provided |
+
+```zenscript
+new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float, demand as int) as MerchantOffer
+```
+| 参数              | 类型                                  | 描述                      |
+| --------------- | ----------------------------------- | ----------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
+| uses            | int                                 | No description provided |
+| maxUses         | int                                 | No description provided |
+| xp (经验值)        | int                                 | No description provided |
+| priceMultiplier | float                               | No description provided |
+| demand          | int                                 | No description provided |
+
+
+
+## 使用方式
+
+:::group{name=addToSpecialPriceDiff}
+
+Return Type: void
+
+```zenscript
+MerchantOffer.addToSpecialPriceDiff(specialPriceDiff as int) as void
+```
+
+| 参数               | 类型  | 描述                      |
+| ---------------- | --- | ----------------------- |
+| specialPriceDiff | int | No Description Provided |
+
+
+:::
+
+:::group{name=assemble}
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MerchantOffer.assemble() as IItemStack
+
+myMerchantOffer.assemble();
+```
+
+:::
+
+:::group{name=createTag}
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// MerchantOffer.createTag() as MapData
+
+myMerchantOffer.createTag();
+```
+
+:::
+
+:::group{name=getBaseCostA}
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MerchantOffer.getBaseCostA() as IItemStack
+
+myMerchantOffer.getBaseCostA();
+```
+
+:::
+
+:::group{name=getCostA}
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MerchantOffer.getCostA() as IItemStack
+
+myMerchantOffer.getCostA();
+```
+
+:::
+
+:::group{name=getCostB}
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MerchantOffer.getCostB() as IItemStack
+
+myMerchantOffer.getCostB();
+```
+
+:::
+
+:::group{name=getDemand}
+
+Return Type: int
+
+```zenscript
+// MerchantOffer.getDemand() as int
+
+myMerchantOffer.getDemand();
+```
+
+:::
+
+:::group{name=getMaxUses}
+
+Return Type: int
+
+```zenscript
+// MerchantOffer.getMaxUses() as int
+
+myMerchantOffer.getMaxUses();
+```
+
+:::
+
+:::group{name=getPriceMultiplier}
+
+Return Type: float
+
+```zenscript
+// MerchantOffer.getPriceMultiplier() as float
+
+myMerchantOffer.getPriceMultiplier();
+```
+
+:::
+
+:::group{name=getResult}
+
+Return Type: [IItemStack](/vanilla/api/item/IItemStack)
+
+```zenscript
+// MerchantOffer.getResult() as IItemStack
+
+myMerchantOffer.getResult();
+```
+
+:::
+
+:::group{name=getSpecialPriceDiff}
+
+Return Type: int
+
+```zenscript
+// MerchantOffer.getSpecialPriceDiff() as int
+
+myMerchantOffer.getSpecialPriceDiff();
+```
+
+:::
+
+:::group{name=getUses}
+
+Return Type: int
+
+```zenscript
+// MerchantOffer.getUses() as int
+
+myMerchantOffer.getUses();
+```
+
+:::
+
+:::group{name=getXp}
+
+Return Type: int
+
+```zenscript
+// MerchantOffer.getXp() as int
+
+myMerchantOffer.getXp();
+```
+
+:::
+
+:::group{name=increaseUses}
+
+Return Type: void
+
+```zenscript
+// MerchantOffer.increaseUses() as void
+
+myMerchantOffer.increaseUses();
+```
+
+:::
+
+:::group{name=isOutOfStock}
+
+Return Type: boolean
+
+```zenscript
+// MerchantOffer.isOutOfStock() as boolean
+
+myMerchantOffer.isOutOfStock();
+```
+
+:::
+
+:::group{name=needsRestock}
+
+Return Type: boolean
+
+```zenscript
+// MerchantOffer.needsRestock() as boolean
+
+myMerchantOffer.needsRestock();
+```
+
+:::
+
+:::group{name=resetSpecialPriceDiff}
+
+Return Type: void
+
+```zenscript
+// MerchantOffer.resetSpecialPriceDiff() as void
+
+myMerchantOffer.resetSpecialPriceDiff();
+```
+
+:::
+
+:::group{name=resetUses}
+
+Return Type: void
+
+```zenscript
+// MerchantOffer.resetUses() as void
+
+myMerchantOffer.resetUses();
+```
+
+:::
+
+:::group{name=satisfiedBy}
+
+Return Type: boolean
+
+```zenscript
+MerchantOffer.satisfiedBy(a as IItemStack, b as IItemStack) as boolean
+```
+
+| 参数 | 类型                                         | 描述                      |
+| -- | ------------------------------------------ | ----------------------- |
+| a  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+| b  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+
+
+:::
+
+:::group{name=setSpecialPriceDiff}
+
+Return Type: void
+
+```zenscript
+MerchantOffer.setSpecialPriceDiff(specialPriceDiff as int) as void
+```
+
+| 参数               | 类型  | 描述                      |
+| ---------------- | --- | ----------------------- |
+| specialPriceDiff | int | No Description Provided |
+
+
+:::
+
+:::group{name=setToOutOfStock}
+
+Return Type: void
+
+```zenscript
+// MerchantOffer.setToOutOfStock() as void
+
+myMerchantOffer.setToOutOfStock();
+```
+
+:::
+
+:::group{name=shouldRewardExp}
+
+Return Type: boolean
+
+```zenscript
+// MerchantOffer.shouldRewardExp() as boolean
+
+myMerchantOffer.shouldRewardExp();
+```
+
+:::
+
+:::group{name=take}
+
+Return Type: boolean
+
+```zenscript
+MerchantOffer.take(a as IItemStack, b as IItemStack) as boolean
+```
+
+| 参数 | 类型                                         | 描述                      |
+| -- | ------------------------------------------ | ----------------------- |
+| a  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+| b  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+
+
+:::
+
+:::group{name=updateDemand}
+
+Return Type: void
+
+```zenscript
+// MerchantOffer.updateDemand() as void
+
+myMerchantOffer.updateDemand();
+```
+
+:::
+
+
+## 参数
+
+| 名称               | 类型                                         | 可获得  | 可设置   | 描述                      |
+| ---------------- | ------------------------------------------ | ---- | ----- | ----------------------- |
+| baseCostA        | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+| costA            | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+| costB            | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+| demand           | int                                        | true | false | No Description Provided |
+| maxUses          | int                                        | true | false | No Description Provided |
+| needsRestock     | 布尔值                                        | true | false | No Description Provided |
+| outOfStock       | 布尔值                                        | true | false | No Description Provided |
+| priceMultiplier  | float                                      | true | false | No Description Provided |
+| result           | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
+| shouldRewardExp  | 布尔值                                        | true | false | No Description Provided |
+| specialPriceDiff | int                                        | true | true  | No Description Provided |
+| uses             | int                                        | true | false | No Description Provided |
+| xp (经验值)         | int                                        | true | false | No Description Provided |
+
