@@ -1,0 +1,8 @@
+{
+    "path": "forge/api/event/block/piston/PistonMoveType.md",
+    "zenCodeName": "crafttweaker.api.event.block.piston.PistonMoveType",
+    "searchTerms": [
+        "<constant:forge:event/piston/move_type:extend>",
+        "<constant:forge:event/piston/move_type:retract>"
+    ]
+}
