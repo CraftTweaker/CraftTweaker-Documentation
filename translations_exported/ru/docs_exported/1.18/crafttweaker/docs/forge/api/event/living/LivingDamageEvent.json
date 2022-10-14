@@ -1,0 +1,12 @@
+{
+    "path": "forge/api/event/living/LivingDamageEvent.md",
+    "zenCodeName": "crafttweaker.api.event.entity.LivingEvent",
+    "searchTerms": [
+        "amount",
+        "getSource",
+        "crafttweaker.api.event.entity.LivingEvent",
+        "источник",
+        "setAmount",
+        "getAmount"
+    ]
+}
