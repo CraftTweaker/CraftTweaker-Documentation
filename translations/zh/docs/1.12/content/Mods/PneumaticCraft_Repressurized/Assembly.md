@@ -35,11 +35,13 @@ mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
 这些方法用来向装配系统添加新的合成配方：
 
 ```zenscript
-mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)
-mods.pneumaticcraft.assembly.addDrillRecipe(IItemStack input, IItemStack output)
-mods.pneumaticcraft.assembly.addDrillLaserRecipe(IItemStack input, IItemStack output)
+mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output);
+mods.pneumaticcraft.assembly.addDrillRecipe(IItemStack input, IItemStack output);
 
-// 例子
+
+// Examples
 mods.pneumaticcraft.assembly.addLaserRecipe(<pneumaticcraft:ingot_iron_compressed> * 2, <pneumaticcraft:compressed_iron_gear>);
 ```
+
+Combined drill/laser recipe are automatically added when a drill recipe goes from Item A -> Item B, and a laser recipe from Item B -> Item C.
 
