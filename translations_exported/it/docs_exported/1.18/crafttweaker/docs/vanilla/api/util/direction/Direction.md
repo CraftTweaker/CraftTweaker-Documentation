@@ -71,9 +71,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Direction.getClockWise(axis as Axis) as Direction
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -98,9 +98,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Direction.getCounterClockWise(axis as Axis) as Direction
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -197,9 +197,9 @@ Return Type: boolean
 Direction.isFacingAngle(degrees as float) as boolean
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| degrees   | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| degrees   | float |
 
 
 :::
@@ -231,18 +231,18 @@ myDirection.toYRot();
 
 ## Proprietà
 
-| Nome             | Tipo                                                       | Ha Getter | Ha Setter | Descrizione             |
-| ---------------- | ---------------------------------------------------------- | --------- | --------- | ----------------------- |
-| axis             | [Axis](/vanilla/api/util/direction/Axis)                   | sì        | no        | No Description Provided |
-| axisDirection    | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | sì        | no        | No Description Provided |
-| clockWise        | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        | No Description Provided |
-| counterClockWise | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        | No Description Provided |
-| normal           | [Vec3i](/vanilla/api/util/math/Vec3i)                      | sì        | no        | No Description Provided |
-| opposite         | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        | No Description Provided |
-| rotation         | [Quaternion](/vanilla/api/util/math/Quaternion)            | sì        | no        | No Description Provided |
-| step             | [Vector3f](/vanilla/api/util/math/Vector3f)                | sì        | no        | No Description Provided |
-| stepX            | int                                                        | sì        | no        | No Description Provided |
-| stepY            | int                                                        | sì        | no        | No Description Provided |
-| stepZ            | int                                                        | sì        | no        | No Description Provided |
-| toYRot           | float                                                      | sì        | no        | No Description Provided |
+| Nome             | Tipo                                                       | Ha Getter | Ha Setter |
+| ---------------- | ---------------------------------------------------------- | --------- | --------- |
+| axis             | [Axis](/vanilla/api/util/direction/Axis)                   | sì        | no        |
+| axisDirection    | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | sì        | no        |
+| clockWise        | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        |
+| counterClockWise | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        |
+| normal           | [Vec3i](/vanilla/api/util/math/Vec3i)                      | sì        | no        |
+| opposite         | [Direction](/vanilla/api/util/direction/Direction)         | sì        | no        |
+| rotation         | [Quaternion](/vanilla/api/util/math/Quaternion)            | sì        | no        |
+| step             | [Vector3f](/vanilla/api/util/math/Vector3f)                | sì        | no        |
+| stepX            | int                                                        | sì        | no        |
+| stepY            | int                                                        | sì        | no        |
+| stepZ            | int                                                        | sì        | no        |
+| toYRot           | float                                                      | sì        | no        |
 
