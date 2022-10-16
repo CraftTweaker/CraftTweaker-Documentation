@@ -59,9 +59,9 @@ myDifficulty.getKey();
 
 ## Свойства
 
-| Название    | Тип                                      | Имеет Getter | Имеет Setter | Описание                |
-| ----------- | ---------------------------------------- | ------------ | ------------ | ----------------------- |
-| displayName | [Component](/vanilla/api/text/Component) | true         | false        | No Description Provided |
-| id          | int                                      | true         | false        | No Description Provided |
-| key         | string                                   | true         | false        | No Description Provided |
+| Название    | Тип                                      | Имеет Getter | Имеет Setter |
+| ----------- | ---------------------------------------- | ------------ | ------------ |
+| displayName | [Component](/vanilla/api/text/Component) | true         | false        |
+| id          | int                                      | true         | false        |
+| key         | string                                   | true         | false        |
 
