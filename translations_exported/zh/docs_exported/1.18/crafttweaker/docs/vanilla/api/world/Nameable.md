@@ -61,10 +61,10 @@ myNameable.hasCustomName();
 
 ## 参数
 
-| 名称            | 类型                                        | 可获得  | 可设置   | 描述                      |
-| ------------- | ----------------------------------------- | ---- | ----- | ----------------------- |
-| customName    | [Component](/vanilla/api/text/Component)? | true | false | No Description Provided |
-| displayName   | [Component](/vanilla/api/text/Component)  | true | false | No Description Provided |
-| hasCustomName | 布尔值                                       | true | false | No Description Provided |
-| name（名称）      | [Component](/vanilla/api/text/Component)  | true | false | No Description Provided |
+| 名称            | 类型                                        | 可获得  | 可设置   |
+| ------------- | ----------------------------------------- | ---- | ----- |
+| customName    | [Component](/vanilla/api/text/Component)? | true | false |
+| displayName   | [Component](/vanilla/api/text/Component)  | true | false |
+| hasCustomName | 布尔值                                       | true | false |
+| name（名称）      | [Component](/vanilla/api/text/Component)  | true | false |
 
