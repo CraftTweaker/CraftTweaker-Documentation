@@ -12,10 +12,8 @@ import crafttweaker.api.util.math.Quaternion;
 
 :::group{name=conj}
 
-Return Type: void
-
 ```zenscript
-// Quaternion.conj() as void
+// Quaternion.conj()
 
 myQuaternion.conj();
 ```
@@ -72,40 +70,34 @@ myQuaternion.k();
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Quaternion.mul(other as Quaternion) as void
+Quaternion.mul(other as Quaternion)
 ```
 
-| 参数    | 类型                                              | 描述                      |
-| ----- | ----------------------------------------------- | ----------------------- |
-| other | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
+| 参数    | 类型                                              |
+| ----- | ----------------------------------------------- |
+| other | [Quaternion](/vanilla/api/util/math/Quaternion) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Quaternion.mul(value as float) as void
+Quaternion.mul(value as float)
 ```
 
-| 参数    | 类型    | 描述                      |
-| ----- | ----- | ----------------------- |
-| value | float | No Description Provided |
+| 参数    | 类型    |
+| ----- | ----- |
+| value | float |
 
 
 :::
 
 :::group{name=normalize}
 
-Return Type: void
-
 ```zenscript
-// Quaternion.normalize() as void
+// Quaternion.normalize()
 
 myQuaternion.normalize();
 ```
@@ -126,34 +118,30 @@ myQuaternion.r();
 
 :::group{name=setValue}
 
-Return Type: void
-
 ```zenscript
-Quaternion.setValue(i as float, j as float, k as float, r as float) as void
+Quaternion.setValue(i as float, j as float, k as float, r as float)
 ```
 
-| 参数 | 类型    | 描述                      |
-| -- | ----- | ----------------------- |
-| i  | float | No Description Provided |
-| j  | float | No Description Provided |
-| k  | float | No Description Provided |
-| r  | float | No Description Provided |
+| 参数 | 类型    |
+| -- | ----- |
+| i  | float |
+| j  | float |
+| k  | float |
+| r  | float |
 
 
 :::
 
 :::group{name=slerp}
 
-Return Type: void
-
 ```zenscript
-Quaternion.slerp(other as Quaternion, value as float) as void
+Quaternion.slerp(other as Quaternion, value as float)
 ```
 
-| 参数    | 类型                                              | 描述                      |
-| ----- | ----------------------------------------------- | ----------------------- |
-| other | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
-| value | float                                           | No Description Provided |
+| 参数    | 类型                                              |
+| ----- | ----------------------------------------------- |
+| other | [Quaternion](/vanilla/api/util/math/Quaternion) |
+| value | float                                           |
 
 
 :::
@@ -209,14 +197,14 @@ myQuaternion.toYXZDegrees();
 
 ## 参数
 
-| 名称         | 类型                                          | 可获得  | 可设置   | 描述                      |
-| ---------- | ------------------------------------------- | ---- | ----- | ----------------------- |
-| i          | float                                       | true | false | No Description Provided |
-| j          | float                                       | true | false | No Description Provided |
-| k          | float                                       | true | false | No Description Provided |
-| r          | float                                       | true | false | No Description Provided |
-| xyz        | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false | No Description Provided |
-| xyzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false | No Description Provided |
-| yxz        | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false | No Description Provided |
-| yxzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false | No Description Provided |
+| 名称         | 类型                                          | 可获得  | 可设置   |
+| ---------- | ------------------------------------------- | ---- | ----- |
+| i          | float                                       | true | false |
+| j          | float                                       | true | false |
+| k          | float                                       | true | false |
+| r          | float                                       | true | false |
+| xyz        | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false |
+| xyzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false |
+| yxz        | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false |
+| yxzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | true | false |
 
