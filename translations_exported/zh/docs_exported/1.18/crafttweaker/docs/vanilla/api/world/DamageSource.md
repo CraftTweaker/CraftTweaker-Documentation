@@ -18,10 +18,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.arrow(arrow as Arrow, owner as Entity?) as DamageSource
 ```
 
-| 参数    | 类型                                                       | 描述                      |
-| ----- | -------------------------------------------------------- | ----------------------- |
-| arrow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | No Description Provided |
-| owner | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| 参数    | 类型                                                       |
+| ----- | -------------------------------------------------------- |
+| arrow | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) |
+| owner | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -46,9 +46,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(explosion as Explosion?) as DamageSource
 ```
 
-| 参数        | 类型                                         | 描述                      |
-| --------- | ------------------------------------------ | ----------------------- |
-| explosion | [Explosion](/vanilla/api/world/Explosion)? | No Description Provided |
+| 参数        | 类型                                         |
+| --------- | ------------------------------------------ |
+| explosion | [Explosion](/vanilla/api/world/Explosion)? |
 
 
 :::
@@ -61,9 +61,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(owner as LivingEntity?) as DamageSource
 ```
 
-| 参数    | 类型                                                | 描述                      | 可选   | DefaultValue |
-| ----- | ------------------------------------------------- | ----------------------- | ---- | ------------ |
-| owner | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided | true |              |
+| 参数    | 类型                                                | 可选   |
+| ----- | ------------------------------------------------- | ---- |
+| owner | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true |
 
 
 :::
@@ -76,10 +76,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireball(fireball as Fireball, owner as Entity?) as DamageSource
 ```
 
-| 参数       | 类型                                                       | 描述                      |
-| -------- | -------------------------------------------------------- | ----------------------- |
-| fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| 参数       | 类型                                                       |
+| -------- | -------------------------------------------------------- |
+| fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) |
+| owner    | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -92,10 +92,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity?) as DamageSource
 ```
 
-| 参数     | 类型                                                                               | 描述                      |
-| ------ | -------------------------------------------------------------------------------- | ----------------------- |
-| entity | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) | No Description Provided |
-| owner  | [Entity](/vanilla/api/entity/Entity)?                                            | No Description Provided |
+| 参数     | 类型                                                                               |
+| ------ | -------------------------------------------------------------------------------- |
+| entity | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) |
+| owner  | [Entity](/vanilla/api/entity/Entity)?                                            |
 
 
 :::
@@ -108,10 +108,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMagic(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| 参数     | 类型                                    | 描述                      |
-| ------ | ------------------------------------- | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner  | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| 参数     | 类型                                    |
+| ------ | ------------------------------------- |
+| entity | [Entity](/vanilla/api/entity/Entity)  |
+| owner  | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -124,10 +124,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity?) as DamageSource
 ```
 
-| 参数     | 类型                                                | 描述                      |
-| ------ | ------------------------------------------------- | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity)              | No Description Provided |
-| owner  | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
+| 参数     | 类型                                                |
+| ------ | ------------------------------------------------- |
+| entity | [Entity](/vanilla/api/entity/Entity)              |
+| owner  | [LivingEntity](/vanilla/api/entity/LivingEntity)? |
 
 
 :::
@@ -140,9 +140,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.mobAttack(living as LivingEntity) as DamageSource
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| living | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| living | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -155,9 +155,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.playerAttack(player as Player) as DamageSource
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| player | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -170,9 +170,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.string(living as LivingEntity) as DamageSource
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| living | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| living | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -185,9 +185,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thorns(entity as Entity) as DamageSource
 ```
 
-| 参数     | 类型                                   | 描述                      |
-| ------ | ------------------------------------ | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| 参数     | 类型                                   |
+| ------ | ------------------------------------ |
+| entity | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -200,10 +200,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thrown(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| 参数     | 类型                                    | 描述                      |
-| ------ | ------------------------------------- | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner  | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| 参数     | 类型                                    |
+| ------ | ------------------------------------- |
+| entity | [Entity](/vanilla/api/entity/Entity)  |
+| owner  | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -216,10 +216,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.trident(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| 参数     | 类型                                    | 描述                      |
-| ------ | ------------------------------------- | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner  | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| 参数     | 类型                                    |
+| ------ | ------------------------------------- |
+| entity | [Entity](/vanilla/api/entity/Entity)  |
+| owner  | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -232,10 +232,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity?) as DamageSource
 ```
 
-| 参数          | 类型                                                             | 描述                      |
-| ----------- | -------------------------------------------------------------- | ----------------------- |
-| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) | No Description Provided |
-| owner       | [Entity](/vanilla/api/entity/Entity)?                          | No Description Provided |
+| 参数          | 类型                                                             |
+| ----------- | -------------------------------------------------------------- |
+| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) |
+| owner       | [Entity](/vanilla/api/entity/Entity)?                          |
 
 
 :::
@@ -286,9 +286,9 @@ Return Type: [Component](/vanilla/api/text/Component)
 DamageSource.getLocalizedDeathMessage(entity as LivingEntity) as Component
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| entity | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -536,23 +536,23 @@ myDamageSource.setScalesWithDifficulty();
 
 ## 参数
 
-| 名称                   | 类型                                    | 可获得  | 可设置   | 描述                      |
-| -------------------- | ------------------------------------- | ---- | ----- | ----------------------- |
-| directEntity         | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| doesBypassArmor      | 布尔值                                   | true | false | No Description Provided |
-| doesBypassInvul      | 布尔值                                   | true | false | No Description Provided |
-| doesBypassMagic      | 布尔值                                   | true | false | No Description Provided |
-| doesDamageHelmet     | 布尔值                                   | true | false | No Description Provided |
-| entity               | [Entity](/vanilla/api/entity/Entity)? | true | false | No Description Provided |
-| foodExhaustion       | float                                 | true | false | No Description Provided |
-| isCreativePlayer     | 布尔值                                   | true | false | No Description Provided |
-| isExplosion          | 布尔值                                   | true | false | No Description Provided |
-| isFall               | 布尔值                                   | true | false | No Description Provided |
-| isFire               | 布尔值                                   | true | false | No Description Provided |
-| isMagic              | 布尔值                                   | true | false | No Description Provided |
-| isNoAggro            | 布尔值                                   | true | false | No Description Provided |
-| isProjectile         | 布尔值                                   | true | false | No Description Provided |
-| msgId                | string                                | true | false | No Description Provided |
-| scalesWithDifficulty | 布尔值                                   | true | false | No Description Provided |
-| 来源                   | [Vec3](/vanilla/api/util/math/Vec3)?  | true | false | No Description Provided |
+| 名称                   | 类型                                    | 可获得  | 可设置   |
+| -------------------- | ------------------------------------- | ---- | ----- |
+| directEntity         | [Entity](/vanilla/api/entity/Entity)? | true | false |
+| doesBypassArmor      | 布尔值                                   | true | false |
+| doesBypassInvul      | 布尔值                                   | true | false |
+| doesBypassMagic      | 布尔值                                   | true | false |
+| doesDamageHelmet     | 布尔值                                   | true | false |
+| entity               | [Entity](/vanilla/api/entity/Entity)? | true | false |
+| foodExhaustion       | float                                 | true | false |
+| isCreativePlayer     | 布尔值                                   | true | false |
+| isExplosion          | 布尔值                                   | true | false |
+| isFall               | 布尔值                                   | true | false |
+| isFire               | 布尔值                                   | true | false |
+| isMagic              | 布尔值                                   | true | false |
+| isNoAggro            | 布尔值                                   | true | false |
+| isProjectile         | 布尔值                                   | true | false |
+| msgId                | string                                | true | false |
+| scalesWithDifficulty | 布尔值                                   | true | false |
+| 来源                   | [Vec3](/vanilla/api/util/math/Vec3)?  | true | false |
 
