@@ -37,8 +37,8 @@ myClipContext.getTo();
 
 ## Proprietà
 
-| Nome | Tipo                                | Ha Getter | Ha Setter | Descrizione             |
-| ---- | ----------------------------------- | --------- | --------- | ----------------------- |
-| from | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        | No Description Provided |
-| to   | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        | No Description Provided |
+| Nome | Tipo                                | Ha Getter | Ha Setter |
+| ---- | ----------------------------------- | --------- | --------- |
+| from | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        |
+| to   | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        |
 
