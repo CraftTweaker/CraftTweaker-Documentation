@@ -49,9 +49,9 @@ myPosition.z();
 
 ## 参数
 
-| 名称 | 类型     | 可获得  | 可设置   | 描述                      |
-| -- | ------ | ---- | ----- | ----------------------- |
-| x  | double | true | false | No Description Provided |
-| y  | double | true | false | No Description Provided |
-| z  | double | true | false | No Description Provided |
+| 名称 | 类型     | 可获得  | 可设置   |
+| -- | ------ | ---- | ----- |
+| x  | double | true | false |
+| y  | double | true | false |
+| z  | double | true | false |
 
