@@ -44,10 +44,10 @@ Return Type: stdlib.List&lt;[Entity](/vanilla/api/entity/Entity)&gt;
 myServerLevel.getEntities((entity as MCEntity) => entity.isImmuneToFire(), <entitytype:minecraft:sheep>);
 ```
 
-| Параметр  | Тип                                                               | Описание                        | Optional | DefaultValue |
-| --------- | ----------------------------------------------------------------- | ------------------------------- | -------- | ------------ |
-| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | The predicate to check against. | false    |              |
-| type      | [EntityType](/vanilla/api/entity/EntityType)                      | No Description Provided         | true     |              |
+| Параметр  | Тип                                                               | Описание                        | Optional |
+| --------- | ----------------------------------------------------------------- | ------------------------------- | -------- |
+| predicate | Predicate&lt;[Entity](/vanilla/api/entity/Entity)&gt; | The predicate to check against. | false    |
+| type      | [EntityType](/vanilla/api/entity/EntityType)                      |                                 | true     |
 
 
 :::
@@ -116,10 +116,8 @@ myServerLevel.isVillage(new BlockPos(0, 1, 2));
 
 Sets the time of the Minecraft day to day. This is like using the "time set day" command or setting the time to 1000.
 
-Return Type: void
-
 ```zenscript
-// ServerLevel.setTimeToDay() as void
+// ServerLevel.setTimeToDay()
 
 myServerLevel.setTimeToDay();
 ```
@@ -130,10 +128,8 @@ myServerLevel.setTimeToDay();
 
 Sets the time of the Minecraft day to midnight. This is like using the "time set midnight" command or setting the time to 18000.
 
-Return Type: void
-
 ```zenscript
-// ServerLevel.setTimeToMidnight() as void
+// ServerLevel.setTimeToMidnight()
 
 myServerLevel.setTimeToMidnight();
 ```
@@ -144,10 +140,8 @@ myServerLevel.setTimeToMidnight();
 
 Sets the time of the Minecraft day to night. This is like using the "time set night" command or setting the time to 13000.
 
-Return Type: void
-
 ```zenscript
-// ServerLevel.setTimeToNight() as void
+// ServerLevel.setTimeToNight()
 
 myServerLevel.setTimeToNight();
 ```
@@ -158,10 +152,8 @@ myServerLevel.setTimeToNight();
 
 Sets the time of the Minecraft day to noon. This is like using the "time set noon" command or setting the time to 6000.
 
-Return Type: void
-
 ```zenscript
-// ServerLevel.setTimeToNoon() as void
+// ServerLevel.setTimeToNoon()
 
 myServerLevel.setTimeToNoon();
 ```
@@ -176,5 +168,5 @@ myServerLevel.setTimeToNoon();
 | customData | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData) | true         | false        | Gets the custom data that is saved/loaded to/from disk when the level is saved/loaded to/from disk. <br />  <br />  This lets you store data on this specific level, so data stored in the Overworld will not be accessible from the Nether. |
 | dayTime    | [ServerLevel](/vanilla/api/world/ServerLevel)                     | false        | true         | Sets the time of the Minecraft day.                                                                                                                                                                                                                      |
 | seed       | long                                                              | true         | false        | Gets the random seed of the world.                                                                                                                                                                                                                       |
-| server     | [Server](/vanilla/api/game/Server)                                | true         | false        | No Description Provided                                                                                                                                                                                                                                  |
+| server     | [Server](/vanilla/api/game/Server)                                | true         | false        |                                                                                                                                                                                                                                                          |
 
