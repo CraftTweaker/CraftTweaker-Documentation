@@ -60,8 +60,8 @@ myFrontAndTop.top();
 
 ## 参数
 
-| 名称    | 类型                                                 | 可获得  | 可设置   | 描述                      |
-| ----- | -------------------------------------------------- | ---- | ----- | ----------------------- |
-| front | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
-| top   | [Direction](/vanilla/api/util/direction/Direction) | true | false | No Description Provided |
+| 名称    | 类型                                                 | 可获得  | 可设置   |
+| ----- | -------------------------------------------------- | ---- | ----- |
+| front | [Direction](/vanilla/api/util/direction/Direction) | true | false |
+| top   | [Direction](/vanilla/api/util/direction/Direction) | true | false |
 
