@@ -18,9 +18,9 @@ Return Type: double
 HitResult.distanceTo(entity as Entity) as double
 ```
 
-| Параметр | Тип                                  | Описание                |
-| -------- | ------------------------------------ | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Параметр | Тип                                  |
+| -------- | ------------------------------------ |
+| entity   | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -52,8 +52,8 @@ myHitResult.getType();
 
 ## Свойства
 
-| Название       | Тип                                              | Имеет Getter | Имеет Setter | Описание                |
-| -------------- | ------------------------------------------------ | ------------ | ------------ | ----------------------- |
-| местоположение | [Vec3](/vanilla/api/util/math/Vec3)              | true         | false        | No Description Provided |
-| type           | [HitResultType](/vanilla/api/util/HitResultType) | true         | false        | No Description Provided |
+| Название       | Тип                                              | Имеет Getter | Имеет Setter |
+| -------------- | ------------------------------------------------ | ------------ | ------------ |
+| местоположение | [Vec3](/vanilla/api/util/math/Vec3)              | true         | false        |
+| type           | [HitResultType](/vanilla/api/util/HitResultType) | true         | false        |
 
