@@ -60,8 +60,8 @@ myFrontAndTop.top();
 
 ## Свойства
 
-| Название | Тип                                                | Имеет Getter | Имеет Setter | Описание                |
-| -------- | -------------------------------------------------- | ------------ | ------------ | ----------------------- |
-| front    | [Direction](/vanilla/api/util/direction/Direction) | true         | false        | No Description Provided |
-| top      | [Direction](/vanilla/api/util/direction/Direction) | true         | false        | No Description Provided |
+| Название | Тип                                                | Имеет Getter | Имеет Setter |
+| -------- | -------------------------------------------------- | ------------ | ------------ |
+| front    | [Direction](/vanilla/api/util/direction/Direction) | true         | false        |
+| top      | [Direction](/vanilla/api/util/direction/Direction) | true         | false        |
 
