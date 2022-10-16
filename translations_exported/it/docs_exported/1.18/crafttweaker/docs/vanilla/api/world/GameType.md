@@ -106,15 +106,13 @@ myGameType.isSurvival();
 
 :::group{name=updatePlayerAbilities}
 
-Return Type: void
-
 ```zenscript
-GameType.updatePlayerAbilities(abilities as Abilities) as void
+GameType.updatePlayerAbilities(abilities as Abilities)
 ```
 
-| Parametro | Tipo                                                   | Descrizione             |
-| --------- | ------------------------------------------------------ | ----------------------- |
-| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) | No Description Provided |
+| Parametro | Tipo                                                   |
+| --------- | ------------------------------------------------------ |
+| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) |
 
 
 :::
@@ -122,13 +120,13 @@ GameType.updatePlayerAbilities(abilities as Abilities) as void
 
 ## Proprietà
 
-| Nome                     | Tipo                                     | Ha Getter | Ha Setter | Descrizione             |
-| ------------------------ | ---------------------------------------- | --------- | --------- | ----------------------- |
-| id                       | int                                      | sì        | no        | No Description Provided |
-| isBlockPlacingRestricted | boolean                                  | sì        | no        | No Description Provided |
-| isCreative               | boolean                                  | sì        | no        | No Description Provided |
-| isSurvival               | boolean                                  | sì        | no        | No Description Provided |
-| longDisplayName          | [Component](/vanilla/api/text/Component) | sì        | no        | No Description Provided |
-| nome                     | string                                   | sì        | no        | No Description Provided |
-| shortDisplayName         | [Component](/vanilla/api/text/Component) | sì        | no        | No Description Provided |
+| Nome                     | Tipo                                     | Ha Getter | Ha Setter |
+| ------------------------ | ---------------------------------------- | --------- | --------- |
+| id                       | int                                      | sì        | no        |
+| isBlockPlacingRestricted | boolean                                  | sì        | no        |
+| isCreative               | boolean                                  | sì        | no        |
+| isSurvival               | boolean                                  | sì        | no        |
+| longDisplayName          | [Component](/vanilla/api/text/Component) | sì        | no        |
+| nome                     | string                                   | sì        | no        |
+| shortDisplayName         | [Component](/vanilla/api/text/Component) | sì        | no        |
 
