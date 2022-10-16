@@ -32,9 +32,9 @@ Return Type: [Axis](/vanilla/api/util/direction/Axis)
 Plane.getRandomAxis(random as Random) as Axis
 ```
 
-| Параметр | Тип                                     | Описание                |
-| -------- | --------------------------------------- | ----------------------- |
-| random   | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Параметр | Тип                                     |
+| -------- | --------------------------------------- |
+| random   | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -47,9 +47,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Plane.getRandomDirection(random as Random) as Direction
 ```
 
-| Параметр | Тип                                     | Описание                |
-| -------- | --------------------------------------- | ----------------------- |
-| random   | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Параметр | Тип                                     |
+| -------- | --------------------------------------- |
+| random   | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -74,9 +74,9 @@ Return Type: boolean
 Plane.test(direction as Direction?) as boolean
 ```
 
-| Параметр  | Тип                                                 | Описание                |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Параметр  | Тип                                                 |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -84,7 +84,7 @@ Plane.test(direction as Direction?) as boolean
 
 ## Свойства
 
-| Название | Тип                                                                                   | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ------------------------------------------------------------------------------------- | ------------ | ------------ | ----------------------- |
-| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true         | false        | No Description Provided |
+| Название | Тип                                                                                   | Имеет Getter | Имеет Setter |
+| -------- | ------------------------------------------------------------------------------------- | ------------ | ------------ |
+| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true         | false        |
 
