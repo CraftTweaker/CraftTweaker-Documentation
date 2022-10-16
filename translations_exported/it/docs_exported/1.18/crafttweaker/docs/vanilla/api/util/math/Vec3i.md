@@ -35,9 +35,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.above(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -62,9 +62,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.below(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -77,10 +77,10 @@ Return Type: boolean
 Vec3i.closerThan(other as Vec3i, maxDistance as double) as boolean
 ```
 
-| Parametro   | Tipo                                  | Descrizione             |
-| ----------- | ------------------------------------- | ----------------------- |
-| other       | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| maxDistance | double                                | No Description Provided |
+| Parametro   | Tipo                                  |
+| ----------- | ------------------------------------- |
+| other       | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| maxDistance | double                                |
 
 
 :::
@@ -93,9 +93,9 @@ Return Type: int
 Vec3i.compareTo(other as Vec3i) as int
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -108,9 +108,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.cross(other as Vec3i) as Vec3i
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -123,9 +123,9 @@ Return Type: int
 Vec3i.distManhattan(other as Vec3i) as int
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -138,9 +138,9 @@ Return Type: double
 Vec3i.distSqr(other as Vec3i) as double
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -153,9 +153,9 @@ Return Type: double
 Vec3i.distToCenterSqr(position as Position) as double
 ```
 
-| Parametro | Tipo                                   | Descrizione             |
-| --------- | -------------------------------------- | ----------------------- |
-| position  | [Position](/vanilla/api/util/Position) | No Description Provided |
+| Parametro | Tipo                                   |
+| --------- | -------------------------------------- |
+| position  | [Position](/vanilla/api/util/Position) |
 
 
 :::
@@ -168,11 +168,11 @@ Return Type: double
 Vec3i.distToCenterSqr(x as double, y as double, z as double) as double
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -197,9 +197,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.east(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -212,9 +212,9 @@ Return Type: int
 Vec3i.getValue(axis as Axis) as int
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -263,9 +263,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.multiply(scalar as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| scalar    | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| scalar    | int  |
 
 
 :::
@@ -290,9 +290,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.north(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -305,9 +305,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(other as Vec3i) as Vec3i
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -320,11 +320,11 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(x as double, y as double, z as double) as Vec3i
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -337,11 +337,11 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(x as int, y as int, z as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| x         | int  | No Description Provided |
-| y         | int  | No Description Provided |
-| z         | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -354,9 +354,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(direction as Direction) as Vec3i
 ```
 
-| Parametro | Tipo                                               | Descrizione             |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parametro | Tipo                                               |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -369,10 +369,10 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(axis as Axis, distanec as int) as Vec3i
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| distanec  | int                                      | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
+| distanec  | int                                      |
 
 
 :::
@@ -385,10 +385,10 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(direction as Direction, distance as int) as Vec3i
 ```
 
-| Parametro | Tipo                                               | Descrizione             |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance  | int                                                | No Description Provided |
+| Parametro | Tipo                                               |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -413,9 +413,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.south(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -428,9 +428,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.subtract(other as Vec3i) as Vec3i
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -467,9 +467,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.west(distance as int) as Vec3i
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| distance  | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| distance  | int  |
 
 
 :::
@@ -477,10 +477,10 @@ Vec3i.west(distance as int) as Vec3i
 
 ## Proprietà
 
-| Nome          | Tipo   | Ha Getter | Ha Setter | Descrizione             |
-| ------------- | ------ | --------- | --------- | ----------------------- |
-| toShortString | string | sì        | no        | No Description Provided |
-| x             | int    | sì        | no        | No Description Provided |
-| y             | int    | sì        | no        | No Description Provided |
-| z             | int    | sì        | no        | No Description Provided |
+| Nome          | Tipo   | Ha Getter | Ha Setter |
+| ------------- | ------ | --------- | --------- |
+| toShortString | string | sì        | no        |
+| x             | int    | sì        | no        |
+| y             | int    | sì        | no        |
+| z             | int    | sì        | no        |
 
