@@ -33,11 +33,11 @@ Return Type: double
 Axis.choose(x as double, y as double, z as double) as double
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -50,11 +50,11 @@ Return Type: int
 Axis.choose(x as int, y as int, z as int) as int
 ```
 
-| Parametro | Tipo | Descrizione             |
-| --------- | ---- | ----------------------- |
-| x         | int  | No Description Provided |
-| y         | int  | No Description Provided |
-| z         | int  | No Description Provided |
+| Parametro | Tipo |
+| --------- | ---- |
+| x         | int  |
+| y         | int  |
+| z         | int  |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: boolean
 Axis.test(direction as Direction?) as boolean
 ```
 
-| Parametro | Tipo                                                | Descrizione             |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Parametro | Tipo                                                |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -125,10 +125,10 @@ Axis.test(direction as Direction?) as boolean
 
 ## Proprietà
 
-| Nome       | Tipo                                       | Ha Getter | Ha Setter | Descrizione             |
-| ---------- | ------------------------------------------ | --------- | --------- | ----------------------- |
-| horizontal | boolean                                    | sì        | no        | No Description Provided |
-| nome       | string                                     | sì        | no        | No Description Provided |
-| plane      | [Plane](/vanilla/api/util/direction/Plane) | sì        | no        | No Description Provided |
-| vertical   | boolean                                    | sì        | no        | No Description Provided |
+| Nome       | Tipo                                       | Ha Getter | Ha Setter |
+| ---------- | ------------------------------------------ | --------- | --------- |
+| horizontal | boolean                                    | sì        | no        |
+| nome       | string                                     | sì        | no        |
+| plane      | [Plane](/vanilla/api/util/direction/Plane) | sì        | no        |
+| vertical   | boolean                                    | sì        | no        |
 
