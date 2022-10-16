@@ -57,9 +57,9 @@ myAxisDirection.opposite();
 
 ## Свойства
 
-| Название | Тип                                                        | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ---------------------------------------------------------- | ------------ | ------------ | ----------------------- |
-| name     | string                                                     | true         | false        | No Description Provided |
-| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | true         | false        | No Description Provided |
-| step     | int                                                        | true         | false        | No Description Provided |
+| Название | Тип                                                        | Имеет Getter | Имеет Setter |
+| -------- | ---------------------------------------------------------- | ------------ | ------------ |
+| name     | string                                                     | true         | false        |
+| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | true         | false        |
+| step     | int                                                        | true         | false        |
 
