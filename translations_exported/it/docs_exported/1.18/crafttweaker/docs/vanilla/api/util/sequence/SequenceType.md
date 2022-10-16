@@ -41,7 +41,7 @@ SequenceType.SERVER_THREAD_LEVEL.name();
 
 ## Proprietà
 
-| Nome | Tipo   | Ha Getter | Ha Setter | Descrizione                         |
-| ---- | ------ | --------- | --------- | ----------------------------------- |
-|      | string | sì        | no        | Gets the name of the sequence type. |
+| Tipo   | Ha Getter | Ha Setter | Descrizione                         |
+| ------ | --------- | --------- | ----------------------------------- |
+| string | sì        | no        | Gets the name of the sequence type. |
 
