@@ -44,8 +44,8 @@ myPercentaged.getPercentage();
 
 ## Proprietà
 
-| Nome       | Tipo   | Ha Getter | Ha Setter | Descrizione             |
-| ---------- | ------ | --------- | --------- | ----------------------- |
-| data       | T      | sì        | no        | No Description Provided |
-| percentage | double | sì        | no        | No Description Provided |
+| Nome       | Tipo   | Ha Getter | Ha Setter |
+| ---------- | ------ | --------- | --------- |
+| data       | T      | sì        | no        |
+| percentage | double | sì        | no        |
 
