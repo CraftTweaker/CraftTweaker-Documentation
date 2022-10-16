@@ -77,9 +77,9 @@ Return Type: [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup)
 OctahedralGroup.compose(group as OctahedralGroup) as OctahedralGroup
 ```
 
-| Parametro | Tipo                                                      | Descrizione             |
-| --------- | --------------------------------------------------------- | ----------------------- |
-| gruppo    | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) | No Description Provided |
+| Parametro | Tipo                                                      |
+| --------- | --------------------------------------------------------- |
+| gruppo    | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) |
 
 
 :::
@@ -104,9 +104,9 @@ Return Type: boolean
 OctahedralGroup.inverts(axis as Axis) as boolean
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -119,9 +119,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 OctahedralGroup.rotate(direction as Direction) as Direction
 ```
 
-| Parametro | Tipo                                               | Descrizione             |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parametro | Tipo                                               |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [FrontAndTop](/vanilla/api/util/math/FrontAndTop)
 OctahedralGroup.rotate(frontAndTop as FrontAndTop) as FrontAndTop
 ```
 
-| Parametro   | Tipo                                              | Descrizione             |
-| ----------- | ------------------------------------------------- | ----------------------- |
-| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) | No Description Provided |
+| Parametro   | Tipo                                              |
+| ----------- | ------------------------------------------------- |
+| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) |
 
 
 :::
@@ -156,7 +156,7 @@ myOctahedralGroup.transformation();
 
 ## Proprietà
 
-| Nome           | Tipo                                        | Ha Getter | Ha Setter | Descrizione             |
-| -------------- | ------------------------------------------- | --------- | --------- | ----------------------- |
-| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | sì        | no        | No Description Provided |
+| Nome           | Tipo                                        | Ha Getter | Ha Setter |
+| -------------- | ------------------------------------------- | --------- | --------- |
+| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | sì        | no        |
 
