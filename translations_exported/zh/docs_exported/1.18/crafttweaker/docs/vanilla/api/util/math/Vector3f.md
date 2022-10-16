@@ -12,64 +12,56 @@ import crafttweaker.api.util.math.Vector3f;
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-Vector3f.add(other as Vector3f) as void
+Vector3f.add(other as Vector3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-Vector3f.add(x as float, y as float, z as float) as void
+Vector3f.add(x as float, y as float, z as float)
 ```
 
-| 参数 | 类型    | 描述                      |
-| -- | ----- | ----------------------- |
-| x  | float | No Description Provided |
-| y  | float | No Description Provided |
-| z  | float | No Description Provided |
+| 参数 | 类型    |
+| -- | ----- |
+| x  | float |
+| y  | float |
+| z  | float |
 
 
 :::
 
 :::group{name=clamp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.clamp(min as float, max as float) as void
+Vector3f.clamp(min as float, max as float)
 ```
 
-| 参数  | 类型    | 描述                      |
-| --- | ----- | ----------------------- |
-| min | float | No Description Provided |
-| max | float | No Description Provided |
+| 参数  | 类型    |
+| --- | ----- |
+| min | float |
+| max | float |
 
 
 :::
 
 :::group{name=clamp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.clamp(min as Vector3f, max as Vector3f) as void
+Vector3f.clamp(min as Vector3f, max as Vector3f)
 ```
 
-| 参数  | 类型                                          | 描述                      |
-| --- | ------------------------------------------- | ----------------------- |
-| min | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
-| max | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数  | 类型                                          |
+| --- | ------------------------------------------- |
+| min | [Vector3f](/vanilla/api/util/math/Vector3f) |
+| max | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
@@ -88,15 +80,13 @@ myVector3f.copy();
 
 :::group{name=cross}
 
-Return Type: void
-
 ```zenscript
-Vector3f.cross(other as Vector3f) as void
+Vector3f.cross(other as Vector3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
@@ -109,72 +99,64 @@ Return Type: float
 Vector3f.dot(other as Vector3f) as float
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=lerp}
 
-Return Type: void
-
 ```zenscript
-Vector3f.lerp(max as Vector3f, value as float) as void
+Vector3f.lerp(max as Vector3f, value as float)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| max   | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
-| value | float                                       | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| max   | [Vector3f](/vanilla/api/util/math/Vector3f) |
+| value | float                                       |
 
 
 :::
 
 :::group{name=load}
 
-Return Type: void
-
 ```zenscript
-Vector3f.load(other as Vector3f) as void
+Vector3f.load(other as Vector3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Vector3f.mul(scalar as float) as void
+Vector3f.mul(scalar as float)
 ```
 
-| 参数     | 类型    | 描述                      |
-| ------ | ----- | ----------------------- |
-| scalar | float | No Description Provided |
+| 参数     | 类型    |
+| ------ | ----- |
+| scalar | float |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Vector3f.mul(x as float, y as float, z as float) as void
+Vector3f.mul(x as float, y as float, z as float)
 ```
 
-| 参数 | 类型    | 描述                      |
-| -- | ----- | ----------------------- |
-| x  | float | No Description Provided |
-| y  | float | No Description Provided |
-| z  | float | No Description Provided |
+| 参数 | 类型    |
+| -- | ----- |
+| x  | float |
+| y  | float |
+| z  | float |
 
 
 :::
@@ -199,9 +181,9 @@ Return Type: [Quaternion](/vanilla/api/util/math/Quaternion)
 Vector3f.rotation(rads as float) as Quaternion
 ```
 
-| 参数   | 类型    | 描述                      |
-| ---- | ----- | ----------------------- |
-| rads | float | No Description Provided |
+| 参数   | 类型    |
+| ---- | ----- |
+| rads | float |
 
 
 :::
@@ -214,71 +196,63 @@ Return Type: [Quaternion](/vanilla/api/util/math/Quaternion)
 Vector3f.rotationDegrees(degrees as float) as Quaternion
 ```
 
-| 参数      | 类型    | 描述                      |
-| ------- | ----- | ----------------------- |
-| degrees | float | No Description Provided |
+| 参数      | 类型    |
+| ------- | ----- |
+| degrees | float |
 
 
 :::
 
 :::group{name=setValues}
 
-Return Type: void
-
 ```zenscript
-Vector3f.setValues(x as float, y as float, z as float) as void
+Vector3f.setValues(x as float, y as float, z as float)
 ```
 
-| 参数 | 类型    | 描述                      |
-| -- | ----- | ----------------------- |
-| x  | float | No Description Provided |
-| y  | float | No Description Provided |
-| z  | float | No Description Provided |
+| 参数 | 类型    |
+| -- | ----- |
+| x  | float |
+| y  | float |
+| z  | float |
 
 
 :::
 
 :::group{name=sub}
 
-Return Type: void
-
 ```zenscript
-Vector3f.sub(other as Vector3f) as void
+Vector3f.sub(other as Vector3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Vector3f](/vanilla/api/util/math/Vector3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
 
 :::group{name=transform}
 
-Return Type: void
-
 ```zenscript
-Vector3f.transform(matrix as Matrix3f) as void
+Vector3f.transform(matrix as Matrix3f)
 ```
 
-| 参数     | 类型                                          | 描述                      |
-| ------ | ------------------------------------------- | ----------------------- |
-| matrix | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| 参数     | 类型                                          |
+| ------ | ------------------------------------------- |
+| matrix | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
 
 :::group{name=transform}
 
-Return Type: void
-
 ```zenscript
-Vector3f.transform(quaternion as Quaternion) as void
+Vector3f.transform(quaternion as Quaternion)
 ```
 
-| 参数         | 类型                                              | 描述                      |
-| ---------- | ----------------------------------------------- | ----------------------- |
-| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
+| 参数         | 类型                                              |
+| ---------- | ----------------------------------------------- |
+| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) |
 
 
 :::
@@ -322,9 +296,9 @@ myVector3f.z();
 
 ## 参数
 
-| 名称 | 类型    | 可获得  | 可设置   | 描述                      |
-| -- | ----- | ---- | ----- | ----------------------- |
-| x  | float | true | false | No Description Provided |
-| y  | float | true | false | No Description Provided |
-| z  | float | true | false | No Description Provided |
+| 名称 | 类型    | 可获得  | 可设置   |
+| -- | ----- | ---- | ----- |
+| x  | float | true | false |
+| y  | float | true | false |
+| z  | float | true | false |
 
