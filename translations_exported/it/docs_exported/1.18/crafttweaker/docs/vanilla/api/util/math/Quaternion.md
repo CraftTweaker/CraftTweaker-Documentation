@@ -12,10 +12,8 @@ import crafttweaker.api.util.math.Quaternion;
 
 :::group{name=conj}
 
-Return Type: void
-
 ```zenscript
-// Quaternion.conj() as void
+// Quaternion.conj()
 
 myQuaternion.conj();
 ```
@@ -72,40 +70,34 @@ myQuaternion.k();
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Quaternion.mul(other as Quaternion) as void
+Quaternion.mul(other as Quaternion)
 ```
 
-| Parametro | Tipo                                            | Descrizione             |
-| --------- | ----------------------------------------------- | ----------------------- |
-| other     | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
+| Parametro | Tipo                                            |
+| --------- | ----------------------------------------------- |
+| other     | [Quaternion](/vanilla/api/util/math/Quaternion) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Quaternion.mul(value as float) as void
+Quaternion.mul(value as float)
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| valore    | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| valore    | float |
 
 
 :::
 
 :::group{name=normalize}
 
-Return Type: void
-
 ```zenscript
-// Quaternion.normalize() as void
+// Quaternion.normalize()
 
 myQuaternion.normalize();
 ```
@@ -126,34 +118,30 @@ myQuaternion.r();
 
 :::group{name=setValue}
 
-Return Type: void
-
 ```zenscript
-Quaternion.setValue(i as float, j as float, k as float, r as float) as void
+Quaternion.setValue(i as float, j as float, k as float, r as float)
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| i         | float | No Description Provided |
-| j         | float | No Description Provided |
-| k         | float | No Description Provided |
-| r         | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| i         | float |
+| j         | float |
+| k         | float |
+| r         | float |
 
 
 :::
 
 :::group{name=slerp}
 
-Return Type: void
-
 ```zenscript
-Quaternion.slerp(other as Quaternion, value as float) as void
+Quaternion.slerp(other as Quaternion, value as float)
 ```
 
-| Parametro | Tipo                                            | Descrizione             |
-| --------- | ----------------------------------------------- | ----------------------- |
-| other     | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
-| valore    | float                                           | No Description Provided |
+| Parametro | Tipo                                            |
+| --------- | ----------------------------------------------- |
+| other     | [Quaternion](/vanilla/api/util/math/Quaternion) |
+| valore    | float                                           |
 
 
 :::
@@ -209,14 +197,14 @@ myQuaternion.toYXZDegrees();
 
 ## Proprietà
 
-| Nome       | Tipo                                        | Ha Getter | Ha Setter | Descrizione             |
-| ---------- | ------------------------------------------- | --------- | --------- | ----------------------- |
-| i          | float                                       | sì        | no        | No Description Provided |
-| j          | float                                       | sì        | no        | No Description Provided |
-| k          | float                                       | sì        | no        | No Description Provided |
-| r          | float                                       | sì        | no        | No Description Provided |
-| xyz        | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        | No Description Provided |
-| xyzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        | No Description Provided |
-| yxz        | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        | No Description Provided |
-| yxzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        | No Description Provided |
+| Nome       | Tipo                                        | Ha Getter | Ha Setter |
+| ---------- | ------------------------------------------- | --------- | --------- |
+| i          | float                                       | sì        | no        |
+| j          | float                                       | sì        | no        |
+| k          | float                                       | sì        | no        |
+| r          | float                                       | sì        | no        |
+| xyz        | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        |
+| xyzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        |
+| yxz        | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        |
+| yxzDegrees | [Vector3f](/vanilla/api/util/math/Vector3f) | sì        | no        |
 
