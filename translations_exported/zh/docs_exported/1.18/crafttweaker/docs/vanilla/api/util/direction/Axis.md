@@ -33,11 +33,11 @@ Return Type: double
 Axis.choose(x as double, y as double, z as double) as double
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -50,11 +50,11 @@ Return Type: int
 Axis.choose(x as int, y as int, z as int) as int
 ```
 
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| x  | int | No Description Provided |
-| y  | int | No Description Provided |
-| z  | int | No Description Provided |
+| 参数 | 类型  |
+| -- | --- |
+| x  | int |
+| y  | int |
+| z  | int |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: boolean
 Axis.test(direction as Direction?) as boolean
 ```
 
-| 参数        | 类型                                                  | 描述                      |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| 参数        | 类型                                                  |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -125,10 +125,10 @@ Axis.test(direction as Direction?) as boolean
 
 ## 参数
 
-| 名称         | 类型                                         | 可获得  | 可设置   | 描述                      |
-| ---------- | ------------------------------------------ | ---- | ----- | ----------------------- |
-| horizontal | 布尔值                                        | true | false | No Description Provided |
-| name（名称）   | string                                     | true | false | No Description Provided |
-| plane      | [Plane](/vanilla/api/util/direction/Plane) | true | false | No Description Provided |
-| vertical   | 布尔值                                        | true | false | No Description Provided |
+| 名称         | 类型                                         | 可获得  | 可设置   |
+| ---------- | ------------------------------------------ | ---- | ----- |
+| horizontal | 布尔值                                        | true | false |
+| name（名称）   | string                                     | true | false |
+| plane      | [Plane](/vanilla/api/util/direction/Plane) | true | false |
+| vertical   | 布尔值                                        | true | false |
 
