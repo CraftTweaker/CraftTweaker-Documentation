@@ -19,11 +19,11 @@ Vec3 implements the following interfaces. That means all methods defined in thes
 ```zenscript
 new Vec3(x as double, y as double, z as double) as Vec3
 ```
-| Parametro | Tipo   | Descrizione                 |
-| --------- | ------ | --------------------------- |
-| x         | double | Nessuna descrizione fornita |
-| y         | double | Nessuna descrizione fornita |
-| z         | double | Nessuna descrizione fornita |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 
@@ -37,9 +37,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.add(other as Vec3) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -52,11 +52,11 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.add(x as double, y as double, z as double) as Vec3
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -69,10 +69,10 @@ Return Type: boolean
 Vec3.closerThan(position as Position, maxDistance as double) as boolean
 ```
 
-| Parametro   | Tipo                                   | Descrizione             |
-| ----------- | -------------------------------------- | ----------------------- |
-| position    | [Position](/vanilla/api/util/Position) | No Description Provided |
-| maxDistance | double                                 | No Description Provided |
+| Parametro   | Tipo                                   |
+| ----------- | -------------------------------------- |
+| position    | [Position](/vanilla/api/util/Position) |
+| maxDistance | double                                 |
 
 
 :::
@@ -85,9 +85,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.cross(other as Vec3) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -100,9 +100,9 @@ Return Type: double
 Vec3.distanceTo(other as Vec3) as double
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: double
 Vec3.distanceToSqr(other as Vec3) as double
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -130,11 +130,11 @@ Return Type: double
 Vec3.distanceToSqr(x as double, y as double, z as double) as double
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -147,9 +147,9 @@ Return Type: double
 Vec3.dot(other as Vec3) as double
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -162,9 +162,9 @@ Return Type: double
 Vec3.getValue(axis as Axis) as double
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| axis      | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| axis      | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -225,10 +225,10 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.lerp(other as Vec3, value as double) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
-| valore    | double                              | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
+| valore    | double                              |
 
 
 :::
@@ -241,9 +241,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.multiply(other as Vec3) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -256,11 +256,11 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.multiply(x as double, y as double, z as double) as Vec3
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -297,9 +297,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.scale(scalar as double) as Vec3
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| scalar    | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| scalar    | double |
 
 
 :::
@@ -312,9 +312,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.subtract(other as Vec3) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -327,11 +327,11 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.subtract(x as double, y as double, z as double) as Vec3
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -344,9 +344,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.vectorTo(other as Vec3) as Vec3
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -359,9 +359,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.xRot(pitch as float) as Vec3
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| pitch     | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| pitch     | float |
 
 
 :::
@@ -374,9 +374,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.yRot(yaw as float) as Vec3
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| yaw       | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| yaw       | float |
 
 
 :::
@@ -389,9 +389,9 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)
 Vec3.zRot(roll as float) as Vec3
 ```
 
-| Parametro | Tipo  | Descrizione             |
-| --------- | ----- | ----------------------- |
-| roll      | float | No Description Provided |
+| Parametro | Tipo  |
+| --------- | ----- |
+| roll      | float |
 
 
 :::
@@ -399,12 +399,12 @@ Vec3.zRot(roll as float) as Vec3
 
 ## Proprietà
 
-| Nome                  | Tipo                                | Ha Getter | Ha Setter | Descrizione             |
-| --------------------- | ----------------------------------- | --------- | --------- | ----------------------- |
-| horizontalDistance    | double                              | sì        | no        | No Description Provided |
-| horizontalDistanceSqr | double                              | sì        | no        | No Description Provided |
-| length                | double                              | sì        | no        | No Description Provided |
-| lengthSqr             | double                              | sì        | no        | No Description Provided |
-| normalize             | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        | No Description Provided |
-| reverse               | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        | No Description Provided |
+| Nome                  | Tipo                                | Ha Getter | Ha Setter |
+| --------------------- | ----------------------------------- | --------- | --------- |
+| horizontalDistance    | double                              | sì        | no        |
+| horizontalDistanceSqr | double                              | sì        | no        |
+| length                | double                              | sì        | no        |
+| lengthSqr             | double                              | sì        | no        |
+| normalize             | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        |
+| reverse               | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        |
 
