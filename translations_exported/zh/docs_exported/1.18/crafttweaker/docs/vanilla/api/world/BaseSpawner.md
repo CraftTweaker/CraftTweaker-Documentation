@@ -18,9 +18,9 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity?
 ```
 
-| 参数     | 类型                                | 描述                      |
-| ------ | --------------------------------- | ----------------------- |
-| param0 | [Level](/vanilla/api/world/Level) | No Description Provided |
+| 参数     | 类型                                |
+| ------ | --------------------------------- |
+| param0 | [Level](/vanilla/api/world/Level) |
 
 
 :::
@@ -51,15 +51,13 @@ myBaseSpawner.getoSpin();
 
 :::group{name=setEntityId}
 
-Return Type: void
-
 ```zenscript
-BaseSpawner.setEntityId(param0 as EntityType) as void
+BaseSpawner.setEntityId(param0 as EntityType)
 ```
 
-| 参数     | 类型                                           | 描述                      |
-| ------ | -------------------------------------------- | ----------------------- |
-| param0 | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| 参数     | 类型                                           |
+| ------ | -------------------------------------------- |
+| param0 | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::
@@ -67,9 +65,9 @@ BaseSpawner.setEntityId(param0 as EntityType) as void
 
 ## 参数
 
-| 名称       | 类型                                            | 可获得   | 可设置   | 描述                      |
-| -------- | --------------------------------------------- | ----- | ----- | ----------------------- |
-| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false | true  | No Description Provided |
-| oSpin    | double                                        | true  | false | No Description Provided |
-| spin     | double                                        | true  | false | No Description Provided |
+| 名称       | 类型                                            | 可获得   | 可设置   |
+| -------- | --------------------------------------------- | ----- | ----- |
+| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false | true  |
+| oSpin    | double                                        | true  | false |
+| spin     | double                                        | true  | false |
 
