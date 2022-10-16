@@ -12,14 +12,14 @@ import crafttweaker.api.util.sequence.SequenceContext;
 
 ## Constructors
 
-No Description Provided
+
 ```zenscript
 new SequenceContext<T,U>(sequence as Sequence<T,U>, data as U) as SequenceContext<T,U>
 ```
-| Parametro | Tipo                                                                   | Descrizione             |
-| --------- | ---------------------------------------------------------------------- | ----------------------- |
-| sequence  | [Sequence](/vanilla/api/util/sequence/Sequence)&lt;T,U&gt; | No Description Provided |
-| data      | U                                                                      | No Description Provided |
+| Parametro | Tipo                                                                   |
+| --------- | ---------------------------------------------------------------------- |
+| sequence  | [Sequence](/vanilla/api/util/sequence/Sequence)&lt;T,U&gt; |
+| data      | U                                                                      |
 
 
 
@@ -46,10 +46,8 @@ mySequenceContext.getData();
 
 Stop the sequence.
 
-Return Type: void
-
 ```zenscript
-// SequenceContext.stop() as void
+// SequenceContext.stop()
 
 mySequenceContext.stop();
 ```
