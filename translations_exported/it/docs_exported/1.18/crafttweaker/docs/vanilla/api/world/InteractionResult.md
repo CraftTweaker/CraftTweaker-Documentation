@@ -82,9 +82,9 @@ myInteractionResult.shouldSwing();
 
 ## Proprietà
 
-| Nome             | Tipo    | Ha Getter | Ha Setter | Descrizione             |
-| ---------------- | ------- | --------- | --------- | ----------------------- |
-| consumesAction   | boolean | sì        | no        | No Description Provided |
-| shouldAwardStats | boolean | sì        | no        | No Description Provided |
-| shouldSwing      | boolean | sì        | no        | No Description Provided |
+| Nome             | Tipo    | Ha Getter | Ha Setter |
+| ---------------- | ------- | --------- | --------- |
+| consumesAction   | boolean | sì        | no        |
+| shouldAwardStats | boolean | sì        | no        |
+| shouldSwing      | boolean | sì        | no        |
 
