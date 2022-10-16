@@ -44,8 +44,8 @@ myPercentaged.getPercentage();
 
 ## 参数
 
-| 名称         | 类型     | 可获得  | 可设置   | 描述                      |
-| ---------- | ------ | ---- | ----- | ----------------------- |
-| data       | T      | true | false | No Description Provided |
-| percentage | double | true | false | No Description Provided |
+| 名称         | 类型     | 可获得  | 可设置   |
+| ---------- | ------ | ---- | ----- |
+| data       | T      | true | false |
+| percentage | double | true | false |
 
