@@ -1,0 +1,27 @@
+{
+    "path": "vanilla/api/entity/effect/MobEffectInstance.md",
+    "zenCodeName": "crafttweaker.api.entity.effect.MobEffectInstance",
+    "searchTerms": [
+        "setNoCounter",
+        "visible",
+        "getAmplifier",
+        "getDescriptionId",
+        "isNoCounter",
+        "save",
+        "applyEffect",
+        "update",
+        "ambient",
+        "isAmbient",
+        "compareTo",
+        "isVisible",
+        "tick",
+        "duration",
+        "descriptionId",
+        "getDuration",
+        "load",
+        "effect",
+        "amplifier",
+        "getEffect",
+        "showIcon"
+    ]
+}
