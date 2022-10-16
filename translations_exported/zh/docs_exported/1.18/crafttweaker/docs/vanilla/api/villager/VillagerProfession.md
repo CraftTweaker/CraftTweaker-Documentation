@@ -61,11 +61,11 @@ myVillagerProfession.getWorkSound();
 
 ## 参数
 
-| 名称                   | 类型                                                                        | 可获得  | 可设置   | 描述                      |
-| -------------------- | ------------------------------------------------------------------------- | ---- | ----- | ----------------------- |
-| commandString #命令字符串 | string                                                                    | true | false | No Description Provided |
-| name（名称）             | string                                                                    | true | false | No Description Provided |
-| requestedItems       | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true | false | No Description Provided |
-| secondaryPoi         | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true | false | No Description Provided |
-| workSound            | [SoundEvent](/vanilla/api/sound/SoundEvent)?                              | true | false | No Description Provided |
+| 名称                   | 类型                                                                        | 可获得  | 可设置   |
+| -------------------- | ------------------------------------------------------------------------- | ---- | ----- |
+| commandString #命令字符串 | string                                                                    | true | false |
+| name（名称）             | string                                                                    | true | false |
+| requestedItems       | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true | false |
+| secondaryPoi         | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true | false |
+| workSound            | [SoundEvent](/vanilla/api/sound/SoundEvent)?                              | true | false |
 
