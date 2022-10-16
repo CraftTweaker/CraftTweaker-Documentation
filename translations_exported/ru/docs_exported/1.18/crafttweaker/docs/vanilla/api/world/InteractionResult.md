@@ -82,9 +82,9 @@ myInteractionResult.shouldSwing();
 
 ## Свойства
 
-| Название         | Тип     | Имеет Getter | Имеет Setter | Описание                |
-| ---------------- | ------- | ------------ | ------------ | ----------------------- |
-| consumesAction   | boolean | true         | false        | No Description Provided |
-| shouldAwardStats | boolean | true         | false        | No Description Provided |
-| shouldSwing      | boolean | true         | false        | No Description Provided |
+| Название         | Тип     | Имеет Getter | Имеет Setter |
+| ---------------- | ------- | ------------ | ------------ |
+| consumesAction   | boolean | true         | false        |
+| shouldAwardStats | boolean | true         | false        |
+| shouldSwing      | boolean | true         | false        |
 
