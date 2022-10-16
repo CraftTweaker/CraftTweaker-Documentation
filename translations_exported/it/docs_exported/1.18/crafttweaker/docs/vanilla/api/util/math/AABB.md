@@ -18,10 +18,10 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)?
 AABB.clip(minVec as Vec3, maxVec as Vec3) as Vec3?
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| minVec    | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
-| maxVec    | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| minVec    | [Vec3](/vanilla/api/util/math/Vec3) |
+| maxVec    | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -34,9 +34,9 @@ Return Type: boolean
 AABB.contains(other as Vec3) as boolean
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -49,11 +49,11 @@ Return Type: boolean
 AABB.contains(x as double, y as double, z as double) as boolean
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -66,11 +66,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.contract(x as double, y as double, z as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -83,9 +83,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.deflate(scalar as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| scalar    | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| scalar    | double |
 
 
 :::
@@ -98,11 +98,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.deflate(x as double, y as double, z as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.expandTowards(vec as Vec3) as AABB
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| vec       | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -130,11 +130,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.expandTowards(x as double, y as double, z as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -219,9 +219,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.inflate(scalar as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| scalar    | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| scalar    | double |
 
 
 :::
@@ -234,11 +234,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.inflate(x as double, y as double, z as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -251,9 +251,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.intersect(other as AABB) as AABB
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -266,9 +266,9 @@ Return Type: boolean
 AABB.intersects(other as AABB) as boolean
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -281,10 +281,10 @@ Return Type: boolean
 AABB.intersects(minVec as Vec3, maxVec as Vec3) as boolean
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| minVec    | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
-| maxVec    | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| minVec    | [Vec3](/vanilla/api/util/math/Vec3) |
+| maxVec    | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -297,14 +297,14 @@ Return Type: boolean
 AABB.intersects(minX as double, minY as double, minZ as double, maxX as double, maxY as double, maxZ as double) as boolean
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| minX      | double | No Description Provided |
-| minY      | double | No Description Provided |
-| minZ      | double | No Description Provided |
-| maxX      | double | No Description Provided |
-| maxY      | double | No Description Provided |
-| maxZ      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| minX      | double |
+| minY      | double |
+| minZ      | double |
+| maxX      | double |
+| maxY      | double |
+| maxZ      | double |
 
 
 :::
@@ -317,9 +317,9 @@ Return Type: double
 AABB.max(direction as Axis) as double
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| direction | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| direction | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -332,9 +332,9 @@ Return Type: double
 AABB.min(direction as Axis) as double
 ```
 
-| Parametro | Tipo                                     | Descrizione             |
-| --------- | ---------------------------------------- | ----------------------- |
-| direction | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Parametro | Tipo                                     |
+| --------- | ---------------------------------------- |
+| direction | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -347,9 +347,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.minmax(other as AABB) as AABB
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| other     | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| other     | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -362,9 +362,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(pos as BlockPos) as AABB
 ```
 
-| Parametro | Tipo                                        | Descrizione             |
-| --------- | ------------------------------------------- | ----------------------- |
-| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parametro | Tipo                                        |
+| --------- | ------------------------------------------- |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -377,9 +377,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(vec as Vec3) as AABB
 ```
 
-| Parametro | Tipo                                | Descrizione             |
-| --------- | ----------------------------------- | ----------------------- |
-| vec       | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| Parametro | Tipo                                |
+| --------- | ----------------------------------- |
+| vec       | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -392,11 +392,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(x as double, y as double, z as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| x         | double | No Description Provided |
-| y         | double | No Description Provided |
-| z         | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| x         | double |
+| y         | double |
+| z         | double |
 
 
 :::
@@ -409,9 +409,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxX(maxX as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| maxX      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| maxX      | double |
 
 
 :::
@@ -424,9 +424,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxY(maxY as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| maxY      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| maxY      | double |
 
 
 :::
@@ -439,9 +439,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxZ(maxZ as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| maxZ      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| maxZ      | double |
 
 
 :::
@@ -454,9 +454,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinX(minX as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| minX      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| minX      | double |
 
 
 :::
@@ -469,9 +469,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinY(minY as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| minY      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| minY      | double |
 
 
 :::
@@ -484,9 +484,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinZ(minZ as double) as AABB
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| minZ      | double | No Description Provided |
+| Parametro | Tipo   |
+| --------- | ------ |
+| minZ      | double |
 
 
 :::
@@ -494,12 +494,12 @@ AABB.setMinZ(minZ as double) as AABB
 
 ## Proprietà
 
-| Nome   | Tipo                                | Ha Getter | Ha Setter | Descrizione             |
-| ------ | ----------------------------------- | --------- | --------- | ----------------------- |
-| center | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        | No Description Provided |
-| hasNaN | boolean                             | sì        | no        | No Description Provided |
-| size   | double                              | sì        | no        | No Description Provided |
-| xSize  | double                              | sì        | no        | No Description Provided |
-| ySize  | double                              | sì        | no        | No Description Provided |
-| zSize  | double                              | sì        | no        | No Description Provided |
+| Nome   | Tipo                                | Ha Getter | Ha Setter |
+| ------ | ----------------------------------- | --------- | --------- |
+| center | [Vec3](/vanilla/api/util/math/Vec3) | sì        | no        |
+| hasNaN | boolean                             | sì        | no        |
+| size   | double                              | sì        | no        |
+| xSize  | double                              | sì        | no        |
+| ySize  | double                              | sì        | no        |
+| zSize  | double                              | sì        | no        |
 
