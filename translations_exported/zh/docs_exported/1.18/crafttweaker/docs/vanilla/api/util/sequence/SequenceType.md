@@ -41,7 +41,7 @@ SequenceType.SERVER_THREAD_LEVEL.name();
 
 ## 参数
 
-| 名称 | 类型     | 可获得  | 可设置   | 描述                                  |
-| -- | ------ | ---- | ----- | ----------------------------------- |
-|    | string | true | false | Gets the name of the sequence type. |
+| 类型     | 可获得  | 可设置   | 描述                                  |
+| ------ | ---- | ----- | ----------------------------------- |
+| string | true | false | Gets the name of the sequence type. |
 
