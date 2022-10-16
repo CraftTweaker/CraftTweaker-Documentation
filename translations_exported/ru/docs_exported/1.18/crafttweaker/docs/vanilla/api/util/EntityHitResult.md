@@ -41,7 +41,7 @@ myEntityHitResult.getType();
 
 ## Свойства
 
-| Название | Тип                                  | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ------------------------------------ | ------------ | ------------ | ----------------------- |
-| type     | [Entity](/vanilla/api/entity/Entity) | true         | false        | No Description Provided |
+| Название | Тип                                  | Имеет Getter | Имеет Setter |
+| -------- | ------------------------------------ | ------------ | ------------ |
+| type     | [Entity](/vanilla/api/entity/Entity) | true         | false        |
 
