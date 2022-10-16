@@ -37,8 +37,8 @@ myClipContext.getTo();
 
 ## Свойства
 
-| Название | Тип                                 | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ----------------------------------- | ------------ | ------------ | ----------------------- |
-| from     | [Vec3](/vanilla/api/util/math/Vec3) | true         | false        | No Description Provided |
-| to       | [Vec3](/vanilla/api/util/math/Vec3) | true         | false        | No Description Provided |
+| Название | Тип                                 | Имеет Getter | Имеет Setter |
+| -------- | ----------------------------------- | ------------ | ------------ |
+| from     | [Vec3](/vanilla/api/util/math/Vec3) | true         | false        |
+| to       | [Vec3](/vanilla/api/util/math/Vec3) | true         | false        |
 
