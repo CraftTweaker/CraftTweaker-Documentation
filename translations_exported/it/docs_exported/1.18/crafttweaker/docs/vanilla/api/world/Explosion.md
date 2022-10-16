@@ -18,17 +18,17 @@ Return Type: [Explosion](/vanilla/api/world/Explosion)
 Explosion.create(world as Level, x as double, y as double, z as double, size as float, causesFire as boolean, mode as ExplosionBlockInteraction, exploder as Entity, source as DamageSource) as Explosion
 ```
 
-| Parametro  | Tipo                                                                      | Descrizione             | Optional | DefaultValue |
-| ---------- | ------------------------------------------------------------------------- | ----------------------- | -------- | ------------ |
-| world      | [Level](/vanilla/api/world/Level)                                         | No Description Provided | no       |              |
-| x          | double                                                                    | No Description Provided | no       |              |
-| y          | double                                                                    | No Description Provided | no       |              |
-| z          | double                                                                    | No Description Provided | no       |              |
-| size       | float                                                                     | No Description Provided | no       |              |
-| causesFire | boolean                                                                   | No Description Provided | no       |              |
-| mode       | [ExplosionBlockInteraction](/vanilla/api/world/ExplosionBlockInteraction) | No Description Provided | no       |              |
-| exploder   | [Entity](/vanilla/api/entity/Entity)                                      | No Description Provided | sì       |              |
-| sorgente   | [DamageSource](/vanilla/api/world/DamageSource)                           | No Description Provided | sì       |              |
+| Parametro  | Tipo                                                                      | Optional |
+| ---------- | ------------------------------------------------------------------------- | -------- |
+| world      | [Level](/vanilla/api/world/Level)                                         | no       |
+| x          | double                                                                    | no       |
+| y          | double                                                                    | no       |
+| z          | double                                                                    | no       |
+| size       | float                                                                     | no       |
+| causesFire | boolean                                                                   | no       |
+| mode       | [ExplosionBlockInteraction](/vanilla/api/world/ExplosionBlockInteraction) | no       |
+| exploder   | [Entity](/vanilla/api/entity/Entity)                                      | sì       |
+| sorgente   | [DamageSource](/vanilla/api/world/DamageSource)                           | sì       |
 
 
 :::
@@ -39,10 +39,8 @@ Explosion.create(world as Level, x as double, y as double, z as double, size as 
 
 Clears the affected block positions of this Explosion.
 
-Return Type: void
-
 ```zenscript
-// Explosion.clearToBlow() as void
+// Explosion.clearToBlow()
 
 myExplosion.clearToBlow();
 ```
@@ -53,10 +51,8 @@ myExplosion.clearToBlow();
 
 Performs the first part of the explosion which is destroying the blocks.
 
-Return Type: void
-
 ```zenscript
-// Explosion.explode() as void
+// Explosion.explode()
 
 myExplosion.explode();
 ```
@@ -67,10 +63,8 @@ myExplosion.explode();
 
 Performs the second part of the explosion which is the sound, drops and if enabled the particles.
 
-Return Type: void
-
 ```zenscript
-// Explosion.finalizeExplosion(spawnParticles as boolean) as void
+// Explosion.finalizeExplosion(spawnParticles as boolean)
 
 myExplosion.finalizeExplosion(true);
 ```
@@ -157,5 +151,5 @@ myExplosion.getToBlow();
 | damageSource       | [DamageSource](/vanilla/api/world/DamageSource)                                       | sì        | no        | Gets the damage source of this Explosion.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | playerKnockbackMap | [Vec3](/vanilla/api/util/math/Vec3)[[Player](/vanilla/api/entity/type/player/Player)] | sì        | no        | Gets the player knockback map for this Explosion. <br />  <br />  This map is only populated in [Explosion](/vanilla/api/world/Explosion)#explode() so calling it before will return nothing. <br />  <br />  This map is used to calculate the vectors that players around the explosion will be pushed back by.                                                                                                                                                                                                                                                                                                                                                                   |
 | sourceMob          | [LivingEntity](/vanilla/api/entity/LivingEntity)?                                     | sì        | no        | Gets the LivingEntity that caused this Explosion. <br />  <br />  For example: <br />  If the Explosion was caused by TNT, it will return the PlayerEntity that placed it. <br />  If the Explosion was caused by a Creeper or another Entity directly, it will return that Entity. <br />  If the Explosion was caused by a Ghast fireball, it will return the Ghast. <br />  <br />  If no Entity caused this Explosion (for example, if the Explosion was caused by TNT in a Desert Temple that <br />  generated in the world), then `null` is returned. <br />  <br />  You may need to cast the returned LivingEntity to not be nullable. |
-| toBlow             | stdlib.List&lt;[BlockPos](/vanilla/api/util/math/BlockPos)&gt;            | sì        | no        | No Description Provided                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| toBlow             | stdlib.List&lt;[BlockPos](/vanilla/api/util/math/BlockPos)&gt;            | sì        | no        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
