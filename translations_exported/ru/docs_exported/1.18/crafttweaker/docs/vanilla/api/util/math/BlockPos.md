@@ -59,9 +59,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.above(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -110,9 +110,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.atY(value as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| value    | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| value    | int |
 
 
 :::
@@ -137,9 +137,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.below(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -152,9 +152,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.cross(other as Vec3i) as BlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -179,9 +179,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.east(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -194,9 +194,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.multiply(scalar as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| scalar   | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| scalar   | int |
 
 
 :::
@@ -221,9 +221,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.north(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -236,9 +236,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(other as Vec3i) as BlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -251,11 +251,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as double, y as double, z as double) as BlockPos
 ```
 
-| Параметр | Тип    | Описание                |
-| -------- | ------ | ----------------------- |
-| x        | double | No Description Provided |
-| y        | double | No Description Provided |
-| z        | double | No Description Provided |
+| Параметр | Тип    |
+| -------- | ------ |
+| x        | double |
+| y        | double |
+| z        | double |
 
 
 :::
@@ -268,11 +268,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as int, y as int, z as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
-| y        | int | No Description Provided |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
+| y        | int |
+| z        | int |
 
 
 :::
@@ -285,9 +285,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction) as BlockPos
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -300,10 +300,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(axis as Axis, distance as int) as BlockPos
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| distance | int                                      | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
+| distance | int                                      |
 
 
 :::
@@ -316,10 +316,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction, distance as int) as BlockPos
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance  | int                                                | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -332,9 +332,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.rotate(rotation as Rotation) as BlockPos
 ```
 
-| Параметр | Тип                                         | Описание                |
-| -------- | ------------------------------------------- | ----------------------- |
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| Параметр | Тип                                         |
+| -------- | ------------------------------------------- |
+| rotation | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -359,9 +359,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.south(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -374,9 +374,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.subtract(other as Vec3i) as BlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -401,9 +401,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.west(distance as int) as BlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
