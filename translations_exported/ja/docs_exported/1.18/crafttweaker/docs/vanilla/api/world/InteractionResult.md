@@ -82,9 +82,9 @@ myInteractionResult.shouldSwing();
 
 ## Properties
 
-| 名称               | Type     | Has Getter | Has Setter | Description             |
-| ---------------- | -------- | ---------- | ---------- | ----------------------- |
-| consumesAction   | boolean型 | true       | false      | No Description Provided |
-| shouldAwardStats | boolean型 | true       | false      | No Description Provided |
-| shouldSwing      | boolean型 | true       | false      | No Description Provided |
+| 名称               | Type     | Has Getter | Has Setter |
+| ---------------- | -------- | ---------- | ---------- |
+| consumesAction   | boolean型 | true       | false      |
+| shouldAwardStats | boolean型 | true       | false      |
+| shouldSwing      | boolean型 | true       | false      |
 
