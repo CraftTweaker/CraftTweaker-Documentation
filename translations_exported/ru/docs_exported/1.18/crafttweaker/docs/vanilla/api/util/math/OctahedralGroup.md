@@ -77,9 +77,9 @@ Return Type: [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup)
 OctahedralGroup.compose(group as OctahedralGroup) as OctahedralGroup
 ```
 
-| Параметр | Тип                                                       | Описание                |
-| -------- | --------------------------------------------------------- | ----------------------- |
-| group    | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) | No Description Provided |
+| Параметр | Тип                                                       |
+| -------- | --------------------------------------------------------- |
+| group    | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) |
 
 
 :::
@@ -104,9 +104,9 @@ Return Type: boolean
 OctahedralGroup.inverts(axis as Axis) as boolean
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -119,9 +119,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 OctahedralGroup.rotate(direction as Direction) as Direction
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [FrontAndTop](/vanilla/api/util/math/FrontAndTop)
 OctahedralGroup.rotate(frontAndTop as FrontAndTop) as FrontAndTop
 ```
 
-| Параметр    | Тип                                               | Описание                |
-| ----------- | ------------------------------------------------- | ----------------------- |
-| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) | No Description Provided |
+| Параметр    | Тип                                               |
+| ----------- | ------------------------------------------------- |
+| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) |
 
 
 :::
@@ -156,7 +156,7 @@ myOctahedralGroup.transformation();
 
 ## Свойства
 
-| Название       | Тип                                         | Имеет Getter | Имеет Setter | Описание                |
-| -------------- | ------------------------------------------- | ------------ | ------------ | ----------------------- |
-| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true         | false        | No Description Provided |
+| Название       | Тип                                         | Имеет Getter | Имеет Setter |
+| -------------- | ------------------------------------------- | ------------ | ------------ |
+| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true         | false        |
 
