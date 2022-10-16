@@ -41,7 +41,7 @@ myEntityHitResult.getType();
 
 ## Proprietà
 
-| Nome | Tipo                                 | Ha Getter | Ha Setter | Descrizione             |
-| ---- | ------------------------------------ | --------- | --------- | ----------------------- |
-| type | [Entity](/vanilla/api/entity/Entity) | sì        | no        | No Description Provided |
+| Nome | Tipo                                 | Ha Getter | Ha Setter |
+| ---- | ------------------------------------ | --------- | --------- |
+| type | [Entity](/vanilla/api/entity/Entity) | sì        | no        |
 
