@@ -18,9 +18,9 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity?
 ```
 
-| Parametro | Tipo                              | Descrizione             |
-| --------- | --------------------------------- | ----------------------- |
-| param0    | [Level](/vanilla/api/world/Level) | No Description Provided |
+| Parametro | Tipo                              |
+| --------- | --------------------------------- |
+| param0    | [Level](/vanilla/api/world/Level) |
 
 
 :::
@@ -51,15 +51,13 @@ myBaseSpawner.getoSpin();
 
 :::group{name=setEntityId}
 
-Return Type: void
-
 ```zenscript
-BaseSpawner.setEntityId(param0 as EntityType) as void
+BaseSpawner.setEntityId(param0 as EntityType)
 ```
 
-| Parametro | Tipo                                         | Descrizione             |
-| --------- | -------------------------------------------- | ----------------------- |
-| param0    | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| Parametro | Tipo                                         |
+| --------- | -------------------------------------------- |
+| param0    | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::
@@ -67,9 +65,9 @@ BaseSpawner.setEntityId(param0 as EntityType) as void
 
 ## Proprietà
 
-| Nome     | Tipo                                          | Ha Getter | Ha Setter | Descrizione             |
-| -------- | --------------------------------------------- | --------- | --------- | ----------------------- |
-| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | no        | sì        | No Description Provided |
-| oSpin    | double                                        | sì        | no        | No Description Provided |
-| spin     | double                                        | sì        | no        | No Description Provided |
+| Nome     | Tipo                                          | Ha Getter | Ha Setter |
+| -------- | --------------------------------------------- | --------- | --------- |
+| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | no        | sì        |
+| oSpin    | double                                        | sì        | no        |
+| spin     | double                                        | sì        | no        |
 
