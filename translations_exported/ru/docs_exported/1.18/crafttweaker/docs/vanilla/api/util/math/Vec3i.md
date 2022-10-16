@@ -35,9 +35,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.above(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -62,9 +62,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.below(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -77,10 +77,10 @@ Return Type: boolean
 Vec3i.closerThan(other as Vec3i, maxDistance as double) as boolean
 ```
 
-| Параметр    | Тип                                   | Описание                |
-| ----------- | ------------------------------------- | ----------------------- |
-| other       | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| maxDistance | double                                | No Description Provided |
+| Параметр    | Тип                                   |
+| ----------- | ------------------------------------- |
+| other       | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| maxDistance | double                                |
 
 
 :::
@@ -93,9 +93,9 @@ Return Type: int
 Vec3i.compareTo(other as Vec3i) as int
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -108,9 +108,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.cross(other as Vec3i) as Vec3i
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -123,9 +123,9 @@ Return Type: int
 Vec3i.distManhattan(other as Vec3i) as int
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -138,9 +138,9 @@ Return Type: double
 Vec3i.distSqr(other as Vec3i) as double
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -153,9 +153,9 @@ Return Type: double
 Vec3i.distToCenterSqr(position as Position) as double
 ```
 
-| Параметр | Тип                                    | Описание                |
-| -------- | -------------------------------------- | ----------------------- |
-| position | [Position](/vanilla/api/util/Position) | No Description Provided |
+| Параметр | Тип                                    |
+| -------- | -------------------------------------- |
+| position | [Position](/vanilla/api/util/Position) |
 
 
 :::
@@ -168,11 +168,11 @@ Return Type: double
 Vec3i.distToCenterSqr(x as double, y as double, z as double) as double
 ```
 
-| Параметр | Тип    | Описание                |
-| -------- | ------ | ----------------------- |
-| x        | double | No Description Provided |
-| y        | double | No Description Provided |
-| z        | double | No Description Provided |
+| Параметр | Тип    |
+| -------- | ------ |
+| x        | double |
+| y        | double |
+| z        | double |
 
 
 :::
@@ -197,9 +197,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.east(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -212,9 +212,9 @@ Return Type: int
 Vec3i.getValue(axis as Axis) as int
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -263,9 +263,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.multiply(scalar as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| scalar   | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| scalar   | int |
 
 
 :::
@@ -290,9 +290,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.north(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -305,9 +305,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(other as Vec3i) as Vec3i
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -320,11 +320,11 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(x as double, y as double, z as double) as Vec3i
 ```
 
-| Параметр | Тип    | Описание                |
-| -------- | ------ | ----------------------- |
-| x        | double | No Description Provided |
-| y        | double | No Description Provided |
-| z        | double | No Description Provided |
+| Параметр | Тип    |
+| -------- | ------ |
+| x        | double |
+| y        | double |
+| z        | double |
 
 
 :::
@@ -337,11 +337,11 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.offset(x as int, y as int, z as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
-| y        | int | No Description Provided |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
+| y        | int |
+| z        | int |
 
 
 :::
@@ -354,9 +354,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(direction as Direction) as Vec3i
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -369,10 +369,10 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(axis as Axis, distanec as int) as Vec3i
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| distanec | int                                      | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
+| distanec | int                                      |
 
 
 :::
@@ -385,10 +385,10 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.relative(direction as Direction, distance as int) as Vec3i
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance  | int                                                | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -413,9 +413,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.south(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -428,9 +428,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.subtract(other as Vec3i) as Vec3i
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -467,9 +467,9 @@ Return Type: [Vec3i](/vanilla/api/util/math/Vec3i)
 Vec3i.west(distance as int) as Vec3i
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -477,10 +477,10 @@ Vec3i.west(distance as int) as Vec3i
 
 ## Свойства
 
-| Название      | Тип    | Имеет Getter | Имеет Setter | Описание                |
-| ------------- | ------ | ------------ | ------------ | ----------------------- |
-| toShortString | string | true         | false        | No Description Provided |
-| x             | int    | true         | false        | No Description Provided |
-| y             | int    | true         | false        | No Description Provided |
-| z             | int    | true         | false        | No Description Provided |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| toShortString | string | true         | false        |
+| x             | int    | true         | false        |
+| y             | int    | true         | false        |
+| z             | int    | true         | false        |
 
