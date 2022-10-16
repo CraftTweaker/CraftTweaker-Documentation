@@ -106,15 +106,13 @@ myGameType.isSurvival();
 
 :::group{name=updatePlayerAbilities}
 
-Return Type: void
-
 ```zenscript
-GameType.updatePlayerAbilities(abilities as Abilities) as void
+GameType.updatePlayerAbilities(abilities as Abilities)
 ```
 
-| 参数        | 类型                                                     | 描述                      |
-| --------- | ------------------------------------------------------ | ----------------------- |
-| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) | No Description Provided |
+| 参数        | 类型                                                     |
+| --------- | ------------------------------------------------------ |
+| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) |
 
 
 :::
@@ -122,13 +120,13 @@ GameType.updatePlayerAbilities(abilities as Abilities) as void
 
 ## 参数
 
-| 名称                       | 类型                                       | 可获得  | 可设置   | 描述                      |
-| ------------------------ | ---------------------------------------- | ---- | ----- | ----------------------- |
-| id                       | int                                      | true | false | No Description Provided |
-| isBlockPlacingRestricted | 布尔值                                      | true | false | No Description Provided |
-| isCreative               | 布尔值                                      | true | false | No Description Provided |
-| isSurvival               | 布尔值                                      | true | false | No Description Provided |
-| longDisplayName          | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| name（名称）                 | string                                   | true | false | No Description Provided |
-| shortDisplayName         | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
+| 名称                       | 类型                                       | 可获得  | 可设置   |
+| ------------------------ | ---------------------------------------- | ---- | ----- |
+| id                       | int                                      | true | false |
+| isBlockPlacingRestricted | 布尔值                                      | true | false |
+| isCreative               | 布尔值                                      | true | false |
+| isSurvival               | 布尔值                                      | true | false |
+| longDisplayName          | [Component](/vanilla/api/text/Component) | true | false |
+| name（名称）                 | string                                   | true | false |
+| shortDisplayName         | [Component](/vanilla/api/text/Component) | true | false |
 
