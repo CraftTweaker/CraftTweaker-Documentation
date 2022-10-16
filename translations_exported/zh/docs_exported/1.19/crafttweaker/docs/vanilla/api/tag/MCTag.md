@@ -1,0 +1,217 @@
+# MCTag
+
+## 导入类
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.tag.MCTag;
+```
+
+
+## 已实现的接口
+MCTag implements the following interfaces. That means all methods defined in these interfaces are also available in MCTag
+
+- [CommandStringDisplayable #命令字符串可显示](/vanilla/api/bracket/CommandStringDisplayable)
+- Comparable&lt;[MCTag](/vanilla/api/tag/MCTag)&gt;
+
+## 使用方式
+
+:::group{name=add}
+
+Adds the given tags to this tag.
+
+```zenscript
+// MCTag.add(tags as MCTag[])
+
+<tag:items:minecraft:wool>.add(<tag:items:minecraft:wool>);
+```
+
+| 参数   | 类型                                | 描述               |
+| ---- | --------------------------------- | ---------------- |
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to add. |
+
+
+:::
+
+:::group{name=addId}
+
+Adds the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) to this tag.
+
+```zenscript
+// MCTag.addId(elements as ResourceLocation[])
+
+<tag:items:minecraft:wool>.addId(<resource:minecraft:diamond>);
+```
+
+| 参数       | 类型                                                           | 描述                                       |
+| -------- | ------------------------------------------------------------ | ---------------------------------------- |
+| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to add. |
+
+
+:::
+
+:::group{name=clear}
+
+Removes all elements in this tag.
+
+```zenscript
+// MCTag.clear()
+
+<tag:items:minecraft:wool>.clear();
+```
+
+:::
+
+:::group{name=contains}
+
+Checks if this tag contains an element with the given id
+
+Returns: true if it contains the element, false otherwise.  
+Return Type: boolean
+
+```zenscript
+// MCTag.contains(id as ResourceLocation) as boolean
+
+<tag:items:minecraft:wool>.contains(<resource:minecraft:white_wool>);
+```
+
+| 参数 | 类型                                             | 描述                              |
+| -- | ---------------------------------------------- | ------------------------------- |
+| id | [资源位置](/vanilla/api/resource/ResourceLocation) | The ID of the element to check. |
+
+
+:::
+
+:::group{name=equals}
+
+Checks if this tag equals the other tag.
+
+Returns: true if the tags are equal, false otherwise.  
+Return Type: boolean
+
+```zenscript
+// MCTag.equals(other as MCTag) as boolean
+
+<tag:items:minecraft:wool>.equals(<tag:items:minecraft:wool>);
+```
+
+| 参数    | 类型                              | 描述                        |
+| ----- | ------------------------------- | ------------------------- |
+| other | [MCTag](/vanilla/api/tag/MCTag) | The tag to check against. |
+
+
+:::
+
+:::group{name=exists}
+
+Checks if this tag exists.
+
+Returns: true if this tag exists, false otherwise.  
+Return Type: boolean
+
+```zenscript
+// MCTag.exists() as boolean
+
+<tag:items:minecraft:wool>.exists();
+```
+
+:::
+
+:::group{name=id}
+
+Gets the id of this tag.
+
+Returns: The id of this tag.  
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// MCTag.id() as ResourceLocation
+
+<tag:items:minecraft:wool>.id();
+```
+
+:::
+
+:::group{name=idElements}
+
+Gets the id's of the elements in this tag.
+
+Returns: The id's elements in this tag.  
+Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
+
+```zenscript
+// MCTag.idElements() as stdlib.List<ResourceLocation>
+
+<tag:items:minecraft:wool>.idElements();
+```
+
+:::
+
+:::group{name=remove}
+
+Removes the given tags from this tag.
+
+```zenscript
+// MCTag.remove(tags as MCTag[])
+
+<tag:items:minecraft:wool>.remove(<tag:items:minecraft:wool>);
+```
+
+| 参数   | 类型                                | 描述                  |
+| ---- | --------------------------------- | ------------------- |
+| tags | [MCTag](/vanilla/api/tag/MCTag)[] | The tags to remove. |
+
+
+:::
+
+:::group{name=removeId}
+
+Removes the elements that correspond to the given [ResourceLocation](/vanilla/api/resource/ResourceLocation) from this tag.
+
+```zenscript
+// MCTag.removeId(elements as ResourceLocation[])
+
+<tag:items:minecraft:wool>.removeId(<resource:minecraft:diamond>);
+```
+
+| 参数       | 类型                                                           | 描述                                          |
+| -------- | ------------------------------------------------------------ | ------------------------------------------- |
+| elements | [ResourceLocation](/vanilla/api/resource/ResourceLocation)[] | The registry key of the elements to remove. |
+
+
+:::
+
+
+## 运算符
+
+:::group{name=CONTAINS}
+
+Checks if this tag contains an element with the given id
+
+```zenscript
+id as ResourceLocation in myMCTag
+<resource:minecraft:white_wool> in <tag:items:minecraft:wool>
+```
+
+:::
+
+:::group{name=EQUALS}
+
+Checks if this tag equals the other tag.
+
+```zenscript
+myMCTag == other as MCTag
+<tag:items:minecraft:wool> == <tag:items:minecraft:wool>
+```
+
+:::
+
+
+## 参数
+
+| 名称         | 类型                                                                                        | 可获得  | 可设置   | 描述                                         |
+| ---------- | ----------------------------------------------------------------------------------------- | ---- | ----- | ------------------------------------------ |
+| exists     | 布尔值                                                                                       | true | false | Checks if this tag exists.                 |
+| id         | [资源位置](/vanilla/api/resource/ResourceLocation)                                            | true | false | Gets the id of this tag.                   |
+| idElements | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt; | true | false | Gets the id's of the elements in this tag. |
+
