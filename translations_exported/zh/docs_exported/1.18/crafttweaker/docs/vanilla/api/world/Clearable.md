@@ -14,10 +14,8 @@ import crafttweaker.api.world.Clearable;
 
 Clears the contents of this Clearable.
 
-Return Type: void
-
 ```zenscript
-// Clearable.clearContent() as void
+// Clearable.clearContent()
 
 myClearable.clearContent();
 ```
