@@ -55,7 +55,7 @@ myBiomeCategory.getName();
 
 ## Properties
 
-| 名称   | Type   | Has Getter | Has Setter | Description             |
-| ---- | ------ | ---------- | ---------- | ----------------------- |
-| name | string | true       | false      | No Description Provided |
+| 名称   | Type   | Has Getter | Has Setter |
+| ---- | ------ | ---------- | ---------- |
+| name | string | true       | false      |
 
