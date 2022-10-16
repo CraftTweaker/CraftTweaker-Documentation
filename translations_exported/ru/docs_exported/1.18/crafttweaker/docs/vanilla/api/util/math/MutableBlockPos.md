@@ -22,11 +22,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.clamp(axis as Axis, min as int, max as int) as MutableBlockPos
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| min      | int                                      | No Description Provided |
-| max      | int                                      | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
+| min      | int                                      |
+| max      | int                                      |
 
 
 :::
@@ -39,9 +39,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(direction as Direction) as MutableBlockPos
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -54,9 +54,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(other as Vec3i) as MutableBlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -69,10 +69,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(direction as Direction, distance as int) as MutableBlockPos
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance  | int                                                | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -85,11 +85,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.move(x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
-| y        | int | No Description Provided |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
+| y        | int |
+| z        | int |
 
 
 :::
@@ -114,9 +114,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(value as long) as MutableBlockPos
 ```
 
-| Параметр | Тип  | Описание                |
-| -------- | ---- | ----------------------- |
-| value    | long | No Description Provided |
+| Параметр | Тип  |
+| -------- | ---- |
+| value    | long |
 
 
 :::
@@ -129,9 +129,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(value as Vec3i) as MutableBlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| value    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| value    | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -144,11 +144,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(x as double, y as double, z as double) as MutableBlockPos
 ```
 
-| Параметр | Тип    | Описание                |
-| -------- | ------ | ----------------------- |
-| x        | double | No Description Provided |
-| y        | double | No Description Provided |
-| z        | double | No Description Provided |
+| Параметр | Тип    |
+| -------- | ------ |
+| x        | double |
+| y        | double |
+| z        | double |
 
 
 :::
@@ -161,11 +161,11 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
-| y        | int | No Description Provided |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
+| y        | int |
+| z        | int |
 
 
 :::
@@ -178,12 +178,12 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setValue(axisCycle as AxisCycle, x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Параметр  | Тип                                           | Описание                |
-| --------- | --------------------------------------------- | ----------------------- |
-| axisCycle | [AxisCycle](/vanilla/api/util/math/AxisCycle) | No Description Provided |
-| x         | int                                           | No Description Provided |
-| y         | int                                           | No Description Provided |
-| z         | int                                           | No Description Provided |
+| Параметр  | Тип                                           |
+| --------- | --------------------------------------------- |
+| axisCycle | [AxisCycle](/vanilla/api/util/math/AxisCycle) |
+| x         | int                                           |
+| y         | int                                           |
+| z         | int                                           |
 
 
 :::
@@ -196,10 +196,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, direction as Direction) as MutableBlockPos
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| other     | [Vec3i](/vanilla/api/util/math/Vec3i)              | No Description Provided |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| other     | [Vec3i](/vanilla/api/util/math/Vec3i)              |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -212,10 +212,10 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, offset as Vec3i) as MutableBlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| offset   | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| offset   | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -228,12 +228,12 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setWithOffset(other as Vec3i, x as int, y as int, z as int) as MutableBlockPos
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| other    | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
-| x        | int                                   | No Description Provided |
-| y        | int                                   | No Description Provided |
-| z        | int                                   | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| other    | [Vec3i](/vanilla/api/util/math/Vec3i) |
+| x        | int                                   |
+| y        | int                                   |
+| z        | int                                   |
 
 
 :::
@@ -246,9 +246,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setX(x as int) as MutableBlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
 
 
 :::
@@ -261,9 +261,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setY(y as int) as MutableBlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| y        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| y        | int |
 
 
 :::
@@ -276,9 +276,9 @@ Return Type: [MutableBlockPos](/vanilla/api/util/math/MutableBlockPos)
 MutableBlockPos.setZ(z as int) as MutableBlockPos
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| z        | int |
 
 
 :::
