@@ -18,10 +18,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.arrow(arrow as Arrow, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                                      | Описание                |
-| -------- | -------------------------------------------------------- | ----------------------- |
-| arrow    | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| Параметр | Тип                                                      |
+| -------- | -------------------------------------------------------- |
+| arrow    | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) |
+| owner    | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -46,9 +46,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(explosion as Explosion?) as DamageSource
 ```
 
-| Параметр  | Тип                                        | Описание                |
-| --------- | ------------------------------------------ | ----------------------- |
-| explosion | [Explosion](/vanilla/api/world/Explosion)? | No Description Provided |
+| Параметр  | Тип                                        |
+| --------- | ------------------------------------------ |
+| explosion | [Explosion](/vanilla/api/world/Explosion)? |
 
 
 :::
@@ -61,9 +61,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(owner as LivingEntity?) as DamageSource
 ```
 
-| Параметр | Тип                                               | Описание                | Optional | DefaultValue |
-| -------- | ------------------------------------------------- | ----------------------- | -------- | ------------ |
-| owner    | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided | true     |              |
+| Параметр | Тип                                               | Optional |
+| -------- | ------------------------------------------------- | -------- |
+| owner    | [LivingEntity](/vanilla/api/entity/LivingEntity)? | true     |
 
 
 :::
@@ -76,10 +76,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireball(fireball as Fireball, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                                      | Описание                |
-| -------- | -------------------------------------------------------- | ----------------------- |
-| fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| Параметр | Тип                                                      |
+| -------- | -------------------------------------------------------- |
+| fireball | [Fireball](/vanilla/api/entity/type/projectile/Fireball) |
+| owner    | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -92,10 +92,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                                                              | Описание                |
-| -------- | -------------------------------------------------------------------------------- | ----------------------- |
-| entity   | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)?                                            | No Description Provided |
+| Параметр | Тип                                                                              |
+| -------- | -------------------------------------------------------------------------------- |
+| entity   | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) |
+| owner    | [Entity](/vanilla/api/entity/Entity)?                                            |
 
 
 :::
@@ -108,10 +108,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMagic(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| entity   | [Entity](/vanilla/api/entity/Entity)  |
+| owner    | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -124,10 +124,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity?) as DamageSource
 ```
 
-| Параметр | Тип                                               | Описание                |
-| -------- | ------------------------------------------------- | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity)              | No Description Provided |
-| owner    | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
+| Параметр | Тип                                               |
+| -------- | ------------------------------------------------- |
+| entity   | [Entity](/vanilla/api/entity/Entity)              |
+| owner    | [LivingEntity](/vanilla/api/entity/LivingEntity)? |
 
 
 :::
@@ -140,9 +140,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.mobAttack(living as LivingEntity) as DamageSource
 ```
 
-| Параметр | Тип                                              | Описание                |
-| -------- | ------------------------------------------------ | ----------------------- |
-| living   | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Параметр | Тип                                              |
+| -------- | ------------------------------------------------ |
+| living   | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -155,9 +155,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.playerAttack(player as Player) as DamageSource
 ```
 
-| Параметр | Тип                                              | Описание                |
-| -------- | ------------------------------------------------ | ----------------------- |
-| player   | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Параметр | Тип                                              |
+| -------- | ------------------------------------------------ |
+| player   | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -170,9 +170,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.string(living as LivingEntity) as DamageSource
 ```
 
-| Параметр | Тип                                              | Описание                |
-| -------- | ------------------------------------------------ | ----------------------- |
-| living   | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Параметр | Тип                                              |
+| -------- | ------------------------------------------------ |
+| living   | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -185,9 +185,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thorns(entity as Entity) as DamageSource
 ```
 
-| Параметр | Тип                                  | Описание                |
-| -------- | ------------------------------------ | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Параметр | Тип                                  |
+| -------- | ------------------------------------ |
+| entity   | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -200,10 +200,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thrown(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| entity   | [Entity](/vanilla/api/entity/Entity)  |
+| owner    | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -216,10 +216,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.trident(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Параметр | Тип                                   | Описание                |
-| -------- | ------------------------------------- | ----------------------- |
-| entity   | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner    | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Параметр | Тип                                   |
+| -------- | ------------------------------------- |
+| entity   | [Entity](/vanilla/api/entity/Entity)  |
+| owner    | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -232,10 +232,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity?) as DamageSource
 ```
 
-| Параметр    | Тип                                                            | Описание                |
-| ----------- | -------------------------------------------------------------- | ----------------------- |
-| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) | No Description Provided |
-| owner       | [Entity](/vanilla/api/entity/Entity)?                          | No Description Provided |
+| Параметр    | Тип                                                            |
+| ----------- | -------------------------------------------------------------- |
+| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) |
+| owner       | [Entity](/vanilla/api/entity/Entity)?                          |
 
 
 :::
@@ -286,9 +286,9 @@ Return Type: [Component](/vanilla/api/text/Component)
 DamageSource.getLocalizedDeathMessage(entity as LivingEntity) as Component
 ```
 
-| Параметр | Тип                                              | Описание                |
-| -------- | ------------------------------------------------ | ----------------------- |
-| entity   | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Параметр | Тип                                              |
+| -------- | ------------------------------------------------ |
+| entity   | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -536,23 +536,23 @@ myDamageSource.setScalesWithDifficulty();
 
 ## Свойства
 
-| Название             | Тип                                   | Имеет Getter | Имеет Setter | Описание                |
-| -------------------- | ------------------------------------- | ------------ | ------------ | ----------------------- |
-| directEntity         | [Entity](/vanilla/api/entity/Entity)? | true         | false        | No Description Provided |
-| doesBypassArmor      | boolean                               | true         | false        | No Description Provided |
-| doesBypassInvul      | boolean                               | true         | false        | No Description Provided |
-| doesBypassMagic      | boolean                               | true         | false        | No Description Provided |
-| doesDamageHelmet     | boolean                               | true         | false        | No Description Provided |
-| entity               | [Entity](/vanilla/api/entity/Entity)? | true         | false        | No Description Provided |
-| foodExhaustion       | float                                 | true         | false        | No Description Provided |
-| isCreativePlayer     | boolean                               | true         | false        | No Description Provided |
-| isExplosion          | boolean                               | true         | false        | No Description Provided |
-| isFall               | boolean                               | true         | false        | No Description Provided |
-| isFire               | boolean                               | true         | false        | No Description Provided |
-| isMagic              | boolean                               | true         | false        | No Description Provided |
-| isNoAggro            | boolean                               | true         | false        | No Description Provided |
-| isProjectile         | boolean                               | true         | false        | No Description Provided |
-| msgId                | string                                | true         | false        | No Description Provided |
-| scalesWithDifficulty | boolean                               | true         | false        | No Description Provided |
-| источник             | [Vec3](/vanilla/api/util/math/Vec3)?  | true         | false        | No Description Provided |
+| Название             | Тип                                   | Имеет Getter | Имеет Setter |
+| -------------------- | ------------------------------------- | ------------ | ------------ |
+| directEntity         | [Entity](/vanilla/api/entity/Entity)? | true         | false        |
+| doesBypassArmor      | boolean                               | true         | false        |
+| doesBypassInvul      | boolean                               | true         | false        |
+| doesBypassMagic      | boolean                               | true         | false        |
+| doesDamageHelmet     | boolean                               | true         | false        |
+| entity               | [Entity](/vanilla/api/entity/Entity)? | true         | false        |
+| foodExhaustion       | float                                 | true         | false        |
+| isCreativePlayer     | boolean                               | true         | false        |
+| isExplosion          | boolean                               | true         | false        |
+| isFall               | boolean                               | true         | false        |
+| isFire               | boolean                               | true         | false        |
+| isMagic              | boolean                               | true         | false        |
+| isNoAggro            | boolean                               | true         | false        |
+| isProjectile         | boolean                               | true         | false        |
+| msgId                | string                                | true         | false        |
+| scalesWithDifficulty | boolean                               | true         | false        |
+| источник             | [Vec3](/vanilla/api/util/math/Vec3)?  | true         | false        |
 
