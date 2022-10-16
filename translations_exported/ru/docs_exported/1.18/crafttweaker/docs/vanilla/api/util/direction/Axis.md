@@ -33,11 +33,11 @@ Return Type: double
 Axis.choose(x as double, y as double, z as double) as double
 ```
 
-| Параметр | Тип    | Описание                |
-| -------- | ------ | ----------------------- |
-| x        | double | No Description Provided |
-| y        | double | No Description Provided |
-| z        | double | No Description Provided |
+| Параметр | Тип    |
+| -------- | ------ |
+| x        | double |
+| y        | double |
+| z        | double |
 
 
 :::
@@ -50,11 +50,11 @@ Return Type: int
 Axis.choose(x as int, y as int, z as int) as int
 ```
 
-| Параметр | Тип | Описание                |
-| -------- | --- | ----------------------- |
-| x        | int | No Description Provided |
-| y        | int | No Description Provided |
-| z        | int | No Description Provided |
+| Параметр | Тип |
+| -------- | --- |
+| x        | int |
+| y        | int |
+| z        | int |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: boolean
 Axis.test(direction as Direction?) as boolean
 ```
 
-| Параметр  | Тип                                                 | Описание                |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Параметр  | Тип                                                 |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -125,10 +125,10 @@ Axis.test(direction as Direction?) as boolean
 
 ## Свойства
 
-| Название   | Тип                                        | Имеет Getter | Имеет Setter | Описание                |
-| ---------- | ------------------------------------------ | ------------ | ------------ | ----------------------- |
-| horizontal | boolean                                    | true         | false        | No Description Provided |
-| name       | string                                     | true         | false        | No Description Provided |
-| plane      | [Plane](/vanilla/api/util/direction/Plane) | true         | false        | No Description Provided |
-| vertical   | boolean                                    | true         | false        | No Description Provided |
+| Название   | Тип                                        | Имеет Getter | Имеет Setter |
+| ---------- | ------------------------------------------ | ------------ | ------------ |
+| horizontal | boolean                                    | true         | false        |
+| name       | string                                     | true         | false        |
+| plane      | [Plane](/vanilla/api/util/direction/Plane) | true         | false        |
+| vertical   | boolean                                    | true         | false        |
 
