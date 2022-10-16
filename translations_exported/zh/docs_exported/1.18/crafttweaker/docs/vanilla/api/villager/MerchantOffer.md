@@ -14,52 +14,52 @@ import crafttweaker.api.villager.MerchantOffer;
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| 参数              | 类型                                  | 描述                      |
-| --------------- | ----------------------------------- | ----------------------- |
-| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| maxUses         | int                                 | No description provided |
-| xp (经验值)        | int                                 | No description provided |
-| priceMultiplier | float                               | No description provided |
+| 参数              | 类型                                  |
+| --------------- | ----------------------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) |
+| result          | [物品应用](/vanilla/api/item/ItemStack) |
+| maxUses         | int                                 |
+| xp (经验值)        | int                                 |
+| priceMultiplier | float                               |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| 参数              | 类型                                  | 描述                      |
-| --------------- | ----------------------------------- | ----------------------- |
-| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| maxUses         | int                                 | No description provided |
-| xp (经验值)        | int                                 | No description provided |
-| priceMultiplier | float                               | No description provided |
+| 参数              | 类型                                  |
+| --------------- | ----------------------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) |
+| result          | [物品应用](/vanilla/api/item/ItemStack) |
+| maxUses         | int                                 |
+| xp (经验值)        | int                                 |
+| priceMultiplier | float                               |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| 参数              | 类型                                  | 描述                      |
-| --------------- | ----------------------------------- | ----------------------- |
-| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| uses            | int                                 | No description provided |
-| maxUses         | int                                 | No description provided |
-| xp (经验值)        | int                                 | No description provided |
-| priceMultiplier | float                               | No description provided |
+| 参数              | 类型                                  |
+| --------------- | ----------------------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) |
+| result          | [物品应用](/vanilla/api/item/ItemStack) |
+| uses            | int                                 |
+| maxUses         | int                                 |
+| xp (经验值)        | int                                 |
+| priceMultiplier | float                               |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float, demand as int) as MerchantOffer
 ```
-| 参数              | 类型                                  | 描述                      |
-| --------------- | ----------------------------------- | ----------------------- |
-| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| costB           | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| result          | [物品应用](/vanilla/api/item/ItemStack) | No description provided |
-| uses            | int                                 | No description provided |
-| maxUses         | int                                 | No description provided |
-| xp (经验值)        | int                                 | No description provided |
-| priceMultiplier | float                               | No description provided |
-| demand          | int                                 | No description provided |
+| 参数              | 类型                                  |
+| --------------- | ----------------------------------- |
+| baseCostA       | [物品应用](/vanilla/api/item/ItemStack) |
+| costB           | [物品应用](/vanilla/api/item/ItemStack) |
+| result          | [物品应用](/vanilla/api/item/ItemStack) |
+| uses            | int                                 |
+| maxUses         | int                                 |
+| xp (经验值)        | int                                 |
+| priceMultiplier | float                               |
+| demand          | int                                 |
 
 
 
@@ -67,15 +67,13 @@ new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStac
 
 :::group{name=addToSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-MerchantOffer.addToSpecialPriceDiff(specialPriceDiff as int) as void
+MerchantOffer.addToSpecialPriceDiff(specialPriceDiff as int)
 ```
 
-| 参数               | 类型  | 描述                      |
-| ---------------- | --- | ----------------------- |
-| specialPriceDiff | int | No Description Provided |
+| 参数               | 类型  |
+| ---------------- | --- |
+| specialPriceDiff | int |
 
 
 :::
@@ -226,10 +224,8 @@ myMerchantOffer.getXp();
 
 :::group{name=increaseUses}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.increaseUses() as void
+// MerchantOffer.increaseUses()
 
 myMerchantOffer.increaseUses();
 ```
@@ -262,10 +258,8 @@ myMerchantOffer.needsRestock();
 
 :::group{name=resetSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.resetSpecialPriceDiff() as void
+// MerchantOffer.resetSpecialPriceDiff()
 
 myMerchantOffer.resetSpecialPriceDiff();
 ```
@@ -274,10 +268,8 @@ myMerchantOffer.resetSpecialPriceDiff();
 
 :::group{name=resetUses}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.resetUses() as void
+// MerchantOffer.resetUses()
 
 myMerchantOffer.resetUses();
 ```
@@ -292,35 +284,31 @@ Return Type: boolean
 MerchantOffer.satisfiedBy(a as IItemStack, b as IItemStack) as boolean
 ```
 
-| 参数 | 类型                                         | 描述                      |
-| -- | ------------------------------------------ | ----------------------- |
-| a  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
-| b  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+| 参数 | 类型                                         |
+| -- | ------------------------------------------ |
+| a  | [IItemstack](/vanilla/api/item/IItemStack) |
+| b  | [IItemstack](/vanilla/api/item/IItemStack) |
 
 
 :::
 
 :::group{name=setSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-MerchantOffer.setSpecialPriceDiff(specialPriceDiff as int) as void
+MerchantOffer.setSpecialPriceDiff(specialPriceDiff as int)
 ```
 
-| 参数               | 类型  | 描述                      |
-| ---------------- | --- | ----------------------- |
-| specialPriceDiff | int | No Description Provided |
+| 参数               | 类型  |
+| ---------------- | --- |
+| specialPriceDiff | int |
 
 
 :::
 
 :::group{name=setToOutOfStock}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.setToOutOfStock() as void
+// MerchantOffer.setToOutOfStock()
 
 myMerchantOffer.setToOutOfStock();
 ```
@@ -347,20 +335,18 @@ Return Type: boolean
 MerchantOffer.take(a as IItemStack, b as IItemStack) as boolean
 ```
 
-| 参数 | 类型                                         | 描述                      |
-| -- | ------------------------------------------ | ----------------------- |
-| a  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
-| b  | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+| 参数 | 类型                                         |
+| -- | ------------------------------------------ |
+| a  | [IItemstack](/vanilla/api/item/IItemStack) |
+| b  | [IItemstack](/vanilla/api/item/IItemStack) |
 
 
 :::
 
 :::group{name=updateDemand}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.updateDemand() as void
+// MerchantOffer.updateDemand()
 
 myMerchantOffer.updateDemand();
 ```
@@ -370,19 +356,19 @@ myMerchantOffer.updateDemand();
 
 ## 参数
 
-| 名称               | 类型                                         | 可获得  | 可设置   | 描述                      |
-| ---------------- | ------------------------------------------ | ---- | ----- | ----------------------- |
-| baseCostA        | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| costA            | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| costB            | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| demand           | int                                        | true | false | No Description Provided |
-| maxUses          | int                                        | true | false | No Description Provided |
-| needsRestock     | 布尔值                                        | true | false | No Description Provided |
-| outOfStock       | 布尔值                                        | true | false | No Description Provided |
-| priceMultiplier  | float                                      | true | false | No Description Provided |
-| result           | [IItemstack](/vanilla/api/item/IItemStack) | true | false | No Description Provided |
-| shouldRewardExp  | 布尔值                                        | true | false | No Description Provided |
-| specialPriceDiff | int                                        | true | true  | No Description Provided |
-| uses             | int                                        | true | false | No Description Provided |
-| xp (经验值)         | int                                        | true | false | No Description Provided |
+| 名称               | 类型                                         | 可获得  | 可设置   |
+| ---------------- | ------------------------------------------ | ---- | ----- |
+| baseCostA        | [IItemstack](/vanilla/api/item/IItemStack) | true | false |
+| costA            | [IItemstack](/vanilla/api/item/IItemStack) | true | false |
+| costB            | [IItemstack](/vanilla/api/item/IItemStack) | true | false |
+| demand           | int                                        | true | false |
+| maxUses          | int                                        | true | false |
+| needsRestock     | 布尔值                                        | true | false |
+| outOfStock       | 布尔值                                        | true | false |
+| priceMultiplier  | float                                      | true | false |
+| result           | [IItemstack](/vanilla/api/item/IItemStack) | true | false |
+| shouldRewardExp  | 布尔值                                        | true | false |
+| specialPriceDiff | int                                        | true | true  |
+| uses             | int                                        | true | false |
+| xp (经验值)         | int                                        | true | false |
 
