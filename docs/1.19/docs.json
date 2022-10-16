@@ -33,6 +33,7 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
+            "ArmoreableMobs" : {},
             "Generic JSON Recipes": "mods/other_mods.md"
         },
         "ZenCode": {
