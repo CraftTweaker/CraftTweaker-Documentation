@@ -14,52 +14,52 @@ import crafttweaker.api.villager.MerchantOffer;
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| Parametro       | Tipo                                     | Descrizione                 |
-| --------------- | ---------------------------------------- | --------------------------- |
-| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| result          | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| maxUses         | int                                      | Nessuna descrizione fornita |
-| xp              | int                                      | Nessuna descrizione fornita |
-| priceMultiplier | float                                    | Nessuna descrizione fornita |
+| Parametro       | Tipo                                     |
+| --------------- | ---------------------------------------- |
+| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) |
+| result          | [ItemStack](/vanilla/api/item/ItemStack) |
+| maxUses         | int                                      |
+| xp              | int                                      |
+| priceMultiplier | float                                    |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| Parametro       | Tipo                                     | Descrizione                 |
-| --------------- | ---------------------------------------- | --------------------------- |
-| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| costB           | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| result          | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| maxUses         | int                                      | Nessuna descrizione fornita |
-| xp              | int                                      | Nessuna descrizione fornita |
-| priceMultiplier | float                                    | Nessuna descrizione fornita |
+| Parametro       | Tipo                                     |
+| --------------- | ---------------------------------------- |
+| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) |
+| costB           | [ItemStack](/vanilla/api/item/ItemStack) |
+| result          | [ItemStack](/vanilla/api/item/ItemStack) |
+| maxUses         | int                                      |
+| xp              | int                                      |
+| priceMultiplier | float                                    |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float) as MerchantOffer
 ```
-| Parametro       | Tipo                                     | Descrizione                 |
-| --------------- | ---------------------------------------- | --------------------------- |
-| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| costB           | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| result          | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| uses            | int                                      | Nessuna descrizione fornita |
-| maxUses         | int                                      | Nessuna descrizione fornita |
-| xp              | int                                      | Nessuna descrizione fornita |
-| priceMultiplier | float                                    | Nessuna descrizione fornita |
+| Parametro       | Tipo                                     |
+| --------------- | ---------------------------------------- |
+| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) |
+| costB           | [ItemStack](/vanilla/api/item/ItemStack) |
+| result          | [ItemStack](/vanilla/api/item/ItemStack) |
+| uses            | int                                      |
+| maxUses         | int                                      |
+| xp              | int                                      |
+| priceMultiplier | float                                    |
 
 ```zenscript
 new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStack, uses as int, maxUses as int, xp as int, priceMultiplier as float, demand as int) as MerchantOffer
 ```
-| Parametro       | Tipo                                     | Descrizione                 |
-| --------------- | ---------------------------------------- | --------------------------- |
-| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| costB           | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| result          | [ItemStack](/vanilla/api/item/ItemStack) | Nessuna descrizione fornita |
-| uses            | int                                      | Nessuna descrizione fornita |
-| maxUses         | int                                      | Nessuna descrizione fornita |
-| xp              | int                                      | Nessuna descrizione fornita |
-| priceMultiplier | float                                    | Nessuna descrizione fornita |
-| demand          | int                                      | Nessuna descrizione fornita |
+| Parametro       | Tipo                                     |
+| --------------- | ---------------------------------------- |
+| baseCostA       | [ItemStack](/vanilla/api/item/ItemStack) |
+| costB           | [ItemStack](/vanilla/api/item/ItemStack) |
+| result          | [ItemStack](/vanilla/api/item/ItemStack) |
+| uses            | int                                      |
+| maxUses         | int                                      |
+| xp              | int                                      |
+| priceMultiplier | float                                    |
+| demand          | int                                      |
 
 
 
@@ -67,15 +67,13 @@ new MerchantOffer(baseCostA as ItemStack, costB as ItemStack, result as ItemStac
 
 :::group{name=addToSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-MerchantOffer.addToSpecialPriceDiff(specialPriceDiff as int) as void
+MerchantOffer.addToSpecialPriceDiff(specialPriceDiff as int)
 ```
 
-| Parametro        | Tipo | Descrizione             |
-| ---------------- | ---- | ----------------------- |
-| specialPriceDiff | int  | No Description Provided |
+| Parametro        | Tipo |
+| ---------------- | ---- |
+| specialPriceDiff | int  |
 
 
 :::
@@ -226,10 +224,8 @@ myMerchantOffer.getXp();
 
 :::group{name=increaseUses}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.increaseUses() as void
+// MerchantOffer.increaseUses()
 
 myMerchantOffer.increaseUses();
 ```
@@ -262,10 +258,8 @@ myMerchantOffer.needsRestock();
 
 :::group{name=resetSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.resetSpecialPriceDiff() as void
+// MerchantOffer.resetSpecialPriceDiff()
 
 myMerchantOffer.resetSpecialPriceDiff();
 ```
@@ -274,10 +268,8 @@ myMerchantOffer.resetSpecialPriceDiff();
 
 :::group{name=resetUses}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.resetUses() as void
+// MerchantOffer.resetUses()
 
 myMerchantOffer.resetUses();
 ```
@@ -292,35 +284,31 @@ Return Type: boolean
 MerchantOffer.satisfiedBy(a as IItemStack, b as IItemStack) as boolean
 ```
 
-| Parametro | Tipo                                       | Descrizione             |
-| --------- | ------------------------------------------ | ----------------------- |
-| a         | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
-| b         | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parametro | Tipo                                       |
+| --------- | ------------------------------------------ |
+| a         | [IItemStack](/vanilla/api/item/IItemStack) |
+| b         | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
 
 :::group{name=setSpecialPriceDiff}
 
-Return Type: void
-
 ```zenscript
-MerchantOffer.setSpecialPriceDiff(specialPriceDiff as int) as void
+MerchantOffer.setSpecialPriceDiff(specialPriceDiff as int)
 ```
 
-| Parametro        | Tipo | Descrizione             |
-| ---------------- | ---- | ----------------------- |
-| specialPriceDiff | int  | No Description Provided |
+| Parametro        | Tipo |
+| ---------------- | ---- |
+| specialPriceDiff | int  |
 
 
 :::
 
 :::group{name=setToOutOfStock}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.setToOutOfStock() as void
+// MerchantOffer.setToOutOfStock()
 
 myMerchantOffer.setToOutOfStock();
 ```
@@ -347,20 +335,18 @@ Return Type: boolean
 MerchantOffer.take(a as IItemStack, b as IItemStack) as boolean
 ```
 
-| Parametro | Tipo                                       | Descrizione             |
-| --------- | ------------------------------------------ | ----------------------- |
-| a         | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
-| b         | [IItemStack](/vanilla/api/item/IItemStack) | No Description Provided |
+| Parametro | Tipo                                       |
+| --------- | ------------------------------------------ |
+| a         | [IItemStack](/vanilla/api/item/IItemStack) |
+| b         | [IItemStack](/vanilla/api/item/IItemStack) |
 
 
 :::
 
 :::group{name=updateDemand}
 
-Return Type: void
-
 ```zenscript
-// MerchantOffer.updateDemand() as void
+// MerchantOffer.updateDemand()
 
 myMerchantOffer.updateDemand();
 ```
@@ -370,19 +356,19 @@ myMerchantOffer.updateDemand();
 
 ## Proprietà
 
-| Nome             | Tipo                                       | Ha Getter | Ha Setter | Descrizione             |
-| ---------------- | ------------------------------------------ | --------- | --------- | ----------------------- |
-| baseCostA        | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        | No Description Provided |
-| costA            | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        | No Description Provided |
-| costB            | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        | No Description Provided |
-| demand           | int                                        | sì        | no        | No Description Provided |
-| maxUses          | int                                        | sì        | no        | No Description Provided |
-| needsRestock     | boolean                                    | sì        | no        | No Description Provided |
-| outOfStock       | boolean                                    | sì        | no        | No Description Provided |
-| priceMultiplier  | float                                      | sì        | no        | No Description Provided |
-| result           | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        | No Description Provided |
-| shouldRewardExp  | boolean                                    | sì        | no        | No Description Provided |
-| specialPriceDiff | int                                        | sì        | sì        | No Description Provided |
-| uses             | int                                        | sì        | no        | No Description Provided |
-| xp               | int                                        | sì        | no        | No Description Provided |
+| Nome             | Tipo                                       | Ha Getter | Ha Setter |
+| ---------------- | ------------------------------------------ | --------- | --------- |
+| baseCostA        | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        |
+| costA            | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        |
+| costB            | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        |
+| demand           | int                                        | sì        | no        |
+| maxUses          | int                                        | sì        | no        |
+| needsRestock     | boolean                                    | sì        | no        |
+| outOfStock       | boolean                                    | sì        | no        |
+| priceMultiplier  | float                                      | sì        | no        |
+| result           | [IItemStack](/vanilla/api/item/IItemStack) | sì        | no        |
+| shouldRewardExp  | boolean                                    | sì        | no        |
+| specialPriceDiff | int                                        | sì        | sì        |
+| uses             | int                                        | sì        | no        |
+| xp               | int                                        | sì        | no        |
 
