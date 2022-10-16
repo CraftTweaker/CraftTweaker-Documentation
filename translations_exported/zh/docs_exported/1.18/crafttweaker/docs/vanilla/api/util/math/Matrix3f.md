@@ -12,15 +12,13 @@ import crafttweaker.api.util.math.Matrix3f;
 
 :::group{name=add}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.add(other as Matrix3f) as void
+Matrix3f.add(other as Matrix3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
@@ -75,70 +73,60 @@ myMatrix3f.invert();
 
 :::group{name=load}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.load(other as Matrix3f) as void
+Matrix3f.load(other as Matrix3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.mul(other as Matrix3f) as void
+Matrix3f.mul(other as Matrix3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.mul(quaternion as Quaternion) as void
+Matrix3f.mul(quaternion as Quaternion)
 ```
 
-| 参数         | 类型                                              | 描述                      |
-| ---------- | ----------------------------------------------- | ----------------------- |
-| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) | No Description Provided |
+| 参数         | 类型                                              |
+| ---------- | ----------------------------------------------- |
+| quaternion | [Quaternion](/vanilla/api/util/math/Quaternion) |
 
 
 :::
 
 :::group{name=mul}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.mul(scalar as float) as void
+Matrix3f.mul(scalar as float)
 ```
 
-| 参数     | 类型    | 描述                      |
-| ------ | ----- | ----------------------- |
-| scalar | float | No Description Provided |
+| 参数     | 类型    |
+| ------ | ----- |
+| scalar | float |
 
 
 :::
 
 :::group{name=setIdentity}
 
-Return Type: void
-
 ```zenscript
-// Matrix3f.setIdentity() as void
+// Matrix3f.setIdentity()
 
 myMatrix3f.setIdentity();
 ```
@@ -147,32 +135,28 @@ myMatrix3f.setIdentity();
 
 :::group{name=setValue}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.setValue(row as int, col as int, value as float) as void
+Matrix3f.setValue(row as int, col as int, value as float)
 ```
 
-| 参数    | 类型    | 描述                      |
-| ----- | ----- | ----------------------- |
-| row   | int   | No Description Provided |
-| col   | int   | No Description Provided |
-| value | float | No Description Provided |
+| 参数    | 类型    |
+| ----- | ----- |
+| row   | int   |
+| col   | int   |
+| value | float |
 
 
 :::
 
 :::group{name=sub}
 
-Return Type: void
-
 ```zenscript
-Matrix3f.sub(other as Matrix3f) as void
+Matrix3f.sub(other as Matrix3f)
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| other | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
@@ -191,10 +175,8 @@ myMatrix3f.trace();
 
 :::group{name=transpose}
 
-Return Type: void
-
 ```zenscript
-// Matrix3f.transpose() as void
+// Matrix3f.transpose()
 
 myMatrix3f.transpose();
 ```
