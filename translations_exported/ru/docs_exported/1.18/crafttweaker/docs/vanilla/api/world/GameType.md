@@ -106,15 +106,13 @@ myGameType.isSurvival();
 
 :::group{name=updatePlayerAbilities}
 
-Return Type: void
-
 ```zenscript
-GameType.updatePlayerAbilities(abilities as Abilities) as void
+GameType.updatePlayerAbilities(abilities as Abilities)
 ```
 
-| Параметр  | Тип                                                    | Описание                |
-| --------- | ------------------------------------------------------ | ----------------------- |
-| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) | No Description Provided |
+| Параметр  | Тип                                                    |
+| --------- | ------------------------------------------------------ |
+| abilities | [Abilities](/vanilla/api/entity/type/player/Abilities) |
 
 
 :::
@@ -122,13 +120,13 @@ GameType.updatePlayerAbilities(abilities as Abilities) as void
 
 ## Свойства
 
-| Название                 | Тип                                      | Имеет Getter | Имеет Setter | Описание                |
-| ------------------------ | ---------------------------------------- | ------------ | ------------ | ----------------------- |
-| id                       | int                                      | true         | false        | No Description Provided |
-| isBlockPlacingRestricted | boolean                                  | true         | false        | No Description Provided |
-| isCreative               | boolean                                  | true         | false        | No Description Provided |
-| isSurvival               | boolean                                  | true         | false        | No Description Provided |
-| longDisplayName          | [Component](/vanilla/api/text/Component) | true         | false        | No Description Provided |
-| name                     | string                                   | true         | false        | No Description Provided |
-| shortDisplayName         | [Component](/vanilla/api/text/Component) | true         | false        | No Description Provided |
+| Название                 | Тип                                      | Имеет Getter | Имеет Setter |
+| ------------------------ | ---------------------------------------- | ------------ | ------------ |
+| id                       | int                                      | true         | false        |
+| isBlockPlacingRestricted | boolean                                  | true         | false        |
+| isCreative               | boolean                                  | true         | false        |
+| isSurvival               | boolean                                  | true         | false        |
+| longDisplayName          | [Component](/vanilla/api/text/Component) | true         | false        |
+| name                     | string                                   | true         | false        |
+| shortDisplayName         | [Component](/vanilla/api/text/Component) | true         | false        |
 
