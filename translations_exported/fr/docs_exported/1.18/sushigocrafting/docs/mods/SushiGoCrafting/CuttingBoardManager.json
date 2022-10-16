@@ -1,0 +1,19 @@
+{
+    "path": "mods/SushiGoCrafting/CuttingBoardManager.md",
+    "zenCodeName": "mods.sushigocrafting.CuttingBoardManager",
+    "searchTerms": [
+        "getRecipeByName",
+        "addJsonRecipe",
+        "allRecipes",
+        "Retirer par Modid",
+        "recipeMap",
+        "addRecipe",
+        "removeAll",
+        "removeByName",
+        "getRecipeMap",
+        "getAllRecipes",
+        "removeByInput",
+        "getRecipesByOutput",
+        "removeByRegex"
+    ]
+}
