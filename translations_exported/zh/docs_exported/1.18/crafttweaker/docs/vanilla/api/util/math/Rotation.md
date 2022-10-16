@@ -28,9 +28,9 @@ Return Type: [Rotation](/vanilla/api/util/math/Rotation)
 Rotation.getRotated(rotation as Rotation) as Rotation
 ```
 
-| 参数       | 类型                                          | 描述                      |
-| -------- | ------------------------------------------- | ----------------------- |
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| 参数       | 类型                                          |
+| -------- | ------------------------------------------- |
+| rotation | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -43,9 +43,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Rotation.rotate(direction as Direction) as Direction
 ```
 
-| 参数        | 类型                                                 | 描述                      |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| 参数        | 类型                                                 |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -58,10 +58,10 @@ Return Type: int
 Rotation.rotate(rotation as int, positionCount as int) as int
 ```
 
-| 参数            | 类型  | 描述                      |
-| ------------- | --- | ----------------------- |
-| rotation      | int | No Description Provided |
-| positionCount | int | No Description Provided |
+| 参数            | 类型  |
+| ------------- | --- |
+| rotation      | int |
+| positionCount | int |
 
 
 :::
