@@ -32,30 +32,26 @@ level.customData.getData();
 
 :::group{name=setData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.setData(data as MapData) as void
+CraftTweakerSavedData.setData(data as MapData)
 ```
 
-| Parametro | Tipo                                 | Descrizione             |
-| --------- | ------------------------------------ | ----------------------- |
-| data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parametro | Tipo                                 |
+| --------- | ------------------------------------ |
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
 
 :::group{name=updateData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.updateData(data as MapData) as void
+CraftTweakerSavedData.updateData(data as MapData)
 ```
 
-| Parametro | Tipo                                 | Descrizione             |
-| --------- | ------------------------------------ | ----------------------- |
-| data      | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Parametro | Tipo                                 |
+| --------- | ------------------------------------ |
+| data      | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -63,7 +59,7 @@ CraftTweakerSavedData.updateData(data as MapData) as void
 
 ## Proprietà
 
-| Nome | Tipo                                 | Ha Getter | Ha Setter | Descrizione             |
-| ---- | ------------------------------------ | --------- | --------- | ----------------------- |
-| data | [MapData](/vanilla/api/data/MapData) | sì        | sì        | No Description Provided |
+| Nome | Tipo                                 | Ha Getter | Ha Setter |
+| ---- | ------------------------------------ | --------- | --------- |
+| data | [MapData](/vanilla/api/data/MapData) | sì        | sì        |
 
