@@ -1,0 +1,14 @@
+{
+    "path": "vanilla/api/entity/NameTagResult.md",
+    "zenCodeName": "crafttweaker.api.entity.NameTagResult",
+    "searchTerms": [
+        "alwaysRender",
+        "noRender",
+        "setContent",
+        "getContent",
+        "getOriginalContent",
+        "setDefault",
+        "contenuto",
+        "originalContent"
+    ]
+}
