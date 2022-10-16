@@ -63,10 +63,8 @@ mySequence.isStopped();
 
 Stops this sequence, subsequent tasks will not be ran.
 
-Return Type: void
-
 ```zenscript
-// Sequence.stop() as void
+// Sequence.stop()
 
 mySequence.stop();
 ```
@@ -77,10 +75,8 @@ mySequence.stop();
 
 Ticks this sequence.
 
-Return Type: void
-
 ```zenscript
-// Sequence.tick() as void
+// Sequence.tick()
 
 mySequence.tick();
 ```
