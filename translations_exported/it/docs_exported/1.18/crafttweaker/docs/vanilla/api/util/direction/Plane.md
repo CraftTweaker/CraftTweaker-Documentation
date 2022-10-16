@@ -32,9 +32,9 @@ Return Type: [Axis](/vanilla/api/util/direction/Axis)
 Plane.getRandomAxis(random as Random) as Axis
 ```
 
-| Parametro | Tipo                                    | Descrizione             |
-| --------- | --------------------------------------- | ----------------------- |
-| random    | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Parametro | Tipo                                    |
+| --------- | --------------------------------------- |
+| random    | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -47,9 +47,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Plane.getRandomDirection(random as Random) as Direction
 ```
 
-| Parametro | Tipo                                    | Descrizione             |
-| --------- | --------------------------------------- | ----------------------- |
-| random    | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| Parametro | Tipo                                    |
+| --------- | --------------------------------------- |
+| random    | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -74,9 +74,9 @@ Return Type: boolean
 Plane.test(direction as Direction?) as boolean
 ```
 
-| Parametro | Tipo                                                | Descrizione             |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| Parametro | Tipo                                                |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -84,7 +84,7 @@ Plane.test(direction as Direction?) as boolean
 
 ## Proprietà
 
-| Nome     | Tipo                                                                                  | Ha Getter | Ha Setter | Descrizione             |
-| -------- | ------------------------------------------------------------------------------------- | --------- | --------- | ----------------------- |
-| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | sì        | no        | No Description Provided |
+| Nome     | Tipo                                                                                  | Ha Getter | Ha Setter |
+| -------- | ------------------------------------------------------------------------------------- | --------- | --------- |
+| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | sì        | no        |
 
