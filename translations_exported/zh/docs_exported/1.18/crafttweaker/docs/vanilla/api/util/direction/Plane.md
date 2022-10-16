@@ -32,9 +32,9 @@ Return Type: [Axis](/vanilla/api/util/direction/Axis)
 Plane.getRandomAxis(random as Random) as Axis
 ```
 
-| 参数     | 类型                                      | 描述                      |
-| ------ | --------------------------------------- | ----------------------- |
-| random | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| 参数     | 类型                                      |
+| ------ | --------------------------------------- |
+| random | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -47,9 +47,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Plane.getRandomDirection(random as Random) as Direction
 ```
 
-| 参数     | 类型                                      | 描述                      |
-| ------ | --------------------------------------- | ----------------------- |
-| random | [Random](/vanilla/api/util/math/Random) | No Description Provided |
+| 参数     | 类型                                      |
+| ------ | --------------------------------------- |
+| random | [Random](/vanilla/api/util/math/Random) |
 
 
 :::
@@ -74,9 +74,9 @@ Return Type: boolean
 Plane.test(direction as Direction?) as boolean
 ```
 
-| 参数        | 类型                                                  | 描述                      |
-| --------- | --------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction)? | No Description Provided |
+| 参数        | 类型                                                  |
+| --------- | --------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction)? |
 
 
 :::
@@ -84,7 +84,7 @@ Plane.test(direction as Direction?) as boolean
 
 ## 参数
 
-| 名称       | 类型                                                                                    | 可获得  | 可设置   | 描述                      |
-| -------- | ------------------------------------------------------------------------------------- | ---- | ----- | ----------------------- |
-| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true | false | No Description Provided |
+| 名称       | 类型                                                                                    | 可获得  | 可设置   |
+| -------- | ------------------------------------------------------------------------------------- | ---- | ----- |
+| iterator | stdlib.Iterator&lt;[Direction](/vanilla/api/util/direction/Direction)&gt; | true | false |
 
