@@ -28,9 +28,9 @@ Return Type: [Rotation](/vanilla/api/util/math/Rotation)
 Rotation.getRotated(rotation as Rotation) as Rotation
 ```
 
-| Parametro | Tipo                                        | Descrizione             |
-| --------- | ------------------------------------------- | ----------------------- |
-| rotation  | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| Parametro | Tipo                                        |
+| --------- | ------------------------------------------- |
+| rotation  | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -43,9 +43,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Rotation.rotate(direction as Direction) as Direction
 ```
 
-| Parametro | Tipo                                               | Descrizione             |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Parametro | Tipo                                               |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -58,10 +58,10 @@ Return Type: int
 Rotation.rotate(rotation as int, positionCount as int) as int
 ```
 
-| Parametro     | Tipo | Descrizione             |
-| ------------- | ---- | ----------------------- |
-| rotation      | int  | No Description Provided |
-| positionCount | int  | No Description Provided |
+| Parametro     | Tipo |
+| ------------- | ---- |
+| rotation      | int  |
+| positionCount | int  |
 
 
 :::
