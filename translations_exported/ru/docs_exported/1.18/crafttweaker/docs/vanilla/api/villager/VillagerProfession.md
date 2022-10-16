@@ -61,11 +61,11 @@ myVillagerProfession.getWorkSound();
 
 ## Свойства
 
-| Название       | Тип                                                                       | Имеет Getter | Имеет Setter | Описание                |
-| -------------- | ------------------------------------------------------------------------- | ------------ | ------------ | ----------------------- |
-| commandString  | string                                                                    | true         | false        | No Description Provided |
-| name           | string                                                                    | true         | false        | No Description Provided |
-| requestedItems | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true         | false        | No Description Provided |
-| secondaryPoi   | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true         | false        | No Description Provided |
-| workSound      | [SoundEvent](/vanilla/api/sound/SoundEvent)?                              | true         | false        | No Description Provided |
+| Название       | Тип                                                                       | Имеет Getter | Имеет Setter |
+| -------------- | ------------------------------------------------------------------------- | ------------ | ------------ |
+| commandString  | string                                                                    | true         | false        |
+| name           | string                                                                    | true         | false        |
+| requestedItems | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true         | false        |
+| secondaryPoi   | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true         | false        |
+| workSound      | [SoundEvent](/vanilla/api/sound/SoundEvent)?                              | true         | false        |
 
