@@ -18,10 +18,10 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos) as boolean
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| world | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| 点     | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| world | [Level](/vanilla/api/world/Level)           |
+| 点     | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -34,11 +34,11 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
 
-| 参数           | 类型                                          | 描述                      |
-| ------------ | ------------------------------------------- | ----------------------- |
-| world        | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| 点            | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| mustBeAtEdge | 布尔值                                         | No Description Provided |
+| 参数           | 类型                                          |
+| ------------ | ------------------------------------------- |
+| world        | [Level](/vanilla/api/world/Level)           |
+| 点            | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| mustBeAtEdge | 布尔值                                         |
 
 
 :::
@@ -51,10 +51,10 @@ Return Type: boolean
 Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 ```
 
-| 参数    | 类型                                          | 描述                      |
-| ----- | ------------------------------------------- | ----------------------- |
-| world | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| 点     | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| 参数    | 类型                                          |
+| ----- | ------------------------------------------- |
+| world | [Level](/vanilla/api/world/Level)           |
+| 点     | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -62,16 +62,16 @@ Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 
 ## 参数
 
-| 名称                   | 类型                                             | 可获得  | 可设置   | 描述                      |
-| -------------------- | ---------------------------------------------- | ---- | ----- | ----------------------- |
-| biomeCategory        | string                                         | true | false | No Description Provided |
-| commandString #命令字符串 | string                                         | true | false | No Description Provided |
-| doesRain             | 布尔值                                            | true | false | No Description Provided |
-| doesSnow             | 布尔值                                            | true | false | No Description Provided |
-| downfall             | float                                          | true | false | No Description Provided |
-| isHumid              | 布尔值                                            | true | false | No Description Provided |
-| rainType             | string                                         | true | false | No Description Provided |
-| registryName         | [资源位置](/vanilla/api/resource/ResourceLocation) | true | false | No Description Provided |
-| waterColor           | int                                            | true | false | No Description Provided |
-| waterFogColor        | int                                            | true | false | No Description Provided |
+| 名称                   | 类型                                             | 可获得  | 可设置   |
+| -------------------- | ---------------------------------------------- | ---- | ----- |
+| biomeCategory        | string                                         | true | false |
+| commandString #命令字符串 | string                                         | true | false |
+| doesRain             | 布尔值                                            | true | false |
+| doesSnow             | 布尔值                                            | true | false |
+| downfall             | float                                          | true | false |
+| isHumid              | 布尔值                                            | true | false |
+| rainType             | string                                         | true | false |
+| registryName         | [资源位置](/vanilla/api/resource/ResourceLocation) | true | false |
+| waterColor           | int                                            | true | false |
+| waterFogColor        | int                                            | true | false |
 
