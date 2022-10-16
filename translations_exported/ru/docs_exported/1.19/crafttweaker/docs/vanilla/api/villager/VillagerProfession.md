@@ -1,0 +1,75 @@
+# VillagerProfession
+
+## Импорт класса
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+```zenscript
+import crafttweaker.api.villager.VillagerProfession;
+```
+
+
+## Extending Record
+
+VillagerProfession extends Record. That means all methods available in Record are also available in VillagerProfession
+
+## Методы
+
+:::group{name=name}
+
+Return Type: string
+
+```zenscript
+// VillagerProfession.name() as string
+
+myVillagerProfession.name();
+```
+
+:::
+
+:::group{name=requestedItems}
+
+Return Type: Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt;
+
+```zenscript
+// VillagerProfession.requestedItems() as Set<ItemDefinition>
+
+myVillagerProfession.requestedItems();
+```
+
+:::
+
+:::group{name=secondaryPoi}
+
+Return Type: Set&lt;[Block](/vanilla/api/block/Block)&gt;
+
+```zenscript
+// VillagerProfession.secondaryPoi() as Set<Block>
+
+myVillagerProfession.secondaryPoi();
+```
+
+:::
+
+:::group{name=workSound}
+
+Return Type: [SoundEvent](/vanilla/api/sound/SoundEvent)?
+
+```zenscript
+// VillagerProfession.workSound() as SoundEvent?
+
+myVillagerProfession.workSound();
+```
+
+:::
+
+
+## Свойства
+
+| Название       | Тип                                                                       | Имеет Getter | Имеет Setter |
+| -------------- | ------------------------------------------------------------------------- | ------------ | ------------ |
+| commandString  | string                                                                    | true         | false        |
+| name           | string                                                                    | true         | false        |
+| requestedItems | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true         | false        |
+| secondaryPoi   | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true         | false        |
+| workSound      | [SoundEvent](/vanilla/api/sound/SoundEvent)?                              | true         | false        |
+
