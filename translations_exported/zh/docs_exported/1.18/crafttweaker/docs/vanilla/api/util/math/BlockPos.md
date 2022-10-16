@@ -59,9 +59,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.above(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -110,9 +110,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.atY(value as int) as BlockPos
 ```
 
-| 参数    | 类型  | 描述                      |
-| ----- | --- | ----------------------- |
-| value | int | No Description Provided |
+| 参数    | 类型  |
+| ----- | --- |
+| value | int |
 
 
 :::
@@ -137,9 +137,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.below(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -152,9 +152,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.cross(other as Vec3i) as BlockPos
 ```
 
-| 参数    | 类型                                    | 描述                      |
-| ----- | ------------------------------------- | ----------------------- |
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| 参数    | 类型                                    |
+| ----- | ------------------------------------- |
+| other | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -179,9 +179,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.east(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -194,9 +194,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.multiply(scalar as int) as BlockPos
 ```
 
-| 参数     | 类型  | 描述                      |
-| ------ | --- | ----------------------- |
-| scalar | int | No Description Provided |
+| 参数     | 类型  |
+| ------ | --- |
+| scalar | int |
 
 
 :::
@@ -221,9 +221,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.north(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -236,9 +236,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(other as Vec3i) as BlockPos
 ```
 
-| 参数    | 类型                                    | 描述                      |
-| ----- | ------------------------------------- | ----------------------- |
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| 参数    | 类型                                    |
+| ----- | ------------------------------------- |
+| other | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -251,11 +251,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as double, y as double, z as double) as BlockPos
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -268,11 +268,11 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.offset(x as int, y as int, z as int) as BlockPos
 ```
 
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| x  | int | No Description Provided |
-| y  | int | No Description Provided |
-| z  | int | No Description Provided |
+| 参数 | 类型  |
+| -- | --- |
+| x  | int |
+| y  | int |
+| z  | int |
 
 
 :::
@@ -285,9 +285,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction) as BlockPos
 ```
 
-| 参数        | 类型                                                 | 描述                      |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| 参数        | 类型                                                 |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -300,10 +300,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(axis as Axis, distance as int) as BlockPos
 ```
 
-| 参数       | 类型                                       | 描述                      |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
-| distance | int                                      | No Description Provided |
+| 参数       | 类型                                       |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
+| distance | int                                      |
 
 
 :::
@@ -316,10 +316,10 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.relative(direction as Direction, distance as int) as BlockPos
 ```
 
-| 参数        | 类型                                                 | 描述                      |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
-| distance  | int                                                | No Description Provided |
+| 参数        | 类型                                                 |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
+| distance  | int                                                |
 
 
 :::
@@ -332,9 +332,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.rotate(rotation as Rotation) as BlockPos
 ```
 
-| 参数       | 类型                                          | 描述                      |
-| -------- | ------------------------------------------- | ----------------------- |
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| 参数       | 类型                                          |
+| -------- | ------------------------------------------- |
+| rotation | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -359,9 +359,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.south(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
@@ -374,9 +374,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.subtract(other as Vec3i) as BlockPos
 ```
 
-| 参数    | 类型                                    | 描述                      |
-| ----- | ------------------------------------- | ----------------------- |
-| other | [Vec3i](/vanilla/api/util/math/Vec3i) | No Description Provided |
+| 参数    | 类型                                    |
+| ----- | ------------------------------------- |
+| other | [Vec3i](/vanilla/api/util/math/Vec3i) |
 
 
 :::
@@ -401,9 +401,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 BlockPos.west(distance as int) as BlockPos
 ```
 
-| 参数       | 类型  | 描述                      |
-| -------- | --- | ----------------------- |
-| distance | int | No Description Provided |
+| 参数       | 类型  |
+| -------- | --- |
+| distance | int |
 
 
 :::
