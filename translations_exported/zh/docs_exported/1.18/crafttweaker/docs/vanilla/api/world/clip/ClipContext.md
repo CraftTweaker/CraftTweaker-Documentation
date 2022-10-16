@@ -37,8 +37,8 @@ myClipContext.getTo();
 
 ## 参数
 
-| 名称   | 类型                                  | 可获得  | 可设置   | 描述                      |
-| ---- | ----------------------------------- | ---- | ----- | ----------------------- |
-| from | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| to   | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
+| 名称   | 类型                                  | 可获得  | 可设置   |
+| ---- | ----------------------------------- | ---- | ----- |
+| from | [Vec3](/vanilla/api/util/math/Vec3) | true | false |
+| to   | [Vec3](/vanilla/api/util/math/Vec3) | true | false |
 
