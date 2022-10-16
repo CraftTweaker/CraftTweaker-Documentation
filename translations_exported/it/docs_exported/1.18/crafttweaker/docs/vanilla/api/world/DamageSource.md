@@ -18,10 +18,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.arrow(arrow as Arrow, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                                     | Descrizione             |
-| --------- | -------------------------------------------------------- | ----------------------- |
-| arrow     | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| Parametro | Tipo                                                     |
+| --------- | -------------------------------------------------------- |
+| arrow     | [Arrow](/vanilla/api/entity/type/projectile/arrow/Arrow) |
+| owner     | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -46,9 +46,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(explosion as Explosion?) as DamageSource
 ```
 
-| Parametro | Tipo                                       | Descrizione             |
-| --------- | ------------------------------------------ | ----------------------- |
-| explosion | [Explosion](/vanilla/api/world/Explosion)? | No Description Provided |
+| Parametro | Tipo                                       |
+| --------- | ------------------------------------------ |
+| explosion | [Explosion](/vanilla/api/world/Explosion)? |
 
 
 :::
@@ -61,9 +61,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.explosion(owner as LivingEntity?) as DamageSource
 ```
 
-| Parametro | Tipo                                              | Descrizione             | Optional | DefaultValue |
-| --------- | ------------------------------------------------- | ----------------------- | -------- | ------------ |
-| owner     | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided | sì       |              |
+| Parametro | Tipo                                              | Optional |
+| --------- | ------------------------------------------------- | -------- |
+| owner     | [LivingEntity](/vanilla/api/entity/LivingEntity)? | sì       |
 
 
 :::
@@ -76,10 +76,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireball(fireball as Fireball, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                                     | Descrizione             |
-| --------- | -------------------------------------------------------- | ----------------------- |
-| fireball  | [Fireball](/vanilla/api/entity/type/projectile/Fireball) | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)?                    | No Description Provided |
+| Parametro | Tipo                                                     |
+| --------- | -------------------------------------------------------- |
+| fireball  | [Fireball](/vanilla/api/entity/type/projectile/Fireball) |
+| owner     | [Entity](/vanilla/api/entity/Entity)?                    |
 
 
 :::
@@ -92,10 +92,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.fireworks(entity as FireworkRocketEntity, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                                                             | Descrizione             |
-| --------- | -------------------------------------------------------------------------------- | ----------------------- |
-| entity    | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)?                                            | No Description Provided |
+| Parametro | Tipo                                                                             |
+| --------- | -------------------------------------------------------------------------------- |
+| entity    | [FireworkRocketEntity](/vanilla/api/entity/type/projectile/FireworkRocketEntity) |
+| owner     | [Entity](/vanilla/api/entity/Entity)?                                            |
 
 
 :::
@@ -108,10 +108,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMagic(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| entity    | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| entity    | [Entity](/vanilla/api/entity/Entity)  |
+| owner     | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -124,10 +124,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.indirectMobAttack(entity as Entity, owner as LivingEntity?) as DamageSource
 ```
 
-| Parametro | Tipo                                              | Descrizione             |
-| --------- | ------------------------------------------------- | ----------------------- |
-| entity    | [Entity](/vanilla/api/entity/Entity)              | No Description Provided |
-| owner     | [LivingEntity](/vanilla/api/entity/LivingEntity)? | No Description Provided |
+| Parametro | Tipo                                              |
+| --------- | ------------------------------------------------- |
+| entity    | [Entity](/vanilla/api/entity/Entity)              |
+| owner     | [LivingEntity](/vanilla/api/entity/LivingEntity)? |
 
 
 :::
@@ -140,9 +140,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.mobAttack(living as LivingEntity) as DamageSource
 ```
 
-| Parametro | Tipo                                             | Descrizione             |
-| --------- | ------------------------------------------------ | ----------------------- |
-| living    | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parametro | Tipo                                             |
+| --------- | ------------------------------------------------ |
+| living    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -155,9 +155,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.playerAttack(player as Player) as DamageSource
 ```
 
-| Parametro | Tipo                                             | Descrizione             |
-| --------- | ------------------------------------------------ | ----------------------- |
-| player    | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| Parametro | Tipo                                             |
+| --------- | ------------------------------------------------ |
+| player    | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -170,9 +170,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.string(living as LivingEntity) as DamageSource
 ```
 
-| Parametro | Tipo                                             | Descrizione             |
-| --------- | ------------------------------------------------ | ----------------------- |
-| living    | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parametro | Tipo                                             |
+| --------- | ------------------------------------------------ |
+| living    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -185,9 +185,9 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thorns(entity as Entity) as DamageSource
 ```
 
-| Parametro | Tipo                                 | Descrizione             |
-| --------- | ------------------------------------ | ----------------------- |
-| entity    | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| Parametro | Tipo                                 |
+| --------- | ------------------------------------ |
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -200,10 +200,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.thrown(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| entity    | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| entity    | [Entity](/vanilla/api/entity/Entity)  |
+| owner     | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -216,10 +216,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.trident(entity as Entity, owner as Entity?) as DamageSource
 ```
 
-| Parametro | Tipo                                  | Descrizione             |
-| --------- | ------------------------------------- | ----------------------- |
-| entity    | [Entity](/vanilla/api/entity/Entity)  | No Description Provided |
-| owner     | [Entity](/vanilla/api/entity/Entity)? | No Description Provided |
+| Parametro | Tipo                                  |
+| --------- | ------------------------------------- |
+| entity    | [Entity](/vanilla/api/entity/Entity)  |
+| owner     | [Entity](/vanilla/api/entity/Entity)? |
 
 
 :::
@@ -232,10 +232,10 @@ Return Type: [DamageSource](/vanilla/api/world/DamageSource)
 DamageSource.witherSkull(witherSkull as WitherSkull, owner as Entity?) as DamageSource
 ```
 
-| Parametro   | Tipo                                                           | Descrizione             |
-| ----------- | -------------------------------------------------------------- | ----------------------- |
-| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) | No Description Provided |
-| owner       | [Entity](/vanilla/api/entity/Entity)?                          | No Description Provided |
+| Parametro   | Tipo                                                           |
+| ----------- | -------------------------------------------------------------- |
+| witherSkull | [WitherSkull](/vanilla/api/entity/type/projectile/WitherSkull) |
+| owner       | [Entity](/vanilla/api/entity/Entity)?                          |
 
 
 :::
@@ -286,9 +286,9 @@ Return Type: [Component](/vanilla/api/text/Component)
 DamageSource.getLocalizedDeathMessage(entity as LivingEntity) as Component
 ```
 
-| Parametro | Tipo                                             | Descrizione             |
-| --------- | ------------------------------------------------ | ----------------------- |
-| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) | No Description Provided |
+| Parametro | Tipo                                             |
+| --------- | ------------------------------------------------ |
+| entity    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
 
 
 :::
@@ -536,23 +536,23 @@ myDamageSource.setScalesWithDifficulty();
 
 ## Proprietà
 
-| Nome                 | Tipo                                  | Ha Getter | Ha Setter | Descrizione             |
-| -------------------- | ------------------------------------- | --------- | --------- | ----------------------- |
-| directEntity         | [Entity](/vanilla/api/entity/Entity)? | sì        | no        | No Description Provided |
-| doesBypassArmor      | boolean                               | sì        | no        | No Description Provided |
-| doesBypassInvul      | boolean                               | sì        | no        | No Description Provided |
-| doesBypassMagic      | boolean                               | sì        | no        | No Description Provided |
-| doesDamageHelmet     | boolean                               | sì        | no        | No Description Provided |
-| entity               | [Entity](/vanilla/api/entity/Entity)? | sì        | no        | No Description Provided |
-| foodExhaustion       | float                                 | sì        | no        | No Description Provided |
-| isCreativePlayer     | boolean                               | sì        | no        | No Description Provided |
-| isExplosion          | boolean                               | sì        | no        | No Description Provided |
-| isFall               | boolean                               | sì        | no        | No Description Provided |
-| isFire               | boolean                               | sì        | no        | No Description Provided |
-| isMagic              | boolean                               | sì        | no        | No Description Provided |
-| isNoAggro            | boolean                               | sì        | no        | No Description Provided |
-| isProjectile         | boolean                               | sì        | no        | No Description Provided |
-| msgId                | string                                | sì        | no        | No Description Provided |
-| scalesWithDifficulty | boolean                               | sì        | no        | No Description Provided |
-| sorgente             | [Vec3](/vanilla/api/util/math/Vec3)?  | sì        | no        | No Description Provided |
+| Nome                 | Tipo                                  | Ha Getter | Ha Setter |
+| -------------------- | ------------------------------------- | --------- | --------- |
+| directEntity         | [Entity](/vanilla/api/entity/Entity)? | sì        | no        |
+| doesBypassArmor      | boolean                               | sì        | no        |
+| doesBypassInvul      | boolean                               | sì        | no        |
+| doesBypassMagic      | boolean                               | sì        | no        |
+| doesDamageHelmet     | boolean                               | sì        | no        |
+| entity               | [Entity](/vanilla/api/entity/Entity)? | sì        | no        |
+| foodExhaustion       | float                                 | sì        | no        |
+| isCreativePlayer     | boolean                               | sì        | no        |
+| isExplosion          | boolean                               | sì        | no        |
+| isFall               | boolean                               | sì        | no        |
+| isFire               | boolean                               | sì        | no        |
+| isMagic              | boolean                               | sì        | no        |
+| isNoAggro            | boolean                               | sì        | no        |
+| isProjectile         | boolean                               | sì        | no        |
+| msgId                | string                                | sì        | no        |
+| scalesWithDifficulty | boolean                               | sì        | no        |
+| sorgente             | [Vec3](/vanilla/api/util/math/Vec3)?  | sì        | no        |
 
