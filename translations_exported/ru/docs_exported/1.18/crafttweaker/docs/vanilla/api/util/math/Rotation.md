@@ -28,9 +28,9 @@ Return Type: [Rotation](/vanilla/api/util/math/Rotation)
 Rotation.getRotated(rotation as Rotation) as Rotation
 ```
 
-| Параметр | Тип                                         | Описание                |
-| -------- | ------------------------------------------- | ----------------------- |
-| rotation | [Rotation](/vanilla/api/util/math/Rotation) | No Description Provided |
+| Параметр | Тип                                         |
+| -------- | ------------------------------------------- |
+| rotation | [Rotation](/vanilla/api/util/math/Rotation) |
 
 
 :::
@@ -43,9 +43,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 Rotation.rotate(direction as Direction) as Direction
 ```
 
-| Параметр  | Тип                                                | Описание                |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| Параметр  | Тип                                                |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -58,10 +58,10 @@ Return Type: int
 Rotation.rotate(rotation as int, positionCount as int) as int
 ```
 
-| Параметр      | Тип | Описание                |
-| ------------- | --- | ----------------------- |
-| rotation      | int | No Description Provided |
-| positionCount | int | No Description Provided |
+| Параметр      | Тип |
+| ------------- | --- |
+| rotation      | int |
+| positionCount | int |
 
 
 :::
