@@ -77,9 +77,9 @@ Return Type: [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup)
 OctahedralGroup.compose(group as OctahedralGroup) as OctahedralGroup
 ```
 
-| 参数    | 类型                                                        | 描述                      |
-| ----- | --------------------------------------------------------- | ----------------------- |
-| group | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) | No Description Provided |
+| 参数    | 类型                                                        |
+| ----- | --------------------------------------------------------- |
+| group | [OctahedralGroup](/vanilla/api/util/math/OctahedralGroup) |
 
 
 :::
@@ -104,9 +104,9 @@ Return Type: boolean
 OctahedralGroup.inverts(axis as Axis) as boolean
 ```
 
-| 参数   | 类型                                       | 描述                      |
-| ---- | ---------------------------------------- | ----------------------- |
-| axis | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| 参数   | 类型                                       |
+| ---- | ---------------------------------------- |
+| axis | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -119,9 +119,9 @@ Return Type: [Direction](/vanilla/api/util/direction/Direction)
 OctahedralGroup.rotate(direction as Direction) as Direction
 ```
 
-| 参数        | 类型                                                 | 描述                      |
-| --------- | -------------------------------------------------- | ----------------------- |
-| direction | [Direction](/vanilla/api/util/direction/Direction) | No Description Provided |
+| 参数        | 类型                                                 |
+| --------- | -------------------------------------------------- |
+| direction | [Direction](/vanilla/api/util/direction/Direction) |
 
 
 :::
@@ -134,9 +134,9 @@ Return Type: [FrontAndTop](/vanilla/api/util/math/FrontAndTop)
 OctahedralGroup.rotate(frontAndTop as FrontAndTop) as FrontAndTop
 ```
 
-| 参数          | 类型                                                | 描述                      |
-| ----------- | ------------------------------------------------- | ----------------------- |
-| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) | No Description Provided |
+| 参数          | 类型                                                |
+| ----------- | ------------------------------------------------- |
+| frontAndTop | [FrontAndTop](/vanilla/api/util/math/FrontAndTop) |
 
 
 :::
@@ -156,7 +156,7 @@ myOctahedralGroup.transformation();
 
 ## 参数
 
-| 名称             | 类型                                          | 可获得  | 可设置   | 描述                      |
-| -------------- | ------------------------------------------- | ---- | ----- | ----------------------- |
-| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true | false | No Description Provided |
+| 名称             | 类型                                          | 可获得  | 可设置   |
+| -------------- | ------------------------------------------- | ---- | ----- |
+| transformation | [Matrix3f](/vanilla/api/util/math/Matrix3f) | true | false |
 
