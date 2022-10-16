@@ -32,30 +32,26 @@ level.customData.getData();
 
 :::group{name=setData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.setData(data as MapData) as void
+CraftTweakerSavedData.setData(data as MapData)
 ```
 
-| Параметр | Тип                                  | Описание                |
-| -------- | ------------------------------------ | ----------------------- |
-| data     | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Параметр | Тип                                  |
+| -------- | ------------------------------------ |
+| data     | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
 
 :::group{name=updateData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.updateData(data as MapData) as void
+CraftTweakerSavedData.updateData(data as MapData)
 ```
 
-| Параметр | Тип                                  | Описание                |
-| -------- | ------------------------------------ | ----------------------- |
-| data     | [MapData](/vanilla/api/data/MapData) | No Description Provided |
+| Параметр | Тип                                  |
+| -------- | ------------------------------------ |
+| data     | [MapData](/vanilla/api/data/MapData) |
 
 
 :::
@@ -63,7 +59,7 @@ CraftTweakerSavedData.updateData(data as MapData) as void
 
 ## Свойства
 
-| Название | Тип                                  | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ------------------------------------ | ------------ | ------------ | ----------------------- |
-| data     | [MapData](/vanilla/api/data/MapData) | true         | true         | No Description Provided |
+| Название | Тип                                  | Имеет Getter | Имеет Setter |
+| -------- | ------------------------------------ | ------------ | ------------ |
+| data     | [MapData](/vanilla/api/data/MapData) | true         | true         |
 
