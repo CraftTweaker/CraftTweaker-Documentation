@@ -57,9 +57,9 @@ myAxisDirection.opposite();
 
 ## Proprietà
 
-| Nome     | Tipo                                                       | Ha Getter | Ha Setter | Descrizione             |
-| -------- | ---------------------------------------------------------- | --------- | --------- | ----------------------- |
-| nome     | string                                                     | sì        | no        | No Description Provided |
-| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | sì        | no        | No Description Provided |
-| step     | int                                                        | sì        | no        | No Description Provided |
+| Nome     | Tipo                                                       | Ha Getter | Ha Setter |
+| -------- | ---------------------------------------------------------- | --------- | --------- |
+| nome     | string                                                     | sì        | no        |
+| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | sì        | no        |
+| step     | int                                                        | sì        | no        |
 
