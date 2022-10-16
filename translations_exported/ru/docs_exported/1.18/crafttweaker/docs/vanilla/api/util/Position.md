@@ -49,9 +49,9 @@ myPosition.z();
 
 ## Свойства
 
-| Название | Тип    | Имеет Getter | Имеет Setter | Описание                |
-| -------- | ------ | ------------ | ------------ | ----------------------- |
-| x        | double | true         | false        | No Description Provided |
-| y        | double | true         | false        | No Description Provided |
-| z        | double | true         | false        | No Description Provided |
+| Название | Тип    | Имеет Getter | Имеет Setter |
+| -------- | ------ | ------------ | ------------ |
+| x        | double | true         | false        |
+| y        | double | true         | false        |
+| z        | double | true         | false        |
 
