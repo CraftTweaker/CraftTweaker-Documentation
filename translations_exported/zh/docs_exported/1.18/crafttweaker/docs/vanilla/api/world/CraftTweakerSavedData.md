@@ -32,30 +32,26 @@ level.customData.getData();
 
 :::group{name=setData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.setData(data as MapData) as void
+CraftTweakerSavedData.setData(data as MapData)
 ```
 
-| 参数   | 类型                                         | 描述                      |
-| ---- | ------------------------------------------ | ----------------------- |
-| data | [MapData #地图数据](/vanilla/api/data/MapData) | No Description Provided |
+| 参数   | 类型                                         |
+| ---- | ------------------------------------------ |
+| data | [MapData #地图数据](/vanilla/api/data/MapData) |
 
 
 :::
 
 :::group{name=updateData}
 
-Return Type: void
-
 ```zenscript
-CraftTweakerSavedData.updateData(data as MapData) as void
+CraftTweakerSavedData.updateData(data as MapData)
 ```
 
-| 参数   | 类型                                         | 描述                      |
-| ---- | ------------------------------------------ | ----------------------- |
-| data | [MapData #地图数据](/vanilla/api/data/MapData) | No Description Provided |
+| 参数   | 类型                                         |
+| ---- | ------------------------------------------ |
+| data | [MapData #地图数据](/vanilla/api/data/MapData) |
 
 
 :::
@@ -63,7 +59,7 @@ CraftTweakerSavedData.updateData(data as MapData) as void
 
 ## 参数
 
-| 名称   | 类型                                         | 可获得  | 可设置  | 描述                      |
-| ---- | ------------------------------------------ | ---- | ---- | ----------------------- |
-| data | [MapData #地图数据](/vanilla/api/data/MapData) | true | true | No Description Provided |
+| 名称   | 类型                                         | 可获得  | 可设置  |
+| ---- | ------------------------------------------ | ---- | ---- |
+| data | [MapData #地图数据](/vanilla/api/data/MapData) | true | true |
 
