@@ -49,9 +49,9 @@ myPosition.z();
 
 ## Proprietà
 
-| Nome | Tipo   | Ha Getter | Ha Setter | Descrizione             |
-| ---- | ------ | --------- | --------- | ----------------------- |
-| x    | double | sì        | no        | No Description Provided |
-| y    | double | sì        | no        | No Description Provided |
-| z    | double | sì        | no        | No Description Provided |
+| Nome | Tipo   | Ha Getter | Ha Setter |
+| ---- | ------ | --------- | --------- |
+| x    | double | sì        | no        |
+| y    | double | sì        | no        |
+| z    | double | sì        | no        |
 
