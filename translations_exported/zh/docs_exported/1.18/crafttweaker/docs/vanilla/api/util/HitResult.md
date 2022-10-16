@@ -18,9 +18,9 @@ Return Type: double
 HitResult.distanceTo(entity as Entity) as double
 ```
 
-| 参数     | 类型                                   | 描述                      |
-| ------ | ------------------------------------ | ----------------------- |
-| entity | [Entity](/vanilla/api/entity/Entity) | No Description Provided |
+| 参数     | 类型                                   |
+| ------ | ------------------------------------ |
+| entity | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
@@ -52,8 +52,8 @@ myHitResult.getType();
 
 ## 参数
 
-| 名称 | 类型                                               | 可获得  | 可设置   | 描述                      |
-| -- | ------------------------------------------------ | ---- | ----- | ----------------------- |
-| 位置 | [Vec3](/vanilla/api/util/math/Vec3)              | true | false | No Description Provided |
-| 类型 | [HitResultType](/vanilla/api/util/HitResultType) | true | false | No Description Provided |
+| 名称 | 类型                                               | 可获得  | 可设置   |
+| -- | ------------------------------------------------ | ---- | ----- |
+| 位置 | [Vec3](/vanilla/api/util/math/Vec3)              | true | false |
+| 类型 | [HitResultType](/vanilla/api/util/HitResultType) | true | false |
 
