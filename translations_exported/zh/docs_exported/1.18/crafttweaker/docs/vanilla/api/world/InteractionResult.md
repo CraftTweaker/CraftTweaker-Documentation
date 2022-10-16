@@ -82,9 +82,9 @@ myInteractionResult.shouldSwing();
 
 ## 参数
 
-| 名称               | 类型  | 可获得  | 可设置   | 描述                      |
-| ---------------- | --- | ---- | ----- | ----------------------- |
-| consumesAction   | 布尔值 | true | false | No Description Provided |
-| shouldAwardStats | 布尔值 | true | false | No Description Provided |
-| shouldSwing      | 布尔值 | true | false | No Description Provided |
+| 名称               | 类型  | 可获得  | 可设置   |
+| ---------------- | --- | ---- | ----- |
+| consumesAction   | 布尔值 | true | false |
+| shouldAwardStats | 布尔值 | true | false |
+| shouldSwing      | 布尔值 | true | false |
 
