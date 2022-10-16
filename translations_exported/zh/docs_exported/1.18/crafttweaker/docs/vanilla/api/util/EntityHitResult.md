@@ -41,7 +41,7 @@ myEntityHitResult.getType();
 
 ## 参数
 
-| 名称 | 类型                                   | 可获得  | 可设置   | 描述                      |
-| -- | ------------------------------------ | ---- | ----- | ----------------------- |
-| 类型 | [Entity](/vanilla/api/entity/Entity) | true | false | No Description Provided |
+| 名称 | 类型                                   | 可获得  | 可设置   |
+| -- | ------------------------------------ | ---- | ----- |
+| 类型 | [Entity](/vanilla/api/entity/Entity) | true | false |
 
