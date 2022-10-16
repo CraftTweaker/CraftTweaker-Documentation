@@ -27,9 +27,9 @@ Return Type: [Axis](/vanilla/api/util/direction/Axis)
 AxisCycle.cycle(axis as Axis) as Axis
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -42,12 +42,12 @@ Return Type: double
 AxisCycle.cycle(x as double, y as double, z as double, axis as Axis) as double
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| x        | double                                   | No Description Provided |
-| y        | double                                   | No Description Provided |
-| z        | double                                   | No Description Provided |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| x        | double                                   |
+| y        | double                                   |
+| z        | double                                   |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -60,12 +60,12 @@ Return Type: int
 AxisCycle.cycle(x as int, y as int, z as int, axis as Axis) as int
 ```
 
-| Параметр | Тип                                      | Описание                |
-| -------- | ---------------------------------------- | ----------------------- |
-| x        | int                                      | No Description Provided |
-| y        | int                                      | No Description Provided |
-| z        | int                                      | No Description Provided |
-| axis     | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| Параметр | Тип                                      |
+| -------- | ---------------------------------------- |
+| x        | int                                      |
+| y        | int                                      |
+| z        | int                                      |
+| axis     | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
