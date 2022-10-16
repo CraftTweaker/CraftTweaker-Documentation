@@ -23,10 +23,10 @@ Return Type: boolean
 Container.canPlaceItem(index as int, stack as ItemStack) as boolean
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| index | int                                 | No Description Provided |
-| 堆叠    | [物品应用](/vanilla/api/item/ItemStack) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| index | int                                 |
+| 堆叠    | [物品应用](/vanilla/api/item/ItemStack) |
 
 
 :::
@@ -39,9 +39,9 @@ Return Type: int
 Container.countItem(item as ItemDefinition) as int
 ```
 
-| 参数   | 类型                                                 | 描述                      |
-| ---- | -------------------------------------------------- | ----------------------- |
-| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) | No Description Provided |
+| 参数   | 类型                                                 |
+| ---- | -------------------------------------------------- |
+| item | [ItemDefinition](/vanilla/api/item/ItemDefinition) |
 
 
 :::
@@ -54,9 +54,9 @@ Return Type: int
 Container.countStack(item as IItemStack) as int
 ```
 
-| 参数   | 类型                                         | 描述                      |
-| ---- | ------------------------------------------ | ----------------------- |
-| item | [IItemstack](/vanilla/api/item/IItemStack) | No Description Provided |
+| 参数   | 类型                                         |
+| ---- | ------------------------------------------ |
+| item | [IItemstack](/vanilla/api/item/IItemStack) |
 
 
 :::
@@ -114,9 +114,9 @@ Return Type: boolean
 Container.hasAnyOf(items as Set<ItemDefinition>) as boolean
 ```
 
-| 参数    | 类型                                                                        | 描述                      |
-| ----- | ------------------------------------------------------------------------- | ----------------------- |
-| items | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | No Description Provided |
+| 参数    | 类型                                                                        |
+| ----- | ------------------------------------------------------------------------- |
+| items | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; |
 
 
 :::
@@ -144,10 +144,10 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Container.removeItem(var1 as int, var2 as int) as ItemStack
 ```
 
-| 参数   | 类型  | 描述                      |
-| ---- | --- | ----------------------- |
-| var1 | int | No Description Provided |
-| var2 | int | No Description Provided |
+| 参数   | 类型  |
+| ---- | --- |
+| var1 | int |
+| var2 | int |
 
 
 :::
@@ -160,19 +160,17 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 Container.removeItemNoUpdate(index as int) as ItemStack
 ```
 
-| 参数    | 类型  | 描述                      |
-| ----- | --- | ----------------------- |
-| index | int | No Description Provided |
+| 参数    | 类型  |
+| ----- | --- |
+| index | int |
 
 
 :::
 
 :::group{name=setChanged}
 
-Return Type: void
-
 ```zenscript
-// Container.setChanged() as void
+// Container.setChanged()
 
 myContainer.setChanged();
 ```
@@ -181,31 +179,27 @@ myContainer.setChanged();
 
 :::group{name=setItem}
 
-Return Type: void
-
 ```zenscript
-Container.setItem(index as int, stack as ItemStack) as void
+Container.setItem(index as int, stack as ItemStack)
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| index | int                                 | No Description Provided |
-| 堆叠    | [物品应用](/vanilla/api/item/ItemStack) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| index | int                                 |
+| 堆叠    | [物品应用](/vanilla/api/item/ItemStack) |
 
 
 :::
 
 :::group{name=startOpen}
 
-Return Type: void
-
 ```zenscript
-Container.startOpen(player as Player) as void
+Container.startOpen(player as Player)
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| player | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -218,24 +212,22 @@ Return Type: boolean
 Container.stillValid(player as Player) as boolean
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| player | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
 
 :::group{name=stopOpen}
 
-Return Type: void
-
 ```zenscript
-Container.stopOpen(player as Player) as void
+Container.stopOpen(player as Player)
 ```
 
-| 参数     | 类型                                               | 描述                      |
-| ------ | ------------------------------------------------ | ----------------------- |
-| player | [Player](/vanilla/api/entity/type/player/Player) | No Description Provided |
+| 参数     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| player | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::
@@ -245,8 +237,8 @@ Container.stopOpen(player as Player) as void
 
 | 名称            | 类型   | 可获得  | 可设置   | 描述                                               |
 | ------------- | ---- | ---- | ----- | ------------------------------------------------ |
-| changed       | void | true | false | No Description Provided                          |
+| changed       | void | true | false |                                                  |
 | containerSize | int  | true | false | Gets the size (how many slots) of this Container |
 | isEmpty #是否为空 | 布尔值  | true | false | Checks if this Container is empty.               |
-| maxStackSize  | int  | true | false | No Description Provided                          |
+| maxStackSize  | int  | true | false |                                                  |
 
