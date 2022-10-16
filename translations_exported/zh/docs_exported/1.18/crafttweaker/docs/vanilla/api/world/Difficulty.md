@@ -59,9 +59,9 @@ myDifficulty.getKey();
 
 ## 参数
 
-| 名称          | 类型                                       | 可获得  | 可设置   | 描述                      |
-| ----------- | ---------------------------------------- | ---- | ----- | ----------------------- |
-| displayName | [Component](/vanilla/api/text/Component) | true | false | No Description Provided |
-| id          | int                                      | true | false | No Description Provided |
-| key         | string                                   | true | false | No Description Provided |
+| 名称          | 类型                                       | 可获得  | 可设置   |
+| ----------- | ---------------------------------------- | ---- | ----- |
+| displayName | [Component](/vanilla/api/text/Component) | true | false |
+| id          | int                                      | true | false |
+| key         | string                                   | true | false |
 
