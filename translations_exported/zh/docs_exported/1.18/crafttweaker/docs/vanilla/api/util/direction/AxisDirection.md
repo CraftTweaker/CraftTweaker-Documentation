@@ -57,9 +57,9 @@ myAxisDirection.opposite();
 
 ## 参数
 
-| 名称       | 类型                                                         | 可获得  | 可设置   | 描述                      |
-| -------- | ---------------------------------------------------------- | ---- | ----- | ----------------------- |
-| name（名称） | string                                                     | true | false | No Description Provided |
-| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | true | false | No Description Provided |
-| step     | int                                                        | true | false | No Description Provided |
+| 名称       | 类型                                                         | 可获得  | 可设置   |
+| -------- | ---------------------------------------------------------- | ---- | ----- |
+| name（名称） | string                                                     | true | false |
+| opposite | [AxisDirection](/vanilla/api/util/direction/AxisDirection) | true | false |
+| step     | int                                                        | true | false |
 
