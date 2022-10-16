@@ -41,7 +41,7 @@ SequenceType.SERVER_THREAD_LEVEL.name();
 
 ## Свойства
 
-| Название | Тип    | Имеет Getter | Имеет Setter | Описание                            |
-| -------- | ------ | ------------ | ------------ | ----------------------------------- |
-|          | string | true         | false        | Gets the name of the sequence type. |
+| Тип    | Имеет Getter | Имеет Setter | Описание                            |
+| ------ | ------------ | ------------ | ----------------------------------- |
+| string | true         | false        | Gets the name of the sequence type. |
 
