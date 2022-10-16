@@ -1,0 +1,24 @@
+{
+    "path": "vanilla/api/text/Component.md",
+    "zenCodeName": "crafttweaker.api.text.Component",
+    "searchTerms": [
+        "translatable",
+        "siblings",
+        "nullToEmpty",
+        "crafttweaker.api.text.Message",
+        "crafttweaker.api.text.FormattedText",
+        "getSiblings",
+        "getString #获取字符串",
+        "empty",
+        "literal",
+        "score",
+        "getStyle",
+        "contents",
+        "keybind",
+        "plainCopy",
+        "getContents",
+        "样式",
+        "selector",
+        "copy #复制"
+    ]
+}
