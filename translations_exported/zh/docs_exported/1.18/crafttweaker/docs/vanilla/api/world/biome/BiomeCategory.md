@@ -55,7 +55,7 @@ myBiomeCategory.getName();
 
 ## 参数
 
-| 名称       | 类型     | 可获得  | 可设置   | 描述                      |
-| -------- | ------ | ---- | ----- | ----------------------- |
-| name（名称） | string | true | false | No Description Provided |
+| 名称       | 类型     | 可获得  | 可设置   |
+| -------- | ------ | ---- | ----- |
+| name（名称） | string | true | false |
 
