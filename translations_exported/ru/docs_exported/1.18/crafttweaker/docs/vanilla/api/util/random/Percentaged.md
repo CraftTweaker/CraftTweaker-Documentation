@@ -44,8 +44,8 @@ myPercentaged.getPercentage();
 
 ## Свойства
 
-| Название   | Тип    | Имеет Getter | Имеет Setter | Описание                |
-| ---------- | ------ | ------------ | ------------ | ----------------------- |
-| data       | T      | true         | false        | No Description Provided |
-| percentage | double | true         | false        | No Description Provided |
+| Название   | Тип    | Имеет Getter | Имеет Setter |
+| ---------- | ------ | ------------ | ------------ |
+| data       | T      | true         | false        |
+| percentage | double | true         | false        |
 
