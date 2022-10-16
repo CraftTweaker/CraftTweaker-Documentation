@@ -18,10 +18,10 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos) as boolean
 ```
 
-| Parametro | Tipo                                        | Descrizione             |
-| --------- | ------------------------------------------- | ----------------------- |
-| world     | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parametro | Tipo                                        |
+| --------- | ------------------------------------------- |
+| world     | [Level](/vanilla/api/world/Level)           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -34,11 +34,11 @@ Return Type: boolean
 Biome.shouldFreeze(world as Level, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
 
-| Parametro    | Tipo                                        | Descrizione             |
-| ------------ | ------------------------------------------- | ----------------------- |
-| world        | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| pos          | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
-| mustBeAtEdge | boolean                                     | No Description Provided |
+| Parametro    | Tipo                                        |
+| ------------ | ------------------------------------------- |
+| world        | [Level](/vanilla/api/world/Level)           |
+| pos          | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| mustBeAtEdge | boolean                                     |
 
 
 :::
@@ -51,10 +51,10 @@ Return Type: boolean
 Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 ```
 
-| Parametro | Tipo                                        | Descrizione             |
-| --------- | ------------------------------------------- | ----------------------- |
-| world     | [Level](/vanilla/api/world/Level)           | No Description Provided |
-| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| Parametro | Tipo                                        |
+| --------- | ------------------------------------------- |
+| world     | [Level](/vanilla/api/world/Level)           |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -62,16 +62,16 @@ Biome.shouldSnow(world as Level, pos as BlockPos) as boolean
 
 ## Proprietà
 
-| Nome          | Tipo                                                       | Ha Getter | Ha Setter | Descrizione             |
-| ------------- | ---------------------------------------------------------- | --------- | --------- | ----------------------- |
-| biomeCategory | string                                                     | sì        | no        | No Description Provided |
-| commandString | string                                                     | sì        | no        | No Description Provided |
-| doesRain      | boolean                                                    | sì        | no        | No Description Provided |
-| doesSnow      | boolean                                                    | sì        | no        | No Description Provided |
-| downfall      | float                                                      | sì        | no        | No Description Provided |
-| isHumid       | boolean                                                    | sì        | no        | No Description Provided |
-| rainType      | string                                                     | sì        | no        | No Description Provided |
-| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | sì        | no        | No Description Provided |
-| waterColor    | int                                                        | sì        | no        | No Description Provided |
-| waterFogColor | int                                                        | sì        | no        | No Description Provided |
+| Nome          | Tipo                                                       | Ha Getter | Ha Setter |
+| ------------- | ---------------------------------------------------------- | --------- | --------- |
+| biomeCategory | string                                                     | sì        | no        |
+| commandString | string                                                     | sì        | no        |
+| doesRain      | boolean                                                    | sì        | no        |
+| doesSnow      | boolean                                                    | sì        | no        |
+| downfall      | float                                                      | sì        | no        |
+| isHumid       | boolean                                                    | sì        | no        |
+| rainType      | string                                                     | sì        | no        |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | sì        | no        |
+| waterColor    | int                                                        | sì        | no        |
+| waterFogColor | int                                                        | sì        | no        |
 
