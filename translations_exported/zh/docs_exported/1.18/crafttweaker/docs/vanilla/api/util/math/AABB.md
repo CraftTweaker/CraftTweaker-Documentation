@@ -18,10 +18,10 @@ Return Type: [Vec3](/vanilla/api/util/math/Vec3)?
 AABB.clip(minVec as Vec3, maxVec as Vec3) as Vec3?
 ```
 
-| 参数     | 类型                                  | 描述                      |
-| ------ | ----------------------------------- | ----------------------- |
-| minVec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
-| maxVec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| 参数     | 类型                                  |
+| ------ | ----------------------------------- |
+| minVec | [Vec3](/vanilla/api/util/math/Vec3) |
+| maxVec | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -34,9 +34,9 @@ Return Type: boolean
 AABB.contains(other as Vec3) as boolean
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| other | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| other | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -49,11 +49,11 @@ Return Type: boolean
 AABB.contains(x as double, y as double, z as double) as boolean
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -66,11 +66,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.contract(x as double, y as double, z as double) as AABB
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -83,9 +83,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.deflate(scalar as double) as AABB
 ```
 
-| 参数     | 类型     | 描述                      |
-| ------ | ------ | ----------------------- |
-| scalar | double | No Description Provided |
+| 参数     | 类型     |
+| ------ | ------ |
+| scalar | double |
 
 
 :::
@@ -98,11 +98,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.deflate(x as double, y as double, z as double) as AABB
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -115,9 +115,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.expandTowards(vec as Vec3) as AABB
 ```
 
-| 参数  | 类型                                  | 描述                      |
-| --- | ----------------------------------- | ----------------------- |
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| 参数  | 类型                                  |
+| --- | ----------------------------------- |
+| vec | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -130,11 +130,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.expandTowards(x as double, y as double, z as double) as AABB
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -219,9 +219,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.inflate(scalar as double) as AABB
 ```
 
-| 参数     | 类型     | 描述                      |
-| ------ | ------ | ----------------------- |
-| scalar | double | No Description Provided |
+| 参数     | 类型     |
+| ------ | ------ |
+| scalar | double |
 
 
 :::
@@ -234,11 +234,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.inflate(x as double, y as double, z as double) as AABB
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -251,9 +251,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.intersect(other as AABB) as AABB
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| other | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| other | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -266,9 +266,9 @@ Return Type: boolean
 AABB.intersects(other as AABB) as boolean
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| other | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| other | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -281,10 +281,10 @@ Return Type: boolean
 AABB.intersects(minVec as Vec3, maxVec as Vec3) as boolean
 ```
 
-| 参数     | 类型                                  | 描述                      |
-| ------ | ----------------------------------- | ----------------------- |
-| minVec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
-| maxVec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| 参数     | 类型                                  |
+| ------ | ----------------------------------- |
+| minVec | [Vec3](/vanilla/api/util/math/Vec3) |
+| maxVec | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -297,14 +297,14 @@ Return Type: boolean
 AABB.intersects(minX as double, minY as double, minZ as double, maxX as double, maxY as double, maxZ as double) as boolean
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| minX | double | No Description Provided |
-| minY | double | No Description Provided |
-| minZ | double | No Description Provided |
-| maxX | double | No Description Provided |
-| maxY | double | No Description Provided |
-| maxZ | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| minX | double |
+| minY | double |
+| minZ | double |
+| maxX | double |
+| maxY | double |
+| maxZ | double |
 
 
 :::
@@ -317,9 +317,9 @@ Return Type: double
 AABB.max(direction as Axis) as double
 ```
 
-| 参数        | 类型                                       | 描述                      |
-| --------- | ---------------------------------------- | ----------------------- |
-| direction | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| 参数        | 类型                                       |
+| --------- | ---------------------------------------- |
+| direction | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -332,9 +332,9 @@ Return Type: double
 AABB.min(direction as Axis) as double
 ```
 
-| 参数        | 类型                                       | 描述                      |
-| --------- | ---------------------------------------- | ----------------------- |
-| direction | [Axis](/vanilla/api/util/direction/Axis) | No Description Provided |
+| 参数        | 类型                                       |
+| --------- | ---------------------------------------- |
+| direction | [Axis](/vanilla/api/util/direction/Axis) |
 
 
 :::
@@ -347,9 +347,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.minmax(other as AABB) as AABB
 ```
 
-| 参数    | 类型                                  | 描述                      |
-| ----- | ----------------------------------- | ----------------------- |
-| other | [AABB](/vanilla/api/util/math/AABB) | No Description Provided |
+| 参数    | 类型                                  |
+| ----- | ----------------------------------- |
+| other | [AABB](/vanilla/api/util/math/AABB) |
 
 
 :::
@@ -362,9 +362,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(pos as BlockPos) as AABB
 ```
 
-| 参数 | 类型                                          | 描述                      |
-| -- | ------------------------------------------- | ----------------------- |
-| 点  | [BlockPos](/vanilla/api/util/math/BlockPos) | No Description Provided |
+| 参数 | 类型                                          |
+| -- | ------------------------------------------- |
+| 点  | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
 
 :::
@@ -377,9 +377,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(vec as Vec3) as AABB
 ```
 
-| 参数  | 类型                                  | 描述                      |
-| --- | ----------------------------------- | ----------------------- |
-| vec | [Vec3](/vanilla/api/util/math/Vec3) | No Description Provided |
+| 参数  | 类型                                  |
+| --- | ----------------------------------- |
+| vec | [Vec3](/vanilla/api/util/math/Vec3) |
 
 
 :::
@@ -392,11 +392,11 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.move(x as double, y as double, z as double) as AABB
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| x  | double | No Description Provided |
-| y  | double | No Description Provided |
-| z  | double | No Description Provided |
+| 参数 | 类型     |
+| -- | ------ |
+| x  | double |
+| y  | double |
+| z  | double |
 
 
 :::
@@ -409,9 +409,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxX(maxX as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| maxX | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| maxX | double |
 
 
 :::
@@ -424,9 +424,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxY(maxY as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| maxY | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| maxY | double |
 
 
 :::
@@ -439,9 +439,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMaxZ(maxZ as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| maxZ | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| maxZ | double |
 
 
 :::
@@ -454,9 +454,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinX(minX as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| minX | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| minX | double |
 
 
 :::
@@ -469,9 +469,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinY(minY as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| minY | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| minY | double |
 
 
 :::
@@ -484,9 +484,9 @@ Return Type: [AABB](/vanilla/api/util/math/AABB)
 AABB.setMinZ(minZ as double) as AABB
 ```
 
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| minZ | double | No Description Provided |
+| 参数   | 类型     |
+| ---- | ------ |
+| minZ | double |
 
 
 :::
@@ -494,12 +494,12 @@ AABB.setMinZ(minZ as double) as AABB
 
 ## 参数
 
-| 名称       | 类型                                  | 可获得  | 可设置   | 描述                      |
-| -------- | ----------------------------------- | ---- | ----- | ----------------------- |
-| center   | [Vec3](/vanilla/api/util/math/Vec3) | true | false | No Description Provided |
-| hasNaN   | 布尔值                                 | true | false | No Description Provided |
-| size #大小 | double                              | true | false | No Description Provided |
-| xSize    | double                              | true | false | No Description Provided |
-| ySize    | double                              | true | false | No Description Provided |
-| zSize    | double                              | true | false | No Description Provided |
+| 名称       | 类型                                  | 可获得  | 可设置   |
+| -------- | ----------------------------------- | ---- | ----- |
+| center   | [Vec3](/vanilla/api/util/math/Vec3) | true | false |
+| hasNaN   | 布尔值                                 | true | false |
+| size #大小 | double                              | true | false |
+| xSize    | double                              | true | false |
+| ySize    | double                              | true | false |
+| zSize    | double                              | true | false |
 
