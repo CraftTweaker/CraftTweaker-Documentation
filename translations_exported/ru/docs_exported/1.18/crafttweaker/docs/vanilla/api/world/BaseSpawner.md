@@ -18,9 +18,9 @@ Return Type: [Entity](/vanilla/api/entity/Entity)?
 BaseSpawner.getOrCreateDisplayEntity(param0 as Level) as Entity?
 ```
 
-| Параметр | Тип                               | Описание                |
-| -------- | --------------------------------- | ----------------------- |
-| param0   | [Level](/vanilla/api/world/Level) | No Description Provided |
+| Параметр | Тип                               |
+| -------- | --------------------------------- |
+| param0   | [Level](/vanilla/api/world/Level) |
 
 
 :::
@@ -51,15 +51,13 @@ myBaseSpawner.getoSpin();
 
 :::group{name=setEntityId}
 
-Return Type: void
-
 ```zenscript
-BaseSpawner.setEntityId(param0 as EntityType) as void
+BaseSpawner.setEntityId(param0 as EntityType)
 ```
 
-| Параметр | Тип                                          | Описание                |
-| -------- | -------------------------------------------- | ----------------------- |
-| param0   | [EntityType](/vanilla/api/entity/EntityType) | No Description Provided |
+| Параметр | Тип                                          |
+| -------- | -------------------------------------------- |
+| param0   | [EntityType](/vanilla/api/entity/EntityType) |
 
 
 :::
@@ -67,9 +65,9 @@ BaseSpawner.setEntityId(param0 as EntityType) as void
 
 ## Свойства
 
-| Название | Тип                                           | Имеет Getter | Имеет Setter | Описание                |
-| -------- | --------------------------------------------- | ------------ | ------------ | ----------------------- |
-| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false        | true         | No Description Provided |
-| oSpin    | double                                        | true         | false        | No Description Provided |
-| spin     | double                                        | true         | false        | No Description Provided |
+| Название | Тип                                           | Имеет Getter | Имеет Setter |
+| -------- | --------------------------------------------- | ------------ | ------------ |
+| entityId | [BaseSpawner](/vanilla/api/world/BaseSpawner) | false        | true         |
+| oSpin    | double                                        | true         | false        |
+| spin     | double                                        | true         | false        |
 
