@@ -20,7 +20,7 @@ Adds a new custom trade with the selling and buying items determined by the cust
 // VillagerTrades.addTrade(profession as VillagerProfession, villagerLevel as int, offerGenerator as BiFunction<Entity,Random,MerchantOffer?>)
 
 villagerTrades.addTrade(<profession:minecraft:farmer>, 1, (entity, random) => {
- return new MerchantOffer(<item:minecraft:dirt>, <item:minecraft:diamond>, 0, 5);
+ return new MerchantOffer(<item:minecraft:dirt>, <item:minecraft:diamond>, 16, 0, 5);
  });
 ```
 
