@@ -58,7 +58,7 @@ var oldArray = ["A", "B", "C"] as string[];
 var list = oldArray as stdlib.List<string>;
 list.add("D");
 
-var newArray = oldArray as string[];
+var newArray = list as string[];
 
 println(oldArray.length); //oldArray still has 3 elements so it prints "3"
 println(newArray.length); //newArray now also has "D", so it prints "4"
