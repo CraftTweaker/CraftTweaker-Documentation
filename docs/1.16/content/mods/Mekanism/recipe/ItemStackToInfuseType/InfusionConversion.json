@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackToInfuseType/InfusionConversion.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackToInfuseType",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex",
+    "mods.mekanism.recipe.ItemStackToInfuseType"
+  ]
+}

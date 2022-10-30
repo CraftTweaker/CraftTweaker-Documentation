@@ -1,0 +1,11 @@
+{
+  "path": "mods/Mekanism/api/ingredient/ItemStackIngredient.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.ingredient.ItemStackIngredient",
+  "searchTerms": [
+    "or",
+    "createMulti",
+    "from",
+    "asIData"
+  ]
+}

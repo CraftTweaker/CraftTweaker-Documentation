@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/tag/GasTagManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.tag.GasTagManager",
+  "searchTerms": [
+    "all",
+    "getAllTagsFor",
+    "exists",
+    "getAllTags",
+    "getTag"
+  ]
+}

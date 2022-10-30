@@ -1,0 +1,9 @@
+{
+  "path": "mods/ProjectE/CustomEMC.md",
+  "ownerModId": "projecte",
+  "zenCodeName": "mods.projecte.CustomEMC",
+  "searchTerms": [
+    "removeEMCValue",
+    "setEMCValue"
+  ]
+}

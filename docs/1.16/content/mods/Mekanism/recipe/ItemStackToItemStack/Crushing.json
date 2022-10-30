@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackToItemStack/Crushing.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackToItemStack",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "mods.mekanism.recipe.ItemStackToItemStack",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

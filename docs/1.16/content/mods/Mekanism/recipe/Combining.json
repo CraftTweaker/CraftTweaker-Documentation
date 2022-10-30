@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/Combining.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.MekanismRecipeManager",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "mods.mekanism.recipe.MekanismRecipeManager",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

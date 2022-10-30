@@ -1,0 +1,14 @@
+{
+  "path": "mods/Mekanism/api/chemical/Chemical.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.chemical.Chemical",
+  "searchTerms": [
+    "mods.mekanism.api.text.HasTranslation",
+    "isEmptyType",
+    "empty",
+    "isHidden",
+    "hidden",
+    "getTags",
+    "tags"
+  ]
+}

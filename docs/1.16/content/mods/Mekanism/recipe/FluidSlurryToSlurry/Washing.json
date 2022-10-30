@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/FluidSlurryToSlurry/Washing.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.FluidSlurryToSlurry",
+  "searchTerms": [
+    "mods.mekanism.recipe.FluidSlurryToSlurry",
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

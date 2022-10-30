@@ -1,0 +1,12 @@
+{
+  "path": "mods/ProjectE/NSSResolver.md",
+  "ownerModId": "projecte",
+  "zenCodeName": "mods.projecte.NSSResolver",
+  "searchTerms": [
+    "fromFluidTag",
+    "fromItem",
+    "fromItemTag",
+    "fromFluid",
+    "deserialize"
+  ]
+}

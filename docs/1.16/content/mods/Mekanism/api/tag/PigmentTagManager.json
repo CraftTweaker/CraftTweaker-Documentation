@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/tag/PigmentTagManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.tag.PigmentTagManager",
+  "searchTerms": [
+    "all",
+    "getAllTagsFor",
+    "exists",
+    "getAllTags",
+    "getTag"
+  ]
+}

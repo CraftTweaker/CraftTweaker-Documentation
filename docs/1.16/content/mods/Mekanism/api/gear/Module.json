@@ -1,0 +1,13 @@
+{
+  "path": "mods/Mekanism/api/gear/Module.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.gear.Module",
+  "searchTerms": [
+    "getData",
+    "data",
+    "getInstalledCount",
+    "installed",
+    "isEnabled",
+    "enabled"
+  ]
+}

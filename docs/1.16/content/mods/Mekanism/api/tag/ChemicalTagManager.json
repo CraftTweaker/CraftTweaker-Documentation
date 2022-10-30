@@ -1,0 +1,14 @@
+{
+  "path": "mods/Mekanism/api/tag/ChemicalTagManager.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.tag.ChemicalTagManager",
+  "searchTerms": [
+    "all",
+    "getAllTagsFor",
+    "getTagFolder",
+    "tagType",
+    "exists",
+    "getAllTags",
+    "getTag"
+  ]
+}

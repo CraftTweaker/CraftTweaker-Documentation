@@ -1,0 +1,16 @@
+{
+  "path": "mods/Mekanism/api/FloatingLong.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.FloatingLong",
+  "searchTerms": [
+    "add",
+    "isEqual",
+    "subtract",
+    "createFromUnsigned",
+    "create",
+    "divide",
+    "asString",
+    "compareTo",
+    "multiply"
+  ]
+}

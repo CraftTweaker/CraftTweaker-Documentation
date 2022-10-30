@@ -1,0 +1,13 @@
+{
+  "path": "mods/Mekanism/api/BracketHandlers.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.BracketHandlers",
+  "searchTerms": [
+    "getGasStack",
+    "getPigmentStack",
+    "getInfusionStack",
+    "getRobitSkin",
+    "getSlurryStack",
+    "getModuleData"
+  ]
+}

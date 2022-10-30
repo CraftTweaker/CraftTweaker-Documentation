@@ -1,0 +1,12 @@
+{
+  "path": "mods/Mekanism/api/ingredient/ChemicalStackIngredient/SlurryStackIngredient.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.api.ingredient.ChemicalStackIngredient.SlurryStackIngredient",
+  "searchTerms": [
+    "or",
+    "mods.mekanism.api.ingredient.ChemicalStackIngredient",
+    "createMulti",
+    "from",
+    "asIData"
+  ]
+}

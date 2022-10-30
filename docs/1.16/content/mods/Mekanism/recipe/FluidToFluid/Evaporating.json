@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/FluidToFluid/Evaporating.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.FluidToFluid",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "mods.mekanism.recipe.FluidToFluid",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}

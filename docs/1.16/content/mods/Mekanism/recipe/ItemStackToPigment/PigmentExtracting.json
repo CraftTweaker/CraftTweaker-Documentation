@@ -1,0 +1,21 @@
+{
+  "path": "mods/Mekanism/recipe/ItemStackToPigment/PigmentExtracting.md",
+  "ownerModId": "mekanism",
+  "zenCodeName": "mods.mekanism.recipe.ItemStackToPigment",
+  "searchTerms": [
+    "removeRecipe",
+    "getRecipeByName",
+    "allRecipes",
+    "removeByModid",
+    "addJSONRecipe",
+    "recipeMap",
+    "addRecipe",
+    "removeAll",
+    "removeByName",
+    "getRecipeMap",
+    "getAllRecipes",
+    "mods.mekanism.recipe.ItemStackToPigment",
+    "removeRecipeByInput",
+    "removeByRegex"
+  ]
+}
