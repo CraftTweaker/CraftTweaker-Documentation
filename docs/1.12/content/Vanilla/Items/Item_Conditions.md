@@ -1,10 +1,9 @@
 # Item Conditions
 
-Sometimes normal items won't cut it:  
+Sometimes normal items won't cut it and we want to:
 
-Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.  
-
-Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
+* specify recipes that only work when the input item fulfills some conditions.  
+* specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
@@ -15,71 +14,61 @@ It might be required for you to import the package if you encounter any issues (
 These will affect the items that you can use to craft the resulting item.
 Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
 ```zenscript
-<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
+<minecraft:iron_pickaxe>.anyDamage().onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
 ```
 ### Damage
 
 #### anyDamage
 The input item's damage value does not matter for the recipe
 ```zenscript
-item.anyDamage()
+item.anyDamage();
 ```
 
 #### onlyDamaged
-The input item needs to be damaged
+The input item needs to be damaged. Only works in combination with `anyDamage()`!
 ```zenscript
-item.onlyDamaged();
+item.anyDamage().onlyDamaged();
 ```
 
 #### Damaged at least
-Input item's damage value needs to be at least the specified `value`  
-`Value` is an int
+Input item's damage value needs to be at least the specified `value`. Only works in combination with `anyDamage()`!
 ```zenscript
-item.onlyDamageAtLeast(value);
+item.anyDamage().onlyDamageAtLeast(int value);
 ```
 
-#### Damage at most
-Input item's damage value needs to be at max the specified `value`  
-`Value` is an int
+#### Damaged at most
+Input item's damage value needs to be at most the specified `value`. Only works in combination with `anyDamage()`!
 ```zenscript
-item.onlyDamageAtMost(value);
+item.anyDamage().onlyDamageAtMost(int value);
 ```
 
-#### Damage between
-Input item's damage value needs to be between the speciefied `value1` and `value2`  
-`Value1` is an int  
-`Value2` is an int  
+#### Damaged between
+Input item's damage value needs to be between the specified `min` and `max`. Only works in combination with `anyDamage()`!
 ```zenscript
-item.onlyDamageBetween(value1, value2);
+item.anyDamage().onlyDamageBetween(int min, int max);
 ```
-
-### Get Items back or explicitly forbid an item's reusability
-Sometimes you need a recipe where you get some of your input items back.  
-By applying `transformDamage(int)` you can create such recipes.
-
 
 #### transformDamage
 The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
-`Value` is an int
+You can also use this to repair items by having a negative `value`.
 ```zenscript
-item.transformDamage(value);
+item.transformDamage(int value);
 ```
 
 ### NBT-Tags
-Sometimes you want your ingredients to need a specific NBT-Tag.
+Sometimes you want your ingredients to require a specific NBT-Tag.
 The recipe doesn't care if your item has NBT-Tags other than the ones specified, 
 So a pickaxe with a specific lore may also be enchanted!  
 
-If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
+If you use `withTag` JEI will display it properly, if you use `onlyWithTag`, JEI will only display a tagless item!
 
 Here's how you do it:
-`NBTTag` is your NBT Data
 ```zenscript
-item.withTag(NBTData);
-item.onlyWithTag(NBTTag);
+item.withTag(tag);
+item.onlyWithTag(tag);
 
-<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
 <minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
+<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
 ```
 
 ## Output modifiers
@@ -88,14 +77,12 @@ If you can specify input conditions, it's not so hard to also define output cond
 
 ### Damage
 Your output item will have `value` damage points.  
-`Value` is an int.
 ```zenscript
-item.withDamage(value);
+item.withDamage(int value);
 ```
 
 ### NBT-Tags
 Your output item will have `NBTTag` as NBT-Tag.  
-`NBTTag` is your NBT Data
 ```zenscript
 item.withTag(NBTTag);
 
@@ -103,10 +90,9 @@ item.withTag(NBTTag);
 ```
 
 
-## Registering own item Conditions
+## Registering custom Item Conditions
 
 You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
-
 ```zenscript
 conditionedItem = item.only(function(item) {return true;});
 ```
