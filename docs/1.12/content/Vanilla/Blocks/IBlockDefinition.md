@@ -27,9 +27,9 @@ It might be required for you to import the package if you encounter any issues (
 | hardness        | hardness            |                                                   | int                                                 |
 | harvestLevel    |                     | Returns the block's harvest level                 | int                                                 |
 | harvestTool     |                     | Returns the block's harvest tool                  | string                                              |
-|                 | lightOpacity        |                                                   | int                                                 |
-|                 | lightLevel          |                                                   | int                                                 |
-|                 | resistance          |                                                   | int                                                 |
+| lightOpacity    | lightOpacity        |                                                   | int                                                 |
+| lightLevel      | lightLevel          |                                                   | int                                                 |
+| resistance      | resistance          |                                                   | int                                                 |
 | unlocalizedName |                     | Returns the block's unlocalized Name              | string                                              |
 | tickRandomly    | tickRandomly        |                                                   | bool                                                |
 
@@ -84,6 +84,26 @@ defObj.getHarvestLevel(IBlockState state);
 returns a string. 
 ```zenscript
 defObj.getHarvestTool(IBlockState state);
+```
+
+### Get light opacity of block state
+returns a float.
+```zenscript
+defObj.getLightOpacity(IBlockState state);
+defObj.getLightOpacity(IBlockState state, IWorld world, IBlockPos pos);
+```
+
+### Get light level of block state
+returns a float.
+```zenscript
+defObj.getLightLevel(IBlockState state);
+defObj.getLightLevel(IBlockState state, IWorld world, IBlockPos pos);
+```
+
+### Get explosion resistance of block position and explosion
+returns a float.
+```zenscript
+defObj.getResistance(IWorld world, IBlockPos pos, IEntity entity, IExplosion explosion);
 ```
 
 ### Get a block state by metadata

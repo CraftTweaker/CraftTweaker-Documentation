@@ -18,6 +18,17 @@
         "Brewing": {
           "Brewing": "vanilla/api/brewing/Brewing.md"
         },
+        "Capability": {
+          "Capabilities": "vanilla/api/capability/Capabilities.md",
+          "Capability": "vanilla/api/capability/Capability.md",
+          "CapabilityProvider": "vanilla/api/capability/CapabilityProvider.md",
+          "ICapabilityProvider": "vanilla/api/capability/ICapabilityProvider.md",
+          "IEnergyStorage": "vanilla/api/capability/IEnergyStorage.md",
+          "IFluidHandler": "vanilla/api/capability/IFluidHandler.md",
+          "IFluidHandlerAction": "vanilla/api/capability/IFluidHandlerAction.md",
+          "IFluidHandlerItem": "vanilla/api/capability/IFluidHandlerItem.md",
+          "IItemHandler": "vanilla/api/capability/IItemHandler.md"
+        },
         "Commands": {
           "Custom": {
             "CustomCommands": "vanilla/api/commands/custom/CustomCommands.md",
@@ -157,6 +168,7 @@
               "MCItemFishedEvent": "vanilla/api/event/entity/player/MCItemFishedEvent.md",
               "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
               "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerBrewedPotionEvent": "vanilla/api/event/entity/player/MCPlayerBrewedPotionEvent.md",
               "MCPlayerDestroyItemEvent": "vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md",
               "MCPlayerEvent": "vanilla/api/event/entity/player/MCPlayerEvent.md",
               "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
@@ -172,6 +184,7 @@
               },
               "Xp": {
                 "MCLevelChangeEvent": "vanilla/api/event/entity/player/xp/MCLevelChangeEvent.md",
+                "MCPlayerXPEvent": "vanilla/api/event/entity/player/xp/MCPlayerXPEvent.md",
                 "MCXpChangeEvent": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md"
               }
             }
@@ -210,6 +223,7 @@
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md",
           "MCItemUseContext": "vanilla/api/item/MCItemUseContext.md",
           "Rarity": "vanilla/api/item/Rarity.md",
+          "UseAction": "vanilla/api/item/UseAction.md",
           "Armor": {
             "ArmorItem": "vanilla/api/item/armor/ArmorItem.md",
             "ArmorMaterial": "vanilla/api/item/armor/ArmorMaterial.md",

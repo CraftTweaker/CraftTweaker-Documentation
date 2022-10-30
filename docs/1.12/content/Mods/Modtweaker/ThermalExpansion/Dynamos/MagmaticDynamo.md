@@ -11,8 +11,10 @@ import mods.thermalexpansion.MagmaticDynamo;
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:water>, 13);
+mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:water>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `10000` and `200000000`.
 
 ## Remove Fuel
 

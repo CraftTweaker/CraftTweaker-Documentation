@@ -163,7 +163,9 @@ Removes all wandering trades of the given rarity
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+// VillagerTrades.removeAllWanderinTrades(rarity as int) as void
+
+villagerTrades.removeAllWanderinTrades(1);
 ```
 
 | Parameter | Type | Description |
@@ -180,7 +182,9 @@ Removes all wandering trades of the given rarity
 Return Type: void
 
 ```zenscript
-VillagerTrades.removeAllWanderingTrades(rarity as int) as void
+// VillagerTrades.removeAllWanderingTrades(rarity as int) as void
+
+villagerTrades.removeAllWanderingTrades(1);
 ```
 
 | Parameter | Type | Description |
@@ -504,26 +508,6 @@ villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
 |-----------|------|-------------|
 | rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
 | tradeFor | [IIngredient](/vanilla/api/items/IIngredient) | What ItemStack is being sold (by the Villager). |
-
-
-:::
-
-:::group{name=removeWanderingTrade}
-
-Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader 2 Emeralds for an Arrow.
-
-Return Type: void
-
-```zenscript
-// VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
-
-villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
-| tradeFor | [IItemStack](/vanilla/api/items/IItemStack) | What ItemStack is being sold (by the Villager). |
 
 
 :::

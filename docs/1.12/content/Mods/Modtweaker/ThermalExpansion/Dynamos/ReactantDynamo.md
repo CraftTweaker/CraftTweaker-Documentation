@@ -11,15 +11,19 @@ import mods.thermalexpansion.ReactantDynamo;
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addReaction(IItemStack item, ILiquidStack liquid, int energy);
-mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 13);
+mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `10000` and `200000000`.
 
 ## Add Elemental Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addReactionElemental(IItemStack item, ILiquidStack liquid, int energy);
-mods.thermalexpansion.ReactantDynamo.addReactionElemental(<minecraft:bedrock>, <liquid:water>, 13);
+mods.thermalexpansion.ReactantDynamo.addReactionElemental(<minecraft:bedrock>, <liquid:water>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `10000` and `200000000`.
 
 ## Remove Reaction
 

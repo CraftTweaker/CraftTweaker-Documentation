@@ -150,6 +150,22 @@ Return Type: [IData](/vanilla/api/data/IData)?
 
 :::
 
+:::group{name=getData}
+
+Return Type: T
+
+```zenscript
+MapData.getData<T : IData>(key as string) as T
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| key | string | No Description Provided |
+| T | [IData](/vanilla/api/data/IData) | No Description Provided |
+
+
+:::
+
 :::group{name=getId}
 
 Gets the ID of the internal NBT tag.
@@ -273,6 +289,17 @@ Adds all entries from the given IData to this entry
 
 ```zenscript
 myMapData + data as IData
+```
+
+:::
+
+:::group{name=CONTAINS}
+
+Checks if the Map contains the given key.
+
+```zenscript
+key as string in myMapData
+"Hello" in {Hello : "World", Somewhere: "Over the rainbow"}
 ```
 
 :::

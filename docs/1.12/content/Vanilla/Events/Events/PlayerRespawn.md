@@ -16,7 +16,7 @@ PlayerRespawn Events implement the following interfaces and are able to call all
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                               |
-|------------------|-----------------------------------------------------------|
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                       |
-| `isEndConquered` | bool (states if the respawn is because of the end portal) |
+| ZenGetter      | Return Type                                               |
+|----------------|-----------------------------------------------------------|
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                       |
+| `endConquered` | bool (states if the respawn is because of the end portal) |

@@ -42,7 +42,7 @@ import mods.contenttweaker.block.basic.BlockBuilderBasic;
 import mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable;
 
 
-//The simplest way, uses blockamterial IRON
+//The simplest way, uses blockmaterial IRON
 new BlockBuilder()
     //Will delegate to the Basic Builder
     .build("generic_block");

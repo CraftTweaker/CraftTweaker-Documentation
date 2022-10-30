@@ -151,7 +151,7 @@ craftingTable.removeByName("minecraft:arrow");
 This method allows you to remove recipes from this Recipe Manager based on the the recipe name's modid.  
 There is an optional parameter that is used to exclude recipes from being removed.   
 Note: The name given to the RecipeFilter is just the path of the recipe id.  
-For example, if the recipe id is `minecraft:orage_wool`, the name given will be `orange_wool`. Another example would be the recipe id `modid:path/name`, the name given will be `path/name`
+For example, if the recipe id is `minecraft:orange_wool`, the name given will be `orange_wool`. Another example would be the recipe id `modid:path/name`, the name given will be `path/name`
 
 ```zenscript
 removeByModid(String modid);
@@ -196,7 +196,7 @@ craftingTable.removeByRegex(".*wool.*");
 This method allows you to remove all the recipes from the Recipe Manager.
 
 ```zenscript
-removeAll(String regex);
+removeAll();
 ```
 
 An example use case for this method is removing all the Blast Furnace recipes.

@@ -11,8 +11,10 @@ import mods.thermalexpansion.SteamDynamo;
 
 ```zenscript
 //mods.thermalexpansion.SteamDynamo.addFuel(IItemStack stack, int energy);
-mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 13);
+mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 20000);
 ```
+
+Note: The `energy` parameter needs to be a value between `2000` and `200000000`.
 
 ## Remove Fuel
 

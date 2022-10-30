@@ -10,10 +10,24 @@ import mods.contenttweaker.block.BlockRenderType;
 ```
 
 
-## Extending Enum&lt;BlockRenderType&gt;
+## Enum Constants
 
-BlockRenderType extends Enum&lt;[BlockRenderType](/mods/contenttweaker/API/block/BlockRenderType)&gt;. That means all methods available in Enum&lt;[BlockRenderType](/mods/contenttweaker/API/block/BlockRenderType)&gt; are also available in BlockRenderType
+BlockRenderType is an enum. It has 4 enum constants. They are accessible using the code below.
 
+```zenscript
+
+// Solid, opaque. This is the default value.
+BlockRenderType.SOLID
+
+// Translucent, like vanilla ice and water
+BlockRenderType.TRANSLUCENT
+
+// Transparent, often used for non-full blocks, like saplings and beds.
+BlockRenderType.CUTOUT
+
+// Transparent, but mip mapped, like vanilla glass.
+BlockRenderType.CUTOUT_MIPPED
+```
 ## Static Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

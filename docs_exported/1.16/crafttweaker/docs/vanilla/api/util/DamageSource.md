@@ -76,10 +76,10 @@ myDamageSource.getHungerDamage();
 Gets the immediate source of the damage, like an arrow.
 
 Returns: The immediate source of the damage.  
-Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
+Return Type: [MCEntity](/vanilla/api/entity/MCEntity)?
 
 ```zenscript
-// DamageSource.getImmediateSource() as MCEntity
+// DamageSource.getImmediateSource() as MCEntity?
 
 myDamageSource.getImmediateSource();
 ```
@@ -91,10 +91,10 @@ myDamageSource.getImmediateSource();
 Gets the true source of the damage, like the player who shot the arrow.
 
 Returns: The true source of the damage.  
-Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
+Return Type: [MCEntity](/vanilla/api/entity/MCEntity)?
 
 ```zenscript
-// DamageSource.getTrueSource() as MCEntity
+// DamageSource.getTrueSource() as MCEntity?
 
 myDamageSource.getTrueSource();
 ```
@@ -233,11 +233,11 @@ myDamageSource.isUnblockableDamage();
 | explosion | boolean | true | false | Checks if the damage is caused by an explosion. |
 | fire | boolean | true | false | Checks if the damage is caused by fire or burning. |
 | hungerDamage | float | true | false | Gets the amount of exhaustion to add to the player's hunger bar if they <br />  get hit by this damage. |
-| immediateSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | Gets the immediate source of the damage, like an arrow. |
+| immediateSource | [MCEntity](/vanilla/api/entity/MCEntity)? | true | false | Gets the immediate source of the damage, like an arrow. |
 | location | [MCVector3d](/vanilla/api/util/MCVector3d)? | true | false | Gets the location where the damage occurred. |
 | magic | boolean | true | false | Checks if the damage is caused by magic. |
 | projectile | boolean | true | false | Checks if the damage is caused by a projectile. |
-| trueSource | [MCEntity](/vanilla/api/entity/MCEntity) | true | false | Gets the true source of the damage, like the player who shot the arrow. |
+| trueSource | [MCEntity](/vanilla/api/entity/MCEntity)? | true | false | Gets the true source of the damage, like the player who shot the arrow. |
 | type | string | true | false | Gets the type of damage. |
 | unblockable | boolean | true | false | Checks if the damage can be blocked. |
 

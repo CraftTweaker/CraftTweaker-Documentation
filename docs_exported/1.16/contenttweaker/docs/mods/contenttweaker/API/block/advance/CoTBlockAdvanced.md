@@ -50,6 +50,21 @@ CoTBlockAdvanced.setIsSideInvisible(func as IBlockIsSideInvisible) as CoTBlockAd
 
 :::
 
+:::group{name=setIsTransparent}
+
+Return Type: [CoTBlockAdvanced](/mods/contenttweaker/API/block/advance/CoTBlockAdvanced)
+
+```zenscript
+CoTBlockAdvanced.setIsTransparent(func as IBlockIsTransparent) as CoTBlockAdvanced
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| func | [IBlockIsTransparent](/mods/contenttweaker/API/functions/IBlockIsTransparent) | No Description Provided |
+
+
+:::
+
 :::group{name=setOnActivated}
 
 Sets what will happen when a player right-clicks the block

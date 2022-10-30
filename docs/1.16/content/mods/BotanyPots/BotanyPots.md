@@ -59,13 +59,13 @@ wheat.clearDrops();
 
 // Removes a drop.
 // removeDrop(ingredientToRemove);
-wheat.removeDrop(<tag:forge:seeds>);
+wheat.removeDrop(<tag:items:forge:seeds>);
 
 // Set the growth ticks of the crop.
 wheat.setGrowthTicks(10000);
 
 // Sets the seed item.
-wheat.setSeed(<tag:forge:seeds/wheat>);
+wheat.setSeed(<tag:items:forge:seeds/wheat>);
 
 // Sets the display block.
 wheat.setDisplay(<blockstate:minecraft:gold_block>);
@@ -89,7 +89,7 @@ To create a soil you use the create method from the manager. This method will re
 // soils.create(id, input, renderBlock, growthModifier, category);
 // Growth can be any value less than or equal to 1. Higher = faster, 0 = no change.
 // category may also be a string array.
-val stoneSoil = soils.create("examplepack:stone", <tag:forge:stone>, <blockstate:minecraft:stone>, 0.15, "stone");
+val stoneSoil = soils.create("examplepack:stone", <tag:items:forge:stone>, <blockstate:minecraft:stone>, 0.15, "stone");
 ```
 
 ### Modifying Soils
@@ -112,7 +112,7 @@ dirt.clearCategories();
 
 // Sets the input.
 // setInput(input);
-dirt.setInput(<tag:forge:stone>);
+dirt.setInput(<tag:items:forge:stone>);
 
 // Set display block.
 // setDisplay(state);
@@ -144,7 +144,7 @@ val stickFertilizer = fertilizers.create("examplepack:test", <item:minecraft:sti
 To modify a fertilizer you will need to get a ZenFertilizer value. This is provided when you create the fertilizer but can also be retrieved using `fertilizers.getFertilizer("fertilizerId");`.
 
 ```zenscript
-val bonemeal = soils.getFertilizer("botanypots:fertilizers/bone_meal");
+val bonemeal = fertilizers.getFertilizer("botanypots:fertilizers/bone_meal");
 
 // Set the input of the fertilizer.
 // setInput(input);

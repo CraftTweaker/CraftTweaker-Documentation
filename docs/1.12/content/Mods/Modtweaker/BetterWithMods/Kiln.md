@@ -39,9 +39,9 @@ The Kiln has a recipe builder that allows more precise control over the recipes.
 `mods.betterwithmods.Kiln.builder()`
 
 * Kiln methods
-     * Sets up the inputs and outputs of the recipe  
+     * Sets up the input and outputs of the recipe  
        ```zenscript
-       buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+       buildRecipe(IIngredient input, IItemStack[] outputs)
        ```
      * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron.
        Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
@@ -60,7 +60,7 @@ The Kiln has a recipe builder that allows more precise control over the recipes.
 ### Example builder usage
 ```zenscript
 mods.betterwithmods.Kiln.builder()
-.buildRecipe([<ore:iron>], [<minecraft:iron_ingot>*2])
+.buildRecipe(<ore:iron>, [<minecraft:iron_ingot>*2])
 .setHeat(2)
 .build();
 ```

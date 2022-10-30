@@ -21,6 +21,10 @@ import crafttweaker.api.event.entity.player.xp.MCLevelChangeEvent;
 ```
 
 
+## Extending MCPlayerXPEvent
+
+MCLevelChangeEvent extends [MCPlayerXPEvent](/vanilla/api/event/entity/player/xp/MCPlayerXPEvent). That means all methods available in [MCPlayerXPEvent](/vanilla/api/event/entity/player/xp/MCPlayerXPEvent) are also available in MCLevelChangeEvent
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

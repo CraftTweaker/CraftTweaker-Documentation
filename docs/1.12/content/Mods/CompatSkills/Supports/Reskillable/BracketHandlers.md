@@ -14,8 +14,8 @@
 ### Trait Bracket Handler:
 ```
 ## Example:
-<trait:resourcelocation>
+<unlockable:resourcelocation>
 
 ## Working Example:
-<trait:reskillable:sidestep>
+<unlockable:reskillable:sidestep>
 ```

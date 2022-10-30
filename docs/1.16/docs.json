@@ -303,9 +303,7 @@
 				},
 				"About Mekanism" : "mods/Mekanism/AboutMekanism.md"
 			},
-			"Meme in a Bottle" : {
-
-			},
+			"MemeInABottle" : {},
 			"Mystical Agriculture": {
 				"Infusion Crafting": "mods/MysticalAgriculture/InfusionCrafting.md",
 				"Reprocessor Crafting": "mods/MysticalAgriculture/ReprocessorCrafting.md"

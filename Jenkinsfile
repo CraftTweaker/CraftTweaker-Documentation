@@ -31,7 +31,6 @@ pipeline {
     }
     options {
         disableConcurrentBuilds()
-        retry(2)
     }
     triggers {
         cron('0 */24 * * *')

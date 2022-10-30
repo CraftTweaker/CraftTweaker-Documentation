@@ -29,6 +29,21 @@ MCPlayerEntity.addExhaustion(exhaustion as float) as void
 
 :::
 
+:::group{name=addExperienceLevels}
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.addExperienceLevels(levels as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| levels | int | No Description Provided |
+
+
+:::
+
 :::group{name=canUseCommandBlock}
 
 Return Type: boolean
@@ -68,6 +83,42 @@ myMCPlayerEntity.getCurrentItem();
 
 :::
 
+:::group{name=getExperience}
+
+Return Type: float
+
+```zenscript
+// MCPlayerEntity.getExperience() as float
+
+myMCPlayerEntity.getExperience();
+```
+
+:::
+
+:::group{name=getExperienceLevel}
+
+Return Type: int
+
+```zenscript
+// MCPlayerEntity.getExperienceLevel() as int
+
+myMCPlayerEntity.getExperienceLevel();
+```
+
+:::
+
+:::group{name=getExperienceTotal}
+
+Return Type: int
+
+```zenscript
+// MCPlayerEntity.getExperienceTotal() as int
+
+myMCPlayerEntity.getExperienceTotal();
+```
+
+:::
+
 :::group{name=getFoodLevel}
 
 Return Type: int
@@ -77,6 +128,21 @@ Return Type: int
 
 myMCPlayerEntity.getFoodLevel();
 ```
+
+:::
+
+:::group{name=getHeldItem}
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+MCPlayerEntity.getHeldItem(hand as MCHand) as IItemStack
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+
 
 :::
 
@@ -205,6 +271,21 @@ MCPlayerEntity.give(stack as IItemStack) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
+
+:::
+
+:::group{name=giveExperiencePoints}
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.giveExperiencePoints(experience as int) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| experience | int | No Description Provided |
 
 
 :::
@@ -351,6 +432,22 @@ MCPlayerEntity.setFoodLevel(value as int) as void
 
 :::
 
+:::group{name=swing}
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.swing(hand as MCHand, updateSelf as boolean) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| hand | [MCHand](/vanilla/api/util/MCHand) | No Description Provided |
+| updateSelf | boolean | No Description Provided |
+
+
+:::
+
 :::group{name=unlockRecipes}
 
 Return Type: void
@@ -400,6 +497,9 @@ myMCPlayerEntity.wakeUp();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
+| experience | float | true | false | No Description Provided |
+| experienceLevel | int | true | false | No Description Provided |
+| experienceTotal | int | true | false | No Description Provided |
 | fake | boolean | true | false | No Description Provided |
 | foodLevel | int | true | true | No Description Provided |
 | inventory | [PlayerInventory](/vanilla/api/inventory/PlayerInventory) | true | false | No Description Provided |
