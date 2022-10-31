@@ -93,9 +93,9 @@ item.withTag(tag as IData);
 
 You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 ```zenscript
-conditionedItem = item.only(function(itm as IItemStack) as bool {
+conditionedItem = item.only(function(itemStack as IItemStack) as bool {
   var b as bool = true;
-  // do something with itm
+  // do something with itemStack
   return b;
 });
 ```
