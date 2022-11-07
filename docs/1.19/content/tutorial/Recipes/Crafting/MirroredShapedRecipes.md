@@ -15,7 +15,7 @@ There is one difference between CraftTweaker mirrored recipes and Vanilla mirror
 
 ## Adding Mirrored Shaped Recipes
 
-Adding Mirrored Shaped Recipes is exactly the same as adding normal Shaped Recipes except it uses a different method, and it asks for the axis it should be mirrored on.
+Adding Mirrored Shaped Recipes is exactly the same as adding normal Shaped Recipes except it uses a different method, and it asks for the [axis](/vanilla/api/recipe/MirrorAxis) it should be mirrored on.
 
 The basic syntax for a mirrored shaped recipe is:
 
