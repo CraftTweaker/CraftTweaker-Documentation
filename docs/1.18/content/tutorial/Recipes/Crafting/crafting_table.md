@@ -4,9 +4,9 @@
 
 There are three recipe types for crafting tables:
 
-- **Shapeless:** A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
-- **Shaped:** A shaped recipe is a recipe where the position of the items must be exact.
-- **Shaped Mirrored:** A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
+- [**Shapeless:**](/tutorials/Recipes/Crafting/ShapelessRecipes.md) A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
+- [**Shaped:**](/tutorials/Recipes/Crafting/ShapedRecipes.md) A shaped recipe is a recipe where the position of the items must be exact.
+- [**Shaped Mirrored:**](/tutorials/Recipes/Crafting/ShapedMirrored.md) A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
 
 ## Adding a Recipe
 
@@ -16,10 +16,10 @@ _When adding a recipe, ensure that your recipe names are unique!_
 
 `craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/ingredient/IIngredient)[]>
-- `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+- `recipeName`as string
+- `output` as [IItemStack](/vanilla/api/items/IItemStack)
+- `ingredients` as [IIngredient](/vanilla/api/ingredient/IIngredient)[]
+- `recipeFunction` (Optional) as [RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)
 
 Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
@@ -43,10 +43,10 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
-- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+- `recipeName` as string
+- `output` as [IItemStack](/vanilla/api/items/IItemStack)
+- `ingredients` as [IIngredient](/vanilla/api/items/IIngredient)[][]
+- `recipeFunction` (Optional) as [RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)
 
 Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
 
@@ -71,12 +71,24 @@ craftingTable.addShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
 ]);
 
 // Adding a shaped mirrored recipe
-craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
+
+import crafttweaker.api.recipe.MirrorAxis;
+
+craftingTable.addShapedMirrored("shaped_mirror_example_1", MirrorAxis.DIAGONAL, <item:minecraft:arrow> * 2, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 ```
+
+:::question[What is a valid mirroring recipe of the above example?]
+
+:::answer[[!image](/tutorial/Recipes/Crafting/assets/image1.png)]{correct=false id=1}
+:::answer[[!image2](/tutorial/Recipes/Crafting/assets/image2.png)]{correct=true id=2}
+:::answer[[!image3](/tutorial/Recipes/Crafting/assets/image3.png)]{correct=false id=3}
+
+
+:::
 
 _See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
@@ -92,8 +104,8 @@ _As Shaped and Shaped Mirrored Recipes are similar, examples will only include S
 
 `(usualOut as IItemStack, inputs as IItemStack[]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
+- `usualOut` as [IItemStack](/vanilla/api/items/IItemStack)
+- `inputs` as [IItemStack](/vanilla/api/items/IItemStack)[] Array of inputs ordered the same as defined in the original recipe
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -116,8 +128,10 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 
 `(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `usualOut` as [IItemStack](/vanilla/api/items/IItemStack)
+- `inputs` as [IItemStack](/vanilla/api/items/IItemStack)[][]
+
+`inputs` is an array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -233,7 +247,7 @@ craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>
 
 `craftingTable.removeByName(recipeName);`
 
-- `recipeName` &lt;string>
+- `recipeName` as string
 
 Removes the recipe that matches the name provided.
 
@@ -245,7 +259,7 @@ craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 
 `craftingTable.remove(output);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` as [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
@@ -257,7 +271,7 @@ craftingTable.remove(<item:minecraft:stick>);
 
 `craftingTable.removeByModid(modId);`
 
-- `modId` &lt;string>
+- `modId` as string
 
 Removes all recipes added by the provided mod.
 
@@ -269,9 +283,9 @@ craftingTable.removeByModid("minecraft");
 
 `craftingTable.removeByModid(modId, exclusionFilter);`
 
-- `modId` &lt;string>
-- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
+- `modId` as string
+- `exclusionFilter` as [RecipeFilter](/vanilla/api/recipe/RecipeFilter)
+- `name` as string. The name of the current recipe being checked. _The mod id will not be included_
 
 Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
 
@@ -301,7 +315,7 @@ craftingTable.removeByModid("minecraft", (name) => {
 
 `craftingTable.removeByRegex(regex);`
 
-- `regex` &lt;string>
+- `regex` as string
 
 Removes all recipes that's name matches the regex string.
 

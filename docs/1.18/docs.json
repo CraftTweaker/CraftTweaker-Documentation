@@ -16,20 +16,15 @@
             "Recipes": {
                 "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
                 "Crafting": {
-                    "Add Recipes": {
-                        "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/MirroredShapedRecipes.md",
-                        "Shaped Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapedRecipes.md",
-                        "Shapeless Recipes": "tutorial/Recipes/Crafting/AddRecipes/ShapelessRecipes.md"
-                    }
+                        "CraftingTable" : "tutorial/Recipes/Crafting/crafting_table.md",
+                        "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/MirroredShapedRecipes.md",
+                        "Shaped Recipes": "tutorial/Recipes/Crafting/ShapedRecipes.md",
+                        "Shapeless Recipes": "tutorial/Recipes/Crafting/ShapelessRecipes.md"
                 }
             },
             "Software": "tutorial/Software.md"
         },
-        "Vanilla": {
-            "How to": {
-                "Crafting Table Recipes": "vanilla/how_to/crafting_table.md"
-            }
-        },
+        "Vanilla": {},
         "Fabric": {},
         "Forge": {},
         "Mods": {
