@@ -10,26 +10,19 @@ This is the source code for the documentation, you can find the actual site and 
 git submodule init 
 git submodule update
 npm install
-cd Docs-Site/
+cd site/
 npm install
-```
-
-### Serve:
-
-```
-npm run-script serve
 ```
 
 ### Build
 
-Will move the files into `build/` in subfolders that the Docs-Site expects them in
 ```
-npm run-script build
+npm run build
 ```
 
-### Testing:
+### View Results
 
-Will check all the links on the markdown making sure they link to valid locations
 ```
-npm run-script test
+cd site
+npm run dev
 ```

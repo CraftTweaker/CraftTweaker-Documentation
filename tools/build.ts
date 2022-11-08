@@ -197,7 +197,7 @@ async function finalize(): Promise<void> {
 
     const finalDir = path.join(process.cwd(), "site", "docs")
     clearDirectory(finalDir);
-    fs.copySync(docsOutDir, finalDir)
+    fs.copySync(path.join(outDir, "en"), path.join(finalDir, "en"))
 
     const publicDir = path.join(process.cwd(), "site", "public")
     languages.forEach(language => {
