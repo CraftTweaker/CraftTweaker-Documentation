@@ -18,6 +18,4 @@ General programming concepts:
 
 Scripting concepts :
 
-- [CraftingTable](/vanilla/how_to/crafting_table) - Graded D
-- [ContentTweaker](/mods/contenttweaker/SimpleWalkthrough) - Graded A
-
+- [CraftingTable](/tutorial/Recipes/Crafting/crafting_table.md) - Graded D
