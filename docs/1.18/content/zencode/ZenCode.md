@@ -18,4 +18,4 @@ General programming concepts:
 
 Scripting concepts :
 
-- [CraftingTable](/tutorial/Recipes/Crafting/crafting_table.md) - Graded D
+- [CraftingTable](/tutorial/Recipes/Crafting/crafting_table) - Graded D
