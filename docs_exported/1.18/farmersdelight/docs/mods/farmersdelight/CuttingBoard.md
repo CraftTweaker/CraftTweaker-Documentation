@@ -41,13 +41,13 @@ Add a cutting board recipe.
 <recipetype:farmersdelight:cutting>.addRecipe("cutting_board_test", <item:minecraft:gravel>, [<item:minecraft:flint>], <item:minecraft:string>, "minecraft:block.gravel.break");
 ```
 
-| Parameter |                                                  Type                                                   |        Description        | Optional |
-|-----------|---------------------------------------------------------------------------------------------------------|---------------------------|----------|
-| name      | string                                                                                                  | Name of the recipe to add | false    |
-| input     | [IIngredient](/vanilla/api/ingredient/IIngredient)                                                      | Input ingredient          | false    |
-| results   | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | Output items              | false    |
-| tool      | [IIngredient](/vanilla/api/ingredient/IIngredient)                                                      | Tool ingredient           | false    |
-| sound     | string                                                                                                  | Sound event name          | true     |
+| Parameter |                                                  Type                                                   | Description                                                             | Optional |
+|-----------|---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------|
+| name      | string                                                                                                  | Name of the recipe to add                                               | false    |
+| input     | [IIngredient](/vanilla/api/ingredient/IIngredient)                                                      | Input ingredient                                                        | false    |
+| results   | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;[] | Output items                                                            | false    |
+| tool      | [IIngredient](/vanilla/api/ingredient/IIngredient)                                                      | Tool ingredient, can also be a [ToolAction](/forge/api/tool/ToolAction) | false    |
+| sound     | string                                                                                                  | Sound event name                                                        | true     |
 
 
 :::

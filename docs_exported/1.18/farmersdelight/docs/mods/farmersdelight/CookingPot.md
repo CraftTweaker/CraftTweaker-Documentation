@@ -41,15 +41,15 @@ Add a cooking pot recipe.
 <recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_test", <item:minecraft:enchanted_golden_apple>, [<item:minecraft:gold_block>], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:minecraft:apple>, 100, 400);
 ```
 
-|        Parameter        |                                  Type                                   |        Description        | Optional | Default Value |
-|-------------------------|-------------------------------------------------------------------------|---------------------------|----------|---------------|
-| name                    | string                                                                  | Name of the recipe to add | false    |               |
-| output                  | [IItemStack](/vanilla/api/item/IItemStack)                              | Output item               | false    |               |
-| inputs                  | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | Input ingredients         | false    |               |
-| cookingPotRecipeBookTab | [CookingPotRecipeBookTab](/mods/farmersdelight/CookingPotRecipeBookTab) |                           | true     |               |
-| container               | [IItemStack](/vanilla/api/item/IItemStack)                              | Container item            | true     |               |
-| experience              | float                                                                   | Experience granted        | true     | 0.0           |
-| cookTime                | int                                                                     | Cooking time              | true     | 200           |
+|        Parameter        |                                  Type                                   | Description                               | Optional | Default Value |
+|-------------------------|-------------------------------------------------------------------------|-------------------------------------------|----------|---------------|
+| name                    | string                                                                  | Name of the recipe to add                 | false    |               |
+| output                  | [IItemStack](/vanilla/api/item/IItemStack)                              | Output item                               | false    |               |
+| inputs                  | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | Input ingredients                         | false    |               |
+| cookingPotRecipeBookTab | [CookingPotRecipeBookTab](/mods/farmersdelight/CookingPotRecipeBookTab) | The Cooking Pot tab to add this recipe to | true     |               |
+| container               | [IItemStack](/vanilla/api/item/IItemStack)                              | Container item                            | true     |               |
+| experience              | float                                                                   | Experience granted                        | true     | 0.0           |
+| cookTime                | int                                                                     | Cooking time                              | true     | 200           |
 
 
 :::
