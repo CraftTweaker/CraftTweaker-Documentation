@@ -178,6 +178,7 @@ Parameters:
 - A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
 - An [IWorld](/Vanilla/World/IWorld/) representing the `world`
+- An [IBlockPos](/Vanilla/World/IBlockPos/) representing the `blockPos`
 - An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
 - A bool representing if the mining `wasEffective`
@@ -186,7 +187,7 @@ __Returns nothing.__
 
 Created using:
 ```zenscript
-myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
+myTrait.afterBlockBreak = function(trait, tool, world, blockstate, blockPos, miner, wasEffective) {
 	//CODE
 };
 ```
