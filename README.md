@@ -6,30 +6,28 @@ This is the source code for the documentation, you can find the actual site and 
 
 ### Setup:
 
+Requires [npm and nodejs](https://nodejs.org/download/release/v16.18.1/)
+
 ```
 git submodule init 
 git submodule update
 npm install
-cd Docs-Site/
+cd site/
 npm install
-```
-
-### Serve:
-
-```
-npm run-script serve
 ```
 
 ### Build
 
-Will move the files into `build/` in subfolders that the Docs-Site expects them in
 ```
-npm run-script build
+npm run build
 ```
 
-### Testing:
+### View Results
 
-Will check all the links on the markdown making sure they link to valid locations
 ```
-npm run-script test
+cd site
+npm run dev
 ```
+
+Look at the url that appears on your console, should contain `localhost`, paste that on the browser.
+Ctrl C twice will stop the execution.
