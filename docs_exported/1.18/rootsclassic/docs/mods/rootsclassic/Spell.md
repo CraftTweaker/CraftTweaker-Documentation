@@ -182,10 +182,10 @@ Spell.removeByRegex(regex as string, exclude as Predicate<string>)
 :::group{name=setSpellIngredients}
 
 Modify the ingredients of an existing Spell Recipe, in order to keep the Spell Powder with the right type.
-
- Names must be one of: rose_bush, dandelion, chorus, nether_wart, peony, sunflower, azure_bluet, allium, lilac, white_tulip, red_tulip, blue_orchid, poppy, poisonous_potato,
- orange_tulip, pink_tulip, oxeye_daisy, lily_pad, apple, midnight_bloom, flare_orchid, radiant_daisy
-
+ Names must be one of:
+ <ul>
+ <li>rose_bush, </li> <li>dandelion, </li> <li> chorus, </li> <li> nether_wart, </li> <li> peony, </li> <li> sunflower, </li> <li> azure_bluet, </li> <li> allium, </li> <li> lilac, </li> <li> white_tulip, </li> <li> red_tulip, </li> <li> blue_orchid, </li> <li> poppy, </li> <li> poisonous_potato, </li> <li> orange_tulip, </li> <li> pink_tulip, </li> <li> oxeye_daisy, </li> <li> lily_pad, </li> <li> apple, </li> <li> midnight_bloom, </li> <li> flare_orchid, </li> <li> radiant_daisy </li>
+ </ul>
  Starting with rootsclassic in order to target the regular roots recipes  (Example: "rootsclassic:rose_bush")
 
 ```zenscript
