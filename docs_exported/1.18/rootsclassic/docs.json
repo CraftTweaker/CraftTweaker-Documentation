@@ -1,0 +1,11 @@
+{
+    "nav": {
+        "Mods": {
+            "Rootsclassic": {
+                "Ritual": "mods/rootsclassic/Ritual.md",
+                "Spell": "mods/rootsclassic/Spell.md",
+                "Examples" :"mods/rootsclassic/Examples.md"
+            }
+        }
+    }
+}
