@@ -1,7 +1,7 @@
 {
     "nav": {
         "Mods": {
-            "Rootsclassic": {
+            "RootsClassic": {
                 "Ritual": "mods/rootsclassic/Ritual.md",
                 "Spell": "mods/rootsclassic/Spell.md",
                 "Examples" :"mods/rootsclassic/Examples.md"
