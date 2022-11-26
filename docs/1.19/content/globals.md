@@ -23,7 +23,7 @@ Global Getters get a value for you. They are mostly used for adding recipes.
 - `recipes` gets you the [GenericRecipesManager Instance](/vanilla/api/recipe/manager/GenericRecipesManager).
 - `smithing` gets you the [SmithingRecipeManager Instance](/vanilla/api/recipe/manager/SmithingRecipeManager).
 - `smoker` gets you the [SmokerRecipeManager Instance](/vanilla/api/recipe/manager/SmokerRecipeManager).
-- `stonecutter` gets you the [StoneCutterManager Instance](/vanilla/api/recipe/manager/StoneCutterManager).
+- `stoneCutter` gets you the [StoneCutterManager Instance](/vanilla/api/recipe/manager/StoneCutterManager).
 - `tags` gets you the global CraftTweakerTagRegistry.
 - `villagerTrades` gets you the [VillagerTrades handler](/vanilla/api/villager/VillagerTrades).
 
