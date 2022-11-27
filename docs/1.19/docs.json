@@ -30,7 +30,7 @@
         "Mods": {
             "ArmoreableMobs" : {},
             "PMMO" : {},
-            "Generic JSON Recipes": "mods/other_mods.md"
+            "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
             "About ZenCode": "zencode/ZenCode.md",

@@ -1,4 +1,4 @@
-# Adding Recipes from Mods
+# Generic Recipe Manipulation
 
 ## RecipeTypes: The basis of it all.
 
@@ -81,7 +81,61 @@ The above recipe is a purely JSON file, and your job is to translate that into s
 The second parameter of the `addJsonRecipe` method is an IData, something JSON translates very similarly too.
 That said, you should be able to sneak in BEPs and CraftTweaker should be able to convert them to IData if they have an implicit caster to IData.
 
-Translating the above into a script gets us the following:
+Let's say we want to add a cutting recipe that takes in a diamond hoe and outputs a diamond. We also want it to be quick.
+To do that, we want to first create the basic structure of the addJsonRecipe method, which is the following:
+
+`<recipetype>.addJsonRecipe(recipeName as string, json as MapData) as void`
+
+Using the recipe the example json recipe from above, we get:
+```zenscript
+//The recipetype we want to add to, the recipe name, and the json contents.
+
+<recipetype:create:cutting>.addJsonRecipe("duplicate_cutting_recipe", {
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_hyphae"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:stripped_warped_hyphae"
+    }
+  ],
+  "processingTime": 50
+}
+```
+
+We can now manipulate the above to get our intended recipe:
+
+```zenscript
+<recipetype:create:cutting>.addJsonRecipe("diamond_hoe_reusing", {
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item" : "minecraft:diamond_hoe"
+    }
+  ],
+  "results": [
+    {
+      "item" : "minecraft:diamond"
+    }
+  ],
+  "processingTime": 10
+}
+);
+
+```
+This is simple and nice, but it only allows us to go from one item to one item! What if we want multiple items?
+What if we want chanced outputs? What if we want input tags? What about NBT on the output?
+
+That part is a bit more complicated to handle, as it depends **solely** on whether the mod we're modifying has support for those.
+To find out whether it is possible or not you have to answer the following question:
+
+Does the base mod do this somehow in any of it's default recipes?
+If the answer is yes, then you'll be able to do so.
+
+After some digging on the Create Repository, I was able to find out it does support tags, chanced outputs and multiple outputs.
 
 ```zenscript
 <recipetype:create:cutting>.addJsonRecipe("._/-", {
@@ -102,11 +156,20 @@ Translating the above into a script gets us the following:
 );
 ```
 
+## Reducing script size through a function
+
 This works, but it takes up a lot of space, so we are going to write a custom function that will handle most of our use cases. Remember that recipe names need to be unique!
 For this reason, we autogenerate them dynamically based on the output and the duration. It's very much possible you 
 will need to manipulate the way recipe names are generated somewhere, don't feel scared to do so.
 
 It's just string manipulation!
+
+Furthermore, as noted earlier, we know that some of the most common BEPs have casters to IData, which allows to not 
+worry about the jsons as all, as long as we write proper zencode. 
+
+In order to see how a BEP serializes to IData, you might want to do:
+
+`println((bep as IData).getAsString())`
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -138,4 +201,7 @@ addCreateCutting(<tag:items:minecraft:planks>, <item:minecraft:stick> * 2 % 50, 
 Crucial note: Some extra things, like NBT, or other non standard json things, might require you to figure out a way to code support for that...
 This page just shows you the basics of setting it up.
 
-Enjoy your JSON Recipes!
+For example, supporting multiple inputs might require you to have an input parameter that is an array and convert that to a ListData through casting.
+
+
+This sums up the basics of messing with other mods, enjoy your JSON Recipes!
