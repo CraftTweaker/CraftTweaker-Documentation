@@ -6,7 +6,7 @@ They run various actions on scripts. A preprocessor is called by placing `#prepr
 The list of Preprocessors is:
 
 - Debug Preprocessor
-- [Loader Preprocessor](/zencode/Preprocessors/LoaderPreprocessor)
+- Loader Preprocessor
 - LoadFirst Preprocessor
 - LoadLast Preprocessor
 - ModLoaded Preprocessor
