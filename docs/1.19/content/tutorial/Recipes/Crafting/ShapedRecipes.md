@@ -1,7 +1,7 @@
 # Shaped Recipes
 
 
-Shaped Recipes are recipes where the order of the ingredients matter, they need to be in a specific shape for the reciep to craft.  
+Shaped Recipes are recipes where the order of the ingredients matter, they need to be in a specific shape for the recipe to craft.  
 An example of a shaped recipe is the Bucket recipe, where the Iron Ingots need to be placed in the correct order for it to Craft.
 
 While Shaped recipe need to follow the specific pattern, they do not always need to be placed in the exact slot.  
