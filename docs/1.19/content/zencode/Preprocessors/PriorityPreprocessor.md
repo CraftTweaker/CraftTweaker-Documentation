@@ -8,7 +8,7 @@ Scripts with the same priority will be executed in the same order that scripts w
 
 Priority is important for ZenClasses, global variables, or even tags. If your script references another script, make sure the script you're referencing from is already loaded by the time you import values or functions!
 
-# How to use
+## How to use
 
 Simply append `#priority [amount]` to the top of the script.
 
