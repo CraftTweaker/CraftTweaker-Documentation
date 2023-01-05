@@ -43,7 +43,8 @@
                 "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
                 "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
                 "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
-            }
+            },
+            "Tags Loader" : "zencode/TagsLoader.md"
         },
         "Mod Dev": {
             "CraftTweaker in a Development Environment" : "integration/Introduction.md",
