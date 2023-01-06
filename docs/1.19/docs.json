@@ -43,6 +43,7 @@
                 "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
                 "Debug Preprocessor" : "zencode/Preprocessors/DebugPreprocessor.md",
                 "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
+                "Modloaded Preprocessor" : "zencode/Preprocessors/ModLoadedPreprocessor.md",
                 "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
             },
             "Tags Loader" : "zencode/TagsLoader.md"

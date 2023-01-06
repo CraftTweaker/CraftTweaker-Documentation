@@ -22,7 +22,7 @@ println("Hello World");
 For the curious: The above compiles to:
 
 ```java
-package scripts.preprocessors;
+package scripts;
 
 import com.blamejared.crafttweaker.api.zencode.CraftTweakerGlobals;
 

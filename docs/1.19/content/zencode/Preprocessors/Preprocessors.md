@@ -9,7 +9,8 @@ The list of Preprocessors is:
 - [Loader Preprocessor](/zencode/Preprocessors/LoaderPreprocessor)
 - LoadFirst Preprocessor
 - LoadLast Preprocessor
-- ModLoaded Preprocessor
+- [Modloaded Preprocessor](/zencode/Preprocessors/ModLoadedPreprocessor)
+- Modloader Preprocessor
 - NoLoad Preprocessor
 - [Priority Preprocessor](/zencode/Preprocessors/PriorityPreprocessor)
 - Replace Preprocessor
