@@ -8,7 +8,7 @@ You don't need to have `#loader crafttweaker` at the top of your script.
 
 Loaders are independent. You will not be able to add recipes in a `tags` loader or create an item in a `crafttweaker` loader.
 
-# How to use
+## How to use
 
 Simply append `#loader name` to the top of the script.
 
@@ -16,7 +16,7 @@ Simply append `#loader name` to the top of the script.
 #loader tags
 
 <tag:items:minecraft:planks>.addId(<resource:minecraft:tnt>); 
-
 ```
 
-Other mods may register other loaders under different names.
+Other mods may register other loaders under different names. As such, they might load at different points in time and
+provide certain classes.
