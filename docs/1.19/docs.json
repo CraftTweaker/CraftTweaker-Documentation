@@ -41,7 +41,7 @@
             "Functions" : "zencode/Functions.md",
             "Preprocessors": {
                 "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
-                "Debug Preprocessor" : "zencode/Preprocessors/DebugPreprocessor",
+                "Debug Preprocessor" : "zencode/Preprocessors/DebugPreprocessor.md",
                 "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
                 "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
             },
