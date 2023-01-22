@@ -29,6 +29,7 @@
         "Forge": {},
         "Mods": {
             "ArmoreableMobs" : {},
+            "Createtweaker": {},
             "PMMO" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
