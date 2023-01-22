@@ -8,6 +8,12 @@ import crafttweaker.api.text.Message;
 ```
 
 
+## Casters
+
+| Result Type | Is Implicit |
+|-------------|-------------|
+| string      | true        |
+
 ## Methods
 
 :::group{name=getString}

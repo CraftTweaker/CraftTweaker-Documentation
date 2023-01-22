@@ -110,6 +110,22 @@ Component.selector(pattern as string, separator as Component?) as MutableCompone
 Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 
 ```zenscript
+Component.translatable(content as string, args as Component[]) as MutableComponent
+```
+
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| content   | string                                     |
+| args      | [Component](/vanilla/api/text/Component)[] |
+
+
+:::
+
+:::group{name=translatable}
+
+Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
+
+```zenscript
 Component.translatable(content as string, args as string[]) as MutableComponent
 ```
 
