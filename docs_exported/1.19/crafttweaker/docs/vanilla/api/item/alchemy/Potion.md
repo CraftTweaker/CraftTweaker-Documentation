@@ -37,6 +37,18 @@ Potion.getName(prefix as string) as string
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// Potion.getRegistryName() as ResourceLocation
+
+myPotion.getRegistryName();
+```
+
+:::
+
 :::group{name=hasInstantEffects}
 
 Return Type: boolean
@@ -57,4 +69,5 @@ myPotion.hasInstantEffects();
 | commandString     | string                                                                               | true       | false      |
 | effects           | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | true       | false      |
 | hasInstantEffects | boolean                                                                              | true       | false      |
+| registryName      | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                           | true       | false      |
 
