@@ -25,7 +25,6 @@ FabricItemStack implements the following interfaces. That means all methods defi
 
 |                                              Result Type                                              | Is Implicit |
 |-------------------------------------------------------------------------------------------------------|-------------|
-| [IData](/vanilla/api/data/IData)                                                                      | true        |
 | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)                                | true        |
 | [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                    | true        |
 | [ItemStack](/vanilla/api/item/ItemStack)                                                              | true        |
