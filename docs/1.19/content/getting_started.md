@@ -64,3 +64,11 @@ multiline comment! */
 ```
 
 Just note, that `#` comments are also used for [PreProcessors](/zencode/Preprocessors/Preprocessors), so while they are still valid comments, they could cause unwanted side effects. 
+
+## The next step
+
+Now you know the absolute basics of how to create scripts. Now, what you do is up to you!
+Feel free to browse the Docs for any pages that interest you.
+
+However, if you're getting started, we recommend checking out the Tutorial tab, more specifically the 
+[Crafting Table Tutorial](/tutorial/Recipes/Crafting/crafting_table) as well as the [Recipe Managers](/tutorial/Recipes/RecipeManagers) page for information on how to add and remove different kinds of recipes.
