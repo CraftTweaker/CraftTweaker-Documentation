@@ -1,6 +1,6 @@
 # Many&LT;T : Object&GT;
 
-Used to represent data with an attached percentage (think an ItemStack with a 50% chance of being outputted).
+Used to represent data with an amount. (Think something like a <tag>, that does not have an amount by itself)
 
 ## Importing the class
 
@@ -14,4 +14,38 @@ import crafttweaker.api.util.Many;
 Many implements the following interfaces. That means all methods defined in these interfaces are also available in Many
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
+
+## Methods
+
+:::group{name=getAmount}
+
+Return Type: int
+
+```zenscript
+// Many.getAmount() as int
+
+myMany.getAmount();
+```
+
+:::
+
+:::group{name=getData}
+
+Return Type: T
+
+```zenscript
+// Many.getData() as T
+
+myMany.getData();
+```
+
+:::
+
+
+## Properties
+
+|  Name  | Type | Has Getter | Has Setter |
+|--------|------|------------|------------|
+| amount | int  | true       | false      |
+| data   | T    | true       | false      |
 

@@ -13,3 +13,24 @@ IngredientWithAmount implements the following interfaces. That means all methods
 
 - [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)
 
+## Casters
+
+|           Result Type            | Is Implicit |
+|----------------------------------|-------------|
+| [IData](/vanilla/api/data/IData) | true        |
+
+## Methods
+
+:::group{name=asIData}
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+// IngredientWithAmount.asIData() as IData
+
+myIngredientWithAmount.asIData();
+```
+
+:::
+
+
