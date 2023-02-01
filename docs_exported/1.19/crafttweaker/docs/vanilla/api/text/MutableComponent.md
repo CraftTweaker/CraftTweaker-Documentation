@@ -35,6 +35,21 @@ MutableComponent.append(component as Component) as MutableComponent
 Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 
 ```zenscript
+MutableComponent.append(component as MutableComponent) as MutableComponent
+```
+
+| Parameter |                          Type                          |
+|-----------|--------------------------------------------------------|
+| component | [MutableComponent](/vanilla/api/text/MutableComponent) |
+
+
+:::
+
+:::group{name=append}
+
+Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
+
+```zenscript
 MutableComponent.append(content as string) as MutableComponent
 ```
 
