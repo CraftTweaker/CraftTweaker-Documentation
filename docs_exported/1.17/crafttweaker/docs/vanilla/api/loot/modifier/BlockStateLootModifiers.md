@@ -22,6 +22,24 @@ BlockState.addBlockLootModifier(name as string, modifier as ILootModifier) as vo
 
 :::
 
+:::group{name=addNoSilkTouchLootModifier}
+
+Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) to this block, with the given name, only if it is not harvested with the silk touch enchantment.
+
+Return Type: void
+
+```zenscript
+BlockState.addNoSilkTouchLootModifier(name as string, modifier as ILootModifier) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | string | The name of the loot modifier to add. |
+| modifier | [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) | The loot modifier to add. |
+
+
+:::
+
 :::group{name=addTargetedLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifier/ILootModifier) to the current block, only if it matches the current block state precisely.
