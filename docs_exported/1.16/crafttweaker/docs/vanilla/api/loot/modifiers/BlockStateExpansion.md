@@ -62,6 +62,24 @@ MCBlockState.addBlockLootModifier(name as string, modifier as ILootModifier) as 
 
 :::
 
+:::group{name=addNoSilkTouchLootModifier}
+
+Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to the current block, only if it matches the current block state precisely and not harvested with the silk touch enchantment.
+
+Return Type: void
+
+```zenscript
+MCBlockState.addNoSilkTouchLootModifier(name as string, modifier as ILootModifier) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | string | The name of the loot modifier. |
+| modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block state. |
+
+
+:::
+
 :::group{name=addTargetedDrop}
 
 ::deprecated[Scheduled for removal in 1.17: use [this](.)#addTargetedLootModifier(BlockState, String, ILootModifier) instead.]

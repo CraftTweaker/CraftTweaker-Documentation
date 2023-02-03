@@ -22,6 +22,24 @@ MCTag.addLootModifier(name as string, modifier as ILootModifier) as void
 
 :::
 
+:::group{name=addNoSilkTouchLootModifier}
+
+Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) to all the blocks contained in this tag, only if it is not harvested with the silk touch enchantment.
+
+Return Type: void
+
+```zenscript
+MCTag.addNoSilkTouchLootModifier(name as string, modifier as ILootModifier) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | string | The name of the loot modifier. |
+| modifier | [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) | The loot modifier to add to the block state. |
+
+
+:::
+
 :::group{name=addToolLootModifier}
 
 Adds an [ILootModifier](/vanilla/api/loot/modifiers/ILootModifier) that fires if any of the blocks contained in this tag gets broken with the given
