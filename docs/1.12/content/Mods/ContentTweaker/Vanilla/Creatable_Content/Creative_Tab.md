@@ -50,6 +50,6 @@ tab.register();
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.VanillaFactory;
 
-val zsTab = VanillaFactory.createCreativeTab("contenttweaker", <minecraft:dragon_egg>);
+val zsTab = VanillaFactory.createCreativeTab("contenttweaker", <item:minecraft:dragon_egg>);
 zsTab.register();
 ```
