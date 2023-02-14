@@ -49,6 +49,18 @@ myAttribute.getDefaultValue();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// Attribute.getRegistryName() as ResourceLocation
+
+myAttribute.getRegistryName();
+```
+
+:::
+
 :::group{name=isClientSyncable}
 
 Should this attribute be synced to the client.
@@ -87,9 +99,10 @@ myAttribute.sanitizeValue(4);
 
 ## Properties
 
-|      Name      |  Type   | Has Getter | Has Setter |                                                              Description                                                              |
-|----------------|---------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| clientSyncable | boolean | true       | false      | Should this attribute be synced to the client.                                                                                        |
-| commandString  | string  | true       | false      | Gets the attribute bracket handler syntax for this Attribute. <br />  <br />  E.G. <br />  `<attribute:minecraft:generic.max_health>` |
-| defaultValue   | double  | true       | false      | Gets the default value for this Attribute.                                                                                            |
+|      Name      |                            Type                            | Has Getter | Has Setter |                                                              Description                                                              |
+|----------------|------------------------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| clientSyncable | boolean                                                    | true       | false      | Should this attribute be synced to the client.                                                                                        |
+| commandString  | string                                                     | true       | false      | Gets the attribute bracket handler syntax for this Attribute. <br />  <br />  E.G. <br />  `<attribute:minecraft:generic.max_health>` |
+| defaultValue   | double                                                     | true       | false      | Gets the default value for this Attribute.                                                                                            |
+| registryName   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |                                                                                                                                       |
 

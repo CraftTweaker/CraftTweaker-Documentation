@@ -38,6 +38,18 @@ mySoundEvent.getLocation();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// SoundEvent.getRegistryName() as ResourceLocation
+
+mySoundEvent.getRegistryName();
+```
+
+:::
+
 
 ## Properties
 
@@ -45,4 +57,5 @@ mySoundEvent.getLocation();
 |---------------|------------------------------------------------------------|------------|------------|
 | commandString | string                                                     | true       | false      |
 | location      | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

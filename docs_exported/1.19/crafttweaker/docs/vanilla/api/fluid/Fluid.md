@@ -22,6 +22,18 @@ myFluid.getBucket();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// Fluid.getRegistryName() as ResourceLocation
+
+myFluid.getRegistryName();
+```
+
+:::
+
 :::group{name=isIn}
 
 Return Type: boolean
@@ -55,8 +67,9 @@ Fluid.isSame(other as Fluid) as boolean
 
 ## Properties
 
-|     Name      |                        Type                        | Has Getter | Has Setter |
-|---------------|----------------------------------------------------|------------|------------|
-| bucket        | [ItemDefinition](/vanilla/api/item/ItemDefinition) | true       | false      |
-| commandString | string                                             | true       | false      |
+|     Name      |                            Type                            | Has Getter | Has Setter |
+|---------------|------------------------------------------------------------|------------|------------|
+| bucket        | [ItemDefinition](/vanilla/api/item/ItemDefinition)         | true       | false      |
+| commandString | string                                                     | true       | false      |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

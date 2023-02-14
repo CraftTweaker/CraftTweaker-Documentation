@@ -161,6 +161,18 @@ myEntityType.getHeight();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// EntityType.getRegistryName() as ResourceLocation
+
+myEntityType.getRegistryName();
+```
+
+:::
+
 :::group{name=getWidth}
 
 Return Type: float
@@ -252,6 +264,7 @@ myEntityType.toShortString();
 | dimensions            | [EntityDimensions](/vanilla/api/entity/EntityDimensions)   | true       | false      |
 | fireImmune            | boolean                                                    | true       | false      |
 | height                | float                                                      | true       | false      |
+| registryName          | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 | toShortString         | string                                                     | true       | false      |
 | width                 | float                                                      | true       | false      |
 

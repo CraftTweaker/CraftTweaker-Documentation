@@ -50,6 +50,18 @@ myBlockEntity.getLevel();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// BlockEntity.getRegistryName() as ResourceLocation
+
+myBlockEntity.getRegistryName();
+```
+
+:::
+
 :::group{name=hasLevel}
 
 Return Type: boolean
@@ -91,11 +103,12 @@ BlockEntity.updateData(data as IData)
 
 ## Properties
 
-|    Name    |                    Type                     | Has Getter | Has Setter |
-|------------|---------------------------------------------|------------|------------|
-| blockPos   | [BlockPos](/vanilla/api/util/math/BlockPos) | true       | false      |
-| blockState | [BlockState](/vanilla/api/block/BlockState) | true       | false      |
-| data       | [IData](/vanilla/api/data/IData)            | true       | true       |
-| hasLevel   | boolean                                     | true       | false      |
-| level      | [Level](/vanilla/api/world/Level)?          | true       | false      |
+|     Name     |                            Type                            | Has Getter | Has Setter |
+|--------------|------------------------------------------------------------|------------|------------|
+| blockPos     | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      |
+| blockState   | [BlockState](/vanilla/api/block/BlockState)                | true       | false      |
+| data         | [IData](/vanilla/api/data/IData)                           | true       | true       |
+| hasLevel     | boolean                                                    | true       | false      |
+| level        | [Level](/vanilla/api/world/Level)?                         | true       | false      |
+| registryName | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

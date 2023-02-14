@@ -14,6 +14,18 @@ VillagerProfession extends Record. That means all methods available in Record ar
 
 ## Methods
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// VillagerProfession.getRegistryName() as ResourceLocation
+
+myVillagerProfession.getRegistryName();
+```
+
+:::
+
 :::group{name=name}
 
 Return Type: string
@@ -69,6 +81,7 @@ myVillagerProfession.workSound();
 |----------------|---------------------------------------------------------------|------------|------------|
 | commandString  | string                                                        | true       | false      |
 | name           | string                                                        | true       | false      |
+| registryName   | [ResourceLocation](/vanilla/api/resource/ResourceLocation)    | true       | false      |
 | requestedItems | Set&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true       | false      |
 | secondaryPoi   | Set&lt;[Block](/vanilla/api/block/Block)&gt;                  | true       | false      |
 | workSound      | [SoundEvent](/vanilla/api/sound/SoundEvent)?                  | true       | false      |

@@ -180,6 +180,18 @@ myEnchantment.getRarity();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// Enchantment.getRegistryName() as ResourceLocation
+
+myEnchantment.getRegistryName();
+```
+
+:::
+
 :::group{name=getSlotItems}
 
 Return Type: [ItemStack](/vanilla/api/item/ItemStack)[[EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)]
@@ -261,15 +273,16 @@ myEnchantment.isTreasureOnly();
 
 ## Properties
 
-|      Name      |                      Type                      | Has Getter | Has Setter |
-|----------------|------------------------------------------------|------------|------------|
-| commandString  | string                                         | true       | false      |
-| descriptionId  | string                                         | true       | false      |
-| isCurse        | boolean                                        | true       | false      |
-| isDiscoverable | boolean                                        | true       | false      |
-| isTradeable    | boolean                                        | true       | false      |
-| isTreasureOnly | boolean                                        | true       | false      |
-| maxLevel       | int                                            | true       | false      |
-| minLevel       | int                                            | true       | false      |
-| rarity         | [Rarity](/vanilla/api/item/enchantment/Rarity) | true       | false      |
+|      Name      |                            Type                            | Has Getter | Has Setter |
+|----------------|------------------------------------------------------------|------------|------------|
+| commandString  | string                                                     | true       | false      |
+| descriptionId  | string                                                     | true       | false      |
+| isCurse        | boolean                                                    | true       | false      |
+| isDiscoverable | boolean                                                    | true       | false      |
+| isTradeable    | boolean                                                    | true       | false      |
+| isTreasureOnly | boolean                                                    | true       | false      |
+| maxLevel       | int                                                        | true       | false      |
+| minLevel       | int                                                        | true       | false      |
+| rarity         | [Rarity](/vanilla/api/item/enchantment/Rarity)             | true       | false      |
+| registryName   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

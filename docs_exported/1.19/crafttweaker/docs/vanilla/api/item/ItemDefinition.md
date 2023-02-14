@@ -40,11 +40,24 @@ myItemDefinition.getDefaultInstance();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// ItemDefinition.getRegistryName() as ResourceLocation
+
+myItemDefinition.getRegistryName();
+```
+
+:::
+
 
 ## Properties
 
-|      Name       |                    Type                    | Has Getter | Has Setter |
-|-----------------|--------------------------------------------|------------|------------|
-| commandString   | string                                     | true       | false      |
-| defaultInstance | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
+|      Name       |                            Type                            | Has Getter | Has Setter |
+|-----------------|------------------------------------------------------------|------------|------------|
+| commandString   | string                                                     | true       | false      |
+| defaultInstance | [IItemStack](/vanilla/api/item/IItemStack)                 | true       | false      |
+| registryName    | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      |
 

@@ -135,6 +135,18 @@ myMobEffect.getDisplayName();
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// MobEffect.getRegistryName() as ResourceLocation
+
+myMobEffect.getRegistryName();
+```
+
+:::
+
 :::group{name=isBeneficial}
 
 Return Type: boolean
@@ -187,4 +199,5 @@ myMobEffect.isInstantenous();
 | descriptionId | string                                                            | true       | false      |
 | displayName   | [Component](/vanilla/api/text/Component)                          | true       | false      |
 | instantenous  | boolean                                                           | true       | false      |
+| registryName  | [ResourceLocation](/vanilla/api/resource/ResourceLocation)        | true       | false      |
 

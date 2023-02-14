@@ -699,6 +699,18 @@ Entity.getPosition(partialTicks as float) as Vec3
 
 :::
 
+:::group{name=getRegistryName}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// Entity.getRegistryName() as ResourceLocation
+
+myEntity.getRegistryName();
+```
+
+:::
+
 :::group{name=getRemainingFireTicks}
 
 Return Type: int
@@ -2246,6 +2258,7 @@ myEntity.updateData({key: "value"});
 | pistonPushReaction           | [PushReaction](/vanilla/api/block/material/PushReaction)        | true       | false      |                                           |
 | portalWaitTime               | int                                                             | true       | false      |                                           |
 | position                     | [Vec3](/vanilla/api/util/math/Vec3)                             | true       | false      |                                           |
+| registryName                 | [ResourceLocation](/vanilla/api/resource/ResourceLocation)      | true       | false      |                                           |
 | remainingFireTicks           | int                                                             | true       | false      |                                           |
 | rideableUnderWater           | boolean                                                         | true       | false      |                                           |
 | rootVehicle                  | [Entity](/vanilla/api/entity/Entity)                            | true       | false      |                                           |
