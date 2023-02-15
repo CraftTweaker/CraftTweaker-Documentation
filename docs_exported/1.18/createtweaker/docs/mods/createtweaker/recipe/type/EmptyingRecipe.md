@@ -16,10 +16,10 @@ EmptyingRecipe extends [ProcessingRecipe](/mods/createtweaker/recipe/type/Proces
 
 :::group{name=getResultingFluid}
 
-Return Type: **invalid**
+Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 
 ```zenscript
-// EmptyingRecipe.getResultingFluid() as invalid
+// EmptyingRecipe.getResultingFluid() as IFluidStack
 
 myEmptyingRecipe.getResultingFluid();
 ```
@@ -31,5 +31,5 @@ myEmptyingRecipe.getResultingFluid();
 
 | Name | Type | Has Getter | Has Setter | Description |
 |------|------|------------|------------|-------------|
-| resultingFluid | **invalid** | true | false | No Description Provided |
+| resultingFluid | [IFluidStack](/forge/api/fluid/IFluidStack) | true | false | No Description Provided |
 

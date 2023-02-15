@@ -43,7 +43,7 @@ Return Type: void
 // SequencedAssemblyManager.addRecipe(builder as SequencedAssemblyRecipeBuilder) as void
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_blast_brick")
-                                                      .transitionTo(<item:create:incomplete_precision_mechanism>)
+                                                      .transitionTo(<item:create:incomplete_large_cogwheel>)
                                                       .require(<item:create:andesite_alloy>)
                                                       .loops(3)
                                                       .addOutput(<item:create:large_cogwheel> * 6, 32)

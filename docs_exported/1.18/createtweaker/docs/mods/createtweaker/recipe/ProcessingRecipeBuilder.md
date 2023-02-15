@@ -45,18 +45,18 @@ ProcessingRecipeBuilder.duration(ticks as int) as ProcessingRecipeBuilder<Proces
 
 :::group{name=output}
 
-Sets the recipe to output the given **invalid**.
+Sets the recipe to output the given [IFluidStack](/forge/api/fluid/IFluidStack).
 
 Returns: This builder for futher chaining.  
 Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
-ProcessingRecipeBuilder.output(fluidStack as invalid) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
+ProcessingRecipeBuilder.output(fluidStack as IFluidStack) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| fluidStack | **invalid** | The fluid to output. |
+| fluidStack | [IFluidStack](/forge/api/fluid/IFluidStack) | The fluid to output. |
 
 
 :::
@@ -163,12 +163,12 @@ Returns: This builder for further chaining.
 Return Type: [ProcessingRecipeBuilder](/mods/createtweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/createtweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
-ProcessingRecipeBuilder.withFluidOutputs(outputs as invalid[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
+ProcessingRecipeBuilder.withFluidOutputs(outputs as IFluidStack[]) as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| outputs | **invalid**[] | The fluid outputs of the recipe. |
+| outputs | [IFluidStack](/forge/api/fluid/IFluidStack)[] | The fluid outputs of the recipe. |
 
 
 :::
