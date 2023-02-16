@@ -14,6 +14,31 @@ import crafttweaker.api.villagers.VillagerTrades;
 
 :::group{name=addTrade}
 
+Adds a new custom trade with the selling and buying items determined by the custom MCMerchantOffer generator.
+
+ The function will only run when the villager resolves the trade.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int, offerGenerator as BiFunction<MCEntity,Random,MCMerchantOffer>) as void
+
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, (entity, random) => {
+ return new MCMerchantOffer(<item:minecraft:dirt>, <item:minecraft:diamond>, 16, 0, 5);
+ });
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for. |
+| villagerLevel | int | The level the Villager needs to be. |
+| offerGenerator | BiFunction&lt;[MCEntity](/vanilla/api/entity/MCEntity),[Random](/vanilla/api/util/Random),[MCMerchantOffer](/vanilla/api/villager/MCMerchantOffer)&gt; | A generator method to make a new MerchantOffer. |
+
+
+:::
+
+:::group{name=addTrade}
+
 Adds a Villager Trade for emeralds for an Item. An example being, giving a villager 2 emeralds for an arrow.
 
 Return Type: void

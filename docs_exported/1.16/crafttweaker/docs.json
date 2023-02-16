@@ -425,6 +425,8 @@
           }
         },
         "Villager": {
+          "MCMerchantOffer": "vanilla/api/villager/MCMerchantOffer.md",
+          "MCMerchantOffers": "vanilla/api/villager/MCMerchantOffers.md",
           "MCVillagerProfession": "vanilla/api/villager/MCVillagerProfession.md",
           "VillagerTrades": "vanilla/api/villager/VillagerTrades.md"
         },
