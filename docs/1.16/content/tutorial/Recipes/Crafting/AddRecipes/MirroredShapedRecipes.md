@@ -1,4 +1,4 @@
-# Mirred Shaped Recipes
+# Mirrored Shaped Recipes
 
 Mirrored Shaped Recipes are recipes that are very similar to normal Shaped Recipes, except that the inputs can be mirrored on both axis, an example of a recipe like this in the Vanilla game would be tools, like the Axe recipe below.
 
