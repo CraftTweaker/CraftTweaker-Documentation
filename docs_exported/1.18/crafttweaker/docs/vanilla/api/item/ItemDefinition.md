@@ -8,6 +8,11 @@ import crafttweaker.api.item.ItemDefinition;
 ```
 
 
+## Implemented Interfaces
+ItemDefinition implements the following interfaces. That means all methods defined in these interfaces are also available in ItemDefinition
+
+- [ItemLike](/vanilla/api/world/ItemLike)
+
 ## Casters
 
 |                Result Type                 | Is Implicit |

@@ -27,6 +27,7 @@ ForgeItemStack implements the following interfaces. That means all methods defin
 |-------------------------------------------------------------------------------------------------------|-------------|
 | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)                                | true        |
 | [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                    | true        |
+| [ItemLike](/vanilla/api/world/ItemLike)                                                               | true        |
 | [ItemStack](/vanilla/api/item/ItemStack)                                                              | true        |
 | [MapData](/vanilla/api/data/MapData)                                                                  | true        |
 | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true        |
@@ -178,6 +179,18 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 // ForgeItemStack.asImmutable() as IItemStack
 
 myForgeItemStack.asImmutable();
+```
+
+:::
+
+:::group{name=asItemLike}
+
+Return Type: [ItemLike](/vanilla/api/world/ItemLike)
+
+```zenscript
+// ForgeItemStack.asItemLike() as ItemLike
+
+myForgeItemStack.asItemLike();
 ```
 
 :::

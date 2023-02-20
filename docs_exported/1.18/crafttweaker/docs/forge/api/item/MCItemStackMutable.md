@@ -27,6 +27,7 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 |-------------------------------------------------------------------------------------------------------|-------------|
 | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)                                | true        |
 | [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                    | true        |
+| [ItemLike](/vanilla/api/world/ItemLike)                                                               | true        |
 | [MapData](/vanilla/api/data/MapData)                                                                  | true        |
 | [Percentaged](/vanilla/api/util/random/Percentaged)&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | true        |
 
@@ -165,6 +166,18 @@ Return Type: [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmou
 // MCItemStackMutable.asIIngredientWithAmount() as IIngredientWithAmount
 
 myMCItemStackMutable.asIIngredientWithAmount();
+```
+
+:::
+
+:::group{name=asItemLike}
+
+Return Type: [ItemLike](/vanilla/api/world/ItemLike)
+
+```zenscript
+// MCItemStackMutable.asItemLike() as ItemLike
+
+myMCItemStackMutable.asItemLike();
 ```
 
 :::

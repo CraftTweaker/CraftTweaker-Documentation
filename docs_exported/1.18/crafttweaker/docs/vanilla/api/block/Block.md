@@ -8,6 +8,11 @@ import crafttweaker.api.block.Block;
 ```
 
 
+## Implemented Interfaces
+Block implements the following interfaces. That means all methods defined in these interfaces are also available in Block
+
+- [ItemLike](/vanilla/api/world/ItemLike)
+
 ## Casters
 
 |                      Result Type                      | Is Implicit |
