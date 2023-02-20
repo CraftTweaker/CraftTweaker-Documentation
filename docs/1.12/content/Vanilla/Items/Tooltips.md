@@ -9,7 +9,7 @@ This removes ALL tooltips from the `item`
 item.clearTooltip();
 
 // item.clearTooltip(leaveName as bool);
-// removes all tooltips but leave name
+// removes all tooltips but leaves the item name
 item.clearTooltip(true);
 ```
 
