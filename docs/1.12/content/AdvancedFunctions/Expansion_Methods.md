@@ -1,6 +1,6 @@
 # Expansion Methods
 
-You can add more methods to an already existing class. It is pretty like a custom function and can replace the former in some cases.
+You can add more methods to an already existing class. It is pretty much like a custom function and can replace a pre-existing method in some cases.
 
 ## Basic Syntax
 Generally, you declare a static using:
