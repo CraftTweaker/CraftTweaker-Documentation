@@ -6,6 +6,9 @@ You normally use them when dealing with percentage based actions like drops or s
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedItemStack;`
 
+## Implementing IWeightedIngredient
+WeightedItemStack implements [IWeightedIngredient](/Vanilla/Items/IWeightedIngredient/). That means all functions available to [IWeightedIngredient](/Vanilla/Items/IWeightedIngredient/) also are available to WeightedItemStack.
+
 ## Calling a weightedItemStack
 You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStack/) by either using the modulo operator or the weight function on it.
 

@@ -7,6 +7,10 @@ All you need is an item (or oreDict or similar), in other words, an IIngredient.
 This removes ALL tooltips from the `item`
 ```zenscript
 item.clearTooltip();
+
+// item.clearTooltip(leaveName as bool);
+// removes all tooltips but leaves the item name
+item.clearTooltip(true);
 ```
 
 ## Removing specific tooltips
@@ -17,6 +21,13 @@ item.removeTooltip(regex);
 ```
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
 `tT` is a string
+
+Or removes a tooltip at a specific line.
+```zenscript
+item.removeTooltip(line);
+```
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`line` is an integer
 
 
 ## Normal Tooltips

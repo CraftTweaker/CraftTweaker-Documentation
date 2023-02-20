@@ -16,6 +16,7 @@
       "Custom Functions": "AdvancedFunctions/Custom_Functions.md",
       "Global and Static Variables": "AdvancedFunctions/Global_Static_Variables.md",
       "Import": "AdvancedFunctions/Import.md",
+      "Expansion Methods": "AdvancedFunctions/Expansion_Methods.md",
       "Preprocessors": {
         "On Preprocessors": "AdvancedFunctions/Preprocessors/On_Preprocessors.md",
         "Debug": "AdvancedFunctions/Preprocessors/DebugPreprocessor.md",
@@ -233,6 +234,7 @@
         "IItemDefinition": "Vanilla/Items/IItemDefinition.md",
         "IItemStack": "Vanilla/Items/IItemStack.md",
         "IMutableItemStack": "Vanilla/Items/IMutableItemStack.md",
+        "IWeightedIngredient": "Vanilla/Items/IWeightedIngredient.md",
         "Item Conditions": "Vanilla/Items/Item_Conditions.md",
         "Item Transformers": "Vanilla/Items/Item_Transformers.md",
         "Tooltips": "Vanilla/Items/Tooltips.md",
@@ -246,7 +248,8 @@
       },
       "Ore Dictionary": {
         "IOreDict": "Vanilla/OreDict/IOreDict.md",
-        "IOreDictEntry": "Vanilla/OreDict/IOreDictEntry.md"
+        "IOreDictEntry": "Vanilla/OreDict/IOreDictEntry.md",
+        "WeightedOreDictEntry": "Vanilla/OreDict/WeightedOreDict.md"
       },
       "Players": {
         "IFoodStats": "Vanilla/Players/IFoodStats.md",
