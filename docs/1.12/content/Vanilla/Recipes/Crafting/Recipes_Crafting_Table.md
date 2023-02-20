@@ -83,6 +83,11 @@ You need to provide the mod's modid as string.
 recipes.removeByMod("modularmachinery");
 ```
 
+### Remove by input
+Removes all recipes that contain specified ingredient as input
+```zenscript
+recipes.removeByInput(<minecraft:iron_ingot>);
+```
 
 ## Add Recipes
 
