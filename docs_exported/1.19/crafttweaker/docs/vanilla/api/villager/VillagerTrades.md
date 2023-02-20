@@ -35,6 +35,25 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, (entity, random) => {
 
 :::group{name=addTrade}
 
+Adds the specified [ItemListing](/vanilla/api/villager/trade/ItemListing) trade.
+
+```zenscript
+// VillagerTrades.addTrade(profession as VillagerProfession, villagerLevel as int, trade as ItemListing)
+
+villagerTrades.addTrade(<profession:minecraft:farmer>, 1, TreasureMapForEmeralds.create(1, <resource:minecraft:ruined_portal>, "display Name", <constant:minecraft:world/map/decorationtype:mansion>, 16, 8));
+```
+
+|   Parameter   |                              Type                              |                Description                |
+|---------------|----------------------------------------------------------------|-------------------------------------------|
+| profession    | [VillagerProfession](/vanilla/api/villager/VillagerProfession) | What profession this trade should be for. |
+| villagerLevel | int                                                            | The level the Villager needs to be.       |
+| trade         | [ItemListing](/vanilla/api/villager/trade/ItemListing)         | The trade to add.                         |
+
+
+:::
+
+:::group{name=addTrade}
+
 Adds a Villager Trade for emeralds for an Item. An example being, giving a villager 2 emeralds for an arrow.
 
 ```zenscript
@@ -99,6 +118,24 @@ villagerTrades.addTrade(<profession:minecraft:farmer>, 1, <item:minecraft:diamon
 | maxTrades     | int                                                            | How many times can this trade be done.                              | false    |               |
 | xp            | int                                                            | How much Experience is given by trading.                            | false    |               |
 | priceMult     | float                                                          | When this trade is discounted, how much should it be discounted by. | true     | 1.0           |
+
+
+:::
+
+:::group{name=addWanderingTrade}
+
+Adds the specific [ItemListing](/vanilla/api/villager/trade/ItemListing) trade to the Wandering Trader
+
+```zenscript
+// VillagerTrades.addWanderingTrade(rarity as int, trade as ItemListing)
+
+villagerTrades.addWanderingTrade(1, TreasureMapForEmeralds.create(1, <resource:minecraft:ruined_portal>, "display Name", <constant:minecraft:world/map/decorationtype:mansion>, 16, 8));
+```
+
+| Parameter |                          Type                          |                                                         Description                                                         |
+|-----------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| rarity    | int                                                    | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| trade     | [ItemListing](/vanilla/api/villager/trade/ItemListing) | The trade to add.                                                                                                           |
 
 
 :::

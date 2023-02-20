@@ -352,3 +352,25 @@ BracketHandlers.getTargetingStrategy("crafttweaker:default");
 
 :::
 
+:::group{name=getVillagerType}
+
+Gets the villager profession based on registry name. Throws an exception if it can't find the profession.
+
+Returns: The found profession  
+Return Type: [VillagerType](/vanilla/api/villager/VillagerType)
+
+```zenscript
+<villagertype:minecraft:armorer>
+
+// BracketHandlers.getVillagerType(tokens as string) as VillagerType
+
+BracketHandlers.getVillagerType("minecraft:armorer");
+```
+
+| Parameter |  Type  |            Description             |
+|-----------|--------|------------------------------------|
+| tokens    | string | The profession's resource location |
+
+
+:::
+
