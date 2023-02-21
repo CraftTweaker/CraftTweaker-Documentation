@@ -19,8 +19,21 @@ IFluidStack implements the following interfaces. That means all methods defined 
 |-----------------------------------------------------|-------------|
 | [Fluid](/vanilla/api/fluid/Fluid)                   | true        |
 | [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
+| [IData](/vanilla/api/data/IData)                    | true        |
 
 ## Methods
+
+:::group{name=asIData}
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+// IFluidStack.asIData() as IData
+
+myIFluidStack.asIData();
+```
+
+:::
 
 :::group{name=asImmutable}
 

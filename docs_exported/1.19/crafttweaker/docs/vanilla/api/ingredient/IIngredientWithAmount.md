@@ -15,7 +15,25 @@ IIngredientWithAmount implements the following interfaces. That means all method
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
 
+## Casters
+
+|           Result Type            | Is Implicit |
+|----------------------------------|-------------|
+| [IData](/vanilla/api/data/IData) | true        |
+
 ## Methods
+
+:::group{name=asIData}
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+// IIngredientWithAmount.asIData() as IData
+
+myIIngredientWithAmount.asIData();
+```
+
+:::
 
 :::group{name=getCommandString}
 

@@ -9,9 +9,22 @@ This expansion specifically targets itemTags.
 
 |                              Result Type                               | Is Implicit |
 |------------------------------------------------------------------------|-------------|
+| [IData](/vanilla/api/data/IData)                                       | true        |
 | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | true        |
 
 ## Methods
+
+:::group{name=asIData}
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+// Many.asIData() as IData
+
+myMany.asIData();
+```
+
+:::
 
 :::group{name=asIngredient}
 
