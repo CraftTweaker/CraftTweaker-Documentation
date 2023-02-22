@@ -18,5 +18,5 @@ EntityLivingFallEvent implements the following interfaces and are able to call a
 
 | ZenGetter        | ZenSetter        | Type  |
 |------------------|------------------|-------|
-| disance          | disance          | float |
+| distance          | distance          | float |
 | damageMultiplier | damageMultiplier | float |
