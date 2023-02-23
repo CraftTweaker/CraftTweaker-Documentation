@@ -31,13 +31,15 @@ MCPotionEffect.isReady(duration as int, amplifier as int) as boolean
 Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectInstance
+MCPotionEffect.newInstance(duration as int, amplifier as int, ambient as boolean, showParticles as boolean) as MCPotionEffectInstance
 ```
 
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | duration | int | No Description Provided | false |  |
 | amplifier | int | No Description Provided | true | 0 |
+| ambient | boolean | No Description Provided | true | false |
+| showParticles | boolean | No Description Provided | true | true |
 
 
 :::
