@@ -1,15 +1,15 @@
-# Pot
+# PotRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Pot;
+import mods.tfc.PotRecipe;
 ```
 
 
 ## Implemented Interfaces
-Pot implements the following interfaces. That means all methods defined in these interfaces are also available in Pot
+PotRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in PotRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Pot implements the following interfaces. That means all methods defined in these
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Pot.addJsonRecipe(name as string, mapData as MapData)
+PotRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,19 +34,19 @@ Pot.addJsonRecipe(name as string, mapData as MapData)
 Add a pot recipe
 
 ```zenscript
-// Pot.addPotRecipe(name as string, ingredients as IIngredient[], fluid as FluidIngredient, duration as int, minTemp as float, outputFluid as IFluidStack)
+// PotRecipe.addPotRecipe(name as string, ingredients as IIngredient[], fluid as FluidIngredient, duration as int, minTemp as float, outputFluid as IFluidStack)
 
 <recipetype:tfc:pot>.addPotRecipe("pot_test", [<tag:items:minecraft:sand>], FluidIngredient.of(<fluid:tfc:salt_water>), 4, 200, FluidIngredient.of(<fluid:minecraft:water>));
 ```
 
-|  Parameter  |                             Type                             |           Description           |
-|-------------|--------------------------------------------------------------|---------------------------------|
-| name        | string                                                       | name of the recipe              |
-| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[]         | array of input ingredient       |
-| fluid       | [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient) | input fluid                     |
-| duration    | int                                                          | time the recipe take            |
-| minTemp     | float                                                        | temp min required by the recipe |
-| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                  | output fluid                    |
+|  Parameter  |                                  Type                                   |           Description           |
+|-------------|-------------------------------------------------------------------------|---------------------------------|
+| name        | string                                                                  | name of the recipe              |
+| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | array of input ingredient       |
+| fluid       | [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient) | input fluid                     |
+| duration    | int                                                                     | time the recipe take            |
+| minTemp     | float                                                                   | temp min required by the recipe |
+| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                             | output fluid                    |
 
 
 :::
@@ -56,20 +56,20 @@ Add a pot recipe
 Add a pot recipe
 
 ```zenscript
-// Pot.addPotRecipe(name as string, ingredients as IIngredient[], fluid as FluidIngredient, duration as int, minTemp as float, outputFluid as IFluidStack, output as IItemStack[])
+// PotRecipe.addPotRecipe(name as string, ingredients as IIngredient[], fluid as FluidIngredient, duration as int, minTemp as float, outputFluid as IFluidStack, output as IItemStack[])
 
 <recipetype:tfc:pot>.addPotRecipe("pot_test", [<tag:items:minecraft:sand>], FluidIngredient.of(<fluid:tfc:salt_water>), 4, 200, FluidIngredient.of(<fluid:minecraft:water>), [<item:minecraft:dirt>]);
 ```
 
-|  Parameter  |                             Type                             |           Description           |
-|-------------|--------------------------------------------------------------|---------------------------------|
-| name        | string                                                       | name of the recipe              |
-| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[]         | ingredients                     |
-| fluid       | [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient) | input fluid                     |
-| duration    | int                                                          | duration                        |
-| minTemp     | float                                                        | temp min required by the recipe |
-| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                  | output fluid                    |
-| output      | [IItemStack](/vanilla/api/item/IItemStack)[]                 | Fluid output fluid              |
+|  Parameter  |                                  Type                                   |           Description           |
+|-------------|-------------------------------------------------------------------------|---------------------------------|
+| name        | string                                                                  | name of the recipe              |
+| ingredients | [IIngredient](/vanilla/api/ingredient/IIngredient)[]                    | ingredients                     |
+| fluid       | [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient) | input fluid                     |
+| duration    | int                                                                     | duration                        |
+| minTemp     | float                                                                   | temp min required by the recipe |
+| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                             | output fluid                    |
+| output      | [IItemStack](/vanilla/api/item/IItemStack)[]                            | Fluid output fluid              |
 
 
 :::
@@ -79,7 +79,7 @@ Add a pot recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Pot.getAllRecipes() as stdlib.List<T>
+// PotRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:pot>.getAllRecipes();
 ```
@@ -91,7 +91,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Pot.getRecipeByName(name as string) as T
+PotRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -106,7 +106,7 @@ Pot.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Pot.getRecipeMap() as T[ResourceLocation]
+// PotRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:pot>.getRecipeMap();
 ```
@@ -118,7 +118,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Pot.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+PotRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -131,7 +131,7 @@ Pot.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Pot.remove(output as IIngredient)
+PotRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -144,7 +144,7 @@ Pot.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Pot.removeAll()
+// PotRecipe.removeAll()
 
 <recipetype:tfc:pot>.removeAll();
 ```
@@ -154,7 +154,7 @@ Pot.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Pot.removeByInput(input as IItemStack)
+PotRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -167,7 +167,7 @@ Pot.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Pot.removeByModid(modid as string, exclude as Predicate<string>)
+PotRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -181,7 +181,7 @@ Pot.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Pot.removeByName(names as string[])
+PotRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -194,7 +194,7 @@ Pot.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Pot.removeByRegex(regex as string, exclude as Predicate<string>)
+PotRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

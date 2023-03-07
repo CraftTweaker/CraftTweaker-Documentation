@@ -1,15 +1,15 @@
-# Alloy
+# AlloyRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Alloy;
+import mods.tfc.AlloyRecipe;
 ```
 
 
 ## Implemented Interfaces
-Alloy implements the following interfaces. That means all methods defined in these interfaces are also available in Alloy
+AlloyRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in AlloyRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Alloy implements the following interfaces. That means all methods defined in the
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Alloy.addJsonRecipe(name as string, mapData as MapData)
+AlloyRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,7 +34,7 @@ Alloy.addJsonRecipe(name as string, mapData as MapData)
 Add an alloy recipe
 
 ```zenscript
-// Alloy.addRecipe(name as string, consumer as Consumer<AlloyBuilder>)
+// AlloyRecipe.addRecipe(name as string, consumer as Consumer<AlloyBuilder>)
 
 <recipetype:tfc:alloy>.addRecipe("alloy_test", (alloy) => {
     alloy.Add("tfc:tin", 0.08, 0.12);
@@ -60,7 +60,7 @@ Add an alloy recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Alloy.getAllRecipes() as stdlib.List<T>
+// AlloyRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:alloy>.getAllRecipes();
 ```
@@ -72,7 +72,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Alloy.getRecipeByName(name as string) as T
+AlloyRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -87,7 +87,7 @@ Alloy.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Alloy.getRecipeMap() as T[ResourceLocation]
+// AlloyRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:alloy>.getRecipeMap();
 ```
@@ -99,7 +99,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Alloy.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+AlloyRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -112,7 +112,7 @@ Alloy.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Alloy.remove(output as IIngredient)
+AlloyRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -125,7 +125,7 @@ Alloy.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Alloy.removeAll()
+// AlloyRecipe.removeAll()
 
 <recipetype:tfc:alloy>.removeAll();
 ```
@@ -135,7 +135,7 @@ Alloy.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Alloy.removeByInput(input as IItemStack)
+AlloyRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -148,7 +148,7 @@ Alloy.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Alloy.removeByModid(modid as string, exclude as Predicate<string>)
+AlloyRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -162,7 +162,7 @@ Alloy.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Alloy.removeByName(names as string[])
+AlloyRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -175,7 +175,7 @@ Alloy.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Alloy.removeByRegex(regex as string, exclude as Predicate<string>)
+AlloyRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

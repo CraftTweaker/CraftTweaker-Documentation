@@ -1,15 +1,15 @@
-# SealedBarrel
+# SealedBarrelRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.SealedBarrel;
+import mods.tfc.SealedBarrelRecipe;
 ```
 
 
 ## Implemented Interfaces
-SealedBarrel implements the following interfaces. That means all methods defined in these interfaces are also available in SealedBarrel
+SealedBarrelRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in SealedBarrelRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ SealedBarrel implements the following interfaces. That means all methods defined
 :::group{name=addJsonRecipe}
 
 ```zenscript
-SealedBarrel.addJsonRecipe(name as string, mapData as MapData)
+SealedBarrelRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,20 +34,20 @@ SealedBarrel.addJsonRecipe(name as string, mapData as MapData)
 Add an instant barrel recipe
 
 ```zenscript
-SealedBarrel.addRecipe(name as string, duration as int, input as invalid, fluidIngredient as invalid, output as invalid, outputFluid as IFluidStack, event as SoundEvent, onSeal as invalid, onUnseal as invalid)
+SealedBarrelRecipe.addRecipe(name as string, duration as int, input as IIngredientWithAmount, fluidIngredient as FluidIngredient, output as ItemStackProvider, outputFluid as IFluidStack, event as SoundEvent, onSeal as ItemStackProvider, onUnseal as ItemStackProvider)
 ```
 
-|    Parameter    |                    Type                     |                           Description                            |
-|-----------------|---------------------------------------------|------------------------------------------------------------------|
-| name            | string                                      | name of the recipe                                               |
-| duration        | int                                         | how long until the recipe is done(in hours)                      |
-| input           | **invalid**                                 | item input                                                       |
-| fluidIngredient | **invalid**                                 | fluid input, can be empty                                        |
-| output          | **invalid**                                 | item output                                                      |
-| outputFluid     | [IFluidStack](/forge/api/fluid/IFluidStack) | fluid ouput                                                      |
-| event           | [SoundEvent](/vanilla/api/sound/SoundEvent) | the sound to play when it is done, default to BREWING_STAND_BREW |
-| onSeal          | **invalid**                                 | Call this on seal                                                |
-| onUnseal        | **invalid**                                 | Call this on unseal                                              |
+|    Parameter    |                                  Type                                   |                           Description                            |
+|-----------------|-------------------------------------------------------------------------|------------------------------------------------------------------|
+| name            | string                                                                  | name of the recipe                                               |
+| duration        | int                                                                     | how long until the recipe is done(in hours)                      |
+| input           | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)  | item input                                                       |
+| fluidIngredient | [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient) | fluid input, can be empty                                        |
+| output          | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)  | item output                                                      |
+| outputFluid     | [IFluidStack](/forge/api/fluid/IFluidStack)                             | fluid ouput                                                      |
+| event           | [SoundEvent](/vanilla/api/sound/SoundEvent)                             | the sound to play when it is done, default to BREWING_STAND_BREW |
+| onSeal          | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)  | Call this on seal                                                |
+| onUnseal        | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)  | Call this on unseal                                              |
 
 
 :::
@@ -57,7 +57,7 @@ SealedBarrel.addRecipe(name as string, duration as int, input as invalid, fluidI
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// SealedBarrel.getAllRecipes() as stdlib.List<T>
+// SealedBarrelRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:barrel_sealed>.getAllRecipes();
 ```
@@ -69,7 +69,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-SealedBarrel.getRecipeByName(name as string) as T
+SealedBarrelRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -84,7 +84,7 @@ SealedBarrel.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// SealedBarrel.getRecipeMap() as T[ResourceLocation]
+// SealedBarrelRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:barrel_sealed>.getRecipeMap();
 ```
@@ -96,7 +96,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-SealedBarrel.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+SealedBarrelRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -109,7 +109,7 @@ SealedBarrel.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-SealedBarrel.remove(output as IIngredient)
+SealedBarrelRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -122,7 +122,7 @@ SealedBarrel.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// SealedBarrel.removeAll()
+// SealedBarrelRecipe.removeAll()
 
 <recipetype:tfc:barrel_sealed>.removeAll();
 ```
@@ -132,7 +132,7 @@ SealedBarrel.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-SealedBarrel.removeByInput(input as IItemStack)
+SealedBarrelRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -145,7 +145,7 @@ SealedBarrel.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-SealedBarrel.removeByModid(modid as string, exclude as Predicate<string>)
+SealedBarrelRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -159,7 +159,7 @@ SealedBarrel.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-SealedBarrel.removeByName(names as string[])
+SealedBarrelRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -172,7 +172,7 @@ SealedBarrel.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-SealedBarrel.removeByRegex(regex as string, exclude as Predicate<string>)
+SealedBarrelRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

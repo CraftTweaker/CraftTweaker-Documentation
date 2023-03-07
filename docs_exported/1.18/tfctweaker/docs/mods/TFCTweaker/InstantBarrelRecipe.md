@@ -1,15 +1,15 @@
-# InstantBarrel
+# InstantBarrelRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.InstantBarrel;
+import mods.tfc.InstantBarrelRecipe;
 ```
 
 
 ## Implemented Interfaces
-InstantBarrel implements the following interfaces. That means all methods defined in these interfaces are also available in InstantBarrel
+InstantBarrelRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in InstantBarrelRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ InstantBarrel implements the following interfaces. That means all methods define
 :::group{name=addJsonRecipe}
 
 ```zenscript
-InstantBarrel.addJsonRecipe(name as string, mapData as MapData)
+InstantBarrelRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,17 +34,17 @@ InstantBarrel.addJsonRecipe(name as string, mapData as MapData)
 Add an instant barrel recipe
 
 ```zenscript
-InstantBarrel.addRecipe(name as string, input as IIngredientWithAmount, inputFluid as FluidIngredient, output as ItemStackProvider, outputFluid as IFluidStack, event as SoundEvent)
+InstantBarrelRecipe.addRecipe(name as string, input as IIngredientWithAmount, inputFluid as FluidIngredient, output as ItemStackProvider, outputFluid as IFluidStack, event as SoundEvent)
 ```
 
-|  Parameter  |                                  Type                                  |                           Description                            | Optional |
-|-------------|------------------------------------------------------------------------|------------------------------------------------------------------|----------|
-| name        | string                                                                 | name of the recipe                                               | false    |
-| input       | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount) | item input                                                       | false    |
-| inputFluid  | [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient)           | fluid input, can be empty                                        | false    |
-| output      | [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)            | item output                                                      | false    |
-| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                            | fluid ouput                                                      | false    |
-| event       | [SoundEvent](/vanilla/api/sound/SoundEvent)                            | the sound to play when it is done, default to BREWING_STAND_BREW | true     |
+|  Parameter  |                                  Type                                   |                           Description                            | Optional |
+|-------------|-------------------------------------------------------------------------|------------------------------------------------------------------|----------|
+| name        | string                                                                  | name of the recipe                                               | false    |
+| input       | [IIngredientWithAmount](/vanilla/api/ingredient/IIngredientWithAmount)  | item input                                                       | false    |
+| inputFluid  | [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient) | fluid input, can be empty                                        | false    |
+| output      | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)  | item output                                                      | false    |
+| outputFluid | [IFluidStack](/forge/api/fluid/IFluidStack)                             | fluid ouput                                                      | false    |
+| event       | [SoundEvent](/vanilla/api/sound/SoundEvent)                             | the sound to play when it is done, default to BREWING_STAND_BREW | true     |
 
 
 :::
@@ -54,7 +54,7 @@ InstantBarrel.addRecipe(name as string, input as IIngredientWithAmount, inputFlu
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// InstantBarrel.getAllRecipes() as stdlib.List<T>
+// InstantBarrelRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:barrel_instant>.getAllRecipes();
 ```
@@ -66,7 +66,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-InstantBarrel.getRecipeByName(name as string) as T
+InstantBarrelRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -81,7 +81,7 @@ InstantBarrel.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// InstantBarrel.getRecipeMap() as T[ResourceLocation]
+// InstantBarrelRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:barrel_instant>.getRecipeMap();
 ```
@@ -93,7 +93,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-InstantBarrel.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+InstantBarrelRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -106,7 +106,7 @@ InstantBarrel.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-InstantBarrel.remove(output as IIngredient)
+InstantBarrelRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -119,7 +119,7 @@ InstantBarrel.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// InstantBarrel.removeAll()
+// InstantBarrelRecipe.removeAll()
 
 <recipetype:tfc:barrel_instant>.removeAll();
 ```
@@ -129,7 +129,7 @@ InstantBarrel.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-InstantBarrel.removeByInput(input as IItemStack)
+InstantBarrelRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -142,7 +142,7 @@ InstantBarrel.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-InstantBarrel.removeByModid(modid as string, exclude as Predicate<string>)
+InstantBarrelRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -156,7 +156,7 @@ InstantBarrel.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-InstantBarrel.removeByName(names as string[])
+InstantBarrelRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -169,7 +169,7 @@ InstantBarrel.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-InstantBarrel.removeByRegex(regex as string, exclude as Predicate<string>)
+InstantBarrelRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

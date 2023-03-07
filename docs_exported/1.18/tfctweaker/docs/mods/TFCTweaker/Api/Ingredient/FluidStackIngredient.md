@@ -4,7 +4,7 @@
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import tfc.api.ingredient.FluidIngredient;
+import mods.tfc.api.ingredient.FluidIngredient;
 ```
 
 
@@ -14,7 +14,7 @@ import tfc.api.ingredient.FluidIngredient;
 
 Create an empty fluid ingredient
 
-Return Type: [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient)
+Return Type: [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient)
 
 ```zenscript
 // FluidIngredient.empty() as FluidIngredient
@@ -29,7 +29,7 @@ FluidIngredient.empty();
 Create a fluid ingredient from a fluidstack
 
 Returns:   
-Return Type: [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient)
+Return Type: [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient)
 
 ```zenscript
 // FluidIngredient.of(fluid as IFluidStack) as FluidIngredient
@@ -49,7 +49,7 @@ FluidIngredient.of(<fluid:tfc:olive_oil>*100);
 Create a fluid ingredient from a list of fluids
 
 Returns:   
-Return Type: [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient)
+Return Type: [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient)
 
 ```zenscript
 // FluidIngredient.of(fluidStacks as IFluidStack[], amount as int) as FluidIngredient
@@ -70,7 +70,7 @@ FluidIngredient.of([<fluid:minecraft:water>, <fluid:minecraft:lava>], 1000);
 Create a fluid ingredient from a fluid tag
 
 Returns:   
-Return Type: [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient)
+Return Type: [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient)
 
 ```zenscript
 // FluidIngredient.of(fluids as KnownTag<Fluid>, amount as int) as FluidIngredient

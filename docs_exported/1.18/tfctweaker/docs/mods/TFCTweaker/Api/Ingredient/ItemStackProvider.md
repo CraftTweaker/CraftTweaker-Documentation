@@ -4,7 +4,7 @@
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import tfc.api.ingredient.ItemStackProvider;
+import mods.tfc.api.ingredient.ItemStackProvider;
 ```
 
 
@@ -15,7 +15,7 @@ import tfc.api.ingredient.ItemStackProvider;
 Add Heat to the recipe input item
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.addInputHeat(heat as float) as ItemStackProvider
@@ -35,7 +35,7 @@ ItemStackProvider.addInputHeat(100);
 Add heat to the output
 
 Returns: TFCItemStackProvider  
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.addOutputHeat(output as IItemStack, heat as float) as ItemStackProvider
@@ -56,7 +56,7 @@ ItemStackProvider.addOutputHeat(<item:tfc:metal/ingot/copper>, 100);
 Add or remove a trait from the recipe input item
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.addRemoveTrait(trait as string, add as boolean) as ItemStackProvider
@@ -77,7 +77,7 @@ ItemStackProvider.addRemoveTrait("salted", false);
 Add or remove a trait to the output item
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.addRemoveTrait(output as IItemStack, trait as string, add as boolean) as ItemStackProvider
@@ -99,7 +99,7 @@ ItemStackProvider.addRemoveTrait(<item:tfc:food/banana>, "salted", true);
 Copy the input item food data to the output
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyFood(output as IItemStack) as ItemStackProvider
@@ -119,7 +119,7 @@ ItemStackProvider.copyFood(<item:tfc:food/banana>);
 Copy the input forging bonus.
 
 Returns: TFCItemStackProvider  
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyForgingBonus(output as IItemStack) as ItemStackProvider
@@ -138,7 +138,7 @@ ItemStackProvider.copyForgingBonus(<item:tfc:metal/ingot/bronze>);
 
 Copy the input heat to the output
 
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyHeat() as ItemStackProvider
@@ -153,7 +153,7 @@ ItemStackProvider.copyHeat();
 Copy the input item heat data to the output
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyHeat(output as IItemStack) as ItemStackProvider
@@ -172,7 +172,7 @@ ItemStackProvider.copyHeat(<item:tfc:metal/ingot/copper>);
 
 Return a copy of the input
 
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyInput() as ItemStackProvider
@@ -187,7 +187,7 @@ ItemStackProvider.copyInput();
 Copy the oldest food from the input and add it to the output item
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.copyOldestFood(output as IItemStack) as ItemStackProvider
@@ -207,7 +207,7 @@ ItemStackProvider.copyOldestFood(<item:tfc:food/banana>);
 Create an empty ItemStack provider
 
 Returns: TFCItemStackProvider  
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.empty() as ItemStackProvider
@@ -222,7 +222,7 @@ ItemStackProvider.empty();
 Create an ItemStackProvider with no Modifier.
 
 Returns: TFCItemStackProvider  
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.none(output as IItemStack) as ItemStackProvider
@@ -242,7 +242,7 @@ ItemStackProvider.none(<item:tfc:metal/double_ingot/copper>);
 Reset the input food data.
 
 Returns: TFCItemStackProvider  
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.resetFood() as ItemStackProvider
@@ -257,7 +257,7 @@ ItemStackProvider.resetFood();
 Reset the output Food data
 
 Returns:   
-Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider)
+Return Type: [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider)
 
 ```zenscript
 // ItemStackProvider.resetFood(output as IItemStack) as ItemStackProvider

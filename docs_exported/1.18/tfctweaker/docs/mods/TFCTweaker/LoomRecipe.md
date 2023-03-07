@@ -1,15 +1,15 @@
-# Loom
+# LoomRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Loom;
+import mods.tfc.LoomRecipe;
 ```
 
 
 ## Implemented Interfaces
-Loom implements the following interfaces. That means all methods defined in these interfaces are also available in Loom
+LoomRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in LoomRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Loom implements the following interfaces. That means all methods defined in thes
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Loom.addJsonRecipe(name as string, mapData as MapData)
+LoomRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -29,12 +29,34 @@ Loom.addJsonRecipe(name as string, mapData as MapData)
 
 :::
 
+:::group{name=addRecipe}
+
+Add a loom recipe
+
+```zenscript
+// LoomRecipe.addRecipe(name as string, input as IIngredient, output as ItemStackProvider, inputCount as int, stepsRequired as int, inProgressTexture as string)
+
+<recipetype:tfc:loom>.addRecipe("loom_test", <item:minecraft:string>, ItemStackProvider.none(<item:tfc:burlap_cloth>), 10, 10, "tfc:block/burlap");
+```
+
+|     Parameter     |                                  Type                                  |        Description        |
+|-------------------|------------------------------------------------------------------------|---------------------------|
+| name              | string                                                                 | name of the recipe        |
+| input             | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | input ingredient          |
+| output            | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | output item               |
+| inputCount        | int                                                                    | how many items are needed |
+| stepsRequired     | int                                                                    | the number of steps       |
+| inProgressTexture | string                                                                 | in progress texture       |
+
+
+:::
+
 :::group{name=getAllRecipes}
 
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Loom.getAllRecipes() as stdlib.List<T>
+// LoomRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:loom>.getAllRecipes();
 ```
@@ -46,7 +68,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Loom.getRecipeByName(name as string) as T
+LoomRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -61,7 +83,7 @@ Loom.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Loom.getRecipeMap() as T[ResourceLocation]
+// LoomRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:loom>.getRecipeMap();
 ```
@@ -73,7 +95,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Loom.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+LoomRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -86,7 +108,7 @@ Loom.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Loom.remove(output as IIngredient)
+LoomRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -99,7 +121,7 @@ Loom.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Loom.removeAll()
+// LoomRecipe.removeAll()
 
 <recipetype:tfc:loom>.removeAll();
 ```
@@ -109,7 +131,7 @@ Loom.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Loom.removeByInput(input as IItemStack)
+LoomRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -122,7 +144,7 @@ Loom.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Loom.removeByModid(modid as string, exclude as Predicate<string>)
+LoomRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -136,7 +158,7 @@ Loom.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Loom.removeByName(names as string[])
+LoomRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -149,7 +171,7 @@ Loom.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Loom.removeByRegex(regex as string, exclude as Predicate<string>)
+LoomRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

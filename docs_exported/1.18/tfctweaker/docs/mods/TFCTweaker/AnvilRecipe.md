@@ -1,15 +1,15 @@
-# Anvil
+# AnvilRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Anvil;
+import mods.tfc.AnvilRecipe;
 ```
 
 
 ## Implemented Interfaces
-Anvil implements the following interfaces. That means all methods defined in these interfaces are also available in Anvil
+AnvilRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in AnvilRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Anvil implements the following interfaces. That means all methods defined in the
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Anvil.addJsonRecipe(name as string, mapData as MapData)
+AnvilRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,19 +34,19 @@ Anvil.addJsonRecipe(name as string, mapData as MapData)
 Add an anvil recipe
 
 ```zenscript
-// Anvil.addRecipe(name as string, input as IIngredient, minTier as int, rules as ForgeRule[], applyForgingBonus as boolean, output as ItemStackProvider)
+// AnvilRecipe.addRecipe(name as string, input as IIngredient, minTier as int, rules as ForgeRule[], applyForgingBonus as boolean, output as ItemStackProvider)
 
 <recipetype:tfc:anvil>.addRecipe("anvil_test", <tfc:metal/ingot/copper>, 1, [<constant:tfc:forge_rule:hit_any>, <constant:tfc:forge_rule:draw_not_last>, <constant:tfc:forge_rule:hit_any>], true, ItemStackProvider.none(<tfc:metal/chisel_head/copper>));
 ```
 
-|     Parameter     |                            Type                             |              Description               |
-|-------------------|-------------------------------------------------------------|----------------------------------------|
-| name              | string                                                      | recipe name                            |
-| input             | [IIngredient](/vanilla/api/ingredient/IIngredient)          | input ingredient                       |
-| minTier           | int                                                         | min anvil tier required for the recipe |
-| rules             | [ForgeRule](/mods/TFCTweaker/Api/Expansion/ForgeRule)[]     | rules used to forge the item           |
-| applyForgingBonus | boolean                                                     | should forging bonus be applied        |
-| output            | [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider) | the output item                        |
+|     Parameter     |                                  Type                                  |              Description               |
+|-------------------|------------------------------------------------------------------------|----------------------------------------|
+| name              | string                                                                 | recipe name                            |
+| input             | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | input ingredient                       |
+| minTier           | int                                                                    | min anvil tier required for the recipe |
+| rules             | [ForgeRule](/mods/TFCTweaker/Api/Expansion/ForgeRule)[]                | rules used to forge the item           |
+| applyForgingBonus | boolean                                                                | should forging bonus be applied        |
+| output            | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | the output item                        |
 
 
 :::
@@ -56,7 +56,7 @@ Add an anvil recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Anvil.getAllRecipes() as stdlib.List<T>
+// AnvilRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:anvil>.getAllRecipes();
 ```
@@ -68,7 +68,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Anvil.getRecipeByName(name as string) as T
+AnvilRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -83,7 +83,7 @@ Anvil.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Anvil.getRecipeMap() as T[ResourceLocation]
+// AnvilRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:anvil>.getRecipeMap();
 ```
@@ -95,7 +95,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Anvil.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+AnvilRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -108,7 +108,7 @@ Anvil.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Anvil.remove(output as IIngredient)
+AnvilRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -121,7 +121,7 @@ Anvil.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Anvil.removeAll()
+// AnvilRecipe.removeAll()
 
 <recipetype:tfc:anvil>.removeAll();
 ```
@@ -131,7 +131,7 @@ Anvil.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Anvil.removeByInput(input as IItemStack)
+AnvilRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -144,7 +144,7 @@ Anvil.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Anvil.removeByModid(modid as string, exclude as Predicate<string>)
+AnvilRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -158,7 +158,7 @@ Anvil.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Anvil.removeByName(names as string[])
+AnvilRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -171,7 +171,7 @@ Anvil.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Anvil.removeByRegex(regex as string, exclude as Predicate<string>)
+AnvilRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

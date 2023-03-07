@@ -1,15 +1,15 @@
-# BlastFurnace
+# BlastFurnaceRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.BlastFurnace;
+import mods.tfc.BlastFurnaceRecipe;
 ```
 
 
 ## Implemented Interfaces
-BlastFurnace implements the following interfaces. That means all methods defined in these interfaces are also available in BlastFurnace
+BlastFurnaceRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in BlastFurnaceRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ BlastFurnace implements the following interfaces. That means all methods defined
 :::group{name=addJsonRecipe}
 
 ```zenscript
-BlastFurnace.addJsonRecipe(name as string, mapData as MapData)
+BlastFurnaceRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,17 +34,17 @@ BlastFurnace.addJsonRecipe(name as string, mapData as MapData)
 Add a Blast furnace recipe
 
 ```zenscript
-// BlastFurnace.addRecipe(name as string, input as FluidIngredient, catalyst as IIngredient, output as IFluidStack)
+// BlastFurnaceRecipe.addRecipe(name as string, input as FluidIngredient, catalyst as IIngredient, output as IFluidStack)
 
 <recipetype:tfc:blast_furnace>.addRecipe("blast_test", FluidStackIngredient.of(<fluid:tfc:metal/copper>*100);, <tag:items:forge:gems/coal>, <fluid:tfc:metal/bronze>*100);
 ```
 
-| Parameter |                             Type                             |         Description          |
-|-----------|--------------------------------------------------------------|------------------------------|
-| name      | string                                                       | name of the recipe           |
-| input     | [FluidIngredient](/mods/TFCTweaker/Api/FluidStackIngredient) | fluid input                  |
-| catalyst  | [IIngredient](/vanilla/api/ingredient/IIngredient)           | catalyst used for the recipe |
-| output    | [IFluidStack](/forge/api/fluid/IFluidStack)                  | fluid output                 |
+| Parameter |                                  Type                                   |         Description          |
+|-----------|-------------------------------------------------------------------------|------------------------------|
+| name      | string                                                                  | name of the recipe           |
+| input     | [FluidIngredient](/mods/TFCTweaker/Api/Ingredient/FluidStackIngredient) | fluid input                  |
+| catalyst  | [IIngredient](/vanilla/api/ingredient/IIngredient)                      | catalyst used for the recipe |
+| output    | [IFluidStack](/forge/api/fluid/IFluidStack)                             | fluid output                 |
 
 
 :::
@@ -54,7 +54,7 @@ Add a Blast furnace recipe
 Add a Blast furnace recipe, default to 100mb of metal used
 
 ```zenscript
-// BlastFurnace.addRecipe(name as string, input as Metal, catalyst as IIngredient, output as Metal)
+// BlastFurnaceRecipe.addRecipe(name as string, input as Metal, catalyst as IIngredient, output as Metal)
 
 <recipetype:tfc:blast_furnace>.addRecipe("blast_test", <metal:tfc:copper>, <tag:items:forge:gems/coal>, <metal:tfc:bronze>);
 ```
@@ -74,7 +74,7 @@ Add a Blast furnace recipe, default to 100mb of metal used
 Add a Blast furnace recipe
 
 ```zenscript
-// BlastFurnace.addRecipe(name as string, input as Metal, amount as int, catalyst as IIngredient, output as Metal, outputAmount as int)
+// BlastFurnaceRecipe.addRecipe(name as string, input as Metal, amount as int, catalyst as IIngredient, output as Metal, outputAmount as int)
 
 <recipetype:tfc:blast_furnace>.addRecipe("blast_test", <metal:tfc:copper>, 100, <tag:items:forge:gems/coal>, <metal:tfc:bronze>, 50);
 ```
@@ -96,7 +96,7 @@ Add a Blast furnace recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// BlastFurnace.getAllRecipes() as stdlib.List<T>
+// BlastFurnaceRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:blast_furnace>.getAllRecipes();
 ```
@@ -108,7 +108,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-BlastFurnace.getRecipeByName(name as string) as T
+BlastFurnaceRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -123,7 +123,7 @@ BlastFurnace.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// BlastFurnace.getRecipeMap() as T[ResourceLocation]
+// BlastFurnaceRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:blast_furnace>.getRecipeMap();
 ```
@@ -135,7 +135,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-BlastFurnace.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+BlastFurnaceRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -148,7 +148,7 @@ BlastFurnace.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-BlastFurnace.remove(output as IIngredient)
+BlastFurnaceRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -161,7 +161,7 @@ BlastFurnace.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// BlastFurnace.removeAll()
+// BlastFurnaceRecipe.removeAll()
 
 <recipetype:tfc:blast_furnace>.removeAll();
 ```
@@ -171,7 +171,7 @@ BlastFurnace.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-BlastFurnace.removeByInput(input as IItemStack)
+BlastFurnaceRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -184,7 +184,7 @@ BlastFurnace.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-BlastFurnace.removeByModid(modid as string, exclude as Predicate<string>)
+BlastFurnaceRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -198,7 +198,7 @@ BlastFurnace.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-BlastFurnace.removeByName(names as string[])
+BlastFurnaceRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -211,7 +211,7 @@ BlastFurnace.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-BlastFurnace.removeByRegex(regex as string, exclude as Predicate<string>)
+BlastFurnaceRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

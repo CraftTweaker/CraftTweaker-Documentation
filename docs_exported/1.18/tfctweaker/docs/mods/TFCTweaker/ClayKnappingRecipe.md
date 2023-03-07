@@ -1,15 +1,15 @@
-# ClayKnapping
+# ClayKnappingRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.ClayKnapping;
+import mods.tfc.ClayKnappingRecipe;
 ```
 
 
 ## Implemented Interfaces
-ClayKnapping implements the following interfaces. That means all methods defined in these interfaces are also available in ClayKnapping
+ClayKnappingRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in ClayKnappingRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ ClayKnapping implements the following interfaces. That means all methods defined
 :::group{name=addJsonRecipe}
 
 ```zenscript
-ClayKnapping.addJsonRecipe(name as string, mapData as MapData)
+ClayKnappingRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,7 +34,7 @@ ClayKnapping.addJsonRecipe(name as string, mapData as MapData)
 Add a clay knapping recipe
 
 ```zenscript
-// ClayKnapping.addRecipe(name as string, outside_slot_required as boolean, pattern as string[], output as IItemStack)
+// ClayKnappingRecipe.addRecipe(name as string, outside_slot_required as boolean, pattern as string[], output as IItemStack)
 
 <recipetype:tfc:clay_knapping>.addRecipe("knapping_test", false, ["XXXXX", " XXX ", " XXX ", " XXX ", "XXXXX"], <item:tfc:ceramic/unfired_brick>);
 ```
@@ -54,7 +54,7 @@ Add a clay knapping recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// ClayKnapping.getAllRecipes() as stdlib.List<T>
+// ClayKnappingRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:clay_knapping>.getAllRecipes();
 ```
@@ -66,7 +66,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-ClayKnapping.getRecipeByName(name as string) as T
+ClayKnappingRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -81,7 +81,7 @@ ClayKnapping.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// ClayKnapping.getRecipeMap() as T[ResourceLocation]
+// ClayKnappingRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:clay_knapping>.getRecipeMap();
 ```
@@ -93,7 +93,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-ClayKnapping.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+ClayKnappingRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -106,7 +106,7 @@ ClayKnapping.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-ClayKnapping.remove(output as IIngredient)
+ClayKnappingRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -119,7 +119,7 @@ ClayKnapping.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// ClayKnapping.removeAll()
+// ClayKnappingRecipe.removeAll()
 
 <recipetype:tfc:clay_knapping>.removeAll();
 ```
@@ -129,7 +129,7 @@ ClayKnapping.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-ClayKnapping.removeByInput(input as IItemStack)
+ClayKnappingRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -142,7 +142,7 @@ ClayKnapping.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-ClayKnapping.removeByModid(modid as string, exclude as Predicate<string>)
+ClayKnappingRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -156,7 +156,7 @@ ClayKnapping.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-ClayKnapping.removeByName(names as string[])
+ClayKnappingRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -169,7 +169,7 @@ ClayKnapping.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-ClayKnapping.removeByRegex(regex as string, exclude as Predicate<string>)
+ClayKnappingRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

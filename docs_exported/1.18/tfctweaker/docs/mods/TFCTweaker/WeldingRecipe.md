@@ -1,15 +1,15 @@
-# Welding
+# WeldingRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Welding;
+import mods.tfc.WeldingRecipe;
 ```
 
 
 ## Implemented Interfaces
-Welding implements the following interfaces. That means all methods defined in these interfaces are also available in Welding
+WeldingRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in WeldingRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Welding implements the following interfaces. That means all methods defined in t
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Welding.addJsonRecipe(name as string, mapData as MapData)
+WeldingRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,18 +34,18 @@ Welding.addJsonRecipe(name as string, mapData as MapData)
 Add a welding recipe
 
 ```zenscript
-// Welding.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider)
+// WeldingRecipe.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider)
 
 <recipetype:tfc:welding>.addRecipe("welding_test", <item:tfc:metal/ingot/copper>, <item:tfc:metal/double_ingot/copper>, 1, <item:tfc:metal/double_sheet/copper>);
 ```
 
-| Parameter |                            Type                             |     Description     |
-|-----------|-------------------------------------------------------------|---------------------|
-| name      | string                                                      | name of the recipe  |
-| input1    | [IIngredient](/vanilla/api/ingredient/IIngredient)          | first input         |
-| input2    | [IIngredient](/vanilla/api/ingredient/IIngredient)          | second input        |
-| tier      | int                                                         | anvil tier required |
-| output    | [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider) | output item         |
+| Parameter |                                  Type                                  |     Description     |
+|-----------|------------------------------------------------------------------------|---------------------|
+| name      | string                                                                 | name of the recipe  |
+| input1    | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | first input         |
+| input2    | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | second input        |
+| tier      | int                                                                    | anvil tier required |
+| output    | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | output item         |
 
 
 :::
@@ -55,7 +55,7 @@ Add a welding recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Welding.getAllRecipes() as stdlib.List<T>
+// WeldingRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:welding>.getAllRecipes();
 ```
@@ -67,7 +67,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Welding.getRecipeByName(name as string) as T
+WeldingRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -82,7 +82,7 @@ Welding.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Welding.getRecipeMap() as T[ResourceLocation]
+// WeldingRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:welding>.getRecipeMap();
 ```
@@ -94,7 +94,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Welding.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+WeldingRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -107,7 +107,7 @@ Welding.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Welding.remove(output as IIngredient)
+WeldingRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -120,7 +120,7 @@ Welding.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Welding.removeAll()
+// WeldingRecipe.removeAll()
 
 <recipetype:tfc:welding>.removeAll();
 ```
@@ -130,7 +130,7 @@ Welding.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Welding.removeByInput(input as IItemStack)
+WeldingRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -143,7 +143,7 @@ Welding.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Welding.removeByModid(modid as string, exclude as Predicate<string>)
+WeldingRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -157,7 +157,7 @@ Welding.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Welding.removeByName(names as string[])
+WeldingRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -170,7 +170,7 @@ Welding.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Welding.removeByRegex(regex as string, exclude as Predicate<string>)
+WeldingRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

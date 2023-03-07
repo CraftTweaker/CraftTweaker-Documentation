@@ -1,15 +1,15 @@
-# LeatherKnapping
+# LeatherKnappingRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.LeatherKnapping;
+import mods.tfc.LeatherKnappingRecipe;
 ```
 
 
 ## Implemented Interfaces
-LeatherKnapping implements the following interfaces. That means all methods defined in these interfaces are also available in LeatherKnapping
+LeatherKnappingRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in LeatherKnappingRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ LeatherKnapping implements the following interfaces. That means all methods defi
 :::group{name=addJsonRecipe}
 
 ```zenscript
-LeatherKnapping.addJsonRecipe(name as string, mapData as MapData)
+LeatherKnappingRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,7 +34,7 @@ LeatherKnapping.addJsonRecipe(name as string, mapData as MapData)
 Add a Leather knapping recipe
 
 ```zenscript
-// LeatherKnapping.addRecipe(name as string, outside_slot_required as boolean, pattern as string[], output as IItemStack)
+// LeatherKnappingRecipe.addRecipe(name as string, outside_slot_required as boolean, pattern as string[], output as IItemStack)
 
 <recipetype:tfc:leather_knapping>.addRecipe("leather_knapping_test", false, [" XX  ", "XXXXX", "XXXXX", "XXXXX", " XX  "], <item:minecraft:saddle>);
 ```
@@ -54,7 +54,7 @@ Add a Leather knapping recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// LeatherKnapping.getAllRecipes() as stdlib.List<T>
+// LeatherKnappingRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:leather_knapping>.getAllRecipes();
 ```
@@ -66,7 +66,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-LeatherKnapping.getRecipeByName(name as string) as T
+LeatherKnappingRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -81,7 +81,7 @@ LeatherKnapping.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// LeatherKnapping.getRecipeMap() as T[ResourceLocation]
+// LeatherKnappingRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:leather_knapping>.getRecipeMap();
 ```
@@ -93,7 +93,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-LeatherKnapping.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+LeatherKnappingRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -106,7 +106,7 @@ LeatherKnapping.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-LeatherKnapping.remove(output as IIngredient)
+LeatherKnappingRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -119,7 +119,7 @@ LeatherKnapping.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// LeatherKnapping.removeAll()
+// LeatherKnappingRecipe.removeAll()
 
 <recipetype:tfc:leather_knapping>.removeAll();
 ```
@@ -129,7 +129,7 @@ LeatherKnapping.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-LeatherKnapping.removeByInput(input as IItemStack)
+LeatherKnappingRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -142,7 +142,7 @@ LeatherKnapping.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-LeatherKnapping.removeByModid(modid as string, exclude as Predicate<string>)
+LeatherKnappingRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -156,7 +156,7 @@ LeatherKnapping.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-LeatherKnapping.removeByName(names as string[])
+LeatherKnappingRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -169,7 +169,7 @@ LeatherKnapping.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-LeatherKnapping.removeByRegex(regex as string, exclude as Predicate<string>)
+LeatherKnappingRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |

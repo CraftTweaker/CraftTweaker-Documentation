@@ -1,15 +1,15 @@
-# Quern
+# QuernRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.tfc.Quern;
+import mods.tfc.QuernRecipe;
 ```
 
 
 ## Implemented Interfaces
-Quern implements the following interfaces. That means all methods defined in these interfaces are also available in Quern
+QuernRecipe implements the following interfaces. That means all methods defined in these interfaces are also available in QuernRecipe
 
 - [IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)
 
@@ -18,7 +18,7 @@ Quern implements the following interfaces. That means all methods defined in the
 :::group{name=addJsonRecipe}
 
 ```zenscript
-Quern.addJsonRecipe(name as string, mapData as MapData)
+QuernRecipe.addJsonRecipe(name as string, mapData as MapData)
 ```
 
 | Parameter |                 Type                 |
@@ -34,16 +34,16 @@ Quern.addJsonRecipe(name as string, mapData as MapData)
 Add a quern recipe
 
 ```zenscript
-// Quern.addRecipe(name as string, input as IIngredient, output as ItemStackProvider)
+// QuernRecipe.addRecipe(name as string, input as IIngredient, output as ItemStackProvider)
 
 <recipetype:tfc:quern>.addRecipe("quern_test", <item:tfc:metal/ingot/copper>, ItemStackProvider.none(<item:tfc:metal/sheet/copper>));
 ```
 
-| Parameter |                            Type                             |    Description     |
-|-----------|-------------------------------------------------------------|--------------------|
-| name      | string                                                      | name of the recipe |
-| input     | [IIngredient](/vanilla/api/ingredient/IIngredient)          | input ingredient   |
-| output    | [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider) | output item        |
+| Parameter |                                  Type                                  |    Description     |
+|-----------|------------------------------------------------------------------------|--------------------|
+| name      | string                                                                 | name of the recipe |
+| input     | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | input ingredient   |
+| output    | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | output item        |
 
 
 :::
@@ -53,7 +53,7 @@ Add a quern recipe
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-// Quern.getAllRecipes() as stdlib.List<T>
+// QuernRecipe.getAllRecipes() as stdlib.List<T>
 
 <recipetype:tfc:quern>.getAllRecipes();
 ```
@@ -65,7 +65,7 @@ Return Type: stdlib.List&lt;T&gt;
 Return Type: T
 
 ```zenscript
-Quern.getRecipeByName(name as string) as T
+QuernRecipe.getRecipeByName(name as string) as T
 ```
 
 | Parameter |  Type  |
@@ -80,7 +80,7 @@ Quern.getRecipeByName(name as string) as T
 Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// Quern.getRecipeMap() as T[ResourceLocation]
+// QuernRecipe.getRecipeMap() as T[ResourceLocation]
 
 <recipetype:tfc:quern>.getRecipeMap();
 ```
@@ -92,7 +92,7 @@ Return Type: T[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-Quern.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
+QuernRecipe.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 ```
 
 | Parameter |                        Type                        |
@@ -105,7 +105,7 @@ Quern.getRecipesByOutput(output as IIngredient) as stdlib.List<T>
 :::group{name=remove}
 
 ```zenscript
-Quern.remove(output as IIngredient)
+QuernRecipe.remove(output as IIngredient)
 ```
 
 | Parameter |                        Type                        |
@@ -118,7 +118,7 @@ Quern.remove(output as IIngredient)
 :::group{name=removeAll}
 
 ```zenscript
-// Quern.removeAll()
+// QuernRecipe.removeAll()
 
 <recipetype:tfc:quern>.removeAll();
 ```
@@ -128,7 +128,7 @@ Quern.remove(output as IIngredient)
 :::group{name=removeByInput}
 
 ```zenscript
-Quern.removeByInput(input as IItemStack)
+QuernRecipe.removeByInput(input as IItemStack)
 ```
 
 | Parameter |                    Type                    |
@@ -141,7 +141,7 @@ Quern.removeByInput(input as IItemStack)
 :::group{name=removeByModid}
 
 ```zenscript
-Quern.removeByModid(modid as string, exclude as Predicate<string>)
+QuernRecipe.removeByModid(modid as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
@@ -155,7 +155,7 @@ Quern.removeByModid(modid as string, exclude as Predicate<string>)
 :::group{name=removeByName}
 
 ```zenscript
-Quern.removeByName(names as string[])
+QuernRecipe.removeByName(names as string[])
 ```
 
 | Parameter |   Type   |
@@ -168,7 +168,7 @@ Quern.removeByName(names as string[])
 :::group{name=removeByRegex}
 
 ```zenscript
-Quern.removeByRegex(regex as string, exclude as Predicate<string>)
+QuernRecipe.removeByRegex(regex as string, exclude as Predicate<string>)
 ```
 
 | Parameter |          Type           | Optional |           Default Value           |
