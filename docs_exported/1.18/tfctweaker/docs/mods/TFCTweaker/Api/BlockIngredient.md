@@ -12,45 +12,60 @@ import tfc.api.ingredient.BlockIngredient;
 
 :::group{name=of}
 
+Create a block ingredient from a block
+
+Returns:   
 Return Type: [BlockIngredient](/mods/TFCTweaker/Api/BlockIngredient)
 
 ```zenscript
-BlockIngredient.of(block as Block) as BlockIngredient
+// BlockIngredient.of(block as Block) as BlockIngredient
+
+BlockIngredient.of(<block:minecraft:dirt>);
 ```
 
-| Parameter |               Type                |
-|-----------|-----------------------------------|
-| block     | [Block](/vanilla/api/block/Block) |
+| Parameter |               Type                | Description |
+|-----------|-----------------------------------|-------------|
+| block     | [Block](/vanilla/api/block/Block) | block       |
 
 
 :::
 
 :::group{name=of}
 
+Create a block from an array of blocks
+
+Returns:   
 Return Type: [BlockIngredient](/mods/TFCTweaker/Api/BlockIngredient)
 
 ```zenscript
-BlockIngredient.of(blocks as Block[]) as BlockIngredient
+// BlockIngredient.of(blocks as Block[]) as BlockIngredient
+
+BlockIngredient.of([<block:minecraft:dirt>, <block:minecraft:stone>]);
 ```
 
-| Parameter |                Type                 |
-|-----------|-------------------------------------|
-| blocks    | [Block](/vanilla/api/block/Block)[] |
+| Parameter |                Type                 |   Description   |
+|-----------|-------------------------------------|-----------------|
+| blocks    | [Block](/vanilla/api/block/Block)[] | array of blocks |
 
 
 :::
 
 :::group{name=of}
 
+Create a block ingredient from a block tag
+
+Returns:   
 Return Type: [BlockIngredient](/mods/TFCTweaker/Api/BlockIngredient)
 
 ```zenscript
-BlockIngredient.of(tag as KnownTag<Block>) as BlockIngredient
+// BlockIngredient.of(tag as KnownTag<Block>) as BlockIngredient
+
+BlockIngredient.of(<tag:blocks:minecraft:sand>);
 ```
 
-| Parameter |                                        Type                                         |
-|-----------|-------------------------------------------------------------------------------------|
-| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; |
+| Parameter |                                        Type                                         | Description |
+|-----------|-------------------------------------------------------------------------------------|-------------|
+| tag       | [KnownTag](/vanilla/api/tag/type/KnownTag)&lt;[Block](/vanilla/api/block/Block)&gt; | block tag   |
 
 
 :::

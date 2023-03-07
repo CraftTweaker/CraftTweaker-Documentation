@@ -12,6 +12,9 @@ import tfc.api.metal;
 
 :::group{name=getAllMetals}
 
+Get all the registered metals
+
+Returns: an array containing all registered metals  
 Return Type: [metal](/mods/TFCTweaker/Api/Expansion/Metal)[]
 
 ```zenscript
@@ -19,25 +22,6 @@ Return Type: [metal](/mods/TFCTweaker/Api/Expansion/Metal)[]
 
 metal.getAllMetals();
 ```
-
-:::
-
-:::group{name=getFluidStack}
-
-get a fluidstack from a metal
-
-Returns:   
-Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
-
-```zenscript
-metal.getFluidStack(internal as metal, amount as int) as IFluidStack
-```
-
-| Parameter |                     Type                      | Description |
-|-----------|-----------------------------------------------|-------------|
-| internal  | [metal](/mods/TFCTweaker/Api/Expansion/Metal) | metal       |
-| amount    | int                                           | amount      |
-
 
 :::
 
@@ -57,25 +41,6 @@ metal.getMetalFromIngot(<item:tfc:metal/ingot/copper>);
 | Parameter |                    Type                    | Description |
 |-----------|--------------------------------------------|-------------|
 | stack     | [IItemStack](/vanilla/api/item/IItemStack) | ingot       |
-
-
-:::
-
-:::group{name=getMetalPart}
-
-get a metal part
-
-Returns:   
-Return Type: [IItemStack](/vanilla/api/item/IItemStack)
-
-```zenscript
-metal.getMetalPart(internal as metal, partName as string) as IItemStack
-```
-
-| Parameter |                     Type                      |   Description   |
-|-----------|-----------------------------------------------|-----------------|
-| internal  | [metal](/mods/TFCTweaker/Api/Expansion/Metal) | internal metal  |
-| partName  | string                                        | metal part name |
 
 
 :::
@@ -104,7 +69,7 @@ Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 ```zenscript
 // metal.getFluidStack(amount as int) as IFluidStack
 
-mymetal.getFluidStack(100);
+<metal:tfc:copper>.getFluidStack(100);
 ```
 
 | Parameter | Type | Description |
@@ -116,7 +81,7 @@ mymetal.getFluidStack(100);
 
 :::group{name=getMetalPart}
 
-get a metal part
+return the item corresponding to that metal part
 
 Returns:   
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
@@ -124,7 +89,7 @@ Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 ```zenscript
 // metal.getMetalPart(partName as string) as IItemStack
 
-mymetal.getMetalPart("ingot");
+<tfc:metal:copper>.getMetalPart("ingot");
 ```
 
 | Parameter |  Type  |   Description   |

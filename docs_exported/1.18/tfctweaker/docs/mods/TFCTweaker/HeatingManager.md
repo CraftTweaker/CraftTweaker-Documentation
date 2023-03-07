@@ -36,28 +36,6 @@ Heating.addJsonRecipe(name as string, mapData as MapData)
 add a heating recipe
 
 ```zenscript
-// Heating.addRecipe(name as string, input as IIngredient, output as IItemStack, outputFluid as IFluidStack, temp as float, useDurability as boolean)
-
-<recipetype:tfc:heating>.addRecipe("heating_test2", <item:tfc:metal/ingot/copper>, ItemStackProvider.empty(), <fluid:tfc:metal/copper>*100, 500, false);
-```
-
-|   Parameter   |                        Type                        |                                        Description                                        | Optional | Default Value |
-|---------------|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------|---------------|
-| name          | string                                             | name of the recipe                                                                        | false    |               |
-| input         | [IIngredient](/vanilla/api/ingredient/IIngredient) | input item                                                                                | false    |               |
-| output        | [IItemStack](/vanilla/api/item/IItemStack)         | output item(can be null)                                                                  | false    |               |
-| outputFluid   | [IFluidStack](/forge/api/fluid/IFluidStack)        | output fluid                                                                              | false    |               |
-| temp          | float                                              | temp when the input become the output                                                     | false    |               |
-| useDurability | boolean                                            | tell if the recipe should use the item durability(if it has durability, default to false) | true     | false         |
-
-
-:::
-
-:::group{name=addRecipe}
-
-add a heating recipe
-
-```zenscript
 // Heating.addRecipe(name as string, input as IIngredient, output as ItemStackProvider, outputFluid as IFluidStack, temp as float, useDurability as boolean)
 
 <recipetype:tfc:heating>.addRecipe("heating_test", <item:tfc:metal/ingot/copper>, ItemStackProvider.empty(), <fluid:tfc:metal/copper>*100, 500, false);
