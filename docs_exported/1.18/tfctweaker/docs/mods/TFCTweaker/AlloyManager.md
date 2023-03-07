@@ -37,9 +37,9 @@ Add an alloy recipe
 // Alloy.addRecipe(name as string, consumer as Consumer<AlloyBuilder>)
 
 <recipetype:tfc:alloy>.addRecipe("alloy_test", (alloy) => {
-    alloy.add("tfc:tin", 0.08, 0.12);
-    alloy.add("tfc:copper", 0.88, 0.92);
-    alloy.output("tfc:bronze");
+    alloy.Add("tfc:tin", 0.08, 0.12);
+    alloy.Add("tfc:copper", 0.88, 0.92);
+    alloy.Output("tfc:bronze");
     // can also do it this way
     // alloy.Add(<metal:tfc:tin>, 0.08, 0.12);
     // alloy.Add(<metal:tfc:copper>, 0.88, 0.92);
