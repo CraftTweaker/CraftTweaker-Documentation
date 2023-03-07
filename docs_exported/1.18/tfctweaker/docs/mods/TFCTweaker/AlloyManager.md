@@ -41,9 +41,9 @@ Add an alloy recipe
     alloy.add("tfc:copper", 0.88, 0.92);
     alloy.output("tfc:bronze");
     // can also do it this way
-    // alloy.add(<metal:tfc:tin>, 0.08, 0.12);
-    // alloy.add(<metal:tfc:copper>, 0.88, 0.92);
-    // alloy.output(<metal:tfc:bronze>);
+    // alloy.Add(<metal:tfc:tin>, 0.08, 0.12);
+    // alloy.Add(<metal:tfc:copper>, 0.88, 0.92);
+    // alloy.Output(<metal:tfc:bronze>);
  });
 ```
 

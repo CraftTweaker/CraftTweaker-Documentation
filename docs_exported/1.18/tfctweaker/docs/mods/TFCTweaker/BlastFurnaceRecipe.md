@@ -54,7 +54,7 @@ Add a Blast furnace recipe
 Add a Blast furnace recipe, default to 100mb of metal used
 
 ```zenscript
-// BlastFurnace.addRecipe(name as string, input as metal, catalyst as IIngredient, output as metal)
+// BlastFurnace.addRecipe(name as string, input as Metal, catalyst as IIngredient, output as Metal)
 
 <recipetype:tfc:blast_furnace>.addRecipe("blast_test", <metal:tfc:copper>, <tag:items:forge:gems/coal>, <metal:tfc:bronze>);
 ```
@@ -62,9 +62,9 @@ Add a Blast furnace recipe, default to 100mb of metal used
 | Parameter |                        Type                        |         Description          |
 |-----------|----------------------------------------------------|------------------------------|
 | name      | string                                             | name of the recipe           |
-| input     | [metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
+| input     | [Metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
 | catalyst  | [IIngredient](/vanilla/api/ingredient/IIngredient) | catalyst used for the recipe |
-| output    | [metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
+| output    | [Metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
 
 
 :::
@@ -74,7 +74,7 @@ Add a Blast furnace recipe, default to 100mb of metal used
 Add a Blast furnace recipe
 
 ```zenscript
-// BlastFurnace.addRecipe(name as string, input as metal, amount as int, catalyst as IIngredient, output as metal, outputAmount as int)
+// BlastFurnace.addRecipe(name as string, input as Metal, amount as int, catalyst as IIngredient, output as Metal, outputAmount as int)
 
 <recipetype:tfc:blast_furnace>.addRecipe("blast_test", <metal:tfc:copper>, 100, <tag:items:forge:gems/coal>, <metal:tfc:bronze>, 50);
 ```
@@ -82,10 +82,10 @@ Add a Blast furnace recipe
 |  Parameter   |                        Type                        |         Description          |
 |--------------|----------------------------------------------------|------------------------------|
 | name         | string                                             | name of the recipe           |
-| input        | [metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
+| input        | [Metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
 | amount       | int                                                | amount of metal used         |
 | catalyst     | [IIngredient](/vanilla/api/ingredient/IIngredient) | catalyst used for the recipe |
-| output       | [metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
+| output       | [Metal](/mods/TFCTweaker/Api/Expansion/Metal)      | metal                        |
 | outputAmount | int                                                | amount of metal received     |
 
 

@@ -10,33 +10,33 @@ import mods.tfc.AlloyBuilder;
 
 ## Methods
 
-:::group{name=add}
+:::group{name=Add}
 
 add a metal to the alloy
 
 ```zenscript
-// AlloyBuilder.add(metal as metal, min as double, max as double)
+// AlloyBuilder.Add(metal as Metal, min as double, max as double)
 
-myAlloyBuilder.add(<metal:tfc:copper>, 0.88, 0.92);
+myAlloyBuilder.Add(<metal:tfc:copper>, 0.88, 0.92);
 ```
 
 | Parameter |                     Type                      | Description |
 |-----------|-----------------------------------------------|-------------|
-| metal     | [metal](/mods/TFCTweaker/Api/Expansion/Metal) | metal       |
+| metal     | [Metal](/mods/TFCTweaker/Api/Expansion/Metal) | metal       |
 | min       | double                                        | min amount  |
 | max       | double                                        | max amount  |
 
 
 :::
 
-:::group{name=add}
+:::group{name=Add}
 
 add a metal to the alloy
 
 ```zenscript
-// AlloyBuilder.add(metalName as string, min as double, max as double)
+// AlloyBuilder.Add(metalName as string, min as double, max as double)
 
-myAlloyBuilder.add("tfc:copper", 0.88, 0.92);
+myAlloyBuilder.Add("tfc:copper", 0.88, 0.92);
 ```
 
 | Parameter |  Type  |    Description    |
@@ -48,31 +48,31 @@ myAlloyBuilder.add("tfc:copper", 0.88, 0.92);
 
 :::
 
-:::group{name=output}
+:::group{name=Output}
 
 Add a metal as output
 
 ```zenscript
-// AlloyBuilder.output(metal as metal)
+// AlloyBuilder.Output(metal as Metal)
 
-myAlloyBuilder.output(<metal:tfc:bronze>);
+myAlloyBuilder.Output(<metal:tfc:bronze>);
 ```
 
 | Parameter |                     Type                      | Description |
 |-----------|-----------------------------------------------|-------------|
-| metal     | [metal](/mods/TFCTweaker/Api/Expansion/Metal) | metal       |
+| metal     | [Metal](/mods/TFCTweaker/Api/Expansion/Metal) | metal       |
 
 
 :::
 
-:::group{name=output}
+:::group{name=Output}
 
 Add a metal as output
 
 ```zenscript
-// AlloyBuilder.output(name as string)
+// AlloyBuilder.Output(name as string)
 
-myAlloyBuilder.output("bronze");
+myAlloyBuilder.Output("bronze");
 ```
 
 | Parameter |  Type  |    Description    |

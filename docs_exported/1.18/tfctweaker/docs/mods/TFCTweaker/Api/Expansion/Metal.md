@@ -1,10 +1,10 @@
-# metal
+# Metal
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import tfc.api.metal;
+import tfc.api.Metal;
 ```
 
 
@@ -15,12 +15,12 @@ import tfc.api.metal;
 Get all the registered metals
 
 Returns: an array containing all registered metals  
-Return Type: [metal](/mods/TFCTweaker/Api/Expansion/Metal)[]
+Return Type: [Metal](/mods/TFCTweaker/Api/Expansion/Metal)[]
 
 ```zenscript
-// metal.getAllMetals() as metal[]
+// Metal.getAllMetals() as Metal[]
 
-metal.getAllMetals();
+Metal.getAllMetals();
 ```
 
 :::
@@ -30,12 +30,12 @@ metal.getAllMetals();
 get the metal from ingot
 
 Returns: metal found  
-Return Type: [metal](/mods/TFCTweaker/Api/Expansion/Metal)
+Return Type: [Metal](/mods/TFCTweaker/Api/Expansion/Metal)
 
 ```zenscript
-// metal.getMetalFromIngot(stack as IItemStack) as metal
+// Metal.getMetalFromIngot(stack as IItemStack) as Metal
 
-metal.getMetalFromIngot(<item:tfc:metal/ingot/copper>);
+Metal.getMetalFromIngot(<item:tfc:metal/ingot/copper>);
 ```
 
 | Parameter |                    Type                    | Description |
@@ -52,9 +52,9 @@ metal.getMetalFromIngot(<item:tfc:metal/ingot/copper>);
 Return Type: string
 
 ```zenscript
-// metal.getCommandString() as string
+// Metal.getCommandString() as string
 
-mymetal.getCommandString();
+myMetal.getCommandString();
 ```
 
 :::
@@ -67,7 +67,7 @@ Returns:
 Return Type: [IFluidStack](/forge/api/fluid/IFluidStack)
 
 ```zenscript
-// metal.getFluidStack(amount as int) as IFluidStack
+// Metal.getFluidStack(amount as int) as IFluidStack
 
 <metal:tfc:copper>.getFluidStack(100);
 ```
@@ -87,7 +87,7 @@ Returns:
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-// metal.getMetalPart(partName as string) as IItemStack
+// Metal.getMetalPart(partName as string) as IItemStack
 
 <tfc:metal:copper>.getMetalPart("ingot");
 ```

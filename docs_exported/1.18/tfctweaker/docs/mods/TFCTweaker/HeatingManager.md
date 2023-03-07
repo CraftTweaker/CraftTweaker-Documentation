@@ -58,7 +58,7 @@ add a heating recipe
 add a heating recipe
 
 ```zenscript
-// Heating.addRecipe(name as string, input as IIngredient, output as ItemStackProvider, outputMetal as metal, amount as int, temp as float, useDurability as boolean)
+// Heating.addRecipe(name as string, input as IIngredient, output as ItemStackProvider, outputMetal as Metal, amount as int, temp as float, useDurability as boolean)
 
 <recipetype:tfc:heating>.addRecipe("heating_test", <item:tfc:metal/ingot/copper>, ItemStackProvider.empty(), <metal:tfc:copper>, 100, 500, false);
 ```
@@ -68,7 +68,7 @@ add a heating recipe
 | name          | string                                                      | name of the recipe                                                                        | false    |               |
 | input         | [IIngredient](/vanilla/api/ingredient/IIngredient)          | input item                                                                                | false    |               |
 | output        | [ItemStackProvider](/mods/TFCTweaker/Api/ItemStackProvider) | output item(can be null)                                                                  | false    |               |
-| outputMetal   | [metal](/mods/TFCTweaker/Api/Expansion/Metal)               | output metal                                                                              | false    |               |
+| outputMetal   | [Metal](/mods/TFCTweaker/Api/Expansion/Metal)               | output metal                                                                              | false    |               |
 | amount        | int                                                         | amount of metal                                                                           | false    |               |
 | temp          | float                                                       | temp when the input become the output                                                     | false    |               |
 | useDurability | boolean                                                     | tell if the recipe should use the item durability(if it has durability, default to false) | true     | false         |

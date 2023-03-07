@@ -1,10 +1,10 @@
-# handler
+# Handler
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import tfc.api.bracket.handler;
+import tfc.api.bracket.Handler;
 ```
 
 
@@ -12,17 +12,17 @@ import tfc.api.bracket.handler;
 
 :::group{name=getMetal}
 
-Gets a [metal](/mods/TFCTweaker/Api/Expansion/Metal) instance. Throws an Exception if not found
+Gets a [Metal](/mods/TFCTweaker/Api/Expansion/Metal) instance. Throws an Exception if not found
 
-Returns: The found [metal](/mods/TFCTweaker/Api/Expansion/Metal)  
-Return Type: [metal](/mods/TFCTweaker/Api/Expansion/Metal)
+Returns: The found [Metal](/mods/TFCTweaker/Api/Expansion/Metal)  
+Return Type: [Metal](/mods/TFCTweaker/Api/Expansion/Metal)
 
 ```zenscript
 <metal:tfc:copper>
 
-// handler.getMetal(tokens as string) as metal
+// Handler.getMetal(tokens as string) as Metal
 
-handler.getMetal("tfc:copper");
+Handler.getMetal("tfc:copper");
 ```
 
 | Parameter |  Type  |              Description              |
