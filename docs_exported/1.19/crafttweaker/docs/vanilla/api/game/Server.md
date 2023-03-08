@@ -229,6 +229,18 @@ myServer.getPlayerCount();
 
 :::
 
+:::group{name=getPlayerList}
+
+Return Type: [PlayerList](/vanilla/api/server/PlayerList)
+
+```zenscript
+// Server.getPlayerList() as PlayerList
+
+myServer.getPlayerList();
+```
+
+:::
+
 :::group{name=getPlayerNames}
 
 Return Type: string[]
@@ -638,6 +650,7 @@ Server.setPvpAllowed(pvpAllowed as boolean)
 | overworld                   | [ServerLevel](/vanilla/api/world/ServerLevel)                                 | true       | false      |                                                                                                                                                                              |
 | overworldData               | [CraftTweakerSavedData](/vanilla/api/world/CraftTweakerSavedData)             | true       | false      | Gets the custom data of the overworld. <br />  <br />  The overworld is always loaded, so this can be used to store and access data no matter what level a player may be in. |
 | playerCount                 | int                                                                           | true       | false      |                                                                                                                                                                              |
+| playerList                  | [PlayerList](/vanilla/api/server/PlayerList)                                  | true       | false      |                                                                                                                                                                              |
 | playerNames                 | string[]                                                                      | true       | false      |                                                                                                                                                                              |
 | serverModName               | string                                                                        | true       | false      |                                                                                                                                                                              |
 | serverVersion               | string                                                                        | true       | false      |                                                                                                                                                                              |
