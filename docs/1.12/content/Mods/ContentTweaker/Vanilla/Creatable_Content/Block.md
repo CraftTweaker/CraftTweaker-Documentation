@@ -58,5 +58,7 @@ antiIceBlock.register();
 ```
 
 ## Localising the block
-You will need to add `tile.contenttweaker.blockName = Localized Name` to the responding language files.  
+You will need to add `tile.contenttweaker.blockName.name=Localized Name` to the responding language files.  
+If you have doubts, take a look at the display name of the item when you're holding it before translating it.
+
 Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
