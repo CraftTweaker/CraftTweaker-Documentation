@@ -1,10 +1,6 @@
 # SalvageBuilder
 
-A builder class used to use the [CTUtils](/mods/pmmo/CTUtils)#setSalvage(ResourceLocation, Map<ResourceLocation, SalvageBuilder>) method.
-
- Requires PMMO 0.5.4 or above!
-
- ::requiredMod[Project-MMO]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/project-mmo}
+A builder class used to create a Salvage Data for use as a parameter.
 
 ## Importing the class
 
@@ -18,9 +14,9 @@ import mods.pmmo.SalvageBuilder;
 
 :::group{name=start}
 
-@return A new salvage builder
+@return a new salvage builder
 
-Returns: A new salvage builder  
+Returns: a new salvage builder  
 Return Type: [SalvageBuilder](/mods/pmmo/SalvageBuilder)
 
 ```zenscript
@@ -141,7 +137,7 @@ mySalvageBuilder.setSalvageMax(1);
 
 :::group{name=setXpAward}
 
-The xp that should be awarded when this item is successfully
+The xp that should be awarded when this item is successfully 
  obtained from salvage
  default = no xp awarded
 
