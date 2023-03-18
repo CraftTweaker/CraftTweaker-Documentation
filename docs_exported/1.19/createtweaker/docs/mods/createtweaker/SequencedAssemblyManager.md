@@ -54,7 +54,7 @@ Adds the recipe that the builder built.
 
 | Parameter |                                            Type                                             |             Description              |
 |-----------|---------------------------------------------------------------------------------------------|--------------------------------------|
-| builder   | [SequencedAssemblyRecipeBuilder](/mods/createtweaker/recipe/SequencedAssemblyRecipeBuilder) | The buidler that defines the recipe. |
+| builder   | [SequencedAssemblyRecipeBuilder](/mods/createtweaker/recipe/SequencedAssemblyRecipeBuilder) | The builder that defines the recipe. |
 
 
 :::
