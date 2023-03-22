@@ -15,6 +15,20 @@ ListData implements the following interfaces. That means all methods defined in 
 
 - [ICollectionData](/vanilla/api/data/ICollectionData)
 
+## Static Methods
+
+:::group{name=create}
+
+Return Type: [ListData](/vanilla/api/data/ListData)
+
+```zenscript
+// ListData.create() as ListData
+
+ListData.create();
+```
+
+:::
+
 ## Constructors
 
 No Description Provided
