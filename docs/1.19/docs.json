@@ -30,6 +30,7 @@
         "Mods": {
             "ArmoreableMobs" : {},
             "Createtweaker": {},
+            "ExNihiloSequentia":{},
             "JeiTweaker":{},
             "PMMO" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
