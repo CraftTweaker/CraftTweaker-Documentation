@@ -1,29 +1,12 @@
-# ZenSieveRecipe
+# SieveRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenSieveRecipe;
+import mods.exnihilosequentia.SieveRecipe;
 ```
 
-
-## Static Methods
-
-:::group{name=builder}
-
-Return Type: [ZenSieveRecipe](/mods/ExNihiloSequentia/Sifting)
-
-```zenscript
-ZenSieveRecipe.builder(recipeId as ResourceLocation) as ZenSieveRecipe
-```
-
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
-
-
-:::
 
 ## Methods
 
@@ -31,10 +14,10 @@ ZenSieveRecipe.builder(recipeId as ResourceLocation) as ZenSieveRecipe
 
 Sets the item that should drop when sifting
 
-Return Type: [ZenSieveRecipe](/mods/ExNihiloSequentia/Sifting)
+Return Type: [SieveRecipe](/mods/ExNihiloSequentia/Sifting)
 
 ```zenscript
-ZenSieveRecipe.addDrop(drop as IItemStack) as ZenSieveRecipe
+SieveRecipe.addDrop(drop as IItemStack) as SieveRecipe
 ```
 
 | Parameter |                    Type                    | Description  |
@@ -48,10 +31,10 @@ ZenSieveRecipe.addDrop(drop as IItemStack) as ZenSieveRecipe
 
 Sets the mesh type and the chance, how often the item should drop.
 
-Return Type: [ZenSieveRecipe](/mods/ExNihiloSequentia/Sifting)
+Return Type: [SieveRecipe](/mods/ExNihiloSequentia/Sifting)
 
 ```zenscript
-ZenSieveRecipe.addRoll(mesh as string, chance as float) as ZenSieveRecipe
+SieveRecipe.addRoll(mesh as string, chance as float) as SieveRecipe
 ```
 
 | Parameter |  Type  |                        Description                         |
@@ -62,14 +45,31 @@ ZenSieveRecipe.addRoll(mesh as string, chance as float) as ZenSieveRecipe
 
 :::
 
+:::group{name=create}
+
+Create a recipe name for the new recipe
+
+Return Type: [SieveRecipe](/mods/ExNihiloSequentia/Sifting)
+
+```zenscript
+SieveRecipe.create(recipeId as string) as SieveRecipe
+```
+
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
+
+
+:::
+
 :::group{name=setInput}
 
 Sets the input that should be sifted
 
-Return Type: [ZenSieveRecipe](/mods/ExNihiloSequentia/Sifting)
+Return Type: [SieveRecipe](/mods/ExNihiloSequentia/Sifting)
 
 ```zenscript
-ZenSieveRecipe.setInput(input as IIngredient) as ZenSieveRecipe
+SieveRecipe.setInput(input as IIngredient) as SieveRecipe
 ```
 
 | Parameter |                        Type                        | Description  |
@@ -84,12 +84,12 @@ ZenSieveRecipe.setInput(input as IIngredient) as ZenSieveRecipe
 (Optional) The drop will only happen when the sieve is waterlogged.
 
 Returns: needs a waterlogged sieve now  
-Return Type: [ZenSieveRecipe](/mods/ExNihiloSequentia/Sifting)
+Return Type: [SieveRecipe](/mods/ExNihiloSequentia/Sifting)
 
 ```zenscript
-// ZenSieveRecipe.setWaterlogged() as ZenSieveRecipe
+// SieveRecipe.setWaterlogged() as SieveRecipe
 
-myZenSieveRecipe.setWaterlogged();
+mySieveRecipe.setWaterlogged();
 ```
 
 :::

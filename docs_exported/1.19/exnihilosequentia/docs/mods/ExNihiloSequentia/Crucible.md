@@ -1,40 +1,40 @@
-# ZenCrucibleRecipe
+# CrucibleRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenCrucibleRecipe;
+import mods.exnihilosequentia.CrucibleRecipe;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=builder}
+:::group{name=create}
 
-Return Type: [ZenCrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
+Create a recipe name for the new recipe
+
+Return Type: [CrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
 
 ```zenscript
-ZenCrucibleRecipe.builder(recipeId as ResourceLocation) as ZenCrucibleRecipe
+CrucibleRecipe.create(recipeId as string) as CrucibleRecipe
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
 
 
 :::
-
-## Methods
 
 :::group{name=setAmount}
 
 Sets the amount how much fluid the input will generate
 
-Return Type: [ZenCrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
+Return Type: [CrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
 
 ```zenscript
-ZenCrucibleRecipe.setAmount(amount as int) as ZenCrucibleRecipe
+CrucibleRecipe.setAmount(amount as int) as CrucibleRecipe
 ```
 
 | Parameter | Type |            Description             |
@@ -48,10 +48,10 @@ ZenCrucibleRecipe.setAmount(amount as int) as ZenCrucibleRecipe
 
 Sets the crucible type. Can only be fired or wood.
 
-Return Type: [ZenCrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
+Return Type: [CrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
 
 ```zenscript
-ZenCrucibleRecipe.setCrucibleType(crucibleType as string) as ZenCrucibleRecipe
+CrucibleRecipe.setCrucibleType(crucibleType as string) as CrucibleRecipe
 ```
 
 |  Parameter   |  Type  |                   Description                   |
@@ -65,10 +65,10 @@ ZenCrucibleRecipe.setCrucibleType(crucibleType as string) as ZenCrucibleRecipe
 
 Sets the input that should be smelted
 
-Return Type: [ZenCrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
+Return Type: [CrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
 
 ```zenscript
-ZenCrucibleRecipe.setInput(input as IIngredient) as ZenCrucibleRecipe
+CrucibleRecipe.setInput(input as IIngredient) as CrucibleRecipe
 ```
 
 | Parameter |                        Type                        |  Description  |
@@ -82,10 +82,10 @@ ZenCrucibleRecipe.setInput(input as IIngredient) as ZenCrucibleRecipe
 
 Sets the output fluid that should be generated
 
-Return Type: [ZenCrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
+Return Type: [CrucibleRecipe](/mods/ExNihiloSequentia/Crucible)
 
 ```zenscript
-ZenCrucibleRecipe.setResultFluid(fluid as IFluidStack) as ZenCrucibleRecipe
+CrucibleRecipe.setResultFluid(fluid as IFluidStack) as CrucibleRecipe
 ```
 
 | Parameter |                    Type                     |   Description    |

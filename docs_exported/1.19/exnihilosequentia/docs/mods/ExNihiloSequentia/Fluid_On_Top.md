@@ -1,40 +1,40 @@
-# ZenFluidOnTopRecipe
+# FluidOnTopRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenFluidOnTopRecipe;
+import mods.exnihilosequentia.FluidOnTopRecipe;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=builder}
+:::group{name=create}
 
-Return Type: [ZenFluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
+Create a recipe name for the new recipe
+
+Return Type: [FluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
 
 ```zenscript
-ZenFluidOnTopRecipe.builder(recipeId as ResourceLocation) as ZenFluidOnTopRecipe
+FluidOnTopRecipe.create(recipeId as string) as FluidOnTopRecipe
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
 
 
 :::
-
-## Methods
 
 :::group{name=setFluidInTank}
 
 Sets the fluid that should be in the barrel
 
-Return Type: [ZenFluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
+Return Type: [FluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
 
 ```zenscript
-ZenFluidOnTopRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidOnTopRecipe
+FluidOnTopRecipe.setFluidInTank(fluidInTank as IFluidStack) as FluidOnTopRecipe
 ```
 
 |  Parameter  |                    Type                     |  Description  |
@@ -48,10 +48,10 @@ ZenFluidOnTopRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidOnTopR
 
 Sets the fluid that should be on top of the barrel
 
-Return Type: [ZenFluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
+Return Type: [FluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
 
 ```zenscript
-ZenFluidOnTopRecipe.setFluidOnTop(fluidOnTop as IFluidStack) as ZenFluidOnTopRecipe
+FluidOnTopRecipe.setFluidOnTop(fluidOnTop as IFluidStack) as FluidOnTopRecipe
 ```
 
 | Parameter  |                    Type                     |  Description  |
@@ -65,10 +65,10 @@ ZenFluidOnTopRecipe.setFluidOnTop(fluidOnTop as IFluidStack) as ZenFluidOnTopRec
 
 Sets the result block that should be generated
 
-Return Type: [ZenFluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
+Return Type: [FluidOnTopRecipe](/mods/ExNihiloSequentia/Fluid_On_Top)
 
 ```zenscript
-ZenFluidOnTopRecipe.setResult(result as IItemStack) as ZenFluidOnTopRecipe
+FluidOnTopRecipe.setResult(result as IItemStack) as FluidOnTopRecipe
 ```
 
 | Parameter |                    Type                    |  Description  |

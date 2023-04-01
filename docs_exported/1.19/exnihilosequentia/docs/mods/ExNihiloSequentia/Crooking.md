@@ -1,29 +1,12 @@
-# ZenCrookRecipe
+# CrookRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenCrookRecipe;
+import mods.exnihilosequentia.CrookRecipe;
 ```
 
-
-## Static Methods
-
-:::group{name=builder}
-
-Return Type: [ZenCrookRecipe](/mods/ExNihiloSequentia/Crooking)
-
-```zenscript
-ZenCrookRecipe.builder(recipeId as ResourceLocation) as ZenCrookRecipe
-```
-
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
-
-
-:::
 
 ## Methods
 
@@ -31,10 +14,10 @@ ZenCrookRecipe.builder(recipeId as ResourceLocation) as ZenCrookRecipe
 
 Sets the drop with chance
 
-Return Type: [ZenCrookRecipe](/mods/ExNihiloSequentia/Crooking)
+Return Type: [CrookRecipe](/mods/ExNihiloSequentia/Crooking)
 
 ```zenscript
-ZenCrookRecipe.addDrop(drop as IItemStack, chance as float) as ZenCrookRecipe
+CrookRecipe.addDrop(drop as IItemStack, chance as float) as CrookRecipe
 ```
 
 | Parameter |                    Type                    |            Description             |
@@ -45,14 +28,31 @@ ZenCrookRecipe.addDrop(drop as IItemStack, chance as float) as ZenCrookRecipe
 
 :::
 
+:::group{name=create}
+
+Create a recipe name for the new recipe
+
+Return Type: [CrookRecipe](/mods/ExNihiloSequentia/Crooking)
+
+```zenscript
+CrookRecipe.create(recipeId as string) as CrookRecipe
+```
+
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
+
+
+:::
+
 :::group{name=setInput}
 
 Sets the block that should be crooked.
 
-Return Type: [ZenCrookRecipe](/mods/ExNihiloSequentia/Crooking)
+Return Type: [CrookRecipe](/mods/ExNihiloSequentia/Crooking)
 
 ```zenscript
-ZenCrookRecipe.setInput(input as IIngredient) as ZenCrookRecipe
+CrookRecipe.setInput(input as IIngredient) as CrookRecipe
 ```
 
 | Parameter |                        Type                        |  Description   |

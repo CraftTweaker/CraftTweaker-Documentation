@@ -1,40 +1,40 @@
-# ZenFluidItemRecipe
+# FluidItemRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenFluidItemRecipe;
+import mods.exnihilosequentia.FluidItemRecipe;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=builder}
+:::group{name=create}
 
-Return Type: [ZenFluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
+Create a recipe name for the new recipe
+
+Return Type: [FluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
 
 ```zenscript
-ZenFluidItemRecipe.builder(recipeId as ResourceLocation) as ZenFluidItemRecipe
+FluidItemRecipe.create(recipeId as string) as FluidItemRecipe
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
 
 
 :::
-
-## Methods
 
 :::group{name=setFluidInTank}
 
 Sets the fluid that should be in the barrel
 
-Return Type: [ZenFluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
+Return Type: [FluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
 
 ```zenscript
-ZenFluidItemRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidItemRecipe
+FluidItemRecipe.setFluidInTank(fluidInTank as IFluidStack) as FluidItemRecipe
 ```
 
 |  Parameter  |                    Type                     |  Description  |
@@ -48,10 +48,10 @@ ZenFluidItemRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidItemRec
 
 Sets the catalyst to create a new block
 
-Return Type: [ZenFluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
+Return Type: [FluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
 
 ```zenscript
-ZenFluidItemRecipe.setInputItem(inputItem as IIngredient) as ZenFluidItemRecipe
+FluidItemRecipe.setInputItem(inputItem as IIngredient) as FluidItemRecipe
 ```
 
 | Parameter |                        Type                        | Description |
@@ -65,10 +65,10 @@ ZenFluidItemRecipe.setInputItem(inputItem as IIngredient) as ZenFluidItemRecipe
 
 Sets the result block that should be generated
 
-Return Type: [ZenFluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
+Return Type: [FluidItemRecipe](/mods/ExNihiloSequentia/Fluid_To_Item)
 
 ```zenscript
-ZenFluidItemRecipe.setResult(result as IItemStack) as ZenFluidItemRecipe
+FluidItemRecipe.setResult(result as IItemStack) as FluidItemRecipe
 ```
 
 | Parameter |                    Type                    |  Description  |

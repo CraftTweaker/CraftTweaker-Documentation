@@ -1,23 +1,40 @@
-# ZenCompostRecipe
+# CompostRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenCompostRecipe;
+import mods.exnihilosequentia.CompostRecipe;
 ```
 
 
 ## Methods
 
+:::group{name=create}
+
+Create a recipe name for the new recipe
+
+Return Type: [CompostRecipe](/mods/ExNihiloSequentia/Composting)
+
+```zenscript
+CompostRecipe.create(recipeId as string) as CompostRecipe
+```
+
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
+
+
+:::
+
 :::group{name=setAmount}
 
 Sets the amount of compost per input.
 
-Return Type: [ZenCompostRecipe](/mods/ExNihiloSequentia/Composting)
+Return Type: [CompostRecipe](/mods/ExNihiloSequentia/Composting)
 
 ```zenscript
-ZenCompostRecipe.setAmount(amount as int) as ZenCompostRecipe
+CompostRecipe.setAmount(amount as int) as CompostRecipe
 ```
 
 | Parameter | Type |   Description    |
@@ -31,10 +48,10 @@ ZenCompostRecipe.setAmount(amount as int) as ZenCompostRecipe
 
 Sets the input. Can be a tag or an item
 
-Return Type: [ZenCompostRecipe](/mods/ExNihiloSequentia/Composting)
+Return Type: [CompostRecipe](/mods/ExNihiloSequentia/Composting)
 
 ```zenscript
-ZenCompostRecipe.setInput(input as IIngredient) as ZenCompostRecipe
+CompostRecipe.setInput(input as IIngredient) as CompostRecipe
 ```
 
 | Parameter |                        Type                        |         Description         |

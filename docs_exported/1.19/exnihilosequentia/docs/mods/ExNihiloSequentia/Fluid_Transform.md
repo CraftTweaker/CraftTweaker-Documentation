@@ -1,40 +1,40 @@
-# ZenFluidTransformRecipe
+# FluidTransformRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenFluidTransformRecipe;
+import mods.exnihilosequentia.FluidTransformRecipe;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=builder}
+:::group{name=create}
 
-Return Type: [ZenFluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
+Create a recipe name for the new recipe
+
+Return Type: [FluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
 
 ```zenscript
-ZenFluidTransformRecipe.builder(recipeId as ResourceLocation) as ZenFluidTransformRecipe
+FluidTransformRecipe.create(recipeId as string) as FluidTransformRecipe
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
 
 
 :::
-
-## Methods
 
 :::group{name=setCatalyst}
 
 Sets the block that should be underneath the barrel
 
-Return Type: [ZenFluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
+Return Type: [FluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
 
 ```zenscript
-ZenFluidTransformRecipe.setCatalyst(catalyst as IIngredient) as ZenFluidTransformRecipe
+FluidTransformRecipe.setCatalyst(catalyst as IIngredient) as FluidTransformRecipe
 ```
 
 | Parameter |                        Type                        |    Description     |
@@ -48,10 +48,10 @@ ZenFluidTransformRecipe.setCatalyst(catalyst as IIngredient) as ZenFluidTransfor
 
 Sets the fluid that should be in the barrel
 
-Return Type: [ZenFluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
+Return Type: [FluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
 
 ```zenscript
-ZenFluidTransformRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidTransformRecipe
+FluidTransformRecipe.setFluidInTank(fluidInTank as IFluidStack) as FluidTransformRecipe
 ```
 
 |  Parameter  |                    Type                     |  Description  |
@@ -65,10 +65,10 @@ ZenFluidTransformRecipe.setFluidInTank(fluidInTank as IFluidStack) as ZenFluidTr
 
 Sets the result block that should be generated
 
-Return Type: [ZenFluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
+Return Type: [FluidTransformRecipe](/mods/ExNihiloSequentia/Fluid_Transform)
 
 ```zenscript
-ZenFluidTransformRecipe.setResult(result as IFluidStack) as ZenFluidTransformRecipe
+FluidTransformRecipe.setResult(result as IFluidStack) as FluidTransformRecipe
 ```
 
 | Parameter |                    Type                     |  Description  |

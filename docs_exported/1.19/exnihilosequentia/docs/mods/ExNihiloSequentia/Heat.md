@@ -1,40 +1,40 @@
-# ZenHeatRecipe
+# HeatRecipe
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.exnihilosequentia.ZenHeatRecipe;
+import mods.exnihilosequentia.HeatRecipe;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=builder}
+:::group{name=create}
 
-Return Type: [ZenHeatRecipe](/mods/ExNihiloSequentia/Heat)
+Create a recipe name for the new recipe
+
+Return Type: [HeatRecipe](/mods/ExNihiloSequentia/Heat)
 
 ```zenscript
-ZenHeatRecipe.builder(recipeId as ResourceLocation) as ZenHeatRecipe
+HeatRecipe.create(recipeId as string) as HeatRecipe
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| recipeId  | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| Parameter |  Type  |  Description   |
+|-----------|--------|----------------|
+| recipeId  | string | name of recipe |
 
 
 :::
-
-## Methods
 
 :::group{name=setAmount}
 
 Sets the amount of heat that the given block should generate.
 
-Return Type: [ZenHeatRecipe](/mods/ExNihiloSequentia/Heat)
+Return Type: [HeatRecipe](/mods/ExNihiloSequentia/Heat)
 
 ```zenscript
-ZenHeatRecipe.setAmount(amount as int) as ZenHeatRecipe
+HeatRecipe.setAmount(amount as int) as HeatRecipe
 ```
 
 | Parameter | Type |     Description     |
@@ -48,10 +48,10 @@ ZenHeatRecipe.setAmount(amount as int) as ZenHeatRecipe
 
 Sets the block that should be modified to generate heat.
 
-Return Type: [ZenHeatRecipe](/mods/ExNihiloSequentia/Heat)
+Return Type: [HeatRecipe](/mods/ExNihiloSequentia/Heat)
 
 ```zenscript
-ZenHeatRecipe.setBlock(input as Block) as ZenHeatRecipe
+HeatRecipe.setBlock(input as Block) as HeatRecipe
 ```
 
 | Parameter |               Type                |   Description   |
@@ -65,10 +65,10 @@ ZenHeatRecipe.setBlock(input as Block) as ZenHeatRecipe
 
 (Optional) Sets the state that should be used to generate heat.
 
-Return Type: [ZenHeatRecipe](/mods/ExNihiloSequentia/Heat)
+Return Type: [HeatRecipe](/mods/ExNihiloSequentia/Heat)
 
 ```zenscript
-ZenHeatRecipe.setProperties(properties as StatePropertiesPredicate) as ZenHeatRecipe
+HeatRecipe.setProperties(properties as StatePropertiesPredicate) as HeatRecipe
 ```
 
 | Parameter  |                                    Type                                     |       Description        |
