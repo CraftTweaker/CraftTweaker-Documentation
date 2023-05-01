@@ -15,7 +15,7 @@ In addition to the core functionality provided to support Vanilla minecraft, mod
 
 Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+Script files have the `.zs` suffix and can be compressed into a `.zip` that will also be read.
 
 ### Writing your first script
 
