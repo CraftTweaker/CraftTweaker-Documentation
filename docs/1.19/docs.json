@@ -30,7 +30,7 @@
         "Mods": {
             "ArmoreableMobs" : {},
             "Createtweaker": {},
-            "FarmersDelight":{},
+            "FarmersDelight":{}, 
             "JeiTweaker":{},
             "PMMO" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
