@@ -24,7 +24,7 @@ item.removeTooltip(regex);
 
 Or removes a tooltip at a specific line.
 ```zenscript
-item.removeTooltip(line);
+item.removeTooltipLine(line);
 ```
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
 `line` is an integer
