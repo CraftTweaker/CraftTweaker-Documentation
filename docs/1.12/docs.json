@@ -17,6 +17,7 @@
       "Global and Static Variables": "AdvancedFunctions/Global_Static_Variables.md",
       "Import": "AdvancedFunctions/Import.md",
       "Expansion Methods": "AdvancedFunctions/Expansion_Methods.md",
+      "Math Utils": "AdvancedFunctions/Math_Utils.md",
       "Preprocessors": {
         "On Preprocessors": "AdvancedFunctions/Preprocessors/On_Preprocessors.md",
         "Debug": "AdvancedFunctions/Preprocessors/DebugPreprocessor.md",
