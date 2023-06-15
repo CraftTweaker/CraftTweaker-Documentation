@@ -20,7 +20,7 @@ PlayerChestLootEvent extends [Event](/forge/api/event/Event). That means all met
 
 :::group{name=getInventory}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/mods/sixikutils/utils/world/Container)
 
 ```zenscript
 // PlayerChestLootEvent.getInventory() as Container
@@ -59,7 +59,7 @@ myPlayerChestLootEvent.getPos();
 
 |   Name    |                            Type                            | Has Getter | Has Setter |
 |-----------|------------------------------------------------------------|------------|------------|
-| inventory | [Container](/vanilla/api/world/Container)                  | true       | false      |
+| inventory | [Container](/mods/sixikutils/utils/world/Container)        | true       | false      |
 | player    | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
 | pos       | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      |
 

@@ -89,10 +89,10 @@ myChunk.getBlockEntitiesPos();
 
 :::group{name=getPos}
 
-Return Type: **invalid**
+Return Type: [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)
 
 ```zenscript
-// Chunk.getPos() as invalid
+// Chunk.getPos() as ChunkPos
 
 myChunk.getPos();
 ```

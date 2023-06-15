@@ -32,10 +32,10 @@ myStructureSpawnEvent.getChunkAccess();
 
 :::group{name=getChunkPos}
 
-Return Type: **invalid**
+Return Type: [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)
 
 ```zenscript
-// StructureSpawnEvent.getChunkPos() as invalid
+// StructureSpawnEvent.getChunkPos() as ChunkPos
 
 myStructureSpawnEvent.getChunkPos();
 ```
@@ -120,7 +120,7 @@ myStructureSpawnEvent.getTemplateManager();
 |       Name       |                                       Type                                        | Has Getter | Has Setter |
 |------------------|-----------------------------------------------------------------------------------|------------|------------|
 | chunkAccess      | [Chunk](/mods/sixikutils/utils/world/Chunk)                                       | true       | false      |
-| chunkPos         | **invalid**                                                                       | true       | false      |
+| chunkPos         | [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)                                 | true       | false      |
 | l                | long                                                                              | true       | false      |
 | levelAccessor    | [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)                       | true       | false      |
 | randomState      | [RandomState](/mods/sixikutils/utils/world/RandomState)                           | true       | false      |

@@ -20,7 +20,7 @@ PlayerInventoryChangedEvent extends [PlayerEvent](/forge/api/event/entity/player
 
 :::group{name=getContainer}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/mods/sixikutils/utils/world/Container)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getContainer() as Container
@@ -83,7 +83,7 @@ myPlayerInventoryChangedEvent.getPlayer();
 
 |   Name    |                                    Type                                    | Has Getter | Has Setter |
 |-----------|----------------------------------------------------------------------------|------------|------------|
-| container | [Container](/vanilla/api/world/Container)                                  | true       | false      |
+| container | [Container](/mods/sixikutils/utils/world/Container)                        | true       | false      |
 | index     | int                                                                        | true       | false      |
 | inventory | [Inventory](/mods/sixikutils/utils/entity/type/player/inventory/Inventory) | true       | false      |
 | item      | [IItemStack](/vanilla/api/item/IItemStack)                                 | true       | false      |
