@@ -3,6 +3,8 @@
 Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
 Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
 
+To use advanced math functions, see the [Math Utils](/AdvancedFunctions/Math_Utils/) page.
+
 ## A word of advice
 
 When unexpected results happen in a calculation, it is very well possible that you used two different types.  

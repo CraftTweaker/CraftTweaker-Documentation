@@ -28,7 +28,7 @@ This will crafting table recipes for the given `output`.
 If `NBTMatch`  is true, it will only remove recipes that result in items with the same NTB-Data as provided
 
 `Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-`NBTMatch` is a boolan and optional (Will be the same as false if not specified).
+`NBTMatch` is a boolean and optional (Will be the same as false if not specified).
 
 
 ### removeShaped
@@ -55,7 +55,7 @@ If `wildcard` is true, it will remove shapeless recipes that craft `output` with
 
 `output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  
-`wildcard` is a boolan and optional (Will be the same as false if not specified)
+`wildcard` is a boolean and optional (Will be the same as false if not specified)
 
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
 

@@ -5,7 +5,7 @@ CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is r
 ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
 
 
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
+Script files have the `.zs` suffix, make sure that it isn't `.zs.txt`!
 
 ## What are scripts
 

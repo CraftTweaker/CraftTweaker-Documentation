@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "Mods": {
+            "FarmersDelight": {
+                "CookingPot": "mods/FarmersDelight/CookingPot.md",
+                "CookingPotRecipeBookTab": "mods/FarmersDelight/CookingPotRecipeBookTab.md",
+                "CuttingBoard": "mods/FarmersDelight/CuttingBoard.md",
+                "ToolActionIngredient": "mods/FarmersDelight/ToolActionIngredient.md",
+                "ReplacerSupport" : {
+                    "CookingPot" : "mods/FarmersDelight/replacer/CookingPot.md",
+                    "CuttingBoard" : "mods/FarmersDelight/replacer/CuttingBoard.md"
+                }
+            }
+        }
+    }
+}
