@@ -14,8 +14,8 @@ Global Getters get a value for you. They are mostly used for adding recipes.
 - `blastFurnace` gets you the [BlastFurnaceRecipeManager Instance](/vanilla/api/recipe/manager/BlastFurnaceRecipeManager).
 - `campfire` gets you the [CampFireRecipeManager Instance](/vanilla/api/recipe/manager/CampFireRecipeManager).
 - `cauldron` gets you the [Cauldron Interaction Manager](/vanilla/api/misc/Cauldron).
-- `composter` gets you the [Composter handler](/vanilla/api/recipe/manager/CraftingTableRecipeManager).
-- `craftingTable` gets you the [CraftingTableRecipeManager Instance](/vanilla/api/misc/Composter).
+- `composter` gets you the [Composter handler](/vanilla/api/misc/Composter ).
+- `craftingTable` gets you the [CraftingTableRecipeManager Instance](/vanilla/api/recipe/manager/CraftingTableRecipeManager).
 - `furnace` gets you the [FurnaceRecipeManager Instance](/vanilla/api/recipe/manager/FurnaceRecipeManager).
 - `game` gets you the [Game](/vanilla/api/game/Game) object for you to use.
 - `loadedMods` gets you the list of [Mods](/vanilla/api/mod/Mods).
