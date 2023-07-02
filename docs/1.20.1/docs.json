@@ -28,6 +28,7 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
+            "Initialinventory" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
