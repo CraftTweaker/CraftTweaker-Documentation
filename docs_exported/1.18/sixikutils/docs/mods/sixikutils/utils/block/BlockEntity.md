@@ -16,7 +16,7 @@ BlockEntity extends [CapabilityProvider](/forge/api/capability/CapabilityProvide
 
 :::group{name=getContainer}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/mods/sixikutils/utils/world/Container)
 
 ```zenscript
 // BlockEntity.getContainer() as Container
@@ -41,7 +41,7 @@ myBlockEntity.testSixik();
 
 ## Properties
 
-|   Name    |                   Type                    | Has Getter | Has Setter |
-|-----------|-------------------------------------------|------------|------------|
-| container | [Container](/vanilla/api/world/Container) | true       | false      |
+|   Name    |                        Type                         | Has Getter | Has Setter |
+|-----------|-----------------------------------------------------|------------|------------|
+| container | [Container](/mods/sixikutils/utils/world/Container) | true       | false      |
 

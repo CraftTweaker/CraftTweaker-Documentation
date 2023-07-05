@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.crafttweakerutils.api.events.entity.player.PlayerInventoryChangedEvent;
+import mods.sixikutils.api.events.entity.player.PlayerInventoryChangedEvent;
 ```
 
 
@@ -20,7 +20,7 @@ PlayerInventoryChangedEvent extends [PlayerEvent](/forge/api/event/entity/player
 
 :::group{name=getContainer}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/mods/sixikutils/utils/world/Container)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getContainer() as Container
@@ -83,7 +83,7 @@ myPlayerInventoryChangedEvent.getPlayer();
 
 |   Name    |                                    Type                                    | Has Getter | Has Setter |
 |-----------|----------------------------------------------------------------------------|------------|------------|
-| container | [Container](/vanilla/api/world/Container)                                  | true       | false      |
+| container | [Container](/mods/sixikutils/utils/world/Container)                        | true       | false      |
 | index     | int                                                                        | true       | false      |
 | inventory | [Inventory](/mods/sixikutils/utils/entity/type/player/inventory/Inventory) | true       | false      |
 | item      | [IItemStack](/vanilla/api/item/IItemStack)                                 | true       | false      |

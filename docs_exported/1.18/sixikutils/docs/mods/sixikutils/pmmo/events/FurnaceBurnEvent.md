@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.crafttweakerutils.api.events.projecrtmmo.FurnaceBurnEvent;
+import mods.sixikutils.pmmo.api.events.projecrtmmo.FurnaceBurnEvent;
 ```
 
 
@@ -32,7 +32,7 @@ myFurnaceBurnEvent.getInput();
 
 :::group{name=getLevel}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // FurnaceBurnEvent.getLevel() as Level
@@ -45,8 +45,8 @@ myFurnaceBurnEvent.getLevel();
 
 ## Properties
 
-| Name  |                    Type                    | Has Getter | Has Setter |
-|-------|--------------------------------------------|------------|------------|
-| input | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
-| level | [Level](/vanilla/api/world/Level)          | true       | false      |
+| Name  |                    Type                     | Has Getter | Has Setter |
+|-------|---------------------------------------------|------------|------------|
+| input | [IItemStack](/vanilla/api/item/IItemStack)  | true       | false      |
+| level | [Level](/mods/sixikutils/pmmo/server/world) | true       | false      |
 

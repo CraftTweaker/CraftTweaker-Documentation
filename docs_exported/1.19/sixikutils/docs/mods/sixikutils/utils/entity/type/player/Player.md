@@ -28,6 +28,18 @@ Player.changeDimension(res as ResourceLocation, t as boolean)
 
 :::
 
+:::group{name=getClient}
+
+Return Type: [Camera](/mods/sixikutils/utils/entity/type/player/client/Camera)
+
+```zenscript
+// Player.getClient() as Camera
+
+myPlayer.getClient();
+```
+
+:::
+
 :::group{name=getEnderChestInventory}
 
 Return Type: [EnderChestInventory](/mods/sixikutils/utils/entity/type/player/inventory/EnderChestInventory)

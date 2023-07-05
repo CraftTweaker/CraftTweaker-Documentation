@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.crafttweakerutils.api.events.entity.player.PlayerChestLootEvent;
+import mods.sixikutils.api.events.entity.player.PlayerChestLootEvent;
 ```
 
 
@@ -18,9 +18,21 @@ PlayerChestLootEvent extends [Event](/forge/api/event/Event). That means all met
 
 ## Methods
 
+:::group{name=getContext}
+
+Return Type: [LootContext](/vanilla/api/loot/LootContext)
+
+```zenscript
+// PlayerChestLootEvent.getContext() as LootContext
+
+myPlayerChestLootEvent.getContext();
+```
+
+:::
+
 :::group{name=getInventory}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/mods/sixikutils/utils/world/Container)
 
 ```zenscript
 // PlayerChestLootEvent.getInventory() as Container
@@ -54,12 +66,24 @@ myPlayerChestLootEvent.getPos();
 
 :::
 
+:::group{name=getQueriedLootTableId}
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// PlayerChestLootEvent.getQueriedLootTableId() as ResourceLocation
+
+myPlayerChestLootEvent.getQueriedLootTableId();
+```
+
+:::
+
 
 ## Properties
 
 |   Name    |                            Type                            | Has Getter | Has Setter |
 |-----------|------------------------------------------------------------|------------|------------|
-| inventory | [Container](/vanilla/api/world/Container)                  | true       | false      |
+| inventory | [Container](/mods/sixikutils/utils/world/Container)        | true       | false      |
 | player    | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
 | pos       | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      |
 

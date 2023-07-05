@@ -288,6 +288,18 @@ myServerLevel.getMoonPhase();
 
 :::
 
+:::group{name=getOverworld}
+
+Return Type: [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)
+
+```zenscript
+// ServerLevel.getOverworld() as ServerLevel
+
+myServerLevel.getOverworld();
+```
+
+:::
+
 :::group{name=getRandomPlayer}
 
 Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)
@@ -329,10 +341,10 @@ myServerLevel.getSeaLevel();
 
 :::group{name=getStructureManager}
 
-Return Type: [StructureManager](/mods/sixikutils/utils/world/StructureManager)
+Return Type: [StructureTemplateManager](/mods/sixikutils/utils/world/StructureTemplateManager)
 
 ```zenscript
-// ServerLevel.getStructureManager() as StructureManager
+// ServerLevel.getStructureManager() as StructureTemplateManager
 
 myServerLevel.getStructureManager();
 ```

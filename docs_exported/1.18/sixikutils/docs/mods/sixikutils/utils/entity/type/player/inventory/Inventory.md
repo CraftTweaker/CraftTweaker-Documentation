@@ -11,7 +11,7 @@ import crafttweaker.api.entity.type.player.Inventory;
 ## Implemented Interfaces
 Inventory implements the following interfaces. That means all methods defined in these interfaces are also available in Inventory
 
-- [Container](/vanilla/api/world/Container)
+- [Container](/mods/sixikutils/utils/world/Container)
 - [Nameable](/vanilla/api/world/Nameable)
 
 ## Methods

@@ -288,6 +288,18 @@ myServerLevel.getMoonPhase();
 
 :::
 
+:::group{name=getOverworld}
+
+Return Type: [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)
+
+```zenscript
+// ServerLevel.getOverworld() as ServerLevel
+
+myServerLevel.getOverworld();
+```
+
+:::
+
 :::group{name=getRandomPlayer}
 
 Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)

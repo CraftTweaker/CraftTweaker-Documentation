@@ -32,10 +32,10 @@ myStructureSpawnEvent.getChunkAccess();
 
 :::group{name=getChunkPos}
 
-Return Type: **invalid**
+Return Type: [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)
 
 ```zenscript
-// StructureSpawnEvent.getChunkPos() as invalid
+// StructureSpawnEvent.getChunkPos() as ChunkPos
 
 myStructureSpawnEvent.getChunkPos();
 ```
@@ -68,10 +68,10 @@ myStructureSpawnEvent.getLevel();
 
 :::group{name=getRandomState}
 
-Return Type: **invalid**
+Return Type: [RandomState](/mods/sixikutils/utils/world/RandomState)
 
 ```zenscript
-// StructureSpawnEvent.getRandomState() as invalid
+// StructureSpawnEvent.getRandomState() as RandomState
 
 myStructureSpawnEvent.getRandomState();
 ```
@@ -80,10 +80,10 @@ myStructureSpawnEvent.getRandomState();
 
 :::group{name=getSectionPos}
 
-Return Type: **invalid**
+Return Type: [SectionPos](/mods/sixikutils/utils/world/SectionPos)
 
 ```zenscript
-// StructureSpawnEvent.getSectionPos() as invalid
+// StructureSpawnEvent.getSectionPos() as SectionPos
 
 myStructureSpawnEvent.getSectionPos();
 ```
@@ -92,10 +92,10 @@ myStructureSpawnEvent.getSectionPos();
 
 :::group{name=getStructureManager}
 
-Return Type: **invalid**
+Return Type: [StructureManager](/mods/sixikutils/utils/world/StructureManager)
 
 ```zenscript
-// StructureSpawnEvent.getStructureManager() as invalid
+// StructureSpawnEvent.getStructureManager() as StructureManager
 
 myStructureSpawnEvent.getStructureManager();
 ```
@@ -104,10 +104,10 @@ myStructureSpawnEvent.getStructureManager();
 
 :::group{name=getTemplateManager}
 
-Return Type: [StructureManager](/mods/sixikutils/utils/world/StructureManager)
+Return Type: [StructureTemplateManager](/mods/sixikutils/utils/world/StructureTemplateManager)
 
 ```zenscript
-// StructureSpawnEvent.getTemplateManager() as StructureManager
+// StructureSpawnEvent.getTemplateManager() as StructureTemplateManager
 
 myStructureSpawnEvent.getTemplateManager();
 ```
@@ -117,14 +117,14 @@ myStructureSpawnEvent.getTemplateManager();
 
 ## Properties
 
-|       Name       |                               Type                                | Has Getter | Has Setter |
-|------------------|-------------------------------------------------------------------|------------|------------|
-| chunkAccess      | [Chunk](/mods/sixikutils/utils/world/Chunk)                       | true       | false      |
-| chunkPos         | **invalid**                                                       | true       | false      |
-| l                | long                                                              | true       | false      |
-| levelAccessor    | [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)       | true       | false      |
-| randomState      | **invalid**                                                       | true       | false      |
-| sectionPos       | **invalid**                                                       | true       | false      |
-| structureManager | **invalid**                                                       | true       | false      |
-| templateManager  | [StructureManager](/mods/sixikutils/utils/world/StructureManager) | true       | false      |
+|       Name       |                                       Type                                        | Has Getter | Has Setter |
+|------------------|-----------------------------------------------------------------------------------|------------|------------|
+| chunkAccess      | [Chunk](/mods/sixikutils/utils/world/Chunk)                                       | true       | false      |
+| chunkPos         | [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)                                 | true       | false      |
+| l                | long                                                                              | true       | false      |
+| levelAccessor    | [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)                       | true       | false      |
+| randomState      | [RandomState](/mods/sixikutils/utils/world/RandomState)                           | true       | false      |
+| sectionPos       | [SectionPos](/mods/sixikutils/utils/world/SectionPos)                             | true       | false      |
+| structureManager | [StructureManager](/mods/sixikutils/utils/world/StructureManager)                 | true       | false      |
+| templateManager  | [StructureTemplateManager](/mods/sixikutils/utils/world/StructureTemplateManager) | true       | false      |
 
