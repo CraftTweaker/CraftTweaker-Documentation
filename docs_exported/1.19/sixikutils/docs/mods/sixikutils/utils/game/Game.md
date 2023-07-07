@@ -4,7 +4,7 @@
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.crafttweakerutils.game.Game;
+import mods.sixikutils.game.Game;
 ```
 
 
@@ -12,6 +12,9 @@ import mods.crafttweakerutils.game.Game;
 
 :::group{name=getDate}
 
+
+
+Returns: Full real date yyyy/MM/dd  
 Return Type: int
 
 ```zenscript
@@ -24,6 +27,9 @@ Game.getDate();
 
 :::group{name=getDay}
 
+
+
+Returns: Real Day  
 Return Type: int
 
 ```zenscript
@@ -36,6 +42,9 @@ Game.getDay();
 
 :::group{name=getHours}
 
+
+
+Returns: Real Hours  
 Return Type: int
 
 ```zenscript
@@ -48,6 +57,9 @@ Game.getHours();
 
 :::group{name=getLang}
 
+
+
+Returns: The selected language of the player RU/EN/UA/...  
 Return Type: string
 
 ```zenscript
@@ -60,6 +72,9 @@ Game.getLang();
 
 :::group{name=getLanguageTag}
 
+
+
+Returns: The selected language of the player ru_RU/en_EN/ua_UA/...  
 Return Type: string
 
 ```zenscript
@@ -72,6 +87,9 @@ Game.getLanguageTag();
 
 :::group{name=getMinutes}
 
+
+
+Returns: Real Minutes  
 Return Type: int
 
 ```zenscript
@@ -84,6 +102,9 @@ Game.getMinutes();
 
 :::group{name=getMonth}
 
+
+
+Returns: Real Month  
 Return Type: int
 
 ```zenscript
@@ -96,6 +117,9 @@ Game.getMonth();
 
 :::group{name=getSeconds}
 
+
+
+Returns: Real Seconds  
 Return Type: int
 
 ```zenscript
@@ -108,6 +132,9 @@ Game.getSeconds();
 
 :::group{name=getTime}
 
+
+
+Returns: Full real time HH:mm:ss  
 Return Type: long
 
 ```zenscript
@@ -120,6 +147,9 @@ Game.getTime();
 
 :::group{name=getTimezoneOffset}
 
+
+
+Returns: Real TimezoneOffset  
 Return Type: int
 
 ```zenscript
@@ -132,6 +162,9 @@ Game.getTimezoneOffset();
 
 :::group{name=getYear}
 
+
+
+Returns: Real Year  
 Return Type: int
 
 ```zenscript

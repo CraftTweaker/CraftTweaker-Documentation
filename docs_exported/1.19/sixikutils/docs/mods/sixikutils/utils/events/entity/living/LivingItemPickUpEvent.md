@@ -16,7 +16,7 @@ LivingItemPickUpEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent)
 
 :::group{name=getEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // LivingItemPickUpEvent.getEntity() as LivingEntity

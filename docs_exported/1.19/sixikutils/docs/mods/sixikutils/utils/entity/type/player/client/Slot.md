@@ -121,21 +121,6 @@ mySlot.isActive();
 
 :::
 
-:::group{name=isActive}
-
-Return Type: boolean
-
-```zenscript
-Slot.isActive(slot2 as invalid) as boolean
-```
-
-| Parameter |    Type     |
-|-----------|-------------|
-| slot2     | **invalid** |
-
-
-:::
-
 :::group{name=setBackground}
 
 ```zenscript

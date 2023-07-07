@@ -13,13 +13,13 @@ import mods.sixikutils.entity.player.client.GameRender;
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as float)
+GameRender.blitShader(uni as string, Float as float)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
-| f         | float  |
+| Float     | float  |
 
 
 :::
@@ -27,13 +27,13 @@ GameRender.blitShader(uni as string, f as float)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as float[])
+GameRender.blitShader(uni as string, Float as float[])
 ```
 
 | Parameter |  Type   |
 |-----------|---------|
 | uni       | string  |
-| f         | float[] |
+| Float     | float[] |
 
 
 :::
@@ -41,13 +41,13 @@ GameRender.blitShader(uni as string, f as float[])
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as invalid)
+GameRender.blitShader(uni as string, Float as invalid)
 ```
 
 | Parameter |    Type     |
 |-----------|-------------|
 | uni       | string      |
-| f         | **invalid** |
+| Float     | **invalid** |
 
 
 :::
@@ -55,13 +55,13 @@ GameRender.blitShader(uni as string, f as invalid)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as Matrix3f)
+GameRender.blitShader(uni as string, Float as Matrix3f)
 ```
 
 | Parameter |                    Type                     |
 |-----------|---------------------------------------------|
 | uni       | string                                      |
-| f         | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
+| Float     | [Matrix3f](/vanilla/api/util/math/Matrix3f) |
 
 
 :::
@@ -69,13 +69,13 @@ GameRender.blitShader(uni as string, f as Matrix3f)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as Vector3f)
+GameRender.blitShader(uni as string, Float as Vector3f)
 ```
 
 | Parameter |                    Type                     |
 |-----------|---------------------------------------------|
 | uni       | string                                      |
-| f         | [Vector3f](/vanilla/api/util/math/Vector3f) |
+| Float     | [Vector3f](/vanilla/api/util/math/Vector3f) |
 
 
 :::
@@ -83,14 +83,14 @@ GameRender.blitShader(uni as string, f as Vector3f)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as float, f2 as float)
+GameRender.blitShader(uni as string, Float as float, Float2 as float)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
-| f         | float  |
-| f2        | float  |
+| Float     | float  |
+| Float2    | float  |
 
 
 :::
@@ -98,15 +98,15 @@ GameRender.blitShader(uni as string, f as float, f2 as float)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as float, f2 as float, f3 as float)
+GameRender.blitShader(uni as string, Float as float, Float2 as float, Float3 as float)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
-| f         | float  |
-| f2        | float  |
-| f3        | float  |
+| Float     | float  |
+| Float2    | float  |
+| Float3    | float  |
 
 
 :::
@@ -114,16 +114,16 @@ GameRender.blitShader(uni as string, f as float, f2 as float, f3 as float)
 :::group{name=blitShader}
 
 ```zenscript
-GameRender.blitShader(uni as string, f as float, f2 as float, f3 as float, f4 as float)
+GameRender.blitShader(uni as string, Float as float, Float2 as float, Float3 as float, Float4 as float)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
-| f         | float  |
-| f2        | float  |
-| f3        | float  |
-| f4        | float  |
+| Float     | float  |
+| Float2    | float  |
+| Float3    | float  |
+| Float4    | float  |
 
 
 :::
@@ -131,13 +131,13 @@ GameRender.blitShader(uni as string, f as float, f2 as float, f3 as float, f4 as
 :::group{name=blitShaderSet}
 
 ```zenscript
-GameRender.blitShaderSet(uni as string, f as invalid)
+GameRender.blitShaderSet(uni as string, Float as invalid)
 ```
 
 | Parameter |    Type     |
 |-----------|-------------|
 | uni       | string      |
-| f         | **invalid** |
+| Float     | **invalid** |
 
 
 :::
@@ -145,13 +145,13 @@ GameRender.blitShaderSet(uni as string, f as invalid)
 :::group{name=blitShaderSetLocation}
 
 ```zenscript
-GameRender.blitShaderSetLocation(uni as string, f as int)
+GameRender.blitShaderSetLocation(uni as string, Float as int)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
-| f         | int    |
+| Float     | int    |
 
 
 :::
@@ -159,16 +159,16 @@ GameRender.blitShaderSetLocation(uni as string, f as int)
 :::group{name=blitShaderSetSafe}
 
 ```zenscript
-GameRender.blitShaderSetSafe(uni as string, f1 as float, f2 as float, f3 as float, f4 as float)
+GameRender.blitShaderSetSafe(uni as string, f1 as float, Float2 as float, Float3 as float, Float4 as float)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
 | uni       | string |
 | f1        | float  |
-| f2        | float  |
-| f3        | float  |
-| f4        | float  |
+| Float2    | float  |
+| Float3    | float  |
+| Float4    | float  |
 
 
 :::
@@ -187,7 +187,7 @@ myGameRender.getMainCamera();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // GameRender.getPlayer() as Player
@@ -199,7 +199,7 @@ myGameRender.getPlayer();
 
 :::group{name=getPlayerByUUID}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 GameRender.getPlayerByUUID(uuid as string) as Player

@@ -60,7 +60,7 @@ myCamera.getBottomRight();
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // Camera.getEntity() as Entity

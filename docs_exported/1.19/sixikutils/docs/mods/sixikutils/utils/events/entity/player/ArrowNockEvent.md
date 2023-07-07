@@ -44,7 +44,7 @@ myArrowNockEvent.getHand();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // ArrowNockEvent.getPlayer() as Player

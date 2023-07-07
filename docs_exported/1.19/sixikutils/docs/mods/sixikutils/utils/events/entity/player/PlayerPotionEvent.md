@@ -32,7 +32,7 @@ myPlayerPotionEvent.getLevel();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // PlayerPotionEvent.getPlayer() as Player
@@ -57,9 +57,9 @@ myPlayerPotionEvent.getStack();
 
 ## Properties
 
-|  Name  |                            Type                            | Has Getter | Has Setter |
-|--------|------------------------------------------------------------|------------|------------|
-| item   | [IItemStack](/vanilla/api/item/IItemStack)                 | true       | false      |
-| level  | [Level](/vanilla/api/world/Level)                          | true       | false      |
-| player | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
+|  Name  |                               Type                               | Has Getter | Has Setter |
+|--------|------------------------------------------------------------------|------------|------------|
+| item   | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+| level  | [Level](/vanilla/api/world/Level)                                | true       | false      |
+| player | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
 

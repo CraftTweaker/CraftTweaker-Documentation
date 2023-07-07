@@ -10,18 +10,6 @@ import mods.sixikutils.api.client.Screen;
 
 ## Methods
 
-:::group{name=getGame}
-
-Return Type: **invalid**
-
-```zenscript
-// Screen.getGame() as invalid
-
-myScreen.getGame();
-```
-
-:::
-
 :::group{name=getNarrationMessage}
 
 Return Type: [Component](/vanilla/api/text/Component)
@@ -51,7 +39,6 @@ myScreen.getTitle();
 
 |       Name       |                   Type                   | Has Getter | Has Setter |
 |------------------|------------------------------------------|------------|------------|
-| game             | **invalid**                              | true       | false      |
 | narrationMessage | [Component](/vanilla/api/text/Component) | true       | false      |
 | title            | [Component](/vanilla/api/text/Component) | true       | false      |
 

@@ -32,7 +32,7 @@ myLivingEntityKillByPlayerEvent.getItem();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // LivingEntityKillByPlayerEvent.getLivingEntity() as LivingEntity
@@ -44,7 +44,7 @@ myLivingEntityKillByPlayerEvent.getLivingEntity();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // LivingEntityKillByPlayerEvent.getPlayer() as Player
@@ -57,9 +57,9 @@ myLivingEntityKillByPlayerEvent.getPlayer();
 
 ## Properties
 
-|     Name     |                            Type                            | Has Getter | Has Setter |
-|--------------|------------------------------------------------------------|------------|------------|
-| entityLiving | [LivingEntity](/mods/sixikutils/utils/entity/LivingEntity) | true       | false      |
-| item         | [IItemStack](/vanilla/api/item/IItemStack)                 | true       | false      |
-| player       | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
+|     Name     |                               Type                               | Has Getter | Has Setter |
+|--------------|------------------------------------------------------------------|------------|------------|
+| entityLiving | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+| item         | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+| player       | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
 

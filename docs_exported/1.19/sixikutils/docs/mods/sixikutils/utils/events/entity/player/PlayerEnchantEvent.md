@@ -56,7 +56,7 @@ myPlayerEnchantEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // PlayerEnchantEvent.getPlayer() as Player
@@ -81,11 +81,11 @@ myPlayerEnchantEvent.getWorld();
 
 ## Properties
 
-|    Name     |                            Type                            | Has Getter | Has Setter |
-|-------------|------------------------------------------------------------|------------|------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment)   | true       | false      |
-| item        | [IItemStack](/vanilla/api/item/IItemStack)                 | true       | false      |
-| player      | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
-| pos         | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      |
-| world       | [Level](/vanilla/api/world/Level)                          | true       | false      |
+|    Name     |                               Type                               | Has Getter | Has Setter |
+|-------------|------------------------------------------------------------------|------------|------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment)         | true       | false      |
+| item        | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+| player      | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+| pos         | [BlockPos](/vanilla/api/util/math/BlockPos)                      | true       | false      |
+| world       | [Level](/vanilla/api/world/Level)                                | true       | false      |
 

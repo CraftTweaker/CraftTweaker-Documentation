@@ -20,7 +20,7 @@ EntityMountEvent extends [EntityEvent](/forge/api/event/entity/EntityEvent). Tha
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // EntityMountEvent.getEntity() as Entity
@@ -32,7 +32,7 @@ myEntityMountEvent.getEntity();
 
 :::group{name=getEntityBeingMounted}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // EntityMountEvent.getEntityBeingMounted() as Entity
@@ -44,7 +44,7 @@ myEntityMountEvent.getEntityBeingMounted();
 
 :::group{name=getEntityMounting}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // EntityMountEvent.getEntityMounting() as Entity

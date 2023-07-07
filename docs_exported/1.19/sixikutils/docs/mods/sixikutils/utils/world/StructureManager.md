@@ -8,3 +8,38 @@ import mods.sixikutils.api.misc.world.StructureManager;
 ```
 
 
+## Methods
+
+:::group{name=getStructureAt}
+
+Return Type: [StructureStart](/mods/sixikutils/utils/world/StructureStart)
+
+```zenscript
+StructureManager.getStructureAt(pos as BlockPos, structure as Structure) as StructureStart
+```
+
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)         |
+| structure | [Structure](/mods/sixikutils/utils/world/Structure) |
+
+
+:::
+
+:::group{name=getStructureWithPieceAt}
+
+Return Type: [StructureStart](/mods/sixikutils/utils/world/StructureStart)
+
+```zenscript
+StructureManager.getStructureWithPieceAt(pos as BlockPos, structure as Structure) as StructureStart
+```
+
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)         |
+| structure | [Structure](/mods/sixikutils/utils/world/Structure) |
+
+
+:::
+
+

@@ -34,18 +34,6 @@ myLevelData.getDifficulty();
 
 :::
 
-:::group{name=getGameRules}
-
-Return Type: **invalid**
-
-```zenscript
-// LevelData.getGameRules() as invalid
-
-myLevelData.getGameRules();
-```
-
-:::
-
 :::group{name=getGameTime}
 
 Return Type: long

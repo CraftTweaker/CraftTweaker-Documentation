@@ -48,7 +48,7 @@ myLevelAccessor.getLevelData();
 
 :::group{name=getServer}
 
-Return Type: [Server](/mods/sixikutils/utils/game/Server)
+Return Type: [Server](/mods/sixikutils/utils/game/ExpandServer)
 
 ```zenscript
 // LevelAccessor.getServer() as Server
@@ -66,5 +66,5 @@ myLevelAccessor.getServer();
 | chunkSource | [ChunkSource](/mods/sixikutils/utils/world/ChunkSource) | true       | false      |
 | level       | [Level](/vanilla/api/world/Level)                       | true       | false      |
 | levelData   | [LevelData](/mods/sixikutils/utils/world/LevelData)     | true       | false      |
-| server      | [Server](/mods/sixikutils/utils/game/Server)            | true       | false      |
+| server      | [Server](/mods/sixikutils/utils/game/ExpandServer)      | true       | false      |
 

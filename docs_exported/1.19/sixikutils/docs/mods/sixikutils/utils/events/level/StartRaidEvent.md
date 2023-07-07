@@ -32,7 +32,7 @@ myStartRaidEvent.getBlockpos();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // StartRaidEvent.getPlayer() as Player
@@ -93,11 +93,11 @@ myStartRaidEvent.isCancelable();
 
 ## Properties
 
-|  Name   |                            Type                            | Has Getter | Has Setter |
-|---------|------------------------------------------------------------|------------|------------|
-| player  | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
-| pos     | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      |
-| raid    | [Raid](/mods/sixikutils/utils/world/Raid)                  | true       | false      |
-| raidMap | [Raid](/mods/sixikutils/utils/world/Raid)[int?]            | true       | false      |
-| world   | [Level](/vanilla/api/world/Level)                          | true       | false      |
+|  Name   |                               Type                               | Has Getter | Has Setter |
+|---------|------------------------------------------------------------------|------------|------------|
+| player  | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+| pos     | [BlockPos](/vanilla/api/util/math/BlockPos)                      | true       | false      |
+| raid    | [Raid](/mods/sixikutils/utils/world/Raid)                        | true       | false      |
+| raidMap | [Raid](/mods/sixikutils/utils/world/Raid)[int?]                  | true       | false      |
+| world   | [Level](/vanilla/api/world/Level)                                | true       | false      |
 

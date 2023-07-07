@@ -12,7 +12,7 @@ import mods.sixikutils.api.entity.client.LocalPlayer;
 
 :::group{name=getClientPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/Player)
+Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
 
 ```zenscript
 // LocalPlayer.getClientPlayer() as Player
@@ -61,10 +61,10 @@ myLocalPlayer.getUUID();
 
 ## Properties
 
-|  Name  |                            Type                            | Has Getter | Has Setter |
-|--------|------------------------------------------------------------|------------|------------|
-| level  | [Level](/vanilla/api/world/Level)                          | true       | false      |
-| player | [Player](/mods/sixikutils/utils/entity/type/player/Player) | true       | false      |
-| server | [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)    | true       | false      |
-| uuid   | string                                                     | true       | false      |
+|  Name  |                               Type                               | Has Getter | Has Setter |
+|--------|------------------------------------------------------------------|------------|------------|
+| level  | [Level](/vanilla/api/world/Level)                                | true       | false      |
+| player | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+| server | [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)          | true       | false      |
+| uuid   | string                                                           | true       | false      |
 

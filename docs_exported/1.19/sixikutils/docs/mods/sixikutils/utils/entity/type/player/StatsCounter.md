@@ -75,14 +75,14 @@ myStatsCounter.getDamageAbsorbed();
 
 :::
 
-:::group{name=getDamageBlocked_by_shield}
+:::group{name=getDamageBlockedByShield}
 
 Return Type: int
 
 ```zenscript
-// StatsCounter.getDamageBlocked_by_shield() as int
+// StatsCounter.getDamageBlockedByShield() as int
 
-myStatsCounter.getDamageBlocked_by_shield();
+myStatsCounter.getDamageBlockedByShield();
 ```
 
 :::
@@ -99,26 +99,26 @@ myStatsCounter.getDamageDealt();
 
 :::
 
-:::group{name=getDamageDealt_absorbed}
+:::group{name=getDamageDealtAbsorbed}
 
 Return Type: int
 
 ```zenscript
-// StatsCounter.getDamageDealt_absorbed() as int
+// StatsCounter.getDamageDealtAbsorbed() as int
 
-myStatsCounter.getDamageDealt_absorbed();
+myStatsCounter.getDamageDealtAbsorbed();
 ```
 
 :::
 
-:::group{name=getDamageDealt_resisted}
+:::group{name=getDamageDealtResisted}
 
 Return Type: int
 
 ```zenscript
-// StatsCounter.getDamageDealt_resisted() as int
+// StatsCounter.getDamageDealtResisted() as int
 
-myStatsCounter.getDamageDealt_resisted();
+myStatsCounter.getDamageDealtResisted();
 ```
 
 :::

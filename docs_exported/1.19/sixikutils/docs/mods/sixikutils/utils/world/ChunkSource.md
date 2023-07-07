@@ -35,10 +35,10 @@ ChunkSource.getChunkAccess(x as int, z as int, status as ChunkStatus, b as boole
 
 :::group{name=getChunkLevel}
 
-Return Type: **invalid**
+Return Type: [LevelChunk](/mods/sixikutils/utils/world/LevelChunk)
 
 ```zenscript
-ChunkSource.getChunkLevel(x as int, z as int, b as boolean) as invalid
+ChunkSource.getChunkLevel(x as int, z as int, b as boolean) as LevelChunk
 ```
 
 | Parameter |  Type   |
@@ -52,10 +52,10 @@ ChunkSource.getChunkLevel(x as int, z as int, b as boolean) as invalid
 
 :::group{name=getChunkNow}
 
-Return Type: **invalid**
+Return Type: [LevelChunk](/mods/sixikutils/utils/world/LevelChunk)
 
 ```zenscript
-ChunkSource.getChunkNow(x as int, z as int) as invalid
+ChunkSource.getChunkNow(x as int, z as int) as LevelChunk
 ```
 
 | Parameter | Type |

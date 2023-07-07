@@ -16,9 +16,9 @@ import mods.sixikutils.api.misc.world.Chunk;
 Chunk.addEntity(entity as Entity)
 ```
 
-| Parameter |                      Type                      |
-|-----------|------------------------------------------------|
-| entity    | [Entity](/mods/sixikutils/utils/entity/Entity) |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| entity    | [Entity](/mods/sixikutils/utils/entity/ExpandEntity) |
 
 
 :::
@@ -26,13 +26,13 @@ Chunk.addEntity(entity as Entity)
 :::group{name=addEntity}
 
 ```zenscript
-Chunk.addEntity(structure as invalid, lg as long)
+Chunk.addEntity(structure as Structure, lg as long)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| structure | **invalid** |
-| lg        | long        |
+| Parameter |                        Type                         |
+|-----------|-----------------------------------------------------|
+| structure | [Structure](/mods/sixikutils/utils/world/Structure) |
+| lg        | long                                                |
 
 
 :::
@@ -40,23 +40,23 @@ Chunk.addEntity(structure as invalid, lg as long)
 :::group{name=fillBiomesFromNoise}
 
 ```zenscript
-Chunk.fillBiomesFromNoise(biomeResolver as invalid, climateSampler as invalid)
+Chunk.fillBiomesFromNoise(biomeResolver as BiomeResolver, climateSampler as ClimateSampler)
 ```
 
-|   Parameter    |    Type     |
-|----------------|-------------|
-| biomeResolver  | **invalid** |
-| climateSampler | **invalid** |
+|   Parameter    |                             Type                              |
+|----------------|---------------------------------------------------------------|
+| biomeResolver  | [BiomeResolver](/mods/sixikutils/utils/world/BiomeResolver)   |
+| climateSampler | [ClimateSampler](/mods/sixikutils/utils/world/ClimateSampler) |
 
 
 :::
 
 :::group{name=getBelowZeroRetrogen}
 
-Return Type: **invalid**
+Return Type: [BelowZeroRetrogen](/mods/sixikutils/utils/world/BelowZeroRetrogen)
 
 ```zenscript
-// Chunk.getBelowZeroRetrogen() as invalid
+// Chunk.getBelowZeroRetrogen() as BelowZeroRetrogen
 
 myChunk.getBelowZeroRetrogen();
 ```
@@ -65,10 +65,10 @@ myChunk.getBelowZeroRetrogen();
 
 :::group{name=getBlendingData}
 
-Return Type: **invalid**
+Return Type: [BlendingData](/mods/sixikutils/utils/world/BlendingData)
 
 ```zenscript
-// Chunk.getBlendingData() as invalid
+// Chunk.getBlendingData() as BlendingData
 
 myChunk.getBlendingData();
 ```

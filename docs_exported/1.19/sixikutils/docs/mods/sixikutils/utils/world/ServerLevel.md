@@ -1,4 +1,4 @@
-# ServerLevel
+# ExpandServerLevel
 
 ## Importing the class
 
@@ -10,7 +10,7 @@ import crafttweaker.api.world.ServerLevel;
 
 ## Extending Level
 
-ServerLevel extends [Level](/vanilla/api/world/Level). That means all methods available in [Level](/vanilla/api/world/Level) are also available in ServerLevel
+ExpandServerLevel extends [ServerLevel](/vanilla/api/world/ServerLevel). That means all methods available in [ServerLevel](/vanilla/api/world/ServerLevel) are also available in ExpandServerLevel
 
 ## Methods
 
@@ -152,16 +152,16 @@ Return Type: double
 ServerLevel.getDistanceToWorldBorder(entity as Entity) as double
 ```
 
-| Parameter |                      Type                      |
-|-----------|------------------------------------------------|
-| entity    | [Entity](/mods/sixikutils/utils/entity/Entity) |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| entity    | [Entity](/mods/sixikutils/utils/entity/ExpandEntity) |
 
 
 :::
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 ServerLevel.getEntity(id as int) as Entity
@@ -176,7 +176,7 @@ ServerLevel.getEntity(id as int) as Entity
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 ServerLevel.getEntity(id as string) as Entity
