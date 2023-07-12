@@ -6,13 +6,22 @@ The event does not have a result.
 
 ## Importing the class
 
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+Importing the class is recommended for events, simply add this line to the top of your script file.
 ```zenscript
 import crafttweaker.forge.api.event.entity.teleport.EnderPearlTeleportEvent;
 ```
 
 
-## Extending EntityTeleportEvent
+## Listening to the event
+
+```zenscript
+events.register<crafttweaker.forge.api.event.entity.teleport.EnderPearlTeleportEvent>(event => {
+    println("EnderPearlTeleportEvent ran!");
+});
+```
+
+
+## Supertype
 
 EnderPearlTeleportEvent extends [EntityTeleportEvent](/forge/api/event/entity/teleport/EntityTeleportEvent). That means all methods available in [EntityTeleportEvent](/forge/api/event/entity/teleport/EntityTeleportEvent) are also available in EnderPearlTeleportEvent
 

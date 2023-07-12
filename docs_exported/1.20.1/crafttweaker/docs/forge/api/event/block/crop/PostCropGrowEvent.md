@@ -6,13 +6,22 @@ The event does not have a result.
 
 ## Importing the class
 
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+Importing the class is recommended for events, simply add this line to the top of your script file.
 ```zenscript
 import crafttweaker.forge.api.event.block.crop.PostCropGrowEvent;
 ```
 
 
-## Extending CropGrowEvent
+## Listening to the event
+
+```zenscript
+events.register<crafttweaker.forge.api.event.block.crop.PostCropGrowEvent>(event => {
+    println("PostCropGrowEvent ran!");
+});
+```
+
+
+## Supertype
 
 PostCropGrowEvent extends [CropGrowEvent](/forge/api/event/block/crop/CropGrowEvent). That means all methods available in [CropGrowEvent](/forge/api/event/block/crop/CropGrowEvent) are also available in PostCropGrowEvent
 

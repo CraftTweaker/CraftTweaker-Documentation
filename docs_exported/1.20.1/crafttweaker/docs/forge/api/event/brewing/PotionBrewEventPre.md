@@ -6,13 +6,22 @@ The event does not have a result.
 
 ## Importing the class
 
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+Importing the class is recommended for events, simply add this line to the top of your script file.
 ```zenscript
 import crafttweaker.forge.api.event.brewing.PotionBrewEventPre;
 ```
 
 
-## Extending PotionBrewEvent
+## Listening to the event
+
+```zenscript
+events.register<crafttweaker.forge.api.event.brewing.PotionBrewEventPre>(event => {
+    println("PotionBrewEventPre ran!");
+});
+```
+
+
+## Supertype
 
 PotionBrewEventPre extends [PotionBrewEvent](/forge/api/event/brewing/PotionBrewEvent). That means all methods available in [PotionBrewEvent](/forge/api/event/brewing/PotionBrewEvent) are also available in PotionBrewEventPre
 

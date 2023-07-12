@@ -12,7 +12,7 @@ Represents a way of targeting components for replacement.
  For integration writers, an instance of a targeting strategy can be obtained through the `find` method. Any
  newly created strategy must be registered in the CraftTweaker plugin to be available to users.
 
- This is a FunctionalInterface whose functional method is
+ This is a [FunctionalInterface](https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html) whose functional method is
  [this](.)#castStrategy(IRecipeComponent, Object, Function).
 
 ## Importing the class

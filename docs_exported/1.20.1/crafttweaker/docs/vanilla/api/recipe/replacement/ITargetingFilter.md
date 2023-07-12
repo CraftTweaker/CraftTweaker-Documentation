@@ -10,7 +10,7 @@ Represents a filter applied to the recipe list.
 
  Script writers should refer to [IFilteringRule](/vanilla/api/recipe/replacement/IFilteringRule) instead.
 
- This is a FunctionalInterface whose functional method is [this](.)#castFilter(Stream).
+ This is a [FunctionalInterface](https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html) whose functional method is [this](.)#castFilter(Stream).
 
 ## Importing the class
 

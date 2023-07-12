@@ -12,13 +12,22 @@ The event does not have a result.
 
 ## Importing the class
 
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
+Importing the class is recommended for events, simply add this line to the top of your script file.
 ```zenscript
 import crafttweaker.forge.api.event.interact.EntityInteractEvent;
 ```
 
 
-## Extending PlayerInteractEvent
+## Listening to the event
+
+```zenscript
+events.register<crafttweaker.forge.api.event.interact.EntityInteractEvent>(event => {
+    println("EntityInteractEvent ran!");
+});
+```
+
+
+## Supertype
 
 EntityInteractEvent extends [PlayerInteractEvent](/forge/api/event/interact/PlayerInteractEvent). That means all methods available in [PlayerInteractEvent](/forge/api/event/interact/PlayerInteractEvent) are also available in EntityInteractEvent
 
