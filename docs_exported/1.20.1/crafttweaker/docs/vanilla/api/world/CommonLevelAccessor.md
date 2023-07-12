@@ -12,4 +12,5 @@ import crafttweaker.api.world.CommonLevelAccessor;
 CommonLevelAccessor implements the following interfaces. That means all methods defined in these interfaces are also available in CommonLevelAccessor
 
 - [LevelReader](/vanilla/api/world/LevelReader)
+- [LevelSimulatedRW](/vanilla/api/world/LevelSimulatedRW)
 
