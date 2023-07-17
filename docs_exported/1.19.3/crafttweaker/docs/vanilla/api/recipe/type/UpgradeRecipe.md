@@ -13,3 +13,10 @@ UpgradeRecipe implements the following interfaces. That means all methods define
 
 - [Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;
 
+## Properties
+
+|   Name   |                        Type                        | Has Getter | Has Setter |
+|----------|----------------------------------------------------|------------|------------|
+| addition | [IIngredient](/vanilla/api/ingredient/IIngredient) | true       | false      |
+| base     | [IIngredient](/vanilla/api/ingredient/IIngredient) | true       | false      |
+
