@@ -39,6 +39,8 @@
             "Initialinventory" : {},
             "JEITweaker" : {},
             "Lightest Lamp": {},
+            "LootStages" : {},
+            "MobStagesReborn" :{},
             "PMMO" : {},
             "RecipeStages": {
                 "RecipeStages": "mods/RecipeStages/RecipeStages.md"

@@ -32,6 +32,8 @@
             "Createtweaker": {},
             "FarmersDelight":{}, 
             "JeiTweaker":{},
+            "LootStages" : {},
+            "MobStagesReborn" :{},
             "PMMO" : {},
             "Sixikutils":{},
             "Generic Recipe Manipulation": "mods/other_mods.md"
