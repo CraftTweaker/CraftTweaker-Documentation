@@ -78,16 +78,4 @@ myCompleteQuestEvent.getTeam();
 
 :::
 
-:::group{name=getTime}
-
-Return Type: **invalid**
-
-```zenscript
-// CompleteQuestEvent.getTime() as invalid
-
-myCompleteQuestEvent.getTime();
-```
-
-:::
-
 

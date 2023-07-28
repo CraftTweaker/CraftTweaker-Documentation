@@ -150,7 +150,7 @@ myTeamData.getName();
 
 :::group{name=getOnlineMembers}
 
-Return Type: stdlib.List&lt;[Player](/vanilla/api/entity/type/player/Player)&gt;
+Return Type: stdlib.List&lt;[Player](/mods/sixikutils/curios/player/Player)&gt;
 
 ```zenscript
 // TeamData.getOnlineMembers() as stdlib.List<Player>

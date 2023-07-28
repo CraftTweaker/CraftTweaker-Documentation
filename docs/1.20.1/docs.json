@@ -1,0 +1,55 @@
+{
+    "nav": {
+        "Home": "index.md",
+        "Commands" : "commands.md",
+        "Examples": "examples.md",
+        "Getting Started With Scripts": "getting_started.md",
+        "Global Keywords" : "globals.md",
+        "Tutorials": {
+            "Introduction To Scripting": {
+                "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+                "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+                "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+                "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
+                "Advanced Scripting": "tutorial/IntroductionToScripting/AdvancedScripting.md"
+            },
+            "Recipes": {
+                "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
+                "Crafting": {
+                    "CraftingTable" : "tutorial/Recipes/Crafting/crafting_table.md",
+                    "Mirrored Shaped Recipes": "tutorial/Recipes/Crafting/MirroredShapedRecipes.md",
+                    "Shaped Recipes": "tutorial/Recipes/Crafting/ShapedRecipes.md",
+                    "Shapeless Recipes": "tutorial/Recipes/Crafting/ShapelessRecipes.md"
+                }
+            },
+            "Software": "tutorial/Software.md"
+        },
+        "Vanilla": {},
+        "Fabric": {},
+        "Forge": {},
+        "Mods": {
+            "Initialinventory" : {},
+            "Generic Recipe Manipulation": "mods/other_mods.md"
+        },
+        "ZenCode": {
+            "About ZenCode": "zencode/ZenCode.md",
+            "Arrays and Lists": "zencode/ArraysAndLists.md",
+            "Associative Arrays" : "zencode/AssociativeArrays.md",
+            "Conditional Code": "zencode/ConditionalCode.md",
+            "Objects": "zencode/Objects.md",
+            "Functions" : "zencode/Functions.md",
+            "Preprocessors": {
+                "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
+                "Debug Preprocessor" : "zencode/Preprocessors/DebugPreprocessor.md",
+                "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
+                "Modloaded Preprocessor" : "zencode/Preprocessors/ModLoadedPreprocessor.md",
+                "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
+            },
+            "Tags Loader" : "zencode/TagsLoader.md"
+        },
+        "Mod Dev": {
+            "CraftTweaker in a Development Environment" : "integration/Introduction.md",
+            "Exposing a ZenClass" : "integration/RecipeManager.md"
+        }
+    }
+}

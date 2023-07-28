@@ -1,4 +1,4 @@
-# ExpandInventory
+# Inventory
 
 ## Importing the class
 
@@ -9,7 +9,7 @@ import crafttweaker.api.entity.type.player.Inventory;
 
 
 ## Implemented Interfaces
-ExpandInventory implements the following interfaces. That means all methods defined in these interfaces are also available in ExpandInventory
+Inventory implements the following interfaces. That means all methods defined in these interfaces are also available in Inventory
 
 - [Container](/mods/sixikutils/utils/world/ExpandContainer)
 - [Nameable](/vanilla/api/world/Nameable)

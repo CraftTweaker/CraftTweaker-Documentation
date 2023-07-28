@@ -42,6 +42,34 @@ generationstages.addFeatureStages(stages as string, feature as ResourceLocation)
 
 :::
 
+:::group{name=addStructureStage}
+
+
+
+```zenscript
+generationstages.addStructureStage(stage as string, dungeon as ResourceLocation)
+```
+
+| Parameter |                            Type                            |                   Description                    |
+|-----------|------------------------------------------------------------|--------------------------------------------------|
+| stage     | string                                                     | The stage that blocks the spawn of the structure |
+| dungeon   | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | The structure that will be blocked               |
+
+
+:::
+
+:::group{name=getStructuresTemplates}
+
+Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
+
+```zenscript
+// generationstages.getStructuresTemplates() as stdlib.List<ResourceLocation>
+
+generationstages.getStructuresTemplates();
+```
+
+:::
+
 :::group{name=setClearAll}
 
 Parameters that will be applied and cannot be undone from outside
@@ -57,6 +85,22 @@ generationstages.setClearAll(clearAll as boolean)
 
 :::
 
+:::group{name=setClearAll}
+
+
+
+```zenscript
+generationstages.setClearAll(stage as string, clearAll as boolean)
+```
+
+| Parameter |  Type   |                                                               Description                                                                |
+|-----------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
+| stage     | string  | The stage needed to unlock                                                                                                               |
+| clearAll  | boolean | The parameter is necessary if you want there to be no generation in the world. There will be some plains with a distribution into biomes |
+
+
+:::
+
 :::group{name=setDeleteAll}
 
 Parameters that will be applied and cannot be undone from outside
@@ -67,6 +111,22 @@ generationstages.setDeleteAll(deleteAll as boolean)
 
 | Parameter |  Type   |                                                      Description                                                      |
 |-----------|---------|-----------------------------------------------------------------------------------------------------------------------|
+| deleteAll | boolean | The world will be one continuous plain. What does it mean in the world there will be one earth and caves without ores |
+
+
+:::
+
+:::group{name=setDeleteAll}
+
+
+
+```zenscript
+generationstages.setDeleteAll(stage as string, deleteAll as boolean)
+```
+
+| Parameter |  Type   |                                                      Description                                                      |
+|-----------|---------|-----------------------------------------------------------------------------------------------------------------------|
+| stage     | string  | The stage needed to unlock                                                                                            |
 | deleteAll | boolean | The world will be one continuous plain. What does it mean in the world there will be one earth and caves without ores |
 
 

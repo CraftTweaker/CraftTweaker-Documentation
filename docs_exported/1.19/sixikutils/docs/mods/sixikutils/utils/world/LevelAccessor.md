@@ -24,7 +24,7 @@ myLevelAccessor.getChunkSource();
 
 :::group{name=getLevel}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // LevelAccessor.getLevel() as Level
@@ -64,7 +64,7 @@ myLevelAccessor.getServer();
 |    Name     |                          Type                           | Has Getter | Has Setter |
 |-------------|---------------------------------------------------------|------------|------------|
 | chunkSource | [ChunkSource](/mods/sixikutils/utils/world/ChunkSource) | true       | false      |
-| level       | [Level](/vanilla/api/world/Level)                       | true       | false      |
+| level       | [Level](/mods/sixikutils/pmmo/server/world)             | true       | false      |
 | levelData   | [LevelData](/mods/sixikutils/utils/world/LevelData)     | true       | false      |
 | server      | [Server](/mods/sixikutils/utils/game/ExpandServer)      | true       | false      |
 

@@ -20,7 +20,7 @@ LevelEvent extends [Event](/forge/api/event/Event). That means all methods avail
 
 :::group{name=getLevel}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // LevelEvent.getLevel() as Level
@@ -33,7 +33,7 @@ myLevelEvent.getLevel();
 
 ## Properties
 
-| Name  |               Type                | Has Getter | Has Setter |
-|-------|-----------------------------------|------------|------------|
-| level | [Level](/vanilla/api/world/Level) | true       | false      |
+| Name  |                    Type                     | Has Getter | Has Setter |
+|-------|---------------------------------------------|------------|------------|
+| level | [Level](/mods/sixikutils/pmmo/server/world) | true       | false      |
 

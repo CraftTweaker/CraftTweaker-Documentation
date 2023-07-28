@@ -1,4 +1,4 @@
-# ExpandEntity
+# Entity
 
 ## Importing the class
 
@@ -10,10 +10,10 @@ import crafttweaker.api.entity.Entity;
 
 ## Extending CapabilityProvider&lt;Entity&gt;
 
-ExpandEntity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/mods/sixikutils/utils/entity/ExpandEntity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/mods/sixikutils/utils/entity/ExpandEntity)&gt; are also available in ExpandEntity
+Entity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/mods/sixikutils/utils/entity/ExpandEntity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/mods/sixikutils/utils/entity/ExpandEntity)&gt; are also available in Entity
 
 ## Implemented Interfaces
-ExpandEntity implements the following interfaces. That means all methods defined in these interfaces are also available in ExpandEntity
+Entity implements the following interfaces. That means all methods defined in these interfaces are also available in Entity
 
 - [Nameable](/vanilla/api/world/Nameable)
 - [EntityAccess](/vanilla/api/entity/EntityAccess)

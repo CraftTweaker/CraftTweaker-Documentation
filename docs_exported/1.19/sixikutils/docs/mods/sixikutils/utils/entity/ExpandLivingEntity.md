@@ -1,4 +1,4 @@
-# ExpandLivingEntity
+# LivingEntity
 
 ## Importing the class
 
@@ -10,7 +10,7 @@ import crafttweaker.api.entity.LivingEntity;
 
 ## Extending Entity
 
-ExpandLivingEntity extends [Entity](/mods/sixikutils/utils/entity/ExpandEntity). That means all methods available in [Entity](/mods/sixikutils/utils/entity/ExpandEntity) are also available in ExpandLivingEntity
+LivingEntity extends [Entity](/mods/sixikutils/utils/entity/ExpandEntity). That means all methods available in [Entity](/mods/sixikutils/utils/entity/ExpandEntity) are also available in LivingEntity
 
 ## Methods
 

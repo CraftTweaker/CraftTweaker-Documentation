@@ -44,7 +44,7 @@ myEnchantEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/pmmo/player/Player)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // EnchantEvent.getPlayer() as Player
@@ -61,5 +61,5 @@ myEnchantEvent.getPlayer();
 |-------------|----------------------------------------------------------|------------|------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | true       | false      |
 | item        | [IItemStack](/vanilla/api/item/IItemStack)               | true       | false      |
-| player      | [Player](/mods/sixikutils/pmmo/player/Player)            | true       | false      |
+| player      | [Player](/mods/sixikutils/curios/player/Player)          | true       | false      |
 

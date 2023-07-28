@@ -32,7 +32,7 @@ myVillagerTradingEvent.getItem();
 
 :::group{name=getLastPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // VillagerTradingEvent.getLastPlayer() as Player
@@ -44,7 +44,7 @@ myVillagerTradingEvent.getLastPlayer();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // VillagerTradingEvent.getPlayer() as Player
@@ -93,9 +93,9 @@ myVillagerTradingEvent.isCancelable();
 
 ## Properties
 
-|    Name    |                               Type                               | Has Getter | Has Setter |
-|------------|------------------------------------------------------------------|------------|------------|
-| item       | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| lastPlayer | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
-| player     | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+|    Name    |                      Type                       | Has Getter | Has Setter |
+|------------|-------------------------------------------------|------------|------------|
+| item       | [IItemStack](/vanilla/api/item/IItemStack)      | true       | false      |
+| lastPlayer | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
+| player     | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
 

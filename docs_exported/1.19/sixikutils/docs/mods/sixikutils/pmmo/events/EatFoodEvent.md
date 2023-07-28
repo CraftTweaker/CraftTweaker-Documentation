@@ -32,7 +32,7 @@ myEatFoodEvent.getFood();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/pmmo/player/Player)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // EatFoodEvent.getPlayer() as Player
@@ -45,8 +45,8 @@ myEatFoodEvent.getPlayer();
 
 ## Properties
 
-|  Name  |                     Type                      | Has Getter | Has Setter |
-|--------|-----------------------------------------------|------------|------------|
-| food   | [IItemStack](/vanilla/api/item/IItemStack)    | true       | false      |
-| player | [Player](/mods/sixikutils/pmmo/player/Player) | true       | false      |
+|  Name  |                      Type                       | Has Getter | Has Setter |
+|--------|-------------------------------------------------|------------|------------|
+| food   | [IItemStack](/vanilla/api/item/IItemStack)      | true       | false      |
+| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
 

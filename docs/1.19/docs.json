@@ -33,11 +33,13 @@
             "ExNihiloSequentia":{},
             "FarmersDelight":{}, 
             "Generationstages" : {},
+            "Initialinventory":{},
             "JeiTweaker":{},
-            "LootStages" : {},
-            "MobStagesReborn" :{},
+            "Lootstages": {},
+            "MobStagesReborn" : {},
             "PMMO" : {},
-            "Sixikutils":{},
+            "Sixikutils" : {},
+            "Structurestages" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {

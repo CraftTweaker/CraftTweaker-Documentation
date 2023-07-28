@@ -56,7 +56,7 @@ myPlayerEatFoodEvent.getNutrition();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // PlayerEatFoodEvent.getPlayer() as Player
@@ -117,10 +117,10 @@ myPlayerEatFoodEvent.isMeat();
 
 ## Properties
 
-|    Name    |                               Type                               | Has Getter | Has Setter |
-|------------|------------------------------------------------------------------|------------|------------|
-| item       | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| nutrition  | int                                                              | true       | false      |
-| player     | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
-| saturation | float                                                            | true       | false      |
+|    Name    |                      Type                       | Has Getter | Has Setter |
+|------------|-------------------------------------------------|------------|------------|
+| item       | [IItemStack](/vanilla/api/item/IItemStack)      | true       | false      |
+| nutrition  | int                                             | true       | false      |
+| player     | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
+| saturation | float                                           | true       | false      |
 

@@ -20,7 +20,7 @@ PlayerPotionEvent extends [PlayerEvent](/forge/api/event/entity/player/PlayerEve
 
 :::group{name=getLevel}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // PlayerPotionEvent.getLevel() as Level
@@ -32,7 +32,7 @@ myPlayerPotionEvent.getLevel();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // PlayerPotionEvent.getPlayer() as Player
@@ -57,9 +57,9 @@ myPlayerPotionEvent.getStack();
 
 ## Properties
 
-|  Name  |                               Type                               | Has Getter | Has Setter |
-|--------|------------------------------------------------------------------|------------|------------|
-| item   | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| level  | [Level](/vanilla/api/world/Level)                                | true       | false      |
-| player | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+|  Name  |                      Type                       | Has Getter | Has Setter |
+|--------|-------------------------------------------------|------------|------------|
+| item   | [IItemStack](/vanilla/api/item/IItemStack)      | true       | false      |
+| level  | [Level](/mods/sixikutils/pmmo/server/world)     | true       | false      |
+| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
 

@@ -20,7 +20,7 @@ BabyEntitySpawnEvent extends [Event](/forge/api/event/Event). That means all met
 
 :::group{name=getCausedByPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // BabyEntitySpawnEvent.getCausedByPlayer() as Player

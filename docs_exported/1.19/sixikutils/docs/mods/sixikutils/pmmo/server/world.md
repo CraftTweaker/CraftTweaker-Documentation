@@ -15,6 +15,7 @@ Level extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;
 ## Implemented Interfaces
 Level implements the following interfaces. That means all methods defined in these interfaces are also available in Level
 
+- [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)
 - AutoCloseable
 
 ## Methods
@@ -27,10 +28,10 @@ Return Type: int?[string]
 Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
 ```
 
-| Parameter |                 Type                 |
-|-----------|--------------------------------------|
-| entity    | [Entity](/vanilla/api/entity/Entity) |
-| type      | **invalid**                          |
+| Parameter |                         Type                         |
+|-----------|------------------------------------------------------|
+| entity    | [Entity](/mods/sixikutils/utils/entity/ExpandEntity) |
+| type      | **invalid**                                          |
 
 
 :::

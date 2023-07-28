@@ -56,7 +56,7 @@ myPlayerEnchantEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // PlayerEnchantEvent.getPlayer() as Player
@@ -68,7 +68,7 @@ myPlayerEnchantEvent.getPlayer();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // PlayerEnchantEvent.getWorld() as Level
@@ -81,11 +81,11 @@ myPlayerEnchantEvent.getWorld();
 
 ## Properties
 
-|    Name     |                               Type                               | Has Getter | Has Setter |
-|-------------|------------------------------------------------------------------|------------|------------|
-| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment)         | true       | false      |
-| item        | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| player      | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
-| pos         | [BlockPos](/vanilla/api/util/math/BlockPos)                      | true       | false      |
-| world       | [Level](/vanilla/api/world/Level)                                | true       | false      |
+|    Name     |                           Type                           | Has Getter | Has Setter |
+|-------------|----------------------------------------------------------|------------|------------|
+| enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | true       | false      |
+| item        | [IItemStack](/vanilla/api/item/IItemStack)               | true       | false      |
+| player      | [Player](/mods/sixikutils/curios/player/Player)          | true       | false      |
+| pos         | [BlockPos](/vanilla/api/util/math/BlockPos)              | true       | false      |
+| world       | [Level](/mods/sixikutils/pmmo/server/world)              | true       | false      |
 

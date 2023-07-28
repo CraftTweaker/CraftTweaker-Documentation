@@ -1,4 +1,4 @@
-# ExpandServerLevel
+# ServerLevel
 
 ## Importing the class
 
@@ -10,7 +10,7 @@ import crafttweaker.api.world.ServerLevel;
 
 ## Extending Level
 
-ExpandServerLevel extends [ServerLevel](/vanilla/api/world/ServerLevel). That means all methods available in [ServerLevel](/vanilla/api/world/ServerLevel) are also available in ExpandServerLevel
+ServerLevel extends [Level](/mods/sixikutils/pmmo/server/world). That means all methods available in [Level](/mods/sixikutils/pmmo/server/world) are also available in ServerLevel
 
 ## Methods
 

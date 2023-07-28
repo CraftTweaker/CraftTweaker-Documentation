@@ -56,7 +56,7 @@ myCurioDropsEvent.getDamageSource();
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // CurioDropsEvent.getEntity() as Entity
@@ -92,7 +92,7 @@ myCurioDropsEvent.getItemEntity();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // CurioDropsEvent.getLivingEntity() as LivingEntity
@@ -128,7 +128,7 @@ myCurioDropsEvent.getResult();
 
 :::group{name=getSlotWearer}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // CurioDropsEvent.getSlotWearer() as LivingEntity
@@ -165,18 +165,18 @@ myCurioDropsEvent.getVisibleSlots();
 
 ## Properties
 
-|     Name     |                           Type                           | Has Getter | Has Setter |
-|--------------|----------------------------------------------------------|------------|------------|
-| curiosString | string                                                   | true       | false      |
-| damageSource | [DamageSource](/vanilla/api/world/DamageSource)          | true       | false      |
-| entity       | [Entity](/vanilla/api/entity/Entity)                     | true       | false      |
-| fortuneBonus | int                                                      | true       | false      |
-| itemEntity   | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)[] | true       | false      |
-| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity)         | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)          | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)              | true       | false      |
-| slotWearer   | [LivingEntity](/vanilla/api/entity/LivingEntity)         | true       | false      |
-| slots        | int                                                      | true       | false      |
-| tags         | **invalid**                                              | true       | false      |
-| visibleSlots | int                                                      | true       | false      |
+|     Name     |                               Type                               | Has Getter | Has Setter |
+|--------------|------------------------------------------------------------------|------------|------------|
+| curiosString | string                                                           | true       | false      |
+| damageSource | [DamageSource](/vanilla/api/world/DamageSource)                  | true       | false      |
+| entity       | [Entity](/mods/sixikutils/utils/entity/ExpandEntity)             | true       | false      |
+| fortuneBonus | int                                                              | true       | false      |
+| itemEntity   | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)[]         | true       | false      |
+| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
+| slotWearer   | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+| slots        | int                                                              | true       | false      |
+| tags         | **invalid**                                                      | true       | false      |
+| visibleSlots | int                                                              | true       | false      |
 

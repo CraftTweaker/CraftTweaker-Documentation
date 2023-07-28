@@ -108,7 +108,7 @@ myRaid.getTotalRaidersAlive();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // Raid.getWorld() as Level

@@ -10,7 +10,7 @@ import crafttweaker.api.entity.type.player.Player;
 
 ## Extending LivingEntity
 
-Player extends [LivingEntity](/vanilla/api/entity/LivingEntity). That means all methods available in [LivingEntity](/vanilla/api/entity/LivingEntity) are also available in Player
+Player extends [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity). That means all methods available in [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) are also available in Player
 
 ## Methods
 

@@ -68,7 +68,7 @@ myPlayerInventoryChangedEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getPlayer() as Player
@@ -87,5 +87,5 @@ myPlayerInventoryChangedEvent.getPlayer();
 | index     | int                                                                              | true       | false      |
 | inventory | [Inventory](/mods/sixikutils/utils/entity/type/player/inventory/ExpandInventory) | true       | false      |
 | item      | [IItemStack](/vanilla/api/item/IItemStack)                                       | true       | false      |
-| player    | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)                 | true       | false      |
+| player    | [Player](/mods/sixikutils/curios/player/Player)                                  | true       | false      |
 

@@ -32,7 +32,7 @@ myCurioChangeEvent.getFrom();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // CurioChangeEvent.getLivingEntity() as LivingEntity
@@ -105,13 +105,13 @@ myCurioChangeEvent.getTo();
 
 ## Properties
 
-|     Name     |                       Type                       | Has Getter | Has Setter |
-|--------------|--------------------------------------------------|------------|------------|
-| from         | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
-| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)  | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)      | true       | false      |
-| slotIndex    | int                                              | true       | false      |
-| slotString   | string                                           | true       | false      |
-| to           | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
+|     Name     |                               Type                               | Has Getter | Has Setter |
+|--------------|------------------------------------------------------------------|------------|------------|
+| from         | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
+| slotIndex    | int                                                              | true       | false      |
+| slotString   | string                                                           | true       | false      |
+| to           | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
 

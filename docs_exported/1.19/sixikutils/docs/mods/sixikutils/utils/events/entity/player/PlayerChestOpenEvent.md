@@ -44,7 +44,7 @@ myPlayerChestOpenEvent.getOpenCount();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // PlayerChestOpenEvent.getPlayer() as Player
@@ -57,9 +57,9 @@ myPlayerChestOpenEvent.getPlayer();
 
 ## Properties
 
-|   Name    |                               Type                               | Has Getter | Has Setter |
-|-----------|------------------------------------------------------------------|------------|------------|
-| block     | [BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)    | true       | false      |
-| openCount | int                                                              | true       | false      |
-| player    | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      |
+|   Name    |                             Type                              | Has Getter | Has Setter |
+|-----------|---------------------------------------------------------------|------------|------------|
+| block     | [BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity) | true       | false      |
+| openCount | int                                                           | true       | false      |
+| player    | [Player](/mods/sixikutils/curios/player/Player)               | true       | false      |
 

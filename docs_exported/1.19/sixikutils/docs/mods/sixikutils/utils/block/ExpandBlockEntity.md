@@ -1,4 +1,4 @@
-# ExpandBlockEntity
+# BlockEntity
 
 ## Importing the class
 
@@ -10,7 +10,7 @@ import crafttweaker.api.block.entity.BlockEntity;
 
 ## Extending CapabilityProvider&lt;BlockEntity&gt;
 
-ExpandBlockEntity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)&gt; are also available in ExpandBlockEntity
+BlockEntity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)&gt; are also available in BlockEntity
 
 ## Methods
 
@@ -22,6 +22,18 @@ Return Type: [Container](/mods/sixikutils/utils/world/ExpandContainer)
 // BlockEntity.getContainer() as Container
 
 myBlockEntity.getContainer();
+```
+
+:::
+
+:::group{name=isHaveContainer}
+
+Return Type: boolean
+
+```zenscript
+// BlockEntity.isHaveContainer() as boolean
+
+myBlockEntity.isHaveContainer();
 ```
 
 :::

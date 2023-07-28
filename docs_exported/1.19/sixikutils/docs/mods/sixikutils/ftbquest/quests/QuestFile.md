@@ -120,9 +120,9 @@ Return Type: [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)
 QuestFile.getData(uuid as Player) as TeamData
 ```
 
-| Parameter |                       Type                       |
-|-----------|--------------------------------------------------|
-| uuid      | [Player](/vanilla/api/entity/type/player/Player) |
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| uuid      | [Player](/mods/sixikutils/curios/player/Player) |
 
 
 :::

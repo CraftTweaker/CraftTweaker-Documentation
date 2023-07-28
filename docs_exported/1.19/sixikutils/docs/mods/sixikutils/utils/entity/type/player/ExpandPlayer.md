@@ -1,4 +1,4 @@
-# ExpandPlayer
+# Player
 
 ## Importing the class
 
@@ -10,7 +10,7 @@ import crafttweaker.api.entity.type.player.Player;
 
 ## Extending LivingEntity
 
-ExpandPlayer extends [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity). That means all methods available in [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) are also available in ExpandPlayer
+Player extends [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity). That means all methods available in [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) are also available in Player
 
 ## Methods
 
@@ -30,10 +30,10 @@ Player.changeDimension(res as ResourceLocation, t as boolean)
 
 :::group{name=getClient}
 
-Return Type: [Camera](/mods/sixikutils/utils/entity/type/player/client/Camera)
+Return Type: **invalid**
 
 ```zenscript
-// Player.getClient() as Camera
+// Player.getClient() as invalid
 
 myPlayer.getClient();
 ```
@@ -328,7 +328,7 @@ Player.setyRot(yaw as float)
 | enderChest | [EnderChestInventory](/mods/sixikutils/utils/entity/type/player/inventory/EnderChestInventory) | true       | false      |
 | headrot    | float                                                                                          | true       | true       |
 | xrot       | float                                                                                          | true       | true       |
-| yBodyRotO  | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)                               | false      | true       |
-| yHeadRotO  | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)                               | false      | true       |
+| yBodyRotO  | [Player](/mods/sixikutils/curios/player/Player)                                                | false      | true       |
+| yHeadRotO  | [Player](/mods/sixikutils/curios/player/Player)                                                | false      | true       |
 | yrot       | float                                                                                          | true       | true       |
 

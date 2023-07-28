@@ -32,7 +32,7 @@ myXpEvent.getAmount();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/pmmo/player/Player)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // XpEvent.getPlayer() as Player
@@ -108,9 +108,9 @@ XpEvent.setSkill(string as string)
 
 ## Properties
 
-|  Name  |                     Type                      | Has Getter | Has Setter |
-|--------|-----------------------------------------------|------------|------------|
-| amount | double                                        | true       | true       |
-| player | [Player](/mods/sixikutils/pmmo/player/Player) | true       | false      |
-| skill  | string                                        | true       | true       |
+|  Name  |                      Type                       | Has Getter | Has Setter |
+|--------|-------------------------------------------------|------------|------------|
+| amount | double                                          | true       | true       |
+| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
+| skill  | string                                          | true       | true       |
 

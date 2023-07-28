@@ -20,7 +20,7 @@ CurioEquipEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/vanilla/api/entity/Entity)
+Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
 
 ```zenscript
 // CurioEquipEvent.getEntity() as Entity
@@ -44,7 +44,7 @@ myCurioEquipEvent.getItem();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // CurioEquipEvent.getLivingEntity() as LivingEntity
@@ -104,7 +104,7 @@ myCurioEquipEvent.getSlotString();
 
 :::group{name=getSlotWearer}
 
-Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
 
 ```zenscript
 // CurioEquipEvent.getSlotWearer() as LivingEntity
@@ -117,14 +117,14 @@ myCurioEquipEvent.getSlotWearer();
 
 ## Properties
 
-|     Name     |                       Type                       | Has Getter | Has Setter |
-|--------------|--------------------------------------------------|------------|------------|
-| entity       | [Entity](/vanilla/api/entity/Entity)             | true       | false      |
-| item         | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
-| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)  | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)      | true       | false      |
-| slotIndex    | int                                              | true       | false      |
-| slotString   | string                                           | true       | false      |
-| slotWearer   | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
+|     Name     |                               Type                               | Has Getter | Has Setter |
+|--------------|------------------------------------------------------------------|------------|------------|
+| entity       | [Entity](/mods/sixikutils/utils/entity/ExpandEntity)             | true       | false      |
+| item         | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
+| slotIndex    | int                                                              | true       | false      |
+| slotString   | string                                                           | true       | false      |
+| slotWearer   | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
 

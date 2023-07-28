@@ -44,7 +44,7 @@ myTickRaidEvent.getRaidMap();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // TickRaidEvent.getWorld() as Level
@@ -73,5 +73,5 @@ myTickRaidEvent.isCancelable();
 |---------|-------------------------------------------------|------------|------------|
 | raid    | [Raid](/mods/sixikutils/utils/world/Raid)       | true       | false      |
 | raidMap | [Raid](/mods/sixikutils/utils/world/Raid)[int?] | true       | false      |
-| world   | [Level](/vanilla/api/world/Level)               | true       | false      |
+| world   | [Level](/mods/sixikutils/pmmo/server/world)     | true       | false      |
 

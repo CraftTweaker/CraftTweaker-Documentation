@@ -56,7 +56,7 @@ mySaplingGrowTreeEvent.getResult();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // SaplingGrowTreeEvent.getWorld() as Level

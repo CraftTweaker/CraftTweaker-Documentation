@@ -44,7 +44,7 @@ myArrowLooseEvent.getCharge();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // ArrowLooseEvent.getPlayer() as Player
@@ -56,7 +56,7 @@ myArrowLooseEvent.getPlayer();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/vanilla/api/world/Level)
+Return Type: [Level](/mods/sixikutils/pmmo/server/world)
 
 ```zenscript
 // ArrowLooseEvent.getWorld() as Level

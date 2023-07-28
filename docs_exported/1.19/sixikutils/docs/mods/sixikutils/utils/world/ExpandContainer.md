@@ -1,4 +1,4 @@
-# ExpandContainer
+# Container
 
 ## Importing the class
 
@@ -9,7 +9,7 @@ import crafttweaker.api.world.Container;
 
 
 ## Implemented Interfaces
-ExpandContainer implements the following interfaces. That means all methods defined in these interfaces are also available in ExpandContainer
+Container implements the following interfaces. That means all methods defined in these interfaces are also available in Container
 
 - [Clearable](/vanilla/api/world/Clearable)
 
@@ -25,7 +25,7 @@ Container.fill(level as Level, rs as ResourceLocation, context as LootContext) a
 
 | Parameter |                            Type                            |
 |-----------|------------------------------------------------------------|
-| level     | [Level](/vanilla/api/world/Level)                          |
+| level     | [Level](/mods/sixikutils/pmmo/server/world)                |
 | rs        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 | context   | [LootContext](/vanilla/api/loot/LootContext)               |
 

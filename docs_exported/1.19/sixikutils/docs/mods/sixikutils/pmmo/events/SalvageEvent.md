@@ -32,7 +32,7 @@ mySalvageEvent.getBlockPos();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/pmmo/player/Player)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // SalvageEvent.getPlayer() as Player
@@ -70,8 +70,8 @@ SalvageEvent.setCanceled(bool as boolean)
 
 ## Properties
 
-|  Name  |                     Type                      | Has Getter | Has Setter |
-|--------|-----------------------------------------------|------------|------------|
-| player | [Player](/mods/sixikutils/pmmo/player/Player) | true       | false      |
-| pos    | [BlockPos](/vanilla/api/util/math/BlockPos)   | true       | false      |
+|  Name  |                      Type                       | Has Getter | Has Setter |
+|--------|-------------------------------------------------|------------|------------|
+| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
+| pos    | [BlockPos](/vanilla/api/util/math/BlockPos)     | true       | false      |
 

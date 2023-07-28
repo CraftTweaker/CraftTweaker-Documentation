@@ -1,4 +1,4 @@
-# ExpandServer
+# Server
 
 ## Importing the class
 
@@ -9,7 +9,7 @@ import crafttweaker.api.game.Server;
 
 
 ## Implemented Interfaces
-ExpandServer implements the following interfaces. That means all methods defined in these interfaces are also available in ExpandServer
+Server implements the following interfaces. That means all methods defined in these interfaces are also available in Server
 
 - [CommandSource](/vanilla/api/command/CommandSource)
 - AutoCloseable
@@ -20,7 +20,7 @@ ExpandServer implements the following interfaces. That means all methods defined
 
 Allows you to get the owner of the server if the server is started from the world. That is, it was open to the network
 
-Return Type: [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer)
+Return Type: [Player](/mods/sixikutils/curios/player/Player)
 
 ```zenscript
 // Server.getOwnerPlayer() as Player
@@ -33,7 +33,7 @@ myServer.getOwnerPlayer();
 
 ## Properties
 
-|    Name     |                               Type                               | Has Getter | Has Setter |                                                      Description                                                       |
-|-------------|------------------------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------------|
-| ownerPlayer | [Player](/mods/sixikutils/utils/entity/type/player/ExpandPlayer) | true       | false      | Allows you to get the owner of the server if the server is started from the world. That is, it was open to the network |
+|    Name     |                      Type                       | Has Getter | Has Setter |                                                      Description                                                       |
+|-------------|-------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------------------------|
+| ownerPlayer | [Player](/mods/sixikutils/curios/player/Player) | true       | false      | Allows you to get the owner of the server if the server is started from the world. That is, it was open to the network |
 
