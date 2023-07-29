@@ -29,6 +29,7 @@
         "Forge": {},
         "Mods": {
             "Initialinventory" : {},
+            "PackMode": {}, 
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
