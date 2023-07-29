@@ -2,7 +2,7 @@
     "nav": {
         "Mods": {
             "PackMode": {
-                "PackMode Preprocessor" : "mods/packmode/Packmode.md"
+                "PackMode Preprocessor" : "mods/packmode/PackMode.md"
             }
         }
     }
