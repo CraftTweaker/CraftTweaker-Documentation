@@ -20,7 +20,7 @@ BabyEntitySpawnEvent extends [Event](/forge/api/event/Event). That means all met
 
 :::group{name=getCausedByPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // BabyEntitySpawnEvent.getCausedByPlayer() as Player
@@ -32,7 +32,7 @@ myBabyEntitySpawnEvent.getCausedByPlayer();
 
 :::group{name=getChildEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // BabyEntitySpawnEvent.getChildEntity() as Entity
@@ -56,7 +56,7 @@ myBabyEntitySpawnEvent.getChildEntityAge();
 
 :::group{name=getParentA}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // BabyEntitySpawnEvent.getParentA() as Entity
@@ -68,7 +68,7 @@ myBabyEntitySpawnEvent.getParentA();
 
 :::group{name=getParentB}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // BabyEntitySpawnEvent.getParentB() as Entity

@@ -30,18 +30,6 @@ myQuestStartedEvent.getNotifyMembers();
 
 :::
 
-:::group{name=getObject}
-
-Return Type: [Quest](/mods/sixikutils/ftbquest/quests/Quest)
-
-```zenscript
-// QuestStartedEvent.getObject() as Quest
-
-myQuestStartedEvent.getObject();
-```
-
-:::
-
 :::group{name=getOnlineMembers}
 
 Return Type: stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt;
@@ -74,6 +62,18 @@ Return Type: [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)
 // QuestStartedEvent.getTeam() as TeamData
 
 myQuestStartedEvent.getTeam();
+```
+
+:::
+
+:::group{name=getTime}
+
+Return Type: **invalid**
+
+```zenscript
+// QuestStartedEvent.getTime() as invalid
+
+myQuestStartedEvent.getTime();
 ```
 
 :::

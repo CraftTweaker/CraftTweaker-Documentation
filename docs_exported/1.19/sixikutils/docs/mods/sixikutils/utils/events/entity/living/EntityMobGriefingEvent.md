@@ -20,7 +20,7 @@ EntityMobGriefingEvent extends [EntityEvent](/forge/api/event/entity/EntityEvent
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // EntityMobGriefingEvent.getEntity() as Entity

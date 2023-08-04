@@ -102,27 +102,12 @@ QuestFile.getChapter(l as long) as Chapter
 Return Type: [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)
 
 ```zenscript
-QuestFile.getData(uuid as invalid) as TeamData
-```
-
-| Parameter |    Type     |
-|-----------|-------------|
-| uuid      | **invalid** |
-
-
-:::
-
-:::group{name=getData}
-
-Return Type: [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)
-
-```zenscript
 QuestFile.getData(uuid as Player) as TeamData
 ```
 
-| Parameter |                      Type                       |
-|-----------|-------------------------------------------------|
-| uuid      | [Player](/mods/sixikutils/curios/player/Player) |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| uuid      | [Player](/vanilla/api/entity/type/player/Player) |
 
 
 :::

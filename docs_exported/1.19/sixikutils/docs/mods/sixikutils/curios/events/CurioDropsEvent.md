@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutilscurios.api.curios.events.CurioDropsEvent;
+import mods.sixikutils.curios.api.curios.events.CurioDropsEvent;
 ```
 
 
@@ -56,7 +56,7 @@ myCurioDropsEvent.getDamageSource();
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // CurioDropsEvent.getEntity() as Entity
@@ -92,7 +92,7 @@ myCurioDropsEvent.getItemEntity();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // CurioDropsEvent.getLivingEntity() as LivingEntity
@@ -104,7 +104,7 @@ myCurioDropsEvent.getLivingEntity();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // CurioDropsEvent.getPlayer() as Player
@@ -128,7 +128,7 @@ myCurioDropsEvent.getResult();
 
 :::group{name=getSlotWearer}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // CurioDropsEvent.getSlotWearer() as LivingEntity
@@ -165,18 +165,18 @@ myCurioDropsEvent.getVisibleSlots();
 
 ## Properties
 
-|     Name     |                               Type                               | Has Getter | Has Setter |
-|--------------|------------------------------------------------------------------|------------|------------|
-| curiosString | string                                                           | true       | false      |
-| damageSource | [DamageSource](/vanilla/api/world/DamageSource)                  | true       | false      |
-| entity       | [Entity](/mods/sixikutils/utils/entity/ExpandEntity)             | true       | false      |
-| fortuneBonus | int                                                              | true       | false      |
-| itemEntity   | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)[]         | true       | false      |
-| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
-| slotWearer   | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
-| slots        | int                                                              | true       | false      |
-| tags         | **invalid**                                                      | true       | false      |
-| visibleSlots | int                                                              | true       | false      |
+|     Name     |                           Type                           | Has Getter | Has Setter |
+|--------------|----------------------------------------------------------|------------|------------|
+| curiosString | string                                                   | true       | false      |
+| damageSource | [DamageSource](/vanilla/api/world/DamageSource)          | true       | false      |
+| entity       | [Entity](/vanilla/api/entity/Entity)                     | true       | false      |
+| fortuneBonus | int                                                      | true       | false      |
+| itemEntity   | [ItemEntity](/vanilla/api/entity/type/item/ItemEntity)[] | true       | false      |
+| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity)         | true       | false      |
+| player       | [Player](/vanilla/api/entity/type/player/Player)         | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)              | true       | false      |
+| slotWearer   | [LivingEntity](/vanilla/api/entity/LivingEntity)         | true       | false      |
+| slots        | int                                                      | true       | false      |
+| tags         | **invalid**                                              | true       | false      |
+| visibleSlots | int                                                      | true       | false      |
 

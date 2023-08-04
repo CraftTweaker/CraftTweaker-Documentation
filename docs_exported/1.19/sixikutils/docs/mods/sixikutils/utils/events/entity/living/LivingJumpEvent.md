@@ -20,7 +20,7 @@ LivingJumpEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That
 
 :::group{name=getEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // LivingJumpEvent.getEntity() as LivingEntity

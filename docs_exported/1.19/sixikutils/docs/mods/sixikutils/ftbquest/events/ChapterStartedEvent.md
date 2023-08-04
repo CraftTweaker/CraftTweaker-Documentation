@@ -42,18 +42,6 @@ myChapterStartedEvent.getNotifyMembers();
 
 :::
 
-:::group{name=getObject}
-
-Return Type: [Chapter](/mods/sixikutils/ftbquest/quests/Chapter)
-
-```zenscript
-// ChapterStartedEvent.getObject() as Chapter
-
-myChapterStartedEvent.getObject();
-```
-
-:::
-
 :::group{name=getOnlineMembers}
 
 Return Type: stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt;
@@ -78,6 +66,18 @@ myChapterStartedEvent.getTeam();
 
 :::
 
+:::group{name=getTime}
+
+Return Type: **invalid**
+
+```zenscript
+// ChapterStartedEvent.getTime() as invalid
+
+myChapterStartedEvent.getTime();
+```
+
+:::
+
 
 ## Properties
 
@@ -85,7 +85,6 @@ myChapterStartedEvent.getTeam();
 |---------------|---------------------------------------------------------------------------------|------------|------------|
 | chapter       | [Chapter](/mods/sixikutils/ftbquest/quests/Chapter)                             | true       | false      |
 | notifyMembers | stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt; | true       | false      |
-| object        | [Chapter](/mods/sixikutils/ftbquest/quests/Chapter)                             | true       | false      |
 | onlineMembers | stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt; | true       | false      |
 | team          | [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)                           | true       | false      |
 

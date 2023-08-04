@@ -32,7 +32,7 @@ myPlayerSetSpawnEvent.getNewSpawn();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // PlayerSetSpawnEvent.getPlayer() as Player

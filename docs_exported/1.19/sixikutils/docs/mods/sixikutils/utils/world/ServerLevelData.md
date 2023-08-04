@@ -60,10 +60,10 @@ myServerLevelData.getThunderTime();
 
 :::group{name=getWanderingTraderId}
 
-Return Type: **invalid**
+Return Type: string
 
 ```zenscript
-// ServerLevelData.getWanderingTraderId() as invalid
+// ServerLevelData.getWanderingTraderId() as string
 
 myServerLevelData.getWanderingTraderId();
 ```

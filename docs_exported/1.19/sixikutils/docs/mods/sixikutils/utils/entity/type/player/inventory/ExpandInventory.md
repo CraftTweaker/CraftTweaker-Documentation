@@ -1,18 +1,4 @@
-# Inventory
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import crafttweaker.api.entity.type.player.Inventory;
-```
-
-
-## Implemented Interfaces
-Inventory implements the following interfaces. That means all methods defined in these interfaces are also available in Inventory
-
-- [Container](/mods/sixikutils/utils/world/ExpandContainer)
-- [Nameable](/vanilla/api/world/Nameable)
+# Expansion for Inventory
 
 ## Methods
 
@@ -35,13 +21,12 @@ Inventory.getItemSlot(item as IItemStack) as int
 
 Allows you to get the index of the slot that the player has now selected.
 
-Returns: Selected Index  
 Return Type: int
 
 ```zenscript
 // Inventory.getSelectedIndex() as int
 
-myInventory.getSelectedIndex();
+inventory.getSelectedIndex();
 ```
 
 :::
@@ -62,10 +47,10 @@ Inventory.isArmor(slot as int, item as IItemStack) as boolean
 
 :::
 
-:::group{name=setArrmor}
+:::group{name=setArmor}
 
 ```zenscript
-Inventory.setArrmor(slot as int, item as IItemStack)
+Inventory.setArmor(slot as int, item as IItemStack)
 ```
 
 | Parameter |                    Type                    |

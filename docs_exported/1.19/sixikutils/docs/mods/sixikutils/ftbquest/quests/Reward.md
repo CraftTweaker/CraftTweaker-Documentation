@@ -46,14 +46,14 @@ myReward.getString();
 
 :::
 
-:::group{name=hasTag}
+:::group{name=getTag}
 
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-// Reward.hasTag() as stdlib.List<string>
+// Reward.getTag() as stdlib.List<string>
 
-myReward.hasTag();
+myReward.getTag();
 ```
 
 :::

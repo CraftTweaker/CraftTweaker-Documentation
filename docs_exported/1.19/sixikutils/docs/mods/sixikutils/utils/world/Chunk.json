@@ -1,1 +1,1 @@
-{"path":"mods/sixikutils/utils/world/Chunk.md","zenCodeName":"mods.sixikutils.api.misc.world.Chunk","searchTerms":["addEntity","getWorldForge","getBlendingData","getPos","getBlockEntitiesPos","getBelowZeroRetrogen","fillBiomesFromNoise"]}
+{"path":"mods/sixikutils/utils/world/Chunk.md","zenCodeName":"mods.sixikutils.api.misc.world.Chunk","searchTerms":["getWorldForge","getBlendingData","getPos","getBlockEntitiesPos","getBelowZeroRetrogen","addEntityToStructure","fillBiomesFromNoise"]}

@@ -46,6 +46,18 @@ myTask.getString();
 
 :::
 
+:::group{name=getTag}
+
+Return Type: stdlib.List&lt;string&gt;
+
+```zenscript
+// Task.getTag() as stdlib.List<string>
+
+myTask.getTag();
+```
+
+:::
+
 :::group{name=getTitle}
 
 Return Type: string
@@ -54,18 +66,6 @@ Return Type: string
 // Task.getTitle() as string
 
 myTask.getTitle();
-```
-
-:::
-
-:::group{name=hasTag}
-
-Return Type: stdlib.List&lt;string&gt;
-
-```zenscript
-// Task.hasTag() as stdlib.List<string>
-
-myTask.hasTag();
 ```
 
 :::

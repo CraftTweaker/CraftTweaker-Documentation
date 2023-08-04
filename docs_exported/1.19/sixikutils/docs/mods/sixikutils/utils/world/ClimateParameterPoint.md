@@ -16,10 +16,10 @@ ClimateParameterPoint extends Record. That means all methods available in Record
 
 :::group{name=getContinentalness}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getContinentalness() as invalid
+// ClimateParameterPoint.getContinentalness() as ClimateParameter
 
 myClimateParameterPoint.getContinentalness();
 ```
@@ -28,10 +28,10 @@ myClimateParameterPoint.getContinentalness();
 
 :::group{name=getDepth}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getDepth() as invalid
+// ClimateParameterPoint.getDepth() as ClimateParameter
 
 myClimateParameterPoint.getDepth();
 ```
@@ -40,10 +40,10 @@ myClimateParameterPoint.getDepth();
 
 :::group{name=getErosion}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getErosion() as invalid
+// ClimateParameterPoint.getErosion() as ClimateParameter
 
 myClimateParameterPoint.getErosion();
 ```
@@ -52,10 +52,10 @@ myClimateParameterPoint.getErosion();
 
 :::group{name=getHumidity}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getHumidity() as invalid
+// ClimateParameterPoint.getHumidity() as ClimateParameter
 
 myClimateParameterPoint.getHumidity();
 ```
@@ -64,10 +64,10 @@ myClimateParameterPoint.getHumidity();
 
 :::group{name=getTemperature}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getTemperature() as invalid
+// ClimateParameterPoint.getTemperature() as ClimateParameter
 
 myClimateParameterPoint.getTemperature();
 ```
@@ -76,10 +76,10 @@ myClimateParameterPoint.getTemperature();
 
 :::group{name=getWeirdness}
 
-Return Type: **invalid**
+Return Type: [ClimateParameter](/mods/sixikutils/utils/world/ClimateParameter)
 
 ```zenscript
-// ClimateParameterPoint.getWeirdness() as invalid
+// ClimateParameterPoint.getWeirdness() as ClimateParameter
 
 myClimateParameterPoint.getWeirdness();
 ```

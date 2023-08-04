@@ -34,6 +34,18 @@ myCustomTask.getString();
 
 :::
 
+:::group{name=getTag}
+
+Return Type: stdlib.List&lt;string&gt;
+
+```zenscript
+// CustomTask.getTag() as stdlib.List<string>
+
+myCustomTask.getTag();
+```
+
+:::
+
 :::group{name=getTask}
 
 Return Type: [Task](/mods/sixikutils/ftbquest/quests/Task)
@@ -42,18 +54,6 @@ Return Type: [Task](/mods/sixikutils/ftbquest/quests/Task)
 // CustomTask.getTask() as Task
 
 myCustomTask.getTask();
-```
-
-:::
-
-:::group{name=hasTag}
-
-Return Type: stdlib.List&lt;string&gt;
-
-```zenscript
-// CustomTask.hasTag() as stdlib.List<string>
-
-myCustomTask.hasTag();
 ```
 
 :::

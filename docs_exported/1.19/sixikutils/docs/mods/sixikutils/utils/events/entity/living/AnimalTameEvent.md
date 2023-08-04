@@ -20,7 +20,7 @@ AnimalTameEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That
 
 :::group{name=getAnimal}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // AnimalTameEvent.getAnimal() as Entity
@@ -44,7 +44,7 @@ myAnimalTameEvent.getLoveCause();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // AnimalTameEvent.getPlayer() as Player

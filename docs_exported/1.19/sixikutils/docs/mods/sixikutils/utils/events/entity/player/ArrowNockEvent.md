@@ -44,7 +44,7 @@ myArrowNockEvent.getHand();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // ArrowNockEvent.getPlayer() as Player
@@ -56,7 +56,7 @@ myArrowNockEvent.getPlayer();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/mods/sixikutils/pmmo/server/world)
+Return Type: [Level](/vanilla/api/world/Level)
 
 ```zenscript
 // ArrowNockEvent.getWorld() as Level

@@ -20,7 +20,7 @@ LivingTickEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That
 
 :::group{name=getEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // LivingTickEvent.getEntity() as LivingEntity
@@ -33,7 +33,7 @@ myLivingTickEvent.getEntity();
 
 ## Properties
 
-|     Name     |                               Type                               | Has Getter | Has Setter |
-|--------------|------------------------------------------------------------------|------------|------------|
-| entityLiving | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+|     Name     |                       Type                       | Has Getter | Has Setter |
+|--------------|--------------------------------------------------|------------|------------|
+| entityLiving | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
 

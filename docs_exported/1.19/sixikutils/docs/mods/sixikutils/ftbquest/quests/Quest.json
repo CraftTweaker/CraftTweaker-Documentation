@@ -1,1 +1,1 @@
-{"path":"mods/sixikutils/ftbquest/quests/Quest.md","zenCodeName":"mods.sixikutils.ftbquest.api.misc.Quest","searchTerms":["hasTag","getRewards","getId","getQuestFile","getString","getChapter"]}
+{"path":"mods/sixikutils/ftbquest/quests/Quest.md","zenCodeName":"mods.sixikutils.ftbquest.api.misc.Quest","searchTerms":["getRewards","getId","getQuestFile","getString","getTag","getChapter"]}

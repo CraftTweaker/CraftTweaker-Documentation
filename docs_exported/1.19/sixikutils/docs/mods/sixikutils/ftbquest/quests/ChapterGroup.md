@@ -46,6 +46,18 @@ myChapterGroup.getString();
 
 :::
 
+:::group{name=getTag}
+
+Return Type: stdlib.List&lt;string&gt;
+
+```zenscript
+// ChapterGroup.getTag() as stdlib.List<string>
+
+myChapterGroup.getTag();
+```
+
+:::
+
 :::group{name=getTitle}
 
 Return Type: string
@@ -54,18 +66,6 @@ Return Type: string
 // ChapterGroup.getTitle() as string
 
 myChapterGroup.getTitle();
-```
-
-:::
-
-:::group{name=hasTag}
-
-Return Type: stdlib.List&lt;string&gt;
-
-```zenscript
-// ChapterGroup.hasTag() as stdlib.List<string>
-
-myChapterGroup.hasTag();
 ```
 
 :::

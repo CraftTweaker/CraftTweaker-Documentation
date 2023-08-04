@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutils.pmmo.api.events.projecrtmmo.SalvageEvent;
+import mods.sixikutils.pmmo.api.events.projectmmo.SalvageEvent;
 ```
 
 
@@ -32,7 +32,7 @@ mySalvageEvent.getBlockPos();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // SalvageEvent.getPlayer() as Player
@@ -70,8 +70,8 @@ SalvageEvent.setCanceled(bool as boolean)
 
 ## Properties
 
-|  Name  |                      Type                       | Has Getter | Has Setter |
-|--------|-------------------------------------------------|------------|------------|
-| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
-| pos    | [BlockPos](/vanilla/api/util/math/BlockPos)     | true       | false      |
+|  Name  |                       Type                       | Has Getter | Has Setter |
+|--------|--------------------------------------------------|------------|------------|
+| player | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
+| pos    | [BlockPos](/vanilla/api/util/math/BlockPos)      | true       | false      |
 

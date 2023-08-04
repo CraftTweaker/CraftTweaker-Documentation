@@ -20,7 +20,7 @@ PlayerInventoryChangedEvent extends [PlayerEvent](/forge/api/event/entity/player
 
 :::group{name=getContainer}
 
-Return Type: [Container](/mods/sixikutils/utils/world/ExpandContainer)
+Return Type: [Container](/vanilla/api/world/Container)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getContainer() as Container
@@ -44,7 +44,7 @@ myPlayerInventoryChangedEvent.getIndex();
 
 :::group{name=getInventory}
 
-Return Type: [Inventory](/mods/sixikutils/utils/entity/type/player/inventory/ExpandInventory)
+Return Type: [Inventory](/vanilla/api/entity/type/player/Inventory)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getInventory() as Inventory
@@ -68,7 +68,7 @@ myPlayerInventoryChangedEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // PlayerInventoryChangedEvent.getPlayer() as Player
@@ -81,11 +81,11 @@ myPlayerInventoryChangedEvent.getPlayer();
 
 ## Properties
 
-|   Name    |                                       Type                                       | Has Getter | Has Setter |
-|-----------|----------------------------------------------------------------------------------|------------|------------|
-| container | [Container](/mods/sixikutils/utils/world/ExpandContainer)                        | true       | false      |
-| index     | int                                                                              | true       | false      |
-| inventory | [Inventory](/mods/sixikutils/utils/entity/type/player/inventory/ExpandInventory) | true       | false      |
-| item      | [IItemStack](/vanilla/api/item/IItemStack)                                       | true       | false      |
-| player    | [Player](/mods/sixikutils/curios/player/Player)                                  | true       | false      |
+|   Name    |                          Type                          | Has Getter | Has Setter |
+|-----------|--------------------------------------------------------|------------|------------|
+| container | [Container](/vanilla/api/world/Container)              | true       | false      |
+| index     | int                                                    | true       | false      |
+| inventory | [Inventory](/vanilla/api/entity/type/player/Inventory) | true       | false      |
+| item      | [IItemStack](/vanilla/api/item/IItemStack)             | true       | false      |
+| player    | [Player](/vanilla/api/entity/type/player/Player)       | true       | false      |
 

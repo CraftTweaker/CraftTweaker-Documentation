@@ -56,7 +56,7 @@ myPlayerEnchantEvent.getItem();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // PlayerEnchantEvent.getPlayer() as Player
@@ -68,7 +68,7 @@ myPlayerEnchantEvent.getPlayer();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/mods/sixikutils/pmmo/server/world)
+Return Type: [Level](/vanilla/api/world/Level)
 
 ```zenscript
 // PlayerEnchantEvent.getWorld() as Level
@@ -85,7 +85,7 @@ myPlayerEnchantEvent.getWorld();
 |-------------|----------------------------------------------------------|------------|------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) | true       | false      |
 | item        | [IItemStack](/vanilla/api/item/IItemStack)               | true       | false      |
-| player      | [Player](/mods/sixikutils/curios/player/Player)          | true       | false      |
+| player      | [Player](/vanilla/api/entity/type/player/Player)         | true       | false      |
 | pos         | [BlockPos](/vanilla/api/util/math/BlockPos)              | true       | false      |
-| world       | [Level](/mods/sixikutils/pmmo/server/world)              | true       | false      |
+| world       | [Level](/vanilla/api/world/Level)                        | true       | false      |
 

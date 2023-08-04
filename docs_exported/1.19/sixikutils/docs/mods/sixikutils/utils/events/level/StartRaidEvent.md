@@ -32,7 +32,7 @@ myStartRaidEvent.getBlockpos();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // StartRaidEvent.getPlayer() as Player
@@ -56,6 +56,8 @@ myStartRaidEvent.getRaid();
 
 :::group{name=getRaidMap}
 
+Contains all the raids that are happening at the moment
+
 Return Type: [Raid](/mods/sixikutils/utils/world/Raid)[int?]
 
 ```zenscript
@@ -68,7 +70,7 @@ myStartRaidEvent.getRaidMap();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/mods/sixikutils/pmmo/server/world)
+Return Type: [Level](/vanilla/api/world/Level)
 
 ```zenscript
 // StartRaidEvent.getWorld() as Level
@@ -93,11 +95,11 @@ myStartRaidEvent.isCancelable();
 
 ## Properties
 
-|  Name   |                      Type                       | Has Getter | Has Setter |
-|---------|-------------------------------------------------|------------|------------|
-| player  | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
-| pos     | [BlockPos](/vanilla/api/util/math/BlockPos)     | true       | false      |
-| raid    | [Raid](/mods/sixikutils/utils/world/Raid)       | true       | false      |
-| raidMap | [Raid](/mods/sixikutils/utils/world/Raid)[int?] | true       | false      |
-| world   | [Level](/mods/sixikutils/pmmo/server/world)     | true       | false      |
+|  Name   |                       Type                       | Has Getter | Has Setter |                       Description                       |
+|---------|--------------------------------------------------|------------|------------|---------------------------------------------------------|
+| player  | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |                                                         |
+| pos     | [BlockPos](/vanilla/api/util/math/BlockPos)      | true       | false      |                                                         |
+| raid    | [Raid](/mods/sixikutils/utils/world/Raid)        | true       | false      |                                                         |
+| raidMap | [Raid](/mods/sixikutils/utils/world/Raid)[int?]  | true       | false      | Contains all the raids that are happening at the moment |
+| world   | [Level](/vanilla/api/world/Level)                | true       | false      |                                                         |
 

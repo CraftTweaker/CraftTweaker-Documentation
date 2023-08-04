@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutilscurios.api.curios.events.CurioUnequipEvent;
+import mods.sixikutils.curios.api.curios.events.CurioUnequipEvent;
 ```
 
 
@@ -20,7 +20,7 @@ CurioUnequipEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). Th
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // CurioUnequipEvent.getEntity() as Entity
@@ -32,7 +32,7 @@ myCurioUnequipEvent.getEntity();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // CurioUnequipEvent.getLivingEntity() as LivingEntity
@@ -44,7 +44,7 @@ myCurioUnequipEvent.getLivingEntity();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // CurioUnequipEvent.getPlayer() as Player
@@ -62,18 +62,6 @@ Return Type: [EventResult](/forge/api/event/EventResult)
 // CurioUnequipEvent.getResult() as EventResult
 
 myCurioUnequipEvent.getResult();
-```
-
-:::
-
-:::group{name=getSLotWearer}
-
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
-
-```zenscript
-// CurioUnequipEvent.getSLotWearer() as LivingEntity
-
-myCurioUnequipEvent.getSLotWearer();
 ```
 
 :::
@@ -102,6 +90,18 @@ myCurioUnequipEvent.getSlotString();
 
 :::
 
+:::group{name=getSlotWearer}
+
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+
+```zenscript
+// CurioUnequipEvent.getSlotWearer() as LivingEntity
+
+myCurioUnequipEvent.getSlotWearer();
+```
+
+:::
+
 :::group{name=getStack}
 
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
@@ -117,14 +117,14 @@ myCurioUnequipEvent.getStack();
 
 ## Properties
 
-|     Name     |                               Type                               | Has Getter | Has Setter |
-|--------------|------------------------------------------------------------------|------------|------------|
-| entity       | [Entity](/mods/sixikutils/utils/entity/ExpandEntity)             | true       | false      |
-| item         | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
-| slotIndex    | int                                                              | true       | false      |
-| slotString   | string                                                           | true       | false      |
-| slotWearer   | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
+|     Name     |                       Type                       | Has Getter | Has Setter |
+|--------------|--------------------------------------------------|------------|------------|
+| entity       | [Entity](/vanilla/api/entity/Entity)             | true       | false      |
+| item         | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
+| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
+| player       | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)      | true       | false      |
+| slotIndex    | int                                              | true       | false      |
+| slotString   | string                                           | true       | false      |
+| slotWearer   | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
 

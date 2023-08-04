@@ -1,16 +1,4 @@
-# Player
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import crafttweaker.api.entity.type.player.Player;
-```
-
-
-## Extending LivingEntity
-
-Player extends [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity). That means all methods available in [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) are also available in Player
+# Expansion for Player
 
 ## Methods
 
@@ -35,7 +23,7 @@ Return Type: **invalid**
 ```zenscript
 // Player.getClient() as invalid
 
-myPlayer.getClient();
+player.getClient();
 ```
 
 :::
@@ -47,7 +35,7 @@ Return Type: [EnderChestInventory](/mods/sixikutils/utils/entity/type/player/inv
 ```zenscript
 // Player.getEnderChestInventory() as EnderChestInventory
 
-myPlayer.getEnderChestInventory();
+player.getEnderChestInventory();
 ```
 
 :::
@@ -59,7 +47,7 @@ Return Type: float
 ```zenscript
 // Player.getExperienceProgress() as float
 
-myPlayer.getExperienceProgress();
+player.getExperienceProgress();
 ```
 
 :::
@@ -71,7 +59,7 @@ Return Type: long
 ```zenscript
 // Player.getLastActionTime() as long
 
-myPlayer.getLastActionTime();
+player.getLastActionTime();
 ```
 
 :::
@@ -83,7 +71,7 @@ Return Type: float
 ```zenscript
 // Player.getRespawnAngle() as float
 
-myPlayer.getRespawnAngle();
+player.getRespawnAngle();
 ```
 
 :::
@@ -95,7 +83,7 @@ Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 ```zenscript
 // Player.getRespawnDimension() as ResourceLocation
 
-myPlayer.getRespawnDimension();
+player.getRespawnDimension();
 ```
 
 :::
@@ -107,7 +95,7 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 ```zenscript
 // Player.getRespawnPosition() as BlockPos
 
-myPlayer.getRespawnPosition();
+player.getRespawnPosition();
 ```
 
 :::
@@ -119,7 +107,7 @@ Return Type: [StatsCounter](/mods/sixikutils/utils/entity/type/player/StatsCount
 ```zenscript
 // Player.getStatisticsManager() as StatsCounter
 
-myPlayer.getStatisticsManager();
+player.getStatisticsManager();
 ```
 
 :::
@@ -131,7 +119,7 @@ Return Type: float
 ```zenscript
 // Player.getxRot() as float
 
-myPlayer.getxRot();
+player.getxRot();
 ```
 
 :::
@@ -143,7 +131,7 @@ Return Type: float
 ```zenscript
 // Player.getyBodyRot() as float
 
-myPlayer.getyBodyRot();
+player.getyBodyRot();
 ```
 
 :::
@@ -155,7 +143,7 @@ Return Type: float
 ```zenscript
 // Player.getyHeadRot() as float
 
-myPlayer.getyHeadRot();
+player.getyHeadRot();
 ```
 
 :::
@@ -167,7 +155,7 @@ Return Type: float
 ```zenscript
 // Player.getyRot() as float
 
-myPlayer.getyRot();
+player.getyRot();
 ```
 
 :::
@@ -179,7 +167,7 @@ Return Type: boolean
 ```zenscript
 // Player.isRespawnForced() as boolean
 
-myPlayer.isRespawnForced();
+player.isRespawnForced();
 ```
 
 :::
@@ -191,7 +179,7 @@ Return Type: boolean
 ```zenscript
 // Player.isShiftKeyDown() as boolean
 
-myPlayer.isShiftKeyDown();
+player.isShiftKeyDown();
 ```
 
 :::
@@ -328,7 +316,7 @@ Player.setyRot(yaw as float)
 | enderChest | [EnderChestInventory](/mods/sixikutils/utils/entity/type/player/inventory/EnderChestInventory) | true       | false      |
 | headrot    | float                                                                                          | true       | true       |
 | xrot       | float                                                                                          | true       | true       |
-| yBodyRotO  | [Player](/mods/sixikutils/curios/player/Player)                                                | false      | true       |
-| yHeadRotO  | [Player](/mods/sixikutils/curios/player/Player)                                                | false      | true       |
+| yBodyRotO  | [Player](/vanilla/api/entity/type/player/Player)                                               | false      | true       |
+| yHeadRotO  | [Player](/vanilla/api/entity/type/player/Player)                                               | false      | true       |
 | yrot       | float                                                                                          | true       | true       |
 

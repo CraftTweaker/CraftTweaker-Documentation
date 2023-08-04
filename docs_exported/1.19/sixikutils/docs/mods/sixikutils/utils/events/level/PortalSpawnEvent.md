@@ -20,7 +20,7 @@ PortalSpawnEvent extends [BlockEvent](/forge/api/event/block/BlockEvent). That m
 
 :::group{name=getLevel}
 
-Return Type: [Level](/mods/sixikutils/pmmo/server/world)
+Return Type: [Level](/vanilla/api/world/Level)
 
 ```zenscript
 // PortalSpawnEvent.getLevel() as Level

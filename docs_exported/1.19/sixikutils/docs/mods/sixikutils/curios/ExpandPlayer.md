@@ -1,12 +1,4 @@
-# CuriosPlayer
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import mods.sixikutilscurios.api.player.CuriosPlayer;
-```
-
+# Expansion for Player
 
 ## Methods
 
@@ -15,7 +7,7 @@ import mods.sixikutilscurios.api.player.CuriosPlayer;
 Return Type: int
 
 ```zenscript
-CuriosPlayer.findItemInSlots(item as IItemStack) as int
+Player.findItemInSlots(item as IItemStack) as int
 ```
 
 | Parameter |                    Type                    |
@@ -30,9 +22,9 @@ CuriosPlayer.findItemInSlots(item as IItemStack) as int
 Return Type: int
 
 ```zenscript
-// CuriosPlayer.getFortuneBonus() as int
+// Player.getFortuneBonus() as int
 
-myCuriosPlayer.getFortuneBonus();
+player.getFortuneBonus();
 ```
 
 :::
@@ -42,9 +34,9 @@ myCuriosPlayer.getFortuneBonus();
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 
 ```zenscript
-// CuriosPlayer.getItems() as stdlib.List<IItemStack>
+// Player.getItems() as stdlib.List<IItemStack>
 
-myCuriosPlayer.getItems();
+player.getItems();
 ```
 
 :::
@@ -54,9 +46,9 @@ myCuriosPlayer.getItems();
 Return Type: int
 
 ```zenscript
-// CuriosPlayer.getLootingBonus() as int
+// Player.getLootingBonus() as int
 
-myCuriosPlayer.getLootingBonus();
+player.getLootingBonus();
 ```
 
 :::
@@ -66,9 +58,9 @@ myCuriosPlayer.getLootingBonus();
 Return Type: int
 
 ```zenscript
-// CuriosPlayer.getSlots() as int
+// Player.getSlots() as int
 
-myCuriosPlayer.getSlots();
+player.getSlots();
 ```
 
 :::
@@ -78,7 +70,7 @@ myCuriosPlayer.getSlots();
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-CuriosPlayer.getStackInSlot(slot as int) as IItemStack
+Player.getStackInSlot(slot as int) as IItemStack
 ```
 
 | Parameter | Type |
@@ -93,9 +85,9 @@ CuriosPlayer.getStackInSlot(slot as int) as IItemStack
 Return Type: int
 
 ```zenscript
-// CuriosPlayer.getVisibleSlots() as int
+// Player.getVisibleSlots() as int
 
-myCuriosPlayer.getVisibleSlots();
+player.getVisibleSlots();
 ```
 
 :::
@@ -103,7 +95,7 @@ myCuriosPlayer.getVisibleSlots();
 :::group{name=setStackInSlot}
 
 ```zenscript
-CuriosPlayer.setStackInSlot(IItem as IItemStack, slot as int)
+Player.setStackInSlot(IItem as IItemStack, slot as int)
 ```
 
 | Parameter |                    Type                    |

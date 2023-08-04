@@ -20,7 +20,7 @@ EntityMountEvent extends [EntityEvent](/forge/api/event/entity/EntityEvent). Tha
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // EntityMountEvent.getEntity() as Entity
@@ -32,7 +32,7 @@ myEntityMountEvent.getEntity();
 
 :::group{name=getEntityBeingMounted}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // EntityMountEvent.getEntityBeingMounted() as Entity
@@ -44,7 +44,7 @@ myEntityMountEvent.getEntityBeingMounted();
 
 :::group{name=getEntityMounting}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 // EntityMountEvent.getEntityMounting() as Entity
@@ -56,7 +56,7 @@ myEntityMountEvent.getEntityMounting();
 
 :::group{name=getWorld}
 
-Return Type: [Level](/mods/sixikutils/pmmo/server/world)
+Return Type: [Level](/vanilla/api/world/Level)
 
 ```zenscript
 // EntityMountEvent.getWorld() as Level

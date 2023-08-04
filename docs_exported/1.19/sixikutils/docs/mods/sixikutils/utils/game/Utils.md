@@ -12,7 +12,7 @@ import mods.sixikutils.misc.Utils;
 
 :::group{name=getServer}
 
-Return Type: [Server](/mods/sixikutils/utils/game/ExpandServer)
+Return Type: [Server](/vanilla/api/game/Server)
 
 ```zenscript
 // Utils.getServer() as Server

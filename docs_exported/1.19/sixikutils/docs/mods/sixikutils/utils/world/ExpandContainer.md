@@ -1,17 +1,4 @@
-# Container
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import crafttweaker.api.world.Container;
-```
-
-
-## Implemented Interfaces
-Container implements the following interfaces. That means all methods defined in these interfaces are also available in Container
-
-- [Clearable](/vanilla/api/world/Clearable)
+# Expansion for Container
 
 ## Methods
 
@@ -25,7 +12,7 @@ Container.fill(level as Level, rs as ResourceLocation, context as LootContext) a
 
 | Parameter |                            Type                            |
 |-----------|------------------------------------------------------------|
-| level     | [Level](/mods/sixikutils/pmmo/server/world)                |
+| level     | [Level](/vanilla/api/world/Level)                          |
 | rs        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
 | context   | [LootContext](/vanilla/api/loot/LootContext)               |
 
@@ -43,9 +30,9 @@ Return Type: boolean
 Container.splitContainer(container2 as Container) as boolean
 ```
 
-| Parameter  |                           Type                            |           Description            |
-|------------|-----------------------------------------------------------|----------------------------------|
-| container2 | [Container](/mods/sixikutils/utils/world/ExpandContainer) | - Container to transfer items to |
+| Parameter  |                   Type                    |           Description            |
+|------------|-------------------------------------------|----------------------------------|
+| container2 | [Container](/vanilla/api/world/Container) | - Container to transfer items to |
 
 
 :::
@@ -61,10 +48,10 @@ Return Type: boolean
 Container.splitContainer(container2 as Container, bool as boolean) as boolean
 ```
 
-| Parameter  |                           Type                            |                       Description                       |
-|------------|-----------------------------------------------------------|---------------------------------------------------------|
-| container2 | [Container](/mods/sixikutils/utils/world/ExpandContainer) | - Container to transfer items to                        |
-| bool       | boolean                                                   | - If you need to remove items from a portable container |
+| Parameter  |                   Type                    |                       Description                       |
+|------------|-------------------------------------------|---------------------------------------------------------|
+| container2 | [Container](/vanilla/api/world/Container) | - Container to transfer items to                        |
+| bool       | boolean                                   | - If you need to remove items from a portable container |
 
 
 :::

@@ -10,29 +10,18 @@ import mods.sixikutils.api.misc.world.Chunk;
 
 ## Methods
 
-:::group{name=addEntity}
+:::group{name=addEntityToStructure}
+
+
 
 ```zenscript
-Chunk.addEntity(entity as Entity)
+Chunk.addEntityToStructure(structure as Structure, time as long)
 ```
 
-| Parameter |                         Type                         |
-|-----------|------------------------------------------------------|
-| entity    | [Entity](/mods/sixikutils/utils/entity/ExpandEntity) |
-
-
-:::
-
-:::group{name=addEntity}
-
-```zenscript
-Chunk.addEntity(structure as Structure, lg as long)
-```
-
-| Parameter |                        Type                         |
-|-----------|-----------------------------------------------------|
-| structure | [Structure](/mods/sixikutils/utils/world/Structure) |
-| lg        | long                                                |
+| Parameter |                        Type                         |       Description        |
+|-----------|-----------------------------------------------------|--------------------------|
+| structure | [Structure](/mods/sixikutils/utils/world/Structure) |                          |
+| time      | long                                                | - time before appearance |
 
 
 :::

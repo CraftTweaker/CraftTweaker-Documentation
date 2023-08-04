@@ -32,7 +32,7 @@ myPlayerChestLootEvent.getContext();
 
 :::group{name=getInventory}
 
-Return Type: [Container](/mods/sixikutils/utils/world/ExpandContainer)
+Return Type: [Container](/vanilla/api/world/Container)
 
 ```zenscript
 // PlayerChestLootEvent.getInventory() as Container
@@ -44,7 +44,7 @@ myPlayerChestLootEvent.getInventory();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // PlayerChestLootEvent.getPlayer() as Player
@@ -81,9 +81,9 @@ myPlayerChestLootEvent.getQueriedLootTableId();
 
 ## Properties
 
-|   Name    |                           Type                            | Has Getter | Has Setter |
-|-----------|-----------------------------------------------------------|------------|------------|
-| inventory | [Container](/mods/sixikutils/utils/world/ExpandContainer) | true       | false      |
-| player    | [Player](/mods/sixikutils/curios/player/Player)           | true       | false      |
-| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)               | true       | false      |
+|   Name    |                       Type                       | Has Getter | Has Setter |
+|-----------|--------------------------------------------------|------------|------------|
+| inventory | [Container](/vanilla/api/world/Container)        | true       | false      |
+| player    | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)      | true       | false      |
 

@@ -40,7 +40,7 @@ BelowZeroRetrogen.hasBedrockHole(x as int, z as int) as boolean
 
 :::group{name=targetStatus}
 
-Return Type: [ChunkStatus](/mods/sixikutils/utils/world/chunk/ChunkStatus)
+Return Type: [ChunkStatus](/mods/sixikutils/utils/world/ChunkStatus)
 
 ```zenscript
 // BelowZeroRetrogen.targetStatus() as ChunkStatus

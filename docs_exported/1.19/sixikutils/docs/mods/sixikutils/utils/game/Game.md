@@ -12,9 +12,8 @@ import mods.crafttweakerutils.game.Game;
 
 :::group{name=getDate}
 
+Full real date yyyy/MM/dd
 
-
-Returns: Full real date yyyy/MM/dd  
 Return Type: int
 
 ```zenscript
@@ -27,9 +26,8 @@ Game.getDate();
 
 :::group{name=getDay}
 
+Real Day
 
-
-Returns: Real Day  
 Return Type: int
 
 ```zenscript
@@ -42,9 +40,8 @@ Game.getDay();
 
 :::group{name=getHours}
 
+Real Hours
 
-
-Returns: Real Hours  
 Return Type: int
 
 ```zenscript
@@ -57,9 +54,8 @@ Game.getHours();
 
 :::group{name=getLang}
 
+The selected language of the player RU/EN/UA/...
 
-
-Returns: The selected language of the player RU/EN/UA/...  
 Return Type: string
 
 ```zenscript
@@ -72,9 +68,8 @@ Game.getLang();
 
 :::group{name=getLanguageTag}
 
+The selected language of the player ru_RU/en_EN/ua_UA/...
 
-
-Returns: The selected language of the player ru_RU/en_EN/ua_UA/...  
 Return Type: string
 
 ```zenscript
@@ -87,9 +82,8 @@ Game.getLanguageTag();
 
 :::group{name=getMinutes}
 
+Real Minutes
 
-
-Returns: Real Minutes  
 Return Type: int
 
 ```zenscript
@@ -102,9 +96,8 @@ Game.getMinutes();
 
 :::group{name=getMonth}
 
+Real Month
 
-
-Returns: Real Month  
 Return Type: int
 
 ```zenscript
@@ -117,9 +110,8 @@ Game.getMonth();
 
 :::group{name=getSeconds}
 
+Real Seconds
 
-
-Returns: Real Seconds  
 Return Type: int
 
 ```zenscript
@@ -132,9 +124,8 @@ Game.getSeconds();
 
 :::group{name=getTime}
 
+Full real time HH:mm:ss
 
-
-Returns: Full real time HH:mm:ss  
 Return Type: long
 
 ```zenscript
@@ -147,9 +138,8 @@ Game.getTime();
 
 :::group{name=getTimezoneOffset}
 
+Real TimezoneOffset
 
-
-Returns: Real TimezoneOffset  
 Return Type: int
 
 ```zenscript
@@ -162,9 +152,8 @@ Game.getTimezoneOffset();
 
 :::group{name=getYear}
 
+Real Year
 
-
-Returns: Real Year  
 Return Type: int
 
 ```zenscript

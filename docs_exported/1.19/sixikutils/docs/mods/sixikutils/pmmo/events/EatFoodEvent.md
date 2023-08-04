@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutils.pmmo.api.events.projecrtmmo.EatFoodEvent;
+import mods.sixikutils.pmmo.api.events.projectmmo.EatFoodEvent;
 ```
 
 
@@ -32,7 +32,7 @@ myEatFoodEvent.getFood();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // EatFoodEvent.getPlayer() as Player
@@ -45,8 +45,8 @@ myEatFoodEvent.getPlayer();
 
 ## Properties
 
-|  Name  |                      Type                       | Has Getter | Has Setter |
-|--------|-------------------------------------------------|------------|------------|
-| food   | [IItemStack](/vanilla/api/item/IItemStack)      | true       | false      |
-| player | [Player](/mods/sixikutils/curios/player/Player) | true       | false      |
+|  Name  |                       Type                       | Has Getter | Has Setter |
+|--------|--------------------------------------------------|------------|------------|
+| food   | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
+| player | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
 

@@ -1,16 +1,4 @@
-# ServerLevel
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import crafttweaker.api.world.ServerLevel;
-```
-
-
-## Extending Level
-
-ServerLevel extends [Level](/mods/sixikutils/pmmo/server/world). That means all methods available in [Level](/mods/sixikutils/pmmo/server/world) are also available in ServerLevel
+# Expansion for ServerLevel
 
 ## Methods
 
@@ -34,7 +22,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getAbsoluteMaxWorldBorderSize() as int
 
-myServerLevel.getAbsoluteMaxWorldBorderSize();
+serverLevel.getAbsoluteMaxWorldBorderSize();
 ```
 
 :::
@@ -91,7 +79,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getDamagePerBlock() as double
 
-myServerLevel.getDamagePerBlock();
+serverLevel.getDamagePerBlock();
 ```
 
 :::
@@ -103,7 +91,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getDamageSafeZone() as double
 
-myServerLevel.getDamageSafeZone();
+serverLevel.getDamageSafeZone();
 ```
 
 :::
@@ -115,7 +103,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getDifficultyIndex() as int
 
-myServerLevel.getDifficultyIndex();
+serverLevel.getDifficultyIndex();
 ```
 
 :::
@@ -127,7 +115,7 @@ Return Type: string
 ```zenscript
 // ServerLevel.getDifficultyKey() as string
 
-myServerLevel.getDifficultyKey();
+serverLevel.getDifficultyKey();
 ```
 
 :::
@@ -139,7 +127,7 @@ Return Type: string
 ```zenscript
 // ServerLevel.getDifficultyString() as string
 
-myServerLevel.getDifficultyString();
+serverLevel.getDifficultyString();
 ```
 
 :::
@@ -152,16 +140,16 @@ Return Type: double
 ServerLevel.getDistanceToWorldBorder(entity as Entity) as double
 ```
 
-| Parameter |                         Type                         |
-|-----------|------------------------------------------------------|
-| entity    | [Entity](/mods/sixikutils/utils/entity/ExpandEntity) |
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
 
 
 :::
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 ServerLevel.getEntity(id as int) as Entity
@@ -176,7 +164,7 @@ ServerLevel.getEntity(id as int) as Entity
 
 :::group{name=getEntity}
 
-Return Type: [Entity](/mods/sixikutils/utils/entity/ExpandEntity)
+Return Type: [Entity](/vanilla/api/entity/Entity)
 
 ```zenscript
 ServerLevel.getEntity(id as string) as Entity
@@ -196,7 +184,7 @@ Return Type: string
 ```zenscript
 // ServerLevel.getGameRulesString() as string
 
-myServerLevel.getGameRulesString();
+serverLevel.getGameRulesString();
 ```
 
 :::
@@ -208,7 +196,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getHeight() as int
 
-myServerLevel.getHeight();
+serverLevel.getHeight();
 ```
 
 :::
@@ -220,7 +208,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getMaxBuildHeight() as int
 
-myServerLevel.getMaxBuildHeight();
+serverLevel.getMaxBuildHeight();
 ```
 
 :::
@@ -232,7 +220,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getMaxEntityRadius() as double
 
-myServerLevel.getMaxEntityRadius();
+serverLevel.getMaxEntityRadius();
 ```
 
 :::
@@ -244,7 +232,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getMaxLightLevel() as int
 
-myServerLevel.getMaxLightLevel();
+serverLevel.getMaxLightLevel();
 ```
 
 :::
@@ -271,7 +259,7 @@ Return Type: float
 ```zenscript
 // ServerLevel.getMoonBrightness() as float
 
-myServerLevel.getMoonBrightness();
+serverLevel.getMoonBrightness();
 ```
 
 :::
@@ -283,19 +271,19 @@ Return Type: int
 ```zenscript
 // ServerLevel.getMoonPhase() as int
 
-myServerLevel.getMoonPhase();
+serverLevel.getMoonPhase();
 ```
 
 :::
 
 :::group{name=getOverworld}
 
-Return Type: [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)
+Return Type: [ServerLevel](/vanilla/api/world/ServerLevel)
 
 ```zenscript
 // ServerLevel.getOverworld() as ServerLevel
 
-myServerLevel.getOverworld();
+serverLevel.getOverworld();
 ```
 
 :::
@@ -307,7 +295,7 @@ Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)
 ```zenscript
 // ServerLevel.getRandomPlayer() as ServerPlayer
 
-myServerLevel.getRandomPlayer();
+serverLevel.getRandomPlayer();
 ```
 
 :::
@@ -334,7 +322,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getSeaLevel() as int
 
-myServerLevel.getSeaLevel();
+serverLevel.getSeaLevel();
 ```
 
 :::
@@ -346,7 +334,7 @@ Return Type: [StructureTemplateManager](/mods/sixikutils/utils/world/StructureTe
 ```zenscript
 // ServerLevel.getStructureManager() as StructureTemplateManager
 
-myServerLevel.getStructureManager();
+serverLevel.getStructureManager();
 ```
 
 :::
@@ -358,7 +346,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getWarningBlocks() as int
 
-myServerLevel.getWarningBlocks();
+serverLevel.getWarningBlocks();
 ```
 
 :::
@@ -370,7 +358,7 @@ Return Type: int
 ```zenscript
 // ServerLevel.getWarningTime() as int
 
-myServerLevel.getWarningTime();
+serverLevel.getWarningTime();
 ```
 
 :::
@@ -382,7 +370,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getWorldBorderCenterX() as double
 
-myServerLevel.getWorldBorderCenterX();
+serverLevel.getWorldBorderCenterX();
 ```
 
 :::
@@ -394,7 +382,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getWorldBorderCenterZ() as double
 
-myServerLevel.getWorldBorderCenterZ();
+serverLevel.getWorldBorderCenterZ();
 ```
 
 :::
@@ -406,7 +394,7 @@ Return Type: double
 ```zenscript
 // ServerLevel.getWorldBorderSize() as double
 
-myServerLevel.getWorldBorderSize();
+serverLevel.getWorldBorderSize();
 ```
 
 :::

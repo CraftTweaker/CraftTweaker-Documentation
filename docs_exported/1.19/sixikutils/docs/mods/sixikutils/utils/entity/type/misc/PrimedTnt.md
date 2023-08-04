@@ -10,7 +10,7 @@ import mods.crafttweakerutils.api.entity.type.misc.PrimedTnt;
 
 ## Extending Entity
 
-PrimedTnt extends [Entity](/mods/sixikutils/utils/entity/ExpandEntity). That means all methods available in [Entity](/mods/sixikutils/utils/entity/ExpandEntity) are also available in PrimedTnt
+PrimedTnt extends [Entity](/vanilla/api/entity/Entity). That means all methods available in [Entity](/vanilla/api/entity/Entity) are also available in PrimedTnt
 
 ## Methods
 
@@ -28,7 +28,7 @@ myPrimedTnt.getFuse();
 
 :::group{name=getOwner}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // PrimedTnt.getOwner() as LivingEntity

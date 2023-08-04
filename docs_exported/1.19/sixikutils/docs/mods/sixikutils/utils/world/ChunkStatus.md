@@ -4,7 +4,7 @@
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutils.api.misc.world.chunk.ChunkStatus;
+import mods.sixikutils.api.misc.world.ChunkStatus;
 ```
 
 
@@ -12,7 +12,7 @@ import mods.sixikutils.api.misc.world.chunk.ChunkStatus;
 
 :::group{name=getChunkType}
 
-Return Type: [ChunkStatusType](/mods/sixikutils/utils/world/chunk/ChunkStatusType)
+Return Type: [ChunkStatusType](/mods/sixikutils/utils/world/ChunkStatusType)
 
 ```zenscript
 // ChunkStatus.getChunkType() as ChunkStatusType
@@ -60,7 +60,7 @@ myChunkStatus.getName();
 
 :::group{name=getParent}
 
-Return Type: [ChunkStatus](/mods/sixikutils/utils/world/chunk/ChunkStatus)
+Return Type: [ChunkStatus](/mods/sixikutils/utils/world/ChunkStatus)
 
 ```zenscript
 // ChunkStatus.getParent() as ChunkStatus

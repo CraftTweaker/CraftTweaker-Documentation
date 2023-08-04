@@ -1,19 +1,11 @@
-# CTPMMOPlayer
-
-## Importing the class
-
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
-```zenscript
-import mods.sixikutils.pmmo.api.entity.player.CTPMMOPlayer;
-```
-
+# Expansion for Player
 
 ## Methods
 
 :::group{name=addLevel}
 
 ```zenscript
-CTPMMOPlayer.addLevel(skillName as string, amount as int)
+Player.addLevel(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |
@@ -27,7 +19,7 @@ CTPMMOPlayer.addLevel(skillName as string, amount as int)
 :::group{name=addXp}
 
 ```zenscript
-CTPMMOPlayer.addXp(skillName as string, amount as int)
+Player.addXp(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |
@@ -43,7 +35,7 @@ CTPMMOPlayer.addXp(skillName as string, amount as int)
 Return Type: int
 
 ```zenscript
-CTPMMOPlayer.getLevel(skillName as string) as int
+Player.getLevel(skillName as string) as int
 ```
 
 | Parameter |  Type  |
@@ -56,7 +48,7 @@ CTPMMOPlayer.getLevel(skillName as string) as int
 :::group{name=setLevel}
 
 ```zenscript
-CTPMMOPlayer.setLevel(skillName as string, amount as int)
+Player.setLevel(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |

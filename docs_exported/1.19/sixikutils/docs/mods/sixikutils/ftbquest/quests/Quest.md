@@ -70,14 +70,14 @@ myQuest.getString();
 
 :::
 
-:::group{name=hasTag}
+:::group{name=getTag}
 
 Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-// Quest.hasTag() as stdlib.List<string>
+// Quest.getTag() as stdlib.List<string>
 
-myQuest.hasTag();
+myQuest.getTag();
 ```
 
 :::

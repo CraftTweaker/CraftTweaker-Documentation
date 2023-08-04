@@ -69,7 +69,7 @@ StructureTemplateManager.placeInWorld(res as ResourceLocation, serverLevel as Se
 |  Parameter  |                            Type                            |
 |-------------|------------------------------------------------------------|
 | res         | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
-| serverLevel | [ServerLevel](/mods/sixikutils/utils/world/ServerLevel)    |
+| serverLevel | [ServerLevel](/vanilla/api/world/ServerLevel)              |
 | pos         | [BlockPos](/vanilla/api/util/math/BlockPos)                |
 | pos2        | [BlockPos](/vanilla/api/util/math/BlockPos)                |
 | type        | int                                                        |

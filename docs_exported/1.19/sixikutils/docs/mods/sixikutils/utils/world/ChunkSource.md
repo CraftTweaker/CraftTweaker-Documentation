@@ -23,12 +23,12 @@ Return Type: [Chunk](/mods/sixikutils/utils/world/Chunk)
 ChunkSource.getChunkAccess(x as int, z as int, status as ChunkStatus, b as boolean) as Chunk
 ```
 
-| Parameter |                             Type                              |
-|-----------|---------------------------------------------------------------|
-| x         | int                                                           |
-| z         | int                                                           |
-| status    | [ChunkStatus](/mods/sixikutils/utils/world/chunk/ChunkStatus) |
-| b         | boolean                                                       |
+| Parameter |                          Type                           |
+|-----------|---------------------------------------------------------|
+| x         | int                                                     |
+| z         | int                                                     |
+| status    | [ChunkStatus](/mods/sixikutils/utils/world/ChunkStatus) |
+| b         | boolean                                                 |
 
 
 :::

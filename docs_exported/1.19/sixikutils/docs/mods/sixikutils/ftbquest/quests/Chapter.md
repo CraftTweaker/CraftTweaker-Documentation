@@ -34,19 +34,6 @@ myChapter.getDefaultHideDependencyLines();
 
 :::
 
-:::group{name=getDefaultHideDependencyLines}
-
-```zenscript
-Chapter.getDefaultHideDependencyLines(t as boolean)
-```
-
-| Parameter |  Type   |
-|-----------|---------|
-| t         | boolean |
-
-
-:::
-
 :::group{name=getFilename}
 
 Return Type: string
@@ -131,6 +118,18 @@ myChapter.getSubtitle();
 
 :::
 
+:::group{name=getTag}
+
+Return Type: stdlib.List&lt;string&gt;
+
+```zenscript
+// Chapter.getTag() as stdlib.List<string>
+
+myChapter.getTag();
+```
+
+:::
+
 :::group{name=getTitle}
 
 Return Type: string
@@ -139,18 +138,6 @@ Return Type: string
 // Chapter.getTitle() as string
 
 myChapter.getTitle();
-```
-
-:::
-
-:::group{name=hasTag}
-
-Return Type: stdlib.List&lt;string&gt;
-
-```zenscript
-// Chapter.hasTag() as stdlib.List<string>
-
-myChapter.hasTag();
 ```
 
 :::
@@ -187,7 +174,7 @@ Chapter.setId(id as long)
 |            Name            |                                Type                                | Has Getter | Has Setter |
 |----------------------------|--------------------------------------------------------------------|------------|------------|
 | alwaysInvisible            | boolean                                                            | true       | true       |
-| defaultHideDependencyLines | boolean                                                            | true       | true       |
+| defaultHideDependencyLines | boolean                                                            | true       | false      |
 | filename                   | string                                                             | true       | false      |
 | group                      | [ChapterGroup](/mods/sixikutils/ftbquest/quests/ChapterGroup)      | true       | false      |
 | id                         | long                                                               | true       | true       |

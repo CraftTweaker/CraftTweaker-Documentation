@@ -8,7 +8,7 @@ The event does not have a result.
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.sixikutilscurios.api.curios.events.CurioChangeEvent;
+import mods.sixikutils.curios.api.curios.events.CurioChangeEvent;
 ```
 
 
@@ -32,7 +32,7 @@ myCurioChangeEvent.getFrom();
 
 :::group{name=getLivingEntity}
 
-Return Type: [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity)
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
 
 ```zenscript
 // CurioChangeEvent.getLivingEntity() as LivingEntity
@@ -44,7 +44,7 @@ myCurioChangeEvent.getLivingEntity();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // CurioChangeEvent.getPlayer() as Player
@@ -105,13 +105,13 @@ myCurioChangeEvent.getTo();
 
 ## Properties
 
-|     Name     |                               Type                               | Has Getter | Has Setter |
-|--------------|------------------------------------------------------------------|------------|------------|
-| from         | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
-| livingEntity | [LivingEntity](/mods/sixikutils/utils/entity/ExpandLivingEntity) | true       | false      |
-| player       | [Player](/mods/sixikutils/curios/player/Player)                  | true       | false      |
-| result       | [EventResult](/forge/api/event/EventResult)                      | true       | false      |
-| slotIndex    | int                                                              | true       | false      |
-| slotString   | string                                                           | true       | false      |
-| to           | [IItemStack](/vanilla/api/item/IItemStack)                       | true       | false      |
+|     Name     |                       Type                       | Has Getter | Has Setter |
+|--------------|--------------------------------------------------|------------|------------|
+| from         | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
+| livingEntity | [LivingEntity](/vanilla/api/entity/LivingEntity) | true       | false      |
+| player       | [Player](/vanilla/api/entity/type/player/Player) | true       | false      |
+| result       | [EventResult](/forge/api/event/EventResult)      | true       | false      |
+| slotIndex    | int                                              | true       | false      |
+| slotString   | string                                           | true       | false      |
+| to           | [IItemStack](/vanilla/api/item/IItemStack)       | true       | false      |
 

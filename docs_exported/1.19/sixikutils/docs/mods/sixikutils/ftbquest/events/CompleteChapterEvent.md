@@ -42,18 +42,6 @@ myCompleteChapterEvent.getNotifyMembers();
 
 :::
 
-:::group{name=getObject}
-
-Return Type: [Chapter](/mods/sixikutils/ftbquest/quests/Chapter)
-
-```zenscript
-// CompleteChapterEvent.getObject() as Chapter
-
-myCompleteChapterEvent.getObject();
-```
-
-:::
-
 :::group{name=getOnlineMembers}
 
 Return Type: stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt;
@@ -74,6 +62,18 @@ Return Type: [TeamData](/mods/sixikutils/ftbquest/quests/TeamData)
 // CompleteChapterEvent.getTeam() as TeamData
 
 myCompleteChapterEvent.getTeam();
+```
+
+:::
+
+:::group{name=getTime}
+
+Return Type: **invalid**
+
+```zenscript
+// CompleteChapterEvent.getTime() as invalid
+
+myCompleteChapterEvent.getTime();
 ```
 
 :::

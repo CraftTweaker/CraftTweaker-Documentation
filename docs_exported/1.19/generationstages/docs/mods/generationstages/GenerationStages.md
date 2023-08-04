@@ -1,10 +1,10 @@
-# generationstages
+# GenerationStages
 
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.generationstages.generationstages;
+import mods.generationstages.GenerationStages;
 ```
 
 
@@ -12,10 +12,10 @@ import mods.generationstages.generationstages;
 
 :::group{name=addBiomeStages}
 
-Allows you to add a biome to a stage . Which means the selected biome will be replaced by plains
+By adding some biome to the stage, it will not spawn and in its place will be the biome of the plain. This restriction works until the player gets a stage.
 
 ```zenscript
-generationstages.addBiomeStages(stage as string, biome as ResourceLocation)
+GenerationStages.addBiomeStages(stage as string, biome as ResourceLocation)
 ```
 
 | Parameter |                            Type                            |                 Description                 |
@@ -31,7 +31,7 @@ generationstages.addBiomeStages(stage as string, biome as ResourceLocation)
 Allows you to add generation parts such as Grass, Trees, Lakes, etc. to a stage
 
 ```zenscript
-generationstages.addFeatureStages(stages as string, feature as ResourceLocation)
+GenerationStages.addFeatureStages(stages as string, feature as ResourceLocation)
 ```
 
 | Parameter |                            Type                            |                  Description                  |
@@ -47,7 +47,7 @@ generationstages.addFeatureStages(stages as string, feature as ResourceLocation)
 
 
 ```zenscript
-generationstages.addStructureStage(stage as string, dungeon as ResourceLocation)
+GenerationStages.addStructureStage(stage as string, dungeon as ResourceLocation)
 ```
 
 | Parameter |                            Type                            |                   Description                    |
@@ -63,9 +63,9 @@ generationstages.addStructureStage(stage as string, dungeon as ResourceLocation)
 Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
 
 ```zenscript
-// generationstages.getStructuresTemplates() as stdlib.List<ResourceLocation>
+// GenerationStages.getStructuresTemplates() as stdlib.List<ResourceLocation>
 
-generationstages.getStructuresTemplates();
+GenerationStages.getStructuresTemplates();
 ```
 
 :::
@@ -75,7 +75,7 @@ generationstages.getStructuresTemplates();
 Parameters that will be applied and cannot be undone from outside
 
 ```zenscript
-generationstages.setClearAll(clearAll as boolean)
+GenerationStages.setClearAll(clearAll as boolean)
 ```
 
 | Parameter |  Type   |                                                               Description                                                                |
@@ -90,7 +90,7 @@ generationstages.setClearAll(clearAll as boolean)
 
 
 ```zenscript
-generationstages.setClearAll(stage as string, clearAll as boolean)
+GenerationStages.setClearAll(stage as string, clearAll as boolean)
 ```
 
 | Parameter |  Type   |                                                               Description                                                                |
@@ -106,7 +106,7 @@ generationstages.setClearAll(stage as string, clearAll as boolean)
 Parameters that will be applied and cannot be undone from outside
 
 ```zenscript
-generationstages.setDeleteAll(deleteAll as boolean)
+GenerationStages.setDeleteAll(deleteAll as boolean)
 ```
 
 | Parameter |  Type   |                                                      Description                                                      |
@@ -121,7 +121,7 @@ generationstages.setDeleteAll(deleteAll as boolean)
 
 
 ```zenscript
-generationstages.setDeleteAll(stage as string, deleteAll as boolean)
+GenerationStages.setDeleteAll(stage as string, deleteAll as boolean)
 ```
 
 | Parameter |  Type   |                                                      Description                                                      |
@@ -137,7 +137,7 @@ generationstages.setDeleteAll(stage as string, deleteAll as boolean)
 Parameters that will be applied and cannot be undone from outside
 
 ```zenscript
-generationstages.setStarterChunk(starterChunk as boolean)
+GenerationStages.setStarterChunk(starterChunk as boolean)
 ```
 
 |  Parameter   |  Type   |                                                            Description                                                             |

@@ -30,18 +30,6 @@ myTaskCompletedEvent.getNotifiedPlayers();
 
 :::
 
-:::group{name=getObject}
-
-Return Type: [Task](/mods/sixikutils/ftbquest/quests/Task)
-
-```zenscript
-// TaskCompletedEvent.getObject() as Task
-
-myTaskCompletedEvent.getObject();
-```
-
-:::
-
 :::group{name=getOnlineMembers}
 
 Return Type: stdlib.List&lt;[ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)&gt;
@@ -80,10 +68,10 @@ myTaskCompletedEvent.getTeam();
 
 :::group{name=getTime}
 
-Return Type: **invalid**
+Return Type: long
 
 ```zenscript
-// TaskCompletedEvent.getTime() as invalid
+// TaskCompletedEvent.getTime() as long
 
 myTaskCompletedEvent.getTime();
 ```

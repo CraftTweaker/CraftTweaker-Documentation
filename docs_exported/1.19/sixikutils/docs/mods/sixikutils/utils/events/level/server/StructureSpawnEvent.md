@@ -42,18 +42,6 @@ myStructureSpawnEvent.getChunkPos();
 
 :::
 
-:::group{name=getL}
-
-Return Type: long
-
-```zenscript
-// StructureSpawnEvent.getL() as long
-
-myStructureSpawnEvent.getL();
-```
-
-:::
-
 :::group{name=getLevel}
 
 Return Type: [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)
@@ -121,7 +109,6 @@ myStructureSpawnEvent.getTemplateManager();
 |------------------|-----------------------------------------------------------------------------------|------------|------------|
 | chunkAccess      | [Chunk](/mods/sixikutils/utils/world/Chunk)                                       | true       | false      |
 | chunkPos         | [ChunkPos](/mods/sixikutils/utils/world/ChunkPos)                                 | true       | false      |
-| l                | long                                                                              | true       | false      |
 | levelAccessor    | [LevelAccessor](/mods/sixikutils/utils/world/LevelAccessor)                       | true       | false      |
 | randomState      | [RandomState](/mods/sixikutils/utils/world/RandomState)                           | true       | false      |
 | sectionPos       | [SectionPos](/mods/sixikutils/utils/world/SectionPos)                             | true       | false      |

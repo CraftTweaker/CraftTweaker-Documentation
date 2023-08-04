@@ -20,7 +20,7 @@ PlayerChestOpenEvent extends [PlayerEvent](/forge/api/event/entity/player/Player
 
 :::group{name=getBlockEntity}
 
-Return Type: [BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity)
+Return Type: [BlockEntity](/vanilla/api/block/entity/BlockEntity)
 
 ```zenscript
 // PlayerChestOpenEvent.getBlockEntity() as BlockEntity
@@ -44,7 +44,7 @@ myPlayerChestOpenEvent.getOpenCount();
 
 :::group{name=getPlayer}
 
-Return Type: [Player](/mods/sixikutils/curios/player/Player)
+Return Type: [Player](/vanilla/api/entity/type/player/Player)
 
 ```zenscript
 // PlayerChestOpenEvent.getPlayer() as Player
@@ -57,9 +57,9 @@ myPlayerChestOpenEvent.getPlayer();
 
 ## Properties
 
-|   Name    |                             Type                              | Has Getter | Has Setter |
-|-----------|---------------------------------------------------------------|------------|------------|
-| block     | [BlockEntity](/mods/sixikutils/utils/block/ExpandBlockEntity) | true       | false      |
-| openCount | int                                                           | true       | false      |
-| player    | [Player](/mods/sixikutils/curios/player/Player)               | true       | false      |
+|   Name    |                         Type                         | Has Getter | Has Setter |
+|-----------|------------------------------------------------------|------------|------------|
+| block     | [BlockEntity](/vanilla/api/block/entity/BlockEntity) | true       | false      |
+| openCount | int                                                  | true       | false      |
+| player    | [Player](/vanilla/api/entity/type/player/Player)     | true       | false      |
 

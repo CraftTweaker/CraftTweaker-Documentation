@@ -87,14 +87,16 @@ TeamData.canStartTasks(quest as Quest) as boolean
 
 :::group{name=changeProgress}
 
+
+
 ```zenscript
 TeamData.changeProgress(id as string, consumer as Consumer)
 ```
 
-| Parameter |   Type   |
-|-----------|----------|
-| id        | string   |
-| consumer  | Consumer |
+| Parameter |   Type   |                                                                                                   Description                                                                                                   |
+|-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id        | string   |                                                                                                                                                                                                                 |
+| consumer  | Consumer | - the type that participates in the task. If you have a condition in the task for fulfilling the number of things, then consumer will have the values long, if it is a tick, then true or false, or from 0 to 1 |
 
 
 :::
@@ -150,7 +152,7 @@ myTeamData.getName();
 
 :::group{name=getOnlineMembers}
 
-Return Type: stdlib.List&lt;[Player](/mods/sixikutils/curios/player/Player)&gt;
+Return Type: stdlib.List&lt;[Player](/vanilla/api/entity/type/player/Player)&gt;
 
 ```zenscript
 // TeamData.getOnlineMembers() as stdlib.List<Player>
