@@ -2,6 +2,8 @@
 
 The IItemInteractionForEntity function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a player right clicks on an entity with the item.
 
+NOTE: This class will not exist until a ContentTweaker 1.12 version newer than 4.10.0 is built and released. For now, this file is kept for archival purposes, and this notice will be removed when ContentTweaker 1.12 is updated.
+
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemInteractionForEntity;` 
