@@ -30,7 +30,6 @@ blockEntity.isHaveContainer();
 
 The same method as getContainerSize, only with a different execution logic. Use it if you have any problems
 
-Returns: Ñontainer Size  
 Return Type: int
 
 ```zenscript
