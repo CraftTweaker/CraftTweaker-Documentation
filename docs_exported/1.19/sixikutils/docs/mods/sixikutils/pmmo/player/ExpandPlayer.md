@@ -2,10 +2,10 @@
 
 ## Methods
 
-:::group{name=addLevel}
+:::group{name=addPMMOLevel}
 
 ```zenscript
-Player.addLevel(skillName as string, amount as int)
+Player.addPMMOLevel(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |
@@ -16,10 +16,10 @@ Player.addLevel(skillName as string, amount as int)
 
 :::
 
-:::group{name=addXp}
+:::group{name=addPMMOXp}
 
 ```zenscript
-Player.addXp(skillName as string, amount as int)
+Player.addPMMOXp(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |
@@ -30,12 +30,12 @@ Player.addXp(skillName as string, amount as int)
 
 :::
 
-:::group{name=getLevel}
+:::group{name=getPMMOLevel}
 
 Return Type: int
 
 ```zenscript
-Player.getLevel(skillName as string) as int
+Player.getPMMOLevel(skillName as string) as int
 ```
 
 | Parameter |  Type  |
@@ -45,10 +45,10 @@ Player.getLevel(skillName as string) as int
 
 :::
 
-:::group{name=setLevel}
+:::group{name=setPMMOLevel}
 
 ```zenscript
-Player.setLevel(skillName as string, amount as int)
+Player.setPMMOLevel(skillName as string, amount as int)
 ```
 
 | Parameter |  Type  |

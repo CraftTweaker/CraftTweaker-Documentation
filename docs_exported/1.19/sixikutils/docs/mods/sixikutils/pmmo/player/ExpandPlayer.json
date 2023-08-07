@@ -1,1 +1,1 @@
-{"path":"mods/sixikutils/pmmo/player/ExpandPlayer.md","searchTerms":["getLevel","addLevel","addXp","setLevel"]}
+{"path":"mods/sixikutils/pmmo/player/ExpandPlayer.md","searchTerms":["addPMMOLevel","getPMMOLevel","setPMMOLevel","addPMMOXp"]}

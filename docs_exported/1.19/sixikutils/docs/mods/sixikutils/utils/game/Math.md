@@ -31,17 +31,19 @@ Math.getPercentageRatio(num1 as double, num2 as double, rounding as boolean) as 
 
 :::group{name=getPercent}
 
+
+
 Return Type: double
 
 ```zenscript
 Math.getPercent(num as double, percent as int, type as int) as double
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| num       | double |
-| percent   | int    |
-| type      | int    |
+| Parameter |  Type  |               Description               |
+|-----------|--------|-----------------------------------------|
+| num       | double |                                         |
+| percent   | int    |                                         |
+| type      | int    | from 1 to 3. Different execution logic. |
 
 
 :::

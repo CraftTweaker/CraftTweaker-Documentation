@@ -1,1 +1,1 @@
-{"path":"mods/sixikutils/curios/ExpandPlayer.md","searchTerms":["getItems","getLootingBonus","getFortuneBonus","findItemInSlots","getVisibleSlots","setStackInSlot","getSlots","getStackInSlot"]}
+{"path":"mods/sixikutils/curios/ExpandPlayer.md","searchTerms":["getCuriosSlots","getCuriosStackInSlot","getCuriosVisibleSlots","findCuriosItemInSlots","getCuriosFortuneBonus","setCuriosStackInSlot","getCuriosLootingBonus","get—uriosItems"]}

@@ -302,15 +302,17 @@ serverLevel.getRandomPlayer();
 
 :::group{name=getRandomPos}
 
+
+
 Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 
 ```zenscript
 ServerLevel.getRandomPos(t as int[]) as BlockPos
 ```
 
-| Parameter | Type  |
-|-----------|-------|
-| t         | int[] |
+| Parameter | Type  |                                  Description                                   |
+|-----------|-------|--------------------------------------------------------------------------------|
+| t         | int[] | Base coordinates. 4 array parameters that will mean the corners of the square. |
 
 
 :::

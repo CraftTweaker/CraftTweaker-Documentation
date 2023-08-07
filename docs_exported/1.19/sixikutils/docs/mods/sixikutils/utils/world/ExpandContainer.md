@@ -4,17 +4,19 @@
 
 :::group{name=fill}
 
+Allows you to fill the chest with some kind of loot table.
+
 Return Type: boolean
 
 ```zenscript
 Container.fill(level as Level, rs as ResourceLocation, context as LootContext) as boolean
 ```
 
-| Parameter |                            Type                            |
-|-----------|------------------------------------------------------------|
-| level     | [Level](/vanilla/api/world/Level)                          |
-| rs        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
-| context   | [LootContext](/vanilla/api/loot/LootContext)               |
+| Parameter |                            Type                            |   Description   |
+|-----------|------------------------------------------------------------|-----------------|
+| level     | [Level](/vanilla/api/world/Level)                          |                 |
+| rs        | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | Loot table      |
+| context   | [LootContext](/vanilla/api/loot/LootContext)               | Loot conditions |
 
 
 :::
@@ -23,7 +25,6 @@ Container.fill(level as Level, rs as ResourceLocation, context as LootContext) a
 
 Allows you to transfer items from one container to another
 
-Returns: True or False  
 Return Type: boolean
 
 ```zenscript
@@ -41,7 +42,6 @@ Container.splitContainer(container2 as Container) as boolean
 
 Allows you to transfer items from one container to another
 
-Returns: True or False  
 Return Type: boolean
 
 ```zenscript

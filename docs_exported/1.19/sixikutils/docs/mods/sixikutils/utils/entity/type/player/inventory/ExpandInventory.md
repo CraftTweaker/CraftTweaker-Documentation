@@ -33,6 +33,8 @@ inventory.getSelectedIndex();
 
 :::group{name=isArmor}
 
+Allows you to check whether the player is wearing an item as armor.
+
 Return Type: boolean
 
 ```zenscript

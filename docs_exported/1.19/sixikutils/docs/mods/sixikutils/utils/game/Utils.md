@@ -12,6 +12,8 @@ import mods.sixikutils.misc.Utils;
 
 :::group{name=getServer}
 
+Allows you to get the server from anywhere in the script.
+
 Return Type: [Server](/vanilla/api/game/Server)
 
 ```zenscript

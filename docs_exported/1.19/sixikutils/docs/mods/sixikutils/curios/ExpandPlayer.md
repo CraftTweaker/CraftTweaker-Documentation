@@ -2,12 +2,12 @@
 
 ## Methods
 
-:::group{name=findItemInSlots}
+:::group{name=findCuriosItemInSlots}
 
 Return Type: int
 
 ```zenscript
-Player.findItemInSlots(item as IItemStack) as int
+Player.findCuriosItemInSlots(item as IItemStack) as int
 ```
 
 | Parameter |                    Type                    |
@@ -17,60 +17,48 @@ Player.findItemInSlots(item as IItemStack) as int
 
 :::
 
-:::group{name=getFortuneBonus}
+:::group{name=getCuriosFortuneBonus}
 
 Return Type: int
 
 ```zenscript
-// Player.getFortuneBonus() as int
+// Player.getCuriosFortuneBonus() as int
 
-player.getFortuneBonus();
+player.getCuriosFortuneBonus();
 ```
 
 :::
 
-:::group{name=getItems}
-
-Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
-
-```zenscript
-// Player.getItems() as stdlib.List<IItemStack>
-
-player.getItems();
-```
-
-:::
-
-:::group{name=getLootingBonus}
+:::group{name=getCuriosLootingBonus}
 
 Return Type: int
 
 ```zenscript
-// Player.getLootingBonus() as int
+// Player.getCuriosLootingBonus() as int
 
-player.getLootingBonus();
+player.getCuriosLootingBonus();
 ```
 
 :::
 
-:::group{name=getSlots}
+:::group{name=getCuriosSlots}
 
 Return Type: int
 
 ```zenscript
-// Player.getSlots() as int
+// Player.getCuriosSlots() as int
 
-player.getSlots();
+player.getCuriosSlots();
 ```
 
 :::
 
-:::group{name=getStackInSlot}
+:::group{name=getCuriosStackInSlot}
 
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-Player.getStackInSlot(slot as int) as IItemStack
+Player.getCuriosStackInSlot(slot as int) as IItemStack
 ```
 
 | Parameter | Type |
@@ -80,22 +68,34 @@ Player.getStackInSlot(slot as int) as IItemStack
 
 :::
 
-:::group{name=getVisibleSlots}
+:::group{name=getCuriosVisibleSlots}
 
 Return Type: int
 
 ```zenscript
-// Player.getVisibleSlots() as int
+// Player.getCuriosVisibleSlots() as int
 
-player.getVisibleSlots();
+player.getCuriosVisibleSlots();
 ```
 
 :::
 
-:::group{name=setStackInSlot}
+:::group{name=get—uriosItems}
+
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 
 ```zenscript
-Player.setStackInSlot(IItem as IItemStack, slot as int)
+// Player.get—uriosItems() as stdlib.List<IItemStack>
+
+player.get—uriosItems();
+```
+
+:::
+
+:::group{name=setCuriosStackInSlot}
+
+```zenscript
+Player.setCuriosStackInSlot(IItem as IItemStack, slot as int)
 ```
 
 | Parameter |                    Type                    |

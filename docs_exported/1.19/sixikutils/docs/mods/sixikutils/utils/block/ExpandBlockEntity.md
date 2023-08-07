@@ -16,6 +16,8 @@ blockEntity.getContainer();
 
 :::group{name=isHaveContainer}
 
+Allows you to check whether the block has a container or not.
+
 Return Type: boolean
 
 ```zenscript
