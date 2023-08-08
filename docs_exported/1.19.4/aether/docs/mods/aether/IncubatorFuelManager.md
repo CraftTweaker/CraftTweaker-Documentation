@@ -15,7 +15,7 @@ Adds this item as fuel for the Incubator with the given burn time.
 
 ```zenscript
 // IncubatorFuelManager.addFuel(item as IItemStack, burnTime as int)
-incubator.addFuel(<item:minecraft:coal>, 250);
+mods.aether.IncubatorFuelManager.addFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -32,7 +32,7 @@ Adds the items from this tag as fuel for the Incubator with the given burn time.
 
 ```zenscript
 // IncubatorFuelManager.addFuelTag(tag as MCTag, burnTime as int)
-incubator.addFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.IncubatorFuelManager.addFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -49,7 +49,7 @@ Removes this fuel item with the given burn time from the Incubator.
 
 ```zenscript
 // IncubatorFuelManager.removeFuel(item as IItemStack, burnTime as int)
-incubator.removeFuel(<item:minecraft:coal>, 250);
+mods.aether.IncubatorFuelManager.removeFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -66,7 +66,7 @@ Removes the fuel items in this tag with the given burn time from the Incubator.
 
 ```zenscript
 // IncubatorFuelManager.removeFuelTag(tag as MCTag, burnTime as int)
-incubator.removeFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.IncubatorFuelManager.removeFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
