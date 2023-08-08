@@ -15,7 +15,7 @@ Adds this item as fuel for the Altar with the given burn time.
 
 ```zenscript
 // AltarFuelManager.addFuel(item as IItemStack, burnTime as int)
-altar.addFuel(<item:minecraft:coal>, 250);
+mods.aether.AltarFuelManager.addFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -32,7 +32,7 @@ Adds the items from this tag as fuel for the Altar with the given burn time.
 
 ```zenscript
 // AltarFuelManager.addFuelTag(tag as MCTag, burnTime as int)
-altar.addFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.AltarFuelManager.addFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -49,7 +49,7 @@ Removes this fuel item with the given burn time from the Altar.
 
 ```zenscript
 // AltarFuelManager.removeFuel(item as IItemStack, burnTime as int)
-altar.removeFuel(<item:minecraft:coal>, 250);
+mods.aether.AltarFuelManager.removeFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -66,7 +66,7 @@ Removes the fuel items in this tag with the given burn time from the Altar.
 
 ```zenscript
 // AltarFuelManager.removeFuelTag(tag as MCTag, burnTime as int)
-altar.removeFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.AltarFuelManager.removeFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
