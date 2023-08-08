@@ -15,7 +15,7 @@ Adds this item as fuel for the Freezer with the given burn time.
 
 ```zenscript
 // FreezerFuelManager.addFuel(item as IItemStack, burnTime as int)
-freezer.addFuel(<item:minecraft:coal>, 250);
+mods.aether.FreezerFuelManager.addFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -32,7 +32,7 @@ Adds the items from this tag as fuel for the Freezer with the given burn time.
 
 ```zenscript
 // FreezerFuelManager.addFuelTag(tag as MCTag, burnTime as int)
-freezer.addFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.FreezerFuelManager.addFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -49,7 +49,7 @@ Removes this fuel item with the given burn time from the Freezer.
 
 ```zenscript
 // FreezerFuelManager.removeFuel(item as IItemStack, burnTime as int)
-freezer.removeFuel(<item:minecraft:coal>, 250);
+mods.aether.FreezerFuelManager.removeFuel(<item:minecraft:coal>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
@@ -66,7 +66,7 @@ Removes the fuel items in this tag with the given burn time from the Freezer.
 
 ```zenscript
 // FreezerFuelManager.removeFuelTag(tag as MCTag, burnTime as int)
-freezer.removeFuelTag(<tag:items:minecraft:planks>, 250);
+mods.aether.FreezerFuelManager.removeFuelTag(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
