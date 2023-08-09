@@ -6,10 +6,13 @@
 
 Gets a list of requirements that must be met in order to attack an entity
 
+Map -> {"combat" : 10, "endurance" : 20}  {skillName : level}
+
 Return Type: int?[string]
 
 ```zenscript
-Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
+// Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
+Level.getRequirementMap(<entity:minecraft:zombie>, <constant:pmmo:reqtype:value>);
 ```
 
 | Parameter |                 Type                 |       Description        |
@@ -24,10 +27,12 @@ Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
 
 Gets a list of requirements that must be met in order to use the item
 
+Map -> {"combat" : 10, "endurance" : 20}  {skillName : level}
+
 Return Type: int?[string]
 
 ```zenscript
-Level.getRequirementMap(itemStack as IItemStack, type as invalid) as int?[string]
+Level.getRequirementMap(<item:minecraft:iron_sword>, <constant:pmmo:reqtype:value>);
 ```
 
 | Parameter |                    Type                    |       Description        |
@@ -42,10 +47,12 @@ Level.getRequirementMap(itemStack as IItemStack, type as invalid) as int?[string
 
 Gets a spico of requirements that need to be fulfilled in order to break the block
 
+Map -> {"combat" : 10, "endurance" : 20}  {skillName : level}
+
 Return Type: int?[string]
 
 ```zenscript
-Level.getRequirementMap(pos as BlockPos, type as invalid) as int?[string]
+Level.getRequirementMap(new BlockPos(10, 60, 10), <constant:pmmo:reqtype:value>);
 ```
 
 | Parameter |                    Type                     |       Description        |
