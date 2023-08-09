@@ -14,65 +14,29 @@ import mods.aether.AltarFuelManager;
 Adds this item as fuel for the Altar with the given burn time.
 
 ```zenscript
-// AltarFuelManager.addFuel(item as IItemStack, burnTime as int)
+// AltarFuelManager.addFuel(ingredient as IIngredient, burnTime as int)
 mods.aether.AltarFuelManager.addFuel(<item:minecraft:coal>, 250);
+mods.aether.AltarFuelManager.addFuel(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
 |-----------|------|-------------|----------|
-| item | [IItemStack](/vanilla/api/item/IItemStack) | fuel [IItemStack](/vanilla/api/item/IItemStack) | false |
+| item | [IIngredient](/vanilla/api/ingredient/IIngredient) | fuel [IIngredient](/vanilla/api/ingredient/IIngredient) | false |
 | burnTime | int | the fuel's burn time | false |
-
-
-:::
-
-:::group{name=addFuelTag}
-
-Adds the items from this tag as fuel for the Altar with the given burn time.
-
-```zenscript
-// AltarFuelManager.addFuelTag(tag as MCTag, burnTime as int)
-mods.aether.AltarFuelManager.addFuelTag(<tag:items:minecraft:planks>, 250);
-```
-
-| Parameter | Type | Description | Optional |
-|-----------|------|-------------|----------|
-| item | [MCTag](/vanilla/api/tag/MCTag) | fuel [MCTag](/vanilla/api/tag/MCTag) | false |
-| burnTime | int | the fuel's burn time | false |
-
-
-:::
 
 :::group{name=removeFuel}
 
-Removes this fuel item with the given burn time from the Altar.
+Removes this fuel item from the Altar.
 
 ```zenscript
-// AltarFuelManager.removeFuel(item as IItemStack, burnTime as int)
-mods.aether.AltarFuelManager.removeFuel(<item:minecraft:coal>, 250);
+// AltarFuelManager.removeFuel(ingredient as IIngredient)
+mods.aether.AltarFuelManager.removeFuel(<item:minecraft:coal>);
+mods.aether.AltarFuelManager.removeFuel(<tag:items:minecraft:planks>);
 ```
 
 | Parameter | Type | Description | Optional |
 |-----------|------|-------------|----------|
-| item | [IItemStack](/vanilla/api/item/IItemStack) | fuel [IItemStack](/vanilla/api/item/IItemStack) | false |
-| burnTime | int | the fuel's burn time | false |
-
-
-:::
-
-:::group{name=removeFuelTag}
-
-Removes the fuel items in this tag with the given burn time from the Altar.
-
-```zenscript
-// AltarFuelManager.removeFuelTag(tag as MCTag, burnTime as int)
-mods.aether.AltarFuelManager.removeFuelTag(<tag:items:minecraft:planks>, 250);
-```
-
-| Parameter | Type | Description | Optional |
-|-----------|------|-------------|----------|
-| item | [MCTag](/vanilla/api/tag/MCTag) | fuel [MCTag](/vanilla/api/tag/MCTag) | false |
-| burnTime | int | the fuel's burn time | false |
+| item | [IIngredient](/vanilla/api/ingredient/IIngredient) | fuel [IIngredient](/vanilla/api/ingredient/IIngredient) | false |
 
 
 :::
