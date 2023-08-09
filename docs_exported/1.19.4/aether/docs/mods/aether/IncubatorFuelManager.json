@@ -1,5 +1,5 @@
 {
   "path": "mods/aether/IncubatorFuelManager.md",
   "zenCodeName": "mods.aether.IncubatorFuelManager",
-  "searchTerms": [ "addFuel", "addFuelTag", "removeFuel", "removeFuelTag" ]
+  "searchTerms": [ "addFuel", "removeFuel" ]
 }
