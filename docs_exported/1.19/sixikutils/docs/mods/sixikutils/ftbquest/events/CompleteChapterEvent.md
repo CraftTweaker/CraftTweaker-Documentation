@@ -66,16 +66,4 @@ myCompleteChapterEvent.getTeam();
 
 :::
 
-:::group{name=getTime}
-
-Return Type: **invalid**
-
-```zenscript
-// CompleteChapterEvent.getTime() as invalid
-
-myCompleteChapterEvent.getTime();
-```
-
-:::
-
 

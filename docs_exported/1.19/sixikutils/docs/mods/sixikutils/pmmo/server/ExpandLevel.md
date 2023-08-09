@@ -9,8 +9,7 @@ Gets a list of requirements that must be met in order to attack an entity
 Return Type: int?[string]
 
 ```zenscript
-// Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
-Level.getRequirementMap(<entity:minecraft:zombie>, <constant:pmmo:reqtype:value>);
+Level.getRequirementMap(entity as Entity, type as invalid) as int?[string]
 ```
 
 | Parameter |                 Type                 |       Description        |
@@ -28,8 +27,7 @@ Gets a list of requirements that must be met in order to use the item
 Return Type: int?[string]
 
 ```zenscript
-// Level.getRequirementMap(itemStack as IItemStack, type as invalid) as int?[string]
-Level.getRequirementMap(<item:minecraft:iron_sword>, <constant:pmmo:reqtype:value>);
+Level.getRequirementMap(itemStack as IItemStack, type as invalid) as int?[string]
 ```
 
 | Parameter |                    Type                    |       Description        |
@@ -47,8 +45,7 @@ Gets a spico of requirements that need to be fulfilled in order to break the blo
 Return Type: int?[string]
 
 ```zenscript
-// Level.getRequirementMap(pos as BlockPos, type as invalid) as int?[string]
-Level.getRequirementMap(new BlockPos(10, 60, 20), <constant:pmmo:reqtype:value>);
+Level.getRequirementMap(pos as BlockPos, type as invalid) as int?[string]
 ```
 
 | Parameter |                    Type                     |       Description        |
