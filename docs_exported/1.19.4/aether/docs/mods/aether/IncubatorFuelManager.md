@@ -14,65 +14,29 @@ import mods.aether.IncubatorFuelManager;
 Adds this item as fuel for the Incubator with the given burn time.
 
 ```zenscript
-// IncubatorFuelManager.addFuel(item as IItemStack, burnTime as int)
+// IncubatorFuelManager.addFuel(ingredient as IIngredient, burnTime as int)
 mods.aether.IncubatorFuelManager.addFuel(<item:minecraft:coal>, 250);
+mods.aether.IncubatorFuelManager.addFuel(<tag:items:minecraft:planks>, 250);
 ```
 
 | Parameter | Type | Description | Optional |
 |-----------|------|-------------|----------|
-| item | [IItemStack](/vanilla/api/item/IItemStack) | fuel [IItemStack](/vanilla/api/item/IItemStack) | false |
+| item | [IIngredient](/vanilla/api/ingredient/IIngredient) | fuel [IIngredient](/vanilla/api/ingredient/IIngredient) | false |
 | burnTime | int | the fuel's burn time | false |
-
-
-:::
-
-:::group{name=addFuelTag}
-
-Adds the items from this tag as fuel for the Incubator with the given burn time.
-
-```zenscript
-// IncubatorFuelManager.addFuelTag(tag as MCTag, burnTime as int)
-mods.aether.IncubatorFuelManager.addFuelTag(<tag:items:minecraft:planks>, 250);
-```
-
-| Parameter | Type | Description | Optional |
-|-----------|------|-------------|----------|
-| item | [MCTag](/vanilla/api/tag/MCTag) | fuel [MCTag](/vanilla/api/tag/MCTag) | false |
-| burnTime | int | the fuel's burn time | false |
-
-
-:::
 
 :::group{name=removeFuel}
 
-Removes this fuel item with the given burn time from the Incubator.
+Removes this fuel item from the Incubator.
 
 ```zenscript
-// IncubatorFuelManager.removeFuel(item as IItemStack, burnTime as int)
-mods.aether.IncubatorFuelManager.removeFuel(<item:minecraft:coal>, 250);
+// IncubatorFuelManager.removeFuel(ingredient as IIngredient)
+mods.aether.IncubatorFuelManager.removeFuel(<item:minecraft:coal>);
+mods.aether.IncubatorFuelManager.removeFuel(<tag:items:minecraft:planks>);
 ```
 
 | Parameter | Type | Description | Optional |
 |-----------|------|-------------|----------|
-| item | [IItemStack](/vanilla/api/item/IItemStack) | fuel [IItemStack](/vanilla/api/item/IItemStack) | false |
-| burnTime | int | the fuel's burn time | false |
-
-
-:::
-
-:::group{name=removeFuelTag}
-
-Removes the fuel items in this tag with the given burn time from the Incubator.
-
-```zenscript
-// IncubatorFuelManager.removeFuelTag(tag as MCTag, burnTime as int)
-mods.aether.IncubatorFuelManager.removeFuelTag(<tag:items:minecraft:planks>, 250);
-```
-
-| Parameter | Type | Description | Optional |
-|-----------|------|-------------|----------|
-| item | [MCTag](/vanilla/api/tag/MCTag) | fuel [MCTag](/vanilla/api/tag/MCTag) | false |
-| burnTime | int | the fuel's burn time | false |
+| item | [IIngredient](/vanilla/api/ingredient/IIngredient) | fuel [IIngredient](/vanilla/api/ingredient/IIngredient) | false |
 
 
 :::
