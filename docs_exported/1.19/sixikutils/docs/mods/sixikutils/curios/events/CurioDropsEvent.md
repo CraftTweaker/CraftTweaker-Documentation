@@ -18,18 +18,6 @@ CurioDropsEvent extends [LivingEvent](/forge/api/event/entity/LivingEvent). That
 
 ## Methods
 
-:::group{name=getCompoundNBT}
-
-Return Type: **invalid**
-
-```zenscript
-// CurioDropsEvent.getCompoundNBT() as invalid
-
-myCurioDropsEvent.getCompoundNBT();
-```
-
-:::
-
 :::group{name=getCuriosString}
 
 Return Type: string
@@ -177,6 +165,5 @@ myCurioDropsEvent.getVisibleSlots();
 | result       | [EventResult](/forge/api/event/EventResult)              | true       | false      |
 | slotWearer   | [LivingEntity](/vanilla/api/entity/LivingEntity)         | true       | false      |
 | slots        | int                                                      | true       | false      |
-| tags         | **invalid**                                              | true       | false      |
 | visibleSlots | int                                                      | true       | false      |
 

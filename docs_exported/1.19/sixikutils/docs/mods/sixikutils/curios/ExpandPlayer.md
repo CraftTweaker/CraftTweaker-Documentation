@@ -4,6 +4,8 @@
 
 :::group{name=findCuriosItemInSlots}
 
+Allows you to get the id of the Curios slot with the desired item
+
 Return Type: int
 
 ```zenscript
@@ -29,6 +31,20 @@ player.getCuriosFortuneBonus();
 
 :::
 
+:::group{name=getCuriosItems}
+
+Allows you to get a list of all dressed items in Curios slots
+
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
+
+```zenscript
+// Player.getCuriosItems() as stdlib.List<IItemStack>
+
+player.getCuriosItems();
+```
+
+:::
+
 :::group{name=getCuriosLootingBonus}
 
 Return Type: int
@@ -43,6 +59,8 @@ player.getCuriosLootingBonus();
 
 :::group{name=getCuriosSlots}
 
+Allows you to get the number of Curios slots
+
 Return Type: int
 
 ```zenscript
@@ -55,20 +73,24 @@ player.getCuriosSlots();
 
 :::group{name=getCuriosStackInSlot}
 
+Allows you to get an item in one of the Curios slots
+
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
 Player.getCuriosStackInSlot(slot as int) as IItemStack
 ```
 
-| Parameter | Type |
-|-----------|------|
-| slot      | int  |
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| slot      | int  | slot index  |
 
 
 :::
 
 :::group{name=getCuriosVisibleSlots}
+
+Allows you to get the number of non-hidden Curios slots
 
 Return Type: int
 
@@ -80,19 +102,9 @@ player.getCuriosVisibleSlots();
 
 :::
 
-:::group{name=get—uriosItems}
-
-Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
-
-```zenscript
-// Player.get—uriosItems() as stdlib.List<IItemStack>
-
-player.get—uriosItems();
-```
-
-:::
-
 :::group{name=setCuriosStackInSlot}
+
+Allows you to forcibly install any item in any of the Curios slots
 
 ```zenscript
 Player.setCuriosStackInSlot(IItem as IItemStack, slot as int)

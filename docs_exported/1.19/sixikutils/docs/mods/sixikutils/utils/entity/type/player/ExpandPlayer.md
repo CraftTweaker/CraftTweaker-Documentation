@@ -18,18 +18,6 @@ Player.changeDimension(res as ResourceLocation, method as boolean)
 
 :::
 
-:::group{name=getClient}
-
-Return Type: **invalid**
-
-```zenscript
-// Player.getClient() as invalid
-
-player.getClient();
-```
-
-:::
-
 :::group{name=getEnderChestInventory}
 
 Return Type: [EnderChestInventory](/mods/sixikutils/utils/entity/type/player/inventory/EnderChestInventory)
@@ -118,50 +106,50 @@ player.getStatisticsManager();
 
 :::
 
-:::group{name=getxRot}
+:::group{name=getXRot}
 
 Return Type: float
 
 ```zenscript
-// Player.getxRot() as float
+// Player.getXRot() as float
 
-player.getxRot();
+player.getXRot();
 ```
 
 :::
 
-:::group{name=getyBodyRot}
+:::group{name=getYBodyRot}
 
 Return Type: float
 
 ```zenscript
-// Player.getyBodyRot() as float
+// Player.getYBodyRot() as float
 
-player.getyBodyRot();
+player.getYBodyRot();
 ```
 
 :::
 
-:::group{name=getyHeadRot}
+:::group{name=getYHeadRot}
 
 Return Type: float
 
 ```zenscript
-// Player.getyHeadRot() as float
+// Player.getYHeadRot() as float
 
-player.getyHeadRot();
+player.getYHeadRot();
 ```
 
 :::
 
-:::group{name=getyRot}
+:::group{name=getYRot}
 
 Return Type: float
 
 ```zenscript
-// Player.getyRot() as float
+// Player.getYRot() as float
 
-player.getyRot();
+player.getYRot();
 ```
 
 :::
@@ -241,10 +229,10 @@ Player.setRespawnPosition(res as ResourceLocation, pos as BlockPos, respawnAngle
 
 :::
 
-:::group{name=setxRot}
+:::group{name=setXRot}
 
 ```zenscript
-Player.setxRot(rot as float)
+Player.setXRot(rot as float)
 ```
 
 | Parameter | Type  |
@@ -254,10 +242,10 @@ Player.setxRot(rot as float)
 
 :::
 
-:::group{name=setyBodyRot}
+:::group{name=setYBodyRot}
 
 ```zenscript
-Player.setyBodyRot(yaw as float)
+Player.setYBodyRot(yaw as float)
 ```
 
 | Parameter | Type  |
@@ -267,10 +255,10 @@ Player.setyBodyRot(yaw as float)
 
 :::
 
-:::group{name=setyBodyRotO}
+:::group{name=setYBodyRotO}
 
 ```zenscript
-Player.setyBodyRotO(yaw as float)
+Player.setYBodyRotO(yaw as float)
 ```
 
 | Parameter | Type  |
@@ -280,10 +268,10 @@ Player.setyBodyRotO(yaw as float)
 
 :::
 
-:::group{name=setyHeadRot}
+:::group{name=setYHeadRot}
 
 ```zenscript
-Player.setyHeadRot(yaw as float)
+Player.setYHeadRot(yaw as float)
 ```
 
 | Parameter | Type  |
@@ -293,10 +281,10 @@ Player.setyHeadRot(yaw as float)
 
 :::
 
-:::group{name=setyHeadRotO}
+:::group{name=setYHeadRotO}
 
 ```zenscript
-Player.setyHeadRotO(yaw as float)
+Player.setYHeadRotO(yaw as float)
 ```
 
 | Parameter | Type  |
@@ -306,10 +294,10 @@ Player.setyHeadRotO(yaw as float)
 
 :::
 
-:::group{name=setyRot}
+:::group{name=setYRot}
 
 ```zenscript
-Player.setyRot(yaw as float)
+Player.setYRot(yaw as float)
 ```
 
 | Parameter | Type  |

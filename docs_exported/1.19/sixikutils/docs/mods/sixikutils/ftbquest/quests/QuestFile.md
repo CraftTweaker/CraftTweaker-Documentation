@@ -87,12 +87,12 @@ myQuestFile.getAllTasks();
 Return Type: [Chapter](/mods/sixikutils/ftbquest/quests/Chapter)
 
 ```zenscript
-QuestFile.getChapter(l as long) as Chapter
+QuestFile.getChapter(id as long) as Chapter
 ```
 
 | Parameter | Type |
 |-----------|------|
-| l         | long |
+| id        | long |
 
 
 :::
@@ -132,12 +132,12 @@ QuestFile.getData(uuid as string) as TeamData
 Return Type: [Quest](/mods/sixikutils/ftbquest/quests/Quest)
 
 ```zenscript
-QuestFile.getQuest(l as long) as Quest
+QuestFile.getQuest(id as long) as Quest
 ```
 
 | Parameter | Type |
 |-----------|------|
-| l         | long |
+| id        | long |
 
 
 :::
@@ -159,12 +159,12 @@ myQuestFile.getQuestsData();
 Return Type: [Reward](/mods/sixikutils/ftbquest/quests/Reward)
 
 ```zenscript
-QuestFile.getReward(l as long) as Reward
+QuestFile.getReward(id as long) as Reward
 ```
 
 | Parameter | Type |
 |-----------|------|
-| l         | long |
+| id        | long |
 
 
 :::
@@ -174,12 +174,12 @@ QuestFile.getReward(l as long) as Reward
 Return Type: [Task](/mods/sixikutils/ftbquest/quests/Task)
 
 ```zenscript
-QuestFile.getTask(l as long) as Task
+QuestFile.getTask(id as long) as Task
 ```
 
 | Parameter | Type |
 |-----------|------|
-| l         | long |
+| id        | long |
 
 
 :::

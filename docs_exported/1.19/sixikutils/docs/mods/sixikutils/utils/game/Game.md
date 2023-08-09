@@ -12,7 +12,7 @@ import mods.crafttweakerutils.game.Game;
 
 :::group{name=getDate}
 
-Full real date yyyy/MM/dd
+Full real date yyyy/MM/dd <br />  20230822
 
 Return Type: int
 

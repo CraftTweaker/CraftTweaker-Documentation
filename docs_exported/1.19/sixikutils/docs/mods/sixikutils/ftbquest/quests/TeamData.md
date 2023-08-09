@@ -12,30 +12,34 @@ import mods.sixikutils.ftbquest.api.misc.TeamData;
 
 :::group{name=addProgress}
 
+Allows you to add progress to the task. This is most often used for custom tasks, but it can be any other tasks.
+
 Return Type: boolean
 
 ```zenscript
 TeamData.addProgress(id as string, progress as long) as boolean
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
-| progress  | long   |
+| Parameter |  Type  |                                                                   Description                                                                    |
+|-----------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| id        | string | - id tasks or quest                                                                                                                              |
+| progress  | long   | this is the amount by which the task will be completed. If it is a tick, then from 0 - 1. If everything else, then from 0 to the desired amount. |
 
 
 :::
 
 :::group{name=addProgress}
 
+Allows you to add progress to the task. This is most often used for custom tasks, but it can be any other tasks.
+
 ```zenscript
-TeamData.addProgress(task as Task, p as long)
+TeamData.addProgress(task as Task, progress as long)
 ```
 
-| Parameter |                     Type                      |
-|-----------|-----------------------------------------------|
-| task      | [Task](/mods/sixikutils/ftbquest/quests/Task) |
-| p         | long                                          |
+| Parameter |                     Type                      |                                                                   Description                                                                    |
+|-----------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| task      | [Task](/mods/sixikutils/ftbquest/quests/Task) |                                                                                                                                                  |
+| progress  | long                                          | this is the amount by which the task will be completed. If it is a tick, then from 0 - 1. If everything else, then from 0 to the desired amount. |
 
 
 :::
@@ -57,15 +61,17 @@ TeamData.areDependenciesComplete(quest as Quest) as boolean
 
 :::group{name=canStartQuest}
 
+
+
 Return Type: boolean
 
 ```zenscript
 TeamData.canStartQuest(id as string) as boolean
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
@@ -95,7 +101,7 @@ TeamData.changeProgress(id as string, consumer as Consumer)
 
 | Parameter |   Type   |                                                                                                   Description                                                                                                   |
 |-----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| id        | string   |                                                                                                                                                                                                                 |
+| id        | string   | - id tasks or quest                                                                                                                                                                                             |
 | consumer  | Consumer | - the type that participates in the task. If you have a condition in the task for fulfilling the number of things, then consumer will have the values long, if it is a tick, then true or false, or from 0 to 1 |
 
 
@@ -103,18 +109,22 @@ TeamData.changeProgress(id as string, consumer as Consumer)
 
 :::group{name=complete}
 
+
+
 ```zenscript
 TeamData.complete(id as string)
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
 
 :::group{name=getFile}
+
+Allows you to get a file in which all the parameters of the FBT Quest mod are saved.
 
 Return Type: [QuestFile](/mods/sixikutils/ftbquest/quests/QuestFile)
 
@@ -140,6 +150,8 @@ myTeamData.getLocked();
 
 :::group{name=getName}
 
+Allows you to get the name of the team
+
 Return Type: string
 
 ```zenscript
@@ -164,15 +176,17 @@ myTeamData.getOnlineMembers();
 
 :::group{name=getProgress}
 
+
+
 Return Type: long
 
 ```zenscript
-TeamData.getProgress(p as long) as long
+TeamData.getProgress(id as long) as long
 ```
 
-| Parameter | Type |
-|-----------|------|
-| p         | long |
+| Parameter | Type |     Description     |
+|-----------|------|---------------------|
+| id        | long | - id tasks or quest |
 
 
 :::
@@ -182,17 +196,19 @@ TeamData.getProgress(p as long) as long
 Return Type: long
 
 ```zenscript
-TeamData.getProgress(p as Task) as long
+TeamData.getProgress(task as Task) as long
 ```
 
 | Parameter |                     Type                      |
 |-----------|-----------------------------------------------|
-| p         | [Task](/mods/sixikutils/ftbquest/quests/Task) |
+| task      | [Task](/mods/sixikutils/ftbquest/quests/Task) |
 
 
 :::
 
 :::group{name=getRelativeProgress}
+
+
 
 Return Type: int
 
@@ -200,9 +216,9 @@ Return Type: int
 TeamData.getRelativeProgress(id as string) as int
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
@@ -212,17 +228,19 @@ TeamData.getRelativeProgress(id as string) as int
 Return Type: int
 
 ```zenscript
-TeamData.getRelativeProgress(q as Quest) as int
+TeamData.getRelativeProgress(quest as Quest) as int
 ```
 
 | Parameter |                      Type                       |
 |-----------|-------------------------------------------------|
-| q         | [Quest](/mods/sixikutils/ftbquest/quests/Quest) |
+| quest     | [Quest](/mods/sixikutils/ftbquest/quests/Quest) |
 
 
 :::
 
 :::group{name=getTaskProgress}
+
+
 
 Return Type: long
 
@@ -230,14 +248,16 @@ Return Type: long
 TeamData.getTaskProgress(id as string) as long
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
 
 :::group{name=getUUID}
+
+Allows you to get the team id
 
 Return Type: string
 
@@ -251,15 +271,17 @@ myTeamData.getUUID();
 
 :::group{name=isCompleted}
 
+
+
 Return Type: boolean
 
 ```zenscript
 TeamData.isCompleted(id as string) as boolean
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
@@ -281,28 +303,32 @@ TeamData.isCompleted(quest as Quest) as boolean
 
 :::group{name=isStarted}
 
+
+
 Return Type: boolean
 
 ```zenscript
 TeamData.isStarted(id as string) as boolean
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
 
 :::group{name=reset}
 
+
+
 ```zenscript
 TeamData.reset(id as string)
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| id        | string |
+| Parameter |  Type  |     Description     |
+|-----------|--------|---------------------|
+| id        | string | - id tasks or quest |
 
 
 :::
