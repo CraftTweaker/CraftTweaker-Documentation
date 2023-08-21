@@ -24,3 +24,15 @@ GlobalUtils.getServer();
 
 :::
 
+:::group{name=getStructures}
+
+Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
+
+```zenscript
+// GlobalUtils.getStructures() as stdlib.List<ResourceLocation>
+
+GlobalUtils.getStructures();
+```
+
+:::
+
