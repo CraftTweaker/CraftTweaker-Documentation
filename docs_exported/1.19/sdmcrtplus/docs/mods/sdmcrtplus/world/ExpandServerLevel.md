@@ -83,6 +83,64 @@ ServerLevel.forceChunk(uuid as string, position as BlockPos, add as boolean, tic
 
 :::
 
+:::group{name=getStructureManager}
+
+Return Type: [StructureManager](/mods/sdmcrtplus/world/level/StructureManager)
+
+```zenscript
+// ServerLevel.getStructureManager() as StructureManager
+
+serverLevel.getStructureManager();
+```
+
+:::
+
+:::group{name=getStructureTemplateManager}
+
+Return Type: [StructureTemplateManager](/mods/sdmcrtplus/world/level/levelgen/structure/templatesystem/StructureTemplateManager)
+
+```zenscript
+// ServerLevel.getStructureTemplateManager() as StructureTemplateManager
+
+serverLevel.getStructureTemplateManager();
+```
+
+:::
+
+:::group{name=getStructuresNameOnPos}
+
+Returns a list of all structures located at these coordinates
+
+Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
+
+```zenscript
+ServerLevel.getStructuresNameOnPos(pos as BlockPos) as stdlib.List<ResourceLocation>
+```
+
+| Parameter |                    Type                     | Description |
+|-----------|---------------------------------------------|-------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | coordinates |
+
+
+:::
+
+:::group{name=getStructuresOnPos}
+
+Returns a list of all structures located at these coordinates
+
+Return Type: stdlib.List&lt;[Structure](/mods/sdmcrtplus/world/level/levelgen/structure/Structure)&gt;
+
+```zenscript
+ServerLevel.getStructuresOnPos(pos as BlockPos) as stdlib.List<Structure>
+```
+
+| Parameter |                    Type                     | Description |
+|-----------|---------------------------------------------|-------------|
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos) | coordinates |
+
+
+:::
+
 :::group{name=hasForcedChunks}
 
 Checks if a level has any forced chunks. Mainly used for seeing if a level should continue ticking with no players in it.

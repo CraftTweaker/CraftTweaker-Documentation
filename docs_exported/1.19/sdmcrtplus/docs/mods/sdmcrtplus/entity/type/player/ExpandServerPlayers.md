@@ -2,6 +2,34 @@
 
 ## Methods
 
+:::group{name=getLastActionTime}
+
+Returns the last time the player moved
+
+Return Type: long
+
+```zenscript
+// ServerPlayer.getLastActionTime() as long
+
+serverPlayer.getLastActionTime();
+```
+
+:::
+
+:::group{name=getRespawnDimension}
+
+Allows you to get a dimension in which the player will be reborn after death or after teleportation from the ender world
+
+Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
+
+```zenscript
+// ServerPlayer.getRespawnDimension() as ResourceLocation
+
+serverPlayer.getRespawnDimension();
+```
+
+:::
+
 :::group{name=getRespawnPosition}
 
 Will allow you to get the player's rebirth point. If there is a bed, then the coordinates of the bed, if not, then the global point in the world.
@@ -37,4 +65,12 @@ ServerPlayer.setRespawnPosition(position as BlockPos, dimension as ResourceLocat
 
 :::
 
+
+## Properties
+
+|       Name       |                            Type                            | Has Getter | Has Setter |                                                                    Description                                                                    |
+|------------------|------------------------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| lastActionTime   | long                                                       | true       | false      | Returns the last time the player moved                                                                                                            |
+| respawnDimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      | Allows you to get a dimension in which the player will be reborn after death or after teleportation from the ender world                          |
+| respawnPosition  | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      | Will allow you to get the player's rebirth point. If there is a bed, then the coordinates of the bed, if not, then the global point in the world. |
 

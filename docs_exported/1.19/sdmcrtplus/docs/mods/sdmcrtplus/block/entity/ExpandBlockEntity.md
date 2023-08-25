@@ -4,10 +4,10 @@
 
 :::group{name=getContainer}
 
-Return Type: [Container](/vanilla/api/world/Container)
+Return Type: [Container](/vanilla/api/world/Container)?
 
 ```zenscript
-// BlockEntity.getContainer() as Container
+// BlockEntity.getContainer() as Container?
 
 blockEntity.getContainer();
 ```

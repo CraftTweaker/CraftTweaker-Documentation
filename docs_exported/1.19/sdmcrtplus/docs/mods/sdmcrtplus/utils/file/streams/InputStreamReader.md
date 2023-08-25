@@ -8,6 +8,10 @@ import mods.sdmcrtplus.file.utils.streams.InputStreamReader;
 ```
 
 
+## Extending Reader
+
+InputStreamReader extends [Reader](/mods/sdmcrtplus/utils/file/Reader). That means all methods available in [Reader](/mods/sdmcrtplus/utils/file/Reader) are also available in InputStreamReader
+
 ## Constructors
 
 
