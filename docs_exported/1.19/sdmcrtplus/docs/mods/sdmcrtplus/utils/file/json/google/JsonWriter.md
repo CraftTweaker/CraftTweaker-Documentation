@@ -18,11 +18,11 @@ JsonWriter implements the following interfaces. That means all methods defined i
 
 
 ```zenscript
-new JsonWriter(OutputStream as OutputStreamWriter) as JsonWriter
+new JsonWriter(OutputStream as Writer) as JsonWriter
 ```
-|  Parameter   |                                     Type                                     |
-|--------------|------------------------------------------------------------------------------|
-| OutputStream | [OutputStreamWriter](/mods/sdmcrtplus/utils/file/streams/OutputStreamWriter) |
+|  Parameter   |                     Type                     |
+|--------------|----------------------------------------------|
+| OutputStream | [Writer](/mods/sdmcrtplus/utils/file/Writer) |
 
 
 

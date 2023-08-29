@@ -17,11 +17,11 @@ JsonReader implements the following interfaces. That means all methods defined i
 
 
 ```zenscript
-new JsonReader(InputStream as InputStreamReader) as JsonReader
+new JsonReader(InputStream as Reader) as JsonReader
 ```
-|  Parameter  |                                    Type                                    |
-|-------------|----------------------------------------------------------------------------|
-| InputStream | [InputStreamReader](/mods/sdmcrtplus/utils/file/streams/InputStreamReader) |
+|  Parameter  |                     Type                     |
+|-------------|----------------------------------------------|
+| InputStream | [Reader](/mods/sdmcrtplus/utils/file/Reader) |
 
 
 

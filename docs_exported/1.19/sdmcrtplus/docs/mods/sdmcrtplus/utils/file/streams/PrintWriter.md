@@ -24,6 +24,16 @@ new PrintWriter(file as File) as PrintWriter
 
 
 
+```zenscript
+new PrintWriter(file as File, append as boolean) as PrintWriter
+```
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| file      | [File](/mods/sdmcrtplus/utils/file/File) |
+| append    | boolean                                  |
+
+
+
 ## Methods
 
 :::group{name=print}

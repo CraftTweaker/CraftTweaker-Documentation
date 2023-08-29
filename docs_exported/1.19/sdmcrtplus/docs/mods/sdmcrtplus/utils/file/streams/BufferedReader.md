@@ -40,10 +40,10 @@ myBufferedReader.lines();
 
 :::group{name=readLine}
 
-Return Type: string?
+Return Type: string
 
 ```zenscript
-// BufferedReader.readLine() as string?
+// BufferedReader.readLine() as string
 
 myBufferedReader.readLine();
 ```
