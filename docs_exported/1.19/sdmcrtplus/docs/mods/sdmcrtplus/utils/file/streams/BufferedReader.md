@@ -28,10 +28,10 @@ new BufferedReader(name as string) as BufferedReader
 
 :::group{name=lines}
 
-Return Type: **invalid**
+Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-// BufferedReader.lines() as invalid
+// BufferedReader.lines() as stdlib.List<string>
 
 myBufferedReader.lines();
 ```
