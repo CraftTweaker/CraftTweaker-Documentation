@@ -16,11 +16,11 @@ BufferedReader extends [Reader](/mods/sdmcrtplus/utils/file/Reader). That means 
 
 
 ```zenscript
-new BufferedReader(name as string) as BufferedReader
+new BufferedReader(reader as Reader) as BufferedReader
 ```
-| Parameter |  Type  |
-|-----------|--------|
-| name      | string |
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| reader    | [Reader](/mods/sdmcrtplus/utils/file/Reader) |
 
 
 

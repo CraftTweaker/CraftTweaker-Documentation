@@ -16,11 +16,11 @@ PrintWriter extends [Writer](/mods/sdmcrtplus/utils/file/Writer). That means all
 
 
 ```zenscript
-new PrintWriter(name as string) as PrintWriter
+new PrintWriter(file as File) as PrintWriter
 ```
-| Parameter |  Type  |
-|-----------|--------|
-| name      | string |
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| file      | [File](/mods/sdmcrtplus/utils/file/File) |
 
 
 
