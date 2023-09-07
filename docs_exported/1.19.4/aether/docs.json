@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "Mods": {
+      "The Aether": {
+        "AltarFuelManager": "mods/aether/AltarFuelManager.md",
+        "FreezerFuelManager": "mods/aether/FreezerFuelManager.md",
+        "IncubatorFuelManager": "mods/aether/IncubatorFuelManager.md"
+      }
+    }
+  }
+}
