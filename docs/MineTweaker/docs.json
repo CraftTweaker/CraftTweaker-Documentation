@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "Home": "index.md",
+    "Aura Cascade": "aura_cascade.md",
+    "Changelog": "changelog.md",
+    "Commands": {
+      "In-game": "commands/ingame.md"
+    },
+    "ContentTweaker": {
+      "Blocks and Items": "contenttweaker/blockitem_support.md",
+      "ContentTweaker": "contenttweaker.md",
+      "Fluids": "contenttweaker/fluid_support.md",
+      "Tinkers' Construct": "contenttweaker/tconstruct_support.md"
+    },
+    "Future Of MineTweaker": "future_of_minetweaker.md",
+    "Guide": {
+      "Comparison With MineTweaker 2": "guide/comparison_with_minetweaker_2.md"
+    },
+    "MineTweaker 3.1": "minetweaker_3.1.md",
+    "MineTweaker Synchronization": "minetweaker_synchronization.md",
+    "Mod Script Execution": "mod_script_execution.md",
+    "Mods": {
+      "Better Storage": "mods/better_storage.md",
+      "Buildcraft": "mods/buildcraft_support.md",
+      "Gregtech": "mods/gregtech_support.md",
+      "Harvest Festival": "mods/harvest_festival_support.md",
+      "IC2": "mods/ic2_support.md",
+      "Immersive Engineering": "mods/immersive_engineering_support.md",
+      "Magneticraft": "mods/magneticraft_support.md",
+      "MineFactory Reloaded": "mods/mfr_support.md",
+      "NEI": "mods/nei_support.md",
+      "Tinkers' Steelworks": "mods/tsteelworks_support.md",
+      "Witching Gadgets": "mods/witching_gadgets_support.md"
+    },
+    "ModTweaker": {
+      "1.6.4": "modtweaker/1.6.4.md",
+      "Actually Additions Support 1.10.2": "modtweaker/actually_additions_support_1.10.2.md",
+      "Actually Additions Support 1.11.2": "modtweaker/actually_additions_support_1.11.2.md",
+      "Applied Energistics 2 Support": "modtweaker/applied_energistics_2_support.md",
+      "Blood Magic Support": {
+        "Blood Magic": "modtweaker/blood_magic_support/blood_magic_support.md",
+        "Rituals": "modtweaker/blood_magic_support/rituals.md"
+      },
+      "Blood Magic Support 1.10.2": "modtweaker/blood_magic_support_1.10.2.md",
+      "Botania Support": {
+        "Botania Support": "modtweaker/botania_support/botania_support.md",
+        "Lexica Botania": "modtweaker/botania_support/lexica_botania.md"
+      },
+      "Botania Support 1.10.2": "modtweaker/botania_support_1.10.2.md",
+      "Chisel 2 Support": "modtweaker/chisel_2_support.md",
+      "Chisel 2 Support 1.10.2": "modtweaker/chisel_2_support_1.10.2.md",
+      "Chisel Support 1.11.2": "modtweaker/chisel_support_1.11.2.md",
+      "Embers Support 1.10.2": "modtweaker/embers_support_1.10.2.md",
+      "Ex Nihilo Support": "modtweaker/ex_nihilo_support.md",
+      "Extended Crafting Support": "modtweaker/extended_crafting_support.md",
+      "Extra Utilities Support": "modtweaker/extra_utilities_support.md",
+      "Extra Utilities Support 1.10.2": "modtweaker/extra_utilities_support_1.10.2.md",
+      "Factorization Support": "modtweaker/factorization_support.md",
+      "Flaxbeard Steam Power Support": "modtweaker/flaxbeard_steam_power_support.md",
+      "Forestry Support": "modtweaker/forestry_support.md",
+      "Forestry Support 1.10.2": "modtweaker/forestry_support_1.10.2.md",
+      "Forestry Support 1.11.2": "modtweaker/forestry_support_1.11.2.md",
+      "HEE Support": "modtweaker/hee_support.md",
+      "Mariculture Support": "modtweaker/mariculture_support.md",
+      "Mekanism Support": "modtweaker/mekanism_support.md",
+      "Metallurgy 4 Support": "modtweaker/metallurgy_4_support.md",
+      "ModTweaker": "mod_tweaker.md",
+      "PneumaticCraft Support": "modtweaker/pneumaticcraft_support.md",
+      "Railcraft Support": "modtweaker/railcraft_support.md",
+      "Random Things Support 1.10.2": "modtweaker/random_things_support_1.10.2.md",
+      "Refined Storage Support 1.10.2": "modtweaker/refined_storage_support_1.10.2.md",
+      "Refined Storage Support 1.11.2": "modtweaker/refined_storage_support_1.11.2.md",
+      "Survivalist Support 1.10.2": "modtweaker/survivalist_support_1.10.2.md",
+      "TConstruct Support": "modtweaker/tconstruct_support.md",
+      "TConstruct Support 1.10.2": "modtweaker/tconstruct_support_1.10.2.md",
+      "Thaumcraft 4 Support": {
+        "Thaumcraft 4": "modtweaker/thaumcraft_4_support/thaumcraft_4_support.md",
+        "Research": "modtweaker/thaumcraft_4_support/research.md"
+      },
+      "Thermal Expansion Support": "modtweaker/thermal_expansion_support.md",
+      "Vanilla Support": "modtweaker/vanilla_support.md"
+    },
+    "NBT Tag Formats": "nbt_tag_formats.md",
+    "Planned Versions": "planned_versions.md",
+    "Tutorials": {
+      "1.6.4": {
+        "Advanced Recipes": "tutorials/1.6.4/advanced_recipes.md",
+        "Basic recipes": "tutorials/1.6.4/basic_recipes.md",
+        "Control Structures": "tutorials/1.6.4/control_structures.md",
+        "Furnace": "tutorials/1.6.4/introduction.md",
+        "Introduction": "tutorials/1.6.4/furnace.md",
+        "Item Renaming": "tutorials/1.6.4/item_renaming.md",
+        "Localization": "tutorials/1.6.4/localization.md",
+        "Loot": "tutorials/1.6.4/loot.md",
+        "Ore Dictionary": "tutorials/1.6.4/ore_dictionary.md",
+        "Tooltips": "tutorials/1.6.4/tooltips.md"
+      },
+      "1.7.X": {
+        "Advanced Recipes": "tutorials/1.7.x/advanced_recipes.md",
+        "Basic recipes": "tutorials/1.7.x/basic_recipes.md",
+        "Control Structures": "tutorials/1.7.x/control_structures.md",
+        "Furnace": "tutorials/1.7.x/introduction.md",
+        "Introduction": "tutorials/1.7.x/furnace.md",
+        "Item Renaming": "tutorials/1.7.x/item_renaming.md",
+        "Localization": "tutorials/1.7.x/localization.md",
+        "Loot": "tutorials/1.7.x/loot.md",
+        "Ore Dictionary": "tutorials/1.7.x/ore_dictionary.md",
+        "Tooltips": "tutorials/1.7.x/tooltips.md"
+      }
+    },
+    "ZenCode Specification": "zencode_specification.md"
+  }
+}
