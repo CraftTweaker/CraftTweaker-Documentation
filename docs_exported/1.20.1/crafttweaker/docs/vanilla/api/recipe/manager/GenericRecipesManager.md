@@ -147,6 +147,23 @@ recipes.removeAll();
 
 :::
 
+:::group{name=removeByInput}
+
+Removes all recipes where the input contains the given IItemStack.
+
+```zenscript
+// GenericRecipesManager.removeByInput(input as IItemStack)
+
+recipes.removeByInput(<item:minecraft:iron_ingot>);
+```
+
+| Parameter |                    Type                    |      Description      |
+|-----------|--------------------------------------------|-----------------------|
+| input     | [IItemStack](/vanilla/api/item/IItemStack) | The input IItemStack. |
+
+
+:::
+
 :::group{name=removeByModid}
 
 Removes all recipes from the provided mod.
