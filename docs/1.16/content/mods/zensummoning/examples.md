@@ -19,7 +19,7 @@ Looking at the recipes for spawn eggs will show summonings that include the mob 
     - If it's successful, displays "Woohoo!"
 - Gives the mobs custom NBT
     - 1.16 renamed generic.maxHealth to generic.max_health.
-    - [https://minecraft.fandom.com/wiki/Attribute](https://minecraft.fandom.com/wiki/Attribute)
+    - [https://minecraft.wiki/w/Attribute](https://minecraft.wiki/w/Attribute)
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
