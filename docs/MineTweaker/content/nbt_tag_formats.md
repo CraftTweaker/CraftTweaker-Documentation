@@ -23,5 +23,5 @@ This kind of attribute would give a player 100 hearts instead of 10.
 
 Sources:
 * [http://imgur.com/a/Mh3fa](http://imgur.com/a/Mh3fa)
-* [http://minecraft.gamepedia.com/Attribute](http://minecraft.gamepedia.com/Attribute)
-* [http://minecraft.gamepedia.com/Tutorials/Command_NBT_Tags](http://minecraft.gamepedia.com/Tutorials/Command_NBT_Tags)
+* [http://minecraft.wiki/w/Attribute](http://minecraft.wiki/w/Attribute)
+* [http://minecraft.wiki/w/Tutorials/Command_NBT_Tags](http://minecraft.wiki/w/Tutorials/Command_NBT_Tags)

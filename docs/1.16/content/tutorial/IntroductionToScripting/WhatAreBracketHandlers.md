@@ -55,7 +55,7 @@ Some examples of this are:
 
 ##### Note: This is talking about the Vanilla Data Pack Tag
 
-[Tags](https://minecraft.gamepedia.com/Tag) are special and need another layer of categorization, as a tag with the name `minecraft:white_wool` could be referring to both an ItemTag and a BlockTag.
+[Tags](https://minecraft.wiki/w/Tag) are special and need another layer of categorization, as a tag with the name `minecraft:white_wool` could be referring to both an ItemTag and a BlockTag.
 
 The format used on Tags is:
 
