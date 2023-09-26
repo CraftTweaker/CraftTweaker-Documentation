@@ -23,7 +23,7 @@ Adds a new tag to the Entity.
  These are **not** tags like MCTag<EntityType>, these are tags that are added by the /tag command.
 
  You can read more about how they can be used here:
- https://minecraft.fandom.com/wiki/Commands/tag
+ https://minecraft.wiki/w/Commands/tag
 
 Returns: True if the tag could ba added, and it did not replace a preexisting tag. False otherwise.  
 Return Type: boolean
@@ -438,7 +438,7 @@ Gets all the tags that are attached to the entity.
  These are **not** tags like MCTag<EntityType>, these are tags that are added by the /tag command.
 
  You can read more about how they can be used here:
- https://minecraft.fandom.com/wiki/Commands/tag
+ https://minecraft.wiki/w/Commands/tag
 
 Returns: A set of all the Tags that an Entity has.  
 Return Type: Set&lt;string&gt;
@@ -818,7 +818,7 @@ Removes a tag from the Entity.
  These are **not** tags like MCTag<EntityType>, these are tags that are added by the /tag command.
 
  You can read more about how they can be used here:
- https://minecraft.fandom.com/wiki/Commands/tag
+ https://minecraft.wiki/w/Commands/tag
 
 Returns: True if the Entity had the tag and it was removed. False otherwise.  
 Return Type: boolean
