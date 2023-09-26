@@ -1,7 +1,7 @@
 # Sound Event Bracket Handler
 
 The SoundEvent Bracket Handler gives you access to the SoundEvents in the game.  
-Check [this](https://minecraft.gamepedia.com/Sounds.json) for a list of vanilla sound events!
+Check [this](https://minecraft.wiki/w/Sounds.json) for a list of vanilla sound events!
 
 
 SoundTypes are referenced in the Sound Event Bracket handler this way:

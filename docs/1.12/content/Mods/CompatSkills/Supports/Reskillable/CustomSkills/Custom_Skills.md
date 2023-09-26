@@ -75,4 +75,4 @@ or
 ```
 
 Go to this link to see all possible Locale-Codes!
-[Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+[The Minecraft Wiki's Language Page](https://minecraft.wiki/w/Language "The Minecraft Wiki's Minecraft Language Page")
