@@ -11,6 +11,7 @@ import mods.sdmcrtplus.utils.Data;
 ## Implemented Interfaces
 Data implements the following interfaces. That means all methods defined in these interfaces are also available in Data
 
+- [Serializable](/mods/sdmcrtplus/utils/core/Serializable)
 - Cloneable
 - Comparable&lt;[Data](/mods/sdmcrtplus/utils/Data)&gt;
 

@@ -1,0 +1,1 @@
+{"path":"mods/sdmcrtplus/integration/minecolonies/api/research/ILocalResearchTree.md","zenCodeName":"mods.sdmcrtplus.integration.api.research.ILocalResearchTree","searchTerms":["attemptBeginResearch","readFromNBT","getResearchInProgress","finishResearch","attemptResetResearch","branchFinishedHighestLevel","getResearch","hasCompletedResearch","writeToNBT","addResearch"]}

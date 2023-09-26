@@ -44,6 +44,37 @@ serverPlayer.getRespawnPosition();
 
 :::
 
+:::group{name=playNotifySound}
+
+```zenscript
+ServerPlayer.playNotifySound(sound as ResourceLocation, volume as float, pitch as float)
+```
+
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| sound     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| volume    | float                                                      |
+| pitch     | float                                                      |
+
+
+:::
+
+:::group{name=setPlayerInput}
+
+```zenscript
+ServerPlayer.setPlayerInput(posX as float, posY as float, jump as boolean, shiftKey as boolean)
+```
+
+| Parameter |  Type   |
+|-----------|---------|
+| posX      | float   |
+| posY      | float   |
+| jump      | boolean |
+| shiftKey  | boolean |
+
+
+:::
+
 :::group{name=setRespawnPosition}
 
 Modifies the player's objection point.
@@ -62,6 +93,16 @@ ServerPlayer.setRespawnPosition(position as BlockPos, dimension as ResourceLocat
 | respawnForced       | boolean                                                    | - This objection is forced. Using the respawn() method ?                      |
 | sendSetSpawnMessage | boolean                                                    | - Send a notification to the player that his respawn point has been changed ? |
 
+
+:::
+
+:::group{name=trackStartFallingPosition}
+
+```zenscript
+// ServerPlayer.trackStartFallingPosition()
+
+serverPlayer.trackStartFallingPosition();
+```
 
 :::
 

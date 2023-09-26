@@ -8,6 +8,11 @@ import mods.sdmcrtplus.integration.curios.IDynamicStackHandler;
 ```
 
 
+## Implemented Interfaces
+IDynamicStackHandler implements the following interfaces. That means all methods defined in these interfaces are also available in IDynamicStackHandler
+
+- [IItemHandlerModifiable](/mods/sdmcrtplus/items/IItemHandlerModifiable)
+
 ## Methods
 
 :::group{name=extractItem}

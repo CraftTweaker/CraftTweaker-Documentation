@@ -212,6 +212,26 @@ ServerLevel.placeTemplate(name as ResourceLocation, position as BlockPos, integr
 
 :::
 
+:::group{name=resetChunk}
+
+Completely recreates chunks, but causes lags! Very strong lags. In general, it works as if it doesn't work :D
+ Can kill the server !
+
+Return Type: int
+
+```zenscript
+ServerLevel.resetChunk(position as BlockPos, range as int, skipOldChunks as boolean) as int
+```
+
+|   Parameter   |                    Type                     |
+|---------------|---------------------------------------------|
+| position      | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| range         | int                                         |
+| skipOldChunks | boolean                                     |
+
+
+:::
+
 :::group{name=setDefaultSpawnPos}
 
 Allows you to set a standard rebirth point for the world. That is, if a player dies and he does not have a bed, then he will be reborn in the place where you set the point.

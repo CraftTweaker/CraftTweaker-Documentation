@@ -1,0 +1,1 @@
+{"path":"mods/sdmcrtplus/integration/minecolonies/api/quests/IQuestManager.md","zenCodeName":"mods.sdmcrtplus.integration.api.quests.IQuestManager","searchTerms":["getGlobalServerQuest","completeQuest","isUnlocked","attemptAcceptQuest","deleteQuest","onWorldLoad","alterReputation","getAvailableOrInProgressQuest","onColonyTick","getReputation","unlockQuest"]}

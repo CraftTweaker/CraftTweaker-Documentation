@@ -33,6 +33,34 @@ entity.getLeftBlocksToUp();
 
 :::
 
+:::group{name=playSound}
+
+```zenscript
+Entity.playSound(sound as ResourceLocation)
+```
+
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| sound     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+
+
+:::
+
+:::group{name=playSound}
+
+```zenscript
+Entity.playSound(sound as ResourceLocation, volume as float, pitch as float)
+```
+
+| Parameter |                            Type                            |
+|-----------|------------------------------------------------------------|
+| sound     | [ResourceLocation](/vanilla/api/resource/ResourceLocation) |
+| volume    | float                                                      |
+| pitch     | float                                                      |
+
+
+:::
+
 
 ## Properties
 

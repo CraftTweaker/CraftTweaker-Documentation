@@ -13,3 +13,31 @@ SimpleContainer implements the following interfaces. That means all methods defi
 
 - [Container](/vanilla/api/world/Container)
 
+## Methods
+
+:::group{name=createTag}
+
+Return Type: **invalid**
+
+```zenscript
+// SimpleContainer.createTag() as invalid
+
+mySimpleContainer.createTag();
+```
+
+:::
+
+:::group{name=fromTag}
+
+```zenscript
+SimpleContainer.fromTag(tag as invalid)
+```
+
+| Parameter |    Type     |
+|-----------|-------------|
+| tag       | **invalid** |
+
+
+:::
+
+

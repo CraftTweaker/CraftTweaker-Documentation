@@ -10,6 +10,48 @@ import mods.sdmcrtplus.utils.GlobalUtils;
 
 ## Static Methods
 
+:::group{name=UUIDFromString}
+
+Return Type: **invalid**
+
+```zenscript
+GlobalUtils.UUIDFromString(uuid as string) as invalid
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| uuid      | string |
+
+
+:::
+
+:::group{name=UUIDRandomUUID}
+
+Return Type: **invalid**
+
+```zenscript
+// GlobalUtils.UUIDRandomUUID() as invalid
+
+GlobalUtils.UUIDRandomUUID();
+```
+
+:::
+
+:::group{name=UUIDToString}
+
+Return Type: string
+
+```zenscript
+GlobalUtils.UUIDToString(uuid as invalid) as string
+```
+
+| Parameter |    Type     |
+|-----------|-------------|
+| uuid      | **invalid** |
+
+
+:::
+
 :::group{name=getServer}
 
 Allows you to get the Server from anywhere in the script.

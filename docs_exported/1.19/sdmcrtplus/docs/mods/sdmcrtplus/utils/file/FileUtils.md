@@ -10,6 +10,36 @@ import mods.sdmcrtplus.utils.file.FileUtils;
 
 ## Static Methods
 
+:::group{name=createJsonReader}
+
+Return Type: [JsonReader](/mods/sdmcrtplus/utils/file/json/google/JsonReader)
+
+```zenscript
+FileUtils.createJsonReader(reader as Reader) as JsonReader
+```
+
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| reader    | [Reader](/mods/sdmcrtplus/utils/file/Reader) |
+
+
+:::
+
+:::group{name=createJsonWriter}
+
+Return Type: [JsonWriter](/mods/sdmcrtplus/utils/file/json/google/JsonWriter)
+
+```zenscript
+FileUtils.createJsonWriter(writer as Writer) as JsonWriter
+```
+
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| writer    | [Writer](/mods/sdmcrtplus/utils/file/Writer) |
+
+
+:::
+
 :::group{name=getCraftTweakerLogFile}
 
 Return Type: [Path](/mods/sdmcrtplus/utils/file/Path)

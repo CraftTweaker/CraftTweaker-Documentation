@@ -11,6 +11,7 @@ import mods.sdmcrtplus.utils.file.File;
 ## Implemented Interfaces
 File implements the following interfaces. That means all methods defined in these interfaces are also available in File
 
+- [Serializable](/mods/sdmcrtplus/utils/core/Serializable)
 - Comparable&lt;[File](/mods/sdmcrtplus/utils/file/File)&gt;
 
 ## Constructors

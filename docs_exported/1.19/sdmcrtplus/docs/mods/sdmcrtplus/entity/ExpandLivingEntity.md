@@ -60,6 +60,18 @@ livingEntity.getArrowCount();
 
 :::
 
+:::group{name=getBrain}
+
+Return Type: [Brain](/mods/sdmcrtplus/entity/ai/Brain)
+
+```zenscript
+// LivingEntity.getBrain() as Brain
+
+livingEntity.getBrain();
+```
+
+:::
+
 :::group{name=getDespawnDistance}
 
 Return Type: int
@@ -253,13 +265,14 @@ LivingEntity.teleportWithCheck(posX as double, posY as double, posZ as double, i
 
 ## Properties
 
-|         Name         |  Type   | Has Getter | Has Setter |
-|----------------------|---------|------------|------------|
-| armorValue           | int     | true       | false      |
-| arrowCount           | int     | true       | false      |
-| despawnDistance      | int     | true       | false      |
-| isFriendly           | boolean | true       | false      |
-| isPersistent         | boolean | true       | false      |
-| maxInstancesPerChunk | int     | true       | false      |
-| noDespawnDistance    | int     | true       | false      |
+|         Name         |                   Type                    | Has Getter | Has Setter |
+|----------------------|-------------------------------------------|------------|------------|
+| armorValue           | int                                       | true       | false      |
+| arrowCount           | int                                       | true       | false      |
+| brain                | [Brain](/mods/sdmcrtplus/entity/ai/Brain) | true       | false      |
+| despawnDistance      | int                                       | true       | false      |
+| isFriendly           | boolean                                   | true       | false      |
+| isPersistent         | boolean                                   | true       | false      |
+| maxInstancesPerChunk | int                                       | true       | false      |
+| noDespawnDistance    | int                                       | true       | false      |
 
