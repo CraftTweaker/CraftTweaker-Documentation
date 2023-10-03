@@ -226,6 +226,21 @@ Return Type: [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity)
 
 :::
 
+:::group{name=getType}
+
+Gets the EnchantmentType of this Enchantment.
+
+Returns: The EnchantmentType of this Enchantment.  
+Return Type: [EnchantmentType](/vanilla/api/enchantment/EnchantmentType)
+
+```zenscript
+// MCEnchantment.getType() as EnchantmentType
+
+<enchantment:minecraft:protection>.getType();
+```
+
+:::
+
 :::group{name=isAllowedOnBooks}
 
 Check if this Enchantment is allowed on books.
@@ -305,4 +320,5 @@ Return Type: boolean
 | name | string | true | false | Gets the name of this Enchantment |
 | rarity | [EnchantmentRarity](/vanilla/api/enchantment/EnchantmentRarity) | true | false | Gets the Rarity of this Enchantment |
 | treasure | boolean | true | false | Checks if this Enchantment is a treasure Enchantment. |
+| type | [EnchantmentType](/vanilla/api/enchantment/EnchantmentType) | true | false | Gets the EnchantmentType of this Enchantment. |
 
