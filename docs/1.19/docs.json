@@ -32,11 +32,15 @@
             "Createtweaker": {},
             "ExNihiloSequentia":{},
             "FarmersDelight":{}, 
+            "GenerationStages" : {},
             "Initialinventory":{},
             "JeiTweaker":{},
+            "LootStages" : {},
+            "MobStagesReborn" : {},
+            "OreStagesReborn" : {},
             "PackMode": {},
+            "PlayerStage" : {},
             "PMMO" : {},
-            "SDMCrtaftTweakerPlus" : {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
