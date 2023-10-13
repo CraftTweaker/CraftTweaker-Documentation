@@ -1,6 +1,6 @@
 # Expansion for KnownTag&lt;Fluid&gt;
 
-This expansion specifically targets FluidTags on Forge.
+This expansion specifically targets FluidTags.
 
 ## Casters
 

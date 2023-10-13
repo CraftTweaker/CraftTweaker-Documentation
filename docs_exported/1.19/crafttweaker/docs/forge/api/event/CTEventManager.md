@@ -43,6 +43,29 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
 
 :::group{name=register}
 
+Registers a new Event listener.
+
+```zenscript
+// CTEventManager.register<T : Event>(listenToCancelled as boolean, consumer as Consumer<T>)
+
+CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>(true, (event) => {
+ var player = event.player;
+ var result = event.itemResult;
+ println("Player '" + player.name + "' crafted " + result.commandString);
+ });
+```
+
+|     Parameter     |              Type               |                 Description                 |
+|-------------------|---------------------------------|---------------------------------------------|
+| listenToCancelled | boolean                         | should the event listen to cancelled events |
+| consumer          | Consumer&lt;T&gt;               | The event handler as consumer               |
+| T                 | [Event](/forge/api/event/Event) | The type of the event                       |
+
+
+:::
+
+:::group{name=register}
+
 Registers a new Event listener with a specific priority.
 
 ```zenscript
@@ -60,6 +83,30 @@ CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>
 | priority  | [EventPriority](/forge/api/event/EventPriority) | priority for this listener    |
 | consumer  | Consumer&lt;T&gt;                               | The event handler as consumer |
 | T         | [Event](/forge/api/event/Event)                 | The type of the event         |
+
+
+:::
+
+:::group{name=register}
+
+Registers a new Event listener with a specific priority.
+
+```zenscript
+// CTEventManager.register<T : Event>(listenToCancelled as boolean, priority as EventPriority, consumer as Consumer<T>)
+
+CTEventManager.register<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>(true, EventPriority.HIGHEST, (event) => {
+ var player = event.player;
+ var result = event.itemResult;
+ println("Player '" + player.name + "' crafted " + result.commandString);
+ });
+```
+
+|     Parameter     |                      Type                       |                 Description                 |
+|-------------------|-------------------------------------------------|---------------------------------------------|
+| listenToCancelled | boolean                                         | should the event listen to cancelled events |
+| priority          | [EventPriority](/forge/api/event/EventPriority) | priority for this listener                  |
+| consumer          | Consumer&lt;T&gt;                               | The event handler as consumer               |
+| T                 | [Event](/forge/api/event/Event)                 | The type of the event                       |
 
 
 :::

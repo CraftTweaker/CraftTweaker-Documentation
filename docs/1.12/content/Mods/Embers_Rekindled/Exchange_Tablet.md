@@ -17,7 +17,7 @@ mods.embers.Alchemy.add(IItemStack output, IIngredient[] inputs, int[][string] a
 mods.embers.Alchemy.remove(IItemStack output);
 ```
 
-## Custom Aspecti
+## Custom Aspects
 ```zenscript
 mods.embers.Alchemy.addAspect(string name, IItemStack item);
 ```

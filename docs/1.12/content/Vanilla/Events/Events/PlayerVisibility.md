@@ -18,11 +18,11 @@ PlayerVisibilityEvent Events implement the following interfaces and are able to 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter       | ZenSetter          |Type                                              |
-|-----------------|--------------------|--------------------------------------------------|
-| `visibility`    |                    | double                                           |
-|                 | `modifyVisibility` | See note.                                        |
+| ZenGetter       | ZenMethod                        | Type              |
+|-----------------|----------------------------------|-------------------|
+| `modifier`      |                                  | double            |
+|                 | `modifyVisibility(double value)` | See note.         |
 
 ## Note
 
-This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifiy * double value`.
+This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifier * double value`.

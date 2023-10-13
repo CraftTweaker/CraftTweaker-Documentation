@@ -51,6 +51,26 @@ EnchantmentType.create(name as string, canEnchantPredicate as Predicate<MCItemDe
 
 :::
 
+:::group{name=getTypesForItem}
+
+Creates a new List of EnchantmentType that are applicable to an item.
+
+Returns: A new List of EnchantmentType that are applicable to an item.  
+Return Type: stdlib.List&lt;[EnchantmentType](/vanilla/api/enchantment/EnchantmentType)&gt;
+
+```zenscript
+// EnchantmentType.getTypesForItem(item as MCItemDefinition) as stdlib.List<EnchantmentType>
+
+EnchantmentType.getTypesForItem(<item:minecraft:diamond_sword>);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| item | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | The item to calculate applicable enchantment types for. |
+
+
+:::
+
 ## Methods
 
 :::group{name=canEnchantItem}
@@ -68,6 +88,36 @@ EnchantmentType.canEnchantItem(itemIn as MCItemDefinition) as boolean
 |-----------|------|-------------|
 | itemIn | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | No Description Provided |
 
+
+:::
+
+:::group{name=getEnchantments}
+
+Creates a new List of MCEnchantment that define the EnchantmentType as their type.
+
+Returns: A new List of MCEnchantment that define the EnchantmentType as their type.  
+Return Type: stdlib.List&lt;[MCEnchantment](/vanilla/api/enchantment/MCEnchantment)&gt;
+
+```zenscript
+// EnchantmentType.getEnchantments() as stdlib.List<MCEnchantment>
+
+EnchantmentType.ARMOR.getEnchantments();
+```
+
+:::
+
+:::group{name=getItems}
+
+Creates a new List of ItemDefinition that are valid for this EnchantmentType.
+
+Returns: A new List of ItemDefinition that are valid for this EnchantmentType.  
+Return Type: stdlib.List&lt;[MCItemDefinition](/vanilla/api/item/MCItemDefinition)&gt;
+
+```zenscript
+// EnchantmentType.getItems() as stdlib.List<MCItemDefinition>
+
+EnchantmentType.ARMOR.getItems();
+```
 
 :::
 

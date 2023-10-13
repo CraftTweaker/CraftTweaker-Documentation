@@ -21,7 +21,7 @@ ITextComponent.fromTranslation(String translationKey, Object... args);
 ITextComponent.fromData(IData data);
 ```
 
-Note: the argument of `fromData` method is [raw JSON text format](https://minecraft.gamepedia.com/Raw_JSON_text_format).
+Note: the argument of `fromData` method is [raw JSON text format](https://minecraft.wiki/w/Raw_JSON_text_format).
 
 ## ZenGetters and ZenSetters
 

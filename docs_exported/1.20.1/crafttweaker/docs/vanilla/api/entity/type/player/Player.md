@@ -679,29 +679,30 @@ myPlayer.sweepAttack();
 
 ## Properties
 
-|              Name              |                          Type                          | Has Getter | Has Setter |
-|--------------------------------|--------------------------------------------------------|------------|------------|
-| abilities                      | [Abilities](/vanilla/api/entity/type/player/Abilities) | true       | false      |
-| canUseGameMasterBlocks         | boolean                                                | true       | false      |
-| cooldowns                      | [ItemCooldowns](/vanilla/api/item/ItemCooldowns)       | true       | false      |
-| currentItemAttackStrengthDelay | float                                                  | true       | false      |
-| enchantmentSeed                | int                                                    | true       | false      |
-| experienceLevel                | int                                                    | true       | true       |
-| foodData                       | [FoodData](/vanilla/api/food/FoodData)                 | true       | false      |
-| inventory                      | [Inventory](/vanilla/api/entity/type/player/Inventory) | true       | false      |
-| isCreative                     | boolean                                                | true       | false      |
-| isHurt                         | boolean                                                | true       | false      |
-| isLocalPlayer                  | boolean                                                | true       | false      |
-| isReducedDebugInfo             | boolean                                                | true       | false      |
-| isScoping                      | boolean                                                | true       | false      |
-| isSecondaryUseActive           | boolean                                                | true       | false      |
-| isSleepingLongEnough           | boolean                                                | true       | false      |
-| luck                           | float                                                  | true       | false      |
-| mainArm                        | [HumanoidArm](/vanilla/api/entity/HumanoidArm)         | true       | false      |
-| mayBuild                       | boolean                                                | true       | false      |
-| score                          | int                                                    | true       | false      |
-| shoulderEntityLeft             | [MapData](/vanilla/api/data/MapData)                   | true       | false      |
-| shoulderEntityRight            | [MapData](/vanilla/api/data/MapData)                   | true       | false      |
-| sleepTimer                     | int                                                    | true       | false      |
-| xpNeededForNextLevel           | int                                                    | true       | false      |
+|              Name              |                          Type                          | Has Getter | Has Setter |                            Description                            |
+|--------------------------------|--------------------------------------------------------|------------|------------|-------------------------------------------------------------------|
+| abilities                      | [Abilities](/vanilla/api/entity/type/player/Abilities) | true       | false      |                                                                   |
+| canUseGameMasterBlocks         | boolean                                                | true       | false      |                                                                   |
+| cooldowns                      | [ItemCooldowns](/vanilla/api/item/ItemCooldowns)       | true       | false      |                                                                   |
+| currentItemAttackStrengthDelay | float                                                  | true       | false      |                                                                   |
+| enchantmentSeed                | int                                                    | true       | false      |                                                                   |
+| experienceLevel                | int                                                    | true       | true       |                                                                   |
+| foodData                       | [FoodData](/vanilla/api/food/FoodData)                 | true       | false      |                                                                   |
+| inventory                      | [Inventory](/vanilla/api/entity/type/player/Inventory) | true       | false      |                                                                   |
+| isCreative                     | boolean                                                | true       | false      |                                                                   |
+| isFakePlayer                   | boolean                                                | true       | false      | Checks if this player is a fake player, mainly used for machines. |
+| isHurt                         | boolean                                                | true       | false      |                                                                   |
+| isLocalPlayer                  | boolean                                                | true       | false      |                                                                   |
+| isReducedDebugInfo             | boolean                                                | true       | false      |                                                                   |
+| isScoping                      | boolean                                                | true       | false      |                                                                   |
+| isSecondaryUseActive           | boolean                                                | true       | false      |                                                                   |
+| isSleepingLongEnough           | boolean                                                | true       | false      |                                                                   |
+| luck                           | float                                                  | true       | false      |                                                                   |
+| mainArm                        | [HumanoidArm](/vanilla/api/entity/HumanoidArm)         | true       | false      |                                                                   |
+| mayBuild                       | boolean                                                | true       | false      |                                                                   |
+| score                          | int                                                    | true       | false      |                                                                   |
+| shoulderEntityLeft             | [MapData](/vanilla/api/data/MapData)                   | true       | false      |                                                                   |
+| shoulderEntityRight            | [MapData](/vanilla/api/data/MapData)                   | true       | false      |                                                                   |
+| sleepTimer                     | int                                                    | true       | false      |                                                                   |
+| xpNeededForNextLevel           | int                                                    | true       | false      |                                                                   |
 
