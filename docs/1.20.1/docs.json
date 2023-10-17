@@ -28,7 +28,10 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
+            "Createtweaker": {},
+            "FarmersDelight" : {},
             "Initialinventory" : {},
+            "JeiTweaker": {},
             "PackMode": {}, 
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
