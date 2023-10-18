@@ -51,10 +51,6 @@
                 "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
             },
             "Tags Loader" : "zencode/TagsLoader.md"
-        },
-        "Mod Dev": {
-            "CraftTweaker in a Development Environment" : "integration/Introduction.md",
-            "Exposing a ZenClass" : "integration/RecipeManager.md"
         }
     }
 }
