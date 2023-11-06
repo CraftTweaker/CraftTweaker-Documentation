@@ -21,6 +21,10 @@ events.register<crafttweaker.forge.api.event.advancement.AdvancementProgressEven
 ```
 
 
+## Supertype
+
+AdvancementProgressEvent extends [AdvancementEvent](/forge/api/event/advancement/AdvancementEvent). That means all methods available in [AdvancementEvent](/forge/api/event/advancement/AdvancementEvent) are also available in AdvancementProgressEvent
+
 ## Properties
 
 |        Name         |                                           Type                                            | Has Getter | Has Setter |
