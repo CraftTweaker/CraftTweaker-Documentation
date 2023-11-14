@@ -34,7 +34,9 @@ WeldingRecipe.addJsonRecipe(name as string, mapData as MapData)
 Add a welding recipe
 
 ```zenscript
-WeldingRecipe.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider, combineForgingBonus as boolean)
+// WeldingRecipe.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider, combineForgingBonus as boolean)
+
+<recipetype:tfc:welding>.addRecipe("welding_test", <item:tfc:metal/ingot/copper>, <item:tfc:metal/double_ingot/copper>, 1, ItemStackProvider.none(<item:tfc:metal/double_sheet/copper>);, true);
 ```
 
 |      Parameter      |                                  Type                                  |     Description     |
