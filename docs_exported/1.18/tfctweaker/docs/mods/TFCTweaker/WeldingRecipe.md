@@ -34,18 +34,17 @@ WeldingRecipe.addJsonRecipe(name as string, mapData as MapData)
 Add a welding recipe
 
 ```zenscript
-// WeldingRecipe.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider)
-
-<recipetype:tfc:welding>.addRecipe("welding_test", <item:tfc:metal/ingot/copper>, <item:tfc:metal/double_ingot/copper>, 1, <item:tfc:metal/double_sheet/copper>);
+WeldingRecipe.addRecipe(name as string, input1 as IIngredient, input2 as IIngredient, tier as int, output as ItemStackProvider, combineForgingBonus as boolean)
 ```
 
-| Parameter |                                  Type                                  |     Description     |
-|-----------|------------------------------------------------------------------------|---------------------|
-| name      | string                                                                 | name of the recipe  |
-| input1    | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | first input         |
-| input2    | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | second input        |
-| tier      | int                                                                    | anvil tier required |
-| output    | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | output item         |
+|      Parameter      |                                  Type                                  |     Description     |
+|---------------------|------------------------------------------------------------------------|---------------------|
+| name                | string                                                                 | name of the recipe  |
+| input1              | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | first input         |
+| input2              | [IIngredient](/vanilla/api/ingredient/IIngredient)                     | second input        |
+| tier                | int                                                                    | anvil tier required |
+| output              | [ItemStackProvider](/mods/TFCTweaker/Api/Ingredient/ItemStackProvider) | output item         |
+| combineForgingBonus | boolean                                                                |                     |
 
 
 :::
