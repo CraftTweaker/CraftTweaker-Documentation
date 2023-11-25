@@ -35,6 +35,8 @@ The Vanilla Recipe Managers are:
 |Smoking|`<recipetype:minecraft:smoking>`|`smoker`|
 |Stone Cutting|`<recipetype:minecraft:stonecutting>`|`stoneCutter`|
 
+You can find the full list of Recipe Managers through `/ct dump recipetype`.
+
 The Vanilla Recipe Managers can be referenced by either their Bracket Handler or the Global Variable, for example:
 
 ```zenscript
@@ -64,7 +66,10 @@ getRecipeByName(String name);
 You could use this method to get the `ingredients` of a recipe and print the `commandString` of each ingredient.
 
 ```zenscript
-for ingredient in craftingTable.getRecipeByName("minecraft:arrow").ingredients {
+import crafttweaker.api.recipe.type.Recipe;
+import crafttweaker.api.world.Container;
+
+for ingredient in (craftingTable.getRecipeByName("minecraft:arrow") as Recipe<Container>).ingredients {
     println(ingredient.commandString);
 }
 ```
@@ -81,7 +86,10 @@ getRecipesByOutput(IIngredient name);
 You could use this method to get the `ingredients` of all the recipes that output a certain item and print the `commandString` of each ingredient of each recipe.
 
 ```zenscript
-for recipe in craftingTable.getRecipesByOutput(<item:minecraft:stick>) {
+import crafttweaker.api.recipe.type.Recipe;
+import crafttweaker.api.world.Container;
+
+for recipe in (craftingTable.getRecipesByOutput(<item:minecraft:stick>) as stdlib.List<Recipe<Container>>) {
     println("> " + recipe.id);
     for ingredient in recipe.ingredients {
         println(ingredient.commandString);
@@ -101,7 +109,10 @@ getAllRecipes();
 You could use this method to get the `ingredients` of all the recipes and print the `commandString` of each ingredient of each recipe.
 
 ```zenscript
-for recipe in furnace.getAllRecipes() {
+import crafttweaker.api.recipe.type.Recipe;
+import crafttweaker.api.world.Container;
+
+for recipe in (furnace.getAllRecipes() as stdlib.List<Recipe<Container>>) {
     println("> " + recipe.id);
     for ingredient in recipe.ingredients {
         println(ingredient.commandString);
