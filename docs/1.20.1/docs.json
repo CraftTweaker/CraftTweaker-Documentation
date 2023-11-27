@@ -6,12 +6,14 @@
         "Getting Started With Scripts": "getting_started.md",
         "Global Keywords" : "globals.md",
         "Tutorials": {
+            "Advanced Scripting": {
+                "Ingredients and Recipes" : "tutorial/AdvancedScripting/IngredientsAndRecipes.md"
+            },
             "Introduction To Scripting": {
                 "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
                 "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
                 "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
-                "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md",
-                "Advanced Scripting": "tutorial/IntroductionToScripting/AdvancedScripting.md"
+                "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
             },
             "Recipes": {
                 "Recipe Managers": "tutorial/Recipes/RecipeManagers.md",
