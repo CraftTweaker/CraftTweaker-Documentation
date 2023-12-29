@@ -17,10 +17,10 @@ LootTableIdLootCondition implements the following interfaces. That means all met
 
 :::group{name=create}
 
-Return Type: [LootTableIdLootConditionBuilder](/forge/api/loot/condition/builder/LootTableIdLootConditionBuilder)
+Return Type: **invalid**
 
 ```zenscript
-LootTableIdLootCondition.create(id as ResourceLocation) as LootTableIdLootConditionBuilder
+LootTableIdLootCondition.create(id as ResourceLocation) as invalid
 ```
 
 | Parameter |                            Type                            |
@@ -32,10 +32,10 @@ LootTableIdLootCondition.create(id as ResourceLocation) as LootTableIdLootCondit
 
 :::group{name=create}
 
-Return Type: [LootTableIdLootConditionBuilder](/forge/api/loot/condition/builder/LootTableIdLootConditionBuilder)
+Return Type: **invalid**
 
 ```zenscript
-LootTableIdLootCondition.create(id as string) as LootTableIdLootConditionBuilder
+LootTableIdLootCondition.create(id as string) as invalid
 ```
 
 | Parameter |  Type  |

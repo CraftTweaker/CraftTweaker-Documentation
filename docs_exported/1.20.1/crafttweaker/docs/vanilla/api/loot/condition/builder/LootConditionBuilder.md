@@ -8,12 +8,6 @@ import crafttweaker.api.loot.condition.builder.LootConditionBuilder;
 ```
 
 
-## Casters
-
-|                        Result Type                         | Is Implicit |
-|------------------------------------------------------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
-
 ## Methods
 
 :::group{name=and}

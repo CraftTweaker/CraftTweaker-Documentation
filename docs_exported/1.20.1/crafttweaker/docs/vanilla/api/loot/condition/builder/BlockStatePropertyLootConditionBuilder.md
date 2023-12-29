@@ -13,12 +13,6 @@ BlockStatePropertyLootConditionBuilder implements the following interfaces. That
 
 - [LootConditionBuilder](/vanilla/api/loot/condition/builder/LootConditionBuilder)
 
-## Casters
-
-|                        Result Type                         | Is Implicit |
-|------------------------------------------------------------|-------------|
-| [LootCondition](/vanilla/api/loot/condition/LootCondition) | true        |
-
 ## Methods
 
 :::group{name=properties}
