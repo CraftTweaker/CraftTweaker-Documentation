@@ -17,8 +17,8 @@ FabricItemStack implements the following interfaces. That means all methods defi
 
 |          Name           |    Type     | Has Getter | Has Setter |
 |-------------------------|-------------|------------|------------|
-| BASE_ATTACK_DAMAGE_UUID | **invalid** | true       | false      |
-| BASE_ATTACK_SPEED_UUID  | **invalid** | true       | false      |
+| BASE_ATTACK_DAMAGE_UUID | stdlib.UUID | true       | false      |
+| BASE_ATTACK_SPEED_UUID  | stdlib.UUID | true       | false      |
 | CRAFTTWEAKER_DATA_KEY   | string      | true       | false      |
 
 ## Casters
@@ -73,7 +73,7 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  IItemStack#withAttributeModifier
 
 ```zenscript
-// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
+// FabricItemStack.addGlobalAttributeModifier(attribute as Attribute, uuid as stdlib.UUID, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
@@ -81,7 +81,7 @@ myFabricItemStack.addGlobalAttributeModifier(<attribute:minecraft:generic.attack
 | Parameter |                                  Type                                  |                    Description                    |
 |-----------|------------------------------------------------------------------------|---------------------------------------------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
-| uuid      | **invalid**                                                            | The unique identifier of the modifier to replace. |
+| uuid      | stdlib.UUID                                                            | The unique identifier of the modifier to replace. |
 | name      | string                                                                 | The name of the modifier.                         |
 | value     | double                                                                 | The value of the modifier.                        |
 | operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
@@ -711,14 +711,14 @@ myFabricItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_dama
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
 ```zenscript
-// FabricItemStack.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[])
+// FabricItemStack.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
 
 myFabricItemStack.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter |                              Type                              |                    Description                    |
 |-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | **invalid**                                                    | The unique id of the AttributeModifier to remove. |
+| uuid      | stdlib.UUID                                                    | The unique id of the AttributeModifier to remove. |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
@@ -1010,7 +1010,7 @@ Adds an AttributeModifier to this IItemStack using a specific UUID.
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-// FabricItemStack.withAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
+// FabricItemStack.withAttributeModifier(attribute as Attribute, uuid as stdlib.UUID, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
 
 myFabricItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
@@ -1018,7 +1018,7 @@ myFabricItemStack.withAttributeModifier(<attribute:minecraft:generic.attack_dama
 |    Parameter     |                                  Type                                  |                                     Description                                     | Optional | Default Value |
 |------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------|---------------|
 | attribute        | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                                                      | false    |               |
-| uuid             | **invalid**                                                            | The unique identifier of the modifier to replace.                                   | false    |               |
+| uuid             | stdlib.UUID                                                            | The unique identifier of the modifier to replace.                                   | false    |               |
 | name             | string                                                                 | The name of the modifier.                                                           | false    |               |
 | value            | double                                                                 | The value of the modifier.                                                          | false    |               |
 | operation        | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                                                      | false    |               |

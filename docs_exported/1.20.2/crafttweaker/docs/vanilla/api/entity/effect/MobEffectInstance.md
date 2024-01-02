@@ -11,7 +11,7 @@ import crafttweaker.api.entity.effect.MobEffectInstance;
 ## Implemented Interfaces
 MobEffectInstance implements the following interfaces. That means all methods defined in these interfaces are also available in MobEffectInstance
 
-- Comparable&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt;
+- stdlib.Comparable&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt;
 
 ## Static Methods
 

@@ -53,12 +53,12 @@ myAttributeInstance.getBaseValue();
 Return Type: [AttributeModifier](/vanilla/api/entity/attribute/AttributeModifier)?
 
 ```zenscript
-AttributeInstance.getModifier(uuid as invalid) as AttributeModifier?
+AttributeInstance.getModifier(uuid as stdlib.UUID) as AttributeModifier?
 ```
 
 | Parameter |    Type     |
 |-----------|-------------|
-| uuid      | **invalid** |
+| uuid      | stdlib.UUID |
 
 
 :::
@@ -120,12 +120,12 @@ AttributeInstance.hasModifier(modifier as AttributeModifier) as boolean
 :::group{name=removeModifier}
 
 ```zenscript
-AttributeInstance.removeModifier(modifier as invalid)
+AttributeInstance.removeModifier(modifier as stdlib.UUID)
 ```
 
 | Parameter |    Type     |
 |-----------|-------------|
-| modifier  | **invalid** |
+| modifier  | stdlib.UUID |
 
 
 :::

@@ -30,5 +30,5 @@ AttributeModifierTemplate.create(amplifier as int) as AttributeModifier
 
 |        Name         |    Type     | Has Getter | Has Setter |
 |---------------------|-------------|------------|------------|
-| attributeModifierId | **invalid** | true       | false      |
+| attributeModifierId | stdlib.UUID | true       | false      |
 

@@ -10,7 +10,7 @@ import crafttweaker.api.entity.Entity;
 
 ## Extending CapabilityProvider&lt;Entity&gt;
 
-Entity extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/vanilla/api/entity/Entity)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Entity](/vanilla/api/entity/Entity)&gt; are also available in Entity
+Entity extends [CapabilityProvider](/neoforge/api/capability/CapabilityProvider)&lt;[Entity](/vanilla/api/entity/Entity)&gt;. That means all methods available in [CapabilityProvider](/neoforge/api/capability/CapabilityProvider)&lt;[Entity](/vanilla/api/entity/Entity)&gt; are also available in Entity
 
 ## Implemented Interfaces
 Entity implements the following interfaces. That means all methods defined in these interfaces are also available in Entity

@@ -11,7 +11,7 @@ import crafttweaker.api.util.math.Vec3i;
 ## Implemented Interfaces
 Vec3i implements the following interfaces. That means all methods defined in these interfaces are also available in Vec3i
 
-- Comparable&lt;[Vec3i](/vanilla/api/util/math/Vec3i)&gt;
+- stdlib.Comparable&lt;[Vec3i](/vanilla/api/util/math/Vec3i)&gt;
 
 ## Methods
 

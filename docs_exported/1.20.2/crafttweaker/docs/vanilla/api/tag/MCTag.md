@@ -12,7 +12,7 @@ import crafttweaker.api.tag.MCTag;
 MCTag implements the following interfaces. That means all methods defined in these interfaces are also available in MCTag
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
-- Comparable&lt;[MCTag](/vanilla/api/tag/MCTag)&gt;
+- stdlib.Comparable&lt;[MCTag](/vanilla/api/tag/MCTag)&gt;
 
 ## Methods
 

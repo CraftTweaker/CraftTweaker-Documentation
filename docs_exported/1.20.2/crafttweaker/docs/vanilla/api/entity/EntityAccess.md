@@ -48,10 +48,10 @@ myEntityAccess.getId();
 
 :::group{name=getUUID}
 
-Return Type: **invalid**
+Return Type: stdlib.UUID
 
 ```zenscript
-// EntityAccess.getUUID() as invalid
+// EntityAccess.getUUID() as stdlib.UUID
 
 myEntityAccess.getUUID();
 ```
@@ -105,5 +105,5 @@ myEntityAccess.shouldBeSaved();
 | id              | int                                         | true       | false      |
 | isAlwaysTicking | boolean                                     | true       | false      |
 | shouldBeSaved   | boolean                                     | true       | false      |
-| uuid            | **invalid**                                 | true       | false      |
+| uuid            | stdlib.UUID                                 | true       | false      |
 

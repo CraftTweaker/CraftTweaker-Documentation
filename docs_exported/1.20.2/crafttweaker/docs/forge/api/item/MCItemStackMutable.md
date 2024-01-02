@@ -17,8 +17,8 @@ MCItemStackMutable implements the following interfaces. That means all methods d
 
 |          Name           |    Type     | Has Getter | Has Setter |
 |-------------------------|-------------|------------|------------|
-| BASE_ATTACK_DAMAGE_UUID | **invalid** | true       | false      |
-| BASE_ATTACK_SPEED_UUID  | **invalid** | true       | false      |
+| BASE_ATTACK_DAMAGE_UUID | stdlib.UUID | true       | false      |
+| BASE_ATTACK_SPEED_UUID  | stdlib.UUID | true       | false      |
 | CRAFTTWEAKER_DATA_KEY   | string      | true       | false      |
 
 ## Casters
@@ -72,7 +72,7 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  IItemStack#withAttributeModifier
 
 ```zenscript
-// MCItemStackMutable.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
+// MCItemStackMutable.addGlobalAttributeModifier(attribute as Attribute, uuid as stdlib.UUID, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myMCItemStackMutable.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
@@ -80,7 +80,7 @@ myMCItemStackMutable.addGlobalAttributeModifier(<attribute:minecraft:generic.att
 | Parameter |                                  Type                                  |                    Description                    |
 |-----------|------------------------------------------------------------------------|---------------------------------------------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
-| uuid      | **invalid**                                                            | The unique identifier of the modifier to replace. |
+| uuid      | stdlib.UUID                                                            | The unique identifier of the modifier to replace. |
 | name      | string                                                                 | The name of the modifier.                         |
 | value     | double                                                                 | The value of the modifier.                        |
 | operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
@@ -639,14 +639,14 @@ myMCItemStackMutable.removeGlobalAttribute(<attribute:minecraft:generic.attack_d
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
 ```zenscript
-// MCItemStackMutable.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[])
+// MCItemStackMutable.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
 
 myMCItemStackMutable.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter |                              Type                              |                    Description                    |
 |-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | **invalid**                                                    | The unique id of the AttributeModifier to remove. |
+| uuid      | stdlib.UUID                                                    | The unique id of the AttributeModifier to remove. |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 
@@ -954,7 +954,7 @@ Adds an AttributeModifier to this IItemStack using a specific UUID.
 Return Type: [IItemStack](/vanilla/api/item/IItemStack)
 
 ```zenscript
-// MCItemStackMutable.withAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
+// MCItemStackMutable.withAttributeModifier(attribute as Attribute, uuid as stdlib.UUID, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[], preserveDefaults as boolean) as IItemStack
 
 myMCItemStackMutable.withAttributeModifier(<attribute:minecraft:generic.attack_damage>, "8c1b5535-9f79-448b-87ae-52d81480aaa3", "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>], true);
 ```
@@ -962,7 +962,7 @@ myMCItemStackMutable.withAttributeModifier(<attribute:minecraft:generic.attack_d
 |    Parameter     |                                  Type                                  |                                     Description                                     | Optional | Default Value |
 |------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------|---------------|
 | attribute        | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                                                      | false    |               |
-| uuid             | **invalid**                                                            | The unique identifier of the modifier to replace.                                   | false    |               |
+| uuid             | stdlib.UUID                                                            | The unique identifier of the modifier to replace.                                   | false    |               |
 | name             | string                                                                 | The name of the modifier.                                                           | false    |               |
 | value            | double                                                                 | The value of the modifier.                                                          | false    |               |
 | operation        | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                                                      | false    |               |

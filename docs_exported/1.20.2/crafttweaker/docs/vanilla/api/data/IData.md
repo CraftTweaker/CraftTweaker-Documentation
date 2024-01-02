@@ -11,7 +11,7 @@ import crafttweaker.api.data.IData;
 ## Implemented Interfaces
 IData implements the following interfaces. That means all methods defined in these interfaces are also available in IData
 
-- Comparable&lt;[IData](/vanilla/api/data/IData)&gt;
+- stdlib.Comparable&lt;[IData](/vanilla/api/data/IData)&gt;
 - stdlib.Iterable&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ## Static Methods

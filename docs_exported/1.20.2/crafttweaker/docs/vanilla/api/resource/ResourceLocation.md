@@ -11,7 +11,7 @@ import crafttweaker.api.resource.ResourceLocation;
 ## Implemented Interfaces
 ResourceLocation implements the following interfaces. That means all methods defined in these interfaces are also available in ResourceLocation
 
-- Comparable&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
+- stdlib.Comparable&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
 
 ## Constructors
 

@@ -10,7 +10,7 @@ import crafttweaker.api.world.Level;
 
 ## Extending CapabilityProvider&lt;Level&gt;
 
-Level extends [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Level](/vanilla/api/world/Level)&gt;. That means all methods available in [CapabilityProvider](/forge/api/capability/CapabilityProvider)&lt;[Level](/vanilla/api/world/Level)&gt; are also available in Level
+Level extends [CapabilityProvider](/neoforge/api/capability/CapabilityProvider)&lt;[Level](/vanilla/api/world/Level)&gt;. That means all methods available in [CapabilityProvider](/neoforge/api/capability/CapabilityProvider)&lt;[Level](/vanilla/api/world/Level)&gt; are also available in Level
 
 ## Implemented Interfaces
 Level implements the following interfaces. That means all methods defined in these interfaces are also available in Level

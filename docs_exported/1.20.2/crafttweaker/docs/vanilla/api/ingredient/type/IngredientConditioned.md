@@ -62,7 +62,7 @@ Adds an AttributeModifier to this IIngredient using a specific UUID.
  IItemStack#withAttributeModifier
 
 ```zenscript
-// IngredientConditioned.addGlobalAttributeModifier(attribute as Attribute, uuid as invalid, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
+// IngredientConditioned.addGlobalAttributeModifier(attribute as Attribute, uuid as stdlib.UUID, name as string, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 
 myIngredientConditioned.addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "Extra Power", 10, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:chest>]);
 ```
@@ -70,7 +70,7 @@ myIngredientConditioned.addGlobalAttributeModifier(<attribute:minecraft:generic.
 | Parameter |                                  Type                                  |                    Description                    |
 |-----------|------------------------------------------------------------------------|---------------------------------------------------|
 | attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.                    |
-| uuid      | **invalid**                                                            | The unique identifier of the modifier to replace. |
+| uuid      | stdlib.UUID                                                            | The unique identifier of the modifier to replace. |
 | name      | string                                                                 | The name of the modifier.                         |
 | value     | double                                                                 | The value of the modifier.                        |
 | operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.                    |
@@ -415,14 +415,14 @@ myIngredientConditioned.removeGlobalAttribute(<attribute:minecraft:generic.attac
 Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
 
 ```zenscript
-// IngredientConditioned.removeGlobalAttributeModifier(uuid as invalid, slotTypes as EquipmentSlot[])
+// IngredientConditioned.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
 
 myIngredientConditioned.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
 ```
 
 | Parameter |                              Type                              |                    Description                    |
 |-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | **invalid**                                                    | The unique id of the AttributeModifier to remove. |
+| uuid      | stdlib.UUID                                                    | The unique id of the AttributeModifier to remove. |
 | slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
 
 

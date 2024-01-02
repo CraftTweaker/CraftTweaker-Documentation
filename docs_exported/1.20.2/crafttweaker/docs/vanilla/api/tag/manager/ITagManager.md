@@ -13,7 +13,7 @@ ITagManager implements the following interfaces. That means all methods defined 
 
 - [CommandStringDisplayable](/vanilla/api/bracket/CommandStringDisplayable)
 - stdlib.Iterable&lt;T&gt;
-- Comparable&lt;[ITagManager](/vanilla/api/tag/manager/ITagManager)&gt;
+- stdlib.Comparable&lt;[ITagManager](/vanilla/api/tag/manager/ITagManager)&gt;
 
 ## Methods
 

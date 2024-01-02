@@ -27,12 +27,12 @@ myPlayerList.getMaxPlayers();
 Return Type: [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer)?
 
 ```zenscript
-PlayerList.getPlayer(uuid as invalid) as ServerPlayer?
+PlayerList.getPlayer(uuid as stdlib.UUID) as ServerPlayer?
 ```
 
 | Parameter |    Type     |
 |-----------|-------------|
-| uuid      | **invalid** |
+| uuid      | stdlib.UUID |
 
 
 :::

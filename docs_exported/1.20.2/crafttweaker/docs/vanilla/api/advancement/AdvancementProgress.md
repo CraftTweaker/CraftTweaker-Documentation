@@ -11,7 +11,7 @@ import crafttweaker.api.advancement.AdvancementProgress;
 ## Implemented Interfaces
 AdvancementProgress implements the following interfaces. That means all methods defined in these interfaces are also available in AdvancementProgress
 
-- Comparable&lt;[AdvancementProgress](/vanilla/api/advancement/AdvancementProgress)&gt;
+- stdlib.Comparable&lt;[AdvancementProgress](/vanilla/api/advancement/AdvancementProgress)&gt;
 
 ## Methods
 
