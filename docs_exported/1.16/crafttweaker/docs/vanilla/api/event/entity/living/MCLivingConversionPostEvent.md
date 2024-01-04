@@ -12,6 +12,10 @@ import crafttweaker.api.event.entity.living.MCLivingConversionPostEvent;
 ```
 
 
+## Extending MCLivingConversionEvent
+
+MCLivingConversionPostEvent extends [MCLivingConversionEvent](/vanilla/api/event/entity/living/MCLivingConversionEvent). That means all methods available in [MCLivingConversionEvent](/vanilla/api/event/entity/living/MCLivingConversionEvent) are also available in MCLivingConversionPostEvent
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter | Description |

@@ -19,6 +19,10 @@ import crafttweaker.api.event.living.MCLivingConversionPreEvent;
 ```
 
 
+## Extending MCLivingConversionEvent
+
+MCLivingConversionPreEvent extends [MCLivingConversionEvent](/vanilla/api/event/entity/living/MCLivingConversionEvent). That means all methods available in [MCLivingConversionEvent](/vanilla/api/event/entity/living/MCLivingConversionEvent) are also available in MCLivingConversionPreEvent
+
 ## Methods
 
 :::group{name=setConversionTimer}

@@ -144,6 +144,7 @@
             "Living": {
               "MCEnderTeleportEvent": "vanilla/api/event/entity/living/MCEnderTeleportEvent.md",
               "MCLivingAttackEvent": "vanilla/api/event/entity/living/MCLivingAttackEvent.md",
+              "MCLivingConversionEvent": "vanilla/api/event/entity/living/MCLivingConversionEvent.md",
               "MCLivingConversionPostEvent": "vanilla/api/event/entity/living/MCLivingConversionPostEvent.md",
               "MCLivingConversionPreEvent": "vanilla/api/event/entity/living/MCLivingConversionPreEvent.md",
               "MCLivingDeathEvent": "vanilla/api/event/entity/living/MCLivingDeathEvent.md",
