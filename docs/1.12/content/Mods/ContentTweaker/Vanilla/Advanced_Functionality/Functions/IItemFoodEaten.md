@@ -20,7 +20,7 @@ The IItemFoodEaten is a function with the following parameters (In this order):
 
 import mods.contenttweaker.VanillaFactory;
 
-var item = VanillaFactory.createItem("suspicious_soup");
+var item = VanillaFactory.createItemFood("suspicious_soup", 4);
 
 item.healAmount = 4;
 item.saturation = 1.5;
