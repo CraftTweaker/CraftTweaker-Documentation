@@ -1,4 +1,4 @@
- {
+{
     "nav": {
         "Home": "index.md",
         "Commands" : "commands.md",
@@ -29,9 +29,9 @@
         "Vanilla": {},
         "Fabric": {},
         "Forge": {},
-        "Neoforge" : {},
+        "Neoforge": {},
         "Mods": {
-            "InitialInventory" : {},
+            "InitialInventory": {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
