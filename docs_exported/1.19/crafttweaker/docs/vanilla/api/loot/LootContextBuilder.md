@@ -47,11 +47,39 @@ LootContextBuilder.create(level as ServerLevel) as LootContextBuilder
 
 ## Methods
 
+:::group{name=build}
+
+Creates a new [LootContext](/vanilla/api/loot/LootContext) with the given [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet).
+ 
+ 
+ The given [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) is used to determine what values are
+ required for the context to be used.
+
+Returns: a new [LootContext](/vanilla/api/loot/LootContext)  
+Return Type: [LootContext](/vanilla/api/loot/LootContext)
+
+```zenscript
+// LootContextBuilder.build(contextParamSet as LootContextParamSet) as LootContext
+
+new LootContextBuilder(level).build(LootContextParamSets.gift());
+```
+
+|    Parameter    |                                Type                                |                                  Description                                   |
+|-----------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| contextParamSet | [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) | The [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) to use. |
+
+
+:::
+
 :::group{name=create}
+
+::deprecated[Use [this](.)#build(LootContext.Builder, LootContextParamSet)             instead to work around a bug in the             ZenCode compiler.]
 
 Creates a new [LootContext](/vanilla/api/loot/LootContext) with the given [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet).
 
-  The given [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) is used to determine what values are required for the context to be used.
+ 
+ The given [LootContextParamSet](/vanilla/api/loot/param/LootContextParamSet) is used to determine what values are
+ required for the context to be used.
 
 Returns: a new [LootContext](/vanilla/api/loot/LootContext)  
 Return Type: [LootContext](/vanilla/api/loot/LootContext)
@@ -184,7 +212,8 @@ new LootContextBuilder(level).withOptionalRandomSeed(0);
 
 :::group{name=withOptionalRandomSeed}
 
-Supplies either a seed to be passed into a new [Random](/vanilla/api/util/math/Random) or if the seed is `0` use the given [Random](/vanilla/api/util/math/Random)
+Supplies either a seed to be passed into a new [Random](/vanilla/api/util/math/Random) or if the seed
+ is `0` use the given [Random](/vanilla/api/util/math/Random)
 
 Returns: This builder for chaining purposes.  
 Return Type: [LootContextBuilder](/vanilla/api/loot/LootContextBuilder)
