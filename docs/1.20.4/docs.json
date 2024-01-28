@@ -31,7 +31,6 @@
         "Forge": {},
         "Neoforge": {},
         "Mods": {
-            "InitialInventory": {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
