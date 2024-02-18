@@ -1,4 +1,4 @@
-# RecipeHolderRecipeHolder
+# RecipeHolder
 
 Holds [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt; recipe and a [ResourceLocation](/vanilla/api/resource/ResourceLocation) id.
 
@@ -6,13 +6,13 @@ Holds [Recipe](/vanilla/api/recipe/type/Recipe)&lt;C&gt; recipe and a [ResourceL
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.recipe.type.RecipeHolderRecipeHolder;
+import crafttweaker.api.recipe.type.RecipeHolder;
 ```
 
 
 ## Extending Record
 
-RecipeHolderRecipeHolder extends Record. That means all methods available in Record are also available in RecipeHolderRecipeHolder
+RecipeHolder extends Record. That means all methods available in Record are also available in RecipeHolder
 
 ## Casters
 

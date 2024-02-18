@@ -95,10 +95,10 @@ blastFurnace.addRecipe("wool2diamond", <constant:minecraft:cookingbookcategory:m
 
 :::group{name=getAllRecipes}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-// BlastFurnaceRecipeManager.getAllRecipes() as stdlib.List<RecipeHolderRecipeHolder<T>>
+// BlastFurnaceRecipeManager.getAllRecipes() as stdlib.List<RecipeHolder<T>>
 
 blastFurnace.getAllRecipes();
 ```
@@ -107,10 +107,10 @@ blastFurnace.getAllRecipes();
 
 :::group{name=getRecipeByName}
 
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
 
 ```zenscript
-BlastFurnaceRecipeManager.getRecipeByName(name as string) as RecipeHolderRecipeHolder<T>?
+BlastFurnaceRecipeManager.getRecipeByName(name as string) as RecipeHolder<T>?
 ```
 
 | Parameter |  Type  |
@@ -125,10 +125,10 @@ BlastFurnaceRecipeManager.getRecipeByName(name as string) as RecipeHolderRecipeH
 Returns a map of all known recipes.
 
 Returns: A Map of recipe name to recipe of all known recipes.  
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// BlastFurnaceRecipeManager.getRecipeMap() as RecipeHolderRecipeHolder<T>[ResourceLocation]
+// BlastFurnaceRecipeManager.getRecipeMap() as RecipeHolder<T>[ResourceLocation]
 
 blastFurnace.getRecipeMap();
 ```
@@ -137,10 +137,10 @@ blastFurnace.getRecipeMap();
 
 :::group{name=getRecipesByOutput}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-BlastFurnaceRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolderRecipeHolder<T>>
+BlastFurnaceRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolder<T>>
 ```
 
 | Parameter |                        Type                        |
@@ -152,15 +152,15 @@ BlastFurnaceRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.Li
 
 :::group{name=getRecipesMatching}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-BlastFurnaceRecipeManager.getRecipesMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>) as stdlib.List<RecipeHolderRecipeHolder<T>>
+BlastFurnaceRecipeManager.getRecipesMatching(predicate as Predicate<RecipeHolder<T>>) as stdlib.List<RecipeHolder<T>>
 ```
 
-| Parameter |                                            Type                                             |
-|-----------|---------------------------------------------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
 
 
 :::
@@ -265,14 +265,14 @@ blastFurnace.removeByRegex("\\d_\\d", (name as string) => {return name == "orang
 Removes all recipes that match the given predicate
 
 ```zenscript
-// BlastFurnaceRecipeManager.removeMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>)
+// BlastFurnaceRecipeManager.removeMatching(predicate as Predicate<RecipeHolder<T>>)
 
 blastFurnace.removeMatching((holder) => "wool" in holder.id.path);
 ```
 
-| Parameter |                                            Type                                             |                       Description                       |
-|-----------|---------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
+| Parameter |                                      Type                                       |                       Description                       |
+|-----------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
 
 
 :::
@@ -298,8 +298,8 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 
 ## Properties
 
-|    Name    |                                                                  Type                                                                  | Has Getter | Has Setter |             Description             |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
-| allRecipes | stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
-| recipeMap  | [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
+|    Name    |                                                            Type                                                            | Has Getter | Has Setter |             Description             |
+|------------|----------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
+| recipeMap  | [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

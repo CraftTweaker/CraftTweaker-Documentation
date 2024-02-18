@@ -59,10 +59,10 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraf
 
 :::group{name=getAllRecipes}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-// StoneCutterManager.getAllRecipes() as stdlib.List<RecipeHolderRecipeHolder<T>>
+// StoneCutterManager.getAllRecipes() as stdlib.List<RecipeHolder<T>>
 
 stoneCutter.getAllRecipes();
 ```
@@ -71,10 +71,10 @@ stoneCutter.getAllRecipes();
 
 :::group{name=getRecipeByName}
 
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
 
 ```zenscript
-StoneCutterManager.getRecipeByName(name as string) as RecipeHolderRecipeHolder<T>?
+StoneCutterManager.getRecipeByName(name as string) as RecipeHolder<T>?
 ```
 
 | Parameter |  Type  |
@@ -89,10 +89,10 @@ StoneCutterManager.getRecipeByName(name as string) as RecipeHolderRecipeHolder<T
 Returns a map of all known recipes.
 
 Returns: A Map of recipe name to recipe of all known recipes.  
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// StoneCutterManager.getRecipeMap() as RecipeHolderRecipeHolder<T>[ResourceLocation]
+// StoneCutterManager.getRecipeMap() as RecipeHolder<T>[ResourceLocation]
 
 stoneCutter.getRecipeMap();
 ```
@@ -101,10 +101,10 @@ stoneCutter.getRecipeMap();
 
 :::group{name=getRecipesByOutput}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolderRecipeHolder<T>>
+StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolder<T>>
 ```
 
 | Parameter |                        Type                        |
@@ -116,15 +116,15 @@ StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<Reci
 
 :::group{name=getRecipesMatching}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-StoneCutterManager.getRecipesMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>) as stdlib.List<RecipeHolderRecipeHolder<T>>
+StoneCutterManager.getRecipesMatching(predicate as Predicate<RecipeHolder<T>>) as stdlib.List<RecipeHolder<T>>
 ```
 
-| Parameter |                                            Type                                             |
-|-----------|---------------------------------------------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
 
 
 :::
@@ -229,14 +229,14 @@ stoneCutter.removeByRegex("\\d_\\d", (name as string) => {return name == "orange
 Removes all recipes that match the given predicate
 
 ```zenscript
-// StoneCutterManager.removeMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>)
+// StoneCutterManager.removeMatching(predicate as Predicate<RecipeHolder<T>>)
 
 stoneCutter.removeMatching((holder) => "wool" in holder.id.path);
 ```
 
-| Parameter |                                            Type                                             |                       Description                       |
-|-----------|---------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
+| Parameter |                                      Type                                       |                       Description                       |
+|-----------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
 
 
 :::
@@ -244,8 +244,8 @@ stoneCutter.removeMatching((holder) => "wool" in holder.id.path);
 
 ## Properties
 
-|    Name    |                                                                  Type                                                                  | Has Getter | Has Setter |             Description             |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
-| allRecipes | stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
-| recipeMap  | [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
+|    Name    |                                                            Type                                                            | Has Getter | Has Setter |             Description             |
+|------------|----------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
+| recipeMap  | [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

@@ -56,10 +56,10 @@ recipes.getAllManagers();
 
 :::group{name=getAllRecipes}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
 
 ```zenscript
-// GenericRecipesManager.getAllRecipes() as stdlib.List<RecipeHolderRecipeHolder<Recipe<Container>>>
+// GenericRecipesManager.getAllRecipes() as stdlib.List<RecipeHolder<Recipe<Container>>>
 
 recipes.getAllRecipes();
 ```
@@ -68,10 +68,10 @@ recipes.getAllRecipes();
 
 :::group{name=getRecipeByName}
 
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
 
 ```zenscript
-GenericRecipesManager.getRecipeByName(name as string) as RecipeHolderRecipeHolder<Recipe<Container>>
+GenericRecipesManager.getRecipeByName(name as string) as RecipeHolder<Recipe<Container>>
 ```
 
 | Parameter |  Type  |
@@ -86,10 +86,10 @@ GenericRecipesManager.getRecipeByName(name as string) as RecipeHolderRecipeHolde
 Returns a map of all known recipes.
 
 Returns: A Map of recipe name to recipe of all known recipes.  
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// GenericRecipesManager.getRecipeMap() as RecipeHolderRecipeHolder<Recipe<Container>>[ResourceLocation]
+// GenericRecipesManager.getRecipeMap() as RecipeHolder<Recipe<Container>>[ResourceLocation]
 
 recipes.getRecipeMap();
 ```
@@ -98,10 +98,10 @@ recipes.getRecipeMap();
 
 :::group{name=getRecipesByOutput}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
 
 ```zenscript
-GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolderRecipeHolder<Recipe<Container>>>
+GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolder<Recipe<Container>>>
 ```
 
 | Parameter |                        Type                        |
@@ -113,15 +113,15 @@ GenericRecipesManager.getRecipesByOutput(output as IIngredient) as stdlib.List<R
 
 :::group{name=getRecipesMatching}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;
 
 ```zenscript
-GenericRecipesManager.getRecipesMatching(predicate as Predicate<RecipeHolderRecipeHolder<Recipe<Container>>>) as stdlib.List<RecipeHolderRecipeHolder<Recipe<Container>>>
+GenericRecipesManager.getRecipesMatching(predicate as Predicate<RecipeHolder<Recipe<Container>>>) as stdlib.List<RecipeHolder<Recipe<Container>>>
 ```
 
-| Parameter |                                                                                         Type                                                                                         |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; |
+| Parameter |                                                                                   Type                                                                                   |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; |
 
 
 :::
@@ -249,14 +249,14 @@ recipes.removeByRegex("\\d_\\d");
 Removes all recipes that match the given predicate
 
 ```zenscript
-// GenericRecipesManager.removeMatching(predicate as Predicate<RecipeHolderRecipeHolder<Recipe<Container>>>)
+// GenericRecipesManager.removeMatching(predicate as Predicate<RecipeHolder<Recipe<Container>>>)
 
 recipes.removeMatching((holder) => "wool" in holder.id.path);
 ```
 
-| Parameter |                                                                                         Type                                                                                         |                                                                                                 Description                                                                                                 |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | a predicate of [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt; to test recipes against. |
+| Parameter |                                                                                   Type                                                                                   |                                                                                           Description                                                                                           |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | a predicate of [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt; to test recipes against. |
 
 
 :::
@@ -264,9 +264,9 @@ recipes.removeMatching((holder) => "wool" in holder.id.path);
 
 ## Properties
 
-|    Name     |                                                                                                              Type                                                                                                               | Has Getter | Has Setter |                                                                            Description                                                                             |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt;                                                                                                                                                 | true       | false      | Returns a list of all known recipe managers. <br />  This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
-| allRecipes  | stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;                                          | true       | false      |                                                                                                                                                                    |
-| recipeMap   | [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes.                                                                                                                                |
+|    Name     |                                                                                                        Type                                                                                                         | Has Getter | Has Setter |                                                                            Description                                                                             |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| allManagers | stdlib.List&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&gt;                                                                                                                                     | true       | false      | Returns a list of all known recipe managers. <br />  This includes managers added by mod integrations as well as wrapper managers added to provide simple support. |
+| allRecipes  | stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt;                                          | true       | false      |                                                                                                                                                                    |
+| recipeMap   | [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes.                                                                                                                                |
 

@@ -26,12 +26,12 @@ Returns: A rule carrying out what has been specified.
 Return Type: [CustomFilteringRule](/vanilla/api/recipe/replacement/type/CustomFilteringRule)
 
 ```zenscript
-CustomFilteringRule.of(predicate as BiPredicate<IRecipeManager<Recipe<Container>>,RecipeHolderRecipeHolder<Recipe<Container>>>) as CustomFilteringRule
+CustomFilteringRule.of(predicate as BiPredicate<IRecipeManager<Recipe<Container>>,RecipeHolder<Recipe<Container>>>) as CustomFilteringRule
 ```
 
-| Parameter |                                                                                                                                                                         Type                                                                                                                                                                          |         Description         |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| predicate | BiPredicate&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;,[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | The predicate for checking. |
+| Parameter |                                                                                                                                                                   Type                                                                                                                                                                    |         Description         |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| predicate | BiPredicate&lt;[IRecipeManager](/vanilla/api/recipe/manager/IRecipeManager)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;,[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | The predicate for checking. |
 
 
 :::
@@ -44,12 +44,12 @@ Returns: A rule carrying out what has been specified.
 Return Type: [CustomFilteringRule](/vanilla/api/recipe/replacement/type/CustomFilteringRule)
 
 ```zenscript
-CustomFilteringRule.of(predicate as Predicate<RecipeHolderRecipeHolder<Recipe<Container>>>) as CustomFilteringRule
+CustomFilteringRule.of(predicate as Predicate<RecipeHolder<Recipe<Container>>>) as CustomFilteringRule
 ```
 
-| Parameter |                                                                                         Type                                                                                         |         Description         |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | The predicate for checking. |
+| Parameter |                                                                                   Type                                                                                   |         Description         |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;&gt; | The predicate for checking. |
 
 
 :::

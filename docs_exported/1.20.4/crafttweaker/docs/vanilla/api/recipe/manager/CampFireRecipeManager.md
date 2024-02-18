@@ -95,10 +95,10 @@ campfire.addRecipe("wool2diamond", <constant:minecraft:cookingbookcategory:misc>
 
 :::group{name=getAllRecipes}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-// CampFireRecipeManager.getAllRecipes() as stdlib.List<RecipeHolderRecipeHolder<T>>
+// CampFireRecipeManager.getAllRecipes() as stdlib.List<RecipeHolder<T>>
 
 campfire.getAllRecipes();
 ```
@@ -107,10 +107,10 @@ campfire.getAllRecipes();
 
 :::group{name=getRecipeByName}
 
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;?
 
 ```zenscript
-CampFireRecipeManager.getRecipeByName(name as string) as RecipeHolderRecipeHolder<T>?
+CampFireRecipeManager.getRecipeByName(name as string) as RecipeHolder<T>?
 ```
 
 | Parameter |  Type  |
@@ -125,10 +125,10 @@ CampFireRecipeManager.getRecipeByName(name as string) as RecipeHolderRecipeHolde
 Returns a map of all known recipes.
 
 Returns: A Map of recipe name to recipe of all known recipes.  
-Return Type: [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
+Return Type: [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)]
 
 ```zenscript
-// CampFireRecipeManager.getRecipeMap() as RecipeHolderRecipeHolder<T>[ResourceLocation]
+// CampFireRecipeManager.getRecipeMap() as RecipeHolder<T>[ResourceLocation]
 
 campfire.getRecipeMap();
 ```
@@ -137,10 +137,10 @@ campfire.getRecipeMap();
 
 :::group{name=getRecipesByOutput}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-CampFireRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolderRecipeHolder<T>>
+CampFireRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<RecipeHolder<T>>
 ```
 
 | Parameter |                        Type                        |
@@ -152,15 +152,15 @@ CampFireRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<R
 
 :::group{name=getRecipesMatching}
 
-Return Type: stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
+Return Type: stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;
 
 ```zenscript
-CampFireRecipeManager.getRecipesMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>) as stdlib.List<RecipeHolderRecipeHolder<T>>
+CampFireRecipeManager.getRecipesMatching(predicate as Predicate<RecipeHolder<T>>) as stdlib.List<RecipeHolder<T>>
 ```
 
-| Parameter |                                            Type                                             |
-|-----------|---------------------------------------------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
+| Parameter |                                      Type                                       |
+|-----------|---------------------------------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; |
 
 
 :::
@@ -265,14 +265,14 @@ campfire.removeByRegex("\\d_\\d", (name as string) => {return name == "orange_wo
 Removes all recipes that match the given predicate
 
 ```zenscript
-// CampFireRecipeManager.removeMatching(predicate as Predicate<RecipeHolderRecipeHolder<T>>)
+// CampFireRecipeManager.removeMatching(predicate as Predicate<RecipeHolder<T>>)
 
 campfire.removeMatching((holder) => "wool" in holder.id.path);
 ```
 
-| Parameter |                                            Type                                             |                       Description                       |
-|-----------|---------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| predicate | Predicate&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
+| Parameter |                                      Type                                       |                       Description                       |
+|-----------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| predicate | Predicate&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt; | a predicate of RecipeHolder<T> to test recipes against. |
 
 
 :::
@@ -298,8 +298,8 @@ campfire.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 
 ## Properties
 
-|    Name    |                                                                  Type                                                                  | Has Getter | Has Setter |             Description             |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
-| allRecipes | stdlib.List&lt;[RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
-| recipeMap  | [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
+|    Name    |                                                            Type                                                            | Has Getter | Has Setter |             Description             |
+|------------|----------------------------------------------------------------------------------------------------------------------------|------------|------------|-------------------------------------|
+| allRecipes | stdlib.List&lt;[RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;&gt;                                          | true       | false      |                                     |
+| recipeMap  | [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;[[ResourceLocation](/vanilla/api/resource/ResourceLocation)] | true       | false      | Returns a map of all known recipes. |
 

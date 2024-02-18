@@ -4,7 +4,7 @@
 Filters recipes that have been created by the given set of mods.
 
  Every mod is identified according to its mod id. Recipes have been created by a mod if their name as determined
- by [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;#id() has that mod id as the namespace.
+ by [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;#id() has that mod id as the namespace.
 
 ## Importing the class
 

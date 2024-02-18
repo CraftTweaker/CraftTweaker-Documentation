@@ -4,7 +4,7 @@
 Filters recipes that match a specific pattern on their name.
 
  This acts as a less specialized version of [ModsFilteringRule](/vanilla/api/recipe/replacement/type/ModsFilteringRule) as it allows custom matching on the entirety
- of a recipe's name as determined by [RecipeHolderRecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;#id(), at the cost of some efficiency.
+ of a recipe's name as determined by [RecipeHolder](/vanilla/api/recipe/type/RecipeHolder)&lt;T&gt;#id(), at the cost of some efficiency.
 
 ## Importing the class
 
