@@ -137,6 +137,21 @@ ProcessingRecipeBuilder.requiresHeat(condition as HeatCondition) as ProcessingRe
 
 :::
 
+:::group{name=toolNotConsumed}
+
+Sets the recipe to keep the tool.
+
+Returns: This builder for further chaining.  
+Return Type: [ProcessingRecipeBuilder](/mods/CreateTweaker/recipe/ProcessingRecipeBuilder)&lt;[ProcessingRecipe](/mods/CreateTweaker/recipe/type/ProcessingRecipe)&lt;[Container](/vanilla/api/world/Container)&gt;&gt;
+
+```zenscript
+// ProcessingRecipeBuilder.toolNotConsumed() as ProcessingRecipeBuilder<ProcessingRecipe<Container>>
+
+myProcessingRecipeBuilder.toolNotConsumed();
+```
+
+:::
+
 :::group{name=withFluidIngredients}
 
 Sets the fluid ingredients of the recipe.

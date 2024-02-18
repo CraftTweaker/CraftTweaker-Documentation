@@ -120,6 +120,23 @@ DeployerApplicationManager.registerRecipe(name as string, recipeBuilder as Consu
 
 :::
 
+:::group{name=registerRecipe}
+
+Registers a recipe using a builder approach.
+
+```zenscript
+DeployerApplicationManager.registerRecipe(name as string, recipeBuilder as Consumer<ProcessingRecipeBuilder<DeployerApplicationRecipe>>, function as DeployerRecipeFunction)
+```
+
+|   Parameter   |                                                                                            Type                                                                                             |       Description       |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| name          | string                                                                                                                                                                                      | The name of the recipe. |
+| recipeBuilder | Consumer&lt;[ProcessingRecipeBuilder](/mods/CreateTweaker/recipe/ProcessingRecipeBuilder)&lt;[DeployerApplicationRecipe](/mods/CreateTweaker/recipe/type/DeployerApplicationRecipe)&gt;&gt; | The recipe builder.     |
+| function      | [DeployerRecipeFunction](/mods/CreateTweaker/recipe/fun/DeployerRecipeFunction)                                                                                                             |                         |
+
+
+:::
+
 :::group{name=remove}
 
 ```zenscript

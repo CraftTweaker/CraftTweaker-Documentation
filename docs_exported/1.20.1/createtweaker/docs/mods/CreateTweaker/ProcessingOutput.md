@@ -8,6 +8,20 @@ import mods.createtweaker.ProcessingOutput;
 ```
 
 
+## Constructors
+
+
+```zenscript
+new ProcessingOutput(stack as ItemStack, chance as float) as ProcessingOutput
+new ProcessingOutput(<item:minecraft:dirt>, 1.0);
+```
+| Parameter |                   Type                   |
+|-----------|------------------------------------------|
+| stack     | [ItemStack](/vanilla/api/item/ItemStack) |
+| chance    | float                                    |
+
+
+
 ## Methods
 
 :::group{name=getChance}
@@ -52,5 +66,6 @@ myProcessingOutput.rollOutput();
 |  Name  |                    Type                    | Has Getter | Has Setter |
 |--------|--------------------------------------------|------------|------------|
 | chance | float                                      | true       | false      |
+| random | [Random](/vanilla/api/util/math/Random)    | true       | false      |
 | stack  | [IItemStack](/vanilla/api/item/IItemStack) | true       | false      |
 
