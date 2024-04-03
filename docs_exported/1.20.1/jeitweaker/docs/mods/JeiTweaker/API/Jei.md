@@ -92,7 +92,7 @@ Hides the specified variable-arguments list of ingredients from JEI. <br />  <br
 // Jei.hideIngredients(ingredients as JeiIngredient[])
 
 Jei.hideIngredients(<item:minecraft:redstone_dust> | <item:minecraft:iron_ingot>);
-Jei.hideIngredients([<item:minecraft:stone>, <item:minecraft:compass>});
+Jei.hideIngredients([<item:minecraft:stone>, <item:minecraft:compass>]);
 ```
 
 |  Parameter  |                               Type                               |       Description        |
