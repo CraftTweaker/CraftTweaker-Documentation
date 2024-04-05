@@ -39,8 +39,8 @@ Check the table to see what you can retrieve from the ILiquidStack Object using 
 | definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
 
 # IIngredient Implementaion
-Java Jargon: ILiquidStack implements IIngredient. In other words, all methods that can be used in [IIngredients](/Vanilla/Variable_Types/IIngredient/) can also be used for ILiquidStacks
-Refer to the IIngredient entry for further information on this.
+Java Jargon: ILiquidStack implements [IIngredient](/Vanilla/Variable_Types/IIngredient/). In other words, all methods that can be used in [IIngredients](/Vanilla/Variable_Types/IIngredient/) can also be used for ILiquidStacks
+Refer to the [IIngredient](/Vanilla/Variable_Types/IIngredient/) entry for further information on this.
 Here are some special cases, as liquids just aren't items
 
 * You can't mark ILiquidStacks, and you get null of you try to retrieve an ILiquidStack's mark
