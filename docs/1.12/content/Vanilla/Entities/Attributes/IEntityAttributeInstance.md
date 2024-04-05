@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 |----------------|---------------------|--------------------------------------------------------------------|
 | attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
 | baseValue      | getBaseValue()      | double                                                             |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                                   |
+| modifiers      | getModifiers()      | `List<[IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/)>`                                   |
 | attributeValue | getAttributeValue() | double                                                             |
 
 
