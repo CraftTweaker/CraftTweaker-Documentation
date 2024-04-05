@@ -22,7 +22,7 @@ This is because CT casts variables that aren't given a start value to the IAny T
 That type was made to facilitate some recipe handlers, though never really implemented, so it sometimes does more harm than good. It was originally intended as a type that can take the form of most other types so you don't need to change variables all the time, but the interface never got implemented.
 
 Back to the topic:
-How can we fix this issue? By casting the variable test to ```IItemStack```, which is the type used for items.
+How can we fix this issue? By casting the variable test to ```[IItemStack](/Vanilla/Items/IItemStack/)```, which is the type used for items.
 Unfortunately, some types need to be imported first, and this is one of those.
 
 ```zenscript
