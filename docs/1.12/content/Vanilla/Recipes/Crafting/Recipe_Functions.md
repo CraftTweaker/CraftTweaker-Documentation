@@ -36,7 +36,7 @@ You don't have to call them this way, they can have any name.
 
 `out` is the recipe's output and an IItemStack object.  
 `ins` is a map with the marks as keys and the marked inputs as values.  
-`cInfo` is an ICraftingInfo Object
+`cInfo` is an [ICraftingInfo](/Vanilla/Recipes/Crafting/ICraftingInfo/) Object
 
 The function must return the IItemStack that the recipe should output.
 
@@ -67,5 +67,5 @@ function(out,cInfo,player){
 This gives the player who performs the recipe 1 level each time the crafting is completed.
 Again, we have a function with 3 Parameters:  
 `out` is the recipe's output and an IItemStack object.  
-`cInfo` is an ICraftingInfo Object  
+`cInfo` is an [ICraftingInfo](/Vanilla/Recipes/Crafting/ICraftingInfo/) Object  
 `player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object. **Can be** `null`
