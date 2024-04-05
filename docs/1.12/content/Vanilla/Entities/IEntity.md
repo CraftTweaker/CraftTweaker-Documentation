@@ -91,7 +91,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | rotationPitch               |                     | float                                        |
 | lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d/)        |
 | nbt                         | getNBT()            | [IData](/Vanilla/Data/IData/)                  |
-| horizontalFacing            | gethorizontalFacing() | [IFacing](/Vanilla/World/IFacing/)         |
+| horizontalFacing            | getHorizontalFacing() | [IFacing](/Vanilla/World/IFacing/)         |
 | updateBlocked               | getUpdateBlocked()  | boolean                                  |
 | inPortal                    | getInPortal()       | boolean                                      |
 | portalCounter               | getPortalCounter() | int                                      |
