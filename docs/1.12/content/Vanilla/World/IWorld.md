@@ -93,7 +93,7 @@ worldObj.addWeatherEffect(IEntity entity);
 
 ### Remove Entity
 Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
-Returns a bool that states if the spawn was successful.
+Returns a bool that states if the remove was successful.
 ```zenscript
 worldObj.removeEntity(IEntity entity);
 ```
