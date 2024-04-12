@@ -20,9 +20,6 @@ The following information can be retrieved from the event:
 
 | ZenGetter    | Return Type                               |
 |--------------|-------------------------------------------|
-| `canceled`   | boolean                                   |
-| `usingItem`  | boolean                                   |
-| `usingBlock` | boolean                                   |
 | `x`          | int                                       |
 | `y`          | int                                       |
 | `z`          | int                                       |
@@ -30,12 +27,12 @@ The following information can be retrieved from the event:
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)      |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)          |
 | `block`      | [IBlock](/Vanilla/Blocks/IBlock/)         |
+|`blockState`  | [IBlockState](/Vanilla/Blocks/IBlockState/)|
 | `item`       | [IItemStack](/Vanilla/Items/IItemStack/)  |
 | `dimension`  | int                                       |
+| `hand`       | string                                    |
+
+
 
 ## ZenMethods
-
-- `event.cancel()` sets the event as cancelled
-- `event.useBlock()` sets usingBlock to true
-- `event.useItem()` sets usingItem to true
 - `event.damageItem(int amount)` damages the item by the specified amount
