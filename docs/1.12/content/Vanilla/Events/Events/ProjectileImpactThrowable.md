@@ -18,5 +18,5 @@ The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter           | Type                                                               |
 |------------------|---------------------|--------------------------------------------------------------------|
-| `fireball`       |                     | [IEntity](/Vanilla/Entities/IEntity/)                              |
-| `shooter`        |                     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)          |
+| `throwable`       |                     | [IEntity](/Vanilla/Entities/IEntity/)                              |
+| `thrower`        |                     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)          |
