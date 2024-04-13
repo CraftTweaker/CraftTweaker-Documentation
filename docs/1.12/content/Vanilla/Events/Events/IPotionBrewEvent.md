@@ -6,18 +6,15 @@ This event is extended by all events involving the brewing stand, although not t
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPotionBrewEvent;`
 
-## What can be done with them?
- 
-| ZenGetter    | ZenSetter    | type                                 |
-|--------------|--------------|--------------------------------------|
-| `length`     |              | int                                  |
 
-## Methods
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
 
-- [IItemStack](/Vanilla/Items/IItemStack/) `getItem()` 
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `length`        |                 | int                                               |
 
-Returns the IItemStack contained in the list of items at the specified array. Will return an empty IItemStack if the specified index is greater than `length`.
 
-- `setItem(int, ` [`IItemStack`](/Vanilla/Items/IItemStack/) `)`
-
-Replaces the itemstack at the specified index with the specified item. If th index is greater than the length of the item array, nothing will happen.
+## ZenMethodes
+- `event.getItem(int)` returns [IItemStack](/Vanilla/Items/IItemStack/) on the given index in the crafting station. Will return an empty [IItemStack](/Vanilla/Items/IItemStack/) if the specified index is greater than `length`.
+- `event.setItem(int, IItemStack)` Replaces or sets [IItemStack](/Vanilla/Items/IItemStack/) on given index. If th index is greater than the length of the item array, nothing will happen.
