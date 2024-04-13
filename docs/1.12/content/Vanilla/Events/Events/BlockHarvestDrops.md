@@ -26,7 +26,7 @@ The following information can be retrieved from the event:
 | `drops`          | `drops`       | List<[WeightedItemStack](/Vanilla/Items/WeightedItemStack/)\>      |
 | `dropChance`     | `dropChance`  | float                                                              |
 
-## ZenMethodes
+## ZenMethods
 - `event.addItem(IItemStack)` Adds the Item to the droplist
 
 
