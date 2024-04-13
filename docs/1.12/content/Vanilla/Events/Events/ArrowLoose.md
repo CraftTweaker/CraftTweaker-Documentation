@@ -31,5 +31,5 @@ The following information can be retrieved/set during the event:
 | `canceled`      | `canceled`      | bool                                              |
 
 ZenMethodes
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Methode, returns void (nothing). Can cancel the event and stop smth. from happening
 
