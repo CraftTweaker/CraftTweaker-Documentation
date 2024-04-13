@@ -14,7 +14,7 @@ BlockHarvestDrops Events implement the following interfaces and are able to call
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter     | Type                                                               |
@@ -25,6 +25,28 @@ The following information can be retrieved from the event:
 | `fortuneLevel`   |               | int                                                                |
 | `drops`          | `drops`       | List<[WeightedItemStack](/Vanilla/Items/WeightedItemStack/)\>      |
 | `dropChance`     | `dropChance`  | float                                                              |
+
+## ZenMethodes
+- `event.addItem(IItemStack)` Adds the Item to the droplist
+
+
+## ZenGetters/ZenSetters/ZenMethodes from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
 
 
 ## Adding an item to the list
