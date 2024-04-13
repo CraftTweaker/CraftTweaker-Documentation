@@ -24,4 +24,28 @@ The following information can be retrieved from the event:
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                               |
 | `current`        |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `placedAgainst`  |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
-| `hand`           |               | String                                                             |
+| `hand`           |               | string                                                             |
+
+## ZenGetters/ZenSetters/ZenMethodes from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
