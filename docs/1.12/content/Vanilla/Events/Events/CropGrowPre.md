@@ -18,7 +18,7 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter            | ZenSetter     | Type                                                               |
