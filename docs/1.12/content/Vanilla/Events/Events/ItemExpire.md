@@ -1,6 +1,6 @@
 # ItemExpire
 
-The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
+The ItemExpire Event is fired whenever an Item expires (reaches its maximum lifespan).  
 It can be canceled to prevent the item from being flagged as dead.  
 If canceled it will add `extralife` to the item's lifetime.
 
@@ -19,5 +19,16 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 | ZenGetter | ZenSetter | Type                                         |
 |-----------|-----------|----------------------------------------------|
-| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| extraLife | extraLife | int                                          |
+| `item`      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `extraLife` | `extraLife` | int                                          |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `entity`        |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
