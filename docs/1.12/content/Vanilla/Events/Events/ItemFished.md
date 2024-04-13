@@ -27,3 +27,17 @@ The following information can be retrieved/set during the event:
 |                    | `additionalDamage` | int                                               | 
 | `drops`            |                    | [IItemStack](/Vanilla/Items/IItemStack/)[]        |
 | `fishHook`         |                    | [IEntityFishHook](/Vanilla/Entities/IEntityFishHook/) |
+
+
+## ZenGetters/ZenSetters/ZenMethods
+The following information can be retrieved/set during the event:
+
+| ZenGetter          | ZenSetter          | Type                                              |
+|--------------------|--------------------|---------------------------------------------------|
+| `player`           |                    | [IPlayer](/Vanilla/Player/IPlayer/)               |
+| `canceled`         | `canceled`         | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
