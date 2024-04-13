@@ -22,7 +22,7 @@ The following information can be retrieved from the event:
 | `affectedPositions`  |               | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[ ]                     |
 
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter     | Type                                                               |
