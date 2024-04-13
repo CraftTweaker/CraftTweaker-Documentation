@@ -19,5 +19,5 @@ The following information can be retrieved/set during the event:
 | `canceled`      | `canceled`      | bool                                              |
 
 
-## ZenMethodes
+## ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
