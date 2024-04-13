@@ -28,14 +28,14 @@ The following information can be retrieved/set during the event:
 | `dimension`     |                 | int                                               |
 
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
-| `entity`        |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+| `entity`        |                 | [IEntity](/Vanilla/Entities/IEntity/)  |
 | `canceled`      | `canceled`      | bool                                              |
 
 
-ZenMethodes
+ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
