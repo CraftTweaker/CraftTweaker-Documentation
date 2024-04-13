@@ -13,9 +13,15 @@ The meaning of these is dependent on context. Generally, denying an event preven
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+
+
+## ZenMethodes
 - `event.deny()` Method, sets the event's result to `deny`
 - `event.allow()` Method, sets the event's result to `allow`
 - `event.default()` Method, sets the event's result to `default`
