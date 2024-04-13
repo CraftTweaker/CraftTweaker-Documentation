@@ -28,7 +28,7 @@ The following information can be retrieved from the event:
 | `slot`          |                 | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) |
 
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
