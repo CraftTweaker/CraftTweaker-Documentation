@@ -38,7 +38,7 @@ The despawn event also offers three functions to change the event outcome:
 
 `event.pass`     ->  Sets the event result to the default state  
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
