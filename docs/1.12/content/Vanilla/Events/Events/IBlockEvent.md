@@ -7,12 +7,23 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 `import crafttweaker.event.IBlockEvent;`
 
 ## Extending IEventPositionable
-This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
+This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), 
+which means that all functionality that IEventPositionable offers is also present in IBlockEvent
 
-## ZenGetters
+## ZenGetters/ZenSetter
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
 
-| name             | type                                                     |
-|------------------|----------------------------------------------------------|
-| world            | [IWorld](/Vanilla/World/IWorld/)                          |
-| blockState       | [IBlockState](/Vanilla/Blocks/IBlockState/)               |
-| block            | [IBlock](/Vanilla/Blocks/IBlock/)                         |
+## ZenGetters/ZenSetters/ZenMethodes from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
