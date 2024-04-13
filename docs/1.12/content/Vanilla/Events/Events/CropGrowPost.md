@@ -13,7 +13,7 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter            | ZenSetter     | Type                                                               |
