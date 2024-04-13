@@ -22,7 +22,7 @@ EntityLivingFallEvent implements the following interfaces and are able to call a
 | `damageMultiplier` | `damageMultiplier` | float |
 
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
@@ -31,5 +31,5 @@ The following information can be retrieved/set during the event:
 | `canceled`      | `canceled`      | bool                                              |
 
 
-ZenMethodes
+ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
