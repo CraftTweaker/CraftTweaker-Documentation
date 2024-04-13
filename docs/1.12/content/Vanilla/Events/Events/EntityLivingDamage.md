@@ -21,5 +21,27 @@ EntityLivingDamageEvent implements the following interfaces and are able to call
 
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
-| damageSource     |               | [IDamageSource](/Vanilla/Damage/IDamageSource/)                    |
-| amount           | amount        | float                                                              |
+| `damageSource`   |               | [IDamageSource](/Vanilla/Damage/IDamageSource/)                    |
+| `amount`         | `amount`      | float                                                              |
+
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type       |
+|-----------------|-----------------|------------|
+| `targetX`       | `targetX`       | double     |
+| `targetY`       | `targetY`       | double     |
+| `targetZ`       | `targetZ`       | double     |
+| `attackDamage`  | `attackDamage`  | float      |
+
+## ZenGetters/ZenSetters from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
