@@ -18,5 +18,18 @@ The following information can be retrieved from the event:
 
 | ZenGetter            | ZenSetter     | Type                                                               |
 |----------------------|---------------|--------------------------------------------------------------------|
-| `affectedEntities`   |               | [IEntity](/Vanilla/Entities/IEntity/)[]                            |
-| `affectedPositions`  |               | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[]                     |
+| `affectedEntities`   |               | [IEntity](/Vanilla/Entities/IEntity/)[ ]                            |
+| `affectedPositions`  |               | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[ ]                     |
+
+
+## ZenGetters/ZenSetters/ZenMethodes from extensions
+The following information can be retrieved from the event:
+
+| ZenGetter        | ZenSetter     | Type                                                               |
+|------------------|---------------|--------------------------------------------------------------------|
+| `world`          |               | [IWorld](/Vanilla/World/IWorld/)                                  |
+| `explosion`      |               | [IExplosion](/Vanilla/World/IExplosion)                            |
+| `position`       |               | [IBlockPos](/Vanilla/World/IBlockPos/)                             |
+| `x`              |               | double                                                             |
+| `y`              |               | double                                                             |
+| `z`              |               | double                                                             |
