@@ -16,17 +16,15 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter       | Return Type                                          |
-|-----------------|------------------------------------------------------|
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)       |
-| `isRecentlyHit` | bool                                                 |
-| `lootingLevel`  | int                                                  |
-
-
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `drops`         |                 | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/)  |
+| `damageSource`  |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
+| `isRecentlyHit`  |                | bool                                              |
+| `lootingLevel`  |                 | int                                               |
 
 ## ZenGetters/ZenSetters from extensions
 The following information can be retrieved/set during the event:
