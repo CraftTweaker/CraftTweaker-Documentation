@@ -19,4 +19,16 @@ EntityLivingHealEvent implements the following interfaces and are able to call a
 
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
-| amount           | amount        | float                                                              |
+| `amount`         | `amount`      | float                                                              |
+
+## ZenGetters/ZenSetters from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
