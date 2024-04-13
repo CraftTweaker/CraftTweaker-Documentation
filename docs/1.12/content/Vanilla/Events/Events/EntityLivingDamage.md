@@ -18,21 +18,12 @@ EntityLivingDamageEvent implements the following interfaces and are able to call
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
-
+The following information can be retrieved/set during the event:
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
 | `damageSource`   |               | [IDamageSource](/Vanilla/Damage/IDamageSource/)                    |
 | `amount`         | `amount`      | float                                                              |
 
-## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
-
-| ZenGetter       | ZenSetter       | Type       |
-|-----------------|-----------------|------------|
-| `targetX`       | `targetX`       | double     |
-| `targetY`       | `targetY`       | double     |
-| `targetZ`       | `targetZ`       | double     |
-| `attackDamage`  | `attackDamage`  | float      |
 
 ## ZenGetters/ZenSetters from extensions
 The following information can be retrieved/set during the event:
