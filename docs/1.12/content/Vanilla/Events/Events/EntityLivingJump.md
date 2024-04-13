@@ -12,7 +12,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
