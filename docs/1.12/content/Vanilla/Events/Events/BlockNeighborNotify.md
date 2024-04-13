@@ -25,7 +25,7 @@ BlockNeighborNotify Events implement the following interfaces and are able to ca
 - `forceRedstoneUpdate` -> If redstone update was forced during setBlock call (0x16 to flags)
 - `notifiedSides` -> A list of directions from the base block that updates will occur upon.
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
@@ -36,7 +36,7 @@ The following information can be retrieved/set during the event:
 | `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
 
 
-ZenMethodes
+ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
 
 
