@@ -9,11 +9,11 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 `import crafttweaker.event.IEventPositionable;`
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
-| name     | type                                  |
-|----------|---------------------------------------|
-| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | int                                   |
-| y        | int                                   |
-| z        | int                                   |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
