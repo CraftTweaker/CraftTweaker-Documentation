@@ -16,7 +16,19 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `lightning`     |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
 
-| ZenGetter       | Return Type                          |
-|-----------------|--------------------------------------|
-| `lightning`     | [IEntity](/Vanilla/Entities/IEntity/) |
+
+## ZenGetters/ZenSetters from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
