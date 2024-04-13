@@ -9,7 +9,14 @@ Bear in mind that they still can!
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPlayerEvent;`
 
-## What can be done with these
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
 
-- `event.process();` method, returns void (nothing)
-- `event.processed;` getter, returns a bool
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `processed`     |                 | bool                                              |
+
+
+## ZenMethods
+- `event.process()` void, returns nothing
+
