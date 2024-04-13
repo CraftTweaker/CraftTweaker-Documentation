@@ -21,7 +21,7 @@ The following information can be retrieved/set during the event:
 | `result`        |                 | string with value of `default`, `deny` or `allow` |
 
 
-## ZenMethodes
+## ZenMethods
 - `event.deny()` Method, sets the event's result to `deny`
 - `event.allow()` Method, sets the event's result to `allow`
 - `event.default()` Method, sets the event's result to `default`
