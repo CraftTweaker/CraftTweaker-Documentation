@@ -20,7 +20,7 @@ The following information can be retrieved from the event:
 |-----------------|-----------------|---------------------------------------------------|
 | `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
