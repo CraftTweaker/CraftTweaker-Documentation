@@ -16,7 +16,7 @@ EntityLivingHealEvent implements the following interfaces and are able to call a
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
-
+The following information can be retrieved/set during the event:
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
 | `amount`         | `amount`      | float                                                              |
