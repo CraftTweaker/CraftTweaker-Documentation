@@ -24,7 +24,7 @@ The following information can be retrieved from the event:
 | `isPlayer`       |               | bool                                                               |
 | `experience`     | `experience`  | int                                                                |
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
