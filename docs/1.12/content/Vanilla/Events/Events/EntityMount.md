@@ -16,11 +16,23 @@ EntityMountEvent Events implement the following interfaces and are able to call 
 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `mountingEntity`|                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+| `mountedEntity` |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+| `isMounting`    |                 | boolean                                           |
+| `isDismounting` |                 | boolean                                           |
 
-| ZenGetter       | Return Type                           |
-|-----------------|---------------------------------------|
-| `world`         | [IWorld](/Vanilla/World/IWorld/)      |
-| `mountingEntity`| [IEntity](/Vanilla/Entities/IEntity/) |
-| `mountedEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `isMounting`    | boolean                               |
-| `isDismounting` | boolean                               |
+
+## ZenGetters/ZenSetters from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
