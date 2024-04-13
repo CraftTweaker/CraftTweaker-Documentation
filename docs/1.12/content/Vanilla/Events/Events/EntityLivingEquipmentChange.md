@@ -4,7 +4,9 @@ EntityLivingEquipmentChangeEvent is fired when the Equipment of a Entity changes
 This also includes entities joining the World, as well as being cloned.
 
 `slot` contains the affected [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/).
+
 `item` contains the  [IItemStack](/Vanilla/Items/IItemStack/)  that is equipped now. 
+
 `olditem` contains the  [IItemStack](/Vanilla/Items/IItemStack/)  that was equipped before the EquipmentChange happend.
 
 ## Event Class
