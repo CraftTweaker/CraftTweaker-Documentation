@@ -23,11 +23,11 @@ The following information can be retrieved/set during the event:
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
 
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
 | `canceled`      | `canceled`      | bool                                              |
 
 ZenMethodes
-- `event.cancel();` Methode, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
