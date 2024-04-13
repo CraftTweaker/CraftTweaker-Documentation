@@ -25,7 +25,7 @@ The following information can be retrieved from the event:
 `originalBlockState` -> returns [IBlockState](/Vanilla/Blocks/IBlockState/) before grow happend
 `originalBlock` -> returns [IBlock](/Vanilla/Blocks/IBlock/) before grow happend
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
