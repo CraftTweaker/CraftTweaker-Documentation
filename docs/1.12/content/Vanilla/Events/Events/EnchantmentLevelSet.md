@@ -12,7 +12,7 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
 | ZenGetter           | ZenSetter        | Return Type                                              |
 |---------------------|------------------|----------------------------------------------------------|
@@ -24,7 +24,7 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 | `level`             | `level`          | int                                                      |
 
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
