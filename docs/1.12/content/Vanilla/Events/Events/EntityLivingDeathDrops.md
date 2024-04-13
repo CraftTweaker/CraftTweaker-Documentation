@@ -26,6 +26,20 @@ The following information can be retrieved from the event:
 | `isRecentlyHit` | bool                                                 |
 | `lootingLevel`  | int                                                  |
 
+
+
+## ZenGetters/ZenSetters from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
 ## Modifying the item drops
 
 You can either add to the droplist or completely substitute it with a new one:
