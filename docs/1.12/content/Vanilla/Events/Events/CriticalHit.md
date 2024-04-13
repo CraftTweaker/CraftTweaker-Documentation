@@ -38,7 +38,7 @@ The following information can be retrieved from the event:
 - `event.allow()` sets the result to allow.
 - `event.default()` sets the result to default.
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
