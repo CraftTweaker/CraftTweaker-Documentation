@@ -26,7 +26,7 @@ The following information can be retrieved from the event:
 | `placedAgainst`  |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `hand`           |               | string                                                             |
 
-## ZenGetters/ZenSetters/ZenMethodes from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
@@ -37,7 +37,7 @@ The following information can be retrieved/set during the event:
 | `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
 
 
-ZenMethodes
+ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
 
 
