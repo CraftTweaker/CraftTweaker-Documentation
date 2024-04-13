@@ -6,8 +6,9 @@ This event is extended by all events involving Minecarts.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IMinecartEvent;`
 
-## What can be done with them?
- 
-| name             | type                                 |
-|------------------|--------------------------------------|
-| minecart         | [IEntity](/Vanilla/Entities/IEntity/)|
+
+## ZenGetters/ZenSetter
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `minecart`      |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
