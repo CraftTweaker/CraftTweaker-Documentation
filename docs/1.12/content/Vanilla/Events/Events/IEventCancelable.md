@@ -10,8 +10,14 @@ Also, if you register multiple handlers, and one of them cancels the event, the 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventCancelable;`
 
-## What can be done with them?
 
-- `event.cancel();` Method, returns void (nothing).
-- `event.canceled;` Getter, returns a bool.
-- `event.canceled = true;` Setter
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+
+
+## ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
