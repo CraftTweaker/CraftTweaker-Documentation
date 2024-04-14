@@ -21,7 +21,7 @@ The following information can be retrieved from the event:
 |-----------------|-----------------|---------------------------------------------------|
 | `result`        | `result`        | string
 
-|
+
 ## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
