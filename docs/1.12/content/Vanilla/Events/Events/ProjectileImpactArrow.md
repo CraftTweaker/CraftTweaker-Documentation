@@ -14,7 +14,7 @@ ProjectileImpactArrow Events implement the following interfaces and are able to 
 - [IProjectileImpactEvent](/Vanilla/Events/Events/IProjectileImpactEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters/ZenSetters
 
 The following information can be retrieved from the event:
 
