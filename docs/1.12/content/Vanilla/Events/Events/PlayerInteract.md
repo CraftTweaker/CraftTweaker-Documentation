@@ -15,24 +15,43 @@ PlayerInteract Events implement the following interfaces and are able to call al
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
+
 The following information can be retrieved from the event:
-
-| ZenGetter    | Return Type                               |
-|--------------|-------------------------------------------|
-| `x`          | int                                       |
-| `y`          | int                                       |
-| `z`          | int                                       |
-| `face`       | [IFacing](/Vanilla/World/IFacing/)        |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)          |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)         |
-|`blockState`  | [IBlockState](/Vanilla/Blocks/IBlockState/)|
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)  |
-| `dimension`  | int                                       |
-| `hand`       | string                                    |
-
-
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `face`          |                 | [IFacing](/Vanilla/World/IFacing/)                |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `dimension`     |                 | int                                               |
+| `hand`          |                 | string                                            |
 
 ## ZenMethods
 - `event.damageItem(int amount)` damages the item by the specified amount
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+ 
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  
