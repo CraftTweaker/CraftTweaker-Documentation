@@ -13,14 +13,26 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter      | Return Type                                          |
-|----------------|------------------------------------------------------|
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                  |
-| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)       |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `items`         |  `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource`  |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
+
 
 ## Modifying the item drops
 
@@ -34,3 +46,4 @@ event.addItem(<minecraft:iron_ingot>);
 //event.addItem(IEntityItem iten);
 event.addItem(<minecraft:iron_ingot>.createEntityItem(event.player.world, event.player.position));
 ```
+You also have the option to set the `items` list, e.g. to remove it.
