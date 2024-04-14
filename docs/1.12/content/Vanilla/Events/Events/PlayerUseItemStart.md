@@ -14,15 +14,27 @@ PlayerUseItemStart Events implement the following interfaces and are able to cal
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
-The following information can be retrieved from the event:
+## ZenGetters/ZenSetters
+The following information can be retrieved/set during the event:
 
-| ZenGetter   | Return Type                               |
-|-------------|-------------------------------------------|
-| `canceled`  | boolean                                   |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)       |
-| `item`      | [IItemStack](/Vanilla/Items/IItemStack/)   |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
 
-## ZenMethods
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
 
-- `event.cancel()` sets the event as cancelled
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
