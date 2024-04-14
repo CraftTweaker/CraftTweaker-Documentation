@@ -14,13 +14,28 @@ PlayerItemPickup Events implement the following interfaces and are able to call 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
-The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                   |
-|------------------|-----------------------------------------------|
-| `stackCopy`      | [IItemStack](/Vanilla/Items/IItemStack/)      |
-| `originalEntity` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+## ZenGetters/ZenSetters
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `stackCopy`     |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `originalEntity`|                 | [IEntityItem](/Vanilla/Entities/IEntityItem/)     |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+
+
+## From extension of extension
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
+
+
 
 ## Notes
 
