@@ -14,19 +14,46 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters & ZenSetters
+
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetters           | Return Type                           |
+| ZenGetter            | ZenSetters           |  Type                                 |
 |----------------------|----------------------|---------------------------------------|
-| `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
 
 
-## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `face`          |                 | [IFacing](/Vanilla/World/IFacing/)                |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `dimension`     |                 | int                                               |
+| `hand`          |                 | string                                            |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.damageItem(int amount)` damages the item by the specified amount
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
