@@ -18,7 +18,7 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 - [IHasCancellationResult] (No doc for it till now)
 
 
-## ZenGetters/ZenSetter
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
