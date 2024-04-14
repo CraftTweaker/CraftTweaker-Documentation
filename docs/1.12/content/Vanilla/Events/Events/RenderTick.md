@@ -12,9 +12,17 @@ WorldTick Events implement the following interfaces and are able to call all of 
 
 - [ITickEvent](/Vanilla/Events/Events/ITickEvent/)
 
-## ZenGetters
-The following additional information can be retrieved from the event:
+## ZenGetters/ZenSetters
 
-| ZenGetter | Return Type                         |
-|-----------|-------------------------------------|
-| `renderTickTime`   | float    |
+The following information can be retrieved from the event:
+| ZenGetter        | ZenSetter           | Type                                                               |
+|------------------|---------------------|--------------------------------------------------------------------|
+| `renderTickTime` |                     | float                                                              |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `phase`         |                  | string with value of `START`or `END`             |
+| `side`          |                  | string with value of `CLIENT`or `SERVER`         |
