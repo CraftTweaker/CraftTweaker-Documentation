@@ -29,7 +29,7 @@ The following information can be retrieved/set during the event:
 | `fishHook`         |                    | [IEntityFishHook](/Vanilla/Entities/IEntityFishHook/) |
 
 
-## ZenGetters/ZenSetters/ZenMethods
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved/set during the event:
 
 | ZenGetter          | ZenSetter          | Type                                              |
