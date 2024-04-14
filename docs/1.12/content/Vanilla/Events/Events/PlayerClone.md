@@ -13,7 +13,7 @@ PlayerRespawn Events implement the following interfaces and are able to call all
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
