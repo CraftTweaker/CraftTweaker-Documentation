@@ -12,7 +12,7 @@ PlayerLoggedIn Events implement the following interfaces and are able to call al
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters/ZenSetters from extensions
+## ZenGetters/ZenSetters/ZenMethods from extensions
 The following information can be retrieved from the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
