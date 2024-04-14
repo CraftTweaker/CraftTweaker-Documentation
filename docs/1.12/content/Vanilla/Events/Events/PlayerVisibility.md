@@ -18,11 +18,28 @@ PlayerVisibilityEvent Events implement the following interfaces and are able to 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter       | ZenMethod                        | Type              |
+| ZenGetter       | ZenSetters                       | Type              |
 |-----------------|----------------------------------|-------------------|
 | `modifier`      |                                  | double            |
-|                 | `modifyVisibility(double value)` | See note.         |
 
-## Note
+## ZenMethods
+`event.modifyVisibility(double value)` -> This value cannot be directly set. 
+Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifier * double value`.
 
-This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifier * double value`.
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
+
+
