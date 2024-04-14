@@ -8,13 +8,13 @@ Acceleration values from the fireball entity are available through zengetters.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## Extending IEntityEvent
+## Event interface extensions
 ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [IProjectileImpactEvent](/Vanilla/Events/Events/IProjectileImpactEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters/ZenSetters
 
 The following information can be retrieved from the event:
 
@@ -25,3 +25,21 @@ The following information can be retrieved from the event:
 | `accelerationX`  | `accelerationX`     | double                                                             |
 | `accelerationY`  | `accelerationY`     | double                                                             |
 | `accelerationZ`  | `accelerationZ`     | double                                                             |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `rayTrace`      |                 | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
+
+## Extensions from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entity`        |                 | [IEntity](/Vanilla/Entity/IEntity/)               |
