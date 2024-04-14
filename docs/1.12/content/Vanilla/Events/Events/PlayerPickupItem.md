@@ -32,7 +32,6 @@ The following information can be retrieved from the event:
 
 ZenMethods
 - `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
-- `event.damageItem(int amount)` damages the item by the specified amount
 - `event.deny()` Method, sets the event's result to `deny`
 - `event.allow()` Method, sets the event's result to `allow`
 - `event.default()` Method, sets the event's result to `default`
