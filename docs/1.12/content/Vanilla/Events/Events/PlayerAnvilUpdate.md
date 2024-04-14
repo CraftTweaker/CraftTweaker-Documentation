@@ -28,6 +28,16 @@ The following information can be retrieved from the event:
 | `xpCost`             | `xpCost`             | int                                      | The base cost, set this to change it if output != null. |
 | `materialCost`       | `materialCost`       | int                                      | The number of items from the right slot to be consumed during the repair. Leave as 0 to consume the entire stack. |
 
-## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
