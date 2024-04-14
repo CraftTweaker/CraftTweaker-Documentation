@@ -24,6 +24,24 @@ The following information can be retrieved from the event:
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `target`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
+
