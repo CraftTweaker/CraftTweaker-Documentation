@@ -40,4 +40,4 @@ The following information can be retrieved/set during the event:
 
 ## Notes
 `result` can return or set the strings:
-`NOT_POSSIBLE_HERE`, `NOT_POSSIBLE_NOW`, `NOT_SAFE`, `OK` or  `OTHER_PROBLEM`
+`NOT_POSSIBLE_HERE`, `NOT_POSSIBLE_NOW`, `NOT_SAFE`, `OK` or `OTHER_PROBLEM`
