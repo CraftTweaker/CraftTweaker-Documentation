@@ -15,7 +15,7 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
-- [IHasCancellationResult] (No doc for it till now)
+- IHasCancellationResult
 
 
 ## ZenGetters/ZenSetters
