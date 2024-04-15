@@ -4,7 +4,7 @@ That means you can use the getter below to access the player.
 
 ## Note
 The  [IPlayer](/Vanilla/Players/IPlayer/)  is an extension of the class [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) ,
-thus with `event.player` you have access to all  ZenGetters/ZenSetters from [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) allready.
+thus with `event.player` you have access to all  ZenGetters/ZenSetters from [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) already.
 
 ## Importing the class
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
