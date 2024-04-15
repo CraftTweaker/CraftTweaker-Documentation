@@ -14,7 +14,7 @@ PlayerRightClickItem Events implement the following interfaces and are able to c
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
-- [IHasCancellationResult] (no doc page so far)
+- IHasCancellationResult
 
 
 ## ZenGetters/ZenSetters/ZenMethods from extensions
