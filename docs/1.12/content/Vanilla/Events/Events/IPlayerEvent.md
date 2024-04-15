@@ -3,7 +3,7 @@ This interface is extended by all events that have a player.
 That means you can use the getter below to access the player. 
 
 ## Note
-The  [IPlayer](/Vanilla/Players/IPlayer/)  is an extension of the class [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) ,
+The [IPlayer](/Vanilla/Players/IPlayer/) is an extension of the class [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) ,
 thus with `event.player` you have access to all  ZenGetters/ZenSetters from [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) already.
 
 ## Importing the class
