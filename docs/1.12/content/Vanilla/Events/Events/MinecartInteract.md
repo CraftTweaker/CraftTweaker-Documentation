@@ -14,10 +14,20 @@ MinecartInteract Events implement the following interfaces and are able to call 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
-## ZenGetters 
+## ZenGetters/ZenSetters
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `hand`          |                 | string                                            |
 
-| ZenGetter    | Type                                           |
-|--------------|------------------------------------------------|
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)           |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)       |
-| `hand`       | String                                         |
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `minecart`      |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening

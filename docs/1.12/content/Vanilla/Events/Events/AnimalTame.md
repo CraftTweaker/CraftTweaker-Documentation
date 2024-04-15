@@ -20,5 +20,14 @@ The following information can be retrieved/set during the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
 | `animal`        |                 | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `animal`        |                 | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening

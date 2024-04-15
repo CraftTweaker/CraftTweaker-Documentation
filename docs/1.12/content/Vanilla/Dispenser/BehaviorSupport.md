@@ -24,7 +24,7 @@ The IDispenserBehavior function defines how a Dispenser dispenses the item. It h
 * `source`: An [IBlockSource](Vanilla/Dispenser/IBlockSource) containing some information of the dispenser.
 * `item`: The [IItemStack](/Vanilla/Items/IItemStack/) to be dispensed.
 
-The function must return an IItemStack as the remaining item after dispensed.
+The function must return an [IItemStack](/Vanilla/Items/IItemStack/) as the remaining item after dispensed.
 
 ### IDispenserSoundFunction
 

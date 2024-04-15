@@ -22,7 +22,7 @@ CriticalHit Events implement the following interfaces and are able to call all o
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter           | ZenSetter        | Return Type                                                        |
@@ -37,3 +37,9 @@ The following information can be retrieved from the event:
 - `event.deny()` sets the result to deny.
 - `event.allow()` sets the result to allow.
 - `event.default()` sets the result to default.
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IBlockPos](/Vanilla/Player/IPlayer/)             |

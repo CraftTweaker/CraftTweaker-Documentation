@@ -15,9 +15,36 @@ BlockNeighborNotify Events implement the following interfaces and are able to ca
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `forceRedstoneUpdate`  |          | bool                                              |
+| `notifiedSides` |                 | [IFacing](/Vanilla/World/IFacing) []              |
 
-| ZenGetter           | Type                               | Description                                                            |
-|---------------------|------------------------------------|------------------------------------------------------------------------|
-| forceRedstoneUpdate | bool                               | If redstone update was forced during setBlock call (0x16 to flags)     |
-| notifiedSides       | [IFacing](/Vanilla/World/IFacing)[]| A list of directions from the base block that updates will occur upon. |
+## Description
+- `forceRedstoneUpdate` -> If redstone update was forced during setBlock call (0x16 to flags)
+- `notifiedSides` -> A list of directions from the base block that updates will occur upon.
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |

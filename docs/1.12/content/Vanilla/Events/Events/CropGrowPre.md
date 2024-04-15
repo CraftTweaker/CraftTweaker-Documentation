@@ -18,10 +18,38 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter            | ZenSetter     | Type                                                               |
 |----------------------|---------------|--------------------------------------------------------------------|
 | `originalBlockState` |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `originalBlock`      |               | [IBlock](/Vanilla/Blocks/IBlock/)                                  |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+
+
+ZenMethods
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+
+

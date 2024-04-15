@@ -19,6 +19,17 @@ The following information can be retrieved/set during the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
 | `bow`           |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
-| `charge`        | `charge`        | int                                              |
-| `world`         |                 | String                                             |
+| `charge`        | `charge`        | int                                               |
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld)                   |
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+
+ZenMethodes
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+

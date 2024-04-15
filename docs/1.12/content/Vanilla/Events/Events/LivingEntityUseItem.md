@@ -26,14 +26,24 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter  | Return Type                             |
-|------------|-----------------------------------------|
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `isPlayer` | bool                                    |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                     |
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `isPlayer`      |                 | bool                                              |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `duration`      | `duration`      | int                                               |
 
 
-| ZenSetter  | Parameter Type                          |
-|------------|-----------------------------------------|
-| `duration` | int                                     |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening

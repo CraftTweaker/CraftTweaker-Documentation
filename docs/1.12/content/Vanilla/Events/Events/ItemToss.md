@@ -14,9 +14,21 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 - [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetter/ZenSetter
 
-| ZenGetter | Type                                         |
-|-----------|----------------------------------------------|
-| item      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| player    | [IPlayer](/Vanilla/Players/IPlayer/)          |
+## ZenGetter/ZenSetter
+The following information can be retrieved/set during the event:
+| ZenGetter | ZenSetter | Type                                         |
+|-----------|-----------|----------------------------------------------|
+| `item`    |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `player`  |           | [IPlayer](/Vanilla/Player/IPlayer/)          |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `entity`        |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening

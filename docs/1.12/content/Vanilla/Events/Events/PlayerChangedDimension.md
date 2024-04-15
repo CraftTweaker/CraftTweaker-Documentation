@@ -15,13 +15,24 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                             |
-|-------------|-----------------------------------------|
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `from`      | int                                     |
-| `fromWorld` | [IWorld](/Vanilla/World/IWorld/)         |
-| `to`        | int                                     |
-| `toWorld`   | [IWorld](/Vanilla/World/IWorld/)         |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `from`          |                 | int                                               |
+| `fromWorld`     |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `to`            |                 | int                                               |
+| `toWorld`       |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

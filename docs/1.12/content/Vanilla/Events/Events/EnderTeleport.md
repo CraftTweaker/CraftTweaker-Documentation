@@ -24,3 +24,17 @@ The following information can be retrieved/set during the event:
 | `targetY`       | `targetY`       | double     |
 | `targetZ`       | `targetZ`       | double     |
 | `attackDamage`  | `attackDamage`  | float      |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+
+

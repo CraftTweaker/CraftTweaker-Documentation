@@ -14,19 +14,29 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `id`            |                 | string                                            |
 
-| ZenGetter        | Return Type  |
-|------------------|--------------|
-| `id`             | string       |
 
-
-## Id
+## Note
 
 Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
-
 This can for example be a string like
 ```zenscript
 "minecraft:story/mine_diamond"
 ```
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

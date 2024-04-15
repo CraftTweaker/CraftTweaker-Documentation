@@ -12,8 +12,14 @@ MinecartCollision Events implement the following interfaces and are able to call
 
 - [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
 
-## ZenGetters 
+## ZenGetters/ZenSetters
 
-| ZenGetter    | Type                                           |
-|--------------|------------------------------------------------|
-| `collider`   | [IEntity](/Vanilla/Entities/IEntity/)          |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `collider`      |                 | [IEntity](/Vanilla/Entities/IEntity/)             |
+
+## ZenGetters/ZenSetter/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `minecart`      |                 | [IEntity](/Vanilla/Entities/IEntity/)             |

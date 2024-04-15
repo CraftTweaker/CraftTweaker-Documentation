@@ -14,3 +14,9 @@ WorldTick Events implement the following interfaces and are able to call all of 
 
 ## ZenGetters
 There is no additional information besides the information mentioned in the interfaces above.
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `phase`         |                 | string with value of `START`or `END`              |
+| `side`          |                 | string with value of `CLIENT`or `SERVER`          |

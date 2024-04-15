@@ -14,14 +14,20 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters
+## ZenGetter/ZenSetter
 
-| ZenGetter    | Type                                           |
-|--------------|------------------------------------------------|
-| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/)|
-| amount       | float                                          |
+| ZenGetter        | ZenSetter     | Type                                                               |
+|------------------|---------------|--------------------------------------------------------------------|
+| `amount`         | `amount`      | float                                                              |
 
-## ZenSetters
-| ZenSetter    | Type                                           |
-|--------------|------------------------------------------------|
-| amount       | float                                          |
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening

@@ -8,13 +8,13 @@ Various values from the arrow entity are available through zengetters, and can b
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
+## Event interface extensions
 ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileImpactEvent](/Vanilla/Events/Events/IProjectileImpactEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters/ZenSetters
 
 The following information can be retrieved from the event:
 
@@ -27,16 +27,26 @@ The following information can be retrieved from the event:
 | `isCritical`     | `isCritical`        | boolean                                                            |
 | `pickupStatus`   |                     | String                                                             |
 
-## Additional methods
+## ZenMethods
 
-- `setPickupDisallowed()`
+- `setPickupDisallowed()` -> Prevents the arrow from being picked up under any circumstances.
+- `setPickupAllowed()` -> Allows the arrow to be picked up from where the entity landed.
+- `setPickupCreative()` -> Only allows the arrow to be picked up if the player is in creative mode.
 
-Prevents the arrow from being picked up under any circumstances.
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
 
-- `setPickupAllowed()`
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `rayTrace`      |                 | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
-Allows the arrow to be picked up from where the entity landed.
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 
-- `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+## Extensions from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entity`        |                 | [IEntity](/Vanilla/Entity/IEntity/)               |

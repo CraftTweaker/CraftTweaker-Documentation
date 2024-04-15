@@ -13,10 +13,21 @@ PlayerSmelted Events implement the following interfaces and are able to call all
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `output`        |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
 
-| ZenGetter   | Return Type                             |
-|-------------|-----------------------------------------|
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/) |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+## Extension from extension
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

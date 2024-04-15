@@ -12,11 +12,22 @@ PlayerDestroyItem Events implement the following interfaces and are able to call
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter      | Return Type                             |
-|----------------|-----------------------------------------|
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`         | string                                  |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `originalItem`  |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `hand`          |                 | string                                            |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

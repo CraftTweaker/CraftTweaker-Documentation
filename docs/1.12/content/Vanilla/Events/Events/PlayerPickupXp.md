@@ -14,16 +14,26 @@ PlayerPickupXp Events implement the following interfaces and are able to call al
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityXp`      |                 | [IEntityXp](/Vanilla/Entities/IEntityXp/)         |
+| `xp`            |                 | float                                             |
 
-| ZenGetter   | Return Type                               |
-|-------------|-------------------------------------------|
-| `canceled`  | boolean                                   |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)       |
-| `entityXp`  | [IEntityXp](/Vanilla/Entities/IEntityXp/)  |
-| `xp`        | float                                     |
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
 
-## ZenMethods
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 
-- `event.cancel()` sets the event as cancelled.
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

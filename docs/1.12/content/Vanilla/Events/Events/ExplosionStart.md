@@ -12,3 +12,23 @@ ExplosionStart Events implement the following interfaces and are able to call al
 
 - [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+
+| ZenGetter        | ZenSetter     | Type                                                               |
+|------------------|---------------|--------------------------------------------------------------------|
+| `world`          |               | [IWorld](/Vanilla/World/IWorld/)                                   |
+| `explosion`      |               | [IExplosion](/Vanilla/World/IExplosion)                            |
+| `position`       |               | [IBlockPos](/Vanilla/World/IBlockPos/)                             |
+| `x`              |               | double                                                             |
+| `y`              |               | double                                                             |
+| `z`              |               | double                                                             |
+| `canceled`       | `canceled`    | bool                                                               |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+
+

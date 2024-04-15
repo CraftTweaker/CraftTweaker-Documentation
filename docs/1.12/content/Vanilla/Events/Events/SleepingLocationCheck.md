@@ -20,3 +20,27 @@ SleepingLocationCheck Events implement the following interfaces and are able to 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+ZenMethods
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`
+
+- ## Extensions from extensions
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

@@ -15,25 +15,32 @@ EntityLivingSpawn Events implement the following interfaces and are able to call
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter                 | Type                                                               |
-|---------------------------|--------------------------------------------------------------------|
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                   |
-| `x`                       | float                                                              |
-| `y`                       | float                                                              |
-| `z`                       | float                                                              |
-|                           |                                                                    |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic)   |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `x`             |                 | float                                             |
+| `y`             |                 | float                                             |
+| `z`             |                 | float                                             |
+|                 |                 |                                                   |
+| `spawner` (Extended Only)|        | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic)   |
 
 
-## Event functions
+## ZenMethods
 
 The despawn event also offers three functions to change the event outcome:
 
-| ZenMethod      | Description 
-|----------------|----------------------------------------------|
-| `allow`        | Forces the entity to (de)spawn               |
-| `deny`         | Forces the entity not to (de)spawn           |
-| `pass`         | Sets the event result to the default state   |
+`event.allow`  -> Forces the entity to (de)spawn
+
+`event.deny`     ->   Forces the entity not to (de)spawn 
+
+`event.pass`     ->  Sets the event result to the default state  
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |

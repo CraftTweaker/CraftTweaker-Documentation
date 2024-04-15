@@ -20,6 +20,19 @@ The following information ca be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type       |
 |-----------------|-----------------|------------|
-| `commandSender` | no              | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no              | [ICommand](/Vanilla/Commands/ICommand/) |
-| `parameters`    | `parameters`    | string array |
+| `commandSender` |                 | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `command`       |                 | [ICommand](/Vanilla/Commands/ICommand/) |
+| `parameters`    | `parameters`    | string[] |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+

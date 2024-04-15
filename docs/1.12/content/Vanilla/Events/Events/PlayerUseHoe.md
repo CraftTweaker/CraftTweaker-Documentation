@@ -15,25 +15,55 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                               |
-|--------------|-------------------------------------------|
-| `canceled`   | boolean                                   |
-| `processed`  | boolean                                   |
-| `x`          | int                                       |
-| `y`          | int                                       |
-| `z`          | int                                       |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)       |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)           |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)          |
-| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/)     |
-| `dimension`  | int                                       |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)   |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `dimension`     |                 | int                                               |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
 
-## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+
+## ZenGetters/ZenSetter
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `dimension`     |                 | int                                               |
+| `item`          |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+ 
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

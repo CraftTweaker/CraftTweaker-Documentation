@@ -16,15 +16,27 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter       | Return Type                                          |
-|-----------------|------------------------------------------------------|
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)       |
-| `isRecentlyHit` | bool                                                 |
-| `lootingLevel`  | int                                                  |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `drops`         |                 | [IEntityItem](/Vanilla/Entities/IEntityItem/) [] |
+| `damageSource`  |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
+| `isRecentlyHit`  |                | bool                                              |
+| `lootingLevel`  |                 | int                                               |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 
 ## Modifying the item drops
 

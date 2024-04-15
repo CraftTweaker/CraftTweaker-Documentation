@@ -13,10 +13,34 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
 | ZenGetter            | ZenSetter     | Type                                                               |
 |----------------------|---------------|--------------------------------------------------------------------|
 | `originalBlockState` |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `originalBlock`      |               | [IBlock](/Vanilla/Blocks/IBlock/)                                  |
+
+## Description
+`originalBlockState` -> returns [IBlockState](/Vanilla/Blocks/IBlockState/) before grow happend
+`originalBlock` -> returns [IBlock](/Vanilla/Blocks/IBlock/) before grow happend
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+
+

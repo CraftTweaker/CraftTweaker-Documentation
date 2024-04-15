@@ -15,10 +15,29 @@ PlayerPickupItem Events implement the following interfaces and are able to call 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable)
 
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                            |
-|-------------|----------------------------------------|
-| `item`      | [IEntityItem](/Vanilla/Entities/IEntityItem/)| 
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)    |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `item`          |                 | [IEntityItem](/Vanilla/Entities/IEntityItem/)     | 
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `canceled`      | `canceled`      | bool                                              |
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

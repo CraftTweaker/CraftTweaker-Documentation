@@ -34,9 +34,9 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | ZenMethod                       | Event Class                                                                                                  |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------|
 | onAllowDespawn                  | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                     |
-| onArrowLoose                    | [`crafttweaker.event.ArrowLooseEvent`](/Vanilla/Events/Events/ArrowLoose/)                                   |
-| onArrowNock                    | [`crafttweaker.event.ArrowNockEvent`](/Vanilla/Events/Events/ArrowNock/)                                     |
 | onAnimalTame                    | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                                   |
+| onArrowLoose                    | [`crafttweaker.event.ArrowLooseEvent`](/Vanilla/Events/Events/ArrowLoose/)                                   |
+| onArrowNock                     | [`crafttweaker.event.ArrowNockEvent`](/Vanilla/Events/Events/ArrowNock/)                                     |
 | onBlockBreak                    | [`crafttweaker.event.BlockBreakEvent`](/Vanilla/Events/Events/BlockBreak/)                                   |
 | onBlockHarvestDrops             | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                          |
 | onBlockNeighborNotify           | [`crafttweaker.event.BlockNeighborNotifyEvent`](/Vanilla/Events/Events/BlockNeighborNotify)                  |
@@ -49,6 +49,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onCropGrowPre                   | [`crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                                 |
 | onEnchantmentLevelSet           | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)                 |
 | onEnderTeleport                 | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                             |
+| onEntityJoinWorld               | [`crafttweaker.event.EntityJoinWorldEvent`](/Vanilla/Events/Events/EntityJoinWorld/)                         |
 | onEntityLivingAttacked          | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)               |
 | onEntityLivingDamage            | [`crafttweaker.event.EntityLivingDamageEvent`](/Vanilla/Events/Events/EntityLivingDamage/)                   |
 | onEntityLivingDeath             | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                     |
@@ -64,10 +65,9 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityLivingUseItemStart      | [`crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
 | onEntityLivingUseItemStop       | [`crafttweaker.event.EntityLivingUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem/)            |
 | onEntityLivingUseItemTick       | [`crafttweaker.event.EntityLivingUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem/)            |
-| onEntityJoinWorld               | [`crafttweaker.event.EntityJoinWorldEvent`](/Vanilla/Events/Events/EntityJoinWorld/)                         |
 | onEntityMount                   | [`crafttweaker.event.EntityMountEvent`](/Vanilla/Events/Events/EntityMount/)                                 |
-| onEntityTravelToDimension       | [`crafttweaker.event.EntityTravelToDimensionEvent`](/Vanilla/Events/Events/EntityTravelToDimension/)         |
 | onEntityStruckByLightning       | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)         |
+| onEntityTravelToDimension       | [`crafttweaker.event.EntityTravelToDimensionEvent`](/Vanilla/Events/Events/EntityTravelToDimension/)         |
 | onExplosionDetonate             | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                     |
 | onExplosionStart                | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                           |
 | onFarmlandTrample               | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                         |
@@ -81,7 +81,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onMinecartCollision             | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                     |
 | onMinecartInteract              | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                       |
 | onMobGriefing                   | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                 |
-| onPlayerAdvancement             | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                          |
+| onPlayerAdvancement             | [`crafttweaker.event.PlayerAdvancementEvent`](/Vanilla/Events/Events/PlayerAdvancement/)                          |
 | onPlayerAnvilRepair             | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                     |
 | onPlayerAnvilUpdate             | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                     |
 | onPlayerAttackEntity            | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)                   |
@@ -125,7 +125,6 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onSleepingTimeCheck             | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                     |
 | onSpecialSpawn                  | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)             |
 | onWorldTick                     | [`crafttweaker.event.WorldTickEvent`](/Vanilla/Events/Events/WorldTick/)                                     |
-
 
 ## Clear all event handlers
 ```zenscript

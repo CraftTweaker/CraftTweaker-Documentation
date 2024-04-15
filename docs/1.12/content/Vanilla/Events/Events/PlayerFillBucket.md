@@ -16,27 +16,52 @@ PlayerFillBucket Events implement the following interfaces and are able to call 
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                         |
-|------------------|-----------------------------------------------------|
-| `canceled`       | boolean                                             |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                 |
-| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)             |
-| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)             |
-| `x`              | int                                                 |
-| `y`              | int                                                 |
-| `z`              | int                                                 |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)                     |
-| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)          |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                    |
-| `dimension`      | int                                                 |
-| `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/)   |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+|                 | `result`        | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `emptyBucket`   |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `dimension`     |                 | int                                               |
+| `rayTraceResult`|                 | [IRayTraceResult](/Vanilla/World/IRayTraceResult/)|
 
-## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+| `blockState`    |                 | [IBlockState](/Vanilla/Blocks/IBlockState/)       |
+| `block`         |                 | [IBlock](/Vanilla/Blocks/IBlock/)                 |
+| `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+| `canceled`      | `canceled`      | bool                                              |
 
-## Setters
-- `event.result = <minecraft:ender_pearl>` This will also process the event!
+
+ZenMethods
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+ 
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `position`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/)            |
+| `x`             |                 | int                                               |
+| `y`             |                 | int                                               |
+| `z`             |                 | int                                               |
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |
+
+## Notes
+Because this event extends IProcessableEvent, we have the getter `result`,
+but this event also has the setter `result`. Dont mix them up!
+You can `print(event.result)` and will get the string value from above,
+but if you use `event.result = <minecraft:stick>` the player will hold a stick in their hand after finishing the event
+and the bucket "vanishes"

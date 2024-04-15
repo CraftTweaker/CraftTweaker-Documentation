@@ -14,11 +14,28 @@ PlayerSetSpawn Events implement the following interfaces and are able to call al
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                           |
-|------------|---------------------------------------|
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `isForced` | bool                                  |
-| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `isForced`      |                 | bool                                  |
+| `newSpawn`      |                 | [IBlockPos](/Vanilla/World/IBlockPos/) |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+| `canceled`      | `canceled`      | bool                                              |
+
+
+ZenMethods
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
+
+
+## Extension from extension
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

@@ -13,5 +13,17 @@ PlayerTick Events implement the following interfaces and are able to call all of
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [ITickEvent](/Vanilla/Events/Events/ITickEvent/)
 
-## ZenGetters
-There is no additional information provided that is not already in the interfaces above.
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+| `phase`         |                  | string with value of `START`or `END`             |
+| `side`          |                  | string with value of `CLIENT`or `SERVER`         |
+
+## Extension from extension
+The following information can be retrieved/set during the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

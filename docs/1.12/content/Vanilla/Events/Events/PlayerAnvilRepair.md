@@ -20,8 +20,20 @@ The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter     | Return Type                                                        |
 |------------------|---------------|--------------------------------------------------------------------|
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/)                            |
-| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/)                            |
-| `itemResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                               |
+| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/)                           |
+| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/)                           |
+| `itemResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/)                           |
 | `breakChance`    | `breakChance` | float                                                              |
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
+
+## From extension of extension
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)   |

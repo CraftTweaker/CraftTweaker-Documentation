@@ -5,9 +5,9 @@ This interface is extended by all events that use ticks.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ITickEvent;`
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
-| name   | type                                 |
-|--------|--------------------------------------|
-| phase  | string (can be "START" or "END")     |
-| side   | string (can be "CLIENT" or "SERVER") |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `phase`         |                  | string with value of `START`or `END`             |
+| `side`          |                  | string with value of `CLIENT`or `SERVER`         |

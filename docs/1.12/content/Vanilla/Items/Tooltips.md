@@ -1,7 +1,7 @@
 # Tooltips
 
 Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+All you need is an item (or [IoreDict](/Vanilla/OreDict/IOreDict/) or similar), in other words, an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
 ## Clearing tooltips
 This removes ALL tooltips from the `item`
@@ -103,7 +103,7 @@ format.italic
 
 ## Tooltip functions
 You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
-These functions allow you to dynamically generate a tooltip based on the given IItemStack.
+These functions allow you to dynamically generate a tooltip based on the given [IItemStack](/Vanilla/Items/IItemStack/).
 
 A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string.
 This means that using a `format` command _does not work_ for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.

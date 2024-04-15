@@ -11,3 +11,10 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |

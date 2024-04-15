@@ -18,6 +18,20 @@ The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
-| `bow`        |                 | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`        |                 | [String] |
+| `bow`           |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
+| `hand`          |                 | String                                            |
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `result`        |                 | string with value of `default`, `deny` or `allow` |
+
+
+ZenMethodes
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`

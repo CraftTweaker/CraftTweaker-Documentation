@@ -20,3 +20,12 @@ The following information can be retrieved/set during the event:
 |--------------------|-----------------|---------------------------------------------------|
 | `lootingLevel`     | `lootingLevel`  | int                                               |
 | `damageSource`     |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved/set during the event:
+
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `entityLivingBase`  |             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)  |
+

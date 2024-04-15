@@ -12,9 +12,17 @@ WorldTick Events implement the following interfaces and are able to call all of 
 
 - [ITickEvent](/Vanilla/Events/Events/ITickEvent/)
 
-## ZenGetters
+## ZenGetters/ZenSetters
 The following additional information can be retrieved from the event:
 
-| ZenGetter | Return Type                         |
-|-----------|-------------------------------------|
-| `world`   | [IWorld](/Vanilla/World/IWorld/)    |
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `world`         |                 | [IWorld](/Vanilla/World/IWorld/)                  |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+| ZenGetter       | ZenSetter       | Type                                              |
+|-----------------|-----------------|---------------------------------------------------|
+| `phase`         |                  | string with value of `START`or `END`             |
+| `side`          |                  | string with value of `CLIENT`or `SERVER`         |

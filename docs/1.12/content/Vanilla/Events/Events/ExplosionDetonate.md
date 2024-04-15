@@ -20,3 +20,16 @@ The following information can be retrieved from the event:
 |----------------------|---------------|--------------------------------------------------------------------|
 | `affectedEntities`   |               | [IEntity](/Vanilla/Entities/IEntity/)[]                            |
 | `affectedPositions`  |               | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[]                     |
+
+
+## ZenGetters/ZenSetters/ZenMethods from extensions
+The following information can be retrieved from the event:
+
+| ZenGetter        | ZenSetter     | Type                                                               |
+|------------------|---------------|--------------------------------------------------------------------|
+| `world`          |               | [IWorld](/Vanilla/World/IWorld/)                                  |
+| `explosion`      |               | [IExplosion](/Vanilla/World/IExplosion)                            |
+| `position`       |               | [IBlockPos](/Vanilla/World/IBlockPos/)                             |
+| `x`              |               | double                                                             |
+| `y`              |               | double                                                             |
+| `z`              |               | double                                                             |
