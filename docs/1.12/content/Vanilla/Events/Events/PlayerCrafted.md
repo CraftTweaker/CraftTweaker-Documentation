@@ -1,7 +1,7 @@
 # PlayerCrafted
 
 The PlayerCrafted Event is fired whenever a player crafts something.
-Which to be more precise, the player takes out the result, not changing smth. in the grid.
+Which to be more precise, the player takes out the result, not changing something in the grid.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  

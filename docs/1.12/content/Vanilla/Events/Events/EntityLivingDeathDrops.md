@@ -21,7 +21,7 @@ The following information can be retrieved from the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
-| `drops`         |                 | [IEntityItem](/Vanilla/Entities/IEntityItem/) [ ] |
+| `drops`         |                 | [IEntityItem](/Vanilla/Entities/IEntityItem/) [] |
 | `damageSource`  |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
 | `isRecentlyHit`  |                | bool                                              |
 | `lootingLevel`  |                 | int                                               |
@@ -36,7 +36,7 @@ The following information can be retrieved/set during the event:
 
 
 ZenMethods
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 
 ## Modifying the item drops
 

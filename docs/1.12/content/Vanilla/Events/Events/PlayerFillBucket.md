@@ -46,7 +46,7 @@ ZenMethods
 - `event.deny()` Method, sets the event's result to `deny`
 - `event.allow()` Method, sets the event's result to `allow`
 - `event.default()` Method, sets the event's result to `default`
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
  
 
 ## From extension of extension

@@ -19,7 +19,7 @@ BlockNeighborNotify Events implement the following interfaces and are able to ca
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
 | `forceRedstoneUpdate`  |          | bool                                              |
-| `notifiedSides` |                 | [IFacing](/Vanilla/World/IFacing) [ ]              |
+| `notifiedSides` |                 | [IFacing](/Vanilla/World/IFacing) []              |
 
 ## Description
 - `forceRedstoneUpdate` -> If redstone update was forced during setBlock call (0x16 to flags)
@@ -37,7 +37,7 @@ The following information can be retrieved/set during the event:
 
 
 ZenMethods
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 
 
 ## From extension of extension

@@ -41,7 +41,7 @@ The following information can be retrieved from the event:
 
 
 ZenMethods
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 - `event.damageItem(int amount)` damages the item by the specified amount
 
 ## From extension of extension

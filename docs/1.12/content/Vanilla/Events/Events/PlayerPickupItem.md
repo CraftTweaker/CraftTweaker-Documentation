@@ -31,7 +31,7 @@ The following information can be retrieved from the event:
 | `player`         |                 | [IPlayer](/Vanilla/Players/IPlayer/)             |
 
 ZenMethods
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
 - `event.deny()` Method, sets the event's result to `deny`
 - `event.allow()` Method, sets the event's result to `allow`
 - `event.default()` Method, sets the event's result to `default`

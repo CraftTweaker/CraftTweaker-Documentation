@@ -33,4 +33,4 @@ The following information can be retrieved/set during the event:
 
 
 ZenMethods
-- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop smth. from happening
+- `event.cancel();` Method, returns void (nothing). Can cancel the event and stop something from happening
