@@ -17,7 +17,7 @@ The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter           | Type                                                               |
 |------------------|---------------------|--------------------------------------------------------------------|
-| `throwable`      |                     | [IEntity](/Vanilla/Entities/IEntity/)                              |
+| `throwable`      |                     | [IEntityThrowable](/Vanilla/Entities/IEntity/IEntityThrowable/)                              |
 | `thrower`        |                     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)          |
 
 ## ZenGetters/ZenSetters/ZenMethods from extensions
