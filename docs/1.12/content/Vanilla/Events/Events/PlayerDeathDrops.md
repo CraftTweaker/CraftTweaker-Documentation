@@ -18,7 +18,7 @@ The following information can be retrieved from the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
-| `items`         |  `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `items`         |  `items`        | List<[IEntityItem](/Vanilla/Entities/IEntityItem/)> |
 | `damageSource`  |                 | [IDamageSource](/Vanilla/Damage/IDamageSource/)   |
 
 ## ZenGetters/ZenSetters/ZenMethods from extensions
