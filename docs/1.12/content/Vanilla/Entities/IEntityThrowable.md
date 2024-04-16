@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues (
 IEntityThrowable implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEntity](/Vanilla/Entities/IEntity/)
-- [IProjectile](/Vanilla/Events/Events/IProjectile/)
+- [IProjectile](/Vanilla/Entities/IProjectile/)
 
 ## Methods
 
