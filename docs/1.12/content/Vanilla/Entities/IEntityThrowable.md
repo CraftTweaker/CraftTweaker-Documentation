@@ -10,7 +10,7 @@ IEntityThrowable implement the following interfaces and are able to call all of 
 - [IEntity](/Vanilla/Entities/IEntity/)
 - [IProjectile](/Vanilla/Entities/IProjectile/)
 
-## Methods
+## ZenGetter/ZenSetter
 
 | ZenGetter      | ZenSetter         | Type                                                               |
 |----------------|-------------------|--------------------------------------------------------------------|
