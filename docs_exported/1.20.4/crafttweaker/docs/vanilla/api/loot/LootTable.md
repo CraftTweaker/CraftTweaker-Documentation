@@ -71,7 +71,7 @@ Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt;
 ```zenscript
 // LootTable.getRandomItems(context as LootContext) as stdlib.List<IItemStack>
 
-lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()));
+lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(LootContextBuilder.create(LootParamsBuilder.create(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).build(LootContextParamSets.gift())).create());
 ```
 
 | Parameter |                     Type                     |                  Description                   |
@@ -111,7 +111,7 @@ Rolls this table and passes all the rolled items to the given `Consumer<[IItemSt
 ```zenscript
 // LootTable.getRandomItems(context as LootContext, stackConsumer as Consumer<IItemStack>)
 
-lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()), (stack) => {
+lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItems(LootContextBuilder.create(LootParamsBuilder.create(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).build(LootContextParamSets.gift())).create(), (stack) => {
 
  println(stack.commandString);
  });
@@ -135,7 +135,7 @@ Rolls this table and passes all the rolled items to the given `Consumer<[IItemSt
 ```zenscript
 // LootTable.getRandomItemsRaw(context as LootContext, stackConsumer as Consumer<IItemStack>)
 
-lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItemsRaw(new LootContextBuilder(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).create(LootContextParamSets.gift()), (stack) => {
+lootTables.getTable(<resource:minecraft:gameplay/cat_morning_gift>).getRandomItemsRaw(LootContextBuilder.create(LootParamsBuilder.create(level).withParameter<Vec3>(LootContextParams.origin(), player.position).withParameter<Entity>(LootContextParams.thisEntity(), player).build(LootContextParamSets.gift())).create(), (stack) => {
 
  println(stack.commandString);
  });
