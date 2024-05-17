@@ -117,6 +117,7 @@
         "IEntityLiving": "Vanilla/Entities/IEntityLiving.md",
         "IEntityLivingBase": "Vanilla/Entities/IEntityLivingBase.md",
         "IEntityMob": "Vanilla/Entities/IEntityMob.md",
+        "IEntityThrowable" : "Vanilla/Entities/IEntityThrowable.md",
         "IEntityXp": "Vanilla/Entities/IEntityXp.md"
       },
       "Events": {
