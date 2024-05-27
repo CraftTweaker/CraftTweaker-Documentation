@@ -82,6 +82,69 @@ Replacer.filter(rule as IFilteringRule) as Replacer
 
 :::
 
+:::group{name=replace since="14.0.0"}
+
+Specifies a replacement that should be carried out by this replacer.
+
+ In particular, the given [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; will be used to query the recipe and alter exactly what has
+ been specified. The function can be used to modify all elements.
+
+ The strategy used can be determined by you, allowing for example to consider each element in detail instead of
+ directly. For example, a [IIngredient](/vanilla/api/ingredient/IIngredient) like
+ `<item:minecraft:dirt> | <item:minecraft:diamond>` can also be considered as two separate ingredients and
+ thus replacing only dirt can happen.
+
+ A replacer cannot be modified after execution.
+
+Returns: This replacer for chaining.  
+Return Type: [Replacer](/vanilla/api/recipe/replacement/Replacer)
+
+```zenscript
+Replacer.replace<T : Object>(component as IRecipeComponent<T>, with as Function<T,T>) as Replacer
+```
+
+| Parameter |                               Type                                |                                                                                                                                                             Description                                                                                                                                                             |
+|-----------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| component | [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; | The [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; indicating what should be targeted.                                                                                                                                                                                                                           |
+| with      | Function&lt;T,T&gt;                                               | A Function&lt;T,R&gt; that determines the replacement for elements that `toReplace` deems <br />                   necessary of replacement. The argument given to the function is the target that needs to be <br />                   replaced. The function can then determine freely how the replacement should be carried out. |
+| T         | Object                                                            | The type of elements targeted by the component.                                                                                                                                                                                                                                                                                     |
+
+
+:::
+
+:::group{name=replace since="14.0.0"}
+
+Specifies a replacement that should be carried out by this replacer.
+
+ In particular, the given [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; will be used to query the recipe and alter exactly what has
+ been specified. The predicate will be used to determine whether a specific target needs to be replaced, whereas
+ the function will determine what the element should be replaced by. In other words, any instance that makes
+ `toReplace` return `true` will be replaced by the result of the execution of `with`.
+
+ The strategy used can be determined by you, allowing for example to consider each element in detail instead of
+ directly. For example, a [IIngredient](/vanilla/api/ingredient/IIngredient) like
+ `<item:minecraft:dirt> | <item:minecraft:diamond>` can also be considered as two separate ingredients and
+ thus replacing only dirt can happen.
+
+ A replacer cannot be modified after execution.
+
+Returns: This replacer for chaining.  
+Return Type: [Replacer](/vanilla/api/recipe/replacement/Replacer)
+
+```zenscript
+Replacer.replace<T : Object>(component as IRecipeComponent<T>, toReplace as Predicate<T>, with as Function<T,T>) as Replacer
+```
+
+| Parameter |                               Type                                |                                                                                                                                                             Description                                                                                                                                                             |
+|-----------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| component | [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; | The [IRecipeComponent](/vanilla/api/recipe/IRecipeComponent)&lt;T&gt; indicating what should be targeted.                                                                                                                                                                                                                           |
+| toReplace | Predicate&lt;T&gt;                                                | A Predicate&lt;T&gt; determining whether a specific element should be replaced or not. The <br />                   argument given to it is the target that might have to be replaced.                                                                                                                                              |
+| with      | Function&lt;T,T&gt;                                               | A Function&lt;T,R&gt; that determines the replacement for elements that `toReplace` deems <br />                   necessary of replacement. The argument given to the function is the target that needs to be <br />                   replaced. The function can then determine freely how the replacement should be carried out. |
+| T         | Object                                                            | The type of elements targeted by the component.                                                                                                                                                                                                                                                                                     |
+
+
+:::
+
 :::group{name=replace since="10.0.0"}
 
 Specifies a replacement that should be carried out by this replacer.
