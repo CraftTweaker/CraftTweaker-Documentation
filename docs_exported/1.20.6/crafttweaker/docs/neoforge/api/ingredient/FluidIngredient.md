@@ -110,6 +110,21 @@ FluidIngredient.tag(tag as KnownTag<Fluid>) as FluidIngredient
 
 ## Methods
 
+:::group{name=asCTFluidIngredient}
+
+Return Type: [FluidIngredient](/forge/api/fluid/FluidIngredient)
+
+```zenscript
+FluidIngredient.asCTFluidIngredient(amount as int) as FluidIngredient
+```
+
+| Parameter | Type |
+|-----------|------|
+| amount    | int  |
+
+
+:::
+
 :::group{name=test}
 
 Return Type: boolean
