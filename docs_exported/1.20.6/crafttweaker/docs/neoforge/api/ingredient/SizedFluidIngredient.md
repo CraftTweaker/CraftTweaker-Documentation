@@ -59,9 +59,9 @@ SizedFluidIngredient.of(tag as KnownTag<Fluid>, amount as int) as SizedFluidIngr
 
 ## Casters
 
-|                     Result Type                     | Is Implicit |
-|-----------------------------------------------------|-------------|
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true        |
 
 ## Methods
 

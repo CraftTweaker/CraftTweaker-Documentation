@@ -34,11 +34,11 @@ IFluidStack.empty();
 
 ## Casters
 
-|                     Result Type                     | Is Implicit |
-|-----------------------------------------------------|-------------|
-| [Fluid](/vanilla/api/fluid/Fluid)                   | true        |
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
-| [IData](/vanilla/api/data/IData)                    | true        |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [Fluid](/vanilla/api/fluid/Fluid)                     | true        |
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true        |
+| [IData](/vanilla/api/data/IData)                      | true        |
 
 ## Methods
 

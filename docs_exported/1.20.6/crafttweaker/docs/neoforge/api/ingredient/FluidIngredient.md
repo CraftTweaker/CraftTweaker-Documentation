@@ -104,15 +104,15 @@ FluidIngredient.tag(tag as KnownTag<Fluid>) as FluidIngredient
 
 ## Casters
 
-|                     Result Type                     | Is Implicit |
-|-----------------------------------------------------|-------------|
-| [FluidIngredient](/forge/api/fluid/FluidIngredient) | true        |
+|                      Result Type                      | Is Implicit |
+|-------------------------------------------------------|-------------|
+| [FluidIngredient](/vanilla/api/fluid/FluidIngredient) | true        |
 
 ## Methods
 
 :::group{name=asCTFluidIngredient}
 
-Return Type: [FluidIngredient](/forge/api/fluid/FluidIngredient)
+Return Type: [FluidIngredient](/vanilla/api/fluid/FluidIngredient)
 
 ```zenscript
 FluidIngredient.asCTFluidIngredient(amount as int) as FluidIngredient
