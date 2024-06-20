@@ -57,6 +57,21 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:item:minecraft
 
 :::
 
+:::group{name=getRecipeAsJson}
+
+Return Type: [IData](/vanilla/api/data/IData)?
+
+```zenscript
+StoneCutterManager.getRecipeAsJson(name as string) as IData?
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
+
+
+:::
+
 :::group{name=getRecipeByName}
 
 Return Type: [RecipeHolder](/vanilla/api/recipe/RecipeHolder)&lt;T&gt;?

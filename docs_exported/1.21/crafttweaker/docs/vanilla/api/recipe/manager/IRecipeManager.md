@@ -41,6 +41,21 @@ craftingTable.addJsonRecipe("recipe_name", {
 
 :::
 
+:::group{name=getRecipeAsJson}
+
+Return Type: [IData](/vanilla/api/data/IData)?
+
+```zenscript
+IRecipeManager.getRecipeAsJson(name as string) as IData?
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| name      | string |
+
+
+:::
+
 :::group{name=getRecipeByName}
 
 Return Type: [RecipeHolder](/vanilla/api/recipe/RecipeHolder)&lt;T&gt;?
