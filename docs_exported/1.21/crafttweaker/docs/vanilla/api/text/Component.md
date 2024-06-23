@@ -137,7 +137,25 @@ Component.translatable(content as string, args as string[]) as MutableComponent
 
 :::
 
+## Casters
+
+|           Result Type            | Is Implicit |
+|----------------------------------|-------------|
+| [IData](/vanilla/api/data/IData) | true        |
+
 ## Methods
+
+:::group{name=asIData}
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+// Component.asIData() as IData
+
+myComponent.asIData();
+```
+
+:::
 
 :::group{name=copy}
 
