@@ -504,18 +504,18 @@ IFluidStack.withBundleContents(contents as stdlib.List<IItemStack>) as T
 
 :::group{name=withCanBreak}
 
-Sets the &lt;componenttype:minecraft:can_break&gt; of the ComponentAccess to have the given **invalid**
+Sets the &lt;componenttype:minecraft:can_break&gt; of the ComponentAccess to have the given [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-IFluidStack.withCanBreak(predicate as invalid) as T
+IFluidStack.withCanBreak(predicate as AdventureModePredicate) as T
 ```
 
-| Parameter |    Type     |                                           Description                                           |
-|-----------|-------------|-------------------------------------------------------------------------------------------------|
-| predicate | **invalid** | The adventure mode predicate to use to determine whether the item can be used to break a block. |
+| Parameter |                                     Type                                     |                                           Description                                           |
+|-----------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| predicate | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate) | The adventure mode predicate to use to determine whether the item can be used to break a block. |
 
 
 :::
@@ -545,18 +545,18 @@ myIFluidStack.withCanBreak(BlockPredicate.create().of(<block:minecraft:diamond_o
 
 :::group{name=withCanPlaceOn}
 
-Sets the &lt;componenttype:minecraft:can_place_on&gt; of the ComponentAccess to have the given **invalid**
+Sets the &lt;componenttype:minecraft:can_place_on&gt; of the ComponentAccess to have the given [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-IFluidStack.withCanPlaceOn(predicate as invalid) as T
+IFluidStack.withCanPlaceOn(predicate as AdventureModePredicate) as T
 ```
 
-| Parameter |    Type     |                                                Description                                                 |
-|-----------|-------------|------------------------------------------------------------------------------------------------------------|
-| predicate | **invalid** | The adventure mode predicate to use to determine whether the current block can be placed on another block. |
+| Parameter |                                     Type                                     |                                                Description                                                 |
+|-----------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| predicate | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate) | The adventure mode predicate to use to determine whether the current block can be placed on another block. |
 
 
 :::
@@ -2804,8 +2804,8 @@ myIFluidStack | other as FluidIngredient
 | blockState                  | [BlockItemStateProperties](/vanilla/api/item/component/BlockItemStateProperties)                           | true       | false      |                                                                                                                                                                                                                                        |
 | bucketEntityData            | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      |                                                                                                                                                                                                                                        |
 | bundleContents              | [BundleContents](/vanilla/api/item/component/BundleContents)                                               | true       | false      |                                                                                                                                                                                                                                        |
-| canBreak                    | **invalid**                                                                                                | true       | false      | Gets the data in &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                                             |
-| canPlaceOn                  | **invalid**                                                                                                | true       | false      | Gets the data in &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                                          |
+| canBreak                    | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                                             |
+| canPlaceOn                  | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                                          |
 | chargedProjectiles          | [ChargedProjectiles](/vanilla/api/item/component/ChargedProjectiles)                                       | true       | false      |                                                                                                                                                                                                                                        |
 | container                   | [ItemContainerContents](/vanilla/api/item/component/ItemContainerContents)                                 | true       | false      |                                                                                                                                                                                                                                        |
 | containerLoot               | [SeededContainerLoot](/vanilla/api/item/component/SeededContainerLoot)                                     | true       | false      |                                                                                                                                                                                                                                        |
