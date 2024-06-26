@@ -27,12 +27,12 @@ NeoForgeBracketHandlers.getAttachmentType(tokens as string) as AttachmentType
 
 :::
 
-:::group{name=getToolType}
+:::group{name=getItemAbility}
 
-Return Type: [ToolAction](/neoforge/api/tool/ToolAction)
+Return Type: [ItemAbility](/neoforge/api/item/ItemAbility)
 
 ```zenscript
-NeoForgeBracketHandlers.getToolType(tokens as string) as ToolAction
+NeoForgeBracketHandlers.getItemAbility(tokens as string) as ItemAbility
 ```
 
 | Parameter |  Type  |

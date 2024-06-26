@@ -4,18 +4,18 @@
 
 :::group{name=canPerformAction}
 
-Checks if this item can perform the given ToolAction.
+Checks if this item can perform the given [ItemAbility](/neoforge/api/item/ItemAbility).
 
 Returns: True if it can perform the action, false otherwise.  
 Return Type: boolean
 
 ```zenscript
-IItemStack.canPerformAction(action as ToolAction) as boolean
+IItemStack.canPerformAction(action as ItemAbility) as boolean
 ```
 
-| Parameter |                    Type                     |      Description       |
-|-----------|---------------------------------------------|------------------------|
-| action    | [ToolAction](/neoforge/api/tool/ToolAction) | The action to perform. |
+| Parameter |                     Type                      |      Description       |
+|-----------|-----------------------------------------------|------------------------|
+| action    | [ItemAbility](/neoforge/api/item/ItemAbility) | The action to perform. |
 
 
 :::
