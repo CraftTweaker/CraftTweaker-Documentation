@@ -1020,6 +1020,19 @@
         "Solar Neutron Activator": "Mods/Mekanism/Solar_Neutron_Activator.md",
         "Thermal Evaporation": "Mods/Mekanism/Thermal_Evaporation.md"
       },
+      "Magneticraft": {
+        "Crushing Table": "Mods/Magneticraft/Crushing_Table.md",
+        "Fluid Fuels": "Mods/Magneticraft/Fluid_Fuel.md",
+        "Gasification Unit": "Mods/Magneticraft/Gasification_Unit.md",
+        "Grinder": "Mods/Magneticraft/Grinder.md",
+        "Hydraulic Press": "Mods/Magneticraft/Hydraulic_Press.md",
+        "Oil Heater": "Mods/Magneticraft/Oil_Heater.md",
+        "Refinery": "Mods/Magneticraft/Refinery.md",
+        "Sieve": "Mods/Magneticraft/Sieve.md",
+        "Sluice Box": "Mods/Magneticraft/Sluice_Box.md",
+        "Thermopile": "Mods/Magneticraft/Thermopile.md",
+        "Wrenches": "Mods/Magneticraft/Wrench.md"
+      },
       "Modular Machinery": {
         "Modular Machinery": "Mods/ModularMachinery/ModularMachinery.md",
         "Recipes": {

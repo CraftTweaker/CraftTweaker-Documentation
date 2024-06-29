@@ -19,12 +19,12 @@ mods.nuclearcraft.Registration.registerFissionSink("sic_sic_cmc", 215, "exactly 
 ```
 
 ## Molten Salt Fission Coolant Heater
-This method will register a molten salt fission coolant heater with the registry name `nuclearcraft:coolant_heater_<name>` with a cooling value of `<coolingValue>` and the placement rule `placementRule`.
+This method will register a molten salt fission coolant heater with the registry name `nuclearcraft:salt_fission_heater_<name>` with a cooling value of `<coolingValue>` and the placement rule `placementRule`.
 It will also register a coolant port for with the registry name `nuclearcraft:coolant_port_<name>` which corresponds to the coolant heater. 
 ```zenscript
 #loader preinit
 
-//mods.nuclearcraft.Registration.registerFissionHeater(string name, string inputFluid, int inputFluidAmount, string outputFluid, int outputFluidAmount, int coolingValue, string placementRule);
+//mods.nuclearcraft.Registration.registerFissionHeater(string name, string fluidInput, int inputAmount, string fluidOutput, int outputAmount, int coolingValue, string placementRule);
 mods.nuclearcraft.Registration.registerFissionHeater("extreme", "tritium", 1, "deuterium", 1, 210, "exactly one sic_sic_cmc heater");
 mods.nuclearcraft.Registration.registerFissionHeater("sic_sic_cmc", "helium3", 1, "helium", 1, 215, "exactly one lead heater");
 ```
