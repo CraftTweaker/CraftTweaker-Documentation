@@ -9,7 +9,7 @@ import mods.magneticraft.Thermopile;
 ```zenscript
 //mods.magneticraft.Thermopile.addRecipe(IItemStack input, float temperature, float conductivity);
 //mods.magneticraft.Thermopile.addRecipe(IBlockState block, float temperature, float conductivity);
-mods.magneticraft.Thermopile.addRecipe(<minecraft:ice>, 273, 60);
+mods.magneticraft.Thermopile.addRecipe(<minecraft:ice>, 273.0, 60.0);
 ```
 
 ## Removing Recipes

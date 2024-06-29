@@ -8,7 +8,7 @@ import mods.magneticraft.FluidFuel;
 ## Adding Fluid Fuels
 ```zenscript
 //mods.magneticraft.FluidFuel.addFuel(ILiquidStack fuel, int burnTime, double powerPerCycle);
-mods.magneticraft.FluidFuel.addFuel(<liquid:lava>, 40, 400);
+mods.magneticraft.FluidFuel.addFuel(<liquid:lava>, 40, 400.0);
 ```
 
 ## Removing Fluid Fuels
