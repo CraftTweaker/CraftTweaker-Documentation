@@ -7,7 +7,7 @@ import mods.magneticraft.GasificationUnit;
 
 ## Adding Recipes
 ```zenscript
-//mods.magneticraft.GasificationUnit.addRecipe(IIngredidnt input, IItemStack output, ILiquidStack liquidOut, float ticks, float minTemperature);
+//mods.magneticraft.GasificationUnit.addRecipe(IIngredient input, IItemStack output, ILiquidStack liquidOut, float ticks, float minTemperature);
 mods.magneticraft.GasificationUnit.addRecipe(<ore:logWood>, <minecraft:coal>, <liquid:wood_gas> * 100, 10, 2500);
 ```
 

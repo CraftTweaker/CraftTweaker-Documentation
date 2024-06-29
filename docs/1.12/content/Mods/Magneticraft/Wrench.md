@@ -14,5 +14,5 @@ mods.magneticraft.Wrench.addRecipe(<minecraft:stick>);
 ## Removing Wrenches
 ```zenscript
 //mods.magneticraft.Wrench.removeWrench(IItemStack wrench);
-mods.magneticraft.Wrench.removeWrench<minecraft:stick>);
+mods.magneticraft.Wrench.removeWrench(<minecraft:stick>);
 ```
