@@ -66,21 +66,6 @@ recipes.getAllRecipes();
 
 :::
 
-:::group{name=getRecipeAsJson}
-
-Return Type: [IData](/vanilla/api/data/IData)?
-
-```zenscript
-GenericRecipesManager.getRecipeAsJson(name as string) as IData?
-```
-
-| Parameter |  Type  |
-|-----------|--------|
-| name      | string |
-
-
-:::
-
 :::group{name=getRecipeByName}
 
 Return Type: [RecipeHolder](/vanilla/api/recipe/RecipeHolder)&lt;[Recipe](/vanilla/api/recipe/type/Recipe)&lt;[RecipeInput](/vanilla/api/recipe/input/RecipeInput)&gt;&gt;

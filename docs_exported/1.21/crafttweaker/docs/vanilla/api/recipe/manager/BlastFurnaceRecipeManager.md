@@ -93,21 +93,6 @@ blastFurnace.addRecipe("wool2diamond", <constant:minecraft:cookingbookcategory:m
 
 :::
 
-:::group{name=getRecipeAsJson}
-
-Return Type: [IData](/vanilla/api/data/IData)?
-
-```zenscript
-BlastFurnaceRecipeManager.getRecipeAsJson(name as string) as IData?
-```
-
-| Parameter |  Type  |
-|-----------|--------|
-| name      | string |
-
-
-:::
-
 :::group{name=getRecipeByName}
 
 Return Type: [RecipeHolder](/vanilla/api/recipe/RecipeHolder)&lt;T&gt;?
