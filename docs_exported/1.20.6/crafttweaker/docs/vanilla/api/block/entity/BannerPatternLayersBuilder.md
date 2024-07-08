@@ -44,13 +44,13 @@ BannerPatternLayersBuilder.add(layer as BannerPatternLayersLayer) as BannerPatte
 Return Type: [BannerPatternLayersBuilder](/vanilla/api/block/entity/BannerPatternLayersBuilder)
 
 ```zenscript
-BannerPatternLayersBuilder.add(pattern as BannerPattern, color as invalid) as BannerPatternLayersBuilder
+BannerPatternLayersBuilder.add(pattern as BannerPattern, color as DyeColor) as BannerPatternLayersBuilder
 ```
 
 | Parameter |                           Type                           |
 |-----------|----------------------------------------------------------|
 | pattern   | [BannerPattern](/vanilla/api/block/entity/BannerPattern) |
-| color     | **invalid**                                              |
+| color     | [DyeColor](/vanilla/api/item/component/DyeColor)         |
 
 
 :::

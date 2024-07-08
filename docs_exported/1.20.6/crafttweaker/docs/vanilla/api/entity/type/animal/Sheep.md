@@ -52,8 +52,8 @@ Sheep.getHeadEatPositionScale(partialTick as float) as float
 
 ## Properties
 
-|  Name   |    Type     | Has Getter | Has Setter |
-|---------|-------------|------------|------------|
-| color   | **invalid** | true       | true       |
-| sheared | boolean     | true       | true       |
+|  Name   |                       Type                       | Has Getter | Has Setter |
+|---------|--------------------------------------------------|------------|------------|
+| color   | [DyeColor](/vanilla/api/item/component/DyeColor) | true       | true       |
+| sheared | boolean                                          | true       | true       |
 

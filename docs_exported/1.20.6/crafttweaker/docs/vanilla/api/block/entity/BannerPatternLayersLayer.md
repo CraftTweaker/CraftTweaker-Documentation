@@ -19,13 +19,13 @@ BannerPatternLayersLayer extends Record. That means all methods available in Rec
 Return Type: [BannerPatternLayersLayer](/vanilla/api/block/entity/BannerPatternLayersLayer)
 
 ```zenscript
-BannerPatternLayersLayer.of(pattern as BannerPattern, color as invalid) as BannerPatternLayersLayer
+BannerPatternLayersLayer.of(pattern as BannerPattern, color as DyeColor) as BannerPatternLayersLayer
 ```
 
 | Parameter |                           Type                           |
 |-----------|----------------------------------------------------------|
 | pattern   | [BannerPattern](/vanilla/api/block/entity/BannerPattern) |
-| color     | **invalid**                                              |
+| color     | [DyeColor](/vanilla/api/item/component/DyeColor)         |
 
 
 :::
@@ -34,7 +34,7 @@ BannerPatternLayersLayer.of(pattern as BannerPattern, color as invalid) as Banne
 
 |    Name     |                           Type                           | Has Getter | Has Setter |
 |-------------|----------------------------------------------------------|------------|------------|
-| color       | **invalid**                                              | true       | false      |
+| color       | [DyeColor](/vanilla/api/item/component/DyeColor)         | true       | false      |
 | description | [MutableComponent](/vanilla/api/text/MutableComponent)   | true       | false      |
 | pattern     | [BannerPattern](/vanilla/api/block/entity/BannerPattern) | true       | false      |
 
