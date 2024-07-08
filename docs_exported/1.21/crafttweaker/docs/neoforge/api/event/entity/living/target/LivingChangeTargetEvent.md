@@ -32,9 +32,9 @@ LivingChangeTargetEvent implements the following interfaces. That means all meth
 
 ## Properties
 
-|      Name      |                                      Type                                       | Has Getter | Has Setter |
-|----------------|---------------------------------------------------------------------------------|------------|------------|
-| newTarget      | [LivingEntity](/vanilla/api/entity/LivingEntity)                                | true       | true       |
-| originalTarget | [LivingEntity](/vanilla/api/entity/LivingEntity)                                | true       | false      |
-| targetType     | [ILivingTargetType](/neoforge/api/event/entity/living/target/ILivingTargetType) | true       | false      |
+|            Name            |                                      Type                                       | Has Getter | Has Setter |
+|----------------------------|---------------------------------------------------------------------------------|------------|------------|
+| newAboutToBeSetTarget      | [LivingEntity](/vanilla/api/entity/LivingEntity)                                | true       | true       |
+| originalAboutToBeSetTarget | [LivingEntity](/vanilla/api/entity/LivingEntity)                                | true       | false      |
+| targetType                 | [ILivingTargetType](/neoforge/api/event/entity/living/target/ILivingTargetType) | true       | false      |
 
