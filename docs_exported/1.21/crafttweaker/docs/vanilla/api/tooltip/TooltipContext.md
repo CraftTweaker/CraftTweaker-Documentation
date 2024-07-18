@@ -32,12 +32,12 @@ TooltipContext.of(level as Level?) as TooltipContext
 Return Type: **invalid**?
 
 ```zenscript
-TooltipContext.mapData(var1 as invalid) as invalid?
+TooltipContext.mapData(var1 as MapId) as invalid?
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| var1      | [MapId](/vanilla/api/item/component/MapId) |
 
 
 :::

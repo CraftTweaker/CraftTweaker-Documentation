@@ -734,7 +734,7 @@ MCItemStack.withAttributeModifiers(modifiers as stdlib.List<ItemAttributeModifie
 
 :::group{name=withBannerPatterns}
 
-
+Sets the &lt;componenttype:minecraft:banner_patterns&gt; of the ComponentAccess to have the given [BannerPatternLayers](/vanilla/api/block/entity/BannerPatternLayers)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -752,7 +752,7 @@ MCItemStack.withBannerPatterns(layers as BannerPatternLayers) as T
 
 :::group{name=withBannerPatterns}
 
-
+Sets the &lt;componenttype:minecraft:banner_patterns&gt; of the ComponentAccess to have the given stdlib.List&lt;[BannerPatternLayersLayer](/vanilla/api/block/entity/BannerPatternLayersLayer)&gt;
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -770,25 +770,25 @@ MCItemStack.withBannerPatterns(layers as stdlib.List<BannerPatternLayersLayer>) 
 
 :::group{name=withBaseColor}
 
-
+Sets the &lt;componenttype:minecraft:base_color&gt; of the ComponentAccess to have the given [DyeColor](/vanilla/api/item/component/DyeColor)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withBaseColor(color as invalid) as T
+MCItemStack.withBaseColor(color as DyeColor) as T
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| color     | **invalid** |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| color     | [DyeColor](/vanilla/api/item/component/DyeColor) |
 
 
 :::
 
 :::group{name=withBees}
 
-
+Sets the &lt;componenttype:minecraft:bees&gt; of the ComponentAccess to have the given occupants
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -806,7 +806,7 @@ MCItemStack.withBees(occupants as stdlib.List<BeehiveBlockEntityOccupant>) as T
 
 :::group{name=withBlockEntityData}
 
-
+Sets the &lt;componenttype:minecraft:block_entity_data&gt; of the ComponentAccess to have the given [CustomData](/vanilla/api/item/component/CustomData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -824,7 +824,7 @@ MCItemStack.withBlockEntityData(data as CustomData) as T
 
 :::group{name=withBlockEntityData}
 
-
+Sets the &lt;componenttype:minecraft:block_entity_data&gt; of the ComponentAccess to have the given [MapData](/vanilla/api/data/MapData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -842,7 +842,7 @@ MCItemStack.withBlockEntityData(data as MapData) as T
 
 :::group{name=withBlockState}
 
-
+Sets the &lt;componenttype:minecraft:block_state&gt; of the ComponentAccess to have the given [BlockItemStateProperties](/vanilla/api/item/component/BlockItemStateProperties)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -860,7 +860,7 @@ MCItemStack.withBlockState(properties as BlockItemStateProperties) as T
 
 :::group{name=withBucketEntityData}
 
-
+Sets the &lt;componenttype:minecraft:bucket_entity_data&gt; of the ComponentAccess to have the given [CustomData](/vanilla/api/item/component/CustomData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -878,7 +878,7 @@ MCItemStack.withBucketEntityData(data as CustomData) as T
 
 :::group{name=withBucketEntityData}
 
-
+Sets the &lt;componenttype:minecraft:bucket_entity_data&gt; of the ComponentAccess to have the given [MapData](/vanilla/api/data/MapData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -896,7 +896,7 @@ MCItemStack.withBucketEntityData(data as MapData) as T
 
 :::group{name=withBundleContents}
 
-
+Sets the &lt;componenttype:minecraft:bundle_contents&gt; of the ComponentAccess to have the given [BundleContents](/vanilla/api/item/component/BundleContents)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -914,18 +914,20 @@ MCItemStack.withBundleContents(contents as BundleContents) as T
 
 :::group{name=withBundleContents}
 
-
+Sets the &lt;componenttype:minecraft:bundle_contents&gt; of the ComponentAccess to have the given contents
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withBundleContents(contents as stdlib.List<IItemStack>) as T
+// MCItemStack.withBundleContents(contents as stdlib.List<IItemStack>) as T
+
+myMCItemStack.withBundleContents([<item:minecraft:diamond> * 64]);
 ```
 
-| Parameter |                             Type                              |
-|-----------|---------------------------------------------------------------|
-| contents  | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; |
+| Parameter |                             Type                              |           Description            |
+|-----------|---------------------------------------------------------------|----------------------------------|
+| contents  | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | A list of items to store within. |
 
 
 :::
@@ -1012,7 +1014,7 @@ MCItemStack.withCanPlaceOn(predicates as stdlib.List<BlockPredicate>, showInTool
 
 :::group{name=withChargedProjectiles}
 
-
+Sets the &lt;componenttype:minecraft:charged_projectiles&gt; of the ComponentAccess to have the given [ChargedProjectiles](/vanilla/api/item/component/ChargedProjectiles)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1030,43 +1032,47 @@ MCItemStack.withChargedProjectiles(chargedProjectiles as ChargedProjectiles) as 
 
 :::group{name=withChargedProjectiles}
 
-
+Sets the &lt;componenttype:minecraft:charged_projectiles&gt; of the ComponentAccess to have the given [IItemStack](/vanilla/api/item/IItemStack)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withChargedProjectiles(item as IItemStack) as T
+// MCItemStack.withChargedProjectiles(item as IItemStack) as T
+
+myMCItemStack.withChargedProjectiles(<item:minecraft:arrow>);
 ```
 
-| Parameter |                    Type                    |
-|-----------|--------------------------------------------|
-| item      | [IItemStack](/vanilla/api/item/IItemStack) |
+| Parameter |                    Type                    |        Description        |
+|-----------|--------------------------------------------|---------------------------|
+| item      | [IItemStack](/vanilla/api/item/IItemStack) | The item to store within. |
 
 
 :::
 
 :::group{name=withChargedProjectiles}
 
-
+Sets the &lt;componenttype:minecraft:charged_projectiles&gt; of the ComponentAccess to have the given items.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withChargedProjectiles(items as stdlib.List<IItemStack>) as T
+// MCItemStack.withChargedProjectiles(items as stdlib.List<IItemStack>) as T
+
+myMCItemStack.withChargedProjectiles([<item:minecraft:arrow>]);
 ```
 
-| Parameter |                             Type                              |
-|-----------|---------------------------------------------------------------|
-| items     | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; |
+| Parameter |                             Type                              |        Description         |
+|-----------|---------------------------------------------------------------|----------------------------|
+| items     | stdlib.List&lt;[IItemStack](/vanilla/api/item/IItemStack)&gt; | The items to store within. |
 
 
 :::
 
 :::group{name=withContainer}
 
-
+Sets the &lt;componenttype:minecraft:container&gt; of the ComponentAccess to have the given [ItemContainerContents](/vanilla/api/item/component/ItemContainerContents)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1084,7 +1090,7 @@ MCItemStack.withContainer(contents as ItemContainerContents) as T
 
 :::group{name=withContainer}
 
-
+Sets the &lt;componenttype:minecraft:container&gt; of the ComponentAccess to have the given values.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1102,7 +1108,7 @@ MCItemStack.withContainer(contents as stdlib.List<IItemStack>) as T
 
 :::group{name=withContainerLoot}
 
-
+Sets the &lt;componenttype:minecraft:container_loot&gt; of the ComponentAccess to have the given [SeededContainerLoot](/vanilla/api/item/component/SeededContainerLoot)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1120,7 +1126,7 @@ MCItemStack.withContainerLoot(loot as SeededContainerLoot) as T
 
 :::group{name=withContainerLoot}
 
-
+Sets the &lt;componenttype:minecraft:container_loot&gt; of the ComponentAccess to have the given loot table and seed.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1210,7 +1216,7 @@ MCItemStack.withCustomModelData(data as CustomModelData) as T
 
 :::group{name=withCustomModelData}
 
-Sets the &lt;componenttype:minecraft:custom_data&gt; of the ComponentAccess to have the given [CustomData](/vanilla/api/item/component/CustomData)
+Sets the &lt;componenttype:minecraft:custom_model_data&gt; of the ComponentAccess to have the given value.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1252,7 +1258,7 @@ myMCItemStack.withCustomName(Component.translatable("mypack.lore.fancy_water"));
 :::group{name=withDamage}
 
 Sets the &lt;componenttype:minecraft:damage&gt; of the ComponentAccess to have the given value.
- Damage is related to durability.
+ Damage is related to durability. Using this on an item that has no maxDamage may have unforeseen issues.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1272,7 +1278,7 @@ myMCItemStack.withDamage(16);
 
 :::group{name=withDebugStickState}
 
-
+Sets the &lt;componenttype:minecraft:debug_stick_state&gt; of the ComponentAccess to have the given [DebugStickState](/vanilla/api/item/component/DebugStickState)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1290,7 +1296,7 @@ MCItemStack.withDebugStickState(state as DebugStickState) as T
 
 :::group{name=withDyedColor}
 
-
+Sets the &lt;componenttype:minecraft:dyed_color&gt; of the ComponentAccess to have the given [DyedItemColor](/vanilla/api/item/component/DyedItemColor)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1308,19 +1314,21 @@ MCItemStack.withDyedColor(color as DyedItemColor) as T
 
 :::group{name=withDyedColor}
 
-
+Sets the &lt;componenttype:minecraft:dyed_color&gt; of the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withDyedColor(rgb as int, showInTooltip as boolean) as T
+// MCItemStack.withDyedColor(rgb as int, showInTooltip as boolean) as T
+
+myMCItemStack.withDyedColor(0xFFFF00, true);
 ```
 
-|   Parameter   |  Type   | Optional | Default Value |
-|---------------|---------|----------|---------------|
-| rgb           | int     | false    |               |
-| showInTooltip | boolean | true     | true          |
+|   Parameter   |  Type   |                  Description                  | Optional | Default Value |
+|---------------|---------|-----------------------------------------------|----------|---------------|
+| rgb           | int     | The colour to dye this item with              | false    |               |
+| showInTooltip | boolean | Whether to show this information in a tooltip | true     | true          |
 
 
 :::
@@ -1389,7 +1397,7 @@ MCItemStack.withEnchantments(enchantments as ItemEnchantments) as T
 
 :::group{name=withEntityData}
 
-
+Sets the &lt;componenttype:minecraft:entity_data&gt; of the ComponentAccess to have the given [CustomData](/vanilla/api/item/component/CustomData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1407,7 +1415,7 @@ MCItemStack.withEntityData(data as CustomData) as T
 
 :::group{name=withEntityData}
 
-
+Sets the &lt;componenttype:minecraft:entity_data&gt; of the ComponentAccess to have the given [MapData](/vanilla/api/data/MapData)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1440,7 +1448,7 @@ myMCItemStack.withFireResistant();
 
 :::group{name=withFireworkExplosion}
 
-
+Sets the &lt;componenttype:minecraft:firework_explosion&gt; of the ComponentAccess to have the given [FireworkExplosion](/vanilla/api/item/component/FireworkExplosion)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1458,7 +1466,7 @@ MCItemStack.withFireworkExplosion(explosion as FireworkExplosion) as T
 
 :::group{name=withFireworks}
 
-
+Sets the &lt;componenttype:minecraft:fireworks&gt; of the ComponentAccess to have the given [Fireworks](/vanilla/api/item/component/Fireworks)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1476,7 +1484,7 @@ MCItemStack.withFireworks(fireworks as Fireworks) as T
 
 :::group{name=withFireworks}
 
-
+Sets the &lt;componenttype:minecraft:fireworks&gt; of the ComponentAccess to have the given duration and explosions.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1543,7 +1551,7 @@ myMCItemStack.withHideTooltip();
 
 :::group{name=withInstrument}
 
-
+Sets the &lt;componenttype:minecraft:instrument&gt; of the ComponentAccess to have the given [Instrument](/vanilla/api/item/component/Instrument)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1561,7 +1569,7 @@ MCItemStack.withInstrument(instrument as Instrument) as T
 
 :::group{name=withIntangibleProjectile}
 
-Sets the &lt;componenttype:minecraft:intangible_projectile&gt; of the ComponentAccess to have exist.
+Sets the &lt;componenttype:minecraft:intangible_projectile&gt; of the ComponentAccess to exist.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1628,7 +1636,7 @@ MCItemStack.withJsonComponents(value as IData) as IItemStack
 
 :::group{name=withLock}
 
-
+Sets the &lt;componenttype:minecraft:lock&gt; of the ComponentAccess to have the given string.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1646,25 +1654,25 @@ MCItemStack.withLock(code as string) as T
 
 :::group{name=withLock}
 
-
+Sets the &lt;componenttype:minecraft:lock&gt; of the ComponentAccess to have the given [LockCode](/vanilla/api/item/component/LockCode)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withLock(lock as invalid) as T
+MCItemStack.withLock(lock as LockCode) as T
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| lock      | **invalid** |
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| lock      | [LockCode](/vanilla/api/item/component/LockCode) |
 
 
 :::
 
 :::group{name=withLodestoneTracker}
 
-
+Sets the &lt;componenttype:minecraft:lodestone_tracker&gt; of the ComponentAccess to have the given [LodestoneTracker](/vanilla/api/item/component/LodestoneTracker)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1720,7 +1728,7 @@ MCItemStack.withLore(lore as ItemLore) as T
 
 :::group{name=withMapColor}
 
-
+Sets the &lt;componenttype:minecraft:map_color&gt; of the ComponentAccess to have the given [MapItemColor](/vanilla/api/item/component/MapItemColor)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1738,25 +1746,27 @@ MCItemStack.withMapColor(color as MapItemColor) as T
 
 :::group{name=withMapColor}
 
-
+Sets the &lt;componenttype:minecraft:map_color&gt; of the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withMapColor(rgb as int) as T
+// MCItemStack.withMapColor(rgb as int) as T
+
+myMCItemStack.withMapColor(0xFF0000);
 ```
 
-| Parameter | Type |
-|-----------|------|
-| rgb       | int  |
+| Parameter | Type |    Description     |
+|-----------|------|--------------------|
+| rgb       | int  | The new map colour |
 
 
 :::
 
 :::group{name=withMapDecorations}
 
-
+Sets the &lt;componenttype:minecraft:map_decorations&gt; of the ComponentAccess to have the given [MapDecorations](/vanilla/api/item/component/MapDecorations)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1774,7 +1784,7 @@ MCItemStack.withMapDecorations(decorations as MapDecorations) as T
 
 :::group{name=withMapDecorations}
 
-
+Sets the &lt;componenttype:minecraft:map_decorations&gt; of the ComponentAccess to have the given values.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1792,7 +1802,10 @@ MCItemStack.withMapDecorations(decorations as MapDecorationsEntry[string]) as T
 
 :::group{name=withMapId}
 
+Sets the &lt;componenttype:minecraft:map_id&gt; of the ComponentAccess to have the given value.
 
+ A map id is only useful after the game generates one to store data.
+ Therefore, you should always pass in the parameter for an id you know is available.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1810,25 +1823,25 @@ MCItemStack.withMapId(id as int) as T
 
 :::group{name=withMapId}
 
-
+Sets the &lt;componenttype:minecraft:map_id&gt; of the ComponentAccess to have the given [MapId](/vanilla/api/item/component/MapId)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withMapId(mapId as invalid) as T
+MCItemStack.withMapId(mapId as MapId) as T
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| mapId     | **invalid** |
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| mapId     | [MapId](/vanilla/api/item/component/MapId) |
 
 
 :::
 
 :::group{name=withMapPostProcessing}
 
-
+Sets the &lt;componenttype:minecraft:map_post_processing&gt; of the ComponentAccess to have the given [MapPostProcessing](/vanilla/api/item/component/MapPostProcessing)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1848,12 +1861,15 @@ MCItemStack.withMapPostProcessing(value as MapPostProcessing) as T
 
 Sets the &lt;componenttype:minecraft:max_damage&gt; of the ComponentAccess to have the given value.
 
+ It is likely that you need to call withDamage(0) in order for some things to function properly.
+
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
 // MCItemStack.withMaxDamage(maxDamage as int) as T
 
+myMCItemStack.withMaxDamage(1024);
 myMCItemStack.withMaxDamage(1024);
 ```
 
@@ -1887,7 +1903,7 @@ myMCItemStack.withMaxStackSize(16);
 
 :::group{name=withNoteBlockSound}
 
-
+Sets the &lt;componenttype:minecraft:note_block_sound&gt; of the ComponentAccess to have the given [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1905,7 +1921,7 @@ MCItemStack.withNoteBlockSound(sound as ResourceLocation) as T
 
 :::group{name=withOminousBottleAmplifier}
 
-
+Sets the &lt;componenttype:minecraft:ominous_bottle_amplifier&gt; of the ComponentAccess to have the given amplifier.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1923,7 +1939,7 @@ MCItemStack.withOminousBottleAmplifier(amplifier as int) as T
 
 :::group{name=withPotDecorations}
 
-
+Sets the &lt;componenttype:minecraft:pot_decorations&gt; of the ComponentAccess to have the given [PotDecorations](/vanilla/api/item/component/PotDecorations)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1941,7 +1957,7 @@ MCItemStack.withPotDecorations(decorations as PotDecorations) as T
 
 :::group{name=withPotDecorations}
 
-
+Sets the &lt;componenttype:minecraft:pot_decorations&gt; of the ComponentAccess to have the given items.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -1962,81 +1978,93 @@ MCItemStack.withPotDecorations(back as ItemDefinition, left as ItemDefinition, r
 
 :::group{name=withPotionContents}
 
-
+Sets the &lt;componenttype:minecraft:potion_contents&gt; of the ComponentAccess to have the given [PotionContents](/vanilla/api/item/component/PotionContents)
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withPotionContents(contents as invalid) as T
+MCItemStack.withPotionContents(contents as PotionContents) as T
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| contents  | **invalid** |
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| contents  | [PotionContents](/vanilla/api/item/component/PotionContents) |
 
 
 :::
 
 :::group{name=withPotionContents}
 
-
+Sets the &lt;componenttype:minecraft:potion_contents&gt; of the ComponentAccess to have the given [Potion](/vanilla/api/item/alchemy/Potion)
+ and no custom effects
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withPotionContents(potion as Potion) as T
+// MCItemStack.withPotionContents(potion as Potion) as T
+
+myMCItemStack.withPotionContents(<potion:minecraft:swiftness>);
 ```
 
-| Parameter |                    Type                    |
-|-----------|--------------------------------------------|
-| potion    | [Potion](/vanilla/api/item/alchemy/Potion) |
+| Parameter |                    Type                    |        Description         |
+|-----------|--------------------------------------------|----------------------------|
+| potion    | [Potion](/vanilla/api/item/alchemy/Potion) | The potion to store within |
 
 
 :::
 
 :::group{name=withPotionContents}
 
-
+Sets the &lt;componenttype:minecraft:potion_contents&gt; of the ComponentAccess to have the given [Potion](/vanilla/api/item/alchemy/Potion)
+ and the given [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) effects.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withPotionContents(potion as Potion, customEffects as stdlib.List<MobEffectInstance>) as T
+// MCItemStack.withPotionContents(potion as Potion, customEffects as stdlib.List<MobEffectInstance>) as T
+
+myMCItemStack.withPotionContents(<potion:minecraft:swiftness>, [MobEffectInstance.of(<mobeffect:minecraft:strength>, 20 * 20, 1, false, false, true)]);
 ```
 
-|   Parameter   |                                         Type                                         |
-|---------------|--------------------------------------------------------------------------------------|
-| potion        | [Potion](/vanilla/api/item/alchemy/Potion)                                           |
-| customEffects | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; |
+|   Parameter   |                                         Type                                         |                   Description                    |
+|---------------|--------------------------------------------------------------------------------------|--------------------------------------------------|
+| potion        | [Potion](/vanilla/api/item/alchemy/Potion)                                           | The potion to store within.                      |
+| customEffects | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | The effects to grant upon consuming this potion. |
 
 
 :::
 
 :::group{name=withPotionContents}
 
-
+Sets the &lt;componenttype:minecraft:potion_contents&gt; of the ComponentAccess to have the given [Potion](/vanilla/api/item/alchemy/Potion)
+ and the given [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance) effects.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withPotionContents(potion as Potion, customColor as int, customEffects as stdlib.List<MobEffectInstance>) as T
+// MCItemStack.withPotionContents(potion as Potion, customColor as int, customEffects as stdlib.List<MobEffectInstance>) as T
+
+myMCItemStack.withPotionContents(<potion:minecraft:swiftness>, 0xFFFFFF00, [MobEffectInstance.of(<mobeffect:minecraft:strength>, 20 * 20, 1, false, false, true)]);
 ```
 
-|   Parameter   |                                         Type                                         |
-|---------------|--------------------------------------------------------------------------------------|
-| potion        | [Potion](/vanilla/api/item/alchemy/Potion)                                           |
-| customColor   | int                                                                                  |
-| customEffects | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; |
+|   Parameter   |                                         Type                                         |                   Description                    |
+|---------------|--------------------------------------------------------------------------------------|--------------------------------------------------|
+| potion        | [Potion](/vanilla/api/item/alchemy/Potion)                                           | The potion to store within.                      |
+| customColor   | int                                                                                  | The ARGB color the potion will have.             |
+| customEffects | stdlib.List&lt;[MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)&gt; | The effects to grant upon consuming this potion. |
 
 
 :::
 
 :::group{name=withProfile}
 
+Sets the &lt;componenttype:minecraft:profile&gt; of the ComponentAccess to have the given [ResolvableProfile](/vanilla/api/item/component/ResolvableProfile)
+
+Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
@@ -2072,7 +2100,7 @@ myMCItemStack.withRarity(<constant:minecraft:item/rarity:epic>);
 
 :::group{name=withRecipes}
 
-
+Sets the &lt;componenttype:minecraft:recipes&gt; of the ComponentAccess to have the given stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2110,7 +2138,7 @@ myMCItemStack.withRepairCost(20);
 
 :::group{name=withStoredEnchantments}
 
-
+Sets the &lt;componenttype:minecraft:stored_enchantments&gt; of the ComponentAccess to have the given [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2128,7 +2156,8 @@ MCItemStack.withStoredEnchantments(enchantments as ItemEnchantments) as T
 
 :::group{name=withSuspiciousStewEffects}
 
-
+Sets the &lt;componenttype:minecraft:suspicious_stew_effects&gt; of the ComponentAccess to have the given [SuspiciousStewEffects](/vanilla/api/item/component/SuspiciousStewEffects)
+ [SuspiciousStewEffectsEntry](/vanilla/api/item/component/SuspiciousStewEffectsEntry) is effectively a pair of Effect and duration.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2137,16 +2166,16 @@ Return Type: T
 MCItemStack.withSuspiciousStewEffects(effects as stdlib.List<SuspiciousStewEffectsEntry>) as T
 ```
 
-| Parameter |                                                  Type                                                   |
-|-----------|---------------------------------------------------------------------------------------------------------|
-| effects   | stdlib.List&lt;[SuspiciousStewEffectsEntry](/vanilla/api/item/component/SuspiciousStewEffectsEntry)&gt; |
+| Parameter |                                                  Type                                                   |                 Description                  |
+|-----------|---------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| effects   | stdlib.List&lt;[SuspiciousStewEffectsEntry](/vanilla/api/item/component/SuspiciousStewEffectsEntry)&gt; | The list of effects to grant on consumption. |
 
 
 :::
 
 :::group{name=withSuspiciousStewEffects}
 
-
+Sets the &lt;componenttype:minecraft:suspicious_stew_effects&gt; of the ComponentAccess to have the given [SuspiciousStewEffects](/vanilla/api/item/component/SuspiciousStewEffects)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2182,27 +2211,30 @@ MCItemStack.withTool(tool as Tool) as T
 
 :::group{name=withTool}
 
-
+Sets the &lt;componenttype:minecraft:tool&gt; of the ComponentAccess to have the given data.
+ A [Tool](/vanilla/api/item/component/Tool) instance is constructed from the parameters.
 
 Returns: The new instance with the modified data.  
 Return Type: T
 
 ```zenscript
-MCItemStack.withTool(rules as stdlib.List<ToolRule>, defaultMiningSpeed as float, damagePerBlock as int) as T
+// MCItemStack.withTool(rules as stdlib.List<ToolRule>, defaultMiningSpeed as float, damagePerBlock as int) as T
+
+myMCItemStack.withTool([ToolRule.minesAndDrops(<tag:blocks:minecraft:planks>, 6.0f)], 0.25f, 1);
 ```
 
-|     Parameter      |                                Type                                 |
-|--------------------|---------------------------------------------------------------------|
-| rules              | stdlib.List&lt;[ToolRule](/vanilla/api/item/component/ToolRule)&gt; |
-| defaultMiningSpeed | float                                                               |
-| damagePerBlock     | int                                                                 |
+|     Parameter      |                                Type                                 |                          Description                          |
+|--------------------|---------------------------------------------------------------------|---------------------------------------------------------------|
+| rules              | stdlib.List&lt;[ToolRule](/vanilla/api/item/component/ToolRule)&gt; | The list of rules the new Tool instance will have             |
+| defaultMiningSpeed | float                                                               | The default mining speed of the new tool                      |
+| damagePerBlock     | int                                                                 | The damage or durability that is dealt to the Tool after use. |
 
 
 :::
 
 :::group{name=withTrim}
 
-
+Sets the &lt;componenttype:minecraft:trim&gt; of the ComponentAccess to have the given [ArmorTrim](/vanilla/api/item/armortrim/ArmorTrim)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2258,7 +2290,7 @@ MCItemStack.withUnbreakable(unbreakable as Unbreakable) as T
 
 :::group{name=withWritableBookContent}
 
-
+Sets the &lt;componenttype:minecraft:writable_book_content&gt; of the ComponentAccess to have the given [WritableBookContent](/vanilla/api/item/component/WritableBookContent)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2294,7 +2326,7 @@ MCItemStack.withWritableBookContent(pages as stdlib.List<Filterable<string>>) as
 
 :::group{name=withWrittenBookContent}
 
-
+Sets the &lt;componenttype:minecraft:written_book_content&gt; of the ComponentAccess to have the given [WrittenBookContent](/vanilla/api/item/component/WrittenBookContent)
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2343,7 +2375,7 @@ myMCItemStack.withoutAttributeModifiers();
 
 :::group{name=withoutBannerPatterns}
 
-
+Removes the &lt;componenttype:minecraft:banner_patterns&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2358,7 +2390,7 @@ myMCItemStack.withoutBannerPatterns();
 
 :::group{name=withoutBaseColor}
 
-
+Removes the &lt;componenttype:minecraft:base_color&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2373,7 +2405,7 @@ myMCItemStack.withoutBaseColor();
 
 :::group{name=withoutBees}
 
-
+Removes the &lt;componenttype:minecraft:bees&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2388,7 +2420,7 @@ myMCItemStack.withoutBees();
 
 :::group{name=withoutBlockEntityData}
 
-
+Removes the &lt;componenttype:minecraft:block_entity_data&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2403,7 +2435,7 @@ myMCItemStack.withoutBlockEntityData();
 
 :::group{name=withoutBlockState}
 
-
+Removes the &lt;componenttype:minecraft:block_state&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2418,7 +2450,7 @@ myMCItemStack.withoutBlockState();
 
 :::group{name=withoutBucketEntityData}
 
-
+Removes the &lt;componenttype:minecraft:bucket_entity_data&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2433,7 +2465,7 @@ myMCItemStack.withoutBucketEntityData();
 
 :::group{name=withoutBundleContents}
 
-
+Removes the &lt;componenttype:minecraft:bundle_contents&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2478,7 +2510,7 @@ myMCItemStack.withoutCanPlaceOn();
 
 :::group{name=withoutChargedProjectiles}
 
-
+Removes the &lt;componenttype:minecraft:charged_projectiles&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2493,7 +2525,7 @@ myMCItemStack.withoutChargedProjectiles();
 
 :::group{name=withoutContainer}
 
-
+Removes the &lt;componenttype:minecraft:container&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2508,7 +2540,7 @@ myMCItemStack.withoutContainer();
 
 :::group{name=withoutContainerLoot}
 
-
+Removes the &lt;componenttype:minecraft:container_loot&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2598,7 +2630,7 @@ myMCItemStack.withoutDamage();
 
 :::group{name=withoutDebugStickState}
 
-
+Removes the &lt;componenttype:minecraft:debug_stick_state&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2613,7 +2645,7 @@ myMCItemStack.withoutDebugStickState();
 
 :::group{name=withoutDyedColor}
 
-
+Removes the &lt;componenttype:minecraft:dyed_color&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2678,7 +2710,7 @@ myMCItemStack.withoutEnchantments();
 
 :::group{name=withoutEntityDate}
 
-
+Removes the &lt;componenttype:minecraft:entity_data&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2708,7 +2740,7 @@ myMCItemStack.withoutFireResistant();
 
 :::group{name=withoutFireworkExplosion}
 
-
+Removes the &lt;componenttype:minecraft:firework_explosion&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2723,7 +2755,7 @@ myMCItemStack.withoutFireworkExplosion();
 
 :::group{name=withoutFireworks}
 
-
+Removes the &lt;componenttype:minecraft:fireworks&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2783,7 +2815,7 @@ myMCItemStack.withoutHideTooltip();
 
 :::group{name=withoutInstrument}
 
-
+Removes the &lt;componenttype:minecraft:instrument&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2828,7 +2860,7 @@ myMCItemStack.withoutItemName();
 
 :::group{name=withoutLock}
 
-
+Removes the &lt;componenttype:minecraft:lock&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2843,7 +2875,7 @@ myMCItemStack.withoutLock();
 
 :::group{name=withoutLodestoneTracker}
 
-
+Removes the &lt;componenttype:minecraft:lodestone_tracker&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2873,7 +2905,7 @@ myMCItemStack.withoutLore();
 
 :::group{name=withoutMapColor}
 
-
+Removes the &lt;componenttype:minecraft:map_color&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2888,7 +2920,7 @@ myMCItemStack.withoutMapColor();
 
 :::group{name=withoutMapDecorations}
 
-
+Removes the &lt;componenttype:minecraft:map_decorations&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2903,7 +2935,7 @@ myMCItemStack.withoutMapDecorations();
 
 :::group{name=withoutMapId}
 
-
+Removes the &lt;componenttype:minecraft:map_id&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2918,7 +2950,7 @@ myMCItemStack.withoutMapId();
 
 :::group{name=withoutMapPostProcessing}
 
-
+Removes the &lt;componenttype:minecraft:map_post_processing&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2963,7 +2995,7 @@ myMCItemStack.withoutMaxStackSize();
 
 :::group{name=withoutNoteBlockSound}
 
-
+Removes the &lt;componenttype:minecraft:note_block_sound&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2978,7 +3010,7 @@ myMCItemStack.withoutNoteBlockSound();
 
 :::group{name=withoutOminousBottleAmplifier}
 
-
+Removes the &lt;componenttype:minecraft:ominous_bottle_amplifier&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -2993,7 +3025,7 @@ myMCItemStack.withoutOminousBottleAmplifier();
 
 :::group{name=withoutPotDecorations}
 
-
+Removes the &lt;componenttype:minecraft:pot_decorations&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3008,7 +3040,7 @@ myMCItemStack.withoutPotDecorations();
 
 :::group{name=withoutPotionContents}
 
-
+Removes the &lt;componenttype:minecraft:potion_contents&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3023,7 +3055,7 @@ myMCItemStack.withoutPotionContents();
 
 :::group{name=withoutProfile}
 
-
+Removes the &lt;componenttype:minecraft:profile&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3053,7 +3085,7 @@ myMCItemStack.withoutRarity();
 
 :::group{name=withoutRecipes}
 
-
+Removes the &lt;componenttype:minecraft:recipes&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3083,7 +3115,7 @@ myMCItemStack.withoutRepairCost();
 
 :::group{name=withoutStoredEnchantments}
 
-
+Removes the &lt;componenttype:minecraft:stored_enchantments&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3098,7 +3130,7 @@ myMCItemStack.withoutStoredEnchantments();
 
 :::group{name=withoutSuspiciousStewEffects}
 
-
+Removes the &lt;componenttype:minecraft:suspicious_stew_effects&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3128,7 +3160,7 @@ myMCItemStack.withoutTool();
 
 :::group{name=withoutTrim}
 
-
+Removes the &lt;componenttype:minecraft:trim&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3158,7 +3190,7 @@ myMCItemStack.withoutUnbreakable();
 
 :::group{name=withoutWritableBookContent}
 
-
+Removes the &lt;componenttype:minecraft:writable_book_content&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3173,7 +3205,7 @@ myMCItemStack.withoutWritableBookContent();
 
 :::group{name=withoutWrittenBookContent}
 
-
+Removes the &lt;componenttype:minecraft:written_book_content&gt; from the ComponentAccess.
 
 Returns: The new instance with the modified data.  
 Return Type: T
@@ -3237,130 +3269,130 @@ myMCItemStack | other as IIngredient
 
 ## Properties
 
-|            Name             |                                                    Type                                                    | Has Getter | Has Setter |                                                                                                              Description                                                                                                               |
-|-----------------------------|------------------------------------------------------------------------------------------------------------|------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| amount                      | int                                                                                                        | true       | false      | Gets the amount of Items in the ItemStack                                                                                                                                                                                              |
-| attributeModifiers          | [ItemAttributeModifiers](/vanilla/api/item/component/ItemAttributeModifiers)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:attribute_modifiers&gt;                                                                                                                                                                   |
-| bannerPatterns              | [BannerPatternLayers](/vanilla/api/block/entity/BannerPatternLayers)                                       | true       | false      |                                                                                                                                                                                                                                        |
-| baseColor                   | **invalid**                                                                                                | true       | false      |                                                                                                                                                                                                                                        |
-| bees                        | stdlib.List&lt;[BeehiveBlockEntityOccupant](/vanilla/api/block/entity/type/BeehiveBlockEntityOccupant)&gt; | true       | false      |                                                                                                                                                                                                                                        |
-| blockEntityData             | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      |                                                                                                                                                                                                                                        |
-| blockState                  | [BlockItemStateProperties](/vanilla/api/item/component/BlockItemStateProperties)                           | true       | false      |                                                                                                                                                                                                                                        |
-| bucketEntityData            | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      |                                                                                                                                                                                                                                        |
-| bundleContents              | [BundleContents](/vanilla/api/item/component/BundleContents)                                               | true       | false      |                                                                                                                                                                                                                                        |
-| burnTime                    | void                                                                                                       | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines                                                                                                                                                       |
-| canBreak                    | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                                             |
-| canPlaceOn                  | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                                          |
-| chargedProjectiles          | [ChargedProjectiles](/vanilla/api/item/component/ChargedProjectiles)                                       | true       | false      |                                                                                                                                                                                                                                        |
-| componentsPatch             | [DataComponentPatch](/vanilla/api/component/DataComponentPatch)                                            | true       | false      |                                                                                                                                                                                                                                        |
-| container                   | [ItemContainerContents](/vanilla/api/item/component/ItemContainerContents)                                 | true       | false      |                                                                                                                                                                                                                                        |
-| containerLoot               | [SeededContainerLoot](/vanilla/api/item/component/SeededContainerLoot)                                     | true       | false      |                                                                                                                                                                                                                                        |
-| creativeSlotLock            | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:creative_slot_lock&gt;                                                                                                                                                                    |
-| customData                  | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_data&gt;                                                                                                                                                                       |
-| customModelData             | [CustomModelData](/vanilla/api/item/component/CustomModelData)                                             | true       | false      | Gets the data in &lt;componenttype:minecraft:custom_model_data&gt;                                                                                                                                                                     |
-| customName                  | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_name&gt; <br />  <br />  A custom name is generally displayed in italics and controlled by the user.                                                                           |
-| damage                      | int                                                                                                        | true       | false      | Gets the data in the &lt;componenttype:minecraft:damage&gt;                                                                                                                                                                            |
-| damageableItem              | boolean                                                                                                    | true       | false      | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not.                                                                                                                                    |
-| damaged                     | boolean                                                                                                    | true       | false      | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged.                                                                                                                                     |
-| debugStickState             | [DebugStickState](/vanilla/api/item/component/DebugStickState)                                             | true       | false      |                                                                                                                                                                                                                                        |
-| definition                  | [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                         | true       | false      |                                                                                                                                                                                                                                        |
-| descriptionId               | string                                                                                                     | true       | false      | Returns the unlocalized Name of the Item in the ItemStack                                                                                                                                                                              |
-| displayName                 | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the display name of the ItemStack                                                                                                                                                                                                 |
-| dyedColor                   | [DyedItemColor](/vanilla/api/item/component/DyedItemColor)                                                 | true       | false      |                                                                                                                                                                                                                                        |
-| enchantmentGlintOverride    | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:enchantment_glint_override&gt; <br />  <br />  If it is present, it is first checked to determine whether there is special behaviour, otherwise <br />  the code checks for enchantments. |
-| enchantments                | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments)                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:enchantments&gt;                                                                                                                                                                          |
-| entityData                  | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      |                                                                                                                                                                                                                                        |
-| fireworkExplosion           | [FireworkExplosion](/vanilla/api/item/component/FireworkExplosion)                                         | true       | false      |                                                                                                                                                                                                                                        |
-| fireworks                   | [Fireworks](/vanilla/api/item/component/Fireworks)                                                         | true       | false      |                                                                                                                                                                                                                                        |
-| food                        | [FoodProperties](/vanilla/api/food/FoodProperties)                                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:food&gt;                                                                                                                                                                                  |
-| hasAttributeModifiers       | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:attribute_modifiers&gt;                                                                                                                                             |
-| hasBannerPatterns           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBaseColor                | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBees                     | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBlockEntityData          | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBlockState               | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBucketEntityData         | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasBundleContents           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasCanBreak                 | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                       |
-| hasCanPlaceOn               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                    |
-| hasChargedProjectiles       | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasContainer                | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasContainerLoot            | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasCustomData               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:custom_data&gt;                                                                                                                                                 |
-| hasCustomModelData          | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:custom_model_data&gt;                                                                                                                                               |
-| hasCustomName               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:custom_name&gt;                                                                                                                                                 |
-| hasDamage                   | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:damage&gt;                                                                                                                                                      |
-| hasDebugStickState          | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasDyedColor                | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasEnchantmentGlintOverride | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:enchantment_glint_override&gt;                                                                                                                                      |
-| hasEnchantments             | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:enchantments&gt;                                                                                                                                                |
-| hasEntityData               | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasFireworkExplosion        | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasFireworks                | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasFoil                     | boolean                                                                                                    | true       | false      | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items).                                                                                  |
-| hasFood                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:food&gt;                                                                                                                                                            |
-| hasInstrument               | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasItemName                 | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:item_namegt;                                                                                                                                                    |
-| hasLock                     | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasLodestoneTracker         | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasLore                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:lore&gt;                                                                                                                                                        |
-| hasMapColor                 | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasMapDecorations           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasMapId                    | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasMapPostProcessing        | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasMaxDamage                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:max_damage&gt;                                                                                                                                                  |
-| hasMaxStackSize             | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:max_stack_size&gt;                                                                                                                                              |
-| hasNoteBlockSound           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasOminousBottleAmplifier   | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasPotDecorations           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasPotionContents           | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasProfile                  | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasRarity                   | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:rarity&gt;                                                                                                                                                      |
-| hasRecipes                  | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasRepairCost               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:repair_cost&gt;                                                                                                                                                     |
-| hasStoredEnchantments       | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasSuspiciousStewEffects    | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasTool                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:tool&gt;                                                                                                                                                            |
-| hasTrim                     | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasUnbreakable              | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:unbreakable&gt;                                                                                                                                                 |
-| hasWritableBookContent      | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hasWrittenBookContent       | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| hideAdditionalTooltip       | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:hide_additional_tooltip&gt;                                                                                                                                                               |
-| hideTooltip                 | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:hide_tooltip&gt;                                                                                                                                                                          |
-| hoverName                   | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the hover name of the ItemStack. <br />  <br />  This will give the raw name without the formatting that 'displayName' applies.                                                                                                   |
-| instrument                  | [Instrument](/vanilla/api/item/component/Instrument)                                                       | true       | false      |                                                                                                                                                                                                                                        |
-| isEnchantable               | boolean                                                                                                    | true       | false      | Can this ItemStack be enchanted?                                                                                                                                                                                                       |
-| isFireResistant             | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:fire_resistant&gt;                                                                                                                                                                        |
-| isIntangibleProjectile      | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:intangible_projectile&gt;                                                                                                                                                                 |
-| isMutable                   | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                        |
-| itemName                    | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_name&gt; <br />  <br />  In the case of items, an item name is set by the make to make a special instance of an item, such as with <br />  ominous banners.                    |
-| lockComponent               | **invalid**                                                                                                | true       | false      |                                                                                                                                                                                                                                        |
-| lodestoneTracker            | [LodestoneTracker](/vanilla/api/item/component/LodestoneTracker)                                           | true       | false      |                                                                                                                                                                                                                                        |
-| lore                        | [ItemLore](/vanilla/api/item/component/ItemLore)                                                           | true       | false      | Gets the data in the &lt;componenttype:minecraft:lore&gt;                                                                                                                                                                              |
-| mapColor                    | [MapItemColor](/vanilla/api/item/component/MapItemColor)                                                   | true       | false      |                                                                                                                                                                                                                                        |
-| mapDecorations              | [MapDecorations](/vanilla/api/item/component/MapDecorations)                                               | true       | false      |                                                                                                                                                                                                                                        |
-| mapId                       | **invalid**                                                                                                | true       | false      |                                                                                                                                                                                                                                        |
-| mapPostProcessing           | [MapPostProcessing](/vanilla/api/item/component/MapPostProcessing)                                         | true       | false      |                                                                                                                                                                                                                                        |
-| maxDamage                   | int                                                                                                        | true       | false      | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack.                                                                                                                                           |
-| maxStackSize                | int                                                                                                        | true       | false      | Gets the data in the &lt;componenttype:minecraft:max_stack_size&gt;                                                                                                                                                                    |
-| noteBlockSound              | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                                                 | true       | false      |                                                                                                                                                                                                                                        |
-| ominousBottleAmplifier      | int                                                                                                        | true       | false      |                                                                                                                                                                                                                                        |
-| owner                       | string                                                                                                     | true       | false      | Gets owning mod for the Item in this IItemStack                                                                                                                                                                                        |
-| potDecorations              | [PotDecorations](/vanilla/api/item/component/PotDecorations)                                               | true       | false      |                                                                                                                                                                                                                                        |
-| potionContents              | **invalid**                                                                                                | true       | false      |                                                                                                                                                                                                                                        |
-| profile                     | [ResolvableProfile](/vanilla/api/item/component/ResolvableProfile)                                         | true       | false      |                                                                                                                                                                                                                                        |
-| prototype                   | [DataComponentMap](/vanilla/api/component/DataComponentMap)                                                | true       | false      |                                                                                                                                                                                                                                        |
-| rarity                      | [Rarity](/vanilla/api/item/property/Rarity)                                                                | true       | false      | Gets the data in the &lt;componenttype:minecraft:rarity&gt;                                                                                                                                                                            |
-| recipes                     | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;                              | true       | false      |                                                                                                                                                                                                                                        |
-| registryName                | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                                                 | true       | false      | Gets the registry name for the Item in this IItemStack                                                                                                                                                                                 |
-| repairCost                  | int                                                                                                        | true       | false      | Gets the data in &lt;componenttype:minecraft:repair_cost&gt;                                                                                                                                                                           |
-| stackable                   | boolean                                                                                                    | true       | false      | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are.                                                                                                                 |
-| storedEnchantments          | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments)                                           | true       | false      |                                                                                                                                                                                                                                        |
-| suspiciousStewEffects       | [SuspiciousStewEffects](/vanilla/api/item/component/SuspiciousStewEffects)                                 | true       | false      |                                                                                                                                                                                                                                        |
-| tool                        | [Tool](/vanilla/api/item/component/Tool)                                                                   | true       | false      | Gets the data in &lt;componenttype:minecraft:tool&gt;                                                                                                                                                                                  |
-| trim                        | [ArmorTrim](/vanilla/api/item/armortrim/ArmorTrim)                                                         | true       | false      |                                                                                                                                                                                                                                        |
-| unbreakable                 | [Unbreakable](/vanilla/api/item/component/Unbreakable)                                                     | true       | false      | Gets the data in the &lt;componenttype:minecraft:unbreakable&gt;                                                                                                                                                                       |
-| useOnRelease                | boolean                                                                                                    | true       | false      | Returns true if this stack is considered a crossbow item                                                                                                                                                                               |
-| writableBookContent         | [WritableBookContent](/vanilla/api/item/component/WritableBookContent)                                     | true       | false      |                                                                                                                                                                                                                                        |
-| writtenBookContent          | [WrittenBookContent](/vanilla/api/item/component/WrittenBookContent)                                       | true       | false      |                                                                                                                                                                                                                                        |
+|            Name             |                                                    Type                                                    | Has Getter | Has Setter |                                                                                                                                      Description                                                                                                                                      |
+|-----------------------------|------------------------------------------------------------------------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| amount                      | int                                                                                                        | true       | false      | Gets the amount of Items in the ItemStack                                                                                                                                                                                                                                             |
+| attributeModifiers          | [ItemAttributeModifiers](/vanilla/api/item/component/ItemAttributeModifiers)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:attribute_modifiers&gt;                                                                                                                                                                                                                  |
+| bannerPatterns              | [BannerPatternLayers](/vanilla/api/block/entity/BannerPatternLayers)                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:banner_patterns&gt;                                                                                                                                                                                                                      |
+| baseColor                   | [DyeColor](/vanilla/api/item/component/DyeColor)                                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:base_color&gt;                                                                                                                                                                                                                           |
+| bees                        | stdlib.List&lt;[BeehiveBlockEntityOccupant](/vanilla/api/block/entity/type/BeehiveBlockEntityOccupant)&gt; | true       | false      | Gets the data in &lt;componenttype:minecraft:bees&gt;                                                                                                                                                                                                                                 |
+| blockEntityData             | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:block_entity_data&gt;                                                                                                                                                                                                                    |
+| blockState                  | [BlockItemStateProperties](/vanilla/api/item/component/BlockItemStateProperties)                           | true       | false      | Gets the data in &lt;componenttype:minecraft:block_state&gt;                                                                                                                                                                                                                          |
+| bucketEntityData            | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:bucket_entity_data&gt;                                                                                                                                                                                                                   |
+| bundleContents              | [BundleContents](/vanilla/api/item/component/BundleContents)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:bundle_contents&gt;                                                                                                                                                                                                                      |
+| burnTime                    | void                                                                                                       | false      | true       | Sets the burn time of this ingredient, for use in the furnace and other machines                                                                                                                                                                                                      |
+| canBreak                    | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                                                                                            |
+| canPlaceOn                  | [AdventureModePredicate](/vanilla/api/item/component/AdventureModePredicate)                               | true       | false      | Gets the data in &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                                                                                         |
+| chargedProjectiles          | [ChargedProjectiles](/vanilla/api/item/component/ChargedProjectiles)                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:charged_projectiles&gt;                                                                                                                                                                                                                  |
+| componentsPatch             | [DataComponentPatch](/vanilla/api/component/DataComponentPatch)                                            | true       | false      |                                                                                                                                                                                                                                                                                       |
+| container                   | [ItemContainerContents](/vanilla/api/item/component/ItemContainerContents)                                 | true       | false      | Gets the data in &lt;componenttype:minecraft:container&gt;                                                                                                                                                                                                                            |
+| containerLoot               | [SeededContainerLoot](/vanilla/api/item/component/SeededContainerLoot)                                     | true       | false      | Gets the data in &lt;componenttype:minecraft:container_loot&gt;                                                                                                                                                                                                                       |
+| creativeSlotLock            | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:creative_slot_lock&gt;                                                                                                                                                                                                                   |
+| customData                  | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_data&gt;                                                                                                                                                                                                                      |
+| customModelData             | [CustomModelData](/vanilla/api/item/component/CustomModelData)                                             | true       | false      | Gets the data in &lt;componenttype:minecraft:custom_model_data&gt;                                                                                                                                                                                                                    |
+| customName                  | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_name&gt; <br />  <br />  A custom name is generally displayed in italics and controlled by the user.                                                                                                                          |
+| damage                      | int                                                                                                        | true       | false      | Gets the data in the &lt;componenttype:minecraft:damage&gt;                                                                                                                                                                                                                           |
+| damageableItem              | boolean                                                                                                    | true       | false      | Returns if the ItemStack is damageable <br />  I.E Swords and tools are damageable, sticks are not.                                                                                                                                                                                   |
+| damaged                     | boolean                                                                                                    | true       | false      | Returns if the ItemStack is damaged <br />  I.E a Swords that is no at full durability is damaged.                                                                                                                                                                                    |
+| debugStickState             | [DebugStickState](/vanilla/api/item/component/DebugStickState)                                             | true       | false      | Gets the data in &lt;componenttype:minecraft:debug_stick_state&gt;                                                                                                                                                                                                                    |
+| definition                  | [ItemDefinition](/vanilla/api/item/ItemDefinition)                                                         | true       | false      |                                                                                                                                                                                                                                                                                       |
+| descriptionId               | string                                                                                                     | true       | false      | Returns the unlocalized Name of the Item in the ItemStack                                                                                                                                                                                                                             |
+| displayName                 | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the display name of the ItemStack                                                                                                                                                                                                                                                |
+| dyedColor                   | [DyedItemColor](/vanilla/api/item/component/DyedItemColor)                                                 | true       | false      | Gets the data in &lt;componenttype:minecraft:dye_color&gt;                                                                                                                                                                                                                            |
+| enchantmentGlintOverride    | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:enchantment_glint_override&gt; <br />  <br />  If it is present, it is first checked to determine whether there is special behaviour, otherwise <br />  the code checks for enchantments.                                                |
+| enchantments                | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments)                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:enchantments&gt;                                                                                                                                                                                                                         |
+| entityData                  | [CustomData](/vanilla/api/item/component/CustomData)                                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:entity_data&gt;                                                                                                                                                                                                                          |
+| fireworkExplosion           | [FireworkExplosion](/vanilla/api/item/component/FireworkExplosion)                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:firework_explosion&gt;                                                                                                                                                                                                                   |
+| fireworks                   | [Fireworks](/vanilla/api/item/component/Fireworks)                                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:fireworks&gt;                                                                                                                                                                                                                            |
+| food                        | [FoodProperties](/vanilla/api/food/FoodProperties)                                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:food&gt;                                                                                                                                                                                                                                 |
+| hasAttributeModifiers       | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:attribute_modifiers&gt;                                                                                                                                                                                            |
+| hasBannerPatterns           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:banner_patterns&gt;                                                                                                                                                                                                |
+| hasBaseColor                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:base_color&gt; <br />  <br />  Used for shield colouring.                                                                                                                                                          |
+| hasBees                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:bees&gt;                                                                                                                                                                                                           |
+| hasBlockEntityData          | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:block_entity_data&gt;                                                                                                                                                                                              |
+| hasBlockState               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:block_state&gt;                                                                                                                                                                                                    |
+| hasBucketEntityData         | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:bucket_entity_data&gt;                                                                                                                                                                                             |
+| hasBundleContents           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:bundle_contents&gt;                                                                                                                                                                                                |
+| hasCanBreak                 | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:can_break&gt;                                                                                                                                                                                                      |
+| hasCanPlaceOn               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:can_place_on&gt;                                                                                                                                                                                                   |
+| hasChargedProjectiles       | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:charged_projectiles&gt; <br />  <br />  This component is used for crossbows.                                                                                                                                      |
+| hasContainer                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:container&gt;                                                                                                                                                                                                      |
+| hasContainerLoot            | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:container_loot&gt;                                                                                                                                                                                                 |
+| hasCustomData               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:custom_data&gt;                                                                                                                                                                                                |
+| hasCustomModelData          | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:custom_model_data&gt;                                                                                                                                                                                              |
+| hasCustomName               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:custom_name&gt;                                                                                                                                                                                                |
+| hasDamage                   | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:damage&gt;                                                                                                                                                                                                     |
+| hasDebugStickState          | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:debug_stick_state&gt;                                                                                                                                                                                              |
+| hasDyedColor                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:dyed_color&gt;                                                                                                                                                                                                     |
+| hasEnchantmentGlintOverride | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:enchantment_glint_override&gt;                                                                                                                                                                                     |
+| hasEnchantments             | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:enchantments&gt;                                                                                                                                                                                               |
+| hasEntityData               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:entity_data&gt;                                                                                                                                                                                                    |
+| hasFireworkExplosion        | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:firework_explosion&gt;                                                                                                                                                                                             |
+| hasFireworks                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:fireworks&gt;                                                                                                                                                                                                      |
+| hasFoil                     | boolean                                                                                                    | true       | false      | Returns true if this ItemStack has a foil effect. <br />  <br />  Foil is the glint / effect that is added to enchanted ItemStacks (and other items).                                                                                                                                 |
+| hasFood                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:food&gt;                                                                                                                                                                                                           |
+| hasInstrument               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:instrument&gt;                                                                                                                                                                                                     |
+| hasItemName                 | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:item_namegt;                                                                                                                                                                                                   |
+| hasLock                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:lock&gt;                                                                                                                                                                                                           |
+| hasLodestoneTracker         | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:lodestone_tracker&gt;                                                                                                                                                                                              |
+| hasLore                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:lore&gt;                                                                                                                                                                                                       |
+| hasMapColor                 | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:map_color&gt;                                                                                                                                                                                                      |
+| hasMapDecorations           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:map_decorations&gt; <br />  <br />  MapDecorations are additional elements that render on a map, such as waypoints.                                                                                                |
+| hasMapId                    | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:map_id&gt;                                                                                                                                                                                                         |
+| hasMapPostProcessing        | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:map_post_processing&gt; <br />  <br />  This componenet stores additional info on the map, such as the scale or whether to lock it.                                                                                |
+| hasMaxDamage                | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:max_damage&gt;                                                                                                                                                                                                 |
+| hasMaxStackSize             | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:max_stack_size&gt;                                                                                                                                                                                             |
+| hasNoteBlockSound           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:note_block_sound&gt;                                                                                                                                                                                               |
+| hasOminousBottleAmplifier   | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:ominous_bottle_amplifier&gt;                                                                                                                                                                                       |
+| hasPotDecorations           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:pot_decorations&gt;                                                                                                                                                                                                |
+| hasPotionContents           | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:potion_contents&gt; <br />  <br />  Stores Potion Data on an item.                                                                                                                                                 |
+| hasProfile                  | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:profile&gt;                                                                                                                                                                                                        |
+| hasRarity                   | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:rarity&gt;                                                                                                                                                                                                     |
+| hasRecipes                  | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:recipes&gt; <br />  <br />  Used for Knowledge Books.                                                                                                                                                              |
+| hasRepairCost               | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:repair_cost&gt;                                                                                                                                                                                                    |
+| hasStoredEnchantments       | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:stored_enchantments&gt; <br />  <br />  The stored enchantments component is only present in enchanted books, since it just stores the enchantments <br />  under a lid for future use. The item is not enchanted. |
+| hasSuspiciousStewEffects    | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:suspicious_stew_effects&gt;                                                                                                                                                                                        |
+| hasTool                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:tool&gt;                                                                                                                                                                                                           |
+| hasTrim                     | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:trim&gt;                                                                                                                                                                                                           |
+| hasUnbreakable              | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has the &lt;componenttype:minecraft:unbreakable&gt;                                                                                                                                                                                                |
+| hasWritableBookContent      | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:writable_book_content&gt;                                                                                                                                                                                          |
+| hasWrittenBookContent       | boolean                                                                                                    | true       | false      | Checks whether the ComponentAccess has &lt;componenttype:minecraft:written_book_content&gt;                                                                                                                                                                                           |
+| hideAdditionalTooltip       | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:hide_additional_tooltip&gt;                                                                                                                                                                                                              |
+| hideTooltip                 | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:hide_tooltip&gt;                                                                                                                                                                                                                         |
+| hoverName                   | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the hover name of the ItemStack. <br />  <br />  This will give the raw name without the formatting that 'displayName' applies.                                                                                                                                                  |
+| instrument                  | [Instrument](/vanilla/api/item/component/Instrument)                                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:instrument&gt;                                                                                                                                                                                                                           |
+| isEnchantable               | boolean                                                                                                    | true       | false      | Can this ItemStack be enchanted?                                                                                                                                                                                                                                                      |
+| isFireResistant             | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:fire_resistant&gt;                                                                                                                                                                                                                       |
+| isIntangibleProjectile      | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:intangible_projectile&gt;                                                                                                                                                                                                                |
+| isMutable                   | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                                                                       |
+| itemName                    | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_name&gt; <br />  <br />  In the case of items, an item name is set by the make to make a special instance of an item, such as with <br />  ominous banners.                                                                   |
+| lockComponent               | [LockCode](/vanilla/api/item/component/LockCode)                                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:lock&gt;                                                                                                                                                                                                                                 |
+| lodestoneTracker            | [LodestoneTracker](/vanilla/api/item/component/LodestoneTracker)                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:lodestone_tracker&gt;                                                                                                                                                                                                                    |
+| lore                        | [ItemLore](/vanilla/api/item/component/ItemLore)                                                           | true       | false      | Gets the data in the &lt;componenttype:minecraft:lore&gt;                                                                                                                                                                                                                             |
+| mapColor                    | [MapItemColor](/vanilla/api/item/component/MapItemColor)                                                   | true       | false      | Gets the data in &lt;componenttype:minecraft:map_color&gt;                                                                                                                                                                                                                            |
+| mapDecorations              | [MapDecorations](/vanilla/api/item/component/MapDecorations)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:map_decorations&gt;                                                                                                                                                                                                                      |
+| mapId                       | [MapId](/vanilla/api/item/component/MapId)                                                                 | true       | false      | Gets the data in &lt;componenttype:minecraft:map_id&gt;                                                                                                                                                                                                                               |
+| mapPostProcessing           | [MapPostProcessing](/vanilla/api/item/component/MapPostProcessing)                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:map_post_processing&gt;                                                                                                                                                                                                                  |
+| maxDamage                   | int                                                                                                        | true       | false      | Returns the max damage of the ItemStack <br />  This is the max durability of the ItemStack.                                                                                                                                                                                          |
+| maxStackSize                | int                                                                                                        | true       | false      | Gets the data in the &lt;componenttype:minecraft:max_stack_size&gt;                                                                                                                                                                                                                   |
+| noteBlockSound              | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                                                 | true       | false      | Gets the data in &lt;componenttype:minecraft:note_block_sound&gt;                                                                                                                                                                                                                     |
+| ominousBottleAmplifier      | int                                                                                                        | true       | false      | Gets the data in &lt;componenttype:minecraft:ominous_bottle_amplifier&gt;                                                                                                                                                                                                             |
+| owner                       | string                                                                                                     | true       | false      | Gets owning mod for the Item in this IItemStack                                                                                                                                                                                                                                       |
+| potDecorations              | [PotDecorations](/vanilla/api/item/component/PotDecorations)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:pot_decorations&gt;                                                                                                                                                                                                                      |
+| potionContents              | [PotionContents](/vanilla/api/item/component/PotionContents)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:potion_contents&gt;                                                                                                                                                                                                                      |
+| profile                     | [ResolvableProfile](/vanilla/api/item/component/ResolvableProfile)                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:profile&gt;                                                                                                                                                                                                                              |
+| prototype                   | [DataComponentMap](/vanilla/api/component/DataComponentMap)                                                | true       | false      |                                                                                                                                                                                                                                                                                       |
+| rarity                      | [Rarity](/vanilla/api/item/property/Rarity)                                                                | true       | false      | Gets the data in the &lt;componenttype:minecraft:rarity&gt;                                                                                                                                                                                                                           |
+| recipes                     | stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLocation)&gt;                              | true       | false      | Gets the data in &lt;componenttype:minecraft:recipes&gt;                                                                                                                                                                                                                              |
+| registryName                | [ResourceLocation](/vanilla/api/resource/ResourceLocation)                                                 | true       | false      | Gets the registry name for the Item in this IItemStack                                                                                                                                                                                                                                |
+| repairCost                  | int                                                                                                        | true       | false      | Gets the data in &lt;componenttype:minecraft:repair_cost&gt;                                                                                                                                                                                                                          |
+| stackable                   | boolean                                                                                                    | true       | false      | Returns if the ItemStack can have an amount greater than 1 <br />  I.E Swords and tools are not stackable, sticks are.                                                                                                                                                                |
+| storedEnchantments          | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments)                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:stored_enchantments&gt;                                                                                                                                                                                                                  |
+| suspiciousStewEffects       | [SuspiciousStewEffects](/vanilla/api/item/component/SuspiciousStewEffects)                                 | true       | false      | Gets the data in &lt;componenttype:minecraft:suspicious_stew_effects&gt;                                                                                                                                                                                                              |
+| tool                        | [Tool](/vanilla/api/item/component/Tool)                                                                   | true       | false      | Gets the data in &lt;componenttype:minecraft:tool&gt;                                                                                                                                                                                                                                 |
+| trim                        | [ArmorTrim](/vanilla/api/item/armortrim/ArmorTrim)                                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:trim&gt;                                                                                                                                                                                                                                 |
+| unbreakable                 | [Unbreakable](/vanilla/api/item/component/Unbreakable)                                                     | true       | false      | Gets the data in the &lt;componenttype:minecraft:unbreakable&gt;                                                                                                                                                                                                                      |
+| useOnRelease                | boolean                                                                                                    | true       | false      | Returns true if this stack is considered a crossbow item                                                                                                                                                                                                                              |
+| writableBookContent         | [WritableBookContent](/vanilla/api/item/component/WritableBookContent)                                     | true       | false      | Gets the data in &lt;componenttype:minecraft:writable_book_content&gt;                                                                                                                                                                                                                |
+| writtenBookContent          | [WrittenBookContent](/vanilla/api/item/component/WrittenBookContent)                                       | true       | false      | Gets the data in &lt;componenttype:minecraft:written_book_content&gt;                                                                                                                                                                                                                 |
 
