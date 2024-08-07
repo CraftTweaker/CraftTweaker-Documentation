@@ -132,23 +132,6 @@ IIngredientAny.clearTooltip(leaveName as boolean)
 
 :::
 
-:::group{name=condition}
-
-Use this if you already have the condition from another ingredient
-
-Return Type: [IIngredient](/vanilla/api/ingredient/IIngredient)
-
-```zenscript
-IIngredientAny.condition(condition as IIngredientCondition) as IIngredient
-```
-
-| Parameter |                                      Type                                      |
-|-----------|--------------------------------------------------------------------------------|
-| condition | [IIngredientCondition](/vanilla/api/ingredient/condition/IIngredientCondition) |
-
-
-:::
-
 :::group{name=contains}
 
 Does the ingredient contain the given ingredient?
