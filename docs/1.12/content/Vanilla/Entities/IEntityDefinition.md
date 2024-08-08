@@ -36,8 +36,10 @@ Returns the name as string
 ```
 
 ### create entity
+
 The first method only creates an entity on the given location.  
-The second one also spawns it.
+The second one also spawns it.  
+Both methods return the created [IEntity](/Vanilla/Entities/IEntity/).
 ```zenscript
 <entity:minecraft:sheep>.createEntity(world);
 <entity:minecraft:sheep>.spawnEntity(world, blockPos);
