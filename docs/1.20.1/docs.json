@@ -30,6 +30,7 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
+            "ArmoreableMobs": {},
             "CreateTweaker": {},
             "FarmersDelight" : {},
             "Initialinventory" : {},
