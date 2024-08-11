@@ -110,15 +110,15 @@ _As Shaped and Shaped Mirrored Recipes are similar, examples will only include S
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
-    // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if (inputs[0].displayName == "totally real diamond block") {
+craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>],
+ (usualOut as IItemStack, inputs as IItemStack[]) => {
+    if (inputs[0].displayName.getString(100) == "totally real diamond block") {
         // Returns <item:minecraft:diamond> * 9
         return usualOut;
     }
 
     // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    return <item:minecraft:clay>.withDisplayName("Diamond");
 });
 ```
 
@@ -145,7 +145,7 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
         // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
         for row in inputs {
             for recipeItem in row {
-                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
+                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName.getString(100) == "Diamond") {
                     // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
                     counter++;
                 }
@@ -154,7 +154,7 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
 
         // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
         if (counter == 8) {
-            if (inputs[1][1].displayName == "Special Diamond") {
+            if (inputs[1][1].displayName.getString(100) == "Special Diamond") {
                 // If <item:minecraft:diamond> has a display name of "Special Diamond"
                 // Return 2 <item:minecraft:diamond_block>
                 return usualOut * 2;
@@ -165,7 +165,7 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
         }
 
         // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-        return <item:minecraft:clay>.setDisplayName("Diamond Block");
+        return <item:minecraft:clay>.withDisplayName("Diamond Block");
     });
 ```
 
@@ -181,11 +181,11 @@ Shapeless:
 import crafttweaker.api.item.IItemStack;
 
 var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
+    if(inputs[0].displayName.getString(100) == "totally real diamond block" ){
         return usualOut;
     }
 
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    return <item:minecraft:clay>.withDisplayName("Diamond");
 };
 
 // inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
@@ -205,7 +205,7 @@ var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as
     // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
     for row in inputs {
         for recipeItem in row {
-            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
+            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName.getString(100) == "Diamond") {
                 // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
                 counter++;
             }
@@ -214,7 +214,7 @@ var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as
 
     // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
     if (counter == 8) {
-        if (inputs[1][1].displayName == "Special Diamond") {
+        if (inputs[1][1].displayName.getString(100) == "Special Diamond") {
             // If <item:minecraft:diamond> has a display name of "Special Diamond"
             // Return 2 <item:minecraft:diamond_block>
             return usualOut * 2;
@@ -225,7 +225,7 @@ var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as
     }
 
     // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-    return <item:minecraft:clay>.setDisplayName("Diamond Block");
+    return <item:minecraft:clay>.withDisplayName("Diamond Block");
 };
 
 craftingTable.addShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
