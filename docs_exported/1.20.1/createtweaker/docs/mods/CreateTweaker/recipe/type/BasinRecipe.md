@@ -8,7 +8,7 @@ import mods.createtweaker.BasinRecipe;
 ```
 
 
-## Extending ProcessingRecipe
+## Extending ProcessingRecipe&lt;SmartInventory&gt;
 
-BasinRecipe extends [ProcessingRecipe](/mods/CreateTweaker/recipe/type/ProcessingRecipe). That means all methods available in [ProcessingRecipe](/mods/CreateTweaker/recipe/type/ProcessingRecipe) are also available in BasinRecipe
+BasinRecipe extends [ProcessingRecipe](/mods/CreateTweaker/recipe/type/ProcessingRecipe)&lt;[SmartInventory](/mods/CreateTweaker/SmartInventory)&gt;. That means all methods available in [ProcessingRecipe](/mods/CreateTweaker/recipe/type/ProcessingRecipe)&lt;[SmartInventory](/mods/CreateTweaker/SmartInventory)&gt; are also available in BasinRecipe
 
