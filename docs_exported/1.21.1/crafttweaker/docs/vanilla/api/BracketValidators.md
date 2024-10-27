@@ -70,6 +70,21 @@ BracketValidators.validateComponentType(tokens as string) as boolean
 
 :::
 
+:::group{name=validateDecoratedPotPattern}
+
+Return Type: boolean
+
+```zenscript
+BracketValidators.validateDecoratedPotPattern(tokens as string) as boolean
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| tokens    | string |
+
+
+:::
+
 :::group{name=validateEffectBracket}
 
 Return Type: boolean

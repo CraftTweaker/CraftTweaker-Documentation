@@ -119,6 +119,24 @@ BracketHandlers.getComponentType("minecraft:max_stack_size");
 
 :::
 
+:::group{name=getDecoratedPotPattern}
+
+Gets a decorated pot pattern based on registry name. Throws an exception if it can't find the pattern.
+
+Returns: The found decorated pot pattern.  
+Return Type: [DecoratedPotPattern](/vanilla/api/block/entity/DecoratedPotPattern)
+
+```zenscript
+BracketHandlers.getDecoratedPotPattern(tokens as string) as DecoratedPotPattern
+```
+
+| Parameter |  Type  |                  Description                   |
+|-----------|--------|------------------------------------------------|
+| tokens    | string | The decorated pot pattern's resource location. |
+
+
+:::
+
 :::group{name=getEnchantment}
 
 Gets the enchantment based on registry name. Throws an error if it can't find the enchantment.

@@ -34,11 +34,11 @@ PotDecorations.of(back as ItemDefinition?, left as ItemDefinition?, right as Ite
 
 ## Properties
 
-|  Name   |                        Type                         | Has Getter | Has Setter |
-|---------|-----------------------------------------------------|------------|------------|
-| back    | [ItemDefinition](/vanilla/api/item/ItemDefinition)? | true       | false      |
-| front   | [ItemDefinition](/vanilla/api/item/ItemDefinition)? | true       | false      |
-| left    | [ItemDefinition](/vanilla/api/item/ItemDefinition)? | true       | false      |
-| ordered | stdlib.List&lt;E&gt;?                               | true       | false      |
-| right   | [ItemDefinition](/vanilla/api/item/ItemDefinition)? | true       | false      |
+|  Name   |                                 Type                                  | Has Getter | Has Setter |
+|---------|-----------------------------------------------------------------------|------------|------------|
+| back    | [ItemDefinition](/vanilla/api/item/ItemDefinition)?                   | true       | false      |
+| front   | [ItemDefinition](/vanilla/api/item/ItemDefinition)?                   | true       | false      |
+| left    | [ItemDefinition](/vanilla/api/item/ItemDefinition)?                   | true       | false      |
+| ordered | stdlib.List&lt;[ItemDefinition](/vanilla/api/item/ItemDefinition)&gt; | true       | false      |
+| right   | [ItemDefinition](/vanilla/api/item/ItemDefinition)?                   | true       | false      |
 

@@ -58,6 +58,18 @@ BracketDumpers.getComponentTypes();
 
 :::
 
+:::group{name=getDecoratedPotPatterns}
+
+Return Type: [Collection](/vanilla/api/util/collection/Collection)&lt;string&gt;
+
+```zenscript
+// BracketDumpers.getDecoratedPotPatterns() as Collection<string>
+
+BracketDumpers.getDecoratedPotPatterns();
+```
+
+:::
+
 :::group{name=getEffectDump}
 
 Return Type: [Collection](/vanilla/api/util/collection/Collection)&lt;string&gt;

@@ -298,6 +298,30 @@ myFabricItemStack.getInternal();
 
 :::
 
+:::group{name=getPotPattern}
+
+Return Type: [DecoratedPotPattern](/vanilla/api/block/entity/DecoratedPotPattern)?
+
+```zenscript
+// FabricItemStack.getPotPattern() as DecoratedPotPattern?
+
+myFabricItemStack.getPotPattern();
+```
+
+:::
+
+:::group{name=getPotPatternId}
+
+Return Type: [ResourceKey](/vanilla/api/resource/ResourceKey)&lt;T&gt;?
+
+```zenscript
+// FabricItemStack.getPotPatternId() as ResourceKey<T>?
+
+myFabricItemStack.getPotPatternId();
+```
+
+:::
+
 :::group{name=getRemainingItem}
 
 When this ingredient stack is crafted, what will remain in the grid?
@@ -3439,6 +3463,8 @@ myFabricItemStack | other as IIngredient
 | ominousBottleAmplifier      | int                                                                                                        | true       | false      | Gets the data in &lt;componenttype:minecraft:ominous_bottle_amplifier&gt;                                                                                                                                                                                                             |
 | owner                       | string                                                                                                     | true       | false      | Gets owning mod for the Item in this IItemStack                                                                                                                                                                                                                                       |
 | potDecorations              | [PotDecorations](/vanilla/api/item/component/PotDecorations)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:pot_decorations&gt;                                                                                                                                                                                                                      |
+| potPattern                  | [DecoratedPotPattern](/vanilla/api/block/entity/DecoratedPotPattern)?                                      | true       | false      |                                                                                                                                                                                                                                                                                       |
+| potPatternId                | [ResourceKey](/vanilla/api/resource/ResourceKey)&lt;T&gt;?                                                 | true       | false      |                                                                                                                                                                                                                                                                                       |
 | potionContents              | [PotionContents](/vanilla/api/item/component/PotionContents)                                               | true       | false      | Gets the data in &lt;componenttype:minecraft:potion_contents&gt;                                                                                                                                                                                                                      |
 | profile                     | [ResolvableProfile](/vanilla/api/item/component/ResolvableProfile)                                         | true       | false      | Gets the data in &lt;componenttype:minecraft:profile&gt;                                                                                                                                                                                                                              |
 | prototype                   | [DataComponentMap](/vanilla/api/component/DataComponentMap)                                                | true       | false      |                                                                                                                                                                                                                                                                                       |
