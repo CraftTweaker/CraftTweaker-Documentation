@@ -8,6 +8,23 @@ import crafttweaker.api.item.component.ItemEnchantmentsMutable;
 ```
 
 
+## Static Methods
+
+:::group{name=of}
+
+Return Type: [ItemEnchantmentsMutable](/vanilla/api/item/component/ItemEnchantmentsMutable)
+
+```zenscript
+ItemEnchantmentsMutable.of(enchantments as ItemEnchantments) as ItemEnchantmentsMutable
+```
+
+|  Parameter   |                               Type                               | Optional |
+|--------------|------------------------------------------------------------------|----------|
+| enchantments | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments) | true     |
+
+
+:::
+
 ## Methods
 
 :::group{name=getLevel}
@@ -21,21 +38,6 @@ ItemEnchantmentsMutable.getLevel(enchantment as Enchantment) as int
 |  Parameter  |                           Type                           |
 |-------------|----------------------------------------------------------|
 | enchantment | [Enchantment](/vanilla/api/item/enchantment/Enchantment) |
-
-
-:::
-
-:::group{name=of}
-
-Return Type: [ItemEnchantmentsMutable](/vanilla/api/item/component/ItemEnchantmentsMutable)
-
-```zenscript
-ItemEnchantmentsMutable.of(enchantments as ItemEnchantments) as ItemEnchantmentsMutable
-```
-
-|  Parameter   |                               Type                               | Optional |
-|--------------|------------------------------------------------------------------|----------|
-| enchantments | [ItemEnchantments](/vanilla/api/item/component/ItemEnchantments) | true     |
 
 
 :::
