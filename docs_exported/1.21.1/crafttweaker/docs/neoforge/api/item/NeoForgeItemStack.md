@@ -36,27 +36,21 @@ NeoForgeItemStack implements the following interfaces. That means all methods de
 
 :::group{name=addGlobalAttributeModifier}
 
-Adds an AttributeModifier to this IIngredient using a specific UUID.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
 
- The id can be used to override an existing attribute on an ItemStack with this new modifier.
- You can use `/ct hand attributes` to get the id of the attributes on an ItemStack.
-
- Attributes added with this method appear on all ItemStacks that match this IIngredient,
- regardless of how or when the ItemStack was made, if you want to have the attribute on a
- single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
- IItemStack#withAttributeModifier
+ Please use Item Components instead.
 
 ```zenscript
 NeoForgeItemStack.addGlobalAttributeModifier(attribute as Attribute, id as ResourceLocation, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                                  Type                                  |              Description              |
-|-----------|------------------------------------------------------------------------|---------------------------------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.        |
-| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation)             | The id of the attribute modifier.     |
-| value     | double                                                                 | The value of the modifier.            |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.        |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |
+|-----------|------------------------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   |
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation)             |
+| value     | double                                                                 |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         |
 
 
 :::
@@ -557,62 +551,54 @@ NeoForgeItemStack.remove<T : Object>(type as DataComponentType<T>) as IItemStack
 
 :::group{name=removeGlobalAttribute}
 
-Removes all AttributeModifiers that use the given Attribute from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
 
- Attributes removed with this method are removed from ItemStacks that match this IIngredient,
- regardless of how or when the ItemStack was made, if you want to remove the attribute on a
- single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
- IItemStack#withoutAttribute.
-
- This method can only remove default Attributes from an ItemStack, it is still possible that
- an ItemStack can override it.
+ Please use Item Components instead.
 
 ```zenscript
-// NeoForgeItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
-
-myNeoForgeItemStack.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
+NeoForgeItemStack.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |            Description            |
-|-----------|----------------------------------------------------------------|-----------------------------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           | The attribute to remove.          |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
 
 :::group{name=removeGlobalAttributeModifier}
 
-Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
+
+ Please use Item Components instead.
 
 ```zenscript
-// NeoForgeItemStack.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
-
-myNeoForgeItemStack.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
+NeoForgeItemStack.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |                    Description                    |
-|-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | stdlib.UUID                                                    | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| uuid      | stdlib.UUID                                                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
 
 :::group{name=removeGlobalAttributeModifier}
 
-Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
+
+ Please use Item Components instead.
 
 ```zenscript
-// NeoForgeItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
-
-myNeoForgeItemStack.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
+NeoForgeItemStack.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |                    Description                    |
-|-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| uuid      | string                                                         |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
@@ -1805,6 +1791,21 @@ NeoForgeItemStack.withLodestoneTracker(tracker as LodestoneTracker) as T
 | Parameter |                               Type                               |
 |-----------|------------------------------------------------------------------|
 | tracker   | [LodestoneTracker](/vanilla/api/item/component/LodestoneTracker) |
+
+
+:::
+
+:::group{name=withLore}
+
+Return Type: T
+
+```zenscript
+NeoForgeItemStack.withLore(components as Component) as T
+```
+
+| Parameter  |                   Type                   |
+|------------|------------------------------------------|
+| components | [Component](/vanilla/api/text/Component) |
 
 
 :::
@@ -3479,7 +3480,7 @@ myNeoForgeItemStack | other as IIngredient
 | isImmutable                 | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                                                                       |
 | isIntangibleProjectile      | boolean                                                                                                    | true       | false      | Gets the data in &lt;componenttype:minecraft:intangible_projectile&gt;                                                                                                                                                                                                                |
 | isMutable                   | boolean                                                                                                    | true       | false      |                                                                                                                                                                                                                                                                                       |
-| itemName                    | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:custom_name&gt; <br />  <br />  In the case of items, an item name is set by the make to make a special instance of an item, such as with <br />  ominous banners.                                                                   |
+| itemName                    | [Component](/vanilla/api/text/Component)                                                                   | true       | false      | Gets the data in the &lt;componenttype:minecraft:item_name&gt; <br />  <br />  In the case of items, an item name is set by the make to make a special instance of an item, such as with <br />  ominous banners.                                                                     |
 | items                       | [IItemStack](/vanilla/api/item/IItemStack)[]                                                               | true       | false      |                                                                                                                                                                                                                                                                                       |
 | lockComponent               | [LockCode](/vanilla/api/item/component/LockCode)                                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:lock&gt;                                                                                                                                                                                                                                 |
 | lodestoneTracker            | [LodestoneTracker](/vanilla/api/item/component/LodestoneTracker)                                           | true       | false      | Gets the data in &lt;componenttype:minecraft:lodestone_tracker&gt;                                                                                                                                                                                                                    |

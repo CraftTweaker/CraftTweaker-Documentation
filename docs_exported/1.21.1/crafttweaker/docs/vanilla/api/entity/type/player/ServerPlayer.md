@@ -53,7 +53,8 @@ myServerPlayer.updatePersistentData({custom: "data"});
 
 ## Properties
 
-|      Name      |                 Type                 | Has Getter | Has Setter |                                             Description                                              |
-|----------------|--------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------|
-| persistentData | [MapData](/vanilla/api/data/MapData) | true       | false      | Gets the persistent NBT data for this player. <br />  <br />  Persistent data is kept through deaths |
+|      Name      |                               Type                                | Has Getter | Has Setter |                                             Description                                              |
+|----------------|-------------------------------------------------------------------|------------|------------|------------------------------------------------------------------------------------------------------|
+| advancements   | [PlayerAdvancements](/vanilla/api/advancement/PlayerAdvancements) | true       | false      | Gets the [PlayerAdvancements](/vanilla/api/advancement/PlayerAdvancements) for this player.          |
+| persistentData | [MapData](/vanilla/api/data/MapData)                              | true       | false      | Gets the persistent NBT data for this player. <br />  <br />  Persistent data is kept through deaths |
 

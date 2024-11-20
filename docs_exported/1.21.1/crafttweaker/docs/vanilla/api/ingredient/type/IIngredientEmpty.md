@@ -39,27 +39,21 @@ IIngredientEmpty.getInstance();
 
 :::group{name=addGlobalAttributeModifier}
 
-Adds an AttributeModifier to this IIngredient using a specific UUID.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
 
- The id can be used to override an existing attribute on an ItemStack with this new modifier.
- You can use `/ct hand attributes` to get the id of the attributes on an ItemStack.
-
- Attributes added with this method appear on all ItemStacks that match this IIngredient,
- regardless of how or when the ItemStack was made, if you want to have the attribute on a
- single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
- IItemStack#withAttributeModifier
+ Please use Item Components instead.
 
 ```zenscript
 IIngredientEmpty.addGlobalAttributeModifier(attribute as Attribute, id as ResourceLocation, value as double, operation as AttributeOperation, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                                  Type                                  |              Description              |
-|-----------|------------------------------------------------------------------------|---------------------------------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   | The Attribute of the modifier.        |
-| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation)             | The id of the attribute modifier.     |
-| value     | double                                                                 | The value of the modifier.            |
-| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) | The operation of the modifier.        |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         | What slots the modifier is valid for. |
+| Parameter |                                  Type                                  |
+|-----------|------------------------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)                   |
+| id        | [ResourceLocation](/vanilla/api/resource/ResourceLocation)             |
+| value     | double                                                                 |
+| operation | [AttributeOperation](/vanilla/api/entity/attribute/AttributeOperation) |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[]         |
 
 
 :::
@@ -274,62 +268,54 @@ IIngredientEmpty.onlyIf(uid as string, function as Predicate<IItemStack>) as IIn
 
 :::group{name=removeGlobalAttribute}
 
-Removes all AttributeModifiers that use the given Attribute from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
 
- Attributes removed with this method are removed from ItemStacks that match this IIngredient,
- regardless of how or when the ItemStack was made, if you want to remove the attribute on a
- single specific ItemStack (such as a specific Diamond Sword made in a recipe), then you should use
- IItemStack#withoutAttribute.
-
- This method can only remove default Attributes from an ItemStack, it is still possible that
- an ItemStack can override it.
+ Please use Item Components instead.
 
 ```zenscript
-// IIngredientEmpty.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
-
-myIIngredientEmpty.removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:chest>]);
+IIngredientEmpty.removeGlobalAttribute(attribute as Attribute, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |            Description            |
-|-----------|----------------------------------------------------------------|-----------------------------------|
-| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           | The attribute to remove.          |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from. |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| attribute | [Attribute](/vanilla/api/entity/attribute/Attribute)           |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
 
 :::group{name=removeGlobalAttributeModifier}
 
-Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
+
+ Please use Item Components instead.
 
 ```zenscript
-// IIngredientEmpty.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
-
-myIIngredientEmpty.removeGlobalAttributeModifier(IItemStack.BASE_ATTACK_DAMAGE_UUID, [<constant:minecraft:equipmentslot:chest>]);
+IIngredientEmpty.removeGlobalAttributeModifier(uuid as stdlib.UUID, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |                    Description                    |
-|-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | stdlib.UUID                                                    | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| uuid      | stdlib.UUID                                                    |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
 
 :::group{name=removeGlobalAttributeModifier}
 
-Removes all AttributeModifiers who's ID is the same as the given uuid from this IIngredient.
+This method no longer works and is deprecated, it is left in so it doesn't cause breaking changes.
+
+ Please use Item Components instead.
 
 ```zenscript
-// IIngredientEmpty.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
-
-myIIngredientEmpty.removeGlobalAttributeModifier("8c1b5535-9f79-448b-87ae-52d81480aaa3", [<constant:minecraft:equipmentslot:chest>]);
+IIngredientEmpty.removeGlobalAttributeModifier(uuid as string, slotTypes as EquipmentSlot[])
 ```
 
-| Parameter |                              Type                              |                    Description                    |
-|-----------|----------------------------------------------------------------|---------------------------------------------------|
-| uuid      | string                                                         | The unique id of the AttributeModifier to remove. |
-| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] | The slot types to remove it from.                 |
+| Parameter |                              Type                              |
+|-----------|----------------------------------------------------------------|
+| uuid      | string                                                         |
+| slotTypes | [EquipmentSlot](/vanilla/api/entity/equipment/EquipmentSlot)[] |
 
 
 :::
