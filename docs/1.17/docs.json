@@ -39,7 +39,6 @@
       "Conditional Code": "zencode/ConditionalCode.md",
       "Preprocessors": {
         "Preprocessors": "zencode/Preprocessors/Preprocessors.md",
-        "Loader Preprocessor": "zencode/Preprocessors/LoaderPreprocessor.md",
         "Priority Preprocessor": "zencode/Preprocessors/PriorityPreprocessor.md"
       }
     }
