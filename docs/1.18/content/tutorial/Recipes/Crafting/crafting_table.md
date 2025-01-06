@@ -81,15 +81,6 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", MirrorAxis.DIAGONAL, 
 ]);
 ```
 
-:::question[What is a valid mirroring recipe of the above example?]
-
-::answer[[!image](/tutorial/Recipes/Crafting/assets/image1.png)]{correct=false id=1}
-::answer[[!image2](/tutorial/Recipes/Crafting/assets/image2.png)]{correct=true id=2}
-::answer[[!image3](/tutorial/Recipes/Crafting/assets/image3.png)]{correct=false id=3}
-
-
-:::
-
 _See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
 ## Using Recipe Functions

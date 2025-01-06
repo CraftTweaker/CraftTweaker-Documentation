@@ -23,27 +23,6 @@ To show that a mod is required for certain pages, we use the following syntax:
 When rendered on the actual site, this turns into:
 ![required mods](.github/requiredMod.png)
 
-
-### Questions
-
-For a more immersive "follow along" type tutorial, you can use the following syntax:
-
-```
-:::question[What is the output of /ct hand when holding Stone?]
-
-::answer[<item:minecraft:cobblestone>]{correct=false id=1}
-::answer[<item:minecraft:stone>]{correct=true id=2}
-::answer[<block:minecraft:stone>]{correct=false id=3}
-:::
-```
-
-`correct` defines if the answer is the correct answer to the question.
-
-`id` is used to track answers as they are randomized on each render.
-
-When rendered on the actual site, this turns into:
-![questions](.github/question.png)
-
 ### Groups
 
 To group a section of a page together, allowing for it to be collapsed, you can use the following syntax:
