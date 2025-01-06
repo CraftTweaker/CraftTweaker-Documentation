@@ -290,7 +290,7 @@ floatingLongOne == floatingLongTwo
 
 :::
 
-:::group{COMPARE}
+:::group{name=COMPARE}
 
 Compares this [FloatingLong](/mods/Mekanism/api/FloatingLong) to the
 given [FloatingLong](/mods/Mekanism/api/FloatingLong).
