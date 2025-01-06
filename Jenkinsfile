@@ -27,9 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying files to folder'
-                dir('site') {
-                    sh "cp -r dist/* /opt/crafttweaker_docs/"
-                }
+                sh "cp -r dist/* /opt/crafttweaker_docs/"
             }
         }
     }
