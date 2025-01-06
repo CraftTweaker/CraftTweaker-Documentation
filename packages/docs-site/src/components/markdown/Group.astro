@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon/components";
+export interface Props {
+    name: string | null | undefined;
+    id?: string;
+    titleIsCode?: boolean;
+    nestedLevel?: number;
+    open?: boolean;
+    containerClass?: string;
+    searchable?: boolean;
+}
+
+const {
+    name,
+    id,
+    titleIsCode = false,
+    nestedLevel = 0,
+    open = true,
+    containerClass,
+    searchable = false,
+} = Astro.props;
+
+const MaybeLink = id ? "a" : "div";
+const openValue = open ? "true" : "false";
+---
+
+{
+    !name && (
+        <div class="my-2 border-2 border-red-500 bg-red-500 bg-opacity-25 p-4">
+            <p>'name' property missing from 'group'!</p>
+        </div>
+    )
+}
+
+{
+    name && (
+        <collapsable-group
+            data-open={openValue}
+            id={id ?? null}
+            class:list={[
+                "doc-group",
+                {
+                    "nested": nestedLevel === 1,
+                },
+            ]}
+            data-searchable={searchable ? "true" : undefined}
+        >
+            <div class="header">
+                <MaybeLink
+                    href={id ? `#${id}` : null}
+                    class:list={["title", {"group": id}]}
+                    aria-label={id ? `Link to ${id}` : null}
+                >
+                    <span class:list={["my-auto", { "font-mono text-sm": titleIsCode }]}>{name}</span>
+
+                    {id && (
+                        <>
+                            <Icon name="link" class={`link-icon group-hover:block`} aria-hidden="true" />
+                        </>
+                    )}
+                </MaybeLink>
+                <button class="toggle" data-control="true" aria-label="Toggle group" />
+            </div>
+            <div class="collapsable-wrapper px-2 py-2">
+                <div class:list={["collapsing-content overflow-hidden", containerClass]}>
+                    <slot>Content would go here, but we don't have any :(</slot>
+                </div>
+            </div>
+        </collapsable-group>
+    )
+}

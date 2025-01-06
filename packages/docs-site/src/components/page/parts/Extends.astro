@@ -1,0 +1,34 @@
+---
+import type { BaseTypePage, BuildContext, TypeModel } from "docs-model";
+import InlineCode from "../../markdown/InlineCode.astro";
+import Heading from "../Heading.astro";
+import Type from "../components/types/Type.astro";
+interface Props {
+    slug: string;
+    type: TypeModel;
+    context: BuildContext<BaseTypePage>;
+}
+const { slug, type, context } = Astro.props;
+let super_type = undefined;
+if (type.isJava() && type.superType && !type.superType.isObject()) {
+    super_type = type.superType;
+}
+---
+
+{
+    super_type && (
+        <>
+            <Heading depth={3} slug={slug}>
+                Extends
+            </Heading>
+            <p>
+                <Type type={type} context={context} location="extends" allow_overrides={false}/>
+                <span> extends </span>
+                <InlineCode>
+                    <Type type={super_type} context={{ ...context, typeLinks: true }} location="extends" allow_overrides={false} />
+                </InlineCode>
+                <span>.</span>
+            </p>
+        </>
+    )
+}

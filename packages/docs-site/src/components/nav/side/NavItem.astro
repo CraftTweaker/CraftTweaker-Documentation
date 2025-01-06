@@ -1,0 +1,26 @@
+---
+interface Props {
+    name: string;
+    version: string;
+    depth: number;
+    path: string;
+}
+const { version, slug } = Astro.params;
+const { name, depth, path } = Astro.props;
+const pagePath = path.replace(/\.(md|json)/, "");
+
+const isCurrent = slug === pagePath || (slug === "" && pagePath === "index");
+---
+
+<a
+    href=`/${version}/en/${pagePath}`
+    class:list={[
+        "nav-element-item block",
+        {
+            "nav-element-item-selected": isCurrent,
+        },
+    ]}
+    style=`padding-left: ${(depth === 1 ? 0.5 : 1) + depth}ch`
+>
+    {name}
+</a>

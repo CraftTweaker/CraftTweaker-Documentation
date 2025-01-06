@@ -1,0 +1,18 @@
+---
+import { Code } from "astro-expressive-code/components";
+import Heading from "../Heading.astro";
+
+interface Props {
+    slug: string;
+    zen_code_name: string;
+    display_name: string;
+}
+const { slug, zen_code_name, display_name } = Astro.props;
+const listenExample = `events.register<${zen_code_name}>(event => {
+    println("${display_name} ran!");
+});`;
+---
+
+<Heading depth={2} slug={slug}>Listening to the event</Heading>
+<p>This event can be listened to like so:</p>
+<Code code={listenExample} lang="zenscript" title="script.zs" />

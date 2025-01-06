@@ -1,0 +1,20 @@
+---
+import type { Extra } from "docs-model";
+import Heading from "../Heading.astro";
+interface Props {
+    extra?: Extra;
+    slug: string;
+}
+const { extra, slug } = Astro.props;
+---
+
+{
+    extra && extra.eventParent && (
+        <>
+            <Heading depth={2} slug={slug}>
+                Event Parent
+            </Heading>
+            <p>This type is the parent of an event and cannot be listened to directly, instead listen to the children of this type.</p>
+        </>
+    )
+}

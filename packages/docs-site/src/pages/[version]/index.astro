@@ -1,0 +1,15 @@
+---
+import type { GetStaticPathsResult } from "astro";
+import { getFlatVersions } from "docs-model";
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+    return getFlatVersions().map((version) => {
+        return {
+            params: {
+                version,
+            },
+        };
+    });
+}
+return Astro.rewrite(`/${Astro.params.version}/en`);
+---

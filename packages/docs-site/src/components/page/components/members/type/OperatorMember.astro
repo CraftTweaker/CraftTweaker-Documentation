@@ -1,0 +1,141 @@
+---
+import { Code } from "astro-expressive-code/components";
+import {
+    type BaseTypePage,
+    type BuildContext,
+    type OperatorMemberModel,
+    OperatorTypeModel,
+    capitalizeFirst,
+} from "docs-model";
+import Group from "../../../../markdown/Group.astro";
+import Comment from "../../comments/Comment.astro";
+import Parameters from "../../parameters/Parameters.astro";
+import ReturnType from "../Returns.astro";
+interface Props {
+    member: OperatorMemberModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member, context } = Astro.props;
+const { comment, returnType, parameters } = member;
+const { page } = context;
+const thisExamples = member.isStatic
+    ? [page.displayName]
+    : page.getThisExamples();
+
+let code = "";
+
+function binary(left: string, operator: string, right: string) {
+    return `${left} ${operator} ${right}`;
+}
+
+function renderOperator(owner: string, params: string[]): string {
+    const operator_type = member.operator;
+    switch (operator_type) {
+        case OperatorTypeModel.NOT:
+            return `!${owner}`;
+        case OperatorTypeModel.NEG:
+            return `-${owner}`;
+        case OperatorTypeModel.CAT:
+            if (params.length === 0) {
+                return `~${owner}`;
+            }
+            return binary(owner, "~", params[0]);
+        case OperatorTypeModel.ADD:
+            return binary(owner, "+", params[0]);
+        case OperatorTypeModel.SUB:
+            return binary(owner, "-", params[0]);
+        case OperatorTypeModel.MUL:
+            return binary(owner, "*", params[0]);
+        case OperatorTypeModel.DIV:
+            return binary(owner, "/", params[0]);
+        case OperatorTypeModel.MOD:
+            return binary(owner, "%", params[0]);
+        case OperatorTypeModel.AND:
+            return binary(owner, "&", params[0]);
+        case OperatorTypeModel.OR:
+            return binary(owner, "|", params[0]);
+        case OperatorTypeModel.XOR:
+            return binary(owner, "^", params[0]);
+        case OperatorTypeModel.SHL:
+            return binary(owner, "<<", params[0]);
+        case OperatorTypeModel.SHR:
+            return binary(owner, ">>", params[0]);
+        case OperatorTypeModel.USHR:
+            return binary(owner, ">>>", params[0]);
+        case OperatorTypeModel.CONTAINS:
+            return binary(params[0], "in", owner);
+        case OperatorTypeModel.EQUALS:
+            return binary(owner, "==", params[0]);
+        case OperatorTypeModel.NOTEQUALS:
+            return binary(owner, "!=", params[0]);
+        case OperatorTypeModel.INDEXSET:
+            return `${owner}[${params
+                .slice(0, params.length - 1)
+                .map((value) => value)
+                .join(", ")}] = ${params[params.length - 1]}`;
+        case OperatorTypeModel.INDEXGET:
+            return `${owner}[${params.map((value) => value).join(", ")}]`;
+        case OperatorTypeModel.MEMBERGETTER:
+            return `${owner}.${params[0]}`;
+        case OperatorTypeModel.MEMBERSETTER:
+            return `${owner}.${params[0]} = ${params[1]}`;
+        case OperatorTypeModel.ADDASSIGN:
+            return binary(owner, "+=", params[0]);
+        case OperatorTypeModel.SUBASSIGN:
+            return binary(owner, "-=", params[0]);
+        case OperatorTypeModel.MULASSIGN:
+            return binary(owner, "*=", params[0]);
+        case OperatorTypeModel.DIVASSIGN:
+            return binary(owner, "/=", params[0]);
+        case OperatorTypeModel.MODASSIGN:
+            return binary(owner, "%=", params[0]);
+        case OperatorTypeModel.CATASSIGN:
+            return binary(owner, "~=", params[0]);
+        case OperatorTypeModel.ORASSIGN:
+            return binary(owner, "|=", params[0]);
+        case OperatorTypeModel.ANDASSIGN:
+            return binary(owner, "&=", params[0]);
+        case OperatorTypeModel.XORASSIGN:
+            return binary(owner, "^=", params[0]);
+        case OperatorTypeModel.SHLASSIGN:
+            return binary(owner, "<<=", params[0]);
+        case OperatorTypeModel.SHRASSIGN:
+            return binary(owner, ">>=", params[0]);
+        case OperatorTypeModel.USHRASSIGN:
+            return binary(owner, ">>>=", params[0]);
+        case OperatorTypeModel.COMPARE:
+            return binary(owner, "compare", params[0]);
+        default:
+            return `Unknown Operator ${member.operator}`;
+    }
+}
+
+const title = member.renderAsTitle(context);
+
+for (const thisEx of thisExamples) {
+    const paramExamples = (parameters ?? []).map((param) =>
+        param.type.getExampleFor(
+            context,
+            param.key,
+            `my${capitalizeFirst(param.type.displayName)}`,
+        ),
+    );
+    code += renderOperator(
+        thisEx,
+        paramExamples.flatMap((value) => value[0]),
+    );
+}
+
+const exampleComment = {
+    type: page.type,
+    member: member,
+};
+---
+
+<Group name={title} titleIsCode={true} nestedLevel={1}>
+    {comment && <Comment comment={comment} context={context} />}
+    <Code code={code} lang="zenscript" wrap={false} frame="code" title="script.zs" exampleComment={exampleComment} context={context} />
+    <Parameters parameters={parameters} context={context} member={member} />
+    <ReturnType return_type={returnType} context={context} />
+</Group>

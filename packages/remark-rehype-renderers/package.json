@@ -1,0 +1,27 @@
+{
+    "name": "remark-rehype-renderers",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "dependencies": {
+        "mdast-util-directive": "^3.0.0",
+        "unified": "^11.0.5",
+        "unist-util-visit": "^5.0.0",
+        "mdast-util-to-hast": "^13.2.0",
+        "@types/hast": "^3.0.4",
+        "@types/mdast": "^4.0.4",
+        "github-slugger": "2.0.0"
+    }
+}

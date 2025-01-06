@@ -1,0 +1,32 @@
+---
+import { Code } from "astro-expressive-code/components";
+import type { BaseTypePage, BuildContext, FieldMemberModel } from "docs-model";
+import Group from "../../../../markdown/Group.astro";
+import Comment from "../../comments/Comment.astro";
+import ReturnType from "../Returns.astro";
+interface Props {
+    member: FieldMemberModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member, context } = Astro.props;
+const { page } = context;
+const { comment, key, type } = member;
+const thisExamples = member.isStatic
+    ? [page.displayName]
+    : page.getThisExamples();
+
+const code = thisExamples.map((example) => `${example}.${key}`).join("\n");
+
+const exampleComment = {
+    type: page.type,
+    member: member,
+};
+---
+
+<Group name="Field" titleIsCode={true} nestedLevel={1}>
+    {comment && <Comment comment={comment} context={context} />}
+
+    <Code frame="code" title="script.zs" wrap={false} code={code} lang="zenscript" exampleComment={exampleComment} context={context} />
+    <ReturnType return_type={type} context={context} />
+</Group>

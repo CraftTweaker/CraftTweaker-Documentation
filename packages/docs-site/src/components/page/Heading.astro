@@ -1,0 +1,20 @@
+---
+import { Icon } from "astro-icon/components";
+interface Props {
+    depth: number;
+    slug: string;
+}
+
+const { depth, slug } = Astro.props;
+const Element = `h${depth}`;
+---
+
+<Element class:list={["group flex", { "justify-center": depth === 1 }]}  id={slug}>
+    <a href=`#${slug}` class="header" aria-label=`Link to ${slug}`>
+        <span class="scroll-mt-20 break-all"><slot /></span>
+
+        <div class="header-link" aria-hidden="true">
+            <Icon name="link" class="my-auto h-5 w-5" />
+        </div>
+    </a>
+</Element>

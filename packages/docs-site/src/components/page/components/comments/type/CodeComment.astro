@@ -1,0 +1,14 @@
+---
+import type { BuildContext, CodeCommentModel, PageModel } from "docs-model";
+import InlineCode from "../../../../markdown/InlineCode.astro";
+import Comments from "../Comments.astro";
+interface Props {
+    comment: CodeCommentModel;
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+
+const { comment, context } = Astro.props;
+---
+
+<InlineCode><Comments context={context} comments={comment.content} flatten={true} /></InlineCode>

@@ -1,0 +1,27 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@util/*": ["src/util/*"],
+      "docs-model": ["../docs-model/src"],
+      "docs-search": ["../docs-search/src"],
+      "ec-copy-in-frame": ["../ec-copy-in-frame/src"],
+      "ec-default-frame-title": ["../ec-default-frame-title/src"],
+      "ec-example-comment": ["../ec-example-comment/src"],
+      "ec-language-override": ["../ec-language-override/src"],
+      "ec-rainbow-brackets": ["../ec-rainbow-brackets/src"],
+      "remark-rehype-renderers": [
+        "../remark-rehype-renderers/src"
+      ],
+      "remark-table": ["../remark-table/src"]
+    },
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "./src/docs"]
+}

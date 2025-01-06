@@ -1,0 +1,9 @@
+---
+interface Props {
+    class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<code class:list={["inline-code", className]}><slot/></code>

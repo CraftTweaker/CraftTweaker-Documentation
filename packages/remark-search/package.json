@@ -1,0 +1,27 @@
+{
+    "name": "remark-search",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "dependencies": {
+        "@types/unist": "^3.0.3",
+        "@types/mdast": "^4.0.4",
+        "mdast-util-directive": "^3.0.0",
+        "unified": "^11.0.5",
+        "unist-util-visit": "^5.0.0",
+        "docs-model": "workspace:*",
+        "github-slugger": "2.0.0"
+    }
+}

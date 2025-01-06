@@ -1,0 +1,32 @@
+{
+    "name": "docs-build",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/types.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build-docs": "pnpm build && node --env-file=../../.env dist/index.js",
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "dependencies": {
+        "@types/fs-extra": "11.0.4",
+        "github-slugger": "^2.0.0",
+        "deepmerge": "^4.2.2",
+        "fs-extra": "11.2.0",
+        "unist-util-visit": "^5.0.0",
+        "docs-model": "workspace:*",
+        "docs-search": "workspace:*",
+        "remark-directive": "^3.0.0",
+        "remark-inject-url-version": "workspace:1.0.0",
+        "remark-table": "workspace:1.0.0",
+        "remark": "^15.0.1"
+    }
+}

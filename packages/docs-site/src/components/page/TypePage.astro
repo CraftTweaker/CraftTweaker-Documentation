@@ -1,0 +1,33 @@
+---
+import type { BuildContext, TypePageModel } from "docs-model";
+import GithubSlugger from "github-slugger";
+import Heading from "./Heading.astro";
+import Constructors from "./parts/Constructors.astro";
+import Description from "./parts/Description.astro";
+import EventParent from "./parts/EventParent.astro";
+import Extends from "./parts/Extends.astro";
+import Implements from "./parts/Implements.astro";
+import Importing from "./parts/Importing.astro";
+import Loaders from "./parts/Loaders.astro";
+import Members from "./parts/Members.astro";
+import Operators from "./parts/Operators.astro";
+interface Props {
+    context: BuildContext<TypePageModel>;
+}
+
+const slugger = new GithubSlugger();
+const slug = (id: string): string => slugger.slug(id);
+const { context } = Astro.props;
+const { displayName, zenCodeName, extra, comment, type } = context.page;
+---
+
+<Heading depth={1} slug={slug(displayName)}> {displayName}</Heading>
+<Importing slug={slug("Importing the class")} zen_code_name={zenCodeName} />
+<Description slug={slug("Description")} context={context} comments={comment} />
+<Loaders slug={slug("Loaders")} extra={extra} />
+<Extends slug={slug("Extends")} type={type} context={context} />
+<Implements slug={slug("Implements")} type={type} context={context} />
+<EventParent slug={slug("Event Parent")} extra={extra} />
+<Constructors slug={slug("Constructors")}  context={context} />
+<Operators slug={slug("Operators")} context={context} />
+<Members slug={slug("Members")} context={context} />

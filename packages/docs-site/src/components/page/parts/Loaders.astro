@@ -1,0 +1,37 @@
+---
+import type { Extra } from "docs-model";
+import InlineCode from "../../markdown/InlineCode.astro";
+import Heading from "../Heading.astro";
+
+interface Props {
+    extra: Extra;
+    slug: string;
+}
+const { extra, slug } = Astro.props;
+const nonDefaultLoader =
+    extra.loaders &&
+    !(
+        extra.loaders.value.length === 1 &&
+        extra.loaders.value[0] === "crafttweaker"
+    );
+---
+
+{
+    nonDefaultLoader && (
+        <>
+            <Heading depth={2} slug={slug}>
+                Loaders
+            </Heading>
+            <p>This type is available in the following loaders:</p>
+            <ul class="flex flex-col">
+                {extra.loaders.value
+                    .map((value) => (value === "*" ? "all loaders" : value))
+                    .map((value) => (
+                        <li>
+                            <InlineCode>{value}</InlineCode>
+                        </li>
+                    ))}
+            </ul>
+        </>
+    )
+}

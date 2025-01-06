@@ -1,0 +1,55 @@
+---
+import {
+    type BuildContext,
+    CommentKindModel,
+    type CommentModel,
+    type PageModel,
+} from "docs-model";
+import BoldComment from "./type/BoldComment.astro";
+import CodeComment from "./type/CodeComment.astro";
+import ItalicsComment from "./type/ItalicsComment.astro";
+import LinkComment from "./type/LinkComment.astro";
+import ListComment from "./type/ListComment.astro";
+import ListItemComment from "./type/ListItemComment.astro";
+import NewLineComment from "./type/NewLineComment.astro";
+import ParagraphComment from "./type/ParagraphComment.astro";
+import PlaintextComment from "./type/PlaintextComment.astro";
+import RootComment from "./type/RootComment.astro";
+interface Props<T extends CommentModel> {
+    comment: T;
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+
+const { comment, context, flatten = false } = Astro.props;
+
+function getComponent() {
+    switch (comment.kind) {
+        case CommentKindModel.ROOT:
+            return RootComment;
+        case CommentKindModel.BOLD:
+            return BoldComment;
+        case CommentKindModel.CODE:
+            return CodeComment;
+        case CommentKindModel.ITALICS:
+            return ItalicsComment;
+        case CommentKindModel.LINK:
+            return LinkComment;
+        case CommentKindModel.NEW_LINE:
+            return NewLineComment;
+        case CommentKindModel.PARAGRAPH:
+            return ParagraphComment;
+        case CommentKindModel.PLAINTEXT:
+            return PlaintextComment;
+        case CommentKindModel.LIST:
+            return ListComment;
+        case CommentKindModel.LIST_ITEM:
+            return ListItemComment;
+        default:
+            throw new Error(`Unknown Comment found: '${comment.kind}'`);
+    }
+}
+const Component = getComponent();
+---
+
+<Component comment={comment} context={context} flatten={flatten} />

@@ -3,36 +3,37 @@
 pipeline {
     agent any
     environment {
-            CROWDIN_TOKEN     = credentials('crowdin-token')
-            CROWDIN_PROJECT_ID = credentials('crowdin-project-id')
-        }
+        TYPESENSE_API_KEY = credentials('TYPESENSE_API_KEY')
+    }
     stages {
         stage('Setup') {
             steps {
-                echo 'Setting up npm'
-                sh 'npm ci'
-                sh 'cd site && npm ci'
+                echo 'Setting up pnpm'
+                sh 'pnpm i'
             }
         }
-        stage('Build') {
+        stage('Build Docs') {
             steps {
-                echo 'Building files'
-                sh 'npm run-script build'
+                echo 'Building docs'
+                sh 'pnpm build'
+            }
+        }
+        stage('Build Site') {
+            steps {
+                echo 'Building site'
+                sh 'pnpm site-build'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying docker container'
+                echo 'Deploying files to folder'
                 dir('site') {
-                    sh "docker-compose up -d --build"
+                    sh "cp -r dist/* /opt/crafttweaker_docs/"
                 }
             }
         }
     }
     options {
         disableConcurrentBuilds()
-    }
-    triggers {
-        cron('0 */24 * * *')
     }
 }

@@ -1,0 +1,15 @@
+---
+import type { BuildContext, MarkdownPageModel } from "docs-model";
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import Markdown from "../markdown/Markdown.astro";
+interface Props {
+    context: BuildContext<MarkdownPageModel>;
+}
+
+const { context } = Astro.props;
+const { content } = context.page;
+const processor = await createMarkdownProcessor(global.hackyMarkdownConfig);
+
+const rendered = await processor.render(content, {fileURL: `/${context.version}/en/${context.slug}/${new Date().getTime()}`});
+---
+<Markdown content={rendered.code} />

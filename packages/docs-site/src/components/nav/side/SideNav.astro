@@ -1,0 +1,27 @@
+---
+import {getDocsJson, type PageMeta} from "docs-model";
+import NavFolder from "./NavFolder.astro";
+import NavItem from "./NavItem.astro";
+interface Props {
+    meta: PageMeta;
+    version: string;
+}
+const { meta, version } = Astro.props;
+const nav = getDocsJson(version).nav;
+---
+
+<div
+        class="sidenav fixed z-[5000] w-80 overflow-y-scroll bg-neutral-100 sb-custom dark:bg-neutral-800 lg:sticky lg:top-16"
+        id="sidenav"
+>
+    {
+        Object.keys(nav).map((value) => {
+            const navValue = nav[value];
+            if (typeof navValue === "string") {
+                return <NavItem name={value} path={navValue} depth={1} version={version}/>;
+            } else {
+                return <NavFolder nav={navValue} meta={meta} name={value} depth={1} version={version}/>;
+            }
+        })
+    }
+</div>

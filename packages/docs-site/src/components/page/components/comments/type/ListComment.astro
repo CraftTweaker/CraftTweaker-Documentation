@@ -1,0 +1,14 @@
+---
+import type { BuildContext, ListCommentModel, PageModel } from "docs-model";
+import Comments from "../Comments.astro";
+interface Props {
+    comment: ListCommentModel;
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+const { comment, context } = Astro.props;
+---
+
+<ol>
+    <Comments context={context} comments={comment.content}  flatten={true}/>
+</ol>

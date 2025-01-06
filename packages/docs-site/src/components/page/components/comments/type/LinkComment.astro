@@ -1,0 +1,42 @@
+---
+import type { BuildContext, LinkCommentModel, PageModel } from "docs-model";
+import InlineCode from "../../../../markdown/InlineCode.astro";
+import Comments from "../Comments.astro";
+interface Props {
+    comment: LinkCommentModel;
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+
+const { comment, context } = Astro.props;
+const samePage = comment.to.startsWith("#");
+const target = context.types[comment.to];
+const basic = !target || target.keys.length > 1; // We can't link to things that have multiple keys, so we just ignore them
+const url = basic
+    ? samePage
+        ? // Not ideal, but it seems to work for a lot of our use-cases
+          comment.to.indexOf("(") >= 0
+            ? comment.to.substring(0, comment.to.indexOf("("))
+            : comment.to
+        : ""
+    : `/${context.version}/en/${target.keys[0]}`;
+const plain = comment.plain;
+---
+
+{basic && !samePage && <Comments comments={comment.content} context={context} />}
+{
+    (samePage || !basic) && plain && (
+        <a href={url} class="link">
+            <Comments comments={comment.content} context={context}  flatten={true}/>
+        </a>
+    )
+}
+{
+    (samePage || !basic) && !plain && (
+        <InlineCode>
+            <a href={url} class="link">
+                <Comments comments={comment.content} context={context} flatten={true} />
+            </a>
+        </InlineCode>
+    )
+}

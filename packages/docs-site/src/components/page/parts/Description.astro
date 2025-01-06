@@ -1,0 +1,22 @@
+---
+import type { BaseTypePage, BuildContext, CommentModel } from "docs-model";
+import Heading from "../Heading.astro";
+import Comment from "../components/comments/Comment.astro";
+interface Props {
+    comments?: CommentModel;
+    slug: string;
+    context: BuildContext<BaseTypePage>;
+}
+const { comments, slug, context } = Astro.props;
+---
+
+{
+    comments && (
+        <>
+            <Heading depth={2} slug={slug}>
+                Description
+            </Heading>
+            <Comment comment={comments} context={context} />
+        </>
+    )
+}

@@ -1,0 +1,31 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    Returns as ReturnsModel,
+    TypeModel,
+} from "docs-model";
+import InlineCode from "../../../markdown/InlineCode.astro";
+import Comment from "../comments/Comment.astro";
+import Type from "../types/Type.astro";
+
+interface Props {
+    return_type: TypeModel;
+    returns?: ReturnsModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { return_type, context, returns } = Astro.props;
+---
+
+{
+    return_type.key !== "void" && <>
+            <p>
+                Return Type:
+                <InlineCode>
+                    <Type type={return_type} context={{ ...context, typeLinks: true }} location="return_type" />
+                </InlineCode>
+            </p>
+        </>
+
+}

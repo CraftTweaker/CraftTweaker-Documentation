@@ -1,0 +1,31 @@
+---
+import type { BaseTypePage, BuildContext } from "docs-model";
+import Heading from "../Heading.astro";
+import ConstructorGroup from "../components/members/ConstructorGroup.astro";
+interface Props {
+    slug: string;
+    context: BuildContext<BaseTypePage>;
+}
+const { slug, context } = Astro.props;
+
+const memberGroups = context.page.memberGroup();
+const constructors = Object.values(memberGroups)
+    .filter((value) => value.members.some((value) => value.isConstructor()))
+    .sort((a, b) => a.key.localeCompare(b.key));
+---
+
+{
+    constructors.length > 0 && (
+        <>
+            <Heading depth={2} slug={slug}>
+                Constructors
+            </Heading>
+            <div class="flex flex-col gap-y-2">
+                {constructors
+                    .map((value) => (
+                        <ConstructorGroup group={value} context={context} />
+                    ))}
+            </div>
+        </>
+    )
+}

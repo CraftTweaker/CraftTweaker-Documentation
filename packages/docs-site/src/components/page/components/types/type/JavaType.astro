@@ -1,0 +1,25 @@
+---
+import type { BaseTypePage, BuildContext, JavaTypeModel } from "docs-model";
+import { getPage } from "docs-model";
+import MaybeLink from "../../../../util/MaybeLink.astro";
+import TypeParameters from "../TypeParameters.astro";
+interface Props {
+    type: JavaTypeModel;
+    context: BuildContext<BaseTypePage>;
+    location: string;
+}
+const { type, context, location } = Astro.props;
+
+const typePage = getPage(context, type.key);
+const basic = !context.typeLinks || !typePage; // We can't link to things that have multiple keys, so we just ignore them
+const url = basic ? "" : `/${context.version}/en/${typePage.key}`;
+let displayName = type.className;
+if (typePage) {
+    displayName = typePage.renderDisplayName();
+}
+---
+
+<MaybeLink display={displayName} url={url}/>{
+    type.hasTypeParameters() &&
+    <TypeParameters type_parameters={type.typeParameters} include_name={false} context={context}/>
+    }

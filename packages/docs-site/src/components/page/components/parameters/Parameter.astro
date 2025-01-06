@@ -1,0 +1,44 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    MemberModel,
+    ParameterModel,
+} from "docs-model";
+import InlineCode from "../../../markdown/InlineCode.astro";
+import Comment from "../comments/Comment.astro";
+import Type from "../types/Type.astro";
+interface Props {
+    parameter: ParameterModel;
+    context: BuildContext<BaseTypePage>;
+    member: MemberModel;
+}
+const { parameter, context, member } = Astro.props;
+const parameterComment = member.extra.parameterComment?.getCommentFor(
+    parameter.key,
+);
+---
+
+<div class="my-0.5 list-item">
+    <InlineCode>{parameter.key}<span class="hidden md:inline">: <Type type={parameter.type} context={{ ...context, typeLinks: true }} location="parameter" /></span></InlineCode>
+
+    {parameter.defaultValue && <span class="text-sm italic block md:inline">(optional) </span>}
+
+    <span class="block md:hidden mt-1">Type: <InlineCode class="whitespace-pre"><Type type={parameter.type} context={{ ...context, typeLinks: true }} location="parameter" /></InlineCode></span>
+
+    {
+        parameterComment && (
+                    <span class="block md:inline">
+                        - <Comment comment={parameterComment} context={context} />
+                    </span>
+        )
+    }
+
+    {
+        parameter.defaultValue &&
+                <p>
+                    Default Value: <InlineCode  class="whitespace-pre-wrap">{parameter.defaultValue}</InlineCode>
+                </p>
+
+    }
+</div>

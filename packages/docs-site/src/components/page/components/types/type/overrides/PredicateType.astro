@@ -1,0 +1,21 @@
+---
+import {
+    type BaseTypePage,
+    type BuildContext,
+    type JavaTypeModel,
+    TypeModel,
+} from "docs-model";
+import Type from "../../Type.astro";
+interface Props {
+    type: JavaTypeModel;
+    context: BuildContext<BaseTypePage>;
+}
+const { type, context } = Astro.props;
+const { typeParameters } = type;
+
+const tParam = Object.keys(typeParameters)[0];
+const param = typeParameters[tParam];
+const isObject = TypeModel.isObject(param.key);
+---
+
+<span>function({tParam.toLowerCase()} as {isObject ? tParam : <Type type={param} context={context} location="parameter" />}) as bool</span>

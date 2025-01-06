@@ -1,0 +1,29 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    MemberModel,
+    ParameterModel,
+} from "docs-model";
+import Parameter from "./Parameter.astro";
+
+interface Props {
+    parameters: ParameterModel[];
+    context: BuildContext<BaseTypePage>;
+    member: MemberModel;
+}
+const { parameters = [], context, member } = Astro.props;
+---
+
+<div class="parameters">
+    {
+        parameters.length > 0 && <>
+                <p>Parameters:</p>
+                <div class="ml-4 list-disc">
+                    {parameters.map((value) => (
+                            <Parameter parameter={value} context={context} member={member} />
+                    ))}
+                </div>
+            </>
+    }
+</div>

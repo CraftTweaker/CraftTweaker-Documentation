@@ -1,0 +1,63 @@
+---
+import { Code } from "astro-expressive-code/components";
+import {
+    type BaseTypePage,
+    type BuildContext,
+    MemberOriginModel,
+    type MethodMemberModel,
+    capitalizeFirst,
+} from "docs-model";
+import Group from "../../../../markdown/Group.astro";
+import Comment from "../../comments/Comment.astro";
+import Parameters from "../../parameters/Parameters.astro";
+import ReturnType from "../Returns.astro";
+interface Props {
+    member: MethodMemberModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member, context } = Astro.props;
+const { page } = context;
+const { comment, returnType, key, origin, parameters } = member;
+const thisExamples = member.isStatic
+    ? [page.displayName]
+    : page.getThisExamples();
+
+let code = "";
+
+const title = member.renderAsTitle(context);
+
+let typeParams = "";
+if (member.isStatic) {
+    typeParams = page.type.renderTypeParameters(context);
+}
+let memberTypeParams = "";
+if (member.hasTypeParams()) {
+    const { typeParameters } = member;
+    memberTypeParams += `<${Object.values(typeParameters)
+        .map((value) => value.getExampleFor(context, value.key, value.key))
+        .join(", ")}>`;
+}
+for (const thisEx of thisExamples) {
+    const paramExamples = (parameters ?? []).map((param) => {
+        return member.getExampleFor(
+            param.key,
+            `my${capitalizeFirst(param.type.getDefaultExample())}`,
+        );
+    });
+    code += `${thisEx}${typeParams}.${member.key}${memberTypeParams}(${paramExamples.flatMap((ex) => ex[0]).join(", ")});`;
+}
+
+const exampleComment = {
+    type: page.type,
+    member: member,
+};
+---
+
+<Group name={title} titleIsCode={true} nestedLevel={1}>
+    {comment && <Comment comment={comment} context={context} />}
+    {member.extra.returns && <p><span class="font-semibold italic">Returns</span>: <Comment comment={member.extra.returns.description} context={context} ></Comment></p>}
+    <Code code={code} lang="zenscript" wrap={false} frame="code" title="script.zs" exampleComment={exampleComment} context={context} />
+    <Parameters parameters={parameters} context={context} member={member} />
+    <ReturnType return_type={returnType} context={context} returns={member.extra.returns} />
+</Group>

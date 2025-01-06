@@ -1,0 +1,53 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    MemberGroupModel,
+    OperatorMemberModel,
+} from "docs-model";
+import GithubSlugger from "github-slugger";
+import Group from "../../../markdown/Group.astro";
+import OperatorMember from "./type/OperatorMember.astro";
+interface Props {
+    member_group: MemberGroupModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member_group, context } = Astro.props;
+const slugger = new GithubSlugger();
+
+const operators = member_group.members.filter((value) =>
+    value.isOperator(),
+) as OperatorMemberModel[];
+const hasDeclared = operators.some((value) => value.origin === "declared");
+const filtered = hasDeclared
+    ? operators.filter((value) => value.origin === "declared")
+    : operators;
+// TODO if we have a bad state that is invalid, like:
+/*
+    public interface A {
+        public mul(int);
+    }
+    public interface B {
+        public mul(int);
+    }
+
+    public class C implements A, B {
+        ???
+    }
+
+    Just show none
+*/
+---
+
+<Group name={filtered[0].operator} id={slugger.slug(member_group.key)} containerClass="flex flex-col gap-y-2">
+        {
+            filtered.length > 0 && (
+                <>
+                    {filtered.map((field) => (
+                        <OperatorMember member={field} context={context} />
+                    ))}
+                </>
+            )
+        }
+</Group>

@@ -1,0 +1,13 @@
+---
+import type { BaseTypePage, BuildContext, GenericTypeModel } from "docs-model";
+import Type from "../Type.astro";
+interface Props {
+    type: GenericTypeModel;
+    context: BuildContext<BaseTypePage>;
+    include_name?: boolean;
+    location: string;
+}
+const { type, context, include_name = false, location } = Astro.props;
+---
+
+<span>{include_name ? `${type.displayName} : ` : ""}{type.type.isObject() ? type.displayName : <Type type={type.type} context={context} location="generic" />}</span>

@@ -1,0 +1,26 @@
+---
+import type {
+    BuildContext,
+    PageModel,
+    PlaintextCommentModel,
+} from "docs-model";
+interface Props {
+    comment: PlaintextCommentModel;
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+
+const { comment, context, flatten = false } = Astro.props;
+const multiline = comment.content.indexOf("\r\n") >= 0;
+---
+{flatten && comment.content}
+{!flatten && !multiline && <span>{comment.content}</span>}
+{
+    !flatten && multiline && (
+        <span>
+            {comment.content.split("\r\n").map((value) => (
+                <span>{value}</span>
+            ))}
+        </span>
+    )
+}

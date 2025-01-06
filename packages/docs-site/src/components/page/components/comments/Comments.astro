@@ -1,0 +1,12 @@
+---
+import type { BuildContext, CommentModel, PageModel } from "docs-model";
+import Comment from "./Comment.astro";
+interface Props {
+    comments: CommentModel[];
+    context: BuildContext<PageModel>;
+    flatten?: boolean;
+}
+
+const { comments, context, flatten = false } = Astro.props;
+---
+{comments.map((value) => <Comment comment={value} context={context} flatten={flatten} />)}

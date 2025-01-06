@@ -1,0 +1,155 @@
+---
+import EventPage from "@components/page/EventPage.astro";
+import TypePage from "@components/page/TypePage.astro";
+import type {
+    GetStaticPaths,
+    GetStaticPathsResult,
+    InferGetStaticParamsType,
+    InferGetStaticPropsType,
+    MarkdownInstance,
+} from "astro";
+import {
+    OperatorTypeModel,
+    type PageJson,
+    type PageMeta,
+    PageModel,
+    type Types,
+    type Versions,
+    getAllVersions,
+    getDocsJson,
+    getFlatVersions,
+    getPageContent,
+    getPageMeta,
+    getPagesFor,
+    getTypesJson,
+    PageKindModel,
+    PageVersionModel,
+    MarkdownPageModel,
+} from "docs-model";
+import Markdown from "../../../components/markdown/Markdown.astro";
+import PageNav from "../../../components/nav/PageNav.astro";
+import SideNav from "../../../components/nav/side/SideNav.astro";
+import SideNavController from "../../../components/nav/side/SideNavController.astro";
+import EnumPage from "../../../components/page/EnumPage.astro";
+import Layout from "../../../layouts/Layout.astro";
+import fs from "fs-extra";
+import MarkdownPage from "../../../components/page/MarkdownPage.astro";
+
+export const getStaticPaths = (async () => {
+    const promises: {
+        params: { version: string; slug: string };
+        props: { path: string; name: string; versions: Versions; types: Types };
+    }[] = [];
+    const versions = getAllVersions();
+
+    for (const version of getFlatVersions(versions)) {
+        const docsJson = getDocsJson(version);
+        const types = getTypesJson(version);
+        if (!docsJson || !types) {
+            continue;
+        }
+
+        // Inject the index.md page on /
+        // promises.push(
+        //     makePage(
+        //         version,
+        //         "index",
+        //         "markdown",
+        //         mdPages[`/src/docs/${version}/content/index.md`],
+        //         versions,
+        //         types,
+        //         "/",
+        //     ),
+        // );
+        promises.push({
+            params: {
+                version,
+                slug: "/",
+            },
+            props: {
+                path: `./src/docs/${version}/content/index.md`,
+                name: "Home",
+                versions,
+                types,
+            },
+        });
+
+        for (const page of getPagesFor(version)) {
+            const { name, path } = page;
+            const slug = path.replace(/\.(md|json)/, "");
+            const pagePath = `./src/docs/${version}/content/${path}`;
+            if (!fs.existsSync(pagePath)) {
+                throw new Error(
+                    `Unlinked page in '${version}': '${name}': '${pagePath}'`,
+                );
+            }
+
+            promises.push({
+                params: {
+                    version,
+                    slug,
+                },
+                props: {
+                    path: pagePath,
+                    name,
+                    versions,
+                    types,
+                },
+            });
+        }
+    }
+    return promises;
+}) satisfies GetStaticPaths;
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { version, slug } = Astro.params;
+const { name, path, types, versions } = Astro.props;
+
+const pageContent = fs.readFileSync(path, "utf-8");
+
+const createPage = (): PageModel => {
+    if (path.endsWith(".md")) {
+        const isHome = slug === undefined;
+        const pageSlug = isHome ? "index" : slug;
+        const meta = getPageMeta(version, pageSlug);
+        return MarkdownPageModel.parse({
+            display_name: name,
+            key: pageSlug,
+            content: pageContent,
+            meta,
+            kind: PageKindModel.MARKDOWN,
+            version: PageVersionModel.ONE,
+        });
+    }
+    if (path.endsWith(".json")) {
+        return PageModel.parsePage(JSON.parse(pageContent));
+    }
+    throw new Error(`Unknown page type: ${path}`);
+};
+const page = createPage();
+const meta = page.meta;
+---
+<Layout versions={versions} version={version} slug={slug} meta={meta}>
+    <div class="flex">
+        <SideNav meta={meta} version={version}/>
+        <div class="w-full lg:w-content">
+            <div class="container mx-auto my-4 mb-64 w-11/12 xl:w-4/6">
+                <PageNav meta={meta} version={version}/>
+                <div id="content" class="markdown">
+                        {page.isTypePage() &&
+                                <TypePage context={{version, slug, types, page}}/>}
+                        {page.isEventPage() &&
+                                <EventPage context={{version, slug, types, page}}/>}
+                        {page.isEnumPage() &&
+                                <EnumPage context={{version, slug, types, page}}/>}
+                        {page.isMarkdownPage() &&
+                                <MarkdownPage context={{version, slug, types, page}}/>}
+                </div>
+                <PageNav meta={meta} version={version}/>
+            </div>
+        </div>
+        <SideNavController/>
+    </div>
+</Layout>

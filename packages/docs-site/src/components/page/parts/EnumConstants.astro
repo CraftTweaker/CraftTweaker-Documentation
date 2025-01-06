@@ -1,0 +1,53 @@
+---
+import { Code } from "astro-expressive-code/components";
+import {
+    type BaseTypePage,
+    type BuildContext,
+    type EnumConstantMemberModel,
+    MemberKindModel,
+} from "docs-model";
+import Heading from "../Heading.astro";
+interface Props {
+    slug: string;
+    context: BuildContext<BaseTypePage>;
+}
+const { slug, context } = Astro.props;
+
+const memberGroups = context.page.memberGroup();
+const members = Object.values(memberGroups)
+    .filter((value) =>
+        value.members.some(
+            (value1) => value1.kind === MemberKindModel.ENUM_CONSTANT,
+        ),
+    )
+    .sort((a, b) => a.key.localeCompare(b.key));
+const ec = members.reduce<EnumConstantMemberModel[]>((acc, value) => {
+    acc.push(value.members[0] as EnumConstantMemberModel);
+    return acc;
+}, []);
+
+const bracketEnum = context.page.extra.bracketEnum;
+const code = ec
+    .map((value) => {
+        const thisExamples = context.page.getThisExamples(value.isStatic);
+        const example = `${thisExamples[0]}.${value.key}`;
+        if (bracketEnum) {
+            return `// ${example}\n<constant:${bracketEnum.value}:${value.key.toLowerCase()}>`;
+        }
+        return example;
+    })
+    .join("\n");
+---
+
+{
+    members.length > 0 && (
+    <>
+        <Heading depth={2} slug={slug}>
+            Enum Constants
+        </Heading>
+        <p> {context.page.displayName} is an enum with {ec.length} constant{ec.length != 1 ? "s. They are" : ". It is"} accessible like so:</p>
+        <Code frame="code" title="script.zs" wrap={false} code={code} lang="zenscript" context={context} />
+
+    </>
+        )
+    }

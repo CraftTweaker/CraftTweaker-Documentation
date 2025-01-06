@@ -1,0 +1,22 @@
+{
+    "name": "ec-copy-in-frame",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch"
+    },
+    "dependencies": {
+        "@expressive-code/core": "^0.38.3",
+        "@expressive-code/plugin-frames": "^0.38.3"
+    }
+}

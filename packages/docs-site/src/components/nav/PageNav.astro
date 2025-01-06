@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+import type { PageMeta } from "docs-model";
+
+interface Props {
+    meta: PageMeta;
+    version: string;
+}
+const { meta, version } = Astro.props;
+---
+
+<div class = "flex gap-x-4 justify-between text-neutral-800 dark:text-neutral-100">
+    {
+        meta.previous ? (
+                        <a class = "max-w-[48%] flex group" href = `/${version}/en/${meta.previous.path}` data-astro-prefetch>
+                            <div class = "mr-0 flex items-center border border-neutral-500 bg-white pr-2 group-hover:bg-neutral-200 dark:border-neutral-700 dark:bg-black dark:group-hover:bg-neutral-800 md:mr-1">
+                                <Icon name = "chevron-left" class = "my-auto inline-block h-4 w-4"/>
+                                <span class = "flex-shrink">Previous</span>
+                            </div>
+                            <span class = "sr-only md:not-sr-only md:overflow-x-hidden text-ellipsis">{meta.previous.name}</span> </a>
+                ) :
+                <div/>
+    }
+
+    {meta.next &&
+            (
+                    <a class = "max-w-[48%] text-right flex group" href = `/${version}/en/${meta.next.path}` data-astro-prefetch>
+                        <span class = "sr-only md:not-sr-only md:overflow-x-hidden text-ellipsis">{meta.next.name}</span>
+                        <div class = "flex pl-2 ml-0 md:ml-1 border border-neutral-500 dark:border-neutral-700 bg-white dark:bg-black group-hover:bg-neutral-200 dark:group-hover:bg-neutral-800 items-center">
+                            <span class = "flex-shrink">Next</span>
+                            <Icon name = "chevron-right" class = "my-auto inline-block w-4 h-4"/>
+                        </div>
+                    </a>
+            )
+    }
+</div>

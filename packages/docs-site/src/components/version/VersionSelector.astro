@@ -1,0 +1,37 @@
+---
+import type { Versions } from "docs-model";
+interface Props {
+    current: string;
+    versions: Versions;
+}
+const { current, versions } = Astro.props;
+---
+
+<version-select class="my-3 hidden lg:flex">
+    <select
+            id="version-select"
+            class="selectable h-full w-full bg-gray-100 px-2 text-black hover:bg-opacity-100 focus:bg-opacity-100 active:hover:bg-opacity-100 dark:text-white"
+            aria-label="Select Version"
+    >
+        {
+            Object.keys(versions.all).map((version) => (
+                    <optgroup label={version}>
+                        {versions.all[version].map((value) => {
+                            return (
+                                    <option
+                                            value={value}
+                                            selected={current === value}
+                                            class:list={[{
+                                                "bg-emerald-400 dark:bg-emerald-800": current === value,
+                                                "bg-neutral-100 dark:bg-neutral-700": current !== value,
+                                            }]}
+                                    >
+                                        {value}
+                                    </option>
+                            );
+                        })}
+                    </optgroup>
+            ))
+        }
+    </select>
+</version-select>

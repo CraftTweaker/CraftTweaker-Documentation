@@ -1,0 +1,85 @@
+---
+import Navbar from "../components/nav/Navbar.astro";
+import "../styles/index.css";
+import "../styles/markdown.css";
+import { SEO, type SEOProps } from "astro-seo";
+import {getDocsJson, type PageMeta, type Versions} from "docs-model";
+import ComponentLogic from "../components/ComponentLogic.astro";
+import ComponentProvider from "../components/ComponentProvider.astro";
+interface Props {
+    version: string;
+    versions?: Versions;
+    slug: string;
+    meta: PageMeta;
+}
+
+const { version, versions, slug, meta } = Astro.props;
+
+const url = `https://docs.blamejared.com/${version}/en/${slug}`;
+const description =
+    meta.shortDescription ??
+    "Documentation for the CraftTweaker Minecraft mod, information on how to use the ZenScript language and a central wiki for mods that rely on it.";
+const seo: SEOProps = {
+    title: meta.current.name,
+    titleTemplate: "%s - CraftTweaker Documentation",
+    description,
+    canonical: url,
+    openGraph: {
+        basic: {
+            title: meta.current.name,
+            type: "website",
+            image: "https://docs.blamejared.com/og_image.png",
+            url,
+        },
+        optional: {
+            description,
+        },
+    },
+    extend: {
+        meta: [
+            {
+                property: "charset",
+                content: "utf-8",
+            },
+        ],
+    },
+};
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1"/>
+    <link rel="shortcut icon" type="image/svg+xml" href="/crafttweaker.svg?v=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=1"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1"/>
+    <link rel="manifest" href="/site.webmanifest?v=1"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#075985"/>
+    <meta name="msapplication-TileColor" content="#075985"/>
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=1"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <SEO {...seo}/>
+
+    <ComponentLogic/>
+    <!--<script defer is:inline src="https://nlytics.blmj.red/scrpt" data-website-id="50e143af-e1f3-4c99-90c9-eb644de304c8"/>-->
+
+    <script is:inline define:vars={{ version, docsJson: getDocsJson(version), meta }}>
+        window.pageVersion = version;
+        window.docsJson = docsJson;
+        window.pageMeta = meta;
+    </script>
+</head>
+
+<body class="flex min-h-screen flex-col text-black bg-gray-100 dark:bg-neutral-900 dark:text-neutral-100">
+<ComponentProvider/>
+<Navbar version={version} versions={versions}/>
+
+<main class="w-full">
+    <slot/>
+</main>
+    </body>
+</html>

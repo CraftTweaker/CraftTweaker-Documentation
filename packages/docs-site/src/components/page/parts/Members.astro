@@ -1,0 +1,41 @@
+---
+import {
+    type BaseTypePage,
+    type BuildContext,
+    MemberKindModel,
+} from "docs-model";
+import Heading from "../Heading.astro";
+import MemberGroup from "../components/members/MemberGroup.astro";
+interface Props {
+    slug: string;
+    context: BuildContext<BaseTypePage>;
+}
+const { slug, context } = Astro.props;
+
+const memberGroups = context.page.memberGroup();
+const members = Object.values(memberGroups)
+    .filter((value) =>
+        value.members.some(
+            (value1) =>
+                value1.kind !== MemberKindModel.OPERATOR &&
+                value1.kind !== MemberKindModel.ENUM_CONSTANT,
+        ),
+    )
+    .sort((a, b) => a.key.localeCompare(b.key));
+---
+
+{
+    members.length > 0 && (
+        <>
+            <Heading depth={2} slug={slug}>
+                Members
+            </Heading>
+            <div class="flex flex-col gap-y-2">
+                {members
+                    .map((value) => (
+                        <MemberGroup member_group={value} context={context} />
+                    ))}
+            </div>
+        </>
+    )
+}

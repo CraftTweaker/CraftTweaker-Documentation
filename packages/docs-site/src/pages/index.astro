@@ -1,0 +1,4 @@
+---
+import { getAllVersions } from "docs-model";
+return Astro.rewrite(`/${getAllVersions().latest}/en/`);
+---

@@ -1,0 +1,64 @@
+---
+import {
+    type BaseTypePage,
+    type BuildContext,
+    TypeKindModel,
+    type TypeModel,
+} from "docs-model";
+import ArrayType from "./type/ArrayType.astro";
+import BasicType from "./type/BasicType.astro";
+import GenericType from "./type/GenericType.astro";
+import JavaType from "./type/JavaType.astro";
+import ConsumerType from "./type/overrides/ConsumerType.astro";
+import FunctionType from "./type/overrides/FunctionType.astro";
+import MapType from "./type/overrides/MapType.astro";
+import PredicateType from "./type/overrides/PredicateType.astro";
+
+interface Props {
+    type: TypeModel;
+    context: BuildContext<BaseTypePage>;
+    location: string;
+    allow_overrides?: boolean;
+}
+
+const { type, context, location, allow_overrides = true } = Astro.props;
+function getComponent() {
+    switch (type.kind) {
+        case TypeKindModel.GENERIC:
+            return GenericType;
+        case TypeKindModel.JAVA:
+            return JavaType;
+        case TypeKindModel.BASIC:
+            return BasicType;
+        case TypeKindModel.ARRAY:
+            return ArrayType;
+        default:
+            return "span";
+    }
+}
+
+function handleTypeOverride() {
+    if (type.isJava()) {
+        if (type.key === "java.util.Map") {
+            return MapType;
+        }
+        if (type.key === "java.util.function.Consumer") {
+            return ConsumerType;
+        }
+        if (type.key === "java.util.function.Predicate") {
+            return PredicateType;
+        }
+        if (type.key === "java.util.function.Function") {
+            return FunctionType;
+        }
+    }
+}
+
+let Component = getComponent();
+const override = handleTypeOverride();
+if (allow_overrides && override) {
+    Component = override;
+}
+---
+
+<Component type={type as any} context={context} location={location} />{type.nullable ? "?" : ``}

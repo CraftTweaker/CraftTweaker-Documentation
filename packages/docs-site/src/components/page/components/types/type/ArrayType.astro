@@ -1,0 +1,11 @@
+---
+import type { ArrayTypeModel, BaseTypePage, BuildContext } from "docs-model";
+import Type from "../Type.astro";
+interface Props {
+    type: ArrayTypeModel;
+    context: BuildContext<BaseTypePage>;
+}
+const { type, context } = Astro.props;
+---
+
+<Type context={context} type={type.componentType} location="array" />[]

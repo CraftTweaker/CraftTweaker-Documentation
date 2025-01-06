@@ -1,0 +1,10 @@
+services:
+  typesense:
+    container_name: typesense
+    image: typesense/typesense:27.1
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8108:8108"
+    volumes:
+      - ./opt/typesense:/data
+    command: '--data-dir /data --enable-cors --api-key='

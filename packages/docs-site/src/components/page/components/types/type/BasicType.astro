@@ -1,0 +1,10 @@
+---
+import type { BaseTypePage, BasicTypeModel, BuildContext } from "docs-model";
+interface Props {
+    type: BasicTypeModel;
+    context: BuildContext<BaseTypePage>;
+}
+const { type } = Astro.props;
+---
+
+<span>{type.displayName}</span>

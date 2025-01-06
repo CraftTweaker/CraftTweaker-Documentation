@@ -1,0 +1,50 @@
+---
+import type { Versions } from "docs-model";
+import { CURSEFORGE, DISCORD, GITHUB, MODRINTH } from "../../util/Constants";
+import Search from "../Search.astro";
+import CraftTweaker from "../icons/CraftTweaker.astro";
+import CurseForge from "../icons/CurseForge.astro";
+import Discord from "../icons/Discord.astro";
+import Github from "../icons/Github.astro";
+import Modrinth from "../icons/Modrinth.astro";
+import ThemeHolder from "../theme/ThemeHolder.astro";
+import VersionSelector from "../version/VersionSelector.astro";
+import NavIcon from "./NavIcon.astro";
+
+interface Props {
+    version: string;
+    versions: Versions;
+}
+
+const { version, versions } = Astro.props;
+---
+
+<nav class="sticky top-0 z-[5000] flex h-16 justify-between gap-x-2 bg-sky-800 px-4 text-white">
+    <div class="flex gap-x-2">
+        <a href=`/${version}/en` class="flex place-items-center gap-x-2" aria-label="Link to main page">
+            <div class="h-11 w-11">
+                <CraftTweaker width="100%" height="100%" />
+            </div>
+            <span class="text-xl">CraftTweaker Documentation</span>
+        </a>
+        <VersionSelector current={version} versions={versions} />
+    </div>
+    <div class="flex">
+        <Search version={version}/>
+    </div>
+    <div class="my-auto hidden items-center gap-x-1 fill-white lg:flex">
+        <NavIcon href={GITHUB} extraClass="hover:text-[#333]" name="Github">
+            <Github />
+        </NavIcon>
+        <NavIcon href={DISCORD} extraClass="hover:text-[#5865f2]" name="Discord">
+            <Discord />
+        </NavIcon>
+        <NavIcon href={CURSEFORGE} extraClass="hover:text-[#F16436]" name="CurseForge">
+            <CurseForge />
+        </NavIcon>
+        <NavIcon href={MODRINTH} extraClass="hover:text-[#30b27c]" name="Modrinth">
+            <Modrinth />
+        </NavIcon>
+        <ThemeHolder />
+    </div>
+</nav>

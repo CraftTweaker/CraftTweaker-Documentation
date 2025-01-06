@@ -1,0 +1,42 @@
+---
+import {
+    type BaseTypePage,
+    type BuildContext,
+    MemberKindModel,
+    type MemberModel,
+} from "docs-model";
+import ConstructorMember from "./type/ConstructorMember.astro";
+import EnumConstantMember from "./type/EnumConstantMember.astro";
+import FieldMember from "./type/FieldMember.astro";
+import GetterMember from "./type/GetterMember.astro";
+import MethodMember from "./type/MethodMember.astro";
+import SetterMember from "./type/SetterMember.astro";
+
+interface Props {
+    member: MemberModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member, context } = Astro.props;
+
+function getComponent() {
+    switch (member.kind) {
+        case MemberKindModel.METHOD:
+            return MethodMember;
+        case MemberKindModel.GETTER:
+            return GetterMember;
+        case MemberKindModel.SETTER:
+            return SetterMember;
+        case MemberKindModel.FIELD:
+            return FieldMember;
+        case MemberKindModel.ENUM_CONSTANT:
+            return EnumConstantMember;
+        case MemberKindModel.CONSTRUCTOR:
+            return ConstructorMember;
+    }
+    return "div";
+}
+const Component = getComponent();
+---
+
+<Component member={member as any} context={context} />

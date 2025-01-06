@@ -1,0 +1,16 @@
+---
+import { Code } from "astro-expressive-code/components";
+import Heading from "../Heading.astro";
+
+interface Props {
+    slug: string;
+    zen_code_name: string;
+}
+const { slug, zen_code_name } = Astro.props;
+---
+<Heading depth = {2} slug = {slug}>Importing the class</Heading>
+<p>
+    If you need to reference this type directly, like when casting an Array, or as a parameter, you will need to import it. Simply add the import at
+    the top of the file.
+</p>
+<Code code = `import ${zen_code_name};` lang = "zenscript" title = "script.zs"/>

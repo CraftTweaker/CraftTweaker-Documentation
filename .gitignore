@@ -3,7 +3,7 @@ build/
 translations/en/
 
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 
@@ -27,3 +27,4 @@ yarn-error.log*
 docs_reverse_lookup.json
 .vscode/
 .env
+dist

@@ -1,0 +1,91 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    CasterMemberModel,
+    FieldMemberModel,
+    GetterMemberModel,
+    MemberGroupModel,
+    MethodMemberModel,
+    SetterMemberModel,
+} from "docs-model";
+import GithubSlugger from "github-slugger";
+import Group from "../../../markdown/Group.astro";
+import CasterMember from "./type/CasterMember.astro";
+import FieldMember from "./type/FieldMember.astro";
+import GetterMember from "./type/GetterMember.astro";
+import MethodMember from "./type/MethodMember.astro";
+import SetterMember from "./type/SetterMember.astro";
+interface Props {
+    member_group: MemberGroupModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member_group, context } = Astro.props;
+const slugger = new GithubSlugger();
+
+const members: {
+    fields: FieldMemberModel[];
+    getters: GetterMemberModel[];
+    setters: SetterMemberModel[];
+    methods: MethodMemberModel[];
+    casters: CasterMemberModel[];
+} = {
+    fields: [],
+    getters: [],
+    setters: [],
+    methods: [],
+    casters: [],
+};
+let searchable = false;
+for (const member of member_group.members) {
+    if (member.isField()) {
+        members.fields.push(member);
+    } else if (member.isGetter()) {
+        members.getters.push(member);
+    } else if (member.isSetter()) {
+        members.setters.push(member);
+    } else if (member.isMethod()) {
+        members.methods.push(member);
+    } else if (member.isCaster()) {
+        members.casters.push(member);
+    } else {
+        // If it isn't one of those, we don't want to check if it is searchable
+        continue;
+    }
+    if (member.isSearchable()) {
+        searchable = true;
+    }
+}
+// TODO should examples look for top level, like if a class has @docParam value 500, should it work for everything that has a value param, I think so
+
+const hasContent =
+    members.fields.length +
+        members.getters.length +
+        members.setters.length +
+        members.methods.length +
+        members.casters.length >
+    0;
+---
+
+{
+    hasContent &&
+    <Group name={member_group.key} id={slugger.slug(member_group.key)} containerClass="flex flex-col gap-y-2" searchable={searchable}>
+        {members.fields.map((field) => (
+                <FieldMember member={field} context={context}/>
+        ))}
+        {members.getters.map((getter) => (
+                <GetterMember member={getter} context={context}/>
+        ))}
+        {members.setters.map((setter) => (
+                <SetterMember member={setter} context={context}/>
+        ))}
+        {members.methods.map((value) => (
+                <MethodMember member={value} context={context}/>
+        ))}
+        {members.casters.map((value) => (
+                <CasterMember member={value} context={context}/>
+        ))}
+    </Group>
+
+    }

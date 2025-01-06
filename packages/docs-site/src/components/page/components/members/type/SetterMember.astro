@@ -1,0 +1,43 @@
+---
+import { Code } from "astro-expressive-code/components";
+import {
+    type BaseTypePage,
+    type BuildContext,
+    type SetterMemberModel,
+    capitalizeFirst,
+} from "docs-model";
+import Group from "../../../../markdown/Group.astro";
+import InlineCode from "../../../../markdown/InlineCode.astro";
+import Comment from "../../comments/Comment.astro";
+import Parameters from "../../parameters/Parameters.astro";
+import Type from "../../types/Type.astro";
+interface Props {
+    member: SetterMemberModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { member, context } = Astro.props;
+const { page } = context;
+const { comment, parameters } = member;
+const thisExample = page.getThisExamples()[0];
+
+const valueParam = parameters[0];
+const valueExample = page.getExampleFor(
+    valueParam.key,
+    `my${capitalizeFirst(valueParam.type.getDefaultExample())}`,
+)[0];
+
+const code = `${thisExample}.${member.key} = ${valueExample};`;
+
+const exampleComment = {
+    type: page.type,
+    member: member,
+};
+---
+
+<Group name=`Setter` titleIsCode={true} nestedLevel={1}>
+    {comment && <Comment comment={comment} context={context} />}
+
+    {code && <Code code={code} lang="zenscript" frame="code" title="script.zs" exampleComment={exampleComment} context={context} />}
+    <Parameters parameters={parameters} context={context} member={member} />
+</Group>

@@ -1,0 +1,21 @@
+---
+import type { BaseTypePage, BuildContext, TypeModel } from "docs-model";
+import Type from "./Type.astro";
+
+interface Props {
+    type_parameters: { [key: string]: TypeModel };
+    context: BuildContext<BaseTypePage>;
+    include_name: boolean;
+}
+const { type_parameters, context, include_name } = Astro.props;
+---
+
+<span
+    >&lt;{
+        Object.keys(type_parameters).map((value, index) => (
+                <>{index > 0 && <>, </>}
+                <Type type={type_parameters[value]} context={context} location="type_parameter" /></>
+            )
+        )
+    }&gt;</span
+>

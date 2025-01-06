@@ -1,0 +1,12 @@
+---
+import type { BaseTypePage, BuildContext, JavaTypeModel } from "docs-model";
+import Type from "../../Type.astro";
+interface Props {
+    type: JavaTypeModel;
+    context: BuildContext<BaseTypePage>;
+}
+const { type, context } = Astro.props;
+const { typeParameters } = type;
+---
+
+<Type type={typeParameters.V} context={context} location="map" />[<Type type={typeParameters.K} context={context} location="map" />]

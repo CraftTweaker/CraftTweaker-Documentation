@@ -1,23 +1,13 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "baseUrl": "./tools",
+    "allowJs": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
-    "lib": [
-      "esnext"
-    ],
     "module": "ESNext",
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitAny": true,
+    "moduleResolution": "Bundler",
     "outDir": "out",
     "resolveJsonModule": true,
-    "rootDir": "tools",
     "strict": true,
-    "target": "ESNext",
-  },
-  "include": [
-    "tools/**.ts"
-  ]
+    "target": "ESNext"
+  }
 }

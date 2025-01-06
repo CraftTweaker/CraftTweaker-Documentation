@@ -1,0 +1,34 @@
+---
+import type {
+    BaseTypePage,
+    BuildContext,
+    ConstructorMemberModel,
+    MemberGroupModel,
+} from "docs-model";
+import GithubSlugger from "github-slugger";
+import Group from "../../../markdown/Group.astro";
+import ConstructorMember from "./type/ConstructorMember.astro";
+interface Props {
+    group: MemberGroupModel;
+    context: BuildContext<BaseTypePage>;
+}
+
+const { group, context } = Astro.props;
+const slugger = new GithubSlugger();
+
+const constructors = group.members.filter((value) =>
+    value.isConstructor(),
+) as ConstructorMemberModel[];
+
+const hasContent = constructors.length > 0;
+---
+
+{
+    hasContent &&
+    <Group name={group.key} id={slugger.slug(group.key)} containerClass="flex flex-col gap-y-2">
+        {constructors.map((constructor) => (
+                <ConstructorMember member={constructor} context={context}/>
+        ))}
+    </Group>
+
+    }

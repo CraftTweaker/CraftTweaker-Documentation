@@ -1,0 +1,46 @@
+---
+import type { Nav, PageMeta } from "docs-model";
+import { shouldFolderBeOpen } from "../../../util/WebSafeUtil";
+import NavItem from "./NavItem.astro";
+
+interface Props {
+    name: string;
+    nav: Nav;
+    meta: PageMeta;
+    depth: number;
+    version: string;
+}
+
+const { name, nav, meta, depth, version } = Astro.props;
+const shouldBeOpen = shouldFolderBeOpen(name, nav, meta);
+---
+
+<nav-folder data-open=`${shouldBeOpen}` class={"nav-folder"}>
+  <button class="nav-element-folder" style=`padding-left: ${depth}ch`>
+    {name}
+  </button>
+  {
+    shouldBeOpen && (
+      <div class="collapsable-wrapper">
+        <div class="collapsing-content overflow-hidden">
+          {Object.keys(nav).map((value) => {
+            const navValue = nav[value];
+            if (typeof navValue === "string") {
+              return <NavItem name={value} path={navValue} depth={depth + 1} version={version} />;
+            } else {
+              return (
+                <Astro.self
+                  nav={navValue}
+                  meta={meta}
+                  name={value}
+                  depth={depth + 1}
+                  version={version}
+                />
+              );
+            }
+          })}
+        </div>
+      </div>
+    )
+  }
+</nav-folder>

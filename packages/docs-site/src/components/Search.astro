@@ -1,0 +1,28 @@
+---
+import {Icon} from "astro-icon/components";
+interface Props {
+    version: string;
+}
+const { version } = Astro.props;
+---
+
+<site-search class="my-auto h-10">
+    <button class="sm:w-96 bg-neutral-50 dark:bg-neutral-900 border-2 border-neutral-400 dark:border-neutral-750 h-full flex gap-x-1 place-items-center pl-2 text-neutral-700 dark:text-neutral-300">
+        <Icon name="search" class="h-4 w-4" />
+        <span>Search</span>
+    </button>
+    <dialog class="w-11/12 sm:w-full max-w-2xl min-h-64 max-h-search bg-neutral-300 dark:bg-neutral-850 border-2 border-neutral-400 dark:border-neutral-800 open:grid mt-24 mx-auto mb-auto text-black dark:text-white sb-custom">
+        <div class="w-full p-4" id="search-dialog">
+            <div id="search-input-holder" class="relative">
+                <input type="text" id="search" class="my-auto focus:outline-none focus:ring focus:ring-neutral-400 dark:focus:ring-neutral-700 py-4 px-8 w-full bg-neutral-50 dark:bg-neutral-900 border-2 border-neutral-400 dark:border-neutral-750 mb-2 text-black dark:text-white" autocapitalize="none" placeholder="Search" enterkeyhint="search"/>
+            </div>
+
+            <div id="search-results" class="flex flex-col gap-y-2 pb-4">
+
+            </div>
+            <button id="show-more" class="hidden p-4 bg-neutral-200 dark:bg-neutral-900 w-full justify-center hover:text-sky-600  dark:hover:text-sky-500">
+                Show more
+            </button>
+        </div>
+    </dialog>
+</site-search>
