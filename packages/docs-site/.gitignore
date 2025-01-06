@@ -23,5 +23,5 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 src/docs/
-public/*.**
+public/*.**/
 public/MineTweaker
