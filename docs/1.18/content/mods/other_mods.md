@@ -7,7 +7,7 @@ The first one is finding the recipetype we want to add a recipe to. This should 
 
 In any case, once you have your example recipe, you can start adding things following the JSON structure. An example from [CharcoalPit2](https://github.com/EnderiumSmith/CharcoalPit2/blob/master/src/main/resources/data/charcoal_pit/recipes/barrel_recipes/beer.json) looks like this:
 
-```JSON
+```json
 {
   "type": "charcoal_pit:barrel",
   "item_in":{

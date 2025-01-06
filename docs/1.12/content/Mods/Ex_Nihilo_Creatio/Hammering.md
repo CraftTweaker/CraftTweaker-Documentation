@@ -1,7 +1,7 @@
 # Hammering
 
 ## Package
-```zenscirpt
+```zenscript
 `mods.exnihilocreatio.Hammer`
 ```
 

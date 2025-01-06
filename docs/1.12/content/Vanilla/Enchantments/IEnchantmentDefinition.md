@@ -44,7 +44,7 @@ ench.getMaxEnchantability(int level);
 Returns the translated name (e.g. "smite IV").  
 Returns a string and requires the level of the enchantment as int parameter.  
 Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
-```objectzenscriptivec
+```zenscript
 ench.getTranslatedName(int level);
 ```
 

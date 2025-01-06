@@ -10,7 +10,7 @@ import mods.ic2.ClassicElectrolyzer;
 
 ### Add Both Recipe 
 
-```zenscripts
+```zenscript
 mods.ic2.ClassicElectrolyzer.addBothRecipe(IItemStack output, IItemStack input, int energy);
     
 mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt> * 64, 500);
@@ -22,7 +22,7 @@ mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt>
 
 ### Add Charge Recipe 
 
-```zenscripts
+```zenscript
 mods.ic2.ClassicElectrolyzer.addChargeRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:stone> * 64, 500);
@@ -34,7 +34,7 @@ mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:sto
 
 ### Add Discharge Recipe 
 
-```zenscripts
+```zenscript
 mods.ic2.ClassicElectrolyzer.addDischargeRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <minecraft:bedrock>, 500);

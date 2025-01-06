@@ -7,7 +7,7 @@
 | Recipe Name | String      |
 
 Example:
-```ZenScript
+```zenscript
 // mods.immersivepetroleum.DistillationTower.remove(String recipeName);
 
 mods.immersivepetroleum.DistillationTower.remove("oilcracking");
@@ -19,7 +19,7 @@ mods.immersivepetroleum.DistillationTower.remove("oilcracking");
 |-------------|-------------|
 
 Example:
-```ZenScript
+```zenscript
 mods.immersivepetroleum.DistillationTower.removeAll();
 ```
 

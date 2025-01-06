@@ -1,7 +1,7 @@
 # Crooking
 
 ## Package
-```zenscirpt
+```zenscript
 mods.exnihilocreatio.Crook
 ```
 ## Methods

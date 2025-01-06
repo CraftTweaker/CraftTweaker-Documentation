@@ -2,7 +2,7 @@
 
 ## Package
 
-```zemscript
+```zenscript
 import mods.ic2.LiquidFuelGenerator;
 ```
 

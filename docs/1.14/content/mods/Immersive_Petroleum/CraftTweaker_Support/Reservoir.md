@@ -7,7 +7,7 @@
 | Recipe Name | String      |
 
 Example:
-```ZenScript
+```zenscript
 // mods.immersivepetroleum.ReservoirRegistry.remove(String recipeName);
 
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
@@ -19,7 +19,7 @@ mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 |-------------|-------------|
 
 Example:
-```ZenScript
+```zenscript
 // mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 mods.immersivepetroleum.ReservoirRegistry.removeAll();
@@ -108,7 +108,7 @@ builderInstance.build("Example Name");
 ---
 
 Copy/Paste example:
-```ZenScript
+```zenscript
 new ReservoirBuilder(<fluid:minecraft:lava>, 25000, 100000, 0, 20)
 	.addDimensions(false, ["overworld"])
 	.addBiomes(false, ["minecraft:desert"])

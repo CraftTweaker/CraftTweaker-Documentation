@@ -1,7 +1,7 @@
 # Heating Sources
 
 ## Package
-```zenscirpt
+```zenscript
 `mods.exnihilocreatio.Heat`
 ```
 

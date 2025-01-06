@@ -60,7 +60,7 @@ For the rest of this page, we will be looking at adding a Create Cutting recipe 
 
 You can find this recipe [here](https://github.com/Creators-of-Create/Create/blob/mc1.19/dev/src/generated/resources/data/create/recipes/cutting/warped_hyphae.json):
 
-```JSON
+```json
 {
   "type": "create:cutting",
   "ingredients": [
