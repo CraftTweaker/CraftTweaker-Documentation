@@ -12,7 +12,9 @@
         "build-full": "pnpm build && pnpm site-build",
         "build-deps": "pnpm -r --stream --filter \"./packages/**\" --filter \"!./packages/docs-site\" --filter \"!./packages/docs-build\" build"
     },
-    "workspaces": ["packages/*"],
+    "workspaces": [
+        "packages/*"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/CraftTweaker/CraftTweaker-Documentation.git"
@@ -30,5 +32,10 @@
         "tsup": "8.3.5",
         "tsx": "^4.19.2",
         "typescript": "5.7.2"
+    },
+    "pnpm": {
+        "overrides": {
+            "cross-spawn@>=7.0.0 <7.0.5": ">=7.0.5"
+        }
     }
 }
