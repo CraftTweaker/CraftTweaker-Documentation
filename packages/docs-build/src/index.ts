@@ -18,8 +18,8 @@ await prepareExportedBuildFolders();
 await mergeExported();
 await processMarkdown();
 await supplementMeta();
-await generateSearchIndex();
 await finalize();
+await generateSearchIndex();
 console.timeEnd("Total");
 
 /**
