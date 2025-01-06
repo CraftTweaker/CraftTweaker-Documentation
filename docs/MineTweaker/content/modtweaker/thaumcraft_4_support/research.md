@@ -198,7 +198,7 @@ Complexity is what determines the difficulty level of a research. The higher the
 ```zenscript
 //ResearchKey, Complexity
 mods.thaumcraft.Research.setComplexity("WTFPLANTS", 16);
-``````
+```
 If you're trying to change pages for an existing research, you'll first need to clear the research of pages with this:
 
 ```zenscript

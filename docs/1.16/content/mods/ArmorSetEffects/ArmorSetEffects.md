@@ -74,7 +74,7 @@ iron_set.register();
                .addParticle("minecraft:angry_villager",  1.0f, 1.0f, 1.0f, 10.0f, 10.0f, 10.0f, 10.0f, 10.0f, 10.0f, -5.0f, -5.0f, -5.0f, 2.0f, 0.3f, 2);
                .register();
 
-`````
+```
 
 # Expanding MCPotionEffectInstance
 
