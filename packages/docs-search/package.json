@@ -14,7 +14,7 @@
     "scripts": {
         "build": "tsup",
         "dev": "tsup --watch",
-        "generate-search-index": "node --env-file=../../.env dist/generate.js"
+        "generate-search-index": "node dist/generate.js"
     },
     "dependencies": {
         "@expressive-code/core": "^0.38.3",
