@@ -27,7 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying files to folder'
-                sh "cp -r dist/* /opt/crafttweaker_docs/"
+                sh "rsync -a --delete dist/ /opt/crafttweaker_docs/"
             }
         }
     }
