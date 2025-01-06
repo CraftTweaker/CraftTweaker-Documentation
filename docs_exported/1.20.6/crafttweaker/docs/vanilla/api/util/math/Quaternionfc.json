@@ -1,1 +1,1 @@
-{"path":"vanilla/api/util/math/Quaternionfc.md","zenCodeName":"crafttweaker.api.util.math.Quaternionfc"}
+{"kind":"type","display_name":"Quaternionfc","extra":{"loaders":["crafttweaker"]},"key":"vanilla/api/util/math/Quaternionfc","members":{},"type":{"kind":"java","class_name":"Quaternionfc","display_name":"Quaternionfc","interfaces":[],"key":"org.joml.Quaternionfc","nullable":false,"package_name":"org.joml","type_parameters":{}},"version":"1","zen_code_name":"crafttweaker.api.util.math.Quaternionfc"}
