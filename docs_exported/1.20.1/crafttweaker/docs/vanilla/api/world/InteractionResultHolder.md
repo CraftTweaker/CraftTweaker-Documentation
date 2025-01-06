@@ -12,16 +12,19 @@ import crafttweaker.api.world.InteractionResultHolder;
 
 :::group{name=consume}
 
+Create a consume interaction with the given object.
+
+Returns: A new InteractionResultHolder with the given object.  
 Return Type: [InteractionResultHolder](/vanilla/api/world/InteractionResultHolder)&lt;T&gt;
 
 ```zenscript
 InteractionResultHolder.consume<T : Object>(object as T) as InteractionResultHolder<T>
 ```
 
-| Parameter |  Type  |
-|-----------|--------|
-| object    | T      |
-| T         | Object |
+| Parameter |  Type  |         Description          |
+|-----------|--------|------------------------------|
+| object    | T      | The object that is held.     |
+| T         | Object | The type that is being held. |
 
 
 :::
