@@ -43,8 +43,8 @@ export class Deprecated {
     static parse(obj: DeprecatedJson) {
         if (obj) {
             return new Deprecated(
-                CommentModel.parseComment(obj.reason),
-                CommentModel.parseComment(obj.since),
+                ifPresent(obj.reason, CommentModel.parseComment),
+                ifPresent(obj.since, CommentModel.parseComment),
                 obj.for_removal,
             );
         }
