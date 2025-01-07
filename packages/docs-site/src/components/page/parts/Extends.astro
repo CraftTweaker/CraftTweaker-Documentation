@@ -10,7 +10,7 @@ interface Props {
 }
 const { slug, type, context } = Astro.props;
 let super_type = undefined;
-if (type.isJava() && type.superType && !type.superType.isObject()) {
+if (type.isJava() && type.superType && !type.superType.isObject() && !type.superType.isRecord()) {
     super_type = type.superType;
 }
 ---

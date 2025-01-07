@@ -82,6 +82,10 @@ export class TypeModel {
         return key === "java.lang.Object";
     }
 
+    static isRecord(key: string) {
+        return key === "java.lang.Record";
+    }
+
     isVoid() {
         return this.key === "void";
     }
@@ -104,6 +108,10 @@ export class TypeModel {
 
     isObject() {
         return TypeModel.isObject(this.key);
+    }
+
+    isRecord() {
+        return TypeModel.isRecord(this.key);
     }
 
     lookupPage<T extends PageModel>(context: BuildContext<PageModel>): T {
