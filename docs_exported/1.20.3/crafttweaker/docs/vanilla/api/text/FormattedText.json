@@ -1,1 +1,1 @@
-{"path":"vanilla/api/text/FormattedText.md","zenCodeName":"crafttweaker.api.text.FormattedText"}
+{"kind":"type","display_name":"FormattedText","extra":{"loaders":["crafttweaker"]},"key":"vanilla/api/text/FormattedText","members":{},"type":{"kind":"java","class_name":"FormattedText","display_name":"FormattedText","interfaces":[],"key":"net.minecraft.network.chat.FormattedText","nullable":false,"package_name":"net.minecraft.network.chat","type_parameters":{}},"version":"1","zen_code_name":"crafttweaker.api.text.FormattedText"}
