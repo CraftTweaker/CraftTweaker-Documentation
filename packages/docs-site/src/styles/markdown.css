@@ -87,7 +87,7 @@
 }
 
 .markdown .inline-code {
-    @apply border border-neutral-200 bg-neutral-50 px-1 py-0.5 text-sm dark:border-neutral-700 dark:bg-neutral-800 whitespace-nowrap;
+    @apply border border-neutral-200 bg-neutral-50 px-1 py-0.5 text-sm dark:border-neutral-700 dark:bg-neutral-800 break-words;
 }
 
 .markdown .expressive-code {
