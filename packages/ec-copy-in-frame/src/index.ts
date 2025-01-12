@@ -14,7 +14,7 @@ export default (): ExpressiveCodePlugin => {
         const button = event.currentTarget;
         const {code} = button.dataset;
         try {
-            await navigator.clipboard.writeText(code.replace(/�/g, '\\n'))
+            await navigator.clipboard.writeText(code.replace(/\u007f/g, '\\n'))
             button.classList.add('copied')
             setTimeout(() => {
                 button.classList.remove('copied')
