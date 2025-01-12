@@ -55,7 +55,7 @@ main {
 
 .selectable {
     @apply cursor-pointer hover:ring focus:outline-none focus:ring;
-    @apply bg-white hover:border-blue-300 hover:bg-blue-200 hover:bg-opacity-50;
+    @apply bg-neutral-100 hover:border-blue-300 hover:bg-blue-200 hover:bg-opacity-50;
     @apply focus:border-blue-300 focus:bg-blue-200 focus:bg-opacity-50;
     @apply active:hover:bg-blue-300 active:hover:bg-opacity-60;
 

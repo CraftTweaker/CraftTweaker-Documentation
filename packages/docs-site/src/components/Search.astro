@@ -6,8 +6,8 @@ interface Props {
 const { version } = Astro.props;
 ---
 
-<site-search class="my-auto h-10">
-    <button class="sm:w-96 bg-neutral-50 dark:bg-neutral-900 border-2 border-neutral-400 dark:border-neutral-750 h-full flex gap-x-1 place-items-center pl-2 text-neutral-700 dark:text-neutral-300">
+<site-search class="my-auto h-10 flex-grow sm:flex-none">
+    <button class="w-full sm:w-96 bg-neutral-50 dark:bg-neutral-900 border-2 border-neutral-400 dark:border-neutral-750 h-full flex gap-x-1 place-items-center pl-2 text-neutral-700 dark:text-neutral-300">
         <Icon name="search" class="h-4 w-4" />
         <span>Search</span>
     </button>

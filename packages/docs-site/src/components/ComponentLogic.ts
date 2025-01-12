@@ -113,13 +113,15 @@ if (slug.endsWith("/")) {
     slug = slug.substring(0, slug.length - 1);
 }
 const sidenav = document.getElementById("sidenav");
-if (sidenav) {
-    sidenav.innerHTML = "";
+const content = sidenav?.querySelector("#sidenav-content");
+if (sidenav && content) {
+
+    content.innerHTML = "";
     for (const [value, navValue] of Object.entries(nav)) {
         if (typeof navValue === "string") {
-            sidenav.appendChild(navItem(value, navValue, 1));
+            content.appendChild(navItem(value, navValue, 1));
         } else {
-            sidenav.appendChild(navFolder(navValue, value, 1, true));
+            content.appendChild(navFolder(navValue, value, 1, true));
         }
     }
 }
@@ -310,7 +312,7 @@ class ThemeSelect extends HTMLElement {
     constructor() {
         super();
 
-        const themeToggle = this.querySelector("#theme-toggle");
+        const themeToggle = this.firstElementChild
         if (themeToggle) {
             themeToggle.addEventListener("click", () => {
                 const isDark = localStorage.getItem("pageTheme") === "dark";

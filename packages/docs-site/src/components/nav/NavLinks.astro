@@ -1,0 +1,24 @@
+---
+import {CURSEFORGE, DISCORD, GITHUB, MODRINTH} from "../../util/Constants";
+import Modrinth from "../icons/Modrinth.astro";
+import ThemeHolder from "../theme/ThemeHolder.astro";
+import NavIcon from "./NavIcon.astro";
+import CurseForge from "../icons/CurseForge.astro";
+import Discord from "../icons/Discord.astro";
+import Github from "../icons/Github.astro";
+---
+<div class="my-auto items-center gap-x-1 fill-white flex justify-between px-3 lg:px-0">
+    <NavIcon href={GITHUB} extraClass="hover:text-[#333]" name="Github">
+        <Github />
+    </NavIcon>
+    <NavIcon href={DISCORD} extraClass="hover:text-[#5865f2]" name="Discord">
+        <Discord />
+    </NavIcon>
+    <NavIcon href={CURSEFORGE} extraClass="hover:text-[#F16436]" name="CurseForge">
+        <CurseForge />
+    </NavIcon>
+    <NavIcon href={MODRINTH} extraClass="hover:text-[#30b27c]" name="Modrinth">
+        <Modrinth />
+    </NavIcon>
+    <ThemeHolder />
+</div>

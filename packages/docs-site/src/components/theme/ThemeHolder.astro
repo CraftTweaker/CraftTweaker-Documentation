@@ -1,28 +1,30 @@
 <theme-select class="flex">
-    <button id="theme-toggle" class="group my-auto cursor-pointer select-none border-none bg-none hover:text-yellow-500" aria-label="Toggle Theme"><span/></button>
+    <button class="theme-toggle group my-auto cursor-pointer select-none border-none bg-none hover:text-yellow-500" aria-label="Toggle Theme"><span/></button>
 </theme-select>
 
 <script is:inline>
-    const changeTheme = (to) => {
-        const themeToggle = document.getElementById("theme-toggle");
-        const template = document.querySelector("#theme-icons");
-        const isDark = to === "dark";
-        const documentClass = document.documentElement.classList;
-
-        documentClass[isDark ? "remove" : "add"]("light");
-        documentClass[isDark ? "add" : "remove"]("dark");
-
-        themeToggle.ariaLabel = `Current theme is ${to}. Press to toggle.`;
-        themeToggle.firstChild.replaceWith(template.content.querySelector(`#theme-swap-${to}`).cloneNode(true));
-
-        window.localStorage.setItem("pageTheme", to);
-    };
-    const theme = (() => {
+    if(!window.themeInit) {
+        window.changeTheme = (to) => {
+            const themeToggles = document.getElementsByClassName("theme-toggle");
+            const template = document.querySelector("#theme-icons");
+            const isDark = to === "dark";
+            const documentClass = document.documentElement.classList;
+            documentClass[isDark ? "remove" : "add"]("light");
+            documentClass[isDark ? "add" : "remove"]("dark");
+            const newNode = template.content?.querySelector(`#theme-swap-${to}`);
+            for (const themeToggle of themeToggles) {
+                themeToggle.ariaLabel = `Current theme is ${to}. Press to toggle.`;
+                themeToggle.firstChild.replaceWith(newNode.cloneNode(true));
+            }
+            window.localStorage.setItem("pageTheme", to);
+        };
+        window.themeInit = true;
+    }
+    // This does end up changing the theme twice, but I think it is fine
+    window.changeTheme((() => {
         if (typeof localStorage !== "undefined" && localStorage.getItem("pageTheme")) {
             return localStorage.getItem("pageTheme");
         }
         return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    })();
-    changeTheme(theme);
-    window.changeTheme = changeTheme
+    })());
 </script>

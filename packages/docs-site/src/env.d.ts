@@ -17,5 +17,6 @@ declare global {
         pageVersion: string;
         pageMeta: PageMeta;
         changeTheme(theme: "light" | "dark"): void;
+        themeInit: boolean;
     }
 }
