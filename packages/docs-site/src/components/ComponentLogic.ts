@@ -426,7 +426,6 @@ class Search extends HTMLElement {
                 )
                 .documents()
                 .search(searchParameters);
-            console.log(searchResults);
             const gHits = searchResults.grouped_hits;
             const hasMore = searchResults.found >= limit;
             if (hasMore) {
