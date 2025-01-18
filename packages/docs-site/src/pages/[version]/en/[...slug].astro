@@ -3,22 +3,16 @@ import EventPage from "@components/page/EventPage.astro";
 import TypePage from "@components/page/TypePage.astro";
 import type {
     GetStaticPaths,
-    GetStaticPathsResult,
     InferGetStaticParamsType,
     InferGetStaticPropsType,
-    MarkdownInstance,
 } from "astro";
 import {
-    OperatorTypeModel,
-    type PageJson,
-    type PageMeta,
     PageModel,
     type Types,
     type Versions,
     getAllVersions,
     getDocsJson,
     getFlatVersions,
-    getPageContent,
     getPageMeta,
     getPagesFor,
     getTypesJson,
@@ -26,7 +20,6 @@ import {
     PageVersionModel,
     MarkdownPageModel,
 } from "docs-model";
-import Markdown from "../../../components/markdown/Markdown.astro";
 import PageNav from "../../../components/nav/PageNav.astro";
 import SideNav from "../../../components/nav/side/SideNav.astro";
 import SideNavController from "../../../components/nav/side/SideNavController.astro";
@@ -34,6 +27,7 @@ import EnumPage from "../../../components/page/EnumPage.astro";
 import Layout from "../../../layouts/Layout.astro";
 import fs from "fs-extra";
 import MarkdownPage from "../../../components/page/MarkdownPage.astro";
+import ExpansionPage from "../../../components/page/ExpansionPage.astro";
 
 export const getStaticPaths = (async () => {
     const promises: {
@@ -139,13 +133,15 @@ const meta = page.meta;
                 <PageNav meta={meta} version={version}/>
                 <div id="content" class="markdown">
                         {page.isTypePage() &&
-                                <TypePage context={{version, slug, types, page}}/>}
+                                <TypePage context={{version, slug, types, page, type:page.type}}/>}
                         {page.isEventPage() &&
-                                <EventPage context={{version, slug, types, page}}/>}
+                                <EventPage context={{version, slug, types, page, type:page.type}}/>}
                         {page.isEnumPage() &&
-                                <EnumPage context={{version, slug, types, page}}/>}
+                                <EnumPage context={{version, slug, types, page, type:page.type}}/>}
                         {page.isMarkdownPage() &&
                                 <MarkdownPage context={{version, slug, types, page}}/>}
+                    {page.isExpansionPage() &&
+                            <ExpansionPage context={{version, slug, types, page, type: page.getType(types, version)}}/>}
                 </div>
                 <PageNav meta={meta} version={version}/>
             </div>

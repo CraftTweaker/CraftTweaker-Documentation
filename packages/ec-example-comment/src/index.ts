@@ -1,27 +1,15 @@
-import {
-    type AnnotationRenderOptions,
-    ExpressiveCodeAnnotation,
-    type ExpressiveCodeInlineRange,
-    type ExpressiveCodePlugin,
-    definePlugin,
-} from "@expressive-code/core";
-import {
-    type BaseTypePage,
-    type BuildContext,
-    type MemberModel,
-    OperatorTypeModel,
-    type PageModel,
-    type TypeModel,
-} from "docs-model";
+import {type AnnotationRenderOptions, definePlugin, ExpressiveCodeAnnotation, type ExpressiveCodeInlineRange, type ExpressiveCodePlugin,} from "@expressive-code/core";
+import {type BuildContext, type MemberModel, OperatorTypeModel, type PageModel, type TypeModel,} from "docs-model";
 import type {Parents} from "hast";
 
 export interface ExampleCommentProps {
-    exampleComment: { type: TypeModel; member: MemberModel };
-    context: BuildContext<BaseTypePage>;
+    exampleComment: { type?: TypeModel; member?: MemberModel };
+    context: BuildContext<PageModel>;
 }
 
 declare module "@expressive-code/core" {
-    export interface ExpressiveCodeBlockProps extends ExampleCommentProps {}
+    export interface ExpressiveCodeBlockProps extends ExampleCommentProps {
+    }
 }
 
 class LinkAnnotation extends ExpressiveCodeAnnotation {
@@ -33,12 +21,12 @@ class LinkAnnotation extends ExpressiveCodeAnnotation {
         target: string | null,
         renderAs: string,
     ) {
-        super({ inlineRange });
+        super({inlineRange});
         this.target = target;
         this.renderAs = renderAs;
     }
 
-    render({ nodesToTransform }: AnnotationRenderOptions) {
+    render({nodesToTransform}: AnnotationRenderOptions) {
         return nodesToTransform.map((node) => {
             if (!this.target || !this.renderAs) {
                 return node;
@@ -47,8 +35,8 @@ class LinkAnnotation extends ExpressiveCodeAnnotation {
                 return {
                     type: "element",
                     tagName: "a",
-                    properties: { href: this.target, class: "type-link" },
-                    children: [{ type: "text", value: this.renderAs }],
+                    properties: {href: this.target, class: "type-link"},
+                    children: [{type: "text", value: this.renderAs}],
                 };
             }
             return {
@@ -59,12 +47,45 @@ class LinkAnnotation extends ExpressiveCodeAnnotation {
     }
 }
 
+function renderExample(type: TypeModel, member: MemberModel, context: BuildContext<PageModel>) {
+    if (member.isMethod()) {
+        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)})${member.returnType.renderReturnType(context, false)};`;
+    }
+    if (member.isGetter()) {
+        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
+    }
+    if (member.isSetter()) {
+        return `// ${type.renderMemberOwner(context, false)}.${member.key} = ${member.renderParam(context, false, 0)};`;
+    }
+    if (member.isField()) {
+        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
+    }
+    if (member.isEnumConstant()) {
+        return `// ${type.renderMemberOwner(context, false)}.${member.key}`;
+    }
+    if (member.isCaster()) {
+        return `// ${type.renderMemberOwner(context, false)}${member.to.renderReturnType(context, false)}`;
+    }
+    if (member.isOperator()) {
+        return OperatorTypeModel.render(
+            context,
+            type,
+            member,
+            false,
+        );
+    }
+    if (member.isConstructor()) {
+        return `// new ${type.renderMemberOwner(context, false)}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)});`;
+    }
+    throw new Error("Unknown member kind!");
+}
+
 export default (): ExpressiveCodePlugin => {
     return definePlugin({
         name: "example-comment",
         hooks: {
-            preprocessCode: ({ codeBlock }) => {
-                const { props } = codeBlock;
+            preprocessCode: ({codeBlock}) => {
+                const {props} = codeBlock;
                 const exampleComment = props.exampleComment;
                 const context = props.context;
 
@@ -72,42 +93,12 @@ export default (): ExpressiveCodePlugin => {
                     return;
                 }
 
-                const { type, member } = exampleComment;
+                const {type, member} = exampleComment;
 
-                function renderExample(context: BuildContext<PageModel>) {
-                    if (member.isMethod()) {
-                        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)})${member.returnType.renderReturnType(context, false)};`;
-                    }
-                    if (member.isGetter()) {
-                        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
-                    }
-                    if (member.isSetter()) {
-                        return `// ${type.renderMemberOwner(context, false)}.${member.key} = ${member.renderParam(context, false, 0)};`;
-                    }
-                    if (member.isField()) {
-                        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
-                    }
-                    if (member.isEnumConstant()) {
-                        return `// ${type.renderMemberOwner(context, false)}.${member.key}`;
-                    }
-                    if (member.isCaster()) {
-                        return `// ${type.renderMemberOwner(context, false)}${member.to.renderReturnType(context, false)}`;
-                    }
-                    if (member.isOperator()) {
-                        return OperatorTypeModel.render(
-                            context,
-                            type,
-                            member,
-                            false,
-                        );
-                    }
-                    if (member.isConstructor()) {
-                        return `// new ${type.renderMemberOwner(context, false)}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)});`;
-                    }
-                    throw new Error("Unknown member kind!");
+                if (!type || !member) {
+                    return;
                 }
-
-                const code = renderExample(context);
+                const code = renderExample(type, member, context);
                 codeBlock.insertLine(0, code);
 
                 for (const line of codeBlock.getLines()) {

@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import path from "node:path";
 
 import {BUILD_DIR, checkForDuplicates, clearDirectory, DIST_DIR, DOCS_OUT_DIR, doJsonMerge, EXPORTED_DIR, getVersionsInDir, listFiles, OUT_DIR, walk, walkReversed,} from "./util";
-import type {Docs, PageMeta, Types} from "docs-model";
+import type {Docs, PageJson, PageMeta, Types} from "docs-model";
 import remarkIUV from "remark-inject-url-version";
 import remarkDirective from "remark-directive";
 import {remark} from "remark";
@@ -227,7 +227,7 @@ async function supplementMeta(): Promise<void> {
                 );
                 const pageJson = JSON.parse(
                     fs.readFileSync(fullJsonPath, "utf-8"),
-                );
+                ) as PageJson;
                 pageMeta.path = `${pageJson.key}.json`;
                 pageJson.meta = merge(pageMeta, pageJson.meta ?? {});
                 fillNav(pageJson.meta, i);
@@ -244,6 +244,9 @@ async function supplementMeta(): Promise<void> {
                         };
                     }
                     typesJson[pageJson.type.key].keys.push(pageJson.key);
+                    if("zen_code_name" in pageJson) {
+                        typesJson[pageJson.type.key].zen_code_name = pageJson.zen_code_name
+                    }
                 }
             }
         });

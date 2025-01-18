@@ -1,6 +1,6 @@
 ---
 import type {
-    BaseTypePage,
+    PageModel,
     BuildContext,
     CasterMemberModel,
     FieldMemberModel,
@@ -18,7 +18,7 @@ import MethodMember from "./type/MethodMember.astro";
 import SetterMember from "./type/SetterMember.astro";
 interface Props {
     member_group: MemberGroupModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
 const { member_group, context } = Astro.props;

@@ -1,8 +1,8 @@
 ---
 import {
-    type BaseTypePage,
     type BuildContext,
-    TypeKindModel,
+    type PageModel,
+     TypeKindModel,
     type TypeModel,
 } from "docs-model";
 import ArrayType from "./type/ArrayType.astro";
@@ -16,12 +16,12 @@ import PredicateType from "./type/overrides/PredicateType.astro";
 
 interface Props {
     type: TypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
     location: string;
     allow_overrides?: boolean;
 }
 
-const { type, context, location, allow_overrides = true } = Astro.props;
+const {type, context, location, allow_overrides = true} = Astro.props;
 function getComponent() {
     switch (type.kind) {
         case TypeKindModel.GENERIC:
@@ -61,4 +61,4 @@ if (allow_overrides && override) {
 }
 ---
 
-<Component type={type as any} context={context} location={location} />{type.nullable ? "?" : ``}
+<Component type = {type as any} context = {context} location = {location}/>{type.nullable ? "?" : ``}

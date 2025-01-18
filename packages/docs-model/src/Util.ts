@@ -40,7 +40,10 @@ export const getPageContent = (version: string, slug: string): string => {
 };
 
 export const getPage = (
-    context: BuildContext<PageModel>,
+    context: {
+        version: string;
+        types: Types;
+    },
     key: string,
 ): PageModel | undefined => {
     if (context.types[key] && context.types[key].keys.length === 1) {

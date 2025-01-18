@@ -1,26 +1,25 @@
 ---
 import { Code } from "astro-expressive-code/components";
 import {
-    type BaseTypePage,
+    type PageModel,
     type BuildContext,
     type ConstructorMemberModel,
-    capitalizeFirst,
+    capitalizeFirst
 } from "docs-model";
 import Group from "../../../../markdown/Group.astro";
 import Comment from "../../comments/Comment.astro";
 import Parameters from "../../parameters/Parameters.astro";
 interface Props {
     member: ConstructorMemberModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
 const { member, context } = Astro.props;
-const { page } = context;
-const { comment, key, origin, parameters } = member;
+const { page, type } = context;
+const { comment, parameters } = member;
 
-let code = "";
 const title = member.renderAsTitle(context);
-const typeParams = page.type.renderTypeParameters(context);
+const typeParams = type ? type.renderTypeParameters(context) : '';
 
 let memberTypeParams = "";
 if (member.hasTypeParams()) {
@@ -36,10 +35,10 @@ const paramExamples = (parameters ?? []).map((param) => {
         `my${capitalizeFirst(param.type.getDefaultExample())}`,
     );
 });
-code += `${member.key} ${page.displayName}${typeParams}${memberTypeParams}(${paramExamples.flatMap((ex) => ex[0]).join(", ")});`;
+const code = `${member.key} ${page.displayName}${typeParams}${memberTypeParams}(${paramExamples.flatMap((ex) => ex[0]).join(", ")});`;
 
 const exampleComment = {
-    type: page.type,
+    type: type,
     member: member,
 };
 ---

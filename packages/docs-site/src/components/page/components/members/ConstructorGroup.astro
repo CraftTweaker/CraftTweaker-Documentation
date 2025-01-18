@@ -1,6 +1,6 @@
 ---
 import type {
-    BaseTypePage,
+    PageModel,
     BuildContext,
     ConstructorMemberModel,
     MemberGroupModel,
@@ -10,7 +10,7 @@ import Group from "../../../markdown/Group.astro";
 import ConstructorMember from "./type/ConstructorMember.astro";
 interface Props {
     group: MemberGroupModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
 const { group, context } = Astro.props;

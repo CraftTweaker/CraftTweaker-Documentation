@@ -2,8 +2,8 @@ import {CommentModel} from "./Comment";
 import {Extra} from "./Extra";
 import {MemberGroupModel, MemberKindModel} from "./Member";
 import {TypeModel} from "./Type";
-import {ifPresent, parseMap} from "./Util";
-import type {EnumPageJson, EventPageJson, MarkdownPageJson, PageJson, PageMeta, RenderedPageJson, TypePageJson,} from "./types.d.ts";
+import {getPage, ifPresent, parseMap} from "./Util";
+import type {EnumPageJson, EventPageJson, ExpansionPageJson, MarkdownPageJson, PageJson, PageMeta, RenderedPageJson, TypePageJson, Types,} from "./types.d.ts";
 
 export enum PageKindModel {
     TYPE = "type",
@@ -11,6 +11,7 @@ export enum PageKindModel {
     ENUM = "enum",
     MARKDOWN = "markdown",
     RENDERED = "rendered",
+    EXPANSION = "expansion"
 }
 
 export enum PageVersionModel {
@@ -73,6 +74,8 @@ export class PageModel {
                 return MarkdownPageModel.parse(obj);
             case PageKindModel.RENDERED:
                 return RenderedPageModel.parse(obj);
+            case PageKindModel.EXPANSION:
+                return ExpansionPageModel.parse(obj);
             default:
                 throw Error(`Unknown type '${JSON.stringify(obj)}'`);
         }
@@ -100,6 +103,10 @@ export class PageModel {
 
     isRenderedPage(): this is RenderedPageModel {
         return this.kind === PageKindModel.RENDERED;
+    }
+
+    isExpansionPage(): this is ExpansionPageModel {
+        return this.kind === PageKindModel.EXPANSION;
     }
 
     renderDisplayName(): string {
@@ -195,6 +202,7 @@ export class TypePageModel extends PageModel implements BaseTypePage {
     memberGroup(): MemberGroupsModel {
         return this.members;
     }
+
 }
 
 export class EnumPageModel extends PageModel implements BaseTypePage {
@@ -277,6 +285,7 @@ export class EnumPageModel extends PageModel implements BaseTypePage {
 
         return [];
     }
+
 }
 
 export class EventPageModel extends PageModel implements BaseTypePage {
@@ -355,10 +364,12 @@ export class EventPageModel extends PageModel implements BaseTypePage {
     memberGroup(): MemberGroupsModel {
         return this.members;
     }
+
 }
 
 export class MarkdownPageModel extends PageModel {
     readonly content: string;
+
     constructor(
         version: PageVersionModel,
         key: string,
@@ -396,6 +407,7 @@ export class MarkdownPageModel extends PageModel {
 export class RenderedPageModel extends PageModel {
     readonly content: string;
     readonly raw_content: string;
+
     constructor(
         version: PageVersionModel,
         key: string,
@@ -430,5 +442,93 @@ export class RenderedPageModel extends PageModel {
             obj.content,
             obj.raw_content,
         );
+    }
+}
+
+
+export class ExpansionPageModel extends PageModel implements MemberHoldingPage {
+    readonly zenCodeName?: string;
+    readonly members: MemberGroupsModel;
+
+    type: TypeModel | undefined;
+
+    constructor(
+        version: PageVersionModel,
+        key: string,
+        displayName: string,
+        comment: CommentModel | undefined,
+        extra: Extra,
+        meta: PageMeta,
+        members: {
+            [key: string]: MemberGroupModel;
+        },
+        zenCodeName?: string,
+    ) {
+        super(
+            version,
+            key,
+            displayName,
+            PageKindModel.EXPANSION,
+            comment,
+            extra,
+            meta,
+        );
+        this.members = members;
+        this.zenCodeName = zenCodeName;
+        this.type = undefined;
+    }
+
+    static parse(obj: ExpansionPageJson) {
+        return new ExpansionPageModel(
+            obj.version,
+            obj.key,
+            obj.display_name,
+            ifPresent(obj.comment, CommentModel.parseComment),
+            Extra.parse(obj.extra),
+            obj.meta,
+            parseMap(obj.members, MemberGroupModel.parse),
+            obj.zen_code_name,
+        );
+    }
+
+    memberGroup(): MemberGroupsModel {
+        return this.members;
+    }
+
+    getThisExamples(isStatic: boolean): string[] {
+        if (!this.type) {
+            return super.getThisExamples(isStatic);
+        }
+
+        if (isStatic) {
+            return [this.type.displayName];
+        }
+        const example = this.getExampleFor("this");
+        if (example.length > 0) {
+            return example;
+        }
+        if (this.isEventPage()) {
+            return ["event"];
+        }
+        if (this.type.isJava()) {
+            return [`my${this.type.getDefaultExample()}`];
+        }
+
+        return ["myInstance"];
+    }
+
+    public getType(types: Types, version: string): TypeModel | undefined {
+        if (!this.type && this.zenCodeName) {
+            for (const key of Object.keys(types)) {
+                const value = types[key];
+                if (value.zen_code_name && value.zen_code_name === this.zenCodeName && value.keys.length === 1) {
+                    const page = getPage({types, version}, key)
+                    if (page?.isBaseTypePage()) {
+                        this.type = page.type;
+                    }
+                }
+            }
+        }
+        return this.type;
     }
 }

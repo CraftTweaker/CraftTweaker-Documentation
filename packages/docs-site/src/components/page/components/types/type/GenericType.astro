@@ -1,9 +1,9 @@
 ---
-import type { BaseTypePage, BuildContext, GenericTypeModel } from "docs-model";
+import type { PageModel, BuildContext, GenericTypeModel } from "docs-model";
 import Type from "../Type.astro";
 interface Props {
     type: GenericTypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
     include_name?: boolean;
     location: string;
 }

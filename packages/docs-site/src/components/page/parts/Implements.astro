@@ -1,12 +1,12 @@
 ---
-import type { BaseTypePage, BuildContext, TypeModel } from "docs-model";
+import type { PageModel, BuildContext, TypeModel } from "docs-model";
 import InlineCode from "../../markdown/InlineCode.astro";
 import Heading from "../Heading.astro";
 import Type from "../components/types/Type.astro";
 interface Props {
     slug: string;
     type: TypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 const { slug, type, context } = Astro.props;
 const documentedInterfaces: TypeModel[] = [];

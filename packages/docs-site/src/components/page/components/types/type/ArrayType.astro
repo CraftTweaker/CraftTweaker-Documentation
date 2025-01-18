@@ -1,9 +1,9 @@
 ---
-import type { ArrayTypeModel, BaseTypePage, BuildContext } from "docs-model";
+import type { ArrayTypeModel, PageModel, BuildContext } from "docs-model";
 import Type from "../Type.astro";
 interface Props {
     type: ArrayTypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 const { type, context } = Astro.props;
 ---

@@ -1,14 +1,14 @@
 ---
 import {
-    type BaseTypePage,
+    type PageModel,
     type BuildContext,
-    MemberKindModel,
+    MemberKindModel, type MemberHoldingPage,
 } from "docs-model";
 import Heading from "../Heading.astro";
 import MemberGroup from "../components/members/MemberGroup.astro";
 interface Props {
     slug: string;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel & MemberHoldingPage>;
 }
 const { slug, context } = Astro.props;
 

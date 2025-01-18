@@ -1,15 +1,15 @@
 ---
 import { Code } from "astro-expressive-code/components";
 import {
-    type BaseTypePage,
+    type PageModel,
     type BuildContext,
     type EnumConstantMemberModel,
-    MemberKindModel,
+    MemberKindModel, type MemberHoldingPage,
 } from "docs-model";
 import Heading from "../Heading.astro";
 interface Props {
     slug: string;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel & MemberHoldingPage>;
 }
 const { slug, context } = Astro.props;
 

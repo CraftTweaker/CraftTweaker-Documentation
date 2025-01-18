@@ -1,11 +1,11 @@
 ---
-import type { BaseTypePage, BuildContext, JavaTypeModel } from "docs-model";
+import type { PageModel, BuildContext, JavaTypeModel } from "docs-model";
 import { getPage } from "docs-model";
 import MaybeLink from "../../../../util/MaybeLink.astro";
 import TypeParameters from "../TypeParameters.astro";
 interface Props {
     type: JavaTypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
     location: string;
 }
 const { type, context, location } = Astro.props;

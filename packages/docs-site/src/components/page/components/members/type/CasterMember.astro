@@ -1,16 +1,16 @@
 ---
 import { Code } from "astro-expressive-code/components";
-import type { BaseTypePage, BuildContext, CasterMemberModel } from "docs-model";
+import type { PageModel, BuildContext, CasterMemberModel } from "docs-model";
 import Group from "../../../../markdown/Group.astro";
 import Comment from "../../comments/Comment.astro";
 import ReturnType from "../Returns.astro";
 interface Props {
     member: CasterMemberModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
 const { member, context } = Astro.props;
-const { page } = context;
+const { page, type } = context;
 const { comment, to, key, origin, implicit } = member;
 const thisExamples = page.getThisExamples(member.isStatic);
 
@@ -18,7 +18,7 @@ const title = member.renderAsTitle(context);
 const code = `${thisExamples[0]}${to.renderReturnType(context, true)}`;
 
 const exampleComment = {
-    type: page.type,
+    type: type,
     member: member,
 };
 ---

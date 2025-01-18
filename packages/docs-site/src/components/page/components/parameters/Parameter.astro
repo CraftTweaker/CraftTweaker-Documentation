@@ -1,6 +1,6 @@
 ---
 import type {
-    BaseTypePage,
+    PageModel,
     BuildContext,
     MemberModel,
     ParameterModel,
@@ -10,7 +10,7 @@ import Comment from "../comments/Comment.astro";
 import Type from "../types/Type.astro";
 interface Props {
     parameter: ParameterModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
     member: MemberModel;
 }
 const { parameter, context, member } = Astro.props;

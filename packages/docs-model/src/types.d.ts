@@ -1,7 +1,7 @@
 import type {CommentKindModel} from "./Comment";
 import type {MemberKindModel} from "./Member";
 import type {PageKindModel, PageModel, PageVersionModel} from "./Page";
-import type {TypeKindModel} from "./Type";
+import {TypeKindModel, TypeModel} from "./Type";
 
 export type Types = {
     [key: string]: TypeInfo;
@@ -9,6 +9,7 @@ export type Types = {
 
 export type TypeInfo = {
     keys: string[];
+    zen_code_name?: string;
 };
 
 export type Docs = {
@@ -52,6 +53,7 @@ export type BuildContext<T extends PageModel> = {
     types: Types;
     typeLinks?: boolean;
     page: T;
+    type?: TypeModel;
 };
 
 export interface CommonCommentFields {
@@ -229,29 +231,35 @@ export interface CasterMemberJson extends CommonMemberFields {
     to: TypeJson;
     implicit: boolean;
 }
+
 export interface ConstructorMemberJson extends CommonMemberFields {
     kind: MemberKindModel.CONSTRUCTOR;
     parameters: ParameterJson[];
     type_parameters: Record<string, TypeJson>;
 }
+
 export interface EnumConstantMemberJson extends CommonMemberFields {
     kind: MemberKindModel.ENUM_CONSTANT;
     type: TypeJson;
 }
+
 export interface FieldMemberJson extends CommonMemberFields {
     kind: MemberKindModel.FIELD;
     type: TypeJson;
 }
+
 export interface GetterMemberJson extends CommonMemberFields {
     kind: MemberKindModel.GETTER;
     type: TypeJson;
 }
+
 export interface MethodMemberJson extends CommonMemberFields {
     kind: MemberKindModel.METHOD;
     parameters: ParameterJson[];
     return_type: TypeJson;
     type_parameters: Record<string, TypeJson>;
 }
+
 export interface OperatorMemberJson extends CommonMemberFields {
     kind: MemberKindModel.OPERATOR;
     parameters: ParameterJson[];
@@ -259,6 +267,7 @@ export interface OperatorMemberJson extends CommonMemberFields {
     type_parameters: Record<string, TypeJson>;
     operator: string;
 }
+
 export interface SetterMemberJson extends CommonMemberFields {
     kind: MemberKindModel.SETTER;
     parameters: ParameterJson[];
@@ -273,34 +282,40 @@ export interface CommonPageFields {
     extra: ExtraJson;
     meta: PageMeta;
 }
+
 export type PageJson =
     | TypePageJson
     | EnumPageJson
     | EventPageJson
     | MarkdownPageJson
-    | RenderedPageJson;
+    | RenderedPageJson
+    | ExpansionPageJson;
 
 export interface MarkdownPageJson extends Omit<CommonPageFields, 'extra'> {
     kind: PageKindModel.MARKDOWN;
     content: string;
 }
+
 export interface RenderedPageJson extends CommonPageFields {
     kind: PageKindModel.RENDERED;
     content: string;
     raw_content: string;
 }
+
 export interface TypePageJson extends CommonPageFields {
     kind: PageKindModel.TYPE;
     type: TypeJson;
     zen_code_name: string;
     members: Record<string, MemberGroupJson>;
 }
+
 export interface EnumPageJson extends CommonPageFields {
     kind: PageKindModel.ENUM;
     type: TypeJson;
     zen_code_name: string;
     members: Record<string, MemberGroupJson>;
 }
+
 export interface EventPageJson extends CommonPageFields {
     kind: PageKindModel.EVENT;
     type: TypeJson;
@@ -313,6 +328,12 @@ export interface EventPageJson extends CommonPageFields {
     deny_info?: CommentJson;
     has_result: boolean;
     cancelable: boolean;
+}
+
+export interface ExpansionPageJson extends CommonPageFields {
+    kind: PageKindModel.EXPANSION;
+    zen_code_name?: string;
+    members: Record<string, MemberGroupJson>;
 }
 
 export interface SearchDocument {

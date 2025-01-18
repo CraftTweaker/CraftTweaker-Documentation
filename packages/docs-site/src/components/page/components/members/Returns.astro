@@ -1,21 +1,20 @@
 ---
 import type {
-    BaseTypePage,
+    PageModel,
     BuildContext,
     Returns as ReturnsModel,
     TypeModel,
 } from "docs-model";
 import InlineCode from "../../../markdown/InlineCode.astro";
-import Comment from "../comments/Comment.astro";
 import Type from "../types/Type.astro";
 
 interface Props {
     return_type: TypeModel;
     returns?: ReturnsModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
-const { return_type, context, returns } = Astro.props;
+const { return_type, context } = Astro.props;
 ---
 
 {

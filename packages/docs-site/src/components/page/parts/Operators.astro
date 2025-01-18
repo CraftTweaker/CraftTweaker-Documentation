@@ -1,10 +1,10 @@
 ---
-import type { BaseTypePage, BuildContext } from "docs-model";
+import type { PageModel, BuildContext } from "docs-model";
 import Heading from "../Heading.astro";
 import OperatorGroup from "../components/members/OperatorGroup.astro";
 interface Props {
     slug: string;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 const { slug, context } = Astro.props;
 const { members } = context.page;

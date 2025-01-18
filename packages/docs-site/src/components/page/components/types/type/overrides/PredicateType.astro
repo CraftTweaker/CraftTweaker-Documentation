@@ -1,6 +1,6 @@
 ---
 import {
-    type BaseTypePage,
+    type PageModel,
     type BuildContext,
     type JavaTypeModel,
     TypeModel,
@@ -8,7 +8,7 @@ import {
 import Type from "../../Type.astro";
 interface Props {
     type: JavaTypeModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 const { type, context } = Astro.props;
 const { typeParameters } = type;

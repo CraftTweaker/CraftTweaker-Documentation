@@ -1,5 +1,5 @@
 ---
-import type { BuildContext, TypePageModel } from "docs-model";
+import type {BuildContext, EnumPageModel} from "docs-model";
 import GithubSlugger from "github-slugger";
 import Heading from "./Heading.astro";
 import Constructors from "./parts/Constructors.astro";
@@ -12,7 +12,7 @@ import Loaders from "./parts/Loaders.astro";
 import Members from "./parts/Members.astro";
 import Operators from "./parts/Operators.astro";
 interface Props {
-    context: BuildContext<TypePageModel>;
+    context: BuildContext<EnumPageModel>;
 }
 
 const slugger = new GithubSlugger();

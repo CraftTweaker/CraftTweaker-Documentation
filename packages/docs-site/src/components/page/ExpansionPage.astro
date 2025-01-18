@@ -1,0 +1,27 @@
+---
+import type {BuildContext, ExpansionPageModel} from "docs-model";
+import GithubSlugger from "github-slugger";
+import Heading from "./Heading.astro";
+import Constructors from "./parts/Constructors.astro";
+import Description from "./parts/Description.astro";
+import Loaders from "./parts/Loaders.astro";
+import Members from "./parts/Members.astro";
+import Operators from "./parts/Operators.astro";
+import Expansion from "./parts/Expansion.astro";
+interface Props {
+    context: BuildContext<ExpansionPageModel>;
+}
+
+const slugger = new GithubSlugger();
+const slug = (id: string): string => slugger.slug(id);
+const {context} = Astro.props;
+const {displayName, zenCodeName, extra, comment} = context.page;
+---
+
+<Heading depth = {1} slug = {slug(displayName)}> {displayName}</Heading>
+<Expansion slug={slug("Expansion")} context={context}/>
+<Description slug = {slug("Description")} context = {context} comments = {comment}/>
+<Loaders slug = {slug("Loaders")} extra = {extra}/>
+<Constructors slug = {slug("Constructors")} context = {context}/>
+<Operators slug = {slug("Operators")} context = {context}/>
+<Members slug = {slug("Members")} context = {context}/>

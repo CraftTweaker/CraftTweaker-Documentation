@@ -1,7 +1,7 @@
 ---
 import { Code } from "astro-expressive-code/components";
 import {
-    type BaseTypePage,
+    type PageModel,
     type BuildContext,
     MemberOriginModel,
     type MethodMemberModel,
@@ -13,23 +13,21 @@ import Parameters from "../../parameters/Parameters.astro";
 import ReturnType from "../Returns.astro";
 interface Props {
     member: MethodMemberModel;
-    context: BuildContext<BaseTypePage>;
+    context: BuildContext<PageModel>;
 }
 
 const { member, context } = Astro.props;
-const { page } = context;
+const { page, type } = context;
 const { comment, returnType, key, origin, parameters } = member;
-const thisExamples = member.isStatic
-    ? [page.displayName]
-    : page.getThisExamples();
+const thisExamples = page.getThisExamples(member.isStatic);
 
 let code = "";
 
 const title = member.renderAsTitle(context);
 
 let typeParams = "";
-if (member.isStatic) {
-    typeParams = page.type.renderTypeParameters(context);
+if (member.isStatic && type) {
+    typeParams = type.renderTypeParameters(context);
 }
 let memberTypeParams = "";
 if (member.hasTypeParams()) {
@@ -49,7 +47,7 @@ for (const thisEx of thisExamples) {
 }
 
 const exampleComment = {
-    type: page.type,
+    type: type,
     member: member,
 };
 ---

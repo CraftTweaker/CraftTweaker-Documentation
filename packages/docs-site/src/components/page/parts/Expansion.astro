@@ -1,0 +1,30 @@
+---
+import type {BuildContext, TypeModel, ExpansionPageModel} from "docs-model";
+import InlineCode from "../../markdown/InlineCode.astro";
+import Heading from "../Heading.astro";
+import Type from "../components/types/Type.astro";
+interface Props {
+    slug: string;
+    context: BuildContext<ExpansionPageModel>;
+}
+const {slug, context} = Astro.props;
+const expandedType = context.page.getType(context.types, context.version);
+---
+
+{
+    context.page.zenCodeName &&
+    <>
+        <Heading depth = {3} slug = {slug}>
+            Expands
+        </Heading>
+        <p>
+            This class expands
+            <InlineCode>
+                {expandedType ?
+                        <Type type = {expandedType} context = {{...context, typeLinks: true}} location = "extends" allow_overrides = {false}/> : <span>{context.page.zenCodeName}</span>}
+            </InlineCode>
+            <span>, meaning that the content found on this page can be called on that type directly.</span>
+        </p>
+    </>
+
+    }
