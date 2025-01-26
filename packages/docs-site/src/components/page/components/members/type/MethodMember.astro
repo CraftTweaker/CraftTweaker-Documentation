@@ -5,7 +5,7 @@ import {
     type BuildContext,
     MemberOriginModel,
     type MethodMemberModel,
-    capitalizeFirst,
+    capitalizeFirst, MemberTitleVisitor,
 } from "docs-model";
 import Group from "../../../../markdown/Group.astro";
 import Comment from "../../comments/Comment.astro";
@@ -23,7 +23,7 @@ const thisExamples = page.getThisExamples(member.isStatic);
 
 let code = "";
 
-const title = member.renderAsTitle(context);
+const title = MemberTitleVisitor.INSTANCE.visit(member, context);
 
 let typeParams = "";
 if (member.isStatic && type) {

@@ -18,7 +18,7 @@ import {
     getTypesJson,
     PageKindModel,
     PageVersionModel,
-    MarkdownPageModel,
+    MarkdownPageModel, type PageVisitor, type EnumPageModel, type EventPageModel, type ExpansionPageModel, type RenderedPageModel, type TypePageModel, type BuildContext,
 } from "docs-model";
 import PageNav from "../../../components/nav/PageNav.astro";
 import SideNav from "../../../components/nav/side/SideNav.astro";
@@ -28,6 +28,7 @@ import Layout from "../../../layouts/Layout.astro";
 import fs from "fs-extra";
 import MarkdownPage from "../../../components/page/MarkdownPage.astro";
 import ExpansionPage from "../../../components/page/ExpansionPage.astro";
+import type {AstroComponentFactory} from "astro/runtime/server/index.d.ts";
 
 export const getStaticPaths = (async () => {
     const promises: {
@@ -44,17 +45,6 @@ export const getStaticPaths = (async () => {
         }
 
         // Inject the index.md page on /
-        // promises.push(
-        //     makePage(
-        //         version,
-        //         "index",
-        //         "markdown",
-        //         mdPages[`/src/docs/${version}/content/index.md`],
-        //         versions,
-        //         types,
-        //         "/",
-        //     ),
-        // );
         promises.push({
             params: {
                 version,
@@ -69,7 +59,7 @@ export const getStaticPaths = (async () => {
         });
 
         for (const page of getPagesFor(version)) {
-            const { name, path } = page;
+            const {name, path} = page;
             const slug = path.replace(/\.(md|json)/, "");
             const pagePath = `./src/docs/${version}/content/${path}`;
             if (!fs.existsSync(pagePath)) {
@@ -98,8 +88,8 @@ export const getStaticPaths = (async () => {
 type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { version, slug } = Astro.params;
-const { name, path, types, versions } = Astro.props;
+const {version, slug} = Astro.params;
+const {name, path, types, versions} = Astro.props;
 
 const pageContent = fs.readFileSync(path, "utf-8");
 
@@ -124,26 +114,35 @@ const createPage = (): PageModel => {
 };
 const page = createPage();
 const meta = page.meta;
+
+let PageComponent = undefined;
+if(page.isEnumPage()) {
+    PageComponent = EnumPage;
+} else if(page.isEventPage()) {
+    PageComponent = EventPage;
+} else if (page.isExpansionPage()) {
+    PageComponent = ExpansionPage;
+}else if (page.isMarkdownPage()) {
+    PageComponent = MarkdownPage;
+} else if (page.isRenderedPage()) {
+    throw new Error("Unable to render Rendered pages yet.")
+} else if(page.isTypePage()) {
+    PageComponent = TypePage;
+}
+if(!PageComponent) {
+    throw new Error("Unknown Page Component");
+}
 ---
-<Layout versions={versions} version={version} slug={slug} meta={meta}>
-    <div class="flex">
-        <SideNav meta={meta} version={version} versions={versions}/>
-        <div class="w-full lg:w-content">
-            <div class="container mx-auto my-4 mb-64 w-11/12 xl:w-4/6">
-                <PageNav meta={meta} version={version}/>
-                <div id="content" class="markdown">
-                        {page.isTypePage() &&
-                                <TypePage context={{version, slug, types, page, type:page.type}}/>}
-                        {page.isEventPage() &&
-                                <EventPage context={{version, slug, types, page, type:page.type}}/>}
-                        {page.isEnumPage() &&
-                                <EnumPage context={{version, slug, types, page, type:page.type}}/>}
-                        {page.isMarkdownPage() &&
-                                <MarkdownPage context={{version, slug, types, page}}/>}
-                    {page.isExpansionPage() &&
-                            <ExpansionPage context={{version, slug, types, page, type: page.getType(types, version)}}/>}
+<Layout versions = {versions} version = {version} slug = {slug} meta = {meta}>
+    <div class = "flex">
+        <SideNav meta = {meta} version = {version} versions = {versions}/>
+        <div class = "w-full lg:w-content">
+            <div class = "container mx-auto my-4 mb-64 w-11/12 xl:w-4/6">
+                <PageNav meta = {meta} version = {version}/>
+                <div id = "content" class = "markdown">
+                    <PageComponent context = {{version, slug, types, page, type: page.isBaseTypePage() ? page.type : page.isExpansionPage() ? page.getType(types, version) : undefined}}/>
                 </div>
-                <PageNav meta={meta} version={version}/>
+                <PageNav meta = {meta} version = {version}/>
             </div>
         </div>
         <SideNavController/>

@@ -1,7 +1,7 @@
 import type {CommentKindModel} from "./Comment";
 import type {MemberKindModel} from "./Member";
 import type {PageKindModel, PageModel, PageVersionModel} from "./Page";
-import {TypeKindModel, TypeModel} from "./Type";
+import type {TypeKindModel, TypeModel} from "./Type";
 
 export type Types = {
     [key: string]: TypeInfo;

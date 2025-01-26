@@ -5,7 +5,7 @@ import {remark} from "remark";
 
 import path from "node:path";
 import process from "node:process";
-import {getAllVersions, getFlatVersions, getPageContent, getPagesFor, getTypesJson, PageModel, type SearchDocument,} from "docs-model";
+import {CommentToStringVisitor, getAllVersions, getFlatVersions, getPageContent, getPagesFor, getTypesJson, MemberSearchableVisitor, PageModel, type SearchDocument,} from "docs-model";
 import remarkSearch from "remark-search";
 import remarkGfm from "remark-gfm";
 
@@ -105,16 +105,16 @@ export const generateSearchIndex = async () => {
                         const memberSlug = slugger.slug(value.key);
                         for (const member of value.members) {
                             if (member.isSearchable()) {
+                                const searchableContent = MemberSearchableVisitor.INSTANCE.visit(member, context)
                                 data.push({
                                     page_url: slug,
                                     url: `${slug}#${memberSlug}`,
                                     title: content.displayName,
                                     type: member.getType(),
-                                    prefix: member.getSearchablePrefix(),
-                                    content:
-                                        member.getSearchableContent(context),
-                                    suffix: member.getSearchableSuffix(context),
-                                    comment: member.comment?.renderToString(),
+                                    prefix: searchableContent.prefix,
+                                    content: searchableContent.content,
+                                    suffix: searchableContent.suffix,
+                                    comment: member.comment?.accept(CommentToStringVisitor.INSTANCE),
                                 });
                             }
                         }

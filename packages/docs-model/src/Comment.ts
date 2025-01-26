@@ -1,15 +1,4 @@
-import type {
-    BoldCommentJson,
-    CodeCommentJson,
-    CommentJson,
-    ItalicsCommentJson,
-    LinkCommentJson,
-    ListCommentJson,
-    ListItemCommentJson,
-    ParagraphCommentJson,
-    PlaintextCommentJson,
-    RootCommentJson,
-} from "./types";
+import type {BoldCommentJson, CodeCommentJson, CommentJson, ItalicsCommentJson, LinkCommentJson, ListCommentJson, ListItemCommentJson, ParagraphCommentJson, PlaintextCommentJson, RootCommentJson,} from "./types";
 
 export enum CommentKindModel {
     ROOT = "root",
@@ -24,10 +13,94 @@ export enum CommentKindModel {
     LIST_ITEM = "list_item",
 }
 
-export class CommentModel {
+export interface CommentVisitor<C, R> {
+
+    visit(comment: CommentModel, context: C): R;
+
+    visitBold(comment: BoldCommentModel, context: C): R;
+
+    visitCode(comment: CodeCommentModel, context: C): R;
+
+    visitItalics(comment: ItalicsCommentModel, context: C): R;
+
+    visitLink(comment: LinkCommentModel, context: C): R;
+
+    visitList(comment: ListCommentModel, context: C): R;
+
+    visitListItem(comment: ListItemCommentModel, context: C): R;
+
+    visitNewLine(comment: NewLineCommentModel, context: C): R;
+
+    visitParagraph(comment: ParagraphCommentModel, context: C): R;
+
+    visitPlaintext(comment: PlaintextCommentModel, context: C): R;
+
+    visitRootComment(comment: RootCommentModel, context: C): R;
+}
+
+export class CommentToStringVisitor implements CommentVisitor<never, string> {
+
+    public static readonly INSTANCE = new CommentToStringVisitor();
+
+    private constructor() {
+    }
+
+    visit(comment: CommentModel, context: never): string {
+        return comment.accept(this, context);
+    }
+
+    visitBold(comment: BoldCommentModel, context: never): string {
+        return this.visitContent(comment.content, context);
+    }
+
+    visitCode(comment: CodeCommentModel, context: never): string {
+        return this.visitContent(comment.content, context);
+    }
+
+    visitItalics(comment: ItalicsCommentModel, context: never): string {
+        return this.visitContent(comment.content, context);
+    }
+
+    visitLink(comment: LinkCommentModel, context: never): string {
+        return this.visitContent(comment.content, context);
+    }
+
+    visitList(comment: ListCommentModel, context: never): string {
+        return this.visitContent(comment.content, context, "\n");
+    }
+
+    visitListItem(comment: ListItemCommentModel, context: never): string {
+        return comment.content
+            .map((value) => `- ${value.accept(this, context)}`)
+            .join("\n");
+    }
+
+    visitNewLine(comment: NewLineCommentModel, context: never): string {
+        return "\n";
+    }
+
+    visitParagraph(comment: ParagraphCommentModel, context: never): string {
+        return this.visitContent(comment.content, context);
+    }
+
+    visitPlaintext(comment: PlaintextCommentModel, context: never): string {
+        return comment.content;
+    }
+
+    visitRootComment(comment: RootCommentModel, context: never): string {
+        return this.visitContent(comment.children, context);
+    }
+
+    private visitContent(content: CommentModel[], context: never, joiner = " "): string {
+        return content.map((value) => value.accept(this, context)).join(joiner);
+    }
+
+}
+
+export abstract class CommentModel {
     readonly kind: CommentKindModel;
 
-    constructor(kind: CommentKindModel) {
+    protected constructor(kind: CommentKindModel) {
         this.kind = kind;
     }
 
@@ -65,9 +138,8 @@ export class CommentModel {
         return obj.map((commentObj) => CommentModel.parseComment(commentObj));
     }
 
-    renderToString(): string {
-        throw Error(`Unable to render comment '${JSON.stringify(this)}'`);
-    }
+    abstract accept<C, R>(visitor: CommentVisitor<C, R>, context?: C): R;
+
 }
 
 export class BoldCommentModel extends CommentModel {
@@ -82,9 +154,10 @@ export class BoldCommentModel extends CommentModel {
         return new BoldCommentModel(CommentModel.parseComments(obj.content));
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitBold(this, context);
     }
+
 }
 
 export class CodeCommentModel extends CommentModel {
@@ -99,9 +172,10 @@ export class CodeCommentModel extends CommentModel {
         return new CodeCommentModel(CommentModel.parseComments(obj.content));
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitCode(this, context);
     }
+
 }
 
 export class ItalicsCommentModel extends CommentModel {
@@ -116,9 +190,10 @@ export class ItalicsCommentModel extends CommentModel {
         return new ItalicsCommentModel(CommentModel.parseComments(obj.content));
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitItalics(this, context);
     }
+
 }
 
 export class LinkCommentModel extends CommentModel {
@@ -141,8 +216,8 @@ export class LinkCommentModel extends CommentModel {
         );
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitLink(this, context);
     }
 }
 
@@ -158,9 +233,10 @@ export class ListCommentModel extends CommentModel {
         return new ListCommentModel(CommentModel.parseComments(obj.content));
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join("\n");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitList(this, context);
     }
+
 }
 
 export class ListItemCommentModel extends CommentModel {
@@ -177,11 +253,10 @@ export class ListItemCommentModel extends CommentModel {
         );
     }
 
-    renderToString(): string {
-        return this.content
-            .map((value) => `- ${value.renderToString()}`)
-            .join("\n");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitListItem(this, context);
     }
+
 }
 
 export class NewLineCommentModel extends CommentModel {
@@ -189,9 +264,10 @@ export class NewLineCommentModel extends CommentModel {
         super(CommentKindModel.NEW_LINE);
     }
 
-    renderToString(): string {
-        return "\n";
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitNewLine(this, context);
     }
+
 }
 
 export class ParagraphCommentModel extends CommentModel {
@@ -208,8 +284,8 @@ export class ParagraphCommentModel extends CommentModel {
         );
     }
 
-    renderToString(): string {
-        return this.content.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitParagraph(this, context);
     }
 }
 
@@ -225,8 +301,8 @@ export class PlaintextCommentModel extends CommentModel {
         return new PlaintextCommentModel(obj.content);
     }
 
-    renderToString(): string {
-        return this.content;
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitPlaintext(this, context);
     }
 }
 
@@ -242,7 +318,7 @@ export class RootCommentModel extends CommentModel {
         return new RootCommentModel(CommentModel.parseComments(obj.children));
     }
 
-    renderToString(): string {
-        return this.children.map((value) => value.renderToString()).join(" ");
+    accept<C, R>(visitor: CommentVisitor<C, R>, context: C): R {
+        return visitor.visitRootComment(this, context);
     }
 }

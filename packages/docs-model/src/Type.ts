@@ -1,13 +1,6 @@
-import type { PageModel } from "./Page";
-import { getPage, ifPresent, parseMap } from "./Util";
-import type {
-    ArrayTypeJson,
-    BasicTypeJson,
-    BuildContext,
-    GenericTypeJson,
-    JavaTypeJson,
-    TypeJson,
-} from "./types.d.ts";
+import type {PageModel} from "./Page";
+import {getPage, ifPresent, parseMap} from "./Util";
+import type {ArrayTypeJson, BasicTypeJson, BuildContext, GenericTypeJson, JavaTypeJson, TypeJson,} from "./types.d.ts";
 
 export enum TypeKindModel {
     ARRAY = "array",
@@ -43,7 +36,20 @@ function renderLinkable(display: string, key: string, plain: boolean) {
     return `§${display}§${key}§`;
 }
 
-export class TypeModel {
+export interface TypeVisitor<C, R> {
+    visit(member: TypeModel, context: C): R;
+
+    visitArray(member: ArrayTypeModel, context: C): R;
+
+    visitBasic(member: BasicTypeModel, context: C): R;
+
+    visitGeneric(member: GenericTypeModel, context: C): R;
+
+    visitJava(member: JavaTypeModel, context: C): R;
+
+}
+
+export abstract class TypeModel {
     readonly key: string;
     readonly displayName: string;
     readonly kind: TypeKindModel;
@@ -166,6 +172,8 @@ export class TypeModel {
     renderTypeParameters(context: BuildContext<PageModel>): string {
         return "";
     }
+
+    abstract accept<C, R>(visitor: TypeVisitor<C, R>, context?: C): R;
 }
 
 export class ArrayTypeModel extends TypeModel {
@@ -199,6 +207,10 @@ export class ArrayTypeModel extends TypeModel {
             `${this.componentType.render(context, location, plain)}[]`,
         );
     }
+
+    accept<C, R>(visitor: TypeVisitor<C, R>, context: C): R {
+        return visitor.visitArray(this, context);
+    }
 }
 
 export class BasicTypeModel extends TypeModel {
@@ -222,6 +234,10 @@ export class BasicTypeModel extends TypeModel {
             );
         }
         return this.renderNullable();
+    }
+
+    accept<C, R>(visitor: TypeVisitor<C, R>, context: C): R {
+        return visitor.visitBasic(this, context);
     }
 }
 
@@ -274,6 +290,11 @@ export class GenericTypeModel extends TypeModel {
         return this.renderNullable(
             `${this.type.render(context, location, plain)}`,
         );
+    }
+
+
+    accept<C, R>(visitor: TypeVisitor<C, R>, context: C): R {
+        return visitor.visitGeneric(this, context);
     }
 }
 
@@ -399,5 +420,9 @@ export class JavaTypeModel extends TypeModel {
 
     getDefaultExample() {
         return this.className;
+    }
+
+    accept<C, R>(visitor: TypeVisitor<C, R>, context: C): R {
+        return visitor.visitJava(this, context);
     }
 }

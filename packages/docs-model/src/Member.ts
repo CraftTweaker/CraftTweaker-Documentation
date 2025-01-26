@@ -1,22 +1,9 @@
-import { CommentModel } from "./Comment";
-import { Extra } from "./Extra";
-import type { PageModel } from "./Page";
-import { TypeModel } from "./Type";
-import { ifPresent, parseMap } from "./Util";
-import type {
-    BuildContext,
-    CasterMemberJson,
-    ConstructorMemberJson,
-    EnumConstantMemberJson,
-    FieldMemberJson,
-    GetterMemberJson,
-    MemberGroupJson,
-    MemberJson,
-    MethodMemberJson,
-    OperatorMemberJson,
-    ParameterJson,
-    SetterMemberJson,
-} from "./types.d.ts";
+import {CommentModel} from "./Comment";
+import {Extra} from "./Extra";
+import type {PageModel} from "./Page";
+import {TypeModel} from "./Type";
+import {ifPresent, parseMap} from "./Util";
+import type {BuildContext, CasterMemberJson, ConstructorMemberJson, EnumConstantMemberJson, FieldMemberJson, GetterMemberJson, MemberGroupJson, MemberJson, MethodMemberJson, OperatorMemberJson, ParameterJson, SetterMemberJson,} from "./types.d.ts";
 
 export enum MemberKindModel {
     METHOD = "method",
@@ -296,14 +283,183 @@ export class MemberGroupModel {
         );
     }
 
-    renderAsSearchableHtml(context: BuildContext<PageModel>) {
-        return this.members
-            .map((value) => value.renderAsSearchableHtml(context))
-            .join("");
-    }
 }
 
-export class MemberModel {
+export interface MemberVisitor<C, R> {
+
+    visit(member: MemberModel, context: C): R;
+
+    visitCaster(member: CasterMemberModel, context: C): R;
+
+    visitConstructor(member: ConstructorMemberModel, context: C): R;
+
+    visitEnumConstant(member: EnumConstantMemberModel, context: C): R;
+
+    visitField(member: FieldMemberModel, context: C): R;
+
+    visitGetter(member: GetterMemberModel, context: C): R;
+
+    visitMethod(member: MethodMemberModel, context: C): R;
+
+    visitOperator(member: OperatorMemberModel, context: C): R;
+
+    visitSetter(member: SetterMemberModel, context: C): R;
+}
+
+export class MemberSearchableVisitor implements MemberVisitor<BuildContext<PageModel>, { prefix?: string, content?: string, suffix?: string }> {
+
+    public static INSTANCE = new MemberSearchableVisitor();
+
+    private constructor() {
+    }
+
+    visit(member: MemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        return member.accept(this, context);
+    }
+
+    visitDefault(member: MemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret: { prefix?: string; content?: string; suffix?: string; } = {};
+        ret.prefix = member.isStatic ? "static " : undefined
+        ret.content = member.key;
+        return ret;
+    }
+
+    visitCaster(member: CasterMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret = this.visitDefault(member, context);
+        ret.prefix = member.implicit ? "implicit " : undefined
+        ret.content = member.to.renderReturnType(context, true);
+        return ret;
+    }
+
+    visitConstructor(member: ConstructorMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret = this.visitDefault(member, context);
+        ret.prefix = undefined;
+        ret.content = `new ${context.page.renderDisplayName()}`;
+        let suffix = "";
+        if (context.page.isBaseTypePage()) {
+            suffix += context.page.type.renderTypeParameters(context);
+        }
+
+        suffix += `(${member.renderParams(context, true)})`;
+        ret.suffix = suffix;
+        return ret;
+    }
+
+    visitEnumConstant(member: EnumConstantMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret = this.visitDefault(member, context);
+        ret.prefix = undefined;
+        return ret;
+    }
+
+    visitField(member: FieldMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        return this.visitDefault(member, context);
+    }
+
+    visitGetter(member: GetterMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        return this.visitDefault(member, context);
+    }
+
+    visitMethod(member: MethodMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret = this.visitDefault(member, context);
+        let suffix = "";
+        if (member.isStatic && context.page.isBaseTypePage()) {
+            suffix += context.page.type.renderTypeParameters(context);
+        }
+
+        suffix += `(${member.renderParams(context, true)})`;
+        suffix += member.returnType.renderReturnType(context, true);
+        ret.suffix = suffix;
+        return ret;
+    }
+
+    visitOperator(member: OperatorMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        const ret = this.visitDefault(member, context);
+
+        let suffix = "";
+        suffix += member.hasParams()
+            ? `(${member.renderParams(context, true)})`
+            : "";
+        suffix += member.returnType.renderReturnType(context, true);
+        ret.suffix = suffix;
+
+        return ret;
+    }
+
+    visitSetter(member: SetterMemberModel, context: BuildContext<PageModel>): { prefix?: string; content?: string; suffix?: string; } {
+        return this.visitDefault(member, context);
+    }
+
+}
+
+export class MemberTitleVisitor implements MemberVisitor<BuildContext<PageModel>, string> {
+
+    public static readonly INSTANCE = new MemberTitleVisitor()
+
+    private constructor() {
+    }
+
+    visit(member: MemberModel, context: BuildContext<PageModel>): string {
+        return member.accept(this, context);
+    }
+
+    visitCaster(member: CasterMemberModel, context: BuildContext<PageModel>): string {
+        return `${member.implicit ? "implicit " : ""}${member.to.renderReturnType(context, true)}`;
+    }
+
+    visitConstructor(member: ConstructorMemberModel, context: BuildContext<PageModel>): string {
+        let title = "new";
+        if (context.page.isBaseTypePage()) {
+            title += context.page.type.renderTypeParameters(context);
+        }
+
+        title += `(${member.renderParams(context, true)})`;
+        return title;
+    }
+
+    visitEnumConstant(member: EnumConstantMemberModel, context: BuildContext<PageModel>): string {
+        return member.key;
+    }
+
+    visitField(member: FieldMemberModel, context: BuildContext<PageModel>): string {
+        return member.key;
+    }
+
+    visitGetter(member: GetterMemberModel, context: BuildContext<PageModel>): string {
+        return member.key;
+    }
+
+    visitMethod(member: MethodMemberModel, context: BuildContext<PageModel>): string {
+        let title = "";
+        if (member.isStatic) {
+            title += "static ";
+        }
+        title += member.key;
+        if (member.isStatic && context.page.isBaseTypePage()) {
+            title += context.page.type.renderTypeParameters(context);
+        }
+
+        title += `(${member.renderParams(context, true)})`;
+        title += member.returnType.renderReturnType(context, true);
+        return title;
+    }
+
+    visitOperator(member: OperatorMemberModel, context: BuildContext<PageModel>): string {
+        let title = member.operator as string;
+        title += member.hasParams()
+            ? `(${member.renderParams(context, true)})`
+            : "";
+        title += member.returnType.renderReturnType(context, true);
+
+        return title;
+    }
+
+    visitSetter(member: SetterMemberModel, context: BuildContext<PageModel>): string {
+        return member.key;
+    }
+
+}
+
+export abstract class MemberModel {
     readonly key: string;
     readonly displayName: string;
     readonly kind: MemberKindModel;
@@ -312,7 +468,7 @@ export class MemberModel {
     readonly comment: CommentModel | undefined;
     readonly extra: Extra;
 
-    constructor(
+    protected constructor(
         key: string,
         displayName: string,
         kind: MemberKindModel,
@@ -412,10 +568,6 @@ export class MemberModel {
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>): string {
-        throw new Error("Unable to render asTitle");
-    }
-
     renderTypeArguments(
         context: BuildContext<PageModel>,
         plain: boolean,
@@ -474,21 +626,7 @@ export class MemberModel {
         return [];
     }
 
-    getSearchablePrefix(): string | undefined {
-        return this.isStatic ? "static " : undefined;
-    }
-
-    getSearchableContent(context: BuildContext<PageModel>): string | undefined {
-        return this.key;
-    }
-
-    getSearchableSuffix(context: BuildContext<PageModel>): string | undefined {
-        return undefined;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        return "";
-    }
+    abstract accept<C, R>(visitor: MemberVisitor<C, R>, context?: C): R;
 }
 
 export class CasterMemberModel extends MemberModel {
@@ -531,27 +669,18 @@ export class CasterMemberModel extends MemberModel {
         );
     }
 
-    getSearchablePrefix(): string | undefined {
-        return this.implicit ? "implicit " : undefined;
-    }
-
-    getSearchableContent(context: BuildContext<PageModel>): string | undefined {
-        return this.to.renderReturnType(context, true);
-    }
-
-    renderAsTitle(context: BuildContext<PageModel>) {
-        return `${this.implicit ? "implicit " : ""}${this.to.renderReturnType(context, true)}`;
-    }
-
     getType(): string {
         return "Caster";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitCaster(this, context);
     }
 }
 
 export class ConstructorMemberModel
     extends MemberModel
-    implements HasTypeParameters, HasParameters
-{
+    implements HasTypeParameters, HasParameters {
     readonly parameters: ParameterModel[];
     readonly typeParameters: { [key: string]: TypeModel };
 
@@ -589,36 +718,12 @@ export class ConstructorMemberModel
         );
     }
 
-    getSearchablePrefix(): string | undefined {
-        return undefined;
-    }
-
-    getSearchableContent(context: BuildContext<PageModel>): string | undefined {
-        return `new ${context.page.renderDisplayName()}`;
-    }
-
-    getSearchableSuffix(context: BuildContext<PageModel>): string | undefined {
-        let suffix = "";
-        if (context.page.isBaseTypePage()) {
-            suffix += context.page.type.renderTypeParameters(context);
-        }
-
-        suffix += `(${this.renderParams(context, true)})`;
-        return suffix;
-    }
-
-    renderAsTitle(context: BuildContext<PageModel>) {
-        let title = "new";
-        if (context.page.isBaseTypePage()) {
-            title += context.page.type.renderTypeParameters(context);
-        }
-
-        title += `(${this.renderParams(context, true)})`;
-        return title;
-    }
-
     getType(): string {
         return "Constructor";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitConstructor(this, context);
     }
 }
 
@@ -658,23 +763,12 @@ export class EnumConstantMemberModel extends MemberModel {
         );
     }
 
-    getSearchablePrefix(): string | undefined {
-        return undefined;
-    }
-
-    renderAsTitle(context: BuildContext<PageModel>) {
-        return this.key;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        return `<h3 id="${this.key}" data-pagefind-filter="type:Getter">${this.key}</h3><p>${this.renderAsTitle(context)}</p>`;
-    }
-
     getType(): string {
         return "Enum Constant";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitEnumConstant(this, context);
     }
 }
 
@@ -714,19 +808,12 @@ export class FieldMemberModel extends MemberModel {
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>) {
-        return this.key;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        return `<h3 id="${this.key}" data-pagefind-filter="type:Field">${this.key}</h3><p>${this.renderAsTitle(context)}</p>`;
-    }
-
     getType(): string {
         return "Field";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitField(this, context);
     }
 }
 
@@ -766,26 +853,18 @@ export class GetterMemberModel extends MemberModel {
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>) {
-        return this.key;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        return `<h3 id="${this.key}" data-pagefind-filter="type:Getter">${this.key}</h3><p>${this.renderAsTitle(context)}</p>`;
-    }
-
     getType(): string {
         return "Getter";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitGetter(this, context);
     }
 }
 
 export class MethodMemberModel
     extends MemberModel
-    implements HasTypeParameters, HasParameters
-{
+    implements HasTypeParameters, HasParameters {
     readonly parameters: ParameterModel[];
     readonly returnType: TypeModel;
     readonly typeParameters: { [key: string]: TypeModel };
@@ -831,50 +910,18 @@ export class MethodMemberModel
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>) {
-        let title = "";
-        if (this.isStatic) {
-            title += "static ";
-        }
-        title += this.key;
-        if (this.isStatic && context.page.isBaseTypePage()) {
-            title += context.page.type.renderTypeParameters(context);
-        }
-
-        title += `(${this.renderParams(context, true)})`;
-        title += this.returnType.renderReturnType(context, true);
-        return title;
-    }
-
-    getSearchableSuffix(context: BuildContext<PageModel>): string | undefined {
-        let suffix = "";
-        if (this.isStatic && context.page.isBaseTypePage()) {
-            suffix += context.page.type.renderTypeParameters(context);
-        }
-
-        suffix += `(${this.renderParams(context, true)})`;
-        suffix += this.returnType.renderReturnType(context, true);
-        return suffix;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        const html = `<h3 id="${this.key}" data-pagefind-filter="type:Method" >${this.renderAsTitle(context)}</h3>`;
-
-        return `<h3 id="${this.key}" data-pagefind-filter="type:Method">${this.renderAsTitle(context)}</h3><p></p>`;
-    }
-
     getType(): string {
         return "Method";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitMethod(this, context);
     }
 }
 
 export class OperatorMemberModel
     extends MemberModel
-    implements HasTypeParameters, HasParameters
-{
+    implements HasTypeParameters, HasParameters {
     readonly parameters: ParameterModel[];
     readonly returnType: TypeModel;
     readonly typeParameters: { [key: string]: TypeModel };
@@ -924,35 +971,12 @@ export class OperatorMemberModel
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>) {
-        let title = this.operator as string;
-        title += this.hasParams()
-            ? `(${this.renderParams(context, true)})`
-            : "";
-        title += this.returnType.renderReturnType(context, true);
-
-        return title;
-    }
-
-    getSearchableSuffix(context: BuildContext<PageModel>): string | undefined {
-        let suffix = "";
-        suffix += this.hasParams()
-            ? `(${this.renderParams(context, true)})`
-            : "";
-        suffix += this.returnType.renderReturnType(context, true);
-
-        return suffix;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        return `<h3 id="${this.operator}" data-pagefind-filter="type:Getter">${this.operator}</h3><p>${this.renderAsTitle(context)}</p>`;
-    }
-
     getType(): string {
         return "Operator";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitOperator(this, context);
     }
 }
 
@@ -992,18 +1016,11 @@ export class SetterMemberModel extends MemberModel implements HasParameters {
         );
     }
 
-    renderAsTitle(context: BuildContext<PageModel>) {
-        return this.key;
-    }
-
-    renderAsSearchableHtml(context: BuildContext<PageModel>): string {
-        if (!this.isSearchable()) {
-            return "";
-        }
-        return `<h3 id="${this.key}" data-pagefind-filter="type:Setter">${this.key}</h3><p>${this.renderAsTitle(context)}</p>`;
-    }
-
     getType(): string {
         return "Setter";
+    }
+
+    accept<C, R>(visitor: MemberVisitor<C, R>, context: C): R {
+        return visitor.visitSetter(this, context);
     }
 }

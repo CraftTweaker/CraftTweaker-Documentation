@@ -32,7 +32,24 @@ export interface BaseTypePage extends MemberPage {
     readonly members: MemberGroupsModel;
 }
 
-export class PageModel {
+export interface PageVisitor<C, R> {
+    visit(page: PageModel, context: C): R;
+
+    visitType(page: TypePageModel, context: C): R;
+
+    visitEnum(page: EnumPageModel, context: C): R;
+
+    visitEvent(page: EventPageModel, context: C): R;
+
+    visitMarkdown(page: MarkdownPageModel, context: C): R;
+
+    visitRendered(page: RenderedPageModel, context: C): R;
+
+    visitExpansion(page: ExpansionPageModel, context: C): R;
+
+}
+
+export abstract class PageModel {
     readonly version: PageVersionModel;
     readonly key: string;
     readonly displayName: string;
@@ -41,7 +58,7 @@ export class PageModel {
     readonly extra: Extra;
     readonly meta: PageMeta;
 
-    constructor(
+    protected constructor(
         version: PageVersionModel,
         key: string,
         displayName: string,
@@ -151,6 +168,8 @@ export class PageModel {
         }
         return [];
     }
+
+    abstract accept<C, R>(visitor: PageVisitor<C, R>, context?: C): R;
 }
 
 export class TypePageModel extends PageModel implements BaseTypePage {
@@ -197,6 +216,10 @@ export class TypePageModel extends PageModel implements BaseTypePage {
             obj.zen_code_name,
             parseMap(obj.members, MemberGroupModel.parse),
         );
+    }
+
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitType(this, context);
     }
 
     memberGroup(): MemberGroupsModel {
@@ -286,6 +309,9 @@ export class EnumPageModel extends PageModel implements BaseTypePage {
         return [];
     }
 
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitEnum(this, context);
+    }
 }
 
 export class EventPageModel extends PageModel implements BaseTypePage {
@@ -365,6 +391,10 @@ export class EventPageModel extends PageModel implements BaseTypePage {
         return this.members;
     }
 
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitEvent(this, context);
+    }
+
 }
 
 export class MarkdownPageModel extends PageModel {
@@ -401,6 +431,10 @@ export class MarkdownPageModel extends PageModel {
             obj.meta,
             obj.content,
         );
+    }
+
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitMarkdown(this, context);
     }
 }
 
@@ -442,6 +476,10 @@ export class RenderedPageModel extends PageModel {
             obj.content,
             obj.raw_content,
         );
+    }
+
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitRendered(this, context);
     }
 }
 
@@ -530,5 +568,9 @@ export class ExpansionPageModel extends PageModel implements MemberHoldingPage {
             }
         }
         return this.type;
+    }
+
+    accept<C, R>(visitor: PageVisitor<C, R>, context: C): R {
+        return visitor.visitExpansion(this, context);
     }
 }

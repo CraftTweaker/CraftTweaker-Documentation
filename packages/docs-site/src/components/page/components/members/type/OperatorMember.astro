@@ -5,7 +5,7 @@ import {
     type BuildContext,
     type OperatorMemberModel,
     OperatorTypeModel,
-    capitalizeFirst,
+    capitalizeFirst, MemberTitleVisitor,
 } from "docs-model";
 import Group from "../../../../markdown/Group.astro";
 import Comment from "../../comments/Comment.astro";
@@ -109,7 +109,7 @@ function renderOperator(owner: string, params: string[]): string {
     }
 }
 
-const title = member.renderAsTitle(context);
+const title = MemberTitleVisitor.INSTANCE.visit(member, context);
 
 for (const thisEx of thisExamples) {
     const paramExamples = (parameters ?? []).map((param) =>

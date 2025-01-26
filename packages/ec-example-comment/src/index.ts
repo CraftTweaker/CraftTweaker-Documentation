@@ -1,5 +1,5 @@
 import {type AnnotationRenderOptions, definePlugin, ExpressiveCodeAnnotation, type ExpressiveCodeInlineRange, type ExpressiveCodePlugin,} from "@expressive-code/core";
-import {type BuildContext, type MemberModel, OperatorTypeModel, type PageModel, type TypeModel,} from "docs-model";
+import {type BuildContext, type CasterMemberModel, type ConstructorMemberModel, type EnumConstantMemberModel, type FieldMemberModel, type GetterMemberModel, type MemberModel, type MemberVisitor, type MethodMemberModel, type OperatorMemberModel, OperatorTypeModel, type PageModel, type SetterMemberModel, type TypeModel} from "docs-model";
 import type {Parents} from "hast";
 
 export interface ExampleCommentProps {
@@ -47,37 +47,54 @@ class LinkAnnotation extends ExpressiveCodeAnnotation {
     }
 }
 
-function renderExample(type: TypeModel, member: MemberModel, context: BuildContext<PageModel>) {
-    if (member.isMethod()) {
-        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)})${member.returnType.renderReturnType(context, false)};`;
+export class ExampleVisitor implements MemberVisitor<BuildContext<PageModel>, string> {
+
+    private readonly type: TypeModel;
+
+    public constructor(type: TypeModel) {
+        this.type = type;
     }
-    if (member.isGetter()) {
-        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
+
+    visit(member: MemberModel, context: BuildContext<PageModel>): string {
+        return member.accept(this, context);
     }
-    if (member.isSetter()) {
-        return `// ${type.renderMemberOwner(context, false)}.${member.key} = ${member.renderParam(context, false, 0)};`;
+
+    visitCaster(member: CasterMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}${member.to.renderReturnType(context, false)}`;
     }
-    if (member.isField()) {
-        return `// ${type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
+
+    visitConstructor(member: ConstructorMemberModel, context: BuildContext<PageModel>): string {
+        return `// new ${this.type.renderMemberOwner(context, false)}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)});`;
     }
-    if (member.isEnumConstant()) {
-        return `// ${type.renderMemberOwner(context, false)}.${member.key}`;
+
+    visitEnumConstant(member: EnumConstantMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}.${member.key}`;
     }
-    if (member.isCaster()) {
-        return `// ${type.renderMemberOwner(context, false)}${member.to.renderReturnType(context, false)}`;
+
+    visitField(member: FieldMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
     }
-    if (member.isOperator()) {
+
+    visitGetter(member: GetterMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}.${member.key}${member.type.renderReturnType(context, false)}`;
+    }
+
+    visitMethod(member: MethodMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}.${member.key}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)})${member.returnType.renderReturnType(context, false)};`;
+    }
+
+    visitOperator(member: OperatorMemberModel, context: BuildContext<PageModel>): string {
         return OperatorTypeModel.render(
             context,
-            type,
+            this.type,
             member,
             false,
         );
     }
-    if (member.isConstructor()) {
-        return `// new ${type.renderMemberOwner(context, false)}${member.renderTypeArguments(context, false)}(${member.renderParams(context, false)});`;
+
+    visitSetter(member: SetterMemberModel, context: BuildContext<PageModel>): string {
+        return `// ${this.type.renderMemberOwner(context, false)}.${member.key} = ${member.renderParam(context, false, 0)};`;
     }
-    throw new Error("Unknown member kind!");
 }
 
 export default (): ExpressiveCodePlugin => {
@@ -98,7 +115,7 @@ export default (): ExpressiveCodePlugin => {
                 if (!type || !member) {
                     return;
                 }
-                const code = renderExample(type, member, context);
+                const code = new ExampleVisitor(type).visit(member, {...context, typeLinks: true});
                 codeBlock.insertLine(0, code);
 
                 for (const line of codeBlock.getLines()) {

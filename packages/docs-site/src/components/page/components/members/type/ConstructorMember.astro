@@ -4,7 +4,7 @@ import {
     type PageModel,
     type BuildContext,
     type ConstructorMemberModel,
-    capitalizeFirst
+    capitalizeFirst, MemberTitleVisitor
 } from "docs-model";
 import Group from "../../../../markdown/Group.astro";
 import Comment from "../../comments/Comment.astro";
@@ -18,7 +18,7 @@ const { member, context } = Astro.props;
 const { page, type } = context;
 const { comment, parameters } = member;
 
-const title = member.renderAsTitle(context);
+const title = MemberTitleVisitor.INSTANCE.visit(member, context);
 const typeParams = type ? type.renderTypeParameters(context) : '';
 
 let memberTypeParams = "";
