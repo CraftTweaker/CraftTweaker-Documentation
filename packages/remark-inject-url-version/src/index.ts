@@ -7,7 +7,7 @@ export default (version: string): Transformer<Node, Node> => {
     return (tree: Node) => {
         visit<Node, Node>(tree, (node) => {
             const contentNode = node as RootContent;
-            if (contentNode.type === 'link') {
+            if (contentNode.type === 'link' || contentNode.type === 'image') {
                 const {url} = contentNode
                 if (!url || url.startsWith("http") || url.startsWith("#")) {
                     return;
