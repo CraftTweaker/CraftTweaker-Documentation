@@ -244,15 +244,6 @@
 					"Combining": "mods/Mekanism/recipe/Combining.md",
 					"Crystallizing": "mods/Mekanism/recipe/Crystallizing.md",
 					"Dissolution": "mods/Mekanism/recipe/Dissolution.md",
-					"FluidSlurryToSlurry": "mods/Mekanism/recipe/FluidSlurryToSlurry.md",
-					"FluidToFluid": "mods/Mekanism/recipe/FluidToFluid.md",
-					"GasToGas": "mods/Mekanism/recipe/GasToGas.md",
-					"ItemStackChemicalToItemStack": "mods/Mekanism/recipe/ItemStackChemicalToItemStack.md",
-					"ItemStackToEnergy": "mods/Mekanism/recipe/ItemStackToEnergy.md",
-					"ItemStackToGas": "mods/Mekanism/recipe/ItemStackToGas.md",
-					"ItemStackToInfuseType": "mods/Mekanism/recipe/ItemStackToInfuseType.md",
-					"ItemStackToItemStack": "mods/Mekanism/recipe/ItemStackToItemStack.md",
-					"ItemStackToPigment": "mods/Mekanism/recipe/ItemStackToPigment.md",
 					"MekanismRecipeManager": "mods/Mekanism/recipe/MekanismRecipeManager.md",
 					"Nucleosynthesizing": "mods/Mekanism/recipe/Nucleosynthesizing.md",
 					"PigmentMixing": "mods/Mekanism/recipe/PigmentMixing.md",
@@ -261,16 +252,20 @@
 					"Sawing": "mods/Mekanism/recipe/Sawing.md",
 					"Separating": "mods/Mekanism/recipe/Separating.md",
 					"FluidSlurryToSlurry": {
+						"Index": "mods/Mekanism/recipe/FluidSlurryToSlurry.md",
 						"Washing": "mods/Mekanism/recipe/FluidSlurryToSlurry/Washing.md"
 					},
 					"FluidToFluid": {
+						"Index": "mods/Mekanism/recipe/FluidToFluid.md",
 						"Evaporating": "mods/Mekanism/recipe/FluidToFluid/Evaporating.md"
 					},
 					"GasToGas": {
+						"Index": "mods/Mekanism/recipe/GasToGas.md",
 						"Activating": "mods/Mekanism/recipe/GasToGas/Activating.md",
 						"Centrifuging": "mods/Mekanism/recipe/GasToGas/Centrifuging.md"
 					},
 					"ItemStackChemicalToItemStack": {
+						"Index": "mods/Mekanism/recipe/ItemStackChemicalToItemStack.md",
 						"Compressing": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Compressing.md",
 						"Injecting": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Injecting.md",
 						"MetallurgicInfusing": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/MetallurgicInfusing.md",
@@ -278,21 +273,26 @@
 						"Purifying": "mods/Mekanism/recipe/ItemStackChemicalToItemStack/Purifying.md"
 					},
 					"ItemStackToEnergy": {
+						"Index": "mods/Mekanism/recipe/ItemStackToEnergy.md",
 						"EnergyConversion": "mods/Mekanism/recipe/ItemStackToEnergy/EnergyConversion.md"
 					},
 					"ItemStackToGas": {
+						"Index": "mods/Mekanism/recipe/ItemStackToGas.md",
 						"GasConversion": "mods/Mekanism/recipe/ItemStackToGas/GasConversion.md",
 						"Oxidizing": "mods/Mekanism/recipe/ItemStackToGas/Oxidizing.md"
 					},
 					"ItemStackToInfuseType": {
+						"Index": "mods/Mekanism/recipe/ItemStackToInfuseType.md",
 						"InfusionConversion": "mods/Mekanism/recipe/ItemStackToInfuseType/InfusionConversion.md"
 					},
 					"ItemStackToItemStack": {
+						"Index": "mods/Mekanism/recipe/ItemStackToItemStack.md",
 						"Crushing": "mods/Mekanism/recipe/ItemStackToItemStack/Crushing.md",
 						"Enriching": "mods/Mekanism/recipe/ItemStackToItemStack/Enriching.md",
 						"Smelting": "mods/Mekanism/recipe/ItemStackToItemStack/Smelting.md"
 					},
 					"ItemStackToPigment": {
+						"Index": "mods/Mekanism/recipe/ItemStackToPigment.md",
 						"PigmentExtracting": "mods/Mekanism/recipe/ItemStackToPigment/PigmentExtracting.md"
 					}
 				},
@@ -319,6 +319,13 @@
 				"Pressure Chamber": "mods/PneumaticCraft-Repressurized/PressureChamber.md",
 				"Refinery": "mods/PneumaticCraft-Repressurized/Refinery.md",
 				"Thermopneumatic Processing Plant": "mods/PneumaticCraft-Repressurized/ThermoPlant.md"
+			},
+			"ProjectE": {
+				"Custom Conversion": "mods/ProjectE/CustomConversion.md",
+				"Custom EMC": "mods/ProjectE/CustomEMC.md",
+				"Normalized Simple Stack": "mods/ProjectE/NormalizedSimpleStack.md",
+				"NSS Resolver": "mods/ProjectE/NSSResolver.md",
+				"World Transmutation": "mods/ProjectE/WorldTransmutation.md"
 			},
 			"RecipeStages": {
 				"RecipeStages": "mods/RecipeStages/RecipeStages.md"
