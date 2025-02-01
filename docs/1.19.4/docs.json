@@ -30,6 +30,9 @@
         "Mods": {
             "Initialinventory" : {},
             "PackMode": {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
             "The Aether": {},
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },

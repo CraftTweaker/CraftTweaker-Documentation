@@ -35,9 +35,12 @@
             "FarmersDelight" : {},
             "Initialinventory" : {},
             "JeiTweaker": {},
-            "PackMode": {}, 
+            "PackMode": {},
             "PMMO" : {},
             "RecipeMachineStage" : {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {

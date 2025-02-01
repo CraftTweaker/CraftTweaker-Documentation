@@ -31,11 +31,14 @@
             "ArmoreableMobs" : {},
             "Createtweaker": {},
             "ExNihiloSequentia":{},
-            "FarmersDelight":{}, 
+            "FarmersDelight":{},
             "Initialinventory":{},
             "JeiTweaker":{},
             "PackMode": {},
             "PMMO" : {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {

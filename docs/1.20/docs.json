@@ -29,6 +29,9 @@
         "Forge": {},
         "Mods": {
             "Initialinventory" : {},
+            "RecipeStages": {
+                "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+            },
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
