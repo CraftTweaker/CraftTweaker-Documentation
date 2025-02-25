@@ -31,13 +31,13 @@
         "Fabric": {},
         "Neoforge": {},
         "Mods": {
+            "Aquaculture2": {
+                "Aquaculture2": "mods/Aquaculture2/FishData.md"
+            },
             "Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
             "About ZenCode": "zencode/ZenCode.md",
-            "Aquaculture2": {
-                "Aquaculture2": "mods/Aquaculture2/FishData.md"
-            },            
             "Arrays and Lists": "zencode/ArraysAndLists.md",
             "Associative Arrays" : "zencode/AssociativeArrays.md",
             "Conditional Code": "zencode/ConditionalCode.md",
