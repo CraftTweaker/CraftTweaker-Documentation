@@ -31,7 +31,10 @@
         "Forge": {},
         "Neoforge": {},
         "Mods": {
-            "Generic Recipe Manipulation": "mods/other_mods.md"
+            "Aquaculture2": {
+                "Aquaculture2": "mods/Aquaculture2/FishData.md"
+            },
+			"Generic Recipe Manipulation": "mods/other_mods.md"
         },
         "ZenCode": {
             "About ZenCode": "zencode/ZenCode.md",

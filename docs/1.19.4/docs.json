@@ -28,7 +28,10 @@
         "Fabric": {},
         "Forge": {},
         "Mods": {
-            "Initialinventory" : {},
+            "Aquaculture2": {
+                "Aquaculture2": "mods/Aquaculture2/FishData.md"
+            },
+			"Initialinventory" : {},
             "PackMode": {},
             "RecipeStages": {
                 "RecipeStages": "mods/RecipeStages/RecipeStages.md"
