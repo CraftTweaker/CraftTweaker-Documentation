@@ -64,3 +64,22 @@ BlockPredicate.create(tag as KnownTag<Block>) as BlockPredicateBuilder
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+BlockPredicate.matches(level as ServerLevel, pos as BlockPos) as boolean
+```
+
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)   |
+
+
+:::
+
+

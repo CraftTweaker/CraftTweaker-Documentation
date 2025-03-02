@@ -34,3 +34,39 @@ DamageSourcePredicate.create();
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+DamageSourcePredicate.matches(player as ServerPlayer, source as DamageSource) as boolean
+```
+
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| player    | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) |
+| source    | [DamageSource](/vanilla/api/world/DamageSource)              |
+
+
+:::
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+DamageSourcePredicate.matches(level as ServerLevel, pos as Vec3, source as DamageSource) as boolean
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel)   |
+| pos       | [Vec3](/vanilla/api/util/math/Vec3)             |
+| source    | [DamageSource](/vanilla/api/world/DamageSource) |
+
+
+:::
+
+

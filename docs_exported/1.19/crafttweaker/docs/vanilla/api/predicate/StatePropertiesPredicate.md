@@ -34,3 +34,21 @@ StatePropertiesPredicate.create();
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+StatePropertiesPredicate.matches(state as BlockState) as boolean
+```
+
+| Parameter |                    Type                     |
+|-----------|---------------------------------------------|
+| state     | [BlockState](/vanilla/api/block/BlockState) |
+
+
+:::
+
+

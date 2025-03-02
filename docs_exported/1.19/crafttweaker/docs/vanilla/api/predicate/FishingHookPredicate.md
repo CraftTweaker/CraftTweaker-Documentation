@@ -42,3 +42,23 @@ FishingHookPredicate.inOpenWaters(inOpenWaters as boolean) as FishingHookPredica
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+FishingHookPredicate.matches(entity as Entity, level as ServerLevel, pos as Vec3?) as boolean
+```
+
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity)          |
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) |
+| pos       | [Vec3](/vanilla/api/util/math/Vec3)?          |
+
+
+:::
+
+

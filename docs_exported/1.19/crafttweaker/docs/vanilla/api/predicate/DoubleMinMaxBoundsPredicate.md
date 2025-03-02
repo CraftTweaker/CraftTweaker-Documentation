@@ -83,3 +83,36 @@ DoubleMinMaxBoundsPredicate.exactly(value as double) as DoubleMinMaxBoundsPredic
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+DoubleMinMaxBoundsPredicate.matches(value as double) as boolean
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
+
+
+:::
+
+:::group{name=matchesSqr}
+
+Return Type: boolean
+
+```zenscript
+DoubleMinMaxBoundsPredicate.matchesSqr(value as double) as boolean
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| value     | double |
+
+
+:::
+
+

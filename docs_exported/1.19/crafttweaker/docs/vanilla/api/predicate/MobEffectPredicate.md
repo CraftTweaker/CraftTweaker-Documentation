@@ -115,3 +115,21 @@ MobEffectPredicate.duration(duration as IntMinMaxBoundsPredicate) as MobEffectPr
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+MobEffectPredicate.matches(instance as MobEffectInstance?) as boolean
+```
+
+| Parameter |                                Type                                |
+|-----------|--------------------------------------------------------------------|
+| instance  | [MobEffectInstance](/vanilla/api/entity/effect/MobEffectInstance)? |
+
+
+:::
+
+

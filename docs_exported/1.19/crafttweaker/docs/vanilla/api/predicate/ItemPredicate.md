@@ -79,3 +79,21 @@ ItemPredicate.create(tag as KnownTag<ItemDefinition>) as ItemPredicateBuilder
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+ItemPredicate.matches(stack as IItemStack) as boolean
+```
+
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| stack     | [IItemStack](/vanilla/api/item/IItemStack) |
+
+
+:::
+
+

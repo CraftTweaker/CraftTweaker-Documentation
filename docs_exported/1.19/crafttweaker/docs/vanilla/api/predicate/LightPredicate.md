@@ -49,3 +49,22 @@ LightPredicate.create(level as IntMinMaxBoundsPredicate) as LightPredicateBuilde
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+LightPredicate.matches(level as ServerLevel, pos as BlockPos) as boolean
+```
+
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)   |
+
+
+:::
+
+
