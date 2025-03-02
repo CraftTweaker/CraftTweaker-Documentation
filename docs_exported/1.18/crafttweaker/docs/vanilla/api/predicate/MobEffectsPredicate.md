@@ -53,3 +53,21 @@ MobEffectsPredicate.create(effect as MobEffect, predicate as MobEffectPredicate)
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+MobEffectsPredicate.matches(entity as Entity) as boolean
+```
+
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity) |
+
+
+:::
+
+

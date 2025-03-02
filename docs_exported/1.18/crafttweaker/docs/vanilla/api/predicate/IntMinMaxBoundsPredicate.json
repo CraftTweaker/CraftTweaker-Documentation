@@ -1,1 +1,1 @@
-{"path":"vanilla/api/predicate/IntMinMaxBoundsPredicate.md","zenCodeName":"crafttweaker.api.predicate.IntMinMaxBoundsPredicate","searchTerms":["atLeast","atMost","exactly","any","between"]}
+{"path":"vanilla/api/predicate/IntMinMaxBoundsPredicate.md","zenCodeName":"crafttweaker.api.predicate.IntMinMaxBoundsPredicate","searchTerms":["matchesSqr","atLeast","atMost","exactly","matches","any","between"]}

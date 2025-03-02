@@ -52,3 +52,51 @@ NbtPredicate.create(data as MapData) as NbtPredicate
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+NbtPredicate.matches(data as Entity) as boolean
+```
+
+| Parameter |                 Type                 |
+|-----------|--------------------------------------|
+| data      | [Entity](/vanilla/api/entity/Entity) |
+
+
+:::
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+NbtPredicate.matches(data as IData?) as boolean
+```
+
+| Parameter |               Type                |
+|-----------|-----------------------------------|
+| data      | [IData](/vanilla/api/data/IData)? |
+
+
+:::
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+NbtPredicate.matches(data as IItemStack) as boolean
+```
+
+| Parameter |                    Type                    |
+|-----------|--------------------------------------------|
+| data      | [IItemStack](/vanilla/api/item/IItemStack) |
+
+
+:::
+
+

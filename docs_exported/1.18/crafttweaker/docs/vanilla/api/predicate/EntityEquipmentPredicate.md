@@ -46,3 +46,21 @@ EntityEquipmentPredicate.create();
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+EntityEquipmentPredicate.matches(entity as Entity?) as boolean
+```
+
+| Parameter |                 Type                  |
+|-----------|---------------------------------------|
+| entity    | [Entity](/vanilla/api/entity/Entity)? |
+
+
+:::
+
+

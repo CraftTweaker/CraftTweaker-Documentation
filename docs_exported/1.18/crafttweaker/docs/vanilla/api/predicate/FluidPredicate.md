@@ -64,3 +64,22 @@ FluidPredicate.create(tag as KnownTag<Fluid>) as FluidPredicateBuilder
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+FluidPredicate.matches(level as ServerLevel, pos as BlockPos) as boolean
+```
+
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) |
+| pos       | [BlockPos](/vanilla/api/util/math/BlockPos)   |
+
+
+:::
+
+

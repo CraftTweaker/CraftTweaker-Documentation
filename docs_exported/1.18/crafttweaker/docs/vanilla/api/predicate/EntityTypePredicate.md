@@ -52,3 +52,21 @@ EntityTypePredicate.create(type as KnownTag<EntityType>) as EntityTypePredicate
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+EntityTypePredicate.matches(type as EntityType) as boolean
+```
+
+| Parameter |                     Type                     |
+|-----------|----------------------------------------------|
+| type      | [EntityType](/vanilla/api/entity/EntityType) |
+
+
+:::
+
+

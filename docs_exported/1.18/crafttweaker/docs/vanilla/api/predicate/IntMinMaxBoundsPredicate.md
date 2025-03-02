@@ -83,3 +83,36 @@ IntMinMaxBoundsPredicate.exactly(value as int) as IntMinMaxBoundsPredicate
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+IntMinMaxBoundsPredicate.matches(value as int) as boolean
+```
+
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
+
+
+:::
+
+:::group{name=matchesSqr}
+
+Return Type: boolean
+
+```zenscript
+IntMinMaxBoundsPredicate.matchesSqr(value as int) as boolean
+```
+
+| Parameter | Type |
+|-----------|------|
+| value     | int  |
+
+
+:::
+
+

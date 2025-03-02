@@ -141,3 +141,24 @@ LocationPredicate.inFeature(feature as string) as LocationPredicate
 
 :::
 
+## Methods
+
+:::group{name=matches}
+
+Return Type: boolean
+
+```zenscript
+LocationPredicate.matches(level as ServerLevel, x as double, y as double, z as double) as boolean
+```
+
+| Parameter |                     Type                      |
+|-----------|-----------------------------------------------|
+| level     | [ServerLevel](/vanilla/api/world/ServerLevel) |
+| x         | double                                        |
+| y         | double                                        |
+| z         | double                                        |
+
+
+:::
+
+
