@@ -58,22 +58,22 @@ The same applies for different inputs: If you want to add a fluid or a tag, one 
 
 For the rest of this page, we will be looking at adding a Create Cutting recipe through `addJsonRecipe`.
 
-You can find this recipe [here](https://github.com/Creators-of-Create/Create/blob/mc1.19/dev/src/generated/resources/data/create/recipes/cutting/warped_hyphae.json):
+You can find this recipe [here](https://github.com/Creators-of-Create/Create/blob/mc1.21.1/dev/src/generated/resources/data/create/recipe/cutting/bamboo_planks.json):
 
 ```json
 {
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "minecraft:warped_hyphae"
+      "item": "minecraft:bamboo_planks"
     }
   ],
+  "processing_time": 20,
   "results": [
     {
-      "item": "minecraft:stripped_warped_hyphae"
+      "id": "minecraft:bamboo_mosaic"
     }
-  ],
-  "processingTime": 50
+  ]
 }
 ```
 
@@ -94,16 +94,17 @@ Using the recipe the example json recipe from above, we get:
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "minecraft:warped_hyphae"
+      "item": "minecraft:bamboo_planks"
     }
   ],
+  "processing_time": 20,
   "results": [
     {
-      "item": "minecraft:stripped_warped_hyphae"
+      "id": "minecraft:bamboo_mosaic"
     }
-  ],
-  "processingTime": 50
+  ]
 }
+);
 ```
 
 We can now manipulate the above to get our intended recipe:
@@ -116,12 +117,12 @@ We can now manipulate the above to get our intended recipe:
       "item" : "minecraft:diamond_hoe"
     }
   ],
+  "processing_time": 10,
   "results": [
     {
-      "item" : "minecraft:diamond"
+      "id": "minecraft:diamond"
     }
-  ],
-  "processingTime": 10
+  ]
 }
 );
 
@@ -142,16 +143,16 @@ After some digging on the Create Repository, I was able to find out it does supp
   "type": "create:cutting",
   "ingredients": [
     {
-      "tag": "minecraft:planks",
+      "tag": "minecraft:planks"
     }
   ],
+  "processing_time": 200,
   "results": [
     {
-      "item": "minecraft:stick",
+      "id": "minecraft:stick",
       "count" : 3
     }
-  ],
-  "processingTime": 200
+  ]
 }
 );
 ```
