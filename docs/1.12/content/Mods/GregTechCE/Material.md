@@ -40,7 +40,7 @@ Methods:
 | addFlags(String... flagNames) | Add generation flags  |
 | hasFlag(String flagName)      | Has a generation flag |
 
-`MaterialStack` can be created by `material * number`, same as [Amount of Ingredient](/Vanilla/Variable_Types/IIngredient.md) or FluidStack.
+`MaterialStack` can be created by `material * number`, same as [Amount of Ingredient](/Vanilla/Variable_Types/IIngredient) or FluidStack.
 
 ### FluidMaterial
 
@@ -59,8 +59,8 @@ Getters:
 | hasFluid  | bool                                                       |                       |
 | hasPlasma | bool                                                       |                       |
 | isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
-| plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
+| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) | material fluid        |
+| plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) | material plasma fluid |
 
 ### DustMaterial
 
