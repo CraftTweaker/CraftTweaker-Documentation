@@ -52,4 +52,4 @@ RecipeMachineStage.addRecipe("minecraft:smelting", ["minecraft:stone", "minecraf
 
 
 ## Supported Mods List
-- [Github](https://github.com/SagaDeoMissTeam/Recipe-Machine-Stage/blob/main/SUPPORTED%20MODS.md)
+- [Github](https://github.com/DeusSixik/Recipe-Machine-Stage/blob/1.20.1/SUPPORTED%20MODS.md)

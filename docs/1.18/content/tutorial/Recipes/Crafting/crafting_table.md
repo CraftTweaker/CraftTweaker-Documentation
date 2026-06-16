@@ -4,9 +4,9 @@
 
 There are three recipe types for crafting tables:
 
-- [**Shapeless:**](/tutorials/Recipes/Crafting/ShapelessRecipes.md) A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
-- [**Shaped:**](/tutorials/Recipes/Crafting/ShapedRecipes.md) A shaped recipe is a recipe where the position of the items must be exact.
-- [**Shaped Mirrored:**](/tutorials/Recipes/Crafting/ShapedMirrored.md) A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
+- [**Shapeless:**](/tutorials/Recipes/Crafting/ShapelessRecipes) A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
+- [**Shaped:**](/tutorials/Recipes/Crafting/ShapedRecipes) A shaped recipe is a recipe where the position of the items must be exact.
+- [**Shaped Mirrored:**](/tutorials/Recipes/Crafting/ShapedMirrored) A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
 
 ## Adding a Recipe
 
