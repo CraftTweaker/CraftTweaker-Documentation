@@ -8,6 +8,174 @@ import crafttweaker.api.util.DamageSource;
 ```
 
 
+## Static Methods
+
+:::group{name=causeBedExplosionDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+// DamageSource.causeBedExplosionDamage() as DamageSource
+
+DamageSource.causeBedExplosionDamage();
+```
+
+:::
+
+:::group{name=causeBeeStingDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeBeeStingDamage(bee as MCLivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| bee | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=causeExplosionDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeExplosionDamage(entityLivingBaseIn as MCLivingEntity?) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| entityLivingBaseIn | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)? | No Description Provided | true |  |
+
+
+:::
+
+:::group{name=causeExplosionDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeExplosionDamage(explosionIn as Explosion?) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| explosionIn | [Explosion](/vanilla/api/world/Explosion)? | No Description Provided | true |  |
+
+
+:::
+
+:::group{name=causeIndirectDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeIndirectDamage(source as MCEntity, indirectEntityIn as MCLivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| source | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+| indirectEntityIn | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=causeIndirectMagicDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeIndirectMagicDamage(source as MCEntity, indirectEntityIn as MCEntity?) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| source | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | false |  |
+| indirectEntityIn | [MCEntity](/vanilla/api/entity/MCEntity)? | No Description Provided | true |  |
+
+
+:::
+
+:::group{name=causeMobDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeMobDamage(mob as MCLivingEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| mob | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=causePlayerDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causePlayerDamage(player as MCPlayerEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| player | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=causeThornsDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeThornsDamage(source as MCEntity) as DamageSource
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| source | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
+
+:::
+
+:::group{name=causeThrownDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeThrownDamage(source as MCEntity, indirectEntityIn as MCEntity?) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| source | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | false |  |
+| indirectEntityIn | [MCEntity](/vanilla/api/entity/MCEntity)? | No Description Provided | true |  |
+
+
+:::
+
+:::group{name=causeTridentDamage}
+
+Return Type: [DamageSource](/vanilla/api/util/DamageSource)
+
+```zenscript
+DamageSource.causeTridentDamage(source as MCEntity, indirectEntityIn as MCEntity?) as DamageSource
+```
+
+| Parameter | Type | Description | Optional | DefaultValue |
+|-----------|------|-------------|----------|--------------|
+| source | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided | false |  |
+| indirectEntityIn | [MCEntity](/vanilla/api/entity/MCEntity)? | No Description Provided | true |  |
+
+
+:::
+
 ## Methods
 
 :::group{name=canBypassCreative}
