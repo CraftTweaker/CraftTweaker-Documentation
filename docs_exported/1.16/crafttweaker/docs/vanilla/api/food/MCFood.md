@@ -41,12 +41,27 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 
 :::group{name=clearEffects}
 
+This method should not be used, it is not safe when scripts are reloaded.
+ Use clearEffectsSafe instead.
+
 Return Type: void
 
 ```zenscript
 // MCFood.clearEffects() as void
 
 myMCFood.clearEffects();
+```
+
+:::
+
+:::group{name=clearEffectsSafe}
+
+Return Type: [MCFood](/vanilla/api/food/MCFood)
+
+```zenscript
+// MCFood.clearEffectsSafe() as MCFood
+
+myMCFood.clearEffectsSafe();
 ```
 
 :::
