@@ -159,6 +159,30 @@ villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:diamo
 
 :::
 
+:::group{name=addWanderingTrade}
+
+Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds and a Stick for an arrow.
+
+Return Type: void
+
+```zenscript
+// VillagerTrades.addWanderingTrade(rarity as int, price as IItemStack, price2 as IItemStack, forSale as IItemStack, maxTrades as int, xp as int) as void
+
+villagerTrades.addWanderingTrade(1, <item:minecraft:dirt>, <item:minecraft:stick>, <item:minecraft:diamond>, 16, 2);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| price | [IItemStack](/vanilla/api/items/IItemStack) | The ItemStack being given to the Wandering Trader. |
+| price2 | [IItemStack](/vanilla/api/items/IItemStack) | The second ItemStack being given to the Wandering Trader. |
+| forSale | [IItemStack](/vanilla/api/items/IItemStack) | What ItemStack is being sold (by the Wandering Trader). |
+| maxTrades | int | How many times can this trade be done. |
+| xp | int | How much Experience is given by trading. |
+
+
+:::
+
 :::group{name=removeAllTrades}
 
 Removes all the trades for the given profession and villagerLevel
