@@ -1040,6 +1040,31 @@
           "RecipePrimer": "Mods/ModularMachinery/Recipes/RecipePrimer.md"
         }
       },
+      "MoreTweaker": {
+        "Known Bugs": "Mods/MoreTweaker/Known bugs.md",
+        "Advent of Ascension (Nevermine)": "Mods/MoreTweaker/aoa.md",
+        "Bedrockcraft": "Mods/MoreTweaker/bedrockcraft.md",
+        "Bewitchment": "Mods/MoreTweaker/bewitchment.md",
+        "Blood Arsenal": "Mods/MoreTweaker/BloodArsenal.md",
+        "Buildcraft": "Mods/MoreTweaker/Buildcraft.md",
+        "Cooking for Blockheads": "Mods/MoreTweaker/cfb.md",
+        "Draconic Evolution": "Mods/MoreTweaker/DraconicEvolution.md",
+        "Enderfuge": "Mods/MoreTweaker/Enderfuge.md",
+        "Erebus": "Mods/MoreTweaker/Erebus.md",
+        "Fossils and Archeology": "Mods/MoreTweaker/fossil.md",
+        "Gadgetry": "Mods/MoreTweaker/Gadgetry.md",
+        "Galacticraft": "Mods/MoreTweaker/Galacticraft.md",
+        "Hearth  Well": "Mods/MoreTweaker/hwell.md",
+        "InfinityCraft": "Mods/MoreTweaker/InfinityCraft.md",
+        "JEI": "Mods/MoreTweaker/jei.md",
+        "LightningCraft": "Mods/MoreTweaker/LightningCraft.md",
+        "Matter Overdrive": "Mods/MoreTweaker/Matteroverdrive.md",
+        "Mob Grinding Utils": "Mods/MoreTweaker/MGU.md",
+        "Quack lib": "Mods/MoreTweaker/quacklib.md",
+        "Railcraft": "Mods/MoreTweaker/Railcraft.md",
+        "The Betweenlands": "Mods/MoreTweaker/betweenlands.md",
+        "VoidCraft": "Mods/MoreTweaker/VoidCraft.md"
+      },
       "MrCrayfish's Furniture Mod": {
         "MrCrayfish's Furniture Mod": "Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md",
         "Crafting": {
