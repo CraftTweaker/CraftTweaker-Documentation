@@ -23,7 +23,7 @@ What can we do with it, now that we created that thing?
 
 Returns the ID as string
 ```zenscript
-//returns "net.minecraft.entity.passive.EntitySheep"
+//returns "minecraft:sheep"
 <entity:minecraft:sheep>.id;
 ```
 
