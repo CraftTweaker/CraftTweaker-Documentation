@@ -145,9 +145,7 @@ export interface DeprecatedJson {
 
 export type ExamplesJson = { [key: string]: string[] };
 
-export interface ObtentionJson {
-    method: CommentJson;
-}
+export type ObtentionJson = CommentJson;
 
 export type ParameterCommentsJson = { [key: string]: CommentJson };
 

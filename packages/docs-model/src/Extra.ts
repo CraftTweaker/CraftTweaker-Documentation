@@ -93,7 +93,7 @@ export class Obtention {
 
     static parse(obj: ObtentionJson) {
         if (obj) {
-            return new Obtention(CommentModel.parseComment(obj.method));
+            return new Obtention(CommentModel.parseComment(obj));
         }
         throw new Error(`Unable to parse '${JSON.stringify(obj)}'`);
     }
